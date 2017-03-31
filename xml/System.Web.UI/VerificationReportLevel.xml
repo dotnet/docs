@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.VerificationReportLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies reporting levels for an accessibility rule defined by an <see cref="T:System.Web.UI.VerificationAttribute" /> instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using extending a class, member or indexer with a <xref:System.Web.UI.VerificationAttribute>, you must define the level of reporting that the verification rule represents by specifying one of the VerificationReportLevel values.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Error">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.VerificationReportLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The verification rule represented by the <see cref="T:System.Web.UI.VerificationAttribute" /> instance is an error.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Guideline">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.VerificationReportLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The verification rule represented by the <see cref="T:System.Web.UI.VerificationAttribute" /> instance is a guideline.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.VerificationReportLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The verification rule represented by the <see cref="T:System.Web.UI.VerificationAttribute" /> instance is a warning.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

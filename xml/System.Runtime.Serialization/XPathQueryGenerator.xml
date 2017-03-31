@@ -4,43 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XPathQueryGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>When given a class representing a data contract, and metadata representing a member of the contract, produces an XPath query for the member.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about data contracts, see [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
-  
- To use the class, there are four steps:  
-  
-1.  Create the data contract type by applying the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> as appropriate to the type and its fields or properties.  
-  
-2.  Use the <xref:System.Type.GetMember%2A> method of the <xref:System.Type> class to generate the MemberInfo array.  
-  
-3.  Pass the type and the array to the method.  
-  
-4.  If needed, use the <xref:System.Xml.XmlNamespaceManager> returned by the `namespaces` parameter to examine the XML namespaces referenced by the namespaces prefixes in the XPath query.  
-  
-> [!NOTE]
->  The namespace prefix "xg" (for "XPath Generator") is used as the default in the XPath. This cannot be changed. Instead, refer to the NameTable collection to see what namespace the prefix is associated with.  
-  
-   
-  
-## Examples  
- The following example creates XPath queries from two classes to which the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes have been applied.  
-  
- [!code-vb[XPathQueryGenerator#0](~/add/codesnippet/visualbasic/t-system.runtime.seriali_26_1.vb)]
- [!code-cs[XPathQueryGenerator#0](~/add/codesnippet/csharp/t-system.runtime.seriali_26_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateFromDataContractSerializer">
@@ -50,7 +27,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -61,30 +43,12 @@
         <Parameter Name="namespaces" Type="System.Xml.XmlNamespaceManager&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="type">The type that represents a data contract.</param>
-        <param name="pathToMember">The metadata, generated using the <see cref="System.Type.GetMember%2A" /> method of the <see cref="T:System.Type" /> class, that points to the specific data member used to generate the query.</param>
-        <param name="namespaces">The XML namespaces and their prefixes found in the data contract.</param>
-        <summary>Creates an XPath from a data contract using the specified data contract type, array of metadata elements, and namespaces..</summary>
-        <returns>
-          <see cref="T:System.String" />  
-  
- The XPath generated from the type and member data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about data contracts, see [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
-  
-   
-  
-## Examples  
- The following example creates XPath queries from two classes to which the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes have been applied.  
-  
- [!code-vb[XPathQueryGenerator#0](~/add/codesnippet/visualbasic/66185725-48d6-4910-a4cc-_1.vb)]
- [!code-cs[XPathQueryGenerator#0](~/add/codesnippet/csharp/66185725-48d6-4910-a4cc-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <param name="pathToMember">To be added.</param>
+        <param name="namespaces">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFromDataContractSerializer">
@@ -94,7 +58,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -106,15 +75,12 @@
         <Parameter Name="namespaces" Type="System.Xml.XmlNamespaceManager&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="type">The type that represents a data contract.</param>
-        <param name="pathToMember">The metadata, generated using the <see cref="System.Type.GetMember%2A" /> method of the <see cref="T:System.Type" /> class, that points to the specific data member used to generate the query.</param>
-        <param name="rootElementXpath">The top level element in the xpath.</param>
-        <param name="namespaces">The XML namespaces and their prefixes found in the data contract.</param>
-        <summary>Creates an XPath from a data contract using the specified contract data type, array of metadata elements, the top level element, and namespaces.</summary>
-        <returns>
-          <see cref="T:System.String" />  
-  
- The XPath generated from the type and member data.</returns>
+        <param name="type">To be added.</param>
+        <param name="pathToMember">To be added.</param>
+        <param name="rootElementXpath">To be added.</param>
+        <param name="namespaces">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

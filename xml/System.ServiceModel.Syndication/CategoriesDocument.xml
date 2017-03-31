@@ -3,32 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CategoriesDocument extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.CategoriesDocument" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>Represents a categories document.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A categories document describes the categories allowed within a collection.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AttributeExtensions">
@@ -37,27 +25,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.CategoriesDocument.AttributeExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of attribute extensions.</summary>
-        <value>Returns <see cref="System.Collections.Generic.Dictionary%602" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseUri">
@@ -66,19 +47,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.CategoriesDocument.BaseUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The base URI of the <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" />.</summary>
-        <value>Returns <see cref="T:System.Uri" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,11 +69,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocument.Create(System.Collections.ObjectModel.Collection{System.ServiceModel.Syndication.SyndicationCategory})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,9 +83,9 @@
         <Parameter Name="categories" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationCategory&gt;" />
       </Parameters>
       <Docs>
-        <param name="categories">A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instances used to initialize the new <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> instance.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> instance.</summary>
-        <returns>Returns <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</returns>
+        <param name="categories">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,11 +95,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocument.Create(System.Uri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,9 +109,9 @@
         <Parameter Name="linkToCategoriesDocument" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="linkToCategoriesDocument">The URI of the categories document.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> initializing it with the specified <see cref="T:System.Uri" />.</summary>
-        <returns>Returns <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" />.</returns>
+        <param name="linkToCategoriesDocument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,11 +121,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocument.Create(System.Collections.ObjectModel.Collection{System.ServiceModel.Syndication.SyndicationCategory},System.Boolean,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,19 +137,12 @@
         <Parameter Name="scheme" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="categories">A collection of categories.</param>
-        <param name="isFixed">A value that specifies whether a user can add a category to the categories document.</param>
-        <param name="scheme">The scheme of the categories document.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> class.</summary>
-        <returns>Returns <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `isFixed` parameter is set to `true`, the categories contained within the categories document are immutable. If the `isFixed` parameter is set to `true`, additional categories can be added to the categories document.  
-  
- ]]></format>
-        </remarks>
+        <param name="categories">To be added.</param>
+        <param name="isFixed">To be added.</param>
+        <param name="scheme">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementExtensions">
@@ -177,19 +151,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.CategoriesDocument.ElementExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationElementExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element extensions for the <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" />.</summary>
-        <value>Returns  <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,11 +173,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocument.GetFormatter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,8 +185,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a new <see cref="T:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter" /> instance initialized with the <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> on which this method is called.</summary>
-        <returns>Returns <see cref="T:System.ServiceModel.Syndication.CategoriesDocumentFormatter" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,19 +196,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.CategoriesDocument.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the language of the <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" />.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,11 +218,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocument.Load(System.Xml.XmlReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,9 +232,9 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <summary>Loads a <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> instance from an <see cref="T:System.Xml.XmlReader" />.</summary>
-        <returns>Returns <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" />.</returns>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,11 +244,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocument.Save(System.Xml.XmlWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,8 +258,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <summary>Saves the <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to a <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,11 +269,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocument.TryParseAttribute(System.String,System.String,System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -312,12 +286,12 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute to parse.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extension.</summary>
-        <returns>Returns <see cref="T:System.Boolean" />.</returns>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,11 +301,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocument.TryParseElement(System.Xml.XmlReader,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -342,10 +316,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an element extension.</summary>
-        <returns>Returns <see cref="T:System.Boolean" />.</returns>
+        <param name="reader">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,11 +329,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocument.WriteAttributeExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -370,9 +344,9 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="version">The syndication version to use when writing.</param>
-        <summary>Writes the attribute extensions to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <param name="writer">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,11 +356,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocument.WriteElementExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -397,9 +371,9 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="version">The syndication version to use when writing.</param>
-        <summary>Writes the element extension to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <param name="writer">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

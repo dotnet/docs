@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TabletDeviceCollection" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,20 +15,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains the <see cref="T:System.Windows.Input.TabletDevice" /> objects that represent the digitizer devices of a tablet device.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the TabletDeviceCollection class.  
-  
- [!code-vb[HwCaps#15](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#15)]
- [!code-cs[HwCaps#15](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#15)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TabletDeviceCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TabletDeviceCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Input.TabletDevice[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Windows.Input.TabletDevice[] array, int32 index) cil managed" />
@@ -37,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,23 +51,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional array that is the destination of elements copied from the collection. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in the array parameter where copying begins.</param>
-        <summary>Copies all elements in the current collection to the specified one-dimensional array, starting at the specified destination array index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the CopyTo method.  
-  
- [!code-vb[HwCaps#18](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#18)]
- [!code-cs[HwCaps#18](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#18)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="index" /> + collection count is greater than or equal to <paramref name="array.length" />.</exception>
-        <exception cref="T:System.ArgumentNullException">If <paramref name="array" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IndexOutOfRangeException">If <paramref name="index" /> is less than 0 or <paramref name="index" /> is greater than or equal to <paramref name="array.length" />.</exception>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -74,26 +64,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of <see cref="T:System.Windows.Input.TabletDevice" /> objects in the collection.</summary>
-        <value>The number of <see cref="T:System.Windows.Input.TabletDevice" /> objects in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Count property.  
-  
- [!code-vb[HwCaps#16](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#16)]
- [!code-cs[HwCaps#16](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#16)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -103,27 +82,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether access to the collection is synchronized (thread safe).</summary>
-        <value>
-          <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the IsSynchronized property.  
-  
- [!code-vb[HwCaps#17](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#17)]
- [!code-cs[HwCaps#17](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#17)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -133,7 +100,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,21 +109,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Windows.Input.TabletDevice" /> that is retrieved from the collection.</param>
-        <summary>Gets the <see cref="T:System.Windows.Input.TabletDevice" /> object at the specified index within the collection.</summary>
-        <value>The <see cref="T:System.Windows.Input.TabletDevice" /> object at the specified index within the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Item property.  
-  
- [!code-vb[HwCaps#19](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#19)]
- [!code-cs[HwCaps#19](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#19)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">If <paramref name="index" /> is less than 0 or <paramref name="index" /> is greater than or equal to the number of <see cref="T:System.Windows.Input.TabletDeviceCollection" /> objects in the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -167,26 +122,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
-        <value>An object that can be used to synchronize access to the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the SyncRoot property.  
-  
- [!code-vb[HwCaps#17](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#17)]
- [!code-cs[HwCaps#17](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#17)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -196,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -207,9 +150,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array.</param>
-        <param name="index">The index.</param>
-        <summary>This member supports the .NET Framework and is not intended to be used from your code.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -228,7 +170,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This member supports the .NET Framework and is not intended to be used from your code.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

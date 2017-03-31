@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BooleanSwitch extends System.Diagnostics.Switch" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.BooleanSwitch" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Diagnostics.Switch</BaseTypeName>
@@ -17,60 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a simple on/off switch that controls debugging and tracing output.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use a Boolean trace switch to enable or disable messages based on their importance. Use the <xref:System.Diagnostics.BooleanSwitch.Enabled%2A> property to get the current value of the switch.  
-  
- You can enable or disable a BooleanSwitch through the application configuration file and then use the configured BooleanSwitch value in your application. Alternately, you can create a BooleanSwitch in your code and set the <xref:System.Diagnostics.BooleanSwitch.Enabled%2A> property directly to instrument a specific section of code.  
-  
- To configure a BooleanSwitch, edit the configuration file that corresponds to the name of your application. Within this file, you can add or remove a switch, set a switch's value, or clear all the switches previously set by the application. The configuration file should be formatted like the following example.  
-  
-```  
-<configuration>  
-  <system.diagnostics>  
-    <switches>  
-      <add name="mySwitch" value="1"/>  
-    </switches>  
-  </system.diagnostics>  
-</configuration>  
-```  
-  
- This example configuration section defines a BooleanSwitch with the <xref:System.Diagnostics.Switch.DisplayName%2A> property set to `mySwitch` and the <xref:System.Diagnostics.BooleanSwitch.Enabled%2A> value set to `true`. Within your application, you can use the configured switch value by creating a BooleanSwitch with the same name, as shown in the following code example.  
-  
- [!code-cpp[Classic BooleanSwitch.BooleanSwitch Example#2](~/add/codesnippet/cpp/t-system.diagnostics.boo_1.cpp)]
- [!code-vb[Classic BooleanSwitch.BooleanSwitch Example#2](~/add/codesnippet/visualbasic/t-system.diagnostics.boo_1.vb)]
- [!code-cs[Classic BooleanSwitch.BooleanSwitch Example#2](~/add/codesnippet/csharp/t-system.diagnostics.boo_1.cs)]  
-  
- By default, the <xref:System.Diagnostics.BooleanSwitch.Enabled%2A> property is set using the value specified in the configuration file. Configure the switch with a value of 0 to set the <xref:System.Diagnostics.BooleanSwitch.Enabled%2A> property to `false`; configure the switch with a nonzero value to set the <xref:System.Diagnostics.BooleanSwitch.Enabled%2A> property to `true`. If the BooleanSwitch constructor cannot find initial switch settings in the configuration file, the <xref:System.Diagnostics.BooleanSwitch.Enabled%2A> property of the new switch is set to `false` by default.  
-  
- You must enable tracing or debugging to use a switch. The following syntax is compiler specific. If you use compilers other than C# or Visual Basic, refer to the documentation for your compiler.  
-  
--   To enable debugging in C#, add the `/d:DEBUG` flag to the compiler command line when you compile your code, or you can add `#define DEBUG` to the top of your file. In Visual Basic, add the `/d:DEBUG=True` flag to the compiler command line.  
-  
--   To enable tracing in C#, add the `/d:TRACE` flag to the compiler command line when you compile your code, or add `#define TRACE` to the top of your file. In Visual Basic, add the `/d:TRACE=True` flag to the compiler command line.  
-  
-> [!NOTE]
->  These debug and trace compiler switches are not required when using the BooleanSwitch class in isolation. They are only required in conjunction with <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.Debug> methods that are conditionally compiled.  
-  
- For more information on instrumenting your application, see <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace>. For more information about configuring and using trace switches, see [Trace Switches](../Topic/Trace%20Switches.md).  
-  
-> [!NOTE]
->  To improve performance, you can make BooleanSwitch members `static` in your class.  
-  
-   
-  
-## Examples  
- The following example creates a BooleanSwitch and uses the switch to determine whether to print an error message. You create the switch at the class level. The `Main` method passes its location to `MyMethod`, which prints an error message and where the error occurred.  
-  
- [!code-vb[Classic BooleanSwitch.BooleanSwitch Example#1](~/add/codesnippet/visualbasic/t-system.diagnostics.boo_2.vb)]
- [!code-cpp[Classic BooleanSwitch.BooleanSwitch Example#1](~/add/codesnippet/cpp/t-system.diagnostics.boo_2.cpp)]
- [!code-cs[Classic BooleanSwitch.BooleanSwitch Example#1](~/add/codesnippet/csharp/t-system.diagnostics.boo_2.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,53 +35,27 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.BooleanSwitch.#ctor(System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="displayName" Type="System.String" />
         <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="displayName">The name to display on a user interface.</param>
-        <param name="description">The description of the switch.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.BooleanSwitch" /> class with the specified display name and description.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you create a <xref:System.Diagnostics.BooleanSwitch>, the `displayName` parameter is used to find initial switch settings. If the constructor cannot find initial settings, the <xref:System.Diagnostics.BooleanSwitch.Enabled%2A> property is set to `false` (disabled).  
-  
- To set the level of your <xref:System.Diagnostics.BooleanSwitch>, edit the configuration file corresponding to the name of your application. Within this file, you can add a switch and set its value, remove a switch, or clear all switches previously set by the application. The configuration file should be formatted like the following example:  
-  
-```  
-<configuration>  
-    <system.diagnostics>  
-       <switches>  
-          <add name="mySwitch" value="10" />  
-          <add name="myNewSwitch" value="20" />  
-          <remove name="mySwitch" />  
-          <clear/>  
-       </switches>  
-    </system.diagnostics>  
- </configuration>  
-```  
-  
-> [!NOTE]
->  The switches you created should be `static`.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Diagnostics.BooleanSwitch> and uses the switch to determine whether to print an error message. The switch is created at the class level. The `Main` method passes its location to `MyMethod`, which prints an error message and where the error occurred.  
-  
- [!code-vb[Classic BooleanSwitch.BooleanSwitch Example#1](~/add/codesnippet/visualbasic/m-system.diagnostics.boo_1.vb)]
- [!code-cpp[Classic BooleanSwitch.BooleanSwitch Example#1](~/add/codesnippet/cpp/m-system.diagnostics.boo_1.cpp)]
- [!code-cs[Classic BooleanSwitch.BooleanSwitch Example#1](~/add/codesnippet/csharp/m-system.diagnostics.boo_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="displayName">To be added.</param>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,9 +64,17 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.BooleanSwitch.#ctor(System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="displayName" Type="System.String" />
@@ -144,18 +82,11 @@
         <Parameter Name="defaultSwitchValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="displayName">The name to display on the user interface.</param>
-        <param name="description">The description of the switch.</param>
-        <param name="defaultSwitchValue">The default value of the switch.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.BooleanSwitch" /> class with the specified display name, description, and default switch value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `displayName` parameter is used to set the value of the <xref:System.Diagnostics.Switch.DisplayName%2A> property, and the `description` parameter is use to set the value of the <xref:System.Diagnostics.Switch.Description%2A> property. The `defaultSwitchValue` parameter is saved as a field and used to initialize the <xref:System.Diagnostics.Switch.Value%2A> property on first reference. For more information about constructor use, see the <xref:System.Diagnostics.BooleanSwitch.%23ctor%28System.String%2CSystem.String%29> constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="displayName">To be added.</param>
+        <param name="description">To be added.</param>
+        <param name="defaultSwitchValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -164,39 +95,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.BooleanSwitch.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the switch is enabled or disabled.</summary>
-        <value>
-          <see langword="true" /> if the switch is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, this field is set to `false` (disabled). To enable the switch, assign this field the value of `true`. To disable the switch, assign the value to `false`.  The value of this property is determined by the value of the base class property <xref:System.Diagnostics.Switch.SwitchSetting%2A>.  
-  
-> [!NOTE]
->  This method uses the <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> flag to prevent being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=fullName> permission. If your code can be called from partially trusted code, do not pass the user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Diagnostics.BooleanSwitch> and uses the switch to determine whether to print an error message. The switch is created at the class level. The `Main` method passes its location to `MyMethod`, which prints an error message and the location where the error occurred.  
-  
- [!code-cpp[Classic BooleanSwitch.Enabled Example#1](~/add/codesnippet/cpp/p-system.diagnostics.boo_1.cpp)]
- [!code-cs[Classic BooleanSwitch.Enabled Example#1](~/add/codesnippet/csharp/p-system.diagnostics.boo_1.cs)]
- [!code-vb[Classic BooleanSwitch.Enabled Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.boo_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Demand value <see cref="T:System.Security.Permissions.SecurityAction" />; Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnValueChanged">
@@ -205,24 +122,25 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.BooleanSwitch.OnValueChanged" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the new value of the <see cref="System.Diagnostics.Switch.Value%2A" /> property can be parsed as a Boolean value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnValueChanged method determines whether the new value is a valid string representation of a Boolean value ("false" or "true"). If so, the method sets the <xref:System.Diagnostics.Switch.SwitchSetting%2A> property to 0 or 1.  Otherwise, the base method is called, which converts the string value to an integer value, which is then used to set the <xref:System.Diagnostics.Switch.SwitchSetting%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

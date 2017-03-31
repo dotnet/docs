@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,27 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the status of a workflow instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
-   
-  
-## Examples  
- The following code example demonstrates how you can use the WorkflowStatus values to set the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> property. Each value constrains the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> in a different way.  
-  
- This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
-  
- [!code-cs[WF_Samples#127](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#127)]
- [!code-vb[WF_Samples#127](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#127)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Completed">
@@ -46,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has completed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -63,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has been created by a call to one of the overloaded <see cref="System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Running">
@@ -80,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance is running.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suspended">
@@ -97,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has been suspended by a <see cref="T:System.Workflow.ComponentModel.SuspendActivity" /> activity, by a call to <see cref="System.Workflow.Runtime.WorkflowInstance.Suspend%2A" />,or by the workflow runtime engine.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Terminated">
@@ -114,22 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has been terminated by a</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Workflow.ComponentModel.TerminateActivity> activity, by a call to <xref:System.Workflow.Runtime.WorkflowInstance.Terminate%2A?displayProperty=fullName>, or by the workflow runtime engine.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

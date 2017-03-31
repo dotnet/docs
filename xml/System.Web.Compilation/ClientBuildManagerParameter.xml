@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ClientBuildManagerParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,29 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains values passed to the ASP.NET compiler during precompilation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET Web pages and code files can be precompiled to facilitate a faster response for users and allow for the deployment of the site without deploying the source code. For more information on precompiling an ASP.NET Web site, see [ASP.NET Web Site Project Precompilation Overview](../Topic/ASP.NET%20Web%20Site%20Project%20Precompilation%20Overview.md).  
-  
- The ClientBuildManagerParameter class stores values that are used during precompilation. The <xref:System.Web.Compilation.ClientBuildManagerParameter.PrecompilationFlags%2A> property determines how the assembly will be built. For example, you can set <xref:System.Web.Compilation.ClientBuildManagerParameter.PrecompilationFlags%2A> to <xref:System.Web.Compilation.PrecompilationFlags> to recompile any previously compiled components, or set it to <xref:System.Web.Compilation.PrecompilationFlags> to permit the resulting assembly to overwrite any components in the target directory. The <xref:System.Web.Compilation.PrecompilationFlags> enumerator has a <xref:System.FlagsAttribute> attribute that allows a bitwise combination of its member values. The <xref:System.Web.Compilation.ClientBuildManagerParameter.PrecompilationFlags%2A> property can contain more than one value from the <xref:System.Web.Compilation.PrecompilationFlags> enumeration to specify a combination of precompilation behaviors.  
-  
- Either the <xref:System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyContainer%2A> property or the <xref:System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyFile%2A> property is assigned a value to create a strong-named assembly. Both values do not need to be set to create a strong-named assembly.  
-  
- A ClientBuildManagerParameter object is passed to the <xref:System.Web.Compilation.ClientBuildManager> object through the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor.  
-  
-   
-  
-## Examples  
- The following code example is part of a code example found in the <xref:System.Web.Compilation.ClientBuildManager> class overview. In the example, a ClientBuildManagerParameter object is created and its values set. The resulting assembly will have a strong name based on the provided key file and will precompile according to the provided <xref:System.Web.Compilation.PrecompilationFlags> values.  
-  
- [!code-vb[System.Web.Compilation.ClientBuildManager#2](~/add/codesnippet/visualbasic/t-system.web.compilation_9_1.vb)]
- [!code-cs[System.Web.Compilation.ClientBuildManager#2](~/add/codesnippet/csharp/t-system.web.compilation_9_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,28 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManagerParameter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor does not initialize any property values. Those values must be set through the <xref:System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyContainer%2A>, <xref:System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyFile%2A>, and <xref:System.Web.Compilation.ClientBuildManagerParameter.PrecompilationFlags%2A> properties after the object has been created.  
-  
-   
-  
-## Examples  
- The following code example is part of a code example found in the <xref:System.Web.Compilation.ClientBuildManager> class overview. In the example, a <xref:System.Web.Compilation.ClientBuildManagerParameter> object is created and its values set. The resulting assembly will have a strong name based on the provided key file and will precompile according to the provided <xref:System.Web.Compilation.PrecompilationFlags> values.  
-  
- [!code-vb[System.Web.Compilation.ClientBuildManager#2](~/add/codesnippet/visualbasic/m-system.web.compilation_1.vb)]
- [!code-cs[System.Web.Compilation.ClientBuildManager#2](~/add/codesnippet/csharp/m-system.web.compilation_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExcludedVirtualPaths">
@@ -81,8 +43,8 @@
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets excluded virtual paths.</summary>
-        <value>Excluded virtual paths.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,31 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flags that determine precompilation behavior.</summary>
-        <value>The <see cref="T:System.Web.Compilation.PrecompilationFlags" /> for a client build.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PrecompilationFlags property determines how the assembly will be built. For example, you can set PrecompilationFlags to <xref:System.Web.Compilation.PrecompilationFlags> to recompile any previously compiled components, or set it to <xref:System.Web.Compilation.PrecompilationFlags> to permit the resulting assembly to overwrite any components in the target directory. The <xref:System.Web.Compilation.PrecompilationFlags> enumerator has a <xref:System.FlagsAttribute> attribute that allows a bitwise combination of its member values. The PrecompilationFlags property can contain more than one value from the <xref:System.Web.Compilation.PrecompilationFlags> enumeration to specify a combination of precompilation behaviors.  
-  
-   
-  
-## Examples  
- The following code example is part of a code example found in the <xref:System.Web.Compilation.ClientBuildManager> class overview. In the example, a <xref:System.Web.Compilation.ClientBuildManagerParameter> object is created and its values set. The resulting assembly will have a strong name based on the provided key file and will precompile according to the provided <xref:System.Web.Compilation.PrecompilationFlags> values.  
-  
- [!code-vb[System.Web.Compilation.ClientBuildManager#2](~/add/codesnippet/visualbasic/p-system.web.compilation_3_1.vb)]
- [!code-cs[System.Web.Compilation.ClientBuildManager#2](~/add/codesnippet/csharp/p-system.web.compilation_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrongNameKeyContainer">
@@ -127,31 +73,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the key container used during compilation.</summary>
-        <value>A <see cref="T:System.String" /> of the value for the key container.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Either the StrongNameKeyContainer property or the <xref:System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyFile%2A> property is assigned a value to create a strong-named assembly. Both values do not need to be set to create a strong-named assembly.  
-  
-   
-  
-## Examples  
- The following code example is similar to the code example found in the <xref:System.Web.Compilation.ClientBuildManager> class overview except that the resulting assembly will have a strong name based on the provided key container. It will precompile according to the provided <xref:System.Web.Compilation.PrecompilationFlags> values.  
-  
- [!code-cs[System.Web.Compilation.ClientBuildManager_2#1](~/add/codesnippet/csharp/p-system.web.compilation_1_1.cs)]
- [!code-vb[System.Web.Compilation.ClientBuildManager_2#1](~/add/codesnippet/visualbasic/p-system.web.compilation_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrongNameKeyFile">
@@ -161,31 +91,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the key file used during compilation.</summary>
-        <value>A <see cref="T:System.String" /> of the value for the key file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Either the <xref:System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyContainer%2A> property or the StrongNameKeyFile property is assigned a value to create a strong-named assembly. Both values do not need to be set to create a strong-named assembly.  
-  
-   
-  
-## Examples  
- The following code example is part of a code example found in the <xref:System.Web.Compilation.ClientBuildManager> class overview. In the example, a <xref:System.Web.Compilation.ClientBuildManagerParameter> object is created and its values set. The resulting assembly will have a strong name based on the provided key file and will precompile according to the provided <xref:System.Web.Compilation.PrecompilationFlags> values.  
-  
- [!code-vb[System.Web.Compilation.ClientBuildManager#2](~/add/codesnippet/visualbasic/p-system.web.compilation_2_1.vb)]
- [!code-cs[System.Web.Compilation.ClientBuildManager#2](~/add/codesnippet/csharp/p-system.web.compilation_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

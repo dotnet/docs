@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ExpressionBuilderCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,45 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.Configuration.ExpressionBuilder" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ExpressionBuilderCollection class does not refer to any actual element in the underlying configuration file. It is a construct that allows easy access to the compilation information it contains.  
-  
-   
-  
-## Examples  
- This section provides two code examples. The first demonstrates how to declaratively specify values for several properties of the ExpressionBuilderCollection class. The second demonstrates how to use members of the ExpressionBuilderCollection class.  
-  
- The following configuration file example shows how to declaratively specify values for several properties of the ExpressionBuilderCollection class.  
-  
-```  
-<system.web>  
-  <compilation>   
-    <expressionBuilders>  
-      <add   
-        expressionPrefix="Resources"   
-        type="System.Web.Compilation.ResourceExpressionBuilder"/>  
-      <add   
-        expressionPrefix="ConnectionStrings"   
-        type="System.Web.Compilation.  
-        ConnectionStringsExpressionBuilder"/>  
-      <add expressionPrefix="AppSettings"   
-        type="System.Web.Compilation.AppSettingsExpressionBuilder" />  
-    </expressionBuilders>  
-  </compilation>  
-</system.web>  
-```  
-  
- The following code example demonstrates how to use members of the ExpressionBuilderCollection class.  
-  
- [!code-cs[System.Web.Configuration.ExpressionBuilderCollection#1](~/add/codesnippet/csharp/t-system.web.configurati_35_1.cs)]
- [!code-vb[System.Web.Configuration.ExpressionBuilderCollection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_35_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,25 +51,9 @@
         <Parameter Name="buildProvider" Type="System.Web.Configuration.ExpressionBuilder" />
       </Parameters>
       <Docs>
-        <param name="buildProvider">A string value specifying the <see cref="T:System.Web.Configuration.ExpressionBuilder" /> reference.</param>
-        <summary>Adds an <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object to the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Adds an <xref:System.Web.Configuration.ExpressionBuilder> object to the collection. If the assembly object is not initialized with assembly information, an exception is thrown. If the assembly object already exists in the collection, the statement is ignored.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Add method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
-  
- [!code-cs[System.Web.Configuration.ExpressionBuilderCollection#4](~/add/codesnippet/csharp/588a4d1a-7aee-425a-9438-_1.cs)]
- [!code-vb[System.Web.Configuration.ExpressionBuilderCollection#4](~/add/codesnippet/visualbasic/588a4d1a-7aee-425a-9438-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object to add already exists in the collection, or the collection is read-only.</exception>
+        <param name="buildProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -119,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all the <see cref="T:System.Web.Configuration.ExpressionBuilder" /> objects from the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -181,7 +122,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,9 +131,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An integer value specifying an <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object within the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> collection.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.ExpressionBuilder" /> at the specified index in the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> collection.</summary>
-        <value>The <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object at the specified index or <see langword="null" /> if there is no object at that index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,7 +144,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,9 +153,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of an <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object in the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> collection.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object with the specified name.</summary>
-        <value>The <see cref="T:System.Web.Configuration.ExpressionBuilder" /> or <see langword="null" /> if there is no object with that name in the collection.</value>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,7 +166,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -246,7 +184,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,24 +193,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">A string value specifying the <see cref="T:System.Web.Configuration.ExpressionBuilder" /> reference.</param>
-        <summary>Removes an <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object from the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the assembly does not exist in the collection, the statement is ignored.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Remove method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
-  
- [!code-cs[System.Web.Configuration.ExpressionBuilderCollection#5](~/add/codesnippet/csharp/m-system.web.configurati_31_1.cs)]
- [!code-vb[System.Web.Configuration.ExpressionBuilderCollection#5](~/add/codesnippet/visualbasic/m-system.web.configurati_31_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -283,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,24 +214,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An integer value specifying a specific <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object within the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> collection.</param>
-        <summary>Removes an <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object from the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the assembly does not exist in the collection, an out-of-range exception is thrown.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the RemoveAt method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
-  
- [!code-cs[System.Web.Configuration.ExpressionBuilderCollection#6](~/add/codesnippet/csharp/m-system.web.configurati_47_1.cs)]
- [!code-vb[System.Web.Configuration.ExpressionBuilderCollection#6](~/add/codesnippet/visualbasic/m-system.web.configurati_47_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

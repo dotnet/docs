@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,15 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a container for <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> elements. An instance of this type is returned by the <see cref="System.Net.PeerToPeer.Collaboration.ContactManager.GetContacts%2A" /> static method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No public constructors are defined for this class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="InsertItem">
@@ -33,7 +25,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,17 +35,10 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerApplication" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to replace</param>
-        <param name="item">The new value for the element at the specified index</param>
-        <summary>Inserts a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> element into the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" /> at the specified index or key.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Null` items are not allowed.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -64,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,17 +58,10 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerApplication" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to replace.</param>
-        <param name="item">The new value for the element at the specified index.</param>
-        <summary>Replaces the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Null` items are not allowed.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -95,7 +71,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,8 +78,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> representing the current value of each <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object, separated by commas.</summary>
-        <returns>A <see cref="T:System.String" /> representing the current value of each <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> in the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" />, separated by commas.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

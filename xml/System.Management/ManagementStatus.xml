@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the enumeration of all WMI error codes that are currently defined.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The current user does not have permission to perform the action.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AggregatingByObject">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A GROUP BY clause references a property that is an embedded object without using dot notation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlreadyExists">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>In a put operation, the wbemChangeFlagCreateOnly flag was specified, but the instance already exists.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AmendedObject">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An amended object was used in a put operation without the WBEM_FLAG_USE_AMENDED_QUALIFIERS flag being specified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BackupRestoreWinmgmtRunning">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An request was made to back up or restore the repository while WinMgmt.exe was using it.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BufferTooSmall">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The supplied buffer was too small to hold all the objects in the enumerator or to read a string property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CallCanceled">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An asynchronous process has been canceled internally or by the user. Note that because of the timing and nature of the asynchronous operation, the operation may not have been truly canceled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotBeAbstract">
@@ -141,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The class was made abstract when its superclass is not abstract.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotBeKey">
@@ -158,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There was an illegal attempt to specify a key qualifier on a property that cannot be a key. The keys are specified in the class definition for an object and cannot be altered on a per-instance basis.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotBeSingleton">
@@ -175,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An illegal attempt was made to make a class singleton, such as when the class is derived from a non-singleton class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotChangeIndexInheritance">
@@ -192,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt was made to change an index when instances or derived classes are already using the index.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotChangeKeyInheritance">
@@ -209,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt was made to change a key when instances or derived classes are already using the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CircularReference">
@@ -226,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt has been made to create a reference that is circular (for example, deriving a class from itself).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClassHasChildren">
@@ -243,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt was made to make a change that would invalidate a derived class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClassHasInstances">
@@ -260,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt has been made to delete or modify a class that has instances.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClientTooSlow">
@@ -277,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The client was not retrieving objects quickly enough from an enumeration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CriticalError">
@@ -294,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An internal, critical, and unexpected error occurred. Report this error to Microsoft Technical Support.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Different">
@@ -311,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The compared items (such as objects and classes) are not identical.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DuplicateObjects">
@@ -328,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>More than one copy of the same object was detected in the result set of an enumeration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Failed">
@@ -345,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The call failed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="False">
@@ -362,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This value is returned when no more objects are available, the number of objects returned is less than the number requested, or at the end of an enumeration. It is also returned when the method is called with a value of 0 for the parameter.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalNull">
@@ -379,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A value of null was specified for a property that may not be null, such as one that is marked by a Key, Indexed, or Not_Null qualifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalOperation">
@@ -396,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user requested an illegal operation, such as spawning a class from an instance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncompleteClass">
@@ -413,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The current object is not a valid class definition. Either it is incomplete, or it has not been registered with WMI using <see cref="M:System.Management.ManagementObject.Put" />().</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InitializationFailure">
@@ -430,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A component, such as a provider, failed to initialize for internal reasons.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCimType">
@@ -447,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CIM type specified is not valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidClass">
@@ -464,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified class is not valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidContext">
@@ -481,14 +453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The context object is not valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidDuplicateParameter">
@@ -498,14 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A duplicate parameter has been declared in a CIM method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidFlavor">
@@ -515,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified flavor was invalid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidMethod">
@@ -532,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The requested method is not available.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidMethodParameters">
@@ -549,14 +517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The parameters provided for the method are not valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidNamespace">
@@ -566,14 +533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified namespace could not be found.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidObject">
@@ -583,14 +549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified instance is not valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidObjectPath">
@@ -600,14 +565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified object path was invalid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidOperation">
@@ -617,14 +581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The requested operation is not valid. This error usually applies to invalid attempts to delete classes or properties.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidOperator">
@@ -634,14 +597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operator is not valid for this property type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidParameter">
@@ -651,14 +613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One of the parameters to the call is not correct.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidParameterID">
@@ -668,14 +629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A method parameter has an invalid ID qualifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidProperty">
@@ -685,14 +645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The property type is not recognized.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidPropertyType">
@@ -702,14 +661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CIM type specified for a property is not valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidProviderRegistration">
@@ -719,14 +677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A provider referenced in the schema has an incorrect or incomplete registration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidQualifier">
@@ -736,14 +693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt has been made to mismatch qualifiers, such as putting [ManagementKey] on an object instead of a property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidQualifierType">
@@ -753,14 +709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The value provided for a qualifier was not a legal qualifier type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidQuery">
@@ -770,14 +725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The query was not syntactically valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidQueryType">
@@ -787,14 +741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The requested query language is not supported.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidStream">
@@ -804,14 +757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One or more network packets were corrupted during a remote session.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidSuperclass">
@@ -821,14 +773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified superclass is not valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidSyntax">
@@ -838,14 +789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reserved for future use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalCredentials">
@@ -855,14 +805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user specified a user name, password, or authority on a local connection. The user must use an empty user name and password and rely on default security.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarshalInvalidSignature">
@@ -872,14 +821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The packet is corrupted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarshalVersionMismatch">
@@ -889,14 +837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The packet has an unsupported version.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MethodDisabled">
@@ -906,14 +853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt was made to execute a method marked with [disabled].</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MethodNotImplemented">
@@ -923,14 +869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt was made to execute a method not marked with [implemented] in any relevant class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingAggregationList">
@@ -940,14 +885,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A GROUP BY clause was used. Aggregation on all properties is not supported.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingGroupWithin">
@@ -957,14 +901,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A GROUP BY clause was used without the corresponding GROUP WITHIN clause.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingParameterID">
@@ -974,14 +917,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A parameter was missing from the method call.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoError">
@@ -991,14 +933,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operation was successful.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMoreData">
@@ -1008,14 +949,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No more data is available from the enumeration; the user should terminate the enumeration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonconsecutiveParameterIDs">
@@ -1025,14 +965,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One or more of the method parameters have ID qualifiers that are out of sequence.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NondecoratedObject">
@@ -1042,14 +981,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reserved for future use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAvailable">
@@ -1059,14 +997,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The resource, typically a remote server, is not currently available.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotEventClass">
@@ -1076,14 +1013,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The FROM clause of a filtering query references a class that is not an event class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotFound">
@@ -1093,14 +1029,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The object could not be found.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSupported">
@@ -1110,14 +1045,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The feature or operation is not supported.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OperationCanceled">
@@ -1127,14 +1061,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operation was canceled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfDiskSpace">
@@ -1144,14 +1077,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There is not enough free disk space to continue the operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfMemory">
@@ -1161,14 +1093,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There was not enough memory for the operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverrideNotAllowed">
@@ -1178,14 +1109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The add operation cannot be performed on the qualifier because the owning object does not permit overrides.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ParameterIDOnRetval">
@@ -1195,14 +1125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The return value for a method has an ID qualifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PartialResults">
@@ -1212,14 +1141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user did not receive all of the requested objects because of inaccessible resources (other than security violations).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pending">
@@ -1229,14 +1157,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A request is still in progress; however, the results are not yet available.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrivilegeNotHeld">
@@ -1246,14 +1173,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operation failed because the client did not have the necessary security privilege.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropagatedMethod">
@@ -1263,14 +1189,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt was made to reuse an existing method name from a superclass, and the signatures did not match.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropagatedProperty">
@@ -1280,14 +1205,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user attempted to delete a property that was not owned. The property was inherited from a parent class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropagatedQualifier">
@@ -1297,14 +1221,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user attempted to delete a qualifier that was not owned. The qualifier was inherited from a parent class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropertyNotAnObject">
@@ -1314,14 +1237,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dot notation was used on a property that is not an embedded object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderFailure">
@@ -1331,14 +1253,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The provider failed after initialization.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderLoadFailure">
@@ -1348,14 +1269,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>COM cannot locate a provider referenced in the schema.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderNotCapable">
@@ -1365,14 +1285,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The provider cannot perform the requested operation, such as requesting a query that is too complex, retrieving an instance, creating or updating a class, deleting a class, or enumerating a class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderNotFound">
@@ -1382,14 +1301,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A provider referenced in the schema does not have a corresponding registration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueryNotImplemented">
@@ -1399,14 +1317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reserved for future use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueOverflow">
@@ -1416,14 +1333,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The asynchronous delivery queue overflowed from the *event consumer* being too slow.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -1433,14 +1349,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The property that you are attempting to modify is read-only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RefresherBusy">
@@ -1450,14 +1365,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The refresher is busy with another operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegistrationTooBroad">
@@ -1467,14 +1381,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The provider registration overlaps with the system event domain.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegistrationTooPrecise">
@@ -1484,14 +1397,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A WITHIN clause was not used in this query.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResetToDefault">
@@ -1501,14 +1413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An overridden property was deleted. This value is returned to signal that the original, non-overridden value has been restored as a result of the deletion.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerTooBusy">
@@ -1518,14 +1429,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The delivery of an event has failed. The provider may choose to re-raise the event.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShuttingDown">
@@ -1535,14 +1445,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user has requested an operation while WMI is in the process of closing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemProperty">
@@ -1552,14 +1461,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There was an attempt to get qualifiers on a system property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Timedout">
@@ -1569,14 +1477,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A call timed out. This is not an error condition; therefore, some results may have been returned.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TooManyProperties">
@@ -1586,14 +1493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt was made to create more properties than the current version of the class supports.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TooMuchData">
@@ -1603,14 +1509,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reserved for future use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransportFailure">
@@ -1620,14 +1525,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A networking error that prevents normal operation has occurred.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeMismatch">
@@ -1637,14 +1541,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A type mismatch occurred.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unexpected">
@@ -1654,14 +1557,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The client made an unexpected and illegal sequence of calls.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UninterpretableProviderQuery">
@@ -1671,14 +1573,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An *event provider* registration query (**__EventProviderRegistration**) did not specify the classes for which events were provided.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownObjectType">
@@ -1688,14 +1589,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An object with an incorrect type or version was encountered during marshaling.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownPacketType">
@@ -1705,14 +1605,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A packet with an incorrect type or version was encountered during marshaling.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnparsableQuery">
@@ -1722,14 +1621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The filtering query is syntactically invalid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedClassUpdate">
@@ -1739,14 +1637,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified class is not supported.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedParameter">
@@ -1756,14 +1653,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One or more parameter values, such as a query text, is too complex or unsupported. WMI is requested to retry the operation with simpler parameters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedPutExtension">
@@ -1773,14 +1669,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The provider does not support the requested put operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdateOverrideNotAllowed">
@@ -1790,14 +1685,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attempt was made in a derived class to override a non-overrideable qualifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdatePropagatedMethod">
@@ -1807,14 +1701,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A method was redeclared with a conflicting signature in a derived class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdateTypeMismatch">
@@ -1824,14 +1717,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A property was redefined with a conflicting type in a derived class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ValueOutOfRange">
@@ -1841,14 +1733,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The request was made with an out-of-range value, or is incompatible with the type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

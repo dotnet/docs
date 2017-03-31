@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultReason" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a text description of a SOAP fault.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FaultReason class contains a set of <xref:System.ServiceModel.FaultReasonText?displayProperty=fullName> objects, each of which contains a description of the fault in a specific language.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,20 +23,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="translations" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.FaultReasonText&gt;" />
       </Parameters>
       <Docs>
-        <param name="translations">A list of <see cref="T:System.ServiceModel.FaultReasonText" /> objects; each object describes the fault in a specific language.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReason" /> class using the specified list of fault translations.</summary>
+        <param name="translations">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="translations" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="translations" /> is empty or one or more items is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -53,15 +42,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="translation" Type="System.ServiceModel.FaultReasonText" />
       </Parameters>
       <Docs>
-        <param name="translation">An array of <see cref="T:System.ServiceModel.FaultReasonText" /> objects that correspond to fault descriptions in different languages.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReason" /> class using the specified text element that describes the fault in a specific language.</summary>
+        <param name="translation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,15 +61,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">A description of the reason the fault occurred.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReason" /> class using the specified fault description.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +80,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,24 +88,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the fault description in the language used by the current thread.</summary>
-        <returns>A <see cref="T:System.ServiceModel.FaultReasonText" /> object that contains the fault description.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A translation is always returned.  
-  
--   If only one translation exists, it is returned.  
-  
--   If there is an exact match for a <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>, that is returned.  
-  
--   If there is a translation for a parent language of <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>, that is returned.  
-  
--   Otherwise, the first translation in the set is returned.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingTranslation">
@@ -126,7 +100,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,26 +110,10 @@
         <Parameter Name="cultureInfo" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="cultureInfo">A <see cref="T:System.Globalization.CultureInfo" /> object that specifies the language of the fault description.</param>
-        <summary>Gets the fault description in the specified language.</summary>
-        <returns>The fault text in the specified language.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A translation is always returned.  
-  
--   If only one translation exists, it is returned.  
-  
--   If there is an exact match for a <xref:System.Globalization.CultureInfo?displayProperty=fullName>, that is returned.  
-  
--   If there is a translation for a parent language of <xref:System.Globalization.CultureInfo?displayProperty=fullName>, that is returned.  
-  
--   Otherwise, the first translation in the set is returned.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Globalization.CultureInfo" /> is <see langword="null" />.</exception>
+        <param name="cultureInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -165,7 +123,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,8 +131,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the fault reason as a string.</summary>
-        <returns>A string containing the reason for the fault.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,15 +143,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedReadOnlyCollection&lt;System.ServiceModel.FaultReasonText&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of fault descriptions in different languages.</summary>
-        <value>A collection of <see cref="T:System.ServiceModel.FaultReasonText" /> objects, where each object describes the fault in a different language.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,10 +1,9 @@
 <Type Name="MetadataSection" FullName="System.ServiceModel.Description.MetadataSection">
   <TypeSignature Language="C#" Value="public class MetadataSection" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetadataSection extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi MetadataSection extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MetadataSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,32 +12,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Xml.Serialization.XmlRoot(ElementName="MetadataSection", Namespace="http://schemas.xmlsoap.org/ws/2004/09/mex")</AttributeName>
+      <AttributeName>System.Xml.Serialization.XmlRoot("MetadataSection", Namespace="http://schemas.xmlsoap.org/ws/2004/09/mex")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents XML metadata or references to XML metadata.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MetadataSection class conforms to the definition of the `wsx:Metadata/wsx:MetadataSection` element in the WS-Metadata Exchange specification and contains XML metadata or references to XML metadata.  
-  
- A MetadataSection object contains one dialect of metadata in XML form (such as a Web Services Description Language or WSDL file). You can add a MetadataSection to a collection of XML metadata represented by a <xref:System.ServiceModel.Description.MetadataSet> object. Much of the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] metadata system, such as the <xref:System.ServiceModel.Description.MetadataExchangeClient> class, use the <xref:System.ServiceModel.Description.MetadataSet> class to import or export service metadata in XML form.  
-  
- For example, to export [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] contract or endpoint objects to a <xref:System.ServiceModel.Description.MetadataSet> object that contains the equivalent metadata in XML form, call the appropriate Export methods on the <xref:System.ServiceModel.Description.WsdlExporter> class, passing either <xref:System.ServiceModel.Description.ContractDescription> or <xref:System.ServiceModel.Description.ServiceEndpoint> objects, and then call the <xref:System.ServiceModel.Description.WsdlExporter.GetGeneratedMetadata%2A> method.  
-  
- To import XML-based metadata from a <xref:System.ServiceModel.Description.MetadataSet> object into [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)]<xref:System.ServiceModel.Description.ContractDescription>, <xref:System.ServiceModel.Description.ServiceEndpoint>, and <xref:System.ServiceModel.Channels.Binding> objects, pass a <xref:System.ServiceModel.Description.MetadataSet> object to the constructor of the <xref:System.ServiceModel.Description.WsdlImporter> class and call one of the import methods.  
-  
-   
-  
-## Examples  
- The following code example shows how to retrieve the MetadataSection objects from a <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=fullName> and iterate through them to write the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> and <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> properties to the console.  
-  
- [!code-cs[MetadataResolver#3](~/add/codesnippet/csharp/metadataresolver.client/client.cs#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataSection" /> class with no dialect, identifier, or XML metadata.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,18 +50,11 @@
         <Parameter Name="metadata" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dialect">The dialect of the metadata.</param>
-        <param name="identifier">An identifier for the metadata.</param>
-        <param name="metadata">The XML metadata.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataSection" /> class using the specified dialect, identifier, and XML metadata.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the MetadataSection constructor to specify the metadata to be included in this <xref:System.ServiceModel.Description.MetadataSection>, its dialect and its identifier. The metadata object must be serializable using the <xref:System.Xml.Serialization.XmlSerializer> class so that the <xref:System.ServiceModel.Description.MetadataSection> object can be serialized. If it is not serializable, an exception is thrown when the object is serialized. Use a <xref:System.ServiceModel.Description.MetadataLocation> or <xref:System.ServiceModel.Description.MetadataReference> object for the `metadata` parameter if you want to include a reference to the metadata instead of the metadata itself.  
-  
- ]]></format>
-        </remarks>
+        <param name="dialect">To be added.</param>
+        <param name="identifier">To be added.</param>
+        <param name="metadata">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -94,7 +64,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -106,19 +75,9 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlAttribute&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of XML attributes that you can use to add or remove attributes extensions to the metadata.</summary>
-        <value>The collection of XML attributes for the <see cref="T:System.ServiceModel.Description.MetadataSection" />. The default collection is empty.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Attributes property to add or remove attribute extensions.  
-  
-> [!NOTE]
->  The dialect and identifier attributes are not included in this collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFromPolicy">
@@ -128,7 +87,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,20 +97,11 @@
         <Parameter Name="identifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="policy">An XML representation of a policy as defined in WS-Policy.</param>
-        <param name="identifier">An identifier for the policy.</param>
-        <summary>Creates a <see cref="T:System.ServiceModel.Description.MetadataSection" /> from the specified policy information.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Description.MetadataSection" /> that contains the specified policy expression with the specified identifier.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use CreateFromPolicy method to create a <xref:System.ServiceModel.Description.MetadataSection> for a WS-Policy policy expression. The <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> property is set to <xref:System.ServiceModel.Description.MetadataSection.PolicyDialect%2A> and the `identifier` is assigned to the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> property. The recommend identifier is the `wsp:Name` attribute for the policy expression.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The XML element is not a policy element.</exception>
-        <exception cref="T:System.ArgumentNullException">The policy is <see langword="null" />.</exception>
+        <param name="policy">To be added.</param>
+        <param name="identifier">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFromSchema">
@@ -162,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,18 +120,10 @@
         <Parameter Name="schema" Type="System.Xml.Schema.XmlSchema" />
       </Parameters>
       <Docs>
-        <param name="schema">An XML Schema document.</param>
-        <summary>Creates a <see cref="T:System.ServiceModel.Description.MetadataSection" /> from the specified <see cref="T:System.Xml.Schema.XmlSchema" /> object.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Description.MetadataSection" /> containing the specified XML schema.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this static factory method to quickly create a <xref:System.ServiceModel.Description.MetadataSection> for a XML Schema document. The <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> property is assigned the value of <xref:System.ServiceModel.Description.MetadataSection.XmlSchemaDialect%2A> and the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> property is assigned the value of the target namespace of the XML Schema document.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The schema is <see langword="null" />.</exception>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFromServiceDescription">
@@ -193,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -203,18 +142,10 @@
         <Parameter Name="serviceDescription" Type="System.Web.Services.Description.ServiceDescription" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">The <see cref="T:System.Web.Services.Description.ServiceDescription" /> used to create a <see cref="T:System.ServiceModel.Description.MetadataSection" /> object.</param>
-        <summary>Returns a <see cref="T:System.ServiceModel.Description.MetadataSection" /> that contains the specified <see cref="T:System.Web.Services.Description.ServiceDescription" />.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Description.MetadataSection" /> that contains the specified <see cref="T:System.Web.Services.Description.ServiceDescription" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this static factory method to quickly create a <xref:System.ServiceModel.Description.MetadataSection> for a WSDL document. The <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> property is assigned the value of <xref:System.ServiceModel.Description.MetadataSection.ServiceDescriptionDialect%2A> and the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> property is assigned the value of the target namespace of the WSDL document.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="serviceDescription" /> is <see langword="null" />.</exception>
+        <param name="serviceDescription">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dialect">
@@ -224,7 +155,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -236,31 +166,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates the type of metadata.</summary>
-        <value>The dialect for the metadata. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The dialect indicates the type of metadata in this <xref:System.ServiceModel.Description.MetadataSection>. The dialect strings with supported object models are:  
-  
--   <xref:System.ServiceModel.Description.MetadataSection.MetadataExchangeDialect%2A>  
-  
--   <xref:System.ServiceModel.Description.MetadataSection.PolicyDialect%2A>  
-  
--   <xref:System.ServiceModel.Description.MetadataSection.ServiceDescriptionDialect%2A>  
-  
--   <xref:System.ServiceModel.Description.MetadataSection.XmlSchemaDialect%2A>  
-  
-   
-  
-## Examples  
- The following code example shows how to retrieve the <xref:System.ServiceModel.Description.MetadataSection> objects from a <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=fullName> and iterate through them to write the <xref:System.ServiceModel.Description.MetadataSection.Identifier%2A> and Dialect properties to the console.  
-  
- [!code-cs[MetadataResolver#3](~/add/codesnippet/csharp/metadataresolver.client/client.cs#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Identifier">
@@ -270,7 +178,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -282,23 +189,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an identifier for the metadata.</summary>
-        <value>The identifier for the metadata. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The identifier for the metadata in this <xref:System.ServiceModel.Description.MetadataSection>. The value depends on the type of metadata.  
-  
-   
-  
-## Examples  
- The following code example shows how to retrieve the <xref:System.ServiceModel.Description.MetadataSection> objects from a <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=fullName> and iterate through them to write the Identifier and <xref:System.ServiceModel.Description.MetadataSection.Dialect%2A> properties to the console.  
-  
- [!code-cs[MetadataResolver#3](~/add/codesnippet/csharp/metadataresolver.client/client.cs#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -308,7 +201,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -316,43 +208,28 @@
           <AttributeName>System.Xml.Serialization.XmlAnyElement</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlElement("schema", typeof(System.Xml.Schema.XmlSchema), Namespace="http://www.w3.org/2001/XMLSchema")</AttributeName>
+          <AttributeName>System.Xml.Serialization.XmlElement("Location", IsNullable=false, Namespace="http://schemas.xmlsoap.org/ws/2004/09/mex", Type=typeof(System.ServiceModel.Description.MetadataLocation))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlElement("definitions", typeof(System.Web.Services.Description.ServiceDescription), Namespace="http://schemas.xmlsoap.org/wsdl/")</AttributeName>
+          <AttributeName>System.Xml.Serialization.XmlElement("Metadata", IsNullable=false, Namespace="http://schemas.xmlsoap.org/ws/2004/09/mex", Type=typeof(System.ServiceModel.Description.MetadataSet))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlElement("MetadataReference", typeof(System.ServiceModel.Description.MetadataReference), Namespace="http://schemas.xmlsoap.org/ws/2004/09/mex")</AttributeName>
+          <AttributeName>System.Xml.Serialization.XmlElement("schema", IsNullable=false, Namespace="http://www.w3.org/2001/XMLSchema", Type=typeof(System.Xml.Schema.XmlSchema))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlElement("Location", typeof(System.ServiceModel.Description.MetadataLocation), Namespace="http://schemas.xmlsoap.org/ws/2004/09/mex")</AttributeName>
+          <AttributeName>System.Xml.Serialization.XmlElement("definitions", IsNullable=false, Namespace="http://schemas.xmlsoap.org/wsdl/", Type=typeof(System.Web.Services.Description.ServiceDescription))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlElement("Metadata", typeof(System.ServiceModel.Description.MetadataSet), Namespace="http://schemas.xmlsoap.org/ws/2004/09/mex")</AttributeName>
+          <AttributeName>System.Xml.Serialization.XmlElement("MetadataReference", IsNullable=false, Namespace="http://schemas.xmlsoap.org/ws/2004/09/mex", Type=typeof(System.ServiceModel.Description.MetadataReference))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the contained metadata object.</summary>
-        <value>The metadata contents for this <see cref="T:System.ServiceModel.Description.MetadataSection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Metadata property to access or modify the metadata content contained in the <xref:System.ServiceModel.Description.MetadataSection>. The metadata object can be <xref:System.ServiceModel.Description.MetadataReference> or a <xref:System.ServiceModel.Description.MetadataLocation> as a reference to the metadata content. When a <xref:System.ServiceModel.Description.MetadataSection> is deserialized, the type of the metadata object is determined from the XML content. The following table describes the possible return values.  
-  
-|Type of XML metadata|Returned type|  
-|--------------------------|-------------------|  
-|WSDL document|<xref:System.Web.Services.Description.ServiceDescription?displayProperty=fullName>|  
-|XML Schema|<xref:System.Xml.Schema.XmlSchema?displayProperty=fullName>|  
-|Metadata reference|<xref:System.ServiceModel.Description.MetadataReference?displayProperty=fullName>|  
-|Metadata location|<xref:System.ServiceModel.Description.MetadataLocation?displayProperty=fullName>|  
-|Policy, and all other XML content|<xref:System.Xml.XmlElement?displayProperty=fullName>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MetadataExchangeDialect">
@@ -362,23 +239,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains the value of the metadata exchange dialect.</summary>
-        <value>The dialect for a WS-Metadata Exchange document.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The dialect for a WS-Metadata Exchange document.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PolicyDialect">
@@ -388,23 +257,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains the value of the WS-Policy dialect.</summary>
-        <value>The dialect for a WS-Policy policy expression.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The dialect for a WS-Policy policy expression.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceDescriptionDialect">
@@ -414,23 +275,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains the value of the Web Services Description Language (WSDL) dialect.</summary>
-        <value>The dialect for a WSDL document.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The dialect.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlSchemaDialect">
@@ -440,23 +293,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains the value of the XML Schema dialect.</summary>
-        <value>The dialect for an XML Schema document.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The dialect for an XML Schema document.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

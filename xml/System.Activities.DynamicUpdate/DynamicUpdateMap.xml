@@ -19,33 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies options for a dynamic update map.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the versioning and dynamic update functionality of Windows Workflow Foundation. [!INCLUDE[crabout](~/add/includes/crabout-md.md)] workflow versioning, workflow identity, and dynamic update, see the following topics.  
-  
- [Workflow Versioning](http://go.microsoft.com/fwlink/?LinkID=271561)  
- Describes the workflow versioning functionality introduced in [!INCLUDE[net_v45](~/add/includes/net-v45-md.md)].  
-  
- [Dynamic Update](http://go.microsoft.com/fwlink/?LinkId=271563)  
- Describes how to update the workflow definition of a persisted workflow instance by using dynamic update.  
-  
- [Using WorkflowApplication Identity and Versioning](http://go.microsoft.com/fwlink/?LinkId=271564)  
- Describes how to use <xref:System.Activities.WorkflowIdentity> to host multiple versions of a workflow side-by-side.  
-  
- [Side by Side Versioning in WorkflowServiceHost](http://go.microsoft.com/fwlink/?LinkId=271565)  
- Describes how to host multiple versions of a workflow on a single endpoint.  
-  
- [How to: Host Multiple Versions of a Workflow Side-by-Side](http://go.microsoft.com/fwlink/?LinkId=271566)  
- This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating a workflow definition, and hosting workflows using both the old and new definition at the same time.  
-  
- [How to: Update the Definition of a Running Workflow Instance](http://go.microsoft.com/fwlink/?LinkId=271567)  
- This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating persisted workflow instances to use a new workflow definition.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CalculateImplementationMapItems">
@@ -64,9 +39,9 @@
         <Parameter Name="activityDefinitionToBeUpdated" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="activityDefinitionToBeUpdated">The activity definition to be updated.</param>
-        <summary>Calculates the map items used in the implementation of <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMap" /> with specified activity definition.</summary>
-        <returns>The calculated map items.</returns>
+        <param name="activityDefinitionToBeUpdated">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +62,10 @@
         <Parameter Name="environment" Type="System.Activities.LocationReferenceEnvironment" />
       </Parameters>
       <Docs>
-        <param name="activityDefinitionToBeUpdated">The activity definition to be updated.</param>
-        <param name="environment">The environment.</param>
-        <summary>Calculates the map items used in the implementation of <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMap" /> with specified activity definition and environment..</summary>
-        <returns>The calculated map items.</returns>
+        <param name="activityDefinitionToBeUpdated">To be added.</param>
+        <param name="environment">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,9 +85,9 @@
         <Parameter Name="workflowDefinitionToBeUpdated" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="workflowDefinitionToBeUpdated">The activity definition to be updated.</param>
-        <summary>Calculates the map items used in <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMap" /> with specified workflow definition.</summary>
-        <returns>The calculated map items.</returns>
+        <param name="workflowDefinitionToBeUpdated">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,10 +108,10 @@
         <Parameter Name="environment" Type="System.Activities.LocationReferenceEnvironment" />
       </Parameters>
       <Docs>
-        <param name="workflowDefinitionToBeUpdated">The activity definition to be updated.</param>
-        <param name="environment">The environment.</param>
-        <summary>Calculates the map items used in <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMap" /> with specified workflow definition and environment.</summary>
-        <returns>The calculated map items.</returns>
+        <param name="workflowDefinitionToBeUpdated">To be added.</param>
+        <param name="environment">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +137,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="maps">The collection of maps to be merged.</param>
-        <summary>Merges the dynamic update map.</summary>
-        <returns>The merged dynamic update map.</returns>
+        <param name="maps">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,9 +159,9 @@
         <Parameter Name="maps" Type="System.Collections.Generic.IEnumerable&lt;System.Activities.DynamicUpdate.DynamicUpdateMap&gt;" />
       </Parameters>
       <Docs>
-        <param name="maps">The maps to be merged.</param>
-        <summary>Merges the dynamic update map.</summary>
-        <returns>The merged dynamic update map.</returns>
+        <param name="maps">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +178,8 @@
         <ReturnType>System.Activities.DynamicUpdate.DynamicUpdateMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dynamic update map without changes.</summary>
-        <value>The dynamic update map without changes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,10 +200,10 @@
         <Parameter Name="originalWorkflowDefinition" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="updatedWorkflowDefinition">The updated workflow information.</param>
-        <param name="originalWorkflowDefinition">The original workflow definition.</param>
-        <summary>Displays the dynamic update map query.</summary>
-        <returns>The dynamic update map query.</returns>
+        <param name="updatedWorkflowDefinition">To be added.</param>
+        <param name="originalWorkflowDefinition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

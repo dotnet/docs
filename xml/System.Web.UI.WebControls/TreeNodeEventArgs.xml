@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNodeEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,27 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged" />, <see cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed" />, <see cref="E:System.Web.UI.WebControls.TreeView.TreeNodeDataBound" />, <see cref="E:System.Web.UI.WebControls.TreeView.TreeNodeExpanded" />, and <see cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" /> events of the <see cref="T:System.Web.UI.WebControls.TreeView" /> control. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TreeNodeEventArgs class is used to store the event data that is passed to an event-handling method.  
-  
- For a list of the initial property values for an instance of the TreeNodeEventArgs class, see <xref:System.Web.UI.WebControls.TreeNodeEventArgs.%23ctor%28System.Web.UI.WebControls.TreeNode%29>.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to populate a node dynamically using the TreeNodeEventArgs object that is passed to the event-handling method.  
-  
- [!code-cs[TreeViewPopulateNodesFromClient#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_327_1.aspx)]
- [!code-vb[TreeViewPopulateNodesFromClient#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_327_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,32 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="node" Type="System.Web.UI.WebControls.TreeNode" />
       </Parameters>
       <Docs>
-        <param name="node">A <see cref="T:System.Web.UI.WebControls.TreeNode" /> that represents the current node when the event is raised.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNodeEventArgs" /> class using the specified <see cref="T:System.Web.UI.WebControls.TreeNode" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the TreeNodeEventArgs constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TreeNodeEventArgs> class.  
-  
-> [!NOTE]
->  The TreeNodeEventArgs constructor is used primarily by control developers when raising events.  
-  
- The following table shows the initial property value for an instance of the <xref:System.Web.UI.WebControls.TreeNodeEventArgs> class.  
-  
-|Property|Initial value|  
-|--------------|-------------------|  
-|<xref:System.Web.UI.WebControls.TreeNodeEventArgs.Node%2A>|The <xref:System.Web.UI.WebControls.TreeNode> contained in `node`.|  
-  
- ]]></format>
-        </remarks>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Node">
@@ -77,31 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the node that raised the event.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.TreeNode" /> that represents the node that raised the event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Node property to access the properties of the node that raised the event. The Node property returns a <xref:System.Web.UI.WebControls.TreeNode> object and is commonly used to determine the contents of the node, to modify the properties of the node, or to add child nodes dynamically.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Node property to determine the text value of an expanded node.  
-  
- [!code-cs[TreeViewTreeNodeExpand#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_411_1.aspx)]
- [!code-vb[TreeViewTreeNodeExpand#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_411_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

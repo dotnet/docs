@@ -15,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a value provider for single key/value lookups.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class does not contain the actual look-up mechanism; it delegates that to derived classes using the <xref:System.Web.ModelBinding.SimpleValueProvider.FetchValue%2A> method. Examples of simple value providers are the <xref:System.Web.ModelBinding.ViewStateValueProvider> class and the <xref:System.Web.ModelBinding.ControlValueProvider> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,8 +32,8 @@
         <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">The execution context.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.SimpleValueProvider" /> class by using the specified execution context.</summary>
+        <param name="modelBindingExecutionContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +51,9 @@
         <Parameter Name="cultureInfo" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">The execution context.</param>
-        <param name="cultureInfo">The culture information.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.SimpleValueProvider" /> class by using the specified execution context and culture information.</summary>
+        <param name="modelBindingExecutionContext">To be added.</param>
+        <param name="cultureInfo">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,12 +73,10 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">The prefix.</param>
-        <summary>Gets a value that indicates whether the value provider contains the specified prefix.</summary>
-        <returns>
-          <see langword="true" /> if the value provider contains the specified prefix; otherwise, <see langword="false" />.</returns>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="prefix" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FetchValue">
@@ -104,9 +95,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the value to retrieve.</param>
-        <summary>When implemented in a derived class, returns the value for the specified key.</summary>
-        <returns>The value.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,11 +117,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the value to retrieve.</param>
-        <summary>Calls the <see cref="System.Web.ModelBinding.SimpleValueProvider.FetchValue%2A" /> method and then uses the returned value to instantiate a new instance of the <see cref="T:System.Web.ModelBinding.ValueProviderResult" /> class.</summary>
-        <returns>The value.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ModelBindingExecutionContext">
@@ -146,8 +136,8 @@
         <ReturnType>System.Web.ModelBinding.ModelBindingExecutionContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the execution context.</summary>
-        <value>The execution context.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.ImportEngine" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,18 +19,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Performs composition for containers.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is used internally by <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>. You should generally not use it unless you are authoring a container.  
-  
-> [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,14 +30,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sourceProvider" Type="System.ComponentModel.Composition.Hosting.ExportProvider" />
       </Parameters>
       <Docs>
-        <param name="sourceProvider">The <see cref="T:System.ComponentModel.Composition.Hosting.ExportProvider" /> that provides the <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> access to <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> objects.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> class.</summary>
+        <param name="sourceProvider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,6 +49,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -64,10 +57,9 @@
         <Parameter Name="isThreadSafe" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sourceProvider">The <see cref="T:System.ComponentModel.Composition.Hosting.ExportProvider" /> that provides the <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> access to <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> objects.</param>
-        <param name="isThreadSafe">
-          <see langword="true" /> if thread safety is required; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> class, optionally in thread-safe mode.</summary>
+        <param name="sourceProvider">To be added.</param>
+        <param name="isThreadSafe">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,6 +70,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -85,9 +78,9 @@
         <Parameter Name="compositionOptions" Type="System.ComponentModel.Composition.Hosting.CompositionOptions" />
       </Parameters>
       <Docs>
-        <param name="sourceProvider">The <see cref="T:System.ComponentModel.Composition.Hosting.ExportProvider" /> that provides the <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> access to <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> objects.</param>
-        <param name="compositionOptions">An object that specifies options that affect the behavior of the engine.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> class with the specified options.</summary>
+        <param name="sourceProvider">To be added.</param>
+        <param name="compositionOptions">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,6 +91,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,20 +99,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the current instance of the <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call `Dispose` when you are finished using the <xref:System.ComponentModel.Composition.Hosting.ImportEngine>. The `Dispose` method leaves the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call `Dispose` before you release your last reference to the <xref:System.ComponentModel.Composition.Hosting.ImportEngine>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Composition.Hosting.ImportEngine> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -128,6 +110,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,9 +120,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,6 +132,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,9 +143,9 @@
         <Parameter Name="atomicComposition" Type="System.ComponentModel.Composition.Hosting.AtomicComposition" />
       </Parameters>
       <Docs>
-        <param name="part">The part to preview the imports of.</param>
-        <param name="atomicComposition">The composition transaction to use, or <see langword="null" /> for no composition transaction.</param>
-        <summary>Previews all the required imports for the specified part to make sure that they can be satisfied, without actually setting them.</summary>
+        <param name="part">To be added.</param>
+        <param name="atomicComposition">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,6 +156,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,9 +167,9 @@
         <Parameter Name="atomicComposition" Type="System.ComponentModel.Composition.Hosting.AtomicComposition" />
       </Parameters>
       <Docs>
-        <param name="part">The part to release the imports of.</param>
-        <param name="atomicComposition">The composition transaction to use, or <see langword="null" /> for no composition transaction.</param>
-        <summary>Releases all the exports used to satisfy the imports of the specified part.</summary>
+        <param name="part">To be added.</param>
+        <param name="atomicComposition">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,6 +180,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,8 +190,8 @@
         <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePart" />
       </Parameters>
       <Docs>
-        <param name="part">The part to satisfy the imports of.</param>
-        <summary>Satisfies the imports of the specified part.</summary>
+        <param name="part">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,6 +202,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,8 +212,8 @@
         <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePart" />
       </Parameters>
       <Docs>
-        <param name="part">The part to satisfy the imports of.</param>
-        <summary>Satisfies the imports of the specified part without registering them for recomposition.</summary>
+        <param name="part">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

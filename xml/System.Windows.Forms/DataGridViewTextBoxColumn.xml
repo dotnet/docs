@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewTextBoxColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,25 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Hosts a collection of <see cref="T:System.Windows.Forms.DataGridViewTextBoxCell" /> cells.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataGridViewTextBoxColumn class is a specialized type of <xref:System.Windows.Forms.DataGridViewColumn> class used to logically host cells that enable displaying and editing of text strings. A DataGridViewTextBoxColumn has an associated <xref:System.Windows.Forms.DataGridViewTextBoxCell> object in every <xref:System.Windows.Forms.DataGridViewRow> that intersects it. When a <xref:System.Windows.Forms.DataGridViewTextBoxCell> becomes activated, it supplies a <xref:System.Windows.Forms.DataGridViewTextBoxEditingControl> control to handle user input.  
-  
- The sort mode for this column type defaults to <xref:System.Windows.Forms.DataGridViewColumnSortMode>.  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this type.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewSizingScenarios#20](~/add/codesnippet/csharp/t-system.windows.forms.d_113_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewSizingScenarios#20](~/add/codesnippet/visualbasic/t-system.windows.forms.d_113_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,25 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewTextBoxColumn" /> class to the default state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor initializes the column by setting the following properties.  
-  
-|Property|Value|  
-|--------------|-----------|  
-|<xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A>|A newly created <xref:System.Windows.Forms.DataGridViewTextBoxCell>.|  
-|<xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A>|<xref:System.Windows.Forms.DataGridViewColumnSortMode>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellTemplate">
@@ -73,7 +42,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -88,29 +56,9 @@
         <ReturnType>System.Windows.Forms.DataGridViewCell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template used to model cell appearance.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataGridViewCell" /> that all other cells in the column are modeled after.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The constructor for the <xref:System.Windows.Forms.DataGridViewTextBoxColumn> class initializes this property to a newly created <xref:System.Windows.Forms.DataGridViewTextBoxCell>.  
-  
-> [!CAUTION]
->  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=fullName> method).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Manipulate%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/add/codesnippet/cpp/p-system.windows.forms.d_148_1.cpp)]
- [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#120](~/add/codesnippet/visualbasic/p-system.windows.forms.d_148_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.ButtonDemos#120](~/add/codesnippet/csharp/p-system.windows.forms.d_148_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">The set type is not compatible with type <see cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxInputLength">
@@ -120,7 +68,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -132,19 +79,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of characters that can be entered into the text box.</summary>
-        <value>The maximum number of characters that can be entered into the text box; the default value is 32767.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MaxInputLength property does not affect the length of text entered programmatically through the cell's value or through cell formatting. It affects only what the user can input and edit.  
-  
- Getting or setting this property gets or sets the <xref:System.Windows.Forms.DataGridViewTextBoxCell.MaxInputLength%2A> property of the object returned by the <xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A> property. Setting this property also sets the <xref:System.Windows.Forms.DataGridViewTextBoxCell.MaxInputLength%2A> property of every cell in the column. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The value of the <see cref="System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A" /> property is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortMode">
@@ -154,7 +91,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -166,32 +102,9 @@
         <ReturnType>System.Windows.Forms.DataGridViewColumnSortMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the sort mode for the column.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataGridViewColumnSortMode" /> that specifies the criteria used to order the rows based on the cell values in a column.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.Windows.Forms.DataGridView> control is sorted using a column with a SortMode property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode>, a sorting glyph is automatically displayed in the column header.  
-  
- When the control is sorted using a column with a SortMode property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A> property.  
-  
- The default sort mode of a <xref:System.Windows.Forms.DataGridViewTextBoxColumn> is <xref:System.Windows.Forms.DataGridViewColumnSortMode>. The default sort mode for other column types is <xref:System.Windows.Forms.DataGridViewColumnSortMode>.  
-  
- The SortMode value does not prevent you from sorting a column programmatically, although other restrictions may apply. For more information, see the <xref:System.Windows.Forms.DataGridView.Sort%2A> method.  
-  
- A SortMode property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode> will not prevent the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick?displayProperty=fullName> event from occurring, but it will prevent the header from changing its appearance when it is clicked.  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this property.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc#066](~/add/codesnippet/csharp/p-system.windows.forms.d_268_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#066](~/add/codesnippet/visualbasic/p-system.windows.forms.d_268_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -201,7 +114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,8 +121,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a string that describes the column.</summary>
-        <returns>A <see cref="T:System.String" /> that describes the column.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

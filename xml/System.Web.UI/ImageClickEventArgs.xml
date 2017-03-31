@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ImageClickEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for any events that occur when a user clicks an image-based ASP.NET server control, such as the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> or <see cref="T:System.Web.UI.WebControls.ImageButton" /> server controls. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class passes the location where a user clicked an <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control or an <xref:System.Web.UI.WebControls.ImageButton> Web server control. Clicking an <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control causes a <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event to occur, while clicking an <xref:System.Web.UI.WebControls.ImageButton> server control causes a <xref:System.Web.UI.WebControls.ImageButton.Click> event to occur. You can then use event handlers to programmatically respond to the event based on the value of these coordinates.  
-  
-> [!NOTE]
->  The origin coordinates (0,0) are located at the upper left corner of the image.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
-   
-  
-## Examples  
- The following code example demonstrates an ASP.NET page that uses the information provided by this class to display the coordinates of a user's click on an image.  
-  
- [!code-cs[SystemWebUI.ImageClickEventArgs Sample#1](~/add/codesnippet/csharp/t-system.web.ui.imagecli_0_1.aspx)]
- [!code-vb[SystemWebUI.ImageClickEventArgs Sample#1](~/add/codesnippet/visualbasic/t-system.web.ui.imagecli_0_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -51,9 +29,9 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate where the user clicked an image-based ASP.NET server control.</param>
-        <param name="y">The y-coordinate where the user clicked an image-based ASP.NET server control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ImageClickEventArgs" /> class using the <paramref name="x" /> and <paramref name="y" /> parameters.</summary>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,11 +51,11 @@
         <Parameter Name="yRaw" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate where a user clicked an image-based ASP.NET server control.</param>
-        <param name="y">The y-coordinate where a user clicked an image-based ASP.NET server control.</param>
-        <param name="xRaw">The raw x-coordinate where a user clicked an image-based ASP.NET server control.</param>
-        <param name="yRaw">The raw y-coordinate where a user clicked an image-based ASP.NET server control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ImageClickEventArgs" /> class using the <paramref name="x" />, <paramref name="y" />, <paramref name="xRaw" />, and <paramref name="yRaw" /> parameters.</summary>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="xRaw">To be added.</param>
+        <param name="yRaw">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,14 +66,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An integer that represents the x-coordinate where a user clicked an image-based ASP.NET server control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +89,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An integer that represents the raw x-coordinate where a user clicked an image-based ASP.NET server control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,14 +100,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An integer that represents the y-coordinate where a user clicked an image-based ASP.NET server control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +123,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An integer that represents the raw y-coordinate where a user clicked an image-based ASP.NET server control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

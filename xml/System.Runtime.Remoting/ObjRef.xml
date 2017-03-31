@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.ObjRef" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,40 +22,10 @@
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stores all relevant information required to generate a proxy in order to communicate with a remote object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ObjRef is a serializable representation of an object that extends <xref:System.MarshalByRefObject> (MBR). A ObjRef is used to transfer an object reference across a <xref:System.AppDomain> boundary. Creating a ObjRef for an object is known as marshaling. You can create a ObjRef (marshal a <xref:System.MarshalByRefObject>) either explicitly, by registering the MBR object with the remoting infrastructure (see <xref:System.Runtime.Remoting.RemotingConfiguration> and <xref:System.Runtime.Remoting.RemotingServices.Marshal%2A?displayProperty=fullName>), or implicitly, by passing an MBR object as a parameter when calling a remote object. Remoting uses ObjRef objects to store and transmit all the relevant information about the <xref:System.MarshalByRefObject> being remoted.  
-  
- The ObjRef contains information that describes the <xref:System.Type> and class of the object being marshaled, its exact location, and communication-related information on how to reach the remoting subdivision where the object is located.  
-  
- After a class implementing <xref:System.MarshalByRefObject> is marshaled, the ObjRef that represents it is transferred through a channel into another application domain, possibly in another process or computer. When the ObjRef is deserialized (see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md)) in the target application domain, it is parsed to create a transparent proxy for the remote MBR object. This operation is known as unmarshaling.  
-  
- A transparent proxy is an object that provides the illusion that the actual object resides in the client's space. It achieves this by forwarding calls made on it to the real object using the remoting infrastructure. The transparent proxy is itself housed by an instance of a managed run-time class of type <xref:System.Runtime.Remoting.Proxies.RealProxy>. The <xref:System.Runtime.Remoting.Proxies.RealProxy> implements a part of the functionality needed to forward the operations from the transparent proxy.  
-  
- A proxy object can be used without regard to any remoting subdivisions within a <xref:System.AppDomain>. Applications need not distinguish between proxy references and object references. However, service providers dealing with issues such as activation, lifetime management, and transactions need to make such distinctions.  
-  
- This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of a custom ObjRef. To view the activation code that tests the custom ObjRef, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownServiceType%2A> method.  
-  
- [!code-cs[CreateObjRef2#1](~/add/codesnippet/csharp/t-system.runtime.remotin_10_1.cs)]
- [!code-vb[CreateObjRef2#1](~/add/codesnippet/visualbasic/t-system.runtime.remotin_10_1.vb)]
- [!code-cpp[CreateObjRef2#1](~/add/codesnippet/cpp/t-system.runtime.remotin_10_1.cpp)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission Value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,12 +35,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.ObjRef" /> class with default values.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,31 +51,18 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="o" Type="System.MarshalByRefObject" />
         <Parameter Name="requestedType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="o">The object that the new <see cref="T:System.Runtime.Remoting.ObjRef" /> instance will reference.</param>
-        <param name="requestedType">The <see cref="T:System.Type" /> of the object that the new <see cref="T:System.Runtime.Remoting.ObjRef" /> instance will reference.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.ObjRef" /> class to reference a specified <see cref="T:System.MarshalByRefObject" /> of a specified <see cref="T:System.Type" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[CreateObjRef#1](~/add/codesnippet/csharp/6f2b5e71-8a5c-4754-afa3-_1.cs)]
- [!code-cpp[CreateObjRef#1](~/add/codesnippet/cpp/6f2b5e71-8a5c-4754-afa3-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <param name="requestedType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,36 +72,18 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The object that holds the serialized object data.</param>
-        <param name="context">The contextual information about the source or destination of the exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.ObjRef" /> class from serialized data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see <xref:System.Runtime.Serialization.ISerializable>.  
-  
-   
-  
-## Examples  
- [!code-cs[CreateObjRef#1](~/add/codesnippet/csharp/350cf75f-e9f3-40d2-ab87-_1.cs)]
- [!code-cpp[CreateObjRef#1](~/add/codesnippet/cpp/350cf75f-e9f3-40d2-ab87-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChannelInfo">
@@ -154,7 +93,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -166,22 +105,9 @@
         <ReturnType>System.Runtime.Remoting.IChannelInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Runtime.Remoting.IChannelInfo" /> for the <see cref="T:System.Runtime.Remoting.ObjRef" />.</summary>
-        <value>The <see cref="T:System.Runtime.Remoting.IChannelInfo" /> interface for the <see cref="T:System.Runtime.Remoting.ObjRef" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current property holds information contributed by active channels in the process, when the <xref:System.Runtime.Remoting.ObjRef> is created (see <xref:System.Runtime.Remoting.RemotingServices.Marshal%2A> for details on marshaling). This information can be used by the channels in other processes or application domains to decide whether or not to create a transport sink to communicate with the object represented by the current instance.  
-  
-   
-  
-## Examples  
- [!code-cs[CreateObjRef#1](~/add/codesnippet/csharp/p-system.runtime.remotin_106_1.cs)]
- [!code-cpp[CreateObjRef#1](~/add/codesnippet/cpp/p-system.runtime.remotin_106_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnvoyInfo">
@@ -191,23 +117,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.IEnvoyInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Runtime.Remoting.IEnvoyInfo" /> for the <see cref="T:System.Runtime.Remoting.ObjRef" />.</summary>
-        <value>The <see cref="T:System.Runtime.Remoting.IEnvoyInfo" /> interface for the <see cref="T:System.Runtime.Remoting.ObjRef" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current property contains a serialized chain of message sinks that gets regenerated when a proxy is created to represent the object. This is used for <xref:System.Runtime.Remoting.Contexts.Context> bound object types only, and represents the groups of objects that provide such run-time services as transactions.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -217,14 +136,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -233,28 +147,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
-        <param name="context">The contextual information about the source or destination of the serialization.</param>
-        <summary>Populates a specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the current <see cref="T:System.Runtime.Remoting.ObjRef" /> instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current method fills the provided <xref:System.Runtime.Serialization.SerializationInfo> with all the data needed to recreate the <xref:System.Runtime.Remoting.ObjRef>.  
-  
- The current method is an implementation of <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>.  
-  
-   
-  
-## Examples  
- [!code-cs[CreateObjRef#1](~/add/codesnippet/csharp/088e4c86-d393-401b-857d-_1.cs)]
- [!code-cpp[CreateObjRef#1](~/add/codesnippet/cpp/088e4c86-d393-401b-857d-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have serialization formatter permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for providing serialization services. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRealObject">
@@ -264,14 +160,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -279,25 +170,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="context">The context where the current object resides.</param>
-        <summary>Returns a reference to the remote object that the <see cref="T:System.Runtime.Remoting.ObjRef" /> describes.</summary>
-        <returns>A reference to the remote object that the <see cref="T:System.Runtime.Remoting.ObjRef" /> describes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current method is called during the fix-up stage of deserialization.  
-  
-   
-  
-## Examples  
- [!code-cs[CreateObjRef#1](~/add/codesnippet/csharp/37d6be7e-83fc-46ca-8f58-_1.cs)]
- [!code-cpp[CreateObjRef#1](~/add/codesnippet/cpp/37d6be7e-83fc-46ca-8f58-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have serialization formatter permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for providing serialization services. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFromThisAppDomain">
@@ -307,30 +183,17 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a Boolean value that indicates whether the current <see cref="T:System.Runtime.Remoting.ObjRef" /> instance references an object located in the current <see cref="T:System.AppDomain" />.</summary>
-        <returns>A Boolean value that indicates whether the current <see cref="T:System.Runtime.Remoting.ObjRef" /> instance references an object located in the current <see cref="T:System.AppDomain" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[CreateObjRef#1](~/add/codesnippet/csharp/m-system.runtime.remotin_86_1.cs)]
- [!code-cpp[CreateObjRef#1](~/add/codesnippet/cpp/m-system.runtime.remotin_86_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFromThisProcess">
@@ -340,15 +203,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -356,17 +216,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a Boolean value that indicates whether the current <see cref="T:System.Runtime.Remoting.ObjRef" /> instance references an object located in the current process.</summary>
-        <returns>A Boolean value that indicates whether the current <see cref="T:System.Runtime.Remoting.ObjRef" /> instance references an object located in the current process.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[CreateObjRef#1](~/add/codesnippet/csharp/m-system.runtime.remotin_53_1.cs)]
- [!code-cpp[CreateObjRef#1](~/add/codesnippet/cpp/m-system.runtime.remotin_53_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeInfo">
@@ -376,29 +228,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.IRemotingTypeInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Runtime.Remoting.IRemotingTypeInfo" /> for the object that the <see cref="T:System.Runtime.Remoting.ObjRef" /> describes.</summary>
-        <value>The <see cref="T:System.Runtime.Remoting.IRemotingTypeInfo" /> for the object that the <see cref="T:System.Runtime.Remoting.ObjRef" /> describes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TypeInfo contains detailed information about the type of remote object represented by the current <xref:System.Runtime.Remoting.ObjRef>. The current property contains a list of interfaces that the type implements, as well as the type hierarchy. This information might be used to refine the proxy incrementally to adjust to the client's view of the remote object's type.  
-  
-   
-  
-## Examples  
- [!code-cs[CreateObjRef#1](~/add/codesnippet/csharp/p-system.runtime.remotin_18_1.cs)]
- [!code-cpp[CreateObjRef#1](~/add/codesnippet/cpp/p-system.runtime.remotin_18_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="URI">
@@ -408,29 +247,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URI of the specific object instance.</summary>
-        <value>The URI of the specific object instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A URI uniquely identifies the specific object instance.  
-  
-   
-  
-## Examples  
- [!code-cs[CreateObjRef#1](~/add/codesnippet/csharp/p-system.runtime.remotin_8_1.cs)]
- [!code-cpp[CreateObjRef#1](~/add/codesnippet/cpp/p-system.runtime.remotin_8_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

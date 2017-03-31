@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionPattern.SelectionPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.SelectionPattern" /> object using its <see cref="System.Windows.Automation.SelectionPattern.Current%2A" /> or <see cref="System.Windows.Automation.SelectionPattern.Cached%2A" /> accessors.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,34 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the container allows more than one child element to be selected concurrently.</summary>
-        <value>
-          <see langword="true" /> if the control supports multiple selection; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be dynamic For example, in rare cases, a control might allow multiple items to be selected on initialization, but subsequently allow only single selections to be made.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.SelectionPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and subsequently used to retrieve property values.  
-  
- [!code-vb[UIASelectionPattern_snip#101](~/add/codesnippet/visualbasic/UIASelectionPattern_snip/UIASelectionPattern_snippets.vb#101)]
- [!code-cs[UIASelectionPattern_snip#101](~/add/codesnippet/csharp/UIASelectionPattern_snip/UIASelectionPattern_snippets.cs#101)]  
-[!code-vb[UIASelectionPattern_snip#104](~/add/codesnippet/visualbasic/UIASelectionPattern_snip/UIASelectionPattern_snippets.vb#104)]
-[!code-cs[UIASelectionPattern_snip#104](~/add/codesnippet/csharp/UIASelectionPattern_snip/UIASelectionPattern_snippets.cs#104)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSelection">
@@ -60,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,19 +47,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves all items in the selection container that are selected.</summary>
-        <returns>The collection of selected items. The default is an empty array.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a collection of <xref:System.Windows.Automation.AutomationElement>s representing the selected items in a selection container is obtained.  
-  
- [!code-vb[UIASelectionPattern_snip#1025](~/add/codesnippet/visualbasic/UIASelectionPattern_snip/UIASelectionPattern_snippets.vb#1025)]
- [!code-cs[UIASelectionPattern_snip#1025](~/add/codesnippet/csharp/UIASelectionPattern_snip/UIASelectionPattern_snippets.cs#1025)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelectionRequired">
@@ -90,34 +59,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the container requires at least one child item to be selected.</summary>
-        <value>
-          <see langword="true" /> if the control requires at least one item to be selected; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be dynamic. For example, the initial state of a control might not have any items selected by default, indicating that <xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired%2A> is `false`. However, after an item is selected, the control must always have at least one item selected.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.SelectionPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and subsequently used to retrieve property values.  
-  
- [!code-vb[UIASelectionPattern_snip#101](~/add/codesnippet/visualbasic/UIASelectionPattern_snip/UIASelectionPattern_snippets.vb#101)]
- [!code-cs[UIASelectionPattern_snip#101](~/add/codesnippet/csharp/UIASelectionPattern_snip/UIASelectionPattern_snippets.cs#101)]  
-[!code-vb[UIASelectionPattern_snip#104](~/add/codesnippet/visualbasic/UIASelectionPattern_snip/UIASelectionPattern_snippets.vb#104)]
-[!code-cs[UIASelectionPattern_snip#104](~/add/codesnippet/csharp/UIASelectionPattern_snip/UIASelectionPattern_snippets.cs#104)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

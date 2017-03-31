@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.WebReferenceOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The WebReferenceOptions class represents code generation options specified in an XML text file.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +45,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -62,8 +59,8 @@
         <ReturnType>System.Xml.Serialization.CodeGenerationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Xml.Serialization.CodeGenerationOptions" /> associated with this <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</summary>
-        <value>The <see cref="T:System.Xml.Serialization.CodeGenerationOptions" /> associated with this <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +71,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,10 +81,10 @@
         <Parameter Name="validationEventHandler" Type="System.Xml.Schema.ValidationEventHandler" />
       </Parameters>
       <Docs>
-        <param name="stream">The <see cref="T:System.IO.Stream" /> that contains the code generation options.</param>
-        <param name="validationEventHandler">The <see cref="T:System.Xml.Schema.ValidationEventHandler" /> to be associated with the new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</param>
-        <summary>Returns a new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" /> based on the code generation options described in the specified stream.</summary>
-        <returns>A new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" /> based on the code generation options described in the specified stream.</returns>
+        <param name="stream">To be added.</param>
+        <param name="validationEventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,10 +105,10 @@
         <Parameter Name="validationEventHandler" Type="System.Xml.Schema.ValidationEventHandler" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.IO.TextReader" /> that contains the code generation options.</param>
-        <param name="validationEventHandler">The <see cref="T:System.Xml.Schema.ValidationEventHandler" /> to be associated with the new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</param>
-        <summary>Returns a new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" /> based on the code generation options described in the specified <see cref="T:System.IO.TextReader" />.</summary>
-        <returns>A new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" /> based on the code generation options described in the specified <see cref="T:System.IO.TextReader" />.</returns>
+        <param name="reader">To be added.</param>
+        <param name="validationEventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,10 +129,10 @@
         <Parameter Name="validationEventHandler" Type="System.Xml.Schema.ValidationEventHandler" />
       </Parameters>
       <Docs>
-        <param name="xmlReader">The <see cref="T:System.Xml.XmlReader" /> that contains the code generation options.</param>
-        <param name="validationEventHandler">The <see cref="T:System.Xml.Schema.ValidationEventHandler" /> to be associated with the new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</param>
-        <summary>Returns a new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" /> based on the code generation options described in the specified <see cref="T:System.Xml.XmlReader" />.</summary>
-        <returns>A new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" /> based on the code generation options described in the specified <see cref="T:System.Xml.XmlReader" />.</returns>
+        <param name="xmlReader">To be added.</param>
+        <param name="validationEventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,15 +143,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Xml.Schema.XmlSchema" /> associated with this <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</summary>
-        <value>The <see cref="T:System.Xml.Schema.XmlSchema" /> associated with this <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +161,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -183,8 +175,8 @@
         <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Collections.Specialized.StringCollection" /> that represents the schema importer extensions associated with this <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</summary>
-        <value>A <see cref="T:System.Collections.Specialized.StringCollection" /> that represents the schema importer extensions associated with this <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +187,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -210,8 +201,8 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionImportStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.Services.Description.ServiceDescriptionImportStyle" /> associated with this <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</summary>
-        <value>The <see cref="T:System.Web.Services.Description.ServiceDescriptionImportStyle" /> associated with this <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.String" /> that contains the target namespace for the <see cref="T:System.Web.Services.Description.WebReferenceOptions" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,7 +230,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -252,9 +241,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that indicates whether verbose warning messages are to be generated during compilation of a client proxy or a server stub.</summary>
-        <value>
-          <see langword="true" /> if verbose warning messages are to be generated during compilation of a client proxy or a server stub; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

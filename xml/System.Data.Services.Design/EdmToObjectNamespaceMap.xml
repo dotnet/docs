@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Design.EdmToObjectNamespaceMap" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Design</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Used by the code generation command line tools and tools in Visual Studio to generate strongly typed client-side objects for communicating with data services.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is not intended for public use and is used by the code generation command line tools and tools in Visual Studio to generate strongly typed client-side objects for communicating with data services.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -30,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,9 +32,9 @@
         <Parameter Name="objectNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="edmNamespace">String containing the namespace name.</param>
-        <param name="objectNamespace">String containing the object namespace.</param>
-        <summary>Adds mapping between the Entity Data Model namespace and the object.</summary>
+        <param name="edmNamespace">To be added.</param>
+        <param name="objectNamespace">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,7 +52,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears <see cref="T:System.Data.Services.Design.EdmToObjectNamespaceMap" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,10 +72,9 @@
         <Parameter Name="edmNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="edmNamespace">String value that contains the mapping object to query.</param>
-        <summary>Queries whether mapping contains object in <paramref name="edmNamespace" /> parameter.</summary>
-        <returns>
-          <see langword="true" /> if the object is found; otherwise <see langword="false" />.</returns>
+        <param name="edmNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,15 +85,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a count of mappings contained by <see cref="T:System.Data.Services.Design.EdmToObjectNamespaceMap" />.</summary>
-        <value>Integer value that contains the count of mappings.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,15 +103,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets <see langword="edmNamespace" /> items in an <see cref="T:System.Data.Services.Design.EdmToObjectNamespaceMap" /> object.</summary>
-        <value>String value that contains <see langword="EdmNamespace" /> items.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +121,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,10 +130,9 @@
         <Parameter Name="edmNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="edmNamespace">String value that contains <see langword="edmNamespace" /> name.</param>
-        <summary>Gets namespace identified by <paramref name="edmNamespace" /> parameter.</summary>
-        <value>
-          <see langword="EdmNamespace" /> object.</value>
+        <param name="edmNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +143,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,10 +152,9 @@
         <Parameter Name="edmNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="edmNamespace">String value that contains the mapping object.</param>
-        <summary>Removes object identified by <paramref name="edmNamespace" /> parameter.</summary>
-        <returns>
-          <see langword="true" /> if operation succeeds; otherwise <see langword="false" />.</returns>
+        <param name="edmNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,7 +165,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,11 +175,10 @@
         <Parameter Name="objectNamespace" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="edmNamespace">String value that contains the namespace name.</param>
-        <param name="objectNamespace">String value that identifies the object namespace</param>
-        <summary>Tests whether an object identified by <paramref name="objectNamespace" /> and <paramref name="edmNamespace" /> is mapped by <see cref="T:System.Data.Services.Design.EdmToObjectNamespaceMap" />.</summary>
-        <returns>
-          <see langword="true" /> if the mapping is returned; otherwise <see langword="false" />.</returns>
+        <param name="edmNamespace">To be added.</param>
+        <param name="objectNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

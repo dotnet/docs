@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheability" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Provides enumerated values that are used to set the <see langword="Cache-Control" /> HTTP header.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, go to RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, on the [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/?linkid=37125) Web site. In particular, for complete details, see Section 14.9 "Cache-Control" and Section 13, "Caching in HTTP."  
-  
-> [!NOTE]
->  `NoCache` does not send the common HTTP 1.0 request directive `Pragma: no-cache`.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="NoCache">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets the <see langword="Cache-Control: no-cache" /> header. Without a field name, the directive applies to the entire request and a shared (proxy server) cache must force a successful revalidation with the origin Web server before satisfying the request. With a field name, the directive applies only to the named field; the rest of the response may be supplied from a shared cache.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Private">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Default value. Sets <see langword="Cache-Control: private" /> to specify that the response is cacheable only on the client and not by shared (proxy server) caches.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Public">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets <see langword="Cache-Control: public" /> to specify that the response is cacheable by clients and shared (proxy) caches.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -83,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the response is cached only at the origin server. Similar to the NoCache option. Clients receive a <see langword="Cache-Control: no-cache" /> directive but the document is cached on the origin server. Equivalent to ServerAndNoCache.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerAndNoCache">
@@ -100,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Applies the settings of both Server and NoCache to indicate that the content is cached at the server but all others are explicitly denied the ability to cache the response.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerAndPrivate">
@@ -117,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the response is cached at the server and at the client but nowhere else. Proxy servers are not allowed to cache the response.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

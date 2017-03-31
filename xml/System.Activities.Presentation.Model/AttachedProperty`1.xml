@@ -14,8 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of the attached property.</typeparam>
-    <summary>Contains a collection of attached properties.</summary>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.Activities.Presentation.Model.AttachedProperty%601" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <ReturnType>System.Func&lt;System.Activities.Presentation.Model.ModelItem,T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the getter.</summary>
-        <value>Returns a <see cref="System.Func%602" /> that contains the getter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +68,9 @@
         <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="modelItem">The model item.</param>
-        <summary>Retrieves the value of the specified model item.</summary>
-        <returns>Returns an <see cref="T:System.Object" /> that contains the value.</returns>
+        <param name="modelItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +87,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that determines whether the collection is read-only.</summary>
-        <value>
-          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +108,8 @@
         <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="modelItem">The model item to reset.</param>
-        <summary>Resets the specified model item to the default value.</summary>
+        <param name="modelItem">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +126,8 @@
         <ReturnType>System.Action&lt;System.Activities.Presentation.Model.ModelItem,T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the setter.</summary>
-        <value>Returns an <see cref="System.Action%602" /> that contains the setter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,9 +148,9 @@
         <Parameter Name="Value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="modelItem">The model item to set.</param>
-        <param name="Value">The value to set.</param>
-        <summary>Sets the specified model item to the specified value.</summary>
+        <param name="modelItem">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,8 +167,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the collection.</summary>
-        <value>Returns a <see cref="T:System.Type" /> that contains the type of the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

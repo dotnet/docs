@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,15 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a container for elements of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object. An instance of this type is returned by the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[NCLPNRPContacts#3](~/add/codesnippet/csharp/t-system.net.peertopeer._0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -37,7 +29,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,9 +38,9 @@
         <Parameter Name="other" Type="System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" />
       </Parameters>
       <Docs>
-        <param name="other">The object to compare against.</param>
-        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> to the specified object.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> is equal to the object specified.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +51,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,18 +61,10 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to replace</param>
-        <param name="item">The new value for the element at the specified index</param>
-        <summary>Inserts a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> element into the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> at the specified index or key.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Null` value elements are not allowed.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -92,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,18 +84,10 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to replace</param>
-        <param name="item">The new value for the element at the specified index</param>
-        <summary>Replaces the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> element at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Null` value elements are not allowed.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -124,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,8 +104,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> representing the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />, separated by commas.</summary>
-        <returns>Unicode <see cref="T:System.String" /> representing the current value of each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.SerializationBinder" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,29 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Allows users to control class loading and mandate what class to load.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During serialization, a formatter transmits the information required to create an instance of an object of the correct type and version. This information generally includes the full type name and assembly name of the object. The assembly name includes the name, version, and strong name (see [Strong-Named Assemblies](../Topic/Strong-Named%20Assemblies.md)) hash of the assembly. By default, deserialization uses this information to create an instance of an identical object (with the exception of any assembly loading restricted by the security policy). Some users need to control which class to load, either because the class has moved between assemblies or a different version of the class is required on the server and client.  
-  
- SerializationBinder can also be used for security. There might be some security exploits when you are trying to deserialize some data from an untrusted source. The binder gives you an opportunity to inspect what types are being loaded in your application domain. You can then either maintain list of denied types or a list of allowed types and restrict which types are being loaded and instantiated. In addition you should be mindful of what information is being put out on the wire, you may want to secure (use transport or message security) when sending type names or other data on the wire.  
-  
-> [!WARNING]
->  Only use SerializationBinder if you are completely sure of what information is being serialized. Malicious types can cause unexpected behavior.  
-  
- This is an abstract base class. All binders extend this class.  
-  
-   
-  
-## Examples  
- [!code-vb[SerializationBinder Example#1](~/add/codesnippet/visualbasic/t-system.runtime.seriali_19_1.vb)]
- [!code-cpp[SerializationBinder Example#1](~/add/codesnippet/cpp/t-system.runtime.seriali_19_1.cpp)]
- [!code-cs[SerializationBinder Example#1](~/add/codesnippet/csharp/t-system.runtime.seriali_19_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,12 +32,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.SerializationBinder" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +52,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -76,10 +68,10 @@
         <Parameter Name="typeName" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="serializedType">The type of the object the formatter creates a new instance of.</param>
-        <param name="assemblyName">Specifies the <see cref="T:System.Reflection.Assembly" /> name of the serialized object.</param>
-        <param name="typeName">Specifies the <see cref="T:System.Type" /> name of the serialized object.</param>
-        <summary>When overridden in a derived class, controls the binding of a serialized object to a type.</summary>
+        <param name="serializedType">To be added.</param>
+        <param name="assemblyName">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +82,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -101,18 +97,11 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">Specifies the <see cref="T:System.Reflection.Assembly" /> name of the serialized object.</param>
-        <param name="typeName">Specifies the <see cref="T:System.Type" /> name of the serialized object.</param>
-        <summary>When overridden in a derived class, controls the binding of a serialized object to a type.</summary>
-        <returns>The type of the object the formatter creates a new instance of.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- SerializationBinder Example#1  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyName">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

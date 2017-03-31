@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CreateParams" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,35 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates the information needed when creating a control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The information in a CreateParams can be used to pass information about the initial state and appearance of a control. Most <xref:System.Windows.Forms.Control> derived controls override the <xref:System.Windows.Forms.Control.CreateParams%2A> property to pass in the appropriate values or include additional information in the CreateParams.  
-  
- For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
-  
-> [!NOTE]
->  The constants used to set the <xref:System.Windows.Forms.CreateParams.Style%2A>, <xref:System.Windows.Forms.CreateParams.ExStyle%2A>, and <xref:System.Windows.Forms.CreateParams.ClassStyle%2A> properties are defined in the Winuser.h header file. This file is installed by the Platform SDK or Visual Studio.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.Button> derived class named `MyIconButton` and provides the implementation needed for the button to display an Icon rather than an Image. The <xref:System.Windows.Forms.Control.CreateParams%2A> property is extended and a value added to the <xref:System.Windows.Forms.CreateParams.Style%2A> property that causes the button to display an <xref:System.Drawing.Icon> rather than an <xref:System.Drawing.Image>.  
-  
- [!code-cs[CreateParams#1](~/add/codesnippet/csharp/t-system.windows.forms.c_10_1.cs)]
- [!code-cpp[CreateParams#1](~/add/codesnippet/cpp/t-system.windows.forms.c_10_1.cpp)]
- [!code-vb[CreateParams#1](~/add/codesnippet/visualbasic/t-system.windows.forms.c_10_1.vb)]  
-  
- The following code example creates an instance of a standard <xref:System.Windows.Forms.Button> control and an instance of the derived control, `MyIconButton`, created in the example above. This example requires that there is an <xref:System.Drawing.Icon> file named Default.ico in the same location as the application. When the application starts, the `Default` icon is displayed on the `MyIconButton` button. If the `Default` icon is not present, the button face is blank. When the standard <xref:System.Windows.Forms.Button> is clicked, an <xref:System.Windows.Forms.OpenFileDialog> box will appear so you can select a new Icon to display on the `MyIconButton`.  
-  
- [!code-cs[CreateParams#2](~/add/codesnippet/csharp/t-system.windows.forms.c_10_2.cs)]
- [!code-cpp[CreateParams#2](~/add/codesnippet/cpp/t-system.windows.forms.c_10_2.cpp)]
- [!code-vb[CreateParams#2](~/add/codesnippet/visualbasic/t-system.windows.forms.c_10_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.CreateParams" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,15 +37,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the control's initial text.</summary>
-        <value>The control's initial text.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,23 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the Windows class to derive the control from.</summary>
-        <value>The name of the Windows class to derive the control from.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value for this property is `null`, indicating that the control is not derived from an existing control class. To derive from an existing control class, store the system class name in this property. For example, to derive from the standard <xref:System.Windows.Forms.Button> control, set this property to "BUTTON".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassStyle">
@@ -111,28 +73,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a bitwise combination of class style values.</summary>
-        <value>A bitwise combination of the class style values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ClassStyle property is ignored if the <xref:System.Windows.Forms.CreateParams.ClassName%2A> property is not `null`.  
-  
- For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
-  
-> [!NOTE]
->  The constants used to set the <xref:System.Windows.Forms.CreateParams.Style%2A>, <xref:System.Windows.Forms.CreateParams.ExStyle%2A>, and ClassStyle properties are defined in the Winuser.h header file. This file is installed by the Platform SDK or Visual Studio.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExStyle">
@@ -142,28 +91,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a bitwise combination of extended window style values.</summary>
-        <value>A bitwise combination of the extended window style values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ExStyle property supports extended appearance and initial state values to apply to the control.  
-  
- For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
-  
-> [!NOTE]
->  The constants used to set the <xref:System.Windows.Forms.CreateParams.Style%2A>, ExStyle, and <xref:System.Windows.Forms.CreateParams.ClassStyle%2A> properties are defined in the Winuser.h header file. This file is installed by the Platform SDK or Visual Studio.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -173,15 +109,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the initial height of the control.</summary>
-        <value>The numeric value that represents the initial height of the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,25 +127,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets additional parameter information needed to create the control.</summary>
-        <value>The <see cref="T:System.Object" /> that holds additional parameter information needed to create the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you are creating a multiple document interface (MDI) client window, the Param property must reference a `CLIENTCREATESTRUCT` structure.  
-  
- For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CLIENTCREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -220,15 +145,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the control's parent.</summary>
-        <value>An <see cref="T:System.IntPtr" /> that contains the window handle of the control's parent.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,37 +163,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a bitwise combination of window style values.</summary>
-        <value>A bitwise combination of the window style values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Style property controls the appearance of the control and its initial state.  
-  
- For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
-  
-> [!NOTE]
->  The constants used to set the Style, <xref:System.Windows.Forms.CreateParams.ExStyle%2A>, and <xref:System.Windows.Forms.CreateParams.ClassStyle%2A> properties are defined in the Winuser.h header file. This file is installed by the Platform SDK or Visual Studio.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.Button> derived class named `MyIconButton` and provides the implementation needed for the button to display an icon rather than an image. The <xref:System.Windows.Forms.Control.CreateParams%2A> property is extended and a value added to the Style property that causes the button to display an <xref:System.Drawing.Icon> rather than an <xref:System.Drawing.Image>.  
-  
- [!code-cs[CreateParams#1](~/add/codesnippet/csharp/p-system.windows.forms.c_66_1.cs)]
- [!code-cpp[CreateParams#1](~/add/codesnippet/cpp/p-system.windows.forms.c_66_1.cpp)]
- [!code-vb[CreateParams#1](~/add/codesnippet/visualbasic/p-system.windows.forms.c_66_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -279,7 +181,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,8 +188,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current object.</summary>
-        <returns>A string that represents the current object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,15 +200,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the initial width of the control.</summary>
-        <value>The numeric value that represents the initial width of the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,15 +218,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the initial left position of the control.</summary>
-        <value>The numeric value that represents the initial left position of the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,15 +236,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the top position of the initial location of the control.</summary>
-        <value>The numeric value that represents the top position of the initial location of the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

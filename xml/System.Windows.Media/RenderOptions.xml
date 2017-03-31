@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.RenderOptions" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides options for controlling the rendering behavior of objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the attached properties of the RenderOptions class to specify options for the rendering of text and visual elements in your WPF application. These options enable you to optimize rendering for speed or quality.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BitmapScalingModeProperty">
@@ -30,14 +22,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.RenderOptions.BitmapScalingMode%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,14 +39,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,14 +56,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,14 +73,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.RenderOptions.CachingHint%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +96,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.RenderOptions.ClearTypeHint%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,14 +107,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.RenderOptions.EdgeMode%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -152,21 +138,10 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">The dependency object from which to retrieve the value of the <see cref="System.Windows.Media.RenderOptions.BitmapScalingMode%2A" /> attached property.</param>
-        <summary>Returns the value of the <see cref="System.Windows.Media.RenderOptions.BitmapScalingMode%2A" /> attached property for a specified dependency object.</summary>
-        <returns>The current value of the <see cref="System.Windows.Media.RenderOptions.BitmapScalingMode%2A" /> attached property on the specified dependency object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to get the <xref:System.Windows.Media.BitmapScalingMode> for an image object.  
-  
- [!code-cs[RenderOptions#RenderOptionsSnippet1](~/add/codesnippet/csharp/RenderOptionsSnippets/Window1.xaml.cs#renderoptionssnippet1)]
- [!code-vb[RenderOptions#RenderOptionsSnippet1](~/add/codesnippet/visualbasic/renderoptionssnippets/window1.xaml.vb#renderoptionssnippet1)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCacheInvalidationThresholdMaximum">
@@ -176,7 +151,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -191,21 +165,10 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">The dependency object from which to retrieve the value of the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A" /> attached property.</param>
-        <summary>Returns the value of the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A" /> attached property for a specified dependency object.</summary>
-        <returns>The current value of the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A" /> attached property on the specified dependency object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to retrieve the caching hint values for a <xref:System.Windows.Media.DrawingBrush>.  
-  
- [!code-cs[RenderOptions#RenderOptionsSnippet4](~/add/codesnippet/csharp/RenderOptionsSnippets/Window1.xaml.cs#renderoptionssnippet4)]
- [!code-vb[RenderOptions#RenderOptionsSnippet4](~/add/codesnippet/visualbasic/renderoptionssnippets/window1.xaml.vb#renderoptionssnippet4)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCacheInvalidationThresholdMinimum">
@@ -215,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -230,21 +192,10 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">The dependency object from which to retrieve the value of the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A" /> attached property.</param>
-        <summary>Returns the value of the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A" /> attached property for a specified dependency object.</summary>
-        <returns>The current value of the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A" /> attached property on the specified dependency object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to retrieve the caching hint values for a <xref:System.Windows.Media.DrawingBrush>.  
-  
- [!code-cs[RenderOptions#RenderOptionsSnippet4](~/add/codesnippet/csharp/RenderOptionsSnippets/Window1.xaml.cs#renderoptionssnippet4)]
- [!code-vb[RenderOptions#RenderOptionsSnippet4](~/add/codesnippet/visualbasic/renderoptionssnippets/window1.xaml.vb#renderoptionssnippet4)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCachingHint">
@@ -254,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -269,21 +219,10 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">The dependency object from which to retrieve the value of the <see cref="System.Windows.Media.RenderOptions.CachingHint%2A" /> attached property.</param>
-        <summary>Returns the value of the <see cref="System.Windows.Media.RenderOptions.CachingHint%2A" /> attached property for a specified dependency object.</summary>
-        <returns>The current value of the <see cref="System.Windows.Media.RenderOptions.CachingHint%2A" /> attached property on the specified dependency object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to retrieve the caching hint values for a <xref:System.Windows.Media.DrawingBrush>.  
-  
- [!code-cs[RenderOptions#RenderOptionsSnippet4](~/add/codesnippet/csharp/RenderOptionsSnippets/Window1.xaml.cs#renderoptionssnippet4)]
- [!code-vb[RenderOptions#RenderOptionsSnippet4](~/add/codesnippet/visualbasic/renderoptionssnippets/window1.xaml.vb#renderoptionssnippet4)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClearTypeHint">
@@ -307,9 +246,9 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">The <see cref="T:System.Windows.DependencyObject" /> to retrieve the <see cref="System.Windows.Media.RenderOptions.ClearTypeHint%2A" /> attached property for.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Media.RenderOptions.ClearTypeHint%2A" /> attached property of the specified element.</summary>
-        <returns>The value of the <see cref="System.Windows.Media.RenderOptions.ClearTypeHint%2A" /> attached property for <paramref name="target" />.</returns>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,7 +259,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -335,18 +273,10 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">The dependency object from which to retrieve the value of the <see cref="System.Windows.Media.RenderOptions.EdgeMode%2A" /> attached property.</param>
-        <summary>Returns the value of the <see cref="System.Windows.Media.RenderOptions.EdgeMode%2A" /> attached property for a specified dependency object.</summary>
-        <returns>The current value of the <see cref="System.Windows.Media.RenderOptions.EdgeMode%2A" /> attached property on the specified dependency object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value for non-text drawing primitives, such as <xref:System.Windows.Shapes.Ellipse> and <xref:System.Windows.Shapes.Polygon>, is <xref:System.Windows.Media.EdgeMode>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessRenderMode">
@@ -370,29 +300,9 @@
         <ReturnType>System.Windows.Interop.RenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the render mode preference for the current process.</summary>
-        <value>The <see cref="T:System.Windows.Interop.RenderMode" /> preference for the current process.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ProcessRenderMode property to force software rendering for the current process. You can avoid many rendering issues that occur in WPF applications and that are caused by external issues if you change your preference to software rendering.  
-  
- During application startup, if your application detects rendering issues, such as slow frame rates, you can set the rendering mode to software only. Also, you may want to enable the user setting while the application is running.  
-  
- The <xref:System.Windows.Interop.RenderMode> preference overrides the <xref:System.Windows.Interop.HwndTarget.RenderMode%2A> setting. The precedence order for software rendering is:  
-  
-1.  DisableHWAcceleration registry key  
-  
-2.  ProcessRenderMode  
-  
-3.  <xref:System.Windows.Interop.HwndTarget.RenderMode%2A> (per-target)  
-  
- **Note** ProcessRenderMode specifies a preference and does not necessarily change the actual rendering mode. Other parts of the system may override this preference and force the system into software rendering.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">to set this property. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBitmapScalingMode">
@@ -402,7 +312,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -413,28 +322,10 @@
         <Parameter Name="bitmapScalingMode" Type="System.Windows.Media.BitmapScalingMode" />
       </Parameters>
       <Docs>
-        <param name="target">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.Media.DrawingGroup" /> descendant on which to set the value of the <see cref="System.Windows.Media.RenderOptions.BitmapScalingMode%2A" /> property.</param>
-        <param name="bitmapScalingMode">The new value to set the property to.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Media.RenderOptions.BitmapScalingMode%2A" /> attached property on a specified dependency object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SetBitmapScalingMode method on a <xref:System.Windows.UIElement> or <xref:System.Windows.Media.DrawingGroup> descendant that is animating a bitmap.  
-  
- When animating the scale of any bitmap, the default high-quality image re-sampling algorithm can sometimes consume sufficient system resources to cause frame rate degradation, effectively causing animations to stutter. By setting the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A> property of the <xref:System.Windows.Media.RenderOptions> object to <xref:System.Windows.Media.BitmapScalingMode>, you can create a smoother animation when scaling a bitmap.  
-  
-   
-  
-## Examples  
- The following example shows how to set the <xref:System.Windows.Media.BitmapScalingMode> for an <xref:System.Windows.Controls.Image> object.  
-  
- [!code-cs[RenderOptions#RenderOptionsSnippet2](~/add/codesnippet/csharp/RenderOptionsSnippets/Window1.xaml.cs#renderoptionssnippet2)]
- [!code-vb[RenderOptions#RenderOptionsSnippet2](~/add/codesnippet/visualbasic/renderoptionssnippets/window1.xaml.vb#renderoptionssnippet2)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <param name="target">To be added.</param>
+        <param name="bitmapScalingMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCacheInvalidationThresholdMaximum">
@@ -444,7 +335,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -455,26 +345,10 @@
         <Parameter Name="cacheInvalidationThresholdMaximum" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="target">The dependency object on which to set the value of the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A" /> property</param>
-        <param name="cacheInvalidationThresholdMaximum">The new value to set the property to.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A" /> attached property on a specified dependency object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to set the <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> attached property in code.  
-  
-   
-  
-## Examples  
- The following example shows how to use the caching hint option for a <xref:System.Windows.Media.DrawingBrush>.  
-  
- [!code-cs[RenderOptions#RenderOptionsSnippet3](~/add/codesnippet/csharp/RenderOptionsSnippets/Window1.xaml.cs#renderoptionssnippet3)]
- [!code-vb[RenderOptions#RenderOptionsSnippet3](~/add/codesnippet/visualbasic/renderoptionssnippets/window1.xaml.vb#renderoptionssnippet3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <param name="target">To be added.</param>
+        <param name="cacheInvalidationThresholdMaximum">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCacheInvalidationThresholdMinimum">
@@ -484,7 +358,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -495,26 +368,10 @@
         <Parameter Name="cacheInvalidationThresholdMinimum" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="target">The dependency object on which to set the value of the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A" /> property</param>
-        <param name="cacheInvalidationThresholdMinimum">The new value to set the property to.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A" /> attached property on a specified dependency object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to set the <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A> attached property in code.  
-  
-   
-  
-## Examples  
- The following example shows how to use the caching hint option for a <xref:System.Windows.Media.DrawingBrush>.  
-  
- [!code-cs[RenderOptions#RenderOptionsSnippet3](~/add/codesnippet/csharp/RenderOptionsSnippets/Window1.xaml.cs#renderoptionssnippet3)]
- [!code-vb[RenderOptions#RenderOptionsSnippet3](~/add/codesnippet/visualbasic/renderoptionssnippets/window1.xaml.vb#renderoptionssnippet3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <param name="target">To be added.</param>
+        <param name="cacheInvalidationThresholdMinimum">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCachingHint">
@@ -524,7 +381,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -535,32 +391,10 @@
         <Parameter Name="cachingHint" Type="System.Windows.Media.CachingHint" />
       </Parameters>
       <Docs>
-        <param name="target">The dependency object on which to set the value of the <see cref="System.Windows.Media.RenderOptions.CachingHint%2A" /> property.</param>
-        <param name="cachingHint">The new value to set the property to.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Media.RenderOptions.CachingHint%2A" /> attached property on a specified dependency object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] does not cache the rendered contents of <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush> objects. In static scenarios, where neither the contents nor the use of the brush in the scene is changing, not caching provides a benefit because it conserves video memory. When a brush with static content is used in a non-static way, the default behavior of [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] is to re-render all the content of the brush every frame, even though the content is unchanging. For example, this will happen when a static <xref:System.Windows.Media.DrawingBrush> or <xref:System.Windows.Media.VisualBrush> is mapped to the surface of a rotating 3D object. Re-rendering the static content can have a negative impact on performance.  
-  
- By setting the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> attached property of the brush to <xref:System.Windows.Media.CachingHint>, you can increase performance by using cached versions of the tiled brush objects.  
-  
- The <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A> and <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property values are relative-size values that determine when the <xref:System.Windows.Media.TileBrush> object should be regenerated because of changes in scale. For example, when the <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property is set to 2.0, the cache for the <xref:System.Windows.Media.TileBrush> needs to be regenerated only when its size exceeds two times the size of the current cache.  
-  
- Use this method to set the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> attached property in code.  
-  
-   
-  
-## Examples  
- The following example shows how to use the caching hint option for a <xref:System.Windows.Media.DrawingBrush>.  
-  
- [!code-cs[RenderOptions#RenderOptionsSnippet3](~/add/codesnippet/csharp/RenderOptionsSnippets/Window1.xaml.cs#renderoptionssnippet3)]
- [!code-vb[RenderOptions#RenderOptionsSnippet3](~/add/codesnippet/visualbasic/renderoptionssnippets/window1.xaml.vb#renderoptionssnippet3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <param name="target">To be added.</param>
+        <param name="cachingHint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetClearTypeHint">
@@ -580,11 +414,10 @@
         <Parameter Name="clearTypeHint" Type="System.Windows.Media.ClearTypeHint" />
       </Parameters>
       <Docs>
-        <param name="target">The <see cref="T:System.Windows.DependencyObject" /> to set the <see cref="System.Windows.Media.RenderOptions.ClearTypeHint%2A" /> attached property on.</param>
-        <param name="clearTypeHint">The new <see cref="System.Windows.Media.RenderOptions.ClearTypeHint%2A" /> value.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Media.RenderOptions.ClearTypeHint%2A" /> attached property of the specified element.</summary>
+        <param name="target">To be added.</param>
+        <param name="clearTypeHint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetEdgeMode">
@@ -594,7 +427,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -605,26 +437,10 @@
         <Parameter Name="edgeMode" Type="System.Windows.Media.EdgeMode" />
       </Parameters>
       <Docs>
-        <param name="target">The dependency object on which to set the value of the <see cref="System.Windows.Media.RenderOptions.EdgeMode%2A" /> property</param>
-        <param name="edgeMode">The new value to set the property to.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Media.RenderOptions.EdgeMode%2A" /> attached property on a specified dependency object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Text objects are always displayed with anti-aliasing, and are unaffected by setting the edge mode value. When you set the edge mode value of a visual object, all the descendant drawing primitives of the visual object are set to the same edge mode value.  
-  
-   
-  
-## Examples  
- The following example shows how to use the SetEdgeMode method to set the edge mode for a visual object to <xref:System.Windows.Media.EdgeMode>.  
-  
- [!code-vb[VisualSnippets#SetEdgeMode](~/add/codesnippet/visualbasic/visualsnippets/snippets.vb#setedgemode)]
- [!code-cs[VisualSnippets#SetEdgeMode](~/add/codesnippet/csharp/VisualSnippets/Snippets.cs#setedgemode)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="target" /> is <see langword="null" />.</exception>
+        <param name="target">To be added.</param>
+        <param name="edgeMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

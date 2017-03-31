@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.QueryBuilderMode" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of data-store query the design environment should construct.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The QueryBuilderMode enumeration is used when you call the <xref:System.ComponentModel.Design.Data.IDataEnvironment.BuildQuery%2A?displayProperty=fullName> method to indicate the type of query desired.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Delete">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The query being built is a Delete query.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The query being built is an Insert query.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The query being built is a Select query.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The query being built is an Update query.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

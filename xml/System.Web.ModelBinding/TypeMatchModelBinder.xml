@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Maps a browser request to a data object. This class is used when model binding does not require type conversion.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.TypeMatchModelBinder" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,11 +51,10 @@
         <Parameter Name="bindingContext" Type="System.Web.ModelBinding.ModelBindingContext" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">The execution context.</param>
-        <param name="bindingContext">The binding context.</param>
-        <summary>Binds the model by using the specified execution context and binding context.</summary>
-        <returns>
-          <see langword="true" /> if model binding is successful; otherwise, <see langword="false" />.</returns>
+        <param name="modelBindingExecutionContext">To be added.</param>
+        <param name="bindingContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OidCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.OidCollection" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,24 +24,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Security.Cryptography.Oid" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class implements the <xref:System.Collections.ICollection> interface.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the OidCollection class.  
-  
- [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/t-system.security.crypto_42_1.cs)]
- [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/t-system.security.crypto_42_1.vb)]
- [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/t-system.security.crypto_42_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,30 +34,22 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.OidCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the default constructor for this class.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/m-system.security.crypto_111_1.cs)]
- [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/m-system.security.crypto_111_1.vb)]
- [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/m-system.security.crypto_111_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -74,9 +58,17 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidCollection.Add(System.Security.Cryptography.Oid)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -85,26 +77,10 @@
         <Parameter Name="oid" Type="System.Security.Cryptography.Oid" />
       </Parameters>
       <Docs>
-        <param name="oid">The <see cref="T:System.Security.Cryptography.Oid" /> object to add to the collection.</param>
-        <summary>Adds an <see cref="T:System.Security.Cryptography.Oid" /> object to the <see cref="T:System.Security.Cryptography.OidCollection" /> object.</summary>
-        <returns>The index of the added <see cref="T:System.Security.Cryptography.Oid" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to add an <xref:System.Security.Cryptography.Oid> object to an existing collection at the current location.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/2ce27e84-c291-4393-98d9-_1.cs)]
- [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/2ce27e84-c291-4393-98d9-_1.vb)]
- [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/2ce27e84-c291-4393-98d9-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="oid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -113,9 +89,17 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidCollection.CopyTo(System.Security.Cryptography.Oid[],System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -125,26 +109,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array to copy the <see cref="T:System.Security.Cryptography.OidCollection" /> object into.</param>
-        <param name="index">The location where the copy operation starts.</param>
-        <summary>Copies the <see cref="T:System.Security.Cryptography.OidCollection" /> object into an array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method copies an <xref:System.Security.Cryptography.OidCollection> object into an array at the specified location.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/4726c526-d977-4fd1-aca2-_1.cs)]
- [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/4726c526-d977-4fd1-aca2-_1.vb)]
- [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/4726c526-d977-4fd1-aca2-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -153,28 +121,25 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of <see cref="T:System.Security.Cryptography.Oid" /> objects in a collection.</summary>
-        <value>The number of <see cref="T:System.Security.Cryptography.Oid" /> objects in a collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/p-system.security.crypto_39_1.cs)]
- [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/p-system.security.crypto_39_1.vb)]
- [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/p-system.security.crypto_39_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -183,34 +148,26 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidCollection.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.OidEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Security.Cryptography.OidEnumerator" /> object that can be used to navigate the <see cref="T:System.Security.Cryptography.OidCollection" /> object.</summary>
-        <returns>An <see cref="T:System.Security.Cryptography.OidEnumerator" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Security.Cryptography.OidEnumerator> class implements the <xref:System.Collections.IEnumerator> interface, which allows you to move within a collection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/m-system.security.crypto_51_1.cs)]
- [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/m-system.security.crypto_51_1.vb)]
- [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/m-system.security.crypto_51_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -220,33 +177,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether access to the <see cref="T:System.Security.Cryptography.OidCollection" /> object is thread safe.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This collection is not thread safe.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/p-system.security.crypto_105_1.cs)]
- [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/p-system.security.crypto_105_1.vb)]
- [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/p-system.security.crypto_105_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -255,9 +199,17 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
@@ -266,26 +218,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The location of the <see cref="T:System.Security.Cryptography.Oid" /> object in the collection.</param>
-        <summary>Gets an <see cref="T:System.Security.Cryptography.Oid" /> object from the <see cref="T:System.Security.Cryptography.OidCollection" /> object.</summary>
-        <value>An <see cref="T:System.Security.Cryptography.Oid" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to retrieve an <xref:System.Security.Cryptography.Oid> object from an <xref:System.Security.Cryptography.OidCollection> object, if you know its location. You can use the <xref:System.Security.Cryptography.OidCollection.Item%2A> property to retrieve an <xref:System.Security.Cryptography.Oid> object if you know the value of the object's <xref:System.Security.Cryptography.Oid.Value%2A> property or <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/p-system.security.crypto_46_1.cs)]
- [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/p-system.security.crypto_46_1.vb)]
- [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/p-system.security.crypto_46_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -294,9 +230,17 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
@@ -305,26 +249,10 @@
         <Parameter Name="oid" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="oid">A string that represents a <see cref="System.Security.Cryptography.Oid.Value%2A" /> property or a <see cref="System.Security.Cryptography.Oid.FriendlyName%2A" /> property.</param>
-        <summary>Gets the first <see cref="T:System.Security.Cryptography.Oid" /> object that contains a value of the <see cref="System.Security.Cryptography.Oid.Value%2A" /> property or a value of the <see cref="System.Security.Cryptography.Oid.FriendlyName%2A" /> property that matches the specified string value from the <see cref="T:System.Security.Cryptography.OidCollection" /> object.</summary>
-        <value>An <see cref="T:System.Security.Cryptography.Oid" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to retrieve an <xref:System.Security.Cryptography.Oid> object from an <xref:System.Security.Cryptography.OidCollection> object if you know the value of the <xref:System.Security.Cryptography.Oid.Value%2A> or <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property of the <xref:System.Security.Cryptography.Oid> object. You can use the <xref:System.Security.Cryptography.OidCollection.Item%2A> property to retrieve an <xref:System.Security.Cryptography.Oid> object if you know its location in the collection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.OidCollection> class.  
-  
- [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/p-system.security.crypto_87_1.cs)]
- [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/p-system.security.crypto_87_1.vb)]
- [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/p-system.security.crypto_87_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="oid">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -334,23 +262,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Security.Cryptography.OidCollection" /> object.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="T:System.Security.Cryptography.OidCollection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Security.Cryptography.OidCollection> is not thread safe. Derived classes can provide their own synchronized version of the <xref:System.Security.Cryptography.OidCollection> class using this property. The synchronizing code must perform operations on the SyncRoot property of the <xref:System.Security.Cryptography.OidCollection> object, not directly on the object itself. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might simultaneously be modifying the <xref:System.Security.Cryptography.OidCollection> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -359,9 +284,17 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -371,26 +304,46 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array to copy the <see cref="T:System.Security.Cryptography.OidCollection" /> object to.</param>
-        <param name="index">The location where the copy operation starts.</param>
-        <summary>Copies the <see cref="T:System.Security.Cryptography.OidCollection" /> object into an array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method copies an <xref:System.Security.Cryptography.OidCollection> object into an array at the specified location.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="array" /> cannot be a multidimensional array.  
-  
- -or-  
-  
- The length of <paramref name="array" /> is an invalid offset length.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="index" /> is out range.</exception>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -399,25 +352,26 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Security.Cryptography.OidEnumerator" /> object that can be used to navigate the <see cref="T:System.Security.Cryptography.OidCollection" /> object.</summary>
-        <returns>An <see cref="T:System.Security.Cryptography.OidEnumerator" /> object that can be used to navigate the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Security.Cryptography.OidEnumerator> class implements the <xref:System.Collections.IEnumerator> interface, which allows you to move within a collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

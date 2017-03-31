@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,17 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents an array of <see cref="T:System.AddIn.Contract.RemoteArgument" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use an IRemoteArgumentArrayContract to pass an array of <xref:System.AddIn.Contract.RemoteArgument> objects between contracts by reference.  
-  
- An IRemoteArgumentArrayContract does not dynamically resize itself. If you need to use a collection that dynamically resizes itself, use the <xref:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract> interface.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetItem">
@@ -33,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -43,16 +32,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to return.</param>
-        <summary>Returns the element at the specified index.</summary>
-        <returns>The element at the specified index.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.IndexOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- -or-  
-  
- <paramref name="index" /> is equal to or greater than the return value of <see cref="System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract.GetCount%2A" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -62,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,16 +55,10 @@
         <Parameter Name="value" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to replace.</param>
-        <param name="value">The new value for the element at the specified index.</param>
-        <summary>Replaces the element at the specified index with the specified <see cref="T:System.AddIn.Contract.RemoteArgument" />.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.IndexOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- -or-  
-  
- <paramref name="index" /> is equal to or greater than the return value of <see cref="System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract.GetCount%2A" />.</exception>
       </Docs>
     </Member>
   </Members>

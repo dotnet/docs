@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TypeSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the structure, or schema, of an object type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TypeSchema class provides information about a particular class, given an instance of that class. For example, given a <xref:System.Data.DataSet> object, a <xref:System.Web.UI.WebControls.GridView> object, or an instance of a custom class that you create, the methods and properties provide information about the class from which the object derives. It does not provide information about the specific instance, but about the class.  
-  
- The TypeSchema class is used by custom control designers to assist in preparing sample data for previewing custom controls.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,18 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">A <see cref="T:System.Type" /> that describes an object.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.TypeSchema" /> class using the provided <see cref="T:System.Type" /> object.</summary>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetViews">
@@ -57,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,25 +51,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array of schema descriptors for views into a data source.</summary>
-        <returns>An array of instances of <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" />, or of instances of a class that implements the <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> interface.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Although the GetViews method always returns an array of <xref:System.Web.UI.Design.IDataSourceViewSchema> objects that implement the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface, the exact return value is dependent on the object that is provided when creating the instance of the <xref:System.Web.UI.Design.TypeSchema> class.  
-  
- The following table provides examples of return values.  
-  
-|Underlying Type|Return Value|  
-|---------------------|------------------|  
-|A <xref:System.Data.DataSet>|An array of type <xref:System.Web.UI.Design.DataSetViewSchema>, one for each <xref:System.Data.DataTable>.|  
-|A <xref:System.Data.DataTable>|A one-item array containing a <xref:System.Web.UI.Design.DataSetViewSchema>.|  
-|An <xref:System.Collections.IEnumerable> type|A one-item array containing an <xref:System.Web.UI.Design.IDataSourceViewSchema>.|  
-|Any other type|A one-item array containing an <xref:System.Web.UI.Design.IDataSourceViewSchema>.|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

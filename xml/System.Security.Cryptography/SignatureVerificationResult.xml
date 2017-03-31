@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SignatureVerificationResult" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies most of the result codes for signature verification.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A successful verification returns the Valid result.  
-  
- HRESULT values are generally returned by the unmanaged Microsoft Cryptographic API (CAPI); the other values are set by managed verification. This enumeration is not comprehensive of all possible HRESULT values and is subject to change.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AssemblyIdentityMismatch">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The identity of the assembly specified in the /asm:assembly/asm:assemblyIdentity node of the manifest does not match the identity of the assembly in the Authenticode signature in the /asm:assembly/ds:signature/ds:KeyInfo/msrel:RelData/r:license/r:grant/as:ManifestInformation/as:assemblyIdentity node.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadDigest">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The digital signature of the object did not verify.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadSignatureFormat">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The signature format is invalid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BasicConstraintsNotObserved">
@@ -82,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The basic constraint extension of a certificate has not been observed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateExpired">
@@ -99,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate has expired.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateExplicitlyDistrusted">
@@ -116,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate was explicitly marked as not trusted by the user.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateMalformed">
@@ -133,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate is missing or has an empty value for an important field, such as a subject or issuer name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateNotExplicitlyTrusted">
@@ -150,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate is not trusted explicitly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateRevoked">
@@ -167,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate has been revoked.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateUsageNotAllowed">
@@ -184,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate cannot be used for signing and verification.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContainingSignatureInvalid">
@@ -201,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The strong name signature does not verify in the <see cref="T:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation" /> object. Because the strong name signature wraps the Authenticode signature, someone could replace the Authenticode signature with a signature of their choosing. To prevent this, this error code is returned if the strong name does not verify because substituting a part of the strong name signature will invalidate it.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CouldNotBuildChain">
@@ -218,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The chain could not be built.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericTrustFailure">
@@ -235,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There is a general trust failure with the certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificateName">
@@ -252,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate has an invalid name. The name is either not included in the permitted list or is explicitly excluded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificatePolicy">
@@ -269,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate has an invalid policy.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificateRole">
@@ -286,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate has an invalid role.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificateSignature">
@@ -303,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The signature of the certificate cannot be verified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificateUsage">
@@ -320,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate has an invalid usage.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCountersignature">
@@ -337,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One of the counter signatures is invalid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidSignerCertificate">
@@ -354,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate for the signer of the message is invalid or not found.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidTimePeriodNesting">
@@ -371,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A certificate was issued after the issuing certificate has expired.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidTimestamp">
@@ -388,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The time stamp signature or certificate could not be verified or is malformed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IssuerChainingError">
@@ -405,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A parent of a given certificate did not issue that child certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingSignature">
@@ -422,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The signature is missing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PathLengthConstraintViolated">
@@ -439,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A path length constraint in the certification chain has been violated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublicKeyTokenMismatch">
@@ -456,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The public key token from the manifest identity in the /asm:assembly/asm:AssemblyIdentity node does not match the public key token of the key that is used to sign the manifest.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublisherMismatch">
@@ -473,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The publisher name from /asm:assembly/asmv2:publisherIdentity does not match the subject name of the signing certificate, or the issuer key hash from the same publisherIdentity node does not match the key hash of the signing certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RevocationCheckFailure">
@@ -490,14 +453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The revocation check failed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemError">
@@ -507,14 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-level error occurred while verifying trust.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownCriticalExtension">
@@ -524,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A certificate contains an unknown extension that is marked critical.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownTrustProvider">
@@ -541,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate has an unknown trust provider.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownVerificationAction">
@@ -558,14 +517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate has an unknown verification action.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UntrustedCertificationAuthority">
@@ -575,14 +533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certification chain processed correctly, but one of the CA certificates is not trusted by the policy provider.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UntrustedRootCertificate">
@@ -592,14 +549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The root certificate is not trusted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UntrustedTestRootCertificate">
@@ -609,14 +565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The test root certificate is not trusted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -626,14 +581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate verification result is valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

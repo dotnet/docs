@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlAttributeCollection extends System.Xml.XmlNamedNodeMap implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlAttributeCollection" />
   <AssemblyInfo>
+    <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Xml.XmlNamedNodeMap</BaseTypeName>
@@ -16,15 +24,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of attributes that can be accessed by name or index.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `XmlAttributeCollection` extends the <xref:System.Xml.XmlNamedNodeMap> class by adding strongly typed helper methods. You can use this class to add, remove, or modify attributes in the collection. `XmlAttributeCollection` is returned by the <xref:System.Xml.XmlElement.Attributes%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Append">
@@ -33,9 +34,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.Append(System.Xml.XmlAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttribute</ReturnType>
@@ -44,30 +53,10 @@
         <Parameter Name="node" Type="System.Xml.XmlAttribute" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Xml.XmlAttribute" /> to insert.</param>
-        <summary>Inserts the specified attribute as the last node in the collection.</summary>
-        <returns>The <see langword="XmlAttribute" /> to append to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an attribute with the same name is already present in the collection, the original attribute is removed from the collection and `node` is added to the end of the collection.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
-## Examples  
- The following example adds a new attribute to a document.  
-  
- [!code-cs[Classic WebData XmlAttributeCollection.Append Example#1](~/add/codesnippet/csharp/m-system.xml.xmlattribut_0_1.cs)]
- [!code-cpp[Classic WebData XmlAttributeCollection.Append Example#1](~/add/codesnippet/cpp/m-system.xml.xmlattribut_0_1.cpp)]
- [!code-vb[Classic WebData XmlAttributeCollection.Append Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlattribut_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="node" /> was created from a document different from the one that created this collection.</exception>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -76,9 +65,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.CopyTo(System.Xml.XmlAttribute[],System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -88,26 +85,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array that is the destination of the objects copied from this collection.</param>
-        <param name="index">The index in the array where copying begins.</param>
-        <summary>Copies all the <see cref="T:System.Xml.XmlAttribute" /> objects from this collection into the given array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
-## Examples  
- The following example uses `CopyTo` to copy all the attributes in the collection into an array.  
-  
- [!code-cs[Classic WebData XmlAttributeCollection.CopyTo Example#1](~/add/codesnippet/csharp/4c983b8e-d75c-4af8-ade8-_1.cs)]
- [!code-vb[Classic WebData XmlAttributeCollection.CopyTo Example#1](~/add/codesnippet/visualbasic/4c983b8e-d75c-4af8-ade8-_1.vb)]
- [!code-cpp[Classic WebData XmlAttributeCollection.CopyTo Example#1](~/add/codesnippet/cpp/4c983b8e-d75c-4af8-ade8-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertAfter">
@@ -116,9 +97,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.InsertAfter(System.Xml.XmlAttribute,System.Xml.XmlAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttribute</ReturnType>
@@ -128,30 +117,11 @@
         <Parameter Name="refNode" Type="System.Xml.XmlAttribute" />
       </Parameters>
       <Docs>
-        <param name="newNode">The <see cref="T:System.Xml.XmlAttribute" /> to insert.</param>
-        <param name="refNode">The <see cref="T:System.Xml.XmlAttribute" /> that is the reference attribute. <c>newNode</c> is placed after the <c>refNode</c>.</param>
-        <summary>Inserts the specified attribute immediately after the specified reference attribute.</summary>
-        <returns>The <see langword="XmlAttribute" /> to insert into the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an attribute with the same name is already present in the collection, the original attribute is removed from the collection and `newNode` is inserted into the collection. If `refNode` is `null`, `newNode` is inserted at the beginning of the collection.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
-## Examples  
- The following example adds a new attribute to a document.  
-  
- [!code-cs[Classic WebData XmlAttributeCollection.InsertAfter Example#1](~/add/codesnippet/csharp/5f833ef4-9523-4108-8425-_1.cs)]
- [!code-cpp[Classic WebData XmlAttributeCollection.InsertAfter Example#1](~/add/codesnippet/cpp/5f833ef4-9523-4108-8425-_1.cpp)]
- [!code-vb[Classic WebData XmlAttributeCollection.InsertAfter Example#1](~/add/codesnippet/visualbasic/5f833ef4-9523-4108-8425-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="newNode" /> was created from a document different from the one that created this collection. Or the <paramref name="refNode" /> is not a member of this collection.</exception>
+        <param name="newNode">To be added.</param>
+        <param name="refNode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertBefore">
@@ -160,9 +130,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.InsertBefore(System.Xml.XmlAttribute,System.Xml.XmlAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttribute</ReturnType>
@@ -172,30 +150,11 @@
         <Parameter Name="refNode" Type="System.Xml.XmlAttribute" />
       </Parameters>
       <Docs>
-        <param name="newNode">The <see cref="T:System.Xml.XmlAttribute" /> to insert.</param>
-        <param name="refNode">The <see cref="T:System.Xml.XmlAttribute" /> that is the reference attribute. <c>newNode</c> is placed before the <c>refNode</c>.</param>
-        <summary>Inserts the specified attribute immediately before the specified reference attribute.</summary>
-        <returns>The <see langword="XmlAttribute" /> to insert into the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an attribute with the same name is already present in the collection, the original attribute is removed from the collection and `newNode` is inserted into the collection. If `refNode` is `null`, `newNode` is inserted at the end of the collection.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
-## Examples  
- The following example adds a new attribute to a document.  
-  
- [!code-cs[Classic WebData XmlAttributeCollection.InsertBefore Example#1](~/add/codesnippet/csharp/91d2f4bf-8aeb-427a-a43e-_1.cs)]
- [!code-vb[Classic WebData XmlAttributeCollection.InsertBefore Example#1](~/add/codesnippet/visualbasic/91d2f4bf-8aeb-427a-a43e-_1.vb)]
- [!code-cpp[Classic WebData XmlAttributeCollection.InsertBefore Example#1](~/add/codesnippet/cpp/91d2f4bf-8aeb-427a-a43e-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="newNode" /> was created from a document different from the one that created this collection. Or the <paramref name="refNode" /> is not a member of this collection.</exception>
+        <param name="newNode">To be added.</param>
+        <param name="refNode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemOf">
@@ -204,9 +163,17 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.ItemOf(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttribute</ReturnType>
@@ -215,27 +182,10 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">The index of the attribute.</param>
-        <summary>Gets the attribute with the specified index.</summary>
-        <value>The <see cref="T:System.Xml.XmlAttribute" /> at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is a Microsoft extension to the Document Object Model (DOM). It is equivalent to calling <xref:System.Xml.XmlNamedNodeMap.Item%2A?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following example displays all the attributes in the collection.  
-  
- [!code-cs[Classic WebData XmlAttributeCollection.this Example#1](~/add/codesnippet/csharp/p-system.xml.xmlattribut_5_1.cs)]
- [!code-vb[Classic WebData XmlAttributeCollection.this Example#1](~/add/codesnippet/visualbasic/p-system.xml.xmlattribut_5_1.vb)]
- [!code-cpp[Classic WebData XmlAttributeCollection.this Example#1](~/add/codesnippet/cpp/p-system.xml.xmlattribut_5_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">The index being passed in is out of range.</exception>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemOf">
@@ -244,9 +194,17 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.ItemOf(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttribute</ReturnType>
@@ -255,26 +213,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The qualified name of the attribute.</param>
-        <summary>Gets the attribute with the specified name.</summary>
-        <value>The <see cref="T:System.Xml.XmlAttribute" /> with the specified name. If the attribute does not exist, this property returns <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is a Microsoft extension to the Document Object Model (DOM). It is equivalent to calling <xref:System.Xml.XmlNamedNodeMap.GetNamedItem%2A>.  
-  
-   
-  
-## Examples  
- The following example removes an attribute from the document.  
-  
- [!code-cpp[Classic WebData XmlAttributeCollection.Remove Example#1](~/add/codesnippet/cpp/p-system.xml.xmlattribut_0_1.cpp)]
- [!code-cs[Classic WebData XmlAttributeCollection.Remove Example#1](~/add/codesnippet/csharp/p-system.xml.xmlattribut_0_1.cs)]
- [!code-vb[Classic WebData XmlAttributeCollection.Remove Example#1](~/add/codesnippet/visualbasic/p-system.xml.xmlattribut_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemOf">
@@ -283,9 +225,17 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.ItemOf(System.String,System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttribute</ReturnType>
@@ -295,18 +245,11 @@
         <Parameter Name="namespaceURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name of the attribute.</param>
-        <param name="namespaceURI">The namespace URI of the attribute.</param>
-        <summary>Gets the attribute with the specified local name and namespace Uniform Resource Identifier (URI).</summary>
-        <value>The <see cref="T:System.Xml.XmlAttribute" /> with the specified local name and namespace URI. If the attribute does not exist, this property returns <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is a Microsoft extension to the Document Object Model (DOM). It is equivalent to calling <xref:System.Xml.XmlNamedNodeMap.GetNamedItem%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="localName">To be added.</param>
+        <param name="namespaceURI">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Prepend">
@@ -315,9 +258,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.Prepend(System.Xml.XmlAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttribute</ReturnType>
@@ -326,28 +277,10 @@
         <Parameter Name="node" Type="System.Xml.XmlAttribute" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Xml.XmlAttribute" /> to insert.</param>
-        <summary>Inserts the specified attribute as the first node in the collection.</summary>
-        <returns>The <see langword="XmlAttribute" /> added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an attribute with the same name is already present in the collection, the original attribute is removed from the collection and `node` is added to the beginning of the collection.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
-## Examples  
- The following example adds a new attribute to a document.  
-  
- [!code-cs[Classic WebData XmlAttributeCollection.Prepend Example#1](~/add/codesnippet/csharp/m-system.xml.xmlattribut_4_1.cs)]
- [!code-cpp[Classic WebData XmlAttributeCollection.Prepend Example#1](~/add/codesnippet/cpp/m-system.xml.xmlattribut_4_1.cpp)]
- [!code-vb[Classic WebData XmlAttributeCollection.Prepend Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlattribut_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -356,9 +289,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.Remove(System.Xml.XmlAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttribute</ReturnType>
@@ -367,26 +308,10 @@
         <Parameter Name="node" Type="System.Xml.XmlAttribute" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Xml.XmlAttribute" /> to remove.</param>
-        <summary>Removes the specified attribute from the collection.</summary>
-        <returns>The node removed or <see langword="null" /> if it is not found in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
-## Examples  
- The following example removes an attribute from the document.  
-  
- [!code-cpp[Classic WebData XmlAttributeCollection.Remove Example#1](~/add/codesnippet/cpp/m-system.xml.xmlattribut_5_1.cpp)]
- [!code-cs[Classic WebData XmlAttributeCollection.Remove Example#1](~/add/codesnippet/csharp/m-system.xml.xmlattribut_5_1.cs)]
- [!code-vb[Classic WebData XmlAttributeCollection.Remove Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlattribut_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -395,33 +320,25 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.RemoveAll" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all attributes from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
-## Examples  
- The following example removes all attributes from the document.  
-  
- [!code-cs[Classic WebData XmlAttributeCollection.RemoveAll Example#1](~/add/codesnippet/csharp/m-system.xml.xmlattribut_3_1.cs)]
- [!code-cpp[Classic WebData XmlAttributeCollection.RemoveAll Example#1](~/add/codesnippet/cpp/m-system.xml.xmlattribut_3_1.cpp)]
- [!code-vb[Classic WebData XmlAttributeCollection.RemoveAll Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlattribut_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -430,9 +347,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.RemoveAt(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttribute</ReturnType>
@@ -441,26 +366,10 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">The index of the node to remove. The first node has index 0.</param>
-        <summary>Removes the attribute corresponding to the specified index from the collection.</summary>
-        <returns>Returns <see langword="null" /> if there is no attribute at the specified index.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
-## Examples  
- The following example removes an attribute from the document.  
-  
- [!code-cs[Classic WebData XmlAttributeCollection.RemoveAt Example#1](~/add/codesnippet/csharp/m-system.xml.xmlattribut_2_1.cs)]
- [!code-vb[Classic WebData XmlAttributeCollection.RemoveAt Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlattribut_2_1.vb)]
- [!code-cpp[Classic WebData XmlAttributeCollection.RemoveAt Example#1](~/add/codesnippet/cpp/m-system.xml.xmlattribut_2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetNamedItem">
@@ -469,9 +378,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.SetNamedItem(System.Xml.XmlNode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -480,27 +397,10 @@
         <Parameter Name="node" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="node">An attribute node to store in this collection. The node will later be accessible using the name of the node. If a node with that name is already present in the collection, it is replaced by the new one; otherwise, the node is appended to the end of the collection.</param>
-        <summary>Adds a <see cref="T:System.Xml.XmlNode" /> using its <see cref="System.Xml.XmlNode.Name%2A" /> property</summary>
-        <returns>If the <paramref name="node" /> replaces an existing node with the same name, the old node is returned; otherwise, the added node is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example adds a new attribute to a document.  
-  
- [!code-cpp[Classic WebData XmlAttributeCollection.SetNamedItem Example#1](~/add/codesnippet/cpp/m-system.xml.xmlattribut_6_1.cpp)]
- [!code-cs[Classic WebData XmlAttributeCollection.SetNamedItem Example#1](~/add/codesnippet/csharp/m-system.xml.xmlattribut_6_1.cs)]
- [!code-vb[Classic WebData XmlAttributeCollection.SetNamedItem Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlattribut_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="node" /> was created from a different <see cref="T:System.Xml.XmlDocument" /> than the one that created this collection.  
-  
- This <see langword="XmlAttributeCollection" /> is read-only.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="node" /> is an <see cref="T:System.Xml.XmlAttribute" /> that is already an attribute of another <see cref="T:System.Xml.XmlElement" /> object. To re-use attributes in other elements, you must clone the <see langword="XmlAttribute" /> objects you want to re-use.</exception>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -509,9 +409,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -521,17 +429,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array that is the destination of the objects copied from this collection.</param>
-        <param name="index">The index in the array where copying begins.</param>
-        <summary>For a description of this member, see <see cref="System.Xml.XmlAttributeCollection.CopyTo%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlAttributeCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -540,24 +441,25 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see ICollection.Count.</summary>
-        <value>Returns an <see langword="int" /> that contains the count of the attributes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlAttributeCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -566,24 +468,25 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see ICollection.IsSynchronized.</summary>
-        <value>Returns <see langword="true" /> if the collection is synchronized.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlAttributeCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -592,24 +495,25 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see ICollection.SyncRoot.</summary>
-        <value>Returns the <see cref="T:System.Object" /> that is the root of the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlAttributeCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

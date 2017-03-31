@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SemanticValue" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,162 +29,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the semantic organization of a recognized phrase.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SemanticValue is the primary object that implements the semantic technology in System.Speech. Semantic interpretation allows grammars to define rules for use by a recognition engine to correctly interpret audio input. Semantic interpretation also enables recognition engines to organize their results so that they can be more easily processed, rather than returning only recognized words and sequences of words.  
-  
- For example, the recognition engine output "Change background to red" would have to be parsed and interpreted by an application before it could be acted upon. A <xref:System.Speech.Recognition.Grammar> object can specify a semantic interpretation to make processing clearer by specifying that the phrase has two semantic substructures, one for selecting background or foreground (represented by the text "background"), and the other for selecting color (represented by the text "red").  
-  
- System.Speech represents the semantics of a recognition operation in a tree of SemanticValue objects.  
-  
- Each SemanticValue instance includes the following:  
-  
--   An <xref:System.Object>, accessed by means of the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property, used to key the instance of the SemanticValue.  
-  
--   A measure of the accuracy of semantic parsing, returned by the <xref:System.Speech.Recognition.SemanticValue.Confidence%2A> property.  
-  
--   A collection of name/value pairs (<xref:System.Collections.Generic.KeyValuePair%602>) of child objects, which are also SemanticValue instances. Child nodes are accessible through the SemanticValue implementation of <xref:System.Collections.Generic.IDictionary%602> using a string lookup key and a SemanticValue instance, as in the following example.  
-  
-    ```c#  
-    foreach (KeyValuePair<String, SemanticValue> child in semantics)   
-    {  
-      Utils.CreateSemanticsTreeNodes(semanticsNode.Nodes, child.Value, child.Key);  
-    }  
-    ```  
-  
- Recognition engines based on System.Speech provide valid instances of SemanticValue for all output from recognition, even for phrases with no explicit semantic structure.  
-  
- The SemanticValue instance for a phrase is obtained using the <xref:System.Speech.Recognition.RecognizedPhrase.Semantics%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object (or objects that inherit from it, such as <xref:System.Speech.Recognition.RecognitionResult>).  
-  
- SemanticValue objects obtained for recognized phrases without semantic structure are characterized by:  
-  
--   The lack of children (<xref:System.Speech.Recognition.SemanticValue.Count%2A> is 0).  
-  
--   The <xref:System.Speech.Recognition.SemanticValue.Value%2A> property is `null`.  
-  
--   An artificial semantic confidence level of 1.0 (returned by <xref:System.Speech.Recognition.SemanticValue.Confidence%2A>).  
-  
- Typically, applications create SemanticValue instances indirectly, adding them to <xref:System.Speech.Recognition.Grammar> objects by using <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> instances,  in conjunction with  <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
-  
- Direct construction of a SemanticValue instance is useful during the creation of strongly-typed grammars.  
-  
- SemanticValue implements the <xref:System.Collections.Generic.IDictionary%602>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> interfaces.  
-  
-   
-  
-## Examples  
- The following example shows a handler for a <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event designed to handle commands to change foreground and background color.  
-  
- The handler identifies recognized phrases that have no underlying semantic structure by detecting a <xref:System.Speech.Recognition.SemanticValue.Count%2A> of zero and a <xref:System.Speech.Recognition.SemanticValue.Value%2A> of `null`. This recognition output is then processed directly by parsing the raw text.  
-  
- In other cases, the handler uses keys to obtain the RGB components of a color name, to determine whether the command will change the foreground or background, or to indicate that no valid key was found.  
-  
-```c#  
-  
-newGrammar.SpeechRecognized +=  
-  delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
-  {  
-  
-    // Retrieve the value of the semantic property.  
-    bool changeBackGround = true;  
-    string errorString = "";  
-    SemanticValue semantics = eventArgs.Result.Semantics;  
-  
-    Color newColor = Color.Empty;  
-  
-    try   
-    {  
-      if (semantics.Count == 0 && semantics.Value==null)  
-      {  
-        // Signifies recognition by a grammar with no semantics.  
-        // Parse the string, assuming that the last word is color,  
-        // and search for “background” or “foreground” in the input.  
-        if (eventArgs.Result.Text.Contains("foreground"))   
-        {  
-          changeBackGround = false;  
-        }  
-        string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
-        newColor = Color.FromName(cName);  
-  
-      }  
-      else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
-      {  
-  
-        // Determine whether to change background or foreground.  
-        if (semantics.ContainsKey("applyChgToBackground"))   
-        {  
-          changeBackGround = semantics["applyChgToBackground"].Value is bool;  
-        }  
-  
-        // Get the RGB color value.  
-        if (semantics.ContainsKey("colorStringList"))   
-        {  
-          newColor = Color.FromName((string)semantics["colorStringList"].Value);  
-        }  
-        if (semantics.ContainsKey("colorRGBValueList"))   
-        {  
-          newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
-        }  
-      }  
-      else   
-      {  
-  
-        // Throw an exception if the semantics do not contain the keys we  
-        // support.  
-        throw(new Exception("Unsupported semantics keys found."));  
-      }  
-    }  
-  
-    catch (Exception exp)   
-    {  
-      MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
-      return;  
-    }  
-  
-    // Change colors, either foreground or background.  
-    if (changeBackGround)   
-    {  
-      BackColor = newColor;  
-      float Bright = BackColor.GetBrightness();  
-      float Hue = BackColor.GetHue();  
-      float Sat = BackColor.GetSaturation();  
-  
-      // Make sure that text is readable regardless of the background.  
-      if (BackColor.GetBrightness() <= .50)   
-      {  
-        ForeColor = Color.White;  
-      }  
-      else   
-      {  
-        ForeColor = Color.Black;  
-      }  
-    }  
-    else   
-    {  
-      ForeColor = newColor;  
-      float Bright = ForeColor.GetBrightness();  
-      float Hue = ForeColor.GetHue();  
-      float Sat = ForeColor.GetSaturation();  
-  
-      // Make sure that text is readable regardless of Foreground.  
-      if (ForeColor.GetBrightness() <= .50)   
-      {  
-        BackColor = Color.White;  
-      }  
-      else   
-      {  
-        BackColor = Color.Black;  
-      }  
-    }  
-    return;  
-  };  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -195,29 +40,15 @@ newGrammar.SpeechRecognized +=
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The information to be stored in the <see cref="T:System.Speech.Recognition.SemanticValue" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SemanticValue" /> class and specifies a semantic value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are no restrictions on the type of `value` to be stored.  
-  
- An application can retrieve `value` by using the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property on a <xref:System.Speech.Recognition.SemanticValue> instance.  
-  
- The value of the <xref:System.Speech.Recognition.SemanticValue.Confidence%2A> property for the <xref:System.Speech.Recognition.SemanticValue> instance will be set to -1.  
-  
- A <xref:System.Speech.Recognition.SemanticValue> constructed with this method cannot be referenced by key name.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -227,7 +58,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -236,22 +66,11 @@ newGrammar.SpeechRecognized +=
         <Parameter Name="confidence" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="keyName">A key that can be used to reference this <see cref="T:System.Speech.Recognition.SemanticValue" /> instance.</param>
-        <param name="value">An object containing information to be stored in the <see cref="T:System.Speech.Recognition.SemanticValue" /> object.</param>
-        <param name="confidence">A <see langword="float" /> containing an estimate of the certainty of semantic analysis.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SemanticValue" /> class and specifies a semantic value, a key name, and a confidence level.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are no restrictions on the type of `value` to be stored.  
-  
- An application can retrieve `value` by using the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property on a <xref:System.Speech.Recognition.SemanticValue> instance.  
-  
- The `confidence` parameter (returned by the <xref:System.Speech.Recognition.SemanticValue.Confidence%2A> property on a <xref:System.Speech.Recognition.SemanticValue> instance), should be between 0.0 and 1.0.  
-  
- ]]></format>
-        </remarks>
+        <param name="keyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="confidence">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Confidence">
@@ -261,60 +80,15 @@ newGrammar.SpeechRecognized +=
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a relative measure of the certainty as to the correctness of the semantic parsing that returned the current instance of <see cref="T:System.Speech.Recognition.SemanticValue" />.</summary>
-        <value>Returns a <see langword="float" /> that is a relative measure of the certainty of semantic parsing that returned the current instance of <see cref="T:System.Speech.Recognition.SemanticValue" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Confidence property, which returns a measure of the correctness of semantic parsing, should not be confused with the <xref:System.Speech.Recognition.RecognizedPhrase.Confidence%2A?displayProperty=fullName> property, which returns a measure of the accuracy of speech recognition.  
-  
-   
-  
-## Examples  
- The following example is used to recursively traverse and then display information (including confidence) as a <xref:System.Windows.Forms.TreeNodeCollection>, or as the nodes making up the tree structure of the semantics used to recognize a phrase.  
-  
-```c#  
-internal static void CreateSemanticsTreeNodes(  
-        TreeNodeCollection nodes,  
-        SemanticValue semantics,  
-        String name)   
-{  
-  string semanticsText =   
-      String.Format("  {0}  (Confidence {1})", name,semantics.Confidence);  
-  
-  // Format integers as hexadecimal.  
-  if (semantics.Value == null )  
-  {  
-    semanticsText = semanticsText + " = null";  
-  }  
-  else if (semantics.Value.GetType() == typeof(int))   
-  {  
-    semanticsText = String.Format("{0} = {1:X} ", semanticsText, semantics.Value);  
-  }   
-  else   
-  {  
-    semanticsText = semanticsText + " = " + semantics.Value.ToString();  
-  }  
-  
-  TreeNode semanticsNode = new TreeNode(semanticsText);  
-  foreach (KeyValuePair<String, SemanticValue> child in semantics)   
-  {  
-    CreateSemanticsTreeNodes(semanticsNode.Nodes, child.Value, child.Key);  
-  }  
-  nodes.Add(semanticsNode);  
-}  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -324,7 +98,6 @@ internal static void CreateSemanticsTreeNodes(
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -334,9 +107,9 @@ internal static void CreateSemanticsTreeNodes(
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">An instance of <see cref="System.Collections.Generic.KeyValuePair%602" /> instantiated for a given value of a key string and a <see cref="T:System.Speech.Recognition.SemanticValue" /> instance.</param>
-        <summary>Indicates whether the current <see cref="T:System.Speech.Recognition.SemanticValue" /> instance collection contains a specific key and a specific instance of <see cref="T:System.Speech.Recognition.SemanticValue" /> expressed as a key/value pair.</summary>
-        <returns>Returns a <see langword="bool" /> which is <see langword="true" /> if the current <see cref="T:System.Speech.Recognition.SemanticValue" /> contains an instance of <c>KeyValuePair&lt;String, SemanticValue&gt;</c> for a specified value of the key string and the <see cref="T:System.Speech.Recognition.SemanticValue" />. Otherwise, <see langword="false" /> is returned.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,7 +120,6 @@ internal static void CreateSemanticsTreeNodes(
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -357,125 +129,10 @@ internal static void CreateSemanticsTreeNodes(
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">
-          <see cref="T:System.String" /> containing the key string used to identify a child instance of <see cref="T:System.Speech.Recognition.SemanticValue" /> under the current <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
-        <summary>Indicates whether the current <see cref="T:System.Speech.Recognition.SemanticValue" /> instance collection contains a child <see cref="T:System.Speech.Recognition.SemanticValue" /> instance with a given key string.</summary>
-        <returns>Returns a <see langword="bool" />, <see langword="true" /> if a child instance <see cref="T:System.Speech.Recognition.SemanticValue" /> tagged with the string <paramref name="key" /> is found, <see langword="false" /> if not.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can only access data by key value at runtime, for example to check *semantic["myKey"].Value*, and this generates an exception. We recommend that you query the object with ContainsKey before using <xref:System.Speech.Recognition.SemanticValue.Item%2A> with a given instance of <xref:System.Speech.Recognition.SemanticValue>.  
-  
-   
-  
-## Examples  
- The following example shows a handler for a <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event designed to handle commands to change foreground and background color.  
-  
- After handling phrases that are recognized but have no semantic structure, the handler checks for the presence of appropriate keys using ContainsKey (`applyChgToBackground`, `colorRGBValueList`, or `colorStringList)`,  and then processes the semantically organized data.  
-  
-```c#  
-  
-newGrammar.SpeechRecognized +=  
-  delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
-  {  
-  
-    // Retrieve the value of the semantic property.  
-    bool changeBackGround = true;  
-    string errorString = "";  
-    SemanticValue semantics = eventArgs.Result.Semantics;  
-  
-    Color newColor = Color.Empty;  
-  
-    try   
-    {  
-      if (semantics.Count == 0 && semantics.Value==null)  
-      {  
-  
-        // Signifies recognition by a grammar with no semantics.  
-        // Parse the string, assuming that the last word is color,  
-        // searching for background or foreground in input.  
-        if (eventArgs.Result.Text.Contains("foreground"))   
-        {  
-          changeBackGround = false;  
-        }  
-        string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
-        newColor = Color.FromName(cName);  
-  
-      }  
-      else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
-      {  
-  
-        // Determine whether to change background or foreground.  
-        if (semantics.ContainsKey("applyChgToBackground"))   
-        {  
-          changeBackGround = semantics["applyChgToBackground"].Value is bool;  
-        }  
-  
-        // Get the RGB color value.  
-        if (semantics.ContainsKey("colorStringList"))   
-        {  
-          newColor = Color.FromName((string)semantics["colorStringList"].Value);  
-        }  
-        if (semantics.ContainsKey("colorRGBValueList"))   
-        {  
-          newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
-        }  
-      }  
-      else   
-      {  
-  
-        // Throw an exception if the semantics do not contain the keys we  
-        // support.  
-        throw(new Exception("Unsupported semantics keys found."));  
-      }  
-    }  
-  
-    catch (Exception exp)   
-    {  
-      MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
-      return;  
-    }  
-  
-    // Change colors, either foreground or background.  
-    if (changeBackGround)   
-    {  
-      BackColor = newColor;  
-      float Bright = BackColor.GetBrightness();  
-      float Hue = BackColor.GetHue();  
-      float Sat = BackColor.GetSaturation();  
-      // Make sure that text is readable regardless of background.  
-      if (BackColor.GetBrightness() <= .50)   
-      {  
-        ForeColor = Color.White;  
-      }  
-      else   
-      {  
-        ForeColor = Color.Black;  
-      }  
-    }  
-    else   
-    {  
-      ForeColor = newColor;  
-      float Bright = ForeColor.GetBrightness();  
-      float Hue = ForeColor.GetHue();  
-      float Sat = ForeColor.GetSaturation();  
-      // Make sure that text is readable regardless of Foreground.  
-      if (ForeColor.GetBrightness() <= .50)   
-      {  
-        BackColor = Color.White;  
-      }  
-      else   
-      {  
-        BackColor = Color.Black;  
-      }  
-    }  
-    return;  
-  };  
-```  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -485,132 +142,15 @@ newGrammar.SpeechRecognized +=
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the number of child <see cref="T:System.Speech.Recognition.SemanticValue" /> objects under the current <see cref="T:System.Speech.Recognition.SemanticValue" /> instance.</summary>
-        <value>The number of child <see cref="T:System.Speech.Recognition.SemanticValue" /> objects under the current <see cref="T:System.Speech.Recognition.SemanticValue" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Recognition results that do not make use of semantic parsing always have a Count value of zero, as well as a <xref:System.Speech.Recognition.SemanticValue.Value%2A> of `null`.  
-  
-   
-  
-## Examples  
- The following example shows a handler for a <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event designed to handle commands to change foreground and background color.  
-  
- The handler identifies recognized phrases that have no underlying semantic structure by detecting a Count of zero and a <xref:System.Speech.Recognition.SemanticValue.Value%2A> of `null`. This recognition output is then processed directly by parsing the raw text.  
-  
- In other cases, the handler uses keys to obtain the RGB components of a color name, to determine whether the command will change the foreground or background, or to indicate that no valid key was found.  
-  
-```c#  
-  
-newGrammar.SpeechRecognized +=  
-  delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
-  {  
-  
-    // Retrieve the value of the semantic property.  
-    bool changeBackGround = true;  
-    string errorString = "";  
-    SemanticValue semantics = eventArgs.Result.Semantics;  
-  
-    Color newColor = Color.Empty;  
-  
-    try   
-    {  
-      if (semantics.Count == 0 && semantics.Value==null)  
-      {  
-        // Signifies recognition by a grammar with no semantics.  
-        // Parse the string, assuming that the last word is color,  
-        //  searching for background or foreground in input.  
-        if (eventArgs.Result.Text.Contains("foreground"))   
-        {  
-          changeBackGround = false;  
-        }  
-        string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
-        newColor = Color.FromName(cName);  
-  
-      }  
-      else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
-      {  
-  
-        // Determine whether to change background or foreground.  
-        if (semantics.ContainsKey("applyChgToBackground"))   
-        {  
-          changeBackGround = semantics["applyChgToBackground"].Value is bool;  
-        }  
-  
-        // Get the RGB color value.  
-        if (semantics.ContainsKey("colorStringList"))   
-        {  
-          newColor = Color.FromName((string)semantics["colorStringList"].Value);  
-        }  
-        if (semantics.ContainsKey("colorRGBValueList"))   
-        {  
-          newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
-        }  
-      }  
-      else   
-      {  
-  
-        // Throw an exception if the semantics do not contain the keys we  
-        // support.  
-        throw(new Exception("Unsupported semantics keys found."));  
-      }  
-    }  
-  
-    catch (Exception exp)   
-    {  
-      MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
-      return;  
-    }  
-  
-    // Change colors, either foreground or background.  
-    if (changeBackGround)   
-    {  
-      BackColor = newColor;  
-      float Bright = BackColor.GetBrightness();  
-      float Hue = BackColor.GetHue();  
-      float Sat = BackColor.GetSaturation();  
-      // Make sure that text is readable regardless of background.  
-      if (BackColor.GetBrightness() <= .50)   
-      {  
-        ForeColor = Color.White;  
-      }  
-      else   
-      {  
-        ForeColor = Color.Black;  
-      }  
-    }  
-    else   
-    {  
-      ForeColor = newColor;  
-      float Bright = ForeColor.GetBrightness();  
-      float Hue = ForeColor.GetHue();  
-      float Sat = ForeColor.GetSaturation();  
-  
-      // Make sure that text is readable regardless of Foreground.  
-      if (ForeColor.GetBrightness() <= .50)   
-      {  
-        BackColor = Color.White;  
-      }  
-      else   
-      {  
-        BackColor = Color.Black;  
-      }  
-    }  
-    return;  
-  };  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -620,7 +160,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -630,10 +169,9 @@ newGrammar.SpeechRecognized +=
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to evaluate.</param>
-        <summary>Determines whether a specified object is an instance of <c>SemanticValue</c> and equal to the current instance of <c>SemanticValue</c>.</summary>
-        <returns>
-          <see langword="true" /> if the specified Object is equal to the current Object; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -644,7 +182,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -652,8 +189,8 @@ newGrammar.SpeechRecognized +=
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides a hash code for a <c>SemanticValue</c> object.</summary>
-        <returns>A hash code for the current <see cref="T:System.Speech.Recognition.SemanticValue" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -664,7 +201,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -674,132 +210,10 @@ newGrammar.SpeechRecognized +=
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A key for a <see langword="KeyValuePair&lt;String, SemanticValue&gt;" /> contained in the current instance of <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
-        <summary>Returns child <see cref="T:System.Speech.Recognition.SemanticValue" /> instances that  belong to the current <see cref="T:System.Speech.Recognition.SemanticValue" />.</summary>
-        <value>Returns a child of the current <see cref="T:System.Speech.Recognition.SemanticValue" /> that can be indexed as part of a key value pair: <c>KeyValuePair&lt;String,</c><c>SemanticValue&gt;</c>.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Item is read-only and generates exceptions if members are modified.  
-  
- You can only access data by key value at run-time, not at compile-time, for example to check `semantic["myKey"].Value`. Specifying a key that is not present generates an exception.  
-  
- To detect the presence of a given key, use the <xref:System.Speech.Recognition.SemanticValue.ContainsKey%2A> property on an <xref:System.Speech.Recognition.SemanticValue> instance.  
-  
-   
-  
-## Examples  
- The following example shows a handler for a <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event designed to handle commands to change foreground and background color.  
-  
- After handling recognized phrases that have no semantic structure, the handler checks for the presence of appropriate keys using <xref:System.Speech.Recognition.SemanticValue.ContainsKey%2A> (`applyChgToBackground`, `colorRGBValueList`, or `colorStringList)`, and then uses the Item property to obtain the nodes with needed information.  
-  
- The use of Item is highlighted below.  
-  
-```c#  
-  
-newGrammar.SpeechRecognized +=  
-  delegate(object sender, SpeechRecognizedEventArgs eventArgs)   
-  {  
-  
-    // Retrieve the value of the semantic property.  
-    bool changeBackGround = true;  
-    string errorString = "";  
-    SemanticValue semantics = eventArgs.Result.Semantics;  
-  
-    Color newColor = Color.Empty;  
-  
-    try   
-    {  
-      if (semantics.Count == 0 && semantics.Value==null)  
-      {  
-        // Signifies recognition by a grammar with no semantics.  
-        // Parse the string, assuming that the last word is color,  
-        //  searching for background or foreground in input.  
-        if (eventArgs.Result.Text.Contains("foreground"))   
-        {  
-          changeBackGround = false;  
-        }  
-        string cName = eventArgs.Result.Words[eventArgs.Result.Words.Count - 1].Text;  
-        newColor = Color.FromName(cName);  
-  
-      }  
-      else if (semantics.ContainsKey("colorStringList") ^ semantics.ContainsKey("colorRGBValueList"))   
-      {  
-  
-        // Determine whether to change background or foreground.  
-        if (semantics.ContainsKey("applyChgToBackground"))   
-        {  
-          changeBackGround = semantics["applyChgToBackground"].Value is bool;  
-        }  
-  
-        // Get the RGB color value.  
-        if (semantics.ContainsKey("colorStringList"))   
-        {  
-          newColor = Color.FromName((string)semantics["colorStringList"].Value);  
-        }  
-        if (semantics.ContainsKey("colorRGBValueList"))   
-        {  
-          newColor = System.Drawing.Color.FromArgb((int)semantics["colorRGBValueList"].Value);  
-        }  
-      }  
-      else   
-      {  
-  
-        // Throw an exception if the semantics do not contain the keys we  
-        // support.  
-        throw(new Exception("Unsupported semantic keys found."));  
-      }  
-    }  
-  
-    catch (Exception exp)   
-    {  
-      MessageBox.Show(String.Format("Unable to process color semantics.:\n{0}\n", exp.Message));  
-      return;  
-    }  
-  
-    // Change colors, either foreground or background.  
-    if (changeBackGround)   
-    {  
-      BackColor = newColor;  
-      float Bright = BackColor.GetBrightness();  
-      float Hue = BackColor.GetHue();  
-      float Sat = BackColor.GetSaturation();  
-      // Make sure that text is readable regardless of background.  
-      if (BackColor.GetBrightness() <= .50)   
-      {  
-        ForeColor = Color.White;  
-      }  
-      else   
-      {  
-        ForeColor = Color.Black;  
-      }  
-    }  
-    else   
-    {  
-      ForeColor = newColor;  
-      float Bright = ForeColor.GetBrightness();  
-      float Hue = ForeColor.GetHue();  
-      float Sat = ForeColor.GetSaturation();  
-  
-      // Make sure that text is readable regardless of the foreground.  
-      if (ForeColor.GetBrightness() <= .50)   
-      {  
-        BackColor = Color.White;  
-      }  
-      else   
-      {  
-        BackColor = Color.Black;  
-      }  
-    }  
-    return;  
-  };  
-```  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if no child member of the current instance of <see cref="T:System.Speech.Recognition.SemanticValue" /> has the key matching the <paramref name="key" /> parameter.</exception>
-        <exception cref="T:System.InvalidOperationException">Thrown if code attempts to change the <see cref="T:System.Speech.Recognition.SemanticValue" /> at a given index.</exception>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.Add">
@@ -809,7 +223,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -831,7 +244,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -850,7 +262,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -874,7 +285,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -893,7 +303,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -916,7 +325,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -940,7 +348,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -959,7 +366,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -982,7 +388,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1007,7 +412,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1026,7 +430,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1046,7 +449,6 @@ newGrammar.SpeechRecognized +=
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1054,8 +456,8 @@ newGrammar.SpeechRecognized +=
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through a collection.</summary>
-        <returns>Returns an enumerator that iterates through a collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1066,60 +468,15 @@ newGrammar.SpeechRecognized +=
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A read-only property that returns the information contained in the current <see cref="T:System.Speech.Recognition.SemanticValue" />.</summary>
-        <value>Returns an <see cref="T:System.Object" /> instance containing the information stored in the current <see cref="T:System.Speech.Recognition.SemanticValue" /> instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Recognition results which do not make use of semantic parsing always have a Value of `null` and a <xref:System.Speech.Recognition.SemanticValue.Count%2A> property of zero.  
-  
-   
-  
-## Examples  
- The following example is used to recursively traverse and then display information (including confidence) as a <xref:System.Windows.Forms.TreeNodeCollection>, or as the nodes making up the tree structure of the semantics used to recognize a phrase.  
-  
-```c#  
-internal static void CreateSemanticsTreeNodes(  
-          TreeNodeCollection nodes,  
-          SemanticValue semantics,  
-          String name)   
-{  
-  string semanticsText =   
-      String.Format("  {0} ( Confidence {1})", name,semantics.Confidence);  
-  
-  // Format integers as hexadecimal.  
-  if (semantics.Value == null )  
-  {  
-    semanticsText = semanticsText + " = null";  
-  }  
-  else if (semantics.Value.GetType() == typeof(int))   
-  {  
-    semanticsText = String.Format("{0} = {1:X} ", semanticsText, semantics.Value);  
-  }  
-  else   
-  {  
-    semanticsText = semanticsText + " = " + semantics.Value.ToString();  
-  }  
-  
-  TreeNode semanticsNode = new TreeNode(semanticsText);  
-  foreach (KeyValuePair<String, SemanticValue> child in semantics)   
-  {  
-    CreateSemanticsTreeNodes(semanticsNode.Nodes, child.Value, child.Key);  
-  }  
-  nodes.Add(semanticsNode);  
-}  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

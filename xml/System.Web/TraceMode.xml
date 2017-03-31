@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Web.TraceMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies in what order trace messages are emitted into the HTML output of a page.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.TraceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the default value of the <see cref="System.Web.TraceContext.TraceMode%2A" /> enumeration, which is SortByTime.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SortByCategory">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.TraceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Emit trace messages alphabetically by category.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SortByTime">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.TraceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Emit trace messages in the order they were processed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

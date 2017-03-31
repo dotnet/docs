@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAccessDecision" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies whether the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token is granted access to a given resource.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SamlAccessDecision to express access permissions to a resource in a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> within a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Deny">
@@ -34,7 +26,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -46,7 +37,7 @@
         <ReturnType>System.IdentityModel.Tokens.SamlAccessDecision</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that access to a resource is denied.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Indeterminate">
@@ -56,7 +47,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -68,7 +58,7 @@
         <ReturnType>System.IdentityModel.Tokens.SamlAccessDecision</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the security token service that issued the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token does not have enough information to determine the access permissions for a particular resource. A recipient of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token must use other means to determine the user's access permissions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Permit">
@@ -78,7 +68,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -90,7 +79,7 @@
         <ReturnType>System.IdentityModel.Tokens.SamlAccessDecision</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that access to a resource is granted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

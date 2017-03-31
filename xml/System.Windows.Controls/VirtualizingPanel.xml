@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.VirtualizingPanel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,30 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a framework for <see cref="T:System.Windows.Controls.Panel" /> elements that virtualize their child data collection. This is an abstract class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this context, "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on the screen. It is intensive, both in terms of memory and processor, to generate a large number of [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] elements when only a few may be on the screen at a given time. A panel that inherits from VirtualizingPanel, such as the <xref:System.Windows.Controls.VirtualizingStackPanel>, calculates visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to only create [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] elements for visible items.  
-  
- The following lists describes cases when the VirtualizingPanel cannot virtualize item containers:  
-  
--   The <xref:System.Windows.Controls.ItemsControl> contains item containers of different types.  For example, a <xref:System.Windows.Controls.Menu> might have items that use both <xref:System.Windows.Controls.MenuItem> and <xref:System.Windows.Controls.Separator> objects as the item containers.  
-  
--   You explicitly create the item containers to the <xref:System.Windows.Controls.ItemsControl>. For more information about explicitly versus implicitly creating item containers, see the <xref:System.Windows.Controls.ItemsControl> class.  
-  
- When a VirtualizingPanel is virtualizing item containers, you may need to save state information that is associated with a container instead of with the data item itself. For example, if an item is contained by an <xref:System.Windows.Controls.Expander> control, the <xref:System.Windows.Controls.Expander.IsExpanded%2A> state is bound to the item container, and not to the data item itself. When the <xref:System.Windows.Controls.Expander> is reused for a new item, the current value of <xref:System.Windows.Controls.Expander.IsExpanded%2A> is used for the new item. In addition, the old item does not retain its <xref:System.Windows.Controls.Expander.IsExpanded%2A> value.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the derived <xref:System.Windows.Controls.VirtualizingStackPanel> class in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-xml[virtualizingstackpanel_intro#1](~/add/codesnippet/xaml/VirtualizingStackPanel_Samp/default.xaml#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,16 +46,9 @@
         <Parameter Name="child" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="child">The <see cref="T:System.Windows.UIElement" /> child to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Windows.UIElement" /> to the <see cref="System.Windows.Controls.Panel.InternalChildren%2A" /> collection of a <see cref="T:System.Windows.Controls.VirtualizingPanel" /> element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method offers better performance for <xref:System.Windows.Controls.Panel> elements that virtualize their child collection than does the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BringIndexIntoView">
@@ -90,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,8 +67,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index position of the item that is generated and made visible.</param>
-        <summary>When implemented in a derived class, generates the item at the specified index location and makes it visible.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +88,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index position of the item that is generated and made visible.</param>
-        <summary>Generates the item at the specified index location and makes it visible.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +106,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLength%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +123,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,16 +140,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> can virtualize items that are grouped or organized in a hierarchy.</summary>
-        <value>A value that indicates whether the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> can virtualize items that are grouped or organized in a hierarchy.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls <xref:System.Windows.Controls.VirtualizingPanel.CanHierarchicallyScrollAndVirtualizeCore%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanHierarchicallyScrollAndVirtualizeCore">
@@ -198,17 +158,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> can virtualize items that are grouped or organized in a hierarchy.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Classes that inherit from <xref:System.Windows.Controls.VirtualizingPanel> and support virtualizing items that are grouped or organized in a hierarchy should override this method to return `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCacheLength">
@@ -227,9 +179,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element to get the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLength%2A" /> attached property from.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLength%2A" /> property.</summary>
-        <returns>The size of the cache before and after the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,17 +201,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element to get the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A" /> attached property from.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A" /> property.</summary>
-        <returns>The type of unit that is used by the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLength%2A" /> property.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default is of the <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A> property is <xref:System.Windows.Controls.VirtualizationCacheLengthUnit>.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIsContainerVirtualizable">
@@ -278,18 +223,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element to get the <see cref="System.Windows.Controls.VirtualizingPanel.IsContainerVirtualizable%2A" /> attached property from.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.VirtualizingPanel.IsContainerVirtualizable%2A" /> property.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> should virtualize an item; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default is of the <xref:System.Windows.Controls.VirtualizingPanel.IsContainerVirtualizable%2A> attached property `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIsVirtualizing">
@@ -308,18 +245,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The object from which the attached property value is read.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.VirtualizingPanel.IsVirtualizing%2A" /> attached property.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing its content; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of the <xref:System.Windows.Controls.VirtualizingPanel.IsVirtualizing%2A> property is `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIsVirtualizingWhenGrouping">
@@ -338,18 +267,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element to get the <see cref="System.Windows.Controls.VirtualizingPanel.IsVirtualizingWhenGrouping%2A" /> attached property from.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.VirtualizingPanel.IsVirtualizingWhenGrouping%2A" /> property.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> virtualizes the grouped items in its collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of the <xref:System.Windows.Controls.VirtualizingPanel.IsVirtualizingWhenGrouping%2A> property is `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemOffset">
@@ -368,17 +289,10 @@
         <Parameter Name="child" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="child">The element whose position to find.</param>
-        <summary>Returns the position of the specified item, relative to the <see cref="T:System.Windows.Controls.VirtualizingPanel" />.</summary>
-        <returns>The position of the specified item, relative to the <see cref="T:System.Windows.Controls.VirtualizingPanel" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls <xref:System.Windows.Controls.VirtualizingPanel.GetItemOffsetCore%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemOffsetCore">
@@ -397,17 +311,10 @@
         <Parameter Name="child" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="child">The element whose position to find.</param>
-        <summary>Returns the position of the specified item, relative to the <see cref="T:System.Windows.Controls.VirtualizingPanel" />.</summary>
-        <returns>0 in all cases.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Classes that inherit from <xref:System.Windows.Controls.VirtualizingPanel> should override this method to return the position `child`, relative to the panel.  
-  
- ]]></format>
-        </remarks>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetScrollUnit">
@@ -426,17 +333,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element to get the <see cref="System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A" /> attached property from.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A" /> property.</summary>
-        <returns>A value that indicates whether scrolling is measured as items in the collection or as pixels.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of the <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> property is <xref:System.Windows.Controls.ScrollUnit>.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualizationMode">
@@ -455,9 +355,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The object from which the <see cref="System.Windows.Controls.VirtualizingPanel.VirtualizationMode%2A" /> property is read.</param>
-        <summary>Returns the <see cref="System.Windows.Controls.VirtualizingPanel.VirtualizationMode%2A" /> attached property for the specified object.</summary>
-        <returns>One of the enumeration values that specifies whether the object uses container recycling.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -468,7 +368,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -479,17 +378,10 @@
         <Parameter Name="child" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="index">The index position within the collection at which the child element is inserted.</param>
-        <param name="child">The <see cref="T:System.Windows.UIElement" /> child to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Windows.UIElement" /> to the <see cref="System.Windows.Controls.Panel.InternalChildren%2A" /> collection of a <see cref="T:System.Windows.Controls.VirtualizingPanel" /> element at the specified index position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method offers better performance for <xref:System.Windows.Controls.Panel> elements that virtualize their child collection than does the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsContainerVirtualizableProperty">
@@ -505,7 +397,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.VirtualizingPanel.IsContainerVirtualizable%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -522,7 +414,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.VirtualizingPanel.IsVirtualizing%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -539,7 +431,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.VirtualizingPanel.IsVirtualizingWhenGrouping%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,15 +442,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.IItemContainerGenerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that identifies the <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> for this <see cref="T:System.Windows.Controls.VirtualizingPanel" />.</summary>
-        <value>The <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> for this <see cref="T:System.Windows.Controls.VirtualizingPanel" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -569,7 +460,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -577,7 +467,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when the collection of child elements is cleared by the base <see cref="T:System.Windows.Controls.Panel" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,7 +478,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -599,9 +488,9 @@
         <Parameter Name="args" Type="System.Windows.Controls.Primitives.ItemsChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">The <see cref="T:System.Object" /> that raised the event.</param>
-        <param name="args">Provides data for the <see cref="E:System.Windows.Controls.ItemContainerGenerator.ItemsChanged" /> event.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with the <see cref="T:System.Windows.Controls.ItemsControl" /> for this <see cref="T:System.Windows.Controls.Panel" /> changes.</summary>
+        <param name="sender">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,7 +501,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -623,17 +511,10 @@
         <Parameter Name="range" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The beginning index position within the collection at which the first child element is removed.</param>
-        <param name="range">The total number of child elements to remove from the collection.</param>
-        <summary>Removes child elements from the <see cref="System.Windows.Controls.Panel.InternalChildren%2A" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method offers better performance for <xref:System.Windows.Controls.Panel> elements that virtualize their child collection than does the <xref:System.Windows.Controls.UIElementCollection.RemoveRange%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollUnitProperty">
@@ -649,7 +530,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,17 +551,10 @@
         <Parameter Name="value" Type="System.Windows.Controls.VirtualizationCacheLength" />
       </Parameters>
       <Docs>
-        <param name="element">The object to set the property on.</param>
-        <param name="value">The size of the cache before and after the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</param>
-        <summary>Sets the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLength%2A" /> attached property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The cache is the amount of space above or below the viewport in which items are not virtualized. Use a cache to avoid generating [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] elements as they’re scrolled into view.  The <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A> property determines the unit of measurement that is used by <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCacheLengthUnit">
@@ -700,9 +574,9 @@
         <Parameter Name="value" Type="System.Windows.Controls.VirtualizationCacheLengthUnit" />
       </Parameters>
       <Docs>
-        <param name="element">The object to set the property on.</param>
-        <param name="value">The type of unit that is used by the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLength%2A" /> property.</param>
-        <summary>Sets the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A" /> attached property.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -723,10 +597,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The object to set the property on.</param>
-        <param name="value">
-          <see langword="true" /> to indicate that the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> should virtualize an item; otherwise, <see langword="false" />.</param>
-        <summary>Sets the <see cref="System.Windows.Controls.VirtualizingPanel.IsContainerVirtualizable%2A" /> attached property.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -747,10 +620,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The object to which the attached property value is set.</param>
-        <param name="value">
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing; otherwise <see langword="false" />.</param>
-        <summary>Sets the value of the <see cref="F:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty" /> attached property.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -771,10 +643,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The object to set the property on.</param>
-        <param name="value">
-          <see langword="true" /> to specify that the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> virtualizes the grouped items in its collection; otherwise, <see langword="false" />.</param>
-        <summary>Sets the <see cref="System.Windows.Controls.VirtualizingPanel.IsVirtualizingWhenGrouping%2A" /> attached property.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -795,9 +666,9 @@
         <Parameter Name="value" Type="System.Windows.Controls.ScrollUnit" />
       </Parameters>
       <Docs>
-        <param name="element">The object to set the property on.</param>
-        <param name="value">A value that indicates whether scrolling is measured as items in the collection or as pixels.</param>
-        <summary>Sets the <see cref="System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A" /> attached property.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -818,9 +689,9 @@
         <Parameter Name="value" Type="System.Windows.Controls.VirtualizationMode" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to set the <see cref="System.Windows.Controls.VirtualizingPanel.VirtualizationMode%2A" /> property.</param>
-        <param name="value">One of the enumeration values that specifies whether <c>element</c> uses container recycling.</param>
-        <summary>Sets the <see cref="System.Windows.Controls.VirtualizingPanel.VirtualizationMode%2A" /> attached property on the specified object.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -841,12 +712,10 @@
         <Parameter Name="args" Type="System.Windows.Controls.Primitives.ItemsChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="areItemChangesLocal">
-          <see langword="true" /> if the changed item is a direct child of this <see cref="T:System.Windows.Controls.VirtualizingPanel" />; <see langword="false" /> if the changed item is an indirect descendant of the <see cref="T:System.Windows.Controls.VirtualizingPanel" />.</param>
-        <param name="args">Contains data regarding the changed item.</param>
-        <summary>Returns a value that indicates whether a changed item in an <see cref="T:System.Windows.Controls.ItemsControl" /> affects the layout for this panel.</summary>
-        <returns>
-          <see langword="true" /> if the changed item in an <see cref="T:System.Windows.Controls.ItemsControl" /> affects the layout for this panel; otherwise, <see langword="false" />.</returns>
+        <param name="areItemChangesLocal">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -867,12 +736,10 @@
         <Parameter Name="args" Type="System.Windows.Controls.Primitives.ItemsChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="areItemChangesLocal">
-          <see langword="true" /> if the changed item is a direct child of this <see cref="T:System.Windows.Controls.VirtualizingPanel" />; <see langword="false" /> if the changed item is an indirect descendant of the <see cref="T:System.Windows.Controls.VirtualizingPanel" />.</param>
-        <param name="args">Contains data regarding the changed item.</param>
-        <summary>Returns a value that indicates whether a changed item in an <see cref="T:System.Windows.Controls.ItemsControl" /> affects the layout for this panel.</summary>
-        <returns>
-          <see langword="true" /> if the changed item in an <see cref="T:System.Windows.Controls.ItemsControl" /> affects the layout for this panel; otherwise, <see langword="false" />.</returns>
+        <param name="areItemChangesLocal">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -889,7 +756,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.VirtualizingPanel.VirtualizationMode%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

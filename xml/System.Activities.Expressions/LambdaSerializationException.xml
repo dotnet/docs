@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The exception that is thrown when a XAML serialization attempt is made on a <see cref="System.Activities.Expressions.LambdaValue%601" /> or <see cref="System.Activities.Expressions.LambdaReference%601" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Activities.Expressions.LambdaValue%601> and <xref:System.Activities.Expressions.LambdaReference%601> are used for lambda expressions specified in code and are not XAML serializable. If an attempt is made to serialize a workflow that contains a <xref:System.Activities.Expressions.LambdaValue%601> or <xref:System.Activities.Expressions.LambdaReference%601>, a LambdaSerializationException is thrown. If the containing workflow requires XAML serialization, use <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> or <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601>, or use <xref:System.Activities.Expressions.ExpressionServices> to convert the <xref:System.Activities.Expressions.LambdaValue%601> or <xref:System.Activities.Expressions.LambdaReference%601> to a serializable format.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.LambdaSerializationException" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +43,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The error message that explains the reason for the exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.LambdaSerializationException" /> class with a specified error message.</summary>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +62,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The serialized object data about the exception being thrown.</param>
-        <param name="context">The contextual information about the source or destination.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.LambdaSerializationException" /> class with serialized data.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +82,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">The error message that explains the reason for the exception.</param>
-        <param name="innerException">The exception that is the cause of the current exception, or a null reference (<see langword="Nothing" /> in Visual Basic) if no inner exception is specified.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.LambdaSerializationException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,9 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEqualityComparer" />
   <TypeSignature Language="DocId" Value="T:System.Collections.IEqualityComparer" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -14,19 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines methods to support the comparison of objects for equality.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This interface allows the implementation of customized equality comparison for collections. That is, you can create your own definition of equality, and specify that this definition be used with a collection type that accepts the IEqualityComparer interface. In the .NET Framework, constructors of the <xref:System.Collections.Hashtable>, <xref:System.Collections.Specialized.NameValueCollection>, and <xref:System.Collections.Specialized.OrderedDictionary> collection types accept this interface.  
-  
- This interface supports only equality comparisons. Customization of comparisons for sorting and ordering is provided by the <xref:System.Collections.IComparer> interface.  
-  
- For the generic version of this interface, see <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -35,9 +35,20 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -47,30 +58,11 @@
         <Parameter Name="y" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">The first object to compare.</param>
-        <param name="y">The second object to compare.</param>
-        <summary>Determines whether the specified objects are equal.</summary>
-        <returns>
-          <see langword="true" /> if the specified objects are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implement this method to provide a customized equality comparison for objects.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the implementation of a case-insensitive <xref:System.Collections.IEqualityComparer>. In this example, the <xref:System.Collections.CaseInsensitiveComparer.Compare%2A?displayProperty=fullName> method is used to determine whether two objects are equal, based on the provided <xref:System.Globalization.CultureInfo>.  
-  
- [!code-cpp[System.Collections.Hashtable_ctor#2](~/add/codesnippet/cpp/m-system.collections.ieq_1_1.cpp)]
- [!code-cs[System.Collections.Hashtable_ctor#2](~/add/codesnippet/csharp/m-system.collections.ieq_1_1.cs)]
- [!code-vb[System.Collections.Hashtable_ctor#2](~/add/codesnippet/visualbasic/m-system.collections.ieq_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="x" /> and <paramref name="y" /> are of different types and neither one can handle comparisons with the other.</exception>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -79,9 +71,20 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -90,27 +93,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> for which a hash code is to be returned.</param>
-        <summary>Returns a hash code for the specified object.</summary>
-        <returns>A hash code for the specified object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implement this method to provide customized hash codes for objects,corresponding to the customized equality comparison provided by the <xref:System.Collections.IEqualityComparer.Equals%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the implementation of a case-insensitive <xref:System.Collections.IEqualityComparer>. In this example, the GetHashCode method returns the hash code provided by the <xref:System.Object> type.  
-  
- [!code-cpp[System.Collections.Hashtable_ctor#2](~/add/codesnippet/cpp/m-system.collections.ieq_0_1.cpp)]
- [!code-cs[System.Collections.Hashtable_ctor#2](~/add/codesnippet/csharp/m-system.collections.ieq_0_1.cs)]
- [!code-vb[System.Collections.Hashtable_ctor#2](~/add/codesnippet/visualbasic/m-system.collections.ieq_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The type of <paramref name="obj" /> is a reference type and <paramref name="obj" /> is <see langword="null" />.</exception>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

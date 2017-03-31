@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains the metadata for a discoverable service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EndpointDiscoveryMetadata class contains metadata about the service it represents.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +43,8 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the endpoint address for the endpoint the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance describes.</summary>
-        <value>The endpoint address for the service endpoint the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance describes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +61,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlQualifiedName&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of contract type names implemented by the service described by the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />.</summary>
-        <value>A collection of contract type names.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +79,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.Linq.XElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the extensions associated with this <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</summary>
-        <value>A collection of extensions.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +100,9 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">A service endpoint.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> from a <see cref="T:System.ServiceModel.Description.ServiceEndpoint" />.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</returns>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,10 +123,10 @@
         <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The endpoint.</param>
-        <param name="endpointDispatcher">The endpoint dispatcher.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> class using the specified service endpoint and endpoint dispatcher.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</returns>
+        <param name="endpoint">To be added.</param>
+        <param name="endpointDispatcher">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,8 +143,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the listen URIs for the service described by this <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</summary>
-        <value>A collection of listen URIs.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,8 +161,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scopes associated with this <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</summary>
-        <value>A collection of absolute URIs.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +179,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the version of the published <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />.</summary>
-        <value>The version of the published <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

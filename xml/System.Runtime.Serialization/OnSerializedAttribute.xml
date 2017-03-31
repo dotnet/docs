@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OnSerializedAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.OnSerializedAttribute" />
   <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,31 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>When applied to a method, specifies that the method is called after serialization of an object in an object graph. The order of serialization relative to other objects in the graph is non-deterministic.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the OnSerializedAttribute to manipulate the object after serialization has occurred.  
-  
- To use the OnSerializedAttribute, the method must contain a <xref:System.Runtime.Serialization.StreamingContext> parameter. The attribute marks the method to be called by the serialization infrastructure and the <xref:System.Runtime.Serialization.StreamingContext> provides additional data about the type of serialization taking place.  The usage is shown in the following code:  
-  
- [!code-vb[System.Runtime.Serialization.OnSerialization#3](~/add/codesnippet/visualbasic/t-system.runtime.seriali_12_1.vb)]
- [!code-cs[System.Runtime.Serialization.OnSerialization#3](~/add/codesnippet/csharp/t-system.runtime.seriali_12_1.cs)]  
-  
-> [!NOTE]
->  In your code, you can use the word `OnSerialized` instead of the longer OnSerializedAttribute.  
-  
-   
-  
-## Examples  
- The following example applies the <xref:System.Runtime.Serialization.OnDeserializedAttribute>, <xref:System.Runtime.Serialization.OnSerializingAttribute>, OnSerializedAttribute, and <xref:System.Runtime.Serialization.OnDeserializingAttribute> attributes to methods in a class.  
-  
- [!code-vb[System.Runtime.Serialization.OnSerialization#1](~/add/codesnippet/visualbasic/t-system.runtime.seriali_12_2.vb)]
- [!code-cs[System.Runtime.Serialization.OnSerialization#1](~/add/codesnippet/csharp/t-system.runtime.seriali_12_2.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,13 +38,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.OnSerializedAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.OnSerializedAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

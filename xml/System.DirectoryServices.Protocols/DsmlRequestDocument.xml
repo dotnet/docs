@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>The DsmlRequestDocument class enables you to build a DSML request payload, such as <see cref="T:System.DirectoryServices.Protocols.AddRequest" />, <see cref="T:System.DirectoryServices.Protocols.ModifyRequest" />, or <see cref="T:System.DirectoryServices.Protocols.SearchRequest" />.  It contains zero or more <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> derived objects. The user may add, delete, modify, and enumerate the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> before sending to the server. DsmlRequestDocument can be used with any DSML Binding classes to transport the document, such as <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,20 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>The DsmlRequestDocument constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor creates an empty request document.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -50,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,12 +50,10 @@
         <Parameter Name="request" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
       </Parameters>
       <Docs>
-        <param name="request">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to add to the collection.</param>
-        <summary>The Add method adds a <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to the collection.</summary>
-        <returns>The index of the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection at which the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object was added.</returns>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="request" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -75,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The Clear method removes all items from this collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,10 +90,9 @@
         <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object for which to search.</param>
-        <summary>The Contains method determines whether this <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection contains the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object is part of the collection; <see langword="false" />, otherwise.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,9 +113,9 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> object.</param>
-        <param name="i">The zero-based index of <c>value</c> where copying begins.</param>
-        <summary>The CopyTo method copies the entire <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection to a one-dimensional array, starting at the specified index of the target array.</summary>
+        <param name="value">To be added.</param>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,15 +126,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Count property contains the number of <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> objects in this collection.</summary>
-        <value>The number of <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> objects in this collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,18 +144,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.DsmlDocumentProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DocumentProcessing property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlDocumentProcessing" /> that specifies how the elements of the collection are processed.</summary>
-        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlDocumentProcessing" /> that specifies how the elements of the collection are processed.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="value" /> is an invalid enumeration value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ErrorProcessing">
@@ -182,18 +162,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.DsmlErrorProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ErrorProcessing property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlErrorProcessing" /> that specifies how errors are processed.</summary>
-        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlErrorProcessing" /> that specifies how errors are processed.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="value" /> is an invalid enumeration value.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -203,7 +180,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,8 +187,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The GetEnumerator method returns an enumerator for the entire <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection.</summary>
-        <returns>A <see cref="T:System.Collections.IEnumerator" /> object for the entire collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,7 +199,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,12 +208,10 @@
         <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object for which the index is returned.</param>
-        <summary>The IndexOf method returns the zero-based index of the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object in the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection.</summary>
-        <returns>The index value of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object, if found; otherwise, -1.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -248,7 +221,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -259,12 +231,10 @@
         <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
       </Parameters>
       <Docs>
-        <param name="index">The index in the collection at which to insert the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</param>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to be inserted into the collection.</param>
-        <summary>The Insert method inserts the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object into the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -274,16 +244,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IsFixedSize property contains a value that indicates whether the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> has a fixed size.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,16 +262,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IsReadOnly property contains a value indicating whether the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is read only or not.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is read only; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,16 +280,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IsSynchronized property contains a value that indicates whether access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is synchronized (thread-safe).</summary>
-        <value>
-          <see langword="true" /> if access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,7 +298,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -344,12 +307,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index value at which the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object is found.</param>
-        <summary>The Item property contains the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified index.</summary>
-        <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="index" /> is set to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -359,7 +320,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,11 +329,9 @@
         <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to remove.</param>
-        <summary>The Remove method removes the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object from the collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -383,7 +341,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,8 +350,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to remove.</param>
-        <summary>The RemoveAt method removes the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified position.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,15 +362,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The RequestId property contains the <paramref name="RequestID" /> associated with the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</summary>
-        <value>The <paramref name="RequestID" /> associated with the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,18 +380,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.DsmlResponseOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ResponseOrder property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlResponseOrder" /> that specifies the order of the response.</summary>
-        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlResponseOrder" /> that specifies the order of the response.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="value" /> is an invalid enumeration value.</exception>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -445,23 +398,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The SyncRoot property contains an object that can be used to synchronize access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Derived classes can provide synchronized versions of the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument> using the SyncRoot property. The synchronizing code must perform operations on the SyncRoot of the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument>, not directly on the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument>. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -471,7 +416,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -482,9 +426,9 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> object.</param>
-        <param name="i">The zero-based index of <c>value</c> where copying begins.</param>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.CopyTo%2A" /> method copies the entire <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection to a one-dimensional array, starting at the specified index of the target array.</summary>
+        <param name="value">To be added.</param>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -495,15 +439,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.Count%2A" /> property gets the number of <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> objects in this collection.</summary>
-        <value>The number of <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> objects.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,16 +457,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.IsSynchronized%2A" /> property gets a value that indicates whether access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is synchronized (thread-safe).</summary>
-        <value>
-          <see langword="true" /> if access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,15 +475,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.SyncRoot%2A" /> property gets an object that can be used to synchronize access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</summary>
-        <value>An object that can be used to synchronize access to <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,7 +493,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -563,14 +502,10 @@
         <Parameter Name="request" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to add to the collection.</param>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Add%2A" /> method adds a <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to the collection.</summary>
-        <returns>The index of the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection at which the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object was added.</returns>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="request" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="request" /> is not a  <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -580,7 +515,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -588,7 +522,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Clear%2A" /> method removes all items from the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,7 +533,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -609,10 +542,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object for which to search.</param>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Contains%2A" /> method determines whether this <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection contains the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object is part of the collection; <see langword="false" />, otherwise.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -623,7 +555,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -633,12 +564,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object for which the index is returned.</param>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.IndexOf%2A" /> method returns the zero-based index of the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object in the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection.</summary>
-        <returns>The index value of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object, if found; otherwise, -1.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -648,7 +577,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -659,14 +587,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The index in the collection at which to insert the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</param>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to be inserted into the collection.</param>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Insert%2A" /> method inserts the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object into the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> is not a  <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -676,16 +600,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.IsFixedSize%2A" /> property gets a value that indicates whether the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> has a fixed size.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -696,16 +618,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.IsReadOnly%2A" /> property gets a value that indicates whether the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is read-only or not.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is read only; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -716,7 +636,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -726,14 +645,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index value at which the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object is found.</param>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Item%2A" /> property gets or sets the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified index.</summary>
-        <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified <paramref name="index" />.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="index" /> is set to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> is not a  <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -743,7 +658,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -753,11 +667,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to remove.</param>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Remove%2A" /> method removes the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object from the collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -767,7 +679,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -777,8 +688,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to remove.</param>
-        <summary>The <see cref="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.RemoveAt%2A" /> method removes the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified position.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -789,7 +700,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -797,8 +707,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The ToXml method transforms each <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object in the collection into an <see cref="T:System.Xml.XmlDocument" /> object.</summary>
-        <returns>The transformed <see cref="T:System.Xml.XmlDocument" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

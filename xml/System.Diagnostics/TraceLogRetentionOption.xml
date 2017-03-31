@@ -4,34 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceLogRetentionOption" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the file structure that will be used for the <see cref="T:System.Diagnostics.EventSchemaTraceListener" /> log.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TraceLogRetentionOption enumeration is used to specify the value of the <xref:System.Diagnostics.EventSchemaTraceListener.TraceLogRetentionOption%2A> property in the <xref:System.Diagnostics.EventSchemaTraceListener> class. That property setting determines the possible and default values for the <xref:System.Diagnostics.EventSchemaTraceListener.MaximumFileSize%2A?displayProperty=fullName> and <xref:System.Diagnostics.EventSchemaTraceListener.MaximumNumberOfFiles%2A?displayProperty=fullName> properties.  
-  
- You can set the <xref:System.Diagnostics.EventSchemaTraceListener.MaximumFileSize%2A> and <xref:System.Diagnostics.EventSchemaTraceListener.MaximumNumberOfFiles%2A> properties through the `maximumFileSize` and `maximumNumberOfFiles` custom attributes in the configuration file or by using the `maximumFileSize` or `maximumNumberOfFiles` parameters in the  <xref:System.Diagnostics.EventSchemaTraceListener.%23ctor%2A> constructor. If the `maximumFileSize` or `maximumNumberOfFiles` attributes in the configuration file specify an out-of-range value, the properties are set to their default values. If you specify an out-of-range value in the `maximumFileSize` or `maximumNumberOfFiles` parameter when you call the <xref:System.Diagnostics.EventSchemaTraceListener.%23ctor%2A> constructor, an <xref:System.ArgumentOutOfRangeException> is thrown.  
-  
- The following table shows the possible and default values for file size and file count that are associated with each trace log retention option. "N/A" indicates that the associated property is not checked for that TraceLogRetentionOption value.  
-  
-|TraceLogRetentionOption|Maximum file size|Default file size|Maximum number of files|Default number of files|  
-|-----------------------------|-----------------------|-----------------------|-----------------------------|-----------------------------|  
-|LimitedCircularFiles|N/A|-1|N/A|1|  
-|LimitedSequentialFiles|>0|4 kB|N/A|1|  
-|SingleFileBoundedSize|>0|4 kB|N/A|-1|  
-|SingleFileUnboundedSize|>0|4 kB|>0|1|  
-|UnlimitedSequentialFiles|>0|4 kB|>1|2|  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="LimitedCircularFiles">
@@ -41,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLogRetentionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A finite number of sequential files, each with a maximum file size. When the <see cref="System.Diagnostics.EventSchemaTraceListener.MaximumFileSize%2A" /> property value is reached, writing starts in a new file with an incremented integer suffix. When the <see cref="System.Diagnostics.EventSchemaTraceListener.MaximumNumberOfFiles%2A" /> property value is reached, the first file is cleared and overwritten. Files are then incrementally overwritten in a circular manner.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LimitedSequentialFiles">
@@ -58,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLogRetentionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A finite number of sequential files, each with a maximum file size. When the <see cref="System.Diagnostics.EventSchemaTraceListener.MaximumFileSize%2A" /> property value is reached, writing starts in a new file with an incremented integer suffix.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleFileBoundedSize">
@@ -75,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLogRetentionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One file with a maximum file size that is determined by the <see cref="System.Diagnostics.EventSchemaTraceListener.MaximumFileSize%2A" /> property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleFileUnboundedSize">
@@ -92,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLogRetentionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One file with no maximum file size restriction.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnlimitedSequentialFiles">
@@ -109,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLogRetentionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unlimited number of sequential files, each with a maximum file size that is determined by the <see cref="System.Diagnostics.EventSchemaTraceListener.MaximumFileSize%2A" /> property. There is no logical bound to the number or size of the files, but it is limited by the physical constraints imposed by the computer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

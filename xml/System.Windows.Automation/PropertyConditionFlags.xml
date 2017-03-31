@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.PropertyConditionFlags" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,18 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains values that specify how a property value is tested in a <see cref="T:System.Windows.Automation.PropertyCondition" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, IgnoreCase is set in a <xref:System.Windows.Automation.PropertyCondition>.  
-  
- [!code-vb[UIAClient_snip#110](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#110)]
- [!code-cs[UIAClient_snip#110](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#110)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="IgnoreCase">
@@ -37,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.PropertyConditionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that comparison with a string property value is not case-sensitive.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -54,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.PropertyConditionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the property value is tested using default behavior (case-sensitive comparison for strings).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

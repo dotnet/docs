@@ -4,24 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.TrackingMode" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines whether changes that are made to a <see cref="System.Data.Services.Client.DataServiceCollection%601" /> are tracked.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TrackingMode enumeration specifies whether or not changes that are made to items in the collection are tracked automatically.  
-  
- Values from the TrackingMode enumeration are used when you create a new instance of the <xref:System.Data.Services.Client.DataServiceCollection%601> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AutoChangeTracking">
@@ -31,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.Client.TrackingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Changes to items in the <see cref="System.Data.Services.Client.DataServiceCollection%601" /> are automatically tracked by the client.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.Client.TrackingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Changes made to items in the <see cref="System.Data.Services.Client.DataServiceCollection%601" /> are not tracked automatically by the client.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

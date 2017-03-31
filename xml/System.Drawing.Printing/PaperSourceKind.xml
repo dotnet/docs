@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PaperSourceKind" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Standard paper sources.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=fullName> property.  
-  
- For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AutomaticFeed">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Automatically fed paper.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cassette">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A paper cassette.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A printer-specific paper source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Envelope">
@@ -82,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An envelope.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FormSource">
@@ -99,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The printer's default input bin.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeCapacity">
@@ -116,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The printer's large-capacity bin.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeFormat">
@@ -133,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Large-format paper.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lower">
@@ -150,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The lower bin of a printer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Manual">
@@ -167,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Manually fed paper.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ManualFeed">
@@ -184,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Manually fed envelope.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Middle">
@@ -201,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The middle bin of a printer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallFormat">
@@ -218,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Small-format paper.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TractorFeed">
@@ -235,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A tractor feed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Upper">
@@ -252,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The upper bin of a printer (or the default bin, if the printer only has one bin).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

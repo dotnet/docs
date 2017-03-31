@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.XmlSerializerOperationBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,23 +19,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Controls run-time behavior of the <see cref="T:System.Xml.Serialization.XmlSerializer" /> associated with an operation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XmlSerializerOperationBehavior enables control of <xref:System.Xml.Serialization.XmlSerializer> options, such as the <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> property of the <xref:System.ServiceModel.XmlSerializerFormatAttribute>.  
-  
-   
-  
-## Examples  
- The following example finds the XmlSerializerOperationBehavior for a specific operation, and sets the <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> property of the <xref:System.ServiceModel.XmlSerializerFormatAttribute> for the serializer.  
-  
- [!code-cs[XmlSerializerOperationBehavior#1](~/add/codesnippet/csharp/t-system.servicemodel.de_33_1.cs)]
- [!code-vb[XmlSerializerOperationBehavior#1](~/add/codesnippet/visualbasic/t-system.servicemodel.de_33_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,26 +30,26 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="operation" Type="System.ServiceModel.Description.OperationDescription" />
       </Parameters>
       <Docs>
-        <param name="operation">The <see cref="T:System.ServiceModel.Description.OperationDescription" /> to export or serialize.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.XmlSerializerOperationBehavior" /> class with a specific operation.</summary>
+        <param name="operation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public XmlSerializerOperationBehavior (System.ServiceModel.Description.OperationDescription operation, System.ServiceModel.XmlSerializerFormatAttribute attribute);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.OperationDescription operation, class System.ServiceModel.XmlSerializerFormatAttribute attribute) cil managed" />
+      <MemberSignature Language="C#" Value="public XmlSerializerOperationBehavior (System.ServiceModel.Description.OperationDescription operation, System.ServiceModel.XmlSerializerFormatAttribute format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.OperationDescription operation, class System.ServiceModel.XmlSerializerFormatAttribute format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.XmlSerializerOperationBehavior.#ctor(System.ServiceModel.Description.OperationDescription,System.ServiceModel.XmlSerializerFormatAttribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -72,9 +57,9 @@
         <Parameter Name="attribute" Type="System.ServiceModel.XmlSerializerFormatAttribute" />
       </Parameters>
       <Docs>
-        <param name="operation">The <see cref="T:System.ServiceModel.Description.OperationDescription" /> to export or serialize.</param>
-        <param name="attribute">An <see cref="T:System.ServiceModel.XmlSerializerFormatAttribute" /> used to hold SOAP use and format options.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.XmlSerializerOperationBehavior" /> class.</summary>
+        <param name="operation">To be added.</param>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +70,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,8 +78,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the collection of mappings between XML schema elements and CLR data types.</summary>
-        <returns>A <see cref="System.Collections.ObjectModel.Collection%601" /> of <see cref="T:System.Xml.Serialization.XmlMapping" />s that contains the mappings.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +90,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,17 +101,10 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="description">The target <see cref="T:System.ServiceModel.Description.OperationDescription" />.</param>
-        <param name="parameters">A <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> that contains the parameters.</param>
-        <summary>Adds a set of parameters to an operation description.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Adds a set of parameters to an operation description.  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior">
@@ -136,7 +114,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,17 +125,10 @@
         <Parameter Name="proxy" Type="System.ServiceModel.Dispatcher.ClientOperation" />
       </Parameters>
       <Docs>
-        <param name="description">A <see cref="T:System.ServiceModel.Description.OperationDescription" /> that represents the operation.</param>
-        <param name="proxy">A <see cref="T:System.ServiceModel.Dispatcher.ClientOperation" /> that represents a client operation.</param>
-        <summary>Applies a client's behavior to the operation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Applies a client's behavior to the operation.  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <param name="proxy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior">
@@ -167,7 +138,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,17 +149,10 @@
         <Parameter Name="dispatch" Type="System.ServiceModel.Dispatcher.DispatchOperation" />
       </Parameters>
       <Docs>
-        <param name="description">The target <see cref="T:System.ServiceModel.Description.OperationDescription" />.</param>
-        <param name="dispatch">The <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> to apply.</param>
-        <summary>Applies a dispatch behavior to the operation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Applies a dispatch behavior to the operation.  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <param name="dispatch">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.Validate">
@@ -198,7 +162,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,16 +172,9 @@
         <Parameter Name="description" Type="System.ServiceModel.Description.OperationDescription" />
       </Parameters>
       <Docs>
-        <param name="description">The target <see cref="T:System.ServiceModel.Description.OperationDescription" /> to validate.</param>
-        <summary>Validates the operation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Validates the operation.  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IWsdlExportExtension.ExportContract">
@@ -227,7 +184,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,17 +194,10 @@
         <Parameter Name="contractContext" Type="System.ServiceModel.Description.WsdlContractConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> to use for the export.</param>
-        <param name="contractContext">The <see cref="T:System.ServiceModel.Description.WsdlContractConversionContext" /> to export.</param>
-        <summary>Exports the operation data as a WSDL document.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Exports the operation data as a WSDL document.  
-  
- ]]></format>
-        </remarks>
+        <param name="exporter">To be added.</param>
+        <param name="contractContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint">
@@ -258,7 +207,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,17 +217,10 @@
         <Parameter Name="endpointContext" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> to use for the export.</param>
-        <param name="endpointContext">The <see cref="T:System.ServiceModel.Description.WsdlEndpointConversionContext" /> to export.</param>
-        <summary>Exports the endpoint data as a WSDL document.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Exports the endpoint data as a WSDL document.  
-  
- ]]></format>
-        </remarks>
+        <param name="exporter">To be added.</param>
+        <param name="endpointContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlSerializerFormatAttribute">
@@ -289,15 +230,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.XmlSerializerFormatAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that holds SOAP use and format options.</summary>
-        <value>An <see cref="T:System.ServiceModel.XmlSerializerFormatAttribute" /> that holds SOAP use and format options.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

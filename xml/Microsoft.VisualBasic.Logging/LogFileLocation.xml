@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.LogFileLocation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines which predefined path the <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> class uses to write its log files.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Assign one of the LogFileLocation enumeration values to the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> property to specify which predefined path the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class uses to write its log files.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CommonApplicationDirectory">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Logging.LogFileLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the path for the application data that is shared among all users.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Logging.LogFileLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If the string specified by <see cref="Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A" /> is not empty, then use it as the path. Otherwise, use the path for a user's application data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExecutableDirectory">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Logging.LogFileLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the path for the executable file that started the application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalUserApplicationDirectory">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Logging.LogFileLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the path for a user's application data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TempDirectory">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Logging.LogFileLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the path of the current system's temporary folder.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

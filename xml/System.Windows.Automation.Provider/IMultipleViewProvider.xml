@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IMultipleViewProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -20,15 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Exposes methods and properties to support UI Automation client access to controls that provide, and are able to switch between, multiple representations of the same set of information or child controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.MultipleViewPattern> control pattern.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CurrentView">
@@ -38,23 +30,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current control-specific view.</summary>
-        <value>The value for the current view of the UI Automation element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection of view identifiers must be identical across instances.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSupportedViews">
@@ -64,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,18 +55,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a collection of control-specific view identifiers.</summary>
-        <returns>A collection of values that identifies the views available for a UI Automation element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection of view identifiers must be identical across instances.  
-  
- View identifier values can be passed to <xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetViewName%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetViewName">
@@ -93,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,23 +76,10 @@
         <Parameter Name="viewId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="viewId">The view identifier.</param>
-        <summary>Retrieves the name of a control-specific view.</summary>
-        <returns>A localized name for the view.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- View identifiers can be retrieved by using <xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetSupportedViews%2A>.  
-  
- The collection of view identifiers must be identical across instances.  
-  
- View names must be suitable for use in text-to-speech, Braille, and other accessible applications.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="viewId" /> is not a member of the supported views collection.</exception>
+        <param name="viewId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCurrentView">
@@ -129,7 +89,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,20 +98,9 @@
         <Parameter Name="viewId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="viewId">A view identifier.</param>
-        <summary>Sets the current control-specific view.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- View identifiers can be retrieved by using <xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetSupportedViews%2A>.  
-  
- The collection of view identifiers must be identical across instances.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="viewId" /> is not a member of the supported views collection.</exception>
+        <param name="viewId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

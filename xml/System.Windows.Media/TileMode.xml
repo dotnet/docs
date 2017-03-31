@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TileMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes how a <see cref="T:System.Windows.Media.TileBrush" /> paints tiles onto an output area.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following illustration shows the different tile modes.  
-  
- ![Available tile modes](~/add/media/graphicsmm-tilemode-enum-enumorder.png "Available tile modes")  
-Available tile modes for the TileMode enumeration  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FlipX">
@@ -32,14 +21,13 @@ Available tile modes for the TileMode enumeration
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.TileMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The same as Tile except that alternate columns of tiles are flipped horizontally. The base tile itself is not flipped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FlipXY">
@@ -49,14 +37,13 @@ Available tile modes for the TileMode enumeration
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.TileMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The combination of FlipX and FlipY. The base tile itself is not flipped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FlipY">
@@ -66,14 +53,13 @@ Available tile modes for the TileMode enumeration
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.TileMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The same as Tile except that alternate rows of tiles are flipped vertically. The base tile itself is not flipped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -83,14 +69,13 @@ Available tile modes for the TileMode enumeration
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.TileMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The base tile is drawn but not repeated. The remaining area is transparent</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tile">
@@ -100,14 +85,13 @@ Available tile modes for the TileMode enumeration
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.TileMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The base tile is drawn and the remaining area is filled by repeating the base tile. The right edge of one tile meets the left edge of the next, and similarly for the bottom and top edges.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

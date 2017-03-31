@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheRevalidation" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Provides enumerated values that are used to set revalidation-specific <see langword="Cache-Control" /> HTTP headers.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpCacheRevalidation enumeration is used to set revalidation-specific HTTP headers, and is set using the <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> method. If the <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> method is not called, no `Cache-Control` HTTP header is set.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AllCaches">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheRevalidation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets the HTTP header to <see langword="Cache-Control: must-revalidate" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheRevalidation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If this value is set, no cache-revalidation directive is sent. The default value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProxyCaches">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheRevalidation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets the HTTP header to <see langword="Cache-Control: proxy-revalidate" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

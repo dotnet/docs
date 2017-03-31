@@ -3,7 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FilterUIHintAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" />
   <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,43 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an attribute that is used to specify the filtering behavior for a column.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to replace default filters on the product entity.  
-  
-```c#  
-MetadataType(typeof(Product_MD))]  
-public partial class Product {  
-    private class Product_MD {  
-        [FilterUIHint("MultiForeignKey")]  
-        public object Category { get; set; }  
-        [FilterUIHint("BooleanRadio")]  
-        public object Discontinued { get; set; }  
-    }  
-}  
-```  
-  
-```vb#  
-<MetadataType(GetType(Product_MD))>  _  
-Public Class Product  
-    Private Class Product_MD  
-        <FilterUIHint("MultiForeignKey")>  _  
-        Public Property Category As Object  
-        End Property  
-  
-        <FilterUIHint("BooleanRadio")>  _  
-        Public Property Discontinued As Object  
-        End Property  
-  
-    End Class  
-End Class  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,51 +31,21 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="filterUIHint" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filterUIHint">The name of the control to use for filtering.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" /> class by using the filter UI hint.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to replace default filters on the product entity.  
-  
-```c#  
-MetadataType(typeof(Product_MD))]  
-public partial class Product {  
-    private class Product_MD {  
-        [FilterUIHint("MultiForeignKey")]  
-        public object Category { get; set; }  
-        [FilterUIHint("BooleanRadio")]  
-        public object Discontinued { get; set; }  
-    }  
-}  
-```  
-  
-```vb#  
-<MetadataType(GetType(Product_MD))>  _  
-Public Class Product  
-    Private Class Product_MD  
-        <FilterUIHint("MultiForeignKey")>  _  
-        Public Property Category As Object  
-        End Property  
-  
-        <FilterUIHint("BooleanRadio")>  _  
-        Public Property Discontinued As Object  
-        End Property  
-  
-    End Class  
-End Class  
-```  
-  
- ]]></format>
-        </remarks>
+        <param name="filterUIHint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,7 +54,12 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.#ctor(System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -122,9 +67,9 @@ End Class
         <Parameter Name="presentationLayer" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filterUIHint">The name of the control to use for filtering.</param>
-        <param name="presentationLayer">The name of the presentation layer that supports this control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" /> class by using the filter UI hint and presentation layer name.</summary>
+        <param name="filterUIHint">To be added.</param>
+        <param name="presentationLayer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +79,12 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.#ctor(System.String,System.String,System.Object[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -149,10 +99,10 @@ End Class
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="filterUIHint">The name of the control to use for filtering.</param>
-        <param name="presentationLayer">The name of the presentation layer that supports this control.</param>
-        <param name="controlParameters">The list of parameters for the control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" /> class by using the filter UI hint, presentation layer name, and control parameters.</summary>
+        <param name="filterUIHint">To be added.</param>
+        <param name="presentationLayer">To be added.</param>
+        <param name="controlParameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,15 +112,20 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.ControlParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name/value pairs that are used as parameters in the control's constructor.</summary>
-        <value>The name/value pairs that are used as parameters in the control's constructor.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,7 +135,12 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,10 +150,9 @@ End Class
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare with this attribute instance.</param>
-        <summary>Returns a value that indicates whether this attribute instance is equal to a specified object.</summary>
-        <returns>
-          <see langword="True" /> if the passed object is equal to this attribute instance; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,15 +162,20 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.FilterUIHint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the control to use for filtering.</summary>
-        <value>The name of the control to use for filtering.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,7 +185,12 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,8 +198,8 @@ End Class
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this attribute instance.</summary>
-        <returns>This attribute insatnce hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,15 +209,20 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.PresentationLayer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the presentation layer that supports this control.</summary>
-        <value>The name of the presentation layer that supports this control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,14 +233,15 @@ End Class
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the unique identifier for this attribute instance.</summary>
-        <value>This attribuet instance unique identifier.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

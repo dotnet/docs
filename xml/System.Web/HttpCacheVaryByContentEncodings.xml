@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheVaryByContentEncodings" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,37 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type-safe way to set the <see cref="System.Web.HttpCachePolicy.VaryByContentEncodings%2A" /> property of the <see cref="T:System.Web.HttpCachePolicy" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property is used to specify whether dynamically compressed responses are cached. Caching dynamically compressed responses means that the cost of compression is incurred only one time, during the first request for the resource (or after an application restart) and when the cache item expires.  
-  
- The <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property of the <xref:System.Web.HttpCachePolicy> class identifies which request header parameters ASP.NET uses to uniquely identify a variation of the response if there are multiple cached responses for a resource. This is useful when a response depends on a set of client inputs, such as headers, parameters, or content encodings.  
-  
- The HttpCacheVaryByContentEncodings class is not directly related to HTTP cache-control headers. However, it helps make sure that a response to a client or a proxy varies by the specified content encoding. Setting the cache to vary by content encoding enables ASP.NET to vary the response by the `Accept-Encoding` header. When a request is processed, the `Accept-Encoding` header is checked and the first acceptable encoding is identified and used to take one of the following actions:  
-  
--   If a matching encoding is also found in the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> list and a cached response exists, the cached response is sent.  
-  
--   If a matching encoding is also found in the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> list but a cached response does not exist, a response is generated and inserted into the cache.  
-  
--   If a matching encoding is not found in the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> list, the cache is searched for a non-encoded response, also referred to as the identity response. If the identity response is found, it is sent. Otherwise a new non-encoded response is generated and stored in the cache.  
-  
- For more information about the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
-  
- You can set the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property by using the  directive or by adding a profile to the  element in the Web.config file.  
-  
-   
-  
-## Examples  
- The following example shows how to enable a dynamically compressed response that can be served from the output cache. The encoding that is acceptable is "gzip" and is set by using the `VaryByContentEncodings` attribute of the  directive. If the Web server that hosts the page does not have dynamic compression enabled, the output cache will not have a cached response for the specified content encoding.  
-  
- [!code-vb[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/add/codesnippet/visualbasic/t-system.web.httpcacheva_1_1.aspx)]
- [!code-cs[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/add/codesnippet/csharp/t-system.web.httpcacheva_1_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpCacheVaryByContentEncodings" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array of values which specify the content encodings to be used for varying the cache.</summary>
-        <returns>An array of values which contain the content encodings for varying the cache.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +56,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,12 +65,10 @@
         <Parameter Name="contentEncoding" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contentEncoding">The name of the content encoding.</param>
-        <summary>Gets or sets a value that indicates whether the cache varies according to the specified content encoding.</summary>
-        <value>
-          <see langword="true" /> if the cache should vary by the specified content encoding; otherwise, <see langword="false" />.</value>
+        <param name="contentEncoding">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The content encoding is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetContentEncodings">
@@ -120,8 +87,8 @@
         <Parameter Name="contentEncodings" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="contentEncodings">An array of values which contain the content encodings for varying the cache.</param>
-        <summary>Sets an array of values which specify the content encodings to be used for varying the cache.</summary>
+        <param name="contentEncodings">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

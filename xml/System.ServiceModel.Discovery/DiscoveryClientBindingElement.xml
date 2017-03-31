@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A binding element that can be added to a [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client application to take advantage of the Discovery client channel. The Discovery client channel allows a [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client application to access a discoverable service without knowing the endpoint address in advance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Discovery client channel is used by creating a custom binding element and adding a DiscoveryClientBindingElement to the top of the binding stack. [!INCLUDE[crabout](~/add/includes/crabout-md.md)] the Discovery client channel, see [Using the Discovery Client Channel](../Topic/Using%20the%20Discovery%20Client%20Channel.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,15 +26,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryClientBindingElement" /> class with default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> is set to <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria%2A> is empty.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -58,9 +44,9 @@
         <Parameter Name="findCriteria" Type="System.ServiceModel.Discovery.FindCriteria" />
       </Parameters>
       <Docs>
-        <param name="discoveryEndpointProvider">An object that gets a discovery endpoint.</param>
-        <param name="findCriteria">An object that contains the information required to search for a service provider.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryClientBindingElement" /> class with the specified endpoint provider and service finding criteria.</summary>
+        <param name="discoveryEndpointProvider">To be added.</param>
+        <param name="findCriteria">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +69,10 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The type of channel factory to create.</typeparam>
-        <param name="context">The binding context.</param>
-        <summary>Initializes a channel factory for producing channels of a specific type from the binding context.</summary>
-        <returns>The channel factory of the specified type initialized from the binding context.</returns>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,10 +100,10 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The type of channel listener to create.</typeparam>
-        <param name="context">The binding context.</param>
-        <summary>Building a channel listener is not supported by the Discovery client channel. This method can be overridden to initialize a channel listener to accept channels of a specified type from the binding context.</summary>
-        <returns>The channel listener of the specified type initialized from the context.</returns>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,11 +126,10 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The type of channel for which the factory is being tested.</typeparam>
-        <param name="context">The binding context.</param>
-        <summary>Returns a value that indicates whether the current binding can build a channel factory stack on the client.</summary>
-        <returns>
-          <see langword="true" /> if the specified channel factory stack can be built on the client; otherwise <see langword="false" />.</returns>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,11 +157,10 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The type of channel the listener accepts.</typeparam>
-        <param name="context">The binding context.</param>
-        <summary>Because building a channel listener is not supported by the Discovery client channel, this method always returns <see langword="false" />. It may be extended to return a value that indicates whether the binding element can build a listener for a specific type of channel.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.Channels.IChannelListener%601" /> of the specified type can be built by the binding element, otherwise <see langword="false" />.</returns>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,8 +178,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a copy of the binding element.</summary>
-        <returns>A copy of the binding element.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,7 +196,7 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A static temporary address that acts as a placeholder until the actual service address is resolved.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,8 +213,8 @@
         <ReturnType>System.ServiceModel.Discovery.DiscoveryEndpointProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the discovery endpoint provider.</summary>
-        <value>The endpoint provider.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,8 +231,8 @@
         <ReturnType>System.ServiceModel.Discovery.FindCriteria</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the find criteria.</summary>
-        <value>The find criteria.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,10 +259,10 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of object to retrieve.</typeparam>
-        <param name="context">The binding context.</param>
-        <summary>Returns an object of the requested type, if present in the binding stack.</summary>
-        <returns>An object of the specified type if present, otherwise <see langword="null" />.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

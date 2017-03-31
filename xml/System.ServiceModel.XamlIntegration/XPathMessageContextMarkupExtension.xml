@@ -16,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an extension of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageContext" /> to contain namespaces when serializing XPath message queries into XAML.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is used in conjunction with the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextTypeConverter> to convert an <xref:System.ServiceModel.Dispatcher.XPathMessageContext> into the XPathMessageContextMarkupExtension type. That class converts the XPath query context information from an XML file into a format that can be serialized as XAML.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +48,8 @@
         <Parameter Name="context" Type="System.ServiceModel.Dispatcher.XPathMessageContext" />
       </Parameters>
       <Docs>
-        <param name="context">The XPath message context to convert.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" /> class with the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageContext" /> to convert.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +66,8 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the namespaces contained in this instance.</summary>
-        <value>A collection of namespaces and prefixes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +87,9 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">A service provider that is not used in the operation.</param>
-        <summary>Provides the namespaces used in the XPath message query.</summary>
-        <returns>The namespaces.</returns>
+        <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

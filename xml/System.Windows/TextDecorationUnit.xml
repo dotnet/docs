@@ -4,26 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TextDecorationUnit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the unit type of either a <see cref="T:System.Windows.TextDecoration" /> <see cref="System.Windows.TextDecoration.PenOffset%2A" /> or a <see cref="System.Windows.TextDecoration.Pen%2A" /> thickness value.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set the <xref:System.Windows.TextDecoration.PenThicknessUnit%2A> property to Pixel.  
-  
- [!code-cs[TextDecorationSnippets#TextDecorationSnippets7](~/add/codesnippet/csharp/TextDecorationSnippets/Window1.xaml.cs#textdecorationsnippets7)]
- [!code-xml[TextDecorationSnippets#TextDecorationSnippets7](~/add/codesnippet/xaml/TextDecorationSnippets/Window1.xaml#textdecorationsnippets7)]
- [!code-vb[TextDecorationSnippets#TextDecorationSnippets7](~/add/codesnippet/visualbasic/textdecorationsnippets/window1.xaml.vb#textdecorationsnippets7)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FontRecommended">
@@ -33,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A unit value that is relative to the font used for the <see cref="T:System.Windows.TextDecoration" />. If the decoration spans multiple fonts, an average recommended value is calculated. This is the default value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontRenderingEmSize">
@@ -50,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A unit value that is relative to the em size of the font. The value of the offset or thickness is equal to the offset or thickness value multiplied by the font em size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pixel">
@@ -67,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A unit value that is expressed in pixels.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BoundsSpecified" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,22 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the bounds of the control to use when defining a control's size and position.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the members of this enumeration when calling the <xref:System.Windows.Forms.Control.SetBoundsCore%2A> and <xref:System.Windows.Forms.Control.SetBounds%2A> methods of the <xref:System.Windows.Forms.Control> class.  
-  
-   
-  
-## Examples  
- [!code-cs[Control.Layout#1](~/add/codesnippet/csharp/t-system.windows.forms.b_8_1.cs)]
- [!code-vb[Control.Layout#1](~/add/codesnippet/visualbasic/t-system.windows.forms.b_8_1.vb)]
- [!code-cpp[Control.Layout#1](~/add/codesnippet/cpp/t-system.windows.forms.b_8_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -41,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Both <see cref="System.Windows.Forms.Control.Location%2A" /> and <see cref="System.Windows.Forms.Control.Size%2A" /> property values are defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -58,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The height of the control is defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -75,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Both <see langword="X" /> and <see langword="Y" /> coordinates of the control are defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -92,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No bounds are specified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -109,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Both <see cref="System.Windows.Forms.Control.Width%2A" /> and <see cref="System.Windows.Forms.Control.Height%2A" /> property values of the control are defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -126,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The width of the control is defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -143,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left edge of the control is defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -160,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The top edge of the control is defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

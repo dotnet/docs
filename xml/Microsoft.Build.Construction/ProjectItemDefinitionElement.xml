@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an ItemDefinition element in an MSBuild project.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +37,10 @@
         <Parameter Name="unevaluatedValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">Name of the metadata.</param>
-        <param name="unevaluatedValue">Metadata to be added.</param>
-        <summary>Adds metadata to this item definition. Appends the metadata to any existing metadata.</summary>
-        <returns>Returns the modified metadata.</returns>
+        <param name="name">To be added.</param>
+        <param name="unevaluatedValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +57,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item definition element name.</summary>
-        <value>Returns the item definition element name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectMetadataElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all child metadata definitions.</summary>
-        <value>Returns all child metadata definitions.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

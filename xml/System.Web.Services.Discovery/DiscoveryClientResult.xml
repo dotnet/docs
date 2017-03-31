@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientResult" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the details of a discovery reference without the contents of the referenced document. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Using the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A> method of <xref:System.Web.Services.Discovery.DiscoveryClientProtocol>, all valid referenced documents and a file containing a map of all save documents can be written to disk. The file containing a map of all saved documents contains the details of each document as summarized by the properties of DiscoveryClientResult.  
-  
- After the referenced documents and the map of the referenced documents have been written to disk using the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A> method, you can invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ReadAll%2A> method to read the discovery documents.  
-  
-   
-  
-## Examples  
- [!code-cpp[DiscoveryClientResult#1](~/add/codesnippet/cpp/t-system.web.services.di_12_1.cpp)]
- [!code-cs[DiscoveryClientResult#1](~/add/codesnippet/csharp/t-system.web.services.di_12_1.cs)]
- [!code-vb[DiscoveryClientResult#1](~/add/codesnippet/visualbasic/t-system.web.services.di_12_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,22 +23,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[DiscoveryClientResult_Filename#2](~/add/codesnippet/csharp/m-system.web.services.di_10_1.cs)]
- [!code-cpp[DiscoveryClientResult_Filename#2](~/add/codesnippet/cpp/m-system.web.services.di_10_1.cpp)]
- [!code-vb[DiscoveryClientResult_Filename#2](~/add/codesnippet/visualbasic/m-system.web.services.di_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -64,7 +39,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,20 +48,11 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="referenceType">Name of the class representing the type of reference in the discovery document. Sets the <see cref="System.Web.Services.Discovery.DiscoveryClientResult.ReferenceTypeName%2A" /> property.</param>
-        <param name="url">URL for the reference. Sets the <see cref="System.Web.Services.Discovery.DiscoveryClientResult.Url%2A" /> property.</param>
-        <param name="filename">Name of the file in which the reference was saved. Sets the <see cref="System.Web.Services.Discovery.DiscoveryClientResult.Filename%2A" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> class and sets the <see cref="System.Web.Services.Discovery.DiscoveryClientResult.ReferenceTypeName%2A" /> property to <paramref name="referenceType" />, the <see cref="System.Web.Services.Discovery.DiscoveryClientResult.Url%2A" /> property to <paramref name="url" /> and the <see cref="System.Web.Services.Discovery.DiscoveryClientResult.Filename%2A" /> property to <paramref name="filename" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[DiscoveryClientResult_ctor#1](~/add/codesnippet/csharp/9f65c9d1-3116-437d-b718-_1.cs)]
- [!code-vb[DiscoveryClientResult_ctor#1](~/add/codesnippet/visualbasic/9f65c9d1-3116-437d-b718-_1.vb)]
- [!code-cpp[DiscoveryClientResult_ctor#1](~/add/codesnippet/cpp/9f65c9d1-3116-437d-b718-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="referenceType">To be added.</param>
+        <param name="url">To be added.</param>
+        <param name="filename">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Filename">
@@ -96,7 +62,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -108,23 +74,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the file in which the reference is saved.</summary>
-        <value>Name of the file in which the reference is saved.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The name of the file is the name of the file saved on the local computer based on the contents of the file. For instance, if the referenced file is a discovery document, the saved file will have a.disco extension on a Windows operating system.  
-  
-   
-  
-## Examples  
- [!code-cs[DiscoveryClientResult_Filename#5](~/add/codesnippet/csharp/p-system.web.services.di_32_1.cs)]
- [!code-cpp[DiscoveryClientResult_Filename#5](~/add/codesnippet/cpp/p-system.web.services.di_32_1.cpp)]
- [!code-vb[DiscoveryClientResult_Filename#5](~/add/codesnippet/visualbasic/p-system.web.services.di_32_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReferenceTypeName">
@@ -134,7 +86,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -146,23 +98,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Name of the class representing the type of reference in the discovery document.</summary>
-        <value>Name of the class representing the type of a reference. Default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A reference within a discovery document can contain references to service descriptions, XSD schemas, or other discovery documents. Therefore, ReferenceTypeName can have the following values: <xref:System.Web.Services.Description.ServiceDescription>, <xref:System.Xml.Schema.XmlSchema>, and <xref:System.Web.Services.Discovery.DiscoveryDocument>.  
-  
-   
-  
-## Examples  
- [!code-cs[DiscoveryClientResult_Filename#2](~/add/codesnippet/csharp/p-system.web.services.di_5_1.cs)]
- [!code-cpp[DiscoveryClientResult_Filename#2](~/add/codesnippet/cpp/p-system.web.services.di_5_1.cpp)]
- [!code-vb[DiscoveryClientResult_Filename#2](~/add/codesnippet/visualbasic/p-system.web.services.di_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -172,7 +110,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -184,23 +122,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL for the reference.</summary>
-        <value>The URL of the reference.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The URL can refer to a discovery document, XML Schema Definition (XSD) schema, or a Service Description.  
-  
-   
-  
-## Examples  
- [!code-cs[DiscoveryClientResult_Filename#4](~/add/codesnippet/csharp/p-system.web.services.di_0_1.cs)]
- [!code-cpp[DiscoveryClientResult_Filename#4](~/add/codesnippet/cpp/p-system.web.services.di_0_1.cpp)]
- [!code-vb[DiscoveryClientResult_Filename#4](~/add/codesnippet/visualbasic/p-system.web.services.di_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

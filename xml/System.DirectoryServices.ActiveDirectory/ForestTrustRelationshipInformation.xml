@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,9 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The ForestTrustRelationshipInformation class contains information about a trust relationship between two <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
   </Docs>
   <Members>
     <Member MemberName="ExcludedTopLevelNames">
@@ -24,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the excluded top-level names in the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" /> object.</summary>
-        <value>A read/write <see cref="T:System.Collections.Specialized.StringCollection" /> that contains the excluded top-level names in the current object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,10 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Commits any changes to the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" /> properties to the Active Directory Domain Services store.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionException">A collision occurred with an existing trust relationship.</exception>
       </Docs>
     </Member>
     <Member MemberName="TopLevelNames">
@@ -64,15 +58,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the top-level names in the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" /> object.</summary>
-        <value>A read-only <see cref="T:System.DirectoryServices.ActiveDirectory.TopLevelNameCollection" /> object that contains the top-level names in the current object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,15 +76,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the trusted domain information for this <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation" /> object.</summary>
-        <value>A read-only <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation" /> object  for the current object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

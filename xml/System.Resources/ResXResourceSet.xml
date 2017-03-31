@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXResourceSet" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,32 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents all resources in an XML resource (.resx) file.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ResXResourceSet class enumerates over an <xref:System.Resources.IResourceReader>, loads every name and value, and stores them in a hash table. You can then enumerate the resources in the ResXResourceSet object or retrieve individual resources by name.  
-  
-> [!NOTE]
->  This class contains a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> and an <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> at the class level that applies to all members. A <xref:System.Security.SecurityException> exception is thrown when the immediate caller or a derived class does not have full-trust permission.  
-  
- A ResXResourceSet object provides a convenient way to read all the resources in a .resx file into memory. You can use the <xref:System.Resources.ResourceSet.GetObject%2A> method to retrieve a particular resource when the .resx file has been read into a ResXResourceSet instance.  
-  
-   
-  
-## Examples  
- The following example instantiates a ResXResourceSet object and illustrates how to enumerate its resources and retrieve individual resources by name. For each resource that it enumerates, the example uses the <xref:System.Collections.IDictionaryEnumerator.Key%2A?displayProperty=fullName> property in a call to the `GetString` or `GetObject` method, depending on whether the value of the resource is a string or an object.  
-  
- [!code-cs[System.Resources.ResXResourceSet.Class#1](~/add/codesnippet/csharp/t-system.resources.resxr_0_1.cs)]
- [!code-vb[System.Resources.ResXResourceSet.Class#1](~/add/codesnippet/visualbasic/t-system.resources.resxr_0_1.vb)]  
-  
- The example calls a `CreateResXFile` method to create the necessary XML resource file. It requires a bitmap file named Logo.bmp in the directory in which the example is running.  
-  
- ]]></format>
-    </remarks>
-    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
-    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for the immediate caller. This class cannot be inherited by partially trusted code.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,18 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">The <see cref="T:System.IO.Stream" /> of resources to be read. The stream should refer to an existing resource file.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXResourceSet" /> class using the system default <see cref="T:System.Resources.ResXResourceReader" /> to read resources from the specified stream.</summary>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
-        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for the immediate caller. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,18 +40,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">The name of the file to read resources from.</param>
-        <summary>Initializes a new instance of a <see cref="T:System.Resources.ResXResourceSet" /> class using the system default <see cref="T:System.Resources.ResXResourceReader" /> that opens and reads resources from the specified file.</summary>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
-        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for the immediate caller. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultReader">
@@ -89,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,11 +65,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the preferred resource reader class for this kind of <see cref="T:System.Resources.ResXResourceSet" />.</summary>
-        <returns>The <see cref="T:System.Type" /> of the preferred resource reader for this kind of <see cref="T:System.Resources.ResXResourceSet" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
-        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for the immediate caller. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultWriter">
@@ -111,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,11 +84,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the preferred resource writer class for this kind of <see cref="T:System.Resources.ResXResourceSet" />.</summary>
-        <returns>The <see cref="T:System.Type" /> of the preferred resource writer for this kind of <see cref="T:System.Resources.ResXResourceSet" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
-        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for the immediate caller. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
   </Members>

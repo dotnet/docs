@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,27 +24,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates that a class should be treated as if it has global scope.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can apply this attribute to classes.  
-  
- This class is used only for communication with debugger tools.  
-  
- The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to apply the CompilerGlobalScopeAttribute.  
-  
- [!code-vb[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/add/codesnippet/visualbasic/t-system.runtime.compile_26_1.vb)]
- [!code-cs[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/add/codesnippet/csharp/t-system.runtime.compile_26_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,23 +35,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute>.  
-  
- [!code-vb[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/add/codesnippet/visualbasic/m-system.runtime.compile_4_1.vb)]
- [!code-cs[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/add/codesnippet/csharp/m-system.runtime.compile_4_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

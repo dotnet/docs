@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestResult" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides the base class for several derived classes that represents the return value from a hit test.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.PointHitTestResult>, <xref:System.Windows.Media.GeometryHitTestResult>, and <xref:System.Windows.Media.Media3D.RayHitTestResult> classes derive from HitTestResult.  
-  
-   
-  
-## Examples  
- The following example shows how to retrieve the HitTestResult return value from the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method.  
-  
- [!code-cs[HitTestingOverview#100](~/add/codesnippet/csharp/HitTestingOverview/Window1.xaml.cs#100)]
- [!code-vb[HitTestingOverview#100](~/add/codesnippet/visualbasic/hittestingoverview/window1.xaml.vb#100)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="VisualHit">
@@ -38,31 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the visual object that was hit.</summary>
-        <value>A <see cref="T:System.Windows.DependencyObject" /> value that represents the visual object that was hit.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.DependencyObject> is the type rather than <xref:System.Windows.Media.Visual> so that hit testing can bridge 2D and 3D trees through a viewport.  
-  
-   
-  
-## Examples  
- The following example shows how to retrieve the VisualHit property value in a hit test callback method.  
-  
- [!code-cs[HitTestingOverview#102](~/add/codesnippet/csharp/HitTestingOverview/Window1.xaml.cs#102)]
- [!code-vb[HitTestingOverview#102](~/add/codesnippet/visualbasic/hittestingoverview/window1.xaml.vb#102)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

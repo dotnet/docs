@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationEventArgs" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] events that are passed to an <see cref="T:System.Windows.Automation.AutomationEventHandler" /> delegate.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,26 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="eventId" Type="System.Windows.Automation.AutomationEvent" />
       </Parameters>
       <Docs>
-        <param name="eventId">The event identifier.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.AutomationEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how a UI Automation provider might create an<xref:System.Windows.Automation.AutomationEventArgs> and raise the event.  
-  
- [!code-cs[UIAFragmentProvider_snip#122](~/add/codesnippet/csharp/UIAFragmentProvider_snip.ElementProvider/ListFragment.cs#122)]
- [!code-vb[UIAFragmentProvider_snip#122](~/add/codesnippet/visualbasic/UIAFragmentProviderVB/ListFragment.vb#122)]  
-  
- ]]></format>
-        </remarks>
+        <param name="eventId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EventId">
@@ -52,31 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the event identifier.</summary>
-        <value>The event identifier.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a client has added event handlers for more than one event using the same <xref:System.Windows.Automation.AutomationEventHandler> instance, EventId can be used to identify the event that the delegate should process.  
-  
-   
-  
-## Examples  
- In the following example, the event handler checks the EventId of the event and handles the event accordingly.  
-  
- [!code-vb[UIAClient_snip#173](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#173)]
- [!code-cs[UIAClient_snip#173](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#173)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

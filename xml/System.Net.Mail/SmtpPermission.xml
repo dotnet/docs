@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpPermission" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,25 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Controls access to Simple Mail Transport Protocol (SMTP) servers.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SmtpPermission and <xref:System.Net.Mail.SmtpPermissionAttribute> classes control access to SMTP host computers. The <xref:System.Net.Mail.SmtpClient> class demands an SmtpPermission when sending electronic mail to the SMTP host for delivery.  
-  
- The <xref:System.Net.Mail.SmtpAccess> enumeration specifies the level of access controlled by an instance of this permission.  
-  
-   
-  
-## Examples  
- The following code example creates an instance of an SmtpPermission.  
-  
- [!code-cpp[NclMailPerms#1](~/add/codesnippet/cpp/t-system.net.mail.smtppe_1.cpp)]
- [!code-cs[NclMailPerms#1](~/add/codesnippet/csharp/t-system.net.mail.smtppe_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,32 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="unrestricted" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="unrestricted">
-          <see langword="true" /> if the new permission is unrestricted; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpPermission" /> class with the specified state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `unrestricted` is `true`, the permission controls <xref:System.Net.Mail.SmtpAccess> access to SMTP servers. If unrestricted is `false`, the permission controls <xref:System.Net.Mail.SmtpAccess> access.  
-  
-   
-  
-## Examples  
- The following code example demonstrates calling this constructor.  
-  
- [!code-cpp[NclMailPerms#4](~/add/codesnippet/cpp/m-system.net.mail.smtppe_3_1.cpp)]
- [!code-cs[NclMailPerms#4](~/add/codesnippet/csharp/m-system.net.mail.smtppe_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="unrestricted">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -79,31 +44,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="access" Type="System.Net.Mail.SmtpAccess" />
       </Parameters>
       <Docs>
-        <param name="access">One of the <see cref="T:System.Net.Mail.SmtpAccess" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpPermission" /> class using the specified access level.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The permission created by this constructor can be used to help secure access to SMTP servers.  
-  
-   
-  
-## Examples  
- The following code example demonstrates calling this constructor.  
-  
- [!code-cpp[NclMailPerms#1](~/add/codesnippet/cpp/m-system.net.mail.smtppe_7_1.cpp)]
- [!code-cs[NclMailPerms#1](~/add/codesnippet/csharp/m-system.net.mail.smtppe_7_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="access">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -113,31 +62,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
       <Docs>
-        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpPermission" /> class using the specified permission state value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The permission created by this constructor can be used to give full access or prevent all access to SMTP servers.  
-  
-   
-  
-## Examples  
- The following code example demonstrates calling this constructor.  
-  
- [!code-cpp[NclMailPerms#2](~/add/codesnippet/cpp/e6574382-7af4-4278-a6a3-_1.cpp)]
- [!code-cs[NclMailPerms#2](~/add/codesnippet/csharp/e6574382-7af4-4278-a6a3-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Access">
@@ -147,26 +80,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the level of access to SMTP servers controlled by the permission.</summary>
-        <value>One of the <see cref="T:System.Net.Mail.SmtpAccess" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclMailPerms#1](~/add/codesnippet/cpp/p-system.net.mail.smtppe_1.cpp)]
- [!code-cs[NclMailPerms#1](~/add/codesnippet/csharp/p-system.net.mail.smtppe_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPermission">
@@ -176,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,24 +107,9 @@
         <Parameter Name="access" Type="System.Net.Mail.SmtpAccess" />
       </Parameters>
       <Docs>
-        <param name="access">One of the <see cref="T:System.Net.Mail.SmtpAccess" /> values.</param>
-        <summary>Adds the specified access level value to the permission.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to modify access to Simple Mail Transport Protocol servers by adding to the state of this permission instance.  
-  
-   
-  
-## Examples  
- The following code example adds <xref:System.Net.Mail.SmtpAccess> access to a permission object.  
-  
- [!code-cpp[NclMailPerms#5](~/add/codesnippet/cpp/m-system.net.mail.smtppe_4_1.cpp)]
- [!code-cs[NclMailPerms#5](~/add/codesnippet/csharp/m-system.net.mail.smtppe_4_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="access">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -213,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -221,24 +126,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates and returns an identical copy of the current permission.</summary>
-        <returns>An <see cref="T:System.Net.Mail.SmtpPermission" /> that is identical to the current permission.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A copy of a permission represents the same access to resources as the original permission.  
-  
-   
-  
-## Examples  
- The following code example creates copy of a permission object.  
-  
- [!code-cpp[NclMailPerms#3](~/add/codesnippet/cpp/m-system.net.mail.smtppe_2_1.cpp)]
- [!code-cs[NclMailPerms#3](~/add/codesnippet/csharp/m-system.net.mail.smtppe_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -248,7 +138,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,24 +147,9 @@
         <Parameter Name="securityElement" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="securityElement">The XML encoding to use to set the state of the current permission.</param>
-        <summary>Sets the state of the permission using the specified XML encoding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used by the security system and is not normally called by application code.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="securityElement" /> does not describe an <see cref="T:System.Net.Mail.SmtpPermission" /> object.  
-  
- -or-  
-  
- <paramref name="securityElement" /> does not contain the required state information to reconstruct the permission.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="securityElement" /> is <see langword="null" />.</exception>
+        <param name="securityElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -285,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,27 +168,10 @@
         <Parameter Name="target" Type="System.Security.IPermission" />
       </Parameters>
       <Docs>
-        <param name="target">An <see cref="T:System.Security.IPermission" /> to intersect with the current permission. It must be of the same type as the current permission.</param>
-        <summary>Creates and returns a permission that is the intersection of the current permission and the specified permission.</summary>
-        <returns>An <see cref="T:System.Net.Mail.SmtpPermission" /> that represents the intersection of the current permission and the specified permission. Returns <see langword="null" /> if the intersection is empty or <paramref name="target" /> is <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The intersection of two permissions is a permission that describes the state they describe in common. Only a demand that passes both original permissions will pass the intersection.  
-  
-   
-  
-## Examples  
- The following code example creates a permission object that is the intersection of an existing permission with an object that grants full access to SMTP servers.  
-  
- [!code-cpp[NclMailPerms#6](~/add/codesnippet/cpp/m-system.net.mail.smtppe_6_1.cpp)]
- [!code-cs[NclMailPerms#6](~/add/codesnippet/csharp/m-system.net.mail.smtppe_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="target" /> is not an <see cref="T:System.Net.Mail.SmtpPermission" />.</exception>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSubsetOf">
@@ -325,7 +181,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -335,28 +190,10 @@
         <Parameter Name="target" Type="System.Security.IPermission" />
       </Parameters>
       <Docs>
-        <param name="target">An <see cref="T:System.Security.IPermission" /> that is to be tested for the subset relationship. This permission must be of the same type as the current permission.</param>
-        <summary>Returns a value indicating whether the current permission is a subset of the specified permission.</summary>
-        <returns>
-          <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current permission is a subset of the specified permission if the current permission specifies a state that is wholly contained by the specified permission. If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
-  
-   
-  
-## Examples  
- The following code example displays the subset relationship between two permissions.  
-  
- [!code-cpp[NclMailPerms#7](~/add/codesnippet/cpp/m-system.net.mail.smtppe_5_1.cpp)]
- [!code-cs[NclMailPerms#7](~/add/codesnippet/csharp/m-system.net.mail.smtppe_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="target" /> is not an <see cref="T:System.Net.Mail.SmtpPermission" />.</exception>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUnrestricted">
@@ -366,7 +203,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -374,25 +210,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value indicating whether the current permission is unrestricted.</summary>
-        <returns>
-          <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An unrestricted permission has full access to all resources controlled by the permission instance.  
-  
-   
-  
-## Examples  
- The following example creates a permission object and displays its state.  
-  
- [!code-cpp[NclMailPerms#2](~/add/codesnippet/cpp/m-system.net.mail.smtppe_0_1.cpp)]
- [!code-cs[NclMailPerms#2](~/add/codesnippet/csharp/m-system.net.mail.smtppe_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -402,7 +222,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -410,16 +229,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an XML encoding of the state of the permission.</summary>
-        <returns>A <see cref="T:System.Security.SecurityElement" /> that contains an XML encoding of the current permission.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used by the security system and is not normally called by application code.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -429,7 +241,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -439,27 +250,10 @@
         <Parameter Name="target" Type="System.Security.IPermission" />
       </Parameters>
       <Docs>
-        <param name="target">An <see cref="T:System.Security.IPermission" /> to combine with the current permission.</param>
-        <summary>Creates a permission that is the union of the current permission and the specified permission.</summary>
-        <returns>A new <see cref="T:System.Net.Mail.SmtpPermission" /> permission that represents the union of the current permission and the specified permission.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Union method returns a permission that represents all the states represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
-  
-   
-  
-## Examples  
- The following example creates a permission object that is the union of two permission objects.  
-  
- [!code-cpp[NclMailPerms#8](~/add/codesnippet/cpp/m-system.net.mail.smtppe_1_1.cpp)]
- [!code-cs[NclMailPerms#8](~/add/codesnippet/csharp/m-system.net.mail.smtppe_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="target" /> is not an <see cref="T:System.Net.Mail.SmtpPermission" />.</exception>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

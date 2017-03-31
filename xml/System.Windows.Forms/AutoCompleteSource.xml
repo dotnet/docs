@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoCompleteSource" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the source for <see cref="T:System.Windows.Forms.ComboBox" /> and <see cref="T:System.Windows.Forms.TextBox" /> automatic completion functionality.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the equivalent of FileSystem and AllUrl as the source. This is the default value when <see cref="T:System.Windows.Forms.AutoCompleteMode" /> has been set to a value other than the default.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllUrl">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the equivalent of HistoryList and RecentlyUsedList as the source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CustomSource">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies strings from a built-in <see cref="T:System.Windows.Forms.AutoCompleteStringCollection" /> as the source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FileSystem">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the file system as the source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FileSystemDirectories">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that only directory names and not file names will be automatically completed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HistoryList">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Includes the Uniform Resource Locators (URLs) in the history list.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ListItems">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the items of the <see cref="T:System.Windows.Forms.ComboBox" /> represent the source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -141,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that no AutoCompleteSource is currently in use. This is the default value of AutoCompleteSource.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RecentlyUsedList">
@@ -158,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Includes the Uniform Resource Locators (URLs) in the list of those URLs most recently used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

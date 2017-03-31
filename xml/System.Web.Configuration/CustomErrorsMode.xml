@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CustomErrorsMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the values for the custom errors modality.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CustomErrorsMode enumerates the values you can use when setting the <xref:System.Web.Configuration.CustomErrorsSection.Mode%2A> property. These values define whether custom errors are enabled, disabled, or shown only to remote clients.  
-  
-   
-  
-## Examples  
- The following code example shows how to set the <xref:System.Web.Configuration.CustomErrorsSection.Mode%2A> property.  
-  
- [!code-vb[System.Web.Configuration.CustomErrorsSection#9](~/add/codesnippet/visualbasic/t-system.web.configurati_54_1.vb)]
- [!code-cs[System.Web.Configuration.CustomErrorsSection#9](~/add/codesnippet/csharp/t-system.web.configurati_54_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Off">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.CustomErrorsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Disables custom errors, allowing display of standard errors.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.CustomErrorsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enables custom errors. If no <see cref="System.Web.Configuration.CustomErrorsSection.DefaultRedirect%2A" /> is specified, standard errors are issued.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteOnly">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.CustomErrorsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enables custom errors on remote clients only. Custom errors are shown only to remote clients and ASP.NET errors are shown to the local host.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

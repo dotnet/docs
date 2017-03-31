@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of request validation for a control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about request validation, see <xref:System.Web.UnvalidatedRequestValues>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -34,7 +27,7 @@
         <ReturnType>System.Web.UI.ValidateRequestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Request validation is disabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -50,7 +43,7 @@
         <ReturnType>System.Web.UI.ValidateRequestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Request validation is enabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inherit">
@@ -66,7 +59,7 @@
         <ReturnType>System.Web.UI.ValidateRequestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Request validation uses the same behavior as its parent control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

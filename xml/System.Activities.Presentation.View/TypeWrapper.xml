@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A wrapper class for <see cref="T:System.Type" /> that provides type information. This is a sealed class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TypeWrapper is used by <xref:System.Activities.Presentation.View.TypePresenter> to get type information.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DisplayName">
@@ -35,8 +28,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the display name for the current wrapper type.</summary>
-        <value>A string that contains the display name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +49,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">An object that represents a <see cref="T:System.Activities.Presentation.View.TypeWrapper" />.</param>
-        <summary>Determines whether the current <see cref="T:System.Activities.Presentation.View.TypeWrapper" /> instance is equal to the specified object.</summary>
-        <returns>
-          <see langword="true" /> if the current <see cref="T:System.Activities.Presentation.View.TypeWrapper" /> instance is equal to the specified object; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a hash code for the current <see cref="T:System.Activities.Presentation.View.TypeWrapper" /> instance.</summary>
-        <returns>An integer representing a hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,9 +87,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an indication whether the type in this <see cref="T:System.Activities.Presentation.View.TypeWrapper" /> instance is a type definition.</summary>
-        <value>
-          <see langword="true" /> if the type in this <see cref="T:System.Activities.Presentation.View.TypeWrapper" /> instance is a type definition; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +105,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets data about the wrapper type.</summary>
-        <value>An object that contains data about the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +124,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the contents of a tag that contains a label for the current wrapper type.</summary>
-        <returns>A string version of the tag value.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +142,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type in the current <see cref="T:System.Activities.Presentation.View.TypeWrapper" /> instance.</summary>
-        <value>The type in the current <see cref="T:System.Activities.Presentation.View.TypeWrapper" /> instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

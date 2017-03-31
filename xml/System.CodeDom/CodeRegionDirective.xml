@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeRegionDirective" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,26 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the name and mode for a code region.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.CodeDom.CodeRegionDirective.RegionMode%2A> property specifies whether an instance represents the start or end of the region.  
-  
-> [!NOTE]
->  Not all compilers support code region directives. To prevent compiler errors, code providers normally do not include code region directives in the provider output for compilers that do not support them.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the CodeRegionDirective in the creation of a graph that is used to produce code that is also compiled.  
-  
- [!code-vb[System.CodeDom.CodeDirectives#1](~/add/codesnippet/visualbasic/t-system.codedom.codereg_0_1.vb)]
- [!code-cs[System.CodeDom.CodeDirectives#1](~/add/codesnippet/csharp/t-system.codedom.codereg_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,20 +30,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRegionDirective" /> class with default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you use this constructor, you should also set the <xref:System.CodeDom.CodeRegionDirective.RegionMode%2A> and <xref:System.CodeDom.CodeRegionDirective.RegionText%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -72,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -80,20 +52,10 @@
         <Parameter Name="regionText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="regionMode">One of the <see cref="T:System.CodeDom.CodeRegionMode" /> values.</param>
-        <param name="regionText">The name for the region.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRegionDirective" /> class, specifying its mode and name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the CodeRegionDirective constructor. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeRegionDirective> class.  
-  
- [!code-vb[System.CodeDom.CodeDirectives#9](~/add/codesnippet/visualbasic/29dc0424-a8db-4ea9-9b60-_1.vb)]
- [!code-cs[System.CodeDom.CodeDirectives#9](~/add/codesnippet/csharp/29dc0424-a8db-4ea9-9b60-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="regionMode">To be added.</param>
+        <param name="regionText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegionMode">
@@ -103,26 +65,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeRegionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the mode for the region directive.</summary>
-        <value>One of the <see cref="T:System.CodeDom.CodeRegionMode" /> values. The default is <see cref="T:System.CodeDom.CodeRegionMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the RegionMode property. This example is part of a larger example provided for the <xref:System.CodeDom.CodeRegionDirective> class.  
-  
- [!code-vb[System.CodeDom.CodeDirectives#11](~/add/codesnippet/visualbasic/p-system.codedom.codereg_0_1.vb)]
- [!code-cs[System.CodeDom.CodeDirectives#11](~/add/codesnippet/csharp/p-system.codedom.codereg_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegionText">
@@ -132,26 +83,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the region.</summary>
-        <value>The name of the region.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the RegionText property. This example is part of a larger example provided for the <xref:System.CodeDom.CodeRegionDirective> class.  
-  
- [!code-vb[System.CodeDom.CodeDirectives#12](~/add/codesnippet/visualbasic/p-system.codedom.codereg_1_1.vb)]
- [!code-cs[System.CodeDom.CodeDirectives#12](~/add/codesnippet/csharp/p-system.codedom.codereg_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

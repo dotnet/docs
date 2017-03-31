@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqPoisonMessageException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates the exception that is thrown when the channel detects that the message is a poison message.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This exception is thrown when the channel detects that Message Queuing (MSMQ) aborted processing in the message because the number of retry attempts exceeded the value specified by the <xref:System.ServiceModel.Configuration.MsmqElementBase.ReceiveRetryCount%2A> and <xref:System.ServiceModel.Configuration.MsmqElementBase.MaxRetryCycles%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="messageLookupId" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="messageLookupId">The lookup ID of the poison message.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" /> class by using the specified lookup ID of the poison message.</summary>
+        <param name="messageLookupId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,15 +55,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The message with which to initialize the new instance of the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" /> class.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" /> class by using the specified message text.</summary>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +73,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -92,9 +80,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="messageLookupId">The lookup ID of the poison message.</param>
-        <param name="innerException">The inner exception to be encapsulated by the new instance of the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" /> class.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" /> class by using the specified lookup ID of the poison message, and the inner exception.</summary>
+        <param name="messageLookupId">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +93,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -113,9 +100,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance that holds the serialized data associated with the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" />.</param>
-        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> instance that contains the source and destination of the serialized stream associated with the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" /> class with additional serialized information about the exception.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +113,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -134,9 +120,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">The message with which to initialize the new instance of the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" /> class.</param>
-        <param name="innerException">The inner exception to be encapsulated by the new instance of the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" /> class.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" /> class by using the specified message text and the inner exception.</summary>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -163,9 +148,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance to hold the serialized data associated with the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" />.</param>
-        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> instance to hold the source and destination of the serialized stream associated with the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" />.</param>
-        <summary>Retrieves the serialized data associated with the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" />, and the source and destination of the serialized stream associated with the <see cref="T:System.ServiceModel.MsmqPoisonMessageException" />.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,15 +161,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the lookup ID of the poison message.</summary>
-        <value>The lookup ID of the poison message.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

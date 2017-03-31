@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.ActiveXInvokeKind" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of member that referenced the ActiveX control while it was in an invalid state.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The AxHost.ActiveXInvokeKind enumeration is used by the <xref:System.Windows.Forms.AxHost.InvalidActiveXStateException> exception to specify the type of member that referenced the ActiveX control while it was an invalid state.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="MethodInvoke">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AxHost+ActiveXInvokeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A method referenced the ActiveX control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropertyGet">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AxHost+ActiveXInvokeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The get accessor of a property referenced the ActiveX control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropertySet">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AxHost+ActiveXInvokeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The set accessor of a property referenced the ActiveX control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

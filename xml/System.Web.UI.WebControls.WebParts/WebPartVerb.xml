@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,80 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an interactive user interface (UI) element that enables users to perform actions on a Web Parts page.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Web Parts verbs are interactive UI elements, typically represented by buttons or hyperlinks, that appear in pages that use Web Parts controls. Users click verbs to carry out common UI actions for Web Parts controls, such as closing a <xref:System.Web.UI.WebControls.WebParts.WebPart> control or closing the edit display mode (a special page view associated with the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control). All standard verbs provided with the Web Parts control set are associated with either a Web Parts zone (<xref:System.Web.UI.WebControls.WebParts.WebPartZone>, <xref:System.Web.UI.WebControls.WebParts.EditorZone>, <xref:System.Web.UI.WebControls.WebParts.CatalogZone>, or <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone>) or a Web Parts <xref:System.Web.UI.WebControls.WebParts.Part> control (<xref:System.Web.UI.WebControls.WebParts.WebPart>, <xref:System.Web.UI.WebControls.WebParts.GenericWebPart>, <xref:System.Web.UI.WebControls.WebParts.EditorPart>, or <xref:System.Web.UI.WebControls.WebParts.CatalogPart>).  
-  
- When the standard verbs are associated with a zone, their actions apply at the zone level, and the verbs usually appear in the zone's header or footer area. The following table lists the common zone-level verbs and describes their actions.  
-  
-|Zone-level verb|Action|  
-|----------------------|------------|  
-|Close verb|Used with zones that inherit from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. Hides the UI for a zone and typically returns the page to its normal browse mode view.|  
-|Apply verb|Used with zones that inherit from the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class. Applies changes that a user has made.|  
-|OK verb|Used with zones that inherit from the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class. Has the combined effect of the apply and close verbs; it applies changes and hides the zone's UI.|  
-|Cancel verb|Used with zones that inherit from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. Cancels any pending changes a user has made.|  
-|Add verb|Used with zones that inherit from the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class. Adds a control that a user has selected from a catalog of controls to a specified <xref:System.Web.UI.WebControls.WebParts.WebPartZone> zone.|  
-|Configure verb|Used with zones that inherit from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class. Opens a view to enable users to configure existing connections.|  
-|Disconnect verb|Used with zones that inherit from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class. Terminates an existing connection between two controls.|  
-  
- As for the standard verbs that are associated with <xref:System.Web.UI.WebControls.WebParts.Part> controls, their actions apply to the control itself (or to its child controls). The part control acts as a container for the verb and manages the rendering of the verb. Most standard verbs associated with part controls appear either directly in the title bar or in a drop-down verbs menu within the title bar. Whether these verbs appear directly in the header or in a verbs menu is determined by the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode%2A> property; by default, the verbs appear in a verbs menu. The following table lists common verbs associated with the various <xref:System.Web.UI.WebControls.WebParts.Part> controls and describes their actions.  
-  
-|Part control verb|Action|  
-|-----------------------|------------|  
-|Minimize verb|Appears in the verbs menu of each server control contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone. Reduces the control to a minimal representation, hiding everything in its UI except the restore verb.|  
-|Restore verb|Appears in the verbs menu of each server control contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone. Returns a minimized control to its normal size and view.|  
-|Close verb|Appears in the verbs menu of each server control contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone. Closes a control and adds it to the page catalog, which means the control is removed from the page but, if there is a properly designed catalog, users can reopen the closed control and return it to the page.|  
-|Connect verb|Appears in the verbs menu of a control contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, if the page is in connect display mode and if the control can form connections. Opens a connection UI so that users can create a connection between controls.|  
-|Delete verb|Appears in the verbs menu of a control contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, if the control was added to the page programmatically (rather than being declared in persistence format). Permanently deletes the control instance and any associated personalization data so that, unlike a closed control, the deleted instance can never be restored to the page.|  
-|Edit verb|Appears in the verbs menu of a control contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, if the page is designed to permit editing of controls and if the page is in edit display mode. Selects the control for editing and opens the editing UI.|  
-|Export verb|Appears in the verbs menu of a control contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, if the control and application are enabled for export. Opens a dialog box that enables users to export a description file that contains the serialized state of the control. For details, see the <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property.|  
-|Help verb|Appears in the verbs menu of a control contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, if the control is designed to provide a Help file. Launches a page that provides help for the control.|  
-  
- Along with the standard verbs that are provided with the Web Parts control set, you can also create custom verbs. A common scenario for creating custom verbs is to create verbs associated with <xref:System.Web.UI.WebControls.WebParts.Part> controls. When you create these verbs, by default they will appear on the verbs menu along with the standard verbs. The basic approach for creating such verbs is to inherit from the WebPartVerb class to create one or more custom verbs. Then create a control that inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class and add the custom WebPartVerb objects to a <xref:System.Web.UI.WebControls.WebParts.WebPartVerbCollection> collection. This collection can then be added to the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> collection of the control, which will cause the custom verbs to appear automatically on the control's verbs menu at run time. As with the standard verbs, you can access the custom verbs programmatically on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
-  
- Web Parts applications can use server controls that do not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, such as custom controls, user controls, or ASP.NET controls. These server controls, if added to a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, are dynamically wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object at run time, which enables them to function as run-time <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. To add custom verbs to a server control that does not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, the server control must implement the <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interface and override its <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> property.  
-  
- When you create a verb, you can create two types of associated event handlers that will run when a user clicks the verb: a server-side event handler (code that runs on the server), and a client-side event handler (code that runs in the client browser). Also, you can define custom states for verbs, which is a useful way to provide visual cues to users. For example, you could create a state indicating that a verb has been selected, and then provide appropriate changes in the UI to notify the user that the verb is already selected. Another useful behavior is the ability to disable verbs; by doing this, you can prevent users from clicking verbs if doing so would be harmful or ineffective based on the state of the application.  
-  
- The WebPartVerb class does not expose any unique methods; its exposed methods are all overrides of base methods. It does however contain a number of properties for developers to be aware of. The <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Checked%2A> property indicates whether a verb is currently selected. The <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.ClientClickHandler%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.ServerClickHandler%2A> properties refer to the respective handlers within the class (if any exist) for client and server click events. The <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Description%2A> property contains text that describes the purpose of a verb in a ToolTip when users position a mouse pointer over the verb in the UI. The <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Enabled%2A> property indicates the current status of a verb, which determines whether a user can click the verb and execute its action. The <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.ID%2A> property provides a unique ID for the verb object. The <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.ImageUrl%2A> property contains a URL to an image that can be used to represent a verb in the UI in place of the default rendering (typically a button or a hyperlink). The <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Text%2A> property contains the label text that appears directly on the verb in the UI. The overridden <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Visible%2A> property determines whether a verb is currently displayed in the UI. Verbs are often hidden or disabled at different times in a Web Parts application; for example, specialty verbs (such as the edit verb and the connect verb) are displayed only when the appropriate controls, settings, and display modes exist on the page to enable those verbs to take meaningful action.  
-  
- Other key members for working with verbs include the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A?displayProperty=fullName> method, which is an event handler that can be overridden for custom handling of the verb creation process, and the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs?displayProperty=fullName> event.  
-  
-   
-  
-## Examples  
- The following code example shows how to create a custom WebPartVerb object, and a custom zone that uses the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method to add the verb to the verbs menu of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control contained in the zone. There are four parts to the code example:  
-  
--   A source file that contains a simple custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control that displays some text.  
-  
--   A source file that contains a custom WebPartVerb object, and a simple custom <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone that overrides the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method to add the custom verb to <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in the zone.  
-  
--   A Web page that contains the custom zone and the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
-  
--   An explanation of how the example works.  
-  
- The first part of the code example contains source code that creates a simple <xref:System.Web.UI.WebControls.WebParts.WebPart> control that displays some text. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the dynamic compilation approach. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](../Topic/Walkthrough:%20Developing%20and%20Using%20a%20Custom%20Web%20Server%20Control.md).  
-  
- [!code-cs[WebParts_WebPartVerb2#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_164_1.cs)]
- [!code-vb[WebParts_WebPartVerb2#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_164_1.vb)]  
-  
- The second part of the example contains source code to create the custom zone and the custom WebPartVerb object. Note that the zone overrides the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method to add the custom verb to any <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in the zone. The verb is added by default to the verbs menu of the controls. Note that, in the code for the custom verb, the constructor for the verb uses a server click handler, and that the method called creates a complete copy of any control that inherits directly from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, adding the newly created copy to the same zone. Like the first part of the code example, this source code must be compiled, and in this example the source file was placed in an App_Code subfolder to be dynamically compiled.  
-  
- [!code-cs[WebParts_WebPartVerb2#3](~/add/codesnippet/csharp/t-system.web.ui.webcontr_164_2.cs)]
- [!code-vb[WebParts_WebPartVerb2#3](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_164_2.vb)]  
-  
- The third part of the code example is the Web page that hosts the controls. Note that there is a `Register` directive near the top of the page to declare the namespace of the custom controls. No assembly is declared because this example uses dynamic compilation. The custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control is declared within the custom zone. You could also declare other <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in this zone, and the custom verb would be added to their verbs menus as well.  
-  
- [!code-cs[WebParts_WebPartVerb2#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_164_3.aspx)]
- [!code-vb[WebParts_WebPartVerb2#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_164_3.aspx)]  
-  
- Load the page in a browser, and click the verbs menu on the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The **Copy Web Part** verb should be visible. Click the verb, and note that a copy of the control is added to the zone.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,7 +31,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -112,18 +38,10 @@
         <Parameter Name="clientClickHandler" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">A <see cref="T:System.String" /> that is the unique identifier for a verb.</param>
-        <param name="clientClickHandler">A <see cref="T:System.String" /> that refers to the client-side handler for click events.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> class and associates a client-side click event handler with the instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class constructor refers to a client-side event handler to call when the user clicks a verb in the user interface (UI).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="clientClickHandler" /> parameter is <see langword="null" />.</exception>
+        <param name="id">To be added.</param>
+        <param name="clientClickHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -133,7 +51,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -141,18 +58,10 @@
         <Parameter Name="serverClickHandler" Type="System.Web.UI.WebControls.WebParts.WebPartEventHandler" />
       </Parameters>
       <Docs>
-        <param name="id">A <see cref="T:System.String" /> that is the unique identifier for a verb.</param>
-        <param name="serverClickHandler">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartEventHandler" /> that handles click events on the server.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> class and associates a server-side click event handler with the instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class constructor refers to a server-side click event handler to call when the user clicks a verb in the user interface (UI).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="serverClickHandler" /> parameter is <see langword="null" />.</exception>
+        <param name="id">To be added.</param>
+        <param name="serverClickHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -162,7 +71,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -171,23 +79,11 @@
         <Parameter Name="clientClickHandler" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">A <see cref="T:System.String" /> that is the unique identifier for a verb.</param>
-        <param name="serverClickHandler">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartEventHandler" /> that handles click events on the server.</param>
-        <param name="clientClickHandler">A <see cref="T:System.String" /> that refers to the client-side handler for click events.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> class and associates both client and server-side click event handlers with the instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class constructor refers to both client-side and server-side click event handlers to call when the user clicks a verb in the user interface (UI).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="clientClickHandler" /> parameter is <see langword="null" />.  
-  
- \- or -  
-  
- The <paramref name="serverClickHandler" /> parameter is <see langword="null" />.</exception>
+        <param name="id">To be added.</param>
+        <param name="serverClickHandler">To be added.</param>
+        <param name="clientClickHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -197,7 +93,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -215,21 +110,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating that some state associated with a custom verb is currently active or selected.</summary>
-        <value>
-          <see langword="true" /> if a state associated with a custom verb is currently active; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not used with any of the standard verbs provided with the Web Parts control set. When it is used with custom verbs, and the property value is set to `true`, a selected check box appears next to the verb to indicate the active status of the verb.  
-  
- The purpose of this property is to give developers a way of indicating that some custom state associated with a verb is currently active. For example, suppose a developer creates a custom verb that enlarges the text size (for accessibility purposes) of the body text on all <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a zone. If a user clicks the verb, this property value could be set to `true`, which would cause a selected check box to appear next to the **Increase Text Size** verb in the verbs menu, indicating to users that the state associated with the verb (enlarged text) is active.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientClickHandler">
@@ -239,7 +122,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -254,16 +136,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the string containing the method name of the client-side event handler defined in the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> constructor.</summary>
-        <value>A string that contains the name of the method that handles client-side click events. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to retrieve the name of the method that handles click events for the verb on the client.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -273,7 +148,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -288,24 +162,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a short description of the verb.</summary>
-        <value>A string containing a description of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to get or set a description of a verb that appears as a ToolTip when a user positions a mouse pointer over the verb.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the Description property in a derived class inheriting from <xref:System.Web.UI.WebControls.WebParts.WebPartVerb>. This source code shows only the portion of the code for the custom zone and the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class that overrides the property. The rest of the code required to run the example can be found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class overview.  
-  
- [!code-cs[WebParts_WebPartVerb2#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1245_1.cs)]
- [!code-vb[WebParts_WebPartVerb2#3](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1245_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -315,7 +174,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -333,27 +191,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a verb is enabled.</summary>
-        <value>
-          <see langword="true" /> if the verb is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to get or set a value indicating whether the verb is enabled. It is useful to be able to enable or disable verbs at given points in the page and control life cycle. For example, if a developer wants to prevent users from being able to close the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a zone for any reason, the developer can set the Enabled property value on the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseVerb%2A> verb to `false`, and then users will be prevented from closing any controls within that zone. By default, disabled verbs are rendered in verbs menus with a visual cue such as a lighter text color.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
-   
-  
-## Examples  
- The following code example shows how to override the Enabled property in a derived class inheriting from <xref:System.Web.UI.WebControls.WebParts.WebPartVerb>. This source code shows only the portion of the code for the custom zone and the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class that overrides the property. The rest of the code required to run the example can be found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class overview.  
-  
- [!code-cs[WebParts_WebPartVerb2#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_306_1.cs)]
- [!code-vb[WebParts_WebPartVerb2#3](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_306_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -363,7 +203,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -378,16 +217,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string containing a unique ID for a verb.</summary>
-        <value>A string containing the ID for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the ID property must be specified as a parameter when calling any of the overloads of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.%23ctor%2A> constructor for the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -397,7 +229,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -418,24 +249,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string containing a URL to an image that represents a verb in the user interface (UI).</summary>
-        <value>A string that contains the URL to an image. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ImageUrl property provides a way to use a customized visual representation for verbs as an alternative to the default rendering, which is typically a button or a hyperlink. If you assign a URL to the property, the image appears in verbs menus (next to the verb) or directly in forms (in place of a button or hyperlink that represents the verb).  
-  
-   
-  
-## Examples  
- The following code example shows how to override the ImageUrl property in a derived class inheriting from <xref:System.Web.UI.WebControls.WebParts.WebPartVerb>. This source code shows only the portion of the code for the custom zone and the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class that overrides the property. The rest of the code required to run the example can be found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class overview. Note that the sample code assigns a fictitious icon to the ImageUrl property; if you assign a real image or icon, it will appear next to the verb in the verbs menu.  
-  
- [!code-cs[WebParts_WebPartVerb2#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1051_1.cs)]
- [!code-vb[WebParts_WebPartVerb2#3](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1051_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -445,16 +261,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether view state is currently being tracked for a verb.</summary>
-        <value>
-          <see langword="true" /> if view state is being tracked; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,7 +279,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -475,18 +288,9 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">An <see cref="T:System.Object" /> that contains the view state to be restored.</param>
-        <summary>Restores view-state information from a previous page request that was saved by the <see cref="System.Web.UI.WebControls.WebParts.WebPartVerb.SaveViewState%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](../Topic/ASP.NET%20State%20Management%20Overview.md).  
-  
- This method determines whether there is any existing `savedState` from a previous page request, and if so, restores it. Included in the process of restoring view state is the verb's visibility, which is determined by the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Visible%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -496,7 +300,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -504,16 +307,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object's view-state changes that occurred since the page was last posted back to the server.</summary>
-        <returns>An <see cref="T:System.Object" /> that contains the state data to be saved.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If there is any view-state data, this method calls the base method and saves the data.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServerClickHandler">
@@ -523,7 +319,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -538,16 +333,9 @@
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the method that handles server-side click events for the verb.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartEventHandler" /> that handles server-side click events.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to get a reference to the method that handles the server-side click events for a verb.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -557,24 +345,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the <see cref="System.Web.UI.IStateManager.IsTrackingViewState%2A" /> property by calling the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> class's own <see cref="System.Web.UI.WebControls.WebParts.WebPartVerb.IsTrackingViewState%2A" /> property.</summary>
-        <value>
-          <see langword="true" /> if view state is being tracked for a verb; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> instance is cast to an <xref:System.Web.UI.IStateManager> interface. The method simply calls the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.IsTrackingViewState%2A> property on the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -584,7 +363,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -594,16 +372,9 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">An <see cref="T:System.Object" /> that contains the view state to be restored.</param>
-        <summary>Implements the <see cref="System.Web.UI.IStateManager.LoadViewState%2A" /> method of the <see cref="T:System.Web.UI.IStateManager" /> interface by calling the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> class's own <see cref="System.Web.UI.WebControls.WebParts.WebPartVerb.LoadViewState%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> instance is cast to an <xref:System.Web.UI.IStateManager> interface. The method simply calls the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.LoadViewState%2A> method on the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class.  
-  
- ]]></format>
-        </remarks>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -613,7 +384,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -621,16 +391,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Implements the <see cref="System.Web.UI.IStateManager.SaveViewState%2A" /> method by calling the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> class's own <see cref="System.Web.UI.WebControls.WebParts.WebPartVerb.SaveViewState%2A" /> method.</summary>
-        <returns>Returns an <see cref="T:System.Object" /> containing the control's current view state. If no view state is associated with the control, this method returns <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> instance is cast to an <xref:System.Web.UI.IStateManager> interface. The method simply calls the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.SaveViewState%2A> method on the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -640,7 +403,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -648,15 +410,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Implements the <see cref="System.Web.UI.IStateManager.TrackViewState%2A" /> method by calling the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> class's own <see cref="System.Web.UI.WebControls.WebParts.WebPartVerb.TrackViewState%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> instance is cast to an <xref:System.Web.UI.IStateManager> interface. The method simply calls the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.TrackViewState%2A> method on the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -666,7 +421,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -681,28 +435,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text label for a verb that is displayed in the user interface (UI).</summary>
-        <value>A string containing the text label for a verb. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property sets the text of the label for a <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object; it is what represents the verb to users in the UI.  
-  
- If developers (optionally) assign a value to the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.ImageUrl%2A> property, an image or icon represents the verb in the UI, and in certain cases (such as when the verb is normally rendered by a button or hyperlink) the image appears instead of the text label.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the Text property in a derived class inheriting from <xref:System.Web.UI.WebControls.WebParts.WebPartVerb>. This source code shows only the portion of the code for the custom zone and the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class that overrides the property. The rest of the code required to run the example can be found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class overview.  
-  
- After you load the page in a browser, note that the value assigned to the Text property in the source code appears in the verbs menu of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
-  
- [!code-cs[WebParts_WebPartVerb2#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_576_1.cs)]
- [!code-vb[WebParts_WebPartVerb2#3](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_576_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -712,7 +447,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -720,15 +454,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Tracks view-state changes to a verb so the changes can be stored in the verb's <see cref="T:System.Web.UI.StateBag" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method enables view state to be tracked for a <xref:System.Web.UI.WebControls.WebParts.WebPartVerb>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -738,23 +465,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.StateBag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a dictionary of state information that allows you to save and restore the view state of a server control across multiple requests for the same page.</summary>
-        <value>An instance of <see cref="T:System.Web.UI.StateBag" /> that contains the server control's view-state information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object does not inherit from any class that tracks view state, and yet it has a number of properties that require view state to be tracked across multiple requests for the page, it implements its own property to maintain view state.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -764,7 +483,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -782,21 +500,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a verb is visible to users.</summary>
-        <value>
-          <see langword="true" /> if the verb is visible; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Verbs often need to be hidden or displayed depending on the content of a Web Parts application. For example, the minimize verb is hidden when a control is already minimized, and conversely, the restore verb is hidden when the control is in its normal, non-minimized state.  
-  
- A verb whose Visible property is set to `false` is hidden from users, but is still rendered on a page, can still be accessed programmatically, and still fully participates in page and control life cycle events.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

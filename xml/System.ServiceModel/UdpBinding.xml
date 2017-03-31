@@ -15,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a UDP binding.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The UdpBinding cannot be used with a WAS-hosted (Windows Process Activation Services) service.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.UdpBinding" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +47,8 @@
         <Parameter Name="configurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configurationName">The configuration name.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.UdpBinding" /> class with a specified configuration name.</summary>
+        <param name="configurationName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +66,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a collection of binding elements.</summary>
-        <returns>A collection of binding elements.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +89,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the duplicate message history length in a UDP binding element.</summary>
-        <value>The maximum number of message hashes used by the binding to identify duplicate messages.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +112,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a maximum buffer pool size associated with the binding.</summary>
-        <value>A number that indicates the size of a buffer pool.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +135,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of messages that are received but not yet removed from the input queue for an individual channel instance.</summary>
-        <value>The maximum number of pending messages.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,8 +158,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum size for a message that can be processed by the binding.</summary>
-        <value>The maximum size for a message that can be processed by the binding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +181,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of retransmit messages in a UDP binding.</summary>
-        <value>The maximum number of retransmit messages in a UDP binding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +204,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the MulticastInterfaceID property in a UDP binding.</summary>
-        <value>The network adapter that is used when sending and receiving multicast traffic on multi-honed machines.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,8 +222,8 @@
         <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the reader quotas.</summary>
-        <value>The reader quotas.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,8 +240,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scheme name for this binding.</summary>
-        <value>The scheme name for this binding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,9 +264,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the ReaderQuotas should be serialized.</summary>
-        <returns>
-          <see langword="True" /> if the ReaderQuotas should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,9 +288,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns whether settings for text encoding should be serialized.</summary>
-        <returns>
-          <see langword="True" /> if the settings for text encoding should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,9 +306,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether incoming requests are handled synchronously or asynchronously.</summary>
-        <value>
-          <see langword="True" /> if incoming requests are handled synchronously; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,8 +329,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text encoding that is used for the binding.</summary>
-        <value>The text encoding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,8 +352,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the TimeToLive property in a UDP binding.</summary>
-        <value>The number of network segment hops that a multicast packet can traverse.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

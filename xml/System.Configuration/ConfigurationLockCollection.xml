@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationLockCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,23 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains a collection of locked configuration objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a configuration file, a configuration section contains both attributes and elements. A ConfigurationLockCollection collection exists for the locked attributes of a configuration section, and is accessed through the <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property of the <xref:System.Configuration.ConfigurationElement> class. Another ConfigurationLockCollection collection exists for the locked elements of a configuration section, and is accessed through the <xref:System.Configuration.ConfigurationElement.LockElements%2A> property of the <xref:System.Configuration.ConfigurationElement> class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ConfigurationLockCollection type.  
-  
- [!code-vb[System.Configuration.ConfigurationLockCollection#1](~/add/codesnippet/visualbasic/t-system.configuration.c_5_1.vb)]
- [!code-cs[System.Configuration.ConfigurationLockCollection#1](~/add/codesnippet/csharp/t-system.configuration.c_5_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -42,7 +26,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,25 +35,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the configuration object.</param>
-        <summary>Locks a configuration object by adding it to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Adding a configuration object to the <xref:System.Configuration.ConfigurationLockCollection> collection specifies that the configuration object is locked and cannot be modified until it has been removed from the collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Add method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-vb[System.Configuration.ConfigurationLockCollection#3](~/add/codesnippet/visualbasic/m-system.configuration.c_1_1.vb)]
- [!code-cs[System.Configuration.ConfigurationLockCollection#3](~/add/codesnippet/csharp/m-system.configuration.c_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">Occurs when the <paramref name="name" /> does not match an existing configuration object within the collection.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AttributeList">
@@ -80,26 +47,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of configuration objects contained in the collection.</summary>
-        <value>A comma-delimited string that lists the lock configuration objects in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the AttributeList property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-vb[System.Configuration.ConfigurationLockCollection#5](~/add/codesnippet/visualbasic/p-system.configuration.c_16_1.vb)]
- [!code-cs[System.Configuration.ConfigurationLockCollection#5](~/add/codesnippet/csharp/p-system.configuration.c_16_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -109,7 +65,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,18 +72,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all configuration objects from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Clear method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-vb[System.Configuration.ConfigurationLockCollection#11](~/add/codesnippet/visualbasic/m-system.configuration.c_39_1.vb)]
- [!code-cs[System.Configuration.ConfigurationLockCollection#11](~/add/codesnippet/csharp/m-system.configuration.c_39_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -138,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,10 +92,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the configuration object to verify.</param>
-        <summary>Verifies whether a specific configuration object is locked.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationLockCollection" /> contains the specified configuration object; otherwise, <see langword="false" />.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,9 +115,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Configuration.ConfigurationLockCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
-        <summary>Copies the entire <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,26 +128,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of locked configuration objects contained in the collection.</summary>
-        <value>The number of locked configuration objects contained in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Count property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-vb[System.Configuration.ConfigurationLockCollection#4](~/add/codesnippet/visualbasic/p-system.configuration.c_12_1.vb)]
- [!code-cs[System.Configuration.ConfigurationLockCollection#4](~/add/codesnippet/csharp/p-system.configuration.c_12_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -215,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,8 +153,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.IEnumerator" /> object, which is used to iterate through this <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,27 +165,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value specifying whether the collection of locked objects has parent elements.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection has parent elements; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the HasParentElements property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-vb[System.Configuration.ConfigurationLockCollection#7](~/add/codesnippet/visualbasic/p-system.configuration.c_28_1.vb)]
- [!code-cs[System.Configuration.ConfigurationLockCollection#7](~/add/codesnippet/csharp/p-system.configuration.c_28_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsModified">
@@ -265,27 +183,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value specifying whether the collection has been modified.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection has been modified; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the IsModified property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-vb[System.Configuration.ConfigurationLockCollection#8](~/add/codesnippet/visualbasic/p-system.configuration.c_10_1.vb)]
- [!code-cs[System.Configuration.ConfigurationLockCollection#8](~/add/codesnippet/csharp/p-system.configuration.c_10_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -295,7 +201,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -305,22 +210,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the configuration object to verify.</param>
-        <summary>Verifies whether a specific configuration object is read-only.</summary>
-        <returns>
-          <see langword="true" /> if the specified configuration object in the <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection is read-only; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the IsReadOnly method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-vb[System.Configuration.ConfigurationLockCollection#9](~/add/codesnippet/visualbasic/m-system.configuration.c_8_1.vb)]
- [!code-cs[System.Configuration.ConfigurationLockCollection#9](~/add/codesnippet/csharp/m-system.configuration.c_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The specified configuration object is not in the collection.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -330,16 +223,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value specifying whether the collection is synchronized.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection is synchronized; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,7 +241,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -360,20 +250,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the configuration object.</param>
-        <summary>Removes a configuration object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Remove method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-vb[System.Configuration.ConfigurationLockCollection#10](~/add/codesnippet/visualbasic/m-system.configuration.c_11_1.vb)]
- [!code-cs[System.Configuration.ConfigurationLockCollection#10](~/add/codesnippet/csharp/m-system.configuration.c_11_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">Occurs when the <paramref name="name" /> does not match an existing configuration object within the collection.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFromList">
@@ -383,7 +262,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,20 +271,9 @@
         <Parameter Name="attributeList" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="attributeList">A comma-delimited string.</param>
-        <summary>Locks a set of configuration objects based on the supplied list.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the SetFromList method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-vb[System.Configuration.ConfigurationLockCollection#12](~/add/codesnippet/visualbasic/m-system.configuration.c_4_1.vb)]
- [!code-cs[System.Configuration.ConfigurationLockCollection#12](~/add/codesnippet/csharp/m-system.configuration.c_4_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">Occurs when an item in the <paramref name="attributeList" /> parameter is not a valid lockable configuration attribute.</exception>
+        <param name="attributeList">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -416,15 +283,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object used to synchronize access to this <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection.</summary>
-        <value>An object used to synchronize access to this <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,7 +301,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -446,9 +311,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
-        <summary>Copies the entire <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

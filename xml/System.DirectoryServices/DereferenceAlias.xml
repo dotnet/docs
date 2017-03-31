@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DereferenceAlias" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The DereferenceAlias enumeration specifies how aliases are resolved. This enumeration provides values for the <see cref="System.DirectoryServices.DirectorySearcher.DerefAlias%2A" /> property.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dereferences aliases when both searching subordinates and locating the base objects of the search.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindingBaseObject">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dereferences aliases when locating the base object of the search, but not when searching its subordinates.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InSearching">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dereferences aliases when searching subordinates of the base object, but not when locating the base itself.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the alias will not be dereferenced. If the <see cref="System.DirectoryServices.DirectorySearcher.DerefAlias%2A" /> property is not set, the default value is Never.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

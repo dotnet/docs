@@ -3,41 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IsSignUnspecifiedByte extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IsSignUnspecifiedByte" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime.CompilerServices.VisualC</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Indicates that a modifier is neither signed nor unsigned. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some programming languages, such as C++, recognize three distinct `char` values: `signed char`, `unsigned char`, and `char`.  To distinguish the unmodified `char` type from the others, the Microsoft C++ compiler adds the IsSignUnspecifiedByte modifier to each `char` type emitted to an assembly.  
-  
- Compilers emit custom modifiers within metadata to change the way that the just-in-time (JIT) compiler handles values when the default behavior is not appropriate.  When the JIT compiler encounters a custom modifier, it handles the value in the way that the modifier specifies.  Compilers can apply custom modifiers to methods, parameters, and return values.  The JIT compiler must respond to required modifiers but can ignore optional modifiers.  
-  
- You can emit custom modifiers into metadata using one of the following techniques:  
-  
--   Using methods in the <xref:System.Reflection.Emit.TypeBuilder> class such as <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A>, <xref:System.Reflection.Emit.TypeBuilder.DefineField%2A>, <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A>, and <xref:System.Reflection.Emit.TypeBuilder.DefineProperty%2A>.  
-  
--   Generating a Microsoft intermediate language (MSIL) instruction file that contains calls to `modopt` and `modreq`, and assembling the file with the [Ilasm.exe (IL Assembler)](../Topic/Ilasm.exe%20\(IL%20Assembler\).md).  
-  
--   Using the unmanaged reflection API.  
-  
-   
-  
-## Examples  
- The following code example creates an assembly using classes in the <xref:System.Reflection.Emit> namespace and emits the IsSignUnspecifiedByte modifier into that assembly.  
-  
- [!code-cpp[Runtime.CompilerServices.IsSignUnspecifiedByte#1](~/add/codesnippet/cpp/t-system.runtime.compile_23_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members />
 </Type>

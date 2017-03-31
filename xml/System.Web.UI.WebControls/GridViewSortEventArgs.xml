@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewSortEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,32 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.GridView.Sorting" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.GridView> control raises the <xref:System.Web.UI.WebControls.GridView.Sorting> event when a Sort button (a button with its `CommandName` property set to "Sort") is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control handles the sort operation. This allows you to provide an event-handling method that performs a custom routine, such as canceling the sorting operation, whenever this event occurs.  
-  
-> [!NOTE]
->  Although any button within a <xref:System.Web.UI.WebControls.GridView> control with its `CommandName` property set to "Sort" will raise the <xref:System.Web.UI.WebControls.GridView.Sorting> event, Sort buttons typically appear in the header row of a <xref:System.Web.UI.WebControls.GridView> control.  
-  
- A GridViewSortEventArgs object is passed to the event-handling method, which allows you to specify or determine the sort expression and sort direction in which to sort the <xref:System.Web.UI.WebControls.GridView> control. To determine the sort expression, use the <xref:System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression%2A> property. To determine the sort direction, use the <xref:System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection%2A> property. You can also cancel a sorting operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- For a list of initial property values for an instance of GridViewSortEventArgs, see the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs.%23ctor%2A> constructor.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the GridViewSortEventArgs object passed to the event-handling method to cancel the sorting operation when the user attempts to sort the address column in a <xref:System.Web.UI.WebControls.GridView> control.  
-  
- [!code-vb[GridViewSorting#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_245_1.aspx)]
- [!code-cs[GridViewSorting#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_245_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -55,27 +29,10 @@
         <Parameter Name="sortDirection" Type="System.Web.UI.WebControls.SortDirection" />
       </Parameters>
       <Docs>
-        <param name="sortExpression">The sort expression used to sort the items in the control.</param>
-        <param name="sortDirection">A <see cref="T:System.Web.UI.WebControls.SortDirection" /> that indicates the direction in which to sort the items in the control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.GridViewSortEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridViewSortEventArgs> class.  
-  
- The following table shows the initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewSortEventArgs>.  
-  
-|Property|Initial value|  
-|--------------|-------------------|  
-|<xref:System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection%2A>|The value of the `sortDirection` parameter.|  
-|<xref:System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression%2A>|The value of the `sortExpression` parameter.|  
-  
-> [!NOTE]
->  This constructor is used primarily by control developers when raising events.  
-  
- ]]></format>
-        </remarks>
+        <param name="sortExpression">To be added.</param>
+        <param name="sortDirection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortDirection">
@@ -85,31 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.SortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the direction in which to sort the <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.SortDirection" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Web.UI.WebControls.GridView.Sorting> event is raised, you can use the SortDirection property to determine the order in which the <xref:System.Web.UI.WebControls.GridView> control will sort its items (based on the sort expression) when the sort operation is performed. Because the <xref:System.Web.UI.WebControls.GridView.Sorting> event occurs before the sort operation, you can also use the SortDirection property to programmatically set the sort direction.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the SortDirection property to determine the direction in which to sort a <xref:System.Web.UI.WebControls.GridView> control. If the user attempts to sort in descending order, the sort operation is canceled.  
-  
- [!code-cs[GridViewSortEventArgsSortDirection#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1293_1.aspx)]
- [!code-vb[GridViewSortEventArgsSortDirection#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1293_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -119,31 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the expression used to sort the items in the <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
-        <value>The expression used to sort the items in the <see cref="T:System.Web.UI.WebControls.GridView" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Web.UI.WebControls.GridView.Sorting> event is raised, you can use the SortExpression property to determine the sort expression that will be used to sort the <xref:System.Web.UI.WebControls.GridView> control when sort operation is performed. By default, the <xref:System.Web.UI.WebControls.GridView> control sorts a single column at a time. The sort expression simply contains the name of the field to sort. You can also sort multiple columns at a time by programmatically setting this property to a comma-separated list of field names.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the SortExpression property to determine which column in a <xref:System.Web.UI.WebControls.GridView> control is being sorted. If the user attempts to sort the address column, the sort operation is canceled.  
-  
- [!code-vb[GridViewSorting#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_414_1.aspx)]
- [!code-cs[GridViewSorting#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_414_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

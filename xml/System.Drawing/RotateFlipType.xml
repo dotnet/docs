@@ -4,33 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.RotateFlipType" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how much an image is rotated and the axis used to flip the image.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The image is rotated in a clockwise direction.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to set the <xref:System.Drawing.Image.RotateFlip%2A> property of an <xref:System.Drawing.Image> and the RotateFlipType enumeration.  
-  
- This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.PictureBox> named `PictureBox1` and a button named `Button1`. Paste the code into a form, call `InitializeBitmap` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method and associate `Button1_Click` with the button's <xref:System.Windows.Forms.Control.Click> event. Ensure the file path to the bitmap is valid on your system.  
-  
- [!code-cs[System.Drawing.BitmapMembers#3](~/add/codesnippet/csharp/t-system.drawing.rotatef_1.cs)]
- [!code-vb[System.Drawing.BitmapMembers#3](~/add/codesnippet/visualbasic/t-system.drawing.rotatef_1.vb)]
- [!code-cpp[System.Drawing.BitmapMembers#3](~/add/codesnippet/cpp/t-system.drawing.rotatef_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Rotate180FlipNone">
@@ -40,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 180-degree clockwise rotation without flipping.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate180FlipX">
@@ -57,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 180-degree clockwise rotation followed by a horizontal flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate180FlipXY">
@@ -74,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 180-degree clockwise rotation followed by a horizontal and vertical flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate180FlipY">
@@ -91,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 180-degree clockwise rotation followed by a vertical flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate270FlipNone">
@@ -108,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 270-degree clockwise rotation without flipping.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate270FlipX">
@@ -125,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 270-degree clockwise rotation followed by a horizontal flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate270FlipXY">
@@ -142,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 270-degree clockwise rotation followed by a horizontal and vertical flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate270FlipY">
@@ -159,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 270-degree clockwise rotation followed by a vertical flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate90FlipNone">
@@ -176,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 90-degree clockwise rotation without flipping.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate90FlipX">
@@ -193,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 90-degree clockwise rotation followed by a horizontal flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate90FlipXY">
@@ -210,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 90-degree clockwise rotation followed by a horizontal and vertical flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate90FlipY">
@@ -227,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a 90-degree clockwise rotation followed by a vertical flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RotateNoneFlipNone">
@@ -244,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no clockwise rotation and no flipping.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RotateNoneFlipX">
@@ -261,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no clockwise rotation followed by a horizontal flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RotateNoneFlipXY">
@@ -278,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no clockwise rotation followed by a horizontal and vertical flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RotateNoneFlipY">
@@ -295,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.RotateFlipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no clockwise rotation followed by a vertical flip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

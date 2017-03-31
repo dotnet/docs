@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Exposes the header of <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] when a <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> is collapsed.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="owner" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="owner">The element associated with this automation peer.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonGroupHeaderAutomationPeer" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the control type for the header of the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonGroupHeaderAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> enumeration value.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the class name of the header of the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonGroupHeaderAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClassName%2A" />.</summary>
-        <returns>The class name of the header of the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonGroupHeaderAutomationPeer" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the name that describes the element that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonGroupHeaderAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetName%2A" />.</summary>
-        <returns>The name that describes the element that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonGroupHeaderAutomationPeer" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +104,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the element that is associated with this automation peer contains data that is presented to the user. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.IsContentElement%2A" />.</summary>
-        <returns>
-          <see langword="false" /> in all cases.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

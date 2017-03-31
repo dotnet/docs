@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,19 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Displays a collection of child activity designers in a preview strip and, when a child designer is selected on the preview strip, displays the selected activity designer in preview or edit mode on a workflow design surface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ActivityPreviewDesigner is a sequential activity designer that displays all of its child activity designers in a strip that appears at the top of its design surface. When one of the child designers is selected, its representation is displayed in a preview window that the activity preview designer hosts below the strip. The ActivityPreviewDesigner has a preview mode and an edit mode. Preview mode allows the user to view the entire representation of the selected designer without scrolling; however, preview mode does not allow the user to modify the selected activity designer. Edit mode allows the user to modify the selected activity designer.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,23 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Windows.Forms.AccessibleObject" /> that allows the designer to adjust its UI for users with disabilities.</summary>
-        <value>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that allows the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> to adjust its UI for users who have impairments.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the initial value of the <xref:System.Windows.Forms.AccessibleObject> is a null reference (`Nothing` in Visual Basic), the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner> creates an <xref:System.Windows.Forms.AccessibleObject>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainedDesigners">
@@ -84,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.ActivityDesigner&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of activity designers that are displayed by the activity preview designer.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> read-only collection that contains the designers displayed by <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,23 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index of the current drop target in the array of drop targets returned by <see cref="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.GetDropTargets%2A" />.</summary>
-        <value>An integer that represents the index of the current drop target for the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CurrentDropTarget set operation sets the target in the preview strip that appears at the top of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -129,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,9 +108,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release the managed resources; otherwise, <see langword="false" />.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,18 +129,9 @@
         <Parameter Name="containedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="containedDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> for which to ensure visibility on the workflow design surface.</param>
-        <summary>Ensures that the specified activity designer is visible on the workflow design surface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- EnsureVisibleContainedDesigner verifies that all activity designers in the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>, and their children, are displayed in the preview strip at the top of the designer.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="containedDesigner" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="containedDesigner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstSelectableObject">
@@ -183,23 +141,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the first selectable object in the navigation order of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
-        <value>An <see cref="T:System.Object" /> that is the first selectable object in the designer navigation order.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.Expanded%2A> and <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.IsVisible%2A> do not contain null references (`Nothing` in Visual Basic), FirstSelectableObject will return the value of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Activity%2A> property of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.PreviewedDesigner%2A>. If the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Activity%2A> property contains a null reference (`Nothing`), FirstSelectableObject will return the <xref:System.Workflow.ComponentModel.Activity> associated with the first designer in the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.ContainedDesigners%2A> collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConnectors">
@@ -209,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -217,24 +166,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an array of rectangles that bound the activity designer's connectors.</summary>
-        <returns>A <see cref="T:System.Drawing.Rectangle" /> array that defines the bounds of all connectors in the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetConnectors returns an empty array if one or more of the following conditions occur:  
-  
--   The <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner> is not the active designer on the workflow design surface.  
-  
--   The <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner> does not contain any child activity designer.  
-  
--   The <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner> is not expanded on the workflow design surface.  
-  
--   <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.ShowPreview%2A> is set to `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDropTargets">
@@ -244,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,17 +187,10 @@
         <Parameter Name="dropPoint" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="dropPoint">The <see cref="T:System.Drawing.Point" /> that defines the x- and y-coordinates for the drop target.</param>
-        <summary>Returns an array of rectangles that represent the valid drop locations within the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
-        <returns>The <see cref="T:System.Drawing.Rectangle" /> array that represents the valid drop locations within the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `dropPoint` is in the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner> preview strip, GetDropTargets returns the possible drop targets in the strip.  
-  
- ]]></format>
-        </remarks>
+        <param name="dropPoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextSelectableObject">
@@ -274,7 +200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,18 +210,11 @@
         <Parameter Name="direction" Type="System.Workflow.ComponentModel.Design.DesignerNavigationDirection" />
       </Parameters>
       <Docs>
-        <param name="obj">The current object in the navigation order.</param>
-        <param name="direction">The <see cref="T:System.Workflow.ComponentModel.Design.DesignerNavigationDirection" /> enumeration value that specifies the direction in which designer navigation occurs.</param>
-        <summary>Returns the first selectable object that follows the specified object in the navigation order of the current <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
-        <returns>The first selectable <see cref="T:System.Object" /> that follow <paramref name="obj" /> in the navigation order.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Since users can only navigate horizontally in the preview pane of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>, GetNextSelectableObject only recognizes <xref:System.Workflow.ComponentModel.Design.DesignerNavigationDirection> and <xref:System.Workflow.ComponentModel.Design.DesignerNavigationDirection>.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Glyphs">
@@ -306,23 +224,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a read-only collection of glyphs that are associated with the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" /> read-only collection that contains the glyphs associated with the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Glyphs contains the collection of glyphs to display in the preview strip at the top of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpText">
@@ -332,23 +242,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text to display when the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> contains no other activity designers.</summary>
-        <value>A string that contains the text to display on the designer surface</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HelpText set operation adds text to the preview strip at the top of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -358,7 +260,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -368,9 +269,9 @@
         <Parameter Name="point" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="point">The <see cref="T:System.Drawing.Point" /> that contains the coordinates on the workflow design surface from which to gather information.</param>
-        <summary>Returns information about the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> at the specified coordinates on the workflow design surface.</summary>
-        <returns>A <see cref="T:System.Workflow.ComponentModel.Design.HitTestInfo" /> that contains information about the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> at the specified coordinates</returns>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,7 +282,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -391,16 +291,9 @@
         <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> for which to initialize the designer.</param>
-        <summary>Initializes the designer used by the specified activity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This sets up listening to the selection change event for the activity designer associated with `activity`.  
-  
- ]]></format>
-        </remarks>
+        <param name="activity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsContainedDesignerVisible">
@@ -410,7 +303,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -420,20 +312,10 @@
         <Parameter Name="containedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="containedDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to check.</param>
-        <summary>Returns a value that indicates whether the specified activity designer is visible in the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="containedDesigner" /> is visible; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.ShowPreview%2A> is `true` and the preview window is set to preview mode, IsContainedDesignerVisible returns `false`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="containedDesigner" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="containedDesigner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LastSelectableObject">
@@ -443,23 +325,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last selectable object in the navigation order of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
-        <value>The <see cref="T:System.Object" /> that is the last selectable object in the designer navigation order.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.Expanded%2A> and <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.IsVisible%2A> do not contain null references (`Nothing` in Visual Basic), LastSelectableObject returns the value of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Activity%2A> property of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.PreviewedDesigner%2A>. If the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.PreviewedDesigner%2A> contains a null reference (`Nothing` in Visual Basic), LastSelectableObject returns the <xref:System.Workflow.ComponentModel.Activity> associated with the last designer in the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.ContainedDesigners%2A> collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -469,7 +343,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -479,12 +352,9 @@
         <Parameter Name="reader" Type="System.IO.BinaryReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.IO.BinaryReader" /> used to restore the designer view state.</param>
-        <summary>Loads the view state of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> from a binary stream.</summary>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="reader" /> contains a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
-        <exception cref="T:System.Exception">The designer host associated with the designer is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -494,23 +364,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location of the designer in logical coordinates on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Point" /> that contains the x- and y-coordinates associated with the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Location set operation updates the location of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner> and all child designers it contains.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnContainedActivitiesChanged">
@@ -520,7 +382,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -530,18 +391,9 @@
         <Parameter Name="listChangeArgs" Type="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="listChangeArgs">The <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> that contains the event data.</param>
-        <summary>Notifies the designer that the number of activities contained in the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `listChangeArgs` contains the activity designers that have been added and removed from the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>. OnContainedActivitiesChanged updates the designer verbs associated with the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner> and modifies the designer layout on the workflow design surface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="listChangeArgs" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="listChangeArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDragEnter">
@@ -551,7 +403,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -561,11 +412,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDragEventArgs" /> that contains the event data.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> when a drag-drop operation is in progress and the user's mouse cursor enters the bounds of the designer.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnDragOver">
@@ -575,7 +424,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -585,11 +433,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDragEventArgs" /> that contains the event data.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> when a drag-drop operation is in progress and the user's mouse cursor is inside the bounds of the designer.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnLayoutPosition">
@@ -599,7 +445,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -609,11 +454,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the event data.</param>
-        <summary>Performs layout tasks to position visual cues and child designers on the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnLayoutSize">
@@ -623,7 +466,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -633,19 +475,10 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the event data.</param>
-        <summary>Sets the size of the visual cues on the designers contained within the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
-        <returns>The <see cref="T:System.Drawing.Size" /> that contains the new size settings for the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnLayoutSize determines the size of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner> preview strip that displays the collection of child activity designers and the preview window that displays the selected activity designer. OnLayoutSize also determines the size of the preview window depending on whether the designer is in edit or preview mode.  
-  
- If <xref:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.Expanded%2A> returns `false`, OnLayoutSize returns the base implementation inherited from <xref:System.Workflow.ComponentModel.Design.SequentialActivityDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDoubleClick">
@@ -655,7 +488,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -665,16 +497,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> when the user double-clicks on the surface of the activity designer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the user double-clicks in the preview window OnMouseDoubleClick enables edit mode on the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -684,7 +509,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -694,16 +518,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> when the user presses the mouse button down while the pointer is in designer bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the user presses the mouse button down while the cursor is in the preview window, edit mode is turned on for the designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -713,7 +530,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -721,7 +537,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies the designer when the user moves the mouse cursor out of designer bounds.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -732,7 +548,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -742,16 +557,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Notifies the designer when the user releases the mouse button in the designer bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the user releases the mouse button over the preview strip, the scrollable button changes to a minimum scroll arrow.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -761,7 +569,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -771,8 +578,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> that contains the event data.</param>
-        <summary>Draws the visual representation of the activity associated with the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> at design time.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,7 +590,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -793,16 +599,9 @@
         <Parameter Name="newTheme" Type="System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />
       </Parameters>
       <Docs>
-        <param name="newTheme">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> that contains the updated theme property settings.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> that its associated theme has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnThemeChange not only updates the theme property settings for <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>, it also renders the new settings to the preview window.  
-  
- ]]></format>
-        </remarks>
+        <param name="newTheme">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewedDesigner">
@@ -812,23 +611,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesigner</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the designer to preview in the preview section of the activity designer.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to display in the preview section of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If no designer is selected in the preview strip section of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>, PreviewedDesigner returns a null reference (`Nothing` in Visual Basic).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshDesignerActions">
@@ -838,7 +629,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -846,15 +636,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Updates the configuration errors associated with the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- RefreshDesignerActions not only updates the actions associated with <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>, it also renders the new views to the preview window.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshPreview">
@@ -864,7 +647,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -872,15 +654,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Updates the view displayed in the preview window of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.ShowPreview%2A> must be set to `true` for RefreshPreview to perform view updates.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -890,7 +665,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -900,18 +674,9 @@
         <Parameter Name="writer" Type="System.IO.BinaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> to which the current designer view state is stored.</param>
-        <summary>Stores the current view state of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" /> to a binary stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SaveViewState saves the currently selected activity designer in the preview strip and, if <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.ShowPreview%2A> returns `true`, the contents of the preview window.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="writer" /> contains null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowPreview">
@@ -921,16 +686,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the activity preview should be displayed in the designer.</summary>
-        <value>
-          <see langword="true" /> to display the activity preview in the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -941,26 +704,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of verbs to associate with the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</summary>
-        <value>An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" /> that contains the verbs associated with <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to override the Verbs property to insert custom verb actions for a <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>. The `CreateActivityVerbs` creates a new <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerb> named `"Add New Parallel Branch"` and associates an event handler named `OnAddParallelBranch`. When the verb is clicked in the workflow designer, the event handler is called.  
-  
- [!code-cs[WF_Samples#73](~/add/codesnippet/csharp/wf_snippets/snippets.cs#73)]
- [!code-vb[WF_Samples#73](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#73)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

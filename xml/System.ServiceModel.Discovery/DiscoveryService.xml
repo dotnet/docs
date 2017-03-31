@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>An abstract base class used to implement a discovery service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> is added to a service, a default DiscoveryService implementation is used to handle Find and Resolve requests. Extend this class to implement a custom discovery service that has behavior different from the default implementation, such as to reply to Find requests using a custom matching algorithm  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryService" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +43,8 @@
         <Parameter Name="discoveryMessageSequenceGenerator" Type="System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />
       </Parameters>
       <Docs>
-        <param name="discoveryMessageSequenceGenerator">The discovery message sequence generator.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryService" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />.</summary>
+        <param name="discoveryMessageSequenceGenerator">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +62,9 @@
         <Parameter Name="duplicateMessageHistoryLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="discoveryMessageSequenceGenerator">The discovery message sequence generator.</param>
-        <param name="duplicateMessageHistoryLength">The maximum number of message hashes used by the transport for identifying duplicate messages. The default value is 0.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryService" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" /> and duplicate message history length.</summary>
+        <param name="discoveryMessageSequenceGenerator">To be added.</param>
+        <param name="duplicateMessageHistoryLength">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,19 +86,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="findRequestContext">The find request context that describes the service to discover.</param>
-        <param name="callback">The callback delegate to call when the operation is completed.</param>
-        <param name="state">The user-defined state data.</param>
-        <summary>Override this method to handle a find operation.</summary>
-        <returns>A reference to the pending asynchronous operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Find results are returned by calling the <xref:System.ServiceModel.Discovery.FindRequestContext.AddMatchingEndpoint%2A> method one or more times.  
-  
- ]]></format>
-        </remarks>
+        <param name="findRequestContext">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBeginResolve">
@@ -126,11 +112,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="resolveCriteria">The find request context that describes the service to discover.</param>
-        <param name="callback">The callback delegate to call when the operation is completed.</param>
-        <param name="state">The user-defined state data.</param>
-        <summary>Override this method to handle a resolve operation.</summary>
-        <returns>A reference to the pending asynchronous operation.</returns>
+        <param name="resolveCriteria">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,8 +136,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">A reference to the completed asynchronous operation.</param>
-        <summary>Override this method to handle the completion of a find operation.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,9 +157,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">A reference to the completed asynchronous operation.</param>
-        <summary>Override this method to handle the completion of a resolve operation.</summary>
-        <returns>The endpoint discovery metadata that describes the resolved service.</returns>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ExecutionScope" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the runtime state of a dynamically generated method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ExecutionScope type is used by the expression tree compiler, which is an internal component of the [!INCLUDE[vbteclinq](~/add/includes/vbteclinq-md.md)] expression tree API, and by the dynamic methods that it generates.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateDelegate">
@@ -35,7 +28,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -46,10 +39,10 @@
         <Parameter Name="locals" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="indexLambda">The index of the object that stores information about associated lambda expression of the dynamic method.</param>
-        <param name="locals">An array that contains the hoisted local variables from the parent context.</param>
-        <summary>Creates a delegate that can be used to execute a dynamically generated method.</summary>
-        <returns>A <see cref="T:System.Delegate" /> that can execute a dynamically generated method.</returns>
+        <param name="indexLambda">To be added.</param>
+        <param name="locals">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +53,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,8 +61,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an array to store the hoisted local variables.</summary>
-        <returns>An array to store hoisted local variables.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,14 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the non-trivial constants and locally executable expressions that are referenced by a dynamically generated method.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +91,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,10 +102,10 @@
         <Parameter Name="locals" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="expression">An expression tree to free of external parameter references.</param>
-        <param name="locals">An array that contains the hoisted local variables.</param>
-        <summary>Frees a specified expression tree of external parameter references by replacing the parameter with its current value.</summary>
-        <returns>An expression tree that does not contain external parameter references.</returns>
+        <param name="expression">To be added.</param>
+        <param name="locals">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,14 +116,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the hoisted local variables from the parent context.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,14 +134,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ExecutionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the execution scope of the calling delegate.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,25 +3,22 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.IServiceProvider" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines a mechanism for retrieving a service object; that is, an object that provides custom support to other objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This interface is implemented by a class or value type that provides a service to other objects.  
-  
- The <xref:System.IServiceProvider.GetService%2A> method of this interface obtains the object that provides the service.  
-  
- TheIServiceProvider interface is implemented by a number of types, including <xref:System.Web.HttpContext?displayProperty=fullName>, <xref:System.ComponentModel.LicenseContext?displayProperty=fullName>, <xref:System.ComponentModel.MarshalByValueComponent?displayProperty=fullName>, and <xref:System.ComponentModel.Design.ServiceContainer?displayProperty=fullName>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetService">
@@ -30,9 +27,17 @@
       <MemberSignature Language="DocId" Value="M:System.IServiceProvider.GetService(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -41,13 +46,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">An object that specifies the type of service object to get.</param>
-        <summary>Gets the service object of the specified type.</summary>
-        <returns>A service object of type <paramref name="serviceType" />.  
-  
- -or-  
-  
- <see langword="null" /> if there is no service object of type <paramref name="serviceType" />.</returns>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

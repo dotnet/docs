@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TransformerInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,40 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies a custom class that extends the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> class for use by Web Part connections.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TransformerInfo objects specify custom classes that extend the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class. These custom transformer classes act as bridges between Web Parts, translating data between Web Parts with incompatible connection points.  
-  
-   
-  
-## Examples  
- The following configuration file excerpt shows how to declaratively specify values for several properties of the TransformerInfo class.  
-  
-```  
-<system.web>  
-  <webParts>  
-    <transformers>  
-      <add name="RowToFieldTransformer"  
-        type="System.Web.UI.WebControls.WebParts.RowToFieldTransformer" />  
-      <add name="RowToFilterTransformer"  
-        type="System.Web.UI.WebControls.WebParts.RowToFilterTransformer" />  
-      <add name="RowToParametersTransformer"  
-        type="System.Web.UI.WebControls.WebParts.RowToParametersTransformer" />  
-    </transformers>  
-  </webParts>   
-</system.web>  
-```  
-  
- The following code example shows how to use the TransformerInfo class. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
- [!code-cs[System.Web.Configuration.WebPartsSection#2](~/add/codesnippet/csharp/t-system.web.configurati_58_1.cs)]
- [!code-vb[System.Web.Configuration.WebPartsSection#2](~/add/codesnippet/visualbasic/t-system.web.configurati_58_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -63,25 +29,10 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of this transformer type.</param>
-        <param name="type">A reference to a type that extends the transformer <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> class.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.TransformerInfo" /> class with the specified name and type reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The configuration system does not validate the specified type to ensure that a valid type name is used.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the TransformerInfo constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
- [!code-cs[System.Web.Configuration.WebPartsSection#5](~/add/codesnippet/csharp/8552e432-1ac7-4c16-b8d4-_1.cs)]
- [!code-vb[System.Web.Configuration.WebPartsSection#5](~/add/codesnippet/visualbasic/8552e432-1ac7-4c16-b8d4-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -91,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,10 +51,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object to compare to the current object.</param>
-        <summary>Compares the current <see cref="T:System.Web.Configuration.TransformerInfo" /> object to another <see cref="T:System.Web.Configuration.TransformerInfo" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the passed object is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,8 +71,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates a hash code for the collection.</summary>
-        <returns>Unique integer hash code for the current object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +83,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -150,18 +97,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a friendly name for a type that that extends the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> class.</summary>
-        <value>A friendly name for a type that that extends the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> class.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Name property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -171,7 +109,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,7 +127,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -205,23 +141,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type reference for a class that extends the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> class.</summary>
-        <value>A type reference for a class that extends the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> class.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The configuration system does not validate the specified type to ensure that a valid type name is used. However, invalid types will cause exceptions when Web pages are loaded.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Type property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebPartsSection> type.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

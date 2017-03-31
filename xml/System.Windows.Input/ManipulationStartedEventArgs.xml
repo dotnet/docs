@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.UIElement.ManipulationStarted" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,17 +29,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancels the manipulation.</summary>
-        <returns>
-          <see langword="true" /> if manipulation was successfully, otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the method succeeds, the default <xref:System.Windows.Input.TouchDevice> sends previous touch down events as mouse down events and future manipulation events do not occur.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Complete">
@@ -56,7 +48,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Completes the manipulation without inertia.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +88,8 @@
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the container that the <see cref="System.Windows.Input.ManipulationStartedEventArgs.ManipulationOrigin%2A" /> property is relative to.</summary>
-        <value>The container that the <see cref="System.Windows.Input.ManipulationStartedEventArgs.ManipulationOrigin%2A" /> property is relative to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,16 +106,9 @@
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the point from which the manipulation originated.</summary>
-        <value>The point from which the manipulation originated.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If two points of contact initiate the manipulation, the ManipulationOrigin property is the point between the two points of contact.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Manipulators">
@@ -139,8 +124,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Input.IManipulator&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of objects that represents the touch contacts for the manipulation.</summary>
-        <value>A collection of objects that represents the touch contacts for the manipulation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

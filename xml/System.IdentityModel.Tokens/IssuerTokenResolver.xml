@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Resolves issuer tokens received from service partners.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,15 +26,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.IssuerTokenResolver" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the new instance is initialized with an <xref:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver> that uses the default store (LM.TrustedPeople).        //  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -50,8 +43,8 @@
         <Parameter Name="wrappedTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="wrappedTokenResolver">The security token resolver to be wrapped by this instance. Sets the <see cref="System.IdentityModel.Tokens.IssuerTokenResolver.WrappedTokenResolver%2A" /> property in the new instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.IssuerTokenResolver" /> class by using the specified token resolver.</summary>
+        <param name="wrappedTokenResolver">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,7 +61,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.StoreLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default store location for resolving X.509 certificates.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +78,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.StoreName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default store for resolving X.509 certificates.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,11 +99,10 @@
         <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">A key identifier clause to retrieve the key for.</param>
-        <param name="key">When this method returns, contains the key that is referenced in the specified key identifier clause. This parameter is passed uninitialized.</param>
-        <summary>Attempts to retrieve the key that is referenced in the specified key identifier clause. (Override of the base class method.)</summary>
-        <returns>
-          <see langword="true" /> when a key can be retrieved for the specified key identifier clause; otherwise, <see langword="false" />.</returns>
+        <param name="keyIdentifierClause">To be added.</param>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,11 +123,10 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifier">The key identifier to create a security token for.</param>
-        <param name="token">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the specified key identifier. This parameter is passed uninitialized.</param>
-        <summary>Attempts to retrieve the security token that matches at least one of the key identifier clauses contained within the specified key identifier. (Override of the base class method.)</summary>
-        <returns>
-          <see langword="true" /> if a security token can be retrieved for the specified key identifier; otherwise, <see langword="false" />.</returns>
+        <param name="keyIdentifier">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,11 +147,10 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">The key identifier clause to create a security token for.</param>
-        <param name="token">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the specified key identifier clause. This parameter is passed uninitialized.</param>
-        <summary>When overridden in a derived class, attempts to resolve the security token that matches the specified key identifier clause. (Override of the base class method.)</summary>
-        <returns>
-          <see langword="true" /> if a security token can be retrieved for the specified key identifier clause; otherwise, <see langword="false" />.</returns>
+        <param name="keyIdentifierClause">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,8 +167,8 @@
         <ReturnType>System.IdentityModel.Selectors.SecurityTokenResolver</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the security token resolver wrapped by this instance.</summary>
-        <value>The wrapped token resolver.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,21 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides default implementation and base class definitions for a XAML writer. This is not a working default XAML writer; you must either derive from XamlWriter and implement its abstract members, or use an existing XamlWriter derived class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The two most relevant practical derived classes of XamlWriter are the <xref:System.Xaml.XamlXmlWriter> and <xref:System.Xaml.XamlObjectWriter> classes, as the following details explain:  
-  
--   <xref:System.Xaml.XamlXmlWriter> processes a XAML node set and produces an XML text file. This class might be used for serialization or as part of the function of a tool that works with in-memory representation of XAML and produces XAML file output.  
-  
--   <xref:System.Xaml.XamlObjectWriter> processes a XAML node set and produces an object graph. This class might be used as part of a full or partial customization of a technology's XAML parser.  
-  
- <xref:System.Xaml.XamlWriterSettings> is a class for settings that are used by a XamlWriter; however, by default, the <xref:System.Xaml.XamlWriterSettings> class does not hold any specific settings. The XamlWriter base constructor does not use this settings class as an argument, nor does any other XamlWriter member. Instead, the <xref:System.Xaml.XamlXmlWriter> and <xref:System.Xaml.XamlObjectWriter> classes include their own settings classes as construction arguments. These settings classes are <xref:System.Xaml.XamlXmlWriterSettings> and <xref:System.Xaml.XamlObjectWriterSettings>. The settings classes define actual settings values and are based on <xref:System.Xaml.XamlWriterSettings>, so that they can use the <xref:System.Xaml.XamlWriterSettings> merge feature.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlWriter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +48,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the XAML writer object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the base implementation, calling Close calls the <xref:System.Xaml.XamlWriter.Dispose%2A> method with the `isDisposing` parameter as `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -88,17 +68,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release the managed resources; otherwise, <see langword="false" />.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Xaml.XamlWriter" /> and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You must call the base class to get <xref:System.Xaml.XamlWriter.IsDisposed%2A> = `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDisposed">
@@ -114,9 +86,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether <see cref="System.Xaml.XamlWriter.Dispose%2A" /> has been called.</summary>
-        <value>
-          <see langword="true" /> if <see cref="System.Xaml.XamlWriter.Dispose%2A" /> has been called; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +104,8 @@
         <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented in a derived class, gets the active XAML schema context.</summary>
-        <value>The active XAML schema context.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,7 +123,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>See <see cref="System.IDisposable.Dispose%2A" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,7 +141,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, produces the representation of an end member node.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,7 +159,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, produces the representation of an end object node.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,7 +177,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, produces an object for cases where the object is a default or implicit value of the property being set, instead of being specified as a discrete object value in the input XAML node set.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,8 +197,8 @@
         <Parameter Name="namespaceDeclaration" Type="System.Xaml.NamespaceDeclaration" />
       </Parameters>
       <Docs>
-        <param name="namespaceDeclaration">The namespace declaration to write.</param>
-        <summary>When implemented in a derived class, writes a XAML namespace declaration node.</summary>
+        <param name="namespaceDeclaration">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,23 +218,9 @@
         <Parameter Name="reader" Type="System.Xaml.XamlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The reader to use for node determination.</param>
-        <summary>Performs switching based on node type from the XAML reader (<see cref="System.Xaml.XamlReader.NodeType%2A" />) and calls the relevant <see langword="Write" /> method for the writer implementation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Notes for Inheritors  
- The WriteNode method is not a virtual method because it has practical implementation for all existing <xref:System.Xaml.XamlNodeType> values. Based on <xref:System.Xaml.XamlNodeType>, WriteNode calls into the `Write` virtual members that are dedicated to particular node types.  
-  
- If you have an advanced XAML writing scenario that expands the XAML type system and XAML node stream concept so that new node types are defined, do not use WriteNode calls in your logic. You must instead provide your own alternative for node-type switching logic in the class or in virtual overrides.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="reader" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotImplementedException">The default implementation encountered a <see cref="T:System.Xaml.XamlNodeType" /> that is not in the default enumeration.</exception>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteStartMember">
@@ -282,8 +239,8 @@
         <Parameter Name="xamlMember" Type="System.Xaml.XamlMember" />
       </Parameters>
       <Docs>
-        <param name="xamlMember">The member node to write.</param>
-        <summary>When implemented in a derived class, writes the representation of a start member node.</summary>
+        <param name="xamlMember">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,8 +260,8 @@
         <Parameter Name="type" Type="System.Xaml.XamlType" />
       </Parameters>
       <Docs>
-        <param name="type">The XAML type of the object to write.</param>
-        <summary>When implemented in a derived class, writes the representation of a start object node.</summary>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,8 +281,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The value to write.</param>
-        <summary>When implemented in a derived class, writes a value node.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

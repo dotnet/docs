@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Net.FileWebResponse" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Net.WebResponse</BaseTypeName>
@@ -16,21 +20,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a file system implementation of the <see cref="T:System.Net.WebResponse" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FileWebResponse class implements the <xref:System.Net.WebResponse>`abstract` base class to return file system resources for the <xref:System.Net.FileWebRequest> class.  
-  
- Client applications do not create FileWebResponse instances directly; instead, they are created by calling the <xref:System.Net.FileWebRequest.GetResponse%2A> method on a <xref:System.Net.FileWebRequest> instance.  
-  
- The <xref:System.Net.FileWebResponse.GetResponseStream%2A> method returns a <xref:System.IO.Stream> instance that provides read-only access to a file system resource.  
-  
- The FileWebResponse class relies on the <xref:System.IO.File> class for error handling and code access security.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,8 +31,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -53,17 +48,10 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance that contains the information required to serialize the new <see cref="T:System.Net.FileWebResponse" /> instance.</param>
-        <param name="streamingContext">An instance of the <see cref="T:System.Runtime.Serialization.StreamingContext" /> class that contains the source of the serialized stream associated with the new <see cref="T:System.Net.FileWebResponse" /> instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.FileWebResponse" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.FileWebResponse> class.  
-  
- ]]></format>
-        </remarks>
+        <param name="serializationInfo">To be added.</param>
+        <param name="streamingContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -73,35 +61,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the response stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Close method cleans up the resources used by a <xref:System.Net.FileWebResponse> and closes the response stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method.  
-  
-> [!NOTE]
->  The response stream must be closed to avoid running out of system resources. You can closes the response stream by calling either <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or Close  
-  
-   
-  
-## Examples  
- The following example uses the Close method to close the response stream.  
-  
- [!code-cpp[FileWebResponse_Close#1](~/add/codesnippet/cpp/m-system.net.filewebresp_0_1.cpp)]
- [!code-cs[FileWebResponse_Close#1](~/add/codesnippet/csharp/m-system.net.filewebresp_0_1.cs)]
- [!code-vb[FileWebResponse_Close#1](~/add/codesnippet/visualbasic/m-system.net.filewebresp_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
@@ -111,32 +84,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length of the content in the file system resource.</summary>
-        <value>The number of bytes returned from the file system resource.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ContentLength property contains the length, in bytes, of the file system resource.  
-  
-   
-  
-## Examples  
- The following example uses the ContentLength property to obtain the content length of the file system resource.  
-  
- [!code-cpp[FileWebResponse_ContentLength_ContentType#1](~/add/codesnippet/cpp/p-system.net.filewebresp_2_1.cpp)]
- [!code-cs[FileWebResponse_ContentLength_ContentType#1](~/add/codesnippet/csharp/p-system.net.filewebresp_2_1.cs)]
- [!code-vb[FileWebResponse_ContentLength_ContentType#1](~/add/codesnippet/visualbasic/p-system.net.filewebresp_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -146,32 +107,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the content type of the file system resource.</summary>
-        <value>The value "binary/octet-stream".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ContentType property contains the content type of the file system resource. The value of ContentType is always "binary/octet-stream".  
-  
-   
-  
-## Examples  
- The following example uses the ContentType property to obtain the content type of the file system resource.  
-  
- [!code-cpp[FileWebResponse_ContentLength_ContentType#1](~/add/codesnippet/cpp/p-system.net.filewebresp_0_1.cpp)]
- [!code-cs[FileWebResponse_ContentLength_ContentType#1](~/add/codesnippet/csharp/p-system.net.filewebresp_0_1.cs)]
- [!code-vb[FileWebResponse_ContentLength_ContentType#1](~/add/codesnippet/visualbasic/p-system.net.filewebresp_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -181,8 +130,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -192,17 +145,10 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
-        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that specifies the destination for this serialization.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
-  
- ]]></format>
-        </remarks>
+        <param name="serializationInfo">To be added.</param>
+        <param name="streamingContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetResponseStream">
@@ -212,36 +158,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the data stream from the file system resource.</summary>
-        <returns>A <see cref="T:System.IO.Stream" /> for reading data from the file system resource.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetResponseStream method returns the data stream from the file system resource.  
-  
-> [!NOTE]
->  The response stream must be closed to avoid running out of system resources. The response stream can be closed by calling <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or <xref:System.Net.FileWebResponse.Close%2A>  
-  
-   
-  
-## Examples  
- The following example uses the GetResponseStream method to return the data stream from the file system resource.  
-  
- [!code-cpp[FileWebResponse_GetResponseStream#1](~/add/codesnippet/cpp/m-system.net.filewebresp_1_1.cpp)]
- [!code-cs[FileWebResponse_GetResponseStream#1](~/add/codesnippet/csharp/m-system.net.filewebresp_1_1.cs)]
- [!code-vb[FileWebResponse_GetResponseStream#1](~/add/codesnippet/visualbasic/m-system.net.filewebresp_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -251,32 +182,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebHeaderCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of header name/value pairs associated with the response.</summary>
-        <value>A <see cref="T:System.Net.WebHeaderCollection" /> that contains the header name/value pairs associated with the response.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Headers property contains two name/value pairs, one for content length and one for content type, both of which are also exposed as properties, <xref:System.Net.FileWebResponse.ContentLength%2A> and <xref:System.Net.FileWebResponse.ContentType%2A>.  
-  
-   
-  
-## Examples  
- The following example uses the Headers property to retrieve the name/value pairs associated with the response.  
-  
- [!code-vb[FileWebResponse_Headers#1](~/add/codesnippet/visualbasic/p-system.net.filewebresp_1_1.vb)]
- [!code-cs[FileWebResponse_Headers#1](~/add/codesnippet/csharp/p-system.net.filewebresp_1_1.cs)]
- [!code-cpp[FileWebResponse_Headers#1](~/add/codesnippet/cpp/p-system.net.filewebresp_1_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResponseUri">
@@ -286,32 +205,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the URI of the file system resource that provided the response.</summary>
-        <value>A <see cref="T:System.Uri" /> that contains the URI of the file system resource that provided the response.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ResponseUri property contains the URI of the file system resource that provided the response. This is always the file system resource that was requested.  
-  
-   
-  
-## Examples  
- The following example uses the ResponseUri to retrieve the URI of the file system resource that provided the response.  
-  
- [!code-cs[FileWebResponse_ResponseUri#1](~/add/codesnippet/csharp/p-system.net.filewebresp_3_1.cs)]
- [!code-cpp[FileWebResponse_ResponseUri#1](~/add/codesnippet/cpp/p-system.net.filewebresp_3_1.cpp)]
- [!code-vb[FileWebResponse_ResponseUri#1](~/add/codesnippet/visualbasic/p-system.net.filewebresp_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsHeaders">
@@ -321,24 +228,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="System.Net.FileWebResponse.Headers%2A" /> property is supported by the <see cref="T:System.Net.FileWebResponse" /> instance.</summary>
-        <value>Returns <see cref="T:System.Boolean" />.  
-  
- true if the <see cref="System.Net.FileWebResponse.Headers%2A" /> property is supported by the <see cref="T:System.Net.FileWebResponse" /> instance; otherwise, false.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is always true for [!INCLUDE[net_v45](~/add/includes/net-v45-md.md)].  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -348,8 +251,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -359,9 +266,9 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> , which will hold the serialized data for the <see cref="T:System.Net.FileWebResponse" />.</param>
-        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> containing the destination of the serialized stream associated with the new <see cref="T:System.Net.FileWebResponse" />.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance with the data needed to serialize the <see cref="T:System.Net.FileWebResponse" />.</summary>
+        <param name="serializationInfo">To be added.</param>
+        <param name="streamingContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

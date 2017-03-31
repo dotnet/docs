@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlDataAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,46 +20,15 @@
       <AttributeName>System.ComponentModel.DefaultEvent("RowUpdated")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.Designer("Microsoft.VSDesigner.Data.VS.SqlDataAdapterDesigner, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName>System.ComponentModel.Designer("Microsoft.VSDesigner.Data.VS.SqlDataAdapterDesigner, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.ComponentModel.Design.IDesigner")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.ToolboxItem("Microsoft.VSDesigner.Data.VS.SqlDataAdapterToolboxItem, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName>System.ComponentModel.ToolboxItem("Microsoft.VSDesigner.Data.VS.SqlDataAdapterToolboxItem, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a set of data commands and a database connection that are used to fill the <see cref="T:System.Data.DataSet" /> and update a SQL Server database. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SqlDataAdapter, serves as a bridge between a <xref:System.Data.DataSet> and SQL Server for retrieving and saving data. The SqlDataAdapter provides this bridge by mapping <xref:System.Data.Common.DbDataAdapter.Fill%2A>, which changes the data in the <xref:System.Data.DataSet> to match the data in the data source, and <xref:System.Data.Common.DbDataAdapter.Update%2A>, which changes the data in the data source to match the data in the <xref:System.Data.DataSet>, using the appropriate Transact-SQL statements against the data source. The update is performed on a by-row basis. For every inserted, modified, and deleted row, the <xref:System.Data.Common.DbDataAdapter.Update%2A> method determines the type of change that has been performed on it (`Insert`, `Update`, or `Delete`). Depending on the type of change, the `Insert`, `Update`, or `Delete` command template executes to propagate the modified row to the data source. When the SqlDataAdapter fills a <xref:System.Data.DataSet>, it creates the necessary tables and columns for the returned data if they do not already exist. However, primary key information is not included in the implicitly created schema unless the <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> property is set to <xref:System.Data.MissingSchemaAction>. You may also have the SqlDataAdapter create the schema of the <xref:System.Data.DataSet>, including primary key information, before filling it with data using `FillSchema`. For more information, see [Adding Existing Constraints to a DataSet](../Topic/Adding%20Existing%20Constraints%20to%20a%20DataSet.md).  
-  
- SqlDataAdapter is used in conjunction with <xref:System.Data.SqlClient.SqlConnection> and <xref:System.Data.SqlClient.SqlCommand> to increase performance when connecting to a SQL Server database.  
-  
-> [!NOTE]
->  If you are using SQL Server stored procedures to edit or delete data using a `DataAdapter`, make sure that you do not use SET NOCOUNT ON in the stored procedure definition. This causes the rows affected count returned to be zero, which the `DataAdapter` interprets as a concurrency conflict. In this event, a <xref:System.Data.DBConcurrencyException> will be thrown.  
-  
- The SqlDataAdapter also includes the <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A>, and <xref:System.Data.Common.DataAdapter.TableMappings%2A> properties to facilitate the loading and updating of data.  
-  
- When an instance of SqlDataAdapter is created, the read/write properties are set to initial values. For a list of these values, see the SqlDataAdapter constructor.  
-  
- The <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A>, and <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A> are generic templates that are automatically filled with individual values from every modified row through the parameters mechanism.  
-  
- For every column that you propagate to the data source on <xref:System.Data.Common.DbDataAdapter.Update%2A>, a parameter should be added to the `InsertCommand`, `UpdateCommand`, or `DeleteCommand`. The <xref:System.Data.Common.DbParameter.SourceColumn%2A> property of the <xref:System.Data.Common.DbParameter> object should be set to the name of the column. This setting indicates that the value of the parameter is not set manually, but is taken from the particular column in the currently processed row.  
-  
-> [!NOTE]
->  An <xref:System.InvalidOperationException> will occur if the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method is called and the table contains a user-defined type that is not available on the client computer. For more information, see [Creating and Using User-Defined Types](http://go.microsoft.com/fwlink/?LinkId=139492) in SQL Server Books Online.  
-  
-   
-  
-## Examples  
- The following example uses the <xref:System.Data.SqlClient.SqlCommand>, SqlDataAdapter, and <xref:System.Data.SqlClient.SqlConnection> to select records from a database and populate a <xref:System.Data.DataSet> with the selected rows. The filled <xref:System.Data.DataSet> is then returned. To accomplish this, the method is passed an initialized <xref:System.Data.DataSet>, a connection string, and a query string that is a Transact-SQL SELECT statement.  
-  
- [!code-vb[Classic WebData SqlDataAdapter Example#1](~/add/codesnippet/visualbasic/t-system.data.sqlclient._14_1.vb)]
- [!code-cs[Classic WebData SqlDataAdapter Example#1](~/add/codesnippet/csharp/t-system.data.sqlclient._14_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,35 +38,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When an instance of <xref:System.Data.SqlClient.SqlDataAdapter> is created, the following read/write properties are set to the following initial values.  
-  
-|Properties|Initial value|  
-|----------------|-------------------|  
-|<xref:System.Data.Common.DataAdapter.MissingMappingAction%2A>|`MissingMappingAction.Passthrough`|  
-|<xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A>|`MissingSchemaAction.Add`|  
-  
- You can change the value of any of these properties through a separate call to the property.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlDataAdapter> and sets some of its properties.  
-  
- [!code-vb[Classic WebData SqlDataAdapter.SqlDataAdapter Example#1](~/add/codesnippet/visualbasic/m-system.data.sqlclient._37_1.vb)]
- [!code-cs[Classic WebData SqlDataAdapter.SqlDataAdapter Example#1](~/add/codesnippet/csharp/m-system.data.sqlclient._37_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -107,42 +54,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="selectCommand" Type="System.Data.SqlClient.SqlCommand" />
       </Parameters>
       <Docs>
-        <param name="selectCommand">A <see cref="T:System.Data.SqlClient.SqlCommand" /> that is a Transact-SQL SELECT statement or stored procedure and is set as the <see cref="System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A" /> property of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class with the specified <see cref="T:System.Data.SqlClient.SqlCommand" /> as the <see cref="System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation of the <xref:System.Data.SqlClient.SqlDataAdapter> constructor sets the <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A> property to the value specified in the `selectCommand` parameter.  
-  
- When an instance of <xref:System.Data.SqlClient.SqlDataAdapter> is created, the following read/write properties are set to the following initial values.  
-  
-|Properties|Initial value|  
-|----------------|-------------------|  
-|<xref:System.Data.Common.DataAdapter.MissingMappingAction%2A>|`MissingMappingAction.Passthrough`|  
-|<xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A>|`MissingSchemaAction.Add`|  
-  
- You can change the value of any of these properties through a separate call to the property.  
-  
- When <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A> (or any of the other command properties) is assigned to a previously created <xref:System.Data.SqlClient.SqlCommand>, the <xref:System.Data.SqlClient.SqlCommand> is not cloned. The <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A> maintains a reference to the previously created <xref:System.Data.SqlClient.SqlCommand> object.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlDataAdapter> and sets some of its properties.  
-  
- [!code-cs[Classic WebData SqlDataAdapter.SqlDataAdapter1 Example#1](~/add/codesnippet/csharp/9d168a15-4587-40fd-a80e-_1.cs)]
- [!code-vb[Classic WebData SqlDataAdapter.SqlDataAdapter1 Example#1](~/add/codesnippet/visualbasic/9d168a15-4587-40fd-a80e-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="selectCommand">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -152,7 +73,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -160,34 +81,10 @@
         <Parameter Name="selectConnection" Type="System.Data.SqlClient.SqlConnection" />
       </Parameters>
       <Docs>
-        <param name="selectCommandText">A <see cref="T:System.String" /> that is a Transact-SQL SELECT statement or stored procedure to be used by the <see cref="System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A" /> property of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" />.</param>
-        <param name="selectConnection">A <see cref="T:System.Data.SqlClient.SqlConnection" /> that represents the connection. If your connection string does not use <see langword="Integrated Security = true" />, you can use <see cref="T:System.Data.SqlClient.SqlCredential" /> to pass the user ID and password more securely than by specifying the user ID and password as text in the connection string.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class with a <see cref="System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A" /> and a <see cref="T:System.Data.SqlClient.SqlConnection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation of the <xref:System.Data.SqlClient.SqlDataAdapter> opens and closes a <xref:System.Data.SqlClient.SqlConnection> if it is not already open. This can be useful in an application that must call the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method for two or more <xref:System.Data.SqlClient.SqlDataAdapter> objects. If the <xref:System.Data.SqlClient.SqlConnection> is already open, you must explicitly call **Close** or **Dispose** to close it.  
-  
- When an instance of <xref:System.Data.SqlClient.SqlDataAdapter> is created, the following read/write properties are set to the following initial values.  
-  
-|Properties|Initial value|  
-|----------------|-------------------|  
-|<xref:System.Data.Common.DataAdapter.MissingMappingAction%2A>|`MissingMappingAction.Passthrough`|  
-|<xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A>|`MissingSchemaAction.Add`|  
-  
- You can change the value of either of these properties through a separate call to the property.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlDataAdapter> and sets some of its properties.  
-  
- [!code-vb[Classic WebData SqlDataAdapter.SqlDataAdapter3 Example#1](~/add/codesnippet/visualbasic/fa8f1b27-cd12-4c35-bbde-_1.vb)]
- [!code-cs[Classic WebData SqlDataAdapter.SqlDataAdapter3 Example#1](~/add/codesnippet/csharp/fa8f1b27-cd12-4c35-bbde-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="selectCommandText">To be added.</param>
+        <param name="selectConnection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -197,7 +94,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -205,34 +102,10 @@
         <Parameter Name="selectConnectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="selectCommandText">A <see cref="T:System.String" /> that is a Transact-SQL SELECT statement or stored procedure to be used by the <see cref="System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A" /> property of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" />.</param>
-        <param name="selectConnectionString">The connection string. If your connection string does not use <see langword="Integrated Security = true" />, you can use <see cref="System.Data.SqlClient.SqlDataAdapter.%23ctor%2A" /> and <see cref="T:System.Data.SqlClient.SqlCredential" /> to pass the user ID and password more securely than by specifying the user ID and password as text in the connection string.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class with a <see cref="System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A" /> and a connection string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload of the <xref:System.Data.SqlClient.SqlDataAdapter> constructor uses the `selectCommandText` parameter to set the <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A> property. The <xref:System.Data.SqlClient.SqlDataAdapter> will create and maintain the connection created with the `selectConnectionString` parameter.  
-  
- When an instance of <xref:System.Data.SqlClient.SqlDataAdapter> is created, the following read/write properties are set to the following initial values.  
-  
-|Properties|Initial value|  
-|----------------|-------------------|  
-|<xref:System.Data.Common.DataAdapter.MissingMappingAction%2A>|`MissingMappingAction.Passthrough`|  
-|<xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A>|`MissingSchemaAction.Add`|  
-  
- You can change the value of any of these properties through a separate call to the property.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlDataAdapter> and sets some of its properties.  
-  
- [!code-vb[Classic WebData SqlDataAdapter.SqlDataAdapter2 Example#1](~/add/codesnippet/visualbasic/m-system.data.sqlclient._6_1.vb)]
- [!code-cs[Classic WebData SqlDataAdapter.SqlDataAdapter2 Example#1](~/add/codesnippet/csharp/m-system.data.sqlclient._6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="selectCommandText">To be added.</param>
+        <param name="selectConnectionString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddToBatch">
@@ -242,7 +115,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,7 +138,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,7 +157,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -313,7 +186,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -342,7 +215,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -350,35 +223,16 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Transact-SQL statement or stored procedure to delete records from the data set.</summary>
-        <value>A <see cref="T:System.Data.SqlClient.SqlCommand" /> used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to delete records in the database that correspond to deleted rows in the <see cref="T:System.Data.DataSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Data.Common.DbDataAdapter.Update%2A>, if this property is not set and primary key information is present in the <xref:System.Data.DataSet>, the DeleteCommand can be generated automatically if you set the <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A> property and use the <xref:System.Data.SqlClient.SqlCommandBuilder>. Then, any additional commands that you do not set are generated by the <xref:System.Data.SqlClient.SqlCommandBuilder>. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
- When DeleteCommand is assigned to a previously created <xref:System.Data.SqlClient.SqlCommand>, the <xref:System.Data.SqlClient.SqlCommand> is not cloned. The DeleteCommand maintains a reference to the previously created <xref:System.Data.SqlClient.SqlCommand> object.  
-  
- For every column that you propagate to the data source on <xref:System.Data.Common.DbDataAdapter.Update%2A>, a parameter should be added to the `InsertCommand`, `UpdateCommand`, or `DeleteCommand`. The `SourceColumn` property of the parameter should be set to the name of the column. This indicates that the value of the parameter is not set manually, but is taken from the particular column in the currently processed row.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlDataAdapter> and sets the <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A>, and DeleteCommand properties. It assumes you have already created a <xref:System.Data.SqlClient.SqlConnection> object.  
-  
- [!code-vb[DataWorks SqlDataAdapter.Command#1](~/add/codesnippet/visualbasic/p-system.data.sqlclient._16_1.vb)]
- [!code-cs[DataWorks SqlDataAdapter.Command#1](~/add/codesnippet/csharp/p-system.data.sqlclient._16_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteBatch">
@@ -388,7 +242,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -408,7 +262,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -433,7 +287,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,7 +313,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -479,7 +332,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -487,37 +340,16 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Transact-SQL statement or stored procedure to insert new records into the data source.</summary>
-        <value>A <see cref="T:System.Data.SqlClient.SqlCommand" /> used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to insert records into the database that correspond to new rows in the <see cref="T:System.Data.DataSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Data.Common.DbDataAdapter.Update%2A>, if this property is not set and primary key information is present in the <xref:System.Data.DataSet>, the InsertCommand can be generated automatically if you set the <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A> property and use the <xref:System.Data.SqlClient.SqlCommandBuilder>. Then, any additional commands that you do not set are generated by the <xref:System.Data.SqlClient.SqlCommandBuilder>. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
- When InsertCommand is assigned to a previously created <xref:System.Data.SqlClient.SqlCommand>, the <xref:System.Data.SqlClient.SqlCommand> is not cloned. The InsertCommand maintains a reference to the previously created <xref:System.Data.SqlClient.SqlCommand> object.  
-  
- If execution of this command returns rows, these rows can be added to the <xref:System.Data.DataSet> depending on how you set the **UpdatedRowSource** property of the <xref:System.Data.SqlClient.SqlCommand> object.  
-  
- For every column that you propagate to the data source on <xref:System.Data.Common.DbDataAdapter.Update%2A>, a parameter should be added to `InsertCommand`, `UpdateCommand`, or `DeleteCommand`. The `SourceColumn` property of the parameter should be set to the name of the column. This indicates that the value of the parameter is not set manually, but is taken from the particular column in the currently processed row.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlDataAdapter> and sets the <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A>, InsertCommand, <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A>, and <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A> properties. It assumes you have already created a <xref:System.Data.SqlClient.SqlConnection> object.  
-  
- [!code-vb[DataWorks SqlDataAdapter.Command#1](~/add/codesnippet/visualbasic/p-system.data.sqlclient._33_1.vb)]
- [!code-cs[DataWorks SqlDataAdapter.Command#1](~/add/codesnippet/csharp/p-system.data.sqlclient._33_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRowUpdated">
@@ -527,7 +359,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -549,7 +381,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -571,52 +403,15 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlRowUpdatedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> after a command is executed against the data source. The attempt to update is made, so the event fires.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using <xref:System.Data.Common.DbDataAdapter.Update%2A>, there are two events that occur per data row updated. The order of execution is as follows:  
-  
-1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
-  
-2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
-  
-3.  The command executes.  
-  
-4.  If the command is set to `FirstReturnedRecord`, the first returned result is placed in the <xref:System.Data.DataRow>.  
-  
-5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
-  
-6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
-  
-7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
-  
-   
-  
-## Examples  
- The following example shows how to use both the <xref:System.Data.SqlClient.SqlDataAdapter.RowUpdating> and RowUpdated events.  
-  
- The <xref:System.Data.SqlClient.SqlDataAdapter.RowUpdating> event returns this output:  
-  
- event args: (command=System.Data.SqlClient.SqlCommand commandType=2 status=0)  
-  
- The RowUpdated event returns this output:  
-  
- event args: (command=System.Data.SqlClient.SqlCommand commandType=2 recordsAffected=1 row=System.Data.DataRow[37] status=0)  
-  
- [!code-vb[Classic WebData SqlDataAdapter.RowUpdated Example#1](~/add/codesnippet/visualbasic/e-system.data.sqlclient._0_1.vb)]
- [!code-cs[Classic WebData SqlDataAdapter.RowUpdated Example#1](~/add/codesnippet/csharp/e-system.data.sqlclient._0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RowUpdating">
@@ -626,52 +421,15 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlRowUpdatingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> before a command is executed against the data source. The attempt to update is made, so the event fires.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using <xref:System.Data.Common.DbDataAdapter.Update%2A>, there are two events that occur per data row updated. The order of execution is as follows:  
-  
-1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
-  
-2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
-  
-3.  The command executes.  
-  
-4.  If the command is set to `FirstReturnedRecord`, the first returned result is placed in the <xref:System.Data.DataRow>.  
-  
-5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
-  
-6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
-  
-7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
-  
-   
-  
-## Examples  
- The following example shows how to use both the RowUpdating and <xref:System.Data.SqlClient.SqlDataAdapter.RowUpdated> events.  
-  
- The RowUpdating event returns this output:  
-  
- event args: (command=System.Data.SqlClient.SqlCommand commandType=2 status=0)  
-  
- The <xref:System.Data.SqlClient.SqlDataAdapter.RowUpdated> event returns this output:  
-  
- event args: (command=System.Data.SqlClient.SqlCommand commandType=2 recordsAffected=1 row=System.Data.DataRow[37] status=0)  
-  
- [!code-vb[Classic WebData SqlDataAdapter.RowUpdated Example#1](~/add/codesnippet/visualbasic/e-system.data.sqlclient._1_1.vb)]
- [!code-cs[Classic WebData SqlDataAdapter.RowUpdated Example#1](~/add/codesnippet/csharp/e-system.data.sqlclient._1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectCommand">
@@ -681,7 +439,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -689,33 +447,16 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Transact-SQL statement or stored procedure used to select records in the data source.</summary>
-        <value>A <see cref="T:System.Data.SqlClient.SqlCommand" /> used during <see cref="System.Data.Common.DbDataAdapter.Fill%2A" /> to select records from the database for placement in the <see cref="T:System.Data.DataSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When SelectCommand is assigned to a previously created <xref:System.Data.SqlClient.SqlCommand>, the <xref:System.Data.SqlClient.SqlCommand> is not cloned. The SelectCommand maintains a reference to the previously created <xref:System.Data.SqlClient.SqlCommand> object.  
-  
- If the SelectCommand does not return any rows, no tables are added to the <xref:System.Data.DataSet>, and no exception is raised.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlDataAdapter> and sets the SelectCommand, <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A>, and <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A> properties. It assumes you have already created a <xref:System.Data.SqlClient.SqlConnection> object.  
-  
- [!code-vb[DataWorks SqlDataAdapter.Command#1](~/add/codesnippet/visualbasic/p-system.data.sqlclient._23_1.vb)]
- [!code-cs[DataWorks SqlDataAdapter.Command#1](~/add/codesnippet/csharp/p-system.data.sqlclient._23_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.DeleteCommand">
@@ -725,23 +466,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Data.IDbDataAdapter.DeleteCommand%2A" />.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> that is used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to delete records in the data source for deleted rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.InsertCommand">
@@ -751,23 +485,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Data.IDbDataAdapter.InsertCommand%2A" />.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> that is used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to insert records in the data source for new rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.SelectCommand">
@@ -777,23 +504,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Data.IDbDataAdapter.SelectCommand%2A" />.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> that is used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to select records from data source for placement in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.UpdateCommand">
@@ -803,23 +523,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Data.IDbDataAdapter.UpdateCommand%2A" />.</summary>
-        <value>An <see cref="System.Data.IdbCommand" /> that is used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to update records in the data source for modified rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -829,7 +542,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -837,16 +550,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ICloneable.Clone%2A" />.</summary>
-        <returns>A new object that is a copy of the current instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlDataAdapter> instance is cast to an <xref:System.ICloneable> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TerminateBatching">
@@ -856,7 +562,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -875,66 +581,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of rows that are processed in each round-trip to the server.</summary>
-        <value>The number of rows to process per-batch.  
-  
- <list type="table">  
-<listheader>  
-<term> Value is  
-  
- </term>  
-<description> Effect  
-  
- </description>  
-</listheader>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> There is no limit on the batch size..  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> Disables batch updating.  
-  
- </description>  
-</item>  
-<item>  
-<term> &gt;1  
-  
- </term>  
-<description> Changes are sent using batches of UpdateBatchSize operations at a time.  
-  
- </description>  
-</item>  
-</list>  
-  
- When setting this to a value other than 1, all the commands associated with the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> have to have their **UpdatedRowSource** property set to <see langword="None" /> or <see langword="OutputParameters" />. An exception is thrown otherwise.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Gets or sets a value that enables or disables batch processing support, and specifies the number of commands that can be executed in a batch.  
-  
- Use the UpdateBatchSize property to update a data source with changes from a <xref:System.Data.DataSet>. This can increase application performance by reducing the number of round-trips to the server.  
-  
- Executing an extremely large batch could decrease performance. Therefore, you should test for the optimum batch size setting before implementing your application.  
-  
- An <xref:System.ArgumentOutOfRangeException> is thrown if the value is set to a number less than zero.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateCommand">
@@ -944,7 +600,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -952,40 +608,16 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Transact-SQL statement or stored procedure used to update records in the data source.</summary>
-        <value>A <see cref="T:System.Data.SqlClient.SqlCommand" /> used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to update records in the database that correspond to modified rows in the <see cref="T:System.Data.DataSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Data.Common.DbDataAdapter.Update%2A>, if this property is not set and primary key information is present in the <xref:System.Data.DataSet>, the UpdateCommand can be generated automatically if you set the <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A> property and use the <xref:System.Data.SqlClient.SqlCommandBuilder>. Then, any additional commands that you do not set are generated by the <xref:System.Data.SqlClient.SqlCommandBuilder>. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
- When UpdateCommand is assigned to a previously created <xref:System.Data.SqlClient.SqlCommand>, the <xref:System.Data.SqlClient.SqlCommand> is not cloned. The UpdateCommand maintains a reference to the previously created <xref:System.Data.SqlClient.SqlCommand> object.  
-  
-> [!NOTE]
->  If execution of this command returns rows, the updated rows may be merged with the <xref:System.Data.DataSet> depending on how you set the **UpdatedRowSource** property of the <xref:System.Data.SqlClient.SqlCommand> object.  
-  
- For every column that you propagate to the data source on <xref:System.Data.Common.DbDataAdapter.Update%2A>, a parameter should be added to `InsertCommand`, `UpdateCommand`, or `DeleteCommand`.  
-  
- The `SourceColumn` property of the parameter should be set to the name of the column. This indicates that the value of the parameter is not set manually, but taken from the particular column in the currently processed row.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlDataAdapter> and sets the <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A>, UpdateCommand and <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A> properties. It assumes you have already created a <xref:System.Data.SqlClient.SqlConnection> object.  
-  
- [!code-vb[DataWorks SqlDataAdapter.Command#1](~/add/codesnippet/visualbasic/p-system.data.sqlclient._31_1.vb)]
- [!code-cs[DataWorks SqlDataAdapter.Command#1](~/add/codesnippet/csharp/p-system.data.sqlclient._31_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

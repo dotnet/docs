@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EncoderParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,25 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Used to pass a value, or an array of values, to an image encoder.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can also use an EncoderParameter object to receive a list of possible values supported by a particular parameter of a particular image encoder.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a EncoderParameter using the <xref:System.Drawing.Imaging.EncoderParameter.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.  
-  
- [!code-vb[UsingImageEncodersDecoders#8](~/add/codesnippet/visualbasic/t-system.drawing.imaging_0_1.vb)]
- [!code-cs[UsingImageEncodersDecoders#8](~/add/codesnippet/csharp/t-system.drawing.imaging_0_1.cs)]  
-[!code-vb[UsingImageEncodersDecoders#6](~/add/codesnippet/visualbasic/t-system.drawing.imaging_0_2.vb)]
-[!code-cs[UsingImageEncodersDecoders#6](~/add/codesnippet/csharp/t-system.drawing.imaging_0_2.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +26,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -52,9 +33,9 @@
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="value">An 8-bit unsigned integer that specifies the value stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and one unsigned 8-bit integer. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to 1.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +46,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,9 +53,9 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="value">An array of 8-bit unsigned integers that specifies the values stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and an array of unsigned 8-bit integers. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to the number of elements in the array.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +66,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -94,9 +73,9 @@
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="value">A 16-bit integer that specifies the value stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. Must be nonnegative.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and one, 16-bit integer. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to 1.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,7 +86,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -115,9 +93,9 @@
         <Parameter Name="value" Type="System.Int16[]" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="value">An array of 16-bit integers that specifies the values stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. The integers in the array must be nonnegative.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and an array of 16-bit integers. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to the number of elements in the array.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +106,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -136,22 +113,10 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="value">A 64-bit integer that specifies the value stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. Must be nonnegative. This parameter is converted to a 32-bit integer before it is stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and one 64-bit integer. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" /> (32 bits), and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to 1.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Drawing.Imaging.EncoderParameter> using the EncoderParameter constructor. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.  
-  
- [!code-vb[UsingImageEncodersDecoders#8](~/add/codesnippet/visualbasic/f30a3dab-0a65-43e4-a0d4-_1.vb)]
- [!code-cs[UsingImageEncodersDecoders#8](~/add/codesnippet/csharp/f30a3dab-0a65-43e4-a0d4-_1.cs)]  
-[!code-vb[UsingImageEncodersDecoders#6](~/add/codesnippet/visualbasic/f30a3dab-0a65-43e4-a0d4-_2.vb)]
-[!code-cs[UsingImageEncodersDecoders#6](~/add/codesnippet/csharp/f30a3dab-0a65-43e4-a0d4-_2.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="encoder">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -161,7 +126,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -169,9 +133,9 @@
         <Parameter Name="value" Type="System.Int64[]" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="value">An array of 64-bit integers that specifies the values stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. The integers in the array must be nonnegative. The 64-bit integers are converted to 32-bit integers before they are stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and an array of 64-bit integers. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" /> (32-bit), and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to the number of elements in the array.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,7 +146,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -190,9 +153,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="value">A <see cref="T:System.String" /> that specifies the value stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and a character string. The string is converted to a null-terminated ASCII string before it is stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to the length of the ASCII string including the NULL terminator.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,7 +166,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -212,10 +174,10 @@
         <Parameter Name="undefined" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="value">A byte that specifies the value stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
-        <param name="undefined">If <see langword="true" />, the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property is set to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />; otherwise, the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property is set to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and one 8-bit value. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" /> or <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to 1.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="undefined">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +188,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -235,10 +196,10 @@
         <Parameter Name="undefined" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="value">An array of bytes that specifies the values stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
-        <param name="undefined">If <see langword="true" />, the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property is set to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />; otherwise, the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property is set to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and an array of bytes. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" /> or <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to the number of elements in the array.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="undefined">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,7 +210,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -258,10 +218,10 @@
         <Parameter Name="denominator" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="numerator">A 32-bit integer that represents the numerator of a fraction. Must be nonnegative.</param>
-        <param name="denominator">A 32-bit integer that represents the denominator of a fraction. Must be nonnegative.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and a pair of 32-bit integers. The pair of integers represents a fraction, the first integer being the numerator, and the second integer being the denominator. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to 1.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="numerator">To be added.</param>
+        <param name="denominator">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,7 +232,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -281,10 +240,10 @@
         <Parameter Name="denominator" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="numerator">An array of 32-bit integers that specifies the numerators of the fractions. The integers in the array must be nonnegative.</param>
-        <param name="denominator">An array of 32-bit integers that specifies the denominators of the fractions. The integers in the array must be nonnegative. A denominator of a given index is paired with the numerator of the same index.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and two arrays of 32-bit integers. The two arrays represent an array of fractions. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to the number of elements in the <paramref name="numerator" /> array, which must be the same as the number of elements in the <paramref name="denominator" /> array.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="numerator">To be added.</param>
+        <param name="denominator">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,7 +254,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -304,10 +262,10 @@
         <Parameter Name="rangeend" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="rangebegin">A 64-bit integer that represents the smallest number in a range of integers. Must be nonnegative. This parameter is converted to a 32-bit integer before it is stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
-        <param name="rangeend">A 64-bit integer that represents the largest number in a range of integers. Must be nonnegative. This parameter is converted to a 32-bit integer before it is stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and a pair of 64-bit integers. The pair of integers represents a range of integers, the first integer being the smallest number in the range, and the second integer being the largest number in the range. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to 1.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="rangebegin">To be added.</param>
+        <param name="rangeend">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,7 +276,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -327,10 +284,10 @@
         <Parameter Name="rangeend" Type="System.Int64[]" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="rangebegin">An array of 64-bit integers that specifies the minimum values for the integer ranges. The integers in the array must be nonnegative. The 64-bit integers are converted to 32-bit integers before they are stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
-        <param name="rangeend">An array of 64-bit integers that specifies the maximum values for the integer ranges. The integers in the array must be nonnegative. The 64-bit integers are converted to 32-bit integers before they are stored in the <see cref="T:System.Drawing.Imaging.EncoderParameters" /> object. A maximum value of a given index is paired with the minimum value of the same index.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and two arrays of 64-bit integers. The two arrays represent an array integer ranges. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to the number of elements in the <paramref name="rangebegin" /> array, which must be the same as the number of elements in the <paramref name="rangeend" /> array.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="rangebegin">To be added.</param>
+        <param name="rangeend">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,11 +307,11 @@
         <Parameter Name="value" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="numberValues">An integer that specifies the number of values stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. The <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property is set to this value.</param>
-        <param name="type">A member of the <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" /> enumeration that specifies the data type of the values stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. The <see cref="T:System.Type" /> and <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> properties are set to this value.</param>
-        <param name="value">A pointer to an array of values of the type specified by the <c>Type</c> parameter.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object, number of values, data type of the values, and a pointer to the values stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="numberValues">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,7 +322,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -380,13 +336,12 @@
         <Parameter Name="Value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="NumberOfValues">An integer that specifies the number of values stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. The <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property is set to this value.</param>
-        <param name="Type">A member of the <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" /> enumeration that specifies the data type of the values stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. The <see cref="T:System.Type" /> and <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> properties are set to this value.</param>
-        <param name="Value">A pointer to an array of values of the type specified by the <c>Type</c> parameter.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and three integers that specify the number of values, the data type of the values, and a pointer to the values stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="NumberOfValues">To be added.</param>
+        <param name="Type">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">Type is not a valid <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -396,7 +351,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -407,12 +361,12 @@
         <Parameter Name="demoninator2" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="numerator1">A 32-bit integer that represents the numerator of the smallest fraction in the range. Must be nonnegative.</param>
-        <param name="demoninator1">A 32-bit integer that represents the denominator of the smallest fraction in the range. Must be nonnegative.</param>
-        <param name="numerator2">A 32-bit integer that represents the denominator of the smallest fraction in the range. Must be nonnegative.</param>
-        <param name="demoninator2">A 32-bit integer that represents the numerator of the largest fraction in the range. Must be nonnegative.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and four, 32-bit integers. The four integers represent a range of fractions. The first two integers represent the smallest fraction in the range, and the remaining two integers represent the largest fraction in the range. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to 1.</summary>
+        <param name="encoder">To be added.</param>
+        <param name="numerator1">To be added.</param>
+        <param name="demoninator1">To be added.</param>
+        <param name="numerator2">To be added.</param>
+        <param name="demoninator2">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,7 +377,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -434,20 +387,13 @@
         <Parameter Name="denominator2" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
-        <param name="numerator1">An array of 32-bit integers that specifies the numerators of the minimum values for the ranges. The integers in the array must be nonnegative.</param>
-        <param name="denominator1">An array of 32-bit integers that specifies the denominators of the minimum values for the ranges. The integers in the array must be nonnegative.</param>
-        <param name="numerator2">An array of 32-bit integers that specifies the numerators of the maximum values for the ranges. The integers in the array must be nonnegative.</param>
-        <param name="denominator2">An array of 32-bit integers that specifies the denominators of the maximum values for the ranges. The integers in the array must be nonnegative.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and four arrays of 32-bit integers. The four arrays represent an array rational ranges. A rational range is the set of all fractions from a minimum fractional value through a maximum fractional value. Sets the <see cref="System.Drawing.Imaging.EncoderParameter.ValueType%2A" /> property to <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" />, and sets the <see cref="System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A" /> property to the number of elements in the <paramref name="numerator1" /> array, which must be the same as the number of elements in the other three arrays.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ith range consists of all fractional numbers from numerator1[i]/denominator1[i] through numerator2[i]/denominator2[i].  
-  
- ]]></format>
-        </remarks>
+        <param name="encoder">To be added.</param>
+        <param name="numerator1">To be added.</param>
+        <param name="denominator1">To be added.</param>
+        <param name="numerator2">To be added.</param>
+        <param name="denominator2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -457,7 +403,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -465,15 +410,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling Dispose allows the resources used by this <xref:System.Drawing.Imaging.EncoderParameter> object to be reallocated for other purposes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Encoder">
@@ -483,15 +421,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.Encoder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Drawing.Imaging.Encoder" /> object associated with this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. The <see cref="T:System.Drawing.Imaging.Encoder" /> object encapsulates the globally unique identifier (GUID) that specifies the category (for example <see cref="F:System.Drawing.Imaging.Encoder.Quality" />, <see cref="F:System.Drawing.Imaging.Encoder.ColorDepth" />, or <see cref="F:System.Drawing.Imaging.Encoder.Compression" />) of the parameter stored in this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</summary>
-        <value>An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the GUID that specifies the category of the parameter stored in this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,7 +439,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -510,7 +446,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Allows an <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object to attempt to free resources and perform other cleanup operations before the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object is reclaimed by garbage collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -521,15 +457,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of elements in the array of values stored in this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</summary>
-        <value>An integer that indicates the number of elements in the array of values stored in this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -540,15 +475,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data type of the values stored in this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</summary>
-        <value>A member of the <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" /> enumeration that indicates the data type of the values stored in this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,15 +493,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data type of the values stored in this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</summary>
-        <value>A member of the <see cref="T:System.Drawing.Imaging.EncoderParameterValueType" /> enumeration that indicates the data type of the values stored in this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

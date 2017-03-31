@@ -4,38 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.WebBrowserPermissionLevel" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the permission level for a Web browser.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this enumeration to set the <xref:System.Security.Permissions.WebBrowserPermission.Level%2A> property of the <xref:System.Security.Permissions.WebBrowserPermission> class.  
-  
- The Safe permission level restricts the following Web browser operations.  
-  
--   A pop-up window cannot be created over the Web browser control.  
-  
--   The Web browser control can only be navigated to its site of origin.  
-  
--   The security settings of the Web browser control are reduced.  
-  
-   
-  
-## Examples  
- The following example shows how to demand that the calling code has unrestricted permission to create a Web browser control.  
-  
- [!code-cs[WebBrowserPermissionsSnippets#WebBrowserPermissionAttribute3](~/add/codesnippet/csharp/WebBrowserPermissionsSnippets/Window1.xaml.cs#webbrowserpermissionattribute3)]
- [!code-vb[WebBrowserPermissionsSnippets#WebBrowserPermissionAttribute3](~/add/codesnippet/visualbasic/webbrowserpermissionssnippets/window1.xaml.vb#webbrowserpermissionattribute3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -45,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.WebBrowserPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Web browser that cannot navigate frames to HTML.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Safe">
@@ -62,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.WebBrowserPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Web browser that can safely navigate frames to HTML but with several restrictions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unrestricted">
@@ -79,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.WebBrowserPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Web browser that can navigate without restrictions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

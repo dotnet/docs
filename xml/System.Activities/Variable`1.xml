@@ -14,36 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The <see cref="T:System.Type" /> of the Variable(T).</typeparam>
-    <summary>Represents a variable in a workflow.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In this example, a Variable(T) is used to hold a message string. This message is written to the console window by a <xref:System.Activities.WriteLine> activity.  
-  
-```c#  
-Variable<string> msg =   
-    new Variable<string>() { Default = "Hello World!" };  
-  
-Activity wf = new Sequence()  
-{  
-    Variables =   
-    {  
-        msg  
-    },  
-    Activities =  
-    {  
-        new WriteLine()  
-        {  
-            Text = msg  
-        }  
-    }  
-};  
-```  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,7 +30,7 @@ Activity wf = new Sequence()
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.Activities.Variable%601" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +47,8 @@ Activity wf = new Sequence()
         <Parameter Name="defaultExpression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="defaultExpression">The default expression.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.Variable%601" /> class with the default expression.</summary>
+        <param name="defaultExpression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +65,8 @@ Activity wf = new Sequence()
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The variable name.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.Variable%601" /> class with the variable name.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +84,9 @@ Activity wf = new Sequence()
         <Parameter Name="defaultExpression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">The variable name.</param>
-        <param name="defaultExpression">The default expression.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.Variable%601" /> class with the variable name and default expression.</summary>
+        <param name="name">To be added.</param>
+        <param name="defaultExpression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +104,9 @@ Activity wf = new Sequence()
         <Parameter Name="defaultValue" Type="T" />
       </Parameters>
       <Docs>
-        <param name="name">The variable name.</param>
-        <param name="defaultValue">The default value.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.Variable%601" /> class with the variable name and default value.</summary>
+        <param name="name">To be added.</param>
+        <param name="defaultValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,16 +128,9 @@ Activity wf = new Sequence()
         <ReturnType>System.Activities.Activity&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="System.Activities.Activity%601" /> that represents the default value for this <see cref="System.Activities.Variable%601" />.</summary>
-        <value>The default value for this <see cref="System.Activities.Variable%601" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -183,9 +149,9 @@ Activity wf = new Sequence()
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The activity context of the executing activity.</param>
-        <summary>Gets the value of the variable using the specified <see cref="T:System.Activities.ActivityContext" />.</summary>
-        <returns>The value of the variable.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,9 +171,9 @@ Activity wf = new Sequence()
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The activity context that contains the location of the variable.</param>
-        <summary>Returns the <see cref="System.Activities.Location%601" /> of the variable.</summary>
-        <returns>The location of the variable.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,9 +194,9 @@ Activity wf = new Sequence()
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="context">The activity context of the executing activity.</param>
-        <param name="value">The value of the variable.</param>
-        <summary>Sets the value of the variable.</summary>
+        <param name="context">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

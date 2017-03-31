@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.MatrixTransform" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,74 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Creates an arbitrary affine matrix transformation that is used to manipulate objects or coordinate systems in a [!INCLUDE[TLA#tla_2d](~/add/includes/tlasharptla-2d-md.md)] plane.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the MatrixTransform class to create custom transformations that are not provided by the <xref:System.Windows.Media.RotateTransform>, <xref:System.Windows.Media.SkewTransform>, <xref:System.Windows.Media.ScaleTransform>, or <xref:System.Windows.Media.TranslateTransform> classes.  
-  
- A 3x3 matrix is used for transformations in a [!INCLUDE[TLA#tla_2d](~/add/includes/tlasharptla-2d-md.md)] x-y plane. You can multiply affine matrix transformations to form linear transformations, such as rotation and skew (shear) that are followed by translation.  
-  
- An affine matrix transformation has its final column equal to (0, 0, 1); therefore, you only have to specify the members in the first two columns.  
-  
- A [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] <xref:System.Windows.Media.Matrix> has the following structure:  
-  
-||||  
-|-|-|-|  
-|<xref:System.Windows.Media.Matrix.M11%2A>|<xref:System.Windows.Media.Matrix.M12%2A>|0|  
-|<xref:System.Windows.Media.Matrix.M21%2A>|<xref:System.Windows.Media.Matrix.M22%2A>|0|  
-|<xref:System.Windows.Media.Matrix.OffsetX%2A>|<xref:System.Windows.Media.Matrix.OffsetY%2A>|1|  
-  
- The members in the last row, <xref:System.Windows.Media.Matrix.OffsetX%2A> and <xref:System.Windows.Media.Matrix.OffsetY%2A>, represent translation values.  
-  
- Methods and properties usually specify the transformation matrix as a vector that has only six members; the members are as follows:  
-  
- (<xref:System.Windows.Media.Matrix.M11%2A>, <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.M22%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, <xref:System.Windows.Media.Matrix.OffsetY%2A>)  
-  
-<a name="xamlAttributeUsage_MatrixTransform"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="m11, m12, m21, m22, offsetX, offsetY"/>  
-- or -  
-<object property="Identity"/>  
-```  
-  
-<a name="xamlValues_MatrixTransform"></a>   
-## XAML Values  
- *m11*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (1, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- *m12*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (1, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- *m21*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (2, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- *m22*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (2, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- *offsetX*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (3, 1) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- *offsetY*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The value at position (3, 2) of the transformation <xref:System.Windows.Media.MatrixTransform.Matrix%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.MatrixTransform" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="matrix" Type="System.Windows.Media.Matrix" />
       </Parameters>
       <Docs>
-        <param name="matrix">The transformation matrix of the new <see cref="T:System.Windows.Media.MatrixTransform" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.MatrixTransform" /> class with the specified transformation matrix.</summary>
+        <param name="matrix">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +55,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -136,13 +66,13 @@
         <Parameter Name="offsetY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="m11">The value at position (1, 1) in the transformation matrix.</param>
-        <param name="m12">The value at position (1, 2) in the transformation matrix.</param>
-        <param name="m21">The value at position (2, 1) in the transformation matrix.</param>
-        <param name="m22">The value at position (2, 2) in the transformation matrix.</param>
-        <param name="offsetX">The X-axis translation factor, which is located at position (3,1) in the transformation matrix.</param>
-        <param name="offsetY">The Y-axis translation factor, which is located at position (3,2) in the transformation matrix.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.MatrixTransform" /> class with the specified transformation matrix values.</summary>
+        <param name="m11">To be added.</param>
+        <param name="m12">To be added.</param>
+        <param name="m21">To be added.</param>
+        <param name="m22">To be added.</param>
+        <param name="offsetX">To be added.</param>
+        <param name="offsetY">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,20 +90,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.MatrixTransform" /> by making deep copies of its values.</summary>
-        <returns>A modifiable deep copy of the current object. The <see cref="System.Windows.Freezable.IsFrozen%2A" /> property of the cloned object returns <see langword="false" /> even if the <see cref="System.Windows.Freezable.IsFrozen%2A" /> property of the source is <see langword="true." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -184,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,18 +109,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.MatrixTransform" /> object by making deep copies of its values. This method does not copy resource references, data bindings, or animations, although it does copy their current values.</summary>
-        <returns>A modifiable deep copy of the current object. The <see cref="System.Windows.Freezable.IsFrozen%2A" /> property of the cloned object is <see langword="false" /> even if the <see cref="System.Windows.Freezable.IsFrozen%2A" /> property of the source is <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -213,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,30 +140,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Matrix</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Media.Matrix" /> structure that defines this transformation.</summary>
-        <value>The <see cref="T:System.Windows.Media.Matrix" /> structure that defines this transformation. The default value is an identity <see cref="T:System.Windows.Media.Matrix" />. An identity matrix has a value of <c>1</c> in coefficients <c>[1,1]</c>, <c>[2,2]</c>, and <c>[3,3]</c>; and a value of <c>0</c> in the rest of the coefficients.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Matrix"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.MatrixTransform.MatrixProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MatrixProperty">
@@ -266,14 +158,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.MatrixTransform.Matrix%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,23 +175,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Matrix</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="System.Windows.Media.MatrixTransform.Matrix%2A" /> that represents this <see cref="T:System.Windows.Media.MatrixTransform" />.</summary>
-        <value>The matrix that represents this <see cref="T:System.Windows.Media.MatrixTransform" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To modify the matrix of this transform, use its <xref:System.Windows.Media.MatrixTransform.Matrix%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

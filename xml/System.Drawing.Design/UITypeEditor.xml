@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.UITypeEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,48 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a base class that can be used to design value editors that can provide a user interface (UI) for representing and editing the values of objects of the supported data types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The UITypeEditor class provides a base class that you can derive from and extend to implement a custom type editor for the design-time environment. Typically, your custom type editor interacts with the <xref:System.Windows.Forms.PropertyGrid> control.  
-  
- Custom type editors are useful in situations where a text-box value editor is insufficient to effectively select the values of certain types.  
-  
- To implement a custom design-time UI type editor, you must perform the following steps:  
-  
--   Define a class that derives from UITypeEditor.  
-  
--   Override the <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> method to handle the user interface, user input processing, and value assignment.  
-  
--   Override the <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A> method to inform the Properties window of the type of editor style that the editor will use.  
-  
- You can add additional support for painting a value's representation in the Properties window by performing the following steps:  
-  
--   Override the <xref:System.Drawing.Design.UITypeEditor.GetPaintValueSupported%2A> method to indicate that the editor supports displaying the value's representation.  
-  
--   Override the <xref:System.Drawing.Design.UITypeEditor.PaintValue%2A> method to implement the display of the value's representation.  
-  
--   Override the UITypeEditor constructor method if the editor should have initialization behavior.  
-  
-> [!NOTE]
->  The UITypeEditor class does not support right-to-left (RTL) layouts.  
-  
- For more information about enhancing design-time support, see [Extending Design-Time Support](../Topic/Extending%20Design-Time%20Support.md). For more information on implementing a UITypeEditor, see [User Interface Type Editors Overview](../Topic/User%20Interface%20Type%20Editors%20Overview.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates that a UITypeEditor can be associated with an integer, double, or float property using an <xref:System.ComponentModel.EditorAttribute> to provide an angle selection interface from the Properties window in design mode. This example uses the <xref:System.Windows.Forms.Design.IWindowsFormsEditorService> interface to display a drop-down control in the Properties window in design mode. Compile the code and add the assembly to the Toolbox using the **Customize Toolbox** command on the **Tools** menu of Visual Studio. Create an instance of the `AngleTestControl` and click the drop-down button next to the Angle property in the Properties window to configure the property using the editor.  
-  
- [!code-cs[AngleEditor#1](~/add/codesnippet/csharp/t-system.drawing.design._13_1.cs)]
- [!code-cpp[AngleEditor#1](~/add/codesnippet/cpp/t-system.drawing.design._13_1.cpp)]
- [!code-vb[AngleEditor#1](~/add/codesnippet/visualbasic/t-system.drawing.design._13_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.UITypeEditor" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,18 +47,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="provider">An <see cref="T:System.IServiceProvider" /> that this editor can use to obtain services.</param>
-        <param name="value">The object to edit.</param>
-        <summary>Edits the value of the specified object using the editor style indicated by the <see cref="System.Drawing.Design.UITypeEditor.GetEditStyle%2A" /> method.</summary>
-        <returns>The new value of the object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method launches the user interface for value editing, and is called by the Properties window when a user attempts to edit the value of a type that this editor is configured to edit the value of. A service provider is provided so that the editor can obtain any required services.  
-  
- ]]></format>
-        </remarks>
+        <param name="provider">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditValue">
@@ -111,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,19 +72,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <param name="provider">An <see cref="T:System.IServiceProvider" /> that this editor can use to obtain services.</param>
-        <param name="value">The object to edit.</param>
-        <summary>Edits the specified object's value using the editor style indicated by the <see cref="System.Drawing.Design.UITypeEditor.GetEditStyle%2A" /> method.</summary>
-        <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A service provider is provided so that the editor can obtain any required services.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="provider">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -145,7 +87,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,16 +94,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the editor style used by the <see cref="System.Drawing.Design.UITypeEditor.EditValue%2A" /> method.</summary>
-        <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> enumeration value that indicates the style of editor used by the current <see cref="T:System.Drawing.Design.UITypeEditor" />. By default, this method will return <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a <xref:System.Drawing.Design.UITypeEditor> does not override and implement this method, GetEditStyle will return <xref:System.Drawing.Design.UITypeEditorEditStyle> by default.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -172,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,9 +115,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets the editor style used by the <see cref="System.Drawing.Design.UITypeEditor.EditValue%2A" /> method.</summary>
-        <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> value that indicates the style of editor used by the <see cref="System.Drawing.Design.UITypeEditor.EditValue%2A" /> method. If the <see cref="T:System.Drawing.Design.UITypeEditor" /> does not support this method, then <see cref="System.Drawing.Design.UITypeEditor.GetEditStyle%2A" /> will return <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -203,9 +135,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether this editor supports painting a representation of an object's value.</summary>
-        <returns>
-          <see langword="true" /> if <see cref="System.Drawing.Design.UITypeEditor.PaintValue%2A" /> is implemented; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,7 +147,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,10 +156,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Indicates whether the specified context supports painting a representation of an object's value within the specified context.</summary>
-        <returns>
-          <see langword="true" /> if <see cref="System.Drawing.Design.UITypeEditor.PaintValue%2A" /> is implemented; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,16 +169,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether drop-down editors should be resizable by the user.</summary>
-        <value>
-          <see langword="true" /> if drop-down editors are resizable; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,7 +187,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,25 +196,9 @@
         <Parameter Name="e" Type="System.Drawing.Design.PaintValueEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Drawing.Design.PaintValueEventArgs" /> that indicates what to paint and where to paint it.</param>
-        <summary>Paints a representation of the value of an object using the specified <see cref="T:System.Drawing.Design.PaintValueEventArgs" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Editors should paint within the boundaries of the specified rectangle. This rectangle indicates the area of the Properties window to draw a representation of the value within.  
-  
- Starting with the [!INCLUDE[net_v46](~/add/includes/net-v46-md.md)], the rectangle specified by <xref:System.Drawing.Design.PaintValueEventArgs.Bounds%2A> will be resized based on the system DPI setting when the app.config file contains the following entry:  
-  
-```  
-<appSettings>  
-  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
-</appSettings>  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PaintValue">
@@ -298,7 +208,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,27 +219,11 @@
         <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="value">The object whose value this type editor will display.</param>
-        <param name="canvas">A drawing canvas on which to paint the representation of the object's value.</param>
-        <param name="rectangle">A <see cref="T:System.Drawing.Rectangle" /> within whose boundaries to paint the value.</param>
-        <summary>Paints a representation of the value of the specified object to the specified canvas.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Editors should paint within the boundaries of the specified rectangle. This rectangle indicates the area of the Properties window to draw a representation of the value within.  
-  
- Starting with the [!INCLUDE[net_v46](~/add/includes/net-v46-md.md)], the rectangle specified by <xref:System.Drawing.Design.PaintValueEventArgs.Bounds%2A> will be resized based on the system DPI setting when the app.config file contains the following entry:  
-  
-```  
-<appSettings>  
-  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
-</appSettings>  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="canvas">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

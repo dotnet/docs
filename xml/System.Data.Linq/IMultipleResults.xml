@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.IMultipleResults" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -16,31 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the results of mapped functions or queries with variable return sequences.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the following SQL code example, the result shape depends on the input (`shape =1` or `shape = 2`). The order that the projections are returned is undefined.  
-  
-   
-  
-## Examples  
-  
-```  
-CREATE PROCEDURE VariableResultShapes(@shape int)  
-AS  
-if(@shape = 1)  
-    select CustomerID, ContactTitle, CompanyName from customers  
-else if(@shape = 2)  
-    select OrderID, ShipName from orders  
-```  
-  
- [!code-vb[DLinqSprox#4](~/add/codesnippet/visualbasic/sprox/northwind-sprox.vb#4)]
- [!code-cs[DLinqSprox#4](~/add/codesnippet/csharp/sprox/northwind-sprox.cs#4)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetResult&lt;TElement&gt;">
@@ -50,7 +26,6 @@ else if(@shape = 2)
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,26 +36,10 @@ else if(@shape = 2)
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TElement">The type of the sequence to be returned.</typeparam>
-        <summary>Retrieves the next result as a sequence of a specified type.</summary>
-        <returns>An enumeration for iterating over the results.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You would use code similar to the following to execute this stored procedure.  
-  
-> [!NOTE]
->  You must use the GetResult(TElement) pattern to obtain an enumerator of the correct type, based on your knowledge of the stored procedure.  
-  
-   
-  
-## Examples  
- [!code-cs[DLinqSprox#5](~/add/codesnippet/csharp/sprox/Program.cs#5)]
- [!code-vb[DLinqSprox#5](~/add/codesnippet/visualbasic/sprox/Module1.vb#5)]  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="TElement">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

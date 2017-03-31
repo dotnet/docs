@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsImageType" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies graphical formats for images that can be included in an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this enumeration primarily as a parameter for methods that add images to [!INCLUDE[TLA#tla_metro](~/add/includes/tlasharptla-metro-md.md)] documents.  
-  
-   
-  
-## Examples  
- The following example shows how to use this enumeration when you add images to an [!INCLUDE[TLA#tla_metro](~/add/includes/tlasharptla-metro-md.md)] document.  
-  
- [!code-vb[XpsReadWriteSign#CreateAndWriteToXpsDocument](~/add/codesnippet/visualbasic/xpsreadwritesign/readingandwritingxps.vb#createandwritetoxpsdocument)]
- [!code-cs[XpsReadWriteSign#CreateAndWriteToXpsDocument](~/add/codesnippet/csharp/XpsReadWriteSign/ReadingAndWritingXps.cs#createandwritetoxpsdocument)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="JpegImageType">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsImageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>JPEG</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PngImageType">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsImageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>PNG</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TiffImageType">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsImageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>TIFF</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WdpImageType">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsImageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>WDP</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

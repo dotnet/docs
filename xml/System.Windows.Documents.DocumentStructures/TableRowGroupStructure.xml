@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.TableRowGroupStructure" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,22 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a set of one or more rows in a table.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A TableRowGroupStructure can only have a <xref:System.Windows.Documents.DocumentStructures.TableStructure> as a parent.  
-  
-   
-  
-## Examples  
- The following example shows the `<TableRowGroupStructure>` part of an [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] document.  
-  
- [!code-xml[DocumentStructure#DocStructTableStruct1](~/add/codesnippet/xaml/DocumentStructure/Content/FixedPage1_structure.xaml#docstructtablestruct1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,12 +29,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.DocumentStructures.TableRowGroupStructure" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,10 +53,9 @@
         <Parameter Name="tableRow" Type="System.Windows.Documents.DocumentStructures.TableRowStructure" />
       </Parameters>
       <Docs>
-        <param name="tableRow">The row to add.</param>
-        <summary>Adds a row to the table row group.</summary>
+        <param name="tableRow">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The row is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.TableRowStructure&gt;.GetEnumerator">
@@ -89,8 +72,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method has not been implemented.</summary>
-        <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +91,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method has not been implemented.</summary>
-        <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,20 +112,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The child <see cref="T:System.Object" /> that is added.</param>
-        <summary>This member supports the [!INCLUDE[TLA#tla_winfx](~/add/includes/tlasharptla-winfx-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Adds a child object to the <xref:System.Windows.Documents.DocumentStructures.TableRowGroupStructure>.  
-  
- Only <xref:System.Windows.Documents.DocumentStructures.TableRowStructure> can be a child of <xref:System.Windows.Documents.DocumentStructures.TableRowGroupStructure> and there must be at least one child.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> is not one of the types that can be a child of this class. See **Remarks**.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddText">
@@ -153,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -163,8 +133,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to add to the object.</param>
-        <summary>Adds the text content of a node to the object.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

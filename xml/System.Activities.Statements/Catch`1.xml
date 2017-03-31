@@ -23,23 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TException">The type of exception that the Catch(TException) block is handling.</typeparam>
-    <summary>Contains the actions to be executed after an exception is raised in the corresponding Try block of a <see cref="System.Activities.Statements.TryCatchFinally" /> activity.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Once placed in the designer, <xref:System.Activities.Statements.Catch> activities cannot be reordered in the designer.  To reorder the collection of <xref:System.Activities.Statements.Catch> activities, either delete and re-add them in the correct order, or use the xaml (code) view for the workflow.  
-  
-   
-  
-## Examples  
- The following code sample demonstrates creating a Catch(TException) activity. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
-  
- [!code-cs[wfs_FlowChartWithFaultHandling#1](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TException">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,17 +39,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="System.Activities.Statements.Catch%601" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.Catch%601>activity. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
-  
- [!code-cs[wfs_FlowChartWithFaultHandling#1](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -84,23 +61,9 @@
         <ReturnType>System.Activities.ActivityAction&lt;TException&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The handler for the exception being caught.</summary>
-        <value>The activity action.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The exception handler is represented by a <xref:System.WorkflowModel.ActivityAction> object.  
-  
-   
-  
-## Examples  
- The following code sample demonstrates assigning the Action property of a <xref:System.Activities.Statements.Catch%601> activity. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
-  
- [!code-cs[wfs_FlowChartWithFaultHandling#1](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExceptionType">
@@ -116,8 +79,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type of exception that the <see cref="T:System.Activities.Statements.Catch" /> block is handling.</summary>
-        <value>The exception type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

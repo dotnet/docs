@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.AuthenticationMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the authentication setting used for message exchange.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,22 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is anonymous, and that the responder is authenticated.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The certificate of the responder is available out-of-band to the initiator.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AnonymousForSslNegotiated">
@@ -47,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is anonymous.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateOverTransport">
@@ -64,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is authenticated by an X.509 version 3 certificate, and that the responder is authenticated by SSL over HTTPS.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IssuedToken">
@@ -81,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator and responder are authenticated by XML symmetric key tokens.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IssuedTokenForCertificate">
@@ -98,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is authenticated by an XML symmetric key token, and that the responder is authenticated by an X.509 version 3 certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IssuedTokenForSslNegotiated">
@@ -115,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is authenticated by an XML symmetric key token, and that the responder is authenticated by the SOAP implementation of SSL.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IssuedTokenOverTransport">
@@ -132,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is authenticated by an XML symmetric key token, and that the responder is authenticated by SSL over HTTPS.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Kerberos">
@@ -149,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator and responder are authenticated using the Kerberos protocol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="KerberosOverTransport">
@@ -166,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is authenticated using the Kerberos protocol, and the responder is authenticated by SSL over HTTPS.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MutualCertificate">
@@ -183,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator and responder are authenticated with X.509 version 3 certificates.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MutualCertificateDuplex">
@@ -200,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator and responder are authenticated with X.509 version 3 certificates.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MutualSslNegotiated">
@@ -217,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator and responder mutually authenticate each other using X509 version 3 certificates, and the responder's certificate is available from the SOAP SSL negotiation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SecureConversation">
@@ -234,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that WS-SecureConversation authentication is used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SspiNegotiated">
@@ -251,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator and responder obtain a shared security context using the Security Service Provider Interface (SSPI).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SspiNegotiatedOverTransport">
@@ -268,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is authenticated by a security context using the Security Service Provider Interface (SSPI), and the responder is authenticated by SSL over HTTPS.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserNameForCertificate">
@@ -285,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is authenticated using a username token, and the responder's certificate is available to the initiator out-of-band.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserNameForSslNegotiated">
@@ -302,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is authenticated using a username token, and that the responder is authenticated by the SOAP implementation of SSL.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserNameOverTransport">
@@ -319,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the initiator is authenticated using a username token, and that the responder is authenticated by SSL over HTTPS.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

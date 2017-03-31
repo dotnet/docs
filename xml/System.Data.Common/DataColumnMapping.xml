@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DataColumnMapping" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
@@ -24,23 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains a generic column mapping for an object that inherits from <see cref="T:System.Data.Common.DataAdapter" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A DataColumnMapping enables you to use column names in a <xref:System.Data.DataTable> that are different from those in the data source. The `DataAdapter` uses the mapping to match the columns when the tables in the <xref:System.Data.DataSet> or data source are updated. For more information, see [DataAdapter DataTable and DataColumn Mappings](../Topic/DataAdapter%20DataTable%20and%20DataColumn%20Mappings.md).  
-  
-   
-  
-## Examples  
- The following example creates a DataColumnMapping object and adds it to a <xref:System.Data.Common.DataColumnMappingCollection>. It then tells the user that the mapping was added to the collection and shows the Parent for the mapping.  
-  
- [!code-vb[Classic WebData DataColumnMapping Example#1](~/add/codesnippet/visualbasic/t-system.data.common.dat_1_1.vb)]
- [!code-cs[Classic WebData DataColumnMapping Example#1](~/add/codesnippet/csharp/t-system.data.common.dat_1_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,23 +39,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DataColumnMapping" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object, sets its properties, and clones it.  
-  
- [!code-cs[Classic WebData DataColumnMapping.DataColumnMapping Example#1](~/add/codesnippet/csharp/m-system.data.common.dat_22_1.cs)]
- [!code-vb[Classic WebData DataColumnMapping.DataColumnMapping Example#1](~/add/codesnippet/visualbasic/m-system.data.common.dat_22_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,28 +59,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sourceColumn" Type="System.String" />
         <Parameter Name="dataSetColumn" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceColumn">The case-sensitive column name from a data source.</param>
-        <param name="dataSetColumn">The column name, which is not case sensitive, from a <see cref="T:System.Data.DataSet" /> to map to.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DataColumnMapping" /> class with the specified source column name and <see cref="T:System.Data.DataSet" /> column name to map to.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object, sets its properties, and clones it.  
-  
- [!code-cs[Classic WebData DataColumnMapping.DataColumnMapping1 Example#1](~/add/codesnippet/csharp/m-system.data.common.dat_28_1.cs)]
- [!code-vb[Classic WebData DataColumnMapping.DataColumnMapping1 Example#1](~/add/codesnippet/visualbasic/m-system.data.common.dat_28_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="sourceColumn">To be added.</param>
+        <param name="dataSetColumn">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSetColumn">
@@ -107,8 +84,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -119,19 +100,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the column within the <see cref="T:System.Data.DataSet" /> to map to.</summary>
-        <value>The name of the column within the <see cref="T:System.Data.DataSet" /> to map to. The name is not case sensitive.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object, and sets its properties.  
-  
- [!code-vb[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/add/codesnippet/visualbasic/p-system.data.common.dat_12_1.vb)]
- [!code-cs[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/add/codesnippet/csharp/p-system.data.common.dat_12_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDataColumnBySchemaAction">
@@ -141,8 +112,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -158,11 +133,11 @@
         <Parameter Name="schemaAction" Type="System.Data.MissingSchemaAction" />
       </Parameters>
       <Docs>
-        <param name="dataTable">The <see cref="T:System.Data.DataTable" /> to get the column from.</param>
-        <param name="dataType">The <see cref="T:System.Type" /> of the data column.</param>
-        <param name="schemaAction">One of the <see cref="T:System.Data.MissingSchemaAction" /> values.</param>
-        <summary>Gets a <see cref="T:System.Data.DataColumn" /> from the given <see cref="T:System.Data.DataTable" /> using the <see cref="T:System.Data.MissingSchemaAction" /> and the <see cref="System.Data.Common.DataColumnMapping.DataSetColumn%2A" /> property.</summary>
-        <returns>A data column.</returns>
+        <param name="dataTable">To be added.</param>
+        <param name="dataType">To be added.</param>
+        <param name="schemaAction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +148,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -192,13 +171,13 @@
         <Parameter Name="schemaAction" Type="System.Data.MissingSchemaAction" />
       </Parameters>
       <Docs>
-        <param name="sourceColumn">The case-sensitive column name from a data source.</param>
-        <param name="dataSetColumn">The column name, which is not case sensitive, from a <see cref="T:System.Data.DataSet" /> to map to.</param>
-        <param name="dataTable">An instance of <see cref="T:System.Data.DataTable" />.</param>
-        <param name="dataType">The data type for the column being mapped.</param>
-        <param name="schemaAction">Determines the action to take when existing <see cref="T:System.Data.DataSet" /> schema does not match incoming data.</param>
-        <summary>A static version of <see cref="System.Data.Common.DataColumnMapping.GetDataColumnBySchemaAction%2A" /> that can be called without instantiating a <see cref="T:System.Data.Common.DataColumnMapping" /> object.</summary>
-        <returns>A <see cref="T:System.Data.DataColumn" /> object.</returns>
+        <param name="sourceColumn">To be added.</param>
+        <param name="dataSetColumn">To be added.</param>
+        <param name="dataTable">To be added.</param>
+        <param name="dataType">To be added.</param>
+        <param name="schemaAction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +188,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -221,19 +204,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the column within the data source to map from. The name is case-sensitive.</summary>
-        <value>The case-sensitive name of the column in the data source.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object, and sets its properties.  
-  
- [!code-vb[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/add/codesnippet/visualbasic/p-system.data.common.dat_5_1.vb)]
- [!code-cs[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/add/codesnippet/csharp/p-system.data.common.dat_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -243,26 +216,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new object that is a copy of the current instance.</summary>
-        <returns>A copy of the current object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlCommand> instance is cast to an <xref:System.ICloneable> interface.  
-  
- For more information, see <xref:System.ICloneable.Clone%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -272,27 +240,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts the current <see cref="System.Data.Common.DataColumnMapping.SourceColumn%2A" /> name to a string.</summary>
-        <returns>The current <see cref="System.Data.Common.DataColumnMapping.SourceColumn%2A" /> name as a string.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Data.Common.DataColumnMapping> object and adds it to a <xref:System.Data.Common.DataColumnMappingCollection> collection. It then tells the user that the mapping was added to the collection and shows the parent of mapping.  
-  
- [!code-vb[Classic WebData DataColumnMapping Example#1](~/add/codesnippet/visualbasic/m-system.data.common.dat_6_1.vb)]
- [!code-cs[Classic WebData DataColumnMapping Example#1](~/add/codesnippet/csharp/m-system.data.common.dat_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -3,15 +3,19 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SubjectIdentifierOrKeyType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The SubjectIdentifierOrKeyType enumeration defines how a subject is identified.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -21,15 +25,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.IssuerAndSerialNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The subject is identified by the certificate issuer and serial number.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublicKeyInfo">
@@ -38,15 +46,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.PublicKeyInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The subject is identified by the public key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SubjectKeyIdentifier">
@@ -55,15 +67,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.SubjectKeyIdentifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The subject is identified by the hash of the subject key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -72,15 +88,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type is unknown.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

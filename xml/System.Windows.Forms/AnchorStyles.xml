@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AnchorStyles" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,24 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies how a control anchors to the edges of its container.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a control is anchored to an edge of its container, the distance between the control and the specified edge remains constant when the container resizes. For example, if a control is anchored to the right edge of its container, the distance between the right edge of the control and the right edge of the container remains constant when the container resizes. A control can be anchored to any combination of control edges. If the control is anchored to opposite edges of its container (for example, to the top and bottom), it resizes when the container resizes. If a control has its <xref:System.Windows.Forms.Control.Anchor%2A> property set to None, the control moves half of the distance that the container of the control is resized. For example, if a <xref:System.Windows.Forms.Button> has its <xref:System.Windows.Forms.Control.Anchor%2A> property set to None and the <xref:System.Windows.Forms.Form> that the control is located on is resized by 20 pixels in either direction, the button will be moved 10 pixels in both directions.  
-  
-   
-  
-## Examples  
- The following example adds a <xref:System.Windows.Forms.Button> to a form and sets some of its common properties. The example anchors the button to the bottom-right corner of the form so it keeps its relative position as the form is resized. Next it sets the <xref:System.Windows.Forms.Control.BackgroundImage%2A> and resizes the button to the same size as the <xref:System.Drawing.Image>. The example then sets the <xref:System.Windows.Forms.Control.TabStop%2A> to `true` and sets the <xref:System.Windows.Forms.Control.TabIndex%2A> property. Lastly, it adds an event handler to handle the <xref:System.Windows.Forms.Control.Click> event of the button. This example assumes you have an <xref:System.Windows.Forms.ImageList> named `imageList1`.  
-  
- [!code-cs[Windows.Forms.Control Properties#3](~/add/codesnippet/csharp/t-system.windows.forms.a_11_1.cs)]
- [!code-cpp[Windows.Forms.Control Properties#3](~/add/codesnippet/cpp/t-system.windows.forms.a_11_1.cpp)]
- [!code-vb[Windows.Forms.Control Properties#3](~/add/codesnippet/visualbasic/t-system.windows.forms.a_11_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -46,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The control is anchored to the bottom edge of its container.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -63,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The control is anchored to the left edge of its container.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The control is not anchored to any edges of its container.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -97,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The control is anchored to the right edge of its container.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -114,14 +93,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The control is anchored to the top edge of its container.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

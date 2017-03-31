@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides qualifying information to a callback method when an <see cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" /> event occurs.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted> event is raised when a remote peer responds to an invitation to collaborate with a peer host or host application. This occurs when the invitation has completed, regardless of whether the invited peer intends to collaborate. Methods used to manage peer invitations are in the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> and <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> subclasses and the <xref:System.Net.PeerToPeer.Collaboration.Peer> abstract class. Callback method, delegate, and type-safe function pointer are synonyms for the delegate methods.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="InviteResponse">
@@ -30,23 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerInvitationResponse</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" /> to an invitation operation.</summary>
-        <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" /> to the invitation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unless specified, the default value for this property is `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

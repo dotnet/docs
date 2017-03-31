@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LateBinding" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a reference to a class member, callable expression, or variable name. This class attempts to resolve the reference to the correct value at run time.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">A string that identifies the binding reference.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.LateBinding" /> class, using the specified identifier.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -50,9 +47,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">A string that identifies the binding reference.</param>
-        <param name="obj">The object that the binding reference is defined on.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.LateBinding" /> class, using the specified identifier and object.</summary>
+        <param name="name">To be added.</param>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -81,14 +77,12 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="arguments">The arguments to pass to the member.</param>
-        <param name="construct">
-          <see langword="true" /> to use the construct method; otherwise, <see langword="false" />.</param>
-        <param name="brackets">
-          <see langword="true" /> if the binding reference contains brackets; otherwise, <see langword="false" />.</param>
-        <param name="engine">A reference to the scripting engine.</param>
-        <summary>Resolves the binding reference by calling a member.</summary>
-        <returns>The return value of the call to the member.</returns>
+        <param name="arguments">To be added.</param>
+        <param name="construct">To be added.</param>
+        <param name="brackets">To be added.</param>
+        <param name="engine">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +93,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -119,16 +112,14 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that the binding reference is defined on.</param>
-        <param name="val">Information about the member to call.</param>
-        <param name="arguments">The arguments to pass to the member.</param>
-        <param name="construct">
-          <see langword="true" /> to use the construct method; otherwise, <see langword="false" />.</param>
-        <param name="brackets">
-          <see langword="true" /> if the binding reference contains brackets; otherwise, <see langword="false" />.</param>
-        <param name="engine">A reference to the scripting engine.</param>
-        <summary>Resolves the binding reference by calling a member.</summary>
-        <returns>The return value of the call to the member.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="val">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="construct">To be added.</param>
+        <param name="brackets">To be added.</param>
+        <param name="engine">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -159,16 +149,14 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="val">Information about the member to call.</param>
-        <param name="thisob">The object that the binding reference is defined on.</param>
-        <param name="arguments">The arguments to pass to the member.</param>
-        <param name="construct">
-          <see langword="true" /> to use the construct method; otherwise, <see langword="false" />.</param>
-        <param name="brackets">
-          <see langword="true" /> if the binding reference contains brackets; otherwise, <see langword="false" />.</param>
-        <param name="engine">A reference to the scripting engine.</param>
-        <summary>Resolves the binding reference by calling a member.</summary>
-        <returns>The return value of the call to the member.</returns>
+        <param name="val">To be added.</param>
+        <param name="thisob">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="construct">To be added.</param>
+        <param name="brackets">To be added.</param>
+        <param name="engine">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,7 +167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,9 +174,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Deletes the binding reference member from the object that the binding reference is defined on.</summary>
-        <returns>
-          <see langword="true" /> if the member was successfully deleted; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +186,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,11 +196,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to delete from.</param>
-        <param name="name">The member to delete.</param>
-        <summary>Deletes the specified member from the specified object.</summary>
-        <returns>
-          <see langword="true" /> if the member was successfully deleted; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +210,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -239,8 +222,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the value of the binding reference, and converts a <see cref="T:Microsoft.JScript.Missing" /> value to null.</summary>
-        <returns>The value of the binding reference; otherwise, null.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,7 +234,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -264,8 +246,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the value of the binding reference, and throws an exception if it cannot be resolved.</summary>
-        <returns>The value of the binding reference.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,14 +258,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Stores a reference to the object that the binding reference is defined on.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,7 +275,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -311,10 +291,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object that the binding reference is defined on.</param>
-        <param name="arguments">The arguments to pass to the member.</param>
-        <param name="value">The new value of the property.</param>
-        <summary>Sets an indexed property.</summary>
+        <param name="obj">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,7 +305,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -340,8 +319,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The new value of the property.</param>
-        <summary>Sets a property.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

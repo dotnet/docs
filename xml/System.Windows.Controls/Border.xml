@@ -1,10 +1,9 @@
 <Type Name="Border" FullName="System.Windows.Controls.Border">
   <TypeSignature Language="C#" Value="public class Border : System.Windows.Controls.Decorator" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Border extends System.Windows.Controls.Decorator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Border extends System.Windows.Controls.Decorator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Border" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,27 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Draws a border, background, or both around another element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Border can have only one child. To display multiple child elements, you need to place an additional <xref:System.Windows.Controls.Panel> element within the parent Border. You can then place child elements within that <xref:System.Windows.Controls.Panel> element.  
-  
- If you want to display a border around your content, you must place the elements within a parent Border element.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to create a Border and set properties in code and [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-cpp[marginpaddingalignmentsample#3](~/add/codesnippet/cpp/margin_padding_alignment_sample/Margin_Padding_Alignment_Sample.cpp#3)]
- [!code-cs[marginpaddingalignmentsample#3](~/add/codesnippet/csharp/MarginPaddingAlignmentSample.Margin_Padding_Alignment_Sample/Margin_Padding_Alignment_Sample.cs#3)]
- [!code-vb[marginpaddingalignmentsample#3](~/add/codesnippet/visualbasic/MarginPaddingAlignment/MarginPaddingAlignment.vb#3)]
- [!code-xml[marginpaddingalignmentsample#3](~/add/codesnippet/xaml/MarginPaddingAlignmentSample.Margin_Padding_Alignment_Sample/default.xaml#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Border" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,17 +46,10 @@
         <Parameter Name="finalSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="finalSize">The <see cref="T:System.Windows.Size" /> this element uses to arrange its child element.</param>
-        <summary>Arranges the contents of a <see cref="T:System.Windows.Controls.Border" /> element.</summary>
-        <returns>The <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.Border" /> element and its child element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Controls.Border> can have only one child element.  
-  
- ]]></format>
-        </remarks>
+        <param name="finalSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Background">
@@ -88,39 +59,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> that fills the area between the bounds of a <see cref="T:System.Windows.Controls.Border" />.</summary>
-        <value>The <see cref="T:System.Windows.Media.Brush" /> that draws the background. This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Background"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Border.BackgroundProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the value of the Background property by using [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-cs[ThicknessStruct#1](~/add/codesnippet/csharp/ThicknessSamp/ThicknessSamp.cs#1)]
- [!code-xml[ThicknessStruct#1](~/add/codesnippet/xaml/ThicknessXAML/default.xaml#1)]
- [!code-vb[ThicknessStruct#1](~/add/codesnippet/visualbasic/ThicknessSampVB/ThicknessSampVB.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundProperty">
@@ -130,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Border.Background%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,39 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> that draws the outer border color.</summary>
-        <value>The <see cref="T:System.Windows.Media.Brush" /> that draws the outer border color. This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_BorderBrush"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Border.BorderBrushProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the value of the BorderBrush property by using [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-cs[ThicknessStruct#1](~/add/codesnippet/csharp/ThicknessSamp/ThicknessSamp.cs#1)]
- [!code-xml[ThicknessStruct#1](~/add/codesnippet/xaml/ThicknessXAML/default.xaml#1)]
- [!code-vb[ThicknessStruct#1](~/add/codesnippet/visualbasic/ThicknessSampVB/ThicknessSampVB.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderBrushProperty">
@@ -190,14 +112,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Border.BorderBrush%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,39 +129,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the relative <see cref="T:System.Windows.Thickness" /> of a <see cref="T:System.Windows.Controls.Border" />.</summary>
-        <value>The <see cref="T:System.Windows.Thickness" /> that describes the width of the boundaries of the <see cref="T:System.Windows.Controls.Border" />. This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_BorderThickness"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Border.BorderThicknessProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the value of this property.  
-  
- [!code-cs[ThicknessStruct#1](~/add/codesnippet/csharp/ThicknessSamp/ThicknessSamp.cs#1)]
- [!code-xml[ThicknessStruct#1](~/add/codesnippet/xaml/ThicknessXAML/default.xaml#1)]
- [!code-vb[ThicknessStruct#1](~/add/codesnippet/visualbasic/ThicknessSampVB/ThicknessSampVB.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderThicknessProperty">
@@ -250,14 +147,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Border.BorderThickness%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,40 +164,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.CornerRadius</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents the degree to which the corners of a <see cref="T:System.Windows.Controls.Border" /> are rounded.</summary>
-        <value>The <see cref="T:System.Windows.CornerRadius" /> that describes the degree to which corners are rounded. This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Although the property name suggests that you can use only singular values, CornerRadius also supports non-uniform radii. Radius values that are too large are scaled so that they blend smoothly from corner to corner.  
-  
-<a name="dependencyPropertyInfo_CornerRadius"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Border.CornerRadiusProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the value of this property.  
-  
- [!code-cs[ThicknessStruct#1](~/add/codesnippet/csharp/ThicknessSamp/ThicknessSamp.cs#1)]
- [!code-xml[ThicknessStruct#1](~/add/codesnippet/xaml/ThicknessXAML/default.xaml#1)]
- [!code-vb[ThicknessStruct#1](~/add/codesnippet/visualbasic/ThicknessSampVB/ThicknessSampVB.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CornerRadiusProperty">
@@ -311,14 +182,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Border.CornerRadius%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,7 +199,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -339,17 +208,10 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">An upper <see cref="T:System.Windows.Size" /> limit that cannot be exceeded.</param>
-        <summary>Measures the child elements of a <see cref="T:System.Windows.Controls.Border" /> before they are arranged during the <see cref="System.Windows.Controls.Border.ArrangeOverride%2A" /> pass.</summary>
-        <returns>The <see cref="T:System.Windows.Size" /> that represents the upper size limit of the element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Controls.Border> element determines its upper <xref:System.Windows.Size> limit by analyzing the sizing properties, margin, and requested size of its child elements.  
-  
- ]]></format>
-        </remarks>
+        <param name="constraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRender">
@@ -359,7 +221,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,8 +230,8 @@
         <Parameter Name="dc" Type="System.Windows.Media.DrawingContext" />
       </Parameters>
       <Docs>
-        <param name="dc">The <see cref="T:System.Windows.Media.DrawingContext" /> that defines the object to be drawn.</param>
-        <summary>Draws the contents of a <see cref="T:System.Windows.Media.DrawingContext" /> object during the render pass of a <see cref="T:System.Windows.Controls.Border" />.</summary>
+        <param name="dc">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,39 +242,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Thickness" /> value that describes the amount of space between a <see cref="T:System.Windows.Controls.Border" /> and its child element.</summary>
-        <value>The <see cref="T:System.Windows.Thickness" /> that describes the amount of space between a <see cref="T:System.Windows.Controls.Border" /> and its single child element. This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Padding"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Border.PaddingProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the value of this property.  
-  
- [!code-cs[ThicknessStruct#1](~/add/codesnippet/csharp/ThicknessSamp/ThicknessSamp.cs#1)]
- [!code-xml[ThicknessStruct#1](~/add/codesnippet/xaml/ThicknessXAML/default.xaml#1)]
- [!code-vb[ThicknessStruct#1](~/add/codesnippet/visualbasic/ThicknessSampVB/ThicknessSampVB.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingProperty">
@@ -423,14 +260,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Border.Padding%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

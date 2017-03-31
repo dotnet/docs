@@ -4,37 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AccessibleNavigation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies values for navigating among accessible objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Accessible navigation directions are either spatial (up, down, left, and right) or logical (first child, last child, next, and previous). Logical directions are used when clients navigate from one user interface element to another within the same container.  
-  
- <xref:System.Windows.Forms.AccessibleObject> uses this enumeration.  
-  
- For more information about the accessibility application, search for the "Microsoft Active Accessibility" topic in the MSDN library.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This example demonstrates using the AccessibleNavigation enumeration with the <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-vb[System.Windows.Forms.AccessibleObject#4](~/add/codesnippet/visualbasic/t-system.windows.forms.a_2_1.vb)]
- [!code-cs[System.Windows.Forms.AccessibleObject#4](~/add/codesnippet/csharp/t-system.windows.forms.a_2_1.cs)]
- [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/add/codesnippet/cpp/t-system.windows.forms.a_2_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Down">
@@ -44,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigation to a sibling object located below the starting object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FirstChild">
@@ -61,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigation to the first child of the object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastChild">
@@ -78,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigation to the last child of the object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -95,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigation to the sibling object located to the left of the starting object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -112,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigation to the next logical object, typically from a sibling object to the starting object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -129,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigation to the previous logical object, typically from a sibling object to the starting object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -146,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigation to the sibling object located to the right of the starting object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -163,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigation to a sibling object located above the starting object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

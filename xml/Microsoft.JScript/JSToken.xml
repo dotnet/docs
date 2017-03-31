@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSToken" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the individual units of code, or *tokens*, that make up the JScript language.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The members of this enumeration are used by the scanner and the parser to read source code. The members of this enumeration are also used by operator classes to identify the operation to perform. For more information, see [Create a Language Compiler for the .NET Framework](http://go.microsoft.com/fwlink/?LinkId=110392).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Abstract">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>abstract</c> modifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccessField">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>.</c> field accessor symbol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Assert">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>assert</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Assign">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>=</c> assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BitwiseAnd">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&amp;</c> bitwise AND operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BitwiseAndAssign">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&amp;=</c> bitwise AND assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BitwiseNot">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>~</c> bitwise NOT operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BitwiseOr">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>|</c> bitwise OR operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BitwiseOrAssign">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>|=</c> bitwise OR assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BitwiseXor">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>^</c> bitwise XOR operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BitwiseXorAssign">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>^=</c> bitwise XOR assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Boolean">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>boolean</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Break">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>break</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -250,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>byte</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Case">
@@ -267,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>case</c> keyword of a <c>switch</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Catch">
@@ -284,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>catch</c> keyword of a <c>try</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -301,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>char</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -318,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>class</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Colon">
@@ -335,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>:</c> ternary operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Comma">
@@ -352,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>,</c> comma operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -369,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Comment text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConditionalIf">
@@ -386,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>?</c> ternary operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Const">
@@ -403,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>const</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Continue">
@@ -420,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>continue</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Debugger">
@@ -437,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>debugger</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decimal">
@@ -454,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>decimal</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decrement">
@@ -471,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>--</c> decrement operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -488,14 +453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>default</c> keyword of a <c>switch</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -505,14 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>delete</c> operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -522,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>/</c> division operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DivideAssign">
@@ -539,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>/=</c> division assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Do">
@@ -556,14 +517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>do</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -573,14 +533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>double</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DoubleColon">
@@ -590,14 +549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>::</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Else">
@@ -607,14 +565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>else</c> keyword of an <c>if</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndOfFile">
@@ -624,14 +581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The end of the file being scanned or parsed. This is the default value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndOfLine">
@@ -641,14 +597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The end of the line being parsed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ensure">
@@ -658,14 +613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>ensure</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enum">
@@ -675,14 +629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>enum</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Equal">
@@ -692,14 +645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>==</c> equality comparison operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Event">
@@ -709,14 +661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>event</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -726,14 +677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>export</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Extends">
@@ -743,14 +693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>extends</c> keyword of a <c>class</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="False">
@@ -760,14 +709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>false</c> literal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Final">
@@ -777,14 +725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>final</c> modifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Finally">
@@ -794,14 +741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>finally</c> keyword of a <c>try</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FirstBinaryOp">
@@ -811,14 +757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastBinaryOp then...</c></summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FirstOp">
@@ -828,14 +773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstOp &lt;= token &amp;&amp; token &lt;= JSToken.LastOp then...</c></summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Float">
@@ -845,14 +789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>float</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -862,14 +805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>for</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Function">
@@ -879,14 +821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>function</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -896,14 +837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>get</c> keyword of a <c>function get</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Goto">
@@ -913,14 +853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>goto</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThan">
@@ -930,14 +869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&gt;</c> relational comparison operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanEqual">
@@ -947,14 +885,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&gt;=</c> relational comparison operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Identifier">
@@ -964,14 +901,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An identifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="If">
@@ -981,14 +917,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>if</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Implements">
@@ -998,14 +933,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>implements</c> keyword of a <c>class</c> or <c>interface</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Import">
@@ -1015,14 +949,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>import</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="In">
@@ -1032,14 +965,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>in</c> operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Increment">
@@ -1049,14 +981,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>++</c> increment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Instanceof">
@@ -1066,14 +997,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>instanceof</c> operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1083,14 +1013,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>int</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IntegerLiteral">
@@ -1100,14 +1029,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An integer literal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Interface">
@@ -1117,14 +1045,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>interface</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Internal">
@@ -1134,14 +1061,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>internal</c> modifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invariant">
@@ -1151,14 +1077,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>invariant</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastAssign">
@@ -1168,14 +1093,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.Assign &lt;= token &amp;&amp; token &lt;= JSToken.LastAssign then...</c></summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastBinaryOp">
@@ -1185,14 +1109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastBinaryOp then...</c></summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastOp">
@@ -1202,14 +1125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastOp then...</c></summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastPPOperator">
@@ -1219,14 +1141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastPPOperator then...</c> PPOperators are operations that can be pre-processed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftBracket">
@@ -1236,14 +1157,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>[</c> symbol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftCurly">
@@ -1253,14 +1173,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>{</c> symbol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftParen">
@@ -1270,14 +1189,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>(</c> symbol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftShift">
@@ -1287,14 +1205,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&lt;&lt;</c> bitwise left shift operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftShiftAssign">
@@ -1304,14 +1221,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&lt;&lt;=</c> left shift assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -1321,14 +1237,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&lt;</c> relational comparison operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThanEqual">
@@ -1338,14 +1253,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&lt;=</c> relational comparison operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LogicalAnd">
@@ -1355,14 +1269,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&amp;&amp;</c> logical AND operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LogicalNot">
@@ -1372,14 +1285,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>!</c> logical NOT operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LogicalOr">
@@ -1389,14 +1301,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>||</c> logical OR operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Long">
@@ -1406,14 +1317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>long</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minus">
@@ -1423,14 +1333,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>-</c> subtraction operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MinusAssign">
@@ -1440,14 +1349,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>-=</c> subtraction assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Modulo">
@@ -1457,14 +1365,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>%</c> modulus operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ModuloAssign">
@@ -1474,14 +1381,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>%=</c> modulus assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -1491,14 +1397,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>*</c> multiplication operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiplyAssign">
@@ -1508,14 +1413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>*=</c> multiplication assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -1525,14 +1429,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>namespace</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Native">
@@ -1542,14 +1445,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>native</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="New">
@@ -1559,14 +1461,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>new</c> operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -1576,14 +1477,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No token. For example, before scanning any tokens, or in error situations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotEqual">
@@ -1593,14 +1493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>!=</c> inequality comparison operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -1610,14 +1509,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>null</c> literal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumericLiteral">
@@ -1627,14 +1525,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A numeric literal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Package">
@@ -1644,14 +1541,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>package</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ParamArray">
@@ -1661,14 +1557,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>...</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Plus">
@@ -1678,14 +1573,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>+</c> addition operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PlusAssign">
@@ -1695,14 +1589,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>+=</c> addition assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreProcessDirective">
@@ -1712,14 +1605,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A preprocessor directive.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreProcessorConstant">
@@ -1729,14 +1621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A preprocessor constant.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Private">
@@ -1746,14 +1637,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>private</c> modifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Protected">
@@ -1763,14 +1653,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>protected</c> modifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Public">
@@ -1780,14 +1669,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>public</c> modifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Require">
@@ -1797,14 +1685,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>require</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Return">
@@ -1814,14 +1701,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>return</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightBracket">
@@ -1831,14 +1717,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>]</c> symbol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightCurly">
@@ -1848,14 +1733,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>}</c> symbol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightParen">
@@ -1865,14 +1749,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>)</c> symbol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightShift">
@@ -1882,14 +1765,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&gt;&gt;</c> bitwise right shift operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightShiftAssign">
@@ -1899,14 +1781,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&gt;&gt;=</c> right shift assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sbyte">
@@ -1916,14 +1797,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>sbyte</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Semicolon">
@@ -1933,14 +1813,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>;</c> symbol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -1950,14 +1829,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>set</c> keyword of a <c>function set</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Short">
@@ -1967,14 +1845,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>short</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Static">
@@ -1984,14 +1861,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>static</c> modifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StrictEqual">
@@ -2001,14 +1877,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>===</c> identity comparison operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StrictNotEqual">
@@ -2018,14 +1893,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>!==</c> identity comparison operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StringLiteral">
@@ -2035,14 +1909,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A numeric literal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Super">
@@ -2052,14 +1925,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>super</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Switch">
@@ -2069,14 +1941,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>switch</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -2086,14 +1957,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>synchronized</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="This">
@@ -2103,14 +1973,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>this</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Throw">
@@ -2120,14 +1989,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>throw</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Throws">
@@ -2137,14 +2005,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>throws</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transient">
@@ -2154,14 +2021,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>transient</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="True">
@@ -2171,14 +2037,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>true</c> literal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Try">
@@ -2188,14 +2053,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>try</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Typeof">
@@ -2205,14 +2069,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>typeof</c> operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Uint">
@@ -2222,14 +2085,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>uint</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ulong">
@@ -2239,14 +2101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>ulong</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsignedRightShift">
@@ -2256,14 +2117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&gt;&gt;&gt;</c> unsigned right shift operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsignedRightShiftAssign">
@@ -2273,14 +2133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>&gt;&gt;&gt;=</c> unsigned right shift assignment operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnterminatedComment">
@@ -2290,14 +2149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An un-terminated comment.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Use">
@@ -2307,14 +2165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>use</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ushort">
@@ -2324,14 +2181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>ushort</c> data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Var">
@@ -2341,14 +2197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>var</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Void">
@@ -2358,14 +2213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>void</c> operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Volatile">
@@ -2375,14 +2229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>volatile</c> reserved word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="While">
@@ -2392,14 +2245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>while</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="With">
@@ -2409,14 +2261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <c>with</c> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

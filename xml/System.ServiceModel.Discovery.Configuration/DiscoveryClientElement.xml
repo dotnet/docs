@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a configuration element that enables a client application to automatically search for a discoverable workflow service and find its address at runtime.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a sealed class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +46,8 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">An element that builds the channel factories and channel listeners for various types of channels that are used to process outgoing and incoming messages.</param>
-        <summary>Adds the criteria from the specified binding element to the current <see cref="T:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement" />.</summary>
+        <param name="bindingElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,16 +64,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the <see cref="T:System.ServiceModel.Discovery.DiscoveryClientBindingElement" />.</summary>
-        <value>A type object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> is the binding element that can be added to a client application to take advantage of the Discovery Client Channel that enables a client application to access a discoverable service without knowing the endpoint address in advance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
@@ -99,8 +85,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">The <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> to be copied.</param>
-        <summary>Copies the content of the specified <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> to the current configuration element.</summary>
+        <param name="from">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,8 +127,8 @@
         <ReturnType>System.ServiceModel.Configuration.ChannelEndpointElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> that enables a client application to automatically search for a discoverable workflow service and find its address at runtime.</summary>
-        <value>A channel endpoint.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,8 +150,8 @@
         <ReturnType>System.ServiceModel.Discovery.Configuration.FindCriteriaElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.ServiceModel.Discovery.Configuration.FindCriteriaElement" /> that supplies a set of criteria used by a client application to search for a discovery workflow service.</summary>
-        <value>A find criteria element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

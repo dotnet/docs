@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines a key/value pair in an <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,9 +29,9 @@
         <Parameter Name="value" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="key">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> that contains the key in the new <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" />.</param>
-        <param name="value">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> that contains the value in the new <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" />.</param>
-        <summary>Initializes an instance of the <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" /> structure with the specified key and value.</summary>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AddIn.Contract.RemoteArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the key in the key/value pair that this <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" /> represents.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,14 +59,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AddIn.Contract.RemoteArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the value in the key/value pair that this <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" /> represents.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

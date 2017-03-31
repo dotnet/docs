@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Toolset" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a Toolset in MSBuild. For more information about Toolsets, see [Standard and Custom Toolset Configurations](../Topic/Standard%20and%20Custom%20Toolset%20Configurations.md).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A Toolset object has a corresponding `ToolsVersion` value that represents the value of the `ToolsVersion` attribute on the [Project Element (MSBuild)](../Topic/Project%20Element%20\(MSBuild\).md) as well as a `ToolsPath` value that indicates where the Toolset is located.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -38,17 +29,10 @@
         <Parameter Name="toolsPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="toolsVersion">A string representing the version of the <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> currently in use.</param>
-        <param name="toolsPath">A string representing the path to the <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> currently in use.</param>
-        <summary>Creates a <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An **ArgumentNullException** error is thrown if either parameter value is `null`. An **ArgumentException** error is thrown for invalid argument values such as empty strings.  
-  
- ]]></format>
-        </remarks>
+        <param name="toolsVersion">To be added.</param>
+        <param name="toolsPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -58,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -67,18 +50,11 @@
         <Parameter Name="buildProperties" Type="Microsoft.Build.BuildEngine.BuildPropertyGroup" />
       </Parameters>
       <Docs>
-        <param name="toolsVersion">A string representing the version of the <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> currently in use.</param>
-        <param name="toolsPath">A string representing the path to the <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> currently in use.</param>
-        <param name="buildProperties">A string representing the <see cref="T:Microsoft.Build.BuildEngine.Toolset" />-specific custom properties.</param>
-        <summary>Creates a <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An **ArgumentNullException** error is thrown if any of the parameter values are `null`. An **ArgumentException** error is thrown for invalid argument values such as empty strings.  
-  
- ]]></format>
-        </remarks>
+        <param name="toolsVersion">To be added.</param>
+        <param name="toolsPath">To be added.</param>
+        <param name="buildProperties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildProperties">
@@ -88,15 +64,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.BuildEngine.BuildPropertyGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> that is used to set <see cref="T:Microsoft.Build.BuildEngine.Toolset" />-specific custom properties.</summary>
-        <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,8 +89,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a copy of the specified <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</summary>
-        <returns>A <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,15 +101,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the path to the specified <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</summary>
-        <value>A string representing the path to the <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,15 +119,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of the specified <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</summary>
-        <value>A string representing the version of the <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

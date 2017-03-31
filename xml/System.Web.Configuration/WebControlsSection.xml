@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebControlsSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Configures the <see langword="webControls" /> section. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WebControlsSection class provides a way to programmatically access and modify the `webControls` section of a configuration file.  
-  
-> [!NOTE]
->  ASP.NET provides a shared location for the client script files, where they can be accessed from multiple pages and across applications.  The WebControlsSection can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
-  
-   
-  
-## Examples  
- The following code example shows how to obtain the WebControlsSection object from the configuration file associated with an existing Web application.  
-  
- [!code-vb[System.Web.Configuration.WebControlsSection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_45_1.vb)]
- [!code-cs[System.Web.Configuration.WebControlsSection#1](~/add/codesnippet/csharp/t-system.web.configurati_45_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of <see cref="T:System.Web.Configuration.WebControlsSection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WebControlsSection constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.WebControlsSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientScriptsLocation">
@@ -64,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -79,24 +51,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the client scripts location.</summary>
-        <value>The location of the client scripts.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For details about the client scripts and their use, refer to [Client Script in ASP.NET Web Pages](../Topic/Client%20Script%20in%20ASP.NET%20Web%20Pages.md).  
-  
-   
-  
-## Examples  
- The following code example shows how to obtain the ClientScriptsLocation.  
-  
- [!code-vb[System.Web.Configuration.WebControlsSection#1](~/add/codesnippet/visualbasic/p-system.web.configurati_171_1.vb)]
- [!code-cs[System.Web.Configuration.WebControlsSection#1](~/add/codesnippet/csharp/p-system.web.configurati_171_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeObject">
@@ -106,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,7 +82,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

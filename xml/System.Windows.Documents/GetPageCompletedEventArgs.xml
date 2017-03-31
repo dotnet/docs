@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.GetPageCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Documents.DocumentPaginator.GetPageCompleted" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -34,21 +32,13 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="page">The <see cref="T:System.Windows.Documents.DocumentPage" /> for the requested <c>pageNumber</c>.</param>
-        <param name="pageNumber">The <c>pageNumber</c> parameter passed to <see cref="System.Windows.Documents.DocumentPaginator.GetPageAsync%2A" />.</param>
-        <param name="error">The exception that occurred during the asynchronous operation; or NULL if there were no errors.</param>
-        <param name="cancelled">
-          <see langword="true" /> if the asynchronous operation was canceled; otherwise, <see langword="false" />.</param>
-        <param name="userState">The unique <c>userState</c> parameter passed to <see cref="System.Windows.Documents.DocumentPaginator.GetPageAsync%2A" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.GetPageCompletedEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The asynchronous operation can be canceled by calling <xref:System.Windows.Documents.DocumentPaginator.CancelAsync%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="page">To be added.</param>
+        <param name="pageNumber">To be added.</param>
+        <param name="error">To be added.</param>
+        <param name="cancelled">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentPage">
@@ -58,23 +48,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.DocumentPage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Documents.DocumentPage" /> for the page specified in the call to <see cref="System.Windows.Documents.DocumentPaginator.GetPageAsync%2A" />.</summary>
-        <value>The document page for the page specified in the call to <see cref="System.Windows.Documents.DocumentPaginator.GetPageAsync%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Documents.GetPageCompletedEventArgs.PageNumber%2A> property identifies the page number of the requested DocumentPage.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageNumber">
@@ -84,23 +66,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the page number passed to <see cref="System.Windows.Documents.DocumentPaginator.GetPageAsync%2A" />.</summary>
-        <value>The page number passed to <see cref="System.Windows.Documents.DocumentPaginator.GetPageAsync%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Documents.GetPageCompletedEventArgs.DocumentPage%2A> property contains the document page for the requested PageNumber.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

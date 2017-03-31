@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementScope" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,18 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a scope (namespace) for management operations.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example initializes a new ManagementScope with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
-  
- [!code-vb[wminet_ManagementScope#1](~/add/codesnippet/visualbasic/t-system.management.mana_0_1.vb)]
- [!code-cs[wminet_ManagementScope#1](~/add/codesnippet/csharp/t-system.management.mana_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,23 +31,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class, with default values. This is the default constructor.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the object does not have any properties set before connection, it is initialized with default values (for example, the local machine and the root\cimv2 namespace).  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,25 +46,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="path" Type="System.Management.ManagementPath" />
       </Parameters>
       <Docs>
-        <param name="path">A <see cref="T:System.Management.ManagementPath" /> containing the path to a server and namespace for the <see cref="T:System.Management.ManagementScope" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -96,33 +64,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The server and namespace path for the <see cref="T:System.Management.ManagementScope" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
-   
-  
-## Examples  
- The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
-  
- [!code-cs[wminet_ManagementScope(S)#1](~/add/codesnippet/csharp/m-system.management.mana_28_1.cs)]
- [!code-vb[wminet_ManagementScope(S)#1](~/add/codesnippet/visualbasic/m-system.management.mana_28_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -132,7 +82,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -140,19 +89,10 @@
         <Parameter Name="options" Type="System.Management.ConnectionOptions" />
       </Parameters>
       <Docs>
-        <param name="path">A <see cref="T:System.Management.ManagementPath" /> containing the path to the server and namespace for the <see cref="T:System.Management.ManagementScope" />.</param>
-        <param name="options">The <see cref="T:System.Management.ConnectionOptions" /> containing options for the connection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path, with the specified options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -162,7 +102,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -170,27 +109,10 @@
         <Parameter Name="options" Type="System.Management.ConnectionOptions" />
       </Parameters>
       <Docs>
-        <param name="path">The server and namespace for the <see cref="T:System.Management.ManagementScope" />.</param>
-        <param name="options">A <see cref="T:System.Management.ConnectionOptions" /> containing options for the connection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path, with the specified options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
-   
-  
-## Examples  
- The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
-  
- [!code-vb[wminet_ManagementScope(S_C)#1](~/add/codesnippet/visualbasic/944199f4-2f94-49b8-9a6a-_1.vb)]
- [!code-cs[wminet_ManagementScope(S_C)#1](~/add/codesnippet/csharp/944199f4-2f94-49b8-9a6a-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -200,7 +122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,18 +129,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a copy of the object.</summary>
-        <returns>A new copy of the <see cref="T:System.Management.ManagementScope" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -229,7 +141,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,26 +148,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Connects this <see cref="T:System.Management.ManagementScope" /> to the actual WMI scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called implicitly when the scope is used in an operation that requires it to be connected. Calling it explicitly allows the user to control the time of connection. This method will return within two minutes.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
-   
-  
-## Examples  
- The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
-  
- [!code-cs[wminet_ManagementScope_Connect#1](~/add/codesnippet/csharp/m-system.management.mana_21_1.cs)]
- [!code-vb[wminet_ManagementScope_Connect#1](~/add/codesnippet/visualbasic/m-system.management.mana_21_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsConnected">
@@ -266,29 +159,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Management.ManagementScope" /> is currently bound to a WMI server and namespace.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the scope is currently bound to a WMI server and namespace.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A scope is disconnected after creation until someone explicitly calls <xref:System.Management.ManagementScope.Connect%2A>, or uses the scope for any operation that requires a live connection. Also, the scope is disconnected from the previous connection whenever the identifying properties of the scope are changed.  
-  
-## Property Value  
- `true` if a connection is alive (bound to a server and namespace); otherwise, `false`.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -298,28 +177,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ConnectionOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets options for making the WMI connection.</summary>
-        <value>Returns a <see cref="T:System.Management.ConnectionOptions" /> that contains the options for making a WMI connection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Property Value  
- The valid <xref:System.Management.ConnectionOptions> containing options for the WMI connection.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -329,28 +195,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementPath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path for the <see cref="T:System.Management.ManagementScope" />.</summary>
-        <value>Returns a <see cref="T:System.Management.ManagementPath" /> containing the path to the scope (namespace).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Property Value  
- A <xref:System.Management.ManagementPath> containing the path to a server and namespace.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -360,7 +213,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -368,18 +220,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new object that is a copy of the current instance.</summary>
-        <returns>A new object that is a copy of this instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

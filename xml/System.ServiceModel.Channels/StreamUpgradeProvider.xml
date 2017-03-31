@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamUpgradeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,27 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements a custom upgrade provider, inherited from this <see langword="abstract" /> base class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An example of a stream upgrade is to build a compression stream directly on top of the transport stream. To add a security upgrade, you additionally implement a class that derives from <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider>. You can implement multiple upgrades, each wrapping the preceding one.  
-  
- The upgrade process has the following steps:  
-  
-1.  Implement a class that derives from StreamUpgradeProvider.  
-  
-2.  Register it. You do this by creating a binding element for it, and registering the provider in a custom binding.  
-  
-3.  The derived class that you implement creates an instance of <xref:System.ServiceModel.Channels.StreamUpgradeInitiator>, which at run time initiates a request to the other end of its connection to upgrade the channel transport layer.  
-  
-4.  The derived class that you implement creates an instance of <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor>, which at run time receives the upgrade request from the preceding step and, if possible, accepts the upgrade and returns the upgraded stream to the other side of its connection.  
-  
-5.  If there are additional upgrade requests, they are processed sequentially, as described in the preceding two steps.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Time-out properties are set to `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,23 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="timeouts" Type="System.ServiceModel.IDefaultCommunicationTimeouts" />
       </Parameters>
       <Docs>
-        <param name="timeouts">The default communication time-outs.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The provided time-outs control the default Open and Close time-outs for a transport using this upgrade provider.  
-  
- ]]></format>
-        </remarks>
+        <param name="timeouts">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateUpgradeAcceptor">
@@ -91,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,16 +62,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of <see cref="T:System.ServiceModel.Channels.StreamUpgradeAcceptor" />.</summary>
-        <returns>Returns an instance of <see cref="T:System.ServiceModel.Channels.StreamUpgradeAcceptor" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates the associated UpgradeAcceptor for this upgrade provider that can accept upgrade requests from the matching UpgradeInitiator.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateUpgradeInitiator">
@@ -118,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,18 +84,11 @@
         <Parameter Name="via" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="remoteAddress">Endpoint address for the channel.</param>
-        <param name="via">The address of the Via URI (an intermediate URI through which communication may be routed).</param>
-        <summary>Creates an instance of <see cref="T:System.ServiceModel.Channels.StreamUpgradeInitiator" />.</summary>
-        <returns>Returns an instance of <see cref="T:System.ServiceModel.Channels.StreamUpgradeInitiator" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates the associated <xref:System.ServiceModel.Channels.StreamUpgradeInitiator> for this upgrade provider that creates upgrade requests for the matching <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor> at the endpoint provided.  
-  
- ]]></format>
-        </remarks>
+        <param name="remoteAddress">To be added.</param>
+        <param name="via">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultCloseTimeout">
@@ -150,15 +98,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the DefaultCloseTimeout.</summary>
-        <value>Returns a <see cref="T:System.TimeSpan" /> for the DefaultCloseTimeout.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,15 +116,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the DefaultOpenTimeout.</summary>
-        <value>Returns a <see cref="T:System.TimeSpan" /> for the DefaultOpenTimeout.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,9 +148,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of the current stream.</typeparam>
-        <summary>When implemented in a derived class, gets a property of the current stream that represents an initiator of a stream upgrade.</summary>
-        <returns>An initiator of a stream upgrade.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

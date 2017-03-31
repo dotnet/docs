@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.CustomPopupPlacement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines custom placement parameters for a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CustomPopupPlacement structure defines a location for a <xref:System.Windows.Controls.Primitives.Popup> control with respect to its parent, and defines how the <xref:System.Windows.Controls.Primitives.Popup> moves to become more visible when it is obscured by a screen boundary.  
-  
- A <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback?displayProperty=fullName> delegate returns an array of these structures as custom placement options for a <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -40,9 +29,9 @@
         <Parameter Name="primaryAxis" Type="System.Windows.Controls.Primitives.PopupPrimaryAxis" />
       </Parameters>
       <Docs>
-        <param name="point">The <see cref="T:System.Windows.Point" /> that is relative to the <see cref="System.Windows.Controls.Primitives.Popup.PlacementTarget%2A" /> where the upper-left corner of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> is placed.</param>
-        <param name="primaryAxis">The <see cref="T:System.Windows.Controls.Primitives.PopupPrimaryAxis" /> along which a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control moves when it is obstructed by a screen edge.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacement" /> structure.</summary>
+        <param name="point">To be added.</param>
+        <param name="primaryAxis">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,10 +51,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacement" /> structure to compare.</param>
-        <summary>Compares this structure with another <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacement" /> structure to determine whether they are equal.</summary>
-        <returns>
-          <see langword="true" /> if the structures have the same values; otherwise, <see langword="false" />.</returns>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,8 +71,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code for this structure.</summary>
-        <returns>The hash code for this structure.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,11 +93,10 @@
         <Parameter Name="placement2" Type="System.Windows.Controls.Primitives.CustomPopupPlacement" />
       </Parameters>
       <Docs>
-        <param name="placement1">The first <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacement" /> structure to compare.</param>
-        <param name="placement2">The second <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacement" /> structure to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacement" /> structures to determine whether they are equal.</summary>
-        <returns>
-          <see langword="true" /> if the structures have the same values; otherwise, <see langword="false" />.</returns>
+        <param name="placement1">To be added.</param>
+        <param name="placement2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,7 +107,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,11 +117,10 @@
         <Parameter Name="placement2" Type="System.Windows.Controls.Primitives.CustomPopupPlacement" />
       </Parameters>
       <Docs>
-        <param name="placement1">The first <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacement" /> structure to compare.</param>
-        <param name="placement2">The second <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacement" /> structure to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacement" /> structures to determine whether they are not equal.</summary>
-        <returns>
-          <see langword="true" /> if the structures do not have the same values; otherwise, <see langword="false" />.</returns>
+        <param name="placement1">To be added.</param>
+        <param name="placement2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,23 +131,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the point that is relative to the target object where the upper-left corner of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control is placedl.</summary>
-        <value>A <see cref="T:System.Windows.Point" /> that is used to position a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control. The default value is (0,0).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The target object is the element that the <xref:System.Windows.Controls.Primitives.Popup> is relative to. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrimaryAxis">
@@ -175,15 +149,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.PopupPrimaryAxis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the direction in which to move a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control when the <see cref="T:System.Windows.Controls.Primitives.Popup" /> is obscured by screen boundaries.</summary>
-        <value>The direction in which to move a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control when the <see cref="T:System.Windows.Controls.Primitives.Popup" /> is obscured by screen boundaries.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

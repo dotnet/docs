@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ProcessShutdownReason" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Provides enumerated values that indicate why a process has shut down.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a deadlock was suspected because the response time limit was exceeded with requests in the queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IdleTimeout">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the process exceeded the allowable idle time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MemoryLimitExceeded">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the process exceeded the per-process memory limit.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the process has not shut down.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PingFailed">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the worker process did not respond to a ping from the Internet Information Services (IIS) process.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestQueueLimit">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that requests assigned to the process exceeded the allowable number in the queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestsLimit">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that requests executed by the process exceeded the allowable limit.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -141,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the process restarted because it was active longer than allowed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unexpected">
@@ -158,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the process shut down unexpectedly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

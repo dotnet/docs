@@ -3,23 +3,18 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextSyndicationContentKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.TextSyndicationContentKind" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>An enumeration that represents the supported types of text syndication content.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,18 +24,18 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Syndication.TextSyndicationContentKind.Html" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>HTML (escaped markup)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Plaintext">
@@ -49,18 +44,18 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Syndication.TextSyndicationContentKind.Plaintext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Plain text</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="XHtml">
@@ -69,18 +64,18 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Syndication.TextSyndicationContentKind.XHtml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>XML (not escaped)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

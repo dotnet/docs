@@ -4,34 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the state of a control, such as a check box, that can be checked, unchecked, or set to an indeterminate state.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Multiple methods in <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.CheckedListBox>, and <xref:System.Windows.Forms.ItemCheckEventArgs> use this enumeration.  
-  
-> [!NOTE]
->  Use an indeterminately checked control when you do not want to set a default value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the CheckState enumeration.  
-  
- [!code-cpp[Classic CheckedListBox Example#1](~/add/codesnippet/cpp/t-system.windows.forms.c_9_1.cpp)]
- [!code-cs[Classic CheckedListBox Example#1](~/add/codesnippet/csharp/t-system.windows.forms.c_9_1.cs)]
- [!code-vb[Classic CheckedListBox Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.c_9_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Checked">
@@ -41,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The control is checked.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Indeterminate">
@@ -58,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The control is indeterminate. An indeterminate control generally has a shaded appearance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unchecked">
@@ -75,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The control is unchecked.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

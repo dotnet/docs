@@ -15,21 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents an object cache and provides the base methods and properties for accessing the object cache.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ObjectCache type is the primary type for the in-memory object cache. To develop a custom cache implementation, you derive from the ObjectCache class.  
-  
-> [!NOTE]
->  The ObjectCache class is new as of the [!INCLUDE[net_v40_short](~/add/includes/net-v40-short-md.md)].  
-  
- The built-in <xref:System.Runtime.Caching.MemoryCache> class derives from the ObjectCache class. The <xref:System.Runtime.Caching.MemoryCache> class is the only concrete object cache implementation in the [!INCLUDE[net_v40_short](~/add/includes/net-v40-short-md.md)] that derives from the ObjectCache class.  
-  
- ]]></format>
-    </remarks>
-    <threadsafe>This type is thread safe.</threadsafe>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Called from constructors in derived classes in order to initialize the <see cref="T:System.Runtime.Caching.ObjectCache" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,19 +51,11 @@
         <Parameter Name="policy" Type="System.Runtime.Caching.CacheItemPolicy" />
       </Parameters>
       <Docs>
-        <param name="item">The object to add.</param>
-        <param name="policy">An object that contains eviction details for the cache entry. This object provides more options for eviction than a simple absolute expiration.</param>
-        <summary>When overridden in a derived class, tries to insert a cache entry into the cache as a <see cref="T:System.Runtime.Caching.CacheItem" /> instance, and adds details about how the entry should be evicted.</summary>
-        <returns>
-          <see langword="true" /> if insertion succeeded, or <see langword="false" /> if there is an already an entry in the cache that has the same key as <paramref name="item" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads are virtual (not abstract) on the <xref:System.Runtime.Caching.ObjectCache> class, because the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method internally calls <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A>. This reduces the number of method overloads that a cache implementer has to provide. If a cache implementation does not require any special behavior for the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method, it can just implement the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <param name="policy">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -98,21 +77,13 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for the cache entry.</param>
-        <param name="value">The object to insert.</param>
-        <param name="absoluteExpiration">The fixed date and time at which the cache entry will expire. This parameter is required when the <see cref="System.Runtime.Caching.ObjectCache.Add%2A" /> method is called.</param>
-        <param name="regionName">Optional. A named region in the cache to which the cache entry can be added, if regions are implemented. Because regions are not implemented in [!INCLUDE[net_v40_short](~/add/includes/net-v40-short-md.md)], the default value is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, inserts a cache entry into the cache without overwriting any existing cache entry.</summary>
-        <returns>
-          <see langword="true" /> if insertion succeeded, or <see langword="false" /> if there is an already an entry in the cache that has the same key as <paramref name="key" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads are virtual (not abstract) on the <xref:System.Runtime.Caching.ObjectCache> class, because the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method internally calls <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A>. This reduces the number of method overloads that a cache implementer has to provide. If a cache implementation does not require any special behavior for the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method, it can just implement the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="absoluteExpiration">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -134,21 +105,13 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for the cache entry.</param>
-        <param name="value">The object to insert.</param>
-        <param name="policy">An object that contains eviction details for the cache entry. This object provides more options for eviction than a simple absolute expiration.</param>
-        <param name="regionName">Optional. A named region in the cache to which the cache entry can be added, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, inserts a cache entry into the cache, specifying information about how the entry will be evicted.</summary>
-        <returns>
-          <see langword="true" /> if the insertion try succeeds, or <see langword="false" /> if there is an already an entry in the cache with the same key as <paramref name="key" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads are virtual (not abstract) on the <xref:System.Runtime.Caching.ObjectCache> class, because the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method internally calls <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A>. This reduces the number of method overloads that a cache implementer has to provide. If a cache implementation does not require any special behavior for the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method, it can just implement the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="policy">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOrGetExisting">
@@ -168,10 +131,10 @@
         <Parameter Name="policy" Type="System.Runtime.Caching.CacheItemPolicy" />
       </Parameters>
       <Docs>
-        <param name="value">The object to insert.</param>
-        <param name="policy">An object that contains eviction details for the cache entry. This object provides more options for eviction than a simple absolute expiration.</param>
-        <summary>When overridden in a derived class, inserts the specified <see cref="T:System.Runtime.Caching.CacheItem" /> object into the cache, specifying information about how the entry will be evicted.</summary>
-        <returns>If a cache entry with the same key exists, the specified cache entry; otherwise, <see langword="null" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="policy">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,20 +157,13 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for the cache entry.</param>
-        <param name="value">The object to insert.</param>
-        <param name="absoluteExpiration">The fixed date and time at which the cache entry will expire.</param>
-        <param name="regionName">Optional. A named region in the cache to which the cache entry can be added, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, inserts a cache entry into the cache, by using a key, an object for the cache entry, an absolute expiration value, and an optional region to add the cache into.</summary>
-        <returns>If a cache entry with the same key exists, the specified cache entry's value; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This AddOrGetExisting method overload returns an object value, not a <xref:System.Runtime.Caching.CacheItem> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="absoluteExpiration">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOrGetExisting">
@@ -229,20 +185,13 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for the cache entry.</param>
-        <param name="value">The object to insert.</param>
-        <param name="policy">An object that contains eviction details for the cache entry. This object provides more options for eviction than a simple absolute expiration.</param>
-        <param name="regionName">Optional. A named region in the cache to which the cache entry can be added, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, inserts a cache entry into the cache, specifying a key and a value for the cache entry, and information about how the entry will be evicted.</summary>
-        <returns>If a cache entry with the same key exists, the specified cache entry's value; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddOrGetExisting method returns an object value, not a <xref:System.Runtime.Caching.CacheItem> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="policy">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -262,11 +211,10 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for the cache entry.</param>
-        <param name="regionName">Optional. A named region in the cache where the cache can be found, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, checks whether the cache entry already exists in the cache.</summary>
-        <returns>
-          <see langword="true" /> if the cache contains a cache entry with the same key value as <paramref name="key" />; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,23 +235,11 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="keys">The unique identifiers for cache entries to monitor.</param>
-        <param name="regionName">Optional. A named region in the cache where the cache keys in the <c>keys</c> parameter exist, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, creates a <see cref="T:System.Runtime.Caching.CacheEntryChangeMonitor" /> object that can trigger events in response to changes to specified cache entries.</summary>
-        <returns>A change monitor that monitors cache entries in the cache.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a derived <xref:System.Runtime.Caching.ObjectCache> class overrides the base CreateCacheEntryChangeMonitor method, the cache implementation must create a <xref:System.Runtime.Caching.CacheEntryChangeMonitor> object. This specialized change monitor notifies callers when there are changes to the cache entries that are specified in the `keys` parameter. For example, if a monitored item in the `keys` parameter is updated or removed from the cache, the change monitor created by this method triggers an event.  
-  
- If a cache implementation supports named cache regions, a string value can be specified as the `regionName` parameter. Otherwise, the parameter defaults to `null`.  
-  
-> [!NOTE]
->  Not all cache implementations support cache-entry change monitors. To determine whether your cache implementation supports <xref:System.Runtime.Caching.CacheEntryChangeMonitor> objects, see the documentation for the specific cache implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="keys">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultCacheCapabilities">
@@ -319,8 +255,8 @@
         <ReturnType>System.Runtime.Caching.DefaultCacheCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a description of the features that a cache implementation provides.</summary>
-        <value>A bitwise combination of flags that indicate the default capabilities of a cache implementation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,10 +277,10 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for the cache entry to get.</param>
-        <param name="regionName">Optional. A named region in the cache to which the cache entry was added, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, gets the specified cache entry from the cache as an object.</summary>
-        <returns>The cache entry that is identified by <paramref name="key" />.</returns>
+        <param name="key">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,20 +301,11 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for the cache entry to get.</param>
-        <param name="regionName">Optional. A named region in the cache to which the cache was added, if regions are implemented. Because regions are not implemented in [!INCLUDE[net_v40_short](~/add/includes/net-v40-short-md.md)], the default is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, gets the specified cache entry from the cache as a <see cref="T:System.Runtime.Caching.CacheItem" /> instance.</summary>
-        <returns>The cache entry that is identified by <paramref name="key" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overload exists because some cache implementations might extend the <xref:System.Runtime.Caching.CacheItem> class. In that case, the <xref:System.Runtime.Caching.ObjectCache.Get%28System.String%2CSystem.String%29> method overload will not necessarily return all the information about cached data. However, the GetCacheItem method overload enables custom caches to return more than just the cache value.  
-  
- The GetCacheItem method is like the <xref:System.Runtime.Caching.ObjectCache.Get%28System.String%2CSystem.String%29> method, except that the GetCacheItem method returns return the cache entry as a <xref:System.Runtime.Caching.CacheItem> instance.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCount">
@@ -397,9 +324,9 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="regionName">Optional. A named region in the cache for which the cache entry count should be computed, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, gets the total number of cache entries in the cache.</summary>
-        <returns>The number of cache entries in the cache. If <paramref name="regionName" /> is not <see langword="null" />, the count indicates the number of entries that are in the specified cache region.</returns>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,21 +344,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, creates an enumerator that can be used to iterate through a collection of cache entries.</summary>
-        <returns>The enumerator object that provides access to the cache entries in the cache.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Cache implementers can override and extend this method to provide a custom means of iterating through a collection of cache entries.  
-  
-> [!NOTE]
->  Returning an enumerator is typically a more expensive operation than returning the entire cache entry.  
-  
- This method is called by the explicit interface implementations that the <xref:System.Runtime.Caching.ObjectCache> class has for the <xref:System.Collections.IEnumerable.GetEnumerator%2A> and <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> methods.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -451,20 +366,11 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="keys">A collection of unique identifiers for the cache entries to get.</param>
-        <param name="regionName">Optional. A named region in the cache to which the cache entry or entries were added, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, gets a set of cache entries that correspond to the specified keys.</summary>
-        <returns>A dictionary of key/value pairs that represent cache entries.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetValues method overload is a performance optimization for distributed caches that support fetching multiple cache entries from the cache during a single network call.  
-  
- Although a caller can pass one or more keys to the method, there is no guarantee that all keys represent entries in the cache. Therefore, the returned dictionary might contain fewer items than the number of keys that were passed to the method.  
-  
- ]]></format>
-        </remarks>
+        <param name="keys">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -490,20 +396,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="regionName">Optional. A named region in the cache to which the cache entry or entries were added, if regions are implemented. Because regions are not implemented in [!INCLUDE[net_v40_short](~/add/includes/net-v40-short-md.md)], the default is <see langword="null" />.</param>
-        <param name="keys">A collection of unique identifiers for the cache entries to get.</param>
-        <summary>Gets a set of cache entries that correspond to the specified keys.</summary>
-        <returns>A dictionary of key/value pairs that represent cache entries.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetValues method overload is like the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload, but lets you pass the named region by using optional parameter syntax that is supported by managed languages such as C#.  
-  
- This method is a virtual method because the <xref:System.Runtime.Caching.ObjectCache> class provides a default implementation that passes the `params` array to the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="regionName">To be added.</param>
+        <param name="keys">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -527,30 +424,9 @@
         <ReturnType>System.IServiceProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set a reference to a managed hosting environment that is available to <see cref="T:System.Runtime.Caching.ObjectCache" /> implementations and that can provide host-specific services to <see cref="T:System.Runtime.Caching.ObjectCache" /> implementations.</summary>
-        <value>A reference to a cache-aware managed hosting environment.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Host property is intended for use by [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] host environments and by cache implementations that implement behavior that depends on the .NET Framework host environment.  
-  
- The following table lists the set of host environment services that might be available from a managed hosting environment and that are available to <xref:System.Runtime.Caching.ObjectCache> implementations through the Host property:  
-  
-|Service|Description|  
-|-------------|-----------------|  
-|<xref:System.Runtime.Caching.Hosting.IApplicationIdentifier>|Lets host environments provide application domain identifiers that might be needed by a cache implementation for features such as identifying performance counters.|  
-|<xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem>|Lets host environments provide a custom file-change notification system, instead of using the one provided in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)].|  
-|<xref:System.Runtime.Caching.Hosting.IMemoryCacheManager>|Lets cache implementations report cache memory consumption to the host environment. This enables host environments to centrally manage memory consumption across multiple cache implementations.|  
-  
-> [!NOTE]
->  Callers of this property value require unrestricted code access security permissions.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value being assigned to the property is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to set the property value more than one time.</exception>
-        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all accessors of this property. This property cannot be used by partially trusted code.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InfiniteAbsoluteExpiration">
@@ -566,15 +442,8 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates that a cache entry has no absolute expiration.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A cache entry that is inserted into the cache with the InfiniteAbsoluteExpiration field value set as the expiration value should never expire based on an absolute point in time. However, a cache entry with this setting can be evicted from the cache for other reasons that are determined by a particular cache implementation, such as a change-monitor event eviction caused by memory pressure.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -593,19 +462,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for a cache entry in the cache.</param>
-        <summary>Gets or sets the default indexer for the <see cref="T:System.Runtime.Caching.ObjectCache" /> class.</summary>
-        <value>A key that serves as an indexer into the cache instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The behavior of the set accessor of this property is like the <xref:System.Runtime.Caching.MemoryCache.Set%28System.String%2CSystem.Object%2CSystem.DateTimeOffset%2CSystem.String%29> method. Internally, a cache implementation could set the absolute expiration of the specified value to the <xref:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration> method. However this behavior is ultimately up to the cache implementation.  
-  
- The behavior of get accessor is like calling the <xref:System.Collections.Specialized.NameValueCollection.Get%28System.String%29> method and using `null` for the region name.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -621,16 +481,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of a specific <see cref="T:System.Runtime.Caching.ObjectCache" /> instance.</summary>
-        <value>The name of a specific cache instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some cache implementations might support multiple instances of the cache that is running in a single application. This property lets cache implementers return a name that identifies a specific cache instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NoSlidingExpiration">
@@ -646,17 +499,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a cache entry has no sliding expiration time.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Expiration that is based on duration or a defined window of time is also referred to as sliding expiration. Normally, a cache implementation that evicts items that are based on sliding expiration will remove an item that has not been accessed in the specified window of time.  
-  
- A cache entry that is inserted into the cache with the NoSlidingExpiration field value set as the expiration value should never be evicted because of non-activity in a sliding time window. However, a cache item can be evicted if it has an absolute expiration, or if some other eviction event occurs, such a change monitor or memory pressure.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -676,21 +520,11 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for the cache entry.</param>
-        <param name="regionName">Optional. A named region in the cache to which the cache entry was added, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, removes the cache entry from the cache.</summary>
-        <returns>An object that represents the value of the removed cache entry that was specified by the key, or <see langword="null" /> if the specified entry was not found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you override this method in a custom cache implementation, if there is a cache entry in the cache that corresponds to `key`, the value of the removed item should be returned. If nothing was removed from the cache, the method should return `null`.  
-  
-> [!NOTE]
->  Some distributed cache implementations might not support the ability to return the value that was removed from the cache. This might be because the cache implementation does not support returning the value of a removed cache item. It might also be because marshaling the object as a return value is too expensive. In such cases, cache implementations can return `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -710,17 +544,10 @@
         <Parameter Name="policy" Type="System.Runtime.Caching.CacheItemPolicy" />
       </Parameters>
       <Docs>
-        <param name="item">The cache item to add.</param>
-        <param name="policy">An object that contains eviction details for the cache entry. This object provides more options for eviction than a simple absolute expiration.</param>
-        <summary>When overridden in a derived class, inserts the cache entry into the cache as a <see cref="T:System.Runtime.Caching.CacheItem" /> instance, specifying information about how the entry will be evicted.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the key for `item` does not exist, `item` is inserted as a new cache entry. If an item with a key that matches `item` exists, the value from `item` is used to update or overwrite the value of the existing cache entry.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <param name="policy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -742,19 +569,12 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for the cache entry.</param>
-        <param name="value">The object to insert.</param>
-        <param name="absoluteExpiration">The fixed date and time at which the cache entry will expire.</param>
-        <param name="regionName">Optional. A named region in the cache to which the cache entry can be added, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, inserts a cache entry into the cache, specifying time-based expiration details.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an item that matches `key` does not exist in the cache, `value` and `key` are used to insert as a new cache entry. If an item with a key that matches `item` exists, the cache entry is updated or overwritten by using `value`.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="absoluteExpiration">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -776,21 +596,12 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for the cache entry.</param>
-        <param name="value">The object to insert.</param>
-        <param name="policy">An object that contains eviction details for the cache entry. This object provides more options for eviction than a simple absolute expiration.</param>
-        <param name="regionName">Optional. A named region in the cache to which the cache entry can be added, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
-        <summary>When overridden in a derived class, inserts a cache entry into the cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overload lets you provide more eviction or expiration details than those that are available in time-based absolute expiration.  
-  
- If an item that matches `key` does not exist in the cache, `value` and `key` are used to insert as a new cache entry. If an item with a key that matches `item` exists, the cache entry is updated or overwritten by using `value`.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="policy">To be added.</param>
+        <param name="regionName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.GetEnumerator">
@@ -826,20 +637,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Supports iteration over a generic collection.</summary>
-        <returns>The enumerator object that provides access to the items in the cache.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when a derived <xref:System.Runtime.Caching.ObjectCache> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- Developers can use this method to iterate through a generic collection of cache entries.  
-  
- This is the default <xref:System.Collections.IEnumerable.GetEnumerator%2A> implementation that internally calls the <xref:System.Runtime.Caching.ObjectCache.GetEnumerator%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolWriter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -14,18 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a symbol writer for managed code.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ISymbolWriter interface provides methods that define documents, sequence points, lexical scopes, and variables.  
-  
-> [!NOTE]
->  This interface is the managed counterpart of the `ISymUnmanagedWriter` interface, which is one of the unmanaged symbol store interfaces that provides an alternative way to read and write debug symbol information.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -35,23 +29,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes <see cref="T:System.Diagnostics.SymbolStore.ISymbolWriter" /> and commits the symbols to the symbol store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After this call, <xref:System.Diagnostics.SymbolStore.ISymbolWriter> becomes invalid for further updates.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseMethod">
@@ -61,23 +52,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the current method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After a method is closed, you cannot define a symbol from within it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseNamespace">
@@ -87,15 +75,19 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the most recent namespace.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +98,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -116,16 +112,9 @@
         <Parameter Name="endOffset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="endOffset">The points past the last instruction in the scope.</param>
-        <summary>Closes the current lexical scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After a scope is closed, you cannot define a variable from within it.  
-  
- ]]></format>
-        </remarks>
+        <param name="endOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDocument">
@@ -135,8 +124,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.SymbolStore.ISymbolDocumentWriter</ReturnType>
@@ -148,12 +141,12 @@
         <Parameter Name="documentType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="url">The URL that identifies the document.</param>
-        <param name="language">The document language. This parameter can be <see cref="T:System.Guid" />.</param>
-        <param name="languageVendor">The identity of the vendor for the document language. This parameter can be <see cref="T:System.Guid" />.</param>
-        <param name="documentType">The type of the document. This parameter can be <see cref="T:System.Guid" />.</param>
-        <summary>Defines a source document.</summary>
-        <returns>The object that represents the document.</returns>
+        <param name="url">To be added.</param>
+        <param name="language">To be added.</param>
+        <param name="languageVendor">To be added.</param>
+        <param name="documentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,8 +157,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -181,23 +178,16 @@
         <Parameter Name="addr3" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parent">The metadata type or method token.</param>
-        <param name="name">The field name.</param>
-        <param name="attributes">A bitwise combination of the field attributes.</param>
-        <param name="signature">The field signature.</param>
-        <param name="addrKind">The address types for <c>addr1</c> and <c>addr2</c>.</param>
-        <param name="addr1">The first address for the field specification.</param>
-        <param name="addr2">The second address for the field specification.</param>
-        <param name="addr3">The third address for the field specification.</param>
-        <summary>Defines a field in a type or a global field.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DefineField method defines a single variable that is not within a method by using specified fields in classes, bit fields, and so on.  
-  
- ]]></format>
-        </remarks>
+        <param name="parent">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="signature">To be added.</param>
+        <param name="addrKind">To be added.</param>
+        <param name="addr1">To be added.</param>
+        <param name="addr2">To be added.</param>
+        <param name="addr3">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineGlobalVariable">
@@ -207,8 +197,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -223,14 +217,14 @@
         <Parameter Name="addr3" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The global variable name.</param>
-        <param name="attributes">A bitwise combination of the global variable attributes.</param>
-        <param name="signature">The global variable signature.</param>
-        <param name="addrKind">The address types for <c>addr1</c>, <c>addr2</c>, and <c>addr3</c>.</param>
-        <param name="addr1">The first address for the global variable specification.</param>
-        <param name="addr2">The second address for the global variable specification.</param>
-        <param name="addr3">The third address for the global variable specification.</param>
-        <summary>Defines a single global variable.</summary>
+        <param name="name">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="signature">To be added.</param>
+        <param name="addrKind">To be added.</param>
+        <param name="addr1">To be added.</param>
+        <param name="addr2">To be added.</param>
+        <param name="addr3">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,8 +235,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -259,26 +257,17 @@
         <Parameter Name="endOffset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The local variable name.</param>
-        <param name="attributes">A bitwise combination of the local variable attributes.</param>
-        <param name="signature">The local variable signature.</param>
-        <param name="addrKind">The address types for <c>addr1</c>, <c>addr2</c>, and <c>addr3</c>.</param>
-        <param name="addr1">The first address for the local variable specification.</param>
-        <param name="addr2">The second address for the local variable specification.</param>
-        <param name="addr3">The third address for the local variable specification.</param>
-        <param name="startOffset">The start offset for the variable. If this parameter is zero, it is ignored and the variable is defined throughout the entire scope. If the parameter is nonzero, the variable falls within the offsets of the current scope.</param>
-        <param name="endOffset">The end offset for the variable. If this parameter is zero, it is ignored and the variable is defined throughout the entire scope. If the parameter is nonzero, the variable falls within the offsets of the current scope.</param>
-        <summary>Defines a single variable in the current lexical scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `startOffset` and `endOffset` parameters are optional. If their value is zero, they are ignored and the variable is defined throughout the entire scope. If their value is nonzero, the variable falls within the offsets of the current scope.  
-  
- You can call DefineLocalVariable multiple times for a variable of the same name that occurs multiple times in different offset ranges throughout a scope. (In this case, start and end offsets must not overlap.)  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="signature">To be added.</param>
+        <param name="addrKind">To be added.</param>
+        <param name="addr1">To be added.</param>
+        <param name="addr2">To be added.</param>
+        <param name="addr3">To be added.</param>
+        <param name="startOffset">To be added.</param>
+        <param name="endOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineParameter">
@@ -288,8 +277,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -304,22 +297,15 @@
         <Parameter Name="addr3" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The parameter name.</param>
-        <param name="attributes">A bitwise combination of the parameter attributes.</param>
-        <param name="sequence">The parameter signature.</param>
-        <param name="addrKind">The address types for <c>addr1</c>, <c>addr2</c>, and <c>addr3</c>.</param>
-        <param name="addr1">The first address for the parameter specification.</param>
-        <param name="addr2">The second address for the parameter specification.</param>
-        <param name="addr3">The third address for the parameter specification.</param>
-        <summary>Defines a single parameter in the current method. The type of each parameter is taken from its position within the signature of the method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If parameters are defined in the metadata for a given method, you do not have to define them again with calls to this method. Symbol readers need to check for these in the normal metadata first, and then use the symbol store.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="sequence">To be added.</param>
+        <param name="addrKind">To be added.</param>
+        <param name="addr1">To be added.</param>
+        <param name="addr2">To be added.</param>
+        <param name="addr3">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineSequencePoints">
@@ -329,8 +315,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -344,21 +334,14 @@
         <Parameter Name="endColumns" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="document">The document object for which the sequence points are being defined.</param>
-        <param name="offsets">The sequence point offsets measured from the beginning of methods.</param>
-        <param name="lines">The document lines for the sequence points.</param>
-        <param name="columns">The document positions for the sequence points.</param>
-        <param name="endLines">The document end lines for the sequence points.</param>
-        <param name="endColumns">The document end positions for the sequence points.</param>
-        <summary>Defines a group of sequence points within the current method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each line and each column defines the start of a statement within a method. The arrays should be sorted in increasing order of offsets. The offset is always the offset from the start of the method, in bytes.  
-  
- ]]></format>
-        </remarks>
+        <param name="document">To be added.</param>
+        <param name="offsets">To be added.</param>
+        <param name="lines">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="endLines">To be added.</param>
+        <param name="endColumns">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -368,8 +351,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -380,19 +367,11 @@
         <Parameter Name="fFullBuild" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="emitter">The metadata emitter interface.</param>
-        <param name="filename">The file name for which the debugging symbols are written. Some writers require a file name, and others do not. If a file name is specified for a writer that does not use file names, this parameter is ignored.</param>
-        <param name="fFullBuild">
-          <see langword="true" /> indicates that this is a full rebuild; <see langword="false" /> indicates that this is an incremental compilation.</param>
-        <summary>Sets the metadata emitter interface to associate with a writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Initialize also sets the output file name where the debugging symbols are written. This method can be called only once and must be called before any other writer methods.  
-  
- ]]></format>
-        </remarks>
+        <param name="emitter">To be added.</param>
+        <param name="filename">To be added.</param>
+        <param name="fFullBuild">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenMethod">
@@ -402,8 +381,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -412,16 +395,9 @@
         <Parameter Name="method" Type="System.Diagnostics.SymbolStore.SymbolToken" />
       </Parameters>
       <Docs>
-        <param name="method">The metadata token for the method to be opened.</param>
-        <summary>Opens a method to place symbol information into.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The specified method becomes the current method for calls to define sequence points, parameters, and lexical scopes. There is an implicit lexical scope around the entire method. Reopening a method that has been previously closed erases any previously defined symbols for the method.  
-  
- ]]></format>
-        </remarks>
+        <param name="method">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenNamespace">
@@ -431,8 +407,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -441,16 +421,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the new namespace.</param>
-        <summary>Opens a new namespace.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this method before defining methods or variables that exist within a namespace. Namespaces can be nested.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenScope">
@@ -460,8 +433,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -470,19 +447,10 @@
         <Parameter Name="startOffset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="startOffset">The offset, in bytes, from the beginning of the method to the first instruction in the lexical scope.</param>
-        <summary>Opens a new lexical scope in the current method.</summary>
-        <returns>An opaque scope identifier that can be used with <see cref="System.Diagnostics.SymbolStore.ISymbolWriter.SetScopeRange%2A" /> to define the start and end offsets of a scope at a later time. In this case, the offsets passed to OpenScope and <see cref="System.Diagnostics.SymbolStore.ISymbolWriter.CloseScope%2A" /> are ignored. A scope identifier is valid only in the current method.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This scope becomes the new current scope and is pushed onto a stack of scopes. Scopes must form a hierarchy. Siblings are not allowed to overlap.  
-  
- Scope identifiers are valid only in the current method.  
-  
- ]]></format>
-        </remarks>
+        <param name="startOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMethodSourceRange">
@@ -492,8 +460,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -507,13 +479,13 @@
         <Parameter Name="endColumn" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="startDoc">The document that contains the starting position.</param>
-        <param name="startLine">The starting line number.</param>
-        <param name="startColumn">The starting column.</param>
-        <param name="endDoc">The document that contains the ending position.</param>
-        <param name="endLine">The ending line number.</param>
-        <param name="endColumn">The ending column number.</param>
-        <summary>Specifies the true start and end of a method within a source file. Use SetMethodSourceRange to specify the extent of a method, independent of the sequence points that exist within the method.</summary>
+        <param name="startDoc">To be added.</param>
+        <param name="startLine">To be added.</param>
+        <param name="startColumn">To be added.</param>
+        <param name="endDoc">To be added.</param>
+        <param name="endLine">To be added.</param>
+        <param name="endColumn">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,8 +496,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -536,10 +512,10 @@
         <Parameter Name="endOffset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="scopeID">The identifier of the lexical scope.</param>
-        <param name="startOffset">The byte offset of the beginning of the lexical scope.</param>
-        <param name="endOffset">The byte offset of the end of the lexical scope.</param>
-        <summary>Defines the offset range for the specified lexical scope.</summary>
+        <param name="scopeID">To be added.</param>
+        <param name="startOffset">To be added.</param>
+        <param name="endOffset">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,8 +526,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -562,18 +542,11 @@
         <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="parent">The metadata token for which the attribute is being defined.</param>
-        <param name="name">The attribute name.</param>
-        <param name="data">The attribute value.</param>
-        <summary>Defines an attribute when given the attribute name and the attribute value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SetSymAttribute method is only associated with symbolic information and is not a metadata custom attribute.  
-  
- ]]></format>
-        </remarks>
+        <param name="parent">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetUnderlyingWriter">
@@ -583,8 +556,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -593,16 +570,9 @@
         <Parameter Name="underlyingWriter" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="underlyingWriter">A pointer to code that represents the underlying writer.</param>
-        <summary>Sets the underlying <see langword="ISymUnmanagedWriter" /> (the corresponding unmanaged interface) that a managed <see cref="T:System.Diagnostics.SymbolStore.ISymbolWriter" /> uses to emit symbols.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The underlying `ISymUnmanagedWriter` (the corresponding unmanaged interface) represents a symbol writer for managed code. The interface provides methods for defining documents, sequence points, lexical scopes, and variables.  
-  
- ]]></format>
-        </remarks>
+        <param name="underlyingWriter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetUserEntryPoint">
@@ -612,8 +582,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -622,16 +596,9 @@
         <Parameter Name="entryMethod" Type="System.Diagnostics.SymbolStore.SymbolToken" />
       </Parameters>
       <Docs>
-        <param name="entryMethod">The metadata token for the method that is the user entry point.</param>
-        <summary>Identifies the user-defined method as the entry point for the current module.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is normally your main method, rather than compiler-generated stubs before the main method.  
-  
- ]]></format>
-        </remarks>
+        <param name="entryMethod">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsingNamespace">
@@ -641,8 +608,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -651,16 +622,9 @@
         <Parameter Name="fullName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fullName">The fully qualified name of the namespace.</param>
-        <summary>Specifies that the given, fully qualified namespace name is used within the open lexical scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Closing the current scope prevents this scope from using the namespace. The namespace remains in use in all scopes that inherit from the current open scope.  
-  
- ]]></format>
-        </remarks>
+        <param name="fullName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

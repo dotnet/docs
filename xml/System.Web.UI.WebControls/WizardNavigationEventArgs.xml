@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardNavigationEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="System.Web.UI.WebControls.WizardNavigationEventArgs.CurrentStepIndex%2A" /> property and the <see cref="System.Web.UI.WebControls.WizardNavigationEventArgs.NextStepIndex%2A" /> property for navigation in wizard controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WizardNavigationEventArgs class provides the data needed for the various navigation events in a <xref:System.Web.UI.WebControls.Wizard> control. For example, the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event of a <xref:System.Web.UI.WebControls.Wizard> control uses the WizardNavigationEventArgs object to indicate the <xref:System.Web.UI.WebControls.WizardNavigationEventArgs.CurrentStepIndex%2A> and <xref:System.Web.UI.WebControls.WizardNavigationEventArgs.NextStepIndex%2A> for the control.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -40,9 +29,9 @@
         <Parameter Name="nextStepIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="currentStepIndex">The index of the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object that is currently displayed in the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</param>
-        <param name="nextStepIndex">The index of the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object that the <see cref="T:System.Web.UI.WebControls.Wizard" /> control will display next.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WizardNavigationEventArgs" /> class.</summary>
+        <param name="currentStepIndex">To be added.</param>
+        <param name="nextStepIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,16 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the navigation to the next step in the wizard should be canceled.</summary>
-        <value>
-          <see langword="true" /> if the navigation to the next step should be canceled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object currently displayed in the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
-        <value>A zero-based index value that represents the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object that is currently displayed in the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,15 +78,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that represents the index of the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object that the <see cref="T:System.Web.UI.WebControls.Wizard" /> control will display next.</summary>
-        <value>A zero-based index value that represents the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object that the <see cref="T:System.Web.UI.WebControls.Wizard" /> control will display next.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

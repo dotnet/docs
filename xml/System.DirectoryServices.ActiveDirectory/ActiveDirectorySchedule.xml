@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The ActiveDirectorySchedule class represents the weekly schedule for an Active Directory Domain Services replication.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,18 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="schedule" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
       </Parameters>
       <Docs>
-        <param name="schedule">A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object that is copied to this object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> class, using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object.</summary>
+        <param name="schedule">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="schedule" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RawSchedule">
@@ -60,145 +55,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean[,,]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a three-dimensional array that indicates at what time during the week that the source is available for replication.</summary>
-        <value>A three-dimensional array of <see cref="T:System.Boolean" /> elements in which the element is <see langword="true" /> if the source is available for replication during that specific 15-minute interval. The element is <see langword="false" /> if the source is not available for replication.  
-  
- The array is in the form RawSchedule[&lt;day-of-week&gt;, &lt;hour&gt;, &lt;15-minute interval&gt;]. All of these values are zero-based and the week begins at 00:00 on Sunday morning, Coordinated Universal Time.  
-  
- The following are the valid values for the day-of-week.  
-  
- <list type="table">  
-<listheader>  
-<term> Day-of-week value  
-  
- </term>  
-<description> Indicated day of the week.  
-  
- </description>  
-</listheader>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> Sunday  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> Monday  
-  
- </description>  
-</item>  
-<item>  
-<term> 2  
-  
- </term>  
-<description> Tuesday  
-  
- </description>  
-</item>  
-<item>  
-<term> 3  
-  
- </term>  
-<description> Wednesday  
-  
- </description>  
-</item>  
-<item>  
-<term> 4  
-  
- </term>  
-<description> Thursday  
-  
- </description>  
-</item>  
-<item>  
-<term> 5  
-  
- </term>  
-<description> Friday  
-  
- </description>  
-</item>  
-<item>  
-<term> 6  
-  
- </term>  
-<description> Saturday  
-  
- </description>  
-</item>  
-</list>  
-  
- The hour is zero-based and specified in 24-hour format. For example, 2 P.M. would be specified as 14. Valid values are 0-23.  
-  
- The 15-minute interval specifies the 15-minute block within the hour that the source is available for replication. The following table identifies the possible values for the 15-minute interval.  
-  
- <list type="table">  
-<listheader>  
-<term> 15-minute interval  
-  
- </term>  
-<description> Description  
-  
- </description>  
-</listheader>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> The source is available for replication from 0 to 14 minutes after the hour.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> The source is available for replication from 15 to 29 minutes after the hour.  
-  
- </description>  
-</item>  
-<item>  
-<term> 2  
-  
- </term>  
-<description> The source is available for replication from 30 to 44 minutes after the hour.  
-  
- </description>  
-</item>  
-<item>  
-<term> 3  
-  
- </term>  
-<description> The source is available for replication from 45 to 59 minutes after the hour.  
-  
- </description>  
-</item>  
-</list>  
-  
- The following C# example shows how to use this property to determine if the source is available for replication at 15:50 Coordinated Universal Time on Tuesday.  
-  
-```c#  
-Boolean isAvailable = scheduleObject.RawSchedule[2, 15, 3];  
-```  
-  
- The following C# example shows how to use this property to calculate the 15-minute interval at runtime by dividing the minutes by 15.  
-  
-```c#  
-Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];  
-```</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +73,6 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -217,7 +80,7 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the entire schedule to unavailable.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,7 +91,6 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,21 +103,12 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
         <Parameter Name="toMinute" Type="System.DirectoryServices.ActiveDirectory.MinuteOfHour" />
       </Parameters>
       <Docs>
-        <param name="fromHour">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.HourOfDay" /> members that specifies the first hour that the source will be available for replication.</param>
-        <param name="fromMinute">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" /> members that specifies the first 15-minute interval that the source will be available for replication.</param>
-        <param name="toHour">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.HourOfDay" /> members that specifies the final hour that the source will be available for replication.</param>
-        <param name="toMinute">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" /> members that specifies the final 15-minute interval that the source will be available for replication.</param>
-        <summary>Adds a range of times for every day of the week to the schedule.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All of the parameters in this method are inclusive.  
-  
- This method is cumulative and does not remove any existing schedule information. If an existing schedule and the new schedule overlap, the result will still be cumulative. To clear the schedule, use the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="fromHour">To be added.</param>
+        <param name="fromMinute">To be added.</param>
+        <param name="toHour">To be added.</param>
+        <param name="toMinute">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSchedule">
@@ -265,7 +118,6 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -279,26 +131,13 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
         <Parameter Name="toMinute" Type="System.DirectoryServices.ActiveDirectory.MinuteOfHour" />
       </Parameters>
       <Docs>
-        <param name="day">One of the <see cref="T:System.DayOfWeek" /> members that specifies the day of the week that the source will be available for replication.</param>
-        <param name="fromHour">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.HourOfDay" /> members that specifies the first hour that the source will be available for replication.</param>
-        <param name="fromMinute">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" /> members that specifies the first 15-minute interval that the source will be available for replication.</param>
-        <param name="toHour">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.HourOfDay" /> members that specifies the final hour that the source will be available for replication.</param>
-        <param name="toMinute">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" /> members that specifies the final 15-minute interval that the source will be available for replication.</param>
-        <summary>Adds a range of times for a single day to the schedule.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All of the parameters in this method are inclusive.  
-  
- This method is cumulative and does not remove any existing schedule information. If an existing schedule and the new schedule overlap, the result will still be cumulative. To clear the schedule, use the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The start time is after the end time.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">One or more parameters is not valid.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="days" /> is <see langword="null" />.</exception>
+        <param name="day">To be added.</param>
+        <param name="fromHour">To be added.</param>
+        <param name="fromMinute">To be added.</param>
+        <param name="toHour">To be added.</param>
+        <param name="toMinute">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSchedule">
@@ -308,7 +147,6 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -322,26 +160,13 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
         <Parameter Name="toMinute" Type="System.DirectoryServices.ActiveDirectory.MinuteOfHour" />
       </Parameters>
       <Docs>
-        <param name="days">One of the <see cref="T:System.DayOfWeek" /> members that specifies the day of the week that the source will be available for replication.</param>
-        <param name="fromHour">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.HourOfDay" /> members that specifies the first hour that the source will be available for replication.</param>
-        <param name="fromMinute">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" /> members that specifies the first 15-minute interval that the source will be available for replication.</param>
-        <param name="toHour">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.HourOfDay" /> members that specifies the final hour that the source will be available for replication.</param>
-        <param name="toMinute">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" /> members that specifies the final 15-minute interval that the source will be available for replication.</param>
-        <summary>Adds a range of times for multiple days to the schedule.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All of the parameters in this method are inclusive.  
-  
- This method is cumulative and does not remove any existing schedule information. If an existing schedule and the new schedule overlap, the result will still be cumulative. To clear the schedule, use the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The start time is after the end time.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">One or more parameters is not valid.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="days" /> is <see langword="null" />.</exception>
+        <param name="days">To be added.</param>
+        <param name="fromHour">To be added.</param>
+        <param name="fromMinute">To be added.</param>
+        <param name="toHour">To be added.</param>
+        <param name="toMinute">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,33 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileAuthenticationOption" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the authentication type of user profiles to be searched.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProfileAuthenticationOption enumeration is used by profile providers and the <xref:System.Web.Profile.ProfileManager> class when they search for profiles in the data source and when they delete them. The ProfileAuthenticationOption enumeration is used to select whether only anonymous, only authenticated, or all profiles are searched.  
-  
-   
-  
-## Examples  
- The following code example allows a user to view and delete active and inactive profiles information based on search criteria including a ProfileAuthenticationOption parameter.  
-  
-> [!IMPORTANT]
->  This example includes a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-vb[System.Web.Profile.ProfileManager#5](~/add/codesnippet/visualbasic/t-system.web.profile.pro_6_1.aspx)]
- [!code-cs[System.Web.Profile.ProfileManager#5](~/add/codesnippet/csharp/t-system.web.profile.pro_6_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -40,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Profile.ProfileAuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Search all profiles.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Anonymous">
@@ -57,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Profile.ProfileAuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Search only anonymous profiles.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Authenticated">
@@ -74,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Profile.ProfileAuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Search only authenticated profiles.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

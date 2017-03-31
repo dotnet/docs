@@ -16,28 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the visual behavior that occurs when a control transitions from one state to another.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can specify the visual behavior of a control when it transitions between states by adding VisualTransition objects. When you create a VisualTransition, you specify one or more of the following:  
-  
--   The time it takes for a transition between states to occur by setting the <xref:System.Windows.VisualTransition.GeneratedDuration%2A> property.  
-  
--   Additional changes in the control's appearance that occur at the time of the transition by setting the <xref:System.Windows.VisualTransition.Storyboard%2A> property.  
-  
--   When the VisualTransition is applied by setting the <xref:System.Windows.VisualTransition.To%2A> and <xref:System.Windows.VisualTransition.From%2A> properties.  
-  
-   
-  
-## Examples  
- The following example creates a VisualTransition that specifies that when the user moves the mouse away from the control, the control's border changes to blue, then to yellow, and then to black in 1.5 seconds. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
- [!code-xml[VSMButtonTemplate#8](~/add/codesnippet/xaml/vsmbuttontemplate/skinnedbutton.xaml#8)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.VisualTransition" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,34 +48,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.Windows.VisualState" /> to transition from.</summary>
-        <value>The name of the <see cref="T:System.Windows.VisualState" /> to transition from.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The From property is optional. A <xref:System.Windows.VisualTransition> can be restricted to apply to only certain states or it can be applied any time the control transitions between states. You restrict when a <xref:System.Windows.VisualTransition> is applied by setting the <xref:System.Windows.VisualTransition.To%2A> and From properties. The following table describes the levels of restriction from most restrictive to least restrictive.  
-  
-|Type of restriction|Value of From|Value of To|  
-|-------------------------|-------------------|-----------------|  
-|From a specified state to another specified state|The name of a <xref:System.Windows.VisualState>|The name of a <xref:System.Windows.VisualState>|  
-|From any state to a specified state|Not set|The name of a <xref:System.Windows.VisualState>|  
-|From a specified state to any state|The name of a <xref:System.Windows.VisualState>|Not set|  
-|From any state to any other state|Not set|Not set|  
-  
- You can have multiple <xref:System.Windows.VisualTransition> objects in a <xref:System.Windows.VisualStateGroup> that refer to the same state, but they will be used in the order that the previous table specifies.  
-  
- You can change this behavior by creating a new class that inherits from <xref:System.Windows.VisualStateManager> and overriding the <xref:System.Windows.VisualStateManager.GoToStateCore%2A> method.  
-  
-   
-  
-## Examples  
- The following example creates two <xref:System.Windows.VisualTransition> objects. When the control transitions from the `Pressed` state to the `MouseOver` state, the <xref:System.Windows.VisualTransition> that has both From and <xref:System.Windows.VisualTransition.To%2A> set is used. When the control transitions from a state that is not `Pressed` to the `MouseOver` state, the other state is used.  
-  
- [!code-xml[VSMButtonTemplate#7](~/add/codesnippet/xaml/vsmbuttontemplate/skinnedbutton.xaml#7)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GeneratedDuration">
@@ -116,23 +71,9 @@
         <ReturnType>System.Windows.Duration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the time that it takes to move from one state to another.</summary>
-        <value>The time that it takes to move from one state to another.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can specify how long a transition takes by setting the GeneratedDuration property. When you set the GeneratedDuration property, you are specifying the time that it takes for the transition to occur.  
-  
-   
-  
-## Examples  
- The following example specifies that the control takes one half second to go into the `MouseOver` state. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
- [!code-xml[VSMButtonTemplate#MouseOverTransition](~/add/codesnippet/xaml/vsmbuttontemplate/skinnedbutton.xaml#mouseovertransition)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GeneratedEasingFunction">
@@ -148,28 +89,9 @@
         <ReturnType>System.Windows.Media.Animation.IEasingFunction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a custom mathematical formula that is used to transition between states.</summary>
-        <value>A custom mathematical formula that is used to transition between states.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set the GeneratedEasingFunction property to specify the way a transition occurs. For example, you can specify an easing function to accelerate or decelerate the transition. For more information, see [Easing Functions](../Topic/Easing%20Functions.md).  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.VisualTransition> that causes a <xref:System.Windows.Shapes.Rectangle> to move vertically when the user presses the mouse button over the <xref:System.Windows.Controls.Canvas>. The example sets the GeneratedEasingFunction property to a <xref:System.Windows.Media.Animation.BounceEase> object to cause the <xref:System.Windows.Shapes.Rectangle> to appear to bounce when it reaches its destination. The <xref:System.Windows.VisualTransition> that is used when the user releases the button has another <xref:System.Windows.Media.Animation.BounceEase> object to cause the <xref:System.Windows.Shapes.Rectangle> to bounce before it returns to its original position.  
-  
- [!code-xml[VSMCustomControl#VSMEasingFunction](~/add/codesnippet/xaml/vsmcustomcontrol/window1.xaml#vsmeasingfunction)]  
-  
- The following example shows the event handler for the <xref:System.Windows.UIElement3D.MouseDown> and <xref:System.Windows.UIElement.MouseUp> events. The example calls the <xref:System.Windows.VisualStateManager.GoToElementState%2A> method to change the <xref:System.Windows.VisualState> of the canvas.  
-  
- [!code-cs[VSMCustomControl#VSMEasingFunctionLogic](~/add/codesnippet/csharp/vsmcustomcontrol/window1.xaml.cs#vsmeasingfunctionlogic)]
- [!code-vb[VSMCustomControl#VSMEasingFunctionLogic](~/add/codesnippet/visualbasic/vsmcustomcontrolvb2/window1.xaml.vb#vsmeasingfunctionlogic)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Storyboard">
@@ -185,23 +107,9 @@
         <ReturnType>System.Windows.Media.Animation.Storyboard</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Media.Animation.Storyboard" /> that occurs when the transition occurs.</summary>
-        <value>The <see cref="T:System.Windows.Media.Animation.Storyboard" /> that occurs when the transition occurs.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.Windows.VisualTransition> contains a <xref:System.Windows.Media.Animation.Storyboard>, the <xref:System.Windows.Media.Animation.Storyboard> runs any time the <xref:System.Windows.VisualTransition> is applied. For example, if you want the border of a <xref:System.Windows.Controls.Button> to change colors when the user moves the mouse away from it, you can create a <xref:System.Windows.VisualTransition> that has a <xref:System.Windows.Media.Animation.Storyboard> that changes the button's background.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.VisualTransition> that specifies that when the user moves the mouse away from the control, the control's border changes to blue, then to yellow, and then to black in 1.5 seconds. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
- [!code-xml[VSMButtonTemplate#8](~/add/codesnippet/xaml/vsmbuttontemplate/skinnedbutton.xaml#8)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="To">
@@ -217,34 +125,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.Windows.VisualState" /> to transition to.</summary>
-        <value>The name of the <see cref="T:System.Windows.VisualState" /> to transition to.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The To property is optional. A <xref:System.Windows.VisualTransition> can be restricted to apply to only certain states or it can be applied any time the control transitions between states. You restrict when a <xref:System.Windows.VisualTransition> is applied by setting the To and <xref:System.Windows.VisualTransition.From%2A> properties. The following table describes the levels of restriction from most restrictive to least restrictive.  
-  
-|Type of restriction|Value of From|Value of To|  
-|-------------------------|-------------------|-----------------|  
-|From a specified state to another specified state|The name of a <xref:System.Windows.VisualState>|The name of a <xref:System.Windows.VisualState>|  
-|From any state to a specified state|Not set|The name of a <xref:System.Windows.VisualState>|  
-|From a specified state to any state|The name of a <xref:System.Windows.VisualState>|Not set|  
-|From any state to any other state|Not set|Not set|  
-  
- You can have multiple <xref:System.Windows.VisualTransition> objects in a <xref:System.Windows.VisualStateGroup> that refer to the same state, but they will be used in the order that the previous table specifies.  
-  
- You can change this behavior by creating a new class that inherits from <xref:System.Windows.VisualStateManager> and overriding the <xref:System.Windows.VisualStateManager.GoToStateCore%2A> method.  
-  
-   
-  
-## Examples  
- The following example creates two <xref:System.Windows.VisualTransition> objects. When the control transitions from the `Pressed` state to the `MouseOver` state, the <xref:System.Windows.VisualTransition> that has both <xref:System.Windows.VisualTransition.From%2A> and To set is used. When the control transitions from a state that is not `Pressed` to the `MouseOver` state, the other state is used.  
-  
- [!code-xml[VSMButtonTemplate#7](~/add/codesnippet/xaml/vsmbuttontemplate/skinnedbutton.xaml#7)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

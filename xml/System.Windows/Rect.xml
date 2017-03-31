@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Rect" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,56 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes the width, height, and location of a rectangle.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_Duration"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="x,y,width,height"/>  
-```  
-  
-<a name="xamlValues_MinWidth"></a>   
-## XAML Values  
- *x*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The x-coordinate location of the left side of the rectangle.  
-  
- *y*  
- <xref:System.Double?displayProperty=fullName>  
-  
- The y-coordinate location of the top side of the rectangle.  
-  
- *width*  
- <xref:System.Double?displayProperty=fullName>  
-  
- A non-negative value that represents the <xref:System.Windows.Rect.Width%2A> of the rectangle.  
-  
- *height*  
- <xref:System.Double?displayProperty=fullName>  
-  
- A non-negative value that represents the <xref:System.Windows.Rect.Height%2A> of the rectangle.  
-  
-   
-  
-## Examples  
- The following example shows how to use a Rect structure to specify the dimensions and location of a rectangle using XAML.  
-  
- [!code-cs[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/csharp/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.cs#rectexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/visualbasic/geometriesmiscsnippets/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/xaml/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.xaml#rectexamplewholepage)]  
-  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,25 +34,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="size" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="size">A <see cref="T:System.Windows.Size" /> structure that specifies the width and height of the rectangle.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Rect" /> structure that is of the specified size and is located at (0,0).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create a new <xref:System.Windows.Rect> structure by using the Rect constructor.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample2_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample2_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,7 +52,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -119,19 +59,10 @@
         <Parameter Name="point2" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point1">The first point that the new rectangle must contain.</param>
-        <param name="point2">The second point that the new rectangle must contain.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Rect" /> structure that is exactly large enough to contain the two specified points.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create a new <xref:System.Windows.Rect> structure by using the Rect constructor.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample3_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample3_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="point1">To be added.</param>
+        <param name="point2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -141,7 +72,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -149,19 +79,10 @@
         <Parameter Name="size" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="location">A point that specifies the location of the top-left corner of the rectangle.</param>
-        <param name="size">A <see cref="T:System.Windows.Size" /> structure that specifies the width and height of the rectangle.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Rect" /> structure that has the specified top-left corner location and the specified width and height.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create a new <xref:System.Windows.Rect> structure by using the Rect constructor.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample4_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample4_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="location">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -171,7 +92,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -179,19 +99,10 @@
         <Parameter Name="vector" Type="System.Windows.Vector" />
       </Parameters>
       <Docs>
-        <param name="point">The first point the rectangle must contain.</param>
-        <param name="vector">The amount to offset the specified point. The resulting rectangle will be exactly large enough to contain both points.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Rect" /> structure that is exactly large enough to contain the specified point and the sum of the specified point and the specified vector.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create a new <xref:System.Windows.Rect> structure by using the Rect constructor.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample5_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample5_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -201,7 +112,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -211,27 +121,12 @@
         <Parameter Name="height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate of the top-left corner of the rectangle.</param>
-        <param name="y">The y-coordinate of the top-left corner of the rectangle.</param>
-        <param name="width">The width of the rectangle.</param>
-        <param name="height">The height of the rectangle.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Rect" /> structure that has the specified x-coordinate, y-coordinate, width, and height.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows how to create a new <xref:System.Windows.Rect> structure by using the Rect constructor.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample6_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample6_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="width" /> is a negative value.  
-  
- -or-  
-  
- <paramref name="height" /> is a negative value.</exception>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Bottom">
@@ -241,30 +136,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the y-axis value of the bottom of the rectangle.</summary>
-        <value>The y-axis value of the bottom of the rectangle. If the rectangle is empty, the value is <see cref="T:System.Double" /> .</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The y-axis value of the bottom of the rectangle is equal to the sum of the <xref:System.Windows.Rect.Y%2A> and <xref:System.Windows.Rect.Height%2A> properties.  
-  
-   
-  
-## Examples  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BottomLeft">
@@ -274,30 +154,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the position of the bottom-left corner of the rectangle</summary>
-        <value>The position of the bottom-left corner of the rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The position of the bottom-left corner of the rectangle is equal to (<xref:System.Windows.Rect.X%2A>, <xref:System.Windows.Rect.Y%2A> + <xref:System.Windows.Rect.Height%2A>).  
-  
-   
-  
-## Examples  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -307,30 +172,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the position of the bottom-right corner of the rectangle.</summary>
-        <value>The position of the bottom-right corner of the rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The position of the bottom-right corner of the rectangle is equal to (<xref:System.Windows.Rect.X%2A> + <xref:System.Windows.Rect.Width%2A>, <xref:System.Windows.Rect.Y%2A> + <xref:System.Windows.Rect.Height%2A>).  
-  
-   
-  
-## Examples  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -340,7 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -350,20 +199,10 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point">The point to check.</param>
-        <summary>Indicates whether the rectangle contains the specified point.</summary>
-        <returns>
-          <see langword="true" /> if the rectangle contains the specified point; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Contains method to determine if the rectangle contains the specified <xref:System.Windows.Point>.  
-  
- [!code-cs[RectExamples_snip#ContainsExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#containsexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -373,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -383,20 +221,10 @@
         <Parameter Name="rect" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="rect">The rectangle to check.</param>
-        <summary>Indicates whether the rectangle contains the specified rectangle.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="rect" /> is entirely contained by the rectangle; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Contains method to determine if one rectangle is contained by another rectangle.  
-  
- [!code-cs[RectExamples_snip#ContainsExample2_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#containsexample2_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -406,7 +234,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -417,21 +244,11 @@
         <Parameter Name="y" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate of the point to check.</param>
-        <param name="y">The y-coordinate of the point to check.</param>
-        <summary>Indicates whether the rectangle contains the specified x-coordinate and y-coordinate.</summary>
-        <returns>
-          <see langword="true" /> if (<paramref name="x" />, <paramref name="y" />) is contained by the rectangle; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Contains method to determine if the rectangle contains the point specified by the given x-coordinate and y-coordinate.  
-  
- [!code-cs[RectExamples_snip#ContainsExample3_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#containsexample3_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -441,23 +258,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a special value that represents a rectangle with no position or area.</summary>
-        <value>The empty rectangle, which has <see cref="System.Windows.Rect.X%2A" /> and <see cref="System.Windows.Rect.Y%2A" /> property values of <see cref="F:System.Double.PositiveInfinity" />, and has <see cref="System.Windows.Rect.Width%2A" /> and <see cref="System.Windows.Rect.Height%2A" /> property values of <see cref="F:System.Double.NegativeInfinity" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Avoid mathematical computations involving empty rectangles. Because both <xref:System.Windows.Rect.X%2A> and <xref:System.Windows.Rect.Y%2A> are infinite values, processor operations are severely impaired by these operations. Comparisons involving these values will not affect application performance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -467,7 +276,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -477,30 +285,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object to compare to the current rectangle.</param>
-        <summary>Indicates whether the specified object is equal to the current rectangle.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Rect" /> and has the same <see cref="System.Windows.Rect.Location%2A" /> and <see cref="System.Windows.Rect.Size%2A" /> values as the current rectangle; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation tests for object equality.  
-  
- In this comparison, two instances of <xref:System.Double.NaN?displayProperty=fullName> are considered equal.  
-  
-> [!NOTE]
->  A rectangle's position and dimensions are described by <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated upon, a comparison between two values that are logically equal might fail.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Equals method to determine if a rectangle is equal to a specified object.  
-  
- [!code-cs[RectExamples_snip#EqualsExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#equalsexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -510,7 +298,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -520,30 +307,10 @@
         <Parameter Name="value" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="value">The rectangle to compare to the current rectangle.</param>
-        <summary>Indicates whether the specified rectangle is equal to the current rectangle.</summary>
-        <returns>
-          <see langword="true" /> if the specified rectangle has the same <see cref="System.Windows.Rect.Location%2A" /> and <see cref="System.Windows.Rect.Size%2A" /> values as the current rectangle; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation tests for object equality.  
-  
- In this comparison, two instances of <xref:System.Double.NaN?displayProperty=fullName> are considered equal.  
-  
-> [!NOTE]
->  A rectangle's position and dimensions are described by <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated upon, a comparison between two values that are logically equal might fail.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Equals method to determine if a rectangle is equal to a specified rectangle.  
-  
- [!code-cs[RectExamples_snip#EqualsExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#equalsexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -553,7 +320,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -564,31 +330,11 @@
         <Parameter Name="rect2" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="rect1">The first rectangle to compare.</param>
-        <param name="rect2">The second rectangle to compare.</param>
-        <summary>Indicates whether the specified rectangles are equal.</summary>
-        <returns>
-          <see langword="true" /> if the rectangles have the same <see cref="System.Windows.Rect.Location%2A" /> and <see cref="System.Windows.Rect.Size%2A" /> values; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation tests for object equality.  
-  
- In this comparison, two instances of <xref:System.Double.NaN?displayProperty=fullName> are considered equal.  
-  
-> [!NOTE]
->  A rectangle's position and dimensions are described by <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated upon, a comparison between two values that are logically equal might fail.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Equals method to determine if one rectangle is equal to another.  
-  
- [!code-cs[RectExamples_snip#EqualsExample2_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#equalsexample2_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect1">To be added.</param>
+        <param name="rect2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -598,7 +344,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -606,23 +351,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a hash code for the rectangle.</summary>
-        <returns>A hash code for the current <see cref="T:System.Windows.Rect" /> structure.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates a hash code by using the <xref:System.Windows.Rect.X%2A>, <xref:System.Windows.Rect.Y%2A>, <xref:System.Windows.Rect.Width%2A>, and <xref:System.Windows.Rect.Height%2A> property values.  
-  
-   
-  
-## Examples  
- The following example shows how to use the GetHashCode method to get the hash code of a <xref:System.Windows.Rect>.  
-  
- [!code-cs[RectExamples_snip#GetHashCodeExample_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#gethashcodeexample_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -632,38 +363,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the height of the rectangle.</summary>
-        <value>A positive number that represents the height of the rectangle. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Rect.Empty%2A> rectangle has a Height of <xref:System.Double.NegativeInfinity>. The <xref:System.Windows.Rect.Empty%2A> rectangle is read-only; its Height cannot not be changed.  
-  
-   
-  
-## Examples  
- The following example shows how to use a <xref:System.Windows.Rect> structure to specify the dimensions and location of a rectangle using XAML.  
-  
- [!code-cs[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/csharp/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.cs#rectexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/visualbasic/geometriesmiscsnippets/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/xaml/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.xaml#rectexamplewholepage)]  
-  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Height is set to a negative value.</exception>
-        <exception cref="T:System.InvalidOperationException">Height is set on an <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Inflate">
@@ -673,7 +381,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -683,24 +390,9 @@
         <Parameter Name="size" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="size">Specifies the amount to expand the rectangle. The <see cref="T:System.Windows.Size" /> structure's <see cref="System.Windows.Size.Width%2A" /> property specifies the amount to increase the rectangle's <see cref="System.Windows.Rect.Left%2A" /> and <see cref="System.Windows.Rect.Right%2A" /> properties. The <see cref="T:System.Windows.Size" /> structure's <see cref="System.Windows.Size.Height%2A" /> property specifies the amount to increase the rectangle's <see cref="System.Windows.Rect.Top%2A" /> and <see cref="System.Windows.Rect.Bottom%2A" /> properties.</param>
-        <summary>Expands the rectangle by using the specified <see cref="T:System.Windows.Size" />, in all directions.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Rect.Width%2A> of the resulting rectangle is increased by twice the <xref:System.Windows.Size.Width%2A> of the specified <xref:System.Windows.Size> structure, because both the left and right sides of the rectangle are inflated. Likewise, the <xref:System.Windows.Rect.Height%2A> of the resulting rectangle is increased by twice the <xref:System.Windows.Size.Height%2A> of the specified <xref:System.Windows.Size> structure.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Inflate method to increase the size of a rectangle.  
-  
- [!code-cs[RectExamples_snip#InflateExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#inflateexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">This method is called on the <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Inflate">
@@ -710,7 +402,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -721,27 +412,10 @@
         <Parameter Name="height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="width">The amount by which to expand or shrink the left and right sides of the rectangle.</param>
-        <param name="height">The amount by which to expand or shrink the top and bottom sides of the rectangle.</param>
-        <summary>Expands or shrinks the rectangle by using the specified width and height amounts, in all directions.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Rect.Width%2A> of the resulting rectangle is increased or decreased by twice the specified width offset, because it is applied to both the left and right sides of the rectangle. Likewise, the <xref:System.Windows.Rect.Height%2A> of the resulting rectangle is increased or decreased by twice the specified height.  
-  
- If the specified width or height shrink the rectangle by more than its current <xref:System.Windows.Rect.Width%2A> or <xref:System.Windows.Rect.Height%2A>—giving the rectangle a negative area—the rectangle becomes the <xref:System.Windows.Rect.Empty%2A> rectangle.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Inflate method to change the size of a rectangle.  
-  
- [!code-cs[RectExamples_snip#InflateExample2_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#inflateexample2_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">This method is called on the <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Inflate">
@@ -751,7 +425,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -762,27 +435,11 @@
         <Parameter Name="size" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Windows.Rect" /> structure to modify.</param>
-        <param name="size">Specifies the amount to expand the rectangle. The <see cref="T:System.Windows.Size" /> structure's <see cref="System.Windows.Size.Width%2A" /> property specifies the amount to increase the rectangle's <see cref="System.Windows.Rect.Left%2A" /> and <see cref="System.Windows.Rect.Right%2A" /> properties. The <see cref="T:System.Windows.Size" /> structure's <see cref="System.Windows.Size.Height%2A" /> property specifies the amount to increase the rectangle's <see cref="System.Windows.Rect.Top%2A" /> and <see cref="System.Windows.Rect.Bottom%2A" /> properties.</param>
-        <summary>Returns the rectangle that results from expanding the specified rectangle by the specified <see cref="T:System.Windows.Size" />, in all directions.</summary>
-        <returns>The resulting rectangle.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Rect.Width%2A> of the resulting rectangle is increased by twice the <xref:System.Windows.Size.Width%2A> of the specified <xref:System.Windows.Size> structure, because both the left and right sides of the rectangle are inflated. Likewise, the <xref:System.Windows.Rect.Height%2A> of the resulting rectangle is increased by twice the <xref:System.Windows.Size.Height%2A> of the specified <xref:System.Windows.Size> structure.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Inflate method to change the size of a rectangle.  
-  
- [!code-cs[RectExamples_snip#InflateExample3_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#inflateexample3_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="rect" /> is an <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <param name="rect">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Inflate">
@@ -792,7 +449,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -804,30 +460,12 @@
         <Parameter Name="height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Windows.Rect" /> structure to modify.</param>
-        <param name="width">The amount by which to expand or shrink the left and right sides of the rectangle.</param>
-        <param name="height">The amount by which to expand or shrink the top and bottom sides of the rectangle.</param>
-        <summary>Creates a rectangle that results from expanding or shrinking the specified rectangle by the specified width and height amounts, in all directions.</summary>
-        <returns>The resulting rectangle.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Rect.Width%2A> of the resulting rectangle is increased or decreased by twice the specified width offset, because it is applied to both the left and right sides of the rectangle. Likewise, the <xref:System.Windows.Rect.Height%2A> of the resulting rectangle is increased or decreased by twice the specified height.  
-  
- If the specified width or height modifiers shrink the rectangle by more than its current <xref:System.Windows.Rect.Width%2A> or <xref:System.Windows.Rect.Height%2A>—giving the rectangle a negative area—this method returns <xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Inflate method to change the size of a rectangle.  
-  
- [!code-cs[RectExamples_snip#InflateExample4_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#inflateexample4_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="rect" /> is an <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <param name="rect">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -837,7 +475,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -847,23 +484,9 @@
         <Parameter Name="rect" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="rect">The rectangle to intersect with the current rectangle.</param>
-        <summary>Finds the intersection of the current rectangle and the specified rectangle, and stores the result as the current rectangle.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If no intersection exists, the current rectangle becomes <xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Intersect method to find the intersection of two rectangles and store the result as a rectangle.  
-  
- [!code-cs[RectExamples_snip#IntersectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#intersectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -873,7 +496,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -884,20 +506,11 @@
         <Parameter Name="rect2" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="rect1">The first rectangle to compare.</param>
-        <param name="rect2">The second rectangle to compare.</param>
-        <summary>Returns the intersection of the specified rectangles.</summary>
-        <returns>The intersection of the two rectangles, or <see cref="System.Windows.Rect.Empty%2A" /> if no intersection exists.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows how to use the Intersect method to find the intersection of two rectangles.  
-  
- [!code-cs[RectExamples_snip#IntersectExample2_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#intersectexample2_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect1">To be added.</param>
+        <param name="rect2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IntersectsWith">
@@ -907,7 +520,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -917,20 +529,10 @@
         <Parameter Name="rect" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="rect">The rectangle to check.</param>
-        <summary>Indicates whether the specified rectangle intersects with the current rectangle.</summary>
-        <returns>
-          <see langword="true" /> if the specified rectangle intersects with the current rectangle; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the IntersectsWith method to determine if two rectangles intersect.  
-  
- [!code-cs[RectExamples_snip#IntersectsWithExample_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#intersectswithexample_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -940,24 +542,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the rectangle is the <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</summary>
-        <value>
-          <see langword="true" /> if the rectangle is the <see cref="System.Windows.Rect.Empty%2A" /> rectangle; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Do not use this property to test for zero area; a rectangle with zero area is not necessarily the <xref:System.Windows.Rect.Empty%2A> rectangle. For more information, see the <xref:System.Windows.Rect.Empty%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -967,30 +560,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the x-axis value of the left side of the rectangle.</summary>
-        <value>The x-axis value of the left side of the rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Getting this property is equivalent to getting the <xref:System.Windows.Rect.X%2A> property.  
-  
-   
-  
-## Examples  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -1000,37 +578,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the position of the top-left corner of the rectangle.</summary>
-        <value>The position of the top-left corner of the rectangle. The default is (0, 0).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The position of the top-left corner of the rectangle is equal to (<xref:System.Windows.Rect.X%2A>, <xref:System.Windows.Rect.Y%2A>).  
-  
-   
-  
-## Examples  
- The following example shows how to use a <xref:System.Windows.Rect> structure to specify the dimensions and location of a rectangle using XAML.  
-  
- [!code-cs[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/csharp/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.cs#rectexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/visualbasic/geometriesmiscsnippets/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/xaml/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.xaml#rectexamplewholepage)]  
-  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">Location is set on an <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -1040,7 +596,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1050,26 +605,9 @@
         <Parameter Name="offsetVector" Type="System.Windows.Vector" />
       </Parameters>
       <Docs>
-        <param name="offsetVector">A vector that specifies the horizontal and vertical amounts to move the rectangle.</param>
-        <summary>Moves the rectangle by the specified vector.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling this method on an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>) is not allowed.  
-  
- Note that calling the Offset method will only have an effect if you can change the <xref:System.Windows.Rect.X%2A> and <xref:System.Windows.Rect.Y%2A> properties directly. Because <xref:System.Windows.Rect> is a value type, if you reference a <xref:System.Windows.Rect> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Rect.X%2A> or <xref:System.Windows.Rect.Y%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling Offset on the property or indexer will not change the underlying object.  If you want to change the value of a <xref:System.Windows.Rect> that is referenced as a property or indexer, create a new <xref:System.Windows.Rect>, modify its fields, and then assign the <xref:System.Windows.Rect> back to the property or indexer.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Offset method to change the position of a rectangle.  
-  
- [!code-cs[RectExamples_snip#OffsetExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#offsetexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">This method is called on the <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <param name="offsetVector">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -1079,7 +617,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1090,27 +627,10 @@
         <Parameter Name="offsetY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offsetX">The amount to move the rectangle horizontally.</param>
-        <param name="offsetY">The amount to move the rectangle vertically.</param>
-        <summary>Moves the rectangle by the specified horizontal and vertical amounts.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling this method on an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>) is not allowed.  
-  
- Note that calling the Offset method will only have an effect if you can change the <xref:System.Windows.Rect.X%2A> and <xref:System.Windows.Rect.Y%2A> properties directly. Because <xref:System.Windows.Rect> is a value type, if you reference a <xref:System.Windows.Rect> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Rect.X%2A> or <xref:System.Windows.Rect.Y%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling Offset on the property or indexer will not change the underlying object.  If you want to change the value of a <xref:System.Windows.Rect> that is referenced as a property or indexer, create a new <xref:System.Windows.Rect>, modify its fields, and then assign the <xref:System.Windows.Rect> back to the property or indexer.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Offset method to change the position of a rectangle.  
-  
- [!code-cs[RectExamples_snip#OffsetExample2_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#offsetexample2_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">This method is called on the <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <param name="offsetX">To be added.</param>
+        <param name="offsetY">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -1120,7 +640,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1131,27 +650,11 @@
         <Parameter Name="offsetVector" Type="System.Windows.Vector" />
       </Parameters>
       <Docs>
-        <param name="rect">The original rectangle.</param>
-        <param name="offsetVector">A vector that specifies the horizontal and vertical offsets for the new rectangle.</param>
-        <summary>Returns a rectangle that is offset from the specified rectangle by using the specified vector.</summary>
-        <returns>The resulting rectangle.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling this method with an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>) is not allowed.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Offset method to change the position of a rectangle.  
-  
- [!code-cs[RectExamples_snip#OffsetExample3_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#offsetexample3_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="rect" /> is <see cref="System.Windows.Rect.Empty%2A" />.</exception>
+        <param name="rect">To be added.</param>
+        <param name="offsetVector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -1161,7 +664,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1173,28 +675,12 @@
         <Parameter Name="offsetY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="rect">The rectangle to move.</param>
-        <param name="offsetX">The horizontal offset for the new rectangle.</param>
-        <param name="offsetY">The vertical offset for the new rectangle.</param>
-        <summary>Returns a rectangle that is offset from the specified rectangle by using the specified horizontal and vertical amounts.</summary>
-        <returns>The resulting rectangle.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling this method with an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>) is not allowed.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Offset method to change the position of a rectangle.  
-  
- [!code-cs[RectExamples_snip#OffsetExample4_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#offsetexample4_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="rect" /> is <see cref="System.Windows.Rect.Empty%2A" />.</exception>
+        <param name="rect">To be added.</param>
+        <param name="offsetX">To be added.</param>
+        <param name="offsetY">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1204,7 +690,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1215,32 +700,11 @@
         <Parameter Name="rect2" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="rect1">The first rectangle to compare.</param>
-        <param name="rect2">The second rectangle to compare.</param>
-        <summary>Compares two rectangles for exact equality.</summary>
-        <returns>
-          <see langword="true" /> if the rectangles have the same <see cref="System.Windows.Rect.Location%2A" /> and <see cref="System.Windows.Rect.Size%2A" /> values; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation tests for object equality.  
-  
- In this comparison, two instances of <xref:System.Double.NaN?displayProperty=fullName> are considered equal.  
-  
-> [!NOTE]
->  A rectangle's position and dimensions are described by <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated upon, a comparison between two values that are logically equal might fail.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Equality operator to determine if two rectangles are exactly equal.  
-  
- [!code-cs[RectExamples_snip#OverloadedEqualityOperatorExample](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#overloadedequalityoperatorexample)]
- [!code-vb[RectExamples_snip#OverloadedEqualityOperatorExample](~/add/codesnippet/visualbasic/rectexamples_snip/rectexample.vb#overloadedequalityoperatorexample)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect1">To be added.</param>
+        <param name="rect2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -1250,7 +714,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1261,32 +724,11 @@
         <Parameter Name="rect2" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="rect1">The first rectangle to compare.</param>
-        <param name="rect2">The second rectangle to compare.</param>
-        <summary>Compares two rectangles for inequality.</summary>
-        <returns>
-          <see langword="true" /> if the rectangles do not have the same <see cref="System.Windows.Rect.Location%2A" /> and <see cref="System.Windows.Rect.Size%2A" /> values; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation tests for object inequality.  
-  
- In this comparison, two instances of <xref:System.Double.NaN?displayProperty=fullName> are considered equal.  
-  
-> [!NOTE]
->  A rectangle's position and dimensions are described by <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated upon, a comparison between two values that are logically equal might fail.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Inequality operator to determine if two rectangles are not exactly equal.  
-  
- [!code-cs[RectExamples_snip#OverloadedInequalityOperatorExample](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#overloadedinequalityoperatorexample)]
- [!code-vb[RectExamples_snip#OverloadedInequalityOperatorExample](~/add/codesnippet/visualbasic/rectexamples_snip/rectexample.vb#overloadedinequalityoperatorexample)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect1">To be added.</param>
+        <param name="rect2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1296,7 +738,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1306,20 +747,10 @@
         <Parameter Name="source" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="source">The string representation of the rectangle, in the form "x, y, width, height".</param>
-        <summary>Creates a new rectangle from the specified string representation.</summary>
-        <returns>The resulting rectangle.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Parse method to convert a string representation of a rectangle into a <xref:System.Windows.Rect> structure.  
-  
- [!code-cs[RectExamples_snip#ParseExample](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#parseexample)]
- [!code-vb[RectExamples_snip#ParseExample](~/add/codesnippet/visualbasic/rectexamples_snip/rectexample.vb#parseexample)]  
-  
- ]]></format>
-        </remarks>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -1329,30 +760,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the x-axis value of the right side of the rectangle.</summary>
-        <value>The x-axis value of the right side of the rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The x-axis value of the right side of the rectangle is equal to the sum of the <xref:System.Windows.Rect.X%2A> and <xref:System.Windows.Rect.Width%2A> properties.  
-  
-   
-  
-## Examples  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -1362,7 +778,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1373,19 +788,10 @@
         <Parameter Name="scaleY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="scaleX">The scale factor in the x-direction.</param>
-        <param name="scaleY">The scale factor in the y-direction.</param>
-        <summary>Multiplies the size of the current rectangle by the specified x and y values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Scale method to multiply the width and height of a rectangle by the specified amount.  
-  
- [!code-cs[RectExamples_snip#ScaleExample_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#scaleexample_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="scaleX">To be added.</param>
+        <param name="scaleY">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -1395,32 +801,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width and height of the rectangle.</summary>
-        <value>A <see cref="T:System.Windows.Size" /> structure that specifies the width and height of the rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use a <xref:System.Windows.Rect> structure to specify the dimensions and location of a rectangle using XAML.  
-  
- [!code-cs[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/csharp/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.cs#rectexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/visualbasic/geometriesmiscsnippets/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/xaml/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.xaml#rectexamplewholepage)]  
-  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">Size is set on an <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -1430,7 +819,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1441,26 +829,11 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">The format to use.  
-  
- -or-  
-  
- A null reference (<see langword="Nothing" /> in Visual Basic) to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
-        <param name="provider">The provider to use to format the value.  
-  
- -or-  
-  
- A null reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
-        <summary>Formats the value of the current instance using the specified format.</summary>
-        <returns>A string representation of the rectangle.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Rect> instance is cast to an <xref:System.IFormattable> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="format">To be added.</param>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -1470,30 +843,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the y-axis position of the top of the rectangle.</summary>
-        <value>The y-axis position of the top of the rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Getting this property is equivalent to getting the <xref:System.Windows.Rect.Y%2A> property.  
-  
-   
-  
-## Examples  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -1503,30 +861,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the position of the top-left corner of the rectangle.</summary>
-        <value>The position of the top-left corner of the rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The position of the top-left corner of the rectangle is equal to (<xref:System.Windows.Rect.X%2A>, <xref:System.Windows.Rect.Y%2A>).  
-  
-   
-  
-## Examples  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -1536,30 +879,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the position of the top-right corner of the rectangle.</summary>
-        <value>The position of the top-right corner of the rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The position of the top-right corner of the rectangle is equal to (<xref:System.Windows.Rect.X%2A> + <xref:System.Windows.Rect.Width%2A>, <xref:System.Windows.Rect.Y%2A>).  
-  
-   
-  
-## Examples  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1569,7 +897,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1577,18 +904,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation of the rectangle.</summary>
-        <returns>A string representation of the current rectangle. The string has the following form: "<see cref="System.Windows.Rect.X%2A" />,<see cref="System.Windows.Rect.Y%2A" />,<see cref="System.Windows.Rect.Width%2A" />,<see cref="System.Windows.Rect.Height%2A" />".</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the ToString method to get a string representation of a <xref:System.Windows.Rect> structure.  
-  
- [!code-cs[RectExamples_snip#ToStringExample_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#tostringexample_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1598,7 +916,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1608,9 +925,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">Culture-specific formatting information.</param>
-        <summary>Returns a string representation of the rectangle by using the specified format provider.</summary>
-        <returns>A string representation of the current rectangle that is determined by the specified format provider.</returns>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1621,7 +938,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1631,18 +947,9 @@
         <Parameter Name="matrix" Type="System.Windows.Media.Matrix" />
       </Parameters>
       <Docs>
-        <param name="matrix">A matrix that specifies the transformation to apply.</param>
-        <summary>Transforms the rectangle by applying the specified matrix.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Transform method to transform a <xref:System.Windows.Rect> structure by using a <xref:System.Windows.Media.Matrix>.  
-  
- [!code-cs[RectExamples_snip#TransformExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#transformexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="matrix">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1652,7 +959,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1663,20 +969,11 @@
         <Parameter Name="matrix" Type="System.Windows.Media.Matrix" />
       </Parameters>
       <Docs>
-        <param name="rect">A rectangle that is the basis for the transformation.</param>
-        <param name="matrix">A matrix that specifies the transformation to apply.</param>
-        <summary>Returns the rectangle that results from applying the specified matrix to the specified rectangle.</summary>
-        <returns>The rectangle that results from the operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Transform method to create a new <xref:System.Windows.Rect> structure that results from applying a <xref:System.Windows.Media.Matrix> to an existing rectangle.  
-  
- [!code-cs[RectExamples_snip#TransformExample2_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#transformexample2_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <param name="matrix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1686,7 +983,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1696,18 +992,9 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point">The point to include.</param>
-        <summary>Expands the current rectangle exactly enough to contain the specified point.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Union method to expand the current rectangle exactly enough to contain a given <xref:System.Windows.Point>.  
-  
- [!code-cs[RectExamples_snip#UnionExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#unionexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1717,7 +1004,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1727,18 +1013,9 @@
         <Parameter Name="rect" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="rect">The rectangle to include.</param>
-        <summary>Expands the current rectangle exactly enough to contain the specified rectangle.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Union method to expand the current rectangle exactly enough to contain the specified rectangle.  
-  
- [!code-cs[RectExamples_snip#UnionExample2_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#unionexample2_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1748,7 +1025,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1759,20 +1035,11 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="rect">The rectangle to include.</param>
-        <param name="point">The point to include.</param>
-        <summary>Creates a rectangle that is exactly large enough to include the specified rectangle and the specified point.</summary>
-        <returns>A rectangle that is exactly large enough to contain the specified rectangle and the specified point.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Union method to create a rectangle that is exactly large enough to contain a given rectangle and a given <xref:System.Windows.Point>.  
-  
- [!code-cs[RectExamples_snip#UnionExample3_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#unionexample3_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1782,7 +1049,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1793,20 +1059,11 @@
         <Parameter Name="rect2" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="rect1">The first rectangle to include.</param>
-        <param name="rect2">The second rectangle to include.</param>
-        <summary>Creates a rectangle that is exactly large enough to contain the two specified rectangles.</summary>
-        <returns>The resulting rectangle.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Union method to create a rectangle that is exactly large enough to contain two given rectangles.  
-  
- [!code-cs[RectExamples_snip#UnionExample4_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#unionexample4_csharp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect1">To be added.</param>
+        <param name="rect2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1816,38 +1073,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width of the rectangle.</summary>
-        <value>A positive number that represents the width of the rectangle. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Rect.Empty%2A> rectangle has a Width of <xref:System.Double.NegativeInfinity>. The <xref:System.Windows.Rect.Empty%2A> rectangle is read-only; its Width cannot not be changed.  
-  
-   
-  
-## Examples  
- The following example shows how to use a <xref:System.Windows.Rect> structure to specify the dimensions and location of a rectangle using XAML.  
-  
- [!code-cs[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/csharp/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.cs#rectexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/visualbasic/geometriesmiscsnippets/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/xaml/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.xaml#rectexamplewholepage)]  
-  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Width is set to a negative value.</exception>
-        <exception cref="T:System.InvalidOperationException">Width is set on an <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -1857,37 +1091,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the x-axis value of the left side of the rectangle.</summary>
-        <value>The x-axis value of the left side of the rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Getting this property is equivalent to getting the <xref:System.Windows.Rect.Left%2A> property.  
-  
-   
-  
-## Examples  
- The following example shows how to use a <xref:System.Windows.Rect> structure to specify the dimensions and location of a rectangle using XAML.  
-  
- [!code-cs[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/csharp/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.cs#rectexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/visualbasic/geometriesmiscsnippets/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/xaml/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.xaml#rectexamplewholepage)]  
-  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">X is set on an <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -1897,37 +1109,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the y-axis value of the top side of the rectangle.</summary>
-        <value>The y-axis value of the top side of the rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Getting this property is equivalent to getting the <xref:System.Windows.Rect.Top%2A> property.  
-  
-   
-  
-## Examples  
- The following example shows how to use a <xref:System.Windows.Rect> structure to specify the dimensions and location of a rectangle using XAML.  
-  
- [!code-cs[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/csharp/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.cs#rectexamplewholepage)]
- [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/visualbasic/geometriesmiscsnippets/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/add/codesnippet/xaml/GeometriesMiscSnippets_snip.GeometriesMiscSnippets/RectExample.xaml#rectexamplewholepage)]  
-  
- The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
-  
- [!code-cs[RectExamples_snip#CreateRectExample1_csharp](~/add/codesnippet/csharp/RectExamples_snip/RectExample.cs#createrectexample1_csharp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">Y is set on an <see cref="System.Windows.Rect.Empty%2A" /> rectangle.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

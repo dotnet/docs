@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemUpdateReason" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the reason that a cached item is being removed from the <see cref="T:System.Web.Caching.Cache" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unlike the <xref:System.Web.Caching.CacheItemRemovedReason> enumeration, this enumeration does not include the `Removed` or `Underused` values. Updateable cache items are not removable and can thus never be automatically removed by ASP.NET even if there is a need to free memory.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DependencyChanged">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemUpdateReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the item is being removed from the cache because the associated <see cref="T:System.Web.Caching.CacheDependency" /> object changed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemUpdateReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the item is being removed from the cache because the absolute or sliding expiration interval expired.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

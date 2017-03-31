@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.JournalEntryUnifiedViewConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,46 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>JournalEntryUnifiedViewConverter merges navigation back history and navigation forward history (as exposed by <see cref="T:System.Windows.Controls.Frame" /> or <see cref="T:System.Windows.Navigation.NavigationWindow" />) into a single, [!INCLUDE[TLA#tla_ie7](~/add/includes/tlasharptla-ie7-md.md)]-style navigation menu.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Both <xref:System.Windows.Controls.Frame> and <xref:System.Windows.Navigation.NavigationWindow> display navigation chrome that supports history navigation using the following mechanisms:  
-  
--   A button for navigating back one piece of content at a time.  
-  
--   A button for navigating forward one piece of content at a time.  
-  
--   An [!INCLUDE[TLA#tla_ie7](~/add/includes/tlasharptla-ie7-md.md)]-style drop-down list that shows:  
-  
-    -   A combined list of up to nine items in back navigation history and up to nine items in forward navigation history.  
-  
-    -   The position of the current piece of content with respect to both back and forward navigation history.  
-  
- The navigation history is stored by both <xref:System.Windows.Navigation.NavigationWindow> and <xref:System.Windows.Controls.Frame> in the following properties:  
-  
- **Back Navigation History**: <xref:System.Windows.Controls.Frame.BackStack%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.BackStack%2A?displayProperty=fullName>.  
-  
- **Forward Navigation History**: <xref:System.Windows.Controls.Frame.ForwardStack%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.ForwardStack%2A?displayProperty=fullName>.  
-  
- To create the [!INCLUDE[TLA#tla_ie7](~/add/includes/tlasharptla-ie7-md.md)]-style drop-down list, <xref:System.Windows.Navigation.NavigationWindow> and <xref:System.Windows.Controls.Frame> use JournalEntryUnifiedViewConverter to merge their individual back navigation history and forward navigation history into a single list of navigation history entries. The resulting list contains up to nine entries from back navigation history and up to nine entries from forward navigation history, plus an entry for the current content.  
-  
- If you create custom navigation [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)], and need to provide an [!INCLUDE[TLA#tla_ie7](~/add/includes/tlasharptla-ie7-md.md)]-style drop-down list, you can use JournalEntryUnifiedViewConverter to similar effect.  
-  
-## XAML Attribute Usage  
- This class is not typically used in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
-   
-  
-## Examples  
- The following example shows how to construct a text-based navigation history menu. The menu uses JournalEntryUnifiedViewConverter to combine both the back and forward navigation histories of the hosted <xref:System.Windows.Controls.Frame> navigator.  
-  
- [!code-xml[JournalEntryUnifiedPositionConverterSnippets#JournalEntryUnifiedPositionConverterWithMenuXAML](~/add/codesnippet/xaml/journalentryunifiedpositionconvertersnippets/mainwindow.xaml#journalentryunifiedpositionconverterwithmenuxaml)]
- [!code-xml[JournalEntryUnifiedPositionConverterSnippets#JournalEntryUnifiedPositionConverterWithMenuXAML](~/add/codesnippet/xaml/t-system.windows.navigat_0_1.xaml)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.JournalEntryUnifiedViewConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,35 +53,13 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="values">An array of two navigation stacks.</param>
-        <param name="targetType">This parameter is not used.</param>
-        <param name="parameter">This parameter is not used.</param>
-        <param name="culture">This parameter is not used.</param>
-        <summary>Merges two navigation history stacks.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerable" /> that can be used to enumerate the merged list of navigation history stacks if neither passed navigation stack is <see langword="null" />. <see langword="null" />, otherwise.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For <xref:System.Windows.Controls.Frame>, the navigation stacks are available from the following properties:  
-  
--   <xref:System.Windows.Controls.Frame.BackStack%2A>  
-  
--   <xref:System.Windows.Controls.Frame.ForwardStack%2A>  
-  
- For <xref:System.Windows.Navigation.NavigationWindow>, the navigation stacks are available from the following properties:  
-  
--   <xref:System.Windows.Navigation.NavigationWindow.BackStack%2A>  
-  
- <xref:System.Windows.Navigation.NavigationWindow.ForwardStack%2A>  
-  
- The two passed navigation stacks are combined into a single navigation stack that contains up to nine items from each navigation stack plus the current item.  
-  
-## XAML Attribute Usage  
- Members of this class are either not typically used in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)], or cannot be used in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
- ]]></format>
-        </remarks>
+        <param name="values">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertBack">
@@ -132,7 +69,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,22 +81,13 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">This parameter is not used.</param>
-        <param name="targetTypes">This parameter is not used.</param>
-        <param name="parameter">This parameter is not used.</param>
-        <param name="culture">This parameter is not used.</param>
-        <summary>Not implemented.</summary>
-        <returns>Always returns <see cref="F:System.Windows.Data.Binding.DoNothing" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## XAML Attribute Usage  
- Members of this class are either not typically used in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)], or cannot be used in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="targetTypes">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetJournalEntryPosition">
@@ -170,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,9 +106,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to get the attached property value.</param>
-        <summary>Gets the <see cref="System.Windows.Navigation.JournalEntryUnifiedViewConverter.JournalEntryPosition%2A" /> attached property for the specified element.</summary>
-        <returns>The value of the <see cref="System.Windows.Navigation.JournalEntryUnifiedViewConverter.JournalEntryPosition%2A" /> attached property of the journal entry for the specified element.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,14 +119,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Navigation.JournalEntryUnifiedViewConverter.JournalEntryPosition%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +136,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,19 +146,10 @@
         <Parameter Name="position" Type="System.Windows.Navigation.JournalEntryPosition" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to set the attached property value.</param>
-        <param name="position">Position of the <see cref="T:System.Windows.Navigation.JournalEntryPosition" /> object.</param>
-        <summary>Sets the <see cref="F:System.Windows.Navigation.JournalEntryUnifiedViewConverter.JournalEntryPositionProperty" /> attached property of the specified element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## XAML Attribute Usage  
- Members of this class are either not typically used in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)], or cannot be used in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

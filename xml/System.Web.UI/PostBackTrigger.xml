@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PostBackTrigger" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,30 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines a control inside a <see cref="T:System.Web.UI.UpdatePanel" /> control as a postback control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the PostBackTrigger control to enable controls inside an <xref:System.Web.UI.UpdatePanel> to cause a postback instead of performing an asynchronous postback.  
-  
- Use the <xref:System.Web.UI.ScriptManager.RegisterPostBackControl%2A> method of the <xref:System.Web.UI.ScriptManager> control to programmatically register a postback control. You can then call the <xref:System.Web.UI.UpdatePanel.Update%2A> method of the <xref:System.Web.UI.UpdatePanel> control when the trigger control performs a postback.  
-  
-> [!NOTE]
->  Programmatically adding PostBackTrigger controls is not supported.  
-  
- If a control is set as both a PostBackTrigger and <xref:System.Web.UI.AsyncPostBackTrigger> control, an exception is thrown.  
-  
-   
-  
-## Examples  
- The following example shows how to declaratively define a PostBackTrigger control for an <xref:System.Web.UI.UpdatePanel> control. In the panel, a <xref:System.Web.UI.WebControls.FileUpload> control enables users to upload a file. Users must first check whether the file to upload exists. The <xref:System.Web.UI.WebControls.Button> control that calls the event handler to check the file name causes an asynchronous postback. However, the <xref:System.Web.UI.WebControls.Button> control that uploads the file is registered as a PostBackTrigger, because files cannot be uploaded asynchronously.  
-  
- [!code-vb[System.Web.UI.PostBackTrigger#1](~/add/codesnippet/visualbasic/t-system.web.ui.postback_1_1.aspx)]
- [!code-cs[System.Web.UI.PostBackTrigger#1](~/add/codesnippet/csharp/t-system.web.ui.postback_1_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PostBackTrigger" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To create a new <xref:System.Web.UI.PostBackTrigger> object, use the **UpdatePanelTrigger Collection Editor** dialog box in the designer or create a `<Triggers>` element declaratively in the <xref:System.Web.UI.UpdatePanel> control. Programmatically adding <xref:System.Web.UI.PostBackTrigger> controls is not supported.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlID">
@@ -68,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -80,8 +48,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the control that is an <see cref="T:System.Web.UI.PostBackTrigger" /> control for an <see cref="T:System.Web.UI.UpdatePanel" /> control.</summary>
-        <value>A string that represents a server control ID.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,17 +67,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the trigger was activated.</summary>
-        <returns>
-          <see langword="true" /> if the trigger was activated; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Control developers can override the HasTriggered property to provide custom logic for determining whether the trigger was activated. To see your custom trigger appear at design time in the `<Triggers>` element of the <xref:System.Web.UI.UpdatePanel> control, you can add an  directive on the page or in the  section of the Web.config file.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -120,7 +79,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,7 +86,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the <see cref="T:System.Web.UI.PostBackTrigger" /> object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,8 +104,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current <see cref="T:System.Web.UI.PostBackTrigger" /> object.</summary>
-        <returns>A string that represents the current <see cref="T:System.Web.UI.PostBackTrigger" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

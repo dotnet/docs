@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a response received from a remote peer to an invitation sent via the <see cref="System.Net.PeerToPeer.Collaboration.Peer.Invite%2A" /> or <see cref="System.Net.PeerToPeer.Collaboration.PeerNearMe.Invite%2A" /> method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class does not have a public constructor. The <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType> class is used to encapsulate the response to accommodate the return of any additional data with a future release.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="PeerInvitationResponseType">
@@ -30,16 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the response to the invitation from the remote peer specified by <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" /> class.</summary>
-        <value>
-          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" /> object containing the response from an invitation to a remote peer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

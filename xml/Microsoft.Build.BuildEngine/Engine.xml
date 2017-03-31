@@ -4,8 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Engine" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,23 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the [!INCLUDE[vstecmsbuild](~/add/includes/vstecmsbuild-md.md)] engine.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a system of project-to-project dependencies, the Engine maintains the building projects, making it possible to avoid building the same target in the same project more than once in a given build.  
-  
-   
-  
-## Examples  
- The following example creates an Engine object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-vb[msbuild_BuildAProject#1](~/add/codesnippet/visualbasic/BuildAProjectVB/Module1.vb#1)]
- [!code-cs[msbuild_BuildAProject#1](~/add/codesnippet/csharp/BuildAProjectCS/Program.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,24 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-vb[msbuild_BuildAProject#1](~/add/codesnippet/visualbasic/BuildAProjectVB/Module1.vb#1)]
- [!code-cs[msbuild_BuildAProject#1](~/add/codesnippet/csharp/BuildAProjectCS/Program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -71,15 +42,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="globalProperties" Type="Microsoft.Build.BuildEngine.BuildPropertyGroup" />
       </Parameters>
       <Docs>
-        <param name="globalProperties">A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> that represents properties to be passed to the child engine.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> class.</summary>
+        <param name="globalProperties">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,15 +60,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="locations" Type="Microsoft.Build.BuildEngine.ToolsetDefinitionLocations" />
       </Parameters>
       <Docs>
-        <param name="locations">A <see cref="T:Microsoft.Build.BuildEngine.ToolsetDefinitionLocations" /> enumeration that specifies the location of the Toolset definition.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> class.</summary>
+        <param name="locations">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +78,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -122,8 +89,8 @@
         <Parameter Name="binPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="binPath">The path to MSBuild.exe.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> class that has the specified <see cref="Microsoft.Build.BuildEngine.Engine.BinPath%2A" />.</summary>
+        <param name="binPath">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +101,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -142,9 +108,9 @@
         <Parameter Name="locations" Type="Microsoft.Build.BuildEngine.ToolsetDefinitionLocations" />
       </Parameters>
       <Docs>
-        <param name="globalProperties">A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> that represents properties to be passed to the child engine.</param>
-        <param name="locations">A <see cref="T:Microsoft.Build.BuildEngine.ToolsetDefinitionLocations" /> enumeration specifies the location of the Toolset definition.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> class.</summary>
+        <param name="globalProperties">To be added.</param>
+        <param name="locations">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +121,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -165,15 +130,11 @@
         <Parameter Name="localNodeProviderParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="globalProperties">A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> that represents properties to be passed to the child engine.</param>
-        <param name="locations">A <see cref="T:Microsoft.Build.BuildEngine.ToolsetDefinitionLocations" /> enumeration specifies the location of the Toolset definition.</param>
-        <param name="numberOfCpus">An integer that specifies the number of CPUs or cores in the system.</param>
-        <param name="localNodeProviderParameters">A string of parameters that are used to configure the [!INCLUDE[vstecmsbuild](~/add/includes/vstecmsbuild-md.md)] engine. You must format the parameters as <c>ParameterName</c>=<c>ParameterValue</c>. The valid semicolon-separated, optional parameters are as follows:  
-  
- <see langword="MSBUILDLOCATION" /> Indicates where the build process can find MSBuild.exe. This path enables the [!INCLUDE[vstecmsbuild](~/add/includes/vstecmsbuild-md.md)] engine to locate MSBuild.exe and start it as a local node. <see langword="MSBUILDLOCATION" /> is the only essential parameter for a host. The default value is C:\Windows\Microsoft.Net\Framework\v3.5\\.  
-  
- <see langword="NODEREUSE" /> Indicates whether the child nodes should remain after the build finishes, in case they can be used later by another build. The nodes are discarded automatically after one minute of non-use. The default value is <see langword="true" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> class.</summary>
+        <param name="globalProperties">To be added.</param>
+        <param name="locations">To be added.</param>
+        <param name="numberOfCpus">To be added.</param>
+        <param name="localNodeProviderParameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +145,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -197,44 +156,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path to MSBuild.exe.</summary>
-        <value>The path to MSBuild.exe.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In [!INCLUDE[vstecmsbuild](~/add/includes/vstecmsbuild-md.md)] 3.5, the "BinPath" is superseded by the "ToolsPath." Therefore, in the .Targets file, use MSBuildToolsPath rather than MBBuildBinPath. In the [!INCLUDE[vstecmsbuild](~/add/includes/vstecmsbuild-md.md)] object model, "BinPath" relates to the Toolset you are running. The steps to get the path from the build engine are as follows:  
-  
-1.  Get the default tools version.  
-  
-2.  Get the Toolset map.  
-  
-3.  Find the Toolset, based on the string in the map.  
-  
-4.  Get the Toolset.  
-  
-5.  Get the path from the Toolset.  
-  
- This procedure is not required if you are creating the engine. In that case, you already know the Toolset path.  
-  
- Because projects in a solution can use different Toolsets, you can also obtain the MSBuild.exe path from the project, as follows.  
-  
-```  
-project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue   
-```  
-  
- For more information about Toolsets, see `MSBuild Tool Set (ToolsVersion)`.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-vb[msbuild_BuildAProject#1](~/add/codesnippet/visualbasic/BuildAProjectVB/Module1.vb#1)]
- [!code-cs[msbuild_BuildAProject#1](~/add/codesnippet/csharp/BuildAProjectCS/Program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildEnabled">
@@ -244,17 +168,14 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the building of targets in the project is enabled.</summary>
-        <value>
-          <see langword="true" /> if the building of targets in the project is enabled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,8 +186,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -276,10 +195,9 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="project" Type="Microsoft.Build.BuildEngine.Project" />
       </Parameters>
       <Docs>
-        <param name="project">The <see cref="T:Microsoft.Build.BuildEngine.Project" /> to build.</param>
-        <summary>Builds the specified <see cref="T:Microsoft.Build.BuildEngine.Project" />.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <param name="project">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,8 +208,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,11 +218,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="targetName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="project">The <see cref="T:Microsoft.Build.BuildEngine.Project" /> to build.</param>
-        <param name="targetName">The <see langword="Name" /> attribute of the Target element to build.</param>
-        <summary>Builds the specified target of the specified <see cref="T:Microsoft.Build.BuildEngine.Project" />.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <param name="project">To be added.</param>
+        <param name="targetName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,8 +232,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -329,11 +242,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="targetNames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="project">The <see cref="T:Microsoft.Build.BuildEngine.Project" /> to build.</param>
-        <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
-        <summary>Builds the specified targets of the specified <see cref="T:Microsoft.Build.BuildEngine.Project" />.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <param name="project">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,8 +256,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -357,12 +267,11 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="targetOutputs" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="project">The <see cref="T:Microsoft.Build.BuildEngine.Project" /> to build.</param>
-        <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
-        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]) if outputs are not required.</param>
-        <summary>Builds the specified targets of the specified <see cref="T:Microsoft.Build.BuildEngine.Project" />, and returns the outputs of the targets.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <param name="project">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <param name="targetOutputs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,8 +282,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -387,13 +294,12 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="buildFlags" Type="Microsoft.Build.BuildEngine.BuildSettings" />
       </Parameters>
       <Docs>
-        <param name="project">The <see cref="T:Microsoft.Build.BuildEngine.Project" /> to build.</param>
-        <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
-        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]) if outputs are not required.</param>
-        <param name="buildFlags">The <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" /> to apply to the build.</param>
-        <summary>Builds the specified targets of the specified <see cref="T:Microsoft.Build.BuildEngine.Project" /> with the specified <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" />, and returns the outputs of the targets.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <param name="project">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <param name="targetOutputs">To be added.</param>
+        <param name="buildFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,8 +310,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -415,21 +319,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="projectFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="projectFile">The project file to load and build.</param>
-        <summary>Loads the specified project file and builds the project.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the BuildProjectFile method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-vb[msbuild_BuildAProject#1](~/add/codesnippet/visualbasic/BuildAProjectVB/Module1.vb#1)]
- [!code-cs[msbuild_BuildAProject#1](~/add/codesnippet/csharp/BuildAProjectCS/Program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <param name="projectFile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildProjectFile">
@@ -439,8 +332,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -451,11 +342,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="targetName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="projectFile">The project file to load and build.</param>
-        <param name="targetName">The <see langword="Name" /> attribute of the Target element to build.</param>
-        <summary>Loads the specified project file and builds the specified target of the project.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <param name="projectFile">To be added.</param>
+        <param name="targetName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,8 +356,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -478,11 +366,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="targetNames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="projectFile">The project file to load and build.</param>
-        <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
-        <summary>Loads the specified project file and builds the specified targets of the project.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <param name="projectFile">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -493,8 +380,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -506,12 +391,11 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="globalProperties" Type="Microsoft.Build.BuildEngine.BuildPropertyGroup" />
       </Parameters>
       <Docs>
-        <param name="projectFile">The project file to load and build.</param>
-        <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
-        <param name="globalProperties">The <see cref="Microsoft.Build.BuildEngine.Engine.GlobalProperties%2A" /> to apply to the build.</param>
-        <summary>Loads the specified project file and builds the specified targets of the project with the specified <see cref="Microsoft.Build.BuildEngine.Engine.GlobalProperties%2A" />, and returns the outputs of the targets.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <param name="projectFile">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <param name="globalProperties">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -522,8 +406,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -536,13 +418,12 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="targetOutputs" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="projectFile">The project file to load and build.</param>
-        <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
-        <param name="globalProperties">The <see cref="Microsoft.Build.BuildEngine.Engine.GlobalProperties%2A" /> to apply to the build.</param>
-        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]) if outputs are not required.</param>
-        <summary>Loads the specified project file and builds the specified targets of the project with the specified <see cref="Microsoft.Build.BuildEngine.Engine.GlobalProperties%2A" />, and returns the outputs of the targets.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <param name="projectFile">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <param name="globalProperties">To be added.</param>
+        <param name="targetOutputs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,8 +434,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -568,14 +447,13 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="buildFlags" Type="Microsoft.Build.BuildEngine.BuildSettings" />
       </Parameters>
       <Docs>
-        <param name="projectFile">The project file to load and build.</param>
-        <param name="targetNames">An array that contains the <see langword="Name" /> attributes of the Target elements to build.</param>
-        <param name="globalProperties">The <see cref="Microsoft.Build.BuildEngine.Engine.GlobalProperties%2A" /> to apply to the build.</param>
-        <param name="targetOutputs">The outputs of the built targets. This parameter can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]) if outputs are not required.</param>
-        <param name="buildFlags">The <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" /> to apply to the build.</param>
-        <summary>Loads the specified project file and builds the specified targets of the project with the specified <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" /> and <see cref="Microsoft.Build.BuildEngine.Engine.GlobalProperties%2A" />, and returns the outputs of the targets.</summary>
-        <returns>
-          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <param name="projectFile">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <param name="globalProperties">To be added.</param>
+        <param name="targetOutputs">To be added.</param>
+        <param name="buildFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -586,7 +464,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -601,23 +478,15 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="toolsVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="projectFile">The name of the project to build.</param>
-        <param name="targetNames">A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> array of targets for each project. Can be <see langword="null" /> if you want to build the default targets for the project.</param>
-        <param name="globalProperties">An <see cref="T:System.Collections.IDictionary" /> array of properties for each project. Can be <see langword="null" /> if no global properties are required.</param>
-        <param name="targetOutputs">A <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" /> array of tables for target outputs. Can be <see langword="null" /> if outputs are not required.</param>
-        <param name="buildFlags">A string array of additional build flags.</param>
-        <param name="toolsVersion">The ToolsVersion to impose on the project in this build.</param>
-        <summary>Loads a project file from disk and builds the given targets.</summary>
-        <returns>
-          <see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload takes a set of global properties for each project to use for the build, returns the target outputs, and also enables the caller to specify additional build flags.  
-  
- ]]></format>
-        </remarks>
+        <param name="projectFile">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <param name="globalProperties">To be added.</param>
+        <param name="targetOutputs">To be added.</param>
+        <param name="buildFlags">To be added.</param>
+        <param name="toolsVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildProjectFiles">
@@ -627,7 +496,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -642,23 +510,15 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="toolsVersions" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="projectFiles">A string list of project files to build. This value cannot be <see langword="null" />.</param>
-        <param name="targetNamesPerProject">A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> array of targets for each project.</param>
-        <param name="globalPropertiesPerProject">An <see cref="T:System.Collections.IDictionary" /> array of properties for each project. This value cannot be <see langword="null" />.</param>
-        <param name="targetOutputsPerProject">A <see cref="T:Microsoft.Build.BuildEngine.BuildSettings" /> array of tables for target outputs. This value cannot be <see langword="null" />.</param>
-        <param name="buildFlags">A string array of additional build flags.</param>
-        <param name="toolsVersions">The ToolsVersion to impose on the project in this build.</param>
-        <summary>Loads a set of project files from disk and then builds the given list of targets for each project.</summary>
-        <returns>
-          <see langword="true" /> if the project built successfully; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload takes a set of global properties for each project to use for the build, returns the target outputs, and also enables the caller to specify additional build flags.  
-  
- ]]></format>
-        </remarks>
+        <param name="projectFiles">To be added.</param>
+        <param name="targetNamesPerProject">To be added.</param>
+        <param name="globalPropertiesPerProject">To be added.</param>
+        <param name="targetOutputsPerProject">To be added.</param>
+        <param name="buildFlags">To be added.</param>
+        <param name="toolsVersions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewProject">
@@ -668,8 +528,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -677,8 +535,8 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an empty <see cref="T:Microsoft.Build.BuildEngine.Project" /> object that is associated with this <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</summary>
-        <returns>The created <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -689,23 +547,15 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default ToolsVersion of this build engine.</summary>
-        <value>A string that represents the default ToolsVersion.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Projects use this ToolsVersion if they are not otherwise told which ToolsVersion to use. This value is retrieved from either the .exe.config file or the registry. If neither specify a default ToolsVersion, then the version is hard-coded to version "2.0." For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLoadedProject">
@@ -715,8 +565,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -726,9 +574,9 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="projectFullFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="projectFullFileName">The fully qualified file path to the project file of the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</param>
-        <summary>Returns the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object that is associated with the specified project file.</summary>
-        <returns>The <see cref="T:Microsoft.Build.BuildEngine.Project" /> object that associated with the specified project file. If no <see cref="T:Microsoft.Build.BuildEngine.Project" /> object is associated with the specified project file, the method returns a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]).</returns>
+        <param name="projectFullFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,16 +587,14 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.BuildEngine.Engine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> that is global (shared) for this <see cref="T:System.AppDomain" />.</summary>
-        <value>The <see cref="T:Microsoft.Build.BuildEngine.Engine" /> that is global (shared) for this <see cref="T:System.AppDomain" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -759,24 +605,15 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.BuildEngine.BuildPropertyGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a collection of the global properties for the project.</summary>
-        <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> that contains the global properties for the project.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Global properties are properties that are set by using the **/property** switch on the command line, or properties that are set by the integrated development environment (IDE) before a project is built. These global properties are applied to all projects that are built by using this <xref:Microsoft.Build.BuildEngine.Engine>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBuilding">
@@ -786,24 +623,15 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether a project is currently being built.</summary>
-        <value>
-          <see langword="true" /> if a build is in progress; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be checked to prevent a project from being modified while it is being built.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnlyLogCriticalEvents">
@@ -813,17 +641,14 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to only log critical events, such as warnings and errors, during the build.</summary>
-        <value>
-          <see langword="true" /> if only critical events should be logged; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -834,7 +659,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -845,17 +669,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="forwardingLogger" Type="Microsoft.Build.BuildEngine.LoggerDescription" />
       </Parameters>
       <Docs>
-        <param name="centralLogger">An <see cref="T:Microsoft.Build.Framework.ILogger" /> that represents the central logger.</param>
-        <param name="forwardingLogger">A <see cref="T:Microsoft.Build.BuildEngine.LoggerDescription" /> that represents the forwarding logger.</param>
-        <summary>Registers distributed loggers with the build engine.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not thread-safe. To ensure uniform behavior, all loggers should register before the build is started. For more information, see [Writing Multi-Processor-Aware Loggers](../Topic/Writing%20Multi-Processor-Aware%20Loggers.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="centralLogger">To be added.</param>
+        <param name="forwardingLogger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterLogger">
@@ -865,8 +682,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -876,26 +691,9 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="logger" Type="Microsoft.Build.Framework.ILogger" />
       </Parameters>
       <Docs>
-        <param name="logger">The logger to associate with the <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</param>
-        <summary>Registers the specified logger with the <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a logger is registered with the <xref:Microsoft.Build.BuildEngine.Engine>, it receives all build events.  
-  
- To unregister loggers, use the <xref:Microsoft.Build.BuildEngine.Engine.UnregisterAllLoggers%2A> method.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-vb[msbuild_BuildAProject#1](~/add/codesnippet/visualbasic/BuildAProjectVB/Module1.vb#1)]
- [!code-cs[msbuild_BuildAProject#1](~/add/codesnippet/csharp/BuildAProjectCS/Program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <param name="logger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
@@ -905,7 +703,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -913,7 +710,7 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when the host is finished with this build engine. It unregisters loggers and shuts down nodes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -924,23 +721,15 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.BuildEngine.ToolsetCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or Gets the collection of Toolsets that are recognized by this build engine instance.</summary>
-        <value>A <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" /> of the tools sets recognized by this engine instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about ToolSets, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnloadAllProjects">
@@ -950,8 +739,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -959,7 +746,7 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all references to <see cref="T:Microsoft.Build.BuildEngine.Project" /> objects from the <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -970,8 +757,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -981,8 +766,8 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <Parameter Name="project" Type="Microsoft.Build.BuildEngine.Project" />
       </Parameters>
       <Docs>
-        <param name="project">The <see cref="T:Microsoft.Build.BuildEngine.Project" /> to remove from the <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</param>
-        <summary>Removes the reference to the specified <see cref="T:Microsoft.Build.BuildEngine.Project" /> from the <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</summary>
+        <param name="project">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -993,8 +778,6 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1002,23 +785,8 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Unregisters all loggers from the <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The UnregisterAllLoggers method calls the <xref:Microsoft.Build.Framework.ILogger.Shutdown%2A> method on every registered logger before unregistering each of them from the <xref:Microsoft.Build.BuildEngine.Engine>.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-vb[msbuild_BuildAProject#1](~/add/codesnippet/visualbasic/BuildAProjectVB/Module1.vb#1)]
- [!code-cs[msbuild_BuildAProject#1](~/add/codesnippet/csharp/BuildAProjectCS/Program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -1028,16 +796,14 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of the <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</summary>
-        <value>The version of the <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

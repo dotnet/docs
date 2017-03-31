@@ -4,35 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProcessModelComAuthenticationLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the level of authentication for DCOM security.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProcessModelComAuthenticationLevel enumerates the values to use when you set the <xref:System.Web.Configuration.ProcessModelSection.ComAuthenticationLevel%2A> property.  
-  
- The default is Connect.  
-  
-> [!NOTE]
->  The ProcessModelComAuthenticationLevel settings are relevant only when you use the ASP.NET process model (Internet Information Services [IIS] 5.n or compatible mode on IIS 6 only).  
-  
-   
-  
-## Examples  
- The following code example shows how to get the current <xref:System.Web.Configuration.ProcessModelSection.ComAuthenticationLevel%2A> property value and then set the <xref:System.Web.Configuration.ProcessModelSection.ComAuthenticationLevel%2A> property to a new value of Call.  
-  
- [!code-cs[System.Web.Configuration.ProcessModelSection#21](~/add/codesnippet/csharp/t-system.web.configurati_40_1.cs)]
- [!code-vb[System.Web.Configuration.ProcessModelSection#21](~/add/codesnippet/visualbasic/t-system.web.configurati_40_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Call">
@@ -42,22 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that DCOM authenticates the credentials of the client. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM authenticates the credentials of the client when the server receives the request at the beginning of each remote procedure call.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -67,24 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that DCOM authenticates the credentials of the client. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM authenticates the credentials of the client only when the client establishes a relationship with the server.  
-  
- This is the default value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -94,22 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that DCOM determines the authentication level. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM determines the authentication level using its normal security-negotiation algorithm.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -119,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no authentication. This field is constant.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pkt">
@@ -136,22 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that DCOM verifies that all data received is from the expected client. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The datagram transports always use Pkt authentication.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PktIntegrity">
@@ -161,22 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that DCOM authenticates and verifies the data transferred. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM verifies that none of the data transferred between the client and the server has been modified.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PktPrivacy">
@@ -186,22 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that DCOM authenticates all previous levels and does encryption. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM authenticates all previous levels and encrypts the argument value of each remote procedure call.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

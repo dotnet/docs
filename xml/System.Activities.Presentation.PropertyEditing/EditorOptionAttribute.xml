@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies a single editor option attribute.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.EditorOptionAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the attribute</summary>
-        <value>The name of the attribute.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,12 +71,11 @@
         <Parameter Name="optionValue" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="attributes">The collection of attributes.</param>
-        <param name="optionName">The name of the attribute to check.</param>
-        <param name="optionValue">When this method returns, contains the value of the attribute. This parameter is passed uninitialized.</param>
-        <summary>Determines whether the collection contains a specific attribute and returns the attribute value.</summary>
-        <returns>
-          <see langword="true" /> if the specified attribute is found in the collection; otherwise, <see langword="false" />.</returns>
+        <param name="attributes">To be added.</param>
+        <param name="optionName">To be added.</param>
+        <param name="optionValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +92,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a unique identifier for this attribute.</summary>
-        <value>A unique identifier for this attribute.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +110,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the attribute.</summary>
-        <value>The value of the attribute.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

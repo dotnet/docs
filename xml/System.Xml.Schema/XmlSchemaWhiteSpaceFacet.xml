@@ -4,36 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaWhiteSpaceFacet" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Xml.Schema.XmlSchemaFacet</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the World Wide Web Consortium (W3C) <see langword="whiteSpace" /> facet.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XmlSchemaWhiteSpaceFacet class defines how the simpleType value's white space will be treated. The `whiteSpace` facet value can be one of `preserve`, `replace`, or `collapse`.  
-  
-   
-  
-## Examples  
- The following example shows the use of the `XmlSchemaWhiteSpaceFacet` class.  
-  
- [!code-cpp[Classic WebData XmlSchemaWhiteSpaceFacet Example#1](~/add/codesnippet/cpp/t-system.xml.schema.xmls_32_1.cpp)]
- [!code-cs[Classic WebData XmlSchemaWhiteSpaceFacet Example#1](~/add/codesnippet/csharp/t-system.xml.schema.xmls_32_1.cs)]
- [!code-vb[Classic WebData XmlSchemaWhiteSpaceFacet Example#1](~/add/codesnippet/visualbasic/t-system.xml.schema.xmls_32_1.vb)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaWhiteSpaceFacet Example#2](~/add/codesnippet/xml/t-system.xml.schema.xmls_32_2.xsd)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,12 +27,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaWhiteSpaceFacet" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DragCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information about the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" /> event that occurs when a user completes a drag operation with the mouse of a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -32,10 +30,10 @@
         <Parameter Name="canceled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="horizontalChange">The horizontal change in position of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control, resulting from the drag operation.</param>
-        <param name="verticalChange">The vertical change in position of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control, resulting from the drag operation.</param>
-        <param name="canceled">A Boolean value that indicates whether the drag operation was canceled by a call to the <see cref="System.Windows.Controls.Primitives.Thumb.CancelDrag%2A" /> method.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.DragCompletedEventArgs" /> class.</summary>
+        <param name="horizontalChange">To be added.</param>
+        <param name="verticalChange">To be added.</param>
+        <param name="canceled">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,16 +44,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the drag operation for a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> was canceled by a call to the <see cref="System.Windows.Controls.Primitives.Thumb.CancelDrag%2A" /> method.</summary>
-        <value>
-          <see langword="true" /> if a drag operation was canceled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,15 +62,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the horizontal change in position of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> after the user drags the control with the mouse.</summary>
-        <value>The horizontal difference between the point at which the user pressed the left mouse button and the point at which the user released the button during a drag operation of a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control. There is no default value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,17 +90,10 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">The event handler delegate.</param>
-        <param name="genericTarget">The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> that uses the handler.</param>
-        <summary>Converts a method that handles the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" /> event to the <see cref="T:System.Windows.Controls.Primitives.DragCompletedEventHandler" /> type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation casts the `genericHandler` as a <xref:System.Windows.Controls.Primitives.DragCompletedEventHandler>.  
-  
- ]]></format>
-        </remarks>
+        <param name="genericHandler">To be added.</param>
+        <param name="genericTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalChange">
@@ -116,15 +103,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the vertical change in position of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> after the user drags the control with the mouse.</summary>
-        <value>The vertical difference between the point at which the user pressed the left mouse button and the point at which the user released the button during a drag operation of a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control. There is no default value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

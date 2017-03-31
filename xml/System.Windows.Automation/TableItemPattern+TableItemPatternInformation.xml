@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TableItemPattern.TableItemPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.TableItemPattern" /> object using its <see cref="System.Windows.Automation.TableItemPattern.Current%2A" /> or <see cref="System.Windows.Automation.TableItemPattern.Cached%2A" /> accessors.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,28 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ordinal number of the column containing the table cell or item.</summary>
-        <value>A zero-based ordinal number representing the column containing the table cell or item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-cs[UIATableItemPattern_snip#102](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#102)]  
-[!code-cs[UIATableItemPattern_snip#103](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#103)]
-[!code-vb[UIATableItemPattern_snip#103](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnSpan">
@@ -54,28 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of columns spanned by a table cell or item.</summary>
-        <value>The number of columns spanned. The default value is 1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-cs[UIATableItemPattern_snip#102](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#102)]  
-[!code-cs[UIATableItemPattern_snip#103](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#103)]
-[!code-vb[UIATableItemPattern_snip#103](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainingGrid">
@@ -85,28 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element that supports the GridPattern control pattern and represents the table cell or item container.</summary>
-        <value>A [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element that supports the GridPattern control pattern and represents the table cell or item container.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-cs[UIATableItemPattern_snip#102](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#102)]  
-[!code-cs[UIATableItemPattern_snip#103](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#103)]
-[!code-vb[UIATableItemPattern_snip#103](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetColumnHeaderItems">
@@ -116,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,21 +83,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves all the column headers associated with a table item or cell.</summary>
-        <returns>A collection of column header elements. The default is an empty array.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-cs[UIATableItemPattern_snip#102](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#102)]  
-[!code-cs[UIATableItemPattern_snip#103](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#103)]
-[!code-vb[UIATableItemPattern_snip#103](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRowHeaderItems">
@@ -148,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,21 +102,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves all the row headers associated with a table item or cell.</summary>
-        <returns>A collection of row header elements. The default is an empty array.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-cs[UIATableItemPattern_snip#102](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#102)]  
-[!code-cs[UIATableItemPattern_snip#103](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#103)]
-[!code-vb[UIATableItemPattern_snip#103](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -180,28 +114,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ordinal number of the row containing the table cell or item.</summary>
-        <value>A zero-based ordinal number representing the column containing the table cell or item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-cs[UIATableItemPattern_snip#102](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#102)]  
-[!code-cs[UIATableItemPattern_snip#103](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#103)]
-[!code-vb[UIATableItemPattern_snip#103](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RowSpan">
@@ -211,28 +132,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of rows spanned by a table cell or item.</summary>
-        <value>The number of columns spanned. The default value is 1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-cs[UIATableItemPattern_snip#102](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#102)]  
-[!code-cs[UIATableItemPattern_snip#103](~/add/codesnippet/csharp/UIATableItemPattern_snip/UIATableItemPattern_snippets.cs#103)]
-[!code-vb[UIATableItemPattern_snip#103](~/add/codesnippet/visualbasic/UIATableItemPattern_snip/UIATableItemPattern_snippets.vb#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

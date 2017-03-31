@@ -19,15 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Retrieves instances of a specific entity type by using a complex query.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Data source controls that derive from <xref:System.Web.UI.WebControls.IQueryableDataSource> expose the data source query that enables you to create LINQ queries declaratively. You can create new expressions by deriving from <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.QueryExpression" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +56,8 @@
         <ReturnType>System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of expressions in the query.</summary>
-        <value>The collection of expressions in the query.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,17 +77,10 @@
         <Parameter Name="source" Type="System.Linq.IQueryable" />
       </Parameters>
       <Docs>
-        <param name="source">The data source control to use.</param>
-        <summary>Resolves the expression by using the specified <see cref="T:System.Linq.IQueryable" /> data source control.</summary>
-        <returns>An instance of the data source control that was used to resolve the expression.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetQueryable method uses the specified <xref:System.Linq.IQueryable> object to resolve the expression.  
-  
- ]]></format>
-        </remarks>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -115,10 +101,10 @@
         <Parameter Name="dataSource" Type="System.Web.UI.WebControls.IQueryableDataSource" />
       </Parameters>
       <Docs>
-        <param name="owner">The control to use.</param>
-        <param name="context">The context to use.</param>
-        <param name="dataSource">The data source to use.</param>
-        <summary>Initializes the <see cref="T:System.Web.UI.WebControls.Expressions.QueryExpression" /> object by using the specified owner control, a <see cref="T:System.Web.HttpContext" /> instance, and <see cref="T:System.Web.UI.WebControls.IQueryableDataSource" /> object.</summary>
+        <param name="owner">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="dataSource">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

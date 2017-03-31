@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a find request sent by a client.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="criteria" Type="System.ServiceModel.Discovery.FindCriteria" />
       </Parameters>
       <Docs>
-        <param name="criteria">The find criteria.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.FindRequestContext" /> class using the specified <see cref="T:System.ServiceModel.Discovery.FindCriteria" />.</summary>
+        <param name="criteria">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
         <Parameter Name="matchingEndpoint" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
       </Parameters>
       <Docs>
-        <param name="matchingEndpoint">The endpoint discovery metadata to send back to the client.</param>
-        <summary>Enables the discovery service to send results back to the client as they are received.</summary>
+        <param name="matchingEndpoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <ReturnType>System.ServiceModel.Discovery.FindCriteria</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.FindCriteria" /> associated with the <see cref="T:System.ServiceModel.Discovery.FindRequestContext" /> sent by the client.</summary>
-        <value>The find criteria sent by the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
         <Parameter Name="matchingEndpoint" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
       </Parameters>
       <Docs>
-        <param name="matchingEndpoint">The endpoint discovery metadata to send back to the client.</param>
-        <summary>Called after the user adds an endpoint to the <see cref="T:System.ServiceModel.Discovery.FindRequestContext" /> by calling <see cref="System.ServiceModel.Discovery.FindRequestContext.AddMatchingEndpoint%2A" />.</summary>
+        <param name="matchingEndpoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

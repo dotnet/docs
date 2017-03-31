@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.Principal" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Encapsulates the account data and operations common to all security principals. This is the abstract base class from which all security principals are derived.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +31,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -49,15 +40,8 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> class. This constructor is called by derived-class constructors to initialize the base class and is not intended to be called directly from your code.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckDisposedOrDeleted">
@@ -67,7 +51,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -83,17 +66,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the <see cref="System.DirectoryServices.AccountManagement.Principal.Dispose%2A" /> or <see cref="System.DirectoryServices.AccountManagement.Principal.Delete%2A" /> methods have been called on this class. This method is called by classes that derive from this principal class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method checks whether the object has been disposed before it determines whether it has been deleted.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.DirectoryServices.AccountManagement.Principal.Dispose%2A" /> method has been called on this principal object.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.DirectoryServices.AccountManagement.Principal.Delete%2A" /> method has been called on this principal object.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -103,7 +77,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -115,8 +88,8 @@
         <ReturnType>System.DirectoryServices.AccountManagement.PrincipalContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a principal context that is associated with the principal.</summary>
-        <value>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that contains the context associated with this principal.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,7 +100,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -148,8 +120,8 @@
         <ReturnType>System.DirectoryServices.AccountManagement.PrincipalContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a principal context that is associated with this principal.</summary>
-        <value>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that contains the context associated with this principal.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,7 +132,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -172,16 +143,9 @@
         <ReturnType>System.DirectoryServices.AccountManagement.ContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the context type enumeraton value that specifies the type of principal context associated with this principal.</summary>
-        <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value that specifies the context type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The context type is set on the principal context object in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor. The value stored in this class is associated with the <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ContextType%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -191,7 +155,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -204,13 +167,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Deletes the principal object from the store.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The object that is not persisted in the store.  
-  
- The object has already been deleted.  
-  
- The target context type must match the context type of the current principal.</exception>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -220,7 +178,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -235,8 +192,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the description of the principal.</summary>
-        <value>The description text for this principal or null if there is no description.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,7 +204,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -262,8 +218,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the display name for this principal.</summary>
-        <value>The display name for this principal or null if there is no display name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +230,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -287,7 +242,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Disposes the current instance of the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,7 +253,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -310,8 +264,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the distinguished name (DN) for this principal.</summary>
-        <value>The DN for this principal or null if there is no DN.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,7 +276,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,10 +285,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that is compared to the current instance.</param>
-        <summary>Returns a Boolean value that specifies whether the supplied object is equal to the current object.</summary>
-        <returns>
-          <see langword="true" /> if the supplied object and current principal objects represent the same underlying principal in the store; otherwise <see langword="false" />.</returns>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,7 +298,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -361,9 +312,9 @@
         <Parameter Name="attribute" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="attribute">The name of the attribute to retrieve.</param>
-        <summary>Retrieves an attribute of an extended class object.</summary>
-        <returns>Returns an array of objects, or <see langword="null" /> if no attribute exists with that name. See [System.DirectoryServices.AccountManagement Principle Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) for an example on using this function.</returns>
+        <param name="attribute">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,7 +325,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -390,17 +340,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="attribute">The name of the attribute.</param>
-        <param name="value">The object that contains the value of the attribute.</param>
-        <summary>Sets the value of an attribute in an extended class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See [System.DirectoryServices.AccountManagement Principle Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) for an example of this function.  
-  
- ]]></format>
-        </remarks>
+        <param name="attribute">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindByIdentity">
@@ -410,7 +353,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -426,12 +368,11 @@
         <Parameter Name="identityValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="identityValue">The identity of the principal. This parameter can be any format that is contained in the <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration.</param>
-        <summary>Returns a principal object that matches the specified identity value.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that matches the specified identity value and type, or null if no matches are found.</returns>
+        <param name="context">To be added.</param>
+        <param name="identityValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.MultipleMatchesException">Multiple principal objects matching the current object were found.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindByIdentity">
@@ -441,7 +382,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -458,14 +398,12 @@
         <Parameter Name="identityValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the format of the <c>identityValue</c> parameter.</param>
-        <param name="identityValue">The identity of the principal. This parameter can be any format that is contained in the <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration.</param>
-        <summary>Returns a principal object that matches the specified identity type, and value. This version of the FindByIdentity method determines the format of the identity value.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that matches the specified identity value and type or null if no matches are found.</returns>
+        <param name="context">To be added.</param>
+        <param name="identityType">To be added.</param>
+        <param name="identityValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple principal objects matching the current object were found.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The identity type is not a valid <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindByIdentityWithType">
@@ -475,7 +413,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -495,11 +432,11 @@
         <Parameter Name="identityValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="principalType">The type of object for which results are returned. This must of type <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> or a type derived from the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> class.</param>
-        <param name="identityValue">The identity of the principal.</param>
-        <summary>Returns a principal object that matches the specified identity type, and value. This method is called by the implementation of the derived-class **FindByIdentity** method to restrict the search to the derived class type and is not intended to be called directly from your code.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that matches the specified identity value and type, or null if no matches are found.</returns>
+        <param name="context">To be added.</param>
+        <param name="principalType">To be added.</param>
+        <param name="identityValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -510,7 +447,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -531,12 +467,12 @@
         <Parameter Name="identityValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="principalType">The type of object for which results are returned. This must of type <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> or a type derived from the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> class.</param>
-        <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the type of the identity value.</param>
-        <param name="identityValue">The identity of the principal.</param>
-        <summary>Returns a principal object that matches the specified identity type, and value. This method is called by the implementation of the derived-class **FindByIdentity** method to restrict the search to the derived class type and is not intended to be called directly from your code.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that matches the specified identity value and type or null if no matches are found.</returns>
+        <param name="context">To be added.</param>
+        <param name="principalType">To be added.</param>
+        <param name="identityType">To be added.</param>
+        <param name="identityValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -547,7 +483,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -560,20 +495,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a collection of group objects that specify the groups of which the current principal is a member.</summary>
-        <returns>A collection of <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> objects that specify the groups of which the current principal is a member.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns only the groups of which the principal is directly a member; no recursive searches are performed. Recursive search results are available for user principal objects. For more information, see the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups%2A> method.  
-  
- The groups that are returned by this method may include groups from a different scope and store than the principal. For example, if the principal is an AD DS object that has a DN of "CN=SpecialGroups,DC=Fabrikam,DC=com, the returned set can contain groups that belong to the "CN=NormalGroups,DC=Fabrikam,DC=com.  
-  
- If the current principal is an AD DS principal, the returned groups include the principals primary group, as indicated by the "primaryGroupId" attribute on the AD DS object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetGroups">
@@ -583,7 +507,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -598,23 +521,10 @@
         <Parameter Name="contextToQuery" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
       </Parameters>
       <Docs>
-        <param name="contextToQuery">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the context against which the query is performed.  
-  
- When the context is located in another domain, the query is performed against the principal objects' representation in the specified context.</param>
-        <summary>Returns a collection of group objects that the principal is a member of and that exist in the store provided by the specified context parameter.</summary>
-        <returns>A collection of <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> objects that specify the groups of which the current principal is a member.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns only the groups of which the principal is directly a member; no recursive searches are performed. Recursive search results are available for user principal objects. For more information, see the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups%2A> method.  
-  
- The groups that are returned by this method may include groups from a different scope and store than the principal. For example, if the principal is an AD DS object that has a DN of "CN=SpecialGroups,DC=Fabrikam,DC=com, the returned set can contain groups that belong to the "CN=NormalGroups,DC=Fabrikam,DC=com.  
-  
- If the current principal is an AD DS principal, the returned groups include the principals primary group as indicated by the primary group ID attribute on the AD DS object.  
-  
- ]]></format>
-        </remarks>
+        <param name="contextToQuery">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -624,7 +534,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -632,8 +541,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the hash created from the contents of the principal object, suited for use in hashing algorithms and data structures like a hash table.</summary>
-        <returns>A hash code for the current principal.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -644,7 +553,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -657,10 +565,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the underlying <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that provides the contact data for the principal object.</summary>
-        <returns>The underlying <see cref="T:System.DirectoryServices.DirectoryEntry" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationExtension">The current principal has not been persisted and does not have an associated <see cref="T:System.DirectoryServices.DirectoryEntry" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetUnderlyingObjectType">
@@ -670,7 +577,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -683,8 +589,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the underlying object type.</summary>
-        <returns>The underlying object type. For AD DS, AD LDS, and SAM the type is <see cref="T:System.DirectoryServices.DirectoryEntry" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -695,7 +601,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -707,16 +612,9 @@
         <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the GUID associated with this principal.</summary>
-        <value>The Nullable <see cref="T:System.Guid" /> associated with this principal or null if there is no GUID.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property will always return null when the <xref:System.DirectoryServices.AccountManagement.Principal.ContextType%2A> property is set to Machine.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMemberOf">
@@ -726,7 +624,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -741,20 +638,10 @@
         <Parameter Name="group" Type="System.DirectoryServices.AccountManagement.GroupPrincipal" />
       </Parameters>
       <Docs>
-        <param name="group">The <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object for which principal membership is determined.</param>
-        <summary>Returns a Boolean value that specifies whether the principal is a member of the specified group.</summary>
-        <returns>
-          <see langword="true" /> if the principal is a member of the specified group; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the current principal is an AD DS principal, the returned groups include the principal's primary group, as indicated by the primary group ID attribute on the AD DS object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">The <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> specified in the group parameter could not be found.</exception>
-        <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">More than one matching <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> was found.</exception>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMemberOf">
@@ -764,7 +651,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -781,22 +667,12 @@
         <Parameter Name="identityValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="identityType">A <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the type of the identity value.</param>
-        <param name="identityValue">The identity of the group.</param>
-        <summary>Returns a Boolean value that specifies whether the principal is a member of the group specified by identity type and value.</summary>
-        <returns>
-          <see langword="true" /> if the principal is a member of the specified group; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the current principal is an AD DS principal, the returned groups include the principal's primary group, as indicated by the primary group ID attribute on the AD DS object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">The identity type or value does not correspond to a <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" />.</exception>
-        <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">More than one matching <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> was found.</exception>
+        <param name="context">To be added.</param>
+        <param name="identityType">To be added.</param>
+        <param name="identityValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -806,7 +682,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -821,11 +696,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of this principal.</summary>
-        <value>The name of the principal or null if the name attribute is not set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The application tried to set the name to null.</exception>
-        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
       </Docs>
     </Member>
     <Member MemberName="SamAccountName">
@@ -835,7 +708,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -850,11 +722,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the SAM account name for this principal.</summary>
-        <value>The SAM account name for this principal or null if no name has been set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The application tried to set the SAM account name to null.</exception>
-        <exception cref="T:System.InvalidOperationException">The application tried to set the SAM account name on a persisted principal.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -864,7 +734,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -877,14 +746,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the changes that were made on the principal object to the store. If this is a new principal object, this method inserts it into the store.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The principal has not yet been associated with a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object.  
-  
- This type of principal cannot be inserted in the store.</exception>
-        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving changes tnso the store, or updating the group membership in the store.</exception>
-        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalExistsException">The principal already occurs in the store.</exception>
-        <exception cref="T:System.DirectoryServices.AccountManagement.PasswordException">The password does not meet complexity requirements.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -894,7 +757,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -909,22 +771,9 @@
         <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <summary>Saves the changes that were made on the principal object to the store. If this is a new principal object, this method inserts it into the specified context. If the principal has already been persisted, it is moved from the original context to the specified context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified principal context differs from the existing context, the principal is moved to the specified context, and the principal object no longer is located in the old location. If the specified context is identical to the existing context, this method saves the updates that were made on the principal object to the store. The context type of the specified context must be the same type as the current context type. This method may not be called by using the computer context type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The principal has not yet been associated with a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object.  
-  
- This type of principal cannot be inserted in the store.</exception>
-        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving changes to the store, or updating the group membership in the store.</exception>
-        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalExistsException">The principal already occurs in the store.</exception>
-        <exception cref="T:System.DirectoryServices.AccountManagement.PasswordException">The password does not meet complexity requirements.</exception>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Sid">
@@ -934,7 +783,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -946,8 +794,8 @@
         <ReturnType>System.Security.Principal.SecurityIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Security ID (SID) of the principal.</summary>
-        <value>The <see cref="T:System.Security.Principal.SecurityIdentifier" /> for this principal or null if there is no SID.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -958,7 +806,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -970,8 +817,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the structural object class directory attribute.</summary>
-        <value>The structural object class directory attribute.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -982,7 +829,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -995,8 +841,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a user friendly string representation of the current principal object.</summary>
-        <returns>A string representation of the current <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1007,7 +853,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1022,17 +867,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the user principal name (UPN) associated with this principal.</summary>
-        <value>The UPN associated with this principal or null if no if the UPN has not been set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this property to null removes the existing UPN, if one exists.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

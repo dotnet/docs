@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleConditionReference" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> in the conditions collection and enables you to programmatically evaluate the condition.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,12 +33,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleConditionReference" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,23 +48,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to evaluate.</summary>
-        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to evaluate.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The actual condition definition behind a <xref:System.Workflow.Activities.Rules.RuleConditionReference> is of type <xref:System.Workflow.Activities.Rules.RuleExpressionCondition>, which is derived from <xref:System.Workflow.Activities.Rules.RuleCondition>. This defines the rule condition.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -76,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,11 +76,10 @@
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this condition.</param>
-        <param name="provider">The <see cref="T:System.IServiceProvider" /> for this condition evaluation.</param>
-        <summary>Evaluates the underlying <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</summary>
-        <returns>
-          <see langword="true" /> if the condition evaluates to <see langword="true" />; otherwise, <see langword="false" />.</returns>
+        <param name="activity">To be added.</param>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +90,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,7 +97,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets member properties based on the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> that <see cref="T:System.Workflow.Activities.Rules.RuleConditionReference" /> points to.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

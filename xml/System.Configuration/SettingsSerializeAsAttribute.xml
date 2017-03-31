@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsSerializeAsAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the serialization mechanism that the settings provider should use. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A settings provider often supports more than one of the .NET Framework standard serialization schemes. These schemes are outlined by the <xref:System.Configuration.SettingsSerializeAs> enumeration, and include plain text, XML, and binary serialization. In addition, a provider may optionally support a custom serialization scheme.  
-  
- With the SettingsSerializeAsAttribute, you can specify which serialization mechanism should be used for a given application settings class or property. This attribute is considered a request to the settings provider. It may be ignored or cause an error if the provider or the individual property type does not support the specified serialization scheme. If this attribute is not present, the provider will usually provide a default serialization mechanism, most commonly plain text.  
-  
- Although the settings provider may provide a way to dynamically change the serialization mechanism during run time, this is not a typical capability.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,29 +27,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="serializeAs" Type="System.Configuration.SettingsSerializeAs" />
       </Parameters>
       <Docs>
-        <param name="serializeAs">A <see cref="T:System.Configuration.SettingsSerializeAs" /> enumerated value that specifies the serialization scheme.</param>
-        <summary>Initializes an instance of the <see cref="T:System.Configuration.SettingsSerializeAsAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the settings provider or the type of the property to be converted does not support the serialization scheme specified by the `serializeAs` parameter, the operation may have one of the following results:  
-  
--   The settings provider may ignore the attribute and use its default serialization scheme.  
-  
--   The serialization process may fail without a response. The application settings property will not be persisted.  
-  
--   An exception may be raised during serialization.  
-  
- ]]></format>
-        </remarks>
+        <param name="serializeAs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SerializeAs">
@@ -71,23 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.SettingsSerializeAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Configuration.SettingsSerializeAs" /> enumeration value that specifies the serialization scheme.</summary>
-        <value>A <see cref="T:System.Configuration.SettingsSerializeAs" /> enumerated value that specifies the serialization scheme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is set in the <xref:System.Configuration.SettingsSerializeAsAttribute.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.VisualTarget" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides functionality for connecting one visual tree to another visual tree across thread boundaries.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="hostVisual" Type="System.Windows.Media.HostVisual" />
       </Parameters>
       <Docs>
-        <param name="hostVisual">A value of type <see cref="T:System.Windows.Media.HostVisual" />.</param>
-        <summary>Constructor that creates a new <see cref="T:System.Windows.Media.VisualTarget" />.</summary>
+        <param name="hostVisual">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -55,7 +52,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cleans up the state associated with the <see cref="T:System.Windows.Interop.HwndTarget" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Matrix</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a matrix that can be used to transform coordinates from the rendering destination device to the <see cref="T:System.Windows.Media.VisualTarget" />.</summary>
-        <value>Gets a value of type <see cref="T:System.Windows.Media.Matrix" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,15 +81,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Matrix</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a matrix that can be used to transform coordinates from the <see cref="T:System.Windows.Media.VisualTarget" /> to the rendering destination device.</summary>
-        <value>Gets a value of type <see cref="T:System.Windows.Media.Matrix" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

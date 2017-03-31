@@ -4,44 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaInclude" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Xml.Schema.XmlSchemaExternal</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the <see langword="include" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class is used to include declarations and definitions from an external schema. The included declarations and definitions are then available for processing in the containing schema.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The included schema document must meet one of the following conditions:  
-  
- The included schema must have the same target namespace as the containing schema document.  
-  
- OR  
-  
- The included schema cannot have a specified `targetNamespace`; the `targetNamespace` attribute must be null.  
-  
- `XmlSchemaInclude` adds all the schema components from included schemas that have the same target namespace (or no specified target namespace) to the containing schema.  
-  
-   
-  
-## Examples  
- The following example creates the `include` element.  
-  
- [!code-vb[Classic Webdata XmlSchemaInclude Example#1](~/add/codesnippet/visualbasic/t-system.xml.schema.xmls_37_1.vb)]
- [!code-cs[Classic Webdata XmlSchemaInclude Example#1](~/add/codesnippet/csharp/t-system.xml.schema.xmls_37_1.cs)]
- [!code-cpp[Classic Webdata XmlSchemaInclude Example#1](~/add/codesnippet/cpp/t-system.xml.schema.xmls_37_1.cpp)]  
-  
- The following XML is generated for this code example.  
-  
- [!code-xml[Classic Webdata XmlSchemaInclude Example#2](~/add/codesnippet/xml/t-system.xml.schema.xmls_37_2.xsd)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,12 +27,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaInclude" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +47,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -79,8 +63,8 @@
         <ReturnType>System.Xml.Schema.XmlSchemaAnnotation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see langword="annotation" /> property.</summary>
-        <value>The annotation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

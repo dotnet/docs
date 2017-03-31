@@ -4,8 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,23 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A BuildPropertyGroup object can represent a  element in the project, or a virtual collection of properties, such as global properties or environment variable properties.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, BuildPropertyGroup, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-cs[msbuild_AddNewProperty#1](~/add/codesnippet/csharp/AddNewProperty/Program.cs#1)]
- [!code-vb[msbuild_AddNewProperty#1](~/add/codesnippet/visualbasic/AddNewProperty/Module1.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,13 +31,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,23 +46,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parentProject" Type="Microsoft.Build.BuildEngine.Project" />
       </Parameters>
       <Docs>
-        <param name="parentProject">The name of the Project in which to add the new PropertyGroup.</param>
-        <summary>Initializes a new PropertyGroup element in the specified project.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See [PropertyGroup Element (MSBuild)](../Topic/PropertyGroup%20Element%20\(MSBuild\).md) for more information on property groups.  
-  
- ]]></format>
-        </remarks>
+        <param name="parentProject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNewProperty">
@@ -91,8 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,21 +74,11 @@
         <Parameter Name="propertyValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</param>
-        <param name="propertyValue">The <see cref="Microsoft.Build.BuildEngine.BuildProperty.Value%2A" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</param>
-        <summary>Adds a new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> with the specified <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" /> and <see cref="Microsoft.Build.BuildEngine.BuildProperty.Value%2A" /> to the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
-        <returns>The new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-cs[msbuild_AddNewProperty#1](~/add/codesnippet/csharp/AddNewProperty/Program.cs#1)]
- [!code-vb[msbuild_AddNewProperty#1](~/add/codesnippet/visualbasic/AddNewProperty/Module1.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <param name="propertyName">To be added.</param>
+        <param name="propertyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNewProperty">
@@ -127,8 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,12 +99,11 @@
         <Parameter Name="treatPropertyValueAsLiteral" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</param>
-        <param name="propertyValue">The <see cref="Microsoft.Build.BuildEngine.BuildProperty.Value%2A" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</param>
-        <param name="treatPropertyValueAsLiteral">
-          <see langword="true" /> to treat the <c>propertyValue</c> parameter as a literal value; otherwise, <see langword="false" />.</param>
-        <summary>Adds a new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> with the specified <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" /> and <see cref="Microsoft.Build.BuildEngine.BuildProperty.Value%2A" /> to the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
-        <returns>The new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</returns>
+        <param name="propertyName">To be added.</param>
+        <param name="propertyValue">To be added.</param>
+        <param name="treatPropertyValueAsLiteral">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,7 +121,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the <see cref="Microsoft.Build.BuildEngine.BuildPropertyGroup.Condition%2A" /> property value and all <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> objects from the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +132,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,22 +141,10 @@
         <Parameter Name="deepClone" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="deepClone">
-          <see langword="true" /> to create a deep copy of the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />; otherwise, <see langword="false" />.</param>
-        <summary>Creates a deep or shallow copy of the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
-        <returns>A copy of the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A shallow copy of a <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> references the same property group as the original. Modifications a shallow copy will be reflected in both copies.  
-  
- A deep copy of a <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> creates a new XML element to reference so that both copies of the <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> can be independently modified.  
-  
- If the <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> corresponds directly to a  element in the project (rather than corresponding to a collection of virtual properties, such as environment variable and global properties), only deep copies are allowed.  
-  
- ]]></format>
-        </remarks>
+        <param name="deepClone">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Condition">
@@ -212,16 +154,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <c>Condition</c> attribute value of the property group.</summary>
-        <value>The <c>Condition</c> attribute value of the property group.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,24 +172,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the number of <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> objects in the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
-        <value>An integer value representing the number of <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> objects in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> object can represent a  element in the project, or a virtual collection of properties, such as global properties or environment variable properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -259,8 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,24 +197,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an enumerator that iterates through the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the entire <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method allows the caller to use the `foreach` statement of the C# language (`for each` in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]) to iterate through the individual <xref:Microsoft.Build.BuildEngine.BuildProperty> objects in the <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
-  
- [!code-vb[msbuild_ListItemsAndProperties#1](~/add/codesnippet/visualbasic/ListItemAndPropertiesVB/Module1.vb#1)]
- [!code-cs[msbuild_ListItemsAndProperties#1](~/add/codesnippet/csharp/ListItemAndPropertiesCS/Program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsImported">
@@ -295,17 +209,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the property group was imported into the project.</summary>
-        <value>
-          <see langword="true" /> if the property group was imported into the project; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,8 +227,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,9 +236,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" /> value of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> to get or set.</param>
-        <summary>Gets or sets a <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> object in this <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
-        <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> object in this <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</value>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,8 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -351,19 +258,9 @@
         <Parameter Name="property" Type="Microsoft.Build.BuildEngine.BuildProperty" />
       </Parameters>
       <Docs>
-        <param name="property">The <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> to remove.</param>
-        <summary>Removes the specified <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> from the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-cs[msbuild_AddNewProperty#1](~/add/codesnippet/csharp/AddNewProperty/Program.cs#1)]
- [!code-vb[msbuild_AddNewProperty#1](~/add/codesnippet/visualbasic/AddNewProperty/Module1.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <param name="property">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveProperty">
@@ -373,8 +270,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -384,8 +279,8 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" /> value of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> to remove.</param>
-        <summary>Removes the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> with the specified <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" /> from the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,7 +291,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -406,8 +300,8 @@
         <Parameter Name="condition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="condition">The condition to add to the imported PropertyGroup.</param>
-        <summary>Sets the condition for imported property groups. Changes are not persisted.</summary>
+        <param name="condition">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,8 +312,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -430,9 +322,9 @@
         <Parameter Name="propertyValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" /> property value of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> to set.</param>
-        <param name="propertyValue">The <see cref="Microsoft.Build.BuildEngine.BuildProperty.Value%2A" /> property value to assign the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</param>
-        <summary>Sets the <see cref="Microsoft.Build.BuildEngine.BuildProperty.Value%2A" /> of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> with the specified <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" />.</summary>
+        <param name="propertyName">To be added.</param>
+        <param name="propertyValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -443,8 +335,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -456,11 +346,10 @@
         <Parameter Name="treatPropertyValueAsLiteral" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" /> property value of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> to set.</param>
-        <param name="propertyValue">The <see cref="Microsoft.Build.BuildEngine.BuildProperty.Value%2A" /> property value to assign the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</param>
-        <param name="treatPropertyValueAsLiteral">
-          <see langword="true" /> to treat the <c>propertyValue</c> parameter as a literal value; otherwise, <see langword="false" />.</param>
-        <summary>Sets the <see cref="Microsoft.Build.BuildEngine.BuildProperty.Value%2A" /> of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> with the specified <see cref="Microsoft.Build.BuildEngine.BuildProperty.Name%2A" />.</summary>
+        <param name="propertyName">To be added.</param>
+        <param name="propertyValue">To be added.</param>
+        <param name="treatPropertyValueAsLiteral">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

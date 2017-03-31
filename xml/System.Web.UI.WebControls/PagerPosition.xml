@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerPosition" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the position of the pager for accessing various pages within a paginated control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Controls that support pagination often provide a set of controls called the pager that allows the user to navigate the pages within the control. The PagerPosition enumeration represents the different locations where the pager can be displayed.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the PagerPosition enumeration to specify that the pager should be displayed at the bottom of a <xref:System.Web.UI.WebControls.FormView> control.  
-  
- [!code-cs[FormViewAllowPaging#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_82_1.aspx)]
- [!code-vb[FormViewAllowPaging#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_82_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A pager positioned at the bottom of the control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A pager positioned at the top of the control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopAndBottom">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Pagers positioned at both the top and the bottom of the control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -3,8 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventWaitHandleRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.EventWaitHandleRights" />
   <AssemblyInfo>
+    <AssemblyName>System.Threading.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,29 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the access control rights that can be applied to named system event objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the EventWaitHandleRights enumeration to specify access control rights when you create <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. To apply access rights to a named system event, first add <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects to an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, then attach the <xref:System.Security.AccessControl.EventWaitHandleSecurity> object to the named system event using the <xref:System.Threading.EventWaitHandle.%23ctor%28System.Boolean%2CSystem.Threading.EventResetMode%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.EventWaitHandleSecurity%29?displayProperty=fullName> constructor or the <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName> method.  
-  
-> [!NOTE]
->  Security on synchronization objects is not supported for Windows 98 or Windows Millennium Edition.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of EventWaitHandleRights values when creating and using <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType?displayProperty=fullName>rule.  
-  
-> [!NOTE]
->  This example does not attach the security object to an <xref:System.Threading.EventWaitHandle> object; see <xref:System.Security.AccessControl.EventWaitHandleSecurity>, <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=fullName> method, and <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName>.  
-  
- [!code-cs[System.Security.AccessControl.EventWaitHandleSecurity.AddAccessRule#1](~/add/codesnippet/csharp/t-system.security.access_13_1.cs)]
- [!code-vb[System.Security.AccessControl.EventWaitHandleSecurity.AddAccessRule#1](~/add/codesnippet/visualbasic/t-system.security.access_13_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ChangePermissions">
@@ -47,15 +30,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.ChangePermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.EventWaitHandleRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to change the security and audit rules associated with a named event.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -64,15 +51,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.EventWaitHandleRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to delete a named event.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullControl">
@@ -81,15 +72,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.FullControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.EventWaitHandleRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to exert full control over a named event, and to modify its access rules and audit rules.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Modify">
@@ -98,15 +93,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.Modify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.EventWaitHandleRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to set or reset the signaled state of a named event.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadPermissions">
@@ -115,15 +114,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.ReadPermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.EventWaitHandleRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to open and copy the access rules and audit rules for a named event.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Synchronize">
@@ -132,15 +135,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.EventWaitHandleRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to wait on a named event.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TakeOwnership">
@@ -149,15 +156,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.TakeOwnership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.EventWaitHandleRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to change the owner of a named event.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

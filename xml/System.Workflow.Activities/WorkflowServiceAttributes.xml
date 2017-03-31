@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowServiceAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,31 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Builds the service behavior for the workflow service that it decorates.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- The WorkflowServiceAttributes class is used to define service attributes for a <xref:System.Workflow.Activities.ReceiveActivity> activity.  
-  
- Some of the attributes have default values, as shown below.  
-  
-|||  
-|-|-|  
-|Attribute|Default Value|  
-|AddressFilterMode|Exact|  
-|IgnoreExtensionDataObject|False|  
-|IncludeExceptionDetailInFault|False|  
-|MaxItemsInObjectGraph|2147483647|  
-|UseSynchronizationContext|True|  
-|ValidateMustUnderstand|True|  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,28 +36,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WorkflowServiceAttributes" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is typically called when the parent <xref:System.Workflow.Activities.ReceiveActivity> activity is created.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.WorkflowServiceAttributes> class.  
-  
- [!code-cs[WorkflowServiceAttributes#0](~/add/codesnippet/csharp/workflowserviceattributes/snippets.cs#0)]
- [!code-vb[WorkflowServiceAttributes#0](~/add/codesnippet/visualbasic/workflowserviceattributes/snippets.vb#0)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddressFilterMode">
@@ -91,7 +51,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -103,24 +62,9 @@
         <ReturnType>System.ServiceModel.AddressFilterMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.AddressFilterMode" /> enumeration that is used by the dispatcher to route incoming messages to the correct endpoint.</summary>
-        <value>An <see cref="T:System.ServiceModel.AddressFilterMode" /> enumeration value that is used by the dispatcher to route incoming messages to the correct endpoint.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `AddressFilterMode.Exact`.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to access the `AddressFilterMode` property.  
-  
- [!code-cs[WorkflowServiceAttributes#1](~/add/codesnippet/csharp/workflowserviceattributes/snippets.cs#1)]
- [!code-vb[WorkflowServiceAttributes#1](~/add/codesnippet/visualbasic/workflowserviceattributes/snippets.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfigurationName">
@@ -130,7 +74,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -142,24 +85,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value used to locate the service element in an application configuration file.</summary>
-        <value>The value to locate in the configuration file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is null.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to access the `ConfigurationName` property.  
-  
- [!code-cs[WorkflowServiceAttributes#2](~/add/codesnippet/csharp/workflowserviceattributes/snippets.cs#2)]
- [!code-vb[WorkflowServiceAttributes#2](~/add/codesnippet/visualbasic/workflowserviceattributes/snippets.vb#2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreExtensionDataObject">
@@ -169,7 +97,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -181,25 +108,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether to send unknown serialization data onto the wire.</summary>
-        <value>
-          <see langword="true" /> if unknown serialization data is never sent; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `false`.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to access the `IgnoreExtensionDataObject` property.  
-  
- [!code-cs[WorkflowServiceAttributes#3](~/add/codesnippet/csharp/workflowserviceattributes/snippets.cs#3)]
- [!code-vb[WorkflowServiceAttributes#3](~/add/codesnippet/visualbasic/workflowserviceattributes/snippets.vb#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeExceptionDetailInFaults">
@@ -209,7 +120,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -221,25 +131,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies that general unhandled execution exceptions are to be converted into a <see cref="T:System.ServiceModel.FaultException" /> of type <see cref="T:System.ServiceModel.ExceptionDetail" /> and sent as a fault message. Set this to <see langword="true" /> only during development to troubleshoot a service.</summary>
-        <value>
-          <see langword="true" /> if unhandled exceptions are to be returned as SOAP faults; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `false`.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to access the `IncludeExceptionDetailInFaults` property.  
-  
- [!code-cs[WorkflowServiceAttributes#4](~/add/codesnippet/csharp/workflowserviceattributes/snippets.cs#4)]
- [!code-vb[WorkflowServiceAttributes#4](~/add/codesnippet/visualbasic/workflowserviceattributes/snippets.vb#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxItemsInObjectGraph">
@@ -249,7 +143,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -261,24 +154,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of items allowed in a serialized object.</summary>
-        <value>The maximum number of items allowed in an object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is <xref:System.Int32>.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to access the `MaxItemsInObjectGraph` property.  
-  
- [!code-cs[WorkflowServiceAttributes#5](~/add/codesnippet/csharp/workflowserviceattributes/snippets.cs#5)]
- [!code-vb[WorkflowServiceAttributes#5](~/add/codesnippet/visualbasic/workflowserviceattributes/snippets.vb#5)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -288,7 +166,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -300,24 +177,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the name attribute in the service element in Web Services Description Language (WSDL).</summary>
-        <value>The value of the Name property.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property corresponds to the <`wsdl:service`> element when exported.  The default value is null.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to access the `Name` property.  
-  
- [!code-cs[WorkflowServiceAttributes#6](~/add/codesnippet/csharp/workflowserviceattributes/snippets.cs#6)]
- [!code-vb[WorkflowServiceAttributes#6](~/add/codesnippet/visualbasic/workflowserviceattributes/snippets.vb#6)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -327,7 +189,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -339,24 +200,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the target namespace for the service in Web Services Description Language (WSDL).</summary>
-        <value>The value of the Namespace property.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This value corresponds to the value of the `targetNamespace` attribute for the <`wsdl:definitions`> element that contains the <`wsdl:service`> element when exported.  The default value is null.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to access the `Namespace` property.  
-  
- [!code-cs[WorkflowServiceAttributes#7](~/add/codesnippet/csharp/workflowserviceattributes/snippets.cs#7)]
- [!code-vb[WorkflowServiceAttributes#7](~/add/codesnippet/visualbasic/workflowserviceattributes/snippets.vb#7)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseSynchronizationContext">
@@ -366,7 +212,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -378,25 +223,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether to use the current synchronization context to choose the thread of execution.</summary>
-        <value>
-          <see langword="true" /> if all calls to the service must run on the thread specified by the <see cref="T:System.Threading.SynchronizationContext" />; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `true`.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to access the `UseSynchronizationContext` property.  
-  
- [!code-cs[WorkflowServiceAttributes#8](~/add/codesnippet/csharp/workflowserviceattributes/snippets.cs#8)]
- [!code-vb[WorkflowServiceAttributes#8](~/add/codesnippet/visualbasic/workflowserviceattributes/snippets.vb#8)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateMustUnderstand">
@@ -406,7 +235,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -418,25 +246,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the system or the application enforces SOAP <see langword="MustUnderstand" /> header processing.</summary>
-        <value>
-          <see langword="true" /> if the system is to perform SOAP header <see langword="MustUnderstand" /> processing; otherwise <see langword="false" />, which indicates that the application performs this processing.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `true`.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to access the `ValidateMustUnderstand` property.  
-  
- [!code-cs[WorkflowServiceAttributes#9](~/add/codesnippet/csharp/workflowserviceattributes/snippets.cs#9)]
- [!code-vb[WorkflowServiceAttributes#9](~/add/codesnippet/visualbasic/workflowserviceattributes/snippets.vb#9)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Stores <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> objects in a strongly typed collection.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Windows.Forms.Design.Behavior.Glyph[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of type <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> to populate the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" /> class with the given <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> array.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,15 +55,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Windows.Forms.Design.Behavior.GlyphCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" /> to populate the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" /> class based on another <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,9 +82,9 @@
         <Parameter Name="value" Type="System.Windows.Forms.Design.Behavior.Glyph" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> to add to the end of the collection.</param>
-        <summary>Adds a <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> with the specified value to the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />.</summary>
-        <returns>The index at which the new element was inserted.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,8 +104,8 @@
         <Parameter Name="value" Type="System.Windows.Forms.Design.Behavior.Glyph[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of type <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> to copy to the end of the collection.</param>
-        <summary>Copies the elements of an array to the end of the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,8 +125,8 @@
         <Parameter Name="value" Type="System.Windows.Forms.Design.Behavior.GlyphCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" /> to add to the end of the collection.</param>
-        <summary>Adds the contents of another <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" /> to the end of the collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,10 +146,9 @@
         <Parameter Name="value" Type="System.Windows.Forms.Design.Behavior.Glyph" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> to locate.</param>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" /> contains the specified <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is contained in the collection; otherwise, <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,9 +169,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />.</param>
-        <param name="index">The index in <c>array</c> where copying begins.</param>
-        <summary>Copies the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" /> values to a one-dimensional <see cref="T:System.Array" /> at the specified index.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,7 +182,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,9 +191,9 @@
         <Parameter Name="value" Type="System.Windows.Forms.Design.Behavior.Glyph" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> to locate.</param>
-        <summary>Returns the index of a <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> in the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />.</summary>
-        <returns>The index of the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> of <paramref name="value" /> in the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />, if found; otherwise, -1.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,7 +204,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,9 +214,9 @@
         <Parameter Name="value" Type="System.Windows.Forms.Design.Behavior.Glyph" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index where <c>value</c> should be inserted.</param>
-        <param name="value">The <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> to insert.</param>
-        <summary>Inserts a <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> into the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" /> at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,7 +227,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -249,9 +236,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element.</param>
-        <summary>Gets or sets the element at the specified index.</summary>
-        <value>The <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> element at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,7 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -272,8 +258,8 @@
         <Parameter Name="value" Type="System.Windows.Forms.Design.Behavior.Glyph" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> to remove from the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />.</param>
-        <summary>Removes a specific <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> from the <see cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

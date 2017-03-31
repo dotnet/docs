@@ -4,29 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FigureHorizontalAnchor" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes a position reference for a figure in a horizontal direction.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Figure.HorizontalOffset%2A> attribute of a <xref:System.Windows.Documents.Figure> element.  
-  
- [!code-xml[FloaterFigureSnippets#_FigurePropsXAML](~/add/codesnippet/xaml/FloaterFigureSnippets/Window1.xaml#_figurepropsxaml)]  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Figure.HorizontalOffset%2A> property programmatically.  
-  
- [!code-cs[FloaterFigureSnippets#_FigureProps](~/add/codesnippet/csharp/FloaterFigureSnippets/Window1.xaml.cs#_figureprops)]
- [!code-vb[FloaterFigureSnippets#_FigureProps](~/add/codesnippet/visualbasic/floaterfiguresnippets/window1.xaml.vb#_figureprops)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ColumnCenter">
@@ -36,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Anchor the figure in the center of the column content area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColumnLeft">
@@ -53,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Anchor the figure to the left of the column content area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColumnRight">
@@ -70,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Anchor the figure to the right of the column content area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentCenter">
@@ -87,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Anchor the figure in the center of the page content area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentLeft">
@@ -104,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Anchor the figure to the left of the page content area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentRight">
@@ -121,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Anchor the figure to the right of the page content area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageCenter">
@@ -138,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Anchor the figure in the center of the page area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageLeft">
@@ -155,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Anchor the figure to the left of the page area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageRight">
@@ -172,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Anchor the figure to the right of the page area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

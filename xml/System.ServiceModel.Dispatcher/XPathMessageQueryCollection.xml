@@ -11,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.ServiceModel.XPathMessageQuery" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about message queries, see the <xref:System.ServiceModel.Dispatcher.MessageQuery> and <xref:System.ServiceModel.Dispatcher.MessageQueryCollection> classes.  
-  
-   
-  
-## Examples  
- The following example creates a message and XPath message queries. The queries are evaluated by the <xref:System.ServiceModel.XPathMessageQuery> objects contained in an XPathMessageQueryCollection object. The results of each query are tested using the <xref:System.ServiceModel.Dispatcher.XPathResult.ResultType%2A> property of the <xref:System.ServiceModel.Dispatcher.XPathResult> class.  
-  
- [!code-vb[XPathMessageQuery#0](~/add/codesnippet/visualbasic/t-system.servicemodel.di_15_1.vb)]
- [!code-cs[XPathMessageQuery#0](~/add/codesnippet/csharp/t-system.servicemodel.di_15_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageQueryCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,13 +49,10 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">The type of the object to return.</typeparam>
-        <param name="message">The message to query.</param>
-        <summary>Runs a query against the message. The body cannot be queried.</summary>
-        <returns>
-          <see cref="System.Collections.Generic.IEnumerable%601" />  
-  
- An enumerable collection of results that satisfy the query.</returns>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,13 +75,10 @@
         <Parameter Name="buffer" Type="System.ServiceModel.Channels.MessageBuffer" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">The type of result to return.</typeparam>
-        <param name="buffer">The message to query.</param>
-        <summary>Runs an XPath query against the message.</summary>
-        <returns>
-          <see cref="System.Collections.Generic.IEnumerable%601" />  
-  
- An enumerable collection of results that satisfy the query.</returns>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +99,9 @@
         <Parameter Name="item" Type="System.ServiceModel.Dispatcher.MessageQuery" />
       </Parameters>
       <Docs>
-        <param name="index">The location in the collection to insert the item.</param>
-        <param name="item">The XPath query object to insert.</param>
-        <summary>Inserts the XPath query object into the collection at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +121,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The location from which to remove the item.</param>
-        <summary>Removes the item from the collection at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +143,9 @@
         <Parameter Name="item" Type="System.ServiceModel.Dispatcher.MessageQuery" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to replace.</param>
-        <param name="item">The new value for the element at the specified index.</param>
-        <summary>Replaces the element at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,36 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestFilterBehavior" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the return behavior of a hit test in a hit test filter callback method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The return value of the hit test filter callback is a HitTestFilterBehavior, which determines what type of action should be taken when processing the visual tree for hit testing. For example, if your hit test filter callback return the value, ContinueSkipSelfAndChildren, you can remove the current visual object and its descendants from the hit test results evaluation.  
-  
-> [!NOTE]
->  Pruning the visual tree of objects decreases the amount of processing that is required during the hit test results evaluation pass.  
-  
- ![Pruning a visual tree using a hit test filter](~/add/media/filteredvisualtree-01.png "Pruning a visual tree using a hit test filter")  
-Pruning a visual tree  
-  
-   
-  
-## Examples  
- The following example shows how to return a HitTestFilterBehavior value from a hit test filter callback method. In this case, the filter skips labels and their descendants and hit tests everything else.  
-  
- [!code-cs[HitTestingOverview#106](~/add/codesnippet/csharp/HitTestingOverview/Window1.xaml.cs#106)]
- [!code-vb[HitTestingOverview#106](~/add/codesnippet/visualbasic/hittestingoverview/window1.xaml.vb#106)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Continue">
@@ -43,14 +21,13 @@ Pruning a visual tree
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Hit test against the current <see cref="T:System.Windows.Media.Visual" /> and its descendants.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContinueSkipChildren">
@@ -60,14 +37,13 @@ Pruning a visual tree
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Hit test against the current <see cref="T:System.Windows.Media.Visual" />, but not its descendants.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContinueSkipSelf">
@@ -77,14 +53,13 @@ Pruning a visual tree
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Do not hit test against the current <see cref="T:System.Windows.Media.Visual" />, but hit test against its descendants.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContinueSkipSelfAndChildren">
@@ -94,14 +69,13 @@ Pruning a visual tree
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Do not hit test against the current <see cref="T:System.Windows.Media.Visual" /> or its descendants.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -111,14 +85,13 @@ Pruning a visual tree
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Stop hit testing at the current <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

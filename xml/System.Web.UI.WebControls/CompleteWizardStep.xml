@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CompleteWizardStep" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the template of the final step for creating a user account with the <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CompleteWizardStep class is derived from <xref:System.Web.UI.WebControls.TemplatedWizardStep> and used by the <xref:System.Web.UI.WebControls.CreateUserWizard> control. By default the CompleteWizardStep step is displayed after the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step. The CompleteWizardStep step is a required step of the <xref:System.Web.UI.WebControls.CreateUserWizard> control.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CompleteWizardStep" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +42,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -72,22 +62,9 @@
         <ReturnType>System.Web.UI.WebControls.WizardStepType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of user interface (UI) to display for the <see cref="T:System.Web.UI.WebControls.CompleteWizardStep" /> page of a <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.WizardStepType" /> enumeration value for the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> enumeration.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StepType property specifies the type of navigation UI to display for the final user account creation step (the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step) of the <xref:System.Web.UI.WebControls.CreateUserWizard> control.  
-  
-> [!CAUTION]
->  The StepType property overrides the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A?displayProperty=fullName> property to ensure that <xref:System.Web.UI.WebControls.CompleteWizardStep> is always set to the <xref:System.Web.UI.WebControls.WizardStepType> value of the <xref:System.Web.UI.WebControls.WizardStepType> enumeration. Attempting to set the StepType property to a different value will result in an <xref:System.InvalidOperationException>.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to set the StepType property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -97,7 +74,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -109,16 +85,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the title to display for the final user account creation step of the <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control.</summary>
-        <value>The title to use for the final user account creation step of the <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control. The default value is "Complete".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

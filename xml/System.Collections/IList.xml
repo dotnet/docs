@@ -3,9 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IList implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.IList" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -18,25 +29,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a non-generic collection of objects that can be individually accessed by index.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IList is a descendant of the <xref:System.Collections.ICollection> interface and is the base interface of all non-generic lists. IList implementations fall into three categories: read-only, fixed-size, and variable-size. A read-only IList cannot be modified. A fixed-size IList does not allow the addition or removal of elements, but it allows the modification of existing elements. A variable-size IList allows the addition, removal, and modification of elements.  
-  
- For the generic version of this interface, see <xref:System.Collections.Generic.IList%601?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following example demonstrates the implementation of the IList interface to create a simple list, fixed-size list.  
-  
- [!code-cs[System.Collections.IList_Implementation#01](~/add/codesnippet/csharp/t-system.collections.ilist_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#01](~/add/codesnippet/visualbasic/t-system.collections.ilist_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -45,9 +39,20 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IList.Add(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -56,25 +61,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to add to the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Adds an item to the <see cref="T:System.Collections.IList" />.</summary>
-        <returns>The position into which the new element was inserted, or -1 to indicate that the item was not inserted into the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
-  
- [!code-cs[System.Collections.IList_Implementation#02](~/add/codesnippet/csharp/m-system.collections.ili_3_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#02](~/add/codesnippet/visualbasic/m-system.collections.ili_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.IList" /> is read-only.  
-  
- -or-  
-  
- The <see cref="T:System.Collections.IList" /> has a fixed size.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -83,33 +73,28 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IList.Clear" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from the <see cref="T:System.Collections.IList" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implementations of this method can vary in how they handle the <xref:System.Collections.ICollection.Count%2A?displayProperty=fullName> and the capacity of a collection. Typically, the count is set to zero, and references to other objects from elements of the collection are also released. The capacity can be set to zero or a default value, or it can remain unchanged.  
-  
-   
-  
-## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
-  
- [!code-cs[System.Collections.IList_Implementation#02](~/add/codesnippet/csharp/m-system.collections.ili_5_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#02](~/add/codesnippet/visualbasic/m-system.collections.ili_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.IList" /> is read-only.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -118,9 +103,20 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IList.Contains(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -129,26 +125,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to locate in the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Determines whether the <see cref="T:System.Collections.IList" /> contains a specific value.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
-  
-   
-  
-## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
-  
- [!code-cs[System.Collections.IList_Implementation#02](~/add/codesnippet/csharp/m-system.collections.ili_4_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#02](~/add/codesnippet/visualbasic/m-system.collections.ili_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -157,9 +137,20 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IList.IndexOf(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -168,25 +159,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to locate in the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Determines the index of a specific item in the <see cref="T:System.Collections.IList" />.</summary>
-        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
-  
-   
-  
-## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
-  
- [!code-cs[System.Collections.IList_Implementation#02](~/add/codesnippet/csharp/m-system.collections.ili_6_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#02](~/add/codesnippet/visualbasic/m-system.collections.ili_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -195,9 +171,20 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -207,36 +194,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
-        <param name="value">The object to insert into the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Inserts an item to the <see cref="T:System.Collections.IList" /> at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `index` equals the number of items in the <xref:System.Collections.IList>, then `value` is appended to the end.  
-  
- In collections of contiguous elements, such as lists, the elements that follow the insertion point move down to accommodate the new element. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
-  
-   
-  
-## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
-  
- [!code-cs[System.Collections.IList_Implementation#02](~/add/codesnippet/csharp/m-system.collections.ili_2_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#02](~/add/codesnippet/visualbasic/m-system.collections.ili_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.IList" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.IList" /> is read-only.  
-  
- -or-  
-  
- The <see cref="T:System.Collections.IList" /> has a fixed size.</exception>
-        <exception cref="T:System.NullReferenceException">
-          <paramref name="value" /> is null reference in the <see cref="T:System.Collections.IList" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -245,33 +206,28 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> has a fixed size.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but it allows the modification of existing elements.  
-  
-   
-  
-## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
-  
- [!code-cs[System.Collections.IList_Implementation#02](~/add/codesnippet/csharp/p-system.collections.ili_1_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#02](~/add/codesnippet/visualbasic/p-system.collections.ili_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -280,33 +236,28 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> is read-only.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> is read-only; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
-   
-  
-## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
-  
- [!code-cs[System.Collections.IList_Implementation#02](~/add/codesnippet/csharp/p-system.collections.ili_0_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#02](~/add/codesnippet/visualbasic/p-system.collections.ili_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -315,9 +266,20 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.IList.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -326,30 +288,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get or set.</param>
-        <summary>Gets or sets the element at the specified index.</summary>
-        <value>The element at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
-  
- The C# language uses the  keyword to define the indexers instead of implementing the Item property. Visual Basic implements Item as a default property, which provides the same indexing functionality.  
-  
-   
-  
-## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
-  
- [!code-cs[System.Collections.IList_Implementation#02](~/add/codesnippet/csharp/p-system.collections.ili_2_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#02](~/add/codesnippet/visualbasic/p-system.collections.ili_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.IList" />.</exception>
-        <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:System.Collections.IList" /> is read-only.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -358,9 +300,20 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IList.Remove(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -369,29 +322,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to remove from the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.IList" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table. If `value` is not found in the <xref:System.Collections.IList>, the <xref:System.Collections.IList> remains unchanged and no exception is thrown.  
-  
-   
-  
-## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
-  
- [!code-cs[System.Collections.IList_Implementation#02](~/add/codesnippet/csharp/m-system.collections.ili_1_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#02](~/add/codesnippet/visualbasic/m-system.collections.ili_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.IList" /> is read-only.  
-  
- -or-  
-  
- The <see cref="T:System.Collections.IList" /> has a fixed size.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -400,9 +333,20 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IList.RemoveAt(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -411,31 +355,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the item to remove.</param>
-        <summary>Removes the <see cref="T:System.Collections.IList" /> item at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
-  
-   
-  
-## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
-  
- [!code-cs[System.Collections.IList_Implementation#02](~/add/codesnippet/csharp/m-system.collections.ili_0_1.cs)]
- [!code-vb[System.Collections.IList_Implementation#02](~/add/codesnippet/visualbasic/m-system.collections.ili_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.IList" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.IList" /> is read-only.  
-  
- -or-  
-  
- The <see cref="T:System.Collections.IList" /> has a fixed size.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

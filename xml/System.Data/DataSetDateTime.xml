@@ -4,24 +4,19 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataSetDateTime" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the serialization format for <see cref="T:System.DateTime" /> columns in a <see cref="T:System.Data.DataSet" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DataSetDateTime cannot be set on non-<xref:System.DateTime> columns. Setting the <xref:System.Data.DataColumn.DateTimeMode%2A> property with the default value UnspecifiedLocall on non-<xref:System.DateTime> columns is permitted. Modifying the column data type from <xref:System.DateTime> to any other type resets the <xref:System.Data.DataColumn.DateTimeMode%2A> to the default value UnspecifiedLocal.  
-  
- Checking schema for merging, Relations, and ForeignKeyConstraints can be performed between <xref:System.DateTime> columns with matching <xref:System.Data.DataColumn.DateTimeMode%2A> properties. Otherwise the columns should be considered as non-matching on schema. The only exception is between Unspecified and UnspecifiedLocal. It is permitted to have a relation or a `ForeignKeyConstraint` between two `DateTime` columns with one in `Unspecified` and other in `UnspecifiedLocal`<xref:System.Data.DataColumn.DateTimeMode%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Local">
@@ -31,15 +26,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataSetDateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="DateTime" /> is always stored in Local. If Utc or Unspecified is assigned to a column in this mode, it is first converted into Local. Serialization in this mode is always performed in Local. There is an offset during serialization.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
@@ -49,15 +47,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataSetDateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="DateTime" /> is always stored in Unspecified. If Local or Utc is assigned to a column in this mode, it is first converted into Unspecified. Serialization in this mode does not cause an offset.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnspecifiedLocal">
@@ -67,15 +68,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataSetDateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="DateTime" /> is stored in Unspecified. If Local or Utc is assigned to a column in this mode, it is first converted into Unspecified. Serialization in this mode causes offset. This is the default behavior and is backward compatible. This option should be thought of as being Unspecified in storage but applying an offset that is similar to Local during serialization.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Utc">
@@ -85,15 +89,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataSetDateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="DateTime" /> is stored in Universal Coordinated Time (UTC). If Local or Unspecified is assigned to a column in this mode, it is first converted into <see langword="Utc" /> format. Serialization in this mode is always performed in <see langword="Utc" />. There is no offset during serialization.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

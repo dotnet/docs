@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.HostSecurityManagerOptions" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the security policy components to be used by the host security manager.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,14 +30,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.HostSecurityManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use all security policy components.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HostAppDomainEvidence">
@@ -47,14 +47,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.HostSecurityManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the application domain evidence.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HostAssemblyEvidence">
@@ -64,14 +64,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.HostSecurityManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the assembly evidence.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HostDetermineApplicationTrust">
@@ -81,14 +81,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.HostSecurityManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Route calls to the <see cref="System.Security.Policy.ApplicationSecurityManager.DetermineApplicationTrust%2A" /> method to the <see cref="System.Security.HostSecurityManager.DetermineApplicationTrust%2A" /> method first.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HostPolicyLevel">
@@ -98,19 +98,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("AppDomain policy levels are obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.HostSecurityManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the policy level specified in the <see cref="System.Security.HostSecurityManager.DomainPolicy%2A" /> property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HostResolvePolicy">
@@ -120,14 +115,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.HostSecurityManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the <see cref="System.Security.HostSecurityManager.ResolvePolicy%2A" /> method to resolve the application evidence.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -137,14 +132,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.HostSecurityManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use none of the security policy components.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

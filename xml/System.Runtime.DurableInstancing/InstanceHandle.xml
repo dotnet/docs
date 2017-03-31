@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a handle to <see cref="T:System.Runtime.DurableInstancing.InstanceView" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A host interacts with an instance in the instance store by obtaining an instance handle to the instance from the <xref:System.Runtime.DurableInstancing.InstanceStore> object.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Free">
@@ -36,7 +29,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Frees the instance handle.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +46,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a value that indicates whether an instance handle is valid.</summary>
-        <value>
-          <see langword="true" /> if the handle is valid; <see langword="false" /> if the handle is not valid.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

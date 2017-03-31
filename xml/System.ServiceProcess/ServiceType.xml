@@ -3,8 +3,11 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceType" />
   <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,28 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the type of the service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The service type indicates how the service is used by the system. The <xref:System.ServiceProcess.ServiceController> that passes commands to the service stores a value for the service type.  
-  
- The value of a ServiceType instance represents a set of flags combined using the bitwise OR operator.  
-  
- The creation of interactive services is not supported. To workaround this, you can create a non-interactive service and a separate control GUI application that communicates with the service using sockets or remoting.  
-  
-   
-  
-## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to display the device driver services on the local computer.  
-  
- [!code-cs[ServiceController#5](~/add/codesnippet/csharp/t-system.serviceprocess._8_1.cs)]
- [!code-cpp[ServiceController#5](~/add/codesnippet/cpp/t-system.serviceprocess._8_1.cpp)]
- [!code-vb[ServiceController#5](~/add/codesnippet/visualbasic/t-system.serviceprocess._8_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Adapter">
@@ -46,15 +29,18 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.Adapter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A service for a hardware device that requires its own driver.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FileSystemDriver">
@@ -63,15 +49,18 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.FileSystemDriver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A file system driver, which is also a Kernel device driver.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InteractiveProcess">
@@ -80,15 +69,18 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.InteractiveProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A service that can communicate with the desktop.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="KernelDriver">
@@ -97,15 +89,18 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.KernelDriver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Kernel device driver such as a hard disk or other low-level hardware device driver.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RecognizerDriver">
@@ -114,15 +109,18 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.RecognizerDriver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A file system driver used during startup to determine the file systems present on the system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Win32OwnProcess">
@@ -131,15 +129,18 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.Win32OwnProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Win32 program that can be started by the Service Controller and that obeys the service control protocol. This type of Win32 service runs in a process by itself.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Win32ShareProcess">
@@ -148,15 +149,18 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceType.Win32ShareProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Win32 service that can share a process with other Win32 services.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,49 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the type of input that the grammar, defined by the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />, will match.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The input mode for an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> is determined by its <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Mode%2A> property. The default input mode is Voice, which indicates that the grammar defined by the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> will match speech input.  
-  
- The Dtmf mode indicates that a grammar will match Dual-Tone Multi-Frequency (DTMF) tones instead of speech. There are 16 DTMF tones, 12 of which are commonly found on most telephones.  
-  
- When you create a <xref:System.Speech.Recognition.Grammar> object from an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>, the <xref:System.Speech.Recognition.Grammar> object will match the type of input specified by the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Mode%2A> property, which gets an instance of SrgsGrammarMode.  
-  
-   
-  
-## Examples  
-  
-```c#  
-string srgsDocumentFile = Path.Combine(Path.GetTempPath(), "srgsDocumentFile.xml");  
-SrgsDocument document = null;  
-GrammarBuilder builder = null;  
-Grammar grammar = null;  
-  
-Choices firstThree = new Choices(new string[] {"1", "2", "3"});  
-Choices nextThree = new Choices(new string[] {"4", "5", "6"});  
-Choices lastThree = new Choices(new string[] {"7", "8", "9"});  
-  
-Choices keyPadChoices = new Choices(new GrammarBuilder[] {firstThree, nextThree, lastThree, new Choices("0")});  
-  
-builder = new GrammarBuilder(keyPadChoices);  
-document = new SrgsDocument(builder);  
-  
-document.Mode = SrgsGrammarMode.Dtmf;  
-grammar = new Grammar(document);   
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Dtmf">
@@ -56,14 +21,13 @@ grammar = new Grammar(document);
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> object will match DTMF tones similar to those found on a telephone, instead of speech.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Voice">
@@ -73,14 +37,13 @@ grammar = new Grammar(document);
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> object will match speech input.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBoxOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,26 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies options on a <see cref="T:System.Windows.Forms.MessageBox" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.MessageBox> class.  
-  
- If you do not want to specify this parameter when calling methods on <xref:System.Windows.Forms.MessageBox>, you can pass in 0 instead.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. The example uses the RightAlign member of the MessageBoxOptions enumeration to align the text to the right edge of the dialog box. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cs[MessageBox.Show Variations#2](~/add/codesnippet/csharp/t-system.windows.forms.m_5_1.cs)]
- [!code-cpp[MessageBox.Show Variations#2](~/add/codesnippet/cpp/t-system.windows.forms.m_5_1.cpp)]
- [!code-vb[MessageBox.Show Variations#2](~/add/codesnippet/visualbasic/t-system.windows.forms.m_5_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DefaultDesktopOnly">
@@ -45,24 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box is displayed on the active desktop.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constant is the same as `ServiceNotification` except that the system displays the message box only on the default desktop of the interactive window station  
-  
- DefaultDesktopOnly will cause the application that raised the <xref:System.Windows.Forms.MessageBox> to lose focus. The <xref:System.Windows.Forms.MessageBox> that is displayed will not use visual styles. For more information, see [Rendering Controls with Visual Styles](../Topic/Rendering%20Controls%20with%20Visual%20Styles.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightAlign">
@@ -72,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box text is right-aligned.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RtlReading">
@@ -89,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the message box text is displayed with right to left reading order.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServiceNotification">
@@ -106,22 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box is displayed on the active desktop.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The caller is a service notifying the user of an event. The function displays a message box on the current active desktop, even if there is no user logged on to the computer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

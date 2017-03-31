@@ -10,18 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of comparison to be used when filtering data. This enumeration is used by the <c>Filter</c> method definitions in the <see cref="T:System.Web.UI.DataVisualization.Charting.DataManipulator" /> class that take the <paramref name="CompareMethod" /> argument.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CompareMethod enumeration represents a comparison type for certain filtering operations.  
-  
-> [!NOTE]
->  By default, if the filtering criteria are met, a data point is either removed or marked as empty. However, data points can be filtered even if they do not match the filtering criteria, by setting the <xref:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterMatchedPoints%2A> property to `false`.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EqualTo">
@@ -37,7 +27,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If the data point value is equal to the compared value, the point is filtered.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -53,7 +43,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If the data point value is less than the compared value, the point is filtered.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEqualTo">
@@ -69,7 +59,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If the data point value is less than or equal to the compared value, the point is filtered.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MoreThan">
@@ -85,7 +75,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If the data point value is more than the compared value, the point is filtered.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MoreThanOrEqualTo">
@@ -101,7 +91,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If the data point value more than or equal to the compared value, the point is filtered.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotEqualTo">
@@ -117,7 +107,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If the data point value is not equal to the compared value, the point is filtered.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

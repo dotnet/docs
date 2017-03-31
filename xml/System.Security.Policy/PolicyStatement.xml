@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.PolicyStatement" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,26 +24,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the statement of a <see cref="T:System.Security.Policy.CodeGroup" /> describing the permissions and other information that apply to code with a particular set of evidence. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A PolicyStatement consists of a set of granted permissions, and possible special attributes for the code group.  
-  
- Policy statements are typically used as the return value of a <xref:System.Security.Policy.PolicyLevel.Resolve%2A> operation on a <xref:System.Security.Policy.PolicyLevel>.  
-  
-   
-  
-## Examples  
- The following code example shows the use of members of the PolicyStatement class  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#1](~/add/codesnippet/csharp/t-system.security.policy_6_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#1](~/add/codesnippet/cpp/t-system.security.policy_6_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#1](~/add/codesnippet/visualbasic/t-system.security.policy_6_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,27 +35,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="permSet" Type="System.Security.PermissionSet" />
       </Parameters>
       <Docs>
-        <param name="permSet">The <see cref="T:System.Security.PermissionSet" /> with which to initialize the new instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.PolicyStatement" /> class with the specified <see cref="T:System.Security.PermissionSet" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the PolicyStatement constructor. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#2](~/add/codesnippet/csharp/6638bc70-81c4-4e58-a3b6-_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#2](~/add/codesnippet/cpp/6638bc70-81c4-4e58-a3b6-_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#2](~/add/codesnippet/visualbasic/6638bc70-81c4-4e58-a3b6-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="permSet">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -83,7 +54,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -91,21 +62,10 @@
         <Parameter Name="attributes" Type="System.Security.Policy.PolicyStatementAttribute" />
       </Parameters>
       <Docs>
-        <param name="permSet">The <see cref="T:System.Security.PermissionSet" /> with which to initialize the new instance.</param>
-        <param name="attributes">A bitwise combination of the <see cref="T:System.Security.Policy.PolicyStatementAttribute" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.PolicyStatement" /> class with the specified <see cref="T:System.Security.PermissionSet" /> and attributes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the PolicyStatement constructor. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#3](~/add/codesnippet/csharp/117488b6-0e2f-454f-8ec0-_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#3](~/add/codesnippet/cpp/117488b6-0e2f-454f-8ec0-_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#3](~/add/codesnippet/visualbasic/117488b6-0e2f-454f-8ec0-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="permSet">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -115,27 +75,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Policy.PolicyStatementAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the attributes of the policy statement.</summary>
-        <value>The attributes of the policy statement.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Attributes property to set the <xref:System.Security.Policy.PolicyStatementAttribute> flag. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#4](~/add/codesnippet/csharp/p-system.security.policy_8_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#4](~/add/codesnippet/cpp/p-system.security.policy_8_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#4](~/add/codesnippet/visualbasic/p-system.security.policy_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AttributeString">
@@ -145,32 +94,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string representation of the attributes of the policy statement.</summary>
-        <value>A text string representing the attributes of the policy statement.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to get a text string of the attributes currently set for the <xref:System.Security.Policy.PolicyStatement>.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the AttributeString property to get the policy statement attributes. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#13](~/add/codesnippet/csharp/p-system.security.policy_3_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#13](~/add/codesnippet/cpp/p-system.security.policy_3_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#13](~/add/codesnippet/visualbasic/p-system.security.policy_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -180,7 +113,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,20 +121,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an equivalent copy of the current policy statement.</summary>
-        <returns>A new copy of the <see cref="T:System.Security.Policy.PolicyStatement" /> with <see cref="System.Security.Policy.PolicyStatement.PermissionSet%2A" /> and <see cref="System.Security.Policy.PolicyStatement.Attributes%2A" /> identical to those of the current <see cref="T:System.Security.Policy.PolicyStatement" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Copy method to make a copy of the current policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#9](~/add/codesnippet/csharp/m-system.security.policy_4_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#9](~/add/codesnippet/cpp/m-system.security.policy_4_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#9](~/add/codesnippet/visualbasic/m-system.security.policy_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -211,7 +133,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -226,27 +148,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Security.Policy.PolicyStatement" /> object to compare with the current <see cref="T:System.Security.Policy.PolicyStatement" />.</param>
-        <summary>Determines whether the specified <see cref="T:System.Security.Policy.PolicyStatement" /> object is equal to the current <see cref="T:System.Security.Policy.PolicyStatement" />.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Security.Policy.PolicyStatement" /> is equal to the current <see cref="T:System.Security.Policy.PolicyStatement" /> object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see the <xref:System.Object.Equals%2A> method.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Equals method to determine whether a specified <xref:System.Security.Policy.PolicyStatement> object is equivalent to the current <xref:System.Security.Policy.PolicyStatement> object. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#10](~/add/codesnippet/csharp/m-system.security.policy_19_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#10](~/add/codesnippet/cpp/m-system.security.policy_19_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#10](~/add/codesnippet/visualbasic/m-system.security.policy_19_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -256,7 +161,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,22 +171,9 @@
         <Parameter Name="et" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="et">The XML encoding to use to reconstruct the security object.</param>
-        <summary>Reconstructs a security object with a given state from an XML encoding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the FromXml method to reconstruct a security object from an XML encoding. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#7](~/add/codesnippet/csharp/0d25409c-1434-4067-a83c-_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#7](~/add/codesnippet/cpp/0d25409c-1434-4067-a83c-_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#7](~/add/codesnippet/visualbasic/0d25409c-1434-4067-a83c-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="et" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="et" /> parameter is not a valid <see cref="T:System.Security.Policy.PolicyStatement" /> encoding.</exception>
+        <param name="et">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -291,14 +183,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -307,12 +194,10 @@
         <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="et">The XML encoding to use to reconstruct the security object.</param>
-        <param name="level">The <see cref="T:System.Security.Policy.PolicyLevel" /> context for lookup of <see cref="T:System.Security.NamedPermissionSet" /> values.</param>
-        <summary>Reconstructs a security object with a given state from an XML encoding.</summary>
+        <param name="et">To be added.</param>
+        <param name="level">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="et" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="et" /> parameter is not a valid <see cref="T:System.Security.Policy.PolicyStatement" /> encoding.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -322,7 +207,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -335,25 +220,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a hash code for the <see cref="T:System.Security.Policy.PolicyStatement" /> object that is suitable for use in hashing algorithms and data structures such as a hash table.</summary>
-        <returns>A hash code for the current <see cref="T:System.Security.Policy.PolicyStatement" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The hash code for two instances of the same permission might be different, hence a hash code should not be used to compare two <xref:System.Security.Policy.PolicyStatement> objects.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the GetHashCode method to get the hash code for the current policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#12](~/add/codesnippet/csharp/m-system.security.policy_24_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#12](~/add/codesnippet/cpp/m-system.security.policy_24_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#12](~/add/codesnippet/visualbasic/m-system.security.policy_24_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PermissionSet">
@@ -363,27 +232,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.PermissionSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Security.PermissionSet" /> of the policy statement.</summary>
-        <value>The <see cref="T:System.Security.PermissionSet" /> of the policy statement.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the PermissionSet property to add permissions to the policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#5](~/add/codesnippet/csharp/p-system.security.policy_11_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#5](~/add/codesnippet/cpp/p-system.security.policy_11_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#5](~/add/codesnippet/visualbasic/p-system.security.policy_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -393,7 +251,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -401,20 +259,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an XML encoding of the security object and its current state.</summary>
-        <returns>An XML encoding of the security object, including any state information.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.ToXml%2A> method to create an XML encoding of the security object. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cs[System.Security.Policy.PolicyStatement_Evt#6](~/add/codesnippet/csharp/m-system.security.policy_10_1.cs)]
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#6](~/add/codesnippet/cpp/m-system.security.policy_10_1.cpp)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#6](~/add/codesnippet/visualbasic/m-system.security.policy_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -424,7 +271,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,9 +281,9 @@
         <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="level">The <see cref="T:System.Security.Policy.PolicyLevel" /> context for lookup of <see cref="T:System.Security.NamedPermissionSet" /> values.</param>
-        <summary>Creates an XML encoding of the security object and its current state.</summary>
-        <returns>An XML encoding of the security object, including any state information.</returns>
+        <param name="level">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

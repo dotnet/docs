@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.AxisAngleRotation3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,22 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a 3-D rotation of a specified angle about a specified axis.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code excerpt specifies an AxisAngleRotation3D as the <xref:System.Windows.Media.Media3D.RotateTransform3D.Rotation%2A> property of a <xref:System.Windows.Media.Media3D.RotateTransform3D>.  
-  
- [!code-vb[3Doverview#3DOverview3DN1](~/add/codesnippet/visualbasic/create_cube/window1.xaml.vb#3doverview3dn1)]
- [!code-cs[3Doverview#3DOverview3DN1](~/add/codesnippet/csharp/create_cube/Window1.xaml.cs#3doverview3dn1)]  
-  
- The following code excerpt applies an AxisAngleRotation3D to a <xref:System.Windows.Media.Media3D.GeometryModel3D>.  
-  
- [!code-xml[Animate3DRotation#Animate3DRotation3DN1](~/add/codesnippet/xaml/Animate3DRotation.BlankSample/Window1.xaml#animate3drotation3dn1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of a 3-D rotation.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -61,21 +44,10 @@
         <Parameter Name="angle" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="axis">
-          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> that specifies the axis around which to rotate.</param>
-        <param name="angle">Double that specifies the angle of rotation, in degrees.</param>
-        <summary>Creates an instance of a 3-D rotation using the specified axis and angle.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code excerpt specifies an <xref:System.Windows.Media.Media3D.AxisAngleRotation3D> as the <xref:System.Windows.Media.Media3D.RotateTransform3D.Rotation%2A> property of a <xref:System.Windows.Media.Media3D.RotateTransform3D>.  
-  
- [!code-vb[3Doverview#3DOverview3DN1](~/add/codesnippet/visualbasic/create_cube/window1.xaml.vb#3doverview3dn1)]
- [!code-cs[3Doverview#3DOverview3DN1](~/add/codesnippet/csharp/create_cube/Window1.xaml.cs#3doverview3dn1)]  
-  
- ]]></format>
-        </remarks>
+        <param name="axis">To be added.</param>
+        <param name="angle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Angle">
@@ -85,37 +57,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the angle of a 3-D rotation, in degrees.</summary>
-        <value>Double that specifies the angle of a 3-D rotation, in degrees.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Angle"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Media3D.AxisAngleRotation3D.AngleProperty>|  
-|Metadata properties set to **true**|None|  
-  
-   
-  
-## Examples  
- The following code excerpt applies an <xref:System.Windows.Media.Media3D.AxisAngleRotation3D> to a <xref:System.Windows.Media.Media3D.GeometryModel3D>.  
-  
- [!code-xml[Animate3DRotation#Animate3DRotation3DN1](~/add/codesnippet/xaml/Animate3DRotation.BlankSample/Window1.xaml#animate3drotation3dn1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AngleProperty">
@@ -125,25 +75,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Media3D.AxisAngleRotation3D.Angle%2A" /> dependency property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code excerpt uses this property as the target of an animation.  
-  
- [!code-vb[animate3drotationcode#Animate3DRotationCode3DN1](~/add/codesnippet/visualbasic/blanksample/window1.xaml.vb#animate3drotationcode3dn1)]
- [!code-cs[animate3drotationcode#Animate3DRotationCode3DN1](~/add/codesnippet/csharp/Animate3DRotationCode.BlankSample/Window1.xaml.cs#animate3drotationcode3dn1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Axis">
@@ -153,38 +92,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the axis of a 3-D rotation.</summary>
-        <value>
-          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> that specifies the axis of rotation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Axis"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Media3D.AxisAngleRotation3D.AxisProperty>|  
-|Metadata properties set to **true**|None|  
-  
-   
-  
-## Examples  
- The following code excerpt applies an <xref:System.Windows.Media.Media3D.AxisAngleRotation3D> to a <xref:System.Windows.Media.Media3D.GeometryModel3D>.  
-  
- [!code-xml[Animate3DRotation#Animate3DRotation3DN1](~/add/codesnippet/xaml/Animate3DRotation.BlankSample/Window1.xaml#animate3drotation3dn1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AxisProperty">
@@ -194,25 +110,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Media3D.AxisAngleRotation3D.Axis%2A" /> dependency property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code excerpt uses this property as the target of an animation.  
-  
- [!code-vb[3Doverview#3Doverview3DN4](~/add/codesnippet/visualbasic/create_cube/window1.xaml.vb#3doverview3dn4)]
- [!code-cs[3Doverview#3Doverview3DN4](~/add/codesnippet/csharp/create_cube/Window1.xaml.cs#3doverview3dn4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -222,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,18 +134,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Media3D.AxisAngleRotation3D" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -251,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -259,18 +153,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Media3D.AxisAngleRotation3D" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -280,7 +165,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

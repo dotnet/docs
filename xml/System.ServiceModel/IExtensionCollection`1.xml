@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IExtensionCollection`1" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -23,8 +23,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">The type of the extension objects.</typeparam>
-    <summary>A collection of the <see cref="System.ServiceModel.IExtension%601" /> objects that allow for retrieving the <see cref="System.ServiceModel.IExtension%601" /> by its type.</summary>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -46,17 +46,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="E">The type of extension object.</typeparam>
-        <summary>Finds the specified extension object in the collection.</summary>
-        <returns>The extension object that was found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Find(E) returns an extension that implements (is or derives from) the specified type. If more than one extension implements the specified type, one is returned. The [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] implementation returns the most recently added, but this is not required of implementations. If no extension implements the specified type, Find(E) returns null.  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="E">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindAll&lt;E&gt;">
@@ -66,7 +59,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,9 +70,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="E">The type of extension object.</typeparam>
-        <summary>Finds all extension object in the collection specified by <paramref name="E" />.</summary>
-        <returns>A collection of all extension objects in the collection that implement the specified type.</returns>
+        <typeparam name="E">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

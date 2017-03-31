@@ -1,10 +1,14 @@
 <Type Name="WindowsIdentity" FullName="System.Security.Principal.WindowsIdentity">
   <TypeSignature Language="C#" Value="public class WindowsIdentity : System.Security.Claims.ClaimsIdentity, IDisposable, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable WindowsIdentity extends System.Security.Claims.ClaimsIdentity implements class System.IDisposable, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WindowsIdentity extends System.Security.Claims.ClaimsIdentity implements class System.IDisposable, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable, class System.Security.Principal.IIdentity" />
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsIdentity" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,27 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows user.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call the <xref:System.Security.Principal.WindowsIdentity.GetCurrent%2A> method to create a WindowsIdentity object that represents the current user.  
-  
-> [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
-   
-  
-## Examples  
- The following example shows the use of members of WindowsIdentity class.  For an example showing how to obtain a Windows account token through a call to the unmanaged Win32 `LogonUser` function, and use that token to impersonate another user, see the <xref:System.Security.Principal.WindowsImpersonationContext> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#1](~/add/codesnippet/csharp/t-system.security.princi_5_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#1](~/add/codesnippet/cpp/t-system.security.princi_5_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#1](~/add/codesnippet/visualbasic/t-system.security.princi_5_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,50 +41,21 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.IntPtr)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="userToken" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="userToken">The account token for the user on whose behalf the code is running.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified Windows account token.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows initial property values for an instance of <xref:System.Security.Principal.WindowsIdentity>.  
-  
-|Property|Initial value|  
-|--------------|-------------------|  
-|<xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A>|`Negotiate`|  
-|<xref:System.Security.Principal.WindowsAccountType>|`Normal`|  
-|<xref:System.Security.Principal.WindowsIdentity.IsAuthenticated%2A>|`false`|  
-  
-> [!NOTE]
->  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](../Topic/Consuming%20Unmanaged%20DLL%20Functions.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="userToken" /> is 0.  
-  
- -or-  
-  
- <paramref name="userToken" /> is duplicated and invalid for impersonation.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions.  
-  
- -or-  
-  
- A Win32 error occurred.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="userToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,8 +76,8 @@
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" />
       </Parameters>
       <Docs>
-        <param name="identity">The object from which to construct the new instance of <see cref="T:System.Security.Principal.WindowsIdentity" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class by using the specified <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
+        <param name="identity">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,48 +87,21 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="sUserPrincipalName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sUserPrincipalName">The UPN for the user on whose behalf the code is running.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified User Principal Name (UPN).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A UPN has the format *username*@*domainname*.com, in other words, an email address. The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Win32 API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
-  
-> [!NOTE]
->  This constructor is intended for use only on computers joined to Windows Server 2003 or later domains. An exception is thrown for earlier domain types. This restriction is due to the fact that this constructor uses the [KERB_S4U_LOGON structure](http://go.microsoft.com/fwlink/?LinkId=143533), which was first introduced in Windows Server 2003.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.UnauthorizedAccessException">Windows returned the Windows NT status code STATUS_ACCESS_DENIED.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is insufficient memory available.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions.  
-  
- -or-  
-  
- The computer is not attached to a Windows 2003 or later domain.  
-  
- -or-  
-  
- The computer is not running Windows 2003 or later.  
-  
- -or-  
-  
- The user is not a member of the domain the computer is attached to.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="sUserPrincipalName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -181,62 +110,23 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.IntPtr,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="userToken" Type="System.IntPtr" />
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="userToken">The account token for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified Windows account token and the specified authentication type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows initial property values for an instance of <xref:System.Security.Principal.WindowsIdentity>.  
-  
-|Property|Initial value|  
-|--------------|-------------------|  
-|<xref:System.Security.Principal.WindowsAccountType>|`Normal`|  
-|<xref:System.Security.Principal.WindowsIdentity.IsAuthenticated%2A>|`false`|  
-  
- The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
-  
-> [!NOTE]
->  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](../Topic/Consuming%20Unmanaged%20DLL%20Functions.md).  
-  
-   
-  
-## Examples  
- The following code shows the use of the <xref:System.Security.Principal.WindowsIdentity.%23ctor%2A> constructor to create a new instance of the  <xref:System.Security.Principal.WindowsIdentity> class for the user represented by the specified Windows account token and the specified authentication type. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#4](~/add/codesnippet/csharp/dc54fc11-729f-4337-b932-_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#4](~/add/codesnippet/cpp/dc54fc11-729f-4337-b932-_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#4](~/add/codesnippet/visualbasic/dc54fc11-729f-4337-b932-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="userToken" /> is 0.  
-  
- -or-  
-  
- <paramref name="userToken" /> is duplicated and invalid for impersonation.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions.  
-  
- -or-  
-  
- A Win32 error occurred.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="userToken">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -246,39 +136,18 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The object containing the account information for the user.</param>
-        <param name="context">An object that indicates the stream characteristics.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by information in a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">A <see cref="T:System.Security.Principal.WindowsIdentity" /> cannot be serialized across processes.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions.  
-  
- -or-  
-  
- A Win32 error occurred.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for ability to manipulate the principal object. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -288,51 +157,18 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="sUserPrincipalName" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sUserPrincipalName">The UPN for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified User Principal Name (UPN) and the specified authentication type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
-  
- The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Win32 API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
-  
-> [!NOTE]
->  This constructor is intended for use only on computers joined to Windows Server 2003 or later domains. An exception is thrown for earlier domain types. This restriction is due to the fact that this constructor uses the [KERB_S4U_LOGON structure](http://go.microsoft.com/fwlink/?LinkId=143533), which was first introduced in Windows Server 2003.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.UnauthorizedAccessException">Windows returned the Windows NT status code STATUS_ACCESS_DENIED.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is insufficient memory available.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions.  
-  
- -or-  
-  
- The computer is not attached to a Windows 2003 or later domain.  
-  
- -or-  
-  
- The computer is not running Windows 2003 or later.  
-  
- -or-  
-  
- The user is not a member of the domain the computer is attached to.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="sUserPrincipalName">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -342,62 +178,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="userToken" Type="System.IntPtr" />
         <Parameter Name="type" Type="System.String" />
         <Parameter Name="acctType" Type="System.Security.Principal.WindowsAccountType" />
       </Parameters>
       <Docs>
-        <param name="userToken">The account token for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
-        <param name="acctType">One of the enumeration values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified Windows account token, the specified authentication type, and the specified Windows account type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows initial property values for an instance of <xref:System.Security.Principal.WindowsIdentity>.  
-  
-|Property|Initial Value|  
-|--------------|-------------------|  
-|<xref:System.Security.Principal.WindowsIdentity.IsAuthenticated%2A>|`false`|  
-  
- The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
-  
-> [!NOTE]
->  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](../Topic/Consuming%20Unmanaged%20DLL%20Functions.md).  
-  
-   
-  
-## Examples  
- The following code shows the use of the WindowsIdentity constructor to create a new instance of the <xref:System.Security.Principal.WindowsIdentity> class for the user represented by the specified Windows account token, the specified authentication type, and the specified Windows account type. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#7](~/add/codesnippet/csharp/6cec7b3f-80c5-417d-99d8-_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#7](~/add/codesnippet/cpp/6cec7b3f-80c5-417d-99d8-_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#7](~/add/codesnippet/visualbasic/6cec7b3f-80c5-417d-99d8-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="userToken" /> is 0.  
-  
- -or-  
-  
- <paramref name="userToken" /> is duplicated and invalid for impersonation.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions.  
-  
- -or-  
-  
- A Win32 error occurred.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="userToken">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="acctType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -407,14 +201,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="userToken" Type="System.IntPtr" />
         <Parameter Name="type" Type="System.String" />
@@ -422,43 +211,12 @@
         <Parameter Name="isAuthenticated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="userToken">The account token for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
-        <param name="acctType">One of the enumeration values.</param>
-        <param name="isAuthenticated">
-          <see langword="true" /> to indicate that the user is authenticated; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified Windows account token, the specified authentication type, the specified Windows account type, and the specified authentication status.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
-  
- You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](../Topic/Consuming%20Unmanaged%20DLL%20Functions.md).  
-  
-   
-  
-## Examples  
- The following code shows the use of the WindowsIdentity constructor to create a new instance of the <xref:System.Security.Principal.WindowsIdentity> class for the user represented by the specified Windows account token, the specified authentication type, the specified Windows account type, and the specified authentication status. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#17](~/add/codesnippet/csharp/851e6c2b-b248-45b7-9cd4-_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#17](~/add/codesnippet/cpp/851e6c2b-b248-45b7-9cd4-_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#17](~/add/codesnippet/visualbasic/851e6c2b-b248-45b7-9cd4-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="userToken" /> is 0.  
-  
- -or-  
-  
- <paramref name="userToken" /> is duplicated and invalid for impersonation.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions.  
-  
- -or-  
-  
- A Win32 error occurred.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="userToken">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="acctType">To be added.</param>
+        <param name="isAuthenticated">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AccessToken">
@@ -467,20 +225,20 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.AccessToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.SafeHandles.SafeAccessTokenHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets this <see cref="T:Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" /> for this <see cref="T:System.Security.Principal.WindowsIdentity" /> instance.</summary>
-        <value>Returns a <see cref="T:Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,44 +248,21 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.AuthenticationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of authentication used to identify the user.</summary>
-        <value>The type of authentication used to identify the user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is informational; it is not used by the security system. On Windows Vista and later versions of the Windows operating system, the default value for this property is `Negotiate`, which chooses the best security support provider (SSP) based on customer-configured security policy. The default property value for earlier versions of the Windows operating system is `Kerberos`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.UnauthorizedAccessException">Windows returned the Windows NT status code STATUS_ACCESS_DENIED.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is insufficient memory available.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions.  
-  
- -or-  
-  
- The computer is not attached to a Windows 2003 or later domain.  
-  
- -or-  
-  
- The computer is not running Windows 2003 or later.  
-  
- -or-  
-  
- The user is not a member of the domain the computer is attached to.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Claims">
@@ -535,6 +270,10 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; Claims" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.Claims" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -548,8 +287,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all claims for the user represented by this Windows identity.</summary>
-        <value>A collection of claims for this <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,6 +298,10 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.Clone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -567,8 +310,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new  object that is a copy of the current instance.</summary>
-        <returns>A copy of the current instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,14 +321,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsIdentity.DefaultIssuer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the name of the default <see cref="T:System.Security.Claims.ClaimsIdentity" /> issuer.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -602,8 +350,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets claims that have the <see cref="F:System.Security.Claims.ClaimTypes.WindowsDeviceClaim" /> property key.</summary>
-        <value>A collection of claims that have the <see cref="F:System.Security.Claims.ClaimTypes.WindowsDeviceClaim" /> property key.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -613,8 +361,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -627,18 +379,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Security.Principal.WindowsIdentity" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call Dispose when you are finished using the <xref:System.Security.Principal.WindowsIdentity>. The Dispose method leaves the <xref:System.Security.Principal.WindowsIdentity> in an unusable state. After calling Dispose, you must release all references to the <xref:System.Security.Principal.WindowsIdentity> so the garbage collector can reclaim the memory that the <xref:System.Security.Principal.WindowsIdentity> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.Security.Principal.WindowsIdentity>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Principal.WindowsIdentity> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -647,16 +389,17 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -666,19 +409,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Principal.WindowsIdentity" /> and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Principal.WindowsIdentity> references. This method invokes the `Dispose()` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAnonymous">
@@ -687,41 +420,22 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.GetAnonymous" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that you can use as a sentinel value in your code to represent an anonymous user. The property value does not represent the built-in anonymous identity used by the Windows operating system.</summary>
-        <returns>An object that represents an anonymous user.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns an empty <xref:System.Security.Principal.WindowsIdentity> object that enables you to treat operations as anonymous. The property value does not correspond to a Windows anonymous user and cannot be used for impersonation. Also, note that the identity returned by this property is not static; each call to GetAnonymous returns a different anonymous identity.  
-  
- You can use the <xref:System.Security.Principal.WindowsIdentity.IsAnonymous%2A> property to detect the return value from GetAnonymous. However, <xref:System.Security.Principal.WindowsIdentity.IsAnonymous%2A> detects both the Windows anonymous identity and the anonymous identity returned by this method. To use the latter identity, cache the GetAnonymous return value instead of relying on the <xref:System.Security.Principal.WindowsIdentity.IsAnonymous%2A> property.  
-  
-   
-  
-## Examples  
- The following code shows the use of the GetAnonymous method to return a <xref:System.Security.Principal.WindowsIdentity> object that represents an anonymous Windows user. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#15](~/add/codesnippet/csharp/m-system.security.princi_5_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#15](~/add/codesnippet/cpp/m-system.security.princi_5_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#15](~/add/codesnippet/visualbasic/m-system.security.princi_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrent">
@@ -730,36 +444,22 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.GetCurrent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that represents the current Windows user.</summary>
-        <returns>An object that represents the current user.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows the use of the GetCurrent method to return a <xref:System.Security.Principal.WindowsIdentity> object that represents the current Windows user. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#13](~/add/codesnippet/csharp/m-system.security.princi_7_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#13](~/add/codesnippet/cpp/m-system.security.princi_7_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#13](~/add/codesnippet/visualbasic/m-system.security.princi_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for ability to manipulate the principal object. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrent">
@@ -768,15 +468,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.GetCurrent(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
@@ -784,19 +483,10 @@
         <Parameter Name="ifImpersonating" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="ifImpersonating">
-          <see langword="true" /> to return the <see cref="T:System.Security.Principal.WindowsIdentity" /> only if the thread is currently impersonating; <see langword="false" /> to return the <see cref="T:System.Security.Principal.WindowsIdentity" /> of the thread if it is impersonating or the <see cref="T:System.Security.Principal.WindowsIdentity" /> of the process if the thread is not currently impersonating.</param>
-        <summary>Returns a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that represents the Windows identity for either the thread or the process, depending on the value of the <paramref name="ifImpersonating" /> parameter.</summary>
-        <returns>An object that represents a Windows user.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `ifImpersonating` is `true` and the thread is not impersonating, the returned <xref:System.Security.Principal.WindowsIdentity> object has no value.  If `ifImpersonating` is `false` and the thread is impersonating, the <xref:System.Security.Principal.WindowsIdentity> for the thread is returned.  If `ifImpersonating` is `false` and the thread is not impersonating, the <xref:System.Security.Principal.WindowsIdentity> for the process is returned.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for ability to manipulate the principal object. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="ifImpersonating">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrent">
@@ -805,15 +495,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.GetCurrent(System.Security.Principal.TokenAccessLevels)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
@@ -821,18 +510,10 @@
         <Parameter Name="desiredAccess" Type="System.Security.Principal.TokenAccessLevels" />
       </Parameters>
       <Docs>
-        <param name="desiredAccess">A bitwise combination of the enumeration values.</param>
-        <summary>Returns a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that represents the current Windows user, using the specified desired token access level.</summary>
-        <returns>An object that represents the current user.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `desiredAccess` parameter specifies an access mask that identifies the requested types of access to the access token. These requested access types are compared with the token's discretionary access control list (DACL) to determine which types of access are granted or denied.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for ability to manipulate the principal object. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="desiredAccess">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Groups">
@@ -841,32 +522,21 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.Groups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.IdentityReferenceCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the groups the current Windows user belongs to.</summary>
-        <value>An object representing the groups the current Windows user belongs to.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the Groups property to display the identity references for the groups the current user belongs to.  This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#20](~/add/codesnippet/csharp/p-system.security.princi_8_1.cs)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#20](~/add/codesnippet/visualbasic/p-system.security.princi_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Impersonate">
@@ -876,40 +546,17 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsImpersonationContext</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Impersonates the user represented by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
-        <returns>An object that represents the Windows user prior to impersonation; this can be used to revert to the original user's context.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- On Windows NT platforms, the current user must have sufficient rights to allow impersonation.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to obtain a Windows account token by calling the unmanaged Win32 `LogonUser` function, and how to use that token to impersonate another user and then revert to the original identity.  
-  
- [!code-cpp[WindowsIdentity Impersonation#1](~/add/codesnippet/cpp/m-system.security.princi_2_1.cpp)]
- [!code-cs[WindowsIdentity Impersonation#1](~/add/codesnippet/csharp/m-system.security.princi_2_1.cs)]
- [!code-vb[WindowsIdentity Impersonation#1](~/add/codesnippet/visualbasic/m-system.security.princi_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">An anonymous identity attempted to perform an impersonation.</exception>
-        <exception cref="T:System.Security.SecurityException">A Win32 error occurred.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Impersonate">
@@ -919,14 +566,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsImpersonationContext</ReturnType>
       </ReturnValue>
@@ -934,34 +576,10 @@
         <Parameter Name="userToken" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="userToken">The handle of a Windows account token. This token is usually retrieved through a call to unmanaged code, such as a call to the Win32 API <see langword="LogonUser" /> function.</param>
-        <summary>Impersonates the user represented by the specified user token.</summary>
-        <returns>An object that represents the Windows user prior to impersonation; this object can be used to revert to the original user's context.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- On Windows NT platforms, the current user must have sufficient rights to allow impersonation.  
-  
-> [!NOTE]
->  Calling the Impersonate method with a `userToken` value of <xref:System.IntPtr> is equivalent to calling the Win32 `RevertToSelf` function. If another user is currently being impersonated, control reverts to the original user.  
-  
- For more information about calls to unmanaged code, see [Consuming Unmanaged DLL Functions](../Topic/Consuming%20Unmanaged%20DLL%20Functions.md).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to obtain a Windows account token by calling the unmanaged Win32 `LogonUser` function, and how to use that token to impersonate another user and then revert to the original identity.  
-  
- [!code-vb[WindowsIdentity Impersonation2#1](~/add/codesnippet/visualbasic/m-system.security.princi_3_1.vb)]
- [!code-cs[WindowsIdentity Impersonation2#1](~/add/codesnippet/csharp/m-system.security.princi_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.UnauthorizedAccessException">Windows returned the Windows NT status code STATUS_ACCESS_DENIED.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is insufficient memory available.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to manipulate the principal object and access unmanaged code. Associated enumerations: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /> and <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="userToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImpersonationLevel">
@@ -970,40 +588,26 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.ImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the impersonation level for the user.</summary>
-        <value>One of the enumeration values that specifies the impersonation level.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Describes the impersonation level to be used to connect to WMI.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the ImpersonationLevel property to display the impersonation level for the current user. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#21](~/add/codesnippet/csharp/p-system.security.princi_3_1.cs)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#21](~/add/codesnippet/visualbasic/p-system.security.princi_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAnonymous">
@@ -1012,41 +616,21 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.IsAnonymous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the user account is identified as an anonymous account by the system.</summary>
-        <value>
-          <see langword="true" /> if the user account is an anonymous account; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsAnonymous property detects both the Windows anonymous identity and the anonymous identity that is returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
-  
- Anonymous accounts are typically only encountered only from within ASP.NET-based applications when anonymous access is allowed by Internet Information Services (IIS).  
-  
-   
-  
-## Examples  
- The following code shows the use of the IsAnonymous property to detect whether the user account is identified as an anonymous account by the system. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#9](~/add/codesnippet/csharp/p-system.security.princi_4_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#9](~/add/codesnippet/cpp/p-system.security.princi_4_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#9](~/add/codesnippet/visualbasic/p-system.security.princi_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAuthenticated">
@@ -1055,17 +639,20 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user has been authenticated by Windows.</summary>
-        <value>
-          <see langword="true" /> if the user was authenticated; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1075,34 +662,21 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.IsGuest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user account is identified as a <see cref="T:System.Security.Principal.WindowsAccountType" /> account by the system.</summary>
-        <value>
-          <see langword="true" /> if the user account is a <see cref="T:System.Security.Principal.WindowsAccountType" /> account; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows the use of the IsGuest property to return a value indicating whether the user account is identified as a <xref:System.Security.Principal.WindowsAccountType> account by the system. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#12](~/add/codesnippet/csharp/p-system.security.princi_11_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#12](~/add/codesnippet/cpp/p-system.security.princi_11_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#12](~/add/codesnippet/visualbasic/p-system.security.princi_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSystem">
@@ -1111,34 +685,21 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.IsSystem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user account is identified as a <see cref="T:System.Security.Principal.WindowsAccountType" /> account by the system.</summary>
-        <value>
-          <see langword="true" /> if the user account is a <see cref="T:System.Security.Principal.WindowsAccountType" /> account; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows the use of the IsSystem property to return a value indicating whether the user account is identified as a <xref:System.Security.Principal.WindowsAccountType> account by the system. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#11](~/add/codesnippet/csharp/p-system.security.princi_9_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#11](~/add/codesnippet/cpp/p-system.security.princi_9_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#11](~/add/codesnippet/visualbasic/p-system.security.princi_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1147,38 +708,21 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the user's Windows logon name.</summary>
-        <value>The Windows logon name of the user on whose behalf the code is being run.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The logon name is in the form DOMAIN\USERNAME.  
-  
-   
-  
-## Examples  
- The following code shows the use of the Name property to get the user's Windows logon name. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#8](~/add/codesnippet/csharp/p-system.security.princi_2_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#8](~/add/codesnippet/cpp/p-system.security.princi_2_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#8](~/add/codesnippet/visualbasic/p-system.security.princi_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -1187,40 +731,26 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Principal.SecurityIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the security identifier (SID) for the token owner.</summary>
-        <value>An object for the token owner.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SID uniquely identifies a user or group on all Windows NT implementations.  The returned SID identifies the default owner SID that will be applied to newly created objects.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the Owner property to display the security identifier for the token owner.  This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#19](~/add/codesnippet/csharp/p-system.security.princi_5_1.cs)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#19](~/add/codesnippet/visualbasic/p-system.security.princi_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RunImpersonated">
@@ -1229,7 +759,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1245,92 +780,10 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="safeAccessTokenHandle">The SafeAccessTokenHandle of the impersonated Windows identity.</param>
-        <param name="action">The System.Action to run.</param>
-        <summary>Runs the specified action as the impersonated Windows identity. Instead of using an impersonated method call and running your function in <see cref="T:System.Security.Principal.WindowsImpersonationContext" />, you can use RunImpersonated and provide your function directly as a parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the <xref:System.Security.Principal.WindowsIdentity> class to impersonate a user.  
-  
-> [!WARNING]
->  This sample asks the user to enter a password on the console screen. The password will be visible on the screen, because the console window does not support masked input natively.  
-  
-```c#  
-// The following example demonstrates the use of the WindowsIdentity class to impersonate a user.   
-// IMPORTANT NOTE:   
-// This sample asks the user to enter a password on the console screen.   
-// The password will be visible on the screen, because the console window   
-// does not support masked input natively.  
-  
-using System;  
-using System.Runtime.InteropServices;  
-using System.Security;  
-using System.Security.Principal;  
-using Microsoft.Win32.SafeHandles;  
-  
-public class ImpersonationDemo  
-{  
-    [DllImport("advapi32.dll", SetLastError = true, CharSet = CharSet.Unicode)]  
-    public static extern bool LogonUser(String lpszUsername, String lpszDomain, String lpszPassword,  
-        int dwLogonType, int dwLogonProvider, out SafeAccessTokenHandle phToken);  
-  
-    public static void Main()  
-    {  
-        // Get the user token for the specified user, domain, and password using the   
-        // unmanaged LogonUser method.   
-        // The local machine name can be used for the domain name to impersonate a user on this machine.  
-        Console.Write("Enter the name of the domain on which to log on: ");  
-        string domainName = Console.ReadLine();  
-  
-        Console.Write("Enter the login of a user on {0} that you wish to impersonate: ", domainName);  
-        string userName = Console.ReadLine();  
-  
-        Console.Write("Enter the password for {0}: ", userName);  
-  
-        const int LOGON32_PROVIDER_DEFAULT = 0;  
-        //This parameter causes LogonUser to create a primary token.   
-        const int LOGON32_LOGON_INTERACTIVE = 2;  
-  
-        // Call LogonUser to obtain a handle to an access token.   
-        SafeAccessTokenHandle safeAccessTokenHandle;  
-        bool returnValue = LogonUser(userName, domainName, Console.ReadLine(),  
-            LOGON32_LOGON_INTERACTIVE, LOGON32_PROVIDER_DEFAULT,  
-            out safeAccessTokenHandle);  
-  
-        if (false == returnValue)  
-        {  
-            int ret = Marshal.GetLastWin32Error();  
-            Console.WriteLine("LogonUser failed with error code : {0}", ret);  
-            throw new System.ComponentModel.Win32Exception(ret);  
-        }  
-  
-        Console.WriteLine("Did LogonUser Succeed? " + (returnValue ? "Yes" : "No"));  
-        // Check the identity.  
-        Console.WriteLine("Before impersonation: " + WindowsIdentity.GetCurrent().Name);  
-  
-        // Note: if you want to run as unimpersonated, pass  
-        //       'SafeAccessTokenHandle.InvalidHandle' instead of variable 'safeAccessTokenHandle'  
-        WindowsIdentity.RunImpersonated(  
-            safeAccessTokenHandle,  
-            // User action  
-            () =>  
-            {  
-                // Check the identity.  
-                Console.WriteLine("During impersonation: " + WindowsIdentity.GetCurrent().Name);  
-            }  
-            );  
-  
-        // Check the identity again.  
-        Console.WriteLine("After impersonation: " + WindowsIdentity.GetCurrent().Name);  
-    }  
-}  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <param name="safeAccessTokenHandle">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RunImpersonated&lt;T&gt;">
@@ -1339,7 +792,12 @@ public class ImpersonationDemo
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.RunImpersonated``1(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Func{``0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1358,94 +816,12 @@ public class ImpersonationDemo
         <Parameter Name="func" Type="System.Func&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of object used by and returned by the function.</typeparam>
-        <param name="safeAccessTokenHandle">The SafeAccessTokenHandle of the impersonated Windows identity.</param>
-        <param name="func">The System.Func to run.</param>
-        <summary>Runs the specified function as the impersonated Windows identity. Instead of using an impersonated method call and running your function in <see cref="T:System.Security.Principal.WindowsImpersonationContext" />, you can use <see cref="System.Security.Principal.WindowsIdentity.RunImpersonated%2A" /> and provide your function directly as a parameter.</summary>
-        <returns>Returns the result of the function.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the <xref:System.Security.Principal.WindowsIdentity> class to impersonate a user.  
-  
-> [!WARNING]
->  This sample asks the user to enter a password on the console screen. The password will be visible on the screen, because the console window does not support masked input natively.  
-  
-```c#  
-// The following example demonstrates the use of the WindowsIdentity class to impersonate a user.   
-// IMPORTANT NOTE:   
-// This sample asks the user to enter a password on the console screen.   
-// The password will be visible on the screen, because the console window   
-// does not support masked input natively.  
-  
-using System;  
-using System.Runtime.InteropServices;  
-using System.Security;  
-using System.Security.Principal;  
-using Microsoft.Win32.SafeHandles;  
-  
-public class ImpersonationDemo  
-{  
-    [DllImport("advapi32.dll", SetLastError = true, CharSet = CharSet.Unicode)]  
-    public static extern bool LogonUser(String lpszUsername, String lpszDomain, String lpszPassword,  
-        int dwLogonType, int dwLogonProvider, out SafeAccessTokenHandle phToken);  
-  
-    public static void Main()  
-    {  
-        // Get the user token for the specified user, domain, and password using the   
-        // unmanaged LogonUser method.   
-        // The local machine name can be used for the domain name to impersonate a user on this machine.  
-        Console.Write("Enter the name of the domain on which to log on: ");  
-        string domainName = Console.ReadLine();  
-  
-        Console.Write("Enter the login of a user on {0} that you wish to impersonate: ", domainName);  
-        string userName = Console.ReadLine();  
-  
-        Console.Write("Enter the password for {0}: ", userName);  
-  
-        const int LOGON32_PROVIDER_DEFAULT = 0;  
-        //This parameter causes LogonUser to create a primary token.   
-        const int LOGON32_LOGON_INTERACTIVE = 2;  
-  
-        // Call LogonUser to obtain a handle to an access token.   
-        SafeAccessTokenHandle safeAccessTokenHandle;  
-        bool returnValue = LogonUser(userName, domainName, Console.ReadLine(),  
-            LOGON32_LOGON_INTERACTIVE, LOGON32_PROVIDER_DEFAULT,  
-            out safeAccessTokenHandle);  
-  
-        if (false == returnValue)  
-        {  
-            int ret = Marshal.GetLastWin32Error();  
-            Console.WriteLine("LogonUser failed with error code : {0}", ret);  
-            throw new System.ComponentModel.Win32Exception(ret);  
-        }  
-  
-        Console.WriteLine("Did LogonUser Succeed? " + (returnValue ? "Yes" : "No"));  
-        // Check the identity.  
-        Console.WriteLine("Before impersonation: " + WindowsIdentity.GetCurrent().Name);  
-  
-        // Note: if you want to run as unimpersonated, pass  
-        //       'SafeAccessTokenHandle.InvalidHandle' instead of variable 'safeAccessTokenHandle'  
-        WindowsIdentity.RunImpersonated(  
-            safeAccessTokenHandle,  
-            // User action  
-            () =>  
-            {  
-                // Check the identity.  
-                Console.WriteLine("During impersonation: " + WindowsIdentity.GetCurrent().Name);  
-            }  
-            );  
-  
-        // Check the identity again.  
-        Console.WriteLine("After impersonation: " + WindowsIdentity.GetCurrent().Name);  
-    }  
-}  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="safeAccessTokenHandle">To be added.</param>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.IDeserializationCallback.OnDeserialization">
@@ -1455,7 +831,7 @@ public class ImpersonationDemo
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1465,8 +841,8 @@ public class ImpersonationDemo
         <Parameter Name="sender" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sender">The source of the deserialization event.</param>
-        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and is called back by the deserialization event when deserialization is complete.</summary>
+        <param name="sender">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1477,14 +853,9 @@ public class ImpersonationDemo
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1493,20 +864,10 @@ public class ImpersonationDemo
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">An object containing the information required to serialize the <see cref="T:System.Collections.Hashtable" />.</param>
-        <param name="context">An object containing the source and destination of the serialized stream associated with the <see cref="T:System.Collections.Hashtable" />.</param>
-        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the logical context information needed to recreate an instance of this execution context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method sets a <xref:System.Runtime.Serialization.SerializationInfo> with the logical call context information. During deserialization, the execution context object is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
-  
- For more information, see <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Token">
@@ -1516,41 +877,16 @@ public class ImpersonationDemo
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Windows account token for the user.</summary>
-        <value>The handle of the access token associated with the current execution thread.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Do not explicitly release the account token that is returned by the Token property. The token is released by the <xref:System.Security.Principal.WindowsIdentity.Dispose%2A> method, which you can call in code. <xref:System.Security.Principal.WindowsIdentity.Dispose%2A> is also automatically called by the garbage collector.  
-  
-> [!NOTE]
->  The account token that is returned by the Token property is a duplicate of the Windows token that is used to create the <xref:System.Security.Principal.WindowsIdentity> object and is automatically released by the .NET Framework. This is different from the account token (the `userToken` parameter for the constructor), which is used to create the <xref:System.Security.Principal.WindowsIdentity> object. `userToken` is a Windows account token that is created by a call to `LogonUser` and must be closed to avoid a memory leak.  
-  
-   
-  
-## Examples  
- The following code shows the use of the <xref:System.Security.Principal.WindowsIdentity.IsSystem%2A> property to get the Windows account token for the user. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
-  
- [!code-cs[System.Security.Principal.WindowsIdentity_AllMembers#14](~/add/codesnippet/csharp/p-system.security.princi_0_1.cs)]
- [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#14](~/add/codesnippet/cpp/p-system.security.princi_0_1.cpp)]
- [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#14](~/add/codesnippet/visualbasic/p-system.security.princi_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -1559,35 +895,26 @@ public class ImpersonationDemo
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.User" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Principal.SecurityIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the security identifier (SID) for the user.</summary>
-        <value>An object for the user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SID uniquely identifies a user or group on all Windows NT implementations.  
-  
-> [!NOTE]
->  The <xref:System.Security.Principal.WindowsIdentity> object returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method is not the same as the Windows anonymous user. This property gets `null` for an anonymous user represented by the <xref:System.Security.Principal.WindowsIdentity> object returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method; it does not get the SID representing an anonymous Windows user.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UserClaims">
@@ -1603,8 +930,8 @@ public class ImpersonationDemo
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets claims that have the <see cref="F:System.Security.Claims.ClaimTypes.WindowsUserClaim" /> property key.</summary>
-        <value>A collection of claims that have the <see cref="F:System.Security.Claims.ClaimTypes.WindowsUserClaim" /> property key.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

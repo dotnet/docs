@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectoryAccessRule" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The ActiveDirectoryAccessRule class is used to represent an access control entry (ACE) in the discretionary access control list (DACL) of an Active Directory Domain Services object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ActiveDirectoryAccessRule class contains properties of the access rule such as the trustee, access control type, access mask, and inheritance flags. This type of access rule is set on an <xref:System.DirectoryServices.ActiveDirectorySecurity> object.  
-  
- After the <xref:System.DirectoryServices.ActiveDirectorySecurity> object is committed to the directory store, it will modify the security descriptor of the object according to the rules set on the ActiveDirectoryAccessRule object.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -41,10 +30,10 @@
         <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object which identifies the trustee of the access rule.</param>
-        <param name="adRights">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration values that specifies the rights of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" /> class with the specified identity reference, Active Directory Domain Services rights, and access rule type.</summary>
+        <param name="identity">To be added.</param>
+        <param name="adRights">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +44,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -65,11 +53,11 @@
         <Parameter Name="inheritanceType" Type="System.DirectoryServices.ActiveDirectorySecurityInheritance" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
-        <param name="adRights">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration values that specifies the rights of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <param name="inheritanceType">One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the access rule.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" /> class with the specified identity reference, Active Directory Domain Services rights, access rule type, and inheritance type.</summary>
+        <param name="identity">To be added.</param>
+        <param name="adRights">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="inheritanceType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +68,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -90,11 +77,11 @@
         <Parameter Name="objectType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
-        <param name="adRights">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration values that specifies the rights of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <param name="objectType">The schema GUID of the object to which the access rule applies.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" /> class with the specified identity reference, Active Directory Domain Services rights, access rule type, and object type.</summary>
+        <param name="identity">To be added.</param>
+        <param name="adRights">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="objectType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +92,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -116,12 +102,12 @@
         <Parameter Name="inheritedObjectType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object which identifies the trustee of the access rule.</param>
-        <param name="adRights">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration values that specifies the rights of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <param name="inheritanceType">One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the access rule.</param>
-        <param name="inheritedObjectType">The schema GUID of the child object type that can inherit this access rule.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" /> class with the specified identity reference, Active Directory Domain Services rights, access rule type, inheritance type, and inherited object type.</summary>
+        <param name="identity">To be added.</param>
+        <param name="adRights">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="inheritanceType">To be added.</param>
+        <param name="inheritedObjectType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +118,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -143,12 +128,12 @@
         <Parameter Name="inheritanceType" Type="System.DirectoryServices.ActiveDirectorySecurityInheritance" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
-        <param name="adRights">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration values that specifies the rights of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <param name="objectType">The schema GUID of the object to which the access rule applies.</param>
-        <param name="inheritanceType">One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the access rule.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" /> class with the specified identity reference, Active Directory Domain Services rights, access rule type, object type, and inheritance type.</summary>
+        <param name="identity">To be added.</param>
+        <param name="adRights">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="objectType">To be added.</param>
+        <param name="inheritanceType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +144,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -171,13 +155,13 @@
         <Parameter Name="inheritedObjectType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
-        <param name="adRights">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration values that specifies the rights of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <param name="objectType">The schema GUID of the object to which the access rule applies.</param>
-        <param name="inheritanceType">One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the access rule.</param>
-        <param name="inheritedObjectType">The schema GUID of the child object type that can inherit this access rule.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" /> class with the specified identity reference, Active Directory Domain Services rights, access rule type, object type, inheritance type, and inherited object type.</summary>
+        <param name="identity">To be added.</param>
+        <param name="adRights">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="objectType">To be added.</param>
+        <param name="inheritanceType">To be added.</param>
+        <param name="inheritedObjectType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,15 +172,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Active Directory Domain Services rights for this access rule.</summary>
-        <value>A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration values that specify the Active Directory Domain Services access rights that are included in this rule.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,15 +190,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectorySecurityInheritance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the inheritance type for this access rule.</summary>
-        <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type for this access rule.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

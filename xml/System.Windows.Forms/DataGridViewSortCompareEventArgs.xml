@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewSortCompareEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.SortCompare" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can handle the <xref:System.Windows.Forms.DataGridView.SortCompare> event to provide custom sorting. This event occurs only when the <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=fullName> property is not set and the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A?displayProperty=fullName> property is set to `false`. This event occurs once for each pair of cells in the column being sorted. It occurs only when the user clicks the header of a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=fullName> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode>, or when you call the <xref:System.Windows.Forms.DataGridView.Sort%28System.Windows.Forms.DataGridViewColumn%2CSystem.ComponentModel.ListSortDirection%29?displayProperty=fullName> overload. When this event occurs for a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=fullName> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=fullName> property.  
-  
- You can use this event to sort rows using the cell values in one column or in multiple columns. Use the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1%2A> and <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2%2A> properties to compare cell values in the column specified in the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column%2A> property. Use the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1%2A> and <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2%2A> properties to access values in other columns through the <xref:System.Windows.Forms.DataGridView.Rows%2A?displayProperty=fullName> collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridView.SortCompare> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/visualbasic/t-system.windows.forms.d_60_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/csharp/t-system.windows.forms.d_60_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -51,12 +32,12 @@
         <Parameter Name="rowIndex2" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dataGridViewColumn">The column to sort.</param>
-        <param name="cellValue1">The value of the first cell to compare.</param>
-        <param name="cellValue2">The value of the second cell to compare.</param>
-        <param name="rowIndex1">The index of the row containing the first cell.</param>
-        <param name="rowIndex2">The index of the row containing the second cell.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewSortCompareEventArgs" /> class.</summary>
+        <param name="dataGridViewColumn">To be added.</param>
+        <param name="cellValue1">To be added.</param>
+        <param name="cellValue2">To be added.</param>
+        <param name="rowIndex1">To be added.</param>
+        <param name="rowIndex2">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,31 +48,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the first cell to compare.</summary>
-        <value>The value of the first cell.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is typically used in conjunction with the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2%2A> property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of CellValue1 in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_419_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/csharp/p-system.windows.forms.d_419_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellValue2">
@@ -101,31 +66,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the second cell to compare.</summary>
-        <value>The value of the second cell.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is typically used in conjunction with the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1%2A> property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of CellValue2 in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_117_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/csharp/p-system.windows.forms.d_117_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -135,31 +84,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the column being sorted.</summary>
-        <value>The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to sort.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is useful in determining and controlling sort behavior in programmatic sorts.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of Column in a multiple column sort. In this example the ID column is used to determine the final order if there are identical values in the sorted column, so no additional sorting will be done if there are duplicate values in the ID column. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_160_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/csharp/p-system.windows.forms.d_160_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RowIndex1">
@@ -169,31 +102,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the row containing the first cell to compare.</summary>
-        <value>The index of the row containing the second cell.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is useful when sorting rows based on the cell values in multiple columns.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of RowIndex1 in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_426_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/csharp/p-system.windows.forms.d_426_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RowIndex2">
@@ -203,31 +120,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the row containing the second cell to compare.</summary>
-        <value>The index of the row containing the second cell.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is useful when sorting rows based on the cell values in multiple columns.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of RowIndex2 in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_161_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/csharp/p-system.windows.forms.d_161_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortResult">
@@ -237,31 +138,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the order in which the compared cells will be sorted.</summary>
-        <value>Less than zero if the first cell will be sorted before the second cell; zero if the first cell and second cell have equivalent values; greater than zero if the second cell will be sorted before the first cell.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this value is typically the last operation you will perform in a handler for the <xref:System.Windows.Forms.DataGridView.SortCompare?displayProperty=fullName> event. You will typically set this value to the return value of a comparison method such as <xref:System.String.Compare%2A?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of SortResult in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_271_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.SortCompare#10](~/add/codesnippet/csharp/p-system.windows.forms.d_271_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,30 +1,19 @@
 <Type Name="SecurityTokenResolver" FullName="System.IdentityModel.Selectors.SecurityTokenResolver">
-  <TypeSignature Language="C#" Value="public abstract class SecurityTokenResolver : System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityTokenResolver extends System.Object implements class System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
+  <TypeSignature Language="C#" Value="public abstract class SecurityTokenResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityTokenResolver extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenResolver" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>System.IdentityModel.Configuration.ICustomIdentityConfiguration</InterfaceName>
-    </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a utility class that can retrieve security tokens or keys when you have a key identifier or key identifier clause.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SecurityTokenResolver class to retrieve a key or security token when you have a key identifier or key identifier clause. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> methods retrieve a token given that there is a key identifier or key identifier clause. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> retrieve a key given that there is a key identifier clause. The methods with a `Try` prefix return `false` when the retrieval is unsuccessful, whereas the methods without a `Try` prefix throw an exception.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +23,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +38,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,19 +48,11 @@
         <Parameter Name="canMatchLocalId" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="tokens">A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that contains the set of security tokens for which this security token resolver can resolve key identifiers and key identifier clauses to.</param>
-        <param name="canMatchLocalId">
-          <see langword="true" /> to resolve the <see langword="&lt;SecurityTokenReference&gt;" /> key identifier clauses that reference a security key that is located somewhere else in the SOAP message; otherwise, <see langword="false" />.</param>
-        <summary>Creates a default security token resolver for the specified security tokens.</summary>
-        <returns>A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that resolves key identifiers and clauses that match the security tokens specified in the <paramref name="tokens" /> parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The security token resolver that is returned from this method, uses the <xref:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause%2A> methods on the specified security tokens to resolve key identifiers and key identifier clauses.  
-  
- ]]></format>
-        </remarks>
+        <param name="tokens">To be added.</param>
+        <param name="canMatchLocalId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadCustomConfiguration">
@@ -92,16 +71,9 @@
         <Parameter Name="nodelist" Type="System.Xml.XmlNodeList" />
       </Parameters>
       <Docs>
-        <param name="nodelist">The custom configuration elements.</param>
-        <summary>When overridden in a derived class, loads custom configuration from XML.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, throws a <xref:System.NotImplementedException>. You can override this method to provide functionality in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="nodelist">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveSecurityKey">
@@ -111,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -121,20 +92,10 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to retrieve the key for.</param>
-        <summary>Obtains the key that is referenced in the specified key identifier clause.</summary>
-        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that is the key referenced in the specified key identifier clause.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> and ResolveSecurityKey methods differ in what happens when the key identifier clause cannot be resolved to a key. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> method returns `false`, whereas the ResolveSecurityKey method throws an exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="keyIdentifierClause" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">A key could not be retrieved for the key identifier clause specified in the <paramref name="keyIdentifierClause" /> parameter.</exception>
+        <param name="keyIdentifierClause">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveToken">
@@ -144,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,20 +114,10 @@
         <Parameter Name="keyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifier">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> to create a security token for.</param>
-        <summary>Retrieves a security token that matches one of the security key identifier clauses contained within the specified key identifier.</summary>
-        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the specified key identifier.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and ResolveToken methods differ in what happens when the key identifier cannot be resolved to a security token. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> method returns `false`, whereas the ResolveToken method throws an exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="keyIdentifier" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">A security token cannot be created for the specified key identifier.</exception>
+        <param name="keyIdentifier">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveToken">
@@ -177,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,17 +136,10 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to create a security token for.</param>
-        <summary>Retrieves the security token that matches the specified key identifier clause.</summary>
-        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the specified key identifier clause.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and ResolveToken methods differ in what happens when the key identifier clause cannot be resolved to a security token. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> method returns `false`, whereas the ResolveToken method throws an exception.  
-  
- ]]></format>
-        </remarks>
+        <param name="keyIdentifierClause">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryResolveSecurityKey">
@@ -207,7 +149,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,21 +159,11 @@
         <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to retrieve the key for.</param>
-        <param name="key">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the key that is referenced in the specified key identifier clause. This parameter is passed uninitialized.</param>
-        <summary>Attempts to retrieve the key that is referenced in the specified key identifier clause.</summary>
-        <returns>
-          <see langword="true" /> when a key can be retrieved for the specified key identifier clause; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TryResolveSecurityKey and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> methods differ in what happens when the key identifier clause cannot be resolved to a key. The TryResolveSecurityKey method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> method throws an exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="keyIdentifierClause" /> is <see langword="null" />.</exception>
+        <param name="keyIdentifierClause">To be added.</param>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryResolveSecurityKeyCore">
@@ -242,7 +173,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -253,19 +183,11 @@
         <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to retrieve the key for.</param>
-        <param name="key">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the key that is referenced in the specified key identifier clause. This parameter is passed uninitialized.</param>
-        <summary>Attempts to retrieve the key that is referenced in the specified key identifier clause.</summary>
-        <returns>
-          <see langword="true" /> when a key can be retrieved for the specified key identifier clause; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TryResolveSecurityKeyCore method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> methods.  
-  
- ]]></format>
-        </remarks>
+        <param name="keyIdentifierClause">To be added.</param>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryResolveToken">
@@ -275,7 +197,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -286,21 +207,11 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifier">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> to create a security token for.</param>
-        <param name="token">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the specified key identifier. This parameter is passed uninitialized.</param>
-        <summary>Attempts to retrieve the security token that matches one of the key identifier clauses contained within the specified key identifier.</summary>
-        <returns>
-          <see langword="true" /> when a security token can be retrieved for the specified key identifier; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TryResolveToken and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods differ in what happens when the key identifier cannot be resolved to a security token. The TryResolveToken method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> method throws an exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="keyIdentifier" /> is <see langword="null" />.</exception>
+        <param name="keyIdentifier">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryResolveToken">
@@ -310,7 +221,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -321,21 +231,11 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to create a security token for.</param>
-        <param name="token">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the specified key identifier clause. This parameter is passed uninitialized.</param>
-        <summary>Attempts to retrieve the security token that matches the specified key identifier clause.</summary>
-        <returns>
-          <see langword="true" /> when a security token can be retrieved for the specified key identifier clause; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TryResolveToken and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods differ in what happens when the key identifier clause cannot be resolved to a security token. The TryResolveToken method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> method throws an exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="keyIdentifierClause" /> is <see langword="null" />.</exception>
+        <param name="keyIdentifierClause">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryResolveTokenCore">
@@ -345,7 +245,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,19 +255,11 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifier">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> to create a security token for.</param>
-        <param name="token">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the specified key identifier. This parameter is passed uninitialized.</param>
-        <summary>When overridden in a derived class, attempts to retrieve the security token that matches at least one of the key identifier clauses contained within the specified key identifier.</summary>
-        <returns>
-          <see langword="true" /> when a security token can be retrieved for the specified key identifier; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TryResolveTokenCore method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods.  
-  
- ]]></format>
-        </remarks>
+        <param name="keyIdentifier">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryResolveTokenCore">
@@ -378,7 +269,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -389,19 +279,11 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to create a security token for.</param>
-        <param name="token">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the specified key identifier clause. This parameter is passed uninitialized.</param>
-        <summary>When overridden in a derived class, attempts to resolve the security token that matches the specified key identifier clause.</summary>
-        <returns>
-          <see langword="true" /> when a security token can be retrieved for the specified key identifier clause; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TryResolveTokenCore method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods.  
-  
- ]]></format>
-        </remarks>
+        <param name="keyIdentifierClause">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

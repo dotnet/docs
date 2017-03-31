@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NumericUpDown" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,39 +32,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows spin box (also known as an up-down control) that displays numeric values.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A NumericUpDown control contains a single numeric value that can be incremented or decremented by clicking the up or down buttons of the control. The user can also enter in a value, unless the <xref:System.Windows.Forms.UpDownBase.ReadOnly%2A> property is set to `true`.  
-  
- The numeric display can be formatted by setting the <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A>, <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A>, or <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A> properties. To display hexadecimal values in the control, set the <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> property to `true`. To display a thousands separator in decimal numbers when appropriate, set the <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A> property to `true`. To specify the number of digits displayed after the decimal symbol, set the <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A> property to the number of decimal places to display.  
-  
- To specify the allowable range of values for the control, set the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> and <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> properties. Set the <xref:System.Windows.Forms.NumericUpDown.Increment%2A> value to specify the value to be incremented or decremented to the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property when the user clicks the up or down arrow buttons. You can increase the speed that the control moves through numbers when the user continuously presses the up or down arrow by setting the <xref:System.Windows.Forms.NumericUpDown.Accelerations%2A> property.  
-  
- When the <xref:System.Windows.Forms.NumericUpDown.UpButton%2A> or <xref:System.Windows.Forms.NumericUpDown.DownButton%2A> methods are called, either in code or by the click of the up or down buttons, the new value is validated and the control is updated with the new value in the appropriate format. Specifically, if the <xref:System.Windows.Forms.UpDownBase.UserEdit%2A> property is set to `true`, the <xref:System.Windows.Forms.NumericUpDown.ParseEditText%2A> method is called prior to validating or updating the value. The value is then verified to be between the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> and <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> values, and the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called.  
-  
- Starting with the [!INCLUDE[net_2015](~/add/includes/net-2015-md.md)], the NumericUpDown control will be resized based on the system DPI setting when the app.config file contains the following entry:  
-  
-```  
-<appSettings>  
-  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
-</appSettings>  
-  
-```  
-  
-   
-  
-## Examples  
- The following code example creates and initializes a NumericUpDown control, sets some of its common properties, and allows the user to change some of these properties at run time. This code assumes three <xref:System.Windows.Forms.CheckBox> controls have been placed on a form and handlers for their <xref:System.Windows.Forms.Control.Click> events have been instantiated. The <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A>, <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A>, and <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> properties are set on the <xref:System.Windows.Forms.Control.Click> event of each check box.  
-  
- [!code-cs[Classic NumericUpDown Example#1](~/add/codesnippet/csharp/t-system.windows.forms.n_6_1.cs)]
- [!code-cpp[Classic NumericUpDown Example#1](~/add/codesnippet/cpp/t-system.windows.forms.n_6_1.cpp)]
- [!code-vb[Classic NumericUpDown Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.n_6_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,24 +43,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NumericUpDown" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.NumericUpDown> control, sets some of its common properties, and allows the user to change some of these properties at run time. This code assumes three <xref:System.Windows.Forms.CheckBox> controls have been placed on a form and handlers for their <xref:System.Windows.Forms.Control.Click> events have been instantiated. The <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A>, <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A>, and <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> properties are set on the <xref:System.Windows.Forms.Control.Click> event of each check box.  
-  
- [!code-cs[Classic NumericUpDown Example#1](~/add/codesnippet/csharp/m-system.windows.forms.n_2_1.cs)]
- [!code-cpp[Classic NumericUpDown Example#1](~/add/codesnippet/cpp/m-system.windows.forms.n_2_1.cpp)]
- [!code-vb[Classic NumericUpDown Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.n_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Accelerations">
@@ -102,7 +58,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -117,24 +72,9 @@
         <ReturnType>System.Windows.Forms.NumericUpDownAccelerationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of sorted acceleration objects for the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</summary>
-        <value>A <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" /> containing the sorted acceleration objects for the <see cref="T:System.Windows.Forms.NumericUpDown" /> control</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Accelerations property can be used to increase the speed with which the <xref:System.Windows.Forms.NumericUpDown> moves through a large set of numbers when the user holds the up or down arrow, either with the keyboard or with the mouse. Setting this property will decrease the number of <xref:System.Windows.Forms.NumericUpDown.ValueChanged> events that occur depending on the <xref:System.Windows.Forms.NumericUpDownAcceleration.Increment%2A> and <xref:System.Windows.Forms.NumericUpDownAcceleration.Seconds%2A> property values specified for each <xref:System.Windows.Forms.NumericUpDownAcceleration> object in the collection. The <xref:System.Windows.Forms.NumericUpDownAcceleration> objects contained in the collection are sorted by their <xref:System.Windows.Forms.NumericUpDownAcceleration.Seconds%2A?displayProperty=fullName> property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Accelerations property. To run this example, paste the following code into a form and call the `InitializeAcceleratedUpDown` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. While the code is running, press and hold the up or down arrow to see the acceleration occur.  
-  
- [!code-vb[System.Windows.Forms.MiscBugDriven#6](~/add/codesnippet/visualbasic/p-system.windows.forms.n_16_1.vb)]
- [!code-cs[System.Windows.Forms.MiscBugDriven#6](~/add/codesnippet/csharp/p-system.windows.forms.n_16_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -144,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,7 +91,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Begins the initialization of a <see cref="T:System.Windows.Forms.NumericUpDown" /> control that is used on a form or used by another component. The initialization occurs at run time.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,8 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessibility object for the control.</summary>
-        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,7 +121,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -195,32 +132,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of decimal places to display in the spin box (also known as an up-down control).</summary>
-        <value>The number of decimal places to display in the spin box. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the DecimalPlaces property is set, the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called to update the spin box's display to the new format.  
-  
- The appropriate decimal symbol is determined by the regional settings of the user's operating system.  
-  
-   
-  
-## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.NumericUpDown> control, sets some of its common properties, and allows the user to change some of these properties at run time. This code assumes three <xref:System.Windows.Forms.CheckBox> controls have been placed on a form and handlers for their <xref:System.Windows.Forms.Control.Click> events have been instantiated. The DecimalPlaces, <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A>, and <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> properties are set on the <xref:System.Windows.Forms.Control.Click> event of each check box.  
-  
- [!code-cs[Classic NumericUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.n_2_1.cs)]
- [!code-cpp[Classic NumericUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.n_2_1.cpp)]
- [!code-vb[Classic NumericUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.n_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value assigned is less than 0.  
-  
- -or-  
-  
- The value assigned is greater than 99.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DownButton">
@@ -230,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,15 +151,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Decrements the value of the spin box (also known as an up-down control).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the DownButton method is called, either in code or by the click of the down button, the new value is validated and the control is updated with the new value in the appropriate format. Specifically, if the <xref:System.Windows.Forms.UpDownBase.UserEdit%2A> property is set to `true`, the <xref:System.Windows.Forms.NumericUpDown.ParseEditText%2A> method is called prior to validating or updating the value. The value is then validated to be between the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> and <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> values, and the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -256,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -264,7 +169,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the initialization of a <see cref="T:System.Windows.Forms.NumericUpDown" /> control that is used on a form or used by another component. The initialization occurs at run time.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,7 +180,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -287,28 +191,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the spin box (also known as an up-down control) should display the value it contains in hexadecimal format.</summary>
-        <value>
-          <see langword="true" /> if the spin box should display its value in hexadecimal format; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the Hexadecimal property is set, the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called to update the spin box's display to the new format.  
-  
- When the Hexadecimal property is set to `true`, the <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> property should be set to <xref:System.Int32.MaxValue?displayProperty=fullName> and the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> property should be set to <xref:System.Int32.MinValue?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.NumericUpDown> control, sets some of its common properties, and allows the user to change some of these properties at run time. This code assumes three <xref:System.Windows.Forms.CheckBox> controls have been placed on a form and handlers for their <xref:System.Windows.Forms.Control.Click> events have been instantiated. The <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A>, <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A>, and Hexadecimal properties are set on the <xref:System.Windows.Forms.Control.Click> event of each check box.  
-  
- [!code-cs[Classic NumericUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.n_0_1.cs)]
- [!code-cpp[Classic NumericUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.n_0_1.cpp)]
- [!code-vb[Classic NumericUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.n_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Increment">
@@ -318,33 +203,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value to increment or decrement the spin box (also known as an up-down control) when the up or down buttons are clicked.</summary>
-        <value>The value to increment or decrement the <see cref="System.Windows.Forms.NumericUpDown.Value%2A" /> property when the up or down buttons are clicked on the spin box. The default value is 1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Clicking the up button causes the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property to increment by the amount specified by the Increment property and approach the <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> property. Clicking the down button causes the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property to be decremented by the amount specified by the Increment property and approach the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> property.  
-  
-   
-  
-## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.NumericUpDown> control, sets some of its common properties, and allows the user to change some of these properties at run time. This code assumes three <xref:System.Windows.Forms.CheckBox> controls have been placed on a form and handlers for their <xref:System.Windows.Forms.Control.Click> events have been instantiated. The <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A>, <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A>, and <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> properties are set on the <xref:System.Windows.Forms.Control.Click> event of each check box.  
-  
- [!code-cs[Classic NumericUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.n_8_1.cs)]
- [!code-cpp[Classic NumericUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.n_8_1.cpp)]
- [!code-vb[Classic NumericUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.n_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is not greater than or equal to zero.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -354,7 +221,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -366,25 +232,9 @@
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum value for the spin box (also known as an up-down control).</summary>
-        <value>The maximum value for the spin box. The default value is 100.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the Maximum property is set, the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> property is evaluated and the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called. If the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> property is greater than the new Maximum property, the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> property value is set equal to the Maximum value. If the current <xref:System.Windows.Forms.NumericUpDown.Value%2A> is greater than the new Maximum value. the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property value is set equal to the Maximum value.  
-  
-   
-  
-## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.NumericUpDown> control, sets some of its common properties, and allows the user to change some of these properties at run time. This code assumes three <xref:System.Windows.Forms.CheckBox> controls have been placed on a form and handlers for their <xref:System.Windows.Forms.Control.Click> events have been instantiated. The <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A>, <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A>, and <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> properties are set on the <xref:System.Windows.Forms.Control.Click> event of each check box.  
-  
- [!code-cs[Classic NumericUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.n_1_1.cs)]
- [!code-cpp[Classic NumericUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.n_1_1.cpp)]
- [!code-vb[Classic NumericUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.n_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -394,7 +244,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -406,25 +255,9 @@
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum allowed value for the spin box (also known as an up-down control).</summary>
-        <value>The minimum allowed value for the spin box. The default value is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the Minimum property is set, the <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> property is evaluated and the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called. If the new Minimum property value is greater than the <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> property value, the <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> value is set equal to the Minimum value. If the <xref:System.Windows.Forms.NumericUpDown.Value%2A> is less than the new Minimum value, the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property is also set equal to the Minimum value.  
-  
-   
-  
-## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.NumericUpDown> control, sets some of its common properties, and allows the user to change some of these properties at run time. This code assumes three <xref:System.Windows.Forms.CheckBox> controls have been placed on a form and handlers for their <xref:System.Windows.Forms.Control.Click> events have been instantiated. The <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A>, <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A>, and <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> properties are set on the <xref:System.Windows.Forms.Control.Click> event of each check box.  
-  
- [!code-cs[Classic NumericUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.n_3_1.cs)]
- [!code-cpp[Classic NumericUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.n_3_1.cpp)]
- [!code-vb[Classic NumericUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.n_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -434,7 +267,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -444,18 +276,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnKeyDown method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -465,7 +288,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -475,18 +297,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnKeyUp method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -496,7 +309,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -506,18 +318,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnLostFocus method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTextBoxKeyPress">
@@ -527,7 +330,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -538,17 +340,10 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyPressEventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">The source of the event.</param>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.NumericUpDown> control accepts only digits, the negative sign, the decimal point, and editing keystrokes, such as BACKSPACE. If the <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> property is set to `true`, <xref:System.Windows.Forms.NumericUpDown> accepts hexadecimal digits.  
-  
- ]]></format>
-        </remarks>
+        <param name="source">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnValueChanged">
@@ -558,7 +353,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -568,18 +362,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.NumericUpDown.ValueChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnValueChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -589,7 +374,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -607,17 +391,9 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the space between the edges of a <see cref="T:System.Windows.Forms.NumericUpDown" /> control and its contents.</summary>
-        <value>
-          <see cref="T:System.Windows.Forms.Padding" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the Padding property as no effect on the appearance of the <xref:System.Windows.Forms.NumericUpDown> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
@@ -627,7 +403,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -642,15 +417,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.NumericUpDown.Padding%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParseEditText">
@@ -660,7 +428,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -668,15 +435,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts the text displayed in the spin box (also known as an up-down control) to a numeric value and evaluates it.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Windows.Forms.UpDownBase.UserEdit%2A> property is set to `true`, the text displayed is converted to a numeric value so it can be validated to be between the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> and <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> property values.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -686,7 +446,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -707,17 +466,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text to be displayed in the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</summary>
-        <value>
-          <see langword="Null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Text has no affect on the appearance of the <xref:System.Windows.Forms.NumericUpDown> control; therefore, it is hidden in the designer and from IntelliSense.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -727,7 +478,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -742,7 +492,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.NumericUpDown.Text%2A" /> property changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -753,7 +503,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -768,28 +517,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a thousands separator is displayed in the spin box (also known as an up-down control) when appropriate.</summary>
-        <value>
-          <see langword="true" /> if a thousands separator is displayed in the spin box when appropriate; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the ThousandsSeparator property is set, the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called to update the spin box's display to the new format.  
-  
- The appropriate thousands separator is determined by the regional settings of the user's operating system.  
-  
-   
-  
-## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.NumericUpDown> control, sets some of its common properties, and allows the user to change some of these properties at run time. This code assumes three <xref:System.Windows.Forms.CheckBox> controls have been placed on a form and handlers for their <xref:System.Windows.Forms.Control.Click> events have been instantiated. The <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A>, ThousandsSeparator, and <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> properties are set on the <xref:System.Windows.Forms.Control.Click> event of each check box.  
-  
- [!code-cs[Classic NumericUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.n_9_1.cs)]
- [!code-cpp[Classic NumericUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.n_9_1.cpp)]
- [!code-vb[Classic NumericUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.n_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -799,7 +529,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -807,16 +536,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</summary>
-        <returns>A string that represents the current <see cref="T:System.Windows.Forms.NumericUpDown" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The return string includes the type and the values for the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> and <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpButton">
@@ -826,7 +548,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -834,15 +555,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Increments the value of the spin box (also known as an up-down control).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the UpButton method is called, either in code or by the click of the up button, the new value is validated and the control is updated with the new value in the appropriate format. Specifically, if <xref:System.Windows.Forms.UpDownBase.UserEdit%2A> is set to `true`, <xref:System.Windows.Forms.NumericUpDown.ParseEditText%2A> is called prior to validating or updating the value. The value is then validated to be between the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> and <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> values and the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateEditText">
@@ -852,7 +566,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -860,15 +573,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Displays the current value of the spin box (also known as an up-down control) in the appropriate format.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the spin box is not being initialized, the current value is validated to be between the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> and <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> values and is converted to the correct format for display in the control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateEditText">
@@ -878,7 +584,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -886,15 +591,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Validates and updates the text displayed in the spin box (also known as an up-down control).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ValidateEditText method calls the <xref:System.Windows.Forms.NumericUpDown.ParseEditText%2A> and <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> methods to validate and update the display of the spin box.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -904,7 +602,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -916,30 +613,9 @@
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value assigned to the spin box (also known as an up-down control).</summary>
-        <value>The numeric value of the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the Value property is set, the new value is validated to be between the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> and <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> values. Following this, the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called to update the spin box's display with the new value in the appropriate format.  
-  
-   
-  
-## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.NumericUpDown> control, sets some of its common properties, and allows the user to change some of these properties at run time. This code assumes three <xref:System.Windows.Forms.CheckBox> controls have been placed on a form and handlers for their <xref:System.Windows.Forms.Control.Click> events have been instantiated. The <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A>, <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A>, and <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> properties are set on the <xref:System.Windows.Forms.Control.Click> event of each check box.  
-  
- [!code-cs[Classic NumericUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.n_11_1.cs)]
- [!code-cpp[Classic NumericUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.n_11_1.cpp)]
- [!code-vb[Classic NumericUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.n_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than the <see cref="System.Windows.Forms.NumericUpDown.Minimum%2A" /> property value.  
-  
- -or-  
-  
- The assigned value is greater than the <see cref="System.Windows.Forms.NumericUpDown.Maximum%2A" /> property value.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueChanged">
@@ -949,34 +625,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.NumericUpDown.Value%2A" /> property has been changed in some way.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the ValueChanged event to occur, the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property can be changed in code, by clicking the up or down button, or by the user entering a new value that is read by the control. The new value is read when the user hits the ENTER key or navigates away from the control. If the user enters a new value and then clicks the up or down button, the ValueChanged event will occur twice.  
-  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the ValueChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.NumericUpDown> named `NumericUpDown1`. Then ensure that the event handler is associated with the ValueChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#515](~/add/codesnippet/csharp/e-system.windows.forms.n_2_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#515](~/add/codesnippet/visualbasic/e-system.windows.forms.n_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

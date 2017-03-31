@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Creates and compiles <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" /> and <see cref="Microsoft.VisualBasic.Activities.VisualBasicValue%601" /> expressions.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,16 +38,16 @@
         <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="targetType">The expected expression type.</param>
-        <param name="expressionText">The expression in Visual Basic syntax.</param>
-        <param name="namespaces">The imported namespaces.</param>
-        <param name="referencedAssemblies">The referenced assemblies.</param>
-        <param name="environment">The mechanism for resolving names to their associated <see cref="T:System.Activities.Argument" /> and <see cref="T:System.Activities.Variable" /> objects.</param>
-        <param name="returnType">When this method returns, contains the result type of the expression. This parameter is passed uninitialized.</param>
-        <param name="compileError">When this method returns, contains any compilation errors that occurred, or <see langword="null" /> if compilation was successful. This parameter is passed uninitialized.</param>
-        <param name="vbSettings">When this method returns, contains the settings required to compile the expression. This parameter is passed uninitialized.</param>
-        <summary>Creates and returns a precompiled <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" /> expression.</summary>
-        <returns>The precompiled <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" /> expression.</returns>
+        <param name="targetType">To be added.</param>
+        <param name="expressionText">To be added.</param>
+        <param name="namespaces">To be added.</param>
+        <param name="referencedAssemblies">To be added.</param>
+        <param name="environment">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="compileError">To be added.</param>
+        <param name="vbSettings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,16 +74,16 @@
         <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="targetType">The expected expression type.</param>
-        <param name="expressionText">The expression in Visual Basic syntax.</param>
-        <param name="namespaces">The imported namespaces.</param>
-        <param name="referencedAssemblies">The referenced assemblies.</param>
-        <param name="environment">The mechanism for resolving names to their associated <see cref="T:System.Activities.Argument" /> and <see cref="T:System.Activities.Variable" /> objects.</param>
-        <param name="returnType">When this method returns, contains the result type of the expression. This parameter is passed uninitialized.</param>
-        <param name="compileError">When this method returns, contains any compilation errors that occurred, or <see langword="null" /> if compilation was successful. This parameter is passed uninitialized. This parameter is passed uninitialized.</param>
-        <param name="vbSettings">When this method returns, contains the settings required to compile the expression.</param>
-        <summary>Creates and returns a precompiled <see cref="Microsoft.VisualBasic.Activities.VisualBasicValue%601" /> expression.</summary>
-        <returns>The precompiled <see cref="Microsoft.VisualBasic.Activities.VisualBasicValue%601" /> expression.</returns>
+        <param name="targetType">To be added.</param>
+        <param name="expressionText">To be added.</param>
+        <param name="namespaces">To be added.</param>
+        <param name="referencedAssemblies">To be added.</param>
+        <param name="environment">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="compileError">To be added.</param>
+        <param name="vbSettings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.Activities.Validation.Constraint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the constraint used in name shadowing.</summary>
-        <value>The constraint used in name shadowing.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,12 +124,12 @@
         <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="visualBasicReference">The expression to recompile.</param>
-        <param name="returnType">When this method returns, contains the result type of the expression. This parameter is passed uninitialized.</param>
-        <param name="compileError">When this method returns, contains any compilation errors that occurred, or <see langword="null" /> if compilation was successful. This parameter is passed uninitialized.</param>
-        <param name="vbSettings">When this method returns, contains the settings required to compile the expression. This parameter is passed uninitialized.</param>
-        <summary>Recompiles a previously compiled <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" /> expression.</summary>
-        <returns>The recompiled <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" /> expression.</returns>
+        <param name="visualBasicReference">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="compileError">To be added.</param>
+        <param name="vbSettings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,12 +152,12 @@
         <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="visualBasicValue">The expression to recompile.</param>
-        <param name="returnType">When this method returns, contains the result type of the expression. This parameter is passed uninitialized.</param>
-        <param name="compileError">When this method returns, contains any compilation errors that occurred, or <see langword="null" /> if compilation was successful. This parameter is passed uninitialized. This parameter is passed uninitialized.</param>
-        <param name="vbSettings">When this method returns, contains the settings required to compile the expression.</param>
-        <summary>Recompiles a previously compiled <see cref="Microsoft.VisualBasic.Activities.VisualBasicValue%601" /> expression.</summary>
-        <returns>The recompiled <see cref="Microsoft.VisualBasic.Activities.VisualBasicValue%601" /> expression.</returns>
+        <param name="visualBasicValue">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="compileError">To be added.</param>
+        <param name="vbSettings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

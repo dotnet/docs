@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.SessionChangeDescription" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,18 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Identifies the reason for a Terminal Services session change.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the SessionChangeDescription class in an implementation of the <xref:System.ServiceProcess.ServiceBase.OnSessionChange%2A> method in a class derived from <xref:System.ServiceProcess.ServiceBase>.  This code example is part of a larger example provided for the <xref:System.ServiceProcess.ServiceBase> class.  
-  
- [!code-cs[ServiceBase_Commands#9](~/add/codesnippet/csharp/t-system.serviceprocess._9_1.cs)]
- [!code-vb[ServiceBase_Commands#9](~/add/codesnippet/visualbasic/t-system.serviceprocess._9_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -33,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -43,18 +31,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare to the current <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structure.</param>
-        <summary>Determines whether the specified object is equal to the current session change description.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> is equal to the current <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structure; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The return value is `false` if `obj` is not a <xref:System.ServiceProcess.SessionChangeDescription> or if it is `null`. Equality is determined by comparing the <xref:System.ServiceProcess.SessionChangeDescription.Reason%2A> and <xref:System.ServiceProcess.SessionChangeDescription.SessionId%2A> properties of the specified <xref:System.ServiceProcess.SessionChangeDescription> structure to the <xref:System.ServiceProcess.SessionChangeDescription.Reason%2A> and <xref:System.ServiceProcess.SessionChangeDescription.SessionId%2A> properties of the current <xref:System.ServiceProcess.SessionChangeDescription> structure. The two structures are considered equal if their properties are equal.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -64,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,18 +53,10 @@
         <Parameter Name="changeDescription" Type="System.ServiceProcess.SessionChangeDescription" />
       </Parameters>
       <Docs>
-        <param name="changeDescription">The <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structure to compare to the current <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structure.</param>
-        <summary>Determines whether the specified session change description is equal to the current session change description.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="changeDescription" /> is equal to the current <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structure; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Equality is determined by comparing the <xref:System.ServiceProcess.SessionChangeDescription.Reason%2A> and <xref:System.ServiceProcess.SessionChangeDescription.SessionId%2A> properties of the specified <xref:System.ServiceProcess.SessionChangeDescription> structure to the <xref:System.ServiceProcess.SessionChangeDescription.Reason%2A> and <xref:System.ServiceProcess.SessionChangeDescription.SessionId%2A> properties of the current <xref:System.ServiceProcess.SessionChangeDescription> structure. The two structures are considered equal if their properties are equal.  
-  
- ]]></format>
-        </remarks>
+        <param name="changeDescription">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -95,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,16 +73,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a hash code for the current session change description.</summary>
-        <returns>A hash code for the current session change description.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned hash code is calculated from the values of the <xref:System.ServiceProcess.SessionChangeDescription.Reason%2A> and <xref:System.ServiceProcess.SessionChangeDescription.SessionId%2A> properties. The hash code should not be used to compare <xref:System.ServiceProcess.SessionChangeDescription> instances.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -122,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,19 +95,11 @@
         <Parameter Name="b" Type="System.ServiceProcess.SessionChangeDescription" />
       </Parameters>
       <Docs>
-        <param name="a">A <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structure.</param>
-        <param name="b">A <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structure.</param>
-        <summary>Returns a value indicating whether two <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structures are equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operator is implemented using the <xref:System.ServiceProcess.SessionChangeDescription.Equals%28System.Object%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -155,7 +109,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,19 +119,11 @@
         <Parameter Name="b" Type="System.ServiceProcess.SessionChangeDescription" />
       </Parameters>
       <Docs>
-        <param name="a">A <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structure.</param>
-        <param name="b">A <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structure.</param>
-        <summary>Returns a value indicating whether two <see cref="T:System.ServiceProcess.SessionChangeDescription" /> structures are not equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operator is implemented using the <xref:System.ServiceProcess.SessionChangeDescription.Equals%28System.Object%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reason">
@@ -188,26 +133,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.SessionChangeReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the reason for the session change.</summary>
-        <value>One of the <see cref="T:System.ServiceProcess.SessionChangeReason" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the Reason property in an implementation of the <xref:System.ServiceProcess.ServiceBase.OnSessionChange%2A> method in a class derived from <xref:System.ServiceProcess.ServiceBase>.  This code example is part of a larger example provided for the <xref:System.ServiceProcess.ServiceBase> class.  
-  
- [!code-cs[ServiceBase_Commands#10](~/add/codesnippet/csharp/p-system.serviceprocess._5_1.cs)]
- [!code-vb[ServiceBase_Commands#10](~/add/codesnippet/visualbasic/p-system.serviceprocess._5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionId">
@@ -217,26 +151,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the session ID for the associated session.</summary>
-        <value>The session ID for the associated session.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the SessionId property in an implementation of the <xref:System.ServiceProcess.ServiceBase.OnSessionChange%2A> method in a class derived from <xref:System.ServiceProcess.ServiceBase>.  This code example is part of a larger example provided for the <xref:System.ServiceProcess.ServiceBase> class.  
-  
- [!code-cs[ServiceBase_Commands#10](~/add/codesnippet/csharp/p-system.serviceprocess._10_1.cs)]
- [!code-vb[ServiceBase_Commands#10](~/add/codesnippet/visualbasic/p-system.serviceprocess._10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Xml" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,84 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Displays an XML document without formatting or using Extensible Stylesheet Language Transformations (XSLT).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this topic:  
-  
--   [Introduction](#introduction)  
-  
--   [Specifying XML Data](#specifying_xml_data)  
-  
--   [Specifying an XSL Transformation](#specifying_an_xsl_transformation)  
-  
--   [Declarative Syntax](#declarative_syntax)  
-  
-<a name="introduction"></a>   
-## Introduction  
- Use the Xml control to display the contents of an XML document without formatting or using XSL Transformations.  
-  
-<a name="specifying_xml_data"></a>   
-## Specifying XML Data  
- The XML document to display is specified by setting one of three properties. These three properties represent the different types of XML documents that can be displayed. You can display a <xref:System.Xml.XmlDocument?displayProperty=fullName>, an XML string, or an XML file by setting the appropriate property. The following table lists the properties for specifying the XML document.  
-  
-|Property|Description|  
-|--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.Xml.Document%2A>|Sets the XML document using a <xref:System.Xml.XmlDocument?displayProperty=fullName> object. **Warning:**  This property is obsolete. Use one of the other properties listed in this section to set the XML content for the Xml control.|  
-|<xref:System.Web.UI.WebControls.Xml.DocumentContent%2A>|Sets the XML document using a string. **Note:**  This property is commonly set declaratively by placing text between the opening and closing `<asp:Xml>` tags of the Xml control.|  
-|<xref:System.Web.UI.WebControls.Xml.DocumentSource%2A>|Sets the XML document using a file.|  
-  
-> [!NOTE]
->  At least one of the XML document properties must be set to display an XML document. If more than one XML document property is set, the XML document referenced in the last property set is displayed. The documents in the other properties are ignored.  
-  
-<a name="specifying_an_xsl_transformation"></a>   
-## Specifying an XSL Transformation  
- You can optionally specify an XSL Transformation (XSLT) style sheet that formats the XML document before it is written to the output stream by setting one of two properties. The two properties represent the different types of XSL Transformation style sheets that can be used to format the XML document. You can format the XML document with a <xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=fullName> object or with an XSL Transformation style sheet file by setting the appropriate property. If no XSL Transformation style sheet is specified, the XML document is displayed using the default format. The following table lists the properties for specifying an XSL Transformation style sheet.  
-  
-|Property|Description|  
-|--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.Xml.Transform%2A>|Formats the XML document using the specified <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object. **Note:**  Using a <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object requires `Full Trust` permissions.|  
-|<xref:System.Web.UI.WebControls.Xml.TransformSource%2A>|Formats the XML document using the specified XSL Transformation style sheet file.|  
-  
-> [!NOTE]
->  The XSL Transformation style sheet is optional. You do not need to set the <xref:System.Web.UI.WebControls.Xml.Transform%2A> or the <xref:System.Web.UI.WebControls.Xml.TransformSource%2A> property. If both XSL Transformation style sheet properties are set, the last property set determines which XSL Transformation style sheet is used to format the XML document. The other property is ignored.  
-  
- The Xml class also provides the <xref:System.Web.UI.WebControls.Xml.TransformArgumentList%2A> property, which enables you to provide the XSL Transformation style sheet with optional arguments. The arguments can be either XSL Transformations (XSLT) parameters or extension objects.  
-  
-<a name="declarative_syntax"></a>   
-## Declarative Syntax  
-  
-```  
-<asp:Xml  
-    DocumentSource="uri"  
-    EnableTheming="True|False"  
-    EnableViewState="True|False"  
-    ID="string"  
-    OnDataBinding="DataBinding event handler"  
-    OnDisposed="Disposed event handler"  
-    OnInit="Init event handler"  
-    OnLoad="Load event handler"  
-    OnPreRender="PreRender event handler"  
-    OnUnload="Unload event handler"  
-    runat="server"  
-    SkinID="string"  
-    TransformSource="string"  
-    Visible="True|False"  
-/>  
-```  
-  
-   
-  
-## Examples  
- The following code example shows how to create <xref:System.Xml.XmlDocument> and <xref:System.Xml.Xsl.XslTransform> objects from a sample XML file and an XSL Transformation style sheet. The objects are then used by the XML control to display the XML document.  
-  
- [!code-cs[XmlClassExample#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_197_1.aspx)]
- [!code-vb[XmlClassExample#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_197_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,12 +36,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Xml" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +51,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,24 +60,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">An <see cref="T:System.Object" /> that represents the parsed element.</param>
-        <summary>Notifies the server control that an element, either XML or HTML, was parsed, and adds the element to the server control's <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to override the AddParsedSubObject method in a custom <xref:System.Web.UI.WebControls.Xml> server control.  
-  
- [!code-cs[CustomXmlAddParsedSubObject#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_244_1.aspx)]
- [!code-vb[CustomXmlAddParsedSubObject#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_244_1.aspx)]  
-  
- [!code-vb[CustomXmlAddParsedSubObject#2](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_244_2.vb)]
- [!code-cs[CustomXmlAddParsedSubObject#2](~/add/codesnippet/csharp/m-system.web.ui.webcontr_244_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">
-          <paramref name="obj" /> is not of type <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientID">
@@ -166,7 +72,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -178,8 +83,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Overrides the <see cref="System.Web.UI.Control.ClientID%2A" /> property and returns the base server control identifier.</summary>
-        <value>The base server control identifier.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,7 +95,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -202,8 +106,8 @@
         <ReturnType>System.Web.UI.ControlCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Overrides the <see cref="System.Web.UI.Control.Controls%2A" /> property and returns the base <see cref="T:System.Web.UI.ControlCollection" /> collection.</summary>
-        <value>The base <see cref="T:System.Web.UI.ControlCollection" /> collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,16 +125,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Web.UI.EmptyControlCollection" /> object.</summary>
-        <returns>Always returns an <see cref="T:System.Web.UI.EmptyControlCollection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateControlCollection method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.Xml> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -241,7 +137,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -259,26 +154,9 @@
         <ReturnType>System.Xml.XmlDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Xml.XmlDocument" /> to display in the <see cref="T:System.Web.UI.WebControls.Xml" /> control.</summary>
-        <value>The <see cref="T:System.Xml.XmlDocument" /> to display in the <see cref="T:System.Web.UI.WebControls.Xml" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Document property is obsolete. To specify the XML that will be displayed in the <xref:System.Web.UI.WebControls.Xml> control, use the <xref:System.Web.UI.WebControls.Xml.DocumentContent%2A> property or the <xref:System.Web.UI.WebControls.Xml.DocumentSource%2A> property. For more information about these alternatives, see the class overview for the <xref:System.Web.UI.WebControls.Xml> control.  
-  
- The XML document to display in the <xref:System.Web.UI.WebControls.Xml> control is specified in one of three ways. You can specify a <xref:System.Xml.XmlDocument?displayProperty=fullName> object, an XML string, or an XML file by setting the appropriate property. The Document property is used to specify a <xref:System.Xml.XmlDocument?displayProperty=fullName> (representing an XML document) to display in the control.  
-  
-   
-  
-## Examples  
- The following code example shows how to create <xref:System.Xml.XmlDocument> and <xref:System.Xml.Xsl.XslTransform> objects from a sample XML file and an XSL Transformation style sheet. The objects are then used by the XML control to display the XML document.  
-  
- [!code-cs[XmlClassExample#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_173_1.aspx)]
- [!code-vb[XmlClassExample#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_173_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentContent">
@@ -288,7 +166,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -303,19 +180,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets a string that contains the XML document to display in the <see cref="T:System.Web.UI.WebControls.Xml" /> control.</summary>
-        <value>A string that contains the XML document to display in the <see cref="T:System.Web.UI.WebControls.Xml" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XML document to display in the <xref:System.Web.UI.WebControls.Xml> control is specified in one of three ways. You can specify a <xref:System.Xml.XmlDocument?displayProperty=fullName> object, an XML string, or an XML file by setting the appropriate property. The DocumentContent property is used to specify an XML string (representing an XML document) to display in the control. The DocumentContent property is not typically programmatically set, or set as an attribute of the control. Instead, the XML string is usually set declaratively by placing text between the opening and closing `<asp:Xml>` tags of the control.  
-  
-> [!NOTE]
->  Although the DocumentContent property contains both `get` and `set` accessors, only the `set` accessor is useful. If you use the `get` accessor, <xref:System.String.Empty?displayProperty=fullName> is returned.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentSource">
@@ -325,7 +192,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -343,24 +209,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path to an XML document to display in the <see cref="T:System.Web.UI.WebControls.Xml" /> control.</summary>
-        <value>The path to an XML document to display in the <see cref="T:System.Web.UI.WebControls.Xml" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XML document to display in the <xref:System.Web.UI.WebControls.Xml> control is specified in one of three ways. You can specify a <xref:System.Xml.XmlDocument?displayProperty=fullName> object, an XML string, or an XML file by setting the appropriate property. The DocumentSource property is used to specify the path to an XML file (representing an XML document) to display in the control. You can use a relative or an absolute path. A relative path relates the location of the file to the location of the Web Forms page or user control, without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the path to the file in code. An absolute path provides the complete path, so moving the site to another directory requires updating the code.  
-  
-   
-  
-## Examples  
- The following code example shows how to display an XML document using an XSL Transform in the <xref:System.Web.UI.WebControls.Xml> control.  
-  
- [!code-vb[XmlControlClassExample#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_902_1.aspx)]
- [!code-cs[XmlControlClassExample#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_902_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -370,7 +221,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -388,17 +238,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Overrides the <see cref="System.Web.UI.Control.EnableTheming%2A" /> property. This property is not supported by the <see cref="T:System.Web.UI.WebControls.Xml" /> class.</summary>
-        <value>Always returns <see langword="false" />. This property is not supported.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EnableTheming property is inherited from the <xref:System.Web.UI.Control> class, but is not applicable to the <xref:System.Web.UI.WebControls.Xml> class. Any attempt to set the value of this property throws a <xref:System.NotSupportedException> exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">An attempt is made to set the value of this property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -408,7 +250,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -423,9 +264,9 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">The identifier for the control to be found.</param>
-        <summary>Searches the page naming container for the specified server control.</summary>
-        <returns>The specified control; otherwise, <see langword="null" /> if the specified control does not exist.</returns>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,7 +277,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -449,16 +289,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Overrides the <see cref="System.Web.UI.Control.Focus%2A" /> method. This method is not supported by the <see cref="T:System.Web.UI.WebControls.Xml" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Focus method is inherited from the <xref:System.Web.UI.Control> class, but it is not applicable to the <xref:System.Web.UI.WebControls.Xml> class. Any attempt to invoke the method throws a <xref:System.NotSupportedException> exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">An attempt is made to invoke this method.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -468,7 +300,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -476,16 +307,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets design-time data for a control.</summary>
-        <returns>An <see cref="T:System.Collections.IDictionary" /> containing the design-time data for the <see cref="T:System.Web.UI.WebControls.Xml" /> control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetDesignModeState method is a helper method used to get the current design-time state of the <xref:System.Web.UI.WebControls.Xml> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasControls">
@@ -495,7 +319,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -508,9 +331,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the server control contains any child controls.</summary>
-        <returns>
-          <see langword="true" /> if the control contains other controls; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -521,7 +343,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -531,22 +352,9 @@
         <Parameter Name="output" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="output">The result of the output stream.</param>
-        <summary>Renders the results to the output stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to override the Render method in a custom server control so that the <xref:System.Web.UI.WebControls.Xml> control is always displayed with an image.  
-  
- [!code-vb[CustomXmlRender#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_194_1.aspx)]
- [!code-cs[CustomXmlRender#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_194_1.aspx)]  
-  
- [!code-cs[CustomXmlRender#2](~/add/codesnippet/csharp/m-system.web.ui.webcontr_194_2.cs)]
- [!code-vb[CustomXmlRender#2](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_194_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="output">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -556,7 +364,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -574,17 +381,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Overrides the <see cref="System.Web.UI.Control.SkinID%2A" /> property. This property is not supported by the <see cref="T:System.Web.UI.WebControls.Xml" /> class.</summary>
-        <value>Always returns an empty string (""). This property is not supported.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SkinID property is inherited from the <xref:System.Web.UI.Control> class, but is not applicable to the <xref:System.Web.UI.WebControls.Xml> class. Any attempt to set the value of this property throws a <xref:System.NotSupportedException> exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">An attempt is made to set the value of this property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -594,7 +393,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -609,27 +407,9 @@
         <ReturnType>System.Xml.Xsl.XslTransform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Xml.Xsl.XslTransform" /> object that formats the XML document before it is written to the output stream.</summary>
-        <value>The <see cref="T:System.Xml.Xsl.XslTransform" /> that formats the XML document before it is written to the output stream.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using the <xref:System.Web.UI.WebControls.Xml> control to display an XML document, you can optionally specify an Extensible Stylesheet Language Transformation (XSLT) style sheet that formats the XML document, before it is written to the output stream in one of two ways. You can format the XML document with either a <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object or an XSL Transformation style sheet file. If no XSL Transform document is specified, the XML document is displayed using the default format. The Transform property is used to specify a <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object (representing an XSL Transform document) used to format the XML document before it is written to the output stream.  
-  
-> [!NOTE]
->  Using a <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object requires `Full Trust` permissions.  
-  
-   
-  
-## Examples  
- The following code example shows how to create <xref:System.Xml.XmlDocument> and <xref:System.Xml.Xsl.XslTransform> objects from a sample XML file and an XSL Transformation style sheet. The objects are then used by the XML control to display the XML document.  
-  
- [!code-cs[XmlClassExample#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_569_1.aspx)]
- [!code-vb[XmlClassExample#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_569_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransformArgumentList">
@@ -639,7 +419,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -654,18 +433,9 @@
         <ReturnType>System.Xml.Xsl.XsltArgumentList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Xml.Xsl.XsltArgumentList" /> that contains a list of optional arguments passed to the style sheet and used during the Extensible Stylesheet Language Transformation (XSLT).</summary>
-        <value>A <see cref="T:System.Xml.Xsl.XsltArgumentList" /> that contains a list of optional arguments passed to the style sheet and used during the XSL Transformation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the TransformArgumentList property to provide the XSL Transformation style sheet with optional arguments. The arguments can be either XSLT parameters or extension objects.  
-  
- For more information about using the <xref:System.Xml.Xsl.XsltArgumentList?displayProperty=fullName> class, see [XsltArgumentList for Style Sheet Parameters and Extension Objects](../Topic/XsltArgumentList%20for%20Style%20Sheet%20Parameters%20and%20Extension%20Objects.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransformSource">
@@ -675,7 +445,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -690,24 +459,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path to an Extensible Stylesheet Language Transformation (XSLT) style sheet that formats the XML document before it is written to the output stream.</summary>
-        <value>The path to an XSL Transformation style sheet that formats the XML document before it is written to the output stream.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using the <xref:System.Web.UI.WebControls.Xml> control to display an XML document, you can optionally specify an XSL Transformation style sheet that formats the XML document before it is written to the output stream in one of two ways. You can either format the XML document with a <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object or with an XSL Transformation style sheet file. If no XSL Transformation style sheet is specified, the XML document is displayed using the default format. The TransformSource property is used to specify the path to an XSL Transformation style sheet file (representing an XSL Transformation style sheet) used to format the XML document before it is written to the output stream. You can use a relative or an absolute path. A relative path relates the location of the file to the location of the Web Forms page or user control, without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the path to the file in code. An absolute path provides the complete path, so moving the site to another directory requires updating the code.  
-  
-   
-  
-## Examples  
- The following code example shows how to display an XML document using an XSL Transform in the <xref:System.Web.UI.WebControls.Xml> control.  
-  
- [!code-vb[XmlControlClassExample#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_330_1.aspx)]
- [!code-cs[XmlControlClassExample#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_330_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XPathNavigator">
@@ -717,7 +471,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -732,18 +485,9 @@
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a cursor model for navigating and editing the XML data associated with the <see cref="T:System.Web.UI.WebControls.Xml" /> control.</summary>
-        <value>An <see cref="T:System.Xml.XPath.XPathNavigator" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be used to associate an <xref:System.Xml.XPath.XPathNavigator> object with the <xref:System.Web.UI.WebControls.Xml> control.  
-  
- An <xref:System.Xml.XPath.XPathNavigator> object is created from a class that implements the <xref:System.Xml.XPath.IXPathNavigable> interface, such as the <xref:System.Xml.XPath.XPathDocument> and <xref:System.Xml.XmlDocument> classes. <xref:System.Xml.XPath.XPathNavigator> objects created by <xref:System.Xml.XPath.XPathDocument> objects are read-only, and <xref:System.Xml.XPath.XPathNavigator> objects created by <xref:System.Xml.XmlDocument> objects can be edited. An <xref:System.Xml.XPath.XPathNavigator> object's read-only or editable status is determined using the <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property of the <xref:System.Xml.XPath.XPathNavigator> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

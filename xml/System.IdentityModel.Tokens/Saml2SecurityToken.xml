@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a security token that is based upon a SAML assertion.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The claims for Saml2SecurityToken security tokens are expressed as part of a <xref:System.IdentityModel.Tokens.Saml2Assertion>. A <xref:System.IdentityModel.Tokens.Saml2Assertion> has an extensible set of claims known as SAML statements that are represented by the <xref:System.IdentityModel.Tokens.Saml2Assertion.Statements%2A> property. The SAML authority that issued the SAML assertion is specified in the <xref:System.IdentityModel.Tokens.Saml2Assertion.Issuer%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,16 +28,9 @@
         <Parameter Name="assertion" Type="System.IdentityModel.Tokens.Saml2Assertion" />
       </Parameters>
       <Docs>
-        <param name="assertion">A <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that represents the SAML assertion for this security token.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" /> class using the specified SAML assertion.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security tokens, the claims are specified using a SAML assertion.  
-  
- ]]></format>
-        </remarks>
+        <param name="assertion">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,18 +48,11 @@
         <Parameter Name="issuerToken" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="assertion">A <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that represents the SAML assertion for this security token.</param>
-        <param name="keys">The set of keys associated with this security token.</param>
-        <param name="issuerToken">The token of the issuer for this security token.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" /> class using the specified SAML assertion, cryptographic keys and issuer token.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security tokens, the claims are specified using a SAML assertion.  
-  
- ]]></format>
-        </remarks>
+        <param name="assertion">To be added.</param>
+        <param name="keys">To be added.</param>
+        <param name="issuerToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Assertion">
@@ -89,18 +68,9 @@
         <ReturnType>System.IdentityModel.Tokens.Saml2Assertion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the SAML assertion for this security token.</summary>
-        <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that represents the SAML assertion for this security token.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security tokens, the claims are specified using a SAML assertion.  
-  
- Use a constructor or the <xref:System.IdentityModel.Tokens.Saml2SecurityToken.Initialize%28System.IdentityModel.Tokens.Saml2Assertion%29> method to set the Assertion property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanCreateKeyIdentifierClause&lt;T&gt;">
@@ -124,18 +94,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that specifies the key identifier to create.</typeparam>
-        <summary>Gets a value indicating whether this security token is capable of creating the specified key identifier.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="T" /> is of type <see cref="T:System.IdentityModel.Tokens.Saml2AssertionKeyIdentifierClause" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CanCreateKeyIdentifierClause(T) method to determine if a <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security token can create a specific key identifier. To create the key identifier call the <xref:System.IdentityModel.Tokens.Saml2SecurityToken.CreateKeyIdentifierClause%60%601> method.  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateKeyIdentifierClause&lt;T&gt;">
@@ -159,19 +121,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that specifies the key identifier to create.</typeparam>
-        <summary>Creates the specified key identifier clause.</summary>
-        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2AssertionKeyIdentifierClause" /> that is a key identifier clause for a SAML security token.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.IdentityModel.Tokens.Saml2SecurityToken.CanCreateKeyIdentifierClause%2A> method to determine if a <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security token can create a specific key identifier. To create the key identifier call the CreateKeyIdentifierClause(T) method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="T" /> is not of type <see cref="T:System.IdentityModel.Tokens.Saml2AssertionKeyIdentifierClause" />.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -187,16 +140,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a unique identifier of the security token.</summary>
-        <value>The unique identifier of the security token.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security token is serialized into XML, the value of the Id attribute is set to the value of the Id property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IssuerToken">
@@ -212,8 +158,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the security token of the issuer.</summary>
-        <value>The security token of the issuer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,10 +179,9 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">An <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to compare to this instance.</param>
-        <summary>Returns a value indicating whether the key identifier for this instance is equal to the specified key identifier.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is a <see cref="T:System.IdentityModel.Tokens.Saml2AssertionKeyIdentifierClause" /> and it has the same unique identifier as the <see cref="System.IdentityModel.Tokens.Saml2SecurityToken.Id%2A" /> property; otherwise, <see langword="false" />.</returns>
+        <param name="keyIdentifierClause">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,16 +198,9 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the cryptographic keys associated with the security token.</summary>
-        <value>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the security token.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SecurityKeys property to set the cryptographic keys for this security token to protect a SOAP message. The keys can be used, among other things, to digitally sign or encrypt SOAP messages.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidFrom">
@@ -278,20 +216,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the first instant in time at which this security token is valid.</summary>
-        <value>A <see cref="T:System.DateTime" /> that represents the first instant in time at which this security token is valid.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ValidFrom and <xref:System.IdentityModel.Tokens.Saml2SecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.Saml2SecurityToken> token is valid. The ValidFrom and <xref:System.IdentityModel.Tokens.Saml2SecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
-  
- By default, a 5-minute clock skew is allowed between the sender and receiver of the security token. So, if the <xref:System.IdentityModel.Tokens.Saml2Conditions.NotBefore%2A> property is set to 1:00 PM, then the ValidFrom property is set to 12:55 PM.  
-  
- When the ValidFrom property is set to <xref:System.DateTime.MinValue>, then the SAML assertion associated with this <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security token does not have any conditions set.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidTo">
@@ -307,20 +234,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last instant in time at which this security token is valid.</summary>
-        <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.IdentityModel.Tokens.Saml2SecurityToken.ValidFrom%2A> and ValidTo properties to determine the time period in which a <xref:System.IdentityModel.Tokens.Saml2SecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.Saml2SecurityToken.ValidFrom%2A> and ValidTo properties represent the first and last instants in time in which the security token is valid, respectively.  
-  
- By default, a 5-minute clock skew is allowed between the sender and receiver of the security token. So, if the <xref:System.IdentityModel.Tokens.Saml2Conditions.NotOnOrAfter%2A> property is set to 1:00 PM, then the <xref:System.IdentityModel.Tokens.Saml2SecurityToken.ValidFrom%2A> property is set to 1:05 PM.  
-  
- When the ValidTo property is set to <xref:System.DateTime.MaxValue>, then the SAML assertion associated with this <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security token does not have any conditions set.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

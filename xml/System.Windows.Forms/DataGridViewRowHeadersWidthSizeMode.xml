@@ -4,36 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines values for specifying how the row header width is adjusted.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, users can resize the width of the row headers. You can disable this ability to set a fixed width, or you can use a content-based automatic sizing mode, which also disables user resizing.  
-  
- The <xref:System.Windows.Forms.DataGridView> control can adjust the width of its row headers to fit all their contents, only the contents of the first header, or only the contents of currently displayed headers. Calculating the new width using a subset of headers is useful to avoid a performance penalty when working with many rows of data.  
-  
- This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A> property and <xref:System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth%2A> method.  
-  
- For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this enumeration in a display-only, non-interactive <xref:System.Windows.Forms.DataGridView> control.  
-  
- [!code-vb[System.Windows.Forms.DataGridViewStyleDemo#20](~/add/codesnippet/visualbasic/t-system.windows.forms.d_50_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridViewStyleDemo#20](~/add/codesnippet/csharp/t-system.windows.forms.d_50_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AutoSizeToAllHeaders">
@@ -43,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The row header width adjusts to fit the contents of all the row header cells.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AutoSizeToDisplayedHeaders">
@@ -60,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The row header width adjusts to fit the contents of all the row headers in the currently displayed rows.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AutoSizeToFirstHeader">
@@ -77,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The row header width adjusts to fit the contents of the first row header.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DisableResizing">
@@ -94,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Users cannot adjust the column header width with the mouse.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableResizing">
@@ -111,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Users can adjust the column header width with the mouse.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Design.TypedDataSetSchemaImporterExtensionFx35" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,20 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Generates internal mappings to .NET Framework types for XML schema element declarations. Expands upon <see cref="T:System.Data.Design.TypedDataSetSchemaImporterExtension" /> to provide additional functionality for typed datasets created for .NET Framework version 3.5.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `System.Data.Design.TypedDataSetSchemaImporterExtensionFx35` calls the protected constructor of <xref:System.Data.Design.TypedDataSetSchemaImporterExtension> to generate typed datasets for the .NET Framework version 3.5 and enable LINQ to DataSet and hierarchical update.  
-  
-> [!NOTE]
->  LINQ to DataSet and hierarchical update are features that were added in [!INCLUDE[vs_orcas_long](~/add/includes/vs-orcas-long-md.md)].  
->   
->  Also see [Hierarchical Update Overview](../Topic/Hierarchical%20Update%20Overview.md) and [LINQ to DataSet](../Topic/LINQ%20to%20DataSet.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,25 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Design.TypedDataSetSchemaImporterExtensionFx35" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Expands upon <xref:System.Data.Design.TypedDataSetSchemaImporterExtension> to provide additional functionality for typed datasets for .NET Framework version 3.5.  
-  
- <xref:System.Data.Design.TypedDataSetSchemaImporterExtensionFx35> calls the protected constructor of <xref:System.Data.Design.TypedDataSetSchemaImporterExtension> to generate typed datasets for .NET Framework version 3.5 and enable LINQ to DataSet and hierarchical update.  
-  
-> [!NOTE]
->  LINQ to Dataset and hierarchical update are features in [!INCLUDE[vs_orcas_long](~/add/includes/vs-orcas-long-md.md)]. See [LINQ to DataSet](../Topic/LINQ%20to%20DataSet.md) and [Hierarchical Update Overview](../Topic/Hierarchical%20Update%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

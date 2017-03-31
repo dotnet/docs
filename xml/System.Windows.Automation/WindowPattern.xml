@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.WindowPattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a control that provides fundamental window-based functionality within a traditional graphical user interface (GUI).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Examples of controls that support this control pattern include top-level application windows, [!INCLUDE[TLA#tla_mdi](~/add/includes/tlasharptla-mdi-md.md)] child windows, modal dialogs and balloon help windows.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -30,26 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.WindowPattern+WindowPatternInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the cached [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.WindowPattern" />.</summary>
-        <value>A structure containing the cached [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Cached property values must have been previously requested using a <xref:System.Windows.Automation.CacheRequest>. Use <xref:System.Windows.Automation.WindowPattern.Current%2A> to get the current value of a property.  
-  
- For information on the properties available and their use, see <xref:System.Windows.Automation.WindowPattern.WindowPatternInformation>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanMaximizeProperty">
@@ -59,30 +40,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.WindowPattern.WindowPatternInformation.CanMaximize%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.WindowPatternIdentifiers>.  
-  
-   
-  
-## Examples  
- In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
-  
- [!code-vb[UIAWindowPattern_snip#100](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#100)]
- [!code-cs[UIAWindowPattern_snip#100](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#100)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanMinimizeProperty">
@@ -92,30 +57,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.WindowPattern.WindowPatternInformation.CanMinimize%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.WindowPatternIdentifiers>.  
-  
-   
-  
-## Examples  
- In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
-  
- [!code-vb[UIAWindowPattern_snip#100](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#100)]
- [!code-cs[UIAWindowPattern_snip#100](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#100)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -125,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,27 +81,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Attempts to close the current window.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When called on a split pane control, this method will close the pane and remove the associated split. This method may also close all other panes depending on implementation.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to close the <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-vb[UIAWindowPattern_snip#101](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#101)]
- [!code-cs[UIAWindowPattern_snip#101](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#101)]  
-[!code-vb[UIAWindowPattern_snip#102](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#102)]
-[!code-cs[UIAWindowPattern_snip#102](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#102)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The control is unable to perform the requested action.</exception>
-        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">When the control is no longer available.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -163,25 +92,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.WindowPattern+WindowPatternInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.WindowPattern" />.</summary>
-        <value>A structure containing the current [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.WindowPattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
-  
- For information on the properties available and their use, see <xref:System.Windows.Automation.WindowPattern.WindowPatternInformation>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsModalProperty">
@@ -191,30 +110,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.WindowPattern.WindowPatternInformation.IsModal%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.WindowPatternIdentifiers>.  
-  
-   
-  
-## Examples  
- In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
-  
- [!code-vb[UIAWindowPattern_snip#100](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#100)]
- [!code-cs[UIAWindowPattern_snip#100](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#100)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTopmostProperty">
@@ -224,30 +127,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.WindowPattern.WindowPatternInformation.IsTopmost%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.WindowPatternIdentifiers>.  
-  
-   
-  
-## Examples  
- In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
-  
- [!code-vb[UIAWindowPattern_snip#100](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#100)]
- [!code-cs[UIAWindowPattern_snip#100](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#100)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -257,32 +144,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="T:System.Windows.Automation.WindowPattern" /> control pattern.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.WindowPatternIdentifiers>.  
-  
- The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-vb[UIAWindowPattern_snip#101](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#101)]
- [!code-cs[UIAWindowPattern_snip#101](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#101)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetWindowVisualState">
@@ -292,7 +161,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,22 +170,9 @@
         <Parameter Name="state" Type="System.Windows.Automation.WindowVisualState" />
       </Parameters>
       <Docs>
-        <param name="state">The requested <see cref="T:System.Windows.Automation.WindowVisualState" /> of the window.</param>
-        <summary>Changes the <see cref="T:System.Windows.Automation.WindowVisualState" /> of the window.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-vb[UIAWindowPattern_snip#101](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#101)]
- [!code-cs[UIAWindowPattern_snip#101](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#101)]  
-[!code-vb[UIAWindowPattern_snip#103](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#103)]
-[!code-cs[UIAWindowPattern_snip#103](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#103)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">A control does not support a requested behavior.</exception>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WaitForInputIdle">
@@ -327,7 +182,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -337,29 +191,10 @@
         <Parameter Name="milliseconds" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="milliseconds">The amount of time, in milliseconds, to wait for the associated process to become idle. The maximum is <see cref="T:System.Int32" />.</param>
-        <summary>Causes the calling code to block for the specified time or until the associated process enters an idle state, whichever completes first.</summary>
-        <returns>
-          <see langword="true" /> if the window has entered the idle state; <see langword="false" /> if the timeout occurred.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is typically used in conjunction with the handling of a <xref:System.Windows.Automation.WindowPatternIdentifiers.WindowOpenedEvent>.  
-  
- The implementation is dependent on the underlying application framework; therefore this method may return some time after the window is ready for user input. The calling code should not rely on this method to ascertain exactly when the window has become idle.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and uses WaitForInputIdle to confirm the element is ready for user interaction within a reasonable amount of time.  
-  
- [!code-vb[UIAWindowPattern_snip#101](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#101)]
- [!code-cs[UIAWindowPattern_snip#101](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#101)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The parameter passed in is not a valid number.</exception>
+        <param name="milliseconds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowClosedEvent">
@@ -369,32 +204,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the event that is raised when a window is closed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A client application may need to listen for WindowClosedEvent from a cached object since a window is removed from the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] control view structure immediately upon being closed.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.WindowPatternIdentifiers>.  
-  
-   
-  
-## Examples  
- In the following example, event listeners are declared and an <xref:System.Windows.Automation.AutomationEventHandler> delegate is specified for <xref:System.Windows.Automation.WindowPattern.WindowOpenedEvent> and WindowClosedEvent events.  
-  
- [!code-vb[UIAWindowPattern_snip#104](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#104)]
- [!code-cs[UIAWindowPattern_snip#104](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#104)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowInteractionStateProperty">
@@ -404,30 +221,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.WindowPattern.WindowPatternInformation.WindowInteractionState%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.WindowPatternIdentifiers>.  
-  
-   
-  
-## Examples  
- In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
-  
- [!code-vb[UIAWindowPattern_snip#100](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#100)]
- [!code-cs[UIAWindowPattern_snip#100](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#100)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowOpenedEvent">
@@ -437,30 +238,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the event that is raised when a window is opened.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.WindowPatternIdentifiers>.  
-  
-   
-  
-## Examples  
- In the following example, event listeners are declared and an <xref:System.Windows.Automation.AutomationEventHandler> delegate is specified for WindowOpenedEvent and <xref:System.Windows.Automation.WindowPattern.WindowClosedEvent> events.  
-  
- [!code-vb[UIAWindowPattern_snip#104](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#104)]
- [!code-cs[UIAWindowPattern_snip#104](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#104)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowVisualStateProperty">
@@ -470,30 +255,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.WindowPattern.WindowPatternInformation.WindowVisualState%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.WindowPatternIdentifiers>.  
-  
-   
-  
-## Examples  
- In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
-  
- [!code-vb[UIAWindowPattern_snip#100](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#100)]
- [!code-cs[UIAWindowPattern_snip#100](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#100)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

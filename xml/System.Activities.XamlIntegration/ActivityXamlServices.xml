@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Creates an instance of an activity tree described in XAML.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,9 @@
         <Parameter Name="innerReader" Type="System.Xaml.XamlReader" />
       </Parameters>
       <Docs>
-        <param name="innerReader">The <see langword="x:Class" /> content.</param>
-        <summary>Maps an <see langword="x:Class" /> activity tree from the specified reader to an <see cref="T:System.Activities.ActivityBuilder" /> or <see cref="System.Activities.ActivityBuilder%601" />.</summary>
-        <returns>A <see cref="T:System.Xaml.XamlReader" /> that handles the transformation between the <see cref="T:System.Activities.ActivityBuilder" /> and the activity <see langword="x:Class" /> XAML.</returns>
+        <param name="innerReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +54,10 @@
         <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
       </Parameters>
       <Docs>
-        <param name="innerReader">The <see langword="x:Class" /> content.</param>
-        <param name="schemaContext">The schema context.</param>
-        <summary>Maps an <see langword="x:Class" /> activity tree from the specified reader to an <see cref="T:System.Activities.ActivityBuilder" /> or <see cref="System.Activities.ActivityBuilder%601" /> using the specified schema context.</summary>
-        <returns>A <see cref="T:System.Xaml.XamlReader" /> that handles the transformation between the <see cref="T:System.Activities.ActivityBuilder" /> and the activity <see langword="x:Class" /> XAML.</returns>
+        <param name="innerReader">To be added.</param>
+        <param name="schemaContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +77,9 @@
         <Parameter Name="innerWriter" Type="System.Xaml.XamlWriter" />
       </Parameters>
       <Docs>
-        <param name="innerWriter">The content of an <see cref="T:System.Activities.ActivityBuilder" /> or <see cref="System.Activities.ActivityBuilder%601" />.</param>
-        <summary>Maps an <see cref="T:System.Activities.ActivityBuilder" /> or <see cref="System.Activities.ActivityBuilder%601" /> from the specified writer to an <see langword="x:Class" /> activity tree.</summary>
-        <returns>A <see cref="T:System.Xaml.XamlWriter" /> that handles the transformation between the <see cref="T:System.Activities.ActivityBuilder" /> and the activity <see langword="x:Class" /> XAML.</returns>
+        <param name="innerWriter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,10 +100,10 @@
         <Parameter Name="resultType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="reader">The XAML reader.</param>
-        <param name="resultType">The type of the return value of the method that this delegate encapsulates.</param>
-        <summary>Returns a delegate method for the specified XAML reader with return value of specified type.</summary>
-        <returns>A delegate method for the specified XAML reader with return value of specified type.</returns>
+        <param name="reader">To be added.</param>
+        <param name="resultType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,10 +130,10 @@
         <Parameter Name="reader" Type="System.Xaml.XamlReader" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the return value of the method that this delegate encapsulates.</typeparam>
-        <param name="reader">The XAML reader.</param>
-        <summary>Returns a delegate method for the specified XAML reader with return value of specified type.</summary>
-        <returns>A delegate method for the specified XAML reader with return value of type <paramref name="T" />.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,9 +153,9 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">The <see langword="x:Class" /> content.</param>
-        <summary>Maps an <see langword="x:Class" /> activity tree from the specified stream to an <see cref="T:System.Activities.DynamicActivity" /> or <see cref="System.Activities.DynamicActivity%601" />.</summary>
-        <returns>The <see cref="T:System.Activities.ActivityBuilder" /> or <see cref="System.Activities.ActivityBuilder%601" /> content.</returns>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,9 +175,9 @@
         <Parameter Name="innerReader" Type="System.Xaml.XamlReader" />
       </Parameters>
       <Docs>
-        <param name="innerReader">The <see langword="x:Class" /> content.</param>
-        <summary>Maps an <see langword="x:Class" /> activity tree from the specified reader to an <see cref="T:System.Activities.DynamicActivity" /> or <see cref="System.Activities.DynamicActivity%601" />.</summary>
-        <returns>The <see cref="T:System.Activities.ActivityBuilder" /> or <see cref="System.Activities.ActivityBuilder%601" /> content.</returns>
+        <param name="innerReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,10 +198,10 @@
         <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
       </Parameters>
       <Docs>
-        <param name="innerReader">The <see langword="x:Class" /> content.</param>
-        <param name="schemaContext">The schema context.</param>
-        <summary>Maps an <see langword="x:Class" /> activity tree from the specified reader to an <see cref="T:System.Activities.DynamicActivity" /> or <see cref="System.Activities.DynamicActivity%601" /> using the specified schema context.</summary>
-        <returns>The <see cref="T:System.Activities.ActivityBuilder" /> or <see cref="System.Activities.ActivityBuilder%601" /> content.</returns>
+        <param name="innerReader">To be added.</param>
+        <param name="schemaContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,9 +227,9 @@
         <Parameter Name="componentInstance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="componentType">The type of the component.</param>
-        <param name="componentInstance">The component instance.</param>
-        <summary>Initializes the specified component.</summary>
+        <param name="componentType">To be added.</param>
+        <param name="componentInstance">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,9 +249,9 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">The workflow definition.</param>
-        <summary>Creates an instance of the declarative workflow described in the specified stream.</summary>
-        <returns>An instance of the activity tree that describes the workflow.</returns>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,9 +271,9 @@
         <Parameter Name="textReader" Type="System.IO.TextReader" />
       </Parameters>
       <Docs>
-        <param name="textReader">The workflow definition.</param>
-        <summary>Creates an instance of the declarative workflow described in the specified text reader.</summary>
-        <returns>An instance of the activity tree that describes the workflow.</returns>
+        <param name="textReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,9 +293,9 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">A file that contains the workflow definition.</param>
-        <summary>Creates an instance of the declarative workflow described in the specified file.</summary>
-        <returns>An instance of the activity tree that describes the workflow.</returns>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,9 +315,9 @@
         <Parameter Name="xamlReader" Type="System.Xaml.XamlReader" />
       </Parameters>
       <Docs>
-        <param name="xamlReader">The workflow definition.</param>
-        <summary>Creates an instance of the declarative workflow described in the specified XAML reader.</summary>
-        <returns>An instance of the activity tree that describes the workflow.</returns>
+        <param name="xamlReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,9 +337,9 @@
         <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="xmlReader">The workflow definition.</param>
-        <summary>Creates an instance of the declarative workflow described in the specified XML reader.</summary>
-        <returns>An instance of the activity tree that describes the workflow.</returns>
+        <param name="xmlReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,10 +360,10 @@
         <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
       </Parameters>
       <Docs>
-        <param name="stream">The workflow definition.</param>
-        <param name="settings">The XAML service settings.</param>
-        <summary>Creates an instance of the declarative workflow described in the specified stream.</summary>
-        <returns>An instance of the activity tree that describes the workflow.</returns>
+        <param name="stream">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,10 +384,10 @@
         <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
       </Parameters>
       <Docs>
-        <param name="textReader">The workflow definition.</param>
-        <param name="settings">The XAML service settings.</param>
-        <summary>Creates an instance of the declarative workflow described in the specified text reader.</summary>
-        <returns>An instance of the activity tree that describes the workflow.</returns>
+        <param name="textReader">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,10 +408,10 @@
         <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
       </Parameters>
       <Docs>
-        <param name="fileName">A file that contains the workflow definition.</param>
-        <param name="settings">The XAML service settings.</param>
-        <summary>Creates an instance of the declarative workflow described in the specified file.</summary>
-        <returns>An instance of the activity tree that describes the workflow.</returns>
+        <param name="fileName">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,10 +432,10 @@
         <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
       </Parameters>
       <Docs>
-        <param name="xamlReader">The workflow definition.</param>
-        <param name="settings">The XAML service settings.</param>
-        <summary>Creates an instance of the declarative workflow described in the specified XAML reader.</summary>
-        <returns>An instance of the activity tree that describes the workflow.</returns>
+        <param name="xamlReader">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -456,10 +456,10 @@
         <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
       </Parameters>
       <Docs>
-        <param name="xmlReader">The workflow definition.</param>
-        <param name="settings">The XAML service settings.</param>
-        <summary>Creates an instance of the declarative workflow described in the specified XML reader.</summary>
-        <returns>An instance of the activity tree that describes the workflow.</returns>
+        <param name="xmlReader">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

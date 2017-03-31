@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CodeDomProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,40 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a base class for CodeDomProvider implementations. This class is abstract.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A CodeDomProvider can be used to create and retrieve instances of code generators and code compilers. Code generators can be used to generate code in a particular language, and code compilers can be used to compile code into assemblies.  
-  
-> [!NOTE]
->  In the [!INCLUDE[dnprdnext](~/add/includes/dnprdnext-md.md)], the methods made available in the code generator and code compiler are available directly from the code provider. You do not need to call <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> or <xref:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler%2A> to access the methods, and those methods are marked as obsolete. This applies to preexisting as well as new code provider implementations.  
-  
- A CodeDomProvider implementation typically provides code generation and/or code compilation interfaces for generating code and managing compilation for a single programming language. Several languages are supported by CodeDomProvider implementations that ship with the [!INCLUDE[winsdklong](~/add/includes/winsdklong-md.md)]. These languages include C#, Visual Basic, C++, and JScript. Developers or compiler vendors can implement the <xref:System.CodeDom.Compiler.ICodeGenerator> and <xref:System.CodeDom.Compiler.ICodeCompiler> interfaces and provide a CodeDomProvider that extends CodeDOM support to other programming languages.  
-  
- The [\&lt;system.codedom\&gt; Element](../Topic/%3Csystem.codedom%3E%20Element.md) in the machine configuration file (Machine.config) provides a mechanism for developers and compiler vendors to add configuration settings for additional CodeDomProvider implementations.  
-  
- The CodeDomProvider class provides static methods to discover and enumerate the CodeDomProvider implementations on a computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method returns the settings for all CodeDomProvider implementations on a computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> method returns the settings for a specific CodeDomProvider implementation, based on the programming language name. The <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method returns an instance of a CodeDomProvider implementation for a specific language.  
-  
- For more details on language provider settings in the configuration file, see [Compiler and Language Provider Settings Schema](../Topic/Compiler%20and%20Language%20Provider%20Settings%20Schema.md).  
-  
-> [!NOTE]
->  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown if either the immediate caller or the derived class does not have full trust permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
-  
-   
-  
-## Examples  
- The following example program can generate and compile source code based on a CodeDOM model of a program that prints "Hello World" using the <xref:System.Console> class. A Windows Forms user interface is provided. The user can select the target programming language from several selections: C#, Visual Basic, and JScript.  
-  
- [!code-cpp[CodeDomExample#1](~/add/codesnippet/cpp/t-system.codedom.compile_8_1.cpp)]
- [!code-cs[CodeDomExample#1](~/add/codesnippet/csharp/t-system.codedom.compile_8_1.cs)]
- [!code-vb[CodeDomExample#1](~/add/codesnippet/visualbasic/t-system.codedom.compile_8_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
-    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,14 +30,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromDom">
@@ -80,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,21 +61,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="options">A <see cref="T:System.CodeDom.Compiler.CompilerParameters" /> object that indicates the settings for the compilation.</param>
-        <param name="compilationUnits">An array of type <see cref="T:System.CodeDom.CodeCompileUnit" /> that indicates the code to compile.</param>
-        <summary>Compiles an assembly based on the <see cref="N:System.CodeDom" /> trees contained in the specified array of <see cref="T:System.CodeDom.CodeCompileUnit" /> objects, using the specified compiler settings.</summary>
-        <returns>A <see cref="T:System.CodeDom.Compiler.CompilerResults" /> object that indicates the results of the compilation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeCompiler> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeCompiler> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateCompiler%2A" /> method is overridden in a derived class.</exception>
+        <param name="options">To be added.</param>
+        <param name="compilationUnits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromFile">
@@ -121,7 +75,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,21 +91,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="options">A <see cref="T:System.CodeDom.Compiler.CompilerParameters" /> object that indicates the settings for the compilation.</param>
-        <param name="fileNames">An array of the names of the files to compile.</param>
-        <summary>Compiles an assembly from the source code contained in the specified files, using the specified compiler settings.</summary>
-        <returns>A <see cref="T:System.CodeDom.Compiler.CompilerResults" /> object that indicates the results of compilation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeCompiler> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeCompiler> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateCompiler%2A" /> method is overridden in a derived class.</exception>
+        <param name="options">To be added.</param>
+        <param name="fileNames">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromSource">
@@ -162,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,21 +121,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="options">A <see cref="T:System.CodeDom.Compiler.CompilerParameters" /> object that indicates the compiler settings for this compilation.</param>
-        <param name="sources">An array of source code strings to compile.</param>
-        <summary>Compiles an assembly from the specified array of strings containing source code, using the specified compiler settings.</summary>
-        <returns>A <see cref="T:System.CodeDom.Compiler.CompilerResults" /> object that indicates the results of compilation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeCompiler> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeCompiler> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateCompiler%2A" /> method is overridden in a derived class.</exception>
+        <param name="options">To be added.</param>
+        <param name="sources">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCompiler">
@@ -203,12 +135,11 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Callers should not use the ICodeCompiler interface and should instead use the methods directly on the CodeDomProvider class. Those inheriting from CodeDomProvider must still implement this interface, and should exclude this warning or also obsolete this method.")</AttributeName>
+          <AttributeName>System.Obsolete("ICodeCompiler is obsolete")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -216,16 +147,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, creates a new code compiler.</summary>
-        <returns>An <see cref="T:System.CodeDom.Compiler.ICodeCompiler" /> that can be used for compilation of <see cref="N:System.CodeDom" /> based source code representations.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is obsolete in the [!INCLUDE[dnprdnext](~/add/includes/dnprdnext-md.md)]. The recommended alternative is to call the <xref:System.CodeDom.Compiler.ICodeCompiler> methods that are directly available in the code provider.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateEscapedIdentifier">
@@ -235,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -245,21 +168,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string for which to create an escaped identifier.</param>
-        <summary>Creates an escaped identifier for the specified value.</summary>
-        <returns>The escaped identifier for the value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CreateEscapedIdentifier tests whether the identifier conflicts with any reserved or language keywords, and if so, returns an equivalent name with language-specific escape code formatting. This is referred to an escaped identifier. The escaped identifier contains the same `value` but has escape-code formatting added to differentiate the identifier from the keyword. Two implementation examples are preceding the `value` with "@" or bracketing the `value` with "[" and "]".  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateGenerator">
@@ -269,12 +181,11 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Callers should not use the ICodeGenerator interface and should instead use the methods directly on the CodeDomProvider class. Those inheriting from CodeDomProvider must still implement this interface, and should exclude this warning or also obsolete this method.")</AttributeName>
+          <AttributeName>System.Obsolete("ICodeGenerator is obsolete")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -282,16 +193,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, creates a new code generator.</summary>
-        <returns>An <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> that can be used to generate <see cref="N:System.CodeDom" /> based source code representations.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is obsolete in the [!INCLUDE[dnprdnext](~/add/includes/dnprdnext-md.md)]. The recommended alternative is to call the <xref:System.CodeDom.Compiler.ICodeGenerator> methods that are directly available in the <xref:System.CodeDom.Compiler.CodeDomProvider> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateGenerator">
@@ -301,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -311,20 +214,10 @@
         <Parameter Name="output" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="output">A <see cref="T:System.IO.TextWriter" /> to use to output.</param>
-        <summary>When overridden in a derived class, creates a new code generator using the specified <see cref="T:System.IO.TextWriter" /> for output.</summary>
-        <returns>An <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> that can be used to generate <see cref="N:System.CodeDom" /> based source code representations.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses the specified <xref:System.IO.TextWriter> for output. This method supports more optimized code generation that incrementally updates the source code.  
-  
-> [!NOTE]
->  The base class implementation calls the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method, which is obsolete in the [!INCLUDE[dnprdnext](~/add/includes/dnprdnext-md.md)] and results in a <xref:System.NotSupportedException> if an <xref:System.CodeDom.Compiler.ICodeGenerator> object is not returned.  
-  
- ]]></format>
-        </remarks>
+        <param name="output">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateGenerator">
@@ -334,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -344,20 +236,10 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">The file name to output to.</param>
-        <summary>When overridden in a derived class, creates a new code generator using the specified file name for output.</summary>
-        <returns>An <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> that can be used to generate <see cref="N:System.CodeDom" /> based source code representations.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses the specified file name for output.  
-  
-> [!NOTE]
->  The base class implementation calls the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method, which is obsolete in the [!INCLUDE[dnprdnext](~/add/includes/dnprdnext-md.md)] and results in a <xref:System.NotSupportedException> if an <xref:System.CodeDom.Compiler.ICodeGenerator> object is not returned.  
-  
- ]]></format>
-        </remarks>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateParser">
@@ -367,12 +249,11 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Callers should not use the ICodeParser interface and should instead use the methods directly on the CodeDomProvider class. Those inheriting from CodeDomProvider must still implement this interface, and should exclude this warning or also obsolete this method.")</AttributeName>
+          <AttributeName>System.Obsolete("ICodeParser is obsolete")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -380,8 +261,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, creates a new code parser.</summary>
-        <returns>An <see cref="T:System.CodeDom.Compiler.ICodeParser" /> that can be used to parse source code. The base implementation always returns <see langword="null" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,7 +273,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -407,46 +287,10 @@
         <Parameter Name="language" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="language">The language name.</param>
-        <summary>Gets a <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> instance for the specified language.</summary>
-        <returns>A CodeDOM provider that is implemented for the specified language name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  This method is most commonly used to create an instance of a code provider in an application that may optionally use one of several providers. CreateProvider allows you to specify at run time the code provider you wish to instantiate. If you know at design time which code provider is to be used, you should create an instance of that code provider rather than use the CreateProvider method.  
-  
- The CreateProvider method returns a <xref:System.CodeDom.Compiler.CodeDomProvider> instance for a specific language name; it is similar to calling the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method with the language provider type. Use CreateProvider when you want to dynamically find a configured provider implementation for a language name.  
-  
- If more than one provider implementation is configured for the language name, CreateProvider returns a provider instance for the last matching configuration element.  
-  
- Use the [Activator.CreateInstance(Type, BindingFlags, Binder, Object\<xref:System.Activator.CreateInstance%28System.Type%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29?displayProperty=fullName> method overload when you want a specific language provider implementation. For example, use the CreateProvider method to get a provider instance that supports the language name `"CSharp"`; use the [Activator.CreateInstance(Type, BindingFlags, Binder, Object\<xref:System.Activator.CreateInstance%28System.Type%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29?displayProperty=fullName> method overload to get a provider instance specifically for the <xref:Microsoft.CSharp.CSharpCodeProvider?displayProperty=fullName> implementation. You should use the [Activator.CreateInstance(Type, BindingFlags, Binder, Object\[\], CultureInfo, Object\<xref:System.Activator.CreateInstance%28System.Type%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%29?displayProperty=fullName> method if you have multiple code providers for a language and you desire to instantiate a specific code provider.  
-  
- The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method checks whether at least one provider implementation supports a specific language. You can validate a language name using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> before passing it to CreateProvider. If you pass an unsupported language name to CreateProvider a <xref:System.Configuration.ConfigurationException?displayProperty=fullName> is thrown.  
-  
- The <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method can be used to determine all <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer, including additional implementations provided by developers and compiler vendors that are identified in the [\&lt;system.codedom\&gt; Element](../Topic/%3Csystem.codedom%3E%20Element.md) in the machine configuration file (Machine.config).  
-  
- The CreateProvider method returns an instance of a <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for a specific language.  
-  
- Language names are case-insensitive.  
-  
-   
-  
-## Examples  
- The following code example determines the <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for an input language and displays the configured settings for the language provider. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerInfo> class.  
-  
- [!code-cpp[CodeDom_CompilerInfo#6](~/add/codesnippet/cpp/m-system.codedom.compile_8_1.cpp)]
- [!code-vb[CodeDom_CompilerInfo#6](~/add/codesnippet/visualbasic/m-system.codedom.compile_8_1.vb)]
- [!code-cs[CodeDom_CompilerInfo#6](~/add/codesnippet/csharp/m-system.codedom.compile_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The <paramref name="language" /> does not have a configured provider on this computer.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="language" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <param name="language">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateProvider">
@@ -471,32 +315,11 @@
         <Parameter Name="providerOptions" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="language">The language name.</param>
-        <param name="providerOptions">A collection of provider options from the configuration file.</param>
-        <summary>Gets a <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> instance for the specified language and provider options.</summary>
-        <returns>A CodeDOM provider that is implemented for the specified language name and options.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  This method is most commonly used to create an instance of a code provider in an application that may optionally use one of several providers. CreateProvider enables you to specify at run time the version of the code provider you want to instantiate. If you know at design time which code provider is to be used, you should create an instance of that code provider instead of using the CreateProvider method.  
-  
- Use CreateProvider when you want to dynamically find a configured provider implementation for a specific language and options. Language names are case-insensitive. For information about supported provider options, see the specific CodeDOM provider documentation.  
-  
- For information about validating a provider and calling a provider if more than one provider implementation is configured for the language name, see the Remarks section of the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%28System.String%29> method.  
-  
-   
-  
-## Examples  
- The following example shows how to create an instance of a provider by using the `providerOptions` parameter.  
-  
- [!code-vb[CodeDomProvider.ProviderOptions#1](~/add/codesnippet/visualbasic/3796218a-f189-4563-bef3-_1.vb)]
- [!code-cs[CodeDomProvider.ProviderOptions#1](~/add/codesnippet/csharp/3796218a-f189-4563-bef3-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="language">To be added.</param>
+        <param name="providerOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateValidIdentifier">
@@ -506,7 +329,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -516,21 +338,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string for which to generate a valid identifier.</param>
-        <summary>Creates a valid identifier for the specified value.</summary>
-        <returns>A valid identifier for the specified value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CreateValidIdentifier tests whether the identifier conflicts with reserved or language keywords, and if so, attempts to return a valid identifier name that does not conflict. Usually the returned identifier is only slightly modified to differentiate the identifier from the keyword; for example, the name might be preceded by the underscore ("_") character.  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileExtension">
@@ -540,32 +351,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default file name extension to use for source code files in the current language.</summary>
-        <value>A file name extension corresponding to the extension of the source files of the current language. The base implementation always returns <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used by code generators and code compilers to indicate what file extensions should be generated or used.  
-  
-   
-  
-## Examples  
- The following code example creates an instance of <xref:Microsoft.VisualBasic.VBCodeProvider?displayProperty=fullName>. The example displays the provider name, hash code and default file name extension for the new provider instance.  
-  
- [!code-cpp[CodeDom_CompilerInfo#3](~/add/codesnippet/cpp/p-system.codedom.compile_10_1.cpp)]
- [!code-vb[CodeDom_CompilerInfo#3](~/add/codesnippet/visualbasic/p-system.codedom.compile_10_1.vb)]
- [!code-cs[CodeDom_CompilerInfo#3](~/add/codesnippet/csharp/p-system.codedom.compile_10_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromCompileUnit">
@@ -575,7 +369,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -587,30 +380,11 @@
         <Parameter Name="options" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="compileUnit">A <see cref="T:System.CodeDom.CodeCompileUnit" /> for which to generate code.</param>
-        <param name="writer">The <see cref="T:System.IO.TextWriter" /> to which the output code is sent.</param>
-        <param name="options">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) compilation unit and sends it to the specified text writer, using the specified options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is called by the base class.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the GenerateCodeFromCompileUnit method to generate code for a "Hello World" application from a <xref:System.CodeDom.CodeCompileUnit>. This example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CodeDomProvider> class.  
-  
- [!code-cpp[CodeDomExample#3](~/add/codesnippet/cpp/947a7b52-7e8b-4165-86e9-_1.cpp)]
- [!code-cs[CodeDomExample#3](~/add/codesnippet/csharp/947a7b52-7e8b-4165-86e9-_1.cs)]
- [!code-vb[CodeDomExample#3](~/add/codesnippet/visualbasic/947a7b52-7e8b-4165-86e9-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="compileUnit">To be added.</param>
+        <param name="writer">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromExpression">
@@ -620,7 +394,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -632,21 +405,11 @@
         <Parameter Name="options" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="expression">A <see cref="T:System.CodeDom.CodeExpression" /> object that indicates the expression for which to generate code.</param>
-        <param name="writer">The <see cref="T:System.IO.TextWriter" /> to which output code is sent.</param>
-        <param name="options">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) expression and sends it to the specified text writer, using the specified options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="expression">To be added.</param>
+        <param name="writer">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromMember">
@@ -656,7 +419,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -668,27 +430,11 @@
         <Parameter Name="options" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="member">A <see cref="T:System.CodeDom.CodeTypeMember" /> object that indicates the member for which to generate code.</param>
-        <param name="writer">The <see cref="T:System.IO.TextWriter" /> to which output code is sent.</param>
-        <param name="options">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) member declaration and sends it to the specified text writer, using the specified options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The base class implementation throws a <xref:System.NotImplementedException>. See <xref:Microsoft.CSharp.CSharpCodeProvider.GenerateCodeFromMember%2A?displayProperty=fullName> for documentation describing an implementation of this method.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the GenerateCodeFromMember method as implemented by the <xref:Microsoft.CSharp.CSharpCodeProvider> and <xref:Microsoft.VisualBasic.VBCodeProvider> classes.  
-  
- [!code-cs[CodeDom_GenerateCodeFromMember#1](~/add/codesnippet/csharp/7dd87db0-a6d3-462b-9277-_1.cs)]
- [!code-vb[CodeDom_GenerateCodeFromMember#1](~/add/codesnippet/visualbasic/7dd87db0-a6d3-462b-9277-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">This method is not overridden in a derived class.</exception>
+        <param name="member">To be added.</param>
+        <param name="writer">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromNamespace">
@@ -698,7 +444,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -710,21 +455,11 @@
         <Parameter Name="options" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="codeNamespace">A <see cref="T:System.CodeDom.CodeNamespace" /> object that indicates the namespace for which to generate code.</param>
-        <param name="writer">The <see cref="T:System.IO.TextWriter" /> to which output code is sent.</param>
-        <param name="options">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) namespace and sends it to the specified text writer, using the specified options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="codeNamespace">To be added.</param>
+        <param name="writer">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromStatement">
@@ -734,7 +469,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -746,21 +480,11 @@
         <Parameter Name="options" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="statement">A <see cref="T:System.CodeDom.CodeStatement" /> containing the CodeDOM elements for which to generate code.</param>
-        <param name="writer">The <see cref="T:System.IO.TextWriter" /> to which output code is sent.</param>
-        <param name="options">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) statement and sends it to the specified text writer, using the specified options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="statement">To be added.</param>
+        <param name="writer">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromType">
@@ -770,7 +494,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -782,21 +505,11 @@
         <Parameter Name="options" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="codeType">A <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object that indicates the type for which to generate code.</param>
-        <param name="writer">The <see cref="T:System.IO.TextWriter" /> to which output code is sent.</param>
-        <param name="options">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) type declaration and sends it to the specified text writer, using the specified options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="codeType">To be added.</param>
+        <param name="writer">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAllCompilerInfo">
@@ -806,7 +519,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -819,30 +531,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the language provider and compiler configuration settings for this computer.</summary>
-        <returns>An array of type <see cref="T:System.CodeDom.Compiler.CompilerInfo" /> representing the settings of all configured <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> implementations.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GetAllCompilerInfo method to enumerate the language provider settings on a computer.  
-  
-> [!NOTE]
->  In the [!INCLUDE[dnprdnext](~/add/includes/dnprdnext-md.md)], the default language providers supplied by the .NET Framework are not specified in the [\&lt;system.codedom\&gt; Element](../Topic/%3Csystem.codedom%3E%20Element.md) compiler configuration section and cannot be removed, so this method returns information about the default providers and any specified in the configuration file.  
-  
-   
-  
-## Examples  
- The following code example enumerates the language providers on the computer and displays the configuration and compiler settings for each language provider. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerInfo> class.  
-  
- [!code-cpp[CodeDom_CompilerInfo#8](~/add/codesnippet/cpp/m-system.codedom.compile_1_1.cpp)]
- [!code-vb[CodeDom_CompilerInfo#8](~/add/codesnippet/visualbasic/m-system.codedom.compile_1_1.vb)]
- [!code-cs[CodeDom_CompilerInfo#8](~/add/codesnippet/csharp/m-system.codedom.compile_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCompilerInfo">
@@ -852,7 +543,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -867,36 +557,10 @@
         <Parameter Name="language" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="language">A language name.</param>
-        <summary>Returns the language provider and compiler configuration settings for the specified language.</summary>
-        <returns>A <see cref="T:System.CodeDom.Compiler.CompilerInfo" /> object populated with settings of the configured <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> implementation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The [\&lt;system.codedom\&gt; Element](../Topic/%3Csystem.codedom%3E%20Element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. For information about machine configuration files, see the Machine Configuration Files section in [Configuring Apps](../Topic/Configuring%20Apps%20by%20using%20Configuration%20Files.md). The GetCompilerInfo method searches each provider configuration element for the specified language name. The returned <xref:System.CodeDom.Compiler.CompilerInfo> instance contains the configured language provider and compiler settings.  
-  
- The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method checks whether at least one provider implementation supports a specific language. You can validate a language name using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> before passing it to GetCompilerInfo. This prevents throwing a <xref:System.Configuration.ConfigurationException?displayProperty=fullName> when you access the <xref:System.CodeDom.Compiler.CompilerInfo> instance for an unsupported language name.  
-  
- If more than one provider implementation is configured for the input language name, GetCompilerInfo returns the settings from the last matching provider configuration element.  
-  
- Language names are case-insensitive.  
-  
-   
-  
-## Examples  
- The following code example determines the <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for an input language and displays the configured settings for the language provider. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerInfo> class.  
-  
- [!code-cpp[CodeDom_CompilerInfo#6](~/add/codesnippet/cpp/m-system.codedom.compile_10_1.cpp)]
- [!code-vb[CodeDom_CompilerInfo#6](~/add/codesnippet/visualbasic/m-system.codedom.compile_10_1.vb)]
- [!code-cs[CodeDom_CompilerInfo#6](~/add/codesnippet/csharp/m-system.codedom.compile_10_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The <paramref name="language" /> does not have a configured provider on this computer.</exception>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The <paramref name="language" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <param name="language">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConverter">
@@ -906,7 +570,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -916,17 +579,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type of object to retrieve a type converter for.</param>
-        <summary>Gets a <see cref="T:System.ComponentModel.TypeConverter" /> for the specified data type.</summary>
-        <returns>A <see cref="T:System.ComponentModel.TypeConverter" /> for the specified type, or <see langword="null" /> if a <see cref="T:System.ComponentModel.TypeConverter" /> for the specified type cannot be found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A derived class can override this method to provide specific types of type converters for specific data types.  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLanguageFromExtension">
@@ -936,7 +592,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -951,36 +606,10 @@
         <Parameter Name="extension" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="extension">A file name extension.</param>
-        <summary>Returns a language name associated with the specified file name extension, as configured in the <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> compiler configuration section.</summary>
-        <returns>A language name associated with the file name extension, as configured in the <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> compiler configuration settings.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The [\&lt;system.codedom\&gt; Element](../Topic/%3Csystem.codedom%3E%20Element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The GetLanguageFromExtension method searches each provider configuration element for the specified file name extension.  
-  
- The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> method checks whether at least one provider implementation supports a specific file name extension. You can validate a file name extension using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> before passing it to GetLanguageFromExtension. This prevents GetLanguageFromExtension from throwing a <xref:System.Configuration.ConfigurationException?displayProperty=fullName> for an unsupported file name extension.  
-  
- If a provider implementation supports the input file name extension, and there are multiple supported languages configured for that provider, then GetLanguageFromExtension returns the first language name for that provider. If more than one provider implementation is configured for the input file name extension, GetLanguageFromExtension returns the language name from the last matching provider configuration element.  
-  
- Language names and file name extensions are case-insensitive.  
-  
-   
-  
-## Examples  
- The following code example determines the <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for an input file name extension and displays the configured settings for the language provider. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerInfo> class.  
-  
- [!code-cpp[CodeDom_CompilerInfo#5](~/add/codesnippet/cpp/8fa7bea7-627d-4e5f-82ae-_1.cpp)]
- [!code-vb[CodeDom_CompilerInfo#5](~/add/codesnippet/visualbasic/8fa7bea7-627d-4e5f-82ae-_1.vb)]
- [!code-cs[CodeDom_CompilerInfo#5](~/add/codesnippet/csharp/8fa7bea7-627d-4e5f-82ae-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The <paramref name="extension" /> does not have a configured language provider on this computer.</exception>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The <paramref name="extension" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <param name="extension">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeOutput">
@@ -990,7 +619,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1000,20 +628,10 @@
         <Parameter Name="type" Type="System.CodeDom.CodeTypeReference" />
       </Parameters>
       <Docs>
-        <param name="type">A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the type to return.</param>
-        <summary>Gets the type indicated by the specified <see cref="T:System.CodeDom.CodeTypeReference" />.</summary>
-        <returns>A text representation of the specified type, formatted for the language in which code is generated by this code generator. In Visual Basic, for example, passing in a <see cref="T:System.CodeDom.CodeTypeReference" /> for the <see cref="T:System.Int32" /> type will return "Integer".</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDefinedExtension">
@@ -1023,7 +641,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1038,32 +655,10 @@
         <Parameter Name="extension" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="extension">A file name extension.</param>
-        <summary>Tests whether a file name extension has an associated <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> implementation configured on the computer.</summary>
-        <returns>
-          <see langword="true" /> if a <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> implementation is configured for the specified file name extension; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The [\&lt;system.codedom\&gt; Element](../Topic/%3Csystem.codedom%3E%20Element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The IsDefinedExtension method searches the provider configuration elements for the specified file name extension.  
-  
- File name extensions are case-insensitive.  
-  
-   
-  
-## Examples  
- The following code example determines the <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for an input file name extension and displays the configured settings for the language provider. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerInfo> class.  
-  
- [!code-cpp[CodeDom_CompilerInfo#5](~/add/codesnippet/cpp/m-system.codedom.compile_11_1.cpp)]
- [!code-vb[CodeDom_CompilerInfo#5](~/add/codesnippet/visualbasic/m-system.codedom.compile_11_1.vb)]
- [!code-cs[CodeDom_CompilerInfo#5](~/add/codesnippet/csharp/m-system.codedom.compile_11_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="extension" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <param name="extension">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDefinedLanguage">
@@ -1073,7 +668,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1088,32 +682,10 @@
         <Parameter Name="language" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="language">The language name.</param>
-        <summary>Tests whether a language has a <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> implementation configured on the computer.</summary>
-        <returns>
-          <see langword="true" /> if a <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> implementation is configured for the specified language; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The [\&lt;system.codedom\&gt; Element](../Topic/%3Csystem.codedom%3E%20Element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The IsDefinedLanguage method searches the provider configuration elements for the specified language name.  
-  
- Language names are case-insensitive.  
-  
-   
-  
-## Examples  
- The following code example determines the <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for an input language and displays the configured settings for the language provider. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerInfo> class.  
-  
- [!code-cpp[CodeDom_CompilerInfo#6](~/add/codesnippet/cpp/m-system.codedom.compile_12_1.cpp)]
- [!code-vb[CodeDom_CompilerInfo#6](~/add/codesnippet/visualbasic/m-system.codedom.compile_12_1.vb)]
- [!code-cs[CodeDom_CompilerInfo#6](~/add/codesnippet/csharp/m-system.codedom.compile_12_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="language" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <param name="language">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsValidIdentifier">
@@ -1123,7 +695,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1133,22 +704,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The value to verify as a valid identifier.</param>
-        <summary>Returns a value that indicates whether the specified value is a valid identifier for the current language.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="value" /> parameter is a valid identifier; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method tests whether an identifier is valid. The IsValidIdentifier method is provider specific. Identifiers that are valid for one provider might not be valid for other providers. If `value` contains characters outside of the ASCII character range, check the identifier for all the languages that might be used to compile the code.  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageOptions">
@@ -1158,15 +717,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.LanguageOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a language features identifier.</summary>
-        <value>A <see cref="T:System.CodeDom.Compiler.LanguageOptions" /> that indicates special features of the language.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1177,7 +735,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1187,30 +744,19 @@
         <Parameter Name="codeStream" Type="System.IO.TextReader" />
       </Parameters>
       <Docs>
-        <param name="codeStream">A <see cref="T:System.IO.TextReader" /> object that is used to read the code to be parsed.</param>
-        <summary>Compiles the code read from the specified text stream into a <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
-        <returns>A <see cref="T:System.CodeDom.CodeCompileUnit" /> that contains a representation of the parsed code.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeParser> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateParser%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeParser> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="codeStream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Supports">
-      <MemberSignature Language="C#" Value="public virtual bool Supports (System.CodeDom.Compiler.GeneratorSupport generatorSupport);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Supports(valuetype System.CodeDom.Compiler.GeneratorSupport generatorSupport) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool Supports (System.CodeDom.Compiler.GeneratorSupport supports);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Supports(valuetype System.CodeDom.Compiler.GeneratorSupport supports) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeDomProvider.Supports(System.CodeDom.Compiler.GeneratorSupport)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1220,22 +766,10 @@
         <Parameter Name="generatorSupport" Type="System.CodeDom.Compiler.GeneratorSupport" />
       </Parameters>
       <Docs>
-        <param name="generatorSupport">A <see cref="T:System.CodeDom.Compiler.GeneratorSupport" /> object that indicates the type of code generation support to verify.</param>
-        <summary>Returns a value indicating whether the specified code generation support is provided.</summary>
-        <returns>
-          <see langword="true" /> if the specified code generation support is provided; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be called with a number of <xref:System.CodeDom.Compiler.GeneratorSupport> flags at once to test for a set of capabilities by joining a set of appropriate capability flags together with a binary `OR` operator (&#124;).  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, this method is provided by the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation that is returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of the provider. In version 2.0, this method can be called directly on the code provider even if it is not overridden by the code provider. If the code provider does not override this method, the <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is called by the base class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Neither this method nor the <see cref="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A" /> method is overridden in a derived class.</exception>
+        <param name="supports">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

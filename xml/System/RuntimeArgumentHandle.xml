@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.RuntimeArgumentHandle" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -17,15 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>References a variable-length argument list.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This structure has no members other than those that it inherits from the <xref:System.Object> and <xref:System.ValueType> classes. It exists only to support C/C++ programming language functions that take a variable number of parameters. An instance of the structure is passed to the <xref:System.ArgIterator> constructor.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members />
 </Type>

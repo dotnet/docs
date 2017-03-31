@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ProgIdAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,26 +24,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Allows the user to specify the ProgID of a class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can apply this attribute to classes.  
-  
- ProgIDs are automatically generated for a class by combining the namespace with the type name. This can produce an invalid ProgID however, as ProgIDs are limited to 39 characters and can contain no punctuation other than a period. In such case, a ProgID can be manually assigned to the class using ProgIdAttribute.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to apply `ProgIdAttribute` on a class. The application then gets all attributes of `MyClass`, and prints the <xref:System.Runtime.InteropServices.ProgIdAttribute.Value%2A> property of `ProgIdAttribute`.  
-  
- [!code-vb[ProgIdAttribute_Value#1](~/add/codesnippet/visualbasic/t-system.runtime.interop_12_1.vb)]
- [!code-cs[ProgIdAttribute_Value#1](~/add/codesnippet/csharp/t-system.runtime.interop_12_1.cs)]
- [!code-cpp[ProgIdAttribute_Value#1](~/add/codesnippet/cpp/t-system.runtime.interop_12_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,15 +35,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="progId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="progId">The ProgID to be assigned to the class.</param>
-        <summary>Initializes a new instance of the <see langword="ProgIdAttribute" /> with the specified ProgID.</summary>
+        <param name="progId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,15 +58,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ProgID of the class.</summary>
-        <value>The ProgID of the class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

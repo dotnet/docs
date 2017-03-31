@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.SetValueOverride" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,20 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="d">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="System.Workflow.ComponentModel.DependencyObject.SetValue%2A" /> method.</param>
-    <param name="value">The <see cref="T:System.Object" /> to set the value to.</param>
-    <summary>Allows a custom override of the <see cref="System.Workflow.ComponentModel.DependencyObject.SetValue%2A" /> logic associated with a dependency property that is defined on a dependency object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- The implementation of this delegate can be set to the <xref:System.Workflow.ComponentModel.PropertyMetadata.SetValueOverride%2A> property of <xref:System.Workflow.ComponentModel.PropertyMetadata> while calling <xref:System.Workflow.ComponentModel.DependencyProperty.Register%2A> or <xref:System.Workflow.ComponentModel.DependencyProperty.RegisterAttached%2A>.  
-  
- ]]></format>
-    </remarks>
+    <param name="d">To be added.</param>
+    <param name="value">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.InternalTypeHelper" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Abstract class used internally by the WPF XAML compiler to support the use of internal types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The InternalTypeHelper class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
- When compiling a XAML file, you can use public types, but you can also use internal types subject to the same limitations that exist on code access to internal types. InternalTypeHelper enables support of internal access level types for markup. This involves the compiler creating a generated class that derives from InternalTypeHelper and implements its members. The generated class exists in a security and access context such that only the same assembly or other assemblies specifically attributed for shared internal access can reference the generated class and thus the internal types.  
-  
-<a name="xamlTextUsage_InternalTypeHelper"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.InternalTypeHelper" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,18 +53,11 @@
         <Parameter Name="handler" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="eventInfo">The event information for the event (CLR reflection information).</param>
-        <param name="target">The target where the handler is attached.</param>
-        <param name="handler">The event handler.</param>
-        <summary>When overridden in a derived (generated) class, attaches an event handler delegate to an internal event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
- ]]></format>
-        </remarks>
+        <param name="eventInfo">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -88,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,19 +78,12 @@
         <Parameter Name="handler" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="delegateType">The <see cref="T:System.Type" /> of the delegate.</param>
-        <param name="target">The target where the handler is attached.</param>
-        <param name="handler">The name of the handler implementation.</param>
-        <summary>When overridden in a derived (generated) class, creates an event delegate referencing a non-public handler method.</summary>
-        <returns>The delegate reference.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
- ]]></format>
-        </remarks>
+        <param name="delegateType">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -122,7 +93,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,18 +103,11 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> to create.</param>
-        <param name="culture">Culture specific information.</param>
-        <summary>When overridden in a derived (generated) class, creates an instance of an internal type.</summary>
-        <returns>The created instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValue">
@@ -154,7 +117,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,19 +128,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="propertyInfo">Property information for the property to get.</param>
-        <param name="target">The object that holds the desired property value.</param>
-        <param name="culture">Culture specific information.</param>
-        <summary>When overridden in a derived (generated) class, gets the value of an internal property on the target object</summary>
-        <returns>The value of the property.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
- ]]></format>
-        </remarks>
+        <param name="propertyInfo">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPropertyValue">
@@ -188,7 +143,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,19 +155,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="propertyInfo">Property information for the property to set.</param>
-        <param name="target">The object that holds the desired property value.</param>
-        <param name="value">The value to set.</param>
-        <param name="culture">Culture specific information.</param>
-        <summary>When overridden in a derived (generated) class, sets the value on an internal property on the target object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Markup.InternalTypeHelper> class is not intended for use by anything other than the WPF XAML markup compiler.  
-  
- ]]></format>
-        </remarks>
+        <param name="propertyInfo">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

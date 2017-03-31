@@ -3,8 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TokenAccessLevels extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.TokenAccessLevels" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the privileges of the user account associated with the access token.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,15 +33,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can change the default owner, primary group, or discretionary access control list (DACL) of the token.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AdjustGroups">
@@ -46,15 +54,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustGroups" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can change the attributes of the groups in the token.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AdjustPrivileges">
@@ -63,15 +75,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustPrivileges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can enable or disable privileges in the token.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AdjustSessionId">
@@ -80,15 +96,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustSessionId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can adjust the session identifier of the token.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllAccess">
@@ -97,15 +117,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AllAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user has all possible access to the token.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AssignPrimary">
@@ -114,15 +138,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AssignPrimary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can attach a primary token to a process.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Duplicate">
@@ -131,15 +159,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Duplicate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can duplicate the token.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Impersonate">
@@ -148,15 +180,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Impersonate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can impersonate a client.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MaximumAllowed">
@@ -165,15 +201,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.MaximumAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The maximum value that can be assigned for the TokenAccessLevels enumeration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Query">
@@ -182,15 +222,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Query" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can query the token.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QuerySource">
@@ -199,15 +243,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.QuerySource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can query the source of the token.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -216,15 +264,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user has standard read rights and the Query privilege for the token.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -233,15 +285,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.TokenAccessLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user has standard write rights and the AdjustPrivileges, AdjustGroups and AdjustDefault privileges for the token.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

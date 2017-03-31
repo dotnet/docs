@@ -13,19 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the interface required for processing messages from simplex datagram.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This contract has the following settings:  
-  
--   Sessions are allowed, but not required.  
-  
--   One way messages.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginProcessMessage">
@@ -51,11 +40,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">The message to be processed.</param>
-        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that is invoked when the message processing has completed.</param>
-        <param name="state">A user-defined state object that is passed to the callback procedure.</param>
-        <summary>Initiates the asynchronous processing of the message.</summary>
-        <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results, or both; this value is also needed when invoking <see cref="System.ServiceModel.Routing.ISimplexDatagramRouter.EndProcessMessage%2A" />.</returns>
+        <param name="message">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +64,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The asynchronous result returned by the call to <see cref="System.ServiceModel.Routing.ISimplexDatagramRouter.BeginProcessMessage%2A" />.</param>
-        <summary>Finishes asynchronous execution of message processing.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

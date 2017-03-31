@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorChannelFlag" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies individual channels in the CMYK (cyan, magenta, yellow, black) color space. This enumeration is used by the <see cref="System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A" /> methods.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The values are flags, which can be combined by using the `OR` operator.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ColorChannelC">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ColorChannelFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The cyan color channel.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColorChannelK">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ColorChannelFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The black color channel.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColorChannelLast">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ColorChannelFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The last selected channel should be used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColorChannelM">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ColorChannelFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The magenta color channel.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColorChannelY">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ColorChannelFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The yellow color channel.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

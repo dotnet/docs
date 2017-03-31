@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HostVisual" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a <see cref="T:System.Windows.Media.Visual" /> object that can be connected anywhere to a parent visual tree.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.HostVisual" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,17 +46,10 @@
         <Parameter Name="hitTestParameters" Type="System.Windows.Media.GeometryHitTestParameters" />
       </Parameters>
       <Docs>
-        <param name="hitTestParameters">A value of type <see cref="T:System.Windows.Media.GeometryHitTestParameters" />.</param>
-        <summary>Implements HitTestCore to supply base hit testing behavior (returning <see cref="T:System.Windows.Media.GeometryHitTestParameters" />).</summary>
-        <returns>Returns a value of type <see cref="T:System.Windows.Media.GeometryHitTestResult" />. The <see cref="System.Windows.Media.GeometryHitTestResult.VisualHit%2A" /> property contains the visual that was hit.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.HostVisual> never reports itself as being hit. To change this behavior, create a class derived from <xref:System.Windows.Media.HostVisual> and override the <xref:System.Windows.Media.HostVisual.HitTestCore%2A> methods.  
-  
- ]]></format>
-        </remarks>
+        <param name="hitTestParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HitTestCore">
@@ -69,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,17 +68,10 @@
         <Parameter Name="hitTestParameters" Type="System.Windows.Media.PointHitTestParameters" />
       </Parameters>
       <Docs>
-        <param name="hitTestParameters">A value of type <see cref="T:System.Windows.Media.PointHitTestParameters" />.</param>
-        <summary>Implements HitTestCore to supply base hit testing behavior (returning <see cref="T:System.Windows.Media.PointHitTestParameters" />).</summary>
-        <returns>Returns a value of type <see cref="T:System.Windows.Media.HitTestResult" />. The <see cref="System.Windows.Media.HitTestResult.VisualHit%2A" /> property contains the visual object that was hit.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.HostVisual> never reports itself as being hit. To change this behavior, create a class derived from <xref:System.Windows.Media.HostVisual> and override the <xref:System.Windows.Media.HostVisual.HitTestCore%2A> methods.  
-  
- ]]></format>
-        </remarks>
+        <param name="hitTestParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

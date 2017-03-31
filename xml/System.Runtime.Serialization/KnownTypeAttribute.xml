@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit KnownTypeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.KnownTypeAttribute" />
   <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -17,28 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies types that should be recognized by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> when serializing or deserializing a given type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Apply the KnownTypeAttribute attribute to a type to indicate to the <xref:System.Runtime.Serialization.DataContractSerializer> types that should be recognized when serializing or deserializing an instance of the type to which the attribute is applied. This attribute could also be recognized by other serializers that understand data contracts.  
-  
-> [!NOTE]
->  In your code, you can use the word `KnownType` instead of the longer `KnownTypeAttribute`.  
-  
- You can either apply exactly one KnownTypeAttribute instance with the <xref:System.Runtime.Serialization.KnownTypeAttribute.MethodName%2A> property set, or one or more KnownTypeAttribute instances with the <xref:System.Runtime.Serialization.KnownTypeAttribute.Type%2A> property set.  
-  
-   
-  
-## Examples  
- The following example shows a type named `Person` and a type named `IDInformation` that should be recognized when serializing or deserializing the `Person` type.  
-  
- [!code-vb[KnownTypeAttribute#0](~/add/codesnippet/visualbasic/t-system.runtime.seriali_3_1.vb)]
- [!code-cs[KnownTypeAttribute#0](~/add/codesnippet/csharp/t-system.runtime.seriali_3_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,32 +35,25 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="methodName">The name of the method that returns an <see cref="T:System.Collections.IEnumerable" /> of types used when serializing or deserializing data.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.KnownTypeAttribute" /> class with the name of a method that returns an <see cref="T:System.Collections.IEnumerable" /> of known types.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor uses a method name that matches a method of the class.  The method returns a <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Type> objects. During serialization or deserialization, the types found in the collection can be used within the root type to which the attribute is applied.  
-  
-   
-  
-## Examples  
- The following example uses the `methodName` parameter to identify a method in the type that contains an array of <xref:System.Type> objects.  
-  
- [!code-vb[KnownTypeAttribute_Ctor_String#1](~/add/codesnippet/visualbasic/m-system.runtime.seriali_8_1.vb)]
- [!code-cs[KnownTypeAttribute_Ctor_String#1](~/add/codesnippet/csharp/m-system.runtime.seriali_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="methodName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -81,27 +62,25 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> that is included as a known type when serializing or deserializing data.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.KnownTypeAttribute" /> class with the specified type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows a type named `Person` and a type named `IDInformation` that should be included when or deserializing.  
-  
- [!code-vb[KnownTypeAttribute#0](~/add/codesnippet/visualbasic/m-system.runtime.seriali_6_1.vb)]
- [!code-cs[KnownTypeAttribute#0](~/add/codesnippet/csharp/m-system.runtime.seriali_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MethodName">
@@ -110,34 +89,25 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.KnownTypeAttribute.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of a method that will return a list of types that should be recognized during serialization or deserialization.</summary>
-        <value>A <see cref="T:System.String" /> that contains the name of the method on the type defined by the <see cref="T:System.Runtime.Serialization.KnownTypeAttribute" /> class.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The method must exist on the class or structure that the <xref:System.Runtime.Serialization.KnownTypeAttribute> is applied to, must be static, must accept no parameters, and must return an instance of any type that implements the generic <xref:System.Collections.Generic.IEnumerable%601> interface, such as the <xref:System.Collections.ObjectModel.Collection%601> class, or an array of <xref:System.Type> objects.  
-  
- The method is called once per application domain when the data contract is loaded for the type.  
-  
-   
-  
-## Examples  
- The following example uses the `methodName` parameter to identify a method in the type that contains an array of <xref:System.Type> objects.  
-  
- [!code-vb[KnownTypeAttribute_Ctor_String#1](~/add/codesnippet/visualbasic/p-system.runtime.seriali_3_1.vb)]
- [!code-cs[KnownTypeAttribute_Ctor_String#1](~/add/codesnippet/csharp/p-system.runtime.seriali_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -146,16 +116,24 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.KnownTypeAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type that should be recognized during serialization or deserialization by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
-        <value>The <see cref="T:System.Type" /> that is used during serialization or deserialization.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

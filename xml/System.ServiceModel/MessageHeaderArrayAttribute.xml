@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageHeaderArrayAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,25 +13,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false, Inherited=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies that the default wrapper element in the SOAP message must not be written around array types in a header element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the MessageHeaderArrayAttribute attribute to turn off the standard array wrapper element when you want to emit an unbounded number of identical elements either inside the `<soap:Header>` directly or inside the first and only child of `<soap:Header>` without the default wrapper element for array types.  
-  
- MessageHeaderArrayAttribute can be applied only to members of an array type. If specified, the <xref:System.ServiceModel.MessageContractMemberAttribute.Name%2A> and <xref:System.ServiceModel.MessageContractMemberAttribute.Namespace%2A> are used as the name and namespace of the element of each array item. If not specified, the array item elements are named using the same convention used for naming non-repeating body parts. For more information, see <xref:System.ServiceModel.MessageContractMemberAttribute.Name%2A> and <xref:System.ServiceModel.MessageContractMemberAttribute.Namespace%2A>.  
-  
- For information about controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName>, [Specifying Data Transfer in Service Contracts](../Topic/Specifying%20Data%20Transfer%20in%20Service%20Contracts.md), and [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
-  
- For more information about creating message contracts, see [Using Message Contracts](../Topic/Using%20Message%20Contracts.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,20 +28,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageHeaderArrayAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use to suppress the default array wrapper element when you want to include unbounded array items in a SOAP message header.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

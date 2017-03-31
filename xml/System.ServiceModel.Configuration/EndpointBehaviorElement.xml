@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.EndpointBehaviorElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a configuration element that contains a list of endpoint behaviors that is applied to all [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] endpoints on the machine.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,12 +25,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.EndpointBehaviorElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,15 +40,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">A unique name of the behavior element.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.EndpointBehaviorElement" /> class with the specified name.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,10 +67,9 @@
         <Parameter Name="element" Type="System.ServiceModel.Configuration.BehaviorExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">A <see cref="T:System.ServiceModel.Configuration.BehaviorExtensionElement" /> to be added.</param>
-        <summary>Adds a new behavior element to this section.</summary>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The type specified by <paramref name="element" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanAdd">
@@ -84,7 +79,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,10 +88,9 @@
         <Parameter Name="element" Type="System.ServiceModel.Configuration.BehaviorExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">A <see cref="T:System.ServiceModel.Configuration.BehaviorExtensionElement" /> to be added.</param>
-        <summary>Adds a new behavior element to this section and returns a value indicating if the operation is successful.</summary>
-        <returns>
-          <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

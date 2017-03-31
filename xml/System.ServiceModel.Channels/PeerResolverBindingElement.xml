@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.PeerResolverBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the abstract base class for binding elements used to create peer resolver objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class defines the abstract base class for all binding elements used to create peer resolver objects. For specific implementations of this class, please see the documentation for <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement> and <xref:System.ServiceModel.Channels.PeerCustomResolverBindingElement>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.Channels.PeerResolverBindingElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,16 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="other" Type="System.ServiceModel.Channels.PeerResolverBindingElement" />
       </Parameters>
       <Docs>
-        <param name="other">
-          <see cref="T:System.ServiceModel.Channels.PeerResolverBindingElement" /> object to copy when creating this class instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.PeerResolverBindingElement" /> class by duplicating the provided <see cref="T:System.ServiceModel.Channels.PeerResolverBindingElement" /> object.</summary>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,9 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a peer resolver object with the settings defined on this binding element.</summary>
-        <returns>
-          <see cref="T:System.ServiceModel.PeerResolver" /> object that is used to perform peer name to address resolution. The settings on the peer resolver must be defined on the binding element.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,16 +74,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerResolvers.PeerReferralPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the referral policy for peer resolvers created with binding elements created by implementations of this class.</summary>
-        <value>
-          <see cref="T:System.ServiceModel.PeerResolvers.PeerReferralPolicy" /> enumeration value that specifies the referral policy for peer resolvers created with this binding element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

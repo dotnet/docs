@@ -4,12 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IFieldTemplate" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines members that a class must implement in order to be recognized as a field template.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -20,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -30,8 +28,8 @@
         <Parameter Name="host" Type="System.Web.DynamicData.IFieldTemplateHost" />
       </Parameters>
       <Docs>
-        <param name="host">The object that controls the use of the field template.</param>
-        <summary>Associates the field template with the object that controls its use.</summary>
+        <param name="host">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

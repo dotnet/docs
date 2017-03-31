@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Management.EventArrivedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,19 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The instance of the object for which to invoke this method.</param>
-    <param name="e">The <see cref="T:System.Management.EventArrivedEventArgs" /> that specifies the reason the event was invoked.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Management.ManagementEventWatcher.EventArrived" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following asynchronous example sets up a WMI timer to raise an event every second, and removes it when no longer needed. The <xref:System.Management.ManagementEventWatcher> defines several [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] events which are raised when WMI events are delivered. Delegates are attached to these events for handling the incoming data.  
-  
- [!code-cs[wminet_EventArrivedEventHandler#1](~/add/codesnippet/csharp/t-system.management.even_0_1.cs)]
- [!code-vb[wminet_EventArrivedEventHandler#1](~/add/codesnippet/visualbasic/t-system.management.even_0_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TablePattern.TablePatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.TablePattern" /> object using its <see cref="System.Windows.Automation.TablePattern.Current%2A" /> or <see cref="System.Windows.Automation.TablePattern.Cached%2A" /> accessors.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,26 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the total number of columns in a table.</summary>
-        <value>The total number of columns in a table. The default value is zero.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.TablePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.TablePattern> property values.  
-  
- [!code-cs[UIATablePattern_snip#103](~/add/codesnippet/csharp/UIATablePattern_snip/UIATablePattern_snippets.cs#103)]
- [!code-vb[UIATablePattern_snip#103](~/add/codesnippet/visualbasic/UIATablePattern_snip/UIATablePattern_snippets.vb#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetColumnHeaders">
@@ -52,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,21 +47,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a collection of <see cref="T:System.Windows.Automation.AutomationElement" />s representing all the column headers in a table.</summary>
-        <returns>A collection of <see cref="T:System.Windows.Automation.AutomationElement" />s. The default is an empty array.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, the row or column header is retrieved for a specific table item.  
-  
- For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
-  
- [!code-cs[UIATablePattern_snip#102](~/add/codesnippet/csharp/UIATablePattern_snip/UIATablePattern_snippets.cs#102)]
- [!code-vb[UIATablePattern_snip#102](~/add/codesnippet/visualbasic/UIATablePattern_snip/UIATablePattern_snippets.vb#102)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRowHeaders">
@@ -84,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,21 +66,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a collection of <see cref="T:System.Windows.Automation.AutomationElement" />s representing all the row headers in a table.</summary>
-        <returns>A collection of <see cref="T:System.Windows.Automation.AutomationElement" />s. The default is an empty array.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, the row or column header is retrieved for a specific table item.  
-  
- For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
-  
- [!code-cs[UIATablePattern_snip#102](~/add/codesnippet/csharp/UIATablePattern_snip/UIATablePattern_snippets.cs#102)]
- [!code-vb[UIATablePattern_snip#102](~/add/codesnippet/visualbasic/UIATablePattern_snip/UIATablePattern_snippets.vb#102)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RowCount">
@@ -116,26 +78,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the total number of rows in a table.</summary>
-        <value>The total number of rows in a table. The default value is zero.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.TablePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.TablePattern> property values.  
-  
- [!code-cs[UIATablePattern_snip#103](~/add/codesnippet/csharp/UIATablePattern_snip/UIATablePattern_snippets.cs#103)]
- [!code-vb[UIATablePattern_snip#103](~/add/codesnippet/visualbasic/UIATablePattern_snip/UIATablePattern_snippets.vb#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RowOrColumnMajor">
@@ -145,28 +96,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the primary direction of traversal (<see cref="T:System.Windows.Automation.RowOrColumnMajor" />, <see cref="T:System.Windows.Automation.RowOrColumnMajor" />, <see cref="T:System.Windows.Automation.RowOrColumnMajor" />) for the table.</summary>
-        <value>The primary direction of traversal. The default is <see cref="T:System.Windows.Automation.RowOrColumnMajor" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, the row or column header is retrieved for a specific table item.  
-  
- For the purposes of this example, a relationship between the RowOrColumnMajor property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the RowOrColumnMajor property of the table.  
-  
- [!code-cs[UIATablePattern_snip#102](~/add/codesnippet/csharp/UIATablePattern_snip/UIATablePattern_snippets.cs#102)]
- [!code-vb[UIATablePattern_snip#102](~/add/codesnippet/visualbasic/UIATablePattern_snip/UIATablePattern_snippets.vb#102)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

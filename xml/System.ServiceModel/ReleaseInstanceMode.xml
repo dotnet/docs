@@ -4,30 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReleaseInstanceMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies when the system recycles the service object in the operation invocation process.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ReleaseInstanceMode with the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property to inform [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] that the current service object must be recycled at a particular point in the invocation process. The default behavior is to recycle a service object according to the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value.  
-  
-   
-  
-## Examples  
- The following example code shows the use of ReleaseInstanceMode to recycle service objects both before and after a call.  
-  
- [!code-cs[OBA.ReleaseInstanceMode#1](~/add/codesnippet/csharp/oba.releaseinstancemode.client/services.cs#1)]
- [!code-vb[OBA.ReleaseInstanceMode#1](~/add/codesnippet/visualbasic/oba.releaseinstancemode.client/services.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AfterCall">
@@ -37,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ReleaseInstanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Recycles the object subsequent to the completion of the operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeforeAndAfterCall">
@@ -54,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ReleaseInstanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Recycles the object prior to calling the operation and subsequent to the completion of the operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeforeCall">
@@ -71,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ReleaseInstanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Recycles the object prior to calling the operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -88,14 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ReleaseInstanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Recycles the object according to the <see cref="System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A" /> value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.FilterEventHandler" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,26 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">The event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Data.CollectionViewSource.Filter" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set an event handler for the <xref:System.Windows.Data.CollectionViewSource.Filter?displayProperty=fullName> event. In this example, `listingDataView` is an instance of <xref:System.Windows.Data.CollectionViewSource>.  
-  
- [!code-cs[DataBindingLab#10](~/add/codesnippet/csharp/DataBindingLab/MainWindow.xaml.cs#10)]
- [!code-vb[DataBindingLab#10](~/add/codesnippet/visualbasic/DataBindingLab/MainWindow.xaml.vb#10)]  
-  
- The following example shows the implementation of the example `ShowOnlyBargainsFilter` filter event handler. This event handler uses the <xref:System.Windows.Data.FilterEventArgs.Accepted%2A?displayProperty=fullName> property to filter out `AuctionItem` objects that have a `CurrentPrice` of $25.00 or greater.  
-  
- [!code-cs[DataBindingLab#5](~/add/codesnippet/csharp/DataBindingLab/MainWindow.xaml.cs#5)]
- [!code-vb[DataBindingLab#5](~/add/codesnippet/visualbasic/DataBindingLab/MainWindow.xaml.vb#5)]  
-  
- For the complete example, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

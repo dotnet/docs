@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheValidateHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,25 +18,10 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="context">The <see cref="T:System.Web.HttpContext" /> object containing information about the current request.</param>
-    <param name="data">User-supplied data used to validate the cached item.</param>
-    <param name="validationStatus">An <see cref="T:System.Web.HttpValidationStatus" /> enumeration value. Your delegate should set this value to indicate the result of the validation.</param>
-    <summary>Represents a method that is called to validate a cached item before the item is served from the cache.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a cached item is invalidated within the scope of the HttpCacheValidateHandler method, it is evicted from the cache and the request for the item is treated as a cache miss.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to add a new cache validation delegate to an application.  
-  
- [!code-vb[System.WEb.HttpCacheValidateHandler#1](~/add/codesnippet/visualbasic/t-system.web.httpcacheva_2_1.vb)]
- [!code-cs[System.WEb.HttpCacheValidateHandler#1](~/add/codesnippet/csharp/t-system.web.httpcacheva_2_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <param name="context">To be added.</param>
+    <param name="data">To be added.</param>
+    <param name="validationStatus">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

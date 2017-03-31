@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSHttpBinding" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an interoperable binding that supports distributed transactions and secure, reliable sessions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WSHttpBinding is similar to the <xref:System.ServiceModel.BasicHttpBinding> but provides more Web service features. It uses the HTTP transport and provides message security, as does <xref:System.ServiceModel.BasicHttpBinding>, but it also provides transactions, reliable messaging, and WS-Addressing, either enabled by default or available through a single control setting.  
-  
-   
-  
-## Examples  
- The following sample code shows how to use the WSHttpBinding class.  
-  
- [!code-cs[WSHttpBinding#0](~/add/codesnippet/csharp/t-system.servicemodel.ws_4_1.cs)]
- [!code-vb[WSHttpBinding#0](~/add/codesnippet/visualbasic/t-system.servicemodel.ws_4_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,23 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSHttpBinding" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following sample code shows how to initialize a new instance of the <xref:System.ServiceModel.WSHttpBinding> class.  
-  
- [!code-cs[WSHttpBinding#1](~/add/codesnippet/csharp/m-system.servicemodel.ws_5_1.cs)]
- [!code-vb[WSHttpBinding#1](~/add/codesnippet/visualbasic/m-system.servicemodel.ws_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -64,26 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="securityMode" Type="System.ServiceModel.SecurityMode" />
       </Parameters>
       <Docs>
-        <param name="securityMode">The value of <see cref="T:System.ServiceModel.SecurityMode" /> that specifies the type of security that is used with the SOAP message and for the client.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSHttpBinding" /> class with a specified type of security used by the binding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to initialize a new instance of the <xref:System.ServiceModel.WSHttpBinding> class with a `securityMode` parameter.  
-  
- [!code-cs[WSHttpBinding#7](~/add/codesnippet/csharp/m-system.servicemodel.ws_3_1.cs)]
- [!code-vb[WSHttpBinding#7](~/add/codesnippet/visualbasic/m-system.servicemodel.ws_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="securityMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,27 +55,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configName">The binding configuration name for the <see cref="T:System.ServiceModel.Configuration.WSHttpBindingElement" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSHttpBinding" /> class with a binding specified by its configuration name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to initialize a new instance of the <xref:System.ServiceModel.WSHttpBinding> class with a string argument.  
-  
- [!code-cs[WSHttpBinding#5](~/add/codesnippet/csharp/m-system.servicemodel.ws_6_1.cs)]
- [!code-vb[WSHttpBinding#5](~/add/codesnippet/visualbasic/m-system.servicemodel.ws_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The binding element with the name <paramref name="configName" /> was not found.</exception>
+        <param name="configName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,7 +73,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -131,21 +80,10 @@
         <Parameter Name="reliableSessionEnabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="securityMode">The value of <see cref="T:System.ServiceModel.SecurityMode" /> that specifies the type of security that is used with the SOAP message and for the client.</param>
-        <param name="reliableSessionEnabled">
-          <see langword="true" /> if a reliable session is enabled; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSHttpBinding" /> class with a specified type of security used by the binding and a value that indicates whether a reliable session is enabled.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to initialize a new instance of the <xref:System.ServiceModel.WSHttpBinding> class with a `securityMode` and `reliableSessionEnabled` parameter.  
-  
- [!code-cs[WSHttpBinding#6](~/add/codesnippet/csharp/07636ed4-d0dd-4ca2-9f3d-_1.cs)]
- [!code-vb[WSHttpBinding#6](~/add/codesnippet/visualbasic/07636ed4-d0dd-4ca2-9f3d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="securityMode">To be added.</param>
+        <param name="reliableSessionEnabled">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowCookies">
@@ -155,7 +93,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -167,49 +104,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the WCF client will automatically store and resend any cookies sent by a single web service.</summary>
-        <value>
-          <see langword="True" /> if automatic cookies processing is required; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting AllowCookies to `true` is useful when a client is interacting with one web service that uses cookies.  If you are accessing multiple services with the same cookie, set AllowCookies to `false` and you will have to manually add the cookie header to each outgoing message. The following code shows how to do this:  
-  
-```c#  
-MyWebServiceClient client = new MyWebServiceClient();  
-  
-        using (new OperationContextScope(client.InnerChannel))  
-        {  
-            client.DoSomething();  
-  
-            // Extract the cookie embedded in the received web service response  
-            // and stores it locally  
-            HttpResponseMessageProperty response = (HttpResponseMessageProperty)  
-            OperationContext.Current.IncomingMessageProperties[  
-                HttpResponseMessageProperty.Name];  
-            sharedCookie = response.Headers["Set-Cookie"];  
-        }  
-  
-        MyOtherWebServiceClient otherClient = new MyOtherWebServiceClient();  
-  
-        using (new OperationContextScope(otherClient.InnerChannel))  
-        {  
-            // Embeds the extracted cookie in the next web service request  
-            // Note that we manually have to create the request object since  
-            // since it doesn't exist yet at this stage   
-            HttpRequestMessageProperty request = new HttpRequestMessageProperty();  
-            request.Headers["Cookie"] = sharedCookie;  
-            OperationContext.Current.OutgoingMessageProperties[  
-                HttpRequestMessageProperty.Name] = request;  
-  
-            otherClient.DoSomethingElse();  
-        }  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelFactory&lt;TChannel&gt;">
@@ -231,10 +128,10 @@ MyWebServiceClient client = new MyWebServiceClient();
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The type of channel the channel factory produces.</typeparam>
-        <param name="parameters">Specifies the requirements for the channel factory built.</param>
-        <summary>Builds the channel factory stack on the client that creates a specified type of channel and that satisfies the features specified by a collection of binding parameters.</summary>
-        <returns>An <see cref="System.ServiceModel.Channels.IChannelFactory%601" /> of type TChannel that satisfies the features specified by the collection.</returns>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,7 +142,6 @@ MyWebServiceClient client = new MyWebServiceClient();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -253,25 +149,9 @@ MyWebServiceClient client = new MyWebServiceClient();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an ordered collection of binding elements contained in the current binding.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> that contains the ordered stack of binding elements described by the <see cref="T:System.ServiceModel.WSHttpBinding" /> binding.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The order of the binding elements is important. It reflects the order in which the protocol and transport channels are constructed and stacked.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain the <xref:System.ServiceModel.Channels.BindingElementCollection> that contains the ordered stack of binding elements described by <xref:System.ServiceModel.WSHttpBinding> binding.  
-  
- [!code-cs[WSHttpBinding#9](~/add/codesnippet/csharp/m-system.servicemodel.ws_2_1.cs)]
- [!code-vb[WSHttpBinding#9](~/add/codesnippet/visualbasic/m-system.servicemodel.ws_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The transport security mode set cannot provide the reliable session that has been enabled.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMessageSecurity">
@@ -281,7 +161,6 @@ MyWebServiceClient client = new MyWebServiceClient();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -289,8 +168,8 @@ MyWebServiceClient client = new MyWebServiceClient();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the security binding element from the current binding.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Channels.SecurityBindingElement" /> from the current binding.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,7 +180,6 @@ MyWebServiceClient client = new MyWebServiceClient();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,8 +187,8 @@ MyWebServiceClient client = new MyWebServiceClient();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the transport binding element from the current binding.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.TransportBindingElement" /> from the current binding.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,31 +199,15 @@ MyWebServiceClient client = new MyWebServiceClient();
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.WSHttpSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the security settings used with this binding.</summary>
-        <value>The <see cref="T:System.ServiceModel.WSHttpSecurity" /> that is used with this binding. The default value <see cref="System.ServiceModel.WSHttpSecurity.Mode%2A" /> property is <see cref="System.ServiceModel.WSHttpSecurity.Message%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To use something other than the default security type, use the <xref:System.ServiceModel.WSHttpBinding.%23ctor%28System.ServiceModel.SecurityMode%29> constructor.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain the value of the Security.  
-  
- [!code-cs[WSHttpBinding#8](~/add/codesnippet/csharp/p-system.servicemodel.ws_33_1.cs)]
- [!code-vb[WSHttpBinding#8](~/add/codesnippet/visualbasic/p-system.servicemodel.ws_33_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeSecurity">
@@ -367,9 +229,8 @@ MyWebServiceClient client = new MyWebServiceClient();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.WSHttpBinding.Security%2A" /> property has changed from its default value and should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.WSHttpBinding.Security%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

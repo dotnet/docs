@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceData.CounterSet" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,20 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines a set of logical counters.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call the <xref:System.Diagnostics.PerformanceData.CounterSet.Dispose%2A> method when you are finished to remove your provider's registration and to release all managed and unmanaged resources.  
-  
-   
-  
-## Examples  
- For an example, see <xref:System.Diagnostics.PerformanceData>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +26,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -53,27 +39,11 @@
         <Parameter Name="instanceType" Type="System.Diagnostics.PerformanceData.CounterSetInstanceType" />
       </Parameters>
       <Docs>
-        <param name="providerGuid">Guid that uniquely identifies the provider of the counter data. Use the Guid specified in the manifest.</param>
-        <param name="counterSetGuid">Guid that uniquely identifies the counter set for a provider. Use the Guid specified in the manifest.</param>
-        <param name="instanceType">Identifies the type of the counter set, for example, whether the counter set is a single or multiple instance counter set.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceData.CounterSet" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Registers your provider. Calling the <xref:System.Diagnostics.PerformanceData.CounterSet.Dispose%2A> method removes the registration.  
-  
-   
-  
-## Examples  
- For an example, see <xref:System.Diagnostics.PerformanceData>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InsufficientMemoryException">Not enough memory is available to complete the operation.</exception>
-        <exception cref="T:System.PlatformNotSupportedException">Not supported prior to Windows Vista.</exception>
-        <exception cref="T:System.ArgumentException">One of the parameters is NULL or not valid.</exception>
-        <exception cref="T:System.ComponentModel.Win32Exception">An underlying Win32 function call failed.</exception>
+        <param name="providerGuid">To be added.</param>
+        <param name="counterSetGuid">To be added.</param>
+        <param name="instanceType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCounter">
@@ -83,7 +53,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,19 +63,10 @@
         <Parameter Name="counterType" Type="System.Diagnostics.PerformanceData.CounterType" />
       </Parameters>
       <Docs>
-        <param name="counterId">Identifies the counter. Use the same value that you used in the manifest to define the counter.</param>
-        <param name="counterType">Identifies the counter type. The counter type determines how the counter data is calculated, averaged, and displayed.</param>
-        <summary>Adds a counter to the counter set by using the specified counter identifier and type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You must add counters to the counter set before creating an instance of the counter set.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The counter identifier already exists in the set or is negative, or the counter type is NULL or not valid.</exception>
-        <exception cref="T:System.InvalidOperationException">You cannot add counters to the counter set after creating an instance of the counter set.</exception>
+        <param name="counterId">To be added.</param>
+        <param name="counterType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCounter">
@@ -116,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,25 +87,11 @@
         <Parameter Name="counterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="counterId">Identifies the counter. Use the same value that you used in the manifest to define the counter.</param>
-        <param name="counterType">Identifies the counter type. The counter type determines how the counter data is calculated, averaged, and displayed.</param>
-        <param name="counterName">Name of the counter. You can use this name to index the counter in the counter set instance. (See <see cref="System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Item%2A" />.)</param>
-        <summary>Adds a counter to the counter set by using the specified counter identifier and type and a display name for the counter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You must add counters to the counter set before creating an instance of the counter set.  
-  
-   
-  
-## Examples  
- For an example, see <xref:System.Diagnostics.PerformanceData>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The counter identifier already exists in the set or is negative, or the counter type is NULL or not valid.</exception>
-        <exception cref="T:System.InvalidOperationException">You cannot add counters to the counter set after creating an instance of the counter set.</exception>
+        <param name="counterId">To be added.</param>
+        <param name="counterType">To be added.</param>
+        <param name="counterName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCounterSetInstance">
@@ -156,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -171,28 +115,10 @@
         <Parameter Name="instanceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceName">Name of the instance. The name must be unique.</param>
-        <summary>Creates an instance of the counter set.</summary>
-        <returns>An instance of the counter set which will contain the counter data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this method one time for single-instance counter sets and one or more times for multiple-instance counter sets.  
-  
- The provider determines when it creates an instance. If the counter data is more static, the provider can create an instance at initialization time. For example, the number of processors on a computer would be considered static, so a provider that provides counter data for processors could create an instance for each processor on the computer at initialization time. For counters that are more dynamic, such as disk or process counters, the providers would create the new instances in response to a new USB device being added or a new process being created.  
-  
- The provider should keep the counter data up-to-date at all times.  
-  
-   
-  
-## Examples  
- For an example, see <xref:System.Diagnostics.PerformanceData>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The instance name is NULL.</exception>
-        <exception cref="T:System.InvalidOperationException">You must add counters to the counter set before creating an instance of the counter set.</exception>
+        <param name="instanceName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -202,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,7 +135,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all unmanaged resources used by this object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -236,9 +160,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="True" /> if this was called from the Dispose method, <see langword="False" /> if called from the finalizer.</param>
-        <summary>Releases all unmanaged resources used by this object and optionally release the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,15 +179,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Frees resources before the object is reclaimed by garbage collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called automatically by the runtime.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

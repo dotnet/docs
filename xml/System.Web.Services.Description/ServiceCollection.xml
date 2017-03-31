@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.Service" /> class. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Description.Service> class corresponds to the Web Services Description Language (WSDL) < `service` > element enclosed by the < `definitions` > root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -30,7 +23,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -40,19 +33,10 @@
         <Parameter Name="service" Type="System.Web.Services.Description.Service" />
       </Parameters>
       <Docs>
-        <param name="service">The <see cref="T:System.Web.Services.Description.Service" /> instance to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Service" /> to the end of the <see cref="T:System.Web.Services.Description.ServiceCollection" />.</summary>
-        <returns>The zero-based index where the <paramref name="service" /> parameter has been added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[ServiceCollection_Item#6](~/add/codesnippet/cpp/02a8bf01-5b26-4df9-82cf-_1.cpp)]
- [!code-cs[ServiceCollection_Item#6](~/add/codesnippet/csharp/02a8bf01-5b26-4df9-82cf-_1.cs)]
- [!code-vb[ServiceCollection_Item#6](~/add/codesnippet/visualbasic/02a8bf01-5b26-4df9-82cf-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -62,7 +46,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,20 +56,10 @@
         <Parameter Name="service" Type="System.Web.Services.Description.Service" />
       </Parameters>
       <Docs>
-        <param name="service">The <see cref="T:System.Web.Services.Description.Service" /> for which to check collection membership.</param>
-        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.Service" /> instance is a member of the <see cref="T:System.Web.Services.Description.ServiceCollection" />.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="service" /> parameter is a member of the <see cref="T:System.Web.Services.Description.ServiceCollection" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ServiceCollection_CopyTo#1](~/add/codesnippet/csharp/0a237ac7-56a7-48fe-8ed2-_1.cs)]
- [!code-vb[ServiceCollection_CopyTo#1](~/add/codesnippet/visualbasic/0a237ac7-56a7-48fe-8ed2-_1.vb)]
- [!code-cpp[ServiceCollection_CopyTo#1](~/add/codesnippet/cpp/0a237ac7-56a7-48fe-8ed2-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -95,7 +69,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,19 +80,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">An array of type <see cref="T:System.Web.Services.Description.Service" /> serving as the destination for the copy action.</param>
-        <param name="index">The zero-based index at which to start placing the copied collection.</param>
-        <summary>Copies the entire <see cref="T:System.Web.Services.Description.ServiceCollection" /> to a one-dimensional array of type <see cref="T:System.Web.Services.Description.Service" />, starting at the specified zero-based index of the target array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ServiceCollection_CopyTo#3](~/add/codesnippet/csharp/b70e63f5-3907-48c3-bd8c-_1.cs)]
- [!code-vb[ServiceCollection_CopyTo#3](~/add/codesnippet/visualbasic/b70e63f5-3907-48c3-bd8c-_1.vb)]
- [!code-cpp[ServiceCollection_CopyTo#3](~/add/codesnippet/cpp/b70e63f5-3907-48c3-bd8c-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -128,7 +93,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,7 +116,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,19 +126,10 @@
         <Parameter Name="service" Type="System.Web.Services.Description.Service" />
       </Parameters>
       <Docs>
-        <param name="service">The <see cref="T:System.Web.Services.Description.Service" /> for which to search in the collection.</param>
-        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.Service" /> and returns the zero-based index of the first occurrence within the <see langword="ServiceCollection" />.</summary>
-        <returns>A 32-bit signed integer.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ServiceCollection_CopyTo#2](~/add/codesnippet/csharp/c47e75b3-3d08-44dd-b553-_1.cs)]
- [!code-vb[ServiceCollection_CopyTo#2](~/add/codesnippet/visualbasic/c47e75b3-3d08-44dd-b553-_1.vb)]
- [!code-cpp[ServiceCollection_CopyTo#2](~/add/codesnippet/cpp/c47e75b3-3d08-44dd-b553-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -183,7 +139,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,33 +150,10 @@
         <Parameter Name="service" Type="System.Web.Services.Description.Service" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>service</c> parameter.</param>
-        <param name="service">The <see cref="T:System.Web.Services.Description.Service" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Service" /> instance to the <see cref="T:System.Web.Services.Description.ServiceCollection" /> at the specified zero-based index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
-  
- If the value of the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `service` parameter is added to the end of the `ServiceCollection`.  
-  
- The elements after the insertion point move down to accommodate the new element.  
-  
-   
-  
-## Examples  
- [!code-cs[ServiceDescription_Read#3](~/add/codesnippet/csharp/e25cef16-91ac-4f3b-9cd4-_1.cs)]
- [!code-vb[ServiceDescription_Read#3](~/add/codesnippet/visualbasic/e25cef16-91ac-4f3b-9cd4-_1.vb)]
- [!code-cpp[ServiceDescription_Read#3](~/add/codesnippet/cpp/e25cef16-91ac-4f3b-9cd4-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
-  
- \- or -  
-  
- The <paramref name="index" /> parameter is greater than <see cref="System.Collections.CollectionBase.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -230,7 +163,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -240,19 +173,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.Service" /> to be modified or returned.</param>
-        <summary>Gets or sets the value of a <see cref="T:System.Web.Services.Description.Service" /> at the specified zero-based index.</summary>
-        <value>A <see langword="Service" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[ServiceCollection_Item#3](~/add/codesnippet/cpp/p-system.web.services.de_25_1.cpp)]
- [!code-cs[ServiceCollection_Item#3](~/add/codesnippet/csharp/p-system.web.services.de_25_1.cs)]
- [!code-vb[ServiceCollection_Item#3](~/add/codesnippet/visualbasic/p-system.web.services.de_25_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -262,7 +186,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -272,19 +196,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Web.Services.Description.Service" /> returned.</param>
-        <summary>Gets a <see cref="T:System.Web.Services.Description.Service" /> specified by its name.</summary>
-        <value>A <see langword="Service" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ServiceDescription_Read#2](~/add/codesnippet/csharp/p-system.web.services.de_34_1.cs)]
- [!code-vb[ServiceDescription_Read#2](~/add/codesnippet/visualbasic/p-system.web.services.de_34_1.vb)]
- [!code-cpp[ServiceDescription_Read#2](~/add/codesnippet/cpp/p-system.web.services.de_34_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -294,7 +209,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -304,25 +219,9 @@
         <Parameter Name="service" Type="System.Web.Services.Description.Service" />
       </Parameters>
       <Docs>
-        <param name="service">The <see cref="T:System.Web.Services.Description.Service" /> to remove from the collection.</param>
-        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.Service" /> from the <see cref="T:System.Web.Services.Description.ServiceCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
-  
- The elements that follow the removed <xref:System.Web.Services.Description.Service> move up to occupy the vacated spot.  
-  
-   
-  
-## Examples  
- [!code-cpp[ServiceCollection_Item#2](~/add/codesnippet/cpp/cfb8e61a-34ce-4860-bc73-_1.cpp)]
- [!code-cs[ServiceCollection_Item#2](~/add/codesnippet/csharp/cfb8e61a-34ce-4860-bc73-_1.cs)]
- [!code-vb[ServiceCollection_Item#2](~/add/codesnippet/visualbasic/cfb8e61a-34ce-4860-bc73-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParent">
@@ -332,7 +231,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeTextMatch" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a text pattern for which the HTTP transmission is searched. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of the properties and methods exposed by the `MimeTextMatch` class.  
-  
- [!code-cpp[MimeText_Binding_Match_8#1](~/add/codesnippet/cpp/t-system.web.services.de_26_1.cpp)]
- [!code-cs[MimeText_Binding_Match_8#1](~/add/codesnippet/csharp/t-system.web.services.de_26_1.cs)]
- [!code-vb[MimeText_Binding_Match_8#1](~/add/codesnippet/visualbasic/t-system.web.services.de_26_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +23,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.MimeTextMatch" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +39,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -70,24 +54,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the zero-based index of a <see cref="T:System.Web.Services.Description.MimeTextMatch" /> within a group.</summary>
-        <value>A 32-bit signed integer. The default value is 0, indicating that the <see cref="T:System.Web.Services.Description.MimeTextMatch" /> is the first instance within a group.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see the <xref:System.Web.Services.Description.MimeTextMatch.Group%2A> and <xref:System.Web.Services.Description.MimeTextMatch.Matches%2A> properties.  
-  
-   
-  
-## Examples  
- [!code-cpp[MimeTextMatch_5#2](~/add/codesnippet/cpp/p-system.web.services.de_43_1.cpp)]
- [!code-vb[MimeTextMatch_5#2](~/add/codesnippet/visualbasic/p-system.web.services.de_43_1.vb)]
- [!code-cs[MimeTextMatch_5#2](~/add/codesnippet/csharp/p-system.web.services.de_43_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The property value is negative.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -97,7 +66,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -112,24 +81,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the number of groups in which to place the results of the text search.</summary>
-        <value>A 32-bit signed integer. The default value is 1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property must be less than or equal to the value of the <xref:System.Web.Services.Description.MimeTextMatch.Repeats%2A> property, or the XML Web service will not compile correctly.  
-  
-   
-  
-## Examples  
- [!code-cpp[MimeTextMatch_5#3](~/add/codesnippet/cpp/p-system.web.services.de_57_1.cpp)]
- [!code-vb[MimeTextMatch_5#3](~/add/codesnippet/visualbasic/p-system.web.services.de_57_1.vb)]
- [!code-cs[MimeTextMatch_5#3](~/add/codesnippet/csharp/p-system.web.services.de_57_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The property value is negative.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreCase">
@@ -139,7 +93,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -151,19 +105,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the search should disregard the case of the text to be searched.</summary>
-        <value>
-          <see langword="true" /> if the search should disregard case; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[MimeText_Binding_Match_8#7](~/add/codesnippet/cpp/p-system.web.services.de_88_1.cpp)]
- [!code-cs[MimeText_Binding_Match_8#7](~/add/codesnippet/csharp/p-system.web.services.de_88_1.cs)]
- [!code-vb[MimeText_Binding_Match_8#7](~/add/codesnippet/visualbasic/p-system.web.services.de_88_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -173,7 +117,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -185,18 +129,9 @@
         <ReturnType>System.Web.Services.Description.MimeTextMatchCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of text pattern matches that have been found by the search.</summary>
-        <value>A <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" /> representing the members of the <see cref="System.Web.Services.Description.MimeTextMatch.Group%2A" /> property.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[MimeText_Binding_Match_8#8](~/add/codesnippet/cpp/p-system.web.services.de_67_1.cpp)]
- [!code-cs[MimeText_Binding_Match_8#8](~/add/codesnippet/csharp/p-system.web.services.de_67_1.cs)]
- [!code-vb[MimeText_Binding_Match_8#8](~/add/codesnippet/visualbasic/p-system.web.services.de_67_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -206,7 +141,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -218,18 +153,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.Web.Services.Description.MimeTextMatch" />.</summary>
-        <value>The name of the <see cref="T:System.Web.Services.Description.MimeTextMatch" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[MimeText_Binding_Match_8#4](~/add/codesnippet/cpp/p-system.web.services.de_71_1.cpp)]
- [!code-cs[MimeText_Binding_Match_8#4](~/add/codesnippet/csharp/p-system.web.services.de_71_1.cs)]
- [!code-vb[MimeText_Binding_Match_8#4](~/add/codesnippet/visualbasic/p-system.web.services.de_71_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -239,7 +165,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -251,23 +177,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text pattern for the search.</summary>
-        <value>A string representing the text for which to search the HTTP transmission. The default value is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property can contain wildcard characters.  
-  
-   
-  
-## Examples  
- [!code-cpp[MimeText_Binding_Match_8#6](~/add/codesnippet/cpp/p-system.web.services.de_17_1.cpp)]
- [!code-cs[MimeText_Binding_Match_8#6](~/add/codesnippet/csharp/p-system.web.services.de_17_1.cs)]
- [!code-vb[MimeText_Binding_Match_8#6](~/add/codesnippet/visualbasic/p-system.web.services.de_17_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Repeats">
@@ -277,7 +189,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -289,26 +201,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the number of times the search is to be performed.</summary>
-        <value>A 32-bit signed integer. The default value is 1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a case where more than one match is possible, a property value of 1 will return only the first match found. A value of <xref:System.Int32> will return all matches.  
-  
- This property returns the same information as the <xref:System.Web.Services.Description.MimeTextMatch.RepeatsString%2A> property, but as a 32-bit signed integer rather than as a string.  
-  
-   
-  
-## Examples  
- [!code-cpp[MimeTextMatch_5#4](~/add/codesnippet/cpp/p-system.web.services.de_16_1.cpp)]
- [!code-vb[MimeTextMatch_5#4](~/add/codesnippet/visualbasic/p-system.web.services.de_16_1.vb)]
- [!code-cs[MimeTextMatch_5#4](~/add/codesnippet/csharp/p-system.web.services.de_16_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The property value is negative.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatsString">
@@ -318,7 +213,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -333,23 +228,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the number of times the search is to be performed.</summary>
-        <value>A string indicating the number of times the search is to be performed. The default value is "1".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns the same information as the <xref:System.Web.Services.Description.MimeTextMatch.Repeats%2A> property, but as a string rather than as a 32-bit signed integer. A value of "*" corresponds to <xref:System.Int32.MaxValue>.  
-  
-   
-  
-## Examples  
- [!code-cpp[MimeTextMatch_5#5](~/add/codesnippet/cpp/p-system.web.services.de_79_1.cpp)]
- [!code-vb[MimeTextMatch_5#5](~/add/codesnippet/visualbasic/p-system.web.services.de_79_1.vb)]
- [!code-cs[MimeTextMatch_5#5](~/add/codesnippet/csharp/p-system.web.services.de_79_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -359,7 +240,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -371,21 +252,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the MIME format of the text to be searched.</summary>
-        <value>A string indicating the MIME format of the text to be searched.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns an empty string ("") if its value has not been set.  
-  
-   
-  
-## Examples  
- MimeText_Binding_Match_8#5  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

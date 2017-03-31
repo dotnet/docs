@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MsmqTransportBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,22 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the binding element used to specify the queuing communication properties for a [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] service that uses the native Message Queuing (MSMQ) protocol.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MsmqTransportBindingElement enables the user to set the properties of the queued communication channel. The queued communication channel uses Message Queuing for its transport.  
-  
- This binding element is the default binding element used by the Message Queuing standard binding (<xref:System.ServiceModel.NetMsmqBinding>).  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#0](~/add/codesnippet/csharp/t-system.servicemodel.ch_26_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MsmqTransportBindingElement" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#1](~/add/codesnippet/csharp/m-system.servicemodel.ch_13_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelFactory&lt;TChannel&gt;">
@@ -60,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,26 +49,11 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">A <see cref="T:System.ServiceModel.Channels.IOutputSessionChannel" /> or a <see cref="T:System.ServiceModel.Channels.IOutputChannel" /> class.</typeparam>
-        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> with which to build the channel factory.</param>
-        <summary>Builds a channel factory using the context provided.</summary>
-        <returns>A Message Queuing (MSMQ) channel factory that can be used to create channels to send messages to existing Message Queuing applications.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A channel factory is created and initialized using the properties that have been set in the binding element. The initialized channel factory is then used to create output channels that can be used to send messages to a message queue.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#7](~/add/codesnippet/csharp/4e2debd2-ed0f-4461-9cb3-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The context value is null.</exception>
-        <exception cref="T:System.ArgumentException">The TChannel is not IOutputChannel or IOutputSessionChannel.</exception>
-        <exception cref="T:System.InvalidOperationException">MsmqTransportSecurity.MsmqProtectionLevel is EncryptAndSign and UseActiveDirectory is false.</exception>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
@@ -102,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,21 +80,11 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The channel type to be used to build the channel listener. Permitted channel types are <see cref="T:System.ServiceModel.Channels.IInputSessionChannel" /> or a <see cref="T:System.ServiceModel.Channels.IInputChannel" /> class.</typeparam>
-        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> with which to build the channel listener.</param>
-        <summary>Builds a channel listener using the context provided.</summary>
-        <returns>A Message Queuing (MSMQ) channel listener that can be used to create channels to receive messages from existing MSMQ applications.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#8](~/add/codesnippet/csharp/9f685a0d-a5ad-4c5e-95d1-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The context value is null.</exception>
-        <exception cref="T:System.ArgumentException">The TChannel is not IInputChannel or IInputSessionChannel.</exception>
-        <exception cref="T:System.InvalidOperationException">MsmqTransportSecurity.MsmqAuthenticationMode is Certificate or WindowsDomain and MsmqTransportSecurity.MsmqProtectionLevel is None.</exception>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanBuildChannelFactory&lt;TChannel&gt;">
@@ -144,7 +94,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,19 +106,11 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The channel type to be used to build the channel listener. Permitted channel types are <see cref="T:System.ServiceModel.Channels.IOutputSessionChannel" /> or a <see cref="T:System.ServiceModel.Channels.IOutputChannel" /> class.</typeparam>
-        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> with which to build the channel factory.</param>
-        <summary>Returns a Boolean value that indicates whether you can build a channel factory with the context provided.</summary>
-        <returns>
-          <see langword="true" /> if you can build a channel factory with the context provided; otherwise, <see langword="false" />. The binding element returns <see langword="true" /> only when <paramref name="TChannel" /> is <see cref="T:System.ServiceModel.Channels.IOutputChannel" /> or <see cref="T:System.ServiceModel.Channels.IOutputSessionChannel" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#9](~/add/codesnippet/csharp/4d6c5380-ebe3-4fa6-a84c-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanBuildChannelListener&lt;TChannel&gt;">
@@ -179,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -197,21 +137,11 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The channel type to be used to build the channel listener. Permitted channel types are <see cref="T:System.ServiceModel.Channels.IInputSessionChannel" /> or a <see cref="T:System.ServiceModel.Channels.IInputChannel" /> class.</typeparam>
-        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> with which to build the channel listener.</param>
-        <summary>Returns a Boolean value that indicates whether you can build a channel listener with the context provided.</summary>
-        <returns>
-          <see langword="true" /> if you can build a channel listener with the context provided; otherwise, <see langword="false" />.  
-  
- The binding returns <see langword="true" /> only when <paramref name="TChannel" /> is <see cref="T:System.ServiceModel.Channels.IInputChannel" /> or <see cref="T:System.ServiceModel.Channels.IInputSessionChannel" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#10](~/add/codesnippet/csharp/2677e7ee-9cc5-4a7d-a198-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -221,7 +151,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,16 +158,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a clone of the binding element.</summary>
-        <returns>A clone of the binding element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#6](~/add/codesnippet/csharp/m-system.servicemodel.ch_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxPoolSize">
@@ -248,29 +170,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an integer that specifies the maximum size of the pool that contains internal Message Queuing (MSMQ) message objects.</summary>
-        <value>An integer that specifies the maximum size of the pool that contains internal Message Queuing message objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The internal Message Queuing message object pool is used to avoid allocations of these objects when sending and receiving messages. The maximum pool size is a performance-tuning parameter. The default value is 8.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#2](~/add/codesnippet/csharp/p-system.servicemodel.ch_42_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="QueueTransferProtocol">
@@ -280,29 +188,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.QueueTransferProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an enumeration value that indicates the queued communication channel transport that this binding uses.</summary>
-        <value>A <see cref="T:System.ServiceModel.QueueTransferProtocol" /> enumeration value that indicates the transport used for message delivery between queue managers.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing (MSMQ) does not support Active Directory addressing when using SOAP Reliable Messaging Protocol (SRMP), so do not set QueueTransferProtocol to <xref:System.ServiceModel.QueueTransferProtocol> or <xref:System.ServiceModel.QueueTransferProtocol> when <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.UseActiveDirectory%2A> is set to `true`.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#3](~/add/codesnippet/csharp/24687cdc-4ddc-44b2-926c-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.ServiceModel.QueueTransferProtocol" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scheme">
@@ -312,30 +206,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> that contains the addressing scheme that is used by this transport binding element.</summary>
-        <value>A <see cref="T:System.String" /> that contains the addressing scheme that is used by this transport binding element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Scheme property returns the string "net.msmq".  
-  
- The Message Queuing (MSMQ) queued transport supports several addressing schemes, including net.msmq.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#4](~/add/codesnippet/csharp/p-system.servicemodel.ch_37_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseActiveDirectory">
@@ -345,31 +224,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a Boolean value that indicates whether queue addresses should be converted using Active Directory.</summary>
-        <value>
-          <see langword="true" /> if queue addresses should be converted using Active Directory; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing (MSMQ) queue addresses can consist of path names or direct format names. With a direct format name, MSMQ resolves the queue name using DNS, NetBIOS, or IP. With a path name, MSMQ resolves the queue name using Active Directory.  
-  
- By default, the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] queued transport converts the URI of a message queue to a direct format name. By setting the UseActiveDirectory property to `true`, an application can specify that the queued transport should resolve the computer name using Active Directory rather than DNS, NetBIOS, or IP.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ImperativeNetMsmq#5](~/add/codesnippet/csharp/p-system.servicemodel.ch_26_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

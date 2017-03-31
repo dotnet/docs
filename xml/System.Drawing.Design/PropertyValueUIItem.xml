@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.PropertyValueUIItem" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,20 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information about a property displayed in the Properties window, including the associated event handler, pop-up information string, and the icon to display for the property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example provides a PropertyValueUIItem object for any properties of the component named `HorizontalMargin` or `VerticalMargin`. The PropertyValueUIItem for these properties provides an image, a ToolTip, and an event handler that displays a message box when the image for the property is clicked. This code example is part of a larger example provided for the <xref:System.Drawing.Design.IPropertyValueUIService> interface.  
-  
- [!code-cpp[IPropertyValueUIServiceExample#2](~/add/codesnippet/cpp/t-system.drawing.design._5_1.cpp)]
- [!code-cs[IPropertyValueUIServiceExample#2](~/add/codesnippet/csharp/t-system.drawing.design._5_1.cs)]
- [!code-vb[IPropertyValueUIServiceExample#2](~/add/codesnippet/visualbasic/t-system.drawing.design._5_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -44,24 +30,11 @@
         <Parameter Name="tooltip" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uiItemImage">The icon to display. The image must be 8 x 8 pixels.</param>
-        <param name="handler">The handler to invoke when the image is double-clicked.</param>
-        <param name="tooltip">The <see cref="System.Drawing.Design.PropertyValueUIItem.ToolTip%2A" /> to display for the property that this <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> is associated with.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example provides a <xref:System.Drawing.Design.PropertyValueUIItem> object for any properties of the component named `HorizontalMargin` or `VerticalMargin`. The <xref:System.Drawing.Design.PropertyValueUIItem> for these properties provides an image, a ToolTip, and an event handler that displays a message box when the image for the property is clicked. This code example is part of a larger example provided for the <xref:System.Drawing.Design.IPropertyValueUIService> interface.  
-  
- [!code-cpp[IPropertyValueUIServiceExample#2](~/add/codesnippet/cpp/63f7472a-bcb3-4b05-a486-_1.cpp)]
- [!code-cs[IPropertyValueUIServiceExample#2](~/add/codesnippet/csharp/63f7472a-bcb3-4b05-a486-_1.cs)]
- [!code-vb[IPropertyValueUIServiceExample#2](~/add/codesnippet/visualbasic/63f7472a-bcb3-4b05-a486-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="uiItemImage" /> or <paramref name="handler" /> is <see langword="null" />.</exception>
+        <param name="uiItemImage">To be added.</param>
+        <param name="handler">To be added.</param>
+        <param name="tooltip">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -71,23 +44,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the 8 x 8 pixel image that will be drawn in the Properties window.</summary>
-        <value>The image to use for the property icon.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This image must be 8 x 8 pixels. It is advisable to have the image support transparency.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeHandler">
@@ -97,15 +62,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Design.PropertyValueUIItemInvokeHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the handler that is raised when a user double-clicks this item.</summary>
-        <value>A <see cref="T:System.Drawing.Design.PropertyValueUIItemInvokeHandler" /> indicating the event handler for this user interface (UI) item.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,7 +87,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the user interface (UI) item.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,15 +98,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the information string to display for this item.</summary>
-        <value>A string containing the information string to display for this item.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

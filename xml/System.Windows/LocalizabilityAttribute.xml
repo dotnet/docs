@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.LocalizabilityAttribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the localization attributes for a [!INCLUDE[TLA#tla_baml](~/add/includes/tlasharptla-baml-md.md)] class or class member.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute can be applied to a class, property, or method.  
-  
- For more information on how to use localization attributes, see [Localization Attributes and Comments](../Topic/Localization%20Attributes%20and%20Comments.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="category" Type="System.Windows.LocalizationCategory" />
       </Parameters>
       <Docs>
-        <param name="category">The localization category.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.LocalizabilityAttribute" /> class with a specified localization category.</summary>
+        <param name="category">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,51 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the category setting of the localization attribute's targeted value.</summary>
-        <value>The category setting of the localization attribute.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows the modifiability settings of the localization attribute.  
-  
-|Category setting|Meaning|  
-|----------------------|-------------|  
-|<xref:System.Windows.LocalizationCategory>|Resource does not belong to a standard category.|  
-|<xref:System.Windows.LocalizationCategory>|A lengthy piece of descriptive text.|  
-|<xref:System.Windows.LocalizationCategory>|A single line of text, such as a title.|  
-|<xref:System.Windows.LocalizationCategory>|A short text string, such as a control label.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.Button> or related control.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.CheckBox> or related control.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.ComboBox> or related control, such as <xref:System.Windows.Controls.ComboBoxItem>.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.ListBox> or related control, such as <xref:System.Windows.Controls.ListBoxItem>.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.Menu> or related control, such as <xref:System.Windows.Controls.MenuItem>.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.RadioButton> or related control.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.ToolTip> or related control.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Documents.Hyperlink> or related control.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Documents.FlowDocument> or other panel that can contain text.|  
-|<xref:System.Windows.LocalizationCategory>|[!INCLUDE[TLA#tla_xml](~/add/includes/tlasharptla-xml-md.md)] data.|  
-|<xref:System.Windows.LocalizationCategory>|Font-related data such as font family, font style, or font size.|  
-|<xref:System.Windows.LocalizationCategory>|Inherits category from parent node.|  
-|<xref:System.Windows.LocalizationCategory>|Do not localize this resource. This does not apply to any child nodes of the resource.|  
-|<xref:System.Windows.LocalizationCategory>|Do not localize this resource, or any of its child nodes whose category is set to <xref:System.Windows.LocalizationCategory>.|  
-  
-   
-  
-## Examples  
- The following code example shows the category settings of localization attributes defined for a button.  
-  
- [!code-xml[AttributesSnippets#AttributesSnippet1](~/add/codesnippet/xaml/AttributesSnippets/Attributes.xaml#attributessnippet1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Modifiability">
@@ -110,36 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Modifiability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the modifiability setting of the localization attribute's targeted value.</summary>
-        <value>The modifiability setting of the localization attribute.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows the modifiability settings of the localization attribute.  
-  
-|Modifiability setting|Meaning|  
-|---------------------------|-------------|  
-|<xref:System.Windows.Modifiability>|Targeted value is modifiable by localizers.|  
-|<xref:System.Windows.Modifiability>|Targeted value is not modifiable by localizers.|  
-|<xref:System.Windows.Modifiability>|Targeted value's modifiability is inherited from its parent node.|  
-  
-   
-  
-## Examples  
- The following code example shows the modifiability setting of localization attributes defined for a button.  
-  
- [!code-xml[AttributesSnippets#AttributesSnippet1](~/add/codesnippet/xaml/AttributesSnippets/Attributes.xaml#attributessnippet1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Readability">
@@ -149,36 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Readability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the readability setting of the localization attribute's targeted value.</summary>
-        <value>The readability setting of the localization attribute.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows the readability settings of the localization attribute.  
-  
-|Readability setting|Meaning|  
-|-------------------------|-------------|  
-|<xref:System.Windows.Readability>|Targeted value is readable text.|  
-|<xref:System.Windows.Readability>|Targeted value is not readable.|  
-|<xref:System.Windows.Readability>|Targeted value's readability is inherited from its parent node.|  
-  
-   
-  
-## Examples  
- The following code example shows the readability setting of localization attributes defined for a text block.  
-  
- [!code-xml[AttributesSnippets#AttributesSnippet4](~/add/codesnippet/xaml/AttributesSnippets/Comments.xaml#attributessnippet4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

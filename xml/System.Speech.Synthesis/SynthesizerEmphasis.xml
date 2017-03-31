@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SynthesizerEmphasis" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enumerates levels of synthesizer emphasis.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Speech.Synthesis.VisemeReachedEventArgs.Emphasis%2A?displayProperty=fullName> property uses `SynthesiszerEmphasis` to describe the emphasis of a viseme when the <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is raised. The <xref:System.Speech.Synthesis.PhonemeReachedEventArgs.Emphasis%2A?displayProperty=fullName> property uses `SynthesiszerEmphasis` to describe the emphasis of a phoneme when the <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event is raised.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Emphasized">
@@ -34,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesizerEmphasis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a low level of synthesizer emphasis.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stressed">
@@ -51,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesizerEmphasis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a high level of synthesizer emphasis.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

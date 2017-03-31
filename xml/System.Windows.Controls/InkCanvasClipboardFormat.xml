@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasClipboardFormat" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the formats that an <see cref="T:System.Windows.Controls.InkCanvas" /> will accept from the Clipboard.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example sets the <xref:System.Windows.Controls.InkCanvas.PreferredPasteFormats%2A> to make the <xref:System.Windows.Controls.InkCanvas> accept [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/add/includes/tlasharptla-isf-md.md)].  
-  
- [!code-cs[InkCanvasSamples#26](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#26)]
- [!code-vb[InkCanvasSamples#26](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#26)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="InkSerializedFormat">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasClipboardFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> accepts Ink Serialized Format (ISF).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasClipboardFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> accepts text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xaml">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasClipboardFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> accepts "Extensible Application Markup Language" (XAML) format.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

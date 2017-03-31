@@ -3,23 +3,19 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EncryptionOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.EncryptionOption" />
   <AssemblyInfo>
+    <AssemblyName>System.IO.Packaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the encryption option for parts in a <see cref="T:System.IO.Packaging.Package" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- RightsManagement is currently the only supported encryption option.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -28,15 +24,18 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.EncryptionOption.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.EncryptionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No encryption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightsManagement">
@@ -45,15 +44,18 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.EncryptionOption.RightsManagement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.EncryptionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Encryption supported through rights management.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

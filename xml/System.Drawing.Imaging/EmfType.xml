@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EmfType" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the nature of the records that are placed in an Enhanced Metafile (EMF) file. This enumeration is used by several constructors in the <see cref="T:System.Drawing.Imaging.Metafile" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GDI+ uses the enhanced Windows metafile image format (EMF). The EMF format contains a comment mechanism for embedding data within the metafile. This comment mechanism is used to embed GDI+ records within an EMF file. EMF files that contain GDI+ data are called EMF+ files. Applications that do not recognize the comment data skip the comment records and render the records they do understand. If the EMF+ file is played back by GDI+, then the GDI+ records are used to render the metafile; otherwise, the GDI records (if present) are used.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EmfOnly">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that all the records in the metafile are EMF records, which can be displayed by GDI or GDI+.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPlusDual">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that all EMF+ records in the metafile are associated with an alternate EMF record. Metafiles of type EmfPlusDual can be displayed by GDI or by GDI+.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPlusOnly">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that all the records in the metafile are EMF+ records, which can be displayed by GDI+ but not by GDI.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

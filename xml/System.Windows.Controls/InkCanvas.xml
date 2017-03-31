@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvas" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,30 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines an area that receives and displays ink strokes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An InkCanvas is an element that can be used to receive and display ink input. This is commonly done through the use of a stylus, which interacts with a digitizer to produce ink strokes using a stylus or a mouse. The created strokes are represented as <xref:System.Windows.Ink.Stroke> objects, and can be manipulated either programmatically or based on user input. The InkCanvas enables users to modify or delete an existing <xref:System.Windows.Ink.Stroke>.  
-  
- The InkCanvas can be bound to a data source. For example, you can bind the <xref:System.Windows.Controls.InkCanvas.Strokes%2A> property to: a base-64, encoded string that contains ink data in Ink Serialized format (ISF); or even to the <xref:System.Windows.Controls.InkCanvas.Strokes%2A> property of another InkCanvas. You can also bind properties, such as <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A> and <xref:System.Windows.Controls.InkCanvas.EditingMode%2A>, to other data sources.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to simulate the use of both a pen and a highlighter on the same InkCanvas. The example assumes that the root element in the markup language (XAML) file is a <xref:System.Windows.Controls.DockPanel> called `root`. It also assumes that there is a <xref:System.Windows.Controls.Button> called `switchHighlighter` and that both the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> and <xref:System.Windows.FrameworkElement.Loaded> events are connected to the example's event handler.  
-  
- [!code-cs[DrawingAttributes#3](~/add/codesnippet/csharp/DrawingAttributesSample/Window1.xaml.cs#3)]
- [!code-vb[DrawingAttributes#3](~/add/codesnippet/visualbasic/DrawingAttributesSample/Window1.xaml.vb#3)]  
-  
- The following example declares two InkCanvas objects in XAML and establishes data binding between them and other data sources. The first InkCanvas, called `ic`, is bound to two data sources. The <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> and <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A> properties on `ic` are bound to <xref:System.Windows.Controls.ListBox> objects, which are, in turn, bound to arrays defined in the XAML. The <xref:System.Windows.Controls.InkCanvas.EditingMode%2A>, <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A>, and <xref:System.Windows.Controls.InkCanvas.Strokes%2A> properties of the second InkCanvas are bound to the first InkCanvas in the following code.  
-  
- [!code-xml[InkCanvasBinding#1](~/add/codesnippet/xaml/t-system.windows.control_114_2.xaml)]
- [!code-xml[InkCanvasBinding#1](~/add/codesnippet/xaml/t-system.windows.control_114_2.xaml)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,12 +31,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the InkCanvas class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,39 +46,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasEditingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current editing mode of the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>The current editing mode of the <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ActiveEditingMode property indicates the current <xref:System.Windows.Controls.InkCanvasEditingMode> of the <xref:System.Windows.Controls.InkCanvas>.  Suppose that the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode> and the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode>.  When the tablet pen is used in an inverted position, ActiveEditingMode has a value of <xref:System.Windows.Controls.InkCanvasEditingMode>. Otherwise, its value is <xref:System.Windows.Controls.InkCanvasEditingMode>.  
-  
-<a name="dependencyPropertyInfo_ActiveEditingMode"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.ActiveEditingModeProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example reports the value of ActiveEditingMode whenever it changes.  
-  
- [!code-cs[InkCanvasSamples#36](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#36)]
- [!code-vb[InkCanvasSamples#36](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#36)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveEditingModeChanged">
@@ -112,7 +64,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -124,32 +75,8 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the current editing mode changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.InkCanvas.ActiveEditingMode%2A> property changes whenever the <xref:System.Windows.Controls.InkCanvas> enters a new editing mode. For example, suppose that the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode> and the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode>. When the user changes the tip of tablet pen, the ActiveEditingModeChanged event occurs.  
-  
-<a name="routedEventInfo_ActiveEditingModeChanged"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.ActiveEditingModeChangedEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
-   
-  
-## Examples  
- The following example reports the value of <xref:System.Windows.Controls.InkCanvas.ActiveEditingMode%2A> whenever it changes.  
-  
- [!code-cs[InkCanvasSamples#36](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#36)]
- [!code-vb[InkCanvasSamples#36](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#36)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveEditingModeChangedEvent">
@@ -159,14 +86,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.InkCanvas.ActiveEditingModeChanged" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,14 +103,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.InkCanvas.ActiveEditingMode%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,9 +129,9 @@
         <Parameter Name="arrangeSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeSize">The final area within the parent that this element should use to arrange itself and its children.</param>
-        <summary>Positions child elements and determines a size for the <see cref="T:System.Windows.Controls.InkCanvas" /> object.</summary>
-        <returns>The actual size used.</returns>
+        <param name="arrangeSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,7 +142,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -233,31 +156,9 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Media.Brush" />. The brush is used to fill the border area surrounding a <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>A <see cref="T:System.Windows.Media.Brush" /> used to fill the border area surrounding a <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Background"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.BackgroundProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
-  
-   
-  
-## Examples  
- The following example demonstrates how to set the Background property on an <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#37](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#37)]
- [!code-vb[InkCanvasSamples#37](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#37)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundProperty">
@@ -267,14 +168,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.InkCanvas.Background%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,14 +185,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.InkCanvas.Bottom%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +202,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -311,26 +209,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the contents of the Clipboard can be pasted into the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <returns>
-          <see langword="true" /> if the contents of the Clipboard can be pasted in; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.InkCanvas> can support Clipboard data in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/add/includes/tlasharptla-isf-md.md)], and text format.  
-  
-   
-  
-## Examples  
- The following example copies an element to the Clipboard and pastes it to the <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an element called `rect1`, and that the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> events have been connected to the event handlers in the example.  
-  
- [!code-cs[InkCanvasSamples#1](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#1)]
- [!code-vb[InkCanvasSamples#1](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#1)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">Permission to paste content from the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" />. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionClipboard" />.</permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Children">
@@ -340,7 +221,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -352,37 +232,9 @@
         <ReturnType>System.Windows.Controls.UIElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves child elements of the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>A collection of child elements located on the <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlPropertyElementUsage_Children"></a>   
-## XAML Property Element Usage  
-  
-```  
-<object>  
-  OneOrMoreUIElements  
-</object>  
-```  
-  
-<a name="xamlValues_Children"></a>   
-## XAML Values  
- *OneOrMoreUIElements*  
- One or more <xref:System.Windows.UIElement> objects.  
-  
-   
-  
-## Examples  
- The following example adds a <xref:System.Windows.Controls.TextBlock> to an <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#8](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#8)]
- [!code-vb[InkCanvasSamples#8](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#8)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopySelection">
@@ -392,7 +244,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -400,23 +251,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Copies selected strokes and/or elements to the Clipboard.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.InkCanvas> can support Clipboard data in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/add/includes/tlasharptla-isf-md.md)], and text format. Strokes to the Clipboard are both [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/add/includes/tlasharptla-isf-md.md)].  
-  
-   
-  
-## Examples  
- The following example selects two elements on an <xref:System.Windows.Controls.InkCanvas> and copies them to the Clipboard. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textbox1` and a <xref:System.Windows.Controls.Button> called `button1 -` and thatboth controls are child elements of the <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#3](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#3)]
- [!code-vb[InkCanvasSamples#3](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CutSelection">
@@ -426,7 +262,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,23 +269,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Deletes the selected strokes and elements, and copies them to the Clipboard.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.InkCanvas> can support Clipboard data in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/add/includes/tlasharptla-isf-md.md)], and text format. Strokes to the Clipboard are both [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/add/includes/tlasharptla-isf-md.md)].  
-  
-   
-  
-## Examples  
- The following example selects and cuts two elements on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textbox1` and a <xref:System.Windows.Controls.Button> called `button1` - and that both controls are child elements of the <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#4](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#4)]
- [!code-vb[InkCanvasSamples#4](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultDrawingAttributes">
@@ -460,46 +280,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Ink.DrawingAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the drawing attributes that are applied to new ink strokes made on the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>The default drawing attributes for the <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this property will affect only new strokes that are made after this property is set. To apply new drawing attributes to already-created <xref:System.Windows.Ink.Stroke> objects, access them individually using the <xref:System.Windows.Controls.InkCanvas.Strokes%2A> property.  
-  
-<a name="dependencyPropertyInfo_DefaultDrawingAttributes"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributesProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use two <xref:System.Windows.Ink.DrawingAttributes> objects to simulate the experience of using a pen and a highlighter on the same <xref:System.Windows.Controls.InkCanvas>. The example assumes that the root element in the markup language (XAML) file is a <xref:System.Windows.Controls.DockPanel> called `root`. It also assumes that there is a <xref:System.Windows.Controls.Button> called `switchHilighter` and that the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event is connected to the event handler.  
-  
- [!code-cs[DrawingAttributes#3](~/add/codesnippet/csharp/DrawingAttributesSample/Window1.xaml.cs#3)]
- [!code-vb[DrawingAttributes#3](~/add/codesnippet/visualbasic/DrawingAttributesSample/Window1.xaml.vb#3)]  
-  
- The following example demonstrates how to bind the DefaultDrawingAttributes property to a data source.  
-  
- [!code-xml[InkCanvasBinding#3](~/add/codesnippet/xaml/p-system.windows.control_51_2.xaml)]
- [!code-xml[InkCanvasBinding#3](~/add/codesnippet/xaml/p-system.windows.control_51_2.xaml)]  
-[!code-xml[InkCanvasBinding#4](~/add/codesnippet/xaml/p-system.windows.control_51_3.xaml)]
-[!code-xml[InkCanvasBinding#4](~/add/codesnippet/xaml/p-system.windows.control_51_3.xaml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultDrawingAttributesProperty">
@@ -509,14 +298,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,25 +315,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Ink.DrawingAttributesReplacedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A" /> property is replaced.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example checks the value of the <xref:System.Windows.Ink.DrawingAttributes.IsHighlighter%2A> property of the new <xref:System.Windows.Ink.DrawingAttributes> object.  
-  
- [!code-cs[DrawingAttributes#17](~/add/codesnippet/csharp/DrawingAttributesSample/Window1.xaml.cs#17)]
- [!code-vb[DrawingAttributes#17](~/add/codesnippet/visualbasic/DrawingAttributesSample/Window1.xaml.vb#17)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultStylusPointDescription">
@@ -555,7 +332,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -567,31 +343,9 @@
         <ReturnType>System.Windows.Input.StylusPointDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the stylus point description for an <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>The stylus point description for an <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the <xref:System.Windows.Controls.InkCanvas> stores only the <xref:System.Windows.Input.StylusPointProperties.X>, <xref:System.Windows.Input.StylusPointProperties.Y>, and <xref:System.Windows.Input.StylusPointProperties.NormalPressure> properties for each <xref:System.Windows.Input.StylusPoint> belonging to a stroke. You can use the DefaultStylusPointDescription property to store additional information about points comprising the strokes on a <xref:System.Windows.Controls.InkCanvas>. Setting this property will affect only new strokes that are made after the property is set.  
-  
-<a name="xamlTextUsage_DefaultStylusPointDescription"></a>   
-## XAML Text Usage  
- You cannot use this property in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
-   
-  
-## Examples  
- The following example sets the DefaultStylusPointDescription so that the stylus points of the strokes on the <xref:System.Windows.Controls.InkCanvas> contain the <xref:System.Windows.Input.StylusPointProperties.X>, <xref:System.Windows.Input.StylusPointProperties.Y>, <xref:System.Windows.Input.StylusPointProperties.NormalPressure>, and <xref:System.Windows.Input.StylusPointProperties.TipButton> properties.  
-  
-> [!NOTE]
->  Only the strokes that are added to the <xref:System.Windows.Controls.InkCanvas> after the DefaultStylusPointDescription is set to contain the additional property.  
-  
- [!code-cs[InkCanvasSamples#9](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#9)]
- [!code-vb[InkCanvasSamples#9](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#9)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DynamicRenderer">
@@ -601,26 +355,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPlugIns.DynamicRenderer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the renderer that dynamically draws ink on the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>The renderer that dynamically draws ink on the <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set the DynamicRenderer property to a custom <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> if you want to customize the ink.  
-  
-> [!NOTE]
->  The DynamicRenderer is a member of the <xref:System.Windows.UIElement.StylusPlugIns%2A> collection. When you set the DynamicRenderer, the <xref:System.Windows.Controls.InkCanvas> removes the old <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> from the <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection> and adds the new <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> to the end of the collection. This may change the behavior of the <xref:System.Windows.Controls.InkCanvas>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingMode">
@@ -630,41 +373,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasEditingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the user editing mode used by an active pointing device.</summary>
-        <value>The editing mode used when a pointing device (such as a tablet pen or mouse) is active.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default EditingMode is <xref:System.Windows.Controls.InkCanvasEditingMode>. Changing the EditingMode clears any existing selections.  
-  
- The EditingMode specifies the mode of the pointing device as it interacts with the <xref:System.Windows.Controls.InkCanvas>. <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> is used by some digitizers when the "eraser end" of the stylus contacts the digitizer.  
-  
-<a name="dependencyPropertyInfo_EditingMode"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.EditingModeProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example creates an application that uses the various types of editing modes on an <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-vb[ICEditingModeSample#1](~/add/codesnippet/visualbasic/InkCanvasEditingModeSample/Window1.xaml.vb#1)]
- [!code-cs[ICEditingModeSample#1](~/add/codesnippet/csharp/InkCanvasEditingModeSample/Window1.xaml.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingModeChanged">
@@ -674,7 +391,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -686,32 +402,8 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Controls.InkCanvas.EditingMode%2A" /> property of an <see cref="T:System.Windows.Controls.InkCanvas" /> object has been changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event occurs after the editing mode has been changed; the changes are reflected in the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property of the <xref:System.Windows.Controls.InkCanvas>.  
-  
-<a name="routedEventInfo_EditingModeChanged"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.EditingModeChangedEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
-   
-  
-## Examples  
- The following example checks whether the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode> or <xref:System.Windows.Controls.InkCanvasEditingMode>.  
-  
- [!code-cs[InkCanvasSamples#21](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#21)]
- [!code-vb[InkCanvasSamples#21](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#21)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingModeChangedEvent">
@@ -721,14 +413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.InkCanvas.EditingModeChanged" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,41 +430,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasEditingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the user editing mode if the stylus is inverted when it interacts with the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>The inverted editing mode of the <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property controls the actions that are performed when the stylus is inverted.  
-  
- Similarly, the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property controls actions that are performed when the stylus is in a standard, tip-down position against the digitizer,  
-  
-<a name="dependencyPropertyInfo_EditingModeInverted"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.EditingModeInvertedProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example demonstrates how to allow a user to partially erase strokes with the inverted tip of a stylus. An elliptical cursor appears on the <xref:System.Windows.Controls.InkCanvas> when the user erases ink.  
-  
- [!code-cs[InkCanvasSamples#6](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#6)]
- [!code-vb[InkCanvasSamples#6](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#6)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingModeInvertedChanged">
@@ -783,7 +448,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -795,32 +459,8 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Controls.InkCanvas.EditingModeInverted%2A" /> property of an <see cref="T:System.Windows.Controls.InkCanvas" /> object has been changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event occurs after the inverted editing mode has been changed. These changes are reflected in the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> property of the <xref:System.Windows.Controls.InkCanvas>.  
-  
-<a name="routedEventInfo_EditingModeInvertedChanged"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.EditingModeInvertedChangedEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
-   
-  
-## Examples  
- The following example checks whether the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode> or <xref:System.Windows.Controls.InkCanvasEditingMode>.  
-  
- [!code-cs[InkCanvasSamples#20](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#20)]
- [!code-vb[InkCanvasSamples#20](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#20)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingModeInvertedChangedEvent">
@@ -830,14 +470,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.InkCanvas.EditingModeInvertedChanged" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -848,14 +487,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.InkCanvas.EditingModeInverted%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -866,14 +504,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.InkCanvas.EditingMode%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -884,7 +521,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -896,32 +532,9 @@
         <ReturnType>System.Windows.Ink.StylusShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Ink.StylusShape" /> used to point-erase ink from an <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>The eraser shape associated with the <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This shape will be used to erase ink from an <xref:System.Windows.Controls.InkCanvas> when the current <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode>.  
-  
- Individual properties of a <xref:System.Windows.Ink.StylusShape> cannot be modified once the shape has been created.  
-  
- If you change the EraserShape, the cursor rendered on the <xref:System.Windows.Controls.InkCanvas> is not updated until the next <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> change.  
-  
-<a name="xamlTextUsage_EraserShape"></a>   
-## XAML Text Usage  
- This property is not typically used in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
-   
-  
-## Examples  
- The following example demonstrates how to allow a user to partially erase strokes with the inverted tip of a stylus. An elliptical cursor appears on the <xref:System.Windows.Controls.InkCanvas> when the user erases ink.  
-  
- [!code-cs[InkCanvasSamples#6](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#6)]
- [!code-vb[InkCanvasSamples#6](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#6)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Gesture">
@@ -931,7 +544,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -943,33 +555,8 @@
         <ReturnType>System.Windows.Controls.InkCanvasGestureEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Controls.InkCanvas" /> detects a gesture.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="routedEventInfo_Gesture"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.GestureEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.Controls.InkCanvasGestureEventHandler>|  
-  
-   
-  
-## Examples  
- The following example demonstrates how to set up an <xref:System.Windows.Controls.InkCanvas> to recognize application gestures.  
-  
- [!code-cs[GestureSample#3](~/add/codesnippet/csharp/GestureSample/Window1.xaml.cs#3)]
- [!code-vb[GestureSample#3](~/add/codesnippet/visualbasic/GestureSample/Window1.xaml.vb#3)]  
-[!code-cs[GestureSample#1](~/add/codesnippet/csharp/GestureSample/Window1.xaml.cs#1)]
-[!code-vb[GestureSample#1](~/add/codesnippet/visualbasic/GestureSample/Window1.xaml.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GestureEvent">
@@ -979,14 +566,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.InkCanvas.Gesture" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -997,7 +583,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1015,20 +600,10 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element of which to get the bottom property.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.InkCanvas.Bottom%2A" /> attached property for a given dependency object.</summary>
-        <returns>The bottom coordinate of the dependency object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to get the position of a <xref:System.Windows.Controls.Button>.  
-  
- [!code-cs[InkCanvasSamples#34](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#34)]
- [!code-vb[InkCanvasSamples#34](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#34)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnabledGestures">
@@ -1038,7 +613,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1046,20 +620,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a collection of application gestures that are recognized by <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <returns>A collection of gestures that the <see cref="T:System.Windows.Controls.InkCanvas" /> recognizes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to get the enabled application gestures from the <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#24](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#24)]
- [!code-vb[InkCanvasSamples#24](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#24)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Windows.Controls.InkCanvas.IsGestureRecognizerAvailable%2A" /> property is <see langword="false" />.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLeft">
@@ -1069,7 +632,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1087,20 +649,10 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element of which to get the left property.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.InkCanvas.Left%2A" /> attached property for a given dependency object.</summary>
-        <returns>The left coordinate of the dependency object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to get the position of a <xref:System.Windows.Controls.Button>.  
-  
- [!code-cs[InkCanvasSamples#31](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#31)]
- [!code-vb[InkCanvasSamples#31](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#31)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRight">
@@ -1110,7 +662,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1128,20 +679,10 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element of which to get the right property.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.InkCanvas.Right%2A" /> attached property for a given dependency object.</summary>
-        <returns>The right coordinate of the dependency object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to get the position of a <xref:System.Windows.Controls.Button>.  
-  
- [!code-cs[InkCanvasSamples#32](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#32)]
- [!code-vb[InkCanvasSamples#32](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#32)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedElements">
@@ -1151,7 +692,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1159,28 +699,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the <see cref="T:System.Windows.FrameworkElement" /> objects that are selected in the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <returns>Array of <see cref="T:System.Windows.FrameworkElement" /> objects.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns only <xref:System.Windows.FrameworkElement> objects, not <xref:System.Windows.Ink.Stroke> objects.  
-  
- To retrieve selected <xref:System.Windows.Ink.Stroke> objects, call the <xref:System.Windows.Controls.InkCanvas.GetSelectedStrokes%2A> method.  
-  
- If the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> of <xref:System.Windows.Controls.InkCanvas> is set to <xref:System.Windows.Controls.InkCanvas.EditingMode%2A>, users can select <xref:System.Windows.Ink.Stroke> objects and <xref:System.Windows.FrameworkElement> objects. Alternatively, both types of objects can be selected using code:  just call the <xref:System.Windows.Controls.InkCanvas.Select%2A> method.  
-  
-   
-  
-## Examples  
- The following example doubles the height and width of each selected element on an <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#12](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#12)]
- [!code-vb[InkCanvasSamples#12](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#12)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedStrokes">
@@ -1190,7 +711,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1198,26 +718,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a <see cref="T:System.Windows.Ink.StrokeCollection" /> that represents selected <see cref="T:System.Windows.Ink.Stroke" /> objects on the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <returns>The collection of selected strokes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns <xref:System.Windows.Ink.Stroke> objects, only. To retrieve selected <xref:System.Windows.FrameworkElement> objects, call the <xref:System.Windows.Controls.InkCanvas.GetSelectedElements%2A> method.  
-  
- If the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> of <xref:System.Windows.Controls.InkCanvas> is set to <xref:System.Windows.Controls.InkCanvas.EditingMode%2A>, users can select <xref:System.Windows.Ink.Stroke> objects and <xref:System.Windows.FrameworkElement> objects. Alternatively, both types of objects can be selected using code: just call the <xref:System.Windows.Controls.InkCanvas.Select%2A> method.  
-  
-   
-  
-## Examples  
- The following example changes the color of each selected stroke on an <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#11](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#11)]
- [!code-vb[InkCanvasSamples#11](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#11)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSelectionBounds">
@@ -1227,7 +730,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1235,19 +737,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the bounds of the selected strokes and elements on the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <returns>The smallest rectangle that encompasses all selected strokes and elements.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example prevents the user from making a selection smaller than its original size.  
-  
- [!code-cs[InkCanvasSamples#16](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#16)]
- [!code-vb[InkCanvasSamples#16](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#16)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTop">
@@ -1257,7 +749,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1275,20 +766,10 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element of which to get the top property.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.InkCanvas.Top%2A" /> attached property for a given dependency object.</summary>
-        <returns>The top coordinate of the dependency object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to get the position of a <xref:System.Windows.Controls.Button>.  
-  
- [!code-cs[InkCanvasSamples#33](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#33)]
- [!code-vb[InkCanvasSamples#33](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#33)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetVisualChild">
@@ -1298,7 +779,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1308,9 +788,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the requested child element in the collection.</param>
-        <summary>Overrides <see cref="System.Windows.Media.Visual.GetVisualChild%2A" />, and returns a child at the specified index from a collection of child elements.</summary>
-        <returns>The requested child element. This should not return <see langword="null" />; if the provided index is out of range, an exception is thrown.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1321,7 +801,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1331,9 +810,9 @@
         <Parameter Name="hitTestParams" Type="System.Windows.Media.PointHitTestParameters" />
       </Parameters>
       <Docs>
-        <param name="hitTestParams">An object that specifies the <see cref="T:System.Windows.Point" /> to hit test against.</param>
-        <summary>Determines whether a given point falls within the rendering bounds of an <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <returns>An object that represents the <see cref="T:System.Windows.Media.Visual" /> that is returned from a hit test.</returns>
+        <param name="hitTestParams">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1344,7 +823,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1354,25 +832,10 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point">The point to hit test.</param>
-        <summary>Returns a value that indicates which part of the selection adorner intersects or surrounds the specified point.</summary>
-        <returns>A value that indicates which part of the selection adorner intersects or surrounds a specified point.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the HitTestSelection method to determine whether the point is within a stroke selection's bounds or on one of the eight handles.  This is useful when performing drag and drop operations.  
-  
-   
-  
-## Examples  
- The following example demonstrates how use HitTestSelection to determine whether to create a <xref:System.Windows.DataObject> to initiate drag and drop.  To implement drag and drop between two <xref:System.Windows.Controls.InkCanvas> objects, see [How to: Drag and Drop Ink](../Topic/How%20to:%20Drag%20and%20Drop%20Ink.md).  
-  
- [!code-cs[InkDragDrop#3](~/add/codesnippet/csharp/InkDragDrop/Window1.xaml.cs#3)]
- [!code-vb[InkDragDrop#3](~/add/codesnippet/visualbasic/InkDragDrop/Window1.xaml.vb#3)]  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InkPresenter">
@@ -1382,15 +845,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkPresenter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ink presenter that displays ink on the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>The ink presenter that displays ink on the <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1401,7 +863,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1413,22 +874,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets (determines) whether the gesture recognition component is available on the user's system.</summary>
-        <value>
-          <see langword="true" /> if the recognition component is available; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to configure an <xref:System.Windows.Controls.InkCanvas> to recognize application gestures.  
-  
- [!code-cs[GestureSample#3](~/add/codesnippet/csharp/GestureSample/Window1.xaml.cs#3)]
- [!code-vb[GestureSample#3](~/add/codesnippet/visualbasic/GestureSample/Window1.xaml.vb#3)]  
-[!code-cs[GestureSample#1](~/add/codesnippet/csharp/GestureSample/Window1.xaml.cs#1)]
-[!code-vb[GestureSample#1](~/add/codesnippet/visualbasic/GestureSample/Window1.xaml.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LeftProperty">
@@ -1438,14 +886,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.InkCanvas.Left%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1456,14 +903,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns enumerator to logical children.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1475,7 +921,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1485,9 +930,9 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">The available size that this element can give to child elements. Infinity can be specified as a value to indicate that the element will size to whatever content is available.</param>
-        <summary>Measures the size in layout required for child elements and determines a size for the [System.Windows.Controls.InkCanvas](assetId:///System.Windows.Controls.InkCanvas?qualifyHint=False&amp;autoUpgrade=True) object.</summary>
-        <returns>The size that this element determines it needs during layout, based on its calculations of child element sizes.</returns>
+        <param name="availableSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1498,34 +943,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value which indicates whether the user is enabled to move selected ink strokes and/or elements on the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>
-          <see langword="true" /> if a user can move strokes and/or elements on the <see cref="T:System.Windows.Controls.InkCanvas" />; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property is set to `true`, an adorner border is drawn around ink strokes and/or elements when they are selected. This border enables the user to move the selected objects. If <xref:System.Windows.Controls.InkCanvas.ResizeEnabled%2A> is `true`, the adorner enables the user to resize the strokes and/or elements as well.  
-  
- If this property is set to `false` while one or more ink strokes and/or elements are selected, the adorner border will be automatically removed from the selected objects.  
-  
-   
-  
-## Examples  
- The following example prevents a user from moving and resizing the elements and strokes on a <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#7](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#7)]
- [!code-vb[InkCanvasSamples#7](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#7)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnActiveEditingModeChanged">
@@ -1535,7 +961,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1545,8 +970,8 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.ActiveEditingModeChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1557,7 +982,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1565,7 +989,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.InkCanvasAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] infrastructure.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1577,7 +1001,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1587,8 +1010,8 @@
         <Parameter Name="e" Type="System.Windows.Ink.DrawingAttributesReplacedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.DefaultDrawingAttributesReplaced" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1599,7 +1022,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1609,16 +1031,9 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.EditingModeChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event occurs after the editing mode has been changed; the changes are reflected in the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property of the <xref:System.Windows.Controls.InkCanvas>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEditingModeInvertedChanged">
@@ -1628,7 +1043,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1638,16 +1052,9 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.EditingModeInvertedChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event occurs after the inverted editing mode has been changed; the changes reflected in the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> property of the <xref:System.Windows.Controls.InkCanvas>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnGesture">
@@ -1657,7 +1064,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1667,8 +1073,8 @@
         <Parameter Name="e" Type="System.Windows.Controls.InkCanvasGestureEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.Gesture" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1679,7 +1085,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1689,8 +1094,8 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data that describes the property that changed, as well as old and new values.</param>
-        <summary>Invoked whenever the effective value of any dependency property on this <see cref="T:System.Windows.FrameworkElement" /> has been updated. The specific dependency property that changed is reported in the arguments parameter. Overrides <see cref="System.Windows.DependencyObject.OnPropertyChanged%2A" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1701,7 +1106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1711,16 +1115,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.SelectionChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called after a set of ink strokes and/or elements has been selected by the user and the selection change has been applied. Before the change is applied, the <xref:System.Windows.Controls.InkCanvas.OnSelectionChanging%2A> method is called.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectionChanging">
@@ -1730,7 +1127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1740,16 +1136,9 @@
         <Parameter Name="e" Type="System.Windows.Controls.InkCanvasSelectionChangingEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.SelectionChanging" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when a new selection of strokes and/or elements is made by the user, but before the change is applied. After the change has been applied, the <xref:System.Windows.Controls.InkCanvas.OnSelectionChanged%2A> method is called.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectionMoved">
@@ -1759,7 +1148,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1769,16 +1157,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Not used.</param>
-        <summary>An event announcing that the user selected and moved a selection of strokes and/or elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called after a selection of strokes and/or elements has been moved by the user and the change has been applied. Before the change is applied, the <xref:System.Windows.Controls.InkCanvas.OnSelectionMoving%2A> method is called.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectionMoving">
@@ -1788,7 +1169,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1798,16 +1178,9 @@
         <Parameter Name="e" Type="System.Windows.Controls.InkCanvasSelectionEditingEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.SelectionMoving" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called after the user requests that a selection of strokes and/or elements be moved and before the change is applied. After the change is applied, the <xref:System.Windows.Controls.InkCanvas.OnSelectionMoved%2A> method is called.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectionResized">
@@ -1817,7 +1190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1827,16 +1199,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.SelectionResized" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called after a selection of strokes and/or elements has been resized by the user and the change has been applied. Before the change is applied, the <xref:System.Windows.Controls.InkCanvas.OnSelectionResizing%2A> method is called.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectionResizing">
@@ -1846,7 +1211,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1856,16 +1220,9 @@
         <Parameter Name="e" Type="System.Windows.Controls.InkCanvasSelectionEditingEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.SelectionResizing" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called after the user requests a selection of strokes and/or elements be resized and before the change is applied. After the change is applied, the <xref:System.Windows.Controls.InkCanvas.OnSelectionResized%2A> method will be called.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnStrokeCollected">
@@ -1875,7 +1232,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1885,18 +1241,9 @@
         <Parameter Name="e" Type="System.Windows.Controls.InkCanvasStrokeCollectedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.StrokeCollected" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnStrokeCollected is called when a user physically completes a stroke, for example, by raising the stylus from a tablet after making a motion.  
-  
- A programmatic addition of strokes to the <xref:System.Windows.Controls.InkCanvas.Strokes%2A> collection will not call the OnStrokeCollected method.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnStrokeErased">
@@ -1906,7 +1253,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1916,8 +1262,8 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.StrokeErased" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1928,7 +1274,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1938,8 +1283,8 @@
         <Parameter Name="e" Type="System.Windows.Controls.InkCanvasStrokeErasingEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.StrokeErasing" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1950,7 +1295,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1960,8 +1304,8 @@
         <Parameter Name="e" Type="System.Windows.Controls.InkCanvasStrokesReplacedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.InkCanvas.StrokesReplaced" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1972,7 +1316,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1980,24 +1323,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Pastes the contents of the Clipboard to the top-left corner of the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.InkCanvas> can support Clipboard data in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/add/includes/tlasharptla-isf-md.md)], and text format.  
-  
-   
-  
-## Examples  
- The following example copies an element to the Clipboard and pastes it to the <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an element called `rect1`, and that the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> events have been connected to the event handlers in the example.  
-  
- [!code-cs[InkCanvasSamples#1](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#1)]
- [!code-vb[InkCanvasSamples#1](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#1)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for pasting content from the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" />. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionClipboard" />.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -2007,7 +1334,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2017,25 +1343,9 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point">The point at which to paste the strokes.</param>
-        <summary>Pastes the contents of the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" /> at a given point.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.InkCanvas> can support Clipboard data in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/add/includes/tlasharptla-isf-md.md)], and text format.  
-  
-   
-  
-## Examples  
- The following example copies an element to the Clipboard and pastes it to the <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an element called `rect1`, and that the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> events are connected to the event handlers in the example.  
-  
- [!code-cs[InkCanvasSamples#1](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#1)]
- [!code-vb[InkCanvasSamples#1](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#1)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">Permission to paste content from the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" />. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionClipboard" />.</permission>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredPasteFormats">
@@ -2045,7 +1355,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2057,43 +1366,9 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.InkCanvasClipboardFormat&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets formats that can be pasted onto the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>A collection of enumeration values. The default is <see cref="T:System.Windows.Controls.InkCanvasClipboardFormat" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlPropertyElementUsage_PreferredPasteFormats"></a>   
-## XAML Property Element Usage  
-  
-```  
-<object>  
-  <object.PreferredPasteFormats>  
-    InkCanvasClipboardFormats  
-  </object.PreferredPasteFormats>  
-</object>  
-```  
-  
-<a name="xamlValues_PreferredPasteFormats"></a>   
-## XAML Values  
- *InkCanvasClipboardFormats*  
- An array of <xref:System.Windows.Controls.InkCanvasClipboardFormat> enumeration values. Specifying an array in XAML requires `x:Array` usage. Specifying an enumeration value as an element that declares an array member requires `x:Static` usage. For more information, see [x:Array Markup Extension](../Topic/x:Array%20Markup%20Extension.md) and [x:Static Markup Extension](../Topic/x:Static%20Markup%20Extension.md).  
-  
-   
-  
-## Examples  
- The following example sets the PreferredPasteFormats to make the <xref:System.Windows.Controls.InkCanvas> accept [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/add/includes/tlasharptla-isf-md.md)].  
-  
- [!code-cs[InkCanvasSamples#26](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#26)]
- [!code-vb[InkCanvasSamples#26](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#26)]  
-  
- The following example accomplishes the same thing in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-xml[InkCanvasSamples#38](~/add/codesnippet/xaml/InkCanvasSamples/Window2.xaml#38)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResizeEnabled">
@@ -2103,34 +1378,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that indicates whether the user can resize selected ink strokes and/or elements on the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>
-          <see langword="true" /> if a user can resize strokes and/or elements on the <see cref="T:System.Windows.Controls.InkCanvas" />; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property is set to `true`, an adorner border is drawn around ink strokes and/or elements when they are selected. This border enables the user to resize the selected objects. If <xref:System.Windows.Controls.InkCanvas.MoveEnabled%2A> is `true`, the adorner enables the user to move the strokes and/or elements as well.  
-  
- If this property is set to `false` while one or more ink strokes and/or elements are selected, the adorner border is automatically removed from the selected objects.  
-  
-   
-  
-## Examples  
- The following example prevents a user from moving and resizing the elements and strokes on a <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#7](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#7)]
- [!code-vb[InkCanvasSamples#7](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#7)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RightProperty">
@@ -2140,14 +1396,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.InkCanvas.Right%2A" /> attached propertyy.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2158,7 +1413,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2168,26 +1422,9 @@
         <Parameter Name="selectedElements" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.UIElement&gt;" />
       </Parameters>
       <Docs>
-        <param name="selectedElements">A collection of <see cref="T:System.Windows.UIElement" /> objects to select.</param>
-        <summary>Selects a set of <see cref="T:System.Windows.UIElement" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Controls.InkCanvas> can contain <xref:System.Windows.Ink.Stroke> objects, which are created in response to user stylus input and <xref:System.Windows.UIElement> objects, such as <xref:System.Windows.Controls.Image> and <xref:System.Windows.Controls.Button> objects.  
-  
- Selected strokes are displayed with an adorner around them for ease of recognition and manipulation. <xref:System.Windows.UIElement> objects will not display differently when selected. If a <xref:System.Windows.UIElement> in `selectedElements` is not in the Children collection, Select ignores the <xref:System.Windows.UIElement>.  
-  
-   
-  
-## Examples  
- The following example selects all the strokes and two elements on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textbox1` and a <xref:System.Windows.Controls.Button> called `button1` - and that both controls are child elements of the <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#2](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#2)]
- [!code-vb[InkCanvasSamples#2](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#2)]  
-  
- ]]></format>
-        </remarks>
+        <param name="selectedElements">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2197,7 +1434,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2207,27 +1443,9 @@
         <Parameter Name="selectedStrokes" Type="System.Windows.Ink.StrokeCollection" />
       </Parameters>
       <Docs>
-        <param name="selectedStrokes">A collection of <see cref="T:System.Windows.Ink.Stroke" /> objects to select.</param>
-        <summary>Selects a set of ink <see cref="T:System.Windows.Ink.Stroke" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Controls.InkCanvas> can contain <xref:System.Windows.Ink.Stroke> objects, which are created in response to user stylus input, and <xref:System.Windows.FrameworkElement> objects, such as <xref:System.Windows.Controls.Image> and <xref:System.Windows.Controls.Button> objects.  
-  
- Selected strokes are displayed with an adorner around them for ease of recognition and manipulation. <xref:System.Windows.FrameworkElement> objects do not display differently when selected.  
-  
-   
-  
-## Examples  
- The following example selects all the strokes and two elements on an <xref:System.Windows.Controls.InkCanvas>.  This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textbox1` and a <xref:System.Windows.Controls.Button> called `button1` - and that both controls are child elements of the <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#2](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#2)]
- [!code-vb[InkCanvasSamples#2](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#2)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">One or more strokes in <paramref name="selectedStrokes" /> is not in the <see cref="System.Windows.Controls.InkCanvas.Strokes%2A" /> property.</exception>
+        <param name="selectedStrokes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2237,7 +1455,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2248,28 +1465,10 @@
         <Parameter Name="selectedElements" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.UIElement&gt;" />
       </Parameters>
       <Docs>
-        <param name="selectedStrokes">A collection of <see cref="T:System.Windows.Ink.Stroke" /> objects to select.</param>
-        <param name="selectedElements">A collection of <see cref="T:System.Windows.UIElement" /> objects to select.</param>
-        <summary>Selects a combination of <see cref="T:System.Windows.Ink.Stroke" /> and <see cref="T:System.Windows.UIElement" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Controls.InkCanvas> can contain <xref:System.Windows.Ink.Stroke> objects, which are created in response to user stylus input and <xref:System.Windows.UIElement> objects, such as <xref:System.Windows.Controls.Image> and <xref:System.Windows.Controls.Button> objects.  
-  
- Selected strokes will be displayed with an adorner around them for ease of recognition and manipulation. <xref:System.Windows.UIElement> objects will not display differently when selected. If a <xref:System.Windows.UIElement> in `selectedElements` is not in the Children collection, <xref:System.Windows.Controls.InkCanvas.Select%2A> ignores the <xref:System.Windows.UIElement>.  
-  
-   
-  
-## Examples  
- The following example selects all the strokes and two elements on an <xref:System.Windows.Controls.InkCanvas>.  This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textbox1` and a <xref:System.Windows.Controls.Button> called `button1` - and that both controls are child elements of the <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#2](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#2)]
- [!code-vb[InkCanvasSamples#2](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#2)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">One or more strokes in <paramref name="selectedStrokes" /> is not included in the <see cref="System.Windows.Controls.InkCanvas.Strokes%2A" /> property.</exception>
+        <param name="selectedStrokes">To be added.</param>
+        <param name="selectedElements">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionChanged">
@@ -2279,32 +1478,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the selection on the <see cref="T:System.Windows.Controls.InkCanvas" /> changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised after a set of ink strokes and/or elements has been selected and applied by the user.  
-  
- If, instead, you must handle a request that select a set of ink strokes and/or elements before the selection is applied, add an event handler to the <xref:System.Windows.Controls.InkCanvas.SelectionChanging> event.  
-  
-   
-  
-## Examples  
- The following example prevents the user from making a selection smaller than its original size.  
-  
- [!code-cs[InkCanvasSamples#16](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#16)]
- [!code-vb[InkCanvasSamples#16](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#16)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionChanging">
@@ -2314,37 +1495,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasSelectionChangingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a new set of ink strokes and/or elements is being selected.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SelectionChanging event is raised when strokes and/or elements are selected by the user - but before the change is applied.  
-  
- The SelectionChanging event is processed when the <xref:System.Windows.Controls.InkCanvasSelectionChangingEventHandler> receives an <xref:System.Windows.Controls.InkCanvasSelectionChangingEventArgs> object. <xref:System.Windows.Controls.InkCanvasSelectionChangingEventArgs> provides methods for accessing <xref:System.Windows.FrameworkElement> and <xref:System.Windows.Ink.StrokeCollection> objects after they are selected by the user.  
-  
- After the change is applied, the <xref:System.Windows.Controls.InkCanvas.SelectionChanged> event is raised.  
-  
-> [!NOTE]
->  The SelectionChanging event does not occur when the selected strokes are deleted or when the <xref:System.Windows.Controls.InkCanvas.ActiveEditingMode%2A> property changes.  
-  
-   
-  
-## Examples  
- The following example makes selected strokes royal blue.  
-  
- [!code-cs[InkCanvasSamples#14](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#14)]
- [!code-vb[InkCanvasSamples#14](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#14)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionMoved">
@@ -2354,30 +1512,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs after the user moves a selection of strokes and/or elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event occurs after a selection of strokes and/or elements is moved, but before the stroke or element data is updated to record its new position. Add an event handler to the <xref:System.Windows.Controls.InkCanvas.SelectionMoving> event.  
-  
-   
-  
-## Examples  
- The following example unselects items on an <xref:System.Windows.Controls.InkCanvas> after the user moves them.  
-  
- [!code-cs[InkCanvasSamples#19](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#19)]
- [!code-vb[InkCanvasSamples#19](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#19)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionMoving">
@@ -2387,34 +1529,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasSelectionEditingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before selected strokes and elements are moved.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event occurs after the user requests that a selection of strokes and/or elements be moved, but before the change is applied.  
-  
- The event handler receives an argument of type <xref:System.Windows.Controls.InkCanvasSelectionEditingEventArgs> with two properties: <xref:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.OldRectangle%2A> and <xref:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.NewRectangle%2A>. <xref:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.OldRectangle%2A> defines the boundaries of the selection before the move and <xref:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.NewRectangle%2A> defines the boundaries of the selection after the move.  
-  
- After the change is applied, the <xref:System.Windows.Controls.InkCanvas.SelectionMoved> event will occur.  
-  
-   
-  
-## Examples  
- The following example prevents the user from moving selected items vertically on an <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#13](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#13)]
- [!code-vb[InkCanvasSamples#13](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#13)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionResized">
@@ -2424,32 +1546,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a selection of strokes and/or elements has been resized by the user.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised after a selection of strokes and/or elements is resized.  
-  
- If, instead, you must handle a request to resize a selection before the strokes and/or elements are resized, add an event handler to the <xref:System.Windows.Controls.InkCanvas.SelectionResizing> event.  
-  
-   
-  
-## Examples  
- The following example unselects all the items on an <xref:System.Windows.Controls.InkCanvas> after the user re-sizes the selection.  
-  
- [!code-cs[InkCanvasSamples#23](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#23)]
- [!code-vb[InkCanvasSamples#23](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#23)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionResizing">
@@ -2459,34 +1563,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasSelectionEditingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before selected strokes and elements are resized.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event occurs after the user requests that a selection of strokes and/or elements be resized, but before the change is applied.  
-  
- The event handler receives an argument of type <xref:System.Windows.Controls.InkCanvasSelectionEditingEventArgs> that contains two properties: <xref:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.OldRectangle%2A> and <xref:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.NewRectangle%2A>. <xref:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.OldRectangle%2A> defines the boundaries of the selection before the resizing operation and <xref:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.NewRectangle%2A> defines the boundaries of the selection after the resizing operation.  
-  
- After the strokes and/or elements are updated with the new size, the <xref:System.Windows.Controls.InkCanvas.SelectionResized> event is raised.  
-  
-   
-  
-## Examples  
- The following example prevents the user from making a selection smaller than its original size.  
-  
- [!code-cs[InkCanvasSamples#16](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#16)]
- [!code-vb[InkCanvasSamples#16](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#16)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBottom">
@@ -2496,7 +1580,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2507,20 +1590,10 @@
         <Parameter Name="length" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to set the bottom property.</param>
-        <param name="length">The bottom coordinate of <c>element</c>.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.InkCanvas.Bottom%2A" /> attached property for a given dependency object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to set the position of a <xref:System.Windows.Controls.Button>.  
-  
- [!code-cs[InkCanvasSamples#28](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#28)]
- [!code-vb[InkCanvasSamples#28](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#28)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEnabledGestures">
@@ -2530,7 +1603,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2540,22 +1612,9 @@
         <Parameter Name="applicationGestures" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Ink.ApplicationGesture&gt;" />
       </Parameters>
       <Docs>
-        <param name="applicationGestures">A collection of application gestures that the <see cref="T:System.Windows.Controls.InkCanvas" /> will recognize.</param>
-        <summary>Sets the application gestures that the <see cref="T:System.Windows.Controls.InkCanvas" /> will recognize.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example demonstrates how to set up an <xref:System.Windows.Controls.InkCanvas> to recognize application gestures.  
-  
- [!code-cs[GestureSample#3](~/add/codesnippet/csharp/GestureSample/Window1.xaml.cs#3)]
- [!code-vb[GestureSample#3](~/add/codesnippet/visualbasic/GestureSample/Window1.xaml.vb#3)]  
-[!code-cs[GestureSample#1](~/add/codesnippet/csharp/GestureSample/Window1.xaml.cs#1)]
-[!code-vb[GestureSample#1](~/add/codesnippet/visualbasic/GestureSample/Window1.xaml.vb#1)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Windows.Controls.InkCanvas.IsGestureRecognizerAvailable%2A" /> property is <see langword="false" />.</exception>
+        <param name="applicationGestures">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLeft">
@@ -2565,7 +1624,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2576,20 +1634,10 @@
         <Parameter Name="length" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to set the left property.</param>
-        <param name="length">The left coordinate of <c>element</c>.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.InkCanvas.Left%2A" /> attached property for a given dependency object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to set the position of a <xref:System.Windows.Controls.Button>.  
-  
- [!code-cs[InkCanvasSamples#29](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#29)]
- [!code-vb[InkCanvasSamples#29](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#29)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetRight">
@@ -2599,7 +1647,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2610,20 +1657,10 @@
         <Parameter Name="length" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to set the right property.</param>
-        <param name="length">The right coordinate of <c>element</c>.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.InkCanvas.Right%2A" /> attached property for a given dependency object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to set the position of a <xref:System.Windows.Controls.Button>.  
-  
- [!code-cs[InkCanvasSamples#30](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#30)]
- [!code-vb[InkCanvasSamples#30](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#30)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetTop">
@@ -2633,7 +1670,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2644,20 +1680,10 @@
         <Parameter Name="length" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to set the top property.</param>
-        <param name="length">The top coordinate of <c>element</c>.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.InkCanvas.Top%2A" /> attached property for a given dependency object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to set the position of a <xref:System.Windows.Controls.Button>.  
-  
- [!code-cs[InkCanvasSamples#27](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#27)]
- [!code-vb[InkCanvasSamples#27](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#27)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrokeCollected">
@@ -2667,7 +1693,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2679,36 +1704,8 @@
         <ReturnType>System.Windows.Controls.InkCanvasStrokeCollectedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a stroke drawn by the user is added to the <see cref="System.Windows.Controls.InkCanvas.Strokes%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised when a user completes a stroke using a pointing device. For example, a user might raise a stylus from a digitizer after making a motion, thereby completing a stroke.  
-  
- The event handler receives an argument of type <xref:System.Windows.Controls.InkCanvasStrokeCollectedEventArgs>, which references the completed stroke. The stroke is also added to the <xref:System.Windows.Controls.InkCanvas.Strokes%2A> property of the <xref:System.Windows.Controls.InkCanvas>.  
-  
- The programmatic addition of a <xref:System.Windows.Ink.Stroke> object to the <xref:System.Windows.Controls.InkCanvas.Strokes%2A> collection does not raise this event.  
-  
-<a name="routedEventInfo_StrokeCollected"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.StrokeCollectedEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.Controls.InkCanvasStrokeCollectedEventHandler>|  
-  
-   
-  
-## Examples  
- The following example saves the time as a custom property when a user adds a stroke to the <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#22](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#22)]
- [!code-vb[InkCanvasSamples#22](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#22)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrokeCollectedEvent">
@@ -2718,14 +1715,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.InkCanvas.StrokeCollected" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2736,7 +1732,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2748,32 +1743,8 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when user erases a stroke.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event occurs when a user erases ink whether the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode> or <xref:System.Windows.Controls.InkCanvasEditingMode>.  
-  
-<a name="routedEventInfo_StrokeErasing"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.StrokeErasedEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
-   
-  
-## Examples  
- The following example reports the number of strokes that are on an <xref:System.Windows.Controls.InkCanvas> when the StrokeErased event occurs. If <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode> and the user erases the middle of a stroke, the number of strokes on the <xref:System.Windows.Controls.InkCanvas> increases. This is because the old stroke was replaced by two new strokes.  
-  
- [!code-cs[InkCanvasSamples#18](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#18)]
- [!code-vb[InkCanvasSamples#18](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#18)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrokeErasedEvent">
@@ -2783,14 +1754,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.InkCanvas.StrokeErased" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2801,30 +1771,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasStrokeErasingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs just before a user erases a stroke.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Handle this event when you want to check whether a stroke should be erased. Set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true` if you want to prevent the stroke from being erased. You can use this technique when the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> or <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode> or <xref:System.Windows.Controls.InkCanvasEditingMode>.  
-  
-   
-  
-## Examples  
- The following example prevents any strokes rendered as highlighters from being erased. The example assumes that the <xref:System.Windows.Controls.InkCanvas> is connected to the event handler.  
-  
- [!code-cs[DrawingAttributes#16](~/add/codesnippet/csharp/DrawingAttributesSample/Window1.xaml.cs#16)]
- [!code-vb[DrawingAttributes#16](~/add/codesnippet/visualbasic/DrawingAttributesSample/Window1.xaml.vb#16)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Strokes">
@@ -2834,43 +1788,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection of ink <see cref="T:System.Windows.Ink.Stroke" /> objects collected by the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <value>The collection of <see cref="T:System.Windows.Ink.Stroke" /> objects contained within the <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Strokes"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas.StrokesProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use two <xref:System.Windows.Ink.StrokeCollection> objects for the same <xref:System.Windows.Controls.InkCanvas>. In this example, player one and player two each use an individual "inking surface" even though they share the same <xref:System.Windows.Controls.InkCanvas>. This example assumes the click event is connected to the event handler, `switchPlayersButton_Click`.  
-  
- [!code-cs[InkCanvasSamples#15](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#15)]
- [!code-vb[InkCanvasSamples#15](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#15)]  
-  
- The following example demonstrates how to bind the Strokes property of an <xref:System.Windows.Controls.InkCanvas> to another <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-xml[InkCanvasBinding#2](~/add/codesnippet/xaml/p-system.windows.control_84_2.xaml)]
- [!code-xml[InkCanvasBinding#2](~/add/codesnippet/xaml/p-system.windows.control_84_2.xaml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrokesProperty">
@@ -2880,14 +1806,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.InkCanvas.Strokes%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2898,25 +1823,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasStrokesReplacedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Controls.InkCanvas.Strokes%2A" /> property is replaced.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use two <xref:System.Windows.Ink.StrokeCollection> objects that are co-located on the same <xref:System.Windows.Controls.InkCanvas>. In this example, player one and player two each use an individual "inking surface" even though they share the same <xref:System.Windows.Controls.InkCanvas>. This example assumes that the `switchPlayersButton_Click` event is connected to the event handler.  
-  
- [!code-cs[InkCanvasSamples#15](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#15)]
- [!code-vb[InkCanvasSamples#15](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#15)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
@@ -2926,7 +1840,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2936,8 +1849,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The child object to add.</param>
-        <summary>Adds the specified object to the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2948,7 +1861,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2958,8 +1870,8 @@
         <Parameter Name="textData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="textData">Not used.</param>
-        <summary>Adds the text that within the tags in markup. Always throws an <see cref="T:System.ArgumentException" />.</summary>
+        <param name="textData">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2970,14 +1882,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.InkCanvas.Top%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2988,7 +1899,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3000,25 +1910,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that indicates whether to override standard <see cref="T:System.Windows.Controls.InkCanvas" /> cursor functionality to support a custom cursor.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.InkCanvas" /> is using a custom cursor; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.InkCanvas> will change the cursor style to reflect the current <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> while the cursor is within the bounds of the <xref:System.Windows.Controls.InkCanvas>. If this behavior is not wanted, for example, when the <xref:System.Windows.Controls.InkCanvas> uses a custom cursor, set this property to `true`, and the cursor will not change with the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A>.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use a cursor that is different than the one supplied by the <xref:System.Windows.Controls.InkCanvas>.  
-  
- [!code-cs[InkCanvasSamples#5](~/add/codesnippet/csharp/InkCanvasSamples/Window1.xaml.cs#5)]
- [!code-vb[InkCanvasSamples#5](~/add/codesnippet/visualbasic/InkCanvasSamples/Window1.xaml.vb#5)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisualChildrenCount">
@@ -3028,15 +1922,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of visual child elements within this element.</summary>
-        <value>The number of visual child elements for this element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

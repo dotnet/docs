@@ -8,17 +8,8 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines an interface that a cache uses in order to communicate cache memory usage to a host environment.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IMemoryCacheManager interface is implemented by host environments such as ASP.NET, and is consumed by <xref:System.Runtime.Caching.ObjectCache> implementations that must interact with the host environment to determine memory usage. Because caches often consume significant quantities of memory, the IMemoryCacheManager interface helps host environments manage memory usage.  
-  
- Typically, only <xref:System.Runtime.Caching.ObjectCache> implementations that manage cache objects in memory would use this interface.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ReleaseCache">
@@ -37,16 +28,9 @@
         <Parameter Name="cache" Type="System.Runtime.Caching.MemoryCache" />
       </Parameters>
       <Docs>
-        <param name="cache">A reference to the cache.</param>
-        <summary>Removes all references to a cache in the host environment.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a cache has previously registered itself with the host environment, the cache can call the ReleaseCache method to release the reference. When a cache is being disposed, it should call the ReleaseCache method to make sure that no reference to the cache is held on the host.  
-  
- ]]></format>
-        </remarks>
+        <param name="cache">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateCacheSize">
@@ -66,23 +50,10 @@
         <Parameter Name="cache" Type="System.Runtime.Caching.MemoryCache" />
       </Parameters>
       <Docs>
-        <param name="size">The size of the memory, in bytes, that the cache consumes.</param>
-        <param name="cache">A reference to the cache.</param>
-        <summary>Reports the size of the current cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A well-behaved cache implementation should use the UpdateCacheSize method to periodically report the size of the cache's memory footprint to the host environment.  
-  
- The cache implementation that reports the size also passes a reference to itself as a parameter. This enables the host environment to perform the following tasks:  
-  
--   Maintain a list of known object caches.  
-  
--   Call the cache and request that the cache trim a percentage of cache items based on the reported size, if it is required.  
-  
- ]]></format>
-        </remarks>
+        <param name="size">To be added.</param>
+        <param name="cache">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

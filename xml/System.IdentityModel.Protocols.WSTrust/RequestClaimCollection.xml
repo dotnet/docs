@@ -14,17 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" /> objects inside <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Represents the contents of the wst:Claims element. This optional element requests the set of specific claim types requested by the client. The <xref:System.IdentityModel.Protocols.WSTrust.RequestClaimCollection.Dialect%2A> property specifies dialect of the <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> objects in the collection.  
-  
- For more information about the element that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,15 +29,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaimCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After initialization, the <xref:System.IdentityModel.Protocols.WSTrust.RequestClaimCollection> is empty and the <xref:System.IdentityModel.Protocols.WSTrust.RequestClaimCollection.Dialect%2A> property is set to "http://schemas.xmlsoap.org/ws/2005/05/identity".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dialect">
@@ -62,16 +46,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Dialect attribute.</summary>
-        <value>A string that contains the URI that identifies the dialect. The default value is <see cref="System.IdentityModel.Protocols.WSIdentity.WSIdentityConstants.Dialect" />, which indicates that <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" /> objects in the collection correspond to the Information Card profile.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Represents the Dialect attribute of the wst:Claims element. This required attribute contains a URI that indicates the syntax used to specify the set of requested claims.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

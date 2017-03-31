@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewButtonColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,32 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Hosts a collection of <see cref="T:System.Windows.Forms.DataGridViewButtonCell" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataGridViewButtonColumn class is a specialized type of the <xref:System.Windows.Forms.DataGridViewColumn> class used to logically host cells that respond to simple user input. A DataGridViewButtonColumn has an associated <xref:System.Windows.Forms.DataGridViewButtonCell> in every <xref:System.Windows.Forms.DataGridViewRow> that intersects it. Each cell supplies a user interface (UI) that is similar to a <xref:System.Windows.Forms.Button> control.  
-  
- To display the same button text for every cell, set the <xref:System.Windows.Forms.DataGridViewButtonColumn.UseColumnTextForButtonValue%2A> property to `true` and set the <xref:System.Windows.Forms.DataGridViewButtonColumn.Text%2A> property to the desired button text.  
-  
- The default sort mode for this column type is <xref:System.Windows.Forms.DataGridViewColumnSortMode>.  
-  
- To respond to user button clicks, handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=fullName> event. In the event handler, you can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A?displayProperty=fullName> property to determine whether the click occurred in the button column. You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=fullName> property to determine whether the click occurred in a button cell and not on the column header.  
-  
-> [!NOTE]
->  When visual styles are enabled, the buttons in a button column are painted using a <xref:System.Windows.Forms.ButtonRenderer>, and cell styles specified through properties such as <xref:System.Windows.Forms.DataGridViewButtonColumn.DefaultCellStyle%2A> have no effect.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a DataGridViewButtonColumn to perform actions on particular rows. In this example, a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event handler first determines whether a click is on a button cell, then retrieves a business object associated with the row. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](../Topic/How%20to:%20Access%20Objects%20in%20a%20Windows%20Forms%20DataGridViewComboBoxCell%20Drop-Down%20List.md).  
-  
- [!code-cs[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/add/codesnippet/csharp/t-system.windows.forms.d_76_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/add/codesnippet/visualbasic/t-system.windows.forms.d_76_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,25 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewButtonColumn" /> class to the default state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor initializes the column by setting the following properties.  
-  
-|Property|Value|  
-|--------------|-----------|  
-|<xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A>|A new <xref:System.Windows.Forms.DataGridViewButtonCell>.|  
-|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewButtonColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=fullName>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellTemplate">
@@ -80,7 +42,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -95,29 +56,9 @@
         <ReturnType>System.Windows.Forms.DataGridViewCell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template used to create new cells.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataGridViewCell" /> that all other cells in the column are modeled after.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The constructor for the <xref:System.Windows.Forms.DataGridViewButtonColumn> class initializes this property to a newly created <xref:System.Windows.Forms.DataGridViewButtonCell>.  
-  
-> [!CAUTION]
->  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=fullName> method).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to view the sales an employee has made. A cell template is used to apply the same color to all buttons. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/add/codesnippet/cpp/p-system.windows.forms.d_415_1.cpp)]
- [!code-cs[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/add/codesnippet/csharp/p-system.windows.forms.d_415_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_415_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">The specified value when setting this property could not be cast to a <see cref="T:System.Windows.Forms.DataGridViewButtonCell" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -127,7 +68,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,17 +75,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an exact copy of this column.</summary>
-        <returns>An <see cref="T:System.Object" /> that represents the cloned <see cref="T:System.Windows.Forms.DataGridViewButtonColumn" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to duplicate a column of button cells.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The value of the <see cref="System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A" /> property is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultCellStyle">
@@ -155,7 +87,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -167,27 +98,9 @@
         <ReturnType>System.Windows.Forms.DataGridViewCellStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the column's default cell style.</summary>
-        <value>The <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> to be applied as the default style.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default <xref:System.Windows.Forms.DataGridViewCellStyle> returned by this property has an initial <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property value of <xref:System.Windows.Forms.DataGridViewContentAlignment>. This value overrides the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
-> [!NOTE]
->  When visual styles are enabled, the buttons in a button column are painted using a <xref:System.Windows.Forms.ButtonRenderer> and cell styles specified through properties such as DefaultCellStyle have no effect.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this property.  
-  
- [!code-cs[System.Windows.Forms.GridViewContentAlignment#1](~/add/codesnippet/csharp/p-system.windows.forms.d_231_1.cs)]
- [!code-vb[System.Windows.Forms.GridViewContentAlignment#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_231_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -197,7 +110,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -209,28 +121,9 @@
         <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flat-style appearance of the button cells in the column.</summary>
-        <value>A <see cref="T:System.Windows.Forms.FlatStyle" /> value indicating the appearance of the buttons in the column. The default is <see cref="T:System.Windows.Forms.FlatStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FlatStyle property specifies the appearance of the cells in the column. For more information, see the <xref:System.Windows.Forms.FlatStyle> enumeration.  
-  
- Getting or setting this property gets or sets the <xref:System.Windows.Forms.DataGridViewButtonCell.FlatStyle%2A> property of the object returned by the <xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A> property. Setting this property also sets the <xref:System.Windows.Forms.DataGridViewButtonCell.FlatStyle%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to view the sales an employee has made. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/add/codesnippet/cpp/p-system.windows.forms.d_369_1.cpp)]
- [!code-cs[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/add/codesnippet/csharp/p-system.windows.forms.d_369_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_369_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The value of the <see cref="System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A" /> property is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -240,7 +133,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -252,28 +144,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the default text displayed on the button cell.</summary>
-        <value>A <see cref="T:System.String" /> that contains the text. The default is <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each <xref:System.Windows.Forms.DataGridViewButtonCell> contained in the column that has as a <xref:System.Windows.Forms.DataGridViewButtonCell.UseColumnTextForButtonValue%2A> property value of `true` displays the Text property value on the cell's button.  
-  
- If there is an associated <xref:System.Windows.Forms.DataGridView> control, changing this property refreshes the column display.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to view the sales an employee has made. The Text property is used to set the column header. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/add/codesnippet/cpp/p-system.windows.forms.d_128_1.cpp)]
- [!code-cs[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/add/codesnippet/csharp/p-system.windows.forms.d_128_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_128_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">When setting this property, the value of the <see cref="System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A" /> property is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -283,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -291,8 +163,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a string that describes the column.</summary>
-        <returns>A <see cref="T:System.String" /> that describes the column.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +175,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -315,28 +186,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="System.Windows.Forms.DataGridViewButtonColumn.Text%2A" /> property value is displayed as the button text for cells in this column.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Windows.Forms.DataGridViewButtonColumn.Text%2A" /> property value is displayed on buttons in the column; <see langword="false" /> if the <see cref="System.Windows.Forms.DataGridViewCell.FormattedValue%2A" /> property value of each cell is displayed on its button. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A?displayProperty=fullName> of a button cell is displayed as the text on the button. The UseColumnTextForButtonValue property allows you to either set the button text for each cell, or to use the <xref:System.Windows.Forms.DataGridViewButtonColumn.Text%2A> property value for all of the button cells.  
-  
- Getting or setting this property gets or sets the <xref:System.Windows.Forms.DataGridViewButtonCell.UseColumnTextForButtonValue%2A> property of the object returned by the <xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A> property. Setting this property also sets the <xref:System.Windows.Forms.DataGridViewButtonCell.UseColumnTextForButtonValue%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this property.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc#010](~/add/codesnippet/csharp/p-system.windows.forms.d_230_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#010](~/add/codesnippet/visualbasic/p-system.windows.forms.d_230_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The value of the <see cref="System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A" /> property is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

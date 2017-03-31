@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingDataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a single item of data extracted from a workflow and all its associated annotations.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- When the runtime tracking infrastructure matches a track point, it sends a tracking record to the tracking service. An <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> or a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> may contain <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> or  <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> objects that specify data to be extracted from the workflow and returned in the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> or the <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord>. A TrackingDataItem represents a single item of this extracted data in either <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.Body%2A?displayProperty=fullName> or <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body%2A?displayProperty=fullName>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingDataItem" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,23 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingAnnotationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the list of annotations associated with the extracted data.</summary>
-        <value>A <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> that contains the annotations associated with the extracted data.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> or a <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> can specify annotations to be sent with the extracted data. These are contained in the Annotations property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -81,23 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the extracted data associated with the <see cref="T:System.Workflow.Runtime.Tracking.TrackingDataItem" />.</summary>
-        <value>An <see cref="T:System.Object" /> that represents the extracted data.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Data contains the member data, specified by an <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> or a  <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract>, that was extracted from the workflow instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FieldName">
@@ -107,23 +78,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the property or field associated with the extracted data.</summary>
-        <value>The dot delineated name of the property or field that was extracted.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The runtime tracking infrastructure supports data extraction on fields and properties of classes that inherit from <xref:System.Workflow.ComponentModel.Activity>; a member of such a field or property; and a single item of a field or a property (or a member of either) that implements the <xref:System.Collections.IEnumerable> interface, for example a single element in a collection. FieldName contains the dot delineated name of the item extracted and is equivalent to <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Member%2A> or <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A> depending on which type of extract specified the data contained by the <xref:System.Workflow.Runtime.Tracking.TrackingDataItem>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

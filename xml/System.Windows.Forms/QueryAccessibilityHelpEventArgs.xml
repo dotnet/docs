@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryAccessibilityHelpEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,29 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.QueryAccessibilityHelp" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control> class exposes a public <xref:System.Windows.Forms.Control.QueryAccessibilityHelp> event. You can use the properties of the QueryAccessibilityHelpEventArgs class to return custom help for a particular control to an accessible client, such as a screen reader. When you handle the <xref:System.Windows.Forms.Control.QueryAccessibilityHelp> event, you must set the values of the <xref:System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpNamespace%2A>, <xref:System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpKeyword%2A>, and <xref:System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpString%2A> properties to appropriate values.  
-  
-> [!NOTE]
->  The <xref:System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpKeyword%2A> property should be a string representation of a numeric Help topic ID.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control>-based control, but instead is drawn by the chart control, it does not any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This example demonstrates using the QueryAccessibilityHelpEventArgs class with the <xref:System.Windows.Forms.Control.QueryAccessibilityHelp> event. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-vb[System.Windows.Forms.AccessibleObject#3](~/add/codesnippet/visualbasic/t-system.windows.forms.q_0_1.vb)]
- [!code-cs[System.Windows.Forms.AccessibleObject#3](~/add/codesnippet/csharp/t-system.windows.forms.q_0_1.cs)]
- [!code-cpp[System.Windows.Forms.AccessibleObject#3](~/add/codesnippet/cpp/t-system.windows.forms.q_0_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QueryAccessibilityHelpEventArgs" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -74,10 +50,10 @@
         <Parameter Name="helpKeyword" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="helpNamespace">The file containing Help for the <see cref="T:System.Windows.Forms.AccessibleObject" />.</param>
-        <param name="helpString">The string defining what Help to get for the <see cref="T:System.Windows.Forms.AccessibleObject" />.</param>
-        <param name="helpKeyword">The keyword to associate with the Help request for the <see cref="T:System.Windows.Forms.AccessibleObject" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QueryAccessibilityHelpEventArgs" /> class.</summary>
+        <param name="helpNamespace">To be added.</param>
+        <param name="helpString">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,28 +64,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Help keyword for the specified control.</summary>
-        <value>The Help topic associated with the <see cref="T:System.Windows.Forms.AccessibleObject" /> that was queried.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.QueryAccessibilityHelp?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.QueryAccessibilityHelp?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#44](~/add/codesnippet/csharp/p-system.windows.forms.q_4_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#44](~/add/codesnippet/visualbasic/p-system.windows.forms.q_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpNamespace">
@@ -119,28 +82,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying the name of the Help file.</summary>
-        <value>The name of the Help file. This name can be in the form C:\path\sample.chm or /folder/file.htm.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.QueryAccessibilityHelp?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.QueryAccessibilityHelp?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#44](~/add/codesnippet/csharp/p-system.windows.forms.q_1_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#44](~/add/codesnippet/visualbasic/p-system.windows.forms.q_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpString">
@@ -150,29 +100,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the string defining what Help to get for the <see cref="T:System.Windows.Forms.AccessibleObject" />.</summary>
-        <value>The Help to retrieve for the accessible object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control>-based control, but instead is drawn by the chart control, it does not any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This example demonstrates using the <xref:System.Windows.Forms.QueryAccessibilityHelpEventArgs> class with the <xref:System.Windows.Forms.Control.QueryAccessibilityHelp> event. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-vb[System.Windows.Forms.AccessibleObject#2](~/add/codesnippet/visualbasic/p-system.windows.forms.q_5_1.vb)]
- [!code-cs[System.Windows.Forms.AccessibleObject#2](~/add/codesnippet/csharp/p-system.windows.forms.q_5_1.cs)]
- [!code-cpp[System.Windows.Forms.AccessibleObject#2](~/add/codesnippet/cpp/p-system.windows.forms.q_5_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

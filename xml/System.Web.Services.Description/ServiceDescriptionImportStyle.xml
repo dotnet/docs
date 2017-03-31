@@ -4,29 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceDescriptionImportStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether the import is made to the server or to the client computer.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An import made to the client computer generates a proxy class with synchronous and asynchronous methods to invoke each method within an XML Web service. A server import, on the other hand, generates an abstract class with abstract members, which you must override to provide the implementation you need.  
-  
-   
-  
-## Examples  
- [!code-cpp[ServiceDescriptionImportStyle_Client#1](~/add/codesnippet/cpp/t-system.web.services.de_46_1.cpp)]
- [!code-vb[ServiceDescriptionImportStyle_Client#1](~/add/codesnippet/visualbasic/t-system.web.services.de_46_1.vb)]
- [!code-cs[ServiceDescriptionImportStyle_Client#1](~/add/codesnippet/csharp/t-system.web.services.de_46_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Client">
@@ -36,7 +22,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -48,7 +34,7 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionImportStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the import should be made to the client computer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -58,7 +44,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -70,7 +56,7 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionImportStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the import should be made to the server.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerInterface">
@@ -80,7 +66,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -92,7 +78,7 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionImportStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the import should be made to a server interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

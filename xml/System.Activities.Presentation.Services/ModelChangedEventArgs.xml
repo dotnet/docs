@@ -11,20 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>An abstract base class that represents the event data that holds a description of the changes in the model item tree in the previous editing session.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event data can be used by subscribers of the <xref:System.Activities.Presentation.Services.ModelService.ModelChanged> events.  
-  
-   
-  
-## Examples  
-   
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Services.ModelChangedEventArgs" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +48,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented by a derived class, gets an enumeration of event argument objects that have been added.</summary>
-        <value>An <see cref="System.Collections.Generic.IEnumerable%601" /> of added event arguments.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +71,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented by a derived class, gets an enumeration of event argument objects that have been removed.</summary>
-        <value>An <see cref="System.Collections.Generic.IEnumerable%601" /> of removed event arguments.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +89,8 @@
         <ReturnType>System.Activities.Presentation.Services.ModelChangeInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented by a derived class, gets the detailed information about the changes made in a model.</summary>
-        <value>A <see cref="T:System.Activities.Presentation.Services.ModelChangeInfo" /> object that contains detailed information about the changes made in a model.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +112,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented by a derived class, gets an enumeration of properties that have been changed.</summary>
-        <value>An <see cref="System.Collections.Generic.IEnumerable%601" /> of changed properties.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

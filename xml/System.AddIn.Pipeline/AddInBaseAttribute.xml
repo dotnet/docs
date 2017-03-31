@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.AddInBaseAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,27 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Identifies an object as an add-in view segment of the pipeline.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.AddIn.Hosting.AddInStore.Rebuild%2A> and <xref:System.AddIn.Hosting.AddInStore.Update%2A> methods, which maintain the store of information about available pipeline segments, use this attribute to identify an add-in view.  
-  
- To construct the pipeline, the type in the add-in view that the add-in inherits from is identified by the AddInBaseAttribute attribute and is called the add-in base.  
-  
- This attribute should be used only on types that activate the segments of the pipeline. Types that represent objects passed between the host and the add-in do not need this attribute.  
-  
-   
-  
-## Examples  
- The following example identifies the add-in base class for an add-in view pipeline segment.  
-  
- [!code-vb[AddInP1AddInViews#2](~/add/codesnippet/visualbasic/Calc1AddInView/Calc1AddInView.vb#2)]
- [!code-cs[AddInP1AddInViews#2](~/add/codesnippet/csharp/Calc1AddInView/Calc1AddInView.cs#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Pipeline.AddInBaseAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets one or more add-in base types that a single add-in-side adapter can use to construct the pipeline.</summary>
-        <value>An array of add-in base types.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

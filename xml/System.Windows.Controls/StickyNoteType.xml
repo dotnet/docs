@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.StickyNoteType" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether a <see cref="T:System.Windows.Controls.StickyNoteControl" /> accepts text or ink.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this enumeration primarily to provide values for the <xref:System.Windows.Controls.StickyNoteControl.StickyNoteType%2A> property of a <xref:System.Windows.Controls.StickyNoteControl>.  
-  
- An ink <xref:System.Windows.Controls.StickyNoteControl> can be handwritten on a [!INCLUDE[TLA#tla_tpc](~/add/includes/tlasharptla-tpc-md.md)] or other hardware that supports handwritten input.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Ink">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.StickyNoteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ink sticky note.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.StickyNoteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A text sticky note.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

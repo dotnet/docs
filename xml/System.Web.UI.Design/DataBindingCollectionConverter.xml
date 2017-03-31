@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataBindingCollectionConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,22 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a type converter for <see cref="T:System.Web.UI.DataBindingCollection" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type converter calls the base <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=fullName> method for all destination types except <xref:System.String>, for which an empty string ("") is returned.  
-  
-   
-  
-## Examples  
- [!code-cs[DataSourceTypeConverterExamples#1](~/add/codesnippet/csharp/t-system.web.ui.design.d_8_1.cs)]
- [!code-cpp[DataSourceTypeConverterExamples#1](~/add/codesnippet/cpp/t-system.web.ui.design.d_8_1.cpp)]
- [!code-vb[DataSourceTypeConverterExamples#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.d_8_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Web.UI.Design.DataBindingCollectionConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,20 +54,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that indicates the component or control to which the data binding collection belongs.</param>
-        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> that can be used to provide additional culture information.</param>
-        <param name="value">The object to convert.</param>
-        <param name="destinationType">The type to convert to.</param>
-        <summary>Converts a data binding collection to the specified type.</summary>
-        <returns>The object produced by the type conversion. If the <paramref name="destinationType" /> parameter is of type <see cref="T:System.String" />, this method returns an empty string ("").</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns an empty string if the `destinationType` parameter is of type <xref:System.String>. Otherwise this method calls the <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> method of the base <xref:System.ComponentModel.TypeConverter> class.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

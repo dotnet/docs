@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A configuration element that represents a <see cref="T:System.Activities.Tracking.TrackingQuery" /> instance when specifying a tracking profile.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the base class for all tracking query elements.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +48,8 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.AnnotationElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of annotations associated with the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement" />.</summary>
-        <value>A collection of annotations.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +66,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A key that uniquely identifies the tracking query.</summary>
-        <value>The element key.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +85,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Override this method to create a query instance and set properties not inherited by derived classes.</summary>
-        <returns>A <see cref="T:System.Activities.Tracking.TrackingQuery" /> instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +103,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of properties.</summary>
-        <value>The collection of properties for the element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +124,8 @@
         <Parameter Name="trackingQuery" Type="System.Activities.Tracking.TrackingQuery" />
       </Parameters>
       <Docs>
-        <param name="trackingQuery">The tracking query.</param>
-        <summary>Override this method to set the properties that a derived class may inherit.</summary>
+        <param name="trackingQuery">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WizardStepEditableRegion" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines an editable region of content within the design-time markup of a wizard step for a <see cref="T:System.Web.UI.Design.WebControls.WizardDesigner" /> object.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,9 +29,9 @@
         <Parameter Name="wizardStep" Type="System.Web.UI.WebControls.WizardStepBase" />
       </Parameters>
       <Docs>
-        <param name="designer">A <see cref="T:System.Web.UI.Design.WebControls.WizardDesigner" /> that is the parent designer for the wizard.</param>
-        <param name="wizardStep">A <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> that defines the step.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.WizardStepEditableRegion" /> class using the given designer and step.</summary>
+        <param name="designer">To be added.</param>
+        <param name="wizardStep">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardStepBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the associated design-time wizard step.</summary>
-        <value>The associated design-time wizard step.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -19,15 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Generates C# or Visual Basic code for a [!INCLUDE[ssAstoria](~/add/includes/ssastoria-md.md)] client application based on the metadata returned by the data service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is intended to be used only by the ASP.NET compiler.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Data.Services.BuildProvider.DataServiceBuildProvider" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,16 +59,9 @@
         <Parameter Name="assemblyBuilder" Type="System.Web.Compilation.AssemblyBuilder" />
       </Parameters>
       <Docs>
-        <param name="assemblyBuilder">A container for building an assembly.</param>
-        <summary>Generates C# or Visual Basic code for a [!INCLUDE[ssAstoria](~/add/includes/ssastoria-md.md)] client application based on the metadata returned by the data service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is intended to be called only by the ASP.NET compiler.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyBuilder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

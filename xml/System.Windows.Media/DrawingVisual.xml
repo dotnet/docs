@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.DrawingVisual" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>DrawingVisual is a visual object that can be used to render vector graphics on the screen. The content is persisted by the system.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DrawingVisual is a lightweight drawing class that is used to render shapes, images, or text. This class is considered lightweight because it does not provide layout, input, focus, or event handling, which improves its performance. For this reason, drawings are ideal for backgrounds and clip art.  
-  
- In order to use DrawingVisual objects, you need to create a host container for the objects. The host container object must be derived from the <xref:System.Windows.FrameworkElement> class, which provides the layout and event handling support that the DrawingVisual class does not support. The host container object does not display any visual properties, since its main purpose is to contain child objects. For more information, see [Using DrawingVisual Objects](../Topic/Using%20DrawingVisual%20Objects.md).  
-  
- For a complete example showing how to create DrawingVisual objects with a host container, see the [Hit Test Using DrawingVisuals Sample](http://go.microsoft.com/fwlink/?LinkID=159994) .  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,28 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.DrawingVisual" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you create a <xref:System.Windows.Media.DrawingVisual> object, it has no drawing content. You can add text, graphic, or image content by retrieving the drawing context of the object and drawing into it. A drawing context is returned by calling the <xref:System.Windows.Media.DrawingVisual.RenderOpen%2A> method of a <xref:System.Windows.Media.DrawingVisual> object.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Media.DrawingVisual> object is created, and a rectangle is drawn into its drawing context. Notice that you must call the <xref:System.Windows.Media.DrawingContext.Close%2A> method of the <xref:System.Windows.Media.DrawingContext> to persist drawing content.  
-  
- [!code-cs[DrawingVisualSample#101](~/add/codesnippet/csharp/DrawingVisual/Window1.xaml.cs#101)]
- [!code-vb[DrawingVisualSample#101](~/add/codesnippet/visualbasic/drawingvisual/window1.xaml.vb#101)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Drawing">
@@ -65,33 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.DrawingGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the drawing content of the <see cref="T:System.Windows.Media.DrawingVisual" /> object.</summary>
-        <value>Gets a value of type <see cref="T:System.Windows.Media.DrawingGroup" /> that represents the collection of <see cref="T:System.Windows.Media.Drawing" /> objects in the <see cref="T:System.Windows.Media.DrawingVisual" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A visual object stores its rendering data as a vector graphics instruction list. Each item in the instruction list represents a low-level set of graphics data in a serialized format. For more information on how visual objects store graphics data, see [WPF Graphics Rendering Overview](../Topic/WPF%20Graphics%20Rendering%20Overview.md).  
-  
- Any change to the returned <xref:System.Windows.Media.DrawingGroup> value is not persisted by the <xref:System.Windows.Media.DrawingVisual>.  
-  
-   
-  
-## Examples  
- In the following example, the <xref:System.Windows.Media.DrawingGroup> value of each <xref:System.Windows.Media.DrawingVisual> in a host visual is enumerated.  
-  
- [!code-vb[VisualSnippets#DrawingVisualSnippet1](~/add/codesnippet/visualbasic/visualsnippets/drawingvisual.xaml.vb#drawingvisualsnippet1)]
- [!code-cs[VisualSnippets#DrawingVisualSnippet1](~/add/codesnippet/csharp/VisualSnippets/DrawingVisual.xaml.cs#drawingvisualsnippet1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HitTestCore">
@@ -101,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,9 +64,9 @@
         <Parameter Name="hitTestParameters" Type="System.Windows.Media.GeometryHitTestParameters" />
       </Parameters>
       <Docs>
-        <param name="hitTestParameters">A value of type <see cref="T:System.Windows.Media.GeometryHitTestParameters" /> that specifies the <see cref="T:System.Windows.Media.Geometry" /> to hit test against.</param>
-        <summary>Determines whether a geometry value is within the bounds of the visual object.</summary>
-        <returns>A value of type <see cref="T:System.Windows.Media.GeometryHitTestResult" />.</returns>
+        <param name="hitTestParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,17 +86,10 @@
         <Parameter Name="hitTestParameters" Type="System.Windows.Media.PointHitTestParameters" />
       </Parameters>
       <Docs>
-        <param name="hitTestParameters">A value of type <see cref="T:System.Windows.Media.PointHitTestParameters" /> that specifies the <see cref="T:System.Windows.Point" /> to hit test against.</param>
-        <summary>Determines whether a point coordinate value is within the bounds of the <see cref="T:System.Windows.Media.DrawingVisual" /> object.</summary>
-        <returns>A value of type <see cref="T:System.Windows.Media.HitTestResult" />, representing the <see cref="T:System.Windows.Media.Visual" /> returned from a hit test.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.HitTestResult.VisualHit%2A> property of the return value represents the visual object that was hit.  
-  
- ]]></format>
-        </remarks>
+        <param name="hitTestParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderOpen">
@@ -154,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,29 +106,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Opens the <see cref="T:System.Windows.Media.DrawingVisual" /> object for rendering. The returned <see cref="T:System.Windows.Media.DrawingContext" /> value can be used to render into the <see cref="T:System.Windows.Media.DrawingVisual" />.</summary>
-        <returns>A value of type <see cref="T:System.Windows.Media.DrawingContext" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you call the <xref:System.Windows.Media.DrawingContext.Close%2A> method of the <xref:System.Windows.Media.DrawingContext>, the current drawing content replaces any previous drawing content defined for the <xref:System.Windows.Media.DrawingVisual>. This means that there is no way to append new drawing content to existing drawing content.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Media.DrawingVisual> object is created, and its <xref:System.Windows.Media.DrawingContext> returned.  
-  
- [!code-cs[DrawingVisualSample#101](~/add/codesnippet/csharp/DrawingVisual/Window1.xaml.cs#101)]
- [!code-vb[DrawingVisualSample#101](~/add/codesnippet/visualbasic/drawingvisual/window1.xaml.vb#101)]  
-  
- The order in which you draw into the drawing context is important—each succeeding drawing is drawn on top of the others. In the following example, the rectangle is drawn first, then the text.  
-  
- [!code-vb[VisualSnippets#RenderOrderSnippet1](~/add/codesnippet/visualbasic/visualsnippets/snippets.vb#renderordersnippet1)]
- [!code-cs[VisualSnippets#RenderOrderSnippet1](~/add/codesnippet/csharp/VisualSnippets/Snippets.cs#renderordersnippet1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

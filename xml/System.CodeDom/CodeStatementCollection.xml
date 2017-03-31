@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeStatementCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,24 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.CodeDom.CodeStatement" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CodeStatementCollection class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeStatement> objects.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the CodeStatementCollection class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove statements at a specific index point.  
-  
- [!code-cpp[CodeStatementCollectionExample#1](~/add/codesnippet/cpp/t-system.codedom.codesta_1.cpp)]
- [!code-cs[CodeStatementCollectionExample#1](~/add/codesnippet/csharp/t-system.codedom.codesta_1.cs)]
- [!code-vb[CodeStatementCollectionExample#1](~/add/codesnippet/visualbasic/t-system.codedom.codesta_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,24 +30,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeStatementCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create an empty instance of the <xref:System.CodeDom.CodeStatementCollection> class.  
-  
- [!code-cpp[CodeStatementCollectionExample#2](~/add/codesnippet/cpp/m-system.codedom.codesta_4_1.cpp)]
- [!code-cs[CodeStatementCollectionExample#2](~/add/codesnippet/csharp/m-system.codedom.codesta_4_1.cs)]
- [!code-vb[CodeStatementCollectionExample#2](~/add/codesnippet/visualbasic/m-system.codedom.codesta_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -74,18 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.CodeStatement[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of <see cref="T:System.CodeDom.CodeStatement" /> objects with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeStatementCollection" /> class that contains the specified array of <see cref="T:System.CodeDom.CodeStatement" /> objects.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -95,18 +63,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.CodeStatementCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeStatementCollection" /> object with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeStatementCollection" /> class that contains the elements of the specified source collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -116,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,9 +90,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeExpression" /> object to add.</param>
-        <summary>Adds the specified <see cref="T:System.CodeDom.CodeExpression" /> object to the collection.</summary>
-        <returns>The index at which the new element was inserted.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,21 +112,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeStatement" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeStatement" /> object to add.</param>
-        <summary>Adds the specified <see cref="T:System.CodeDom.CodeStatement" /> object to the collection.</summary>
-        <returns>The index at which the new element was inserted.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to add a <xref:System.CodeDom.CodeStatement> object to a <xref:System.CodeDom.CodeStatementCollection> instance.  
-  
- [!code-cpp[CodeStatementCollectionExample#3](~/add/codesnippet/cpp/m-system.codedom.codesta_2_1.cpp)]
- [!code-cs[CodeStatementCollectionExample#3](~/add/codesnippet/csharp/m-system.codedom.codesta_2_1.cs)]
- [!code-vb[CodeStatementCollectionExample#3](~/add/codesnippet/visualbasic/m-system.codedom.codesta_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -173,7 +125,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,22 +134,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeStatement[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of <see cref="T:System.CodeDom.CodeStatement" /> objects to add to the collection.</param>
-        <summary>Adds a set of <see cref="T:System.CodeDom.CodeStatement" /> objects to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the AddRange method overload to add the members of an array to a <xref:System.CodeDom.CodeStatementCollection> instance.  
-  
- [!code-cpp[CodeStatementCollectionExample#4](~/add/codesnippet/cpp/17be4626-7a72-4f27-8939-_1.cpp)]
- [!code-cs[CodeStatementCollectionExample#4](~/add/codesnippet/csharp/17be4626-7a72-4f27-8939-_1.cs)]
- [!code-vb[CodeStatementCollectionExample#4](~/add/codesnippet/visualbasic/17be4626-7a72-4f27-8939-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -208,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,22 +155,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeStatementCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeStatementCollection" /> object that contains the objects to add to the collection.</param>
-        <summary>Adds the contents of another <see cref="T:System.CodeDom.CodeStatementCollection" /> object to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the AddRange method overload to add the members of one <xref:System.CodeDom.CodeStatementCollection> to another.  
-  
- [!code-cpp[CodeStatementCollectionExample#4](~/add/codesnippet/cpp/755bff9e-35a7-4e91-9440-_1.cpp)]
- [!code-cs[CodeStatementCollectionExample#4](~/add/codesnippet/csharp/755bff9e-35a7-4e91-9440-_1.cs)]
- [!code-vb[CodeStatementCollectionExample#4](~/add/codesnippet/visualbasic/755bff9e-35a7-4e91-9440-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -243,7 +167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -253,22 +176,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeStatement" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeStatement" /> object to search for in the collection.</param>
-        <summary>Gets a value that indicates whether the collection contains the specified <see cref="T:System.CodeDom.CodeStatement" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the Contains method to search for the presence of a specific <xref:System.CodeDom.CodeStatement> and retrieve the index value at which it was found.  
-  
- [!code-cpp[CodeStatementCollectionExample#5](~/add/codesnippet/cpp/m-system.codedom.codesta_1_1.cpp)]
- [!code-cs[CodeStatementCollectionExample#5](~/add/codesnippet/csharp/m-system.codedom.codesta_1_1.cs)]
- [!code-vb[CodeStatementCollectionExample#5](~/add/codesnippet/visualbasic/m-system.codedom.codesta_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -278,7 +189,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -289,28 +199,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from the collection.</param>
-        <param name="index">The index of the array at which to begin inserting.</param>
-        <summary>Copies the elements of the <see cref="T:System.CodeDom.CodeStatementCollection" /> object to a one-dimensional <see cref="T:System.Array" /> instance, starting at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeStatementCollection> object to an array, starting at the specified index value.  
-  
- [!code-cpp[CodeStatementCollectionExample#6](~/add/codesnippet/cpp/b35438e0-39db-4ec4-8ded-_1.cpp)]
- [!code-cs[CodeStatementCollectionExample#6](~/add/codesnippet/csharp/b35438e0-39db-4ec4-8ded-_1.cs)]
- [!code-vb[CodeStatementCollectionExample#6](~/add/codesnippet/visualbasic/b35438e0-39db-4ec4-8ded-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.CodeDom.CodeStatementCollection" /> is greater than the available space between the index of the target array specified by the <paramref name="index" /> parameter and the end of the target array.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the target array's minimum index.</exception>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -320,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -330,21 +221,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeStatement" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeStatement" /> to locate in the collection.</param>
-        <summary>Gets the index of the specified <see cref="T:System.CodeDom.CodeStatement" /> object in the <see cref="T:System.CodeDom.CodeStatementCollection" />, if it exists in the collection.</summary>
-        <returns>The index of the specified object, if it is found, in the collection; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example searches for the presence of a specific <xref:System.CodeDom.CodeStatement> and uses the IndexOf method to retrieve the index value at which it was found.  
-  
- [!code-cpp[CodeStatementCollectionExample#5](~/add/codesnippet/cpp/m-system.codedom.codesta_0_1.cpp)]
- [!code-cs[CodeStatementCollectionExample#5](~/add/codesnippet/csharp/m-system.codedom.codesta_0_1.cs)]
- [!code-vb[CodeStatementCollectionExample#5](~/add/codesnippet/visualbasic/m-system.codedom.codesta_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -354,7 +234,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -365,21 +244,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeStatement" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index where the specified object should be inserted.</param>
-        <param name="value">The <see cref="T:System.CodeDom.CodeStatement" /> object to insert.</param>
-        <summary>Inserts the specified <see cref="T:System.CodeDom.CodeStatement" /> object into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Insert method to add a <xref:System.CodeDom.CodeStatement> object to a <xref:System.CodeDom.CodeStatementCollection>.  
-  
- [!code-cpp[CodeStatementCollectionExample#8](~/add/codesnippet/cpp/8719d115-e999-4777-a2db-_1.cpp)]
- [!code-cs[CodeStatementCollectionExample#8](~/add/codesnippet/csharp/8719d115-e999-4777-a2db-_1.cs)]
- [!code-vb[CodeStatementCollectionExample#8](~/add/codesnippet/visualbasic/8719d115-e999-4777-a2db-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -389,7 +257,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -399,18 +266,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the collection to access.</param>
-        <summary>Gets or sets the <see cref="T:System.CodeDom.CodeStatement" /> object at the specified index in the collection.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeStatement" /> at each valid index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is an indexer that can be used to access the collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -420,7 +279,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -430,21 +288,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeStatement" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeStatement" /> to remove from the collection.</param>
-        <summary>Removes the specified <see cref="T:System.CodeDom.CodeStatement" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Remove method to delete a <xref:System.CodeDom.CodeStatement> object from a <xref:System.CodeDom.CodeStatementCollection>.  
-  
- [!code-cpp[CodeStatementCollectionExample#9](~/add/codesnippet/cpp/m-system.codedom.codesta_3_1.cpp)]
- [!code-cs[CodeStatementCollectionExample#9](~/add/codesnippet/csharp/m-system.codedom.codesta_3_1.cs)]
- [!code-vb[CodeStatementCollectionExample#9](~/add/codesnippet/visualbasic/m-system.codedom.codesta_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

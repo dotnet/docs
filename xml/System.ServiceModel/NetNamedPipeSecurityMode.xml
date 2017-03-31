@@ -4,27 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetNamedPipeSecurityMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether transport-level security is used with named pipes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this enumeration to specify whether transport-level security is used with named pipes when using the <xref:System.ServiceModel.NetNamedPipeBinding>. The default value is Transport.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UENetNamedPipeSecurity#1](~/add/codesnippet/csharp/t-system.servicemodel.ne_1_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -34,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.NetNamedPipeSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates no security is used with the named pipe transport.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transport">
@@ -51,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.NetNamedPipeSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that transport-level security is used with the named pipe transport.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

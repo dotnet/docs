@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlTextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Xml.XmlWriter</BaseTypeName>
@@ -17,118 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a writer that provides a fast, non-cached, forward-only way of generating streams or files containing XML data that conforms to the W3C Extensible Markup Language (XML) 1.0 and the Namespaces in XML recommendations.  
-  
- Starting with the .NET Framework 2.0, we recommend that you use the <see cref="T:System.Xml.XmlWriter" /> class instead.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class implements the <xref:System.Xml.XmlWriter> class.  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- `XmlTextWriter` maintains a namespace stack corresponding to all the namespaces defined in the current element stack. Using `XmlTextWriter` you can declare namespaces manually.  
-  
-```  
-w.WriteStartElement("root");  
-w.WriteAttributeString("xmlns", "x", null, "urn:1");  
- w.WriteStartElement("item","urn:1");  
- w.WriteEndElement();  
- w.WriteStartElement("item","urn:1");  
- w.WriteEndElement();  
-w.WriteEndElement();  
-```  
-  
- The above C# code produces the following output. `XmlTextWriter` promotes the namespace declaration to the root element to avoid having it duplicated on the two child elements. The child elements pick up the prefix from the namespace declaration.  
-  
-```  
-<root xmlns:x="urn:1">  
- <x:item/>  
- <x:item/>  
-</x:root>  
-```  
-  
- `XmlTextWriter` also allows you to override the current namespace declaration. In the following example, the namespace URI "123" is overridden by "abc" to produce the XML element `<x:node xmlns:x="abc"/>`.  
-  
-```  
-w.WriteStartElement("x","node","123");  
-w.WriteAttributeString("xmlns","x",null,"abc");  
-```  
-  
- By using the write methods that take a prefix as an argument you can also specify which prefix to use. In the following example, two different prefixes are mapped to the same namespace URI to produce the XML text `<x:root xmlns:x="urn:1"><y:item xmlns:y="urn:1"/></x:root>`.  
-  
-```  
-XmlTextWriter w = new XmlTextWriter(Console.Out);  
-w.WriteStartElement("x","root","urn:1");  
- w.WriteStartElement("y","item","urn:1");  
- w.WriteEndElement();  
-w.WriteEndElement();  
-w.Close();  
-```  
-  
- If there are multiple namespace declarations mapping different prefixes to the same namespace URI, `XmlTextWriter` walks the stack of namespace declarations backwards and picks the closest one.  
-  
-```  
-XmlTextWriter w = new XmlTextWriter(Console.Out);  
-w.Formatting = Formatting.Indented;  
-w.WriteStartElement("x","root","urn:1");  
-w.WriteStartElement("y","item","urn:1");  
-w.WriteAttributeString("attr","urn:1","123");  
-w.WriteEndElement();  
-w.WriteEndElement();  
-w.Close();  
-```  
-  
- In the above C# example, because the `WriteAttributeString` call does not specify a prefix, the writer uses the last prefix pushed onto the namespace stack, and produces the following XML:  
-  
-```  
-<x:root xmlns:x="urn:1">  
- <y:item y:attr="123" xmlns:y="urn:1" />  
-</x:root>  
-```  
-  
- If namespace conflicts occur, `XmlTextWriter` resolves them by generating alternate prefixes. For example, if an attribute and element have the same prefix but different namespaces, `XmlWriter` generates an alternate prefix for the attribute. The generated prefixes are named `n{i}` where `i` is a number beginning at 1. The number is reset to 1 for each element.  
-  
- Attributes which are associated with a namespace URI must have a prefix (default namespaces do not apply to attributes). This conforms to section 5.2 of the W3C Namespaces in XML recommendation. If an attribute references a namespace URI, but does not specify a prefix, the writer generates a prefix for the attribute.  
-  
- When writing an empty element, an additional space is added between tag name and the closing tag, for example `<item />`. This provides compatibility with older browsers.  
-  
- When a `String` is used as method parameter, `null` and `String.Empty` are equivalent. `String.Empty` follows the W3C rules.  
-  
- To write strongly typed data, use the <xref:System.Xml.XmlConvert> class to convert data types to string. For example, the following C# code converts the data from `Double` to `String` and writes the element `<price>19.95</price>`.  
-  
-```  
-Double price = 19.95;  
-writer.WriteElementString("price", XmlConvert.ToString(price));  
-```  
-  
- `XmlTextWriter` does not check for the following:  
-  
--   Invalid characters in attribute and element names.  
-  
--   Unicode characters that do not fit the specified encoding. If the Unicode characters do not fit the specified encoding, the `XmlTextWriter` does not escape the Unicode characters into character entities.  
-  
--   Duplicate attributes.  
-  
--   Characters in the DOCTYPE public identifier or system identifier.  
-  
-## Security Considerations  
- The following items are things to consider when working with the XmlTextWriter class.  
-  
--   Exceptions thrown by the XmlTextWriter can disclose path information that you do not want bubbled up to the application. Your applications must catch exceptions and process them appropriately.  
-  
--   When you pass the XmlTextWriter to another application the underlying stream is exposed to that application. If you need to pass the XmlTextWriter to a semi-trusted application, you should use an <xref:System.Xml.XmlWriter> object created by the <xref:System.Xml.XmlWriter.Create%2A> method instead.  
-  
--   The XmlTextWriter does not validate any data that is passed to the <xref:System.Xml.XmlTextWriter.WriteDocType%2A> or <xref:System.Xml.XmlTextWriter.WriteRaw%2A> methods. You should not pass arbitrary data to these methods.  
-  
--   If the default settings are changed, there is no guarantee that the generated output is well-formed XML data.  
-  
--   Do not accept supporting components, such as an <xref:System.Text.Encoding> object, from an untrusted source.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -138,25 +32,20 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="w" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="w">The <see langword="TextWriter" /> to write to. It is assumed that the <see langword="TextWriter" /> is already set to the correct encoding.</param>
-        <summary>Creates an instance of the <see langword="XmlTextWriter" /> class using the specified <see cref="T:System.IO.TextWriter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- ]]></format>
-        </remarks>
+        <param name="w">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -166,30 +55,22 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="w" Type="System.IO.Stream" />
         <Parameter Name="encoding" Type="System.Text.Encoding" />
       </Parameters>
       <Docs>
-        <param name="w">The stream to which you want to write.</param>
-        <param name="encoding">The encoding to generate. If encoding is <see langword="null" /> it writes out the stream as UTF-8 and omits the encoding attribute from the <see langword="ProcessingInstruction" />.</param>
-        <summary>Creates an instance of the <see langword="XmlTextWriter" /> class using the specified stream and encoding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The encoding is not supported or the stream cannot be written to.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="w" /> is <see langword="null" />.</exception>
+        <param name="w">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -199,33 +80,22 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="filename" Type="System.String" />
         <Parameter Name="encoding" Type="System.Text.Encoding" />
       </Parameters>
       <Docs>
-        <param name="filename">The filename to write to. If the file exists, it truncates it and overwrites it with the new content.</param>
-        <param name="encoding">The encoding to generate. If encoding is <see langword="null" /> it writes the file out as UTF-8, and omits the encoding attribute from the <see langword="ProcessingInstruction" />.</param>
-        <summary>Creates an instance of the <see cref="T:System.Xml.XmlTextWriter" /> class using the specified file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The encoding is not supported; the filename is empty, contains only white space, or contains one or more invalid characters.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">Access is denied.</exception>
-        <exception cref="T:System.ArgumentNullException">The filename is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The directory to write to is not found.</exception>
-        <exception cref="T:System.IO.IOException">The filename includes an incorrect or invalid syntax for file name, directory name, or volume label syntax.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <param name="filename">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseStream">
@@ -235,27 +105,20 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the underlying stream object.</summary>
-        <value>The stream to which the <see langword="XmlTextWriter" /> is writing or <see langword="null" /> if the <see langword="XmlTextWriter" /> was constructed using a <see cref="T:System.IO.TextWriter" /> that does not inherit from the <see cref="T:System.IO.StreamWriter" /> class.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- If the writer was constructed using a `TextWriter` that is derived from the `StreamWriter` class, this property is equivalent to the <xref:System.IO.StreamWriter.BaseStream%2A?displayProperty=fullName> property. If the writer was constructed using a <xref:System.IO.Stream>, this property returns the `Stream` passed to the constructor. If the writer was constructed using a file name, this property returns the `Stream` representing the file.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -265,38 +128,20 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes this stream and the underlying stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- Any elements or attributes left open are automatically closed.  
-  
- This method does not throw any exceptions.  
-  
-   
-  
-## Examples  
- The following example writes an XML fragment.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_14_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_14_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_14_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -306,36 +151,20 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Flushes whatever is in the buffer to the underlying streams and also flushes the underlying stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This is called instead of <xref:System.Xml.XmlTextWriter.Close%2A> when you want to write more to the underlying stream without losing what is still in the buffer.  
-  
-   
-  
-## Examples  
- The following example writes out two XML fragments.  
-  
- [!code-cs[XmlTextWriter.Flush#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_4_1.cs)]
- [!code-vb[XmlTextWriter.Flush#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_4_1.vb)]
- [!code-cpp[XmlTextWriter.Flush#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_4_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Formatting">
@@ -345,62 +174,20 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Formatting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates how the output is formatted.</summary>
-        <value>One of the <see cref="T:System.Xml.Formatting" /> values. The default is <see langword="Formatting.None" /> (no special formatting).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- If the `Indented` option is set, child elements are indented using the <xref:System.Xml.XmlTextWriter.Indentation%2A> and <xref:System.Xml.XmlTextWriter.IndentChar%2A> properties. Only element content is indented. The following C# code writes out HTML elements including mixed content:  
-  
-```  
-XmlTextWriter w = new XmlTextWriter(Console.Out);   
- w.Formatting = Formatting.Indented;   
- w.WriteStartElement("ol");   
- w.WriteStartElement("li");   
- w.WriteString("The big "); // This means "li" now has a mixed content model.  
- w.WriteElementString("b", "E");   
- w.WriteElementString("i", "lephant");   
- w.WriteString(" walks slowly.");   
- w.WriteEndElement();   
- w.WriteEndElement();  
-```  
-  
- The above code produces the following output:  
-  
-```  
-<ol>   
-  <li>The big <b>E</b><i>lephant</i> walks slowly.</li>   
-</ol>  
-```  
-  
- When this is viewed in HTML no white space appears between the bold and italic elements. In fact, in this example, if indenting was added between these elements the word "Elephant" would be incorrectly broken.  
-  
-> [!NOTE]
->  Writing any text content, excluding `String.Empty` puts that element into mixed content mode. Child elements do not inherit this "mixed" mode status. A child element of a "mixed" element does indenting, unless it is also contains "mixed" content. Element content (http://www.w3.org/TR/1998/REC-xml-19980210#sec-element-content) and mixed content (http://www.w3.org/TR/1998/REC-xml-19980210#sec-mixed-content) are defined according to the XML 1.0 definitions of these terms.  
-  
-   
-  
-## Examples  
- The following example writes an XML fragment.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/cpp/p-system.xml.xmltextwrit_0_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/csharp/p-system.xml.xmltextwrit_0_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/visualbasic/p-system.xml.xmltextwrit_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Indentation">
@@ -410,52 +197,20 @@ XmlTextWriter w = new XmlTextWriter(Console.Out);
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets how many IndentChars to write for each level in the hierarchy when <see cref="System.Xml.XmlTextWriter.Formatting%2A" /> is set to <see langword="Formatting.Indented" />.</summary>
-        <value>Number of <see langword="IndentChars" /> for each level. The default is 2.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- Indentation is performed on following node types: `DocumentType`, `Element`, `Comment`, `ProcessingInstruction`, and `CDATASection`. All other node types are not affected. The `XmlTextWriter` does not indent the internal DTD subset. However, you could do the following to apply formatting to the internal DTD subset.  
-  
-```  
-String name = "Employees";  
-String pubid = null;  
-String sysid = null;  
-String subset =  
-@"  
-    <!ELEMENT Employees (Employee)+>  
-    <!ELEMENT Employee EMPTY>  
-    <!ATTLIST Employee firstname CDATA #REQUIRED>  
-    <!ENTITY Company 'Microsoft'>]>  
-";  
-XmlTextWriter tw = new XmlTextWriter(Console.Out);  
-tw.WriteDocType(name, pubid, sysid, subset);  
-```  
-  
-   
-  
-## Examples  
- The following example writes an XML fragment.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/cpp/p-system.xml.xmltextwrit_2_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/csharp/p-system.xml.xmltextwrit_2_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/visualbasic/p-system.xml.xmltextwrit_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Setting this property to a negative value.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentChar">
@@ -465,30 +220,20 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets which character to use for indenting when <see cref="System.Xml.XmlTextWriter.Formatting%2A" /> is set to <see langword="Formatting.Indented" />.</summary>
-        <value>The character to use for indenting. The default is space.  
-  
- <block subset="none" type="note">  
- The <see langword="XmlTextWriter" /> allows you to set this property to any character. To ensure valid XML, you must specify a valid white space character, 0x9, 0x10, 0x13 or 0x20.  
-  
-</block></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupPrefix">
@@ -498,8 +243,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -508,30 +257,10 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ns">Namespace URI whose prefix you want to find.</param>
-        <summary>Returns the closest prefix defined in the current namespace scope for the namespace URI.</summary>
-        <returns>The matching prefix. Or <see langword="null" /> if no matching namespace URI is found in the current scope.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
-   
-  
-## Examples  
- The following example writes out a book.  
-  
- [!code-cs[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_10_1.cs)]
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_10_1.cpp)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="ns" /> is either <see langword="null" /> or <see langword="String.Empty" />.</exception>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespaces">
@@ -541,31 +270,20 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether to do namespace support.</summary>
-        <value>
-          <see langword="true" /> to support namespaces; otherwise, <see langword="false" />.  
-  
- The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This property determines whether the writer supports the W3C Namespaces in XML recommendation located at www.w3.org/TR/REC-xml-names.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">You can only change this property when in the <see langword="WriteState.Start" /> state.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="QuoteChar">
@@ -575,26 +293,20 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets which character to use to quote attribute values.</summary>
-        <value>The character to use to quote attribute values. This must be a single quote (&amp;#39;) or a double quote (&amp;#34;). The default is a double quote.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Setting this property to something other than either a single or double quote.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteBase64">
@@ -604,8 +316,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -616,35 +332,11 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">Byte array to encode.</param>
-        <param name="index">The position within the buffer indicating the start of the bytes to write.</param>
-        <param name="count">The number of bytes to write.</param>
-        <summary>Encodes the specified binary bytes as base64 and writes out the resulting text.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
-   
-  
-## Examples  
- The following example encodes an input file using `WriteBase64` and generates a temporary XML file. The temporary XML file is decoded using the <xref:System.Xml.XmlTextReader.ReadBase64%2A> method and compared to the original file.  
-  
- [!code-cs[XmlWriter.WriteBase64#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_15_1.cs)]
- [!code-cpp[XmlWriter.WriteBase64#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_15_1.cpp)]
- [!code-vb[XmlWriter.WriteBase64#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_15_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> or <paramref name="count" /> is less than zero.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Xml.XmlTextWriter.WriteState%2A" /> is <see langword="Closed" />.</exception>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteBinHex">
@@ -654,8 +346,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -666,26 +362,11 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">Byte array to encode.</param>
-        <param name="index">The position in the buffer indicating the start of the bytes to write.</param>
-        <param name="count">The number of bytes to write.</param>
-        <summary>Encodes the specified binary bytes as binhex and writes out the resulting text.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> or <paramref name="count" /> is less than zero.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Xml.XmlTextWriter.WriteState%2A" /> is Closed.</exception>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteCData">
@@ -695,8 +376,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -705,31 +390,9 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">Text to place inside the CDATA block.</param>
-        <summary>Writes out a &lt;![CDATA[...]]&gt; block containing the specified text.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- If `text` is either `null` or `String.Empty`, this method writes an empty CDATA block, for example \<![CDATA[]]]><![CDATA[]>.  
-  
-   
-  
-## Examples  
- The following example writes an XML file representing a book.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_11_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_11_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The text would result in a non-well formed XML document.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Xml.XmlTextWriter.WriteState%2A" /> is <see langword="Closed" />.</exception>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteCharEntity">
@@ -739,8 +402,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -749,31 +416,9 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="ch" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="ch">Unicode character for which to generate a character entity.</param>
-        <summary>Forces the generation of a character entity for the specified Unicode character value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This method writes the Unicode character in hexadecimal character entity reference format.  
-  
-   
-  
-## Examples  
- The following example uses the `WriteCharEntity` method to write an e-mail address.  
-  
- [!code-cs[Classic WebData XmlTextWriter.WriteTimeSpan Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_1_1.cs)]
- [!code-cpp[Classic WebData XmlTextWriter.WriteTimeSpan Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_1_1.cpp)]
- [!code-vb[Classic WebData XmlTextWriter.WriteTimeSpan Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The character is in the surrogate pair character range, <see langword="0xd800" /> - <see langword="0xdfff" />; or the text would result in a non-well formed XML document.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Xml.XmlTextWriter.WriteState%2A" /> is <see langword="Closed" />.</exception>
+        <param name="ch">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteChars">
@@ -783,8 +428,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -795,40 +444,11 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">Character array containing the text to write.</param>
-        <param name="index">The position in the buffer indicating the start of the text to write.</param>
-        <param name="count">The number of characters to write.</param>
-        <summary>Writes text one buffer at a time.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This method can be used to write large amounts of text one buffer at a time.  
-  
- Special handling must be done to ensure the `WriteChars` method does not split surrogate pair characters across multiple buffer writes. The XML specification defines the valid ranges for surrogate pairs.  
-  
- An exception is thrown if surrogate pair characters are written that would result in the surrogate pair characters being split in the buffer.  
-  
-   
-  
-## Examples  
- [!code-cs[XmlTextWriter.WriteChars#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_12_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> or <paramref name="count" /> is less than zero.  
-  
- -or-  
-  
- The buffer length minus <paramref name="index" /> is less than <paramref name="count" />; the call results in surrogate pair characters being split or an invalid surrogate pair being written.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Xml.XmlTextWriter.WriteState%2A" /> is Closed.</exception>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteComment">
@@ -838,8 +458,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -848,31 +472,9 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">Text to place inside the comment.</param>
-        <summary>Writes out a comment &lt;!--...--&gt; containing the specified text.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- If `text` is either `null` or `String.Empty`, this method writes a `Comment` with no data content, for example \<!---->.  
-  
-   
-  
-## Examples  
- The following example writes an XML file representing a book.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_17_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_17_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_17_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The text would result in a non-well formed XML document</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Xml.XmlTextWriter.WriteState%2A" /> is <see langword="Closed" />.</exception>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteDocType">
@@ -882,8 +484,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -895,42 +501,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="subset" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the DOCTYPE. This must be non-empty.</param>
-        <param name="pubid">If non-null it also writes PUBLIC "pubid" "sysid" where <c>pubid</c> and <c>sysid</c> are replaced with the value of the given arguments.</param>
-        <param name="sysid">If <c>pubid</c> is null and <c>sysid</c> is non-null it writes SYSTEM "sysid" where <c>sysid</c> is replaced with the value of this argument.</param>
-        <param name="subset">If non-null it writes [subset] where subset is replaced with the value of this argument.</param>
-        <summary>Writes the DOCTYPE declaration with the specified name and optional attributes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This method does not check for invalid characters in `pubid`, `sysid` or `subset`. It also does not check that the internal subset is well-formed.  
-  
-> [!IMPORTANT]
->  The <xref:System.Xml.XmlTextWriter> does not validate any data that is passed to the WriteDocType method. You should not pass arbitrary data to this method.  
-  
-   
-  
-## Examples  
- The following example writes an XML file representing a book.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/cpp/976121fb-7edd-4bdb-9b36-_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/csharp/976121fb-7edd-4bdb-9b36-_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/visualbasic/976121fb-7edd-4bdb-9b36-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">This method was called outside the prolog (after the root element).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is <see langword="null" /> or <see langword="String.Empty" />  
-  
- -or-  
-  
- the value for <paramref name="name" /> would result in invalid XML.</exception>
+        <param name="name">To be added.</param>
+        <param name="pubid">To be added.</param>
+        <param name="sysid">To be added.</param>
+        <param name="subset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteEndAttribute">
@@ -940,38 +516,20 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the previous <see cref="System.Xml.XmlTextWriter.WriteStartAttribute%2A" /> call.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- If you call `WriteStartAttribute`, you can close the attribute with this method.  
-  
- You can also close the attribute by calling `WriteStartAttribute` again, calling <xref:System.Xml.XmlWriter.WriteAttributeString%2A>, or calling <xref:System.Xml.XmlTextWriter.WriteEndElement%2A>.  
-  
-   
-  
-## Examples  
- The following example writes out a book.  
-  
- [!code-cs[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_6_1.cs)]
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_6_1.cpp)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteEndDocument">
@@ -981,35 +539,20 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes any open elements or attributes and puts the writer back in the Start state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
-   
-  
-## Examples  
- The following example writes an XML file representing a book.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_7_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_7_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The XML document is invalid.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteEndElement">
@@ -1019,36 +562,20 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes one element and pops the corresponding namespace scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- If the element contains no content a short end tag "/>" is written; otherwise a full end tag is written.  
-  
-   
-  
-## Examples  
- The following example writes an XML file representing a book.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.WriteEndElement Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_9_1.cpp)]
- [!code-vb[Classic WebData XmlTextWriter.WriteEndElement Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_9_1.vb)]
- [!code-cs[Classic WebData XmlTextWriter.WriteEndElement Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteEntityRef">
@@ -1058,8 +585,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1068,28 +599,9 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">Name of the entity reference.</param>
-        <summary>Writes out an entity reference as <see langword="&amp;name;" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
-   
-  
-## Examples  
- The following example writes an XML file representing a book.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_2_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_2_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The text would result in a non-well formed XML document or <paramref name="name" /> is either <see langword="null" /> or <see langword="String.Empty" />.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteFullEndElement">
@@ -1099,36 +611,20 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes one element and pops the corresponding namespace scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This method always writes the full end tag. This is useful when dealing with elements that must include a full end tag. For example, browsers expect HTML script blocks to be closed with "\</script>".  
-  
-   
-  
-## Examples  
- The following example writes out an element with no content. It uses WriteFullEndElement to write the full end element tag.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.WriteFullEndElement Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_13_1.cpp)]
- [!code-vb[Classic WebData XmlTextWriter.WriteFullEndElement Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_13_1.vb)]
- [!code-cs[Classic WebData XmlTextWriter.WriteFullEndElement Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_13_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteName">
@@ -1138,8 +634,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1148,22 +648,9 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">Name to write.</param>
-        <summary>Writes out the specified name, ensuring it is a valid name according to the W3C XML 1.0 recommendation (http://www.w3.org/TR/1998/REC-xml-19980210#NT-Name).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- If <xref:System.Xml.XmlTextWriter.Namespaces%2A> is set to `true`, `WriteName` also checks that the name is also valid according to the W3C Namespaces in XML recommendation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is not a valid XML name; or <paramref name="name" /> is either <see langword="null" /> or <see langword="String.Empty" />.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteNmToken">
@@ -1173,8 +660,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1183,20 +674,9 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">Name to write.</param>
-        <summary>Writes out the specified name, ensuring it is a valid <see langword="NmToken" /> according to the W3C XML 1.0 recommendation (http://www.w3.org/TR/1998/REC-xml-19980210#NT-Name).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is not a valid <see langword="NmToken" />; or <paramref name="name" /> is either <see langword="null" /> or <see langword="String.Empty" />.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteProcessingInstruction">
@@ -1206,8 +686,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1217,35 +701,10 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">Name of the processing instruction.</param>
-        <param name="text">Text to include in the processing instruction.</param>
-        <summary>Writes out a processing instruction with a space between the name and text as follows: &lt;?name text?&gt;.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- If `text` is either `null` or `String.Empty`, this method writes a `ProcessingInstruction` with no data content, for example \<?name?>.  
-  
-   
-  
-## Examples  
- The following example writes an XML file representing a book.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/cpp/9b81709c-0b4a-47ed-95c0-_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/csharp/9b81709c-0b4a-47ed-95c0-_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/visualbasic/9b81709c-0b4a-47ed-95c0-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The text would result in a non-well formed XML document.  
-  
- <paramref name="name" /> is either <see langword="null" /> or <see langword="String.Empty" />.  
-  
- This method is being used to create an XML declaration after <see cref="System.Xml.XmlTextWriter.WriteStartDocument%2A" /> has already been called.</exception>
+        <param name="name">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteQualifiedName">
@@ -1255,8 +714,12 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1266,62 +729,10 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name to write.</param>
-        <param name="ns">The namespace URI to associate with the name.</param>
-        <summary>Writes out the namespace-qualified name. This method looks up the prefix that is in scope for the given namespace.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- For example, the following Microsoft Visual C# code:  
-  
-```  
-writer.Formatting = Formatting.Indented;  
-writer.WriteStartElement("root");  
- writer.WriteAttributeString("xmlns","x",null,"urn:abc");  
- writer.WriteStartElement("item");  
- writer.WriteStartAttribute("href",null);  
- writer.WriteString("#");  
- writer.WriteQualifiedName("test","urn:abc");  
- writer.WriteEndAttribute();  
- writer.WriteEndElement();  
- writer.WriteEndElement();  
- writer.Close();  
-```  
-  
- Generates the following output:  
-  
-```  
-<root xmlns:x="urn:abc">  
- <item href="#x:test"/>  
- </root>  
-```  
-  
- If `ns` maps to the current default namespace, no prefix is generated.  
-  
- When writing attribute values, this method generates a prefix if `ns` is not found. When writing element content, it throws an exception if `ns` is not found.  
-  
- If this writer supports namespaces (<xref:System.Xml.XmlTextWriter.Namespaces%2A> is set to `true`), this method also checks that the name is valid according to the W3C Namespaces in XML recommendation (http://www.w3.org/TR/REC-xml-names).  
-  
-   
-  
-## Examples  
- The following example writes out a portion of a XSD schema.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.WriteQualifiedName Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_3_1.cpp)]
- [!code-vb[Classic WebData XmlTextWriter.WriteQualifiedName Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_3_1.vb)]
- [!code-cs[Classic WebData XmlTextWriter.WriteQualifiedName Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="localName" /> is either <see langword="null" /> or <see langword="String.Empty" />.  
-  
- <paramref name="localName" /> is not a valid name according to the W3C Namespaces spec.</exception>
+        <param name="localName">To be added.</param>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteRaw">
@@ -1331,8 +742,12 @@ writer.WriteStartElement("root");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1341,32 +756,9 @@ writer.WriteStartElement("root");
         <Parameter Name="data" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="data">String containing the text to write.</param>
-        <summary>Writes raw markup manually from a string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This method does not escape special characters.  
-  
-> [!IMPORTANT]
->  The <xref:System.Xml.XmlTextWriter> does not validate any data that is passed to the WriteRaw method. You should not pass arbitrary data to this method.  
-  
-   
-  
-## Examples  
- The following example writes a string using the `WriteRaw` method.  
-  
- [!code-cs[Classic WebData XmlTextWriter.WriteRaw1 Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_8_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.WriteRaw1 Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_8_1.vb)]
- [!code-cpp[Classic WebData XmlTextWriter.WriteRaw1 Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_8_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteRaw">
@@ -1376,8 +768,12 @@ writer.WriteStartElement("root");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1388,33 +784,11 @@ writer.WriteStartElement("root");
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">Character array containing the text to write.</param>
-        <param name="index">The position within the buffer indicating the start of the text to write.</param>
-        <param name="count">The number of characters to write.</param>
-        <summary>Writes raw markup manually from a character buffer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This method does not escape special characters.  
-  
-> [!IMPORTANT]
->  The <xref:System.Xml.XmlTextWriter> does not validate any data that is passed to the WriteRaw method. You should not pass arbitrary data to this method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> or <paramref name="count" /> is less than zero.  
-  
- -or-  
-  
- The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteStartAttribute">
@@ -1424,8 +798,12 @@ writer.WriteStartElement("root");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1436,36 +814,11 @@ writer.WriteStartElement("root");
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">
-          <see langword="Namespace" /> prefix of the attribute.</param>
-        <param name="localName">
-          <see langword="LocalName" /> of the attribute.</param>
-        <param name="ns">
-          <see langword="NamespaceURI" /> of the attribute</param>
-        <summary>Writes the start of an attribute.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This is a more advanced version of <xref:System.Xml.XmlWriter.WriteAttributeString%2A> that allows you to write an attribute value using multiple write methods, such as <xref:System.Xml.XmlTextWriter.WriteString%2A>.  
-  
-   
-  
-## Examples  
- The following example writes out a book.  
-  
- [!code-cs[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/csharp/6cc34058-d4b9-4885-887b-_1.cs)]
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/cpp/6cc34058-d4b9-4885-887b-_1.cpp)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/visualbasic/6cc34058-d4b9-4885-887b-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="localName" /> is either <see langword="null" /> or <see langword="String.Empty" />.</exception>
+        <param name="prefix">To be added.</param>
+        <param name="localName">To be added.</param>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteStartDocument">
@@ -1475,41 +828,20 @@ writer.WriteStartElement("root");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Writes the XML declaration with the version "1.0".</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- The encoding level of the document is determined by how the writer is implemented. For example, if an <xref:System.Text.Encoding> object is specified in the `XmlTextWriter` constructor, this determines the value of the encoding attribute. This method does not create a standalone attribute.  
-  
- When `WriteStartDocument` is called the writer validates that what you are writing is a well-formed XML document. For example, it checks that the XML declaration is the first node, that one and only one root-level element exists and so on. If this method is not called, the writer assumes an XML fragment is being written and applies no root level rules.  
-  
- If `WriteStartDocument` has been called and then the <xref:System.Xml.XmlTextWriter.WriteProcessingInstruction%2A> method is used to create another XML declaration, an exception is thrown.  
-  
-   
-  
-## Examples  
- The following example writes an XML file representing a book.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_5_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_5_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartDocument Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">This is not the first write method called after the constructor.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteStartDocument">
@@ -1519,8 +851,12 @@ writer.WriteStartElement("root");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1529,25 +865,9 @@ writer.WriteStartElement("root");
         <Parameter Name="standalone" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="standalone">If <see langword="true" />, it writes "standalone=yes"; if <see langword="false" />, it writes "standalone=no".</param>
-        <summary>Writes the XML declaration with the version "1.0" and the standalone attribute.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- The encoding level of the document is determined by how the writer is implemented. For example, if an <xref:System.Text.Encoding> object is specified in the `XmlTextWriter` constructor, this determines the value of the encoding attribute.  
-  
- When `WriteStartDocument` is called the writer validates that what you are writing is a well-formed XML document. For example, it checks that the XML declaration is the first node, that one and only one root-level element exists and so on. If this method is not called, the writer assumes an XML fragment is being written and applies no root level rules.  
-  
- If `WriteStartDocument` has been called and then the <xref:System.Xml.XmlTextWriter.WriteProcessingInstruction%2A> method is used to create another XML declaration, an exception is thrown.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">This is not the first write method called after the constructor.</exception>
+        <param name="standalone">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteStartElement">
@@ -1557,8 +877,12 @@ writer.WriteStartElement("root");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1569,32 +893,11 @@ writer.WriteStartElement("root");
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">The namespace prefix of the element.</param>
-        <param name="localName">The local name of the element.</param>
-        <param name="ns">The namespace URI to associate with the element. If this namespace is already in scope and has an associated prefix then the writer automatically writes that prefix also.</param>
-        <summary>Writes the specified start tag and associates it with the given namespace and prefix.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- After calling this method you can either write attributes or create content using <xref:System.Xml.XmlTextWriter.WriteComment%2A>, <xref:System.Xml.XmlTextWriter.WriteString%2A>, or WriteStartElement for child elements. You can close the element with <xref:System.Xml.XmlTextWriter.WriteEndElement%2A> at which time an end tag is written out.  
-  
-   
-  
-## Examples  
- The following example writes out a book.  
-  
- [!code-cs[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/csharp/92cb2b39-06f7-44d8-98cc-_1.cs)]
- [!code-cpp[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/cpp/92cb2b39-06f7-44d8-98cc-_1.cpp)]
- [!code-vb[Classic WebData XmlTextWriter.WriteStartElement Example#1](~/add/codesnippet/visualbasic/92cb2b39-06f7-44d8-98cc-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The writer is closed.</exception>
+        <param name="prefix">To be added.</param>
+        <param name="localName">To be added.</param>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteState">
@@ -1604,25 +907,20 @@ writer.WriteStartElement("root");
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.WriteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the state of the writer.</summary>
-        <value>One of the <see cref="T:System.Xml.WriteState" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteString">
@@ -1632,8 +930,12 @@ writer.WriteStartElement("root");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1642,44 +944,9 @@ writer.WriteStartElement("root");
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">Text to write.</param>
-        <summary>Writes the given text content.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- `WriteString` does the following  
-  
--   The characters `&`, `<`, and `>` are replaced with `&amp;`, `&lt;`, and `&gt;`, respectively.  
-  
--   Character values in the range 0x-0x1F (excluding white space characters 0x9, 0xA, and 0xD) are replaced with numeric character entities (`&#0;` through `&#0x1F`).  
-  
--   If `WriteString` is called in the context of an attribute value, double and single quotes are replaced with `&quot;` and `&apos;` respectively.  
-  
- For example, this input string `test<item>test` is written as  
-  
-```  
-test&lt;item&gt;test  
-```  
-  
- If `text` is either `null` or `String.Empty`, this method writes a text node with no data content.  
-  
-   
-  
-## Examples  
- The following example writes an XML fragment.  
-  
- [!code-cpp[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_0_1.cpp)]
- [!code-cs[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_0_1.cs)]
- [!code-vb[Classic WebData XmlTextWriter.Formatting Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The text string contains an invalid surrogate pair.</exception>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteSurrogateCharEntity">
@@ -1689,8 +956,12 @@ test&lt;item&gt;test
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1700,28 +971,10 @@ test&lt;item&gt;test
         <Parameter Name="highChar" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="lowChar">The low surrogate. This must be a value between <see langword="0xDC00" /> and <see langword="0xDFFF" />.</param>
-        <param name="highChar">The high surrogate. This must be a value between <see langword="0xD800" /> and <see langword="0xDBFF" />.</param>
-        <summary>Generates and writes the surrogate character entity for the surrogate character pair.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This method is only applicable on systems that use UTF-16 encoding.  
-  
- The surrogate character entity is written in hexadecimal format. The range for surrogate characters is `#x10000` to `#x10FFFF`. The following formula is used to generate the surrogate character entity: (`highChar` - `0xD800`) * `0x400` + (`lowChar` - `0xDC00`) + `0x10000`.  
-  
- For both HTML and XML, the document character set (and therefore the notation of numeric character references) is based on UCS [ISO-10646]. A single numeric character reference in a source document may therefore in some cases correspond to two 16-bit units in a string (a high surrogate and a low surrogate). These 16-bit units are referred to as a surrogate pair.  
-  
- For more information regarding surrogates or characters, refer to section 3.7 of the Unicode 3.0/Unicode 2.0 standard located at http://www.unicode.org, or section 2.2 of the W3C XML 1.0 Recommendation located at http://www.w3.org/TR/REC-xml#charsets.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Exception">An invalid surrogate character pair was passed.</exception>
+        <param name="lowChar">To be added.</param>
+        <param name="highChar">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteWhitespace">
@@ -1731,8 +984,12 @@ test&lt;item&gt;test
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1741,30 +998,9 @@ test&lt;item&gt;test
         <Parameter Name="ws" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ws">The string of white space characters.</param>
-        <summary>Writes out the given white space.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This method is used to manually format your document. Use the <xref:System.Xml.XmlTextWriter.Formatting%2A> property to have the writer format the output automatically.  
-  
-   
-  
-## Examples  
- The following example uses the `WriteWhitespace` method to control how the file is formatted.  
-  
- [!code-cs[Classic WebData XmlTextWriter.XmlSpace Example#1](~/add/codesnippet/csharp/m-system.xml.xmltextwrit_16_1.cs)]
- [!code-cpp[Classic WebData XmlTextWriter.XmlSpace Example#1](~/add/codesnippet/cpp/m-system.xml.xmltextwrit_16_1.cpp)]
- [!code-vb[Classic WebData XmlTextWriter.XmlSpace Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmltextwrit_16_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The string contains non-white space characters.</exception>
+        <param name="ws">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlLang">
@@ -1774,27 +1010,20 @@ test&lt;item&gt;test
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current <see langword="xml:lang" /> scope.</summary>
-        <value>The current <see langword="xml:lang" /> or <see langword="null" /> if there is no <see langword="xml:lang" /> in the current scope.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This property allows one component to find out what state another component has left the writer in. For example, perhaps one component wants to tell another which language help text to generate. The language information is communicated by writing an `xml:lang` attribute.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlSpace">
@@ -1804,71 +1033,20 @@ test&lt;item&gt;test
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Xml.XmlSpace" /> representing the current <see langword="xml:space" /> scope.</summary>
-        <value>An <see langword="XmlSpace" /> representing the current <see langword="xml:space" /> scope.  
-  
- <list type="table">  
-<listheader>  
-<term> Value  
-  
- </term>  
-<description> Meaning  
-  
- </description>  
-</listheader>  
-<item>  
-<term> None  
-  
- </term>  
-<description> This is the default if no <see langword="xml:space" /> scope exists.  
-  
- </description>  
-</item>  
-<item>  
-<term> Default  
-  
- </term>  
-<description> The current scope is <see langword="xml:space" />="default".  
-  
- </description>  
-</item>  
-<item>  
-<term> Preserve  
-  
- </term>  
-<description> The current scope is <see langword="xml:space" />="preserve".  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method and the <xref:System.Xml.XmlWriterSettings> class to take advantage of new functionality.  
-  
- This property allows one component to find out in what state another component has left the writer.  
-  
-   
-  
-## Examples  
- The following example uses the `WriteWhitespace` method to control how the file is formatted.  
-  
- [!code-cs[Classic WebData XmlTextWriter.XmlSpace Example#1](~/add/codesnippet/csharp/p-system.xml.xmltextwrit_1_1.cs)]
- [!code-cpp[Classic WebData XmlTextWriter.XmlSpace Example#1](~/add/codesnippet/cpp/p-system.xml.xmltextwrit_1_1.cpp)]
- [!code-vb[Classic WebData XmlTextWriter.XmlSpace Example#1](~/add/codesnippet/visualbasic/p-system.xml.xmltextwrit_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

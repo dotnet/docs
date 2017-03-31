@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.HierarchicalDataSourceConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,29 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type converter that can retrieve a list of the hierarchical data sources that are accessible to the current component.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HierarchicalDataSourceConverter class provides methods that can be used to retrieve a list of the hierarchical data sources that are accessible to the current design-time component.  
-  
- The HierarchicalDataSourceConverter type converter is used by Microsoft Visual Studio to provide the values that appear in the list of data sources in the **Properties** window.  
-  
-> [!CAUTION]
->  You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to associate a HierarchicalDataSourceConverter with a hierarchical data source property that is contained within a custom control.  
-  
- [!code-cs[HierarchicalDataSourceConverter#1](~/add/codesnippet/csharp/t-system.web.ui.design.h_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.HierarchicalDataSourceConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,18 +46,10 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">The component to check as a valid data source.</param>
-        <summary>Indicates whether the specified component is a valid data source for this converter.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="component" /> implements <see cref="T:System.Web.UI.IHierarchicalEnumerable" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.DataSourceConverter.GetStandardValues%2A> method uses the IsValidDataSource method to determine which components are available as standard accessible data sources. For the <xref:System.Web.UI.Design.HierarchicalDataSourceConverter> class, a valid data source is a component that implements the <xref:System.Web.UI.IHierarchicalEnumerable> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

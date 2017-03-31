@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Serializes an <see cref="T:System.Workflow.ComponentModel.Activity" /> to a new type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ActivityTypeCodeDomSerializer performs the same tasks as <xref:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializer>, but if you use this class to serialize an <xref:System.Workflow.ComponentModel.Activity> it defines a new type.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,10 +52,10 @@
         <Parameter Name="declaration" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="manager">The serialization manager to use for deserialization.</param>
-        <param name="declaration">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> to use for deserialization.</param>
-        <summary>Deserializes the specified type declaration.</summary>
-        <returns>The deserialized <see cref="T:System.Object" />.</returns>
+        <param name="manager">To be added.</param>
+        <param name="declaration">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,21 +77,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="manager">The serialization manager to use for serialization.</param>
-        <param name="typeDecl">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> to use for serialization.</param>
-        <param name="value">The <see cref="T:System.Object" /> to use for serialization.</param>
-        <summary>Returns the method where the statements used to serialize a member are stored.</summary>
-        <returns>The <see cref="T:System.CodeDom.CodeMemberMethod" /> used to emit all of the initialization code for the given member.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned method is determined from a method key found in the user data associated with `typeDecl`. If there is no method key, GetInitializeMethod creates a new <xref:System.CodeDom.CodeMemberMethod>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="manager" />, <paramref name="typeDecl" />, or <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="manager">To be added.</param>
+        <param name="typeDecl">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInitializeMethods">
@@ -116,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,13 +102,11 @@
         <Parameter Name="typeDecl" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="manager">The serialization manager to use for serialization.</param>
-        <param name="typeDecl">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> to use for serialization.</param>
-        <summary>Returns an array of methods to be interpreted during deserialization.</summary>
-        <returns>A <see cref="T:System.CodeDom.CodeMemberMethod" /> array of methods to be interpreted during serialization.</returns>
+        <param name="manager">To be added.</param>
+        <param name="typeDecl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="manager" /> or <paramref name="typeDecl" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -143,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,16 +127,12 @@
         <Parameter Name="members" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="manager">The serialization manager to use for serialization.</param>
-        <param name="root">The <see cref="T:System.Object" /> to serialize.</param>
-        <param name="members">An optional collection of members. Can be a null reference (<see langword="Nothing" /> in Visual Basic) or an empty collection.</param>
-        <summary>Serializes the specified object by creating a new type declaration that defines that object.</summary>
-        <returns>A <see cref="T:System.CodeDom.CodeTypeDeclaration" /> that defines the specified object.</returns>
+        <param name="manager">To be added.</param>
+        <param name="root">To be added.</param>
+        <param name="members">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="manager" /> or <paramref name="root" /> contains a null reference (<see langword="Nothing" />).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="root" /> cannot be converted to an <see cref="T:System.Workflow.ComponentModel.Activity" />.</exception>
       </Docs>
     </Member>
   </Members>

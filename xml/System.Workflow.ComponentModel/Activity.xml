@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -56,50 +55,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the fundamental building block of workflows. Activity is the base class for all activities.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- An Activity is the fundamental building block of workflows. An Activity defines a set of properties and events, such as any class, along with execution logic that defines the activity's run-time behavior. A set of additional components can be associated with an Activity. These include, but are not limited to a validator, a code generator, custom serializers, and a designer.  
-  
- All activities share a common set of properties defined on the Activity base class.  Each Activity can declare its own additional properties according to its requirements by extending this class.  Because Activity derives from <xref:System.Workflow.ComponentModel.DependencyObject>, properties can be defined as standard CLR properties and as dependency properties.  
-  
- The execution logic of an Activity fulfills a contract that exists between any Activity and the workflow runtime. You must document the execution logic of any Activity in a functional sense, so that a workflow developer who uses the Activity knows how it behaves. The execution logic itself is hidden from the workflow developer who includes the activity in a workflow, because the execution logic is part of a contract that exists strictly between the workflow runtime and the Activity.  
-  
-   
-  
-## Examples  
- This example defines an activity whose purpose is to send an email. The activity defines one property, `Subject`, that uses a dependency property in its implementation. Other properties can be defined in a similar way. The `Execute` method is overridden to provide the logic for sending the email. For a complete example, see the [Send E-mail Activity Sample](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
-  
-```c#  
-public class SendEmail : Activity  
-{  
-    public static readonly DependencyProperty SubjectProperty =  
-        DependencyProperty.Register("Subject", typeof(string), typeof(SendEmail));  
-  
-    public string Subject  
-    {  
-        get { return base.GetValue(SubjectProperty) as string; }  
-        set { base.SetValue(SubjectProperty, value); }  
-    }  
-  
-    // Define other properties...  
-  
-    protected override ActivityExecutionStatus Execute(ActivityExecutionContext executionContext)  
-    {  
-        // Logic to send the e-mail goes here...  
-        return ActivityExecutionStatus.Closed;  
-    }  
-}  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,25 +66,12 @@ public class SendEmail : Activity
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to create activities and add them as children to a composite activity.  
-  
- This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Throw Sample](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
-  
- [!code-cs[WF_Samples#179](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#179)]
- [!code-vb[WF_Samples#179](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#179)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -137,18 +81,15 @@ public class SendEmail : Activity
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name to associate with this instance. The name must conform to the variable naming conventions for the programming language that is being used in the Workflow project, and must be unique in the workflow.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> class, while initializing the <see cref="System.Workflow.ComponentModel.Activity.Name%2A" />.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="ActivityContextGuidProperty">
@@ -158,22 +99,14 @@ public class SendEmail : Activity
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that represents the <see cref="T:System.Guid" /> of the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that is associated with the <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -183,7 +116,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,9 +125,9 @@ public class SendEmail : Activity
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that contains the instance to cancel.</param>
-        <summary>Called by the workflow runtime to cancel execution of an activity that is currently executing.</summary>
-        <returns>The status at the end of the operation that determines whether the activity remains in the canceling state or transitions to the closed state.</returns>
+        <param name="executionContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,7 +138,6 @@ public class SendEmail : Activity
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -221,17 +152,8 @@ public class SendEmail : Activity
         <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the activity execution is canceled.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Workflow.ComponentModel.Activity.Cancel%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  [!INCLUDE[crabout](~/add/includes/crabout-md.md)] handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelingEvent">
@@ -241,24 +163,14 @@ public class SendEmail : Activity
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.ComponentModel.Activity.Canceling" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -268,7 +180,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -276,16 +187,9 @@ public class SendEmail : Activity
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a deep copy of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
-        <returns>A deep copy of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Uses a <xref:System.IO.MemoryStream> to copy the activity and creates a new activity by deserializing from that particular <xref:System.IO.MemoryStream>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Closed">
@@ -295,7 +199,6 @@ public class SendEmail : Activity
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -310,17 +213,8 @@ public class SendEmail : Activity
         <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an <see cref="T:System.Workflow.ComponentModel.Activity" /> has completed execution.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The Closed method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClosedEvent">
@@ -330,24 +224,14 @@ public class SendEmail : Activity
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.ComponentModel.Activity.Closed" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Compensating">
@@ -357,7 +241,6 @@ public class SendEmail : Activity
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -372,17 +255,8 @@ public class SendEmail : Activity
         <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when running a compensation method on the <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The Compensating method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CompensatingEvent">
@@ -392,24 +266,14 @@ public class SendEmail : Activity
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.ComponentModel.Activity.Compensating" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -419,7 +283,6 @@ public class SendEmail : Activity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -437,16 +300,9 @@ public class SendEmail : Activity
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the user-defined description of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
-        <value>The text description of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is a meta property, which means it cannot be changed at runtime. Meta properties do not change after a property instance is created at runtime, so the property must be set to a literal value at design time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -456,7 +312,6 @@ public class SendEmail : Activity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -471,19 +326,9 @@ public class SendEmail : Activity
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether this instance is enabled for execution and validation.</summary>
-        <value>
-          <see langword="true" /> if enabled for execution and validation; <see langword="false" /> otherwise.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `false`, all child activities are treated as if this value is `false` for them also.  
-  
- This property is a meta property, which means it cannot be changed at runtime. Meta properties do not change after a property instance is created at runtime, so the property must be set to a literal value at design time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -493,7 +338,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -503,27 +347,10 @@ public class SendEmail : Activity
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> to associate with this <see cref="T:System.Workflow.ComponentModel.Activity" /> and execution.</param>
-        <summary>Called by the workflow runtime to execute an activity.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of the run task, which determines whether the activity remains in the executing state, or transitions to the closed state.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.ComponentModel.ActivityExecutionContext> is used to get information about the currently running activity and workflow, and is also used to obtain services from the runtime environment.  
-  
- The running occurs synchronously, returning control to the caller when the activity is completed or reaches an intermediate state.  
-  
-   
-  
-## Examples  
- The following code example shows an implementation of the `Execute` method. In this example, an Outlook e-mail message is constructed and sent. This example is from the Outlook Workflow Wizard SDK sample. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Outlook Workflow Wizard Sample](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
-  
- [!code-cs[WF_Samples#98](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#98)]
- [!code-vb[WF_Samples#98](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#98)]  
-  
- ]]></format>
-        </remarks>
+        <param name="executionContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Executing">
@@ -533,7 +360,6 @@ public class SendEmail : Activity
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -548,17 +374,8 @@ public class SendEmail : Activity
         <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Workflow.ComponentModel.Activity" /> is run.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The Executing method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecutingEvent">
@@ -568,24 +385,14 @@ public class SendEmail : Activity
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.ComponentModel.Activity.Executing" /> event, which occurs when the activity is executed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecutionResult">
@@ -595,7 +402,6 @@ public class SendEmail : Activity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -610,16 +416,9 @@ public class SendEmail : Activity
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionResult" /> of the last attempt to run this instance.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionResult" /> of the last attempt to run this instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only useful when a workflow instance is running.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecutionStatus">
@@ -629,7 +428,6 @@ public class SendEmail : Activity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -644,16 +442,9 @@ public class SendEmail : Activity
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of this instance.</summary>
-        <value>The current <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of this instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only useful when a workflow instance is running.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Faulting">
@@ -663,7 +454,6 @@ public class SendEmail : Activity
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -678,15 +468,8 @@ public class SendEmail : Activity
         <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an exception is raised during the running of the instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FaultingEvent">
@@ -696,24 +479,14 @@ public class SendEmail : Activity
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that represents the <see cref="E:System.Workflow.ComponentModel.Activity.Faulting" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetActivityByName">
@@ -723,7 +496,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -733,19 +505,10 @@ public class SendEmail : Activity
         <Parameter Name="activityQualifiedName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="activityQualifiedName">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> to search for.</param>
-        <summary>Returns the instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities running under the root activity of this instance, which is within the workflow.</summary>
-        <returns>The instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities running under the root activity of this instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling `GetActivityByName` from within the constructor of a custom activity is not supported and can have unexpected results.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="activityQualifiedID" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="activityQualifiedName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetActivityByName">
@@ -755,7 +518,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -766,22 +528,11 @@ public class SendEmail : Activity
         <Parameter Name="withinThisActivityOnly" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="activityQualifiedName">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> to search for.</param>
-        <param name="withinThisActivityOnly">The value that indicates whether to limit the search to activities contained within this instance.</param>
-        <summary>Returns the instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities under the root the <see cref="T:System.Workflow.ComponentModel.Activity" /> of this instance if the second parameter is <see langword="false" /> and under the current <see cref="T:System.Workflow.ComponentModel.Activity" /> if the second parameter is <see langword="true" />.</summary>
-        <returns>The instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities under the root the <see cref="T:System.Workflow.ComponentModel.Activity" /> of this instance if the second parameter is <see langword="false" /> and under the current <see cref="T:System.Workflow.ComponentModel.Activity" /> if the second parameter is <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Returns the instance of the <xref:System.Workflow.ComponentModel.Activity> whose name is requested from the set of all activities under the root the <xref:System.Workflow.ComponentModel.Activity> of this instance if the second parameter is `false` and under the current <xref:System.Workflow.ComponentModel.Activity> if the second parameter is `true`.  
-  
- Calling `GetActivityByName` from within the constructor of a custom activity is not supported and can have unexpected results.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="activityQualifiedID" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="activityQualifiedName">To be added.</param>
+        <param name="withinThisActivityOnly">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HandleFault">
@@ -791,7 +542,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -802,20 +552,11 @@ public class SendEmail : Activity
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for this instance.</param>
-        <param name="exception">The <see cref="T:System.Exception" /> that caused this fault.</param>
-        <summary>Called when an exception is raised within the context of the execution of this instance.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> that results from an attempt to cancel this instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default method tries to call the <xref:System.Workflow.ComponentModel.Activity.Cancel%2A> method and returns the result of this attempt.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="exception" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="executionContext">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -825,7 +566,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -835,11 +575,9 @@ public class SendEmail : Activity
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the initialization service.</param>
-        <summary>Called by the workflow runtime to initialize an activity during the construction of a new workflow instance. This method is called during the construction of a dynamic <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</summary>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" /> is a null reference (<see langword="Nothing " />in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Invoke&lt;T&gt;">
@@ -849,7 +587,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -867,10 +604,10 @@ public class SendEmail : Activity
         <Parameter Name="e" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The specified type.</typeparam>
-        <param name="handler">The <see cref="T:System.EventHandler" /> to be invoked.</param>
-        <param name="e">The <see cref="T:System.EventArgs" /> to associate with this event</param>
-        <summary>Subscribes an <see cref="T:System.EventHandler" /> and invokes that delegate.</summary>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="handler">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -881,7 +618,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -899,10 +635,10 @@ public class SendEmail : Activity
         <Parameter Name="e" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The specified type.</typeparam>
-        <param name="eventListener">The <see cref="System.Workflow.ComponentModel.IActivityEventListener%601" /> to be invoked.</param>
-        <param name="e">The <see cref="T:System.EventArgs" /> to associate with this event</param>
-        <summary>Subscribes an <see cref="System.Workflow.ComponentModel.IActivityEventListener%601" /> and invokes that delegate.</summary>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="eventListener">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -913,7 +649,6 @@ public class SendEmail : Activity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -928,8 +663,8 @@ public class SendEmail : Activity
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets information about whether the activity is executing within the default <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the workflow instance.</summary>
-        <value>Returns <see langword="false" /> if the activity is executing within the default <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the workflow instance, otherwise returns <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -940,7 +675,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -951,22 +685,11 @@ public class SendEmail : Activity
         <Parameter Name="outerActivity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="stream">The <see cref="T:System.IO.Stream" /> from which to load.</param>
-        <param name="outerActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the context for the deserialized <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <summary>Loads an instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" />.</summary>
-        <returns>An instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="stream" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="stream">To be added.</param>
+        <param name="outerActivity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -976,7 +699,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -988,23 +710,12 @@ public class SendEmail : Activity
         <Parameter Name="formatter" Type="System.Runtime.Serialization.IFormatter" />
       </Parameters>
       <Docs>
-        <param name="stream">The target <see cref="T:System.IO.Stream" /> of the load operation.</param>
-        <param name="outerActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the context for the deserialized <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <param name="formatter">The <see cref="T:System.Runtime.Serialization.IFormatter" /> used to read from the <see cref="T:System.IO.Stream" />.</param>
-        <summary>Loads an instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" /> using the custom <see cref="T:System.Runtime.Serialization.IFormatter" /> for deserialization.</summary>
-        <returns>An instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="formatter" /> is a null reference (<see langword="Nothing" />).</exception>
+        <param name="stream">To be added.</param>
+        <param name="outerActivity">To be added.</param>
+        <param name="formatter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1014,7 +725,6 @@ public class SendEmail : Activity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1035,28 +745,9 @@ public class SendEmail : Activity
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of this instance. This name must conform to the variable naming convention of the programming language that is being used in the Workflow project.</summary>
-        <value>The name of this instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Default value for this is the empty string.  
-  
- This property is a meta property, which means it cannot be changed at runtime. Meta properties do not change after a property instance is created at runtime, so the property must be set to a literal value at design time.  
-  
-   
-  
-## Examples  
- The following code shows how to create activities and add them as children to a composite activity and set the value for Name.  
-  
- This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Throw Sample](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
-  
- [!code-cs[WF_Samples#179](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#179)]
- [!code-vb[WF_Samples#179](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#179)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnActivityExecutionContextLoad">
@@ -1066,7 +757,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1076,8 +766,8 @@ public class SendEmail : Activity
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the service.</param>
-        <summary>Called by the workflow runtime whenever an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> is loaded. For example, this method is called during the creation of an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> as well as every time the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> is reincarnated when a workflow instance is loaded from persistent storage.</summary>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1088,7 +778,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1098,8 +787,8 @@ public class SendEmail : Activity
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the service.</param>
-        <summary>Called by the workflow runtime whenever an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> is unloaded. For example, this method is called during completion of an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> as well as every time the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> is unloaded when a workflow instance is persisted.</summary>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1110,7 +799,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1120,16 +808,9 @@ public class SendEmail : Activity
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the service.</param>
-        <summary>Called by the workflow runtime as part of the activity's transition to the closed state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides the activity with an opportunity to clean up resources utilized during its execution.  
-  
- ]]></format>
-        </remarks>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1139,7 +820,6 @@ public class SendEmail : Activity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1154,16 +834,9 @@ public class SendEmail : Activity
         <ReturnType>System.Workflow.ComponentModel.CompositeActivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> that contains this <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.Activity" /> that is a parent to this <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Returnsa null reference(`Nothing` in Visual Basic) if <xref:System.Workflow.ComponentModel.Activity> is a workflow or a root <xref:System.Workflow.ComponentModel.Activity>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="QualifiedName">
@@ -1173,7 +846,6 @@ public class SendEmail : Activity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1188,16 +860,9 @@ public class SendEmail : Activity
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the qualified name of the activity. Qualified activity names are always unique in a workflow instance.</summary>
-        <value>The qualified name of the instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The qualified name is the name of this instance with the name of the custom activity that contains this instance appended to the front.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseEvent">
@@ -1207,7 +872,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1219,23 +883,11 @@ public class SendEmail : Activity
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="dependencyEvent">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated with this <see cref="T:System.Reflection.MemberTypes" />.</param>
-        <param name="sender">The <see cref="T:System.Object" /> source of the <see cref="T:System.Reflection.MemberTypes" />.</param>
-        <param name="e">The <see cref="T:System.EventArgs" /> associated with the <see cref="T:System.Reflection.MemberTypes" />.</param>
-        <summary>Raises an <see cref="T:System.Reflection.MemberTypes" /> associated with the specified dependency property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code invokes this method to raise an event that is defined as a <xref:System.Workflow.ComponentModel.DependencyProperty>.  
-  
- This code example is part of the Send E-mail Activity sample and is from the SendEmailActivity.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Send E-mail Activity Sample](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669)  
-  
- [!code-cs[WF_Samples#233](~/add/codesnippet/csharp/wf_snippets/snippets24.cs#233)]
- [!code-vb[WF_Samples#233](~/add/codesnippet/visualbasic/wf_snippets/snippets24.vb#233)]  
-  
- ]]></format>
-        </remarks>
+        <param name="dependencyEvent">To be added.</param>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseGenericEvent&lt;T&gt;">
@@ -1245,7 +897,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1264,11 +915,11 @@ public class SendEmail : Activity
         <Parameter Name="e" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The specified type.</typeparam>
-        <param name="dependencyEvent">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated with this <see cref="T:System.Reflection.MemberTypes" />.</param>
-        <param name="sender">The <see cref="T:System.Object" /> source of the event.</param>
-        <param name="e">The <see cref="T:System.EventArgs" /> associated with the <see cref="T:System.Reflection.MemberTypes" />.</param>
-        <summary>Raises the event associated with the referenced <see cref="T:System.Workflow.ComponentModel.DependencyProperty" />.</summary>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="dependencyEvent">To be added.</param>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1279,7 +930,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1290,24 +940,10 @@ public class SendEmail : Activity
         <Parameter Name="activityStatusChangeListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="dependencyProp">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> to register.</param>
-        <param name="activityStatusChangeListener">The object that implements the Event Listener interface for this registration.</param>
-        <summary>Registers the specified <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> for the status change event.</summary>
+        <param name="dependencyProp">To be added.</param>
+        <param name="activityStatusChangeListener">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="dependencyProp" /> is not one of the following:  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.ExecutingEvent" />  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.CancelingEvent" />  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.ClosedEvent" />  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.CompensatingEvent" />  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.FaultingEvent" />  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.StatusChangedEvent" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -1317,7 +953,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1327,11 +962,9 @@ public class SendEmail : Activity
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">The <see cref="T:System.IO.Stream" /> to which to save the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <summary>Writes the <see cref="T:System.Workflow.ComponentModel.Activity" /> to a <see cref="T:System.IO.Stream" /> for persistence.</summary>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="stream" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -1341,7 +974,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1352,20 +984,10 @@ public class SendEmail : Activity
         <Parameter Name="formatter" Type="System.Runtime.Serialization.IFormatter" />
       </Parameters>
       <Docs>
-        <param name="stream">The target <see cref="T:System.IO.Stream" /> of the save operation.</param>
-        <param name="formatter">The binary or custom <see cref="T:System.Runtime.Serialization.IFormatter" /> for the serialization.</param>
-        <summary>Writes the <see cref="T:System.Workflow.ComponentModel.Activity" /> to a <see cref="T:System.IO.Stream" /> for persistence using the custom <see cref="T:System.Runtime.Serialization.IFormatter" /> provided for serialization.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Soap formatters are not supported by Windows Workflow Foundation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="formatter" /> is a null reference (<see langword="Nothing" />).</exception>
-        <exception cref="T:System.InvalidOperationException">This instance is in design mode.</exception>
+        <param name="stream">To be added.</param>
+        <param name="formatter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusChanged">
@@ -1375,7 +997,6 @@ public class SendEmail : Activity
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1390,20 +1011,8 @@ public class SendEmail : Activity
         <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of a running <see cref="T:System.Workflow.ComponentModel.Activity" /> changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The StatusChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-> [!NOTE]
->  When an activity (Activity A) subscribes to a different activity's (Activity B) `StatusChanged` event, the `Activity` property of the associated <xref:System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs> refers to the activity subscribed to (Activity B), and the associated `Sender` object refers to the execution context of the subscribing activity (Activity A).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusChangedEvent">
@@ -1413,24 +1022,14 @@ public class SendEmail : Activity
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.ComponentModel.Activity.StatusChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1440,7 +1039,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1448,16 +1046,9 @@ public class SendEmail : Activity
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides a string that represents this instance.</summary>
-        <returns>This instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The string returned is a combination of the <xref:System.Workflow.ComponentModel.Activity.QualifiedName%2A> and the <xref:System.Type.FullName%2A> of the type of this instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackData">
@@ -1467,7 +1058,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1477,22 +1067,9 @@ public class SendEmail : Activity
         <Parameter Name="userData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="userData">
-          <see cref="T:System.Object" /> that contains the tracking information.</param>
-        <summary>Informs the run-time tracking infrastructure of pending tracking information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows a call to the `TrackData` method. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Termination Tracking Service Sample](http://msdn.microsoft.com/en-us/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
-  
- [!code-cs[WF_Samples#118](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#118)]
- [!code-vb[WF_Samples#118](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#118)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="userData" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="userData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackData">
@@ -1502,7 +1079,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1513,13 +1089,10 @@ public class SendEmail : Activity
         <Parameter Name="userData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="userDataKey">The key to the user data that has changed.</param>
-        <param name="userData">
-          <see cref="T:System.Object" /> that contains the tracking information.</param>
-        <summary>Informs the run-time tracking infrastructure of pending tracking information.</summary>
+        <param name="userDataKey">To be added.</param>
+        <param name="userData">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="userData" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Uninitialize">
@@ -1529,7 +1102,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1539,18 +1111,9 @@ public class SendEmail : Activity
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the service.</param>
-        <summary>When overridden in a derived class, provides un-initialization by a service provider for the activity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides the activity with an opportunity to clean up resources allocated during initialization.  
-  
- Uninitialize is called when an activity instance is guaranteed not to perform any more execution. For activities that do not implement <xref:System.Workflow.ComponentModel.ICompensatableActivity>, this occurs immediately after the activity closes, or, if the activity never executed, at workflow completion. For <xref:System.Workflow.ComponentModel.ICompensatableActivity> activities, this occurs either after compensation or at workflow completion.  
-  
- ]]></format>
-        </remarks>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnregisterForStatusChange">
@@ -1560,7 +1123,6 @@ public class SendEmail : Activity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1571,24 +1133,10 @@ public class SendEmail : Activity
         <Parameter Name="activityStatusChangeListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="dependencyProp">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> to un-register.</param>
-        <param name="activityStatusChangeListener">The object that implements the Event Listener interface for this registration.</param>
-        <summary>Un-registers the specified <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> for the status change event.</summary>
+        <param name="dependencyProp">To be added.</param>
+        <param name="activityStatusChangeListener">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="dependencyProp" /> is not one of the following:  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.ExecutingEvent" />  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.CancelingEvent" />  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.ClosedEvent" />  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.CompensatingEvent" />  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.FaultingEvent" />  
-  
--   <see cref="F:System.Workflow.ComponentModel.Activity.StatusChangedEvent" /></exception>
       </Docs>
     </Member>
     <Member MemberName="WorkflowInstanceId">
@@ -1598,15 +1146,14 @@ public class SendEmail : Activity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Guid" /> associated with the instance.</summary>
-        <value>The <see cref="T:System.Guid" /> associated with the instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

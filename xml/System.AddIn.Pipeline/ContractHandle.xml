@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.ContractHandle" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,29 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides methods that control the lifetime of an add-in.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the add-in model provides the ability for add-ins to communicate between application domains and between processes, it cannot rely on the garbage collector to reclaim them. This class provides a reference counting mechanism for the add-in by obtaining a lifetime token to its contract.  
-  
- When a ContractHandle object is constructed, it calls the <xref:System.AddIn.Pipeline.ContractBase.AcquireLifetimeToken%2A> method on the contract that is passed to the constructor. When the ContractHandle object is disposed or finalized, it calls the <xref:System.AddIn.Pipeline.ContractBase.RevokeLifetimeToken%2A> method on the contract, which removes its hold on the contract.  
-  
- Adapters implement the contract. The ContractHandle class is designed to be used in a contract-to-view adapter to help pipeline developers manage the lifetime of the contract that is being adapted. Typically, an instance of this class is instantiated during the construction of the adapter class and is stored in an instance field of the adapter. When the adapter class is garbage-collected, the ContractHandle object will also be collected and the ContractHandle object will revoke the lifetime token on the contract.  
-  
- It is recommended that your view-to-contract adapters inherit from the <xref:System.AddIn.Pipeline.ContractBase> class. You can then use a default implementation for the members of <xref:System.AddIn.Contract.IContract>, which means you need to implement only the members of your specific contract.  
-  
-   
-  
-## Examples  
- The following example shows how to set the lifetime token handle in a contract-to-view adapter on the add-in side of a pipeline.  
-  
- [!code-vb[AddinP2HostSideAdapters#2](~/add/codesnippet/visualbasic/Calc2HostSideAdapter/Calc2ContractToViewHostSideAdapter.vb#2)]
- [!code-cs[AddinP2HostSideAdapters#2](~/add/codesnippet/csharp/Calc2HostSideAdapter/Calc2ContractToViewHostSideAdapter.cs#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,18 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contract" Type="System.AddIn.Contract.IContract" />
       </Parameters>
       <Docs>
-        <param name="contract">The contract to use in the pipeline.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Pipeline.ContractHandle" /> class.</summary>
+        <param name="contract">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="contract" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AppDomainOwner">
@@ -69,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,21 +53,10 @@
         <Parameter Name="domain" Type="System.AppDomain" />
       </Parameters>
       <Docs>
-        <param name="domain">The application domain to check.</param>
-        <summary>Gets the instance of the add-in-side adapter when the application domain was created.</summary>
-        <returns>An <see cref="T:System.AddIn.Contract.IContract" /> object that represents the owner of the application domain.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The add-in-side adapters are typed as <xref:System.AddIn.Contract.IContract>.  
-  
- If the application domain was previously created by a user, there is no owner.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="domain" /> is <see langword="null" />.</exception>
+        <param name="domain">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contract">
@@ -103,15 +66,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AddIn.Contract.IContract</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the contract used by a pipeline.</summary>
-        <value>The contract, which is derived from <see cref="T:System.AddIn.Contract.IContract" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,14 +94,11 @@
         <Parameter Name="domain" Type="System.AppDomain" />
       </Parameters>
       <Docs>
-        <param name="contract">The contract to check.</param>
-        <param name="domain">The application domain to check.</param>
-        <summary>Determines whether an application domain is owned by the specified contract.</summary>
-        <returns>
-          <see langword="true" /> if the contract owns the application domain; otherwise, <see langword="false" />.</returns>
+        <param name="contract">To be added.</param>
+        <param name="domain">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="contract" /> or <paramref name="domain" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -150,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,7 +115,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Revokes the lifetime token on a contract, regardless of input.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,7 +126,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,9 +135,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Revokes the lifetime token on the contract regardless of input and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,7 +147,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,17 +154,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the resources associated with the <see cref="T:System.AddIn.Pipeline.ContractHandle" /> instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName>. Application code should not call this method; an object's Finalize method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
-  
- When called by the garbage collector, this method calls the <xref:System.AddIn.Pipeline.ContractHandle.Dispose%28System.Boolean%29> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

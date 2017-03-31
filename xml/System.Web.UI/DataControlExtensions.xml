@@ -11,20 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides extension methods that are used by ASP.NET Dynamic Data.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataControlExtensions class is used to enable Dynamic Data features in ASP.NET data-bound controls.  
-  
-   
-  
-## Examples  
- For an example of how to enable Dynamic Data features in a data-bound control, see [Walkthrough: Enabling Dynamic Data in ASP.NET Data-Bound Controls](http://msdn.microsoft.com/en-us/c170c9df-54f2-4fee-ad9f-33f2a882928f).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EnableDynamicData">
@@ -44,9 +32,9 @@
         <Parameter Name="entityType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="control">The data control to enable Dynamic Data behavior for.</param>
-        <param name="entityType">The type to use for metadata.</param>
-        <summary>Enables Dynamic Data behavior for the specified data control.</summary>
+        <param name="control">To be added.</param>
+        <param name="entityType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,10 +56,10 @@
         <Parameter Name="defaultValues" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="control">The data control to enable Dynamic Data behavior for.</param>
-        <param name="entityType">The type to use for metadata.</param>
-        <param name="defaultValues">The default values to use with the <see cref="T:System.Web.UI.INamingContainer" /> object.</param>
-        <summary>Enables Dynamic Data behavior for the specified data control.</summary>
+        <param name="control">To be added.</param>
+        <param name="entityType">To be added.</param>
+        <param name="defaultValues">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +81,10 @@
         <Parameter Name="defaults" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="control">The data control to enable Dynamic Data behavior for.</param>
-        <param name="entityType">The type that represents the table to display.</param>
-        <param name="defaults">The default values to use with the <see cref="T:System.Web.UI.INamingContainer" /> object.</param>
-        <summary>Enables Dynamic Data behavior for the specified data control.</summary>
+        <param name="control">To be added.</param>
+        <param name="entityType">To be added.</param>
+        <param name="defaults">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.ImageAnimator" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Animates an image that has time-based frames.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,21 +32,10 @@
         <Parameter Name="onFrameChangedHandler" Type="System.EventHandler" />
       </Parameters>
       <Docs>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> object to animate.</param>
-        <param name="onFrameChangedHandler">An <see langword="EventHandler" /> object that specifies the method that is called when the animation frame changes.</param>
-        <summary>Displays a multiple-frame image as an animation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This Windows Forms application demonstrates how to draw an animated image to the screen. The image is created from the animated GIF file SampleAnimation.gif located in the same folder as the application.  
-  
- [!code-vb[System.Drawing.ClassicImageAnimator#1](~/add/codesnippet/visualbasic/m-system.drawing.imagean_1.vb)]
- [!code-cs[System.Drawing.ClassicImageAnimator#1](~/add/codesnippet/csharp/m-system.drawing.imagean_1.cs)]
- [!code-cpp[System.Drawing.ClassicImageAnimator#1](~/add/codesnippet/cpp/m-system.drawing.imagean_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="image">To be added.</param>
+        <param name="onFrameChangedHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanAnimate">
@@ -58,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,9 +54,9 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> object to test.</param>
-        <summary>Returns a Boolean value indicating whether the specified image contains time-based frames.</summary>
-        <returns>This method returns <see langword="true" /> if the specified image contains time-based frames; otherwise, <see langword="false" />.</returns>
+        <param name="image">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,9 +77,9 @@
         <Parameter Name="onFrameChangedHandler" Type="System.EventHandler" />
       </Parameters>
       <Docs>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> object to stop animating.</param>
-        <param name="onFrameChangedHandler">An <see langword="EventHandler" /> object that specifies the method that is called when the animation frame changes.</param>
-        <summary>Terminates a running animation.</summary>
+        <param name="image">To be added.</param>
+        <param name="onFrameChangedHandler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +90,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,7 +97,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Advances the frame in all images currently being animated. The new frame is drawn the next time the image is rendered.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,8 +117,8 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> object for which to update frames.</param>
-        <summary>Advances the frame in the specified image. The new frame is drawn the next time the image is rendered. This method applies only to images with time-based frames.</summary>
+        <param name="image">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

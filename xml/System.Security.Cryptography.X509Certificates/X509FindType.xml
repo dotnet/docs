@@ -3,34 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509FindType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509FindType" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of value the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method searches for.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- X509FindType identifies the type of value provided in the `findValue` parameter for the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A> method. You can use X509FindType to search an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> collection by subject name, thumbprint, serial number, valid date range, or other value.  
-  
- You can use a combination of `FindByTime` value types to find certificates that are valid in a given time range. The union of certificates returned using FindByTimeValid, FindByTimeNotYetValid, and FindByTimeExpired for a given time represents all certificates in the queried collection.  
-  
-   
-  
-## Examples  
- The following example opens the current user's personal certificate store, finds only valid certificates, allows the user to select a certificate, and then writes certificate information to the console. The output depends on the certificate you select.  
-  
- [!code-vb[certselect#1](~/add/codesnippet/visualbasic/t-system.security.crypto_117_1.vb)]
- [!code-cs[certselect#1](~/add/codesnippet/csharp/t-system.security.crypto_117_1.cs)]
- [!code-cpp[certselect#1](~/add/codesnippet/cpp/t-system.security.crypto_117_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FindByApplicationPolicy">
@@ -39,15 +30,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByApplicationPolicy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string representing either the application policy friendly name or the object identifier (OID, or <see cref="T:System.Security.Cryptography.Oid" />) of the certificate. For example, "Encrypting File System" or "1.3.6.1.4.1.311.10.3.4" can be used. For an application that will be localized, the OID value must be used, because the friendly name is localized.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindByCertificatePolicy">
@@ -56,15 +56,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByCertificatePolicy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string representing either the friendly name or the object identifier (OID, or <see cref="T:System.Security.Cryptography.Oid" />) of the certificate policy. The best practice is to use the OID, such as "1.3.6.1.4.1.311.10.3.4". For an application that will be localized, the OID must be used, because the friendly name is localized.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindByExtension">
@@ -73,15 +82,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string describing the extension to find. The object identifier (OID) is most commonly used to direct the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method to search for all certificates that have an extension matching that OID value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindByIssuerDistinguishedName">
@@ -90,15 +108,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerDistinguishedName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string representing the issuer distinguished name of the certificate. This is a more specific search than that provided by the FindByIssuerName enumeration value. Using the FindByIssuerDistinguishedName value, the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method performs a case-insensitive string comparison for the entire distinguished name. Searching by issuer name is a less precise search.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindByIssuerName">
@@ -107,15 +134,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string representing the issuer name of the certificate. This is a less specific search than that provided by the FindByIssuerDistinguishedName enumeration value. Using the FindByIssuerName value, the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method performs a case-insensitive string comparison using the supplied value. For example, if you pass "MyCA" to the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method, it will find all certificates with the issuer name containing that string, regardless of other issuer values.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindByKeyUsage">
@@ -124,15 +160,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByKeyUsage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be either a string representing the key usage or an integer representing a bit mask containing all the requested key usages. For the string value, only one key usage at a time can be specified, but the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method can be used in a cascading sequence to get the intersection of the requested usages. For example, the <paramref name="findValue" /> parameter can be set to "KeyEncipherment" or an integer (0x30 indicates "KeyEncipherment" and "DataEncipherment"). Values of the <see cref="T:System.Security.Cryptography.X509Certificates.X509KeyUsageFlags" /> enumeration can also be used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindBySerialNumber">
@@ -141,15 +186,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindBySerialNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string that represents the serial number of the certificate as displayed by the certificate dialog box, but without the spaces, or as returned by the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumberString%2A" /> method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindBySubjectDistinguishedName">
@@ -158,15 +212,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectDistinguishedName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string representing the subject distinguished name of the certificate. This is a more specific search than that provided by the FindBySubjectName enumeration value. Using the FindBySubjectDistinguishedName value, the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method performs a case-insensitive string comparison for the entire distinguished name. Searching by subject name is a less precise search.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindBySubjectKeyIdentifier">
@@ -175,15 +238,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectKeyIdentifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string representing the subject key identifier in hexadecimal, such as "F3E815D45E83B8477B9284113C64EF208E897112", as displayed in the UI.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindBySubjectName">
@@ -192,15 +264,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string representing the subject name of the certificate. This is a less specific search than that provided by the FindBySubjectDistinguishedName enumeration value. Using the FindBySubjectName value, the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method performs a case-insensitive string comparison using the supplied value. For example, if you pass "MyCert" to the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method, it will find all certificates with the subject name containing that string, regardless of other subject values. Searching by distinguished name is a more precise search.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindByTemplateName">
@@ -209,15 +290,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByTemplateName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string representing the template name of the certificate, such as "ClientAuth". A template name is an X509 version 3 extension that specifies the uses of the certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindByThumbprint">
@@ -226,15 +316,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a string representing the thumbprint of the certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindByTimeExpired">
@@ -243,15 +342,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeExpired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a <see cref="T:System.DateTime" /> value in local time. For example, you can find all the certificates that will be valid until the end of the year by eliminating the results of a <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> operation for FindByTimeExpired of the last day of the year from the results of a <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> operation for <see cref="System.DateTime.Now%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindByTimeNotYetValid">
@@ -260,15 +368,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeNotYetValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a <see cref="T:System.DateTime" /> value in local time. The value does not have to be in the future. For example, you can use FindByTimeNotYetValid to find certificates that became valid in the current year by taking the intersection of the results of a <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> operation for FindByTimeNotYetValid for the last day of last year with the results of a <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> operation for FindByTimeValid of <see cref="System.DateTime.Now%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindByTimeValid">
@@ -277,15 +394,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509FindType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <paramref name="findValue" /> parameter for the <see cref="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A" /> method must be a <see cref="T:System.DateTime" /> value in local time. You can use <see cref="System.DateTime.Now%2A" /> to find all the currently valid certificates.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

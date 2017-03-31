@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeometryConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts instances of other types to and from instances of <see cref="T:System.Windows.Media.Geometry" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Geometry" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Context information required for conversion.</param>
-        <param name="sourceType">The source <see cref="T:System.Type" /> that is being queried for conversion support.</param>
-        <summary>Indicates whether an object can be converted from a given type to an instance of a <see cref="T:System.Windows.Media.Geometry" />.</summary>
-        <returns>
-          <see langword="true" /> if object of the specified type can be converted to a <see cref="T:System.Windows.Media.Geometry" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Context information required for conversion.</param>
-        <param name="destinationType">The desired type this <see cref="T:System.Windows.Media.Geometry" /> is being evaluated to be converted to.</param>
-        <summary>Determines whether instances of <see cref="T:System.Windows.Media.Geometry" /> can be converted to the specified type.</summary>
-        <returns>
-          <see langword="true" /> if instances of <see cref="T:System.Windows.Media.Geometry" /> can be converted to <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,20 +96,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">Context information required for conversion.</param>
-        <param name="culture">Cultural information respected during conversion.</param>
-        <param name="value">The object being converted.</param>
-        <summary>Converts the specified object to a <see cref="T:System.Windows.Media.Geometry" />.</summary>
-        <returns>The <see cref="T:System.Windows.Media.Geometry" /> created from converting <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.GeometryConverter.CanConvertFrom%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Thrown if <paramref name="value" /> is <see langword="null" /> or is not a valid type which can be converted to a <see cref="T:System.Windows.Media.Geometry" />.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -126,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,14 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Context information required for conversion.</param>
-        <param name="culture">Cultural information respected during conversion.</param>
-        <param name="value">The <see cref="T:System.Windows.Media.Geometry" /> to convert.</param>
-        <param name="destinationType">The type to convert the <see cref="T:System.Windows.Media.Geometry" /> to.</param>
-        <summary>Converts the specified <see cref="T:System.Windows.Media.Geometry" /> to the specified type.</summary>
-        <returns>The object created from converting this <see cref="T:System.Windows.Media.Geometry" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">Thrown if <paramref name="value" /> is <see langword="null" /> or is not a <see cref="T:System.Windows.Media.Geometry" />, or if the <paramref name="destinationType" /> cannot be converted into a <see cref="T:System.Windows.Media.Geometry" />.</exception>
       </Docs>
     </Member>
   </Members>

@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.DateInterval" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates how to determine and format date intervals when calling date-related functions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you call date-related functions, you can use enumeration members in your code in place of the actual values.  
-  
- The `DateInterval` enumeration defines constants used with date-related functions to identify how date intervals are determined and formatted.  For an example, see the <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Day">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Day of month (1 through 31)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DayOfYear">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Day of year (1 through 366)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hour">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Hour (0 through 23)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minute">
@@ -82,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Minute (0 through 59)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Month">
@@ -99,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Month (1 through 12)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Quarter">
@@ -116,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quarter of year (1 through 4)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Second">
@@ -133,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Second (0 through 59)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Weekday">
@@ -150,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Day of week (1 through 7)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WeekOfYear">
@@ -167,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Week of year (1 through 53)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Year">
@@ -184,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Year</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

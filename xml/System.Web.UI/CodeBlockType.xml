@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of the code block.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.UI.CodeBlockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the block type is for code. A Code block type is contained inside the <c>&lt;%   %&gt;</c> characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DataBinding">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.UI.CodeBlockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the block type is for data binding. A DataBinding block type is contained inside the <c>&lt;%#   %&gt;</c> characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EncodedExpression">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.UI.CodeBlockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the block type is for encoded expressions. A EncodedExpression block type is contained inside the <c>&lt;%:   %&gt;</c> characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expression">
@@ -75,7 +75,7 @@
         <ReturnType>System.Web.UI.CodeBlockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the block type is for data expressions. A Expression block type is contained inside the <c>&lt;%=   %&gt;</c> characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

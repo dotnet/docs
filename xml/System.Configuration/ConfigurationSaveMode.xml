@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSaveMode" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines which properties are written out to a configuration file.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ConfigurationSaveMode enumeration values identify which properties are written out to a configuration file when calling the <xref:System.Configuration.Configuration.Save%2A> and <xref:System.Configuration.Configuration.SaveAs%2A> methods.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Full">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationSaveMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Causes all properties to be written to the configuration file. This is useful mostly for creating information configuration files or moving configuration values from one machine to another.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minimal">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationSaveMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Causes only properties that differ from inherited values to be written to the configuration file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Modified">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationSaveMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Causes only modified properties to be written to the configuration file, even when the value is the same as the inherited value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueInstaller" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,27 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Allows you to install and configure a queue that your application needs in order to run. This class is called by the installation utility, for example, InstallUtil.exe, when installing a <see cref="T:System.Messaging.MessageQueue" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MessageQueueInstaller is used by the installation utility to write registry values that are associated with the queue. For more information about installation utilities, see [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md).  
-  
- To install a queue, create a project installer class that inherits from the <xref:System.Configuration.Install.Installer>, and set the <xref:System.ComponentModel.RunInstallerAttribute> for the class to `true`. Within your project, create a MessageQueueInstaller instance for each queue in the installation and add the instance to your project installer class.  
-  
- When creating a MessageQueueInstaller instance, you can optionally pass an existing <xref:System.Messaging.MessageQueue> (for example, from a test server) to the <xref:System.Messaging.MessageQueueInstaller.%23ctor%2A> constructor. This approach automatically provides the configuration settings for the new queue by mirroring the settings of the queue passed in. Alternatively, you can manually set the properties in the MessageQueueInstaller instance to the states you want and call the default constructor.  
-  
- When the install utility is called, it looks for the <xref:System.ComponentModel.RunInstallerAttribute>. If it is `true`, the utility installs all the queues in the <xref:System.Configuration.Install.Installer.Installers%2A> collection associated with your project installer. If <xref:System.ComponentModel.RunInstallerAttribute> is `false`, the utility ignores the project installer.  
-  
- You modify other properties of a MessageQueueInstaller instance either before or after adding the instance to the <xref:System.Configuration.Install.Installer.Installers%2A> collection of your project installer. For example, a queue's <xref:System.Messaging.MessageQueue.Path%2A> must be set before the install utility executes.  
-  
- Typically, you do not call the methods of the MessageQueueInstaller from within your code; they are generally called only by the installutil.exe installation utility. The utility automatically calls the <xref:System.Messaging.MessageQueueInstaller.Install%2A> method during the installation process and calls <xref:System.Messaging.MessageQueueInstaller.Commit%2A> if the installation did not throw an exception. It backs out failures, if necessary, by calling <xref:System.Messaging.MessageQueueInstaller.Rollback%2A> for the object that generated the exception.  
-  
- An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> to automatically maintain information about the components that have already been installed. This state information is continuously updated as each MessageQueueInstaller instance is installed by the utility. It is not usually necessary for your code to explicitly modify the state information.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueueInstaller" /> class. Does not set any instance properties.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="componentToCopy" Type="System.Messaging.MessageQueue" />
       </Parameters>
       <Docs>
-        <param name="componentToCopy">The <see cref="T:System.Messaging.MessageQueue" /> component whose settings determine the property settings of the new queue installed.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueueInstaller" /> class, initializing the installation settings to those of an existing <see cref="T:System.Messaging.MessageQueue" /> instance.</summary>
+        <param name="componentToCopy">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +55,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -89,17 +66,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the queue to be installed accepts only authenticated messages.</summary>
-        <value>
-          <see langword="true" /> if the queue accepts only authenticated messages; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a non-authenticated message is sent to a queue that accepts only authenticated messages, the message is rejected. The sending application can request notification of a message rejection by setting the <xref:System.Messaging.Message.AcknowledgeType%2A> for the message. Otherwise, there is no indication that the message was rejected, so the message can be lost unless you send it to the dead-letter queue.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BasePriority">
@@ -109,7 +78,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -121,18 +89,9 @@
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the base priority that is used to route a public queue's messages over the network.</summary>
-        <value>The single base priority for all messages sent to the public queue. The default is zero (0).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BasePriority is used for routing the queue's messages over the network. Use the BasePriority to give the messages sent to the queue a higher or lower priority than that for messages sent to other queues. When a queue's base priority is set, all the messages sent to it are given a higher priority than that of the messages sent to queues with a lower base priority. The queue's base priority has no effect on the order of the messages in the queue or on how messages are read from the queue.  
-  
- The BasePriority applies only to public queues that are accessed through the domain controller (in other words, using the public format name). The base priority of private queues and of directly accessed public queues is always zero.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -142,30 +101,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.TypeConverter("System.ComponentModel.GuidConverter, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.GuidConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an implementation-specific queue type.</summary>
-        <value>A <see cref="T:System.Guid" /> that represents the queue category (or Message Queuing type identifier), which allows applications to categorize their queues according to how they are used. The default is <see langword="Guid.empty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The queue category enables an application to categorize associated queues according to the way they are used. The <xref:System.Messaging.MessageQueue.Category%2A> can be a null reference. You can also define a new category.  
-  
- The <xref:System.Messaging.MessageQueue.Category%2A> property provides access to the Message Queuing type identifier property, which is associated with a particular queue and is read/write. You can use the <xref:System.Guid.NewGuid%2A> method to create a category value that is guaranteed to be unique across all <xref:System.Guid> values. However, it is necessary only for the category value to be distinct from other categories, not from all other <xref:System.Guid> values. For example, you can set the <xref:System.Messaging.MessageQueue.Category%2A> for one group of queues to {00000000-0000-0000-0000-000000000001} and the <xref:System.Messaging.MessageQueue.Category%2A> for another group to {00000000-0000-0000-0000-000000000002}.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -175,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,20 +133,9 @@
         <Parameter Name="savedState" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="savedState">A <see cref="T:System.Collections.IDictionary" /> that contains the post-installation state of the computer.</param>
-        <summary>Completes the installation process by committing the <see cref="T:System.Messaging.MessageQueue" /> installation information that the <see cref="System.Messaging.MessageQueueInstaller.Install%2A" /> method wrote to the registry. This method is meant to be used by installation tools, which automatically call the appropriate methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, you do not call the methods of the <xref:System.Messaging.MessageQueueInstaller> from within your code; they are generally called only by the installutil.exe installation utility. The utility automatically calls the <xref:System.Messaging.MessageQueueInstaller.Install%2A> method during the installation process. Installation is transactional, so if there is a failure of any installation project component during the installation, all the previously installed components are rolled back to their pre-installation states. This is accomplished by calling each component's <xref:System.Messaging.MessageQueueInstaller.Rollback%2A> method.  
-  
- After a successful installation of all the components that are associated with the installation project has occurred, the installation utility commits the installations. Commit completes the installation of the <xref:System.Messaging.MessageQueue> by setting the queue to the appropriate initial state. If the queue specified by the <xref:System.Messaging.MessageQueueInstaller.Path%2A> property already exists and contains messages, Commit clears the messages. Commit, rather than <xref:System.Messaging.MessageQueueInstaller.Install%2A>, clears the messages because the act of purging the messages cannot be rolled back.  
-  
- An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> to automatically maintain information about the components that have already been installed. This state information, which is passed to Commit as the `savedState` parameter, is continuously updated as the utility commits each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information. When the queue has been cleared, Commit posts a log entry to the `savedState` that is associated with the installation.  
-  
- ]]></format>
-        </remarks>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyFromComponent">
@@ -208,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,19 +154,9 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">A <see cref="T:System.ComponentModel.IComponent" /> to use as a template for the <see cref="T:System.Messaging.MessageQueueInstaller" />.</param>
-        <summary>Copies the property values of a <see cref="T:System.Messaging.MessageQueue" /> component that are required at install time for a message queue.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, you do not call the methods of the <xref:System.Messaging.MessageQueueInstaller> from within your code; they are generally called only by the installutil.exe installation utility. CopyFromComponent is used by the installation utility to set the property values for the <xref:System.Messaging.MessageQueueInstaller> to the values of an existing <xref:System.Messaging.MessageQueue>.  
-  
- If the <xref:System.Messaging.MessageQueue.Path%2A> of the <xref:System.Messaging.MessageQueue> that is passed in is an empty string (""), you must set the <xref:System.Messaging.MessageQueue.Path%2A> property to a non-empty value before the installer executes.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The component associated with this <see cref="T:System.Messaging.MessageQueueInstaller" /> is not a <see cref="T:System.Messaging.MessageQueue" />.</exception>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EncryptionRequired">
@@ -240,7 +166,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -252,16 +177,9 @@
         <ReturnType>System.Messaging.EncryptionRequired</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the queue accepts only private, or encrypted, messages.</summary>
-        <value>One of the <see cref="T:System.Messaging.EncryptionRequired" /> values that indicates the encryption level required on messages sent to the queue. The default is <see langword="Optional" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When encryption is specified, only the <xref:System.Messaging.Message.Body%2A> of a message is encrypted. Other properties, such as the <xref:System.Messaging.Message.Label%2A>, are not encrypted.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -271,7 +189,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -281,25 +198,9 @@
         <Parameter Name="stateSaver" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="stateSaver">A <see cref="T:System.Collections.IDictionary" /> used to save information needed to perform a commit, rollback, or uninstall operation.</param>
-        <summary>Performs the installation and writes message queue information to the registry. This method is meant to be used by installation tools, which automatically call the appropriate methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Install method writes message queue information to the registry, and associates the <xref:System.Messaging.MessageQueue> instance with a queue that is located at the path specified by the <xref:System.Messaging.MessageQueueInstaller.Path%2A> property. If the queue does not already exist, Install creates a transactional queue. Install sets the new or existing queue properties to those that you have specified in the <xref:System.Messaging.MessageQueueInstaller>. If the queue already exists, its properties are reset to those of the <xref:System.Messaging.MessageQueueInstaller>. If the existing queue is not transactional, it is deleted and then recreated as a transactional queue.  
-  
-> [!CAUTION]
->  If it is necessary to recreate the queue, messages in the queue will be lost.  
-  
- Typically, you do not call the methods of the <xref:System.Messaging.MessageQueueInstaller> from within your code; they are generally called only by the installutil.exe installation utility. The utility automatically calls the Install method during the installation process to write registry information that is associated with the message queue being installed. Installation is transactional, so if there is a failure of any installation project component during the installation, all the previously installed components are rolled back to their pre-installation states. This is accomplished by calling each component's <xref:System.Messaging.MessageQueueInstaller.Rollback%2A> method.  
-  
- After a successful installation of all the components that are associated with the installation project has occurred, the installation utility commits the installations. <xref:System.Messaging.MessageQueueInstaller.Commit%2A> completes the installation of the <xref:System.Messaging.MessageQueue> by setting the queue to the appropriate initial state. If the queue specified by the <xref:System.Messaging.MessageQueueInstaller.Path%2A> property already exists and contains messages, <xref:System.Messaging.MessageQueueInstaller.Commit%2A> clears the messages. <xref:System.Messaging.MessageQueueInstaller.Commit%2A>, rather than Install, clears the messages because the act of purging the messages cannot be rolled back.  
-  
- An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> to automatically maintain information about the components that have already been installed. This state information, which is passed to Install as the `stateSaver` parameter, is continuously updated as the utility installs each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information.  
-  
- ]]></format>
-        </remarks>
+        <param name="stateSaver">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEquivalentInstaller">
@@ -309,7 +210,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -319,18 +219,10 @@
         <Parameter Name="otherInstaller" Type="System.Configuration.Install.ComponentInstaller" />
       </Parameters>
       <Docs>
-        <param name="otherInstaller">The installer to compare.</param>
-        <summary>Determines whether the specified installer can handle the same kind of installation as this installer.</summary>
-        <returns>
-          <see langword="true" /> if this installer and the installer specified by the <paramref name="otherInstaller" /> parameter can handle the same kind of installation; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, <xref:System.Configuration.Install.ComponentInstaller.IsEquivalentInstaller%2A> returns `true` only if this installer and the installer specified by the `otherInstaller` parameter are of the same type.  
-  
- ]]></format>
-        </remarks>
+        <param name="otherInstaller">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -340,7 +232,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -352,17 +243,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a description of the queue.</summary>
-        <value>The label that describes the message queue. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.MessageQueue.Label%2A> property does not need to be unique across queues.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The Label is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumJournalSize">
@@ -372,32 +255,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Messaging.Design.SizeConverter))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum size of the journal that is associated with the queue.</summary>
-        <value>The maximum size, in kilobytes, of the journal queue, which records messages that are removed from the queue. The Message Queuing default is no limit.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a queue is created, Message Queuing automatically creates a queue journal in the same location as the new queue. The queue journal is used to track the messages that are removed from the queue.  
-  
- Two types of messages remain untracked: those that are removed from the queue because their time-to-be-received timer expired, and those that are purged from the queue.  
-  
- Applications cannot send messages to the journal queue. However, you must periodically clear the queue to remove the messages that are no longer needed. Messages stored in journal queues count toward the quota for the computer where the queues reside. (The computer quota is set by the administrator.)  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumQueueSize">
@@ -407,28 +273,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Messaging.Design.SizeConverter))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum size of the queue.</summary>
-        <value>The maximum size, in kilobytes, of the queue. The Message Queuing default is no limit.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The maximum queue size is typically set at the time of queue creation, although it can be reset later.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MulticastAddress">
@@ -438,7 +291,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -450,14 +302,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Introduced in MSMQ 3.0. Gets or sets the multicast address associated with the queue.</summary>
-        <value>A <see cref="T:System.String" /> that contains a valid multicast address (in the form shown below) or <see langword="null" />, which indicates that the queue is not associated with a multicast address.  
-  
-```  
-&lt;address&gt;:&lt;port&gt;  
-```</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.PlatformNotSupportedException">MSMQ 3.0 is not installed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -467,7 +314,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -485,41 +331,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location of the queue that is referenced by this object.</summary>
-        <value>The path that represents the location of the queue in the network.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The syntax for the <xref:System.Messaging.MessageQueue.Path%2A> property depends on the type of queue it references. The following table shows the syntax you should use for queues of various types.  
-  
-|Queue type|Syntax|  
-|----------------|------------|  
-|Public queue|`machineName`\\`queueName`|  
-|Private queue|`machineName`\\`Private$`\\`queueName`|  
-|Journal queue|`machineName`\\`queueName`\\`Journal$`|  
-|Machine journal queue|`machineName`\\`Journal$`|  
-|Machine dead-letter queue|`machineName`\\`Deadletter$`|  
-|Machine transactional dead-letter queue|`machineName`\\`XactDeadletter$`|  
-  
- Use "." for the local computer.  
-  
- You can also use the <xref:System.Messaging.MessageQueue.FormatName%2A> or <xref:System.Messaging.MessageQueue.Label%2A> of a Message Queuing application object to describe the queue path. The following table shows the proper syntax for each type of reference.  
-  
-|Reference|Syntax|  
-|---------------|------------|  
-|Format name|FormatName:[ *format name* ]|  
-|Label|Label:[ *label* ]|  
-  
- If you are working offline, you must use the format name to define the queue <xref:System.Messaging.MessageQueue.Path%2A>. If you do not, the application will throw an exception, because the primary domain controller is unavailable to resolve the <xref:System.Messaging.MessageQueue.Path%2A> into the <xref:System.Messaging.MessageQueue.FormatName%2A>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The Path was set to an invalid value, possibly because the syntax is not valid.  
-  
- -or-  
-  
- The Path is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Permissions">
@@ -529,7 +343,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -544,64 +357,9 @@
         <ReturnType>System.Messaging.AccessControlList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets permissions associated with the queue.</summary>
-        <value>A <see cref="T:System.Messaging.AccessControlList" /> that contains one or more access control entries that specify the trustees and permissions to grant for the queue.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the creator of a public or private queue has full control, and the domain group Everyone has permission to get queue properties, get permissions, and write to the queue. Message Queuing accesses each permission list entry in turn until it finds one that applies to the current user and the current attempted action. As with the operating system permissions, the rights that you specifically deny to a user take precedence over those you allow.  
-  
- When you construct the Permissions property, add <xref:System.Messaging.AccessControlEntry> instances to your <xref:System.Messaging.AccessControlList> collection. When you construct each access control entry, you can specify generic or standard access rights. The rights to a queue can be any combination of the following:  
-  
--   Delete  
-  
--   Read Security  
-  
--   Write Security  
-  
--   Synchronize  
-  
--   Modify Owner  
-  
--   Read  
-  
--   Write  
-  
--   Execute  
-  
--   Required  
-  
--   All  
-  
--   None  
-  
- These rights are a set of bit flags that you can combine using the bitwise OR:  
-  
--   Full Control  
-  
--   Delete Message  
-  
--   Receive Message  
-  
--   Peek Message  
-  
--   Receive Journal Message  
-  
--   Get Queue Properties  
-  
--   Set Queue Properties  
-  
--   Get Permissions  
-  
--   Set Permissions  
-  
--   Take Queue Ownership  
-  
--   Write Message  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -611,7 +369,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -621,20 +378,9 @@
         <Parameter Name="savedState" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="savedState">A <see cref="T:System.Collections.IDictionary" /> that contains the pre-installation state of the computer.</param>
-        <summary>Restores the computer to the state it was in before the installation, by rolling back the queue information that the installation procedure wrote to the registry. This method is meant to be used by installation tools, which automatically call the appropriate methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Rollback method undoes the effects of the <xref:System.Messaging.MessageQueueInstaller.Install%2A> method. Rollback is called if the installation of any component in the installation project fails. The <xref:System.Messaging.MessageQueueInstaller.Install%2A> method creates or sets the properties for a queue. Rollback either deletes the queue or resets the properties of a pre-existing queue to their pre-installation values.  
-  
- Typically, you do not call the methods of the <xref:System.Messaging.MessageQueueInstaller> from within your code; they are generally called only by the InstallUtil.exe installation utility. The utility automatically calls the Rollback method after an installation failure to undo any changes that the installation process has already made.  
-  
- An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> to automatically maintain information about the components that have already been installed. This state information, which is passed to Rollback as the `savedState` parameter, is continuously updated as the utility rolls back each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information.  
-  
- ]]></format>
-        </remarks>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Transactional">
@@ -644,7 +390,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -656,17 +401,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the queue accepts only messages sent as part of a transaction.</summary>
-        <value>
-          <see langword="true" /> if the queue can only accept messages sent as part of a transaction; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Messages can be retrieved from a local transaction queue with or without using a transaction. If you do not specify a transaction context, Message Queuing creates a single internal transaction for you.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -676,7 +413,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -686,20 +422,9 @@
         <Parameter Name="savedState" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="savedState">A <see cref="T:System.Collections.IDictionary" /> that contains the post-installation state of the computer.</param>
-        <summary>Removes an installation by removing queue information from the registry. This method is meant to be used by uninstallation tools, which automatically call the appropriate methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Messaging.MessageQueueInstaller.UninstallAction%2A> is `Remove`, Uninstall also deletes the queue associated with the <xref:System.Messaging.MessageQueue>.  
-  
- Typically, you do not call the methods of the <xref:System.Messaging.MessageQueueInstaller> from within your code; they are generally called only by the InstallUtil.exe installation utility (in uninstall mode). The utility automatically calls the Uninstall method to restore the parts of the system that were affected by the installation to their pre-installation states. This includes deleting registry information that is associated with the MessageQueue being uninstalled.  
-  
- An application's uninstall routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> to automatically maintain information about the components that have already been uninstalled. This state information, which is passed to Uninstall as the `savedState` parameter, is continuously updated as the utility uninstalls each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information.  
-  
- ]]></format>
-        </remarks>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UninstallAction">
@@ -709,7 +434,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -721,16 +445,9 @@
         <ReturnType>System.Configuration.Install.UninstallAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates what the installer does with the queue at uninstall time: remove it, restore it to its pre-installation state, or leave it in its current installed state.</summary>
-        <value>One of the <see cref="T:System.Configuration.Install.UninstallAction" /> values that indicates what state to leave the queue in when the <see cref="T:System.Messaging.MessageQueue" /> is uninstalled. The default is <see langword="Remove" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you install a queue, you can optionally use an existing queue. If you do so, you must decide whether the queue should return to its pre-installation state, or remain in its current, post-installation state. If you elect to return the queue to its pre-installation state, messages that were deleted from the queue at install time are not restored. You can reset only queue properties that are associated with the <xref:System.Messaging.MessageQueueInstaller> to their pre-installation values.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseJournalQueue">
@@ -740,7 +457,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -752,19 +468,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether messages that are retrieved from the queue are also copied to the associated journal queue.</summary>
-        <value>
-          <see langword="true" /> to copy messages that are retrieved from the queue to the journal queue; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A journal queue lets you keep track of messages even after they have been retrieved from the queue. However, two types of messages remain untracked: those that are removed from the queue when their time-to-be-received timer expires, and those that are purged from the queue.  
-  
- A journal queue should be cleared periodically to remove messages that are no longer needed. Messages stored in the journal queue count toward the quota for the computer on which the journal is located.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.SearchScope" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the possible scopes for a directory search that is performed using the <see cref="T:System.DirectoryServices.DirectorySearcher" /> object.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SearchScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Limits the search to the base object. The result contains a maximum of one object.  When the <see cref="System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A" /> property is specified for a search, the scope of the search must be set to Base.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OneLevel">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SearchScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Searches the immediate child objects of the base object, excluding the base object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Subtree">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SearchScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Searches the whole subtree, including the base object and all its child objects. If the scope of a directory search is not specified, a Subtree type of search is performed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

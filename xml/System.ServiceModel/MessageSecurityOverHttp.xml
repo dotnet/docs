@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageSecurityOverHttp" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Enables setting message-level security properties on the wsDualHttpBinding binding.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This object is accessed from the binding by means of the <xref:System.ServiceModel.WSDualHttpBinding.Security%2A> property, which returns a <xref:System.ServiceModel.WSDualHttpSecurity> object. The <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A> property provides a reference to the MessageSecurityOverHttp object.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageSecurityOverHttp" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,32 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the algorithm suite used for security messages at the SOAP level.</summary>
-        <value>A <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" />. The default is <see cref="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is most relevant when working with a non-[!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] platform that uses a set of algorithms that are different than the default. You should be aware of the strengths and weaknesses of the relevant algorithms when making modifications to this setting.  
-  
-   
-  
-## Examples  
- The following code shows how to access and set this property.  
-  
- [!code-vb[c_ProgrammingSecurity#8](~/add/codesnippet/visualbasic/p-system.servicemodel.me_5_1.vb)]
- [!code-cs[c_ProgrammingSecurity#8](~/add/codesnippet/csharp/p-system.servicemodel.me_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of AlgorithmSuite is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientCredentialType">
@@ -80,41 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MessageCredentialType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the type of client credential used for client authentication in the wsHttpBinding or wsDualHttpBinding bindings.</summary>
-        <value>A <see cref="T:System.ServiceModel.MessageCredentialType" />. The default is <see cref="T:System.ServiceModel.MessageCredentialType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used to set the `MessageCredentialType` that is used to authenticate the caller at the service. Valid types are:  
-  
--   <xref:System.ServiceModel.MessageCredentialType>  
-  
--   <xref:System.ServiceModel.MessageCredentialType>  
-  
--   <xref:System.ServiceModel.MessageCredentialType>  
-  
--   <xref:System.ServiceModel.MessageCredentialType>  
-  
--   <xref:System.ServiceModel.MessageCredentialType>  
-  
-   
-  
-## Examples  
- The following code sets this property.  
-  
- [!code-cs[c_CreateSecureSession#4](~/add/codesnippet/csharp/p-system.servicemodel.me_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of ClientCredentialType is not a valid <see cref="T:System.ServiceModel.MessageCredentialType" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSecureConversationEnabled">
@@ -124,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,8 +80,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Only used in extensibility scenarios to indicate whether an instance of a class derived from <see cref="T:System.ServiceModel.MessageSecurityOverHttp" /> is configured to perform secure conversation as described in WS-SecurityConversation.</summary>
-        <returns>Always returns <see langword="true" />, unless overridden in a derived class.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,40 +92,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the service credential is provisioned at the client out of band or is obtained from the service through a process of negotiation.</summary>
-        <value>
-          <see langword="true" /> if service credential is obtained through a process of negotiation; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this property to `true`, requires WS-Trust and WS-SecureConversation to be supported by the client and the service. Setting this property to `false` does not require WS-Trust or WS-SecureConversation to be supported.  
-  
- For Anonymous, Username or Certificate client credential types, setting this property to `false` implies that the service certificate must be available at the client out of band and that the client must specify the service's certificate to use.  
-  
- In the case of Windows credentials, setting this property to `false` causes an authentication based on `KerberosToken`. This requires that the client and service be part of a Kerberos domain. This mode is interoperable with SOAP stacks that implement the Kerberos token profile from OASIS. Setting this property to `true` causes a SOAP negotiation that tunnels SPNego exchange over SOAP messages. This mode is not interoperable.  
-  
- This property indicates whether the service credential is negotiated automatically between the client and the service. If this property is `true`, then such negotiation occurs. If this property is `false`, then the service credentials must be specified at the client before communication with the service can occur.  
-  
- If this property is set to `false`, and the binding is configured to use Windows as a client credential type, the service account must be associated with a Service Principal Name (SPN). To do this, run the service under the NETWORK SERVICE account, or LOCAL SYSTEM account. Alternatively, use the SetSpn.exe tool to create an SPN for the service account. In either case, the client must use the correct SPN in the [\&lt;servicePrincipalName\&gt;](../Topic/%3CservicePrincipalName%3E.md) element, or by using the <xref:System.ServiceModel.EndpointAddress> constructor. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Service Identity and Authentication](../Topic/Service%20Identity%20and%20Authentication.md).  
-  
-   
-  
-## Examples  
- The following code shows how to access and set this property.  
-  
- [!code-vb[c_ProgrammingSecurity#7](~/add/codesnippet/visualbasic/p-system.servicemodel.me_9_1.vb)]
- [!code-cs[c_ProgrammingSecurity#7](~/add/codesnippet/csharp/p-system.servicemodel.me_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeAlgorithmSuite">
@@ -199,9 +122,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A" /> property has changed from its default value and should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,9 +146,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A" /> property has changed from its default value and should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,9 +170,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A" /> property has changed from its default value and should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

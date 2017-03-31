@@ -4,50 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines the methods that enable a client application to display a user interface to collect identity information prior to creating the channel.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implement the IInteractiveChannelInitializer interface to enable a client application to display a user interface that enables the user of the application to create or select the credentials prior to opening a channel.  
-  
- To implement IInteractiveChannelInitializer, perform the following steps in <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer.BeginDisplayInitializationUI%2A?displayProperty=fullName>:  
-  
-1.  Prompt the user and obtain an appropriate <xref:System.Net.NetworkCredential?displayProperty=fullName>.  
-  
-2.  Add a custom channel parameter object to the collection returned by the <xref:System.ServiceModel.Channels.IChannel.GetProperty%2A?displayProperty=fullName> method on the <xref:System.ServiceModel.IClientChannel> object with a type parameter of <xref:System.ServiceModel.Channels.ChannelParameterCollection?displayProperty=fullName>. This channel parameter object is used by the custom <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager?displayProperty=fullName> to establish the security tokens for the channel.  
-  
-3.  Return.  
-  
- To insert IInteractiveChannelInitializer:  
-  
-1.  Override the <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%2A?displayProperty=fullName> method on the <xref:System.ServiceModel.Description.ClientCredentials?displayProperty=fullName> class.  
-  
-2.  In that method, determine whether the endpoint requires an IInteractiveChannelInitializer and if so, add the IInteractiveChannelInitializer to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.InteractiveChannelInitializers%2A?displayProperty=fullName> collection.  
-  
- There are two ways application developers can make use of an inserted IInteractiveChannelInitializer. The client application can call either <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A?displayProperty=fullName> or <xref:System.ServiceModel.IClientChannel.DisplayInitializationUI%2A?displayProperty=fullName> (or an asynchronous version) prior to opening the channel (the *explicit* approach) or simply call the first operation (the *implicit* approach).  
-  
- If using the implicit approach, the application must call the first operation on an <xref:System.ServiceModel.ClientBase%601> or <xref:System.ServiceModel.IClientChannel> extension. If it calls anything other than the first operation, an exception is thrown.  
-  
- If using the explicit approach, the application must perform the following steps in order:  
-  
-1.  Call either <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A?displayProperty=fullName> or <xref:System.ServiceModel.IClientChannel.DisplayInitializationUI%2A?displayProperty=fullName> (or an asynchronous version).  
-  
-2.  When the initializers have returned, call either the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.IClientChannel> object or on the <xref:System.ServiceModel.IClientChannel> object returned from the <xref:System.ServiceModel.ClientBase%601.InnerChannel%2A?displayProperty=fullName> property.  
-  
-3.  Call operations.  
-  
- It is recommended that production-quality applications control of the user-interface process by adopting the explicit approach.  
-  
- Applications that use the implicit approach invoke the user-interface initializers, but if the user of the application fails to respond within the send timeout period of the binding, an exception is thrown when the user interface returns.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginDisplayInitializationUI">
@@ -57,7 +20,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,25 +32,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="channel">The client channel.</param>
-        <param name="callback">The callback object.</param>
-        <param name="state">Any state data.</param>
-        <summary>An asynchronous call to begin using a user interface to obtain credential information.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> to use to call back when processing has completed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To implement <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer>, perform the following steps in BeginDisplayInitializationUI:  
-  
-1.  Prompt the user in what way you see fit and obtain an appropriate <xref:System.Net.NetworkCredential?displayProperty=fullName>.  
-  
-2.  Add a custom channel parameter object to the collection returned by the <xref:System.ServiceModel.Channels.IChannel.GetProperty%2A?displayProperty=fullName> method on the <xref:System.ServiceModel.IClientChannel> object with a type parameter of <xref:System.ServiceModel.Channels.ChannelParameterCollection?displayProperty=fullName>. This channel parameter object is used by the custom <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager?displayProperty=fullName> to establish the security tokens for the channel.  
-  
-3.  Return.  
-  
- ]]></format>
-        </remarks>
+        <param name="channel">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndDisplayInitializationUI">
@@ -97,7 +47,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,8 +57,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" />.</param>
-        <summary>Called when the <see cref="System.ServiceModel.Dispatcher.IInteractiveChannelInitializer.BeginDisplayInitializationUI%2A" /> has finished.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

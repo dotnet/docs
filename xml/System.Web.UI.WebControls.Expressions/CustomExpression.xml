@@ -19,30 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a way to specify a custom LINQ query that is called in response to an event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CustomExpression class is used with the <xref:System.Web.UI.WebControls.QueryExtender> control. The <xref:System.Web.UI.WebControls.QueryExtender> control supports a variety of options that you can use to filter data. The <xref:System.Web.UI.WebControls.QueryExtender> control supports filters that let you search strings, search values between a specified range, compare a property value in a table to a specified value, and sort data. These options are provided as LINQ expressions in the <xref:System.Web.UI.WebControls.QueryExtender> control. You can use these filter expressions or you can provide a custom expression that you can use in the <xref:System.Web.UI.WebControls.QueryExtender> control. The CustomExpression class enables you to specify a custom expression in your application and call it in an event handler.  
-  
-> [!NOTE]
->  You can provide a custom query that is called by a method instead of an event handler by using the <xref:System.Web.UI.WebControls.Expressions.MethodExpression> class.  
-  
-   
-  
-## Examples  
- The following example shows how to create a CustomExpression object that is used by the <xref:System.Web.UI.WebControls.QueryExtender> control. The custom expression calls the `FilterProducts` method, which contains a custom LINQ expression. The result of the filtering operation is displayed in a <xref:System.Web.UI.WebControls.GridView> control.  
-  
-   
-  
- The following example shows an event handler that contains a custom LINQ query. The expression filters the Product table in the AdventureWorks database and displays products that have a list price greater than or equal to $3,500.00.  
-  
- [!code-cs[QueryExtenderCustomFiltering#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_95_2.cs)]
- [!code-vb[QueryExtenderCustomFiltering#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_95_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpression" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,9 +54,9 @@
         <Parameter Name="source" Type="System.Linq.IQueryable" />
       </Parameters>
       <Docs>
-        <param name="source">The data source that the <see cref="T:System.Linq.IQueryable" /> object uses.</param>
-        <summary>Provides access to the modified <see cref="T:System.Linq.IQueryable" /> object that the data source uses.</summary>
-        <returns>An instance of the modified data source.</returns>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,15 +73,8 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Linq.IQueryable" /> data source value is set.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.Expressions.CustomExpression> object enables you to specify a custom expression in an event handler.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

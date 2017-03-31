@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.LocalizationCategory" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the category value of a <see cref="T:System.Windows.LocalizabilityAttribute" /> for a [!INCLUDE[TLA#tla_baml](~/add/includes/tlasharptla-baml-md.md)] class or class member.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.LocalizabilityAttribute> attribute can be applied to a class, property, or method.  
-  
- For more information on how to use localization attributes, see [Localization Attributes and Comments](../Topic/Localization%20Attributes%20and%20Comments.md).  
-  
-   
-  
-## Examples  
- The following code example shows the category value of a <xref:System.Windows.LocalizabilityAttribute> defined for a button.  
-  
- [!code-xml[AttributesSnippets#AttributesSnippet1](~/add/codesnippet/xaml/AttributesSnippets/Attributes.xaml#attributessnippet1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Button">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Windows.Controls.Button" /> or related control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CheckBox">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Windows.Controls.CheckBox" /> or related control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ComboBox">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Windows.Controls.ComboBox" /> or related control such as <see cref="T:System.Windows.Controls.ComboBoxItem" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Font-related data such as font name, style, or size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hyperlink">
@@ -106,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Windows.Documents.Hyperlink" /> or related control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ignore">
@@ -123,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Do not localize this resource. This does not apply to any child nodes that might exist.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inherit">
@@ -140,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Inherits its category from a parent node.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -157,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Windows.Controls.Label" /> or related control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ListBox">
@@ -174,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Windows.Controls.ListBox" /> or related control such as <see cref="T:System.Windows.Controls.ListBoxItem" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Menu">
@@ -191,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Windows.Controls.Menu" /> or related control such as <see cref="T:System.Windows.Controls.MenuItem" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeverLocalize">
@@ -208,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Do not localize this resource, or any child nodes whose category is set to **Inherit**.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -225,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Resource does not belong to a standard category.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RadioButton">
@@ -242,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Windows.Controls.RadioButton" /> or related control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -259,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a lengthy piece of text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextFlow">
@@ -276,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For panels that can contain text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -293,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a single line of text, such as text used for a title.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -310,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Windows.Controls.ToolTip" /> or related control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="XmlData">
@@ -327,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!INCLUDE[TLA#tla_xml](~/add/includes/tlasharptla-xml-md.md)] data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

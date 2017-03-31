@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HorizontalAlign" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,23 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the horizontal alignment of items within a container.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HorizontalAlign enumeration represents the horizontal alignment options for items within a container, such as a <xref:System.Web.UI.WebControls.TableCell>.  
-  
-   
-  
-## Examples  
- The following example shows how setting the <xref:System.Web.UI.WebControls.Panel.HorizontalAlign%2A> property of a <xref:System.Web.UI.WebControls.Panel> control changes the horizontal alignment for the text of a <xref:System.Web.UI.WebControls.Label> control that is contained by the <xref:System.Web.UI.WebControls.Panel> control.  
-  
- [!code-cs[System.Web.UI.WebControls.HorizontalAlign#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_398_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.HorizontalAlign#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_398_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Center">
@@ -42,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The contents of a container are centered.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Justify">
@@ -59,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The contents of a container are uniformly spread out and aligned with both the left and right margins.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -76,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The contents of a container are left justified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -93,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The horizontal alignment is not set.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -110,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The contents of a container are right justified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

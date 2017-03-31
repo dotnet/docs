@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,21 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the look and feel property settings to a workflow in design-time environment.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- Workflow themes define the look and feel of a workflow design surface. This includes background styles, foreground styles, fonts, and icons defined for the workflow.  
-  
- A WorkflowTheme is a theme defined for a specific workflow. The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> class can be used for default properties if a specific workflow theme is not desired.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,12 +31,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +46,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -73,24 +57,9 @@
         <ReturnType>System.Workflow.ComponentModel.Design.AmbientTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />.</summary>
-        <value>An <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> that describes default values for the look and feel of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> describes the look and feel of a workflow design surface. This includes background styles, foreground styles, fonts, and icons defined for the workflow design surface.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to access the `AmbientTheme` property. This example is from the Tracking Profile Designer SDK sample. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
-  
- [!code-cs[Wf_samples#124](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#124)]
- [!code-vb[Wf_samples#124](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#124)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -100,7 +69,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,16 +76,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a duplicate theme.</summary>
-        <returns>An object that represents the newly-cloned theme.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use `Clone` to create a duplicate theme with property settings that match the cloning theme.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainingFileDirectory">
@@ -127,7 +88,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -139,16 +99,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the directory part of the <see cref="System.Workflow.ComponentModel.Design.WorkflowTheme.FilePath%2A" />.</summary>
-        <value>The directory part of the <see cref="System.Workflow.ComponentModel.Design.WorkflowTheme.FilePath%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use ContainingFileDirectory to get the directory part of the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.FilePath%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateStandardTheme">
@@ -158,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,17 +120,10 @@
         <Parameter Name="standardThemeType" Type="System.Workflow.ComponentModel.Design.ThemeType" />
       </Parameters>
       <Docs>
-        <param name="standardThemeType">The <see cref="T:System.Workflow.ComponentModel.Design.ThemeType" /> of the standard theme to create.</param>
-        <summary>Creates a standard theme.</summary>
-        <returns>The newly created <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use CreateStandardTheme to create a new theme available anyone who uses the workflow designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="standardThemeType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentTheme">
@@ -188,33 +133,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.WorkflowTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current theme.</summary>
-        <value>A <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> that is used for display settings.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use CurrentTheme to make changes to the theme used to display the workflow.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the CurrentTheme property to access the <xref:System.Workflow.ComponentModel.Design.AmbientTheme> associated with a workflow.  
-  
- This code example is part of the Workflow Monitor SDK Sample from the DesignerGlyphProvider.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
-  
- [!code-cs[WF_Samples#133](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#133)]
- [!code-vb[WF_Samples#133](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#133)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -224,17 +151,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the description of the theme.</summary>
-        <value>The description of the theme.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The property value cannot be set because the workflow theme is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="DesignerThemes">
@@ -244,7 +169,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -256,16 +180,9 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of designer themes associated with the workflow.</summary>
-        <value>A list of designer themes associated with the workflow.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use DesignerThemes to retrieve a list of designer themes that are associated with the workflow.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableChangeNotification">
@@ -275,24 +192,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to enable change notification.</summary>
-        <value>
-          <see langword="true" /> to enable change notification; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Enabling change notification causes the theme changed events to occur when changes to the theme are made.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FilePath">
@@ -302,7 +210,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -317,17 +224,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the file path for the theme.</summary>
-        <value>The file path for the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FilePath represents the path to the file that stores the theme settings.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The property value cannot be set because the workflow theme is read-only.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -337,7 +236,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,15 +243,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, allows an object to clean up any resources deterministically.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method cleans up resources by calling <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.System%23IDisposable%23Dispose%2A>(`false`). Override <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.System%23IDisposable%23Dispose%2A> to customize the cleanup.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateThemeFilePath">
@@ -363,7 +254,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -371,16 +261,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates a file path for the theme.</summary>
-        <returns>A new, unique file path for the theme.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use GenerateThemeFilePath to create a unique file path for the theme.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDesignerTheme">
@@ -390,7 +273,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -405,17 +287,10 @@
         <Parameter Name="designer" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="designer">The activity designer from which to retrieve the theme.</param>
-        <summary>Gets the theme for the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> associated with the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use GetDesignerTheme to retrieve the theme associated with a specified activity designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="designer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -425,7 +300,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -435,9 +309,9 @@
         <Parameter Name="themeFilePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="themeFilePath">The file path of the theme.</param>
-        <summary>Loads the theme from the specified file path.</summary>
-        <returns>A new <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> loaded from the filename specified.</returns>
+        <param name="themeFilePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,7 +322,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -459,18 +332,11 @@
         <Parameter Name="themeFilePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serializationManager">The serialization manager to use to load the theme.</param>
-        <param name="themeFilePath">The file path from which to load the theme.</param>
-        <summary>Loads a new theme from the specified path using a serialization manager.</summary>
-        <returns>A new <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> loaded from the file path specified using the serialization manager specified.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If your theme requires custom serialization, use this method to load your method using your custom serialization manager.  
-  
- ]]></format>
-        </remarks>
+        <param name="serializationManager">To be added.</param>
+        <param name="themeFilePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadThemeSettingFromRegistry">
@@ -480,7 +346,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -488,16 +353,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Loads a theme from the registry.</summary>
-        <returns>A <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> loaded from the registry.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `LoadThemeSettingFromRegistry` loads  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupPath">
@@ -507,23 +365,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the file path from the registry.</summary>
-        <value>The file path from the registry to the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `FilePath` represents the path to the file that stores the theme settings.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -533,24 +383,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the theme.</summary>
-        <value>The name of the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the name to uniquely identify the theme among other themes.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The property value cannot be set because the workflow theme is read-only.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -560,7 +401,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -572,20 +412,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the workflow theme is read-only.</summary>
-        <value>
-          <see langword="true" /> if the workflow theme is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set and un-set the `ReadOnly` property for the purposes of setting the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme%2A> property. This example is from the Tracking Profile Designer SDK sample. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
-  
- [!code-cs[Wf_samples#124](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#124)]
- [!code-vb[Wf_samples#124](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#124)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegistryKeyPath">
@@ -595,23 +424,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the registry key path for the theme.</summary>
-        <value>The registry key path for the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the registry key to provide a unique place in the Windows registry to save theme information.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -621,7 +442,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -631,16 +451,9 @@
         <Parameter Name="themeFilePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="themeFilePath">The file in which to save the <see langword="WorkflowTheme" />.</param>
-        <summary>Saves a theme to a file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use Save to persist a theme to a file.  
-  
- ]]></format>
-        </remarks>
+        <param name="themeFilePath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveThemeSettingToRegistry">
@@ -650,7 +463,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -658,15 +470,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves a theme to the registry.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use SaveThemeSettingToRegistry to save the theme to the registry using the key specified by <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.RegistryKeyPath%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StandardThemes">
@@ -676,15 +481,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Workflow.ComponentModel.Design.ThemeType,System.String[]&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of standard themes.</summary>
-        <value>A list of available themes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -695,7 +499,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -703,7 +506,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the managed resources used by the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -714,22 +517,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a theme changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ThemeChanged occurs when properties of the theme changes, or when a theme is loaded.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -739,7 +534,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -751,8 +545,8 @@
         <ReturnType>System.Workflow.ComponentModel.Design.ThemeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the theme.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.Design.ThemeType" /> of the theme. Possible values are <see langword="Default" />, <see langword="System" />, and <see langword="UserDefined" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -763,24 +557,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the version of the theme.</summary>
-        <value>The version information for the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the version information to indicate successive improvements to a named theme.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The property value cannot be set because the workflow theme is read-only.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

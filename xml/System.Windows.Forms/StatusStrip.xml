@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusStrip" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,39 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows status bar control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- StatusStrip replaces the <xref:System.Windows.Forms.StatusBar> control. Special features of StatusStrip include a custom table layout, support for the form's sizing and moving grips, and support for the <xref:System.Windows.Forms.ToolStripStatusLabel.Spring%2A> property, which allows a <xref:System.Windows.Forms.ToolStripStatusLabel> to fill available space automatically.  
-  
- The following items are specifically designed to work seamlessly with both <xref:System.Windows.Forms.ToolStripSystemRenderer> and <xref:System.Windows.Forms.ToolStripProfessionalRenderer> in all orientations. They are available by default at design time for the StatusStrip control:  
-  
--   <xref:System.Windows.Forms.ToolStripStatusLabel>  
-  
--   <xref:System.Windows.Forms.ToolStripDropDownButton>  
-  
--   <xref:System.Windows.Forms.ToolStripSplitButton>  
-  
--   <xref:System.Windows.Forms.ToolStripProgressBar>  
-  
- A StatusStrip control displays information about an object being viewed on a <xref:System.Windows.Forms.Form>, the object's components, or contextual information that relates to that object's operation within your application. Typically, a StatusStrip control consists of <xref:System.Windows.Forms.ToolStripStatusLabel> objects, each of which displays text, an icon, or both. The StatusStrip can also contain <xref:System.Windows.Forms.ToolStripDropDownButton>, <xref:System.Windows.Forms.ToolStripSplitButton>, and <xref:System.Windows.Forms.ToolStripProgressBar> controls.  
-  
- The default StatusStrip has no panels. To add panels to a StatusStrip, use the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A?displayProperty=fullName> method, or use the [StatusStrip Items Collection Editor](http://msdn.microsoft.com/en-us/7c56677b-d5eb-4eca-949c-a22c4e3833a1) at design time to add, remove, or reorder items and modify properties. Use the [StatusStrip Tasks Dialog Box](http://msdn.microsoft.com/en-us/c150678b-4873-4743-b23f-84fb3126582c) at design time to run common commands.  
-  
- Although StatusStrip replaces and extends the <xref:System.Windows.Forms.StatusBar> control of previous versions, <xref:System.Windows.Forms.StatusBar> is retained for both backward compatibility and future use if you choose.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a StatusStrip with various common properties set.  
-  
- [!code-vb[System.Windows.Forms.StatusStrip.CommonProps#0](~/add/codesnippet/visualbasic/t-system.windows.forms.s_1_1.vb)]
- [!code-cs[System.Windows.Forms.StatusStrip.CommonProps#0](~/add/codesnippet/csharp/t-system.windows.forms.s_1_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusStrip" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +45,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -93,9 +59,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.StatusStrip" /> supports overflow functionality.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.StatusStrip" /> supports overflow functionality; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +71,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,24 +78,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessibility object for the control.</summary>
-        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you do not explicitly call the CreateAccessibilityInstance method, it will be called when the <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=fullName> property is referenced.  
-  
-> [!NOTE]
->  To get or set the <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=fullName> property, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
-  
-   
-  
-## Examples  
- For a code example demonstrating how to use CreateAccessibilityInstance, see <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultItem">
@@ -141,7 +90,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,19 +101,12 @@
         <Parameter Name="onClick" Type="System.EventHandler" />
       </Parameters>
       <Docs>
-        <param name="text">The text to use for the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />. If the <c>text</c> parameter is a hyphen (-), this method creates a <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</param>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> to display on the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</param>
-        <param name="onClick">An event handler that raises the <see cref="E:System.Windows.Forms.Control.Click" /> event when the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> is clicked.</param>
-        <summary>Creates a default <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> with the specified text, image, and event handler on a new <see cref="T:System.Windows.Forms.StatusStrip" /> instance.</summary>
-        <returns>A <see cref="System.Windows.Forms.ToolStripStatusLabel.%23ctor%28System.String%2CSystem.Drawing.Image%2CSystem.EventHandler%29" />, or a <see cref="T:System.Windows.Forms.ToolStripSeparator" /> if the <paramref name="text" /> parameter is a hyphen (-).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CreateDefaultItem method to add a <xref:System.Windows.Forms.ToolStripStatusLabel> with commonly used characteristics to a <xref:System.Windows.Forms.StatusStrip>.  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <param name="image">To be added.</param>
+        <param name="onClick">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultDock">
@@ -175,15 +116,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets which borders of the <see cref="T:System.Windows.Forms.StatusStrip" /> are docked to the <see cref="T:System.Windows.Forms.ToolStripContainer" />.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default is <see cref="T:System.Windows.Forms.DockStyle" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,23 +134,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the spacing, in pixels, between the left, right, top, and bottom edges of the <see cref="T:System.Windows.Forms.StatusStrip" /> from the edges of the form.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Padding" /> that represents the spacing. The default is <c>{Left=6, Top=2, Right=0, Bottom=2}</c>.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DefaultPadding property to set the interior space between controls. When a control is a container of items, padding represents the space from the edge of the container.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultShowItemToolTips">
@@ -220,16 +152,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether ToolTips are shown for the <see cref="T:System.Windows.Forms.StatusStrip" /> by default.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,15 +170,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size, in pixels, of the <see cref="T:System.Windows.Forms.StatusStrip" /> when it is first created.</summary>
-        <value>A <see cref="System.Drawing.Point.%23ctor%2A" /> constructor representing the size of the <see cref="T:System.Windows.Forms.StatusStrip" />, in pixels.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +188,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,19 +197,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.StatusStrip" /> and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.StatusStrip> references. This method invokes the `Dispose()` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dock">
@@ -291,7 +209,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -303,26 +220,9 @@
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets which <see cref="T:System.Windows.Forms.StatusStrip" /> borders are docked to its parent control and determines how a <see cref="T:System.Windows.Forms.StatusStrip" /> is resized with its parent.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default is <see cref="T:System.Windows.Forms.DockStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Dock property to define how a <xref:System.Windows.Forms.StatusStrip> is automatically resized as its parent control is resized. For example, setting Dock to <xref:System.Windows.Forms.DockStyle> causes the <xref:System.Windows.Forms.StatusStrip> to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their Z-order, which is the visual layering of controls on a form along the form's Z-axis (depth).  
-  
- A control can be docked to one edge of its parent container or can be docked to all edges and fill the parent container.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a <xref:System.Windows.Forms.StatusStrip> with various common properties set, including the Dock property.  
-  
- [!code-vb[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_120_1.vb)]
- [!code-cs[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.s_120_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GripStyle">
@@ -332,7 +232,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -344,24 +243,9 @@
         <ReturnType>System.Windows.Forms.ToolStripGripStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the visibility of the grip used to reposition the control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolStripGripStyle" /> values. The default is <see cref="T:System.Windows.Forms.ToolStripGripStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Even with the <xref:System.Windows.Forms.StatusStrip.SizingGrip%2A> property set to `true` and the GripStyle property set to `Visible`, the sizing grip will not be displayed unless you also set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to one of the overflow values. If the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle> or <xref:System.Windows.Forms.ToolStripLayoutStyle>, the sizing grip will not be displayed.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a <xref:System.Windows.Forms.StatusStrip> with various common properties set, including the GripStyle property.  
-  
- [!code-vb[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_69_1.vb)]
- [!code-cs[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.s_69_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutStyle">
@@ -371,7 +255,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -383,24 +266,9 @@
         <ReturnType>System.Windows.Forms.ToolStripLayoutStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating how the <see cref="T:System.Windows.Forms.StatusStrip" /> lays out the items collection.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" /> values. The default is <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the LayoutStyle property to get or set how items are arranged on the <xref:System.Windows.Forms.StatusStrip>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a <xref:System.Windows.Forms.StatusStrip> with various common properties set, including the LayoutStyle property.  
-  
- [!code-vb[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_170_1.vb)]
- [!code-cs[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.s_170_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -410,7 +278,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -420,8 +287,8 @@
         <Parameter Name="levent" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="levent">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
+        <param name="levent">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,7 +299,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -442,18 +308,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains information about the <see cref="T:System.Windows.Forms.StatusStrip" /> to paint.</param>
-        <summary>Paints the background of the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnPaintBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSpringTableLayoutCore">
@@ -463,7 +320,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -471,15 +327,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides custom table layout for a <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override OnSpringTableLayoutCore to do custom table layouts. The default value of <xref:System.Windows.Forms.ToolStripLayoutStyle> is <xref:System.Windows.Forms.ToolStripLayoutStyle>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -489,7 +338,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -501,16 +349,9 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Padding" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
@@ -520,7 +361,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -532,15 +372,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This event is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetDisplayedItems">
@@ -550,7 +383,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -558,7 +390,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the collection of displayed and overflow items after a layout is done.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -569,7 +401,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -581,25 +412,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether ToolTips are shown for the <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
-        <value>
-          <see langword="true" /> if ToolTips are shown for the <see cref="T:System.Windows.Forms.StatusStrip" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ShowItemToolTips property to get or set <xref:System.Windows.Forms.ToolTip> display behavior.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a <xref:System.Windows.Forms.StatusStrip> with various common properties set, including the ShowItemToolTips property.  
-  
- [!code-vb[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_47_1.vb)]
- [!code-cs[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.s_47_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeGripBounds">
@@ -609,7 +424,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -621,8 +435,8 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the boundaries of the sizing handle (grip) for a <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> representing the grip boundaries.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -633,7 +447,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -645,27 +458,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a sizing handle (grip) is displayed in the lower-right corner of the control.</summary>
-        <value>
-          <see langword="true" /> if a grip is displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the SizingGrip property to display a grip to provide an indication to the user of when a <xref:System.Windows.Forms.StatusStrip> is resizable.  
-  
- Even with the SizingGrip property set to `true` and the <xref:System.Windows.Forms.StatusStrip.GripStyle%2A> property set to `Visible`, the sizing grip will not be displayed unless you also set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to one of the overflow values. If the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle> or <xref:System.Windows.Forms.ToolStripLayoutStyle>, the sizing grip will not be displayed.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a <xref:System.Windows.Forms.StatusStrip> with various common properties set, including the SizingGrip property.  
-  
- [!code-vb[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_46_1.vb)]
- [!code-cs[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.s_46_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
@@ -675,7 +470,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -687,20 +481,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.StatusStrip" /> stretches from end to end in its container.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.StatusStrip" /> stretches from end to end in its <see cref="T:System.Windows.Forms.ToolStripContainer" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates a <xref:System.Windows.Forms.StatusStrip> with various common properties set, including the Stretch property.  
-  
- [!code-vb[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_36_1.vb)]
- [!code-cs[System.Windows.Forms.StatusStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.s_36_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -710,7 +493,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -720,18 +502,9 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Message> structure wraps messages that Windows sends. You can use this structure to wrap a message and assign it to the window procedure to be dispatched. You can also use this structure to get information about a message the system sends to your application or controls.  
-  
- You cannot create the <xref:System.Windows.Forms.Message> structure directly. To create a <xref:System.Windows.Forms.Message> structure, use the <xref:System.Windows.Forms.Message.Create%2A> method. To make creating <xref:System.Windows.Forms.Message> structures more efficient, the <xref:System.Windows.Forms.Message> structure uses its pool of existing <xref:System.Windows.Forms.Message> structures instead of creating an instance of a new one, if possible. However, if a <xref:System.Windows.Forms.Message> structure is not available in the pool, a new instance of the structure is created.  
-  
- ]]></format>
-        </remarks>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

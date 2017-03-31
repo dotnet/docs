@@ -20,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the measurements for the <see cref="System.Windows.Controls.VirtualizingPanel.CacheLength%2A" /> attached property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=fullName> attached property specifies the amount of space in which a <xref:System.Windows.Controls.VirtualizingPanel> virtualizes the items before or after the view port (the area in which items are visible).  You can specify uniform cache length my creating a VirtualizationCacheLength by using the constructor that takes a single parameter.  You can use the constructor that takes two parameters to specify different values for the <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> and <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> properties.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +37,8 @@
         <Parameter Name="cacheBeforeAndAfterViewport" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="cacheBeforeAndAfterViewport">The size of the cache before and after the viewport.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> class with a uniform cache length for each side of the viewport.</summary>
+        <param name="cacheBeforeAndAfterViewport">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,9 +56,9 @@
         <Parameter Name="cacheAfterViewport" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="cacheBeforeViewport">The size of the cache before the viewport.</param>
-        <param name="cacheAfterViewport">The size of the cache after the viewport.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> class with the specified cache lengths for each side of the viewport.</summary>
+        <param name="cacheBeforeViewport">To be added.</param>
+        <param name="cacheAfterViewport">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,16 +75,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the cache before the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</summary>
-        <value>The size of the cache after the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this context, "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on the screen. Use a cache to avoid generating [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] elements as they’re scrolled into view.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheBeforeViewport">
@@ -107,16 +93,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the cache after the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</summary>
-        <value>The size of the cache after the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this context, "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on the screen. Use a cache to avoid generating [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] elements as they’re scrolled into view.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -135,18 +114,10 @@
         <Parameter Name="oCompare" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="oCompare">The object to compare with the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</param>
-        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</summary>
-        <returns>
-          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.VirtualizationCacheLength> checks for value equality.  That is, the two objects are equal if their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> property values are equal and their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> property values are equal.  
-  
- ]]></format>
-        </remarks>
+        <param name="oCompare">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -165,18 +136,10 @@
         <Parameter Name="cacheLength" Type="System.Windows.Controls.VirtualizationCacheLength" />
       </Parameters>
       <Docs>
-        <param name="cacheLength">The object to compare with the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</param>
-        <summary>Determines whether the specified <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> is equal to the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</summary>
-        <returns>
-          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.VirtualizationCacheLength> checks for value equality.  That is, the two objects are equal if their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> property values are equal and their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> property values are equal.  
-  
- ]]></format>
-        </remarks>
+        <param name="cacheLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -193,8 +156,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a hash code for the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</summary>
-        <returns>A hash code for the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,19 +178,11 @@
         <Parameter Name="cl2" Type="System.Windows.Controls.VirtualizationCacheLength" />
       </Parameters>
       <Docs>
-        <param name="cl1">The first object to compare.</param>
-        <param name="cl2">The second object to compare.</param>
-        <summary>Determines whether the two specified <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> objects are equal.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.VirtualizationCacheLength> checks for value equality.  That is, the two objects are equal if their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> property values are equal and their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> property values are equal.  
-  
- ]]></format>
-        </remarks>
+        <param name="cl1">To be added.</param>
+        <param name="cl2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -247,19 +202,11 @@
         <Parameter Name="cl2" Type="System.Windows.Controls.VirtualizationCacheLength" />
       </Parameters>
       <Docs>
-        <param name="cl1">The first object to compare.</param>
-        <param name="cl2">The second object to compare.</param>
-        <summary>Determines whether the two specified <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> objects are equal.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Windows.Controls.VirtualizationCacheLength" /> are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.VirtualizationCacheLength> checks for value equality.  That is, the two objects are equal if their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> property values are equal and their <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> property values are equal.  
-  
- ]]></format>
-        </remarks>
+        <param name="cl1">To be added.</param>
+        <param name="cl2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -276,16 +223,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</summary>
-        <returns>A string that represents the current <see cref="T:System.Windows.Controls.VirtualizationCacheLength" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToString method returns a string that displays the values of the <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> and <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,40 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BulletStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the bullet styles you can apply to list items in a <see cref="T:System.Web.UI.WebControls.BulletedList" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BulletStyle enumeration represents the bullet styles that you can apply to the list items in a <xref:System.Web.UI.WebControls.BulletedList> control. The <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property uses these enumeration values to set the bullet styles in a <xref:System.Web.UI.WebControls.BulletedList> control. For example, if you set the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property to `Disc`, each list item in a <xref:System.Web.UI.WebControls.BulletedList> control will render a filled circle preceding the content of the list item as follows:  
-  
--   List Item 1  
-  
--   List Item 2  
-  
--   List Item 3  
-  
- Specifying the `CustomImage` bullet style allows you to supply your own image for the bullet. If you specify the `CustomImage` bullet style, you must also set the <xref:System.Web.UI.WebControls.BulletedList.BulletImageUrl%2A> property to the URL of the custom image to use.  
-  
- If you specify `NotSet`, the browser in which the control is rendered will determine the bullet style to display with the list items in the <xref:System.Web.UI.WebControls.BulletedList> control.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to create a <xref:System.Web.UI.WebControls.BulletedList> control. A <xref:System.Web.UI.WebControls.ListBox> control is populated with all available BulletStyle enumeration values. The bullet style changes based on the style that the user selects from the list box.  
-  
- [!code-cs[BulletedListStylesExample#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_239_1.aspx)]
- [!code-vb[BulletedListStylesExample#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_239_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Circle">
@@ -47,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bullet style is an empty circle shape.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CustomImage">
@@ -64,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bullet style is a custom image.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disc">
@@ -81,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bullet style is a filled circle shape.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LowerAlpha">
@@ -98,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bullet style is a lowercase letter (a, b, c, ...).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LowerRoman">
@@ -115,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bullet style is a lowercase Roman numeral (i, ii, iii, ...).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -132,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bullet style is not set. The browser that renders the <see cref="T:System.Web.UI.WebControls.BulletedList" /> control will determine the bullet style to display.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Numbered">
@@ -149,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bullet style is a number (1, 2, 3, ...).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Square">
@@ -166,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bullet style is a filled square shape.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpperAlpha">
@@ -183,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bullet style is an uppercase letter (A, B, C, ...).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpperRoman">
@@ -200,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bullet style is an uppercase Roman numeral (I, II, III, ...).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

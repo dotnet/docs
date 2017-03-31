@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SpellingReform" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the spelling reform rules used by the spellchecker of the text editing control (i.e. <see cref="T:System.Windows.Controls.TextBox" /> or <see cref="T:System.Windows.Controls.RichTextBox" />).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The spelling reform rules determined by this enumeration refer to the French and German spelling reforms. This enumeration has no effect when used with any other language.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Postreform">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.SpellingReform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use spelling rules from after the spelling reform.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreAndPostreform">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.SpellingReform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use spelling rules from both before and after the spelling reform.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Prereform">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.SpellingReform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use spelling rules from before the spelling reform.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

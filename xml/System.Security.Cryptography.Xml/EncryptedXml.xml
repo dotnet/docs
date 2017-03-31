@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptedXml" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,64 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the process model for implementing XML encryption.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EncryptedXml class is the main class used for XML encryption in the .NET Framework. XML Encryption is a standards-based, interoperable way to encrypt all or part of an XML document or any arbitrary data. The .NET Framework XML encryption classes implement the World Wide Web Consortium (W3C) specification for XML encryption located at http://www.w3.org/TR/xmlenc-core/.  
-  
- Use the EncryptedXml class whenever you need to share encrypted XML data between applications or organizations in a standard way. Any data encrypted using this class can be decrypted by any implementation of the W3C specification for XML encryption.  
-  
- XML encryption replaces any plain text XML element or document with the `<EncryptedData>` element, which contains an encrypted (or cipher text) representation of plain text XML or any arbitrary data. The `<EncryptedData>` element can optionally contain information about where to find a key that will decrypt the cipher text, and which cryptographic algorithm was used to encrypt the plain text.  
-  
- The `<EncryptedKey>` element is similar to the `<EncryptedData>` element in style and usage, except that it allows you to encrypt a key that will decrypt the value of the `<EncryptedData>` element. Note that the `<EncryptedKey>` element and the `<EncryptedData>` element will never contain an unencrypted key.  
-  
- Use one of the following methods to exchange key information:  
-  
--   Do not include any key information. If you choose this option, both parties must agree on an algorithm and key before they exchange encrypted data.  
-  
--   Include the location of the key in the Uniform Resource Identifier (URI) attribute of the `<RetrievalMethod>` element. Both parties must agree on the key location ahead of time and this location must be kept secret.  
-  
--   Include a string name that maps to a key in the `<KeyName>` element. Both parties must agree on the key name mapping before they exchange encrypted data and this mapping must be kept secret.  
-  
--   Include an encrypted key in the `<EncryptedKey>` element. Both parties must agree on the key that decrypts the encrypted key before they exchange encrypted data. You can optionally include a name or location of the key that will decrypt the key in the `<EncryptedKey>` element.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a simple utility class that uses the <xref:System.Security.Cryptography.TripleDES> algorithm to encrypt an XML document.  
-  
- [!code-cpp[Cryptography.XML.MainXMLEncDecryptDataOOP#1](~/add/codesnippet/cpp/t-system.security.crypto_85_1.cpp)]
- [!code-vb[Cryptography.XML.MainXMLEncDecryptDataOOP#1](~/add/codesnippet/visualbasic/t-system.security.crypto_85_1.vb)]
- [!code-cs[Cryptography.XML.MainXMLEncDecryptDataOOP#1](~/add/codesnippet/csharp/t-system.security.crypto_85_1.cs)]  
-  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/t-system.security.crypto_85_2.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/t-system.security.crypto_85_2.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/t-system.security.crypto_85_2.cs)]  
-  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example embeds a key name in the encrypted XML document that the decrypting method uses to find the appropriate decryption key.  
-  
- [!code-vb[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/visualbasic/t-system.security.crypto_85_3.vb)]
- [!code-cs[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/csharp/t-system.security.crypto_85_3.cs)]
- [!code-cpp[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/cpp/t-system.security.crypto_85_3.cpp)]  
-  
- The following code example demonstrates how to encrypt an XML document using an asymmetric key. This example creates a symmetric session key to encrypt the document and then uses the asymmetric key to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cs[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/csharp/t-system.security.crypto_85_4.cs)]
- [!code-vb[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/visualbasic/t-system.security.crypto_85_4.vb)]
- [!code-cpp[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/cpp/t-system.security.crypto_85_4.cpp)]  
-  
- The following code example demonstrates how to encrypt an XML document using an X.509 certificate. This example creates a symmetric session key to encrypt the document and then uses the X.509 certificate to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/cpp/t-system.security.crypto_85_5.cpp)]
- [!code-cs[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/csharp/t-system.security.crypto_85_5.cs)]
- [!code-vb[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/visualbasic/t-system.security.crypto_85_5.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,47 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptedXml" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the default constructor for the main class for XML encryption in the .NET Framework.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/m-system.security.crypto_41_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/m-system.security.crypto_41_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/m-system.security.crypto_41_1.cs)]  
-  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example embeds a key name in the encrypted XML document that the decrypting method uses to find the appropriate decryption key.  
-  
- [!code-vb[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/visualbasic/m-system.security.crypto_41_2.vb)]
- [!code-cs[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/csharp/m-system.security.crypto_41_2.cs)]
- [!code-cpp[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/cpp/m-system.security.crypto_41_2.cpp)]  
-  
- The following code example demonstrates how to encrypt an XML document using an asymmetric key. This example creates a symmetric session key to encrypt the document and then uses the asymmetric key to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cs[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/csharp/m-system.security.crypto_41_3.cs)]
- [!code-vb[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/visualbasic/m-system.security.crypto_41_3.vb)]
- [!code-cpp[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/cpp/m-system.security.crypto_41_3.cpp)]  
-  
- The following code example demonstrates how to encrypt an XML document using an X.509 certificate. This example creates a symmetric session key to encrypt the document and then uses the X.509 certificate to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/cpp/m-system.security.crypto_41_4.cpp)]
- [!code-cs[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/csharp/m-system.security.crypto_41_4.cs)]
- [!code-vb[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/visualbasic/m-system.security.crypto_41_4.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -129,38 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="document" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="document">An <see cref="T:System.Xml.XmlDocument" /> object used to initialize the <see cref="T:System.Security.Cryptography.Xml.EncryptedXml" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptedXml" /> class using the specified XML document.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create an <xref:System.Security.Cryptography.Xml.EncryptedXml> object when you want to specify the XML document to encrypt.  The `document` parameter comprises the XML elements that later form the encrypted XML.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example embeds a key name in the encrypted XML document that the decrypting method uses to find the appropriate decryption key.  
-  
- [!code-vb[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/visualbasic/bed2a575-be89-45fe-b5dc-_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/csharp/bed2a575-be89-45fe-b5dc-_1.cs)]
- [!code-cpp[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/cpp/bed2a575-be89-45fe-b5dc-_1.cpp)]  
-  
- The following code example demonstrates how to encrypt an XML document using an asymmetric key. This example creates a symmetric session key to encrypt the document and then uses the asymmetric key to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cs[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/csharp/bed2a575-be89-45fe-b5dc-_2.cs)]
- [!code-vb[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/visualbasic/bed2a575-be89-45fe-b5dc-_2.vb)]
- [!code-cpp[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/cpp/bed2a575-be89-45fe-b5dc-_2.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="document">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -170,7 +55,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -178,17 +62,10 @@
         <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="document">An <see cref="T:System.Xml.XmlDocument" /> object used to initialize the <see cref="T:System.Security.Cryptography.Xml.EncryptedXml" /> object.</param>
-        <param name="evidence">An <see cref="T:System.Security.Policy.Evidence" /> object associated with the <see cref="T:System.Xml.XmlDocument" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptedXml" /> class using the specified XML document and evidence.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create an <xref:System.Security.Cryptography.Xml.EncryptedXml> object when you want to specify the XML document to encrypt and provide security evidence. The `document` parameter comprises the XML elements that later form the encrypted XML.  
-  
- ]]></format>
-        </remarks>
+        <param name="document">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddKeyNameMapping">
@@ -198,7 +75,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,34 +85,10 @@
         <Parameter Name="keyObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="keyName">The name to map to <c>keyObject</c>.</param>
-        <param name="keyObject">The symmetric key to map to <c>keyName</c>.</param>
-        <summary>Defines a mapping between a key name and a symmetric key or an asymmetric key.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddKeyNameMapping method allows you to map a symmetric key or an asymmetric key to a string name. This method adds the values of the `keyName` and `keyObject` parameters to a table of valid key name mappings.  
-  
- Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.ClearKeyNameMappings%2A> method to clear the key name mappings table.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example embeds a key name in the encrypted XML document that the decrypting method uses to find the appropriate decryption key.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecrypt#1](~/add/codesnippet/cpp/a586411f-1e2f-4c31-afeb-_1.cpp)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecrypt#1](~/add/codesnippet/csharp/a586411f-1e2f-4c31-afeb-_1.cs)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecrypt#1](~/add/codesnippet/visualbasic/a586411f-1e2f-4c31-afeb-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="keyName" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="keyObject" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The value of the <paramref name="keyObject" /> parameter is not an RSA algorithm or a symmetric key.</exception>
+        <param name="keyName">To be added.</param>
+        <param name="keyObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearKeyNameMappings">
@@ -246,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,25 +105,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets all key name mapping.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to clear all key name mapping that you have set using the <xref:System.Security.Cryptography.Xml.EncryptedXml.AddKeyNameMapping%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecryptData">
-      <MemberSignature Language="C#" Value="public byte[] DecryptData (System.Security.Cryptography.Xml.EncryptedData encryptedData, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] DecryptData(class System.Security.Cryptography.Xml.EncryptedData encryptedData, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" />
+      <MemberSignature Language="C#" Value="public byte[] DecryptData (System.Security.Cryptography.Xml.EncryptedData encryptedData, System.Security.Cryptography.SymmetricAlgorithm symAlg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] DecryptData(class System.Security.Cryptography.Xml.EncryptedData encryptedData, class System.Security.Cryptography.SymmetricAlgorithm symAlg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptData(System.Security.Cryptography.Xml.EncryptedData,System.Security.Cryptography.SymmetricAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,34 +126,11 @@
         <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="encryptedData">The data to decrypt.</param>
-        <param name="symmetricAlgorithm">The symmetric key used to decrypt <c>encryptedData</c>.</param>
-        <summary>Decrypts an <see langword="&lt;EncryptedData&gt;" /> element using the specified symmetric algorithm.</summary>
-        <returns>A byte array that contains the raw decrypted plain text.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DecryptData method to decrypt an <xref:System.Security.Cryptography.Xml.EncryptedData> element using a symmetric key.  
-  
- Note that the DecryptData method only decrypts top-level <`EncryptedData`> tags.  In cases where one or more <`EncryptedData`> tags have been encrypted and are contained within higher level <`EncryptedData`> tags, you can call the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method separately for each one.  See the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method for a code example.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/ff5da254-8fa1-47c6-b66b-_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/ff5da254-8fa1-47c6-b66b-_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/ff5da254-8fa1-47c6-b66b-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="encryptedData" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="symmetricAlgorithm" /> parameter is <see langword="null" />.</exception>
+        <param name="encryptedData">To be added.</param>
+        <param name="symAlg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecryptDocument">
@@ -320,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,43 +147,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Decrypts all <see langword="&lt;EncryptedData&gt;" /> elements of the XML document that were specified during initialization of the <see cref="T:System.Security.Cryptography.Xml.EncryptedXml" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DecryptDocument method decrypts all `<EncryptedData>` elements of the XML document loaded during initialization. After you call this method, all `<EncryptedData>` elements in the document are replaced with plain text versions.  
-  
- The DecryptDocument method decrypts only top-level `<EncryptedData>` elements.  If you need to decrypt a super-encrypted document (a document that is encrypted more than once), you must call the DecryptDocument method repeatedly until all the `<EncryptedData>` elements have been decrypted.  
-  
-> [!NOTE]
->  The DecryptDocument method decrypts only valid XML data. To decrypt arbitrary data, use the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptData%2A> method.  
-  
- To use XML Encryption with X.509 certificates, you must have the Microsoft Enhanced Cryptographic Provider installed and the X.509 certificate must use the Enhanced Provider. If you do not have the Microsoft Enhanced Cryptographic Provider installed or the X.509 certificate does not use the Enhanced Provider, a <xref:System.Security.Cryptography.CryptographicException> with an "Unknown Error" will be thrown when you decrypt an XML document.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using an asymmetric key. This example creates a symmetric session key to encrypt the document and then uses the asymmetric key to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cs[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/csharp/m-system.security.crypto_11_1.cs)]
- [!code-vb[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/visualbasic/m-system.security.crypto_11_1.vb)]
- [!code-cpp[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/cpp/m-system.security.crypto_11_1.cpp)]  
-  
- The following code example demonstrates how to encrypt an XML document using an X.509 certificate. This example creates a symmetric session key to encrypt the document and then uses the X.509 certificate to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/cpp/m-system.security.crypto_11_2.cpp)]
- [!code-cs[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/csharp/m-system.security.crypto_11_2.cs)]
- [!code-vb[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/visualbasic/m-system.security.crypto_11_2.vb)]  
-  
- The following code example demonstrates how to decrypt a high level <`EncryptedData`> tag that contains another encrypted <`EncryptedData`> tag.  
-  
- [!code-vb[Cryptography.XML.EncryptedDocument.DecryptDocument-SuperEncryption#1](~/add/codesnippet/visualbasic/m-system.security.crypto_11_3.vb)]
- [!code-cs[Cryptography.XML.EncryptedDocument.DecryptDocument-SuperEncryption#1](~/add/codesnippet/csharp/m-system.security.crypto_11_3.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic key used to decrypt the document was not found.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecryptEncryptedKey">
@@ -374,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -384,31 +167,19 @@
         <Parameter Name="encryptedKey" Type="System.Security.Cryptography.Xml.EncryptedKey" />
       </Parameters>
       <Docs>
-        <param name="encryptedKey">The <see cref="T:System.Security.Cryptography.Xml.EncryptedKey" /> object that contains the key to retrieve.</param>
-        <summary>Determines the key represented by the <see cref="T:System.Security.Cryptography.Xml.EncryptedKey" /> element.</summary>
-        <returns>A byte array that contains the key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DecryptEncryptedKey method decrypts an encrypted key contained within the `<EncryptedKey>` element of an XML document.  
-  
- This recursive method finds the key represented by the <xref:System.Security.Cryptography.Xml.EncryptedKey> object. Note that an <xref:System.Security.Cryptography.Xml.EncryptedKey> object can contain another <xref:System.Security.Cryptography.Xml.EncryptedKey> object that specifies its <xref:System.Security.Cryptography.Xml.KeyInfo> value.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="encryptedKey" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The value of the <paramref name="encryptedKey" /> parameter is not the Triple DES Key Wrap algorithm or the Advanced Encryption Standard (AES) Key Wrap algorithm (also called Rijndael).</exception>
+        <param name="encryptedKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecryptKey">
-      <MemberSignature Language="C#" Value="public static byte[] DecryptKey (byte[] keyData, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecryptKey(unsigned int8[] keyData, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" />
+      <MemberSignature Language="C#" Value="public static byte[] DecryptKey (byte[] keyData, System.Security.Cryptography.SymmetricAlgorithm symAlg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecryptKey(unsigned int8[] keyData, class System.Security.Cryptography.SymmetricAlgorithm symAlg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -419,34 +190,20 @@
         <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="keyData">An array of bytes that represents an encrypted <see langword="&lt;EncryptedKey&gt;" /> element.</param>
-        <param name="symmetricAlgorithm">The symmetric key used to decrypt <c>keyData</c>.</param>
-        <summary>Decrypts an <see langword="&lt;EncryptedKey&gt;" /> element using a symmetric algorithm.</summary>
-        <returns>A byte array that contains the plain text key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey%2A> method decrypts an encrypted key contained within the `<EncryptedKey>` element of an XML document. This method accepts a value for the `symmetricAlgorithm` parameter that represents either the Triple DES algorithm or the AES key wrap algorithm (also called Rijndael).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="keyData" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="symmetricAlgorithm" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The value of the <paramref name="symmetricAlgorithm" /> element is not the Triple DES Key Wrap algorithm or the Advanced Encryption Standard (AES) Key Wrap algorithm (also called Rijndael).</exception>
+        <param name="keyData">To be added.</param>
+        <param name="symAlg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecryptKey">
-      <MemberSignature Language="C#" Value="public static byte[] DecryptKey (byte[] keyData, System.Security.Cryptography.RSA rsa, bool useOAEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecryptKey(unsigned int8[] keyData, class System.Security.Cryptography.RSA rsa, bool useOAEP) cil managed" />
+      <MemberSignature Language="C#" Value="public static byte[] DecryptKey (byte[] keyData, System.Security.Cryptography.RSA rsa, bool fOAEP);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecryptKey(unsigned int8[] keyData, class System.Security.Cryptography.RSA rsa, bool fOAEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey(System.Byte[],System.Security.Cryptography.RSA,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -458,24 +215,12 @@
         <Parameter Name="useOAEP" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="keyData">An array of bytes that represents an encrypted <see langword="&lt;EncryptedKey&gt;" /> element.</param>
-        <param name="rsa">The asymmetric key used to decrypt <c>keyData</c>.</param>
-        <param name="useOAEP">A value that specifies whether to use Optimal Asymmetric Encryption Padding (OAEP).</param>
-        <summary>Decrypts an <see langword="&lt;EncryptedKey&gt;" /> element using an asymmetric algorithm.</summary>
-        <returns>A byte array that contains the plain text key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DecryptKey method decrypts an encrypted key contained within the `<EncryptedKey>` element of an XML document. This method accepts a value for the `rsa` parameter that represents either the RSA PKCS#1 v1.5 algorithm or the RSA PKCS#1 type 2 algorithm (also called OAEP padding).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="keyData" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="rsa" /> parameter is <see langword="null" />.</exception>
+        <param name="keyData">To be added.</param>
+        <param name="rsa">To be added.</param>
+        <param name="fOAEP">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentEvidence">
@@ -485,23 +230,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Policy.Evidence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the evidence of the <see cref="T:System.Xml.XmlDocument" /> object from which the <see cref="T:System.Security.Cryptography.Xml.EncryptedXml" /> object is constructed.</summary>
-        <value>An <see cref="T:System.Security.Policy.Evidence" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the XML document used to create the <xref:System.Security.Cryptography.Xml.EncryptedXml> object has any security evidence, you should add the evidence to the DocumentEvidence property.  If you do not set this property, any associated <xref:System.Security.Cryptography.Xml.CipherReference> objects will not be dereferenced because they will not be granted the required permission set.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -511,23 +248,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the encoding used for XML encryption.</summary>
-        <value>An <see cref="T:System.Text.Encoding" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- UTF-8 encoding is the default encoding for XML encryption. You can use this property to specify other types of encoding from the <xref:System.Text.Encoding> class, such as UTF-16 or ASCII.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
@@ -537,7 +266,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -548,37 +276,11 @@
         <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
       </Parameters>
       <Docs>
-        <param name="inputElement">The XML element to encrypt.</param>
-        <param name="certificate">The X.509 certificate to use for encryption.</param>
-        <summary>Encrypts the outer XML of an element using the specified X.509 certificate.</summary>
-        <returns>An <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> element that represents the encrypted XML data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Encrypt method is a convenient way to encrypt the outer XML of an element using a certificate. This method generates a 256-bit Advanced Encryption Standard (AES) session key to encrypt an XML element and then encrypts and signs the AES key using the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> object. The Encrypt method then returns the resulting XML as an <xref:System.Security.Cryptography.Xml.EncryptedData> element.  
-  
- If you need more control over the encryption, so you can place the encrypted information into a `<CipherReference>` element or specify whether the entire XML element or just its contents should be encrypted, use the <xref:System.Security.Cryptography.Xml.EncryptedXml.EncryptData%2A> method overloads.  
-  
- To use XML Encryption with X.509 certificates, you must have the Microsoft Enhanced Cryptographic Provider installed and the X.509 certificate must use the Enhanced Provider. If you do not have the Microsoft Enhanced Cryptographic Provider installed or the X.509 certificate does not use the Enhanced Provider, a <xref:System.Security.Cryptography.CryptographicException> with an "Unknown Error" will be thrown when you decrypt an XML document.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using an X.509 certificate. This example creates a symmetric session key to encrypt the document and then uses the X.509 certificate to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/cpp/7bb06d56-e2dc-41d6-92d8-_1.cpp)]
- [!code-cs[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/csharp/7bb06d56-e2dc-41d6-92d8-_1.cs)]
- [!code-vb[Cryptography.XML.XMLEncMapKeyX509#1](~/add/codesnippet/visualbasic/7bb06d56-e2dc-41d6-92d8-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="inputElement" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="certificate" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">The value of the <paramref name="certificate" /> parameter does not represent an RSA key algorithm.</exception>
+        <param name="inputElement">To be added.</param>
+        <param name="certificate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
@@ -588,7 +290,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -599,49 +300,20 @@
         <Parameter Name="keyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputElement">The XML element to encrypt.</param>
-        <param name="keyName">A key name that can be found in the key mapping table.</param>
-        <summary>Encrypts the outer XML of an element using the specified key in the key mapping table.</summary>
-        <returns>An <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object that represents the encrypted XML data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is a convenient way to encrypt the outer XML of an element using a key name. If you need more control over the encryption, so you can place the encrypted information into a `<CipherReference>` element or specify whether the entire XML element or just its contents should be encrypted, use the <xref:System.Security.Cryptography.Xml.EncryptedXml.EncryptData%2A> method overloads.  
-  
- For a list of all supported algorithms, see the list of constant fields associated with the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecrypt#1](~/add/codesnippet/cpp/2d0ce5a9-0f26-45bd-862b-_1.cpp)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecrypt#1](~/add/codesnippet/csharp/2d0ce5a9-0f26-45bd-862b-_1.cs)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecrypt#1](~/add/codesnippet/visualbasic/2d0ce5a9-0f26-45bd-862b-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="inputElement" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="keyName" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The value of the <paramref name="keyName" /> parameter does not match a registered key name pair.  
-  
- -or-  
-  
- The cryptographic key described by the <paramref name="keyName" /> parameter is not supported.</exception>
+        <param name="inputElement">To be added.</param>
+        <param name="keyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EncryptData">
-      <MemberSignature Language="C#" Value="public byte[] EncryptData (byte[] plaintext, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EncryptData(unsigned int8[] plaintext, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" />
+      <MemberSignature Language="C#" Value="public byte[] EncryptData (byte[] plainText, System.Security.Cryptography.SymmetricAlgorithm symAlg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EncryptData(unsigned int8[] plainText, class System.Security.Cryptography.SymmetricAlgorithm symAlg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptData(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -652,55 +324,20 @@
         <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="plaintext">The data to encrypt.</param>
-        <param name="symmetricAlgorithm">The symmetric algorithm to use for encryption.</param>
-        <summary>Encrypts data in the specified byte array using the specified symmetric algorithm.</summary>
-        <returns>A byte array of encrypted data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned byte array can be placed into a `<CipherValue>` element. This method assumes that the data specified in the `plaintext` parameter is a byte array that contains XML data.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/b0a4c1de-8575-4f7f-8804-_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/b0a4c1de-8575-4f7f-8804-_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/b0a4c1de-8575-4f7f-8804-_1.cs)]  
-  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example embeds a key name in the encrypted XML document that the decrypting method uses to find the appropriate decryption key.  
-  
- [!code-vb[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/visualbasic/b0a4c1de-8575-4f7f-8804-_2.vb)]
- [!code-cs[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/csharp/b0a4c1de-8575-4f7f-8804-_2.cs)]
- [!code-cpp[Cryptography.XML.XMLEncMapKey#1](~/add/codesnippet/cpp/b0a4c1de-8575-4f7f-8804-_2.cpp)]  
-  
- The following code example demonstrates how to encrypt an XML document using an asymmetric key. This example creates a symmetric session key to encrypt the document and then uses the asymmetric key to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cs[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/csharp/b0a4c1de-8575-4f7f-8804-_3.cs)]
- [!code-vb[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/visualbasic/b0a4c1de-8575-4f7f-8804-_3.vb)]
- [!code-cpp[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/cpp/b0a4c1de-8575-4f7f-8804-_3.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="plaintext" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="symmetricAlgorithm" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The data could not be encrypted using the specified parameters.</exception>
+        <param name="plainText">To be added.</param>
+        <param name="symAlg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EncryptData">
-      <MemberSignature Language="C#" Value="public byte[] EncryptData (System.Xml.XmlElement inputElement, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm, bool content);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EncryptData(class System.Xml.XmlElement inputElement, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm, bool content) cil managed" />
+      <MemberSignature Language="C#" Value="public byte[] EncryptData (System.Xml.XmlElement inputElement, System.Security.Cryptography.SymmetricAlgorithm symAlg, bool content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EncryptData(class System.Xml.XmlElement inputElement, class System.Security.Cryptography.SymmetricAlgorithm symAlg, bool content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptData(System.Xml.XmlElement,System.Security.Cryptography.SymmetricAlgorithm,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -712,44 +349,21 @@
         <Parameter Name="content" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="inputElement">The element or its contents to encrypt.</param>
-        <param name="symmetricAlgorithm">The symmetric algorithm to use for encryption.</param>
-        <param name="content">
-          <see langword="true" /> to encrypt only the contents of the element; <see langword="false" /> to encrypt the entire element.</param>
-        <summary>Encrypts the specified element or its contents using the specified symmetric algorithm.</summary>
-        <returns>A byte array that contains the encrypted data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned byte array data is the value of the `<CipherValue>` element.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/58e919c7-3675-40a5-8022-_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/58e919c7-3675-40a5-8022-_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/58e919c7-3675-40a5-8022-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="inputElement" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="symmetricAlgorithm" /> parameter is <see langword="null" />.</exception>
+        <param name="inputElement">To be added.</param>
+        <param name="symAlg">To be added.</param>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EncryptKey">
-      <MemberSignature Language="C#" Value="public static byte[] EncryptKey (byte[] keyData, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] EncryptKey(unsigned int8[] keyData, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" />
+      <MemberSignature Language="C#" Value="public static byte[] EncryptKey (byte[] keyData, System.Security.Cryptography.SymmetricAlgorithm symAlg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] EncryptKey(unsigned int8[] keyData, class System.Security.Cryptography.SymmetricAlgorithm symAlg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -760,36 +374,20 @@
         <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="keyData">The key to encrypt.</param>
-        <param name="symmetricAlgorithm">The symmetric key used to encrypt <c>keyData</c>.</param>
-        <summary>Encrypts a key using a symmetric algorithm that a recipient uses to decrypt an <see langword="&lt;EncryptedData&gt;" /> element.</summary>
-        <returns>A byte array that represents the encrypted value of the <paramref name="keyData" /> parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the EncryptKey method to encrypt the key that a recipient uses to decrypt an `<EncryptedData>` element. This method accepts a value for the `symmetricAlgorithm` parameter that represents either the Triple DES algorithm or the AES key wrap algorithm (also called Rijndael).  
-  
- Note that this method does not automatically place the encrypted key within an `<EncryptedKey>` element.  You must manually create the `<EncryptedKey>` element within your document.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="keyData" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="symmetricAlgorithm" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The value of the <paramref name="symmetricAlgorithm" /> parameter is not the Triple DES Key Wrap algorithm or the Advanced Encryption Standard (AES) Key Wrap algorithm (also called Rijndael).</exception>
+        <param name="keyData">To be added.</param>
+        <param name="symAlg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EncryptKey">
-      <MemberSignature Language="C#" Value="public static byte[] EncryptKey (byte[] keyData, System.Security.Cryptography.RSA rsa, bool useOAEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] EncryptKey(unsigned int8[] keyData, class System.Security.Cryptography.RSA rsa, bool useOAEP) cil managed" />
+      <MemberSignature Language="C#" Value="public static byte[] EncryptKey (byte[] keyData, System.Security.Cryptography.RSA rsa, bool fOAEP);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] EncryptKey(unsigned int8[] keyData, class System.Security.Cryptography.RSA rsa, bool fOAEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey(System.Byte[],System.Security.Cryptography.RSA,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -801,45 +399,21 @@
         <Parameter Name="useOAEP" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="keyData">The key to encrypt.</param>
-        <param name="rsa">The asymmetric key used to encrypt <c>keyData</c>.</param>
-        <param name="useOAEP">A value that specifies whether to use Optimal Asymmetric Encryption Padding (OAEP).</param>
-        <summary>Encrypts the key that a recipient uses to decrypt an <see langword="&lt;EncryptedData&gt;" /> element.</summary>
-        <returns>A byte array that represents the encrypted value of the <paramref name="keyData" /> parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the EncryptKey method to encrypt the key that a recipient uses to decrypt an `<EncryptedData>` element. This method accepts a value for `rsa` that represents either the RSA PKCS#1 v1.5 algorithm or the RSA PKCS#1 type 2 algorithm (also called OAEP).  
-  
- Note that this method does not automatically place the encrypted key within an `<EncryptedKey>` element.  You must manually create the `<EncryptedKey>` element within your document.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using an asymmetric key. This example creates a symmetric session key to encrypt the document and then uses the asymmetric key to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cs[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/csharp/f1ea466e-2516-4b63-bd31-_1.cs)]
- [!code-vb[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/visualbasic/f1ea466e-2516-4b63-bd31-_1.vb)]
- [!code-cpp[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/cpp/f1ea466e-2516-4b63-bd31-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="keyData" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="rsa" /> parameter is <see langword="null" />.</exception>
+        <param name="keyData">To be added.</param>
+        <param name="rsa">To be added.</param>
+        <param name="fOAEP">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDecryptionIV">
-      <MemberSignature Language="C#" Value="public virtual byte[] GetDecryptionIV (System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetDecryptionIV(class System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual byte[] GetDecryptionIV (System.Security.Cryptography.Xml.EncryptedData encryptedData, string symAlgUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetDecryptionIV(class System.Security.Cryptography.Xml.EncryptedData encryptedData, string symAlgUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.GetDecryptionIV(System.Security.Cryptography.Xml.EncryptedData,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -850,36 +424,20 @@
         <Parameter Name="symmetricAlgorithmUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="encryptedData">The <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object that contains the initialization vector (IV) to retrieve.</param>
-        <param name="symmetricAlgorithmUri">The Uniform Resource Identifier (URI) that describes the cryptographic algorithm associated with the <c>encryptedData</c> value.</param>
-        <summary>Retrieves the decryption initialization vector (IV) from an <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object.</summary>
-        <returns>A byte array that contains the decryption initialization vector (IV).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Given an <xref:System.Security.Cryptography.Xml.EncryptedData> object, this method retrieves the decryption initialization vector (IV). The default behavior retrieves the IV as the first bytes of the <xref:System.Security.Cryptography.Xml.CipherData.CipherValue%2A> byte array.  
-  
- For a list of Uniform Resource Identifier (URI) values supported by the `symmetricAlgorithmUri` parameter, see the list of constant fields associated with the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="encryptedData" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The value of the <paramref name="encryptedData" /> parameter has an <see cref="System.Security.Cryptography.Xml.EncryptedType.EncryptionMethod%2A" /> property that is null.  
-  
- -or-  
-  
- The value of the <paramref name="symmetricAlgorithmUrisymAlgUri" /> parameter is not a supported algorithm.</exception>
+        <param name="encryptedData">To be added.</param>
+        <param name="symAlgUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDecryptionKey">
-      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.SymmetricAlgorithm GetDecryptionKey (System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.SymmetricAlgorithm GetDecryptionKey(class System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.SymmetricAlgorithm GetDecryptionKey (System.Security.Cryptography.Xml.EncryptedData encryptedData, string symAlgUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.SymmetricAlgorithm GetDecryptionKey(class System.Security.Cryptography.Xml.EncryptedData encryptedData, string symAlgUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.GetDecryptionKey(System.Security.Cryptography.Xml.EncryptedData,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -890,24 +448,11 @@
         <Parameter Name="symmetricAlgorithmUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="encryptedData">The <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object that contains the decryption key to retrieve.</param>
-        <param name="symmetricAlgorithmUri">The size of the decryption key to retrieve.</param>
-        <summary>Retrieves the decryption key from the specified <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object.</summary>
-        <returns>A <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> object associated with the decryption key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Given an <xref:System.Security.Cryptography.Xml.EncryptedData> object, this method looks for the decryption key that can be used to retrieve the plain text data. If a key name is specified, the method looks for the symmetric algorithm or asymmetric algorithm that is associated with the key name as defined in the key name mapping. Otherwise, if a retrieval method or an <xref:System.Security.Cryptography.Xml.EncryptedKey> object is specified, the method loads the <xref:System.Security.Cryptography.Xml.EncryptedKey> object and calls the GetDecryptionKey method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="encryptedData" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The encryptedData parameter has an <see cref="System.Security.Cryptography.Xml.EncryptedType.EncryptionMethod%2A" /> property that is null.  
-  
- -or-  
-  
- The encrypted key cannot be retrieved using the specified parameters.</exception>
+        <param name="encryptedData">To be added.</param>
+        <param name="symAlgUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIdElement">
@@ -917,7 +462,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -928,18 +472,11 @@
         <Parameter Name="idValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="document">An <see cref="T:System.Xml.XmlDocument" /> object that contains an element with an ID value.</param>
-        <param name="idValue">A string that represents the ID value.</param>
-        <summary>Determines how to resolve internal Uniform Resource Identifier (URI) references.</summary>
-        <returns>An <see cref="T:System.Xml.XmlElement" /> object that contains an ID indicating how internal Uniform Resource Identifiers (URIs) are to be resolved.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetIdElement method determines how to resolve internal Uniform Resource Identifiers (URIs). It looks for elements with a specified value or for elements with an ID attribute that has a specified value.  
-  
- ]]></format>
-        </remarks>
+        <param name="document">To be added.</param>
+        <param name="idValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -949,23 +486,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CipherMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the cipher mode used for XML encryption.</summary>
-        <value>One of the <see cref="T:System.Security.Cryptography.CipherMode" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Cipher Block Chaining (CBC) mode is the default cipher mode for XML encryption. You can use this property to specify other cipher modes of the <xref:System.Security.Cryptography.CipherMode> enumeration, such as Cipher Feedback (CFB) mode.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -975,23 +504,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.PaddingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the padding mode used for XML encryption.</summary>
-        <value>One of the <see cref="T:System.Security.Cryptography.PaddingMode" /> values that specifies the type of padding used for encryption.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ISO-10126 padding is the default padding mode for XML encryption. You can use this property to specify other padding modes of the <xref:System.Security.Cryptography.PaddingMode> enumeration, such as ANSI X9.23 or PKCS#5.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Recipient">
@@ -1001,25 +522,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the recipient of the encrypted key information.</summary>
-        <value>The recipient of the encrypted key information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can access the <xref:System.Security.Cryptography.Xml.EncryptedXml> object referenced by a key name by examining the <xref:System.Security.Cryptography.Xml.EncryptedKey.CarriedKeyName%2A> property.  
-  
- Use the Recipient property to identify the <xref:System.Security.Cryptography.Xml.EncryptedXml> element that the current recipient can decrypt to retrieve a decryption key.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceData">
@@ -1029,7 +540,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1040,31 +550,10 @@
         <Parameter Name="decryptedData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="inputElement">The <see langword="&lt;EncryptedData&gt;" /> element to replace.</param>
-        <param name="decryptedData">The decrypted data to replace <c>inputElement</c> with.</param>
-        <summary>Replaces an <see langword="&lt;EncryptedData&gt;" /> element with a specified decrypted sequence of bytes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ReplaceData method replaces an `<EncryptedData>` element with the value of the `decryptedData` parameter.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/0a737bfb-9606-4369-9de9-_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/0a737bfb-9606-4369-9de9-_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/0a737bfb-9606-4369-9de9-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="inputElement" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="decryptedData" /> parameter is <see langword="null" />.</exception>
+        <param name="inputElement">To be added.</param>
+        <param name="decryptedData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceElement">
@@ -1074,7 +563,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1086,33 +574,11 @@
         <Parameter Name="content" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="inputElement">The element to replace with an <see langword="&lt;EncryptedData&gt;" /> element.</param>
-        <param name="encryptedData">The <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object to replace the <c>inputElement</c> parameter with.</param>
-        <param name="content">
-          <see langword="true" /> to replace only the contents of the element; <see langword="false" /> to replace the entire element.</param>
-        <summary>Replaces the specified element with the specified <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ReplaceElement method replaces the `inputElement` parameter with the value specified by the `encryptedData` parameter.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/3d927817-a643-42d1-b283-_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/3d927817-a643-42d1-b283-_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/3d927817-a643-42d1-b283-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="inputElement" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The value of the <paramref name="encryptedData" /> parameter is <see langword="null" />.</exception>
+        <param name="inputElement">To be added.</param>
+        <param name="encryptedData">To be added.</param>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Resolver">
@@ -1122,23 +588,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlResolver</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Xml.XmlResolver" /> object used by the Document Object Model (DOM) to resolve external XML references.</summary>
-        <value>An <see cref="T:System.Xml.XmlResolver" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property contains an <xref:System.Xml.XmlResolver> object used to resolve external XML resources such as entities, document type definitions (DTDs), or schemas.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlDSigSearchDepth">
@@ -1154,8 +612,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the XML digital signature recursion depth to prevent infinite recursion and stack overflow. This might happen if the digital signature XML contains the URI which then points back to the original XML.</summary>
-        <value>Returns <see cref="T:System.Int32" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1166,22 +624,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the 128-bit Advanced Encryption Standard (AES) Key Wrap algorithm (also known as the Rijndael Key Wrap algorithm). This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncAES128KeyWrapUrl field is "http://www.w3.org/2001/04/xmlenc#kw-aes128".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncAES128Url">
@@ -1191,31 +641,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the 128-bit Advanced Encryption Standard (AES) algorithm (also known as the Rijndael algorithm). This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncAES128Url field is "http://www.w3.org/2001/04/xmlenc#aes128-cbc".  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/f-system.security.crypto_11_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/f-system.security.crypto_11_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/f-system.security.crypto_11_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncAES192KeyWrapUrl">
@@ -1225,22 +658,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the 192-bit Advanced Encryption Standard (AES) Key Wrap algorithm (also known as the Rijndael Key Wrap algorithm). This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncAES192KeyWrapUrl field is "http://www.w3.org/2001/04/xmlenc#kw-aes192".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncAES192Url">
@@ -1250,31 +675,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the 192-bit Advanced Encryption Standard (AES) algorithm (also known as the Rijndael algorithm). This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncAES192Url field is "http://www.w3.org/2001/04/xmlenc#aes192-cbc".  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/f-system.security.crypto_10_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/f-system.security.crypto_10_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/f-system.security.crypto_10_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncAES256KeyWrapUrl">
@@ -1284,22 +692,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the 256-bit Advanced Encryption Standard (AES) Key Wrap algorithm (also known as the Rijndael Key Wrap algorithm). This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncAES256KeyWrapUrl field is "http://www.w3.org/2001/04/xmlenc#kw-aes256".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncAES256Url">
@@ -1309,31 +709,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the 256-bit Advanced Encryption Standard (AES) algorithm (also known as the Rijndael algorithm). This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncAES256Url field is "http://www.w3.org/2001/04/xmlenc#aes256-cbc".  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/f-system.security.crypto_12_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/f-system.security.crypto_12_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/f-system.security.crypto_12_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncDESUrl">
@@ -1343,31 +726,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the Digital Encryption Standard (DES) algorithm. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncDESUrl field is "http://www.w3.org/2001/04/xmlenc#des-cbc".  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/f-system.security.crypto_5_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/f-system.security.crypto_5_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/f-system.security.crypto_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncElementContentUrl">
@@ -1377,22 +743,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for XML encryption element content. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncElementContentUrl field is "http://www.w3.org/2001/04/xmlenc#Content".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncElementUrl">
@@ -1402,31 +760,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for an XML encryption element. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncElementUrl field is "http://www.w3.org/2001/04/xmlenc#Element".  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/f-system.security.crypto_7_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/f-system.security.crypto_7_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/f-system.security.crypto_7_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncEncryptedKeyUrl">
@@ -1436,22 +777,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the XML encryption <see langword="&lt;EncryptedKey&gt;" /> element. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncEncryptedKeyUrl field is "http://www.w3.org/2001/04/xmlenc#EncryptedKey".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncNamespaceUrl">
@@ -1461,22 +794,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for XML encryption syntax and processing. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncNamespaceUrl field is "http://www.w3.org/2001/04/xmlenc#".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncRSA15Url">
@@ -1486,31 +811,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the RSA Public Key Cryptography Standard (PKCS) Version 1.5 algorithm. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncRSA15Url field is "http://www.w3.org/2001/04/xmlenc#rsa-1_5".  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using an asymmetric key. This example creates a symmetric session key to encrypt the document and then uses the asymmetric key to embed an encrypted version of the session key into the XML document.  
-  
- [!code-cs[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/csharp/f-system.security.crypto_2_1.cs)]
- [!code-vb[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/visualbasic/f-system.security.crypto_2_1.vb)]
- [!code-cpp[Cryptography.XML.XMLEncImbedKey#1](~/add/codesnippet/cpp/f-system.security.crypto_2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncRSAOAEPUrl">
@@ -1520,22 +828,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the RSA Optimal Asymmetric Encryption Padding (OAEP) encryption algorithm. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncRSAOAEPUrl field is "http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncSHA256Url">
@@ -1545,22 +845,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the SHA-256 algorithm. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncSHA256Url field is "http://www.w3.org/2001/04/xmlenc#sha256".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncSHA512Url">
@@ -1570,22 +862,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the SHA-512 algorithm. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncSHA512Url field is "http://www.w3.org/2001/04/xmlenc#sha512".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncTripleDESKeyWrapUrl">
@@ -1595,22 +879,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the TRIPLEDES key wrap algorithm. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncTripleDESKeyWrapUrl field is "http://www.w3.org/2001/04/xmlenc#kw-tripledes".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlEncTripleDESUrl">
@@ -1620,31 +896,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the namespace Uniform Resource Identifier (URI) for the Triple DES algorithm. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the XmlEncTripleDESUrl field is "http://www.w3.org/2001/04/xmlenc#tripledes-cbc".  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to encrypt an XML document using a symmetric key. This example does not include any key information in the encrypted XML document.  
-  
- [!code-cpp[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/cpp/f-system.security.crypto_13_1.cpp)]
- [!code-vb[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/visualbasic/f-system.security.crypto_13_1.vb)]
- [!code-cs[Cryptography.XML.XMLEncMinimalDecryptData#1](~/add/codesnippet/csharp/f-system.security.crypto_13_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

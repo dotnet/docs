@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowTerminatedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,29 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- A workflow instance may be terminated in one of three ways: the host may call <xref:System.Workflow.Runtime.WorkflowInstance.Terminate%2A?displayProperty=fullName>, a <xref:System.Workflow.ComponentModel.TerminateActivity> activity may be invoked from inside the workflow instance, or the workflow runtime engine may terminate the instance because of an unhandled exception. When the workflow instance is terminated, the workflow runtime engine raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated?displayProperty=fullName> event. The host may subscribe to this event by adding an event handler to <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates an event handler method that takes WorkflowTerminatedEventArgs as a parameter. The `OnWorkflowTerminated` method is called when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated> event is raised. The code uses the <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs.Exception%2A> property get the message associated with the exception that caused the workflow to terminate.  
-  
- This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow with Parameters](http://msdn.microsoft.com/en-us/17157f2d-8fed-4848-a386-e4efa381b66b).  
-  
- [!code-cs[WF_Samples#193](~/add/codesnippet/csharp/wf_snippets/snippets19.cs#193)]
- [!code-vb[WF_Samples#193](~/add/codesnippet/visualbasic/wf_snippets/snippets19.vb#193)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Exception">
@@ -49,38 +27,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the exception that caused the workflow instance to be terminated.</summary>
-        <value>The <see cref="T:System.Exception" /> that caused the workflow instance to be terminated.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the workflow instance is terminated because of an unhandled exception, Exception contains the unhandled exception.  
-  
- When the workflow instance is terminated by either a host call to <xref:System.Workflow.Runtime.WorkflowInstance.Terminate%2A?displayProperty=fullName> or by a <xref:System.Workflow.ComponentModel.TerminateActivity> activity,    Exception contains a <xref:System.Workflow.ComponentModel.WorkflowTerminatedException> that has its <xref:System.Exception.Message%2A> property set to a description of the reason for the termination. If the host terminates the workflow instance, it supplies this description in the `string` parameter to <xref:System.Workflow.Runtime.WorkflowInstance.Terminate%2A?displayProperty=fullName>. If the workflow instance is terminated by a <xref:System.Workflow.ComponentModel.TerminateActivity>, the description is supplied by <xref:System.Workflow.ComponentModel.TerminateActivity.Error%2A?displayProperty=fullName>.  
-  
-> [!NOTE]
->  Although in the case of a <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated?displayProperty=fullName> event that is not due to an unhandled exception, the workflow runtime engine encapsulates a description of the reason for the termination in the <xref:System.Exception.Message%2A> property of a <xref:System.Workflow.ComponentModel.WorkflowTerminatedException>, it does not necessarily throw this exception.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how you can use the Exception property to obtain information about an exception that caused a workflow to terminate. The `OnWorkflowTerminated` method takes a <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs> as a parameter. This method is called when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated> event is raised. The code uses the Exception property get the message associated with the exception that caused the workflow to terminate.  
-  
- This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow with Parameters](http://msdn.microsoft.com/en-us/17157f2d-8fed-4848-a386-e4efa381b66b).  
-  
- [!code-cs[WF_Samples#193](~/add/codesnippet/csharp/wf_snippets/snippets19.cs#193)]
- [!code-vb[WF_Samples#193](~/add/codesnippet/visualbasic/wf_snippets/snippets19.vb#193)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.RadioButton" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,41 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a button that can be selected, but not cleared, by a user. The <see cref="System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A" /> property of a RadioButton can be set by clicking it, but it can only be cleared programmatically.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A RadioButton is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
-  
- A RadioButton has two states: `true` or `false`. The RadioButton is a control that is usually used as an item in a group of RadioButton controls. However, it is possible to create a single RadioButton.  Whether a RadioButton is selected is determined by the state of its <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property.  
-  
- When a RadioButton is selected, it cannot be cleared by clicking it. When RadioButton elements are grouped, the buttons are mutually exclusive. A user can select only one item at a time within a RadioButton group. You can group RadioButton controls by placing them inside a parent or by setting the <xref:System.Windows.Controls.RadioButton.GroupName%2A> property on each RadioButton.  
-  
-## Customizing the RadioButton Control  
- To apply the same property settings to multiple RadioButton controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the RadioButton, see [RadioButton Styles and Templates](../Topic/RadioButton%20Styles%20and%20Templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-> [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in RadioButton control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
-   
-  
-## Examples  
- The following example shows how to create RadioButton controls, group them inside a container, and handle the <xref:System.Windows.Controls.Primitives.ToggleButton.Checked> event.  
-  
- [!code-xml[RadioButton#3](~/add/codesnippet/xaml/RadioButton/Pane1.xaml#3)]  
-  
- [!code-cs[RadioButton#5](~/add/codesnippet/csharp/RadioButton/Pane1.xaml.cs#5)]
- [!code-vb[RadioButton#5](~/add/codesnippet/visualbasic/RadioButton/Window1.xaml.vb#5)]  
-  
- The following code sample creates two separate RadioButton groups: `colorgrp` and `numgrp`. The user can choose one RadioButton in each group.  
-  
- [!code-xml[RadioButton#4](~/add/codesnippet/xaml/RadioButton/Pane1.xaml#4)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.RadioButton" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +42,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -92,31 +56,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name that specifies which <see cref="T:System.Windows.Controls.RadioButton" /> controls are mutually exclusive.</summary>
-        <value>The name that specifies which <see cref="T:System.Windows.Controls.RadioButton" /> controls are mutually exclusive.  The default is an empty string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When two or more <xref:System.Windows.Controls.RadioButton> controls have the same GroupName, a user can select only one <xref:System.Windows.Controls.RadioButton> at a time.  
-  
-<a name="dependencyPropertyInfo_GroupName"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.RadioButton.GroupNameProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following code sample creates two separate <xref:System.Windows.Controls.RadioButton> groups: `colorgrp` and `numgrp`. The user can choose one <xref:System.Windows.Controls.RadioButton> in each group.  
-  
- [!code-xml[RadioButton#4](~/add/codesnippet/xaml/RadioButton/Pane1.xaml#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupNameProperty">
@@ -126,14 +68,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.RadioButton.GroupName%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,8 +94,8 @@
         <Parameter Name="e" Type="System.Windows.Input.AccessKeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data for <see cref="T:System.Windows.Input.AccessKeyEventArgs" />.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.AccessText.AccessKey%2A" /> for a radio button is invoked.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,8 +115,8 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data for <see cref="T:System.Windows.RoutedEventArgs" />.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A" /> property becomes <see langword="true" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,8 +134,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.RadioButtonAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] automation infrastructure.</summary>
-        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -216,15 +153,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called by the <see cref="System.Windows.Controls.Primitives.ToggleButton.OnClick%2A" /> method to implement a <see cref="T:System.Windows.Controls.RadioButton" /> control's toggle behavior.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method toggles the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

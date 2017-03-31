@@ -4,44 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltMessageEncounteredEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered> event occurs during XSLT processing when an `xsl:message` is specified in the style sheet.  
-  
-> [!NOTE]
->  If the `terminate` attribute is set to `"yes"`, the XSLT processor stops executing the style sheet stops after the message is processed.  
-  
-   
-  
-## Examples  
- The following example uses the XsltMessageEncounteredEventArgs to display `xsl:message` content to the console. The sample writes the following message to the console:  `Message received:  Author name is not in the correct format <author><name>Plato</name></author>`.  
-  
- [!code-cs[XsltMessageEncountered#1](~/add/codesnippet/csharp/t-system.xml.xsl.xsltmes_1.cs)]
- [!code-vb[XsltMessageEncountered#1](~/add/codesnippet/visualbasic/t-system.xml.xsl.xsltmes_1.vb)]  
-  
- The example uses the following files as input:  
-  
- books.xml  
-  
- [!code-xml[XML_Core_Files#1](~/add/codesnippet/xml/t-system.xml.xsl.xsltmes_2.xml)]  
-  
- message.xsl  
-  
- [!code-xml[XsltMessageEncountered#2](~/add/codesnippet/xml/t-system.xml.xsl.xsltmes_3.xsl)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,12 +27,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XsltMessageEncounteredEventArgs" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,36 +47,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the contents of the <c>xsl:message</c> element.</summary>
-        <value>The contents of the <c>xsl:message</c> element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the <xref:System.Xml.Xsl.XsltMessageEncounteredEventArgs> to display `xsl:message` content to the console. The sample writes the following message to the console:  `Message received:  Author name is not in the correct format <author><name>Plato</name></author>`.  
-  
- [!code-cs[XsltMessageEncountered#1](~/add/codesnippet/csharp/p-system.xml.xsl.xsltmes_1.cs)]
- [!code-vb[XsltMessageEncountered#1](~/add/codesnippet/visualbasic/p-system.xml.xsl.xsltmes_1.vb)]  
-  
- The example uses the following files as input:  
-  
- books.xml  
-  
- [!code-xml[XML_Core_Files#1](~/add/codesnippet/xml/p-system.xml.xsl.xsltmes_2.xml)]  
-  
- message.xsl  
-  
- [!code-xml[XsltMessageEncountered#2](~/add/codesnippet/xml/p-system.xml.xsl.xsltmes_3.xsl)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

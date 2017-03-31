@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IClientChannelSink" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -18,25 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides required functions and properties for client channel sinks.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Channel sinks provide a plug-in point that allows access to the underlying messages flowing through the channel as well as the stream used by the transport mechanism to send messages to a remote object. Channel sinks are linked together in a chain of channel sink providers and all channel messages flow through this chain of sinks before they are serialized and transported.  
-  
-   
-  
-## Examples  
- The following code example illustrates an implementation of the IClientChannelSink interface.  
-  
- [!code-cs[Remoting_Sinks#20](~/add/codesnippet/csharp/t-system.runtime.remotin_52_1.cs)]
- [!code-cpp[Remoting_Sinks#20](~/add/codesnippet/cpp/t-system.runtime.remotin_52_1.cpp)]  
-  
- See the <xref:System.Runtime.Remoting.Channels.IClientChannelSinkProvider> interface documentation for an example of the corresponding client sink provider implementation.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AsyncProcessRequest">
@@ -46,14 +29,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -64,23 +42,12 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="sinkStack">A stack of channel sinks that called this sink.</param>
-        <param name="msg">The message to process.</param>
-        <param name="headers">The headers to add to the outgoing message heading to the server.</param>
-        <param name="stream">The stream headed to the transport sink.</param>
-        <summary>Requests asynchronous processing of a method call on the current sink.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties#2](~/add/codesnippet/cpp/c6630fe8-0d29-45ed-ba2d-_1.cpp)]
- [!code-vb[SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties#2](~/add/codesnippet/visualbasic/c6630fe8-0d29-45ed-ba2d-_1.vb)]
- [!code-cs[SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties#2](~/add/codesnippet/csharp/c6630fe8-0d29-45ed-ba2d-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="sinkStack">To be added.</param>
+        <param name="msg">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AsyncProcessResponse">
@@ -90,14 +57,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -108,23 +70,12 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="sinkStack">A stack of sinks that called this sink.</param>
-        <param name="state">Information generated on the request side that is associated with this sink.</param>
-        <param name="headers">The headers retrieved from the server response stream.</param>
-        <param name="stream">The stream coming back from the transport sink.</param>
-        <summary>Requests asynchronous processing of a response to a method call on the current sink.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[CommonTransportKeys#1](~/add/codesnippet/cpp/ff0362cb-5040-42dd-aab4-_1.cpp)]
- [!code-cs[CommonTransportKeys#1](~/add/codesnippet/csharp/ff0362cb-5040-42dd-aab4-_1.cs)]
- [!code-vb[CommonTransportKeys#1](~/add/codesnippet/visualbasic/ff0362cb-5040-42dd-aab4-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="sinkStack">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRequestStream">
@@ -134,14 +85,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
@@ -150,28 +96,11 @@
         <Parameter Name="headers" Type="System.Runtime.Remoting.Channels.ITransportHeaders" />
       </Parameters>
       <Docs>
-        <param name="msg">The <see cref="T:System.Runtime.Remoting.Messaging.IMethodCallMessage" /> containing details about the method call.</param>
-        <param name="headers">The headers to add to the outgoing message heading to the server.</param>
-        <summary>Returns the <see cref="T:System.IO.Stream" /> onto which the provided message is to be serialized.</summary>
-        <returns>The <see cref="T:System.IO.Stream" /> onto which the provided message is to be serialized.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetRequestStream method is called by the formatter sink before it serializes the message.  
-  
-   
-  
-## Examples  
- The following code example illustrates an implementation of this method.  
-  
- [!code-cs[Remoting_Sinks#23](~/add/codesnippet/csharp/1916f42a-20b1-48ec-91cb-_1.cs)]
- [!code-cpp[Remoting_Sinks#23](~/add/codesnippet/cpp/1916f42a-20b1-48ec-91cb-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="msg">To be added.</param>
+        <param name="headers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NextChannelSink">
@@ -181,38 +110,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Channels.IClientChannelSink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the next client channel sink in the client sink chain.</summary>
-        <value>The next client channel sink in the client sink chain.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Channel sinks are linked together in a chain of sink providers and all channel messages flow through this chain before they are serialized and transported.  
-  
-   
-  
-## Examples  
- The following code example illustrates an implementation of this property.  
-  
- [!code-cs[Remoting_Sinks#22](~/add/codesnippet/csharp/p-system.runtime.remotin_101_1.cs)]
- [!code-cpp[Remoting_Sinks#22](~/add/codesnippet/cpp/p-system.runtime.remotin_101_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessMessage">
@@ -222,14 +129,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -241,25 +143,13 @@
         <Parameter Name="responseStream" Type="System.IO.Stream&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="msg">The message to process.</param>
-        <param name="requestHeaders">The headers to add to the outgoing message heading to the server.</param>
-        <param name="requestStream">The stream headed to the transport sink.</param>
-        <param name="responseHeaders">When this method returns, contains a <see cref="T:System.Runtime.Remoting.Channels.ITransportHeaders" /> interface that holds the headers that the server returned. This parameter is passed uninitialized.</param>
-        <param name="responseStream">When this method returns, contains a <see cref="T:System.IO.Stream" /> coming back from the transport sink. This parameter is passed uninitialized.</param>
-        <summary>Requests message processing from the current sink.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example illustrates an implementation of this method.  
-  
- [!code-cs[Remoting_Sinks#24](~/add/codesnippet/csharp/fa2e7088-0e28-4fef-8867-_1.cs)]
- [!code-cpp[Remoting_Sinks#24](~/add/codesnippet/cpp/fa2e7088-0e28-4fef-8867-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="msg">To be added.</param>
+        <param name="requestHeaders">To be added.</param>
+        <param name="requestStream">To be added.</param>
+        <param name="responseHeaders">To be added.</param>
+        <param name="responseStream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

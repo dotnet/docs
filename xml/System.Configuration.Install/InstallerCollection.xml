@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.InstallerCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,38 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains a collection of installers to be run during an installation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The InstallerCollection provides the methods and properties that your application needs to manage a collection of <xref:System.Configuration.Install.Installer> objects.  
-  
- Use any of the following three ways to add installers to the collection:  
-  
--   The <xref:System.Configuration.Install.InstallerCollection.Add%2A> method adds a single installer to the collection.  
-  
--   The <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> methods add multiple installers to the collection.  
-  
--   The <xref:System.Configuration.Install.InstallerCollection.Insert%2A> method and the <xref:System.Configuration.Install.InstallerCollection.Item%2A> property, which is the InstallerCollection indexer, each add a single installer to the collection at the specified index.  
-  
- Remove installers through the <xref:System.Configuration.Install.InstallerCollection.Remove%2A> method. Check whether an installer is in the collection by using the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method. Find where an installer is located in the collection by using the <xref:System.Configuration.Install.InstallerCollection.IndexOf%2A> method.  
-  
- The installers in a collection are run when the installer containing the collection, as specified by the <xref:System.Configuration.Install.Installer.Parent%2A?displayProperty=fullName> property, calls their <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, or <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
-  
- For examples of the usage of an installer collection, see the <xref:System.Configuration.Install.AssemblyInstaller> and <xref:System.Configuration.Install.TransactedInstaller> classes.  
-  
-   
-  
-## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Add%2A> method of the InstallerCollection class. This example provides an implementation similar to that of [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md). It installs assemblies with the options preceding that particular assembly. If an option is not specified for an assembly, the previous assembly's options are taken if there is a previous assembly in the list. If the "/u" or "/uninstall" option is specified, the assemblies are uninstalled. If the "/?" or "/help" option is provided, the help information is displayed to the console.  
-  
- [!code-cpp[InstallerCollection_Add#1](~/add/codesnippet/cpp/t-system.configuration.i_9_1.cpp)]
- [!code-vb[InstallerCollection_Add#1](~/add/codesnippet/visualbasic/t-system.configuration.i_9_1.vb)]
- [!code-cs[InstallerCollection_Add#1](~/add/codesnippet/csharp/t-system.configuration.i_9_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -53,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,26 +31,10 @@
         <Parameter Name="value" Type="System.Configuration.Install.Installer" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Configuration.Install.Installer" /> that represents the installer to add to the collection.</param>
-        <summary>Adds the specified installer to this collection of installers.</summary>
-        <returns>The zero-based index of the added installer.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Configuration.Install.Installer.Parent%2A> property of the added <xref:System.Configuration.Install.Installer> is set to specify the <xref:System.Configuration.Install.Installer> containing this collection.  
-  
-   
-  
-## Examples  
- The following example is an excerpt of the example in the <xref:System.Configuration.Install.InstallerCollection> class.  
-  
- [!code-cpp[InstallerCollection_Add#1](~/add/codesnippet/cpp/6458b837-7887-4bd0-b832-_1.cpp)]
- [!code-vb[InstallerCollection_Add#1](~/add/codesnippet/visualbasic/6458b837-7887-4bd0-b832-_1.vb)]
- [!code-cs[InstallerCollection_Add#1](~/add/codesnippet/csharp/6458b837-7887-4bd0-b832-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -92,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,25 +53,9 @@
         <Parameter Name="value" Type="System.Configuration.Install.Installer[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of type <see cref="T:System.Configuration.Install.Installer" /> that represents the installers to add to this collection.</param>
-        <summary>Adds the specified array of installers to this collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Configuration.Install.Installer.Parent%2A> property of each added <xref:System.Configuration.Install.Installer> is set to the <xref:System.Configuration.Install.Installer> containing this collection.  
-  
-   
-  
-## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`.These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
-  
- [!code-cs[InstallerCollection_AddRange1#1](~/add/codesnippet/csharp/bd71e022-e229-4111-a2ce-_1.cs)]
- [!code-cpp[InstallerCollection_AddRange1#1](~/add/codesnippet/cpp/bd71e022-e229-4111-a2ce-_1.cpp)]
- [!code-vb[InstallerCollection_AddRange1#1](~/add/codesnippet/visualbasic/bd71e022-e229-4111-a2ce-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -130,7 +65,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,25 +74,9 @@
         <Parameter Name="value" Type="System.Configuration.Install.InstallerCollection" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Configuration.Install.InstallerCollection" /> that represents the installers to add to this collection.</param>
-        <summary>Adds the specified collection of installers to this collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Configuration.Install.Installer.Parent%2A> property of each added <xref:System.Configuration.Install.Installer> is set to the <xref:System.Configuration.Install.Installer> containing this collection.  
-  
-   
-  
-## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Insert%2A> method and the AddRange methods of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances of <xref:System.Configuration.Install.AssemblyInstaller> are added to a <xref:System.Configuration.Install.TransactedInstaller> named `myTransactedInstaller1`. The installers in the `myTransactedInstaller1` are copied to another <xref:System.Configuration.Install.TransactedInstaller> named `myTransactedInstaller2`. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
-  
- [!code-cpp[InstallerCollection_Insert#1](~/add/codesnippet/cpp/f470fccb-ed28-4fca-b9b4-_1.cpp)]
- [!code-vb[InstallerCollection_Insert#1](~/add/codesnippet/visualbasic/f470fccb-ed28-4fca-b9b4-_1.vb)]
- [!code-cs[InstallerCollection_Insert#1](~/add/codesnippet/csharp/f470fccb-ed28-4fca-b9b4-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -168,7 +86,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,22 +95,10 @@
         <Parameter Name="value" Type="System.Configuration.Install.Installer" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Configuration.Install.Installer" /> that represents the installer to look for.</param>
-        <summary>Determines whether the specified installer is included in collection.</summary>
-        <returns>
-          <see langword="true" /> if the specified installer is in this collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Remove%2A> method, Contains method, and <xref:System.Configuration.Install.InstallerCollection.IndexOf%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. `MyAssembly2.exe` is then removed from the <xref:System.Configuration.Install.InstallerCollection> of the <xref:System.Configuration.Install.TransactedInstaller>. The installation process starts and installs only `MyAssembly1.exe`.  
-  
- [!code-cpp[InstallerCollection_Remove#1](~/add/codesnippet/cpp/a36b6219-ead2-42df-8eae-_1.cpp)]
- [!code-cs[InstallerCollection_Remove#1](~/add/codesnippet/csharp/a36b6219-ead2-42df-8eae-_1.cs)]
- [!code-vb[InstallerCollection_Remove#1](~/add/codesnippet/visualbasic/a36b6219-ead2-42df-8eae-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -203,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,21 +118,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array to copy to.</param>
-        <param name="index">The index of the array at which to paste the collection.</param>
-        <summary>Copies the items from the collection to an array, begining at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the CopyTo method of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. The names of the assemblies to be installed are displayed on the console. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
-  
- [!code-cpp[InstallerCollection_CopyTo#1](~/add/codesnippet/cpp/a9076988-1db9-4bd3-96aa-_1.cpp)]
- [!code-cs[InstallerCollection_CopyTo#1](~/add/codesnippet/csharp/a9076988-1db9-4bd3-96aa-_1.cs)]
- [!code-vb[InstallerCollection_CopyTo#1](~/add/codesnippet/visualbasic/a9076988-1db9-4bd3-96aa-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -238,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -248,21 +140,10 @@
         <Parameter Name="value" Type="System.Configuration.Install.Installer" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Configuration.Install.Installer" /> to locate in the collection.</param>
-        <summary>Determines the index of a specified installer in the collection.</summary>
-        <returns>The zero-based index of the installer in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example is the same as the example in the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method. For more information on this example, please see the Example section of the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method.  
-  
- [!code-cpp[InstallerCollection_Remove#1](~/add/codesnippet/cpp/eaf38333-589b-4463-9993-_1.cpp)]
- [!code-cs[InstallerCollection_Remove#1](~/add/codesnippet/csharp/eaf38333-589b-4463-9993-_1.cs)]
- [!code-vb[InstallerCollection_Remove#1](~/add/codesnippet/visualbasic/eaf38333-589b-4463-9993-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -272,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,21 +163,10 @@
         <Parameter Name="value" Type="System.Configuration.Install.Installer" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the installer.</param>
-        <param name="value">The <see cref="T:System.Configuration.Install.Installer" /> to insert.</param>
-        <summary>Inserts the specified installer into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example is the same as the example in the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> method. For more information on this example, please see the Example section of the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> method.  
-  
- [!code-cpp[InstallerCollection_Insert#1](~/add/codesnippet/cpp/a458559c-959a-40d4-8b29-_1.cpp)]
- [!code-vb[InstallerCollection_Insert#1](~/add/codesnippet/visualbasic/a458559c-959a-40d4-8b29-_1.vb)]
- [!code-cs[InstallerCollection_Insert#1](~/add/codesnippet/csharp/a458559c-959a-40d4-8b29-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -307,7 +176,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,26 +185,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the installer to get or set.</param>
-        <summary>Gets or sets an installer at the specified index.</summary>
-        <value>An <see cref="T:System.Configuration.Install.Installer" /> that represents the installer at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the specified <xref:System.Configuration.Install.Installer> is placed in the <xref:System.Configuration.Install.InstallerCollection>, the <xref:System.Configuration.Install.Installer.Parent%2A> property of the <xref:System.Configuration.Install.Installer> is set to the <xref:System.Configuration.Install.Installer> that contains the collection.  
-  
-   
-  
-## Examples  
- The following example creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. The names of all the assemblies that are to be installed are displayed to the console. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
-  
- [!code-cs[InstallerCollection_Item#1](~/add/codesnippet/csharp/p-system.configuration.i_14_1.cs)]
- [!code-cpp[InstallerCollection_Item#1](~/add/codesnippet/cpp/p-system.configuration.i_14_1.cpp)]
- [!code-vb[InstallerCollection_Item#1](~/add/codesnippet/visualbasic/p-system.configuration.i_14_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -346,7 +198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -357,9 +208,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
-        <param name="value">The new value of the installer at <c>index</c>.</param>
-        <summary>Performs additional custom processes before a new installer is inserted into the collection.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,7 +221,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -381,9 +231,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
-        <param name="value">The installer to be removed from <c>index</c>.</param>
-        <summary>Performs additional custom processes before an installer is removed from the collection.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,7 +244,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -406,10 +255,10 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to replace <c>oldValue</c>.</param>
-        <param name="oldValue">The value to replace with <c>newValue.</c></param>
-        <param name="newValue">The new value of the installer at <c>index</c>.</param>
-        <summary>Performs additional custom processes before an existing installer is set to a new value.</summary>
+        <param name="index">To be added.</param>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,7 +269,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -430,25 +278,9 @@
         <Parameter Name="value" Type="System.Configuration.Install.Installer" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Configuration.Install.Installer" /> that represents the installer to remove.</param>
-        <summary>Removes the specified <see cref="T:System.Configuration.Install.Installer" /> from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Configuration.Install.Installer.Parent%2A> property of the removed <xref:System.Configuration.Install.Installer> is set to `null`.  
-  
-   
-  
-## Examples  
- The following example is the same as the example in the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method. For more information on this example, please see the Example section of the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method.  
-  
- [!code-cpp[InstallerCollection_Remove#1](~/add/codesnippet/cpp/c86e149b-39c8-4cba-af08-_1.cpp)]
- [!code-cs[InstallerCollection_Remove#1](~/add/codesnippet/csharp/c86e149b-39c8-4cba-af08-_1.cs)]
- [!code-vb[InstallerCollection_Remove#1](~/add/codesnippet/visualbasic/c86e149b-39c8-4cba-af08-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

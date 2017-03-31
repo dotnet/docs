@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LogoutAction" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the page that the user will be directed to when he or she logs out of the Web site.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LogoutAction enumeration members indicate the action taken when the user logs out of the Web site using the <xref:System.Web.UI.WebControls.LoginStatus> control.  
-  
-   
-  
-## Examples  
- The following code example shows how to set the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A?displayProperty=fullName> property using the LogoutAction enumeration.  
-  
- [!code-vb[LoginStatusLogoutAction#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_125_1.aspx)]
- [!code-cs[LoginStatusLogoutAction#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_125_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Redirect">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.LogoutAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Redirects the user to a specified URL.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RedirectToLoginPage">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.LogoutAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Redirects the user to the login page defined in the site's configuration files (Machine.config and Web.config).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.LogoutAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reloads the current page with the user logged out.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

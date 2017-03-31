@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DetailsViewDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,53 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.DetailsView> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to markup source code and edited into the markup for the Web page.  
-  
- The properties of the DetailsViewDesigner class provide the following functionality:  
-  
--   The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.ActionLists%2A> property returns a <xref:System.ComponentModel.Design.DesignerActionListCollection> object, which typically contains an object that is derived from the <xref:System.ComponentModel.Design.DesignerActionList> class for each level in the inheritance tree of the designer.  
-  
--   The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.AutoFormats%2A> property returns a collection of formatting schemes for display in the **Auto Format** dialog box.  
-  
--   The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.TemplateGroups%2A> property returns a collection of template groups for the fields of the associated <xref:System.Web.UI.WebControls.DetailsView> control and the top level <xref:System.Web.UI.WebControls.DetailsView> templates.  
-  
--   The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.UsePreviewControl%2A> property always returns `true`, indicating that the designer creates a temporary copy of the associated <xref:System.Web.UI.WebControls.DetailsView> control to generate the design-time markup.  
-  
- The DetailsViewDesigner class methods provide the following functionality:  
-  
--   The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.DataBind%2A> method binds the associated <xref:System.Web.UI.WebControls.DetailsView> control to a design-time data source.  
-  
--   The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A> method returns the markup that is used to render the associated <xref:System.Web.UI.WebControls.DetailsView> at design time.  
-  
--   The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.Initialize%2A> method prepares the designer to view, edit, and design the associated <xref:System.Web.UI.WebControls.DetailsView>.  
-  
--   The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.OnClick%2A> method is called when a region of the design-time view of the associated <xref:System.Web.UI.WebControls.DetailsView> is clicked.  
-  
--   The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.OnSchemaRefreshed%2A> method is called when the schema of the data source of the associated <xref:System.Web.UI.WebControls.DetailsView> changes.  
-  
--   The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.PreFilterProperties%2A> method is used to remove or add additional properties or to shadow properties of the associated <xref:System.Web.UI.WebControls.DetailsView>.  
-  
- Design-time editable regions are not supported in the <xref:System.Web.UI.WebControls.DetailsView> control, so the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetEditableDesignerRegionContent%2A> and <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.SetEditableDesignerRegionContent%2A> methods have no functionality.  
-  
-   
-  
-## Examples  
- The following code example shows how to extend the DetailsViewDesigner class to change the appearance of controls that are derived from the <xref:System.Web.UI.WebControls.DetailsView> control at design time.  
-  
- The example derives the `MyDetailsView` control from the <xref:System.Web.UI.WebControls.DetailsView>. The `MyDetailsView` is simply a copy of the <xref:System.Web.UI.WebControls.DetailsView> control. The example also derives the `MyDetailsViewDesigner` class from DetailsViewDesigner and places a <xref:System.ComponentModel.DesignerAttribute> object for `MyDetailsViewDesigner` on the `MyDetailsView` control.  
-  
- `The MyDetailsViewDesigner` overrides the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.SampleRowCount%2A> property to specify that the pager row of the design-time view of the `MyDetailsView` contain five page links. It overrides the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.PreFilterProperties%2A> method to make the <xref:System.Web.UI.Control.NamingContainer%2A> property visible in the **Property** grid at design time. It overrides the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A> method to include the <xref:System.Web.UI.WebControls.DetailsView.Caption%2A> property, if it is specified, as a new first row in the `MyDetailsView` grid at design time. If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the `MyDetailsView` is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value, the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A> draws a blue dashed border around the control to make its extent more visible.  
-  
- [!code-cs[System.Web.UI.Design.WebControls.DetailsViewDesigner#1](~/add/codesnippet/csharp/t-system.web.ui.design.w_12_1.cs)]
- [!code-vb[System.Web.UI.Design.WebControls.DetailsViewDesigner#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.w_12_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DetailsViewDesigner" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.DetailsView> control or a copy of that control on the design surface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -91,15 +37,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the designer action list collection for this designer.</summary>
-        <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,23 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.DesignerAutoFormatCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of automatic formatting schemes to display in the **Auto Format** dialog box.</summary>
-        <value>A <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> that contains the predefined schemes for the <see cref="T:System.Web.UI.WebControls.DetailsView" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection> is populated from an XML-encoded member of an internal class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -136,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,18 +82,9 @@
         <Parameter Name="dataBoundControl" Type="System.Web.UI.WebControls.BaseDataBoundControl" />
       </Parameters>
       <Docs>
-        <param name="dataBoundControl">The <see cref="T:System.Web.UI.WebControls.DetailsView" /> control to bind to the design-time data source.</param>
-        <summary>Binds the associated control to the design-time data source.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataBind method binds the associated <xref:System.Web.UI.WebControls.DetailsView> control to the design-time data source and calculates the number of pager and automatically generated rows that are required, based on features that are specified for the <xref:System.Web.UI.WebControls.DetailsView>.  
-  
- The `dataBoundControl` parameter represents the <xref:System.Web.UI.WebControls.DetailsView> control that is associated with this designer, or a copy of that control.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataBoundControl">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -167,7 +94,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,24 +101,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the markup that is used to render the associated control at design time.</summary>
-        <returns>A <see cref="T:System.String" /> containing the markup used to render the <see cref="T:System.Web.UI.WebControls.DetailsView" /> at design time.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- First, the GetDesignTimeHtml method sets the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateRows%2A> property of the <xref:System.Web.UI.WebControls.DetailsView> control to `true`, if the <xref:System.Web.UI.WebControls.DetailsView.Fields%2A> collection is empty. The GetDesignTimeHtml then sets the <xref:System.Web.UI.WebControls.DetailsView.DataKeyNames%2A> collection of the GetDesignTimeHtml control to an empty <xref:System.String> array if the schema of the data source cannot be obtained. It refreshes the <xref:System.ComponentModel.TypeDescriptor> object to force the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.PreFilterProperties%2A> method to be called. It then calls the base method to generate the markup.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the GetDesignTimeHtml method in a class inherited from the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner> class to change the appearance of the <xref:System.Web.UI.WebControls.DetailsView> control at design time. The example adds a new first row to the grid to contain the <xref:System.Web.UI.WebControls.DetailsView.Caption%2A> property, if the <xref:System.Web.UI.WebControls.DetailsView.Caption%2A> is defined. If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control that is derived from <xref:System.Web.UI.WebControls.DetailsView> is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value, the GetDesignTimeHtml draws a blue dashed border around the control to make its extent more visible. It does not change the run-time appearance of the control.  
-  
- [!code-cs[System.Web.UI.Design.WebControls.DetailsViewDesigner#4](~/add/codesnippet/csharp/m-system.web.ui.design.w_2_1.cs)]
- [!code-vb[System.Web.UI.Design.WebControls.DetailsViewDesigner#4](~/add/codesnippet/visualbasic/m-system.web.ui.design.w_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -202,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,27 +122,10 @@
         <Parameter Name="regions" Type="System.Web.UI.Design.DesignerRegionCollection" />
       </Parameters>
       <Docs>
-        <param name="regions">A <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> to which to add definitions of the selectable and clickable regions in the design-time view of the control.</param>
-        <summary>Gets the markup that is used to render the associated control at design time and populates a collection of designer regions.</summary>
-        <returns>A <see cref="T:System.String" /> containing the markup used to render the <see cref="T:System.Web.UI.WebControls.DetailsView" /> at design time.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetDesignTimeHtml method calls the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A?displayProperty=fullName> method to generate the markup for the design-time rendering of the <xref:System.Web.UI.WebControls.DetailsView> control. The GetDesignTimeHtml method also populates `regions` with a <xref:System.Web.UI.Design.DesignerRegion> object for each clickable or selectable region of the design-time rendering.  
-  
- For the <xref:System.Web.UI.WebControls.DetailsView>, the first cell in each row is selectable; all the cells in the rows are clickable.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A> method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner> class to change the appearance of the <xref:System.Web.UI.WebControls.DetailsView> control at design time. The example adds a new first row to the grid to contain the <xref:System.Web.UI.WebControls.DetailsView.Caption%2A> property, if the <xref:System.Web.UI.WebControls.DetailsView.Caption%2A> is defined. If the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control that is derived from the <xref:System.Web.UI.WebControls.DetailsView> is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value, the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A> draws a blue dashed border around the control to make its extent more visible. It does not change the run-time appearance of the control.  
-  
- [!code-cs[System.Web.UI.Design.WebControls.DetailsViewDesigner#4](~/add/codesnippet/csharp/b6b11513-0637-4403-b729-_1.cs)]
- [!code-vb[System.Web.UI.Design.WebControls.DetailsViewDesigner#4](~/add/codesnippet/visualbasic/b6b11513-0637-4403-b729-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="regions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -242,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,17 +144,10 @@
         <Parameter Name="region" Type="System.Web.UI.Design.EditableDesignerRegion" />
       </Parameters>
       <Docs>
-        <param name="region">The <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> for which to fetch content.</param>
-        <summary>Returns the content for an editable region of the design-time view of the associated control.</summary>
-        <returns>The content for an editable region of the design-time view of the associated control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This functionality is not currently available.  
-  
- ]]></format>
-        </remarks>
+        <param name="region">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -272,7 +157,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -282,18 +166,9 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">A <see cref="T:System.Web.UI.WebControls.DetailsView" />, control which implements an <see cref="T:System.ComponentModel.IComponent" />.</param>
-        <summary>Prepares the designer to view, edit, and design the associated control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The designer host calls the Initialize method when it is ready to use the designer to render the <xref:System.Web.UI.WebControls.DetailsView> control. The Initialize and its base methods configure properties and set up events that are necessary for the operation of the designer.  
-  
- The `component` parameter represents the <xref:System.Web.UI.WebControls.DetailsView> control that is associated with this designer or a copy of that control.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -303,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -313,16 +187,9 @@
         <Parameter Name="e" Type="System.Web.UI.Design.DesignerRegionMouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Web.UI.Design.DesignerRegionMouseEventArgs" /> that defines the clicked region of the control.</param>
-        <summary>Called when a region of the design-time view for the associated control is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnClick method saves the selected region index and updates the markup that renders the <xref:System.Web.UI.WebControls.DetailsView> control on the design surface.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSchemaRefreshed">
@@ -332,7 +199,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -340,15 +206,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when the schema of the data source for the associated control changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unless the designer is in template editing mode or a field is being added or edited, the OnSchemaRefreshed method calls the <xref:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange%2A> method, which in turn calls the <xref:System.Web.UI.Design.ControlDesigner.OnComponentChanged%2A> method to update the <xref:System.Web.UI.WebControls.DetailsView> control to reflect the data source change.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -358,7 +217,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -368,26 +226,9 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">A collection implementing the <see cref="T:System.Collections.IDictionary" /> of the added and shadowed properties.</param>
-        <summary>Used by the designer to remove properties from or add properties to the display in the <paramref name="Properties" /> grid or to shadow properties of the associated control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Control designers use methods derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the `Properties` grid.  
-  
- For the <xref:System.Web.UI.WebControls.DetailsView> control, the PreFilterProperties method sets the <xref:System.ComponentModel.BrowsableAttribute> object of the <xref:System.Web.UI.WebControls.DetailsView.Fields%2A> property to `false` when the control is in template mode. This ensures that a column that is in template mode cannot be deleted using the `Fields` dialog box.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the PreFilterProperties method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner> class to change the `Properties` grid of the <xref:System.Web.UI.WebControls.DetailsView> control at design time. The example makes the <xref:System.Web.UI.Control.NamingContainer%2A> property visible in the `Properties` grid.  
-  
- [!code-cs[System.Web.UI.Design.WebControls.DetailsViewDesigner#3](~/add/codesnippet/csharp/59da7cc7-2ede-4528-b3e3-_1.cs)]
- [!code-vb[System.Web.UI.Design.WebControls.DetailsViewDesigner#3](~/add/codesnippet/visualbasic/59da7cc7-2ede-4528-b3e3-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SampleRowCount">
@@ -397,31 +238,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of sample rows for the associated control to display.</summary>
-        <value>The number of sample rows to show.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SampleRowCount property always returns the number `2`. This causes two page links to be displayed in the pager row of the <xref:System.Web.UI.WebControls.DetailsView> control at design time.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the SampleRowCount property in a class inherited from the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner> class to change the number of page links appearing in the pager row of the <xref:System.Web.UI.WebControls.DetailsView> control at design time. The example causes five page links to be displayed.  
-  
- [!code-cs[System.Web.UI.Design.WebControls.DetailsViewDesigner#2](~/add/codesnippet/csharp/p-system.web.ui.design.w_0_1.cs)]
- [!code-vb[System.Web.UI.Design.WebControls.DetailsViewDesigner#2](~/add/codesnippet/visualbasic/p-system.web.ui.design.w_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEditableDesignerRegionContent">
@@ -431,7 +256,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -442,17 +266,10 @@
         <Parameter Name="content" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="region">The <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> to update.</param>
-        <param name="content">A <see cref="T:System.String" /> to write to <c>region</c>.</param>
-        <summary>Specifies content for an editable region of the design-time view of the associated control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SetEditableDesignerRegionContent method has no functionality; there is no support for editable regions in the design-time view of the <xref:System.Web.UI.WebControls.DetailsView> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="region">To be added.</param>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -462,23 +279,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.TemplateGroupCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of template groups for the fields of the associated control.</summary>
-        <value>A <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> containing an element for each templated field in the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TemplateGroups property constructs a collection of <xref:System.Web.UI.Design.TemplateGroup> objects, one for each templated data field and one for each control field (such as header, footer, and pager) in the associated <xref:System.Web.UI.WebControls.DetailsView> control. The data field <xref:System.Web.UI.Design.TemplateGroup> elements have a <xref:System.Web.UI.Design.TemplateDefinition> object for each of the predefined row template types. The control field <xref:System.Web.UI.Design.TemplateGroup> elements contain a single <xref:System.Web.UI.Design.TemplateDefinition>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -488,23 +297,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the designer should use a temporary copy, rather than the actual control associated with the designer, to generate the design-time markup.</summary>
-        <value>Always <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the UsePreviewControl property is always `true`, the designer uses a <xref:System.Web.UI.WebControls.View> control that contains a copy of the associated <xref:System.Web.UI.WebControls.DetailsView> control to generate the design-time markup. The <xref:System.Web.UI.WebControls.View> control does not affect any persistence for the <xref:System.Web.UI.WebControls.DetailsView>. If the UsePreviewControl property has been overridden to return `false`, the designer will use the associated <xref:System.Web.UI.WebControls.DetailsView> control itself to generate the design-time markup.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

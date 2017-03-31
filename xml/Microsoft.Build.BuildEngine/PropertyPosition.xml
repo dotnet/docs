@@ -4,15 +4,13 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.PropertyPosition" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies constants that define the location in the project to insert a property.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.BuildEngine.PropertyPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replace the existing [Property](../Topic/Property%20Element%20\(MSBuild\).md) element if it exists. Otherwise, create the <c>Property</c> after the last [Import](../Topic/Import%20Element%20\(MSBuild\).md) element in the project.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseExistingOrCreateAfterLastPropertyGroup">
@@ -41,15 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.BuildEngine.PropertyPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replace the existing [Property](../Topic/Property%20Element%20\(MSBuild\).md) element if it exists. Otherwise, if possible, create a new <c>Property</c> element as a child of an existing compatible [PropertyGroup](../Topic/PropertyGroup%20Element%20\(MSBuild\).md) element. If necessary, create a new compatible <c>PropertyGroup</c> element immediately following the last <c>PropertyGroup</c> in the project.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

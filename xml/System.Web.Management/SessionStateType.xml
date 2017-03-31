@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SessionStateType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the session-state type used when installing a session-state database provider.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the SessionStateType enumeration with the <xref:System.Web.Management.SqlServices.InstallSessionState%2A> method of the <xref:System.Web.Management.SqlServices> type.  
-  
- [!code-cs[System.Web.Management.SqlServices#8](~/add/codesnippet/csharp/t-system.web.management._0_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#8](~/add/codesnippet/visualbasic/t-system.web.management._0_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Custom">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.SessionStateType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Session-state data and stored procedures are placed in a custom data store.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Persisted">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.SessionStateType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Session-state data and stored procedures are placed in the "ASPState" database. Session-state data will survive a restart of the database server.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Temporary">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.SessionStateType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Session state data is stored in tempdb, and stored procedures are placed in the "ASPState" database. Session state data will not survive a restart of SQL Server.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlServices" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Supports installing and removing the SQL Server database elements of ASP.NET features.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use SQL Server databases to store information for ASP.NET features such as session state, membership, Web parts personalization, and role management. These features require that the SQL Server database to which they are connected be properly configured before use. You can use the ASP.NET Register SQL tool (aspnet_regsql.exe) to do this, or you can call the static methods exposed by the SqlServices class directly from your code.  
-  
-> [!NOTE]
->  Using the aspnet_regsql.exe tool or the SqlServices class to configure the database only sets up the database that the providers will use with the proper tables, triggers, and stored procedures. Configuring the database in this way does not modify configuration files to specify that these features use the SQL Providers for these services.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the SqlServices class.  
-  
- [!code-cs[System.Web.Management.SqlServices#1](~/add/codesnippet/csharp/t-system.web.management._4_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#1](~/add/codesnippet/visualbasic/t-system.web.management._4_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GenerateApplicationServicesScripts">
@@ -41,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,12 +33,11 @@
         <Parameter Name="database" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="install">
-          <see langword="true" /> to generate a script that installs the specified features; <see langword="false" /> to generate a script that removes the features.</param>
-        <param name="features">A bitwise combination of the <see cref="T:System.Web.Management.SqlFeatures" /> values, specifying the specific features for which to generate scripts.</param>
-        <param name="database">The name of the SQL Server database to use in the generated scripts.</param>
-        <summary>Generates the SQL scripts for the selected features. The scripts will reference the database indicated by the database parameter.</summary>
-        <returns>Returns the generated script code.</returns>
+        <param name="install">To be added.</param>
+        <param name="features">To be added.</param>
+        <param name="database">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,14 +59,12 @@
         <Parameter Name="customDatabase" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="install">
-          <see langword="true" /> to generate a script that installs the specified features; <see langword="false" /> to generate a script that removes the features.</param>
-        <param name="type">One of the <see cref="T:System.Web.Management.SessionStateType" /> values, specifying the type of session state for which to generate scripts.</param>
-        <param name="customDatabase">The name of the SQL Server database to use in the generated scripts.</param>
-        <summary>Generates the SQL script for installing or removing session state. The script will reference the database indicated by the database parameter.</summary>
-        <returns>Returns the generated script code.</returns>
+        <param name="install">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="customDatabase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -98,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,32 +85,11 @@
         <Parameter Name="features" Type="System.Web.Management.SqlFeatures" />
       </Parameters>
       <Docs>
-        <param name="server">The database server on which to install the features.</param>
-        <param name="database">The database on which to install the features.</param>
-        <param name="features">A bitwise combination of the <see cref="T:System.Web.Management.SqlFeatures" /> values, specifying the features to install.</param>
-        <summary>Installs components for selected ASP.NET features on a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
-> [!NOTE]
->  The connection to the database server is made with a trusted connection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Install method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-cs[System.Web.Management.SqlServices#4](~/add/codesnippet/csharp/9e8a53df-8a5d-40f9-aa53-_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#4](~/add/codesnippet/visualbasic/9e8a53df-8a5d-40f9-aa53-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contains one or more invalid flags.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <param name="server">To be added.</param>
+        <param name="database">To be added.</param>
+        <param name="features">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -145,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,29 +110,11 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="database">The database on which to install the features.</param>
-        <param name="features">A bitwise combination of the <see cref="T:System.Web.Management.SqlFeatures" /> values, specifying the features to install.</param>
-        <param name="connectionString">The connection string to use. The connection string is only used to establish a connection to the database server.  Specifying a database in the connection string has no effect.</param>
-        <summary>Installs components for selected ASP.NET services on a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Install method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-cs[System.Web.Management.SqlServices#2](~/add/codesnippet/csharp/c361a2bc-6fe1-40c5-ae55-_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#2](~/add/codesnippet/visualbasic/c361a2bc-6fe1-40c5-ae55-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contains one or more invalid flags.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <param name="database">To be added.</param>
+        <param name="features">To be added.</param>
+        <param name="connectionString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -189,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -203,26 +137,13 @@
         <Parameter Name="features" Type="System.Web.Management.SqlFeatures" />
       </Parameters>
       <Docs>
-        <param name="server">The database server on which to install the features.</param>
-        <param name="user">The user name to use when connecting to the database.</param>
-        <param name="password">The password to use when connecting to the database.</param>
-        <param name="database">The database on which to install the features.</param>
-        <param name="features">A bitwise combination of the <see cref="T:System.Web.Management.SqlFeatures" /> values, specifying the features to install.</param>
-        <summary>Installs components for selected ASP.NET features on a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
-> [!NOTE]
->  The connection to the database server is made with a trusted connection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contains one or more invalid flags.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <param name="server">To be added.</param>
+        <param name="user">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="database">To be added.</param>
+        <param name="features">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InstallSessionState">
@@ -232,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,32 +164,11 @@
         <Parameter Name="type" Type="System.Web.Management.SessionStateType" />
       </Parameters>
       <Docs>
-        <param name="server">The SQL Server instance on which to install the session-state components.</param>
-        <param name="customDatabase">The database on which to install the session-state components.</param>
-        <param name="type">One of the <see cref="T:System.Web.Management.SessionStateType" /> values, specifying the type of session state to install.</param>
-        <summary>Installs components for ASP.NET session state on a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
-> [!NOTE]
->  The connection to the database server is made with a trusted connection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the InstallSessionState method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-cs[System.Web.Management.SqlServices#10](~/add/codesnippet/csharp/3feec6dd-8156-459b-8838-_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#10](~/add/codesnippet/visualbasic/3feec6dd-8156-459b-8838-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <param name="server">To be added.</param>
+        <param name="customDatabase">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InstallSessionState">
@@ -279,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -291,24 +189,11 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="customDatabase">The database on which to install the session-state components.</param>
-        <param name="type">One of the <see cref="T:System.Web.Management.SessionStateType" /> values, specifying the type of session state to install.</param>
-        <param name="connectionString">The connection string to use. The connection string is only used to establish a connection to the database server.  Specifying a database in the connection string has no effect.</param>
-        <summary>Installs components for ASP.NET session state on a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the InstallSessionState method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-cs[System.Web.Management.SqlServices#8](~/add/codesnippet/csharp/5672209d-ed6d-4c88-a7b6-_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#8](~/add/codesnippet/visualbasic/5672209d-ed6d-4c88-a7b6-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <param name="customDatabase">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="connectionString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InstallSessionState">
@@ -318,7 +203,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,34 +216,13 @@
         <Parameter Name="type" Type="System.Web.Management.SessionStateType" />
       </Parameters>
       <Docs>
-        <param name="server">The SQL Server instance on which to install the session-state components.</param>
-        <param name="user">The user name to use when connecting to the database.</param>
-        <param name="password">The password to use when connecting to the database.</param>
-        <param name="customDatabase">The database on which to install the session-state components.</param>
-        <param name="type">One of the <see cref="T:System.Web.Management.SessionStateType" /> values, specifying the type of session state to install.</param>
-        <summary>Installs components for ASP.NET session state on a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
-> [!NOTE]
->  The connection to the database server is made with a trusted connection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the InstallSessionState method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-cs[System.Web.Management.SqlServices#12](~/add/codesnippet/csharp/42530263-a691-4ed3-a485-_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#12](~/add/codesnippet/visualbasic/42530263-a691-4ed3-a485-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <param name="server">To be added.</param>
+        <param name="user">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="customDatabase">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -369,7 +232,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -381,32 +243,11 @@
         <Parameter Name="features" Type="System.Web.Management.SqlFeatures" />
       </Parameters>
       <Docs>
-        <param name="server">The SQL Server instance from which to remove the features.</param>
-        <param name="database">The database from which to remove the features.</param>
-        <param name="features">A bitwise combination of the <see cref="T:System.Web.Management.SqlFeatures" /> values, specifying the features to remove.</param>
-        <summary>Removes components for selected ASP.NET features from a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
-> [!NOTE]
->  The connection to the database server is made with a trusted connection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Uninstall method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-cs[System.Web.Management.SqlServices#5](~/add/codesnippet/csharp/79a134d3-d513-4d78-bd50-_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#5](~/add/codesnippet/visualbasic/79a134d3-d513-4d78-bd50-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contained one or more invalid flags.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation, an attempt was made to uninstall from a nonexistent database, or one or more tables for the features in the specified database contained data.</exception>
+        <param name="server">To be added.</param>
+        <param name="database">To be added.</param>
+        <param name="features">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -416,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -428,32 +268,11 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="database">The database from which to remove the features.</param>
-        <param name="features">A bitwise combination of the <see cref="T:System.Web.Management.SqlFeatures" /> values, specifying the features to remove.</param>
-        <param name="connectionString">The connection string to use. The connection string is only used to establish a connection to the database server. Specifying a database in the connection string has no effect.</param>
-        <summary>Removes components for selected ASP.NET features from a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database `aspnetdb`.  
-  
-> [!NOTE]
->  The connection to the database server is made with a trusted connection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Uninstall method of the <xref:System.Web.Management.SqlServices> type.  
-  
- [!code-cs[System.Web.Management.SqlServices#3](~/add/codesnippet/csharp/0f83760a-d17d-4395-a05a-_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#3](~/add/codesnippet/visualbasic/0f83760a-d17d-4395-a05a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contained one or more invalid flags.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation, an attempt was made to uninstall from a nonexistent database, or one or more tables for the features in the specified database contained data.</exception>
+        <param name="database">To be added.</param>
+        <param name="features">To be added.</param>
+        <param name="connectionString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -463,7 +282,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -477,26 +295,13 @@
         <Parameter Name="features" Type="System.Web.Management.SqlFeatures" />
       </Parameters>
       <Docs>
-        <param name="server">The SQL Server instance from which to remove the features.</param>
-        <param name="user">The user name to use when connecting to the database.</param>
-        <param name="password">The password to use when connecting to the database.</param>
-        <param name="database">The database from which to remove the features.</param>
-        <param name="features">A bitwise combination of the <see cref="T:System.Web.Management.SqlFeatures" /> values, specifying the features to remove.</param>
-        <summary>Removes components for selected ASP.NET features from a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `database` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default database, `aspnetdb`. If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
-> [!NOTE]
->  The connection to the database server is made with a trusted connection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contained one or more invalid flags.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation, an attempt was made to uninstall from a nonexistent database, or one or more tables for the features in the specified database contained data.</exception>
+        <param name="server">To be added.</param>
+        <param name="user">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="database">To be added.</param>
+        <param name="features">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UninstallSessionState">
@@ -506,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -518,31 +322,11 @@
         <Parameter Name="type" Type="System.Web.Management.SessionStateType" />
       </Parameters>
       <Docs>
-        <param name="server">The SQL Server instance from which to remove the session-state components.</param>
-        <param name="customDatabase">The database from which to remove the session-state components.</param>
-        <param name="type">One of the <see cref="T:System.Web.Management.SessionStateType" /> values, specifying the type of session state to remove.</param>
-        <summary>Removes components for ASP.NET session state from a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
- **Note** The connection to the database server is made with a trusted connection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the UninstallSessionState method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-cs[System.Web.Management.SqlServices#11](~/add/codesnippet/csharp/be09407a-55e6-4e0a-a2db-_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#11](~/add/codesnippet/visualbasic/be09407a-55e6-4e0a-a2db-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <param name="server">To be added.</param>
+        <param name="customDatabase">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UninstallSessionState">
@@ -552,7 +336,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -564,24 +347,11 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="customDatabase">The database from which to remove the session-state components.</param>
-        <param name="type">One of the <see cref="T:System.Web.Management.SessionStateType" /> values, specifying the type of session state to remove.</param>
-        <param name="connectionString">The connection string to use.  The connection string is only used to establish a connection to the database server.  Specifying a database in the connection string has no effect.</param>
-        <summary>Removes components for ASP.NET session state from a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlServices.UninstallSessionState%28System.String%2CSystem.String%2CSystem.Web.Management.SessionStateType%29> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-cs[System.Web.Management.SqlServices#9](~/add/codesnippet/csharp/bff889f5-b3c3-415a-8e47-_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#9](~/add/codesnippet/visualbasic/bff889f5-b3c3-415a-8e47-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <param name="customDatabase">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="connectionString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UninstallSessionState">
@@ -591,7 +361,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -605,33 +374,13 @@
         <Parameter Name="type" Type="System.Web.Management.SessionStateType" />
       </Parameters>
       <Docs>
-        <param name="server">The SQL Server instance from which to remove the session-state components.</param>
-        <param name="user">The user name to use when connecting to the database.</param>
-        <param name="password">The password to use when connecting to the database.</param>
-        <param name="customDatabase">The database from which to remove the session-state components.</param>
-        <param name="type">One of the <see cref="T:System.Web.Management.SessionStateType" /> values, specifying the type of session state to remove.</param>
-        <summary>Removes components for ASP.NET session state from a SQL Server database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `server` is `null` or not supplied, <xref:System.Web.Management.SqlServices> will use the default SQL Server instance.  
-  
- **Note** The connection to the database server is made with a trusted connection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the UninstallSessionState method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-cs[System.Web.Management.SqlServices#13](~/add/codesnippet/csharp/ff68d969-b952-42ee-99b5-_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#13](~/add/codesnippet/visualbasic/ff68d969-b952-42ee-99b5-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
-        <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
-        <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <param name="server">To be added.</param>
+        <param name="user">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="customDatabase">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

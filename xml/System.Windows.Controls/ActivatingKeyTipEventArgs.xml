@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="System.Windows.Controls.KeyTipService.ActivatingKeyTip" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ActivatingKeyTipEventArgs" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,17 +47,10 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">The event handler to invoke.</param>
-        <param name="genericTarget">The target on which the handler is invoked.</param>
-        <summary>Invokes the specified event handler on the specified object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation casts the generic handler to an <xref:System.Windows.Controls.ActivatingKeyTipEventHandler> instance and invokes it.  
-  
- ]]></format>
-        </remarks>
+        <param name="genericHandler">To be added.</param>
+        <param name="genericTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyTipHorizontalOffset">
@@ -73,10 +66,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the horizontal offset from the specified horizontal placement.</summary>
-        <value>The amount to offset the KeyTip horizontally.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The property is set to a value that either evaluates to negative or positive infinity, or is not a number.</exception>
       </Docs>
     </Member>
     <Member MemberName="KeyTipHorizontalPlacement">
@@ -92,8 +84,8 @@
         <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the horizontal placement for the KeyTip relative to the placement target element.</summary>
-        <value>The horizontal placement for the KeyTip relative to the placement target element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,10 +102,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the vertical offset from the specified vertical placement.</summary>
-        <value>The amount to offset the KeyTip vertically.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The property is set to a value that either evaluates to negative or positive infinity, or is not a number.</exception>
       </Docs>
     </Member>
     <Member MemberName="KeyTipVerticalPlacement">
@@ -129,8 +120,8 @@
         <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the vertical placement for the KeyTip relative to the placement target element.</summary>
-        <value>The vertical placement for the KeyTip relative to the placement target element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,16 +138,9 @@
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value that indicates whether the KeyTip is displayed and accessible.</summary>
-        <value>The value that indicates whether the KeyTip is displayed and accessible.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the KeyTipVisibility property is set to <xref:System.Windows.Visibility>, the KeyTip is visible and accessible. When the KeyTipVisibility property is set to <xref:System.Windows.Visibility>, the KeyTip is hidden but still accessible. When the KeyTipVisibility property is set to <xref:System.Windows.Visibility>, the KeyTip is not visible and not accessible.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PlacementTarget">
@@ -172,8 +156,8 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the user interface element that serves as the target for placing the KeyTip.</summary>
-        <value>The element that serves as the target for placing the KeyTip.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

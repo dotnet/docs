@@ -21,7 +21,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,9 +39,9 @@
         <Parameter Name="itemsControlPeer" Type="System.Windows.Automation.Peers.RibbonAutomationPeer" />
       </Parameters>
       <Docs>
-        <param name="item">The element associated with this automation peer.</param>
-        <param name="itemsControlPeer">The <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" /> that is associated with the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that holds the <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" /> class.</summary>
+        <param name="item">To be added.</param>
+        <param name="itemsControlPeer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +59,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> enumeration value.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +78,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClassName%2A" />.</summary>
-        <returns>The class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,9 +99,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
-        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" />.</summary>
-        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is <see cref="T:System.Windows.Automation.Peers.PatternInterface" />, <see cref="T:System.Windows.Automation.Peers.PatternInterface" />, <see cref="T:System.Windows.Automation.Peers.PatternInterface" />, <see cref="T:System.Windows.Automation.Peers.PatternInterface" />, <see cref="T:System.Windows.Automation.Peers.PatternInterface" />, <see cref="T:System.Windows.Automation.Peers.PatternInterface" />, or <see cref="T:System.Windows.Automation.Peers.PatternInterface" />; otherwise, <see langword="null" />.</returns>
+        <param name="patternInterface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,15 +119,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Hides all nodes, controls, or content that are descendants of the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.Expand">
@@ -144,15 +137,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Displays all child nodes, controls, or content of the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState">
@@ -168,16 +154,9 @@
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the state, expanded or collapsed, of the control that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" />.</summary>
-        <value>The state of the control that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView">
@@ -194,15 +173,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content area of a container object in order to display the control within the visible region of the container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IScrollItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection">
@@ -219,10 +191,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This API is not implemented.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The user cannot interact with the <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" />.</exception>
-        <exception cref="T:System.InvalidOperationException">A element other than the <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" /> is selected.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection">
@@ -239,16 +209,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This API is not implemented.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" /> is selected.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

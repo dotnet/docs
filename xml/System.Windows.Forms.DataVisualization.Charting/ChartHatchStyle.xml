@@ -10,17 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies a hatching style for a chart element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ChartHatchStyle enumeration represents the hatching styles that can be used for numerous chart elements, such as the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea>, <xref:System.Windows.Forms.DataVisualization.Charting.Legend>, and so forth.  
-  
- Setting the `BackHatchStyle` property of a chart element object to any member of this enumeration except None will cause the corresponding hatching style to be applied to the chart element.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BackwardDiagonal">
@@ -36,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backward diagonal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cross">
@@ -52,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cross style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkDownwardDiagonal">
@@ -68,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dark downward diagonal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkHorizontal">
@@ -84,7 +75,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dark horizontal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkUpwardDiagonal">
@@ -100,7 +91,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dark upward diagonal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkVertical">
@@ -116,7 +107,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dark vertical style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DashedDownwardDiagonal">
@@ -132,7 +123,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dashed downward diagonal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DashedHorizontal">
@@ -148,7 +139,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dashed horizontal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DashedUpwardDiagonal">
@@ -164,7 +155,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dashed upward diagonal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DashedVertical">
@@ -180,7 +171,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dashed vertical style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DiagonalBrick">
@@ -196,7 +187,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Diagonal brick style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DiagonalCross">
@@ -212,7 +203,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Diagonal cross style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Divot">
@@ -228,7 +219,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Divot style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DottedDiamond">
@@ -244,7 +235,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dotted diamond style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DottedGrid">
@@ -260,7 +251,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dotted grid style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForwardDiagonal">
@@ -276,7 +267,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Forward diagonal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -292,7 +283,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Horizontal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HorizontalBrick">
@@ -308,7 +299,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Horizontal brick style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeCheckerBoard">
@@ -324,7 +315,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Large checker board style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeConfetti">
@@ -340,7 +331,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Large confetti style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeGrid">
@@ -356,7 +347,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Large grid style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightDownwardDiagonal">
@@ -372,7 +363,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Light downward diagonal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightHorizontal">
@@ -388,7 +379,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Light horizontal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightUpwardDiagonal">
@@ -404,7 +395,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Light upward diagonal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightVertical">
@@ -420,7 +411,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Light vertical style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NarrowHorizontal">
@@ -436,7 +427,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Narrow horizontal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NarrowVertical">
@@ -452,7 +443,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Narrow vertical style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -468,7 +459,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No hatching style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutlinedDiamond">
@@ -484,7 +475,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Outlined diamond style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent05">
@@ -500,7 +491,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent05 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent10">
@@ -516,7 +507,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent10 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent20">
@@ -532,7 +523,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent20 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent25">
@@ -548,7 +539,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent25 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent30">
@@ -564,7 +555,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent30 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent40">
@@ -580,7 +571,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent40 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent50">
@@ -596,7 +587,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent50 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent60">
@@ -612,7 +603,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent60 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent70">
@@ -628,7 +619,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent70 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent75">
@@ -644,7 +635,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent75 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent80">
@@ -660,7 +651,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent80 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent90">
@@ -676,7 +667,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Percent90 style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Plaid">
@@ -692,7 +683,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Plaid style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Shingle">
@@ -708,7 +699,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Shingle style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallCheckerBoard">
@@ -724,7 +715,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Small checker board style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallConfetti">
@@ -740,7 +731,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Small confetti style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallGrid">
@@ -756,7 +747,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Small grid style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SolidDiamond">
@@ -772,7 +763,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Solid diamond style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sphere">
@@ -788,7 +779,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sphere style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Trellis">
@@ -804,7 +795,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Trellis style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -820,7 +811,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Vertical style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wave">
@@ -836,7 +827,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wave style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Weave">
@@ -852,7 +843,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Weave style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WideDownwardDiagonal">
@@ -868,7 +859,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wide downward diagonal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WideUpwardDiagonal">
@@ -884,7 +875,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wide upward diagonal style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ZigZag">
@@ -900,7 +891,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zigzag style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationProperty" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Identifies a property of an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class identifies properties, not the values of properties. Static objects of this type are found as fields of <xref:System.Windows.Automation.AutomationElement> and control pattern classes.  
-  
-   
-  
-## Examples  
- The following example adds a property-changed event handler, and the handler checks the <xref:System.Windows.Automation.AutomationPropertyChangedEventArgs.Property%2A> member of the event arguments to determine the property that has been changed.  
-  
- [!code-cs[UIAClient_snip#172](~/add/codesnippet/csharp/CustomElementClient/PropertySnips.cs#172)]
- [!code-vb[UIAClient_snip#172](~/add/codesnippet/visualbasic/UIAClient_snip/PropertySnips.vb#172)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="LookupById">
@@ -38,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,17 +31,10 @@
         <Parameter Name="id" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="id">The property identifier.</param>
-        <summary>Retrieves an <see cref="T:System.Windows.Automation.AutomationProperty" /> that encapsulates a specified numerical identifier.</summary>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Normally, properties are identified by an <xref:System.Windows.Automation.AutomationProperty> object. This method can be used to create such an object when only the numerical identifier (the <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> inherited from <xref:System.Windows.Automation.AutomationIdentifier>) is known.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

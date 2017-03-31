@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies properties for a <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -32,10 +30,10 @@
         <Parameter Name="baseline" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="width">A <see cref="T:System.Double" /> that represents the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> width.</param>
-        <param name="height">A <see cref="T:System.Double" /> that represents the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> height.</param>
-        <param name="baseline">A <see cref="T:System.Double" /> that represents the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> baseline relative to <c>height</c>.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics" /> class using specified width, height, and baseline values.</summary>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="baseline">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,15 +44,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the baseline of the text object.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the text object baseline relative to its height.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,15 +62,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the height of the text object.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the text object height.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,15 +80,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the width of the text object.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the text object width.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

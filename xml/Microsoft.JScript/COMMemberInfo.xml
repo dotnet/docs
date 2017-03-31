@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.COMMemberInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines methods that enable JScript to communicate with an external COM member. This interface is used by an external COM implementation to expose its objects to JScript because JScript requires a managed <see cref="T:System.Reflection.MemberInfo" /> to bind to an external object.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,12 +39,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="invokeAttr">A bitwise combination of the enumeration values that control the binding.</param>
-        <param name="binder">An object that performs type conversion from actual argument type to formal argument type.</param>
-        <param name="arguments">The argument list to pass to the external COM member.</param>
-        <param name="culture">Provides information about a specific culture or locale to format numbers, dates, and strings correctly.</param>
-        <summary>When implemented in a class, enables JScript to call an external COM member. Uses the specified binding information.</summary>
-        <returns>The value of the call to the external COM member.</returns>
+        <param name="invokeAttr">To be added.</param>
+        <param name="binder">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,12 +67,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="invokeAttr">A bitwise combination of the enumeration values that control the binding.</param>
-        <param name="binder">An object that performs type conversion from actual argument type to formal argument type.</param>
-        <param name="index">The argument list to pass to the external COM member.</param>
-        <param name="culture">Provides information about a specific culture or locale to format numbers, dates, and strings correctly.</param>
-        <summary>When implemented in a class, enables JScript to get the value of an external COM member using the specified binding information.</summary>
-        <returns>The value of the external COM member.</returns>
+        <param name="invokeAttr">To be added.</param>
+        <param name="binder">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,12 +96,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">The new value of the external COM member.</param>
-        <param name="invokeAttr">A bitwise combination of the enumeration values that control the binding.</param>
-        <param name="binder">An object that performs type conversion from actual argument type to formal argument type.</param>
-        <param name="index">The argument list to pass to the external COM member.</param>
-        <param name="culture">Provides information about a specific culture or locale to format numbers, dates, and strings correctly.</param>
-        <summary>When implemented in a class, enables JScript to set the value of an external COM member to the specified new value, using the specified binding information.</summary>
+        <param name="value">To be added.</param>
+        <param name="invokeAttr">To be added.</param>
+        <param name="binder">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.HandleExternalEventActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,33 +35,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a workflow communication activity that is used to handle an event that is raised by a local service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- A local service is a class that implements a local service interface (an interface that is marked with <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>) and is added to the <xref:System.Workflow.Activities.ExternalDataExchangeService>.  
-  
- The HandleExternalEventActivity receives data when the <xref:System.Workflow.Activities.ExternalDataExchangeService> service raises an event with event data derived from <xref:System.Workflow.Activities.ExternalDataEventArgs>.  
-  
- The HandleExternalEventActivity is a blocking activity.  
-  
- Classes that derive from HandleExternalEventActivity should not implement the <xref:System.Workflow.ComponentModel.IActivityEventListener%601> interface because the derived class does not execute correctly.  
-  
-   
-  
-## Examples  
- The following code example shows how to create and set values for the HandleExternalEventActivity class.  This code example is part of the RaiseEventToLoadWorkflow SDK sample from the DocumentApprovalWorkflow.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Raise Event To Load Workflow](http://msdn.microsoft.com/en-us/71330ada-adcd-42a9-8b38-468d8a0cfb80).  
-  
- [!code-cs[wf_samples#160](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#160)]
- [!code-vb[wf_samples#160](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#160)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,23 +46,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to create and set values for the <xref:System.Workflow.Activities.HandleExternalEventActivity> class. This code example is part of the RaiseEventToLoadWorkflow SDK sample from the DocumentApprovalWorkflow.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Raise Event To Load Workflow](http://msdn.microsoft.com/en-us/71330ada-adcd-42a9-8b38-468d8a0cfb80).  
-  
- [!code-cs[wf_samples#160](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#160)]
- [!code-vb[wf_samples#160](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#160)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,15 +61,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The user-defined name of the activity.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> class using the name of the activity.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,7 +79,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,9 +88,9 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that represents the execution environment of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <summary>Cancels the handling of the event.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> at the end of the requested operation.</returns>
+        <param name="executionContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +101,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -161,23 +121,9 @@
         <ReturnType>System.Workflow.Runtime.CorrelationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the binding to a <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</summary>
-        <value>This property is used to correlate an event to the correct <see cref="T:System.Workflow.Activities.IEventActivity" />-inherited activity based on the payload of the event. For example, when a single workflow instance is listening for multiple instances of the same event at the same time, the <see langword="CorrelationToken" /> property is used to route the event to the proper activity in that workflow instance.  
-  
- This correlation should not be confused with correlating an event to the correct workflow instance. The correlation to the correct workflow instance is done by sending the event to an explicit workflow instance and using the <see cref="System.Workflow.Activities.ExternalDataEventArgs.InstanceId%2A" /> property to properly identify the correct workflow instance.  
-  
- [!INCLUDE[crexample](~/add/includes/crexample-md.md)] correlation, see the [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to access the `CorrelationToken` property of a `HandleExternalEventActivity`. This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
-  
- [!code-cs[Wf_samples#198](~/add/codesnippet/csharp/wf_snippets/snippets19.cs#198)]
- [!code-vb[Wf_samples#198](~/add/codesnippet/visualbasic/wf_snippets/snippets19.vb#198)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CorrelationTokenProperty">
@@ -187,22 +133,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="System.Workflow.Activities.HandleExternalEventActivity.CorrelationToken%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EventName">
@@ -212,7 +150,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -233,19 +170,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the raised event. This property must be set before local communication can occur.</summary>
-        <value>The name of the raised event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to create and set values for the <xref:System.Workflow.Activities.HandleExternalEventActivity> class.  This code example is part of the RaiseEventToLoadWorkflow SDK sample from the DocumentApprovalWorkflow.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Raise Event To Load Workflow](http://msdn.microsoft.com/en-us/71330ada-adcd-42a9-8b38-468d8a0cfb80).  
-  
- [!code-cs[wf_samples#160](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#160)]
- [!code-vb[wf_samples#160](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#160)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EventNameProperty">
@@ -255,22 +182,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Corresponds to the name of an event that is defined in an interface that was marked with the <see cref="T:System.Workflow.Activities.ExternalDataExchangeAttribute" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -280,7 +199,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,9 +208,9 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> associated with the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" />.</param>
-        <summary>Tries to run the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> associated with the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> at the end of the requested operation.</returns>
+        <param name="executionContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +221,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,13 +231,11 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for this instance.</param>
-        <param name="exception">The <see cref="T:System.Exception" /> that caused this fault.</param>
-        <summary>Called when an exception is raised within the context of the execution of this instance.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> that results from an attempt to cancel this instance.</returns>
+        <param name="executionContext">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="exception" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -330,7 +245,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -340,11 +254,9 @@
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides custom support to the class.</param>
-        <summary>Initializes the event with the service provider.</summary>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" /> is a null reference (<see langword="Nothing" /> in Visual Basic), the type of the service provider is a null reference (<see langword="Nothing" />), or the proxy for the service provider is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="InitializeProperties">
@@ -354,7 +266,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -362,15 +273,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs initialization on dependency properties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method initializes the <xref:System.Workflow.Activities.HandleExternalEventActivity.CorrelationToken%2A> property, verifies the <xref:System.Workflow.Activities.HandleExternalEventActivity.InterfaceType%2A> and <xref:System.Workflow.Activities.HandleExternalEventActivity.EventName%2A> properties are set and verifies that the event referenced in the <xref:System.Workflow.Activities.HandleExternalEventActivity.EventName%2A> property can be found in the interface referenced in the <xref:System.Workflow.Activities.HandleExternalEventActivity.InterfaceType%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InterfaceType">
@@ -380,7 +284,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -401,19 +304,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Workflow.Activities.ExternalDataExchangeAttribute" /> attributed interface type of the local service whose event is handled. This property must be set before local communication can occur.</summary>
-        <value>The interface type of the local service whose event is handled.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to create and set values for the <xref:System.Workflow.Activities.HandleExternalEventActivity> class.  This code example is part of the RaiseEventToLoadWorkflow SDK sample from the DocumentApprovalWorkflow.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Raise Event To Load Workflow](http://msdn.microsoft.com/en-us/71330ada-adcd-42a9-8b38-468d8a0cfb80).  
-  
- [!code-cs[wf_samples#160](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#160)]
- [!code-vb[wf_samples#160](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#160)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InterfaceTypeProperty">
@@ -423,22 +316,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Corresponds to the name of the interface that was marked with the <see cref="T:System.Workflow.Activities.ExternalDataExchangeAttribute" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Invoked">
@@ -448,7 +333,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -460,18 +344,8 @@
         <ReturnType>System.EventHandler&lt;System.Workflow.Activities.ExternalDataEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the external event is received.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to create and set values for the <xref:System.Workflow.Activities.HandleExternalEventActivity> class.  This code example is part of the RaiseEventToLoadWorkflow SDK sample from the DocumentApprovalWorkflow.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Raise Event To Load Workflow](http://msdn.microsoft.com/en-us/71330ada-adcd-42a9-8b38-468d8a0cfb80).  
-  
- [!code-cs[wf_samples#160](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#160)]
- [!code-vb[wf_samples#160](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#160)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokedEvent">
@@ -481,22 +355,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Defines an event delegate that is executed after the activity receives the expected event from the local service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClosed">
@@ -506,7 +372,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -516,16 +381,9 @@
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">The <see cref="T:System.IServiceProvider" /> that provides the service.</param>
-        <summary>Called by the workflow runtime as part of the activity's transition to the <see langword="Closed" /> state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides the activity with an opportunity to clean up resources utilized during its execution.  
-  
- ]]></format>
-        </remarks>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInvoked">
@@ -535,7 +393,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -545,24 +402,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.EventArgs" /> that are received from the external event that was just received.</param>
-        <summary>Called just after the external event is received to allow derived classes to process the inbound <see cref="T:System.EventArgs" /> before the activity closes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The most common use of the OnInvoked method in derived classes is to extract members from the received <xref:System.EventArgs> to set the values of the derived-classed activity's public properties.  
-  
-   
-  
-## Examples  
- The following example shows an implementation of the `OnInvoked` method. This example is from the Correlated Local Service SDK sample, from the TaskCompleted.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
-  
- [!code-cs[Wf_samples#223](~/add/codesnippet/csharp/wf_snippets/snippets24.cs#223)]
- [!code-vb[Wf_samples#223](~/add/codesnippet/visualbasic/wf_snippets/snippets24.vb#223)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterBindings">
@@ -572,7 +414,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -587,19 +428,9 @@
         <ReturnType>System.Workflow.ComponentModel.WorkflowParameterBindingCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of parameter bindings.</summary>
-        <value>The collection of parameter bindings.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to access the `ParameterBindings` property. This example is from the Ordering State Machine SDK sample, from the SampleWorkflow.designer.cs file.  [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
-  
- [!code-cs[wf_samples#125](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#125)]
- [!code-vb[wf_samples#125](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#125)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterBindingsProperty">
@@ -609,14 +440,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="System.Workflow.Activities.HandleExternalEventActivity.ParameterBindings%2A" /> property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -627,7 +457,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -642,24 +471,9 @@
         <ReturnType>System.Workflow.Activities.WorkflowRoleCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a reference to a workflow role collection.</summary>
-        <value>A collection of a workflow role.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.Activities.WorkflowRoleCollection> limits the set of users who can send messages to a workflow instance through a <xref:System.Workflow.Activities.HandleExternalEventActivity> activity.  
-  
-   
-  
-## Examples  
- The following code example shows how to create and set values for the <xref:System.Workflow.Activities.HandleExternalEventActivity> class.  This code example is part of the RaiseEventToLoadWorkflow SDK sample from the DocumentApprovalWorkflow.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Raise Event To Load Workflow](http://msdn.microsoft.com/en-us/71330ada-adcd-42a9-8b38-468d8a0cfb80).  
-  
- [!code-cs[wf_samples#160](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#160)]
- [!code-vb[wf_samples#160](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#160)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RolesProperty">
@@ -669,22 +483,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the valid user roles that are allowed to send messages from the host to this activity. The two types of supported roles are Active Directory and ASP.NET.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.Activities.IEventActivity.QueueName">
@@ -694,15 +500,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IComparable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> on which the activity is waiting for data to arrive.</summary>
-        <value>The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> on which the activity is waiting for data to arrive.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,7 +518,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -724,9 +528,9 @@
         <Parameter Name="parentEventHandler" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="parentContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that represents the execution environment of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <param name="parentEventHandler">The <see cref="T:System.EventHandler" /> for the parent event.</param>
-        <summary>Creates the subscription of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> activity to an event.</summary>
+        <param name="parentContext">To be added.</param>
+        <param name="parentEventHandler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -737,7 +541,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -748,9 +551,9 @@
         <Parameter Name="parentEventHandler" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="parentContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that represents the execution environment of the activity.</param>
-        <param name="parentEventHandler">The <see cref="T:System.EventHandler" /> for the parent event.</param>
-        <summary>Cancels the subscription of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> activity to an event.</summary>
+        <param name="parentContext">To be added.</param>
+        <param name="parentEventHandler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -761,7 +564,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -772,9 +574,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.QueueEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">The object that raised the event.</param>
-        <param name="e">The previously typed event arguments.</param>
-        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -785,7 +587,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -796,18 +597,11 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">An object that implements <see cref="T:System.IServiceProvider" /> to provide access to design time services if they are required.</param>
-        <param name="propertyName">The name of the property.</param>
-        <summary>Returns the access type for the specified property.</summary>
-        <returns>An <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> enumeration value that denote the access level of the property.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Used at compile time to validate whether the properties are correctly bound to one other. Without this interface, this information is inferred directly from property getter/setters.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceProvider">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetPropertyType">
@@ -817,7 +611,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -828,18 +621,11 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">An object that implements <see cref="T:System.IServiceProvider" /> to provide access to design time services if they are required.</param>
-        <param name="propertyName">The name of the property.</param>
-        <summary>Returns the <see cref="T:System.Type" /> of the specified property.</summary>
-        <returns>The <see cref="T:System.Type" /> for the property whose name is passed as the <paramref name="propertyName " />parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Used at compile time to validate whether the properties are correctly bound to one other.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceProvider">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

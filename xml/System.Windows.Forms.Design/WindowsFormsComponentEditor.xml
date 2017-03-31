@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.WindowsFormsComponentEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,20 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a base class for editors that use a modal dialog to display a properties page similar to an ActiveX control's property page.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates an example WindowsFormsComponentEditor implementation.  
-  
- [!code-cs[ComponentEditorExample#1](~/add/codesnippet/csharp/t-system.windows.forms.d_4_1.cs)]
- [!code-vb[ComponentEditorExample#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_4_1.vb)]
- [!code-cpp[ComponentEditorExample#1](~/add/codesnippet/cpp/t-system.windows.forms.d_4_1.cpp)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.WindowsFormsComponentEditor" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,11 +47,10 @@
         <Parameter Name="component" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <param name="component">The component to edit.</param>
-        <summary>Creates an editor window that allows the user to edit the specified component, using the specified context information.</summary>
-        <returns>
-          <see langword="true" /> if the component was changed during editing; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,11 +71,10 @@
         <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
       </Parameters>
       <Docs>
-        <param name="component">The component to edit.</param>
-        <param name="owner">An <see cref="T:System.Windows.Forms.IWin32Window" /> that the component belongs to.</param>
-        <summary>Creates an editor window that allows the user to edit the specified component, using the specified window that owns the component.</summary>
-        <returns>
-          <see langword="true" /> if the component was changed during editing; otherwise, <see langword="false" />.</returns>
+        <param name="component">To be added.</param>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,12 +96,11 @@
         <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <param name="component">The component to edit.</param>
-        <param name="owner">An <see cref="T:System.Windows.Forms.IWin32Window" /> that the component belongs to.</param>
-        <summary>Creates an editor window that allows the user to edit the specified component.</summary>
-        <returns>
-          <see langword="true" /> if the component was changed during editing; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="component">To be added.</param>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,20 +118,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the component editor pages associated with the component editor.</summary>
-        <returns>An array of component editor pages.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates an example implementation of a GetComponentEditorPages method override.  
-  
- [!code-cs[ComponentEditorExample#2](~/add/codesnippet/csharp/e2e65e51-e6d1-4f25-a74e-_1.cs)]
- [!code-vb[ComponentEditorExample#2](~/add/codesnippet/visualbasic/e2e65e51-e6d1-4f25-a74e-_1.vb)]
- [!code-cpp[ComponentEditorExample#2](~/add/codesnippet/cpp/e2e65e51-e6d1-4f25-a74e-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInitialComponentEditorPageIndex">
@@ -162,7 +130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,20 +137,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the index of the initial component editor page for the component editor to display.</summary>
-        <returns>The index of the component editor page that the component editor will initially display.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates an example implementation of a GetInitialComponentEditorPageIndex method override.  
-  
- [!code-cs[ComponentEditorExample#3](~/add/codesnippet/csharp/50a8af3b-6b83-4fbb-bf1e-_1.cs)]
- [!code-vb[ComponentEditorExample#3](~/add/codesnippet/visualbasic/50a8af3b-6b83-4fbb-bf1e-_1.vb)]
- [!code-cpp[ComponentEditorExample#3](~/add/codesnippet/cpp/50a8af3b-6b83-4fbb-bf1e-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a discovery endpoint.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class uses classes derived from DiscoveryEndpointProvider to get the discovery endpoint to use.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryEndpointProvider" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,16 +44,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the discovery endpoint.</summary>
-        <returns>The discovery endpoint.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class calls the GetDiscoveryEndpoint method on the <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider> instance passed by the user to get the <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> for discovering the services. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> also calls GetDiscoveryEndpoint method whenever it must clone itself.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

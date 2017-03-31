@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlTriggerAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,23 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Used to mark a method definition in an assembly as a trigger in SQL Server. The properties on the attribute reflect the physical attributes used when the type is registered with SQL Server. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See "CLR Triggers" in SQL Server 2005 Books Online for more information on CLR triggers and examples.  
-  
-   
-  
-## Examples  
- The following example shows the SqlTriggerAttribute specifying the name of the trigger, the target table, and the event that will fire the trigger. See <xref:Microsoft.SqlServer.Server.SqlTriggerContext> for the full trigger example.  
-  
- [!code-cs[DataWorks SqlTriggerAttribute Sample#1](~/add/codesnippet/csharp/t-microsoft.sqlserver.se_2_1.cs)]
- [!code-vb[DataWorks SqlTriggerAttribute Sample#1](~/add/codesnippet/visualbasic/t-microsoft.sqlserver.se_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,26 +28,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>An attribute on a method definition in an assembly, used to mark the method as a trigger in SQL Server.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example specifies that the trigger is activated by updating existing data (`UPDATE`) in the table `authors`.  
-  
-   
-  
-## Examples  
- [!code-cs[VbRaddataSQLObjects#8](~/add/codesnippet/csharp/CS/Trigger1.cs#8)]
- [!code-vb[VbRaddataSQLObjects#8](~/add/codesnippet/visualbasic/VB/Trigger1.vb#8)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Event">
@@ -72,25 +44,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type of trigger and what data manipulation language (DML) action activates the trigger.</summary>
-        <value>A <see cref="T:System.String" /> value representing the type of trigger and what data manipulation language (DML) action activates the trigger.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DML action that activates the trigger could be an UPDATE, a DELETE, or an INSERT action. The type of the trigger can be AFTER or INSTEAD OF. Specifying FOR for the trigger type is the same as specifying AFTER.  
-  
- The Event property is required.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -100,15 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the trigger.</summary>
-        <value>A <see cref="T:System.String" /> value representing the name of the trigger.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,31 +82,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The table to which the trigger applies.</summary>
-        <value>A <see cref="T:System.String" /> value representing the table name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Target property is required.  
-  
- The following example specifies that the trigger is referenced by using the name `trig_onpubinsert`. The trigger is activated by adding new data (`INSERT`) to the table `publishers`.  
-  
-   
-  
-## Examples  
- [!code-cs[VbRaddataSQLObjects#9](~/add/codesnippet/csharp/CS/Trigger1.cs#9)]
- [!code-vb[VbRaddataSQLObjects#9](~/add/codesnippet/visualbasic/VB/Trigger1.vb#9)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

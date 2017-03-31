@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapHeaderBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,22 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an extensibility element added to an <see cref="T:System.Web.Services.Description.InputBinding" /> or an <see cref="T:System.Web.Services.Description.OutputBinding" /> within an XML Web service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
-## Examples  
- [!code-cs[SoapHeaderBinding#1](~/add/codesnippet/csharp/t-system.web.services.de_18_1.cs)]
- [!code-vb[SoapHeaderBinding#1](~/add/codesnippet/visualbasic/t-system.web.services.de_18_1.vb)]
- [!code-cpp[SoapHeaderBinding#1](~/add/codesnippet/cpp/t-system.web.services.de_18_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +28,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +44,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -73,16 +59,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a URI representing the encoding style used to encode the SOAP header.</summary>
-        <value>A string containing a URI. The default value is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property should be set only if the value of the <xref:System.Web.Services.Description.SoapHeaderBinding.Use%2A> property is `Encoded`. Otherwise the XML Web service will exhibit unexpected behavior.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Fault">
@@ -92,7 +71,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -104,16 +83,9 @@
         <ReturnType>System.Web.Services.Description.SoapHeaderFaultBinding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the extension type controlling the output in a WSDL document for the <see langword="headerfault" /> XML element of a SOAP header.</summary>
-        <value>A <see cref="T:System.Web.Services.Description.SoapHeaderFaultBinding" /> representing the SOAP header types used to transmit error information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property did not exist in version 1.0 of the Microsoft .NET Framework SDK.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MapToProperty">
@@ -123,7 +95,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -135,19 +107,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> instance is mapped to a specific property in generated proxy classes.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> maps to a specific property; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[SoapHeaderBinding_MapToProperty#1](~/add/codesnippet/csharp/p-system.web.services.de_28_1.cs)]
- [!code-cpp[SoapHeaderBinding_MapToProperty#1](~/add/codesnippet/cpp/p-system.web.services.de_28_1.cpp)]
- [!code-vb[SoapHeaderBinding_MapToProperty#1](~/add/codesnippet/visualbasic/p-system.web.services.de_28_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -157,7 +119,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -169,23 +131,9 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying the name of the <see cref="T:System.Web.Services.Description.Message" /> within the XML Web service to which the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> applies.</summary>
-        <value>An <see cref="T:System.Xml.XmlQualifiedName" /> representing the name of the <see cref="T:System.Web.Services.Description.Message" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of this property is an empty string ("").  
-  
-   
-  
-## Examples  
- [!code-cpp[SoapHeaderBinding_Use#2](~/add/codesnippet/cpp/p-system.web.services.de_62_1.cpp)]
- [!code-cs[SoapHeaderBinding_Use#2](~/add/codesnippet/csharp/p-system.web.services.de_62_1.cs)]
- [!code-vb[SoapHeaderBinding_Use#2](~/add/codesnippet/visualbasic/p-system.web.services.de_62_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -195,7 +143,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -210,16 +158,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or sets the URI representing the location of the specification for encoding of content not specifically defined by the <see cref="System.Web.Services.Description.SoapHeaderBinding.Encoding%2A" /> property.</summary>
-        <value>A string representing a URI.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property will return an empty string ("") if the property value has not been set. The value should only be set if the value of the <xref:System.Web.Services.Description.SoapHeaderBinding.Use%2A> property is `Encoded`. Otherwise the XML Web service will exhibit unexpected behavior.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Part">
@@ -229,7 +170,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -241,18 +182,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating to which <see cref="T:System.Web.Services.Description.MessagePart" /> within the XML Web service the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> applies.</summary>
-        <value>A string representing the name of the <see cref="T:System.Web.Services.Description.MessagePart" /> to which the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> applies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[SoapHeaderBinding_Use#3](~/add/codesnippet/cpp/p-system.web.services.de_30_1.cpp)]
- [!code-cs[SoapHeaderBinding_Use#3](~/add/codesnippet/csharp/p-system.web.services.de_30_1.cs)]
- [!code-vb[SoapHeaderBinding_Use#3](~/add/codesnippet/visualbasic/p-system.web.services.de_30_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Use">
@@ -262,7 +194,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -277,16 +209,9 @@
         <ReturnType>System.Web.Services.Description.SoapBindingUse</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether the header is encoded using rules specified by the <see cref="System.Web.Services.Description.SoapHeaderBinding.Encoding%2A" /> property, or is encapsulated within a concrete XML schema.</summary>
-        <value>One of the <see cref="T:System.Web.Services.Description.SoapBindingUse" /> values. The default is <see langword="Default" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- SoapHeaderBinding_Use#4  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

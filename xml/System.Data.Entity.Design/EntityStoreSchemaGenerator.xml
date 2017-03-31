@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityStoreSchemaGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Responsible for Loading Database Schema Information.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No content here will be updated; please do not add material here.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -39,10 +30,10 @@
         <Parameter Name="namespaceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="providerInvariantName">The invariant name of a provider.</param>
-        <param name="connectionString">The connection used to open the database.</param>
-        <param name="namespaceName">The namespace name for the store schema definition language (SSDL).</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityStoreSchemaGenerator" /> class.</summary>
+        <param name="providerInvariantName">To be added.</param>
+        <param name="connectionString">To be added.</param>
+        <param name="namespaceName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,10 +54,10 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="providerInvariantName">The invariant name of a provider.</param>
-        <param name="connectionString">The connection for the providers connection.</param>
-        <summary>Creates an EntityConnection loaded with the providers metadata for the store schema.</summary>
-        <returns>An EntityConnection that can query the ConceptualSchemaDefinition for the provider.</returns>
+        <param name="providerInvariantName">To be added.</param>
+        <param name="connectionString">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,11 +79,11 @@
         <Parameter Name="targetEntityFrameworkVersion" Type="System.Version" />
       </Parameters>
       <Docs>
-        <param name="providerInvariantName">The provider invariant name.</param>
-        <param name="connectionString">The connection for the providers connection.</param>
-        <param name="targetEntityFrameworkVersion">The internal Entity Framework version that is being targeted.</param>
-        <summary>Creates an EntityConnection loaded with the providers metadata for the store schema. Note that the targetEntityFrameworkVersion parameter uses internal EntityFramework version numbers as described in the <see cref="T:System.Data.Entity.Design.EntityFrameworkVersions" /> class.</summary>
-        <returns>An EntityConnection that can query the ConceptualSchemaDefinition for the provider.</returns>
+        <param name="providerInvariantName">To be added.</param>
+        <param name="connectionString">To be added.</param>
+        <param name="targetEntityFrameworkVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,15 +94,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.EntityContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the storage model EntityContainer that was created.</summary>
-        <value>The storage model EntityContainer that was created.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +118,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flag for generating foreign key properties in a storage model.</summary>
-        <value>
-          <see langword="True" /> if foreign key properties are generated in the storage model; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,8 +137,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates store metadata and returns any schema errors.</summary>
-        <returns>The collection of schema error objects.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,7 +149,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,9 +158,9 @@
         <Parameter Name="filters" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Entity.Design.EntityStoreSchemaFilterEntry&gt;" />
       </Parameters>
       <Docs>
-        <param name="filters">An EntityStoreSchemaFilterEntry that specifies which database objects to allow or exclude during generation.</param>
-        <summary>Generates store metadata and returns any schema errors.</summary>
-        <returns>The collection of schema error objects.</returns>
+        <param name="filters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,10 +181,10 @@
         <Parameter Name="targetEntityFrameworkVersion" Type="System.Version" />
       </Parameters>
       <Docs>
-        <param name="filters">An EntityStoreSchemaFilterEntry that specifies which database objects to allow or exclude during generation.</param>
-        <param name="targetEntityFrameworkVersion">The property of EntityFrameworkVersions that corresponds to the targeted version of the Entity Framework.</param>
-        <summary>Generates store schema definition language (SSDL) and returns any schema errors.</summary>
-        <returns>The collection of schema error objects.</returns>
+        <param name="filters">To be added.</param>
+        <param name="targetEntityFrameworkVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +195,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -221,8 +206,8 @@
         <ReturnType>System.Data.Metadata.Edm.StoreItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the StoreItemCollection that was created.</summary>
-        <value>The created <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,7 +218,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,8 +227,8 @@
         <Parameter Name="outputFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="outputFileName">The name of the output file.</param>
-        <summary>Writes the generated store schema definition language (SSDL) to a file.</summary>
+        <param name="outputFileName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,7 +239,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,8 +248,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The XmlWriter to which the SSDL is written.</param>
-        <summary>Writes the generated store schema definition language (SSDL) to an XmlWriter object.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

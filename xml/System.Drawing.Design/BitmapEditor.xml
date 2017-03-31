@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.BitmapEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,26 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a user interface for selecting bitmap files in a property browser.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BitmapEditor class provides a simple way to select a bitmap image for a property. Starting the editor displays an **Open File** dialog box that allows directory navigation and selecting a file. The file list is initially filtered for bitmap (.bmp) files.  
-  
-   
-  
-## Examples  
- The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the BitmapEditor with a property.  
-  
- [!code-cpp[BitmapEditorExample#1](~/add/codesnippet/cpp/t-system.drawing.design._8_1.cpp)]
- [!code-vb[BitmapEditorExample#1](~/add/codesnippet/visualbasic/t-system.drawing.design._8_1.vb)]
- [!code-cs[BitmapEditorExample#1](~/add/codesnippet/csharp/t-system.drawing.design._8_1.cs)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.BitmapEditor" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,8 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the extensions for the file list filter that the bitmap editor will initially use to filter the file list.</summary>
-        <returns>The default set of file extensions used to filter the file list.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,16 +68,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the description for the default file list filter provided by this editor.</summary>
-        <returns>The description for the default type of files to filter the file list for.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The description for the default type of files to filter for appears in the file list filter drop-down box.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadFromStream">
@@ -109,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,9 +89,9 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">The stream from which to load the image.</param>
-        <summary>Loads an image from the specified stream.</summary>
-        <returns>The <see cref="T:System.Drawing.Image" /> loaded from the stream.</returns>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

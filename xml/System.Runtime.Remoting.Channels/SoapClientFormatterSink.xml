@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.SoapClientFormatterSink" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,22 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides the implementation for a client formatter sink that uses the <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The function of the formatter sink is to generate the necessary headers and serialize the message to the stream. After reaching the formatter sink, the <xref:System.Runtime.Remoting.Messaging.IMessage> is forwarded to all sinks in the channel sink chain through the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> or <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessRequest%2A> calls. At this stage the message has already been serialized and is provided as information only. Sinks that need to create or modify the message need to be placed in the sink chain before the formatter. This can be achieved by implementing both the <xref:System.Runtime.Remoting.Messaging.IMessageSink> and <xref:System.Runtime.Remoting.Channels.IClientChannelSink> interfaces. The formatter sink can be placed in the sink chain later.  
-  
-|Property|Description|  
-|--------------|-----------------|  
-|`includeVersions`|Specifies whether the formatter will include versioning information. Values are `true` or `false`.|  
-  
-> [!IMPORTANT]
->  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,15 +26,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="nextSink" Type="System.Runtime.Remoting.Channels.IClientChannelSink" />
       </Parameters>
       <Docs>
-        <param name="nextSink">The next sink in the channel sink chain.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.SoapClientFormatterSink" /> class.</summary>
+        <param name="nextSink">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,10 +54,10 @@
         <Parameter Name="replySink" Type="System.Runtime.Remoting.Messaging.IMessageSink" />
       </Parameters>
       <Docs>
-        <param name="msg">The message to process.</param>
-        <param name="replySink">The sink that will receive the reply to the provided message.</param>
-        <summary>Asynchronously processes the provided message.</summary>
-        <returns>A <see cref="T:System.Runtime.Remoting.Messaging.IMessageCtrl" /> that provides a way to control the asynchronous message after it has been dispatched.</returns>
+        <param name="msg">To be added.</param>
+        <param name="replySink">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +68,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,11 +80,11 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="sinkStack">A stack of channel sinks that called the current sink.</param>
-        <param name="msg">The message to process.</param>
-        <param name="headers">The headers to add to the outgoing message heading to the server.</param>
-        <param name="stream">The stream headed to the transport sink.</param>
-        <summary>Requests asynchronous processing of a method call on the current sink.</summary>
+        <param name="sinkStack">To be added.</param>
+        <param name="msg">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,11 +107,11 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="sinkStack">A stack of sinks that called the current sink.</param>
-        <param name="state">The state associated with the current sink.</param>
-        <param name="headers">The headers retrieved from the server response stream.</param>
-        <param name="stream">The stream coming back from the transport sink.</param>
-        <summary>Requests asynchronous processing of a response to a method call on the current sink.</summary>
+        <param name="sinkStack">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,7 +122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,10 +132,10 @@
         <Parameter Name="headers" Type="System.Runtime.Remoting.Channels.ITransportHeaders" />
       </Parameters>
       <Docs>
-        <param name="msg">The <see cref="T:System.Runtime.Remoting.Messaging.IMethodCallMessage" /> containing details about the method call.</param>
-        <param name="headers">The headers to add to the outgoing message heading to the server.</param>
-        <summary>Returns the <see cref="T:System.IO.Stream" /> onto which the provided message is to be serialized.</summary>
-        <returns>The <see cref="T:System.IO.Stream" /> onto which the provided message is to be serialized.</returns>
+        <param name="msg">To be added.</param>
+        <param name="headers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,15 +146,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Channels.IClientChannelSink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the next <see cref="T:System.Runtime.Remoting.Channels.IClientChannelSink" /> in the sink chain.</summary>
-        <value>The next <see cref="T:System.Runtime.Remoting.Channels.IClientChannelSink" /> in the sink chain.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,15 +164,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Messaging.IMessageSink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the next <see cref="T:System.Runtime.Remoting.Messaging.IMessageSink" /> in the sink chain.</summary>
-        <value>The next <see cref="T:System.Runtime.Remoting.Messaging.IMessageSink" /> in the sink chain.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,7 +182,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,12 +195,12 @@
         <Parameter Name="responseStream" Type="System.IO.Stream&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="msg">The message to process.</param>
-        <param name="requestHeaders">The headers to add to the outgoing message heading to the server.</param>
-        <param name="requestStream">The stream headed toward the transport sink.</param>
-        <param name="responseHeaders">When this method returns, contains a <see cref="T:System.Runtime.Remoting.Channels.ITransportHeaders" /> interface that holds the headers that the server returned. This parameter is passed uninitialized.</param>
-        <param name="responseStream">When this method returns, contains a <see cref="T:System.IO.Stream" /> coming back from the transport sink. This parameter is passed uninitialized.</param>
-        <summary>Requests message processing from the current sink.</summary>
+        <param name="msg">To be added.</param>
+        <param name="requestHeaders">To be added.</param>
+        <param name="requestStream">To be added.</param>
+        <param name="responseHeaders">To be added.</param>
+        <param name="responseStream">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,15 +211,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink.</summary>
-        <value>A <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,7 +229,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,9 +238,9 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Messaging.IMessage" />
       </Parameters>
       <Docs>
-        <param name="msg">The message to process.</param>
-        <summary>Synchronously processes the provided message.</summary>
-        <returns>The response to the processed message.</returns>
+        <param name="msg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

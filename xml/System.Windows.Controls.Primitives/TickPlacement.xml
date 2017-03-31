@@ -4,35 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.TickPlacement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the position of tick marks in a <see cref="T:System.Windows.Controls.Slider" /> control with respect to the <see cref="T:System.Windows.Controls.Primitives.Track" /> that the control implements.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TickPlacement enumeration is used to set the <xref:System.Windows.Controls.Slider.TickPlacement%2A> property of a <xref:System.Windows.Controls.Slider>.  
-  
- The following illustration shows a <xref:System.Windows.Controls.Slider> that has tick marks that are located below the <xref:System.Windows.Controls.Primitives.Track>. In this example, the <xref:System.Windows.Controls.Slider.TickPlacement%2A> property is set to BottomRight.  
-  
- **Slider Example**  
-  
- ![Slider illustration](~/add/media/genericslider.png "Slider illustration")  
-  
-   
-  
-## Examples  
- The following example shows how to set the <xref:System.Windows.Controls.Slider.TickPlacement%2A> property for a <xref:System.Windows.Controls.Slider> control.  
-  
- [!code-xml[Slider#4](~/add/codesnippet/xaml/slider_xaml/window1.xaml#4)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Both">
@@ -42,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.TickPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tick marks appear above and below the <see cref="T:System.Windows.Controls.Primitives.Track" /> bar for a horizontal <see cref="T:System.Windows.Controls.Slider" />, or to the left and right of the <see cref="T:System.Windows.Controls.Primitives.Track" /> for a vertical <see cref="T:System.Windows.Controls.Slider" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -59,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.TickPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tick marks appear below the <see cref="T:System.Windows.Controls.Primitives.Track" /> for a horizontal <see cref="T:System.Windows.Controls.Slider" />, or to the right of the <see cref="T:System.Windows.Controls.Primitives.Track" /> for a vertical <see cref="T:System.Windows.Controls.Slider" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -76,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.TickPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No tick marks appear.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -93,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.TickPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tick marks appear above the <see cref="T:System.Windows.Controls.Primitives.Track" /> for a horizontal <see cref="T:System.Windows.Controls.Slider" />, or to the left of the <see cref="T:System.Windows.Controls.Primitives.Track" /> for a vertical <see cref="T:System.Windows.Controls.Slider" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

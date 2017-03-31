@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.TextBoxBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,22 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An abstract base class that provides functionality for text editing controls, including <see cref="T:System.Windows.Controls.TextBox" /> and <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the derived <xref:System.Windows.Controls.TextBox> object in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-xml[TextBoxBase_Samp#TextBoxBase1](~/add/codesnippet/xaml/textboxbase_samp/Window1.xaml#textboxbase1)]  
-  
- The following example demonstrates how to use the derived <xref:System.Windows.Controls.RichTextBox> object in code.  
-  
- [!code-vb[richtextboxsnippets#_RichTextBox_MouseUpDown](~/add/codesnippet/visualbasic/richtextboxsnippets/window1.xaml.vb#_richtextbox_mouseupdown)]
- [!code-cs[richtextboxsnippets#_RichTextBox_MouseUpDown](~/add/codesnippet/csharp/RichTextBoxSnippets/Window1.xaml.cs#_richtextbox_mouseupdown)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceptsReturn">
@@ -45,32 +30,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates how the text editing control responds when the user presses the ENTER key.</summary>
-        <value>
-          <see langword="true" /> if pressing the ENTER key inserts a new line at the current cursor position; otherwise, the ENTER key is ignored. The default value is <see langword="false" /> for <see cref="T:System.Windows.Controls.TextBox" /> and <see langword="true" /> for <see cref="T:System.Windows.Controls.RichTextBox" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ENTER key corresponds to `VK_RETURN` virtual-key code.  
-  
-<a name="dependencyPropertyInfo_AcceptsReturn"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsReturnProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AcceptsReturnProperty">
@@ -80,14 +48,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.AcceptsReturn%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,34 +65,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates how the text editing control responds when the user presses the TAB key.</summary>
-        <value>
-          <see langword="true" /> if pressing the TAB key inserts a tab character at the current cursor position; <see langword="false" /> if pressing the TAB key moves the focus to the next control that is marked as a tab stop and does not insert a tab character.  
-  
- The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TAB key corresponds to **VK_TAB** virtual-key code.  
-  
-<a name="dependencyPropertyInfo_AcceptsTab"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsTabProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AcceptsTabProperty">
@@ -135,14 +83,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.AcceptsTab%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -163,24 +109,9 @@
         <Parameter Name="textData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="textData">A string that specifies the text to append to the current contents of the text control.</param>
-        <summary>Appends a string to the contents of a text control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AppendText method enables the user to append text to the contents of a text control without using text concatenation, which, can yield better performance when many concatenations are required.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the AppendText method.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase11](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase11)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase11](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase11)]  
-  
- ]]></format>
-        </remarks>
+        <param name="textData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoWordSelection">
@@ -190,38 +121,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether when a user selects part of a word by dragging across it with the mouse, the rest of the word is selected.</summary>
-        <value>
-          <see langword="true" /> if automatic word selection is enabled; otherwise, <see langword="false" />.  
-  
- The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When AutoWordSelection is enabled, every time that part of a word is selected by the user dragging over part of a word using the mouse, the selection is automatically expanded to include the whole word. The user can override automatic selection of a whole word by momentarily reversing the direction in which the mouse pointer is being dragged as the selection is made. This action undoes the automatic selection of the whole word, and enables the user to precisely select part or all of the word.  
-  
- When AutoWordSelection is disabled, a selection is not automatically expanded to include whole words; in this case, precise selections are always determined manually.  
-  
- **Note:** Auto selection does not affect the first word that the user drags across. It is only after this first word boundary is crossed that auto selection takes effect.  
-  
-<a name="dependencyPropertyInfo_AutoWordSelection"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.AutoWordSelectionProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoWordSelectionProperty">
@@ -231,14 +139,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.AutoWordSelection%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,25 +163,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Begins a change block.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **Note:** When you call BeginChange, you must also call <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> to complete the change block otherwise an exception will be thrown.  
-  
- A change block logically groups multiple changes into a single undo unit and prevents text content or selection change events from being raised until after the change block. This way you can make multiple edits to the text element without the danger of the text element being changed at the same time by another listener. A change block is created by calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock%2A> method. Calling the BeginChange method causes all subsequent changes to be included in the specified change block until a corresponding call to the <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> method is made.  
-  
-   
-  
-## Examples  
- The following example shows how to use the BeginChange and <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> methods to create a change block.  
-  
- [!code-vb[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/add/codesnippet/visualbasic/TextBoxMiscSnippets_procedural_snip.textmiscsnippets_procedural/beginchangeendchangeexample.vb#beginchangeendchangecodeexampleinline1)]
- [!code-cs[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/add/codesnippet/csharp/TextBoxMiscSnippets_procedural_snip.TextMiscSnippets_procedural/BeginChangeEndChangeExample.cs#beginchangeendchangecodeexampleinline1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRedo">
@@ -285,29 +174,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the most recent undo action can be redone.</summary>
-        <value>
-          <see langword="true" /> if the most recent undo action can be redone; otherwise, <see langword="false" />.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the CanRedo property to determine whether the most recent undo action can be redone.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase9](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase9)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase9](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase9)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanUndo">
@@ -317,29 +192,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the most recent action can be undone.</summary>
-        <value>
-          <see langword="true " />if the most recent action can be undone; otherwise, <see langword="false" />.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the CanUndo property to determine whether the most recent action can be undone.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase8](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase8)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase8](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase8)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CaretBrush">
@@ -355,24 +216,9 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush that is used to paint the caret of the text box.</summary>
-        <value>The brush that is used to paint the caret of the text box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the CaretBrush and <xref:System.Windows.Controls.Control.Foreground%2A> properties of a <xref:System.Windows.Controls.TextBox> to blue.  
-  
- [!code-xml[TextBaseSelectionBrush#TextBox](~/add/codesnippet/xaml/textbaseselectionbrush/window1.xaml#textbox)]
- [!code-xml[TextBaseSelectionBrush#TextBox](~/add/codesnippet/xaml/p-system.windows.control_385_1.xaml)]  
-  
- The preceding example produces output that is like the following illustration.  
-  
- ![TextBox with CaretBrush set to blue.](~/add/media/textboxcaretbrush.png "TextBox with CaretBrush set to blue.")  
-TextBox with CaretBrush set to blue  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CaretBrushProperty">
@@ -388,7 +234,7 @@ TextBox with CaretBrush set to blue
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.CaretBrush%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -399,7 +245,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -412,24 +257,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Copies the current selection of the text editing control to the <see cref="T:System.Windows.Clipboard" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A copy operation copies the selected text to the <xref:System.Windows.Clipboard>. Note that the selected text is not removed from the text editing control in the process. A similar method, <xref:System.Windows.Controls.Primitives.TextBoxBase.Cut%2A>, moves the current selection to the <xref:System.Windows.Clipboard> and removes the selected text from the text editing control in the process.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the Copy method to copy the text that is selected in a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase4](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase4)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase4](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase4)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -439,7 +268,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -452,24 +280,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the current selection from the text editing control and copies it to the <see cref="T:System.Windows.Clipboard" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A cut operation removes the current selection from the text editing control and copies it to the <xref:System.Windows.Clipboard>. Note that the selected text is removed (cut) from the text editing control in the process. A similar method, <xref:System.Windows.Controls.Primitives.TextBoxBase.Copy%2A>, copies the current selection to the Clipboard, but does not remove the selected text from the text editing control.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the Cut method to delete the text that is selected in a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase5](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase5)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase5](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase5)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclareChangeBlock">
@@ -479,7 +291,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -487,16 +298,9 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a change block.</summary>
-        <returns>An <see cref="T:System.IDisposable" /> object that refers to a new change block.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A change block logically groups multiple changes into a single undo unit. A change block is created by calling the DeclareChangeBlock method. Calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> method causes all subsequent changes to be included in the specified change block until a corresponding call to the <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> method is made.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndChange">
@@ -506,7 +310,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -514,25 +317,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends a change block.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **Note:** When you call <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A>, you must also call EndChange to complete the change block otherwise an exception will be thrown.  
-  
- A change block logically groups multiple changes into a single undo unit and prevents text content or selection change events from being raised until after the change block. This way you can make multiple edits to the text element without the danger of the text element being changed at the same time by another process. A change block is created by calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock%2A> method. Calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> method causes all subsequent changes to be included in the specified change block until a corresponding call to the EndChange method is made.  
-  
-   
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> and EndChange methods to create a change block.  
-  
- [!code-vb[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/add/codesnippet/visualbasic/TextBoxMiscSnippets_procedural_snip.textmiscsnippets_procedural/beginchangeendchangeexample.vb#beginchangeendchangecodeexampleinline1)]
- [!code-cs[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/add/codesnippet/csharp/TextBoxMiscSnippets_procedural_snip.TextMiscSnippets_procedural/BeginChangeEndChangeExample.cs#beginchangeendchangecodeexampleinline1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtentHeight">
@@ -542,30 +328,15 @@ TextBox with CaretBrush set to blue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the vertical size of the visible content area.</summary>
-        <value>A floating-point value that specifies the vertical size of the visible content area, in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].  
-  
- The value of this property is 0.0 if the text-editing control is not configured to support scrolling.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to read the value of the ExtentHeight property.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtentWidth">
@@ -575,30 +346,15 @@ TextBox with CaretBrush set to blue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the horizontal size of the visible content area.</summary>
-        <value>A floating-point value that specifies the horizontal size of the visible content area, in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].  
-  
- The value of this property is 0.0 if the text editing control is not configured to support scrolling.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to read the value of the ExtentWidth property.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffset">
@@ -608,38 +364,15 @@ TextBox with CaretBrush set to blue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the horizontal scroll position.</summary>
-        <value>A floating-point value that specifies the horizontal scroll position, in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].  
-  
- Setting this property causes the text editing control to scroll to the specified horizontal offset. Reading this property returns the current horizontal offset.  
-  
- The value of this property is 0.0 if the text editing control is not configured to support scrolling.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The horizontal offset is measured from the right of the visible text area if you are working in right-to-left mode; otherwise, it is measured from the left.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to read the value of the HorizontalOffset property.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">An attempt is made to set this property to a negative value.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarVisibility">
@@ -649,39 +382,15 @@ TextBox with CaretBrush set to blue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a horizontal scroll bar is shown.</summary>
-        <value>A value that is defined by the <see cref="T:System.Windows.Controls.ScrollBarVisibility" /> enumeration.  
-  
- The default value is <see cref="T:System.Windows.Visibility" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_HorizontalScrollBarVisibility"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibilityProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
-   
-  
-## Examples  
- The following example demonstrates how to set the value of the HorizontalScrollBarVisibility property by using [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-xml[TextBoxBase_Samp#TextBoxBase1](~/add/codesnippet/xaml/textboxbase_samp/Window1.xaml#textboxbase1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarVisibilityProperty">
@@ -691,14 +400,13 @@ TextBox with CaretBrush set to blue
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -715,26 +423,9 @@ TextBox with CaretBrush set to blue
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the text box displays selected text when the text box does not have focus.</summary>
-        <value>
-          <see langword="true" /> if the text box displays selected text when the text box does not have focus; otherwise, <see langword="false" />.  
-  
- The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsInactiveSelectionHighlightEnabled"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.IsInactiveSelectionHighlightEnabledProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInactiveSelectionHighlightEnabledProperty">
@@ -750,7 +441,7 @@ TextBox with CaretBrush set to blue
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.IsInactiveSelectionHighlightEnabled%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -761,32 +452,15 @@ TextBox with CaretBrush set to blue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the text editing control is read-only to a user interacting with the control.</summary>
-        <value>
-          <see langword="true" /> if the contents of the text editing control are read-only to a user; otherwise, the contents of the text editing control can be modified by the user. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This value only affects a user who is interacting with the control. The contents of a text editing control can always be modified programmatically.  
-  
-<a name="dependencyPropertyInfo_IsReadOnly"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnlyProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnlyCaretVisible">
@@ -802,17 +476,9 @@ TextBox with CaretBrush set to blue
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a read-only text box displays a caret.</summary>
-        <value>
-          <see langword="true" /> if a read-only text box displays a caret; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When <xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnly%2A> is `true`, a user can still select and copy text. If the IsReadOnlyCaretVisible property is also set to `true`, a caret will appear in the text box when the text box has keyboard focus. When <xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnly%2A> is `false`, the IsReadOnlyCaretVisible property has no effect.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnlyCaretVisibleProperty">
@@ -828,7 +494,7 @@ TextBox with CaretBrush set to blue
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.IsReadOnlyCaretVisible%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -839,14 +505,13 @@ TextBox with CaretBrush set to blue
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.IsReadOnly%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -863,26 +528,9 @@ TextBox with CaretBrush set to blue
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the text box has focus and selected text.</summary>
-        <value>
-          <see langword="true" /> if the text box has focus and selected text; otherwise, <see langword="false" />.  
-  
- The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsSelectionActive"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.IsSelectionActiveProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelectionActiveProperty">
@@ -898,7 +546,7 @@ TextBox with CaretBrush set to blue
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.IsSelectionActive%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -909,39 +557,15 @@ TextBox with CaretBrush set to blue
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether undo support is enabled for the text-editing control.</summary>
-        <value>
-          <see langword="true" /> if undo support is enabled; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this property to `false` clears the undo stack. Therefore, if you disable undo and then re-enable it, undo commands still do not work because the undo stack was emptied when you disabled undo.  
-  
-<a name="dependencyPropertyInfo_IsUndoEnabled"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.IsUndoEnabledProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the IsUndoEnabled property in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-xml[TextBoxBase_Samp#TextBoxBase1](~/add/codesnippet/xaml/textboxbase_samp/Window1.xaml#textboxbase1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUndoEnabledProperty">
@@ -951,14 +575,13 @@ TextBox with CaretBrush set to blue
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.IsUndoEnabled%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -969,7 +592,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -977,18 +599,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the contents of the control down by one line.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the LineDown method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase13](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase13)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase13](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase13)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineLeft">
@@ -998,7 +610,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1006,18 +617,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the contents of the control to the left by one line.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the LineLeft method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase14](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase14)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase14](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase14)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineRight">
@@ -1027,7 +628,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1035,18 +635,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the contents of the control to the right by one line.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the LineRight method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase15](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase15)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase15](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase15)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineUp">
@@ -1056,7 +646,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1064,18 +653,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the contents of the control upward by one line.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the LineUp method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase16](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase16)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase16](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase16)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LockCurrentUndoUnit">
@@ -1085,7 +664,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1093,15 +671,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Locks the most recent undo unit of the undo stack of the application. This prevents the locked unit from being merged with undo units that are added subsequently.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this method when a non-text undo unit is added to the application's main undo stack. This prevents the locked unit from being merged with undo units that are added subsequently.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
@@ -1111,7 +682,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1119,15 +689,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Is called when a control template is applied.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnContextMenuOpening">
@@ -1137,7 +700,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1147,18 +709,9 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Controls.ContextMenuEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Arguments of the event.</param>
-        <summary>Called whenever an unhandled <see cref="E:System.Windows.FrameworkElement.ContextMenuOpening" /> routed event reaches this class in its route. Implement this method to add class handling for this event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method has no default implementation. You should still call the base implementation in case an intermediate class in the inheritance has implemented this method.  
-  
- The purpose of this method is somewhat similar to [!INCLUDE[TLA#tla_clr](~/add/includes/tlasharptla-clr-md.md)] event pattern On* methods: it lets you handle the matching event from derived classes by using a class handler instead of an instance handler. In this case, the matching event is a routed event. The implementation pattern of the On\* methods is different for routed events because the routed event might have been raised by a child element, which is not necessarily the element that invokes handlers. Therefore, your implementation needs to take the event arguments' source properties into account (and should not try to re-raise the event in most cases). Subclasses of <xref:System.Windows.Controls.Primitives.TextBoxBase> can call private class handler methods when the event is received along the route. One scenario is to take the arguments of the event and deliberately mark the event as handled.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDragEnter">
@@ -1168,7 +721,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1178,8 +730,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.DragDrop.DragEnter" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1190,7 +742,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1200,8 +751,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.DragDrop.DragLeave" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1212,7 +763,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1222,8 +772,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.DragDrop.DragOver" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1234,7 +784,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1244,8 +793,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.DragDrop.DragEnter" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1256,7 +805,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1266,8 +814,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.GiveFeedbackEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.DragDrop.GiveFeedback" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1278,7 +826,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1288,8 +835,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.Input.Keyboard.GotKeyboardFocus" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1300,7 +847,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1310,8 +856,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.Input.Keyboard.KeyDown" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1322,7 +868,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1332,8 +877,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.Input.Keyboard.KeyUp" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1344,7 +889,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1354,8 +898,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Raises the <see cref="E:System.Windows.UIElement.LostFocus" /> event (using the provided arguments).</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1366,7 +910,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1376,8 +919,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.Input.Keyboard.LostKeyboardFocus" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1388,7 +931,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1398,8 +940,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.Input.Mouse.MouseDown" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1410,7 +952,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1420,8 +961,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.Input.Mouse.MouseMove" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1432,7 +973,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1442,8 +982,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Arguments of the event. These arguments will include details about which mouse button was depressed, and the handled state.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.Input.Mouse.MouseUp" /> event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1454,7 +994,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1464,18 +1003,9 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.MouseWheelEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The mouse wheel arguments that are associated with this event.</param>
-        <summary>Is called when a <see cref="E:System.Windows.UIElement.MouseWheel" /> event is routed to this class (or to a class that inherits from this class).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement.MouseWheel> event occurs when the mouse wheel is rolled.  
-  
- Overrides <xref:System.Windows.UIElement.OnMouseWheel%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreviewKeyDown">
@@ -1494,8 +1024,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Called when the <see cref="E:System.Windows.UIElement.KeyDown" /> occurs.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1506,7 +1036,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1516,18 +1045,9 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.QueryContinueDragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.DragDrop.QueryContinueDrag" /> attached  routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method has no default implementation. Calling base() in your implementation is still recommended, in case an intermediate class in the inheritance implemented this method. You may call base() either before or after your special handling, depending on your requirements.  
-  
- The purpose of this method is somewhat similar to [!INCLUDE[TLA#tla_clr](~/add/includes/tlasharptla-clr-md.md)] event pattern On* methods: it lets you handle the matching event from derived classes by using a class handler instead of an instance handler. In this case, the matching event is a routed event. The implementation pattern of the On\* methods is different for routed events because the routed event may have been raised by a child element, which is not necessarily the element that invokes handlers. Therefore, your implementation needs to take the event arguments' source properties into account (and should not try to re-raise the event in most cases). Subclasses of <xref:System.Windows.Controls.Primitives.TextBoxBase> can choose to call private class handler methods when the event is received along the route. One scenario is to take the arguments of the event and mark the event as handled.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnQueryCursor">
@@ -1537,7 +1057,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1547,8 +1066,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.QueryCursorEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.Input.Mouse.QueryCursor" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1559,7 +1078,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1569,16 +1087,9 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The arguments that are associated with the <see cref="E:System.Windows.Controls.Primitives.TextBoxBase.SelectionChanged" /> event.</param>
-        <summary>Is called when the caret or current selection changes position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method raises a <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionChanged> event.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTemplateChanged">
@@ -1588,7 +1099,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1599,17 +1109,10 @@ TextBox with CaretBrush set to blue
         <Parameter Name="newTemplate" Type="System.Windows.Controls.ControlTemplate" />
       </Parameters>
       <Docs>
-        <param name="oldTemplate">A <see cref="T:System.Windows.Controls.ControlTemplate" /> object that specifies the control template that is currently active.</param>
-        <param name="newTemplate">A <see cref="T:System.Windows.Controls.ControlTemplate" /> object that specifies a new control template to use.</param>
-        <summary>Is called when the control template changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Overrides <xref:System.Windows.Controls.Control.OnTemplateChanged%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="oldTemplate">To be added.</param>
+        <param name="newTemplate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -1619,7 +1122,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1629,16 +1131,9 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Controls.TextChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The arguments that are associated with the <see cref="E:System.Windows.Controls.Primitives.TextBoxBase.TextChanged" /> event.</param>
-        <summary>Is called when content in this editing control changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method raises a <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTextInput">
@@ -1648,7 +1143,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1658,8 +1152,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="e" Type="System.Windows.Input.TextCompositionEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data about the event.</param>
-        <summary>Invoked whenever an unhandled <see cref="System.Windows.Input.TextCompositionManager.TextInput" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1670,7 +1164,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1678,18 +1171,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the contents of the control down by one page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the PageDown method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase17](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase17)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase17](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase17)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageLeft">
@@ -1699,7 +1182,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1707,18 +1189,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the contents of the control to the left by one page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the PageLeft method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase18](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase18)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase18](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase18)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageRight">
@@ -1728,7 +1200,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1736,18 +1207,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the contents of the control to the right by one page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the PageRight method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase19](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase19)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase19](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase19)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageUp">
@@ -1757,7 +1218,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1765,18 +1225,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the contents of the control up by one page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the PageUp method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase20](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase20)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase20](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase20)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -1786,7 +1236,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1794,18 +1243,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Pastes the contents of the Clipboard over the current selection in the text editing control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Paste method to paste selected content into a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase6](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase6)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase6](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase6)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Redo">
@@ -1815,7 +1254,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1823,20 +1261,9 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Undoes the most recent undo command. In other words, redoes the most recent undo unit on the undo stack.</summary>
-        <returns>
-          <see langword="true" /> if the redo operation was successful; otherwise, <see langword="false" />. This method returns <see langword="false" /> if there is no undo command available (the undo stack is empty).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Redo method.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase9](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase9)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase9](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase9)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollToEnd">
@@ -1846,7 +1273,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1854,18 +1280,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the view of the editing control to the end of the content.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the ScrollToEnd method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase22](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase22)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase22](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase22)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollToHome">
@@ -1875,7 +1291,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1883,18 +1298,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the view of the editing control to the beginning of the viewport.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the ScrollToHome method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase21](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase21)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase21](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase21)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollToHorizontalOffset">
@@ -1904,7 +1309,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1914,8 +1318,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="offset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offset">A double value that specifies the horizontal offset to scroll to.</param>
-        <summary>Scrolls the contents of the editing control to the specified horizontal offset.</summary>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1926,7 +1330,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1936,8 +1339,8 @@ TextBox with CaretBrush set to blue
         <Parameter Name="offset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offset">A double value that specifies the vertical offset to scroll to.</param>
-        <summary>Scrolls the contents of the editing control to the specified vertical offset.</summary>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1948,7 +1351,6 @@ TextBox with CaretBrush set to blue
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1956,18 +1358,8 @@ TextBox with CaretBrush set to blue
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Selects all the contents of the text editing control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the SelectAll method to select all the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase7](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase7)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase7](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase7)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBrush">
@@ -1983,29 +1375,9 @@ TextBox with CaretBrush set to blue
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush that highlights selected text.</summary>
-        <value>The brush that highlights selected text.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can specify the brush that highlights selected text by setting the SelectionBrush and <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> properties. The <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property specifies the opacity of the SelectionBrush.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the SelectionBrush property to red and the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property to 0.5 to customize the appearance of selected text.  
-  
- [!code-xml[TextBaseSelectionBrush#TextBox](~/add/codesnippet/xaml/textbaseselectionbrush/window1.xaml#textbox)]
- [!code-xml[TextBaseSelectionBrush#TextBox](~/add/codesnippet/xaml/p-system.windows.control_362_1.xaml)]  
-  
- The following illustration shows the <xref:System.Windows.Controls.TextBox> from the preceding example with its text selected.  
-  
- ![TextBox with a red SelectionBrush](~/add/media/textboxselectionbrush.png "TextBox with a red SelectionBrush")  
-Selected text in a TextBox with SelectionBrush set to red  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBrushProperty">
@@ -2021,7 +1393,7 @@ Selected text in a TextBox with SelectionBrush set to red
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2032,38 +1404,14 @@ Selected text in a TextBox with SelectionBrush set to red
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the text selection has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="routedEventInfo_SelectionChanged"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionChangedEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
-   
-  
-## Examples  
- The following example demonstrates how to handle the SelectionChanged event by using code.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase10](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase10)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase10](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase10)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionChangedEvent">
@@ -2073,14 +1421,13 @@ Selected text in a TextBox with SelectionBrush set to red
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.TextBoxBase.SelectionChanged" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2097,29 +1444,9 @@ Selected text in a TextBox with SelectionBrush set to red
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the opacity of the <see cref="System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A" />.</summary>
-        <value>The opacity of the <see cref="System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A" />. The default is 0.4.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If SelectionOpacity is set to 0, the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> is transparent and is not visible. If SelectionOpacity is set to 1.0 or greater, the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> is opaque and the selected text is not visible.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> property to red and the SelectionOpacity property to 0.5 to customize the appearance of selected text.  
-  
- [!code-xml[TextBaseSelectionBrush#TextBox](~/add/codesnippet/xaml/textbaseselectionbrush/window1.xaml#textbox)]
- [!code-xml[TextBaseSelectionBrush#TextBox](~/add/codesnippet/xaml/p-system.windows.control_149_1.xaml)]  
-  
- The following illustration shows the <xref:System.Windows.Controls.TextBox> from the preceding example with its text selected.  
-  
- ![TextBox with a red SelectionBrush](~/add/media/textboxselectionbrush.png "TextBox with a red SelectionBrush")  
-Selected text in a TextBox with SelectionOpacity set to 0.5  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionOpacityProperty">
@@ -2135,7 +1462,7 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2146,17 +1473,14 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.SpellCheck</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Controls.SpellCheck" /> object that provides access to spelling errors in the text contents of a <see cref="T:System.Windows.Controls.Primitives.TextBoxBase" /> or <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
-        <value>A <see cref="T:System.Windows.Controls.SpellCheck" /> object that provides access to spelling errors in the text contents of a <see cref="T:System.Windows.Controls.Primitives.TextBoxBase" /> or <see cref="T:System.Windows.Controls.RichTextBox" />.  
-  
- This property has no default value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2167,31 +1491,14 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.TextChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when content changes in the text element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a <xref:System.Windows.Controls.TextBox>, this event occurs when its text changes; for a <xref:System.Windows.Controls.RichTextBox>, this event occurs when any content or formatting changes (for example, images, table, or background color).  
-  
-<a name="routedEventInfo_TextChanged"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.TextChangedEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.Controls.TextChangedEventHandler>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChangedEvent">
@@ -2201,14 +1508,13 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.TextBoxBase.TextChanged" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2219,7 +1525,6 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2227,20 +1532,9 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Undoes the most recent undo command. In other words, undoes the most recent undo unit on the undo stack.</summary>
-        <returns>
-          <see langword="true" /> if the undo operation was successful; otherwise, <see langword="false" />. This method returns <see langword="false" /> if the undo stack is empty.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Undo method.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase8](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase8)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase8](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase8)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UndoLimit">
@@ -2250,26 +1544,15 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of actions stored in the undo queue.</summary>
-        <value>The number of actions stored in the undo queue. The default is –1, which means the undo queue is limited to the memory that is available.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting UndoLimit clears the undo queue. When UndoLimit is set to –1, the undo queue is limited only by the memory that is available. When UndoLimit is set to 0, undo is disabled on the <xref:System.Windows.Controls.Primitives.TextBoxBase>.  
-  
- UndoLimit is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">UndoLimit is set after calling <see cref="System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A" /> and before calling <see cref="System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UndoLimitProperty">
@@ -2279,22 +1562,14 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A" /> dependency property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- UndoLimitProperty is introduced in the .NET Framework version 3.5. For more information, see[Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalOffset">
@@ -2304,38 +1579,15 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the vertical scroll position.</summary>
-        <value>A floating-point value that specifies the vertical scroll position, in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].  
-  
- Setting this property causes the text editing control to scroll to the specified vertical offset. Reading this property returns the current vertical offset.  
-  
- The value of this property is 0.0 if the text editing control is not configured to support scrolling.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The vertical offset is measured from the top of the visible text area.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to read the value of the VerticalOffset property.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">An attempt is made to set this property to a negative value.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarVisibility">
@@ -2345,32 +1597,15 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a vertical scroll bar is shown.</summary>
-        <value>A value that is defined by the <see cref="T:System.Windows.Controls.ScrollBarVisibility" /> enumeration.  
-  
- The default value is <see cref="T:System.Windows.Visibility" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_VerticalScrollBarVisibility"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibilityProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarVisibilityProperty">
@@ -2380,14 +1615,13 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2398,30 +1632,15 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the vertical size of the scrollable content area.</summary>
-        <value>A floating-point value that specifies the vertical size of the scrollable content area, in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].  
-  
- The value of this property is 0.0 if the text editing control is not configured to support scrolling.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to read the value of the ViewportHeight property.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewportWidth">
@@ -2431,30 +1650,15 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the horizontal size of the scrollable content area.</summary>
-        <value>A floating-point value that specifies the horizontal size of the scrollable content area, in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].  
-  
- The value of this property is 0.0 if the text editing control is not configured to support scrolling.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to read the value of the ViewportWidth property.  
-  
- [!code-cs[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/csharp/textboxbase_samp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/add/codesnippet/visualbasic/TextBoxBase/Window1.xaml.vb#textboxbase3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

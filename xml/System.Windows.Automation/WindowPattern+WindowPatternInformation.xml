@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.WindowPattern.WindowPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.WindowPattern" /> object using its <see cref="System.Windows.Automation.WindowPattern.Current%2A" /> or <see cref="System.Windows.Automation.WindowPattern.Cached%2A" /> accessors.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,29 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the <see cref="T:System.Windows.Automation.AutomationElement" /> can be maximized.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Automation.AutomationElement" /> can be maximized; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-vb[UIAWindowPattern_snip#101](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#101)]
- [!code-cs[UIAWindowPattern_snip#101](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#101)]  
-[!code-vb[UIAWindowPattern_snip#103](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#103)]
-[!code-cs[UIAWindowPattern_snip#103](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanMinimize">
@@ -55,29 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the current <see cref="T:System.Windows.Automation.AutomationElement" /> can be minimized.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Automation.AutomationElement" /> can be minimized; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-vb[UIAWindowPattern_snip#101](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#101)]
- [!code-cs[UIAWindowPattern_snip#101](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#101)]  
-[!code-vb[UIAWindowPattern_snip#103](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#103)]
-[!code-cs[UIAWindowPattern_snip#103](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsModal">
@@ -87,29 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the <see cref="T:System.Windows.Automation.AutomationElement" /> is modal.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Automation.AutomationElement" /> is modal; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-vb[UIAWindowPattern_snip#101](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#101)]
- [!code-cs[UIAWindowPattern_snip#101](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#101)]  
-[!code-vb[UIAWindowPattern_snip#103](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#103)]
-[!code-cs[UIAWindowPattern_snip#103](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTopmost">
@@ -119,29 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the <see cref="T:System.Windows.Automation.AutomationElement" /> is the topmost element in the z-order.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Automation.AutomationElement" /> is topmost; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationPropertyChangedEventHandler> is defined to listen for changes to the <xref:System.Windows.Automation.WindowPattern.IsTopmostProperty> of an <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-vb[UIAWindowPattern_snip#105](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#105)]
- [!code-cs[UIAWindowPattern_snip#105](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#105)]  
-[!code-vb[UIAWindowPattern_snip#106](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#106)]
-[!code-cs[UIAWindowPattern_snip#106](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#106)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowInteractionState">
@@ -151,28 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.WindowInteractionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Automation.WindowInteractionState" /> of the <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <value>The <see cref="T:System.Windows.Automation.WindowInteractionState" /> of the <see cref="T:System.Windows.Automation.AutomationElement" />. The default value is <see cref="T:System.Windows.Automation.WindowInteractionState" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-vb[UIAWindowPattern_snip#101](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#101)]
- [!code-cs[UIAWindowPattern_snip#101](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#101)]  
-[!code-vb[UIAWindowPattern_snip#103](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#103)]
-[!code-cs[UIAWindowPattern_snip#103](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowVisualState">
@@ -182,28 +112,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Automation.WindowVisualState" /> of the <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <value>The <see cref="T:System.Windows.Automation.WindowVisualState" /> of the <see cref="T:System.Windows.Automation.AutomationElement" />. The default value is <see cref="T:System.Windows.Automation.WindowVisualState" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-vb[UIAWindowPattern_snip#101](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#101)]
- [!code-cs[UIAWindowPattern_snip#101](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#101)]  
-[!code-vb[UIAWindowPattern_snip#103](~/add/codesnippet/visualbasic/UIAWindowPattern_snip/UIAWindowPattern_snippets.vb#103)]
-[!code-cs[UIAWindowPattern_snip#103](~/add/codesnippet/csharp/UIAWindowPattern_snip/UIAWindowPattern_snippets.cs#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

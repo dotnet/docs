@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ClientViaBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>The ClientViaBehavior is used by clients to specify the URI for which the transport channel should be created.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If such a behavior exists in the behavior collection on a client endpoint, the transport uses the URI that it provides, while all the other channel layers in the stack use the <xref:System.ServiceModel.EndpointAddress> provided at <xref:System.ServiceModel.ChannelFactory> construction time. This <xref:System.ServiceModel.EndpointAddress> also becomes the WS-Addressing `To` header.  
-  
- Use this behavior when the immediate network destination is not the intended processor of the message to enable multiple-hop conversations when the calling application does not necessarily know the ultimate destination or when the destination `Via` header is not an address.  
-  
- You can also set this value using the [\&lt;clientVia\&gt;](../Topic/%3CclientVia%3E.md) element in a client application configuration file.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,15 +26,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">The URI for which the transport channel should be created.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ClientViaBehavior" /> class.</summary>
+        <param name="uri">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,9 +54,9 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The service endpoint.</param>
-        <param name="bindingParameters">The binding parameters to be applied to the service endpoint.</param>
-        <summary>Is not implemented.</summary>
+        <param name="serviceEndpoint">To be added.</param>
+        <param name="bindingParameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,9 +77,9 @@
         <Parameter Name="behavior" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The service endpoint.</param>
-        <param name="behavior">The <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> for which the client behavior is to be applied.</param>
-        <summary>Sets the <see cref="System.ServiceModel.Dispatcher.ClientRuntime.Via%2A" /> to the URI for which the transport channel is created.</summary>
+        <param name="serviceEndpoint">To be added.</param>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +90,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,17 +100,10 @@
         <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The service endpoint that exposes the contract.</param>
-        <param name="endpointDispatcher">The endpoint dispatcher to be modified.</param>
-        <summary>Implements a modification or extension of the service across an endpoint.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Throws an <xref:System.InvalidOperationException> because this operation should not be performed at the client end.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceEndpoint">To be added.</param>
+        <param name="endpointDispatcher">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.Validate">
@@ -136,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,8 +122,8 @@
         <Parameter Name="serviceEndpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The service endpoint that exposes the contract.</param>
-        <summary>Is not implemented.</summary>
+        <param name="serviceEndpoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,23 +134,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set the URI for which the transport channel should be created.</summary>
-        <value>The URI for which the transport channel should be created.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can also set this value using the [\&lt;clientVia\&gt;](../Topic/%3CclientVia%3E.md) element in a client application configuration file.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

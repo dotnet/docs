@@ -20,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of versions of the .NET Framework that an application prefers to run on.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an application can run on multiple versions of the .NET Framework, the versions should be listed in priority order from most preferred to least preferred. If a version of the .NET Framework listed in the CompatibleFrameworkCollection class is installed on the end-user computer, the application can install and run.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -47,8 +40,8 @@
         <Parameter Name="compatibleFramework" Type="Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework" />
       </Parameters>
       <Docs>
-        <param name="compatibleFramework">The framework to add.</param>
-        <summary>Adds a framework to the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework" /> class.</summary>
+        <param name="compatibleFramework">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +59,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +76,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of .NET Framework versions listed in the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFrameworkCollection" /> collection.</summary>
-        <value>A <see cref="T:System.Int32" /> object that represents the number of .NET Framework versions listed in the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFrameworkCollection" /> collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +95,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the enumerator for the collection.</summary>
-        <returns>A <see cref="T:System.Collections.IEnumerator" /> interface that can iterate over the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +116,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The version of .NET Framework to check for on the end-user computer.</param>
-        <summary>Gets a version of the .NET Framework that an application prefers to run on.</summary>
-        <value>A <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework" /> object that represents the versions of the .NET Framework that an application prefers to run on.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

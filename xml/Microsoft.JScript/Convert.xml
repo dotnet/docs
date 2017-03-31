@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Convert" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts data from one type to another. This is a utility class.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.Convert" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,9 +46,9 @@
         <Parameter Name="d" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="d">The <see cref="T:System.Double" /> to test.</param>
-        <summary>Determines whether a <see cref="T:System.Double" /> variable contains an integer value.</summary>
-        <returns>If <paramref name="d" /> contains an integer value, <paramref name="d" /> is returned. If not, an exception is thrown.</returns>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,9 +68,9 @@
         <Parameter Name="s" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="s">The <see cref="T:System.Single" /> to test.</param>
-        <summary>Determines whether a <see cref="T:System.Single" /> variable contains an integer value.</summary>
-        <returns>If <paramref name="s" /> contains an integer value, <paramref name="s" /> is returned. If not, an exception is thrown.</returns>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,19 +91,11 @@
         <Parameter Name="type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert to a new type.</param>
-        <param name="type">The type to convert <c>value</c> to.</param>
-        <summary>Converts the specified value to the specified type.</summary>
-        <returns>
-          <paramref name="value" /> converted to <paramref name="type" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method does not allow conversions that cause a loss of information, such as converting 1.5 to an integer.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Coerce2">
@@ -118,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,13 +116,11 @@
         <Parameter Name="truncationPermitted" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert to a new type.</param>
-        <param name="target">The type to convert <c>value</c> to.</param>
-        <param name="truncationPermitted">
-          <see langword="true" /> to allow data loss; otherwise, <see langword="false" />.</param>
-        <summary>Converts the specified value to the specified <see cref="T:System.TypeCode" />, optionally allowing data loss.</summary>
-        <returns>
-          <paramref name="value" /> converted to the <paramref name="target" /> type.</returns>
+        <param name="value">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="truncationPermitted">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,13 +142,11 @@
         <Parameter Name="explicitOK" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert to a new type.</param>
-        <param name="t">The type to convert <c>value</c> to.</param>
-        <param name="explicitOK">
-          <see langword="true" /> to allow data loss; otherwise, <see langword="false" />.</param>
-        <summary>Converts the specified value to the specified <see cref="T:System.Type" />, optionally allowing data loss.</summary>
-        <returns>
-          <paramref name="value" /> converted to the type <paramref name="t" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="t">To be added.</param>
+        <param name="explicitOK">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,7 +157,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,10 +166,9 @@
         <Parameter Name="ast" Type="Microsoft.JScript.AST" />
       </Parameters>
       <Docs>
-        <param name="ast">The variable to test.</param>
-        <summary>Determines whether a variable contains an array index value.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="ast" /> contains an array index value; otherwise, <see langword="false" />.</returns>
+        <param name="ast">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +179,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -215,8 +193,8 @@
         <Parameter Name="val" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="val">The source code that caused the exception.</param>
-        <summary>Throws a <see cref="T:Microsoft.JScript.JScriptException" /> exception in all cases.</summary>
+        <param name="val">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,10 +214,9 @@
         <Parameter Name="d" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="d">The value to convert.</param>
-        <summary>Converts the specified <see cref="T:System.Double" /> to a <see cref="T:System.Boolean" />.</summary>
-        <returns>
-          <see langword="false" /> if <paramref name="d" /> is 0; otherwise, <see langword="true" />.</returns>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -266,10 +241,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert.</param>
-        <summary>Converts the specified <see cref="T:System.Object" /> to a <see cref="T:System.Boolean" />.</summary>
-        <returns>
-          <paramref name="value" /> converted to a <see cref="T:System.Boolean" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,7 +254,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -296,12 +269,10 @@
         <Parameter Name="explicitConversion" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert.</param>
-        <param name="explicitConversion">
-          <see langword="true" /> to allow data loss; otherwise, <see langword="false" />.</param>
-        <summary>Converts the specified <see cref="T:System.Object" /> value to a <see cref="T:System.Boolean" /> structure, optionally allowing data loss.</summary>
-        <returns>
-          <paramref name="value" /> converted to a <see cref="T:System.Boolean" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="explicitConversion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,7 +283,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -323,11 +293,10 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert.</param>
-        <param name="engine">A reference to the scripting engine.</param>
-        <summary>Converts the specified value to an <see cref="T:System.Object" /> that represents a collection of <see cref="T:Microsoft.JScript.AST" /> objects.</summary>
-        <returns>
-          <paramref name="value" /> converted to an <see cref="T:System.Object" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="engine">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,7 +307,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -348,10 +316,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert.</param>
-        <summary>Converts the specified value to an <see cref="T:System.Int32" />.</summary>
-        <returns>
-          <paramref name="value" /> converted to an <see cref="T:System.Int32" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,7 +329,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -373,11 +339,10 @@
         <Parameter Name="handle" Type="System.RuntimeTypeHandle" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:Microsoft.JScript.ArrayObject" /> to convert.</param>
-        <param name="handle">The type of the elements in the array.</param>
-        <summary>Converts the specified <see cref="T:Microsoft.JScript.ArrayObject" /> to a typed <see cref="T:System.Array" />.</summary>
-        <returns>
-          <paramref name="value" /> converted to an <see cref="T:System.Array" /> if this is possible; otherwise, <paramref name="value" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,7 +353,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -398,10 +362,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert.</param>
-        <summary>Converts the specified <see cref="T:System.Object" /> to a <see cref="T:System.Double" />.</summary>
-        <returns>
-          <paramref name="value" /> converted to a <see cref="T:System.Double" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -412,7 +375,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -422,10 +384,9 @@
         <Parameter Name="str" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="str">The value to convert.</param>
-        <summary>Converts the specified <see cref="T:System.String" /> to a <see cref="T:System.Double" />.</summary>
-        <returns>
-          <paramref name="str" /> converted to a <see cref="T:System.Double" />.</returns>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,7 +397,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -447,11 +407,10 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert.</param>
-        <param name="engine">A reference to the scripting engine.</param>
-        <summary>Converts the specified value to an <see cref="T:System.Object" />. Throws an error if it cannot perform the conversion.</summary>
-        <returns>
-          <paramref name="value" /> converted to an <see cref="T:System.Object" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="engine">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,7 +421,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -473,11 +431,10 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert.</param>
-        <param name="engine">A reference to the scripting engine.</param>
-        <summary>Converts the specified value to an <see cref="T:System.Object" />. Returns null if it cannot perform the conversion.</summary>
-        <returns>
-          <paramref name="value" /> converted to an <see cref="T:System.Object" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="engine">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -488,7 +445,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -498,10 +454,9 @@
         <Parameter Name="b" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="b">The value to convert.</param>
-        <summary>Converts the specified <see cref="T:System.Boolean" /> to a <see cref="T:System.String" />.</summary>
-        <returns>
-          <paramref name="b" /> converted to a <see cref="T:System.String" />.</returns>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,7 +467,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -522,10 +476,9 @@
         <Parameter Name="d" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="d">The value to convert.</param>
-        <summary>Converts the specified <see cref="T:System.Double" /> to a <see cref="T:System.String" />.</summary>
-        <returns>
-          <paramref name="d" /> converted to a <see cref="T:System.String" />.</returns>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -536,7 +489,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -552,12 +504,10 @@
         <Parameter Name="explicitOK" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">The value to convert.</param>
-        <param name="explicitOK">
-          <see langword="true" /> to allow data loss; otherwise, <see langword="false" />.</param>
-        <summary>Converts the specified <see cref="T:System.Object" /> to a <see cref="T:System.String" />, optionally allowing data loss.</summary>
-        <returns>
-          <paramref name="value" /> converted to a <see cref="T:System.String" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="explicitOK">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

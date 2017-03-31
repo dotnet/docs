@@ -1,0 +1,56 @@
+<Type Name="GlobalizationExtensions" FullName="System.Globalization.GlobalizationExtensions">
+  <TypeSignature Language="C#" Value="public static class GlobalizationExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GlobalizationExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.GlobalizationExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Globalization.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetStringComparer">
+      <MemberSignature Language="C#" Value="public static StringComparer GetStringComparer (this System.Globalization.CompareInfo compareInfo, System.Globalization.CompareOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.StringComparer GetStringComparer(class System.Globalization.CompareInfo compareInfo, valuetype System.Globalization.CompareOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.GlobalizationExtensions.GetStringComparer(System.Globalization.CompareInfo,System.Globalization.CompareOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.StringComparer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareInfo" Type="System.Globalization.CompareInfo" RefType="this" />
+        <Parameter Name="options" Type="System.Globalization.CompareOptions" />
+      </Parameters>
+      <Docs>
+        <param name="compareInfo">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

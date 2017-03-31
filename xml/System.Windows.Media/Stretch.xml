@@ -4,34 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Stretch" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes how content is resized to fill its allocated space.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following illustration shows the different Stretch values.  
-  
- ![Different TileBrush Stretch settings](~/add/media/img-mmgraphics-stretchenum.jpg "Different TileBrush Stretch settings")  
-Stretch values  
-  
-   
-  
-## Examples  
- The following example shows how to create an instance of a <xref:System.Windows.Controls.Viewbox> and set the Stretch mode of its content by using code.  
-  
- [!code-cs[ViewBoxCode#2](~/add/codesnippet/csharp/ViewboxCode/ViewboxCode.cs#2)]
- [!code-cpp[ViewBoxCode#2](~/add/codesnippet/cpp/viewboxcode/ViewboxCode.cpp#2)]
- [!code-vb[ViewBoxCode#2](~/add/codesnippet/visualbasic/ViewBoxCodeVB/ViewBoxCodeVB.vb#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Fill">
@@ -41,14 +21,13 @@ Stretch values
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Stretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is resized to fill the destination dimensions. The aspect ratio is not preserved.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -58,14 +37,13 @@ Stretch values
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Stretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content preserves its original size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Uniform">
@@ -75,14 +53,13 @@ Stretch values
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Stretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is resized to fit in the destination dimensions while it preserves its native aspect ratio.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UniformToFill">
@@ -92,14 +69,13 @@ Stretch values
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Stretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is resized to fill the destination dimensions while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from the source, the source content is clipped to fit in the destination dimensions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

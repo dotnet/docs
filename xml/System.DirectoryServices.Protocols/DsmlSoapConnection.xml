@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlSoapConnection" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The DsmlSoapConnection class is an abstract class that cannot be instantiated. It enables stateless and stateful protocols to be handled similarly by providing session-oriented features.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>The DsmlSoapConnection constructor initializes a new instance of a <see cref="T:System.DirectoryServices.Protocols.DsmlSoapConnection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,21 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The BeginSession method instructs the DSML server to start a new session.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The method will block while waiting for a response from the DSML server and will timeout according to the <xref:System.DirectoryServices.Protocols.DirectoryConnection.Timeout%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">Thrown when a session is already open on the connection.</exception>
-        <exception cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException">Thrown when the XML returned from the Server in response to the BeginSession is not well-formed.</exception>
-        <exception cref="T:System.Net.WebException">Thrown when there is a communications failure with the DSML server.</exception>
-        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
-          <see cref="T:System.Security.Permissions.SecurityAction" />
-        </permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndSession">
@@ -71,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,24 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The EndSession method ends the session with the DSML server and clears the <see cref="System.DirectoryServices.Protocols.DsmlSoapConnection.SessionId%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The method will block while waiting for a response from the DSML server and will timeout according to the <xref:System.DirectoryServices.Protocols.DirectoryConnection.Timeout%2A> property.  
-  
- If the DSML server terminates the session, a <xref:System.Net.WebException>  
-  
- is thrown. If <xref:System.DirectoryServices.Protocols.DsmlSoapConnection.SessionId%2A> is still valid after the exception is thrown, the request never reached the server and the connection is still considered valid.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Net.WebException">Thrown when a communications failure occurs with the DSML server.</exception>
-        <exception cref="T:System.InvalidOperationException">Thrown when there is no open session.</exception>
-        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
-          <see cref="T:System.Security.Permissions.SecurityAction" />
-        </permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionId">
@@ -106,23 +73,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The SessionId property contains the active session ID.</summary>
-        <value>The active session ID.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A null value signifies no active session.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SoapRequestHeader">
@@ -132,25 +91,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The SoapRequestHeader property contains the SOAP Header attached to outgoing requests.</summary>
-        <value>The SOAP Header attached to outgoing requests.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The API uses <xref:System.DirectoryServices.Protocols.DsmlSoapConnection.BeginSession%2A> and <xref:System.DirectoryServices.Protocols.DsmlSoapConnection.EndSession%2A> to track the lifetime of a session.  
-  
- **Caution** Attaching an EndSession header to the SoapRequestHeader causes the API to become inconsistent with the connection and should be avoided.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

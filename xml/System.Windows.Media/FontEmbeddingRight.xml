@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.FontEmbeddingRight" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes font embedding permissions specified in an OpenType font file.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on the OpenType fonts, see the **OpenType Specification** at [http://www.microsoft.com/typography/otspec/](http://www.microsoft.com/typography/otspec/).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Editable">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font may be embedded but must only be installed temporarily on other systems. In contrast to the PreviewAndPrint setting, documents containing Editable fonts may be opened for reading, editing is permitted, and changes may be saved.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditableButNoSubsetting">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font may be embedded but must only be installed temporarily on other systems. Documents containing the font may be opened for reading, editing is permitted, and changes may be saved. The font may not be subsetted prior to embedding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditableButNoSubsettingAndWithBitmapsOnly">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font may be embedded but must only be installed temporarily on other systems. Documents containing the font may be opened for reading, editing is permitted, and changes may be saved. The font may not be subsetted prior to embedding. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditableButWithBitmapsOnly">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font may be embedded but must only be installed temporarily on other systems. Documents containing the font may be opened for reading, editing is permitted, and changes may be saved. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Installable">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. The user of the remote system acquires the identical rights, obligations and licenses for that font as the original purchaser of the font, and is subject to the same end-user license agreement, copyright, design patent, and/or trademark as was the original purchaser.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InstallableButNoSubsetting">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. They may not be subsetted prior to embedding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InstallableButNoSubsettingAndWithBitmapsOnly">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. They may not be subsetted prior to embedding. Only bitmaps contained in the fonts may be embedded. No outline data may be embedded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InstallableButWithBitmapsOnly">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. Only bitmaps contained in the fonts may be embedded. No outline data may be embedded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreviewAndPrint">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreviewAndPrintButNoSubsetting">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode. The font may not be subsetted prior to embedding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreviewAndPrintButNoSubsettingAndWithBitmapsOnly">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode. The font may not be subsetted prior to embedding. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreviewAndPrintButWithBitmapsOnly">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RestrictedLicense">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Fonts with this setting must not be modified, embedded or exchanged in any manner without first obtaining permission of the legal owner.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

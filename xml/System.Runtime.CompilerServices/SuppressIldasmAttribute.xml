@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.SuppressIldasmAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -17,27 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Prevents the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) from disassembling an assembly. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Apply the SuppressIldasmAttribute attribute to an assembly or module to prevent the assembly or module from being disassembled using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
-  
- This attribute does not prevent an assembly from being viewed using reflection.  
-  
- Note that SuppressIldasmAttribute attribute does not block the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) from viewing header information and meta-information.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to apply the SuppressIldasmAttribute attribute to an assembly.  
-  
- [!code-vb[Runtime.CompilerServices.SuppressIldasmAttribute#1](~/add/codesnippet/visualbasic/t-system.runtime.compile_28_1.vb)]
- [!code-cs[Runtime.CompilerServices.SuppressIldasmAttribute#1](~/add/codesnippet/csharp/t-system.runtime.compile_28_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,28 +32,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.SuppressIldasmAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Apply the <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute to an assembly or module to prevent the assembly or module from being disassembled using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute to an assembly.  
-  
- [!code-vb[Runtime.CompilerServices.SuppressIldasmAttribute#1](~/add/codesnippet/visualbasic/m-system.runtime.compile_10_1.vb)]
- [!code-cs[Runtime.CompilerServices.SuppressIldasmAttribute#1](~/add/codesnippet/csharp/m-system.runtime.compile_10_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

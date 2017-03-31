@@ -21,7 +21,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Exposes <see cref="T:System.Windows.Controls.TreeViewItem" /> types containing data items to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,10 +40,10 @@
         <Parameter Name="parentDataItemAutomationPeer" Type="System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer" />
       </Parameters>
       <Docs>
-        <param name="item">The data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer" />.</param>
-        <param name="itemsControlAutomationPeer">The <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" /> that is associated with the <see cref="T:System.Windows.Controls.ItemsControl" /> that holds the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <param name="parentDataItemAutomationPeer">The <see cref="T:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer" /> that is the parent to this <see cref="T:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer" /> class.</summary>
+        <param name="item">To be added.</param>
+        <param name="itemsControlAutomationPeer">To be added.</param>
+        <param name="parentDataItemAutomationPeer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +61,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.TreeViewItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer" />. Called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType%2A" />.</summary>
-        <returns>
-          <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> in all cases.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +80,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the name of the <see cref="T:System.Windows.Controls.TreeViewItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer" />. Called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClassName%2A" />.</summary>
-        <returns>A string containing the value <see langword="TreeViewItem" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,25 +101,10 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">The type of pattern implemented by the element to retrieve.</param>
-        <summary>Gets the control pattern for the element that is associated with this <see cref="T:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer" />.</summary>
-        <returns>The object that implements the pattern interface, or <see langword="null" /> if the specified pattern interface is not implemented by this peer.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table describes what the GetPattern method returns when depending on the value of `patternInterface`:  
-  
-|The value of `patternInterface`|The return value|  
-|-------------------------------------|----------------------|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|The current <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer>.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|The <xref:System.Windows.Automation.Peers.TreeViewItemAutomationPeer> that represents the <xref:System.Windows.Controls.TreeViewItem> that contains the data item|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|The current <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer>.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|The current <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer>.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|An object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.|  
-  
- ]]></format>
-        </remarks>
+        <param name="patternInterface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentDataItemAutomationPeer">
@@ -136,8 +120,8 @@
         <ReturnType>System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer" /> that is the parent to this automation peer.</summary>
-        <value>The parent automation peer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,15 +139,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Hides all nodes, controls, or content that are descendants of the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.Expand">
@@ -180,15 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Displays all child nodes, controls, or content of the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState">
@@ -204,16 +174,9 @@
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the state, expanded or collapsed, of the control.</summary>
-        <value>The state, expanded or collapsed, of the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView">
@@ -230,15 +193,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content area of a container object in order to display the control within the visible region (viewport) of the container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IScrollItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection">
@@ -255,16 +211,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds the current element to the collection of selected items.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">UI Automation element is no longer available.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected">
@@ -280,17 +228,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether an item is selected.</summary>
-        <value>
-          <see langword="true" /> if an item is selected; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection">
@@ -307,16 +247,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the current element from the collection of selected items.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">UI Automation element is no longer available.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.Select">
@@ -333,16 +265,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears any selection and then selects the current element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">UI Automation element is no longer available.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer">
@@ -358,16 +282,9 @@
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the UI automation provider that implements <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> and acts as the container for the calling object.</summary>
-        <value>The UI automation provider.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

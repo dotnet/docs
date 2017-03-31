@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBar" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,30 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows toolbar. Although <see cref="T:System.Windows.Forms.ToolStrip" /> replaces and adds functionality to the ToolBar control of previous versions, ToolBar is retained for both backward compatibility and future use if you choose.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ToolBar controls are used to display <xref:System.Windows.Forms.ToolBarButton> controls that can appear as a standard button, a toggle-style button, or a drop-down style button. You can assign images to the buttons by creating an <xref:System.Windows.Forms.ImageList>, assigning it to the <xref:System.Windows.Forms.ToolBar.ImageList%2A> property of the toolbar, and assigning the image index value to the <xref:System.Windows.Forms.ToolBarButton.ImageIndex%2A> property each <xref:System.Windows.Forms.ToolBarButton>. You can then assign text to be displayed underneath or to the right of the image by setting the <xref:System.Windows.Forms.ToolBarButton.Text%2A> property of the <xref:System.Windows.Forms.ToolBarButton>.  
-  
- Set the <xref:System.Windows.Forms.ToolBar.Appearance%2A> property of the toolbar to <xref:System.Windows.Forms.ToolBarAppearance> to give the toolbar and its buttons a flat appearance. As the mouse pointer moves over the buttons, their appearance changes to three-dimensional. Toolbar buttons can be divided into logical groups by using separators. A separator is a toolbar button with the <xref:System.Windows.Forms.ToolBarButton.Style%2A> property set to `ToolBarButtonStyle.Separator`. Button separators appear as lines rather than spaces between the buttons when the toolbar has a flat appearance. If the <xref:System.Windows.Forms.ToolBar.Appearance%2A> property is set to <xref:System.Windows.Forms.ToolBarAppearance>, the toolbar buttons appear raised and three-dimensional.  
-  
- If you specify a value for the <xref:System.Windows.Forms.ToolBar.ButtonSize%2A> property, all buttons in the tool bar are restricted to the specified size. Otherwise, the buttons adjust their size depending on their content, and the <xref:System.Windows.Forms.ToolBar.ButtonSize%2A> property returns the initial size of the largest button.  
-  
- To create a collection of <xref:System.Windows.Forms.ToolBarButton> controls to display on the ToolBar, add the buttons individually by using the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Insert%2A> methods of the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property.  
-  
-   
-  
-## Examples  
- The following code example creates a ToolBar and three <xref:System.Windows.Forms.ToolBarButton> controls. The toolbar buttons are assigned to the button collection, the collection is assigned to the toolbar, and the toolbar is added to the form. On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the toolbar, the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> is evaluated, and the appropriate dialog box opened. This code requires that a <xref:System.Windows.Forms.Form>, an <xref:System.Windows.Forms.OpenFileDialog>, a <xref:System.Windows.Forms.SaveFileDialog>, and a <xref:System.Windows.Forms.PrintDialog> have been created.  
-  
- [!code-cpp[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/cpp/t-system.windows.forms.t_80_1.cpp)]
- [!code-vb[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.t_80_1.vb)]
- [!code-cs[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/csharp/t-system.windows.forms.t_80_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,29 +39,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolBar" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A newly created toolbar control is empty; add <xref:System.Windows.Forms.ToolBarButton> controls by setting the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls. The toolbar buttons are assigned to the button collection, the collection is assigned to the toolbar, and the toolbar is added to the form. On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the toolbar, the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> is evaluated, and the appropriate dialog box opened. This code requires that a <xref:System.Windows.Forms.Form>, an <xref:System.Windows.Forms.OpenFileDialog>, a <xref:System.Windows.Forms.SaveFileDialog>, and a <xref:System.Windows.Forms.PrintDialog> have been created.  
-  
- [!code-cpp[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_18_1.cpp)]
- [!code-vb[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_18_1.vb)]
- [!code-cs[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_18_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Appearance">
@@ -94,7 +54,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -109,26 +68,9 @@
         <ReturnType>System.Windows.Forms.ToolBarAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set the value that determines the appearance of a toolbar control and its buttons.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolBarAppearance" /> values. The default is <see langword="ToolBarAppearance.Normal" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Appearance property affects the appearance of the buttons assigned to the toolbar. When the appearance is set to `ToolBarAppearance.Normal`, the toolbar's buttons appear three-dimensional and raised. Set the Appearance property of the toolbar to `ToolBarAppearance.Flat` to give the toolbar's buttons a flat appearance. As the mouse pointer moves over the flat buttons, they appear raised and three-dimensional. Separators on a <xref:System.Windows.Forms.ToolBar> with the Appearance property set to <xref:System.Windows.Forms.ToolBarAppearance> appear as etched lines rather than spaces between the raised buttons. The flat style buttons give your application a more Web-like look.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/p-system.windows.forms.t_96_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/p-system.windows.forms.t_96_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_96_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.ToolBarAppearance" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -138,7 +80,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -162,26 +103,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the toolbar adjusts its size automatically, based on the size of the buttons and the dock style.</summary>
-        <value>
-          <see langword="true" /> if the toolbar adjusts its size automatically, based on the size of the buttons and dock style; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When AutoSize is set to `true`, the <xref:System.Windows.Forms.ToolBar> control sizes itself to accommodate the toolbar buttons, based upon the button size, the number of <xref:System.Windows.Forms.ToolBarButton> objects it contains, and the <xref:System.Windows.Forms.DockStyle> of the toolbar.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/p-system.windows.forms.t_172_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/p-system.windows.forms.t_172_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_172_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -191,7 +115,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -206,25 +129,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.ToolBar.AutoSize%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the AutoSizeChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolBar> named `ToolBar1`. Then ensure that the event handler is associated with the AutoSizeChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#564](~/add/codesnippet/csharp/e-system.windows.forms.t_61_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#564](~/add/codesnippet/visualbasic/e-system.windows.forms.t_61_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -234,7 +140,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -249,8 +154,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color.</summary>
-        <value>The background color.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,7 +166,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -276,15 +180,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ToolBar.BackColor%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBar.BackColor%2A> property is not meaningful for this control, although you can change its value and handle the BackColorChanged event to detect the change.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -294,7 +191,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -309,8 +205,8 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background image.</summary>
-        <value>The background image.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,7 +217,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -336,15 +231,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ToolBar.BackgroundImage%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBar.BackgroundImage%2A> property is not meaningful for this control, although you can change its value and handle the BackgroundImageChanged event to detect the change.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayout">
@@ -354,7 +242,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -369,8 +256,8 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the layout for background image.</summary>
-        <value>The layout for background image.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,7 +268,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -396,15 +282,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ToolBar.BackgroundImageLayout%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBar.BackgroundImageLayout%2A> property is not meaningful for this control, although you can change its value and handle the BackgroundImageLayoutChanged event to detect the change.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -414,7 +293,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -429,26 +307,9 @@
         <ReturnType>System.Windows.Forms.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border style of the toolbar control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.BorderStyle" /> values. The default is <see langword="BorderStyle.None" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBar> can take on a sunken, three-dimensional appearance when the <xref:System.Windows.Forms.BorderStyle> property is set to `BorderStyle.Fixed3D`. To display a flat thin border around the toolbar control, set the <xref:System.Windows.Forms.BorderStyle> property to `BorderStyle.FixedSingle`.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/p-system.windows.forms.t_135_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/p-system.windows.forms.t_135_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_135_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ButtonClick">
@@ -458,31 +319,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarButtonClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a <see cref="T:System.Windows.Forms.ToolBarButton" /> on the <see cref="T:System.Windows.Forms.ToolBar" /> is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls. The toolbar buttons are assigned to the button collection, the collection is assigned to the toolbar, and the toolbar is added to the form. On the ButtonClick event of the toolbar, the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> is evaluated, and the appropriate dialog box opened. This code requires that a <xref:System.Windows.Forms.Form>, an <xref:System.Windows.Forms.OpenFileDialog>, a <xref:System.Windows.Forms.SaveFileDialog>, and a <xref:System.Windows.Forms.PrintDialog> have been created.  
-  
- [!code-cpp[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/cpp/e-system.windows.forms.t_48_1.cpp)]
- [!code-vb[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/visualbasic/e-system.windows.forms.t_48_1.vb)]
- [!code-cs[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/csharp/e-system.windows.forms.t_48_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ButtonDropDown">
@@ -492,31 +336,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarButtonClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a drop-down style <see cref="T:System.Windows.Forms.ToolBarButton" /> or its down arrow is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and ButtonDropDown events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/e-system.windows.forms.t_106_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/e-system.windows.forms.t_106_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/e-system.windows.forms.t_106_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Buttons">
@@ -526,7 +353,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -544,25 +370,9 @@
         <ReturnType>System.Windows.Forms.ToolBar+ToolBarButtonCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of <see cref="T:System.Windows.Forms.ToolBarButton" /> controls assigned to the toolbar control.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ToolBar.ToolBarButtonCollection" /> that contains a collection of <see cref="T:System.Windows.Forms.ToolBarButton" /> controls.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Buttons property is a zero-based indexed collection used to hold all the <xref:System.Windows.Forms.ToolBarButton> controls assigned to the toolbar. Because the property is read-only, it can not be assigned a collection of toolbar buttons directly. Toolbar buttons can be added or removed by using the methods inherited from the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> class. Use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add%2A> method to add individual buttons and the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove%2A> method to delete a button. Call the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear%2A> method to remove all the buttons from the collection.  
-  
-   
-  
-## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls. The toolbar buttons are assigned to the toolbar and the toolbar is added to the form. This code requires that a <xref:System.Windows.Forms.Form> has already been created.  
-  
- [!code-cs[Classic ToolBar.Buttons Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_52_1.cs)]
- [!code-vb[Classic ToolBar.Buttons Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_52_1.vb)]
- [!code-cpp[Classic ToolBar.Buttons Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_52_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ButtonSize">
@@ -572,7 +382,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -587,26 +396,9 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the buttons on the toolbar control.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> object that represents the size of the <see cref="T:System.Windows.Forms.ToolBarButton" /> controls on the toolbar. The default size has a width of 24 pixels and a height of 22 pixels, or large enough to accommodate the <see cref="T:System.Drawing.Image" /> and text, whichever is greater.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the ButtonSize is not set, it is set to its default. Alternatively, a <xref:System.Drawing.Size> is computed to accommodate the largest <xref:System.Drawing.Image> and text assigned to the <xref:System.Windows.Forms.ToolBarButton> controls.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/p-system.windows.forms.t_181_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/p-system.windows.forms.t_181_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_181_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Drawing.Size.Width%2A" /> or <see cref="System.Drawing.Size.Height%2A" /> property of the <see cref="T:System.Drawing.Size" /> object is less than 0.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -616,7 +408,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -624,7 +415,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a handle for the control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -635,15 +426,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the required creation parameters when the control handle is created.</summary>
-        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -654,23 +444,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default Input Method Editor (IME) mode supported by this control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- As implemented in the <xref:System.Windows.Forms.ToolBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -680,15 +462,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the control.</summary>
-        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -699,7 +480,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -709,19 +489,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ToolBar" /> and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolBar> references. This method invokes the `Dispose` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Divider">
@@ -731,7 +501,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -743,26 +512,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the toolbar displays a divider.</summary>
-        <value>
-          <see langword="true" /> if the toolbar displays a divider; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Dividers are displayed to help distinguish the toolbar from adjacent controls, such as menus. A divider is displayed as a raised edge along the top of the <xref:System.Windows.Forms.ToolBar> control.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/p-system.windows.forms.t_202_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/p-system.windows.forms.t_202_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_202_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dock">
@@ -772,7 +524,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -787,8 +538,8 @@
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets which control borders are docked to its parent control and determines how a control is resized with its parent.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default is <see cref="T:System.Windows.Forms.DockStyle" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -799,7 +550,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -811,8 +561,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This member is not meaningful for this control.</summary>
-        <value>A <see cref="T:System.Boolean" /> value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -823,7 +573,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -838,26 +587,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether drop-down buttons on a toolbar display down arrows.</summary>
-        <value>
-          <see langword="true" /> if drop-down toolbar buttons display down arrows; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When DropDownArrows is set to `false`, no down arrows display on drop-down style toolbar buttons. When the user clicks the drop-down button on the toolbar, the menu drops down for selection. When the drop-down arrow is displayed, the user must press the down arrow to display the menu.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/p-system.windows.forms.t_201_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/p-system.windows.forms.t_201_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_201_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -867,7 +599,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -882,8 +613,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the forecolor .</summary>
-        <value>The forecolor.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -894,7 +625,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -909,15 +639,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ToolBar.ForeColor%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBar.ForeColor%2A> property is not meaningful for this control, although you can change its value and handle the ForeColorChanged event to detect the change.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageList">
@@ -927,7 +650,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -939,25 +661,9 @@
         <ReturnType>System.Windows.Forms.ImageList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection of images available to the toolbar button controls.</summary>
-        <value>An <see cref="T:System.Windows.Forms.ImageList" /> that contains images available to the <see cref="T:System.Windows.Forms.ToolBarButton" /> controls. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you create an <xref:System.Windows.Forms.ImageList> and assign it to the ImageList property, you can assign an image from the collection to the <xref:System.Windows.Forms.ToolBarButton> controls by assigning the image's index value to the <xref:System.Windows.Forms.ToolBarButton.ImageIndex%2A> property of the toolbar button.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/p-system.windows.forms.t_222_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/p-system.windows.forms.t_222_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_222_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageSize">
@@ -967,7 +673,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -985,8 +690,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the images in the image list assigned to the toolbar.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the images (in the <see cref="T:System.Windows.Forms.ImageList" />) assigned to the <see cref="T:System.Windows.Forms.ToolBar" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -997,7 +702,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1012,8 +716,8 @@
         <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This member is not meaningful for this control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1024,7 +728,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1039,15 +742,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ToolBar.ImeMode%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBar.ImeMode%2A> property is not meaningful for this control, although you can change its value and handle the ImeModeChanged event to detect the change.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnButtonClick">
@@ -1057,7 +753,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1067,18 +762,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolBarButtonClickEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolBarButtonClickEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolBar.ButtonClick" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnButtonClick method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnButtonDropDown">
@@ -1088,7 +774,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1098,18 +783,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolBarButtonClickEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolBarButtonClickEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolBar.ButtonDropDown" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnButtonDropDown method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -1119,7 +795,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1129,16 +804,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnFontChanged method resizes the toolbar buttons to fit the size of the new font.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -1148,7 +816,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1158,8 +825,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1170,7 +837,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1180,8 +846,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1192,7 +858,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1207,7 +872,7 @@
         <ReturnType>System.Windows.Forms.PaintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This member is not meaningful for this control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1218,7 +883,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1233,8 +897,8 @@
         <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This member is not meaningful for this control.</summary>
-        <value>A <see cref="T:System.Windows.Forms.RightToLeft" /> value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1245,7 +909,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1260,15 +923,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ToolBar.RightToLeft%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBar.RightToLeft%2A> property is not meaningful for this control, although you can change its value and handle the RightToLeftChanged event to detect the change.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleControl">
@@ -1278,7 +934,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1289,9 +944,9 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="factor">The factor by which the height and width of the control will be scaled.</param>
-        <param name="specified">A <see cref="T:System.Windows.Forms.BoundsSpecified" /> value that specifies the bounds of the control to use when defining its size and position.</param>
-        <summary>Scales a control's location, size, padding and margin.</summary>
+        <param name="factor">To be added.</param>
+        <param name="specified">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1302,7 +957,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1318,9 +972,9 @@
         <Parameter Name="dy" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="dx">The horizontal scaling factor.</param>
-        <param name="dy">The vertical scaling factor.</param>
-        <summary>This method is not relevant for this class.</summary>
+        <param name="dx">To be added.</param>
+        <param name="dy">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1331,7 +985,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1345,20 +998,13 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="x">The new <see langword="Left" /> property value of the control.</param>
-        <param name="y">The new <see langword="Top" /> property value of the control.</param>
-        <param name="width">The new <see langword="Width" /> property value of the control.</param>
-        <param name="height">Not used.</param>
-        <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
-        <summary>Sets the specified bounds of the <see cref="T:System.Windows.Forms.ToolBar" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SetBoundsCore method ignores width if the <xref:System.Windows.Forms.ToolBar.Dock%2A> property is set to <xref:System.Windows.Forms.DockStyle> or <xref:System.Windows.Forms.DockStyle> and the <xref:System.Windows.Forms.ToolBar.AutoSize%2A> property is set to `true`. SetBoundsCore ignores height if the <xref:System.Windows.Forms.ToolBar.Dock%2A> property is set to <xref:System.Windows.Forms.DockStyle> or <xref:System.Windows.Forms.DockStyle> and the <xref:System.Windows.Forms.ToolBar.AutoSize%2A> property is set to `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="specified">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowToolTips">
@@ -1368,7 +1014,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1383,26 +1028,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the toolbar displays a ToolTip for each button.</summary>
-        <value>
-          <see langword="true" /> if the toolbar display a ToolTip for each button; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To set the text displayed by the ToolTip, set the <xref:System.Windows.Forms.ToolBarButton.ToolTipText%2A> property of each <xref:System.Windows.Forms.ToolBarButton> on the <xref:System.Windows.Forms.ToolBar>. To cause the ToolTip to display as the user moves the mouse pointer over the toolbar button, set the ShowToolTips property to `true`.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/p-system.windows.forms.t_1_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/p-system.windows.forms.t_1_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -1412,7 +1040,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1424,8 +1051,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not meaningful for this control.</summary>
-        <value>This property is not meaningful for this control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1436,7 +1063,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1457,8 +1083,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text for the toolbar.</summary>
-        <value>The text for the toolbar.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1469,7 +1095,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1484,26 +1109,9 @@
         <ReturnType>System.Windows.Forms.ToolBarTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of text in relation to each image displayed on the toolbar button controls.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolBarTextAlign" /> values. The default is <see langword="ToolBarTextAlign.Underneath" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBarButton.Text%2A> can be aligned underneath or to the right of the image displayed on the <xref:System.Windows.Forms.ToolBarButton> controls.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/p-system.windows.forms.t_105_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/p-system.windows.forms.t_105_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_105_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.ToolBarTextAlign" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -1513,7 +1121,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1528,15 +1135,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ToolBar.Text%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBar.Text%2A> property is not meaningful for this control, although you can change its value and handle the TextChanged event to detect the change.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1546,7 +1146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1554,16 +1153,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.ToolBar" /> control.</summary>
-        <returns>A String that represents the current <see cref="T:System.Windows.Forms.ToolBar" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToString method returns a string that includes the type, the value of the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Count%2A> property in the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>, and the string returned by the ToString method of the toolbar’s first button.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -1573,7 +1165,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1583,8 +1174,8 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1595,7 +1186,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1610,26 +1200,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the toolbar buttons wrap to the next line if the toolbar becomes too small to display all the buttons on the same line.</summary>
-        <value>
-          <see langword="true" /> if the toolbar buttons wrap to another line if the toolbar becomes too small to display all the buttons on the same line; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Toolbar buttons can be divided into logical groups by using separators. A separator is a toolbar button with the <xref:System.Windows.Forms.ToolBarButton.Style%2A> property set to `ToolBarButtonStyle.Separator`. If the Wrappable property is set to `true` and the toolbar becomes too small to display all the buttons on the same line, the toolbar is broken into additional lines, with the breaks occurring at the separators. This ensures that button groups stay together. Toolbar buttons that are not in a group can be separated when the toolbar wraps. The toolbar can become too small to display all its buttons on the same line if its parent <xref:System.Windows.Forms.Form> is resized.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example requires that a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
-  
- [!code-cpp[ToolBar#1](~/add/codesnippet/cpp/p-system.windows.forms.t_165_1.cpp)]
- [!code-cs[ToolBar#1](~/add/codesnippet/csharp/p-system.windows.forms.t_165_1.cs)]
- [!code-vb[ToolBar#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_165_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

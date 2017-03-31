@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.StructureChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains information about the event that is raised when the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] tree structure has changed.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,37 +29,10 @@
         <Parameter Name="runtimeId" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="structureChangeType">A single value that specifies the type of change.</param>
-        <param name="runtimeId">The runtime [!INCLUDE[TLA#tla_id](~/add/includes/tlasharptla-id-md.md)] of the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element whose structure changed. See Remarks.</param>
-        <summary>Initializes a new instance of the <see cref="System.Windows.Automation.StructureChangedEventArgs.StructureChangeType%2A" /> class, specifying the type of change and the [!INCLUDE[TLA#tla_id](~/add/includes/tlasharptla-id-md.md)] of the element whose structure changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The values that can be returned in `structureChangeType` depend on the implementation of the UI Automation provider. For example, when items are added to or removed from a [!INCLUDE[TLA2#tla_win32](~/add/includes/tla2sharptla-win32-md.md)] list box, if the provider is not able to determine the number of items added or removed, it might specify <xref:System.Windows.Automation.StructureChangeType> and not <xref:System.Windows.Automation.StructureChangeType> or <xref:System.Windows.Automation.StructureChangeType>.  
-  
- The following table describes the information in the event received by the <xref:System.Windows.Automation.StructureChangedEventHandler> for different structure changes.  
-  
-|`structureChangeType`|Event source|`runtimeId`|  
-|---------------------------|------------------|-----------------|  
-|<xref:System.Windows.Automation.StructureChangeType>|The child that was added.|The child that was added.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the child that was removed.|The child that was removed.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were added.|The parent of the children that were added.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were removed.|The parent of the children that were removed.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were invalidated.|The parent of the children that were invalidated|  
-  
- Custom controls might not be able to provide a meaningful value in `runtimeId`. For more information, see <xref:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseStructureChangedEvent%2A>.  
-  
-   
-  
-## Examples  
- The following example shows how to construct and raise an event when children are added to, or removed from, a custom list box.  
-  
- [!code-vb[FragmentProvider#101](~/add/codesnippet/visualbasic/FragmentProviderVB/ListFragment.vb#101)]
- [!code-cs[FragmentProvider#101](~/add/codesnippet/csharp/FragmentProvider.ElementProvider/ListFragment.cs#101)]  
-  
- ]]></format>
-        </remarks>
+        <param name="structureChangeType">To be added.</param>
+        <param name="runtimeId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeId">
@@ -71,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,18 +49,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] runtime [!INCLUDE[TLA#tla_id](~/add/includes/tlasharptla-id-md.md)] of the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element whose structure changed.</summary>
-        <returns>The runtime [!INCLUDE[TLA2#tla_id](~/add/includes/tla2sharptla-id-md.md)] of the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element whose structure changed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The return value may be the identifier of the child that was added or removed or, in the case of many children being added, removed, or invalidated, the identifier of the parent. For more information, see <xref:System.Windows.Automation.StructureChangedEventArgs.%23ctor%2A>.  
-  
- Custom controls might not provide a valid runtime identifier.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StructureChangeType">
@@ -100,15 +61,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the type of change that occurred in the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] tree structure.</summary>
-        <value>The type of changed that occurred.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

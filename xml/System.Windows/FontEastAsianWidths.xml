@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FontEastAsianWidths" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Provides a mechanism for the user to select glyphs of different width styles.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a specified font does not support a particular glyph set, the default glyphs are displayed instead.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Full">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replaces uniform width glyphs with full width (usually em) glyphs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Half">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replaces uniform width glyphs with half width (half em) glyphs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Default width style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Proportional">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replaces uniform width glyphs with proportionally spaced glyphs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Quarter">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replaces uniform width glyphs with one-quarter width (one-quarter em) glyphs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Third">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replaces uniform width glyphs with one-third width (one-third em) glyphs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

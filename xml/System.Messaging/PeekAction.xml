@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.PeekAction" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates whether to peek the current message in a queue, or the next message.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the PeekAction enumeration with <xref:System.Messaging.MessageQueue.BeginPeek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%2CSystem.Object%2CSystem.AsyncCallback%29> and <xref:System.Messaging.MessageQueue.Peek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%29> to indicate whether you want to peek at the current message in the queue, or the next message.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.PeekAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Peek at the current message in the queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.PeekAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Peek at the next message in the queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleDateTime" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,17 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents date and time data ranging in value from January 1, 4712 BC to December 31, 4712 AD.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To obtain an OracleDateTime object, call the <xref:System.Data.OracleClient.OracleDataReader.GetOracleDateTime%2A> method.  
-  
- The minimum valid date for an OracleDateTime structure is 1/1/0001 00:00:00. However, Oracle supports dates as early as January 1, 4712 BC. To bind BC dates, use a `String` parameter and the Oracle TO_DATE or TO_CHAR conversion functions for input and output parameters respectively.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,15 +29,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="from" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="from">An existing <see cref="T:System.Data.OracleClient.OracleDateTime" /> object from which to copy.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure from an existing <see cref="T:System.Data.OracleClient.OracleDateTime" /> object.</summary>
+        <param name="from">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,15 +47,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dt" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="dt">The specified <see cref="T:System.DateTime" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure with the specified <see cref="T:System.DateTime" />.</summary>
+        <param name="dt">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,15 +65,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="ticks" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="ticks">A time period expressed in 100-nanosecond units.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure using the supplied number of ticks.</summary>
+        <param name="ticks">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +83,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -105,10 +91,10 @@
         <Parameter Name="day" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="year">An integer value representing the year of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="month">An integer value representing the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="day">An integer value representing the day of the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure using the supplied parameters to initialize the year, month, and day of the new structure.</summary>
+        <param name="year">To be added.</param>
+        <param name="month">To be added.</param>
+        <param name="day">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +105,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -129,11 +114,11 @@
         <Parameter Name="calendar" Type="System.Globalization.Calendar" />
       </Parameters>
       <Docs>
-        <param name="year">An integer value representing the year of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="month">An integer value representing the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="day">An integer value representing the day of the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="calendar">The <see cref="T:System.Globalization.Calendar" /> for this instance of <see cref="T:System.Data.OracleClient.OracleDateTime" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure using the supplied parameters to initialize the year, month, day, and calendar of the new structure.</summary>
+        <param name="year">To be added.</param>
+        <param name="month">To be added.</param>
+        <param name="day">To be added.</param>
+        <param name="calendar">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +129,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -156,13 +140,13 @@
         <Parameter Name="second" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="year">An integer value representing the year of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="month">An integer value representing the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="day">An integer value representing the day of the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="hour">An integer value representing the hour of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="minute">An integer value representing the minute of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="second">An integer value representing the second of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, and second of the new structure.</summary>
+        <param name="year">To be added.</param>
+        <param name="month">To be added.</param>
+        <param name="day">To be added.</param>
+        <param name="hour">To be added.</param>
+        <param name="minute">To be added.</param>
+        <param name="second">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,7 +157,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -186,14 +169,14 @@
         <Parameter Name="calendar" Type="System.Globalization.Calendar" />
       </Parameters>
       <Docs>
-        <param name="year">An integer value representing the year of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="month">An integer value representing the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="day">An integer value representing the day of the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="hour">An integer value representing the hour of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="minute">An integer value representing the minute of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="second">An integer value representing the second of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="calendar">The <see cref="T:System.Globalization.Calendar" /> for this instance of <see cref="T:System.Data.OracleClient.OracleDateTime" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, and second for the specified calendar of the new structure.</summary>
+        <param name="year">To be added.</param>
+        <param name="month">To be added.</param>
+        <param name="day">To be added.</param>
+        <param name="hour">To be added.</param>
+        <param name="minute">To be added.</param>
+        <param name="second">To be added.</param>
+        <param name="calendar">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,7 +187,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -217,14 +199,14 @@
         <Parameter Name="millisecond" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="year">An integer value representing the year of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="month">An integer value representing the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="day">An integer value representing the day of the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="hour">An integer value representing the hour of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="minute">An integer value representing the minute of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="second">An integer value representing the second of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="millisecond">An integer value representing the millisecond of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, second, and millisecond of the new structure.</summary>
+        <param name="year">To be added.</param>
+        <param name="month">To be added.</param>
+        <param name="day">To be added.</param>
+        <param name="hour">To be added.</param>
+        <param name="minute">To be added.</param>
+        <param name="second">To be added.</param>
+        <param name="millisecond">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,7 +217,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -249,15 +230,15 @@
         <Parameter Name="calendar" Type="System.Globalization.Calendar" />
       </Parameters>
       <Docs>
-        <param name="year">An integer value representing the year of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="month">An integer value representing the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="day">An integer value representing the day of the month of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="hour">An integer value representing the hour of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="minute">An integer value representing the minute of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="second">An integer value representing the second of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="millisecond">An integer value representing the millisecond of the new <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="calendar">The <see cref="T:System.Globalization.Calendar" /> for this instance of <see cref="T:System.Data.OracleClient.OracleDateTime" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, second, and millisecond for the specified calendar of the new structure.</summary>
+        <param name="year">To be added.</param>
+        <param name="month">To be added.</param>
+        <param name="day">To be added.</param>
+        <param name="hour">To be added.</param>
+        <param name="minute">To be added.</param>
+        <param name="second">To be added.</param>
+        <param name="millisecond">To be added.</param>
+        <param name="calendar">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,7 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,46 +258,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to be compared.</param>
-        <summary>Compares this <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure to the supplied object and returns an indication of their relative values.</summary>
-        <returns>A signed number indicating the relative values of the instance and the object.  
-  
- <list type="table">  
-<listheader>  
-<term> Return value  
-  
- </term>  
-<description> Condition  
-  
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
-  
- </term>  
-<description> This structure is less than the object.  
-  
- </description>  
-</item>  
-<item>  
-<term> Zero  
-  
- </term>  
-<description> This structure is the same as the object.  
-  
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
-  
- </term>  
-<description> This structure is greater than the object,  
-  
- object is a null reference (<see langword="Nothing" /> in Visual Basic)  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,15 +271,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure as a day.</summary>
-        <value>A day value between 1 and 31.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,7 +289,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -357,10 +298,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to be compared.</param>
-        <summary>Compares the supplied object parameter to the <see cref="System.Data.OracleClient.OracleDateTime.Value%2A" /> property of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> object.</summary>
-        <returns>
-          <see langword="true" /> if object is an instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> and the two are equal, otherwise <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,11 +321,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Performs a logical comparison of two <see cref="T:System.Data.OracleClient.OracleDateTime" /> structures to determine whether they are equal.</summary>
-        <returns>
-          <see langword="true" /> if the two values are equal, otherwise <see langword="false" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,7 +335,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -405,8 +342,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code for this instance.</summary>
-        <returns>A 32-bit signed integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,7 +354,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -428,10 +364,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine whether the first is greater than the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is greater than the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +378,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -453,10 +388,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine whether the first is greater than or equal to the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,15 +402,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure as an hour.</summary>
-        <value>An hour between 0 and 23.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,16 +420,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="System.Data.OracleClient.OracleDateTime.Value%2A" /> property of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure is null.</summary>
-        <value>
-          <see langword="true" /> if <see cref="System.Data.OracleClient.OracleDateTime.Value%2A" /> is null, otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,7 +438,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -517,10 +448,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine whether the first is less than the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is less than the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -531,7 +462,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -542,10 +472,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine whether the first is less than or equal to the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is less than or equal to the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,22 +486,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OracleClient.OracleDateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the maximum valid date value for an <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The maximum valid date for an <xref:System.Data.OracleClient.OracleDateTime> structure is December, 31, 4712 AD.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Millisecond">
@@ -581,15 +503,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the milliseconds component of the date represented by this instance.</summary>
-        <value>The millisecond, between 0 and 999.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -600,15 +521,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure as a minute.</summary>
-        <value>The minute, between 0 and 59.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -619,22 +539,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OracleClient.OracleDateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the minimum valid date value for an <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The minimum valid date for an <xref:System.Data.OracleClient.OracleDateTime> structure is 1/1/0001 00:00:00. However, Oracle supports dates as early as January 1, 4712 BC. To bind BC dates, use a String parameter and the Oracle TO_DATE or TO_CHAR conversion functions for input and output parameters respectively.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Month">
@@ -644,15 +556,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure as a month.</summary>
-        <value>The month, between 1 and 12.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -663,7 +574,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -674,10 +584,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if they are not equal.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are not equal or <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -688,22 +598,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OracleClient.OracleDateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a null value that can be assigned to the <see cref="System.Data.OracleClient.OracleDateTime.Value%2A" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Null` functions as a constant for the <xref:System.Data.OracleClient.OracleDateTime> structure.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -713,7 +615,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -724,11 +625,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Performs a logical comparison of two <see cref="T:System.Data.OracleClient.OracleDateTime" /> structures to determine if they are equal.</summary>
-        <returns>
-          <see langword="true" /> if the two values are equal, otherwise <see langword="false" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,7 +639,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -762,7 +661,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -785,7 +683,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -796,10 +693,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if the first is greater than the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is greater than the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -810,7 +707,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -821,10 +717,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if the first is greater than or equal to the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -835,7 +731,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -846,10 +741,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if they are equal.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are not equal or <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -860,7 +755,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -871,10 +765,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if the first is less than the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is less than the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -885,7 +779,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -896,10 +789,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleDateTime" /> to determine if the first is less than or equal to the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is less than or equal to the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleDateTime" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -910,7 +803,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -920,9 +812,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The <see langword="String" /> to be parsed.</param>
-        <summary>Converts the specified <see cref="T:System.String" /> representation of a date and time to its <see cref="T:System.Data.OracleClient.OracleDateTime" /> equivalent.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure equal to the date and time represented by the specified <see langword="String" />.</returns>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -933,15 +825,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure as a second.</summary>
-        <value>A second between 0 and 59.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -952,7 +843,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -960,8 +850,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts this <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure to a <see cref="T:System.String" />.</summary>
-        <returns>A <see langword="String" /> representing the <see cref="System.Data.OracleClient.OracleDateTime.Value%2A" /> property of this <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -972,15 +862,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
-        <value>The value of this <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -991,15 +880,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure as a year.</summary>
-        <value>A year between 1 and 4712.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

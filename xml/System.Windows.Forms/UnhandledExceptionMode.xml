@@ -4,36 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UnhandledExceptionMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines where a Windows Forms application should send unhandled exceptions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A>.  
-  
-> [!NOTE]
->  In the .NET Framework version 2.0, the common language runtime behavior changed to allow unhandled exceptions to propagate up the call stack. This behavior can be disabled via the application configuration file. For more information, see [Exceptions in Managed Threads](../Topic/Exceptions%20in%20Managed%20Threads.md).  
-  
-   
-  
-## Examples  
- The following code example sets event handlers for both errors that occur on Windows Forms threads and errors that occur on other threads. It sets <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A> so that all errors are handled by the application, regardless of the settings in the application's user configuration file. It uses the <xref:System.Windows.Forms.Application.ThreadException> event for the former, and the <xref:System.AppDomain.UnhandledException> event for the latter. Since <xref:System.AppDomain.UnhandledException> cannot prevent an application from terminating, the example simply logs the error in the system Event Log prior to termination.  
-  
- This sample assumes that you have defined two <xref:System.Windows.Forms.Button> controls, `button1` and `button2`, on your <xref:System.Windows.Forms.Form> class.  
-  
- [!code-cpp[Classic Application.ThreadException Example#1](~/add/codesnippet/cpp/t-system.windows.forms.u_3_1.cpp)]
- [!code-cs[Classic Application.ThreadException Example#1](~/add/codesnippet/csharp/t-system.windows.forms.u_3_1.cs)]
- [!code-vb[Classic Application.ThreadException Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.u_3_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Automatic">
@@ -43,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.UnhandledExceptionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Route all exceptions to the <see cref="E:System.Windows.Forms.Application.ThreadException" /> handler, unless the application's configuration file specifies otherwise.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CatchException">
@@ -60,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.UnhandledExceptionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Always route exceptions to the <see cref="E:System.Windows.Forms.Application.ThreadException" /> handler. Ignore the application configuration file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThrowException">
@@ -77,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.UnhandledExceptionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Never route exceptions to the <see cref="E:System.Windows.Forms.Application.ThreadException" /> handler. Ignore the application configuration file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

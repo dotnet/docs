@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Management.EnumerationOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,18 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a base class for query and enumeration-related options objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example initializes an EnumerationOptions variable with an EnumerationOptions constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-cs[wminet_EnumerationOptions#1](~/add/codesnippet/csharp/t-system.management.enum_1.cs)]
- [!code-vb[wminet_EnumerationOptions#1](~/add/codesnippet/visualbasic/t-system.management.enum_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,30 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.EnumerationOptions" /> class with default values (see the individual property descriptions for what the default values are). This is the default constructor.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
-   
-  
-## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-cs[wminet_EnumerationOptions()#1](~/add/codesnippet/csharp/m-system.management.enum_1.cs)]
- [!code-vb[wminet_EnumerationOptions()#1](~/add/codesnippet/visualbasic/m-system.management.enum_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,7 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -82,42 +52,18 @@
         <Parameter Name="enumerateDeep" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="context">The options context object containing provider-specific information that can be passed through to the provider.</param>
-        <param name="timeout">The time-out value for enumerating through the results.</param>
-        <param name="blockSize">The number of items to retrieve at one time from WMI.</param>
-        <param name="rewindable">
-          <see langword="true" /> to show that the result set is rewindable (allows multiple traversal); otherwise, <see langword="false" />.</param>
-        <param name="returnImmediatley">
-          <see langword="true" /> to show that the operation should return immediately (semi-sync) or block until all results are available; otherwise, <see langword="false" />.</param>
-        <param name="useAmendedQualifiers">
-          <see langword="true" /> to show that the returned objects should contain amended (locale-aware) qualifiers; otherwise, <see langword="false" />.</param>
-        <param name="ensureLocatable">
-          <see langword="true" /> to ensure all returned objects have valid paths; otherwise, <see langword="false" />.</param>
-        <param name="prototypeOnly">
-          <see langword="true" /> to return a prototype of the result set instead of the actual results; otherwise, <see langword="false" />.</param>
-        <param name="directRead">
-          <see langword="true" /> to retrieve objects of only the specified class or from derived classes as well; otherwise, <see langword="false" />.</param>
-        <param name="enumerateDeep">
-          <see langword="true" /> to use recursive enumeration in subclasses; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.EnumerationOptions" /> class to be used for queries or enumerations, allowing the user to specify values for the different options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
-   
-  
-## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-cs[wminet_EnumerationOptions(10)#1](~/add/codesnippet/csharp/802e6122-483a-4f91-af21-_1.cs)]
- [!code-vb[wminet_EnumerationOptions(10)#1](~/add/codesnippet/visualbasic/802e6122-483a-4f91-af21-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="blockSize">To be added.</param>
+        <param name="rewindable">To be added.</param>
+        <param name="returnImmediatley">To be added.</param>
+        <param name="useAmendedQualifiers">To be added.</param>
+        <param name="ensureLocatable">To be added.</param>
+        <param name="prototypeOnly">To be added.</param>
+        <param name="directRead">To be added.</param>
+        <param name="enumerateDeep">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BlockSize">
@@ -127,36 +73,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the block size for block operations. When enumerating through a collection, WMI will return results in groups of the specified size.</summary>
-        <value>Returns an <see cref="T:System.Int32" /> value used for the block size in block operations.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Property Value  
- The default value is 1.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
-   
-  
-## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-vb[wminet_EnumerationOptions_BlockSize#1](~/add/codesnippet/visualbasic/p-system.management.enum_1_1.vb)]
- [!code-cs[wminet_EnumerationOptions_BlockSize#1](~/add/codesnippet/csharp/p-system.management.enum_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -166,7 +91,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,18 +98,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a copy of the object.</summary>
-        <returns>The cloned object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DirectRead">
@@ -195,36 +110,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether *direct access* to the WMI provider is requested for the specified class, without any regard to its super class or derived classes.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether *direct access* to the WMI provider is requested for the specified class.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Property Value  
- `true` if only objects of the specified class should be received, without regard to derivation or inheritance; otherwise, `false`. The default value is `false`.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
-   
-  
-## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-cs[wminet_EnumerationOptions_DirectRead#1](~/add/codesnippet/csharp/p-system.management.enum_2_1.cs)]
- [!code-vb[wminet_EnumerationOptions_DirectRead#1](~/add/codesnippet/visualbasic/p-system.management.enum_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnsureLocatable">
@@ -234,28 +128,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether to the objects returned should have locatable information in them. This ensures that the system properties, such as **__PATH**, **__RELPATH**, and **__SERVER**, are non-NULL. This flag can only be used in queries, and is ignored in enumerations.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the objects returned should have locatable information in them.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Property Value  
- `true` if WMI should ensure all returned objects have valid paths; otherwise, `false`. The default value is `false`.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnumerateDeep">
@@ -265,36 +146,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether recursive enumeration is requested into all classes derived from the specified superclass. If <see langword="false" />, only immediate derived class members are returned.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether recursive enumeration is requested into all classes derived from the specified superclass.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Property Value  
- `true` if recursive enumeration is requested into all classes derived from the specified superclass; otherwise, `false`. The default value is `false`.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
-   
-  
-## Examples  
- The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
-  
- [!code-vb[wminet_EnumerationOptions_EnumerateDeep#1](~/add/codesnippet/visualbasic/p-system.management.enum_0_1.vb)]
- [!code-cs[wminet_EnumerationOptions_EnumerateDeep#1](~/add/codesnippet/csharp/p-system.management.enum_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrototypeOnly">
@@ -304,28 +164,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the query should return a prototype of the result set instead of the actual results. This flag is used for prototyping.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the query should return a prototype of the result set instead of the actual results.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Property Value  
- `true` if the query should return a prototype of the result set instead of the actual results; otherwise, `false`. The default value is `false`.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnImmediately">
@@ -335,28 +182,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the invoked operation should be performed in a synchronous or semisynchronous fashion. If this property is set to <see langword="true" />, the enumeration is invoked and the call returns immediately. The actual retrieval of the results will occur when the resulting collection is walked.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the invoked operation should be performed in a synchronous or semisynchronous fashion.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Property Value  
- `true` if the invoked operation should be performed in a synchronous or semisynchronous fashion; otherwise, `false`. The default value is `true`.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Rewindable">
@@ -366,28 +200,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the collection is assumed to be rewindable. If <see langword="true" />, the objects in the collection will be kept available for multiple enumerations. If <see langword="false" />, the collection can only be enumerated one time.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the collection is assumed to be rewindable.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Property Value  
- `true` if the collection is assumed to be rewindable; otherwise, `false`. The default value is `true`.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseAmendedQualifiers">
@@ -397,29 +218,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the objects returned from WMI should contain amended information. Typically, amended information is localizable information attached to the WMI object, such as object and property descriptions.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the objects returned from WMI should contain amended information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If descriptions and other amended information are not of interest, setting this property value to `false` is more efficient.  
-  
-## Property Value  
- `true` if the objects returned from WMI should contain amended information; otherwise, `false`. The default value is `false`.  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

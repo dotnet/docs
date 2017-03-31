@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ContentPresenter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,46 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Displays the content of a <see cref="T:System.Windows.Controls.ContentControl" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You typically use the ContentPresenter in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.ContentControl> to specify where the content is to be added. Every <xref:System.Windows.Controls.ContentControl> type has a ContentPresenter in its default <xref:System.Windows.Controls.ControlTemplate>.  
-  
- When a ContentPresenter object is in a <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.ContentPresenter.Content%2A>, <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A>, and <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A> properties get their values from the properties of the same names of the <xref:System.Windows.Controls.ContentControl>. You can have the ContentPresenter property get the values of these properties from other properties of the templated parent by setting the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A> property or binding to them.  
-  
- The ContentPresenter uses the following logic to display the <xref:System.Windows.Controls.ContentPresenter.Content%2A>:  
-  
--   If the <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A> property on the ContentPresenter is set, the ContentPresenter applies that <xref:System.Windows.DataTemplate> to the <xref:System.Windows.Controls.ContentPresenter.Content%2A> property and the resulting <xref:System.Windows.UIElement> and its child elements, if any, are displayed. For more information about <xref:System.Windows.DataTemplate> objects, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
-  
--   If the <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A> property on the ContentPresenter is set, the ContentPresenter applies the appropriate <xref:System.Windows.DataTemplate> to the <xref:System.Windows.Controls.ContentPresenter.Content%2A> property and the resulting <xref:System.Windows.UIElement> and its child elements, if any, are displayed.  
-  
--   If there is a <xref:System.Windows.DataTemplate> associated with the type of <xref:System.Windows.Controls.ContentPresenter.Content%2A>, the ContentPresenter applies that <xref:System.Windows.DataTemplate> to the <xref:System.Windows.Controls.ContentPresenter.Content%2A> property and the resulting <xref:System.Windows.UIElement> and its child elements, if any, are displayed.  
-  
--   If <xref:System.Windows.Controls.ContentPresenter.Content%2A> is a <xref:System.Windows.UIElement> object, the <xref:System.Windows.UIElement> is displayed. If the <xref:System.Windows.UIElement> already has a parent, an exception occurs.  
-  
--   If there is a <xref:System.ComponentModel.TypeConverter> that converts the type of <xref:System.Windows.Controls.ContentPresenter.Content%2A> to a <xref:System.Windows.UIElement>, the ContentPresenter uses that <xref:System.ComponentModel.TypeConverter> and the resulting <xref:System.Windows.UIElement> is displayed.  
-  
--   If there is a <xref:System.ComponentModel.TypeConverter> that converts the type of <xref:System.Windows.Controls.ContentPresenter.Content%2A> to a string, the ContentPresenter uses that <xref:System.ComponentModel.TypeConverter> and creates a <xref:System.Windows.Controls.TextBlock> to contain that string. The <xref:System.Windows.Controls.TextBlock> is displayed.  
-  
--   If the content is an <xref:System.Xml.XmlElement>, the value of the <xref:System.Xml.XmlElement.InnerText%2A> property is displayed in a <xref:System.Windows.Controls.TextBlock>.  
-  
--   The ContentPresenter calls the <xref:System.Object.ToString%2A> method on the <xref:System.Windows.Controls.ContentPresenter.Content%2A> and creates a <xref:System.Windows.Controls.TextBlock> to contain the string returned by <xref:System.Object.ToString%2A>. The <xref:System.Windows.Controls.TextBlock> is displayed.  
-  
-   
-  
-## Examples  
- The following shows a <xref:System.Windows.Controls.Button> <xref:System.Windows.Style> that sets the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.Button>. The <xref:System.Windows.Controls.ControlTemplate> defines that the <xref:System.Windows.Controls.Button> appears as an <xref:System.Windows.Shapes.Ellipse> within a <xref:System.Windows.Controls.Grid> element. The ContentPresenter marks that the <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.Button> should be displayed and centered vertically and horizontally within the <xref:System.Windows.Controls.Grid>.  
-  
- [!code-xml[StylingIntroSample_snip#ButtonCT](~/add/codesnippet/xaml/t-system.windows.control_10_1.xaml)]  
-  
- The following image shows the appearance of the <xref:System.Windows.Controls.Button> when this gets applied:  
-  
- ![Button ControlTemplate sample](~/add/media/stylingintro-buttoncontroltemplate.png "Button ControlTemplate sample")  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ContentPresenter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,9 +51,9 @@
         <Parameter Name="arrangeSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeSize">The size that this <see cref="T:System.Windows.Controls.ContentPresenter" /> object should use to arrange its child element.</param>
-        <summary>Positions the single child element and determines the content of a <see cref="T:System.Windows.Controls.ContentPresenter" /> object.</summary>
-        <returns>The actual size needed by the element.</returns>
+        <param name="arrangeSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,28 +71,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the template to use. This may depend on the content or other properties.</summary>
-        <returns>The <see cref="T:System.Windows.DataTemplate" /> to use.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The base class implements the following rules:  
-  
-1.  If <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A> is set, use it.  
-  
-2.  If <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A> is set, call its <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method. If the result is not `null`, use it.  
-  
-3.  Look for a <xref:System.Windows.DataTemplate> whose <xref:System.Windows.DataTemplate.DataType%2A> matches the content among the resources known to the <xref:System.Windows.Controls.ContentPresenter> (including application, theme, and system resources). If one is found, use it.  
-  
-4.  If the type of <xref:System.Windows.Controls.ContentPresenter.Content%2A> is "common", use a standard template. The common types are `String`, <xref:System.Xml.XmlNode>, and <xref:System.Windows.UIElement>.  
-  
-5.  Otherwise, use a default template that essentially converts <xref:System.Windows.Controls.ContentPresenter.Content%2A> to a string and displays it in a <xref:System.Windows.Controls.TextBlock>.  
-  
- Derived classes can override these rules and implement their own.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -144,37 +83,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data used to generate the child elements of a <see cref="T:System.Windows.Controls.ContentPresenter" />.</summary>
-        <value>The data used to generate the child elements. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you place a <xref:System.Windows.Controls.ContentPresenter> in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.ContentControl>, it automatically displays the <xref:System.Windows.Controls.ContentControl.Content%2A> of the templated control. This means that if you set the <xref:System.Windows.Controls.ControlTemplate.TargetType%2A> of your <xref:System.Windows.Controls.ControlTemplate> to be <xref:System.Windows.Controls.Button>, the Content property of the <xref:System.Windows.Controls.ContentPresenter> is implicitly bound to the <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.Button> that is using that <xref:System.Windows.Controls.ControlTemplate>.  
-  
- To set up bindings for the <xref:System.Windows.Controls.ContentPresenter> properties, you may want to consider using the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A> property. The <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A> property points to a property on the templated parent as well as aliases the associated template and template selector properties automatically.  
-  
-<a name="xamlTextUsage_Content"></a>   
-## XAML Text Usage  
- Typically, you use `TemplateBinding` to bind this property value to a value on templated control. For [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
-  
-<a name="dependencyPropertyInfo_Content"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ContentPresenter.ContentProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentProperty">
@@ -184,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ContentPresenter.Content%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,40 +118,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the base name to use during automatic aliasing.</summary>
-        <value>The base name to use during automatic aliasing. The default is "Content".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property should only be used when the <xref:System.Windows.Controls.ContentPresenter> is in a template. When a template contains a <xref:System.Windows.Controls.ContentPresenter> with ContentSource set to "`Abc`", the <xref:System.Windows.Controls.ContentPresenter.Content%2A>, <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A>, and <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A> properties of the <xref:System.Windows.Controls.ContentPresenter> are automatically aliased to `Abc`, `AbcTemplate`, and `AbcTemplateSelector`, respectively.  Beginning with the [!INCLUDE[net_v35SP1_long](~/add/includes/net-v35sp1-long-md.md)], setting ContentSource to "`Abc`" also causes the <xref:System.Windows.Controls.ContentPresenter.ContentStringFormat%2A> property to be aliased to `AbcStringFormat`.  
-  
- The two most useful values for this property are "Content" and "Header".  
-  
-<a name="dependencyPropertyInfo_ContentSource"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ContentPresenter.ContentSourceProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows a style for a <xref:System.Windows.Controls.HeaderedContentControl> that demonstrates the usage of the ContentSource property:  
-  
- [!code-xml[HeaderedContentControl#HeaderedContentControlStyle](~/add/codesnippet/xaml/HeaderedContentControlSimple/Page1.xaml#headeredcontentcontrolstyle)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentSourceProperty">
@@ -245,14 +136,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ContentPresenter.ContentSource%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,7 +153,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -275,24 +164,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a composite string that specifies how to format the <see cref="System.Windows.Controls.ContentPresenter.Content%2A" /> property if it is displayed as a string.</summary>
-        <value>A composite string that specifies how to format the <see cref="System.Windows.Controls.ContentPresenter.Content%2A" /> property if it is displayed as a string. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ContentStringFormat can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md). If you set the <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A> or <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A> property of a <xref:System.Windows.Controls.ContentPresenter>, the ContentStringFormat property is ignored.  
-  
-<a name="dependencyPropertyInfo_ContentStringFormat"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ContentPresenter.ContentStringFormatProperty>|  
-|Metadata properties set to **true**|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentStringFormatProperty">
@@ -302,14 +176,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ContentPresenter.ContentStringFormat%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,41 +193,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template used to display the content of the control.</summary>
-        <value>A <see cref="T:System.Windows.DataTemplate" /> that defines the visualization of the content. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ContentTemplate"></a>   
-## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
-  
-<a name="dependencyPropertyInfo_ContentTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ContentPresenter.ContentTemplateProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
-   
-  
-## Examples  
- The following example shows a style for the <xref:System.Windows.Controls.ComboBox> control:  
-  
- [!code-xml[ControlTemplateExamples#ComboBoxStyle](~/add/codesnippet/xaml/controltemplateexamples/resources/combobox.xaml#comboboxstyle)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentTemplateProperty">
@@ -364,14 +211,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,35 +228,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Controls.DataTemplateSelector" />, which allows the application writer to provide custom logic for choosing the template that is used to display the content of the control.</summary>
-        <value>A <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that supplies logic to return a <see cref="T:System.Windows.DataTemplate" /> to apply. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is ignored if the <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A> property is set. For more information, see <xref:System.Windows.Controls.ContentPresenter.ChooseTemplate%2A>.  
-  
-<a name="xamlTextUsage_ContentTemplateSelector"></a>   
-## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
-  
-<a name="dependencyPropertyInfo_ContentTemplateSelector"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelectorProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentTemplateSelectorProperty">
@@ -420,14 +246,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -438,7 +263,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -448,9 +272,9 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">An upper limit value that the return value should not exceed.</param>
-        <summary>Determines the size of the <see cref="T:System.Windows.Controls.ContentPresenter" /> object based on the sizing properties, margin, and requested size of the child content.</summary>
-        <returns>The size that is required to arrange child content.</returns>
+        <param name="constraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -461,7 +285,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,9 +295,9 @@
         <Parameter Name="newContentStringFormat" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="oldContentStringFormat">The old value of the <see cref="System.Windows.Controls.ContentPresenter.ContentStringFormat%2A" /> property.</param>
-        <param name="newContentStringFormat">The new value of the <see cref="System.Windows.Controls.ContentPresenter.ContentStringFormat%2A" /> property.</param>
-        <summary>Invoked when the <see cref="System.Windows.Controls.ContentPresenter.ContentStringFormat%2A" /> property changes.</summary>
+        <param name="oldContentStringFormat">To be added.</param>
+        <param name="newContentStringFormat">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,7 +308,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -496,9 +318,9 @@
         <Parameter Name="newContentTemplate" Type="System.Windows.DataTemplate" />
       </Parameters>
       <Docs>
-        <param name="oldContentTemplate">The old value of the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplate%2A" /> property.</param>
-        <param name="newContentTemplate">The new value of the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplate%2A" /> property.</param>
-        <summary>Invoked when the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplate%2A" /> changes.</summary>
+        <param name="oldContentTemplate">To be added.</param>
+        <param name="newContentTemplate">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -509,7 +331,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -520,9 +341,9 @@
         <Parameter Name="newContentTemplateSelector" Type="System.Windows.Controls.DataTemplateSelector" />
       </Parameters>
       <Docs>
-        <param name="oldContentTemplateSelector">The old value of the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A" /> property.</param>
-        <param name="newContentTemplateSelector">The new value of the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A" /> property.</param>
-        <summary>Invoked when the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A" /> property changes.</summary>
+        <param name="oldContentTemplateSelector">To be added.</param>
+        <param name="newContentTemplateSelector">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -533,7 +354,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -544,9 +364,9 @@
         <Parameter Name="newTemplate" Type="System.Windows.DataTemplate" />
       </Parameters>
       <Docs>
-        <param name="oldTemplate">The old <see cref="T:System.Windows.DataTemplate" /> object value.</param>
-        <param name="newTemplate">The new <see cref="T:System.Windows.DataTemplate" /> object value.</param>
-        <summary>Invoked when the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplate%2A" /> changes</summary>
+        <param name="oldTemplate">To be added.</param>
+        <param name="newTemplate">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -557,40 +377,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.ContentPresenter" /> should use <see cref="T:System.Windows.Controls.AccessText" /> in its style.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.ContentPresenter" /> should use <see cref="T:System.Windows.Controls.AccessText" /> in its style; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_RecognizesAccessKey"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ContentPresenter.RecognizesAccessKeyProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows a style for the <xref:System.Windows.Controls.CheckBox> control:  
-  
-   
-  
- For more information about this example, see [CheckBox Styles and Templates](../Topic/CheckBox%20Styles%20and%20Templates.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RecognizesAccessKeyProperty">
@@ -600,14 +395,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ContentPresenter.RecognizesAccessKey%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -618,7 +412,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -631,9 +424,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether serialization processes should serialize the effective value of the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A" /> property on instances of this class.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

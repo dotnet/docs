@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,28 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Allows programmatic access to the HTML <see langword="&lt;input type= checkbox&gt;" /> element on the server.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the HtmlInputCheckBox control to allow the user to select a `true` or `false` state. To determine whether the control is selected, use the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.Checked%2A> property. The HtmlInputCheckBox control provides a <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange> event that is raised when the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.Checked%2A> property changes values between posts to the server. This allows you to create an event handler that performs a custom set of instructions each time the event is raised.  
-  
-> [!NOTE]
->  The HtmlInputCheckBox control does not post back to the server when it is clicked. You must provide another control on the Web page that supports posting to the server, such as an <xref:System.Web.UI.HtmlControls.HtmlButton> control, to send the state of the control back to the server.  
-  
- For a list of initial property values for an instance of HtmlInputCheckBox, see the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.%23ctor%2A> constructor.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a set of simple responses to users selecting from a group of HtmlInputCheckBox controls.  
-  
- [!code-vb[Classic HtmlInputCheckBox Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.htmlcont_26_1.aspx)]
- [!code-cs[Classic HtmlInputCheckBox Example#1](~/add/codesnippet/csharp/t-system.web.ui.htmlcont_26_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,34 +34,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> class.  
-  
- The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>.  
-  
-|Property|Initial Value|  
-|--------------|-------------------|  
-|`TagName`|The "checkbox" literal string.|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> class.  
-  
- [!code-cs[Classic HtmlInputCheckBox.HtmlInputCheckBox Example#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_39_1.aspx)]
- [!code-vb[Classic HtmlInputCheckBox.HtmlInputCheckBox Example#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_39_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -92,7 +49,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -110,25 +66,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" /> is selected.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" /> control is selected; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to determine whether the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> control is selected. This property can also be used to programmatically set the state of the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a set of responses to users selecting from a group of <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> controls.  
-  
- [!code-vb[Classic HtmlInputCheckBox Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.htmlcont_82_1.aspx)]
- [!code-cs[Classic HtmlInputCheckBox Example#1](~/add/codesnippet/csharp/p-system.web.ui.htmlcont_82_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -138,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,19 +88,11 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The key identifier for the control.</param>
-        <param name="postCollection">The collection of all incoming name values.</param>
-        <summary>Processes the postback data for the <see cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" /> control.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" /> control's state has changed as a result of the postback event; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is primarily of interest to custom control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="postDataKey">To be added.</param>
+        <param name="postCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -171,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -181,27 +111,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="System.Web.UI.Control.OnPreRender%2A" /> event and registers the control as one that requires postback handling.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnPreRender method overrides the base <xref:System.Web.UI.Control.OnPreRender%2A> method. OnPreRender is used primarily by control developers.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the OnPreRender method in a custom server control so that a `Title` attribute is added to each <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> control.  
-  
- [!code-cs[CustomHtmlInputCheckBoxOnPreRender#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_49_1.aspx)]
- [!code-vb[CustomHtmlInputCheckBoxOnPreRender#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_49_1.aspx)]  
-  
- [!code-cs[CustomHtmlInputCheckBoxOnPreRender#2](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_49_2.cs)]
- [!code-vb[CustomHtmlInputCheckBoxOnPreRender#2](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_49_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnServerChange">
@@ -211,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -221,31 +132,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.EventArgs" /> that contains event information.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange" /> event. This method allows you to handle the event directly.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised when the Web page is submitted to the server and the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> control changes state from the previous post. This method allows you to override the base implementation and provide a custom handler for the event.  
-  
-> [!NOTE]
->  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange> event to work correctly.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnServerChange method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange> event.  
-  
- [!code-cs[Classic HtmlInputCheckBox.ServerChange Example#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_10_1.aspx)]
- [!code-vb[Classic HtmlInputCheckBox.ServerChange Example#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_10_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -255,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,15 +151,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Calls the <see cref="System.Web.UI.HtmlControls.HtmlInputCheckBox.OnServerChange%2A" /> method to signal the <see cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" /> control that the state of the control has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputButton> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -281,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -291,8 +171,8 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> instance that contains the output stream to render on the client.</param>
-        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" /> control's attributes to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> instance.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,35 +183,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the Web page is submitted to the server and the <see cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" /> control changes state from the previous post.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised when the Web page is submitted to the server and the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> control changes state from the previous post.  
-  
-> [!NOTE]
->  The control must have view state enabled for the ServerChange event to work correctly.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify and code a handler for the ServerChange event.  
-  
- [!code-cs[Classic HtmlInputCheckBox.ServerChange Example#1](~/add/codesnippet/csharp/e-system.web.ui.htmlcont_7_1.aspx)]
- [!code-vb[Classic HtmlInputCheckBox.ServerChange Example#1](~/add/codesnippet/visualbasic/e-system.web.ui.htmlcont_7_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -341,7 +200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -352,11 +210,10 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The key identifier for the control.</param>
-        <param name="postCollection">The collection of all incoming name values.</param>
-        <summary>Implements the <see cref="System.Web.UI.IPostBackDataHandler.LoadPostData%2A" /> method by calling the <see cref="System.Web.UI.HtmlControls.HtmlInputCheckBox.LoadPostData%2A" /> method.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" /> control's state has changed as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <param name="postDataKey">To be added.</param>
+        <param name="postCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -367,7 +224,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -375,7 +231,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Implements the <see cref="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A" /> method by calling the <see cref="System.Web.UI.HtmlControls.HtmlInputCheckBox.RaisePostDataChangedEvent%2A" /> method.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

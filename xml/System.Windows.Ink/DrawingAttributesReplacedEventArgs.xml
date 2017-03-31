@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.DrawingAttributesReplacedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Controls.InkCanvas.DefaultDrawingAttributesReplaced" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,9 +29,9 @@
         <Parameter Name="previousDrawingAttributes" Type="System.Windows.Ink.DrawingAttributes" />
       </Parameters>
       <Docs>
-        <param name="newDrawingAttributes">The new <see cref="T:System.Windows.Ink.DrawingAttributes" />.</param>
-        <param name="previousDrawingAttributes">The old <see cref="T:System.Windows.Ink.DrawingAttributes" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.DrawingAttributesReplacedEventArgs" /> class.</summary>
+        <param name="newDrawingAttributes">To be added.</param>
+        <param name="previousDrawingAttributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Ink.DrawingAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the new <see cref="T:System.Windows.Ink.DrawingAttributes" />.</summary>
-        <value>The new <see cref="T:System.Windows.Ink.DrawingAttributes" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Ink.DrawingAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the old <see cref="T:System.Windows.Ink.DrawingAttributes" />.</summary>
-        <value>The old <see cref="T:System.Windows.Ink.DrawingAttributes" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>This attribute can be applied to service operations to enable receive context behavior.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the ReceiveContextEnabledAttribute class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +56,9 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="operationDescription">The operation description.</param>
-        <param name="bindingParameters">The binding parameters.</param>
-        <summary>Configures the binding elements to support the receive context behavior.</summary>
+        <param name="operationDescription">To be added.</param>
+        <param name="bindingParameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +79,9 @@
         <Parameter Name="clientOperation" Type="System.ServiceModel.Dispatcher.ClientOperation" />
       </Parameters>
       <Docs>
-        <param name="operationDescription">The operation description.</param>
-        <param name="clientOperation">The client run-time object.</param>
-        <summary>Implements the <see cref="System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior%2A" /> method.</summary>
+        <param name="operationDescription">To be added.</param>
+        <param name="clientOperation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,9 +102,9 @@
         <Parameter Name="dispatchOperation" Type="System.ServiceModel.Dispatcher.DispatchOperation" />
       </Parameters>
       <Docs>
-        <param name="operationDescription">The operation description.</param>
-        <param name="dispatchOperation">The operation to dispatch to.</param>
-        <summary>Implements the <see cref="System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior%2A" /> method.</summary>
+        <param name="operationDescription">To be added.</param>
+        <param name="dispatchOperation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,17 +121,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets value that indicates whether the receive acknowledgement for this operation is explicitly signaled by service method.</summary>
-        <value>
-          <see langword="true" /> if the receive acknowledgement for this operation is explicitly signaled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the ManualControl property is set to `true`, the message received from the channel is delivered to the service operation with a lock for the message in the form of “ReceiveContext message property”. It is the responsibility of the service implementation to either to call <xref:System.ServiceModel.Channels.ReceiveContext.Complete%2A> or <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> to signal the receive completion of the message. Failure to call either of these result in the lock being held on the message until the lock timeout interval elapses. Once the lock is released (either through calling <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> or lock timeout) the message is re-dispatched from the channel to the service. Calling <xref:System.ServiceModel.Channels.ReceiveContext.Complete%2A> marks the message as successfully received.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -150,8 +142,8 @@
         <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
       </Parameters>
       <Docs>
-        <param name="operationDescription">The operation description.</param>
-        <summary>Implements the <see cref="System.ServiceModel.Description.IOperationBehavior.Validate%2A" /> method.</summary>
+        <param name="operationDescription">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

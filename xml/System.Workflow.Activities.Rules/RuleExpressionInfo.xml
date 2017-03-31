@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleExpressionInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>An instance of this class is returned by the <see cref="System.Workflow.Activities.Rules.IRuleExpression.Validate%2A" /> method of an <see cref="T:System.Workflow.Activities.Rules.IRuleExpression" /> expression.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.Activities.Rules.RuleExpressionInfo.ExpressionType%2A> property on RuleExpressionInfo provides the return type of the expression. For example, a binary expression, when evaluated, has a return type of Boolean; or, an expression that accesses a property might return an integer type.  
-  
- The information in the RuleExpressionInfo can be used to validate the use of the expression. For example, a greater-than test cannot be used to compare two expressions if either returns a Boolean.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="expressionType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="expressionType">The <see cref="T:System.Type" /> of the expression.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionInfo" /> class.</summary>
+        <param name="expressionType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,15 +40,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the expression.</summary>
-        <value>The <see cref="T:System.Type" /> of the expression.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardStep" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,23 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a basic step that is displayed in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Web.UI.WebControls.Wizard> control is made up of a collection of WizardStep objects that represent single steps of a wizard. The <xref:System.Web.UI.WebControls.Wizard> control displays a single WizardStep object at a time. You can use a <xref:System.Web.UI.WebControls.Wizard> control and its associated WizardStep objects to collect related data in a linear or nonlinear fashion.  
-  
-> [!NOTE]
->  If you embed the <xref:System.Web.UI.WebControls.Login> control in a WizardStep, explicitly set the <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> in a `Page_Load` event handler if the user is authenticated. The <xref:System.Web.UI.WebControls.Wizard> control does not automatically advance to the next WizardStep in this scenario.  
-  
- You cannot apply a theme to WizardStep but you can apply a theme to <xref:System.Web.UI.WebControls.TemplatedWizardStep>.  
-  
-> [!NOTE]
->  If you programmatically add a WizardStep in the `Page_Load` event handler, you must add the navigation to that step prior to the page loading.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,12 +33,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WizardStep" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

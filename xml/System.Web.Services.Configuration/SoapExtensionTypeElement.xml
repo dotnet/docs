@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.SoapExtensionTypeElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the SoapExtensionElement in the Web Services configuration file. This element adds a SOAP extension to run with all XML Web services within the scope of the configuration file. The class cannot be inherited.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -48,10 +45,10 @@
         <Parameter Name="group" Type="System.Web.Services.Configuration.PriorityGroup" />
       </Parameters>
       <Docs>
-        <param name="type">Specifies the SOAP extension class to add.</param>
-        <param name="priority">Indicates the relative order in which a SOAP extension runs when multiple SOAP extensions are specified. Within each group, the priority attribute distinguishes the overall relative priority of the SOAP extension. A lower priority number indicates a higher priority for the SOAP extension. The lowest possible value for the priority attribute is 1.</param>
-        <param name="group">Along with priority, specifies the relative order in which a SOAP extension runs when multiple SOAP extensions are configured to run.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> class.</summary>
+        <param name="type">To be added.</param>
+        <param name="priority">To be added.</param>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +59,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -71,10 +67,10 @@
         <Parameter Name="group" Type="System.Web.Services.Configuration.PriorityGroup" />
       </Parameters>
       <Docs>
-        <param name="type">Specifies the SOAP extension class to add.</param>
-        <param name="priority">Indicates the relative order in which a SOAP extension runs when multiple SOAP extensions are specified.</param>
-        <param name="group">Along with priority, specifies the relative order in which a SOAP extension runs when multiple SOAP extensions are configured to run.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> class.</summary>
+        <param name="type">To be added.</param>
+        <param name="priority">To be added.</param>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +81,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -97,16 +92,9 @@
         <ReturnType>System.Web.Services.Configuration.PriorityGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the relative order in which a SOAP extension runs when multiple SOAP extensions are configured to run.</summary>
-        <value>A <see cref="T:System.Web.Services.Configuration.PriorityGroup" /> object whose value determines relative order in which a SOAP extension runs.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Within each group, the priority attribute distinguishes the overall relative priority of the SOAP extension. A lower priority number indicates a higher priority for the SOAP extension. The lowest possible value for the priority attribute is 1.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -116,7 +104,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -131,16 +118,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value that indicates the relative order in which a SOAP extension runs when multiple SOAP extensions are specified.</summary>
-        <value>A <see cref="T:System.Int32" /> whose value determines relative order in which a SOAP extension runs.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Within each group the priority attribute distinguishes the overall relative priority of the SOAP extension. A lower priority number indicates a higher priority for the SOAP extension. The lowest possible value for the priority attribute is 1.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -150,7 +130,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,7 +148,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -184,8 +162,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the SOAP extension class to add to the SoapExtensionType element of the Web Services configuration file.</summary>
-        <value>A <see cref="T:System.String" /> that contains the type name of the SoapExtensionType element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

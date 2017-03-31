@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.KeySplineConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,16 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Media.Animation.KeySpline" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_KeySplineConverter"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.KeySplineConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,11 +47,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptor">Describes the context information of a type.</param>
-        <param name="destinationType">The type of the source that is being evaluated for conversion.</param>
-        <summary>Determines whether an object can be converted from a given type to an instance of a <see cref="T:System.Windows.Media.Animation.KeySpline" />.</summary>
-        <returns>
-          <see langword="true" /> if the type can be converted to a <see cref="T:System.Windows.Media.Animation.KeySpline" />; otherwise, <see langword="false" />.</returns>
+        <param name="typeDescriptor">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="destinationType">The desired type this <see cref="T:System.Windows.Media.Animation.KeySpline" /> is being evaluated for conversion.</param>
-        <summary>Determines whether an instance of a <see cref="T:System.Windows.Media.Animation.KeySpline" /> can be converted to a different type.</summary>
-        <returns>
-          <see langword="true" /> if this <see cref="T:System.Windows.Media.Animation.KeySpline" /> can be converted to <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,20 +96,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">Provides contextual information required for conversion.</param>
-        <param name="cultureInfo">Cultural information to respect during conversion.</param>
-        <param name="value">The object being converted.</param>
-        <summary>Attempts to convert the specified object to a <see cref="T:System.Windows.Media.Animation.KeySpline" />.</summary>
-        <returns>The <see cref="T:System.Windows.Media.Animation.KeySpline" /> created from converting <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.KeySplineConverter.CanConvertFrom%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Thrown if the specified object is NULL or is a type that cannot be converted to a <see cref="T:System.Windows.Media.Animation.KeySpline" />.</exception>
+        <param name="context">To be added.</param>
+        <param name="cultureInfo">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -134,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -152,21 +128,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Provides contextual information required for conversion.</param>
-        <param name="cultureInfo">Cultural information to respect during conversion.</param>
-        <param name="value">The <see cref="T:System.Windows.Media.Animation.KeySpline" /> to convert.</param>
-        <param name="destinationType">The type to convert this <see cref="T:System.Windows.Media.Animation.KeySpline" /> to.</param>
-        <summary>Attempts to convert a <see cref="T:System.Windows.Media.Animation.KeySpline" /> to a specified type.</summary>
-        <returns>The object created from converting this <see cref="T:System.Windows.Media.Animation.KeySpline" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.KeySplineConverter.CanConvertTo%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Thrown if <paramref name="value" /> is <see langword="null" /> or is not a <see cref="T:System.Windows.Media.Animation.KeySpline" />, or if the <paramref name="destinationType" /> is not one of the valid types for conversion.</exception>
+        <param name="context">To be added.</param>
+        <param name="cultureInfo">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

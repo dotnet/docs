@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,43 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a parameter to an <see cref="T:System.Data.OleDb.OleDbCommand" /> and optionally its mapping to a <see cref="T:System.Data.DataSet" /> column. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OLE DB.NET Framework Data Provider uses positional parameters that are marked with a question mark (?) instead of named parameters.  
-  
- When querying an Oracle database using the Microsoft OLE DB Provider for Oracle (MSDAORA) and the OLE DB.NET Framework Data Provider, using the `LIKE` clause to query values in fixed-length fields may not return all expected matches. The reason is that when Oracle matches values for fixed-length fields in a `LIKE` clause, it matches the entire length of the string, including any padding trailing spaces. For example, if a table in an Oracle database contains a field named "Field1" that is defined as `char(3)`, and you enter the value "a" into a row of that table, the following code does not return the row.  
-  
-```vb#  
-Dim queryString As String = "SELECT * FROM Table1 WHERE Field1 LIKE ?"  
-Dim command As OleDbCommand = New OleDbCommand(queryString, connection)  
-command.Parameters.Add("@p1", OleDbType.Char, 3).Value = "a"  
-Dim reader As OleDbDataReader = command.ExecuteReader()  
-```  
-  
-```c#  
-string queryString = "SELECT * FROM Table1 WHERE Field1 LIKE ?";  
-OleDbCommand command = new OleDbCommand(queryString, connection);  
-command.Parameters.Add("@p1", OleDbType.Char, 3).Value = "a";  
-OleDbDataReader reader = command.ExecuteReader();  
-```  
-  
- This is because Oracle stores the column value as "a  " (padding "a", with trailing spaces, to the fixed field length of 3), which Oracle does not treat as a match for the parameter value of "a" in the case of a `LIKE` comparison of fixed-length fields.  
-  
- To resolve this problem, append a percentage ("%") wildcard character to the parameter value (`"a%"`), or use an SQL `=` comparison instead.  
-  
-   
-  
-## Examples  
- The following example creates multiple instances of OleDbParameter through the <xref:System.Data.OleDb.OleDbParameterCollection> collection within the <xref:System.Data.OleDb.OleDbDataAdapter>. These parameters are used to select data from the data source and place the data in the <xref:System.Data.DataSet>. This example assumes that a <xref:System.Data.DataSet> and an <xref:System.Data.OleDb.OleDbDataAdapter> have already been created by using the appropriate schema, commands, and connection.  
-  
- [!code-vb[Classic WebData OleDbParameter Example#1](~/add/codesnippet/visualbasic/t-system.data.oledb.oled_5_1.vb)]
- [!code-cs[Classic WebData OleDbParameter Example#1](~/add/codesnippet/csharp/t-system.data.oledb.oled_5_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,23 +31,12 @@ OleDbDataReader reader = command.ExecuteReader();
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [!code-cs[Classic WebData OleDbParameter.OleDbParameter Example#1](~/add/codesnippet/csharp/m-system.data.oledb.oled_3_1.cs)]
- [!code-vb[Classic WebData OleDbParameter.OleDbParameter Example#1](~/add/codesnippet/visualbasic/m-system.data.oledb.oled_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,7 +46,6 @@ OleDbDataReader reader = command.ExecuteReader();
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -101,26 +53,10 @@ OleDbDataReader reader = command.ExecuteReader();
         <Parameter Name="dataType" Type="System.Data.OleDb.OleDbType" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter to map.</param>
-        <param name="dataType">One of the <see cref="T:System.Data.OleDb.OleDbType" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class that uses the parameter name and data type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The data type, and if appropriate, <xref:System.Data.OleDb.OleDbParameter.Size%2A> and <xref:System.Data.OleDb.OleDbParameter.Precision%2A> are inferred from the value of the `dataType` parameter.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [!code-cs[Classic WebData OleDbParameter.OleDbParameter1 Example#1](~/add/codesnippet/csharp/9545ec3c-a337-4c06-a8da-_1.cs)]
- [!code-vb[Classic WebData OleDbParameter.OleDbParameter1 Example#1](~/add/codesnippet/visualbasic/9545ec3c-a337-4c06-a8da-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dataType" /> parameter is an invalid back-end data type.</exception>
+        <param name="name">To be added.</param>
+        <param name="dataType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -130,7 +66,6 @@ OleDbDataReader reader = command.ExecuteReader();
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -138,31 +73,10 @@ OleDbDataReader reader = command.ExecuteReader();
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter to map.</param>
-        <param name="value">The value of the new <see cref="T:System.Data.OleDb.OleDbParameter" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class that uses the parameter name and the value of the new <see cref="T:System.Data.OleDb.OleDbParameter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use caution when you are using this overload of the <xref:System.Data.OleDb.OleDbParameter> constructor to specify integer parameter values. Because this overload takes a `value` of type <xref:System.Object>, you must convert the integral value to an <xref:System.Object> type when the value is zero, as the following C# example demonstrates.  
-  
-```  
-Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));  
-```  
-  
- If you do not perform this conversion, the compiler assumes that you are trying to call the <xref:System.Data.OleDb.OleDbParameter.%23ctor%2A> constructor overload.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter>.  
-  
- [!code-cs[Classic WebData OleDbParameter.OleDbParameter5 Example#1](~/add/codesnippet/csharp/m-system.data.oledb.oled_16_1.cs)]
- [!code-vb[Classic WebData OleDbParameter.OleDbParameter5 Example#1](~/add/codesnippet/visualbasic/m-system.data.oledb.oled_16_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -172,7 +86,6 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -181,27 +94,11 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter to map.</param>
-        <param name="dataType">One of the <see cref="T:System.Data.OleDb.OleDbType" /> values.</param>
-        <param name="size">The length of the parameter.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class that uses the parameter name, data type, and length.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.OleDb.OleDbParameter.Size%2A> is inferred from the value of the `dataType` parameter if it is not explicitly set in the `size` parameter.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [!code-vb[Classic WebData OleDbParameter.OleDbParameter2 Example#1](~/add/codesnippet/visualbasic/258d96fc-eacc-4579-be65-_1.vb)]
- [!code-cs[Classic WebData OleDbParameter.OleDbParameter2 Example#1](~/add/codesnippet/csharp/258d96fc-eacc-4579-be65-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dataType" /> parameter is an invalid back-end data type.</exception>
+        <param name="name">To be added.</param>
+        <param name="dataType">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -211,7 +108,6 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -221,28 +117,12 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
         <Parameter Name="srcColumn" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter to map.</param>
-        <param name="dataType">One of the <see cref="T:System.Data.OleDb.OleDbType" /> values.</param>
-        <param name="size">The length of the parameter.</param>
-        <param name="srcColumn">The name of the source column.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class that uses the parameter name, data type, length, and source column name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.OleDb.OleDbParameter.Size%2A> is inferred from the value of the `dataType` parameter if it is not explicitly set in the `size` parameter.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [!code-vb[Classic WebData OleDbParameter.OleDbParameter3 Example#1](~/add/codesnippet/visualbasic/a2a04a3a-d9c0-49e2-8704-_1.vb)]
- [!code-cs[Classic WebData OleDbParameter.OleDbParameter3 Example#1](~/add/codesnippet/csharp/a2a04a3a-d9c0-49e2-8704-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dataType" /> parameter is an invalid back-end data type.</exception>
+        <param name="name">To be added.</param>
+        <param name="dataType">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="srcColumn">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -252,7 +132,6 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -273,35 +152,18 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The name of the parameter.</param>
-        <param name="dbType">One of the <see cref="T:System.Data.OleDb.OleDbType" /> values.</param>
-        <param name="size">The length of the parameter.</param>
-        <param name="direction">One of the <see cref="T:System.Data.ParameterDirection" /> values.</param>
-        <param name="isNullable">
-          <see langword="true" /> if the value of the field can be null; otherwise <see langword="false" />.</param>
-        <param name="precision">The total number of digits to the left and right of the decimal point to which <see cref="System.Data.OleDb.OleDbParameter.Value%2A" /> is resolved.</param>
-        <param name="scale">The total number of decimal places to which <see cref="System.Data.OleDb.OleDbParameter.Value%2A" /> is resolved.</param>
-        <param name="srcColumn">The name of the source column.</param>
-        <param name="srcVersion">One of the <see cref="T:System.Data.DataRowVersion" /> values.</param>
-        <param name="value">An <see cref="T:System.Object" /> that is the value of the <see cref="T:System.Data.OleDb.OleDbParameter" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class that uses the parameter name, data type, length, source column name, parameter direction, numeric precision, and other properties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.OleDb.OleDbParameter.Size%2A> and <xref:System.Data.OleDb.OleDbParameter.Precision%2A> are inferred from the value of the `dataType` parameter if they are not explicitly set in the `size` and `precision` parameters.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and displays the <xref:System.Data.OleDb.OleDbParameter.ParameterName%2A>.  
-  
- [!code-cs[Classic WebData OleDbParameter.OleDbParameter4 Example#1](~/add/codesnippet/csharp/21acfaf3-4211-4231-915b-_1.cs)]
- [!code-vb[Classic WebData OleDbParameter.OleDbParameter4 Example#1](~/add/codesnippet/visualbasic/21acfaf3-4211-4231-915b-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dataType" /> parameter is an invalid back-end data type.</exception>
+        <param name="parameterName">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="direction">To be added.</param>
+        <param name="isNullable">To be added.</param>
+        <param name="precision">To be added.</param>
+        <param name="scale">To be added.</param>
+        <param name="srcColumn">To be added.</param>
+        <param name="srcVersion">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -311,7 +173,6 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -332,35 +193,18 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The name of the parameter.</param>
-        <param name="dbType">One of the <see cref="T:System.Data.OleDb.OleDbType" /> values.</param>
-        <param name="size">The length of the parameter.</param>
-        <param name="direction">One of the <see cref="T:System.Data.ParameterDirection" /> values.</param>
-        <param name="precision">The total number of digits to the left and right of the decimal point to which <see cref="System.Data.OleDb.OleDbParameter.Value%2A" /> is resolved.</param>
-        <param name="scale">The total number of decimal places to which <see cref="System.Data.OleDb.OleDbParameter.Value%2A" /> is resolved.</param>
-        <param name="sourceColumn">The name of the source column.</param>
-        <param name="sourceVersion">One of the <see cref="T:System.Data.DataRowVersion" /> values.</param>
-        <param name="sourceColumnNullMapping">
-          <see langword="true" /> if the source column is nullable; <see langword="false" /> if it is not.</param>
-        <param name="value">An <see cref="T:System.Object" /> that is the value of the <see cref="T:System.Data.OleDb.OleDbParameter" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class that uses the parameter name, data type, length, source column name, parameter direction, numeric precision, and other properties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.OleDb.OleDbParameter.Size%2A> and <xref:System.Data.OleDb.OleDbParameter.Precision%2A> are inferred from the value of the `dataType` parameter if they are not explicitly set in the `size` and `precision` parameters.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and displays the <xref:System.Data.OleDb.OleDbParameter.ParameterName%2A>.  
-  
- [!code-cs[Classic WebData OleDbParameter.OleDbParameter4 Example#1](~/add/codesnippet/csharp/93078b65-3e17-4ead-9f09-_1.cs)]
- [!code-vb[Classic WebData OleDbParameter.OleDbParameter4 Example#1](~/add/codesnippet/visualbasic/93078b65-3e17-4ead-9f09-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dataType" /> parameter is an invalid back-end data type.</exception>
+        <param name="parameterName">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="direction">To be added.</param>
+        <param name="precision">To be added.</param>
+        <param name="scale">To be added.</param>
+        <param name="sourceColumn">To be added.</param>
+        <param name="sourceVersion">To be added.</param>
+        <param name="sourceColumnNullMapping">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DbType">
@@ -370,34 +214,15 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Data.DbType" /> of the parameter.</summary>
-        <value>One of the <see cref="T:System.Data.DbType" /> values. The default is <see cref="T:System.Data.DbType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> and DbType are linked. Therefore, setting the DbType changes the <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> to a supporting <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A>.  
-  
- For a list of the supported data types, see the appropriate <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> member. For more information, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [!code-cs[Classic WebData OleDbParameter.DbType Example#1](~/add/codesnippet/csharp/p-system.data.oledb.oled_22_1.cs)]
- [!code-vb[Classic WebData OleDbParameter.DbType Example#1](~/add/codesnippet/visualbasic/p-system.data.oledb.oled_22_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The property was not set to a valid <see cref="T:System.Data.DbType" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -407,7 +232,6 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -419,39 +243,9 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
         <ReturnType>System.Data.ParameterDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the parameter is input-only, output-only, bidirectional, or a stored procedure return-value parameter.</summary>
-        <value>One of the <see cref="T:System.Data.ParameterDirection" /> values. The default is <see langword="Input" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Data.ParameterDirection> is output, and execution of the associated <xref:System.Data.OleDb.OleDbCommand> does not return a value, the <xref:System.Data.OleDb.OleDbParameter> contains a null value.  
-  
- `Output`, `InputOut`, and `ReturnValue` parameters returned by calling <xref:System.Data.OleDb.OleDbCommand.ExecuteReader%2A> cannot be accessed until you call <xref:System.Data.OleDb.OleDbDataReader.Close%2A> or **Dispose** on the <xref:System.Data.OleDb.OleDbDataReader>.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
-```vb#  
-Public Sub CreateOleDbParameter()  
-    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-    parameter.Direction = ParameterDirection.Output  
-End Sub 'CreateOleDbParameter  
-```  
-  
-```c#  
-public void CreateOleDbParameter()   
- {  
-    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-    parameter.Direction = ParameterDirection.Output;  
- }  
-```  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The property was not set to one of the valid <see cref="T:System.Data.ParameterDirection" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNullable">
@@ -461,46 +255,41 @@ public void CreateOleDbParameter()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the parameter accepts null values.</summary>
-        <value>
-          <see langword="true" /> if null values are accepted; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Null values are handled using the <xref:System.DBNull> class.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
-```vb#  
-Public Sub CreateOleDbParameter()  
-    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-    parameter.IsNullable = True  
-    parameter.Direction = ParameterDirection.Output  
-End Sub 'CreateOleDbParameter  
-```  
-  
-```c#  
-public void CreateOleDbParameter()   
- {  
-    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-    parameter.IsNullable = true;  
-    parameter.Direction = ParameterDirection.Output;  
- }  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public int Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbParameter.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OleDbType">
@@ -510,7 +299,6 @@ public void CreateOleDbParameter()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -525,18 +313,9 @@ public void CreateOleDbParameter()
         <ReturnType>System.Data.OleDb.OleDbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Data.OleDb.OleDbType" /> of the parameter.</summary>
-        <value>The <see cref="T:System.Data.OleDb.OleDbType" /> of the parameter. The default is <see cref="T:System.Data.OleDb.OleDbType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OleDbType and <xref:System.Data.OleDb.OleDbParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.OleDb.OleDbParameter.DbType%2A> changes the OleDbType to a supporting <xref:System.Data.OleDb.OleDbType>.  
-  
- For a list of the supported data types, see the appropriate <xref:System.Data.OleDb.OleDbType> member. For more information, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterName">
@@ -546,47 +325,15 @@ public void CreateOleDbParameter()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.Data.OleDb.OleDbParameter" />.</summary>
-        <value>The name of the <see cref="T:System.Data.OleDb.OleDbParameter" />. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OLE DB .NET Provider uses positional parameters that are marked with a question mark (?) instead of named parameters.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [Visual Basic]  
-  
-```  
-Public Sub CreateOleDbParameter()  
-    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-    parameter.Direction = ParameterDirection.Output  
-End Sub 'CreateOleDbParameter  
-```  
-  
- [C#]  
-  
-```  
-public void CreateOleDbParameter()   
- {  
-    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-    parameter.Direction = ParameterDirection.Output;  
- }  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Precision">
@@ -596,7 +343,6 @@ public void CreateOleDbParameter()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -608,56 +354,9 @@ public void CreateOleDbParameter()
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of digits used to represent the <see cref="System.Data.OleDb.OleDbParameter.Value%2A" /> property.</summary>
-        <value>The maximum number of digits used to represent the <see cref="System.Data.OleDb.OleDbParameter.Value%2A" /> property. The default value is 0, which indicates that the data provider sets the precision for <see cref="System.Data.OleDb.OleDbParameter.Value%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Precision property is only used for decimal and numeric input parameters.  
-  
- The Precision property should be set only for `Decimal` and `Numeric` parameters prior to calling the <xref:System.Data.OleDb.OleDbCommand.Prepare%2A> method of the <xref:System.Data.OleDb.OleDbCommand>.  
-  
- Setting this property to a value other than the value in the database depends on the implementation of the data provider and may return an error code, truncate, or round data.  
-  
- The `Precision` property only affects parameters whose <xref:System.Data.OleDb.OleDbType> is `Decimal`, `Numeric`, or `VarNumeric`. For other data types, `Precision` is ignored.  
-  
-> [!NOTE]
->  Use of this property to coerce data passed to the database is not supported. To round, truncate, or otherwise coerce data before passing it to the database, use the <xref:System.Math> class that is part of the `System` namespace prior to assigning a value to the parameter's `Value` property.  
-  
-> [!NOTE]
->  .NET Framework data providers that are included with the .NET Framework version 1.0 do not verify the Precision or <xref:System.Data.OleDb.OleDbParameter.Scale%2A> of <xref:System.Decimal> parameter values. This can cause truncated data to be inserted at the data source. If you are using .NET Framework version 1.0, validate the Precision and <xref:System.Data.OleDb.OleDbParameter.Scale%2A> of <xref:System.Decimal> values before setting the parameter value. <xref:System.Data.OleDb.OleDbParameter.Scale%2A> values that exceed the <xref:System.Decimal> parameter scale are still truncated.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [Visual Basic]  
-  
-```  
-Public Sub CreateOleDbParameter()  
-    Dim parameter As New OleDbParameter("Price", OleDbType.Decimal)  
-    parameter.Value = 3.1416  
-    parameter.Precision = 8  
-    parameter.Scale = 4  
-End Sub 'CreateOleDbParameter  
-```  
-  
- [C#]  
-  
-```  
-public void CreateOleDbParameter()   
- {  
-    OleDbParameter parameter = new OleDbParameter("Price", OleDbType.Decimal);  
-    parameter.Value = 3.1416;  
-    parameter.Precision = 8;  
-    parameter.Scale = 4;  
- }  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetDbType">
@@ -667,7 +366,6 @@ public void CreateOleDbParameter()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -675,15 +373,8 @@ public void CreateOleDbParameter()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the type associated with this <see cref="T:System.Data.OleDb.OleDbParameter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When executing a command that includes parameter values, code can either set the type of a parameter explicitly, or the parameter can infer its type from its value. Calling this method resets the parameter so that it can again infer its type from the value passed in the parameter. Calling this method affects both the <xref:System.Data.OleDb.OleDbParameter.DbType%2A> and <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> properties of the <xref:System.Data.OleDb.OleDbParameter>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetOleDbType">
@@ -693,7 +384,6 @@ public void CreateOleDbParameter()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -701,15 +391,8 @@ public void CreateOleDbParameter()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the type associated with this <see cref="T:System.Data.OleDb.OleDbParameter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When executing a command that includes parameter values, code can either set the type of a parameter explicitly, or the parameter can infer its type from its value. Calling this method resets the parameter so that it can again infer its type from the value passed in the parameter. Calling this method affects both the <xref:System.Data.OleDb.OleDbParameter.DbType%2A> and <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> properties of the <xref:System.Data.OleDb.OleDbParameter>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -719,7 +402,6 @@ public void CreateOleDbParameter()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -731,54 +413,9 @@ public void CreateOleDbParameter()
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of decimal places to which <see cref="System.Data.OleDb.OleDbParameter.Value%2A" /> is resolved.</summary>
-        <value>The number of decimal places to which <see cref="System.Data.OleDb.OleDbParameter.Value%2A" /> is resolved. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Scale property is only used for decimal and numeric input parameters before calling the <xref:System.Data.OleDb.OleDbCommand.Prepare%2A> method of the <xref:System.Data.OleDb.OleDbCommand> and to specify numeric output parameters.  
-  
- Setting this property to a value other than the value in the database depends on the implementation of the data provider and may return an error code, truncate, or round data.  
-  
- When using SQL Server Native Client 10 (or later), to bind a parameter whose type is `Decimal`, `Numeric,``VarNumeric, DBDate`, or `DBTimeStamp`, you must manually specify an appropriate scale value.  
-  
-> [!NOTE]
->  Use of this property to coerce data passed to the database is not supported. To round, truncate, or otherwise coerce data before passing it to the database, use the <xref:System.Math> class that is part of the `System` namespace prior to assigning a value to the parameter's `Value` property.  
-  
-> [!NOTE]
->  .NET Framework data providers that are included with the .NET Framework version 1.0 do not verify the <xref:System.Data.OleDb.OleDbParameter.Precision%2A> or Scale of <xref:System.Decimal> parameter values. This can cause truncated data to be inserted at the data source. If you are using .NET Framework version 1.0, validate the <xref:System.Data.OleDb.OleDbParameter.Precision%2A> and <xref:System.Data.OleDb.OleDbParameter> of <xref:System.Decimal> values before setting the parameter value. Scale values that exceed the <xref:System.Decimal> parameter scale are still truncated.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [Visual Basic]  
-  
-```  
-Public Sub CreateOleDbParameter()  
-    Dim parameter As New OleDbParameter("Price", OleDbType.Decimal)  
-    parameter.Value = 3.1416  
-    parameter.Precision = 8  
-    parameter.Scale = 4  
-End Sub 'CreateOleDbParameter  
-```  
-  
- [C#]  
-  
-```  
-public void CreateOleDbParameter()   
- {  
-    OleDbParameter parameter = new OleDbParameter("Price", OleDbType.Decimal);  
-    parameter.Value = 3.1416;  
-    parameter.Precision = 8;  
-    parameter.Scale = 4;  
- }  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -788,65 +425,15 @@ public void CreateOleDbParameter()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum size, in bytes, of the data within the column.</summary>
-        <value>The maximum size, in bytes, of the data within the column. The default value is inferred from the parameter value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Size property is used for binary and string types.  
-  
- For nonstring data types and ANSI string data, the Size property refers to the number of bytes. For Unicode string data, Size refers to the number of characters. The count for strings does not include the terminating character.  
-  
- For variable-length data types, Size describes the maximum amount of data to transmit to the server. For example, for a Unicode string value, Size could be used to limit the amount of data sent to the server to the first 100 characters.  
-  
- For bidirectional and output parameters, and return values, you must set the value of Size. This is not required for input parameters, and if not explicitly set, the value of is inferred from the actual size of the specified parameter when a parameterized statement is executed.  
-  
- The <xref:System.Data.OleDb.OleDbParameter.DbType%2A>, <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A>, and Size properties of a parameter can be inferred by setting <xref:System.Data.OleDb.OleDbParameter.Value%2A>. Therefore, you are not required to specify them. However, they are not exposed in <xref:System.Data.OleDb.OleDbParameter> property settings. For example, if the size of the parameter has been inferred, Size does not contain the inferred value after statement execution.  
-  
- For fixed-length data types, the value of Size is ignored. It can be retrieved for informational purposes, and returns the maximum amount of bytes the provider uses when transmitting the value of the parameter to the server.  
-  
- If the size of the value supplied for an <xref:System.Data.OleDb.OleDbParameter> exceeds the specified Size, the <xref:System.Data.OleDb.OleDbParameter.Value%2A> of the <xref:System.Data.OleDb.OleDbParameter> contains the specified value, truncated to the size of the <xref:System.Data.OleDb.OleDbParameter>.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [Visual Basic]  
-  
-```  
-Public Sub CreateOleDbParameter()  
-    Dim myValue As String = "12 foot scarf - multiple colors, one previous owner"  
-    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar)  
-    parameter.Direction = ParameterDirection.Output  
-    parameter.Size = myValue.Length  
-    parameter.Value = myValue  
-End Sub 'CreateOleDbParameter  
-```  
-  
- [C#]  
-  
-```  
-public void CreateOleDbParameter()   
- {  
-    string myValue = "12 foot scarf - multiple colors, one previous owner";  
-    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar);  
-    parameter.Direction = ParameterDirection.Output;  
-    parameter.Size = myValue.Length;  
-    parameter.Value = myValue;  
- }  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceColumn">
@@ -856,49 +443,15 @@ public void CreateOleDbParameter()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the source column mapped to the <see cref="T:System.Data.DataSet" /> and used for loading or returning the <see cref="System.Data.OleDb.OleDbParameter.Value%2A" />.</summary>
-        <value>The name of the source column mapped to the <see cref="T:System.Data.DataSet" />. The default is an empty string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When SourceColumn is set to anything other than an empty string, the value of the parameter is retrieved from the column with the SourceColumn name. If <xref:System.Data.OleDb.OleDbParameter.Direction%2A> is set to `Input`, the value is taken from the <xref:System.Data.DataSet>. If <xref:System.Data.OleDb.OleDbParameter.Direction%2A> is set to `Output`, the value is taken from the data source. A <xref:System.Data.OleDb.OleDbParameter.Direction%2A> of `InputOutput` is a combination of both.  
-  
- For more information about how to use the SourceColumn property, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md) and [Updating Data Sources with DataAdapters](../Topic/Updating%20Data%20Sources%20with%20DataAdapters.md).  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [Visual Basic]  
-  
-```  
-Public Sub CreateOleDbParameter()  
-    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-    parameter.SourceColumn = "Description"  
-End Sub 'CreateOleDbParameter  
-```  
-  
- [C#]  
-  
-```  
-public void CreateOleDbParameter()   
- {  
-    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-    parameter.SourceColumn = "Description";  
- }  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceColumnNullMapping">
@@ -908,39 +461,15 @@ public void CreateOleDbParameter()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or gets a value which indicates whether the source column is nullable. This allows <see cref="T:System.Data.Common.DbCommandBuilder" /> to correctly generate Update statements for nullable columns.</summary>
-        <value>
-          <see langword="true" /> if the source column is nullable; <see langword="false" /> if it is not.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SourceColumnNullMapping is used by the <xref:System.Data.Common.DbCommandBuilder> to correctly generate update commands when dealing with nullable columns. Generally, use of SourceColumnNullMapping is limited to developers inheriting from <xref:System.Data.Common.DbCommandBuilder>.  
-  
- <xref:System.Data.Common.DbCommandBuilder> uses this property to determine whether the source column is nullable, and sets this property to `true` if it is nullable, and `false` if it is not. When <xref:System.Data.Common.DbCommandBuilder> is generating its Update statement, it examines the SourceColumnNullMapping for each parameter. If the property is `true`, <xref:System.Data.Common.DbCommandBuilder> generates a WHERE clauses like the following (in this query expression, "FieldName" represents the name of the field):  
-  
-```  
-((@IsNull_FieldName = 1 AND FieldName IS NULL) OR   
-  (FieldName = @Original_FieldName))  
-```  
-  
- If SourceColumnNullMapping for the field is false, <xref:System.Data.Common.DbCommandBuilder> generates the following WHERE clause:  
-  
-```  
-FieldName = @OriginalFieldName  
-```  
-  
- In addition, @IsNull_FieldName contains 1 if the source field contains null, and 0 if it does not. This mechanism allows for a performance optimization in SQL Server, and provides for common code that works across multiple providers.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceVersion">
@@ -950,50 +479,15 @@ FieldName = @OriginalFieldName
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Data.DataRowVersion" /> to use when you load <see cref="System.Data.OleDb.OleDbParameter.Value%2A" />.</summary>
-        <value>One of the <see cref="T:System.Data.DataRowVersion" /> values. The default is <see langword="Current" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Used by <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand%2A> during an update operation to determine whether the parameter value is set to `Current` or `Original`. This lets primary keys be updated. This property is set to the version of the <xref:System.Data.DataRow> used by the <xref:System.Data.DataRow.Item%2A> property, or the <xref:System.Data.DataRow.GetChildRows%2A> method of the <xref:System.Data.DataRow> object.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [Visual Basic]  
-  
-```  
-Public Sub CreateOleDbParameter()  
-    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-    parameter.SourceColumn = "Description"  
-    parameter.SourceVersion = DataRowVersion.Current  
-End Sub  
-```  
-  
- [C#]  
-  
-```  
-public void CreateOleDbParameter()   
- {  
-    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-    parameter.SourceColumn = "Description";  
-    parameter.SourceVersion = DataRowVersion.Current;  
- }  
-```  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The property was not set to one of the <see cref="T:System.Data.DataRowVersion" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -1003,7 +497,6 @@ public void CreateOleDbParameter()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1011,16 +504,9 @@ public void CreateOleDbParameter()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ICloneable.Clone%2A" />.</summary>
-        <returns>A new <see cref="T:System.Object" /> that is a copy of this instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.OleDb.OleDbParameter> instance is cast to an <xref:System.ICloneable> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1030,7 +516,6 @@ public void CreateOleDbParameter()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1038,8 +523,8 @@ public void CreateOleDbParameter()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a string that contains the <see cref="System.Data.OleDb.OleDbParameter.ParameterName%2A" />.</summary>
-        <returns>A string that contains the <see cref="System.Data.OleDb.OleDbParameter.ParameterName%2A" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1050,7 +535,6 @@ public void CreateOleDbParameter()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1065,48 +549,9 @@ public void CreateOleDbParameter()
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the parameter.</summary>
-        <value>An <see cref="T:System.Object" /> that is the value of the parameter. The default value is null.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For input parameters, the value is bound to the <xref:System.Data.OleDb.OleDbCommand> that is sent to the server. For output and return value parameters, the value is set on completion of the <xref:System.Data.OleDb.OleDbCommand> and after the <xref:System.Data.OleDb.OleDbDataReader> is closed.  
-  
- When you send a null parameter value to the server, you must specify <xref:System.DBNull>, not null. The null value in the system is an empty object that has no value. <xref:System.DBNull> is used to represent null values.  
-  
- If the application specifies the database type, the bound value is converted to that type when the provider sends the data to the server. The provider tries to convert any type of value if it supports the <xref:System.IConvertible> interface. Conversion errors may result if the specified type is not compatible with the value.  
-  
- Both the <xref:System.Data.OleDb.OleDbParameter.DbType%2A> and <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> properties can be inferred by setting the Value.  
-  
- The Value property is overwritten by the Update method of <xref:System.Data.IDbDataAdapter>.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
-  
- [Visual Basic]  
-  
-```  
-Public Sub CreateOleDbParameter()  
-    Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
-    parameter.Value = "garden hose"  
-End Sub 'CreateOleDbParameter  
-```  
-  
- [C#]  
-  
-```  
-public void CreateOleDbParameter()   
- {  
-    OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
-    parameter.Value = "garden hose";  
- }  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

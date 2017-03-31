@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.RequestContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,29 +16,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a reply that is correlated to an incoming request.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You get a request context from an <xref:System.ServiceModel.Channels.IReplyChannel>. Each RequestContext encapsulates the information required to reply to the request, so that you do not have to block on the channel when waiting for each request message to receive a reply.  
-  
- In the request/reply model, the RequestContext object is the link between the request that comes in and the reply that goes out. When the server receives a request, it provides a RequestContext instance that represents the request to the channel. The request context contains the original request message among other useful properties. This request context is then stashed inside the <xref:System.ServiceModel.OperationContext> for retrieval by your service. You typically use the <xref:System.ServiceModel.OperationContext.Current%2A> property to access the request of the current operation.  
-  
- The value of the RequestContext can be `null`. Because the role of the request context is to link requests to replies, it does not make sense to have a request context when you do not have a reply, and so in this case the context is set to `null`. For a one-way operation on top of the request/reply model, the server receives requests but does not send back a response to the client. So if the RequestContext is `null` unexpectedly, check first whether the operation contract is IsOneWay.  
-  
- Special note for Managed C++ users deriving from this class:  
-  
--   Put your cleanup code in (On)(Begin)Close (and/or OnAbort), not in a destructor.  
-  
--   Avoid destructors: they cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
--   Avoid non-reference members: they can cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
--   Avoid finalizers; but if you include one, you should suppress the build warning and call <xref:System.GC.SuppressFinalize%28System.Object%29> and the finalizer itself from (On)(Begin)Close (and/or OnAbort) to emulate what would have been the auto-generated <xref:System.IDisposable> behavior.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,12 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RequestContext" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +43,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,7 +51,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, aborts processing the request associated with the context.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +62,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,21 +74,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">The incoming <see cref="T:System.ServiceModel.Channels.Message" /> that contains the request.</param>
-        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous reply operation completion.</param>
-        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous reply operation.</param>
-        <summary>When overridden in a derived class, begins an asynchronous operation to reply to the request associated with the current context.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous reply operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the asynchronous <xref:System.ServiceModel.Channels.RequestContext.BeginReply%2A> method when the application processing must continue without waiting. Use one of the synchronous <xref:System.ServiceModel.Channels.RequestContext.Reply%2A> methods when it is acceptable for the current thread to be blocked while it replies to the request message or until the time-out interval is exceeded.  
-  
- This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either the reply is sent or the time-out occurs.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginReply">
@@ -119,7 +89,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,22 +102,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">The incoming <see cref="T:System.ServiceModel.Channels.Message" /> that contains the request.</param>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for the reply to an available request.</param>
-        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous reply operation completion.</param>
-        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous reply operation.</param>
-        <summary>When overridden in a derived class, begins an asynchronous operation to reply to the request associated with the current context within a specified interval of time.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous reply operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the asynchronous BeginReply method to allow the application processing to continue without waiting for the request to complete.  
-  
- Use one of the synchronous <xref:System.ServiceModel.Channels.RequestContext.Reply%2A> methods when it is acceptable for the current thread to be blocked while it replies to the request message or until the time-out interval is exceeded. This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either the reply is sent or the time-out occurs.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -157,7 +118,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,7 +126,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, closes the operation that is replying to the request context associated with the current context.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,7 +137,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,8 +147,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time within which the reply operation associated with the current context must close.</param>
-        <summary>When overridden in a derived class, closes the operation that is replying to the request context associated with the current context within a specified interval of time.</summary>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +159,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,9 +169,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases resources associated with the context.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,7 +181,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,8 +191,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to one of the <see cref="System.ServiceModel.Channels.RequestContext.BeginReply%2A" /> methods.</param>
-        <summary>When overridden in a derived class, completes an asynchronous operation to reply to a request message.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,7 +203,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -253,18 +213,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">The incoming <see cref="T:System.ServiceModel.Channels.Message" /> that contains the request.</param>
-        <summary>When overridden in a derived class, replies to a request message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use Reply when it is acceptable for the current thread to be blocked while it replies to the request message. The thread is blocked up to the specified `timeout`.  
-  
- If the application processing must continue without waiting for the reply to complete, use the asynchronous <xref:System.ServiceModel.Channels.RequestContext.BeginReply%2A> method. This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either a message becomes available in the channel or the time-out occurs.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reply">
@@ -274,7 +225,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,19 +236,10 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="message">The incoming <see cref="T:System.ServiceModel.Channels.Message" /> that contains the request.</param>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for the reply to a request.</param>
-        <summary>When overridden in a derived class, replies to a request message within a specified interval of time.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use Reply when it is acceptable for the current thread to be blocked while it replies to the request message. The thread is blocked up to the specified `timeout`.  
-  
- If the application processing must continue without waiting for the reply to complete, use the asynchronous <xref:System.ServiceModel.Channels.RequestContext.BeginReply%2A> method. This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either a message becomes available in the channel or the time-out occurs.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestMessage">
@@ -307,15 +249,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the message that contains the request.</summary>
-        <value>The <see cref="T:System.ServiceModel.Channels.Message" /> that contains the request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,7 +268,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -334,7 +276,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases both managed and unmanaged resources associated with the context.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

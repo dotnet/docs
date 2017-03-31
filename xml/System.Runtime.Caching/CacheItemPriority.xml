@@ -10,18 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies a priority setting that is used to decide whether to evict a cache entry.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The only priority that can be set is whether an entry should remain in the cache forever.  
-  
-> [!IMPORTANT]
->  Adding an entry to the cache with a priority level of NotRemovable has the potential to overflow the cache with entries that can never be removed. Cache implementations should only set the NotRemovable priority for a cache entry if they provide ways to evict such entries from the cache and to manage the number of cache entries.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -37,7 +27,7 @@
         <ReturnType>System.Runtime.Caching.CacheItemPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that there is no priority for removing the cache entry.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotRemovable">
@@ -53,7 +43,7 @@
         <ReturnType>System.Runtime.Caching.CacheItemPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a cache entry should never be removed from the cache.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

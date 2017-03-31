@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,21 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a designer that enables you to visually design composite activities.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- Use the CompositeActivityDesigner to visually design composite activities, to customize the layout, and to manage the drawing of the <xref:System.Workflow.ComponentModel.CompositeActivity>.  
-  
- The CompositeActivityDesigner also enables you to manage events for the contained activity designers. It also enables you to customize and manage the position, size, and layout of contained activity designers.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,12 +33,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, initializes an instance of the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,28 +48,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Forms.AccessibleObject" /> that accessibility applications use to adjust the application look and feel for people with disabilities.</summary>
-        <value>The <see cref="T:System.Windows.Forms.AccessibleObject" /> associated with the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If no <xref:System.Windows.Forms.AccessibleObject> is currently assigned to the control, a new instance of one is created.  
-  
-> [!NOTE]
->  To get or set the AccessibilityObject property, you must add a reference to the Accessibility assembly installed with the .NET Framework.  
-  
- For more information about accessible objects, see the Active Accessibility section of the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanExpandCollapse">
@@ -94,24 +66,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> can be collapsed.</summary>
-        <value>
-          <see langword="true" /> if the specified composite activity designer can be collapsed; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some composite designers will have multiple designers within. These designers can implement expanding or collapsing to save room on the screen.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanInsertActivities">
@@ -121,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,27 +94,11 @@
         <Parameter Name="activitiesToInsert" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="insertLocation">The location to insert the activities.</param>
-        <param name="activitiesToInsert">A read-only array of <see cref="T:System.Workflow.ComponentModel.Activity" /> to insert.</param>
-        <summary>Returns a value that indicates whether activities can be inserted into the composite activity associated with the designer.</summary>
-        <returns>
-          <see langword="true" /> if activities can be inserted into the composite activity associated with the designer; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use CanInsertActivities to determine if a list of activities can be inserted into a composite activity.  
-  
-   
-  
-## Examples  
- The following example shows how to lock a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> by not allowing the insertion of child activities.  
-  
- [!code-cs[WF_Samples#25](~/add/codesnippet/csharp/wf_snippets/snippets.cs#25)]
- [!code-vb[WF_Samples#25](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#25)]  
-  
- ]]></format>
-        </remarks>
+        <param name="insertLocation">To be added.</param>
+        <param name="activitiesToInsert">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanMoveActivities">
@@ -162,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,27 +118,11 @@
         <Parameter Name="activitiesToMove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="moveLocation">The location from which to move the activities.</param>
-        <param name="activitiesToMove">The read-only array of activities to move.</param>
-        <summary>Returns a value that indicates whether activities contained within the composite activity can be moved out of the composite activity associated with the designer.</summary>
-        <returns>
-          <see langword="true" /> if the activities can be moved from the composite activity; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use CanMoveActivities to determine if a list of activities can be moved from within a composite activity.  
-  
-   
-  
-## Examples  
- The following example shows how to override the CanMoveActivities method to allow the moving of child activities within the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
-  
- [!code-cs[WF_Samples#26](~/add/codesnippet/csharp/wf_snippets/snippets.cs#26)]
- [!code-vb[WF_Samples#26](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#26)]  
-  
- ]]></format>
-        </remarks>
+        <param name="moveLocation">To be added.</param>
+        <param name="activitiesToMove">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRemoveActivities">
@@ -203,7 +132,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,26 +141,10 @@
         <Parameter Name="activitiesToRemove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="activitiesToRemove">A read-only array of activities to remove from the composite activity associated with the designer.</param>
-        <summary>Returns a value that indicates if activities can be removed from the composite activity associated with the designer.</summary>
-        <returns>
-          <see langword="true" /> if the activities can be removed from the composite activity; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use CanRemoveActivities to determine if a list of contained activities can be removed from the composite activity.  
-  
-   
-  
-## Examples  
- The following example shows how to override the CanRemoveActivities method to allow the moving of child activities within the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
-  
- [!code-cs[WF_Samples#27](~/add/codesnippet/csharp/wf_snippets/snippets.cs#27)]
- [!code-vb[WF_Samples#27](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#27)]  
-  
- ]]></format>
-        </remarks>
+        <param name="activitiesToRemove">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainedDesigners">
@@ -242,23 +154,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.ActivityDesigner&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the array of <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> contained within the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</summary>
-        <value>The read-only collection of <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ContainedDesigners accessor to retrieve a read-only collection of the designers contained within the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeserializeActivitiesFromDataObject">
@@ -268,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -279,10 +182,10 @@
         <Parameter Name="dataObj" Type="System.Windows.Forms.IDataObject" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">Component serialization service.</param>
-        <param name="dataObj">Object that contains activities to deserialize.</param>
-        <summary>Deserializes items from an <see cref="T:System.Windows.Forms.IDataObject" /> received during a drag-and-drop operation or from the clipboard.</summary>
-        <returns>An array of activities deserialized from an <see cref="T:System.Windows.Forms.IDataObject" />.</returns>
+        <param name="serviceProvider">To be added.</param>
+        <param name="dataObj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,7 +196,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -303,9 +205,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +217,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -326,16 +226,9 @@
         <Parameter Name="containedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="containedDesigner">The contained designer to make visible.</param>
-        <summary>Verifies that the contained designer is visible.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use EnsureVisibleContainedDesigner to make sure the contained designer is visible. In a custom designer you can use EnsureVisibleContainedDesigner to make visible a designer located within a collapsed composite designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="containedDesigner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandButtonRectangle">
@@ -345,23 +238,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Rectangle" /> that contains the expand or collapse button.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> that encloses the expand or collapse button.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use ExpandButtonRectangle to return a <xref:System.Drawing.Rectangle> that describes the area of the screen that encloses the expand button on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>. This is useful for detecting mouse events to react to your requests to expand or collapse a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Expanded">
@@ -371,7 +256,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -383,27 +267,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> is expanded.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> is expanded; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In combination with <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnMouseDown%2A> and <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ExpandButtonRectangle%2A>, use Expanded to determine the proper action when a user clicks the expand or collapse button on the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how you can set the Expanded property based on a `Boolean` value passed as an argument to a method.  
-  
- This code example is part of the Workflow Monitor SDK sample from the ViewHost.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
-  
- [!code-cs[WF_Samples#135](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#135)]
- [!code-vb[WF_Samples#135](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#135)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstSelectableObject">
@@ -413,23 +279,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the first selectable object in the navigation order of the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</summary>
-        <value>The first selectable object contained within the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When overridden in a derived class, use FirstSelectableObject to return the first selectable object contained within the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIntersectingDesigners">
@@ -439,7 +297,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -450,10 +307,10 @@
         <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="topLevelDesigner">The top-level designer to analyze.</param>
-        <param name="rectangle">Area within the top-level designer to analyze.</param>
-        <summary>Retrieves designers belonging to the specified root activity that intersect a specified area.</summary>
-        <returns>An array of <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> objects that intersect a portion of the Rectangle specified.</returns>
+        <param name="topLevelDesigner">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,7 +321,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -475,18 +331,11 @@
         <Parameter Name="direction" Type="System.Workflow.ComponentModel.Design.DesignerNavigationDirection" />
       </Parameters>
       <Docs>
-        <param name="current">The current object in the navigation order.</param>
-        <param name="direction">The direction to navigate. 0 = next; 1 = previous; 2 = left; 3 = right.</param>
-        <summary>Gets the object which is next in the order of navigation.</summary>
-        <returns>The object that is next in the order of navigation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetNextSelectableObject causes the selection to move from the current selection to the next selectable object in the direction specified.  
-  
- ]]></format>
-        </remarks>
+        <param name="current">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Glyphs">
@@ -496,15 +345,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of glyphs with which to adorn the composite activity designer.</summary>
-        <value>An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> that contains the glyphs to display on the designer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,7 +363,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -525,19 +372,10 @@
         <Parameter Name="point" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="point">A <see cref="T:System.Drawing.Point" /> that represents a single x and y coordinate.</param>
-        <summary>Gets information about the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> at a specified point on the screen.</summary>
-        <returns>A <see cref="T:System.Workflow.ComponentModel.Design.HitTestInfo" /> that contains information about the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> at a specified point.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.HitTestInfo>, together with the HitTest method of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> control is used to determine which part of a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> controls you have clicked. The <xref:System.Workflow.ComponentModel.Design.HitTestInfo> contains logical coordinates of the point on the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> where the mouse was clicked.  
-  
- The HitTest method receives a <xref:System.Drawing.Point> that contains an x and y coordinate.  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageRectangle">
@@ -547,31 +385,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value for the enclosing bounds of the image associated with the designer in logical coordinates.</summary>
-        <value>A rectangle that encloses the <see cref="T:System.Drawing.Image" /> displayed for the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ImageRectangle to retrieve the coordinates for the rectangle that encloses the image associated with the designer. You can use these coordinates for drawing connectors or overlaying graphics.  
-  
-   
-  
-## Examples  
- The following example shows how to override the ImageRectangle property. In this example, the ImageRectangle is calculated using the Bounds of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
-  
- [!code-cs[WF_Samples#74](~/add/codesnippet/csharp/wf_snippets/snippets.cs#74)]
- [!code-vb[WF_Samples#74](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#74)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -581,7 +403,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -591,16 +412,9 @@
         <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> with which the designer should be initialized.</param>
-        <summary>Initializes the designer with the associated <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Initialize loads the designer with the specified <xref:System.Workflow.ComponentModel.Activity>. The designer loads the activity service, updates the verbs associated with the activity, and assigns the default text and image to the designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="activity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertActivities">
@@ -610,7 +424,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -621,19 +434,10 @@
         <Parameter Name="activitiesToInsert" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="insertLocation">The location in the designer to insert the activities.</param>
-        <param name="activitiesToInsert">The list of activities to insert.</param>
-        <summary>Inserts the specified activities in the designer at the specified location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> to insert a list of activities into the location specified.  
-  
- Prior to calling InsertActivities, use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> to make sure that the specified activities can be inserted.  
-  
- ]]></format>
-        </remarks>
+        <param name="insertLocation">To be added.</param>
+        <param name="activitiesToInsert">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertActivities">
@@ -643,7 +447,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -656,29 +459,12 @@
         <Parameter Name="undoTransactionDescription" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="compositeActivityDesigner">The designer into which the activities will be inserted.</param>
-        <param name="insertLocation">The location in the designer at which the activities will be inserted.</param>
-        <param name="activitiesToInsert">The list of activities to insert.</param>
-        <param name="undoTransactionDescription">Description for the designer transaction created by the insertion.</param>
-        <summary>Inserts activities into the designer at the specified location using a transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use InsertActivities to insert a list of activities into the composite activity.  
-  
- Prior to calling InsertActivities, use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> to make sure the specified list of activities can be inserted.  
-  
-   
-  
-## Examples  
- The following example demonstrates the addition of a new branch using a designer based off of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  If <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> returns true, a new branch is created using the InsertActivities method.  
-  
- [!code-cs[WF_Samples#28](~/add/codesnippet/csharp/wf_snippets/snippets.cs#28)]
- [!code-vb[WF_Samples#28](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#28)]  
-  
- ]]></format>
-        </remarks>
+        <param name="compositeActivityDesigner">To be added.</param>
+        <param name="insertLocation">To be added.</param>
+        <param name="activitiesToInsert">To be added.</param>
+        <param name="undoTransactionDescription">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsContainedDesignerVisible">
@@ -688,7 +474,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -698,18 +483,10 @@
         <Parameter Name="containedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="containedDesigner">The designer contained within the CompositeActivityDesigner to test for visibility.</param>
-        <summary>Gets a value that indicates if the contained designer is visible.</summary>
-        <returns>
-          <see langword="true" /> if the contained designer is visible; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use IsContainedDesignerVisible to determine if the specified designer is visible.  
-  
- ]]></format>
-        </remarks>
+        <param name="containedDesigner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEditable">
@@ -719,24 +496,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the designer can be edited.</summary>
-        <value>
-          <see langword="true" /> if the designer can be edited; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some custom activities might not allow you to modify properties or other settings in the design environment. The IsEditable property should determine whether the designer allows edits at design time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LastSelectableObject">
@@ -746,23 +514,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last selectable object contained within the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</summary>
-        <value>The last selectable object contained within the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When overridden in a derived class, use LastSelectableObject to return the last selectable object contained within the designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -772,7 +532,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -782,16 +541,9 @@
         <Parameter Name="reader" Type="System.IO.BinaryReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.IO.BinaryReader" /> from which to load the view state.</param>
-        <summary>Restores the view state from a binary stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use LoadViewState to restore the designer to a state previously saved using <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.SaveViewState%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -801,23 +553,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location of the designer in logical coordinates.</summary>
-        <value>The location of the designer in logical coordinates.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use Location to position the designer at design or run time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveActivities">
@@ -827,7 +571,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -838,17 +581,10 @@
         <Parameter Name="activitiesToMove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="moveLocation">A <see cref="T:System.Workflow.ComponentModel.Design.HitTestInfo" /> describing the location to which to move the activities.</param>
-        <param name="activitiesToMove">The list of activities to move.</param>
-        <summary>Moves activities from one designer to another.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use MoveActivities to move a list of activities from one composite activity to another.  
-  
- ]]></format>
-        </remarks>
+        <param name="moveLocation">To be added.</param>
+        <param name="activitiesToMove">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveDesigners">
@@ -858,7 +594,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -869,18 +604,10 @@
         <Parameter Name="moveBack" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="activityDesigner">The activity designer to move.</param>
-        <param name="moveBack">
-          <see langword="true" /> to move the designer backwards; <see langword="false" /> to move the designer forward.</param>
-        <summary>Moves a designer forward or backwards in index within the composite activity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use MoveDesigners to move an activity contained within the composite activity forward or backwards in the index of contained activities.  
-  
- ]]></format>
-        </remarks>
+        <param name="activityDesigner">To be added.</param>
+        <param name="moveBack">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnContainedActivitiesChanged">
@@ -890,7 +617,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -900,18 +626,9 @@
         <Parameter Name="listChangeArgs" Type="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="listChangeArgs">An <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> containing information about the change.</param>
-        <summary>Occurs when more than one activities contained within the designers have changed. This occurs, for example, when a new child activity is added or an existing child activity is removed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use OnContainedActivitiesChanged to respond to changes to activities inside the composite activity.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="listChangeArgs" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="listChangeArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnContainedActivitiesChanging">
@@ -921,7 +638,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -931,18 +647,9 @@
         <Parameter Name="listChangeArgs" Type="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="listChangeArgs">An <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> that contains information about the change.</param>
-        <summary>Occurs when an activity or a group of activities contained within the designer are changing. This occurs, for example, when a new child activity is added or an existing child activity is removed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use OnContainedActivitiesChanging to respond to changes that are occurring to the activities contained within the composite activity.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="listChangeArgs" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="listChangeArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnContainedActivityChanged">
@@ -952,7 +659,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -962,18 +668,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs" /> that contains information about the change.</param>
-        <summary>Occurs when an activity contained within the designer has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use OnContainedActivityChanged to respond to changes in the activities contained within the composite activity.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -983,7 +680,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -993,8 +689,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Called when a key is pressed with the designer in focus.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1005,7 +701,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1015,18 +710,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the event data.</param>
-        <summary>Performs layout and positioning tasks for the contained visual cues or designers on the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> to reposition its child activities.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnLayoutPosition performs layout tasks for all of the child activity designers that the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> contains.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayoutSize">
@@ -1036,7 +722,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1046,17 +731,10 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the event data.</param>
-        <summary>Called to calculate the size needed for an activity based on its current state (collapsed or expanded) and its list of child activities.</summary>
-        <returns>The <see cref="T:System.Drawing.Size" /> that contains the new size settings for the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnLayoutSize performs resizing tasks for each activity designer that the composite activity designer contains.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -1066,7 +744,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1076,39 +753,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Called when the mouse is clicked when the pointer is in designer bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following describes how and when events related to drag-and-drop operations are raised.  
-  
- If the designer is a valid drop target, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnGiveFeedback%2A> event is raised with the drag-and-drop effect specified. For a list of drag-and-drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
-  
--   Changes in the pointer position, keyboard state, and mouse button state are tracked.  
-  
--   If the user moves out of the designer bounds, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
-  
--   If the mouse enters another designer, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragEnter%2A> for that designer is raised.  
-  
--   If the mouse moves but stays within the same designer, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragOver%2A> event is raised.  
-  
--   If there is a change in the keyboard or mouse state, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnQueryContinueDrag%2A> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the `Action` property of the event <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
-  
- If the value is `DragAction.Continue`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragOver%2A> event is raised to continue the operation and the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnGiveFeedback%2A> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
-  
-> [!NOTE]
->  The <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragOver%2A> and <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnGiveFeedback%2A> events are paired so that as the mouse moves across the drop target, the user is supplied with the most up-to-date feedback about the mouse position.  
-  
- If the value is `DragAction.Drop`, the drop effect value is returned to the source, so that the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
-  
- If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -1118,7 +765,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1128,8 +774,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> that contains the drawing data.</param>
-        <summary>Draws the visual representation of a composite activity at design time.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1140,7 +786,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1150,16 +795,9 @@
         <Parameter Name="designerTheme" Type="System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />
       </Parameters>
       <Docs>
-        <param name="designerTheme">A <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> that contains the event data.</param>
-        <summary>Notifies the designer that the associated theme has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnThemeChange occurs any time the theme associated with the designer changes. When the theme changes it is likely that the designer look and feel needs to change.  
-  
- ]]></format>
-        </remarks>
+        <param name="designerTheme">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PaintContainedDesigners">
@@ -1169,7 +807,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1179,9 +816,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">
-          <see cref="T:System.EventArgs" /> to be used for painting.</param>
-        <summary>Adjusts the clip region on the graphics object and calls <see cref="System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnPaint%2A" /> on all contained designers.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1192,7 +828,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1202,16 +837,9 @@
         <Parameter Name="activitiesToRemove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="activitiesToRemove">A list of activities to remove from the designer.</param>
-        <summary>Removes a list of activities from the composite activity designer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Removes the list of activities from the composite activity.  
-  
- ]]></format>
-        </remarks>
+        <param name="activitiesToRemove">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveActivities">
@@ -1221,7 +849,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1233,18 +860,11 @@
         <Parameter Name="transactionDescription" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">The service provider associated with the designer.</param>
-        <param name="activitiesToRemove">The list of activities to remove.</param>
-        <param name="transactionDescription">The description of the transaction created.</param>
-        <summary>Removes the list of activities from the designer using a transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use RemoveActivities to remove the specified list of activities from the composite activity within the specified transaction.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceProvider">To be added.</param>
+        <param name="activitiesToRemove">To be added.</param>
+        <param name="transactionDescription">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1254,7 +874,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1264,16 +883,9 @@
         <Parameter Name="writer" Type="System.IO.BinaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> into which the view state is stored.</param>
-        <summary>Saves the view state to a binary stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use SaveViewState to save the state of a composite activity to a stream. To restore the view state use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.LoadViewState%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SerializeActivitiesToDataObject">
@@ -1283,7 +895,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1294,11 +905,10 @@
         <Parameter Name="activities" Type="System.Workflow.ComponentModel.Activity[]" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">Component serialization service.</param>
-        <param name="activities">Array of activities to serialize.</param>
-        <summary>Serializes an array of activities to an <see cref="T:System.Windows.Forms.IDataObject" /> that can be placed into the clipboard or used when initializing a drag and drop operation.</summary>
-        <returns>
-          <see cref="T:System.Windows.Forms.IDataObject" /> that contains serialized activities.</returns>
+        <param name="serviceProvider">To be added.</param>
+        <param name="activities">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1309,31 +919,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the description rectangle in logical coordinates.</summary>
-        <value>The value of the description rectangle in logical coordinates.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use to determine the location on the designer where the text description will be displayed.  
-  
-   
-  
-## Examples  
- The following example shows how to override the TextRectangle property. In this example, the TextRectangle is calculated using the Bounds of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> as well as the location and size of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ImageRectangle%2A>.  
-  
- [!code-cs[WF_Samples#75](~/add/codesnippet/csharp/wf_snippets/snippets.cs#75)]
- [!code-vb[WF_Samples#75](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#75)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TitleHeight">
@@ -1343,23 +937,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the height of the title area of the designer.</summary>
-        <value>The height in pixels of the title area of the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TitleHeight describes the height of the title area of the designer. Typically this can contain the heading, icon, and expand or collapse button.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

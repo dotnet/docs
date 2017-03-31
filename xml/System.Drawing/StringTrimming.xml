@@ -4,26 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringTrimming" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how to trim characters from a string that does not completely fit into a layout shape.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set the <xref:System.Drawing.StringFormat.Trimming%2A> property and how to use the StringTrimming enumeration. This example is designed to be used with a Windows Form. Paste this code into a form and call the ShowStringTrimming method when handling the form's `Paint` event, passing e as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cs[System.Drawing.Misc2#6](~/add/codesnippet/csharp/t-system.drawing.stringt_1.cs)]
- [!code-vb[System.Drawing.Misc2#6](~/add/codesnippet/visualbasic/t-system.drawing.stringt_1.vb)]
- [!code-cpp[System.Drawing.Misc2#6](~/add/codesnippet/cpp/t-system.drawing.stringt_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Character">
@@ -33,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the text is trimmed to the nearest character.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EllipsisCharacter">
@@ -50,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the text is trimmed to the nearest character, and an ellipsis is inserted at the end of a trimmed line.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EllipsisPath">
@@ -67,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The center is removed from trimmed lines and replaced by an ellipsis. The algorithm keeps as much of the last slash-delimited segment of the line as possible.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EllipsisWord">
@@ -84,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that text is trimmed to the nearest word, and an ellipsis is inserted at the end of a trimmed line.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -101,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no trimming.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Word">
@@ -118,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that text is trimmed to the nearest word.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

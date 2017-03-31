@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.PolicyUnitType" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the unit of measurement of a <see cref="T:System.IO.Log.PolicyUnit" /> instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example shows how to use the <xref:System.IO.Log.LogPolicy> class, <xref:System.IO.Log.PolicyUnit> structure and PolicyUnitType enumeration to set policy for a log record sequence.  
-  
- [!code-cs[S_UELogRecordSequence#2](~/add/codesnippet/csharp/t-system.io.log.policyun_1.cs)]
- [!code-vb[S_UELogRecordSequence#2](~/add/codesnippet/visualbasic/t-system.io.log.policyun_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Extents">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.PolicyUnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The measurement is in containers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percentage">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.PolicyUnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The measurement is a percentage of the size of the <see cref="T:System.IO.Log.LogStore" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

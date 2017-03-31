@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Calculates statistical formulas.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Formulas can be loosely grouped into the following categories: distributions, including inverse distributions; tests; and basic statistical formulas. Each group has common characteristics with respect to their input and return values.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Anova">
@@ -39,22 +32,11 @@
         <Parameter Name="inputSeriesNames" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="probability">The alpha value, which is the probability that the hypothesis is rejected. The allowable range is 0-1.</param>
-        <param name="inputSeriesNames">A comma-delimited list of input series names.</param>
-        <summary>Performs an ANOVA test to determine whether there is a statistically significant difference between the mean values of two or more groups of data.</summary>
-        <returns>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnovaResult" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An ANOVA test is used to test the difference between the means of two or more groups of data.  
-  
- Two or more groups of series data must be specified, and each series must have the same number of data points; otherwise, an exception will be raised.  
-  
- If a specified input series does not exist in the <xref:System.Windows.Forms.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception will be thrown.  
-  
- ]]></format>
-        </remarks>
+        <param name="probability">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BetaFunction">
@@ -74,18 +56,11 @@
         <Parameter Name="n" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="m">The first value for the beta function.</param>
-        <param name="n">The second value for the beta function.</param>
-        <summary>Returns the beta function value for two given values.</summary>
-        <returns>A <see langword="double" /> value that represents the beta function for the two given values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns the beta function value for two given values that are specified by `m` and `n`.  
-  
- ]]></format>
-        </remarks>
+        <param name="m">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Correlation">
@@ -105,22 +80,11 @@
         <Parameter Name="secondInputSeriesName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="firstInputSeriesName">The first input series name.</param>
-        <param name="secondInputSeriesName">The second input series name.</param>
-        <summary>Returns the correlation value for two data series.</summary>
-        <returns>A <see langword="double" /> value that represents the correlation between two data series.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Correlation measures the relationship between two data sets that are scaled to be independent of the unit of measurement. The Correlation method returns the covariance of two data sets divided by the product of their standard deviations, and always ranges from -1 to 1.  
-  
- Use correlation to determine whether two ranges of data move together; that is, whether large values of one set are associated with large values of the other (positive correlation), whether small values of one set are associated with large values of the other (negative correlation), or whether values in both sets are unrelated (correlation near zero).  
-  
- If a specified input series does not exist in the series collection at the time of the method call, an exception will be thrown. An exception will also be raised if the specified series do not have the same number of data points.  
-  
- ]]></format>
-        </remarks>
+        <param name="firstInputSeriesName">To be added.</param>
+        <param name="secondInputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Covariance">
@@ -140,10 +104,10 @@
         <Parameter Name="secondInputSeriesName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="firstInputSeriesName">The first input series name.</param>
-        <param name="secondInputSeriesName">The second input series name.</param>
-        <summary>Returns the covariance value for two data series.</summary>
-        <returns>A <see langword="double" /> value that represents the covariance between two data series.</returns>
+        <param name="firstInputSeriesName">To be added.</param>
+        <param name="secondInputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,11 +129,11 @@
         <Parameter Name="secondDegreeOfFreedom" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">The F value.</param>
-        <param name="firstDegreeOfFreedom">First degree of freedom.</param>
-        <param name="secondDegreeOfFreedom">Second degree of freedom.</param>
-        <summary>Returns the cumulative F distribution function probability.</summary>
-        <returns>A <see langword="double" /> value that represents the cumulative F distribution function probability.</returns>
+        <param name="value">To be added.</param>
+        <param name="firstDegreeOfFreedom">To be added.</param>
+        <param name="secondDegreeOfFreedom">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,11 +155,11 @@
         <Parameter Name="secondInputSeriesName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="probability">The alpha value, which is the probability that the hypothesis is rejected. The allowable range is 0-1.</param>
-        <param name="firstInputSeriesName">First input series name.</param>
-        <param name="secondInputSeriesName">Second input series name.</param>
-        <summary>Performs a two-sample F Test using the F distribution. This test is used to determine if the samples have different variances.</summary>
-        <returns>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.FTestResult" /> object.</returns>
+        <param name="probability">To be added.</param>
+        <param name="firstInputSeriesName">To be added.</param>
+        <param name="secondInputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,9 +179,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">The input variable.</param>
-        <summary>Returns the gamma function value for the given variable.</summary>
-        <returns>A <see langword="double" /> value that represents the gamma function.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,24 +203,12 @@
         <Parameter Name="secondDegreeOfFreedom" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="probability">The alpha value, which is the probability that the hypothesis is rejected. The allowable range is 0-1.</param>
-        <param name="firstDegreeOfFreedom">First degree of freedom.</param>
-        <param name="secondDegreeOfFreedom">Second degree of freedom.</param>
-        <summary>Returns the inverse of the F cumulative distribution.</summary>
-        <returns>A <see langword="double" /> value from the inverse F distribution function.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns the F value for the given F distribution probability.  
-  
- The F distribution can be used in an F-test that compares the degree of variability in two data sets.  
-  
- This method may return an exception depending on the parameter values.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">Condition: Cannot continue calculation using specified parameter values because of limitation.</exception>
+        <param name="probability">To be added.</param>
+        <param name="firstDegreeOfFreedom">To be added.</param>
+        <param name="secondDegreeOfFreedom">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InverseNormalDistribution">
@@ -275,19 +227,10 @@
         <Parameter Name="probability" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="probability">The alpha value, which is the probability that the hypothesis is rejected. The allowable range is 0-1.</param>
-        <summary>Returns the inverse of the standard normal cumulative distribution.</summary>
-        <returns>A <see langword="double" /> value from the inverse standard normal cumulative distribution function.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns the F value for the given F distribution probability.  
-  
- It is assumed that the distribution has a mean of 0 (zero) and a standard deviation of one.  
-  
- ]]></format>
-        </remarks>
+        <param name="probability">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InverseTDistribution">
@@ -307,18 +250,11 @@
         <Parameter Name="degreeOfFreedom" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="probability">The alpha value, which is the probability that the hypothesis is rejected. The allowable range is 0-1.</param>
-        <param name="degreeOfFreedom">The degree of freedom.</param>
-        <summary>Returns the inverse t-value of the Students t-distribution as a function of probability and degree of freedom.</summary>
-        <returns>A <see langword="double" /> value that represents the inverse T distribution.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns the t value for the given T distribution probability.  
-  
- ]]></format>
-        </remarks>
+        <param name="probability">To be added.</param>
+        <param name="degreeOfFreedom">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mean">
@@ -337,19 +273,10 @@
         <Parameter Name="inputSeriesName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputSeriesName">Input series name.</param>
-        <summary>Returns the average of all data points stored in the specified series.</summary>
-        <returns>A <see langword="double" /> value that represents the average of all data points.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to calculate the mean (that is, the average) of the points stored in a series.  
-  
- If the specified input series does not exist in the <xref:System.Windows.Forms.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception will be thrown.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Median">
@@ -368,21 +295,10 @@
         <Parameter Name="inputSeriesName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputSeriesName">Input series name.</param>
-        <summary>Returns the median of all data points in the specified series.</summary>
-        <returns>A <see langword="double" /> value that represents the median.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to calculate the median of the points stored in a series.  
-  
- The median is the middle value of a sample set, where half of the members are greater in size and half the members are lesser in size.  
-  
- If the specified input series does not exist in the <xref:System.Windows.Forms.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception will be thrown.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NormalDistribution">
@@ -401,9 +317,9 @@
         <Parameter Name="zValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="zValue">The Z value for which the probability is required.</param>
-        <summary>Returns the probability for the standard normal cumulative distribution function.</summary>
-        <returns>A <see langword="double" /> value from the standard normal cumulative distribution function.</returns>
+        <param name="zValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -425,11 +341,11 @@
         <Parameter Name="oneTail" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">The T value</param>
-        <param name="degreeOfFreedom">Degree of freedom</param>
-        <param name="oneTail">If <see langword="true" />, a one-tailed distribution is used; otherwise, a two-tailed distribution is used.</param>
-        <summary>Returns the probability for the T distribution (Student's distribution).</summary>
-        <returns>A <see langword="double" /> value that represents a T Distribution cumulative function.</returns>
+        <param name="value">To be added.</param>
+        <param name="degreeOfFreedom">To be added.</param>
+        <param name="oneTail">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,12 +368,12 @@
         <Parameter Name="secondInputSeriesName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hypothesizedMeanDifference">Hypothesized mean difference.</param>
-        <param name="probability">The alpha value, which is the probability that the hypothesis is rejected. The allowable range is 0-1.</param>
-        <param name="firstInputSeriesName">First input series name.</param>
-        <param name="secondInputSeriesName">Second input series name.</param>
-        <summary>Performs a T Test using Student's distribution (T distribution) with equal variances.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.TTestResult" /> object.</returns>
+        <param name="hypothesizedMeanDifference">To be added.</param>
+        <param name="probability">To be added.</param>
+        <param name="firstInputSeriesName">To be added.</param>
+        <param name="secondInputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,12 +396,12 @@
         <Parameter Name="secondInputSeriesName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hypothesizedMeanDifference">Hypothesized mean difference.</param>
-        <param name="probability">The alpha value, which is the probability that the hypothesis is rejected. The allowable range is 0-1.</param>
-        <param name="firstInputSeriesName">First input series name.</param>
-        <param name="secondInputSeriesName">Second input series name.</param>
-        <summary>Performs a T Test using Student's distribution (T distribution) with paired samples. This is useful when there is a natural pairing of observations in samples.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.TTestResult" /> object.</returns>
+        <param name="hypothesizedMeanDifference">To be added.</param>
+        <param name="probability">To be added.</param>
+        <param name="firstInputSeriesName">To be added.</param>
+        <param name="secondInputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,12 +424,12 @@
         <Parameter Name="secondInputSeriesName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hypothesizedMeanDifference">Hypothesized mean difference.</param>
-        <param name="probability">The alpha value, which is the probability that the hypothesis is rejected. The allowable range is 0-1.</param>
-        <param name="firstInputSeriesName">First input series name.</param>
-        <param name="secondInputSeriesName">Second input series name.</param>
-        <summary>Performs a T Test using Student's distribution (T distribution) with unequal variances.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.TTestResult" /> object.</returns>
+        <param name="hypothesizedMeanDifference">To be added.</param>
+        <param name="probability">To be added.</param>
+        <param name="firstInputSeriesName">To be added.</param>
+        <param name="secondInputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,11 +450,10 @@
         <Parameter Name="sampleVariance" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="inputSeriesName">The input series name.</param>
-        <param name="sampleVariance">
-          <see langword="True" /> if the data is a sample of the population; <see langword="false" /> if the data is the entire population.</param>
-        <summary>Returns the variance for a series.</summary>
-        <returns>A <see langword="double" /> value that represents the variance.</returns>
+        <param name="inputSeriesName">To be added.</param>
+        <param name="sampleVariance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -563,14 +478,14 @@
         <Parameter Name="secondInputSeriesName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hypothesizedMeanDifference">Hypothesized mean difference.</param>
-        <param name="varianceFirstGroup">Variance of the first group.</param>
-        <param name="varianceSecondGroup">Variance of the second group.</param>
-        <param name="probability">The alpha value, which is the probability that the hypothesis is rejected. The allowable range is 0-1.</param>
-        <param name="firstInputSeriesName">First input series name.</param>
-        <param name="secondInputSeriesName">Second input series name.</param>
-        <summary>Performs a Z Test using the Normal distribution.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ZTestResult" /> object.</returns>
+        <param name="hypothesizedMeanDifference">To be added.</param>
+        <param name="varianceFirstGroup">To be added.</param>
+        <param name="varianceSecondGroup">To be added.</param>
+        <param name="probability">To be added.</param>
+        <param name="firstInputSeriesName">To be added.</param>
+        <param name="secondInputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

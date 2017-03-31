@@ -16,15 +16,8 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="state">The state of the dependent object that was changed.</param>
-    <summary>Defines a reference to a method that handles changes to monitored items.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnChangedCallback delegate is used by a change monitor to signal to a cache implementation that a change has occurred in an object whose contents are cached. The task of any implementation of the <xref:System.Runtime.Caching.ChangeMonitor> type is to monitor for changes in objects that are cached. For example, if the contents of a file are contained in a cache entry, and if the file is updated, its related cache entry must be changed also. In a typical cache implementation, a derived <xref:System.Runtime.Caching.ChangeMonitor> instance uses a OnChangedCallback delegate to notify the cache about a change.  
-  
- ]]></format>
-    </remarks>
+    <param name="state">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

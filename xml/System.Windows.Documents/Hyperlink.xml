@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Hyperlink" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,31 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An inline-level flow content element that provides facilities for hosting hyperlinks within flow content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Hyperlink implements the <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A> property that you set with the <xref:System.Uri> of the content that should be navigated to when the Hyperlink is clicked. Hyperlink navigation can only occur, however, if either the direct or indirect parent of a Hyperlink is a navigation host, including <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or any browser that can host [!INCLUDE[TLA2#tla_xbap#plural](~/add/includes/tla2sharptla-xbapsharpplural-md.md)] (which includes [!INCLUDE[TLA2#tla_ie7](~/add/includes/tla2sharptla-ie7-md.md)], [!INCLUDE[TLA2#tla_ie6](~/add/includes/tla2sharptla-ie6-md.md)], and Firefox 2.0+). For more information, see the **Navigation Hosts** topic in [Navigation Overview](../Topic/Navigation%20Overview.md).  
-  
- Hyperlink enforces a strong content model for child content. See [TextElement Content Model Overview](../Topic/TextElement%20Content%20Model%20Overview.md) for more information about the Hyperlink content model.  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-   
-  
-## Examples  
- The following example shows simple use of a Hyperlink element.  
-  
- [!code-xml[HyperlinkSnippets#_Hyperlink_NavUriXAML](~/add/codesnippet/xaml/HyperlinkSnippets/Window1.xaml#_hyperlink_navurixaml)]  
-  
- The following example shows how to create a Hyperlink programmatically.  
-  
- [!code-cs[HyperlinkSnippets#_Hyperlink_NavUri](~/add/codesnippet/csharp/HyperlinkSnippets/Window1.xaml.cs#_hyperlink_navuri)]
- [!code-vb[HyperlinkSnippets#_Hyperlink_NavUri](~/add/codesnippet/visualbasic/hyperlinksnippets/window1.xaml.vb#_hyperlink_navuri)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,12 +34,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new, default instance of the <see cref="T:System.Windows.Documents.Hyperlink" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,26 +49,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="childInline" Type="System.Windows.Documents.Inline" />
       </Parameters>
       <Docs>
-        <param name="childInline">An <see cref="T:System.Windows.Documents.Inline" /> object specifying the initial contents of the new <see cref="T:System.Windows.Documents.Hyperlink" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Hyperlink" /> class, taking a specified <see cref="T:System.Windows.Documents.Inline" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.Hyperlink" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-cs[HyperlinkSnippets#_Hyperlink_Const1](~/add/codesnippet/csharp/HyperlinkSnippets/Window1.xaml.cs#_hyperlink_const1)]
- [!code-vb[HyperlinkSnippets#_Hyperlink_Const1](~/add/codesnippet/visualbasic/hyperlinksnippets/window1.xaml.vb#_hyperlink_const1)]  
-  
- ]]></format>
-        </remarks>
+        <param name="childInline">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -103,7 +67,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -111,20 +74,10 @@
         <Parameter Name="insertionPosition" Type="System.Windows.Documents.TextPointer" />
       </Parameters>
       <Docs>
-        <param name="childInline">An <see cref="T:System.Windows.Documents.Inline" /> object specifying the initial contents of the new <see cref="T:System.Windows.Documents.Hyperlink" />.  This parameter may be <see langword="null" />, in which case no <see cref="T:System.Windows.Documents.Inline" /> is inserted.</param>
-        <param name="insertionPosition">A <see cref="T:System.Windows.Documents.TextPointer" /> specifying an insertion position at which to insert the <see cref="T:System.Windows.Documents.Hyperlink" /> element after it is created, or <see langword="null" /> for no automatic insertion.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Hyperlink" /> class, taking a specified <see cref="T:System.Windows.Documents.Inline" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.Hyperlink" />, and a <see cref="T:System.Windows.Documents.TextPointer" /> specifying an insertion position for the new <see cref="T:System.Windows.Documents.Hyperlink" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-cs[HyperlinkSnippets#_Hyperlink_Const2](~/add/codesnippet/csharp/HyperlinkSnippets/Window1.xaml.cs#_hyperlink_const2)]
- [!code-vb[HyperlinkSnippets#_Hyperlink_Const2](~/add/codesnippet/visualbasic/hyperlinksnippets/window1.xaml.vb#_hyperlink_const2)]  
-  
- ]]></format>
-        </remarks>
+        <param name="childInline">To be added.</param>
+        <param name="insertionPosition">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,7 +87,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -142,29 +94,10 @@
         <Parameter Name="end" Type="System.Windows.Documents.TextPointer" />
       </Parameters>
       <Docs>
-        <param name="start">A <see cref="T:System.Windows.Documents.TextPointer" /> indicating the beginning of a selection of content to be contained by the new <see cref="T:System.Windows.Documents.Hyperlink" />.</param>
-        <param name="end">A <see cref="T:System.Windows.Documents.TextPointer" /> indicating the end of a selection of content to be contained by the new <see cref="T:System.Windows.Documents.Hyperlink" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Hyperlink" /> class, taking two <see cref="T:System.Windows.Documents.TextPointer" /> objects that indicate the beginning and end of a selection of content to be contained by the new <see cref="T:System.Windows.Documents.Hyperlink" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is intended to initialize a new <xref:System.Windows.Documents.Hyperlink> element such that it encloses a selection of preexisting content.  
-  
-   
-  
-## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-cs[HyperlinkSnippets#_Hyperlink_Const3](~/add/codesnippet/csharp/HyperlinkSnippets/Window1.xaml.cs#_hyperlink_const3)]
- [!code-vb[HyperlinkSnippets#_Hyperlink_Const3](~/add/codesnippet/visualbasic/hyperlinksnippets/window1.xaml.vb#_hyperlink_const3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="start" /> or <paramref name="end" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="start" /> and <paramref name="end" /> do not resolve to a range of content suitable for enclosure by a <see cref="T:System.Windows.Documents.Span" /> element; for example, if <paramref name="start" /> and <paramref name="end" /> indicate positions in different paragraphs.</exception>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseUri">
@@ -174,15 +107,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a base URI for the <see cref="T:System.Windows.Documents.Hyperlink" />.</summary>
-        <value>A base URI for the <see cref="T:System.Windows.Documents.Hyperlink" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,7 +125,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -205,23 +136,8 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the left mouse button is clicked on a <see cref="T:System.Windows.Documents.Hyperlink" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="routedEventInfo_Click"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.Hyperlink.ClickEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClickEvent">
@@ -231,14 +147,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Documents.Hyperlink.Click" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,7 +164,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -267,23 +181,9 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a command to associate with the <see cref="T:System.Windows.Documents.Hyperlink" />.</summary>
-        <value>A command to associate with the <see cref="T:System.Windows.Documents.Hyperlink" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Command"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.Hyperlink.CommandProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
@@ -293,7 +193,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -311,23 +210,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets command parameters associated with the command specified by the <see cref="System.Windows.Documents.Hyperlink.Command%2A" /> property.</summary>
-        <value>An object specifying parameters for the command specified by the <see cref="System.Windows.Documents.Hyperlink.Command%2A" /> property. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_CommandParameter"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.Hyperlink.CommandParameterProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandParameterProperty">
@@ -337,14 +222,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.Hyperlink.CommandParameter%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,14 +239,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.Hyperlink.Command%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,7 +256,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -388,23 +270,9 @@
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a target element on which to execute the command specified by the <see cref="System.Windows.Documents.Hyperlink.Command%2A" /> property.</summary>
-        <value>A target element on which to execute the command specified by the <see cref="System.Windows.Documents.Hyperlink.Command%2A" /> property. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_CommandTarget"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.Hyperlink.CommandTargetProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandTargetProperty">
@@ -414,14 +282,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.Hyperlink.CommandTarget%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,7 +299,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -440,15 +306,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Simulates the act of a user clicking the <see cref="T:System.Windows.Documents.Hyperlink" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling this method is equivalent to a user clicking the <xref:System.Windows.Documents.Hyperlink>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabledCore">
@@ -458,24 +317,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether or not the <see cref="T:System.Windows.Documents.Hyperlink" /> is enabled.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Documents.Hyperlink" /> is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property overrides <xref:System.Windows.ContentElement.IsEnabledCore%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigateUri">
@@ -485,7 +335,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -500,51 +349,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] to navigate to when the <see cref="T:System.Windows.Documents.Hyperlink" /> is activated.</summary>
-        <value>The <see cref="T:System.Uri" /> to navigate to when the <see cref="T:System.Windows.Documents.Hyperlink" /> is activated. The default is <see langword="null" />.  
-  
- <block subset="none" type="note">  
- <see cref="T:System.Windows.Documents.Hyperlink" /> can navigate to the value of the NavigateUri property only if either the direct or indirect parent of a <see cref="T:System.Windows.Documents.Hyperlink" /> is a navigation host, including <see cref="T:System.Windows.Navigation.NavigationWindow" />, <see cref="T:System.Windows.Controls.Frame" />, or any browser that can host [!INCLUDE[TLA2#tla_xbap#plural](~/add/includes/tla2sharptla-xbapsharpplural-md.md)] (which includes [!INCLUDE[TLA2#tla_ie7](~/add/includes/tla2sharptla-ie7-md.md)], [!INCLUDE[TLA2#tla_ie6](~/add/includes/tla2sharptla-ie6-md.md)], and Firefox 2.0+). For more information, see the **Navigation Hosts** section in [Navigation Overview](../Topic/Navigation%20Overview.md).  
-  
-</block></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To link to a particular inline element, specify the element name preceded by a pound symbol (#).  
-  
- When a user hovers the mouse over a <xref:System.Windows.Documents.Hyperlink> in an [!INCLUDE[TLA2#tla_xbap](~/add/includes/tla2sharptla-xbap-md.md)], the [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] stored in the NavigateUri property is displayed in the status bar. <xref:System.Windows.Documents.Hyperlink> navigates to this [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] when the user clicks the <xref:System.Windows.Documents.Hyperlink>. If the value of the NavigateUri property changes after the user clicks the <xref:System.Windows.Documents.Hyperlink> and before the subsequent navigation request, <xref:System.Windows.Documents.Hyperlink> ignores the new value of the NavigateUri property and navigates to the [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] that was the value of the NavigateUri property when the user clicked the <xref:System.Windows.Documents.Hyperlink>.  
-  
-> [!NOTE]
->  You are not restricted to only using a <xref:System.Windows.Documents.Hyperlink> to do navigation. You can use the <xref:System.Windows.Documents.FixedPage.NavigateUri%2A> attached property as well, but only from the following: <xref:System.Windows.Documents.FixedPage>, <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Controls.Canvas>, and <xref:System.Windows.Documents.Glyphs>.  
-  
-<a name="dependencyPropertyInfo_NavigateUri"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.Hyperlink.NavigateUriProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to use the NavigateUri attribute of a <xref:System.Windows.Documents.Hyperlink> element.  
-  
- [!code-xml[HyperlinkSnippets#_Hyperlink_NavUriXAML](~/add/codesnippet/xaml/HyperlinkSnippets/Window1.xaml#_hyperlink_navurixaml)]  
-  
- The following example shows how to set the NavigateUri property programmatically.  
-  
- [!code-cs[HyperlinkSnippets#_Hyperlink_NavUri](~/add/codesnippet/csharp/HyperlinkSnippets/Window1.xaml.cs#_hyperlink_navuri)]
- [!code-vb[HyperlinkSnippets#_Hyperlink_NavUri](~/add/codesnippet/visualbasic/hyperlinksnippets/window1.xaml.vb#_hyperlink_navuri)]  
-  
- The following example shows how to use a **mailto:**[!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)] to open a new mail window that contains an email address, an email address and a subject, and an email address, subject, and body.  
-  
- [!code-xml[HOWTONavigationMailTo#MailToMARKUP](~/add/codesnippet/xaml/p-system.windows.documen_140_3.xaml)]
- [!code-xml[HOWTONavigationMailTo#MailToMARKUP](~/add/codesnippet/xaml/p-system.windows.documen_140_3.xaml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigateUriProperty">
@@ -554,14 +361,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.Hyperlink.NavigateUri%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,7 +378,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -580,18 +385,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="E:System.Windows.Documents.Hyperlink.Click" /> routed event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method navigates to the [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)] specified by the <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A> property, and marks the [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] as visited.  
-  
-> [!IMPORTANT]
->  Depending on the host computer's security configuration, certain forms of navigation (for example, navigating to a [!INCLUDE[TLA#tla_unc](~/add/includes/tlasharptla-unc-md.md)] path) are not allowed in the Internet zone.  In such cases, this method will demand full trust.  For more information, see [Code Access Security](../Topic/Code%20Access%20Security.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -601,7 +396,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -609,16 +403,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates and returns an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this <see cref="T:System.Windows.Documents.Hyperlink" />.</summary>
-        <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this <see cref="T:System.Windows.Documents.Hyperlink" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -628,7 +415,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -643,16 +429,9 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Arguments associated with the <see cref="E:System.Windows.ContentElement.KeyDown" /> event.</param>
-        <summary>Handles the <see cref="E:System.Windows.ContentElement.KeyDown" /> routed event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnKeyDown%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeftButtonDown">
@@ -662,7 +441,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -672,16 +450,9 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Arguments associated with the <see cref="E:System.Windows.ContentElement.MouseLeftButtonDown" /> event.</param>
-        <summary>Handles the <see cref="E:System.Windows.ContentElement.MouseLeftButtonDown" /> routed event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnMouseLeftButtonDown%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeftButtonUp">
@@ -691,7 +462,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -706,16 +476,9 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Arguments associated with the <see cref="E:System.Windows.ContentElement.MouseLeftButtonUp" /> event.</param>
-        <summary>Handles the <see cref="E:System.Windows.ContentElement.MouseLeftButtonUp" /> routed event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnMouseLeftButtonUp%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestNavigate">
@@ -725,30 +488,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.RequestNavigateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when navigation events are requested.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="routedEventInfo_RequestNavigate"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.Hyperlink.RequestNavigateEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.Navigation.RequestNavigateEventHandler>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestNavigateEvent">
@@ -758,14 +505,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Documents.Hyperlink.RequestNavigate" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -776,15 +522,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a base URI for the <see cref="T:System.Windows.Documents.Hyperlink" />.</summary>
-        <value>A base URI for the <see cref="T:System.Windows.Documents.Hyperlink" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -795,7 +540,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -810,24 +554,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of a target window or frame for the <see cref="T:System.Windows.Documents.Hyperlink" />.</summary>
-        <value>A string specifying the name of a target window or frame for the <see cref="T:System.Windows.Documents.Hyperlink" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property corresponds to the `TARGET` attribute of an [!INCLUDE[TLA#tla_html](~/add/includes/tlasharptla-html-md.md)] hyperlink.  
-  
-<a name="dependencyPropertyInfo_TargetName"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.Hyperlink.TargetNameProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetNameProperty">
@@ -837,14 +566,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.Hyperlink.TargetName%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

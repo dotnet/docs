@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides design-time support in a visual designer for controls that are derived from the <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a visual designer, when you switch from Source to Design view, the markup that describes a control that is derived from the <xref:System.Web.UI.WebControls.BaseDataBoundControl> class is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control code is persisted to the markup source and edited into the markup for the Web page.  
-  
- Designers that are derived from the BaseDataBoundControlDesigner abstract base class provide design-time support for controls that are derived from the <xref:System.Web.UI.WebControls.BaseDataBoundControl> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The .NET Framework internally constructs a new instance of a designer that is derived from the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner> class when it creates the associated control on the design surface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectToDataSource">
@@ -55,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,17 +44,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, typically unhooks events from the previous data source, and then attaches new events to the new data source.</summary>
-        <returns>
-          <see langword="true" /> if a connection to a new data source was performed, typically; <see langword="false" /> if the old and new data sources are the same.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The implementation of the ConnectToDataSource method typically involves unhooking events from the previous data source, and then attaching new events to the new data source.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDataSource">
@@ -83,7 +56,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,15 +63,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, creates a new data source for the associated <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For an example of a CreateDataSource override that displays a dialog that can be used to create a data source for the associated control, see <xref:System.Web.UI.Design.WebControls.DataBoundControlDesigner.CreateDataSource%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -109,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,16 +83,9 @@
         <Parameter Name="dataBoundControl" Type="System.Web.UI.WebControls.BaseDataBoundControl" />
       </Parameters>
       <Docs>
-        <param name="dataBoundControl">The <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" /> with which this designer is associated.</param>
-        <summary>When overridden in a derived class, performs the necessary actions to set up the associated control that is derived from the <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you override the DataBind method in a designer that is derived from the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner> class, perform the necessary actions to set up the data-bound control so that when the design-time markup is retrieved, the control renders properly. Typically, you will associate a design-time data source rather than the live data source, for performance reasons.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataBoundControl">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -138,23 +95,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the <see cref="System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A" /> property for the associated control.</summary>
-        <value>The data-binding expression used by the associated control derived from <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataSource property is used to shadow the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.BaseDataBoundControl> class that is associated with this designer. The value of the DataSource property is persisted by the designer as a data-binding expression on the tag that is generated for the underlying <xref:System.Web.UI.WebControls.BaseDataBoundControl> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSourceID">
@@ -164,23 +113,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the <see cref="System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A" /> property of the underlying <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" /> object.</summary>
-        <value>The ID of the <see cref="T:System.Web.UI.DataSourceControl" /> associated with the underlying <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataSourceID property is used to shadow the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property of the underlying <xref:System.Web.UI.WebControls.BaseDataBoundControl> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisconnectFromDataSource">
@@ -190,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,7 +138,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, unhooks events from the current data source.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +149,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -219,17 +158,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources that are used by the <see cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" /> object, and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Dispose method unhooks the event handlers for the designer from all data source events.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -239,7 +170,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,16 +177,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates the markup that is used to render the control at design time.</summary>
-        <returns>The markup used to render the control at design time.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner> class retrieves sample data that is used for binding purposes at design time before rendering the control. If the control is not data bound, it calls the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetEmptyDesignTimeHtml%2A> method. If there is an error rendering the control, it calls the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetErrorDesignTimeHtml%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -266,7 +189,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,16 +196,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides the markup that is used to render the control at design time if the control is empty or if the data source cannot be retrieved.</summary>
-        <returns>The markup used to render the control at design time with an empty data source.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner> class retrieves sample data that is used for binding purposes at design time before rendering the control. The empty design-time control renders as a placeholder that contains the type name and control name.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -293,7 +208,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -303,17 +217,10 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Exception" /> that was thrown.</param>
-        <summary>Provides the markup that is used to render the control at design time when an error has occurred.</summary>
-        <returns>The markup used to render the control at design time when an error has occurred.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The error design-time control renders as a placeholder that contains the type name, the control name, and a message describing the error.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -323,7 +230,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -333,16 +239,9 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">A control derived from <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" />, which implements <see cref="T:System.ComponentModel.IComponent" />.</param>
-        <summary>Prepares the designer to view, edit, and design the associated control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The designer host calls the Initialize method when it is ready to use the designer to render a control that is derived from the <xref:System.Web.UI.WebControls.BaseDataBoundControl> class. The Initialize method and its base methods configure properties and connect events that are necessary for the operation of the designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceChanged">
@@ -352,7 +251,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -362,17 +260,9 @@
         <Parameter Name="forceUpdateView" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="forceUpdateView">
-          <see langword="true" /> to force the update of design-time markup; otherwise, <see langword="false" />.</param>
-        <summary>Called when the data source of the associated <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" /> object changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnDataSourceChanged method connects to the current data source. If the current data source is different from the data source to which the control was previously connected, or `forceUpdateView` is `true`, the associated control is redrawn on the design surface.  
-  
- ]]></format>
-        </remarks>
+        <param name="forceUpdateView">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSchemaRefreshed">
@@ -382,7 +272,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -390,15 +279,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when the data source of the associated <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" /> object loads a new schema.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.OnSchemaRefreshed%2A> method handles the <xref:System.Web.UI.Design.IDataSourceDesigner.SchemaRefreshed> event, which is raised when the schema of the data source to which the associated control is bound changes. Override the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.OnSchemaRefreshed%2A> method to perform additional actions that are required when new schema is available.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -408,7 +290,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -418,18 +299,9 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">The <see cref="T:System.Collections.IDictionary" /> containing the properties to filter.</param>
-        <summary>Used by the designer to remove or add additional properties for display in the **Properties** grid or to shadow properties of the associated control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add or remove properties from the **Properties** grid.  
-  
- For the <xref:System.Web.UI.WebControls.BaseDataBoundControl> class, the PreFilterProperties shadows the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property of the control. It makes a copy of the attribute array of the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A>, and then adds these attributes to the shadowed property. It sets the <xref:System.ComponentModel.BrowsableAttribute.Browsable%2A> attribute of the shadowed <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property to `false` unless the <xref:System.ComponentModel.BrowsableAttribute.Browsable%2A> attribute of the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSourceID%2A> property of the control is already set to `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCreateDataSourceDialog">
@@ -439,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -452,13 +323,12 @@
         <Parameter Name="dataSourceID" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="controlDesigner">A reference to this designer.</param>
-        <param name="dataSourceType">The type of data source.</param>
-        <param name="configure">
-          <see langword="true" /> to enable editing of the configuration, or <see langword="false" /> to disable configuration editing.</param>
-        <param name="dataSourceID">The ID of a <see cref="T:System.Web.UI.DataSourceControl" /> control on the page.</param>
-        <summary>In a design host, such as [!INCLUDE[vsprvslong](~/add/includes/vsprvslong-md.md)], displays a dialog box to assist the user in creating a data source.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.DialogResult" /> object.</returns>
+        <param name="controlDesigner">To be added.</param>
+        <param name="dataSourceType">To be added.</param>
+        <param name="configure">To be added.</param>
+        <param name="dataSourceID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.BindingList`1" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -28,26 +32,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">The type of elements in the list.</typeparam>
-    <summary>Provides a generic collection that supports data binding.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BindingList(T) class can be used as a base class to create a two-way data-binding mechanism. BindingList(T) provides a concrete, generic implementation of the <xref:System.ComponentModel.IBindingList> interface. This is an alternative to implementing the complete <xref:System.ComponentModel.IBindingList> interface, which can be difficult because of the subtle interaction between <xref:System.ComponentModel.IBindingList>, <xref:System.ComponentModel.IEditableObject>, and the associated <xref:System.Windows.Forms.CurrencyManager>. However, the typical solutions programmer will use a class that provides data binding functionality, such as <xref:System.Windows.Forms.BindingSource>, instead of directly using BindingList(T).  
-  
- BindingList(T) supports factory-created instances through the extensible <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. (This same type of extensibility is also found in other classes, such as <xref:System.Windows.Forms.BindingSource>) In addition, since this class implements the <xref:System.ComponentModel.ICancelAddNew> interface, it enables transactional commits or rollbacks of the new item through the <xref:System.ComponentModel.BindingList%601.EndNew%2A> and <xref:System.ComponentModel.BindingList%601.CancelNew%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example demonstrates binding to a BindingList(T) component containing a business object. This is a complete example that contains a `Main` method.  
-  
- [!code-vb[System.ComponentModel.BindingListOfTExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._136_1.vb)]
- [!code-cs[System.ComponentModel.BindingListOfTExample#1](~/add/codesnippet/csharp/t-system.componentmodel._136_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,35 +44,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.ComponentModel.BindingList%601" /> class using default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows initial property values for an instance of <xref:System.ComponentModel.BindingList%601> class.  
-  
-|Property|Initial Value|  
-|--------------|-------------------|  
-|<xref:System.ComponentModel.BindingList%601.AllowEdit%2A>|`true`|  
-|<xref:System.ComponentModel.BindingList%601.AllowNew%2A>|`true` if the list type has a default constructor; otherwise, `false`.|  
-|<xref:System.ComponentModel.BindingList%601.AllowRemove%2A>|`true`|  
-|<xref:System.ComponentModel.BindingList%601.RaiseListChangedEvents%2A>|`true`|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to construct a new <xref:System.ComponentModel.BindingList%601>. For the complete example, see the <xref:System.ComponentModel.BindingList%601> class overview topic.  
-  
- [!code-vb[System.ComponentModel.BindingListOfTExample#2](~/add/codesnippet/visualbasic/m-system.componentmodel._8_1.vb)]
- [!code-cs[System.ComponentModel.BindingListOfTExample#2](~/add/codesnippet/csharp/m-system.componentmodel._8_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -95,32 +64,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="list" Type="System.Collections.Generic.IList&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="list">An <see cref="System.Collections.Generic.IList%601" /> of items to be contained in the <see cref="System.ComponentModel.BindingList%601" />.</param>
-        <summary>Initializes a new instance of the <see cref="System.ComponentModel.BindingList%601" /> class with the specified list.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this BindingList(T) to create a <xref:System.ComponentModel.BindingList%601> that is backed by `list`, which ensures that changes to `list` are reflected in the <xref:System.ComponentModel.BindingList%601>.  
-  
- The following table shows initial property values for an instance of <xref:System.ComponentModel.BindingList%601> class.  
-  
-|Property|Initial Value|  
-|--------------|-------------------|  
-|<xref:System.ComponentModel.BindingList%601.AllowEdit%2A>|`true`|  
-|<xref:System.ComponentModel.BindingList%601.AllowNew%2A>|`true` if the list type has a default constructor; otherwise, `false`.|  
-|<xref:System.ComponentModel.BindingList%601.AllowRemove%2A>|`true`|  
-|<xref:System.ComponentModel.BindingList%601.RaiseListChangedEvents%2A>|`true`|  
-  
- ]]></format>
-        </remarks>
+        <param name="list">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddingNew">
@@ -130,32 +87,19 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.AddingNewEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before an item is added to the list.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddingNew event occurs before a new object is added to the collection represented by the <xref:System.Collections.ObjectModel.Collection%601.Items%2A> property. This event is raised after the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method is called, but before the new item is created and added to the internal list. By handling this event, the programmer can provide custom item creation and insertion behavior without being forced to derive from the <xref:System.ComponentModel.BindingList%601> class.  
-  
- For more information about supplying custom new item functionality, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to handle the AddingNew event. For the complete example, see the <xref:System.ComponentModel.BindingList%601> class overview topic.  
-  
- [!code-vb[System.ComponentModel.BindingListOfTExample#3](~/add/codesnippet/visualbasic/e-system.componentmodel._6_1.vb)]
- [!code-cs[System.ComponentModel.BindingListOfTExample#3](~/add/codesnippet/csharp/e-system.componentmodel._6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNew">
@@ -165,53 +109,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds a new item to the collection.</summary>
-        <returns>The item added to the list.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddNew method adds a new item to the collection represented by the <xref:System.Collections.ObjectModel.Collection%601.Items%2A> property. To add a new item, the following logic is used:  
-  
-1.  The <xref:System.ComponentModel.BindingList%601.AddingNew> event is automatically raised.  
-  
-     This event can be programmatically handled to construct a new custom item. This is accomplished in the event handler by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs> parameter to the new item.  
-  
-     Otherwise, the new item is automatically created through its public default constructor.  
-  
-2.  The position of the new item is tracked, but it is not added to the list until one of the following conditions are met:  
-  
-    -   The item is explicitly committed by a call to <xref:System.ComponentModel.BindingList%601.EndNew%2A>.  
-  
-    -   The item is implicitly committed by some other operation that changed the contents of the list, such as an insertion or removal of an item.  
-  
- In contrast, calling the <xref:System.ComponentModel.BindingList%601.CancelNew%2A> method before the item is committed will cause the new item to be discarded.  
-  
- This method raises the <xref:System.ComponentModel.BindingList%601.ListChanged> event when the new item is committed.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the AddNew method. <xref:System.ComponentModel.BindingList%601>. For the complete example, see the <xref:System.ComponentModel.BindingList%601> class overview topic.  
-  
- [!code-vb[System.ComponentModel.BindingListOfTExample#4](~/add/codesnippet/visualbasic/m-system.componentmodel._41_1.vb)]
- [!code-cs[System.ComponentModel.BindingListOfTExample#4](~/add/codesnippet/csharp/m-system.componentmodel._41_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Windows.Forms.BindingSource.AllowNew%2A" /> property is set to <see langword="false" />.  
-  
- -or-  
-  
- A public default constructor could not be found for the current item type.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNewCore">
@@ -221,25 +133,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds a new item to the end of the collection.</summary>
-        <returns>The item that was added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddNewCore method adds a new item to the collection represented by the <xref:System.Collections.ObjectModel.Collection%601.Items%2A> property. AddNewCore raises the <xref:System.ComponentModel.BindingList%601.AddingNew> event. This allows you to add a new item by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs> parameter to the new item. Otherwise, the new item is automatically created through its public default constructor.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">The new item is not the same type as the objects contained in the <see cref="System.ComponentModel.BindingList%601" />.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowEdit">
@@ -249,32 +157,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether items in the list can be edited.</summary>
-        <value>
-          <see langword="true" /> if list items can be edited; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AllowEdit property is typically used by other components to determine if editing of items in the list is allowed. When AllowEdit is set to a new value, a <xref:System.ComponentModel.BindingList%601.ListChanged> event of type <xref:System.ComponentModel.ListChangedType> will occur.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to set the AllowEdit property. For the complete example, see the <xref:System.ComponentModel.BindingList%601> class overview topic.  
-  
- [!code-vb[System.ComponentModel.BindingListOfTExample#2](~/add/codesnippet/visualbasic/p-system.componentmodel._17_1.vb)]
- [!code-cs[System.ComponentModel.BindingListOfTExample#2](~/add/codesnippet/csharp/p-system.componentmodel._17_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowNew">
@@ -284,34 +180,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether you can add items to the list using the <see cref="System.ComponentModel.BindingList%601.AddNew%2A" /> method.</summary>
-        <value>
-          <see langword="true" /> if you can add items to the list with the <see cref="System.ComponentModel.BindingList%601.AddNew%2A" /> method; otherwise, <see langword="false" />. The default depends on the underlying type contained in the list.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AllowNew property is typically used by other components to determine if the creation of new items is allowed. AllowNew defaults to `true` if the type contained in the list has a default constructor or the <xref:System.ComponentModel.BindingList%601.AddingNew> event is handled. If the <xref:System.ComponentModel.BindingList%601.AddingNew> event is not handled or the list type does not have a default constructor, then AllowNew defaults to `false`.  
-  
- If AllowNew is explicitly set, the set value will always be used by bound objects to determine if new items can be added to the list. Whether AllowNew is `true` or `false`, new items can be added by explicitly calling <xref:System.ComponentModel.BindingList%601.AddNew%2A> if the list type has a default constructor or the <xref:System.ComponentModel.BindingList%601.AddingNew> event is handled. In addition, setting AllowNew causes a <xref:System.ComponentModel.BindingList%601.ListChanged> event of type <xref:System.ComponentModel.ListChangedType> to occur.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to set the AllowNew property. For the complete example, see the <xref:System.ComponentModel.BindingList%601> class overview topic.  
-  
- [!code-vb[System.ComponentModel.BindingListOfTExample#2](~/add/codesnippet/visualbasic/p-system.componentmodel._30_1.vb)]
- [!code-cs[System.ComponentModel.BindingListOfTExample#2](~/add/codesnippet/csharp/p-system.componentmodel._30_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowRemove">
@@ -321,34 +203,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether you can remove items from the collection.</summary>
-        <value>
-          <see langword="true" /> if you can remove items from the list with the <see cref="System.ComponentModel.BindingList%601.RemoveItem%2A" /> method otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AllowRemove property is typically used by other components to determine if the removal of items is allowed.  
-  
- When AllowRemove is set to a new value, a <xref:System.ComponentModel.BindingList%601.ListChanged> event of type <xref:System.ComponentModel.ListChangedType> occurs.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to set the AllowRemove property. For the complete example, see the <xref:System.ComponentModel.BindingList%601> class overview topic.  
-  
- [!code-vb[System.ComponentModel.BindingListOfTExample#2](~/add/codesnippet/visualbasic/p-system.componentmodel._46_1.vb)]
- [!code-cs[System.ComponentModel.BindingListOfTExample#2](~/add/codesnippet/csharp/p-system.componentmodel._46_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplySortCore">
@@ -358,8 +226,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -369,26 +241,10 @@
         <Parameter Name="direction" Type="System.ComponentModel.ListSortDirection" />
       </Parameters>
       <Docs>
-        <param name="prop">A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that specifies the property to sort on.</param>
-        <param name="direction">One of the <see cref="T:System.ComponentModel.ListSortDirection" /> values.</param>
-        <summary>Sorts the items if overridden in a derived class; otherwise, throws a <see cref="T:System.NotSupportedException" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.BindingList%601> class does not provide a base implementation of sorting, so ApplySortCore always throws a <xref:System.NotSupportedException> by default. To enable sorting, derive from <xref:System.ComponentModel.BindingList%601> and perform the following tasks:  
-  
--   Override ApplySortCore and implement sorting, raising the <xref:System.ComponentModel.BindingList%601.ListChanged> event when sorting is complete.  
-  
--   Override <xref:System.ComponentModel.BindingList%601.RemoveSortCore%2A> and implement sort removal.  
-  
--   Override <xref:System.ComponentModel.BindingList%601.SupportsSortingCore%2A> and set <xref:System.ComponentModel.BindingList%601.SupportsSortingCore%2A> to `true`.  
-  
- In addition, you may want to implement the supplemental <xref:System.ComponentModel.BindingList%601.SortDirectionCore%2A> and <xref:System.ComponentModel.BindingList%601.SortPropertyCore%2A> sorting properties.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Method is not overridden in a derived class.</exception>
+        <param name="prop">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelNew">
@@ -398,8 +254,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -408,26 +268,9 @@
         <Parameter Name="itemIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="itemIndex">The index of the of the new item to be added</param>
-        <summary>Discards a pending new item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CancelNew method rolls back a pending new item that was added through the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method, but has not yet been committed.  
-  
- For more information about adding and committing new items, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method  
-  
-   
-  
-## Examples  
- The following code example demonstrates how use the CancelNew method. For the complete example, see the <xref:System.ComponentModel.BindingList%601> class overview topic.  
-  
- [!code-vb[System.ComponentModel.BindingListOfTExample#4](~/add/codesnippet/visualbasic/m-system.componentmodel._32_1.vb)]
- [!code-cs[System.ComponentModel.BindingListOfTExample#4](~/add/codesnippet/csharp/m-system.componentmodel._32_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="itemIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearItems">
@@ -437,25 +280,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all elements from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ClearItems method removes all the items from the collection represented by the <xref:System.Collections.ObjectModel.Collection%601.Items%2A> property.  
-  
- ClearItems calls the <xref:System.ComponentModel.BindingList%601.EndNew%2A> method before clearing out the collection and raises the <xref:System.ComponentModel.BindingList%601.ListChanged> event after it has been cleared.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndNew">
@@ -465,8 +303,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -475,18 +317,9 @@
         <Parameter Name="itemIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="itemIndex">The index of the new item to be added.</param>
-        <summary>Commits a pending new item to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EndNew method commits a pending new item that was added through the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. If there is no new item waiting to be committed, then this method does nothing.  
-  
- For more information about adding and committing new items, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="itemIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindCore">
@@ -496,8 +329,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -507,31 +344,11 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to search for.</param>
-        <param name="key">The value of <c>property</c> to match.</param>
-        <summary>Searches for the index of the item that has the specified property descriptor with the specified value, if searching is implemented in a derived class; otherwise, a <see cref="T:System.NotSupportedException" />.</summary>
-        <returns>The zero-based index of the item that matches the property descriptor and contains the specified value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.BindingList%601> class does not provide a base implementation of searching, and so FindCore always throws a <xref:System.NotSupportedException> by default. To enable searching, derive from <xref:System.ComponentModel.BindingList%601> and perform the following tasks:  
-  
--   Override <xref:System.ComponentModel.BindingList%601.SupportsSearchingCore%2A> to set the <xref:System.ComponentModel.BindingList%601.SupportsSearchingCore%2A> property to `true`.  
-  
--   Override FindCore to implement the find algorithm.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the FindCore member.  
-  
- [!code-cs[System.Windows.Forms.BindingSourceAndBindingListOfT#3](~/add/codesnippet/csharp/cf9f216b-50bc-4335-a06e-_1.cs)]
- [!code-vb[System.Windows.Forms.BindingSourceAndBindingListOfT#3](~/add/codesnippet/visualbasic/cf9f216b-50bc-4335-a06e-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">FindCore is not overridden in a derived class.</exception>
+        <param name="prop">To be added.</param>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -541,8 +358,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -552,23 +373,10 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index where the item is to be inserted.</param>
-        <param name="item">The item to insert in the list.</param>
-        <summary>Inserts the specified item in the list at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- InsertItem performs the following operations:  
-  
--   Calls <xref:System.ComponentModel.BindingList%601.EndNew%2A> to commit any uncommitted items added through the <xref:System.ComponentModel.BindingList%601.AddingNew> event.  
-  
--   Inserts the item at the specified index  
-  
--   Raises a <xref:System.ComponentModel.BindingList%601.ListChanged> event of type <xref:System.ComponentModel.ListChangedType> indicating the index of the item that was inserted.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSortedCore">
@@ -578,34 +386,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the list is sorted.</summary>
-        <value>
-          <see langword="true" /> if the list is sorted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.BindingList%601> class does not provide a base implementation of sorting, so IsSortedCore always returns `false` by default.  
-  
- The <xref:System.ComponentModel.BindingList%601> class does not provide a base implementation of sorting. To enable sorting, derive a class from <xref:System.ComponentModel.BindingList%601> and:  
-  
--   Override <xref:System.ComponentModel.BindingList%601.ApplySortCore%2A> and implement sorting raising the <xref:System.ComponentModel.BindingList%601.ListChanged> event when sorting is complete.  
-  
--   Override <xref:System.ComponentModel.BindingList%601.RemoveSortCore%2A> and implement sort removal.  
-  
--   Override <xref:System.ComponentModel.BindingList%601.SupportsSortingCore%2A> and set <xref:System.ComponentModel.BindingList%601.SupportsSortingCore%2A> to `true`.  
-  
- In addition, you may want to implement the supplemental <xref:System.ComponentModel.BindingList%601.SortDirectionCore%2A> and <xref:System.ComponentModel.BindingList%601.SortPropertyCore%2A>s sorting properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListChanged">
@@ -615,31 +409,19 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the list or an item in the list changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ListChanged notifications for item value changes are only raised if the list item type implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how handle the ListChanged event. For the complete example, see the <xref:System.ComponentModel.BindingList%601> class overview topic.  
-  
- [!code-cs[System.ComponentModel.BindingListOfTExample#5](~/add/codesnippet/csharp/e-system.componentmodel._7_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAddingNew">
@@ -649,8 +431,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -659,20 +445,9 @@
         <Parameter Name="e" Type="System.ComponentModel.AddingNewEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.ComponentModel.AddingNewEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.ComponentModel.BindingList%601.AddingNew" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.BindingList%601.AddingNew> event and the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method allow custom-created items to be added to the list.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnAddingNew method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnListChanged">
@@ -682,8 +457,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -692,16 +471,9 @@
         <Parameter Name="e" Type="System.ComponentModel.ListChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.ComponentModel.ListChangedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.ComponentModel.BindingList%601.ListChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnListChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseListChangedEvents">
@@ -711,32 +483,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether adding or removing items within the list raises <see cref="System.ComponentModel.BindingList%601.ListChanged" /> events.</summary>
-        <value>
-          <see langword="true" /> if adding or removing items raises <see cref="System.ComponentModel.BindingList%601.ListChanged" /> events; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the RaiseListChangedEvents property to `false` if you wish to suppress <xref:System.ComponentModel.BindingList%601.ListChanged> events from occurring on the list.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how use the RaiseListChangedEvents method. For the complete example, see the <xref:System.ComponentModel.BindingList%601> class overview topic.  
-  
- [!code-vb[System.ComponentModel.BindingListOfTExample#2](~/add/codesnippet/visualbasic/p-system.componentmodel._6_1.vb)]
- [!code-cs[System.ComponentModel.BindingListOfTExample#2](~/add/codesnippet/csharp/p-system.componentmodel._6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -746,8 +506,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -756,17 +520,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the item to remove.</param>
-        <summary>Removes the item at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method raises the <xref:System.ComponentModel.BindingList%601.ListChanged> event of type <xref:System.ComponentModel.ListChangedType>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">You are removing a newly added item and <see cref="System.ComponentModel.IBindingList.AllowRemove%2A" /> is set to <see langword="false" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveSortCore">
@@ -776,24 +532,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes any sort applied with <see cref="System.ComponentModel.BindingList%601.ApplySortCore%2A" /> if sorting is implemented in a derived class; otherwise, raises <see cref="T:System.NotSupportedException" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.BindingList%601> class does not provide a base implementation of sorting, so RemoveSortCore always throws a <xref:System.NotSupportedException> by default. For more information about sorting, see the <xref:System.ComponentModel.BindingList%601.ApplySortCore%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Method is not overridden in a derived class.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetBindings">
@@ -803,23 +555,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises a <see cref="System.ComponentModel.BindingList%601.ListChanged" /> event of type <see cref="T:System.ComponentModel.ListChangedType" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.ComponentModel.BindingList%601> is bound to Windows Forms controls, the ResetBindings method causes a refresh of all controls bound to the list.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetItem">
@@ -829,8 +578,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -839,16 +592,9 @@
         <Parameter Name="position" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">A zero-based index of the item to be reset.</param>
-        <summary>Raises a <see cref="System.ComponentModel.BindingList%601.ListChanged" /> event of type <see cref="T:System.ComponentModel.ListChangedType" /> for the item at the specified position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.ComponentModel.BindingList%601> is bound to Windows Forms controls, the ResetItem method causes a refresh of controls bound to the item at the specified position.  
-  
- ]]></format>
-        </remarks>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -858,8 +604,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -869,23 +619,10 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the item to replace.</param>
-        <param name="item">The new value for the item at the specified index. The value can be <see langword="null" /> for reference types.</param>
-        <summary>Replaces the item at the specified index with the specified item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After the item is set, SetItem raises a <xref:System.ComponentModel.BindingList%601.ListChanged> event of type <xref:System.ComponentModel.ListChangedType> indicating the index of the item that was set.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- -or-  
-  
- <paramref name="index" /> is greater than <see cref="System.Collections.ObjectModel.Collection%601.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortDirectionCore">
@@ -895,23 +632,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListSortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the direction the list is sorted.</summary>
-        <value>One of the <see cref="T:System.ComponentModel.ListSortDirection" /> values. The default is <see cref="T:System.ComponentModel.ListSortDirection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.BindingList%601> class does not provide a base implementation of sorting, so SortDirectionCore always returns <xref:System.ComponentModel.ListSortDirection> by default. For more information about sorting, see the <xref:System.ComponentModel.IBindingList.ApplySort%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortPropertyCore">
@@ -921,31 +655,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the property descriptor that is used for sorting the list if sorting is implemented in a derived class; otherwise, returns <see langword="null" />.</summary>
-        <value>The <see cref="T:System.ComponentModel.PropertyDescriptor" /> used for sorting the list.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SortPropertyCore returns `null` by default because the <xref:System.ComponentModel.BindingList%601> class does not provide a base implementation of sorting. To enable sorting, derive a class from <xref:System.ComponentModel.BindingList%601> and:  
-  
--   Override <xref:System.ComponentModel.BindingList%601.ApplySortCore%2A> and implement sorting.  
-  
--   Override <xref:System.ComponentModel.BindingList%601.RemoveSortCore%2A> and implement sort removal.  
-  
--   Override <xref:System.ComponentModel.BindingList%601.SupportsSortingCore%2A> and set <xref:System.ComponentModel.BindingList%601.SupportsSortingCore%2A> to `true`.  
-  
--   Optionally, override the SortPropertyCore to return the <xref:System.ComponentModel.PropertyDescriptor> used for sorting.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsChangeNotificationCore">
@@ -955,24 +678,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether <see cref="System.ComponentModel.BindingList%601.ListChanged" /> events are enabled.</summary>
-        <value>
-          <see langword="true" /> if <see cref="System.ComponentModel.BindingList%601.ListChanged" /> events are supported; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SupportsChangeNotificationCore provides the implementation for <xref:System.ComponentModel.IBindingList.SupportsChangeNotification%2A>. You can derive a class from <xref:System.ComponentModel.BindingList%601> and override the default value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsSearchingCore">
@@ -982,32 +701,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the list supports searching.</summary>
-        <value>
-          <see langword="true" /> if the list supports searching; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.BindingList%601> class does not provide a base implementation of searching, so SupportsSearchingCore always returns `false` by default. For more information about implementing searching, see the <xref:System.ComponentModel.BindingList%601.System%23ComponentModel%23IBindingList%23Find%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the SupportsSearchingCore member.  
-  
- [!code-cs[System.Windows.Forms.BindingSourceAndBindingListOfT#3](~/add/codesnippet/csharp/p-system.componentmodel._36_1.cs)]
- [!code-vb[System.Windows.Forms.BindingSourceAndBindingListOfT#3](~/add/codesnippet/visualbasic/p-system.componentmodel._36_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsSortingCore">
@@ -1017,26 +724,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the list supports sorting.</summary>
-        <value>
-          <see langword="true" /> if the list supports sorting; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SupportsSortingCore property indicates whether the <xref:System.ComponentModel.BindingList%601> supports sorting with the <xref:System.ComponentModel.BindingList%601.ApplySortCore%2A> method.  
-  
- The <xref:System.ComponentModel.BindingList%601> class does not provide a base implementation of sorting, so SupportsSortingCore always returns `false` by default. For more information about implementing sorting, see the <xref:System.ComponentModel.BindingList%601.ApplySortCore%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.AddIndex">
@@ -1046,8 +747,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1056,18 +761,9 @@
         <Parameter Name="prop" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to add as a search criteria.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IBindingList.AddIndex%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The base implementation of this method does nothing. If this functionality is desired, a derived class must implement it.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="prop">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.AddNew">
@@ -1077,27 +773,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds a new item to the list. For more information, see <see cref="System.ComponentModel.IBindingList.AddNew%2A" />.</summary>
-        <returns>The item added to the list.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- This implementation calls <xref:System.ComponentModel.BindingList%601.AddNewCore%2A> to add a new item to the list.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.AllowEdit">
@@ -1107,24 +797,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether items in the list can be edited.</summary>
-        <value>
-          <see langword="true" /> if list items can be edited; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.BindingList%601.AllowEdit%2A> property is typically used by other components to determine if editing of items in the list is allowed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.AllowNew">
@@ -1134,16 +820,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether new items can be added to the list using the <see cref="System.ComponentModel.BindingList%601.AddNew%2A" /> method.</summary>
-        <value>
-          <see langword="true" /> if you can add items to the list with the <see cref="System.ComponentModel.BindingList%601.AddNew%2A" /> method; otherwise, <see langword="false" />. The default depends on the underlying type contained in the list.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1154,16 +843,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether items can be removed from the list.</summary>
-        <value>
-          <see langword="true" /> if you can remove items from the list with the <see cref="System.ComponentModel.BindingList%601.RemoveItem%2A" /> method; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1174,8 +866,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1185,17 +881,10 @@
         <Parameter Name="direction" Type="System.ComponentModel.ListSortDirection" />
       </Parameters>
       <Docs>
-        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to sort by.</param>
-        <param name="direction">One of the <see cref="T:System.ComponentModel.ListSortDirection" /> values.</param>
-        <summary>Sorts the list based on a <see cref="T:System.ComponentModel.PropertyDescriptor" /> and a <see cref="T:System.ComponentModel.ListSortDirection" />. For a complete description of this member, see <see cref="System.ComponentModel.IBindingList.ApplySort%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="prop">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.Find">
@@ -1205,8 +894,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1216,18 +909,11 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to search on.</param>
-        <param name="key">The value of the <c>property</c> parameter to search for.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IBindingList.Find%2A" />.</summary>
-        <returns>The index of the row that has the given <see cref="T:System.ComponentModel.PropertyDescriptor" /> .</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="prop">To be added.</param>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.IsSorted">
@@ -1237,24 +923,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IBindingList.IsSorted%2A" />.</summary>
-        <value>
-          <see langword="true" /> if <see cref="System.ComponentModel.IBindingListView.ApplySort%2A" /> has been called and <see cref="System.ComponentModel.IBindingList.RemoveSort%2A" /> has not been called; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.RemoveIndex">
@@ -1264,8 +946,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1274,18 +960,9 @@
         <Parameter Name="prop" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="prop">A <see cref="T:System.ComponentModel.PropertyDescriptor" /> to remove from the indexes used for searching.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IBindingList.RemoveIndex%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The base implementation of this method does nothing. If this functionality is desired, a derived class must implement it.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="prop">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.RemoveSort">
@@ -1295,23 +972,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IBindingList.RemoveSort%2A" /></summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.SortDirection">
@@ -1321,23 +995,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListSortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IBindingList.SortDirection%2A" />.</summary>
-        <value>One of the <see cref="T:System.ComponentModel.ListSortDirection" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.SortProperty">
@@ -1347,23 +1018,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IBindingList.SortProperty%2A" />.</summary>
-        <value>The <see cref="T:System.ComponentModel.PropertyDescriptor" /> that is being used for sorting.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.SupportsChangeNotification">
@@ -1373,24 +1041,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IBindingList.SupportsChangeNotification%2A" />.</summary>
-        <value>
-          <see langword="true" /> if a <see cref="E:System.ComponentModel.IBindingList.ListChanged" /> event is raised when the list changes or when an item changes; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.SupportsSearching">
@@ -1400,24 +1064,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IBindingList.SupportsSearching%2A" />.</summary>
-        <value>
-          <see langword="true" /> if the list supports searching using the <see cref="System.ComponentModel.IBindingList.Find%2A" /> method; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.SupportsSorting">
@@ -1427,24 +1087,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IBindingList.SupportsSorting%2A" />.</summary>
-        <value>
-          <see langword="true" /> if the list supports sorting; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.BindingList%601> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents">
@@ -1454,24 +1110,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether item property value changes raise <see cref="System.ComponentModel.BindingList%601.ListChanged" /> events of type <see cref="T:System.ComponentModel.ListChangedType" />. This member cannot be overridden in a derived class.</summary>
-        <value>
-          <see langword="true " />if the list type implements <see cref="T:System.ComponentModel.INotifyPropertyChanged" />, otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IRaiseItemChangedEvents.RaisesItemChangedEvents checks the list type to see if it implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface to indicate that it raises <xref:System.ComponentModel.BindingList%601.ListChanged> events of <xref:System.ComponentModel.ListChangedType> when property values are changed on individual list items. This member cannot be overridden in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

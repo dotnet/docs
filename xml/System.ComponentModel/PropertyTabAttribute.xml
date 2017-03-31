@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyTabAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -17,24 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Identifies the property tab or tabs to display for the specified class or classes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PropertyTabAttribute lets you add a new property page to a <xref:System.Windows.Forms.PropertyGrid> control. The PropertyTabAttribute can add additional property tabs to expose property information other than a component's default set of properties.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the PropertyTabAttribute to specify a property tab. The code example defines a component that exposes the properties of another selected component by type.  
-  
- [!code-cs[PropertyTabExample#1](~/add/codesnippet/csharp/t-system.componentmodel._126_1.cs)]
- [!code-cpp[PropertyTabExample#1](~/add/codesnippet/cpp/t-system.componentmodel._126_1.cpp)]
- [!code-vb[PropertyTabExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._126_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,20 +32,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyTabAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a default constructor that creates an uninitialized <xref:System.ComponentModel.PropertyTabAttribute>. This constructor can be used to derive from this attribute and specify multiple tab types by calling <xref:System.ComponentModel.PropertyTabAttribute.InitializeArrays%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -67,15 +52,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tabClassName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tabClassName">The assembly qualified name of the type of tab to create. For an example of this format convention, see <see cref="System.Type.AssemblyQualifiedName%2A" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyTabAttribute" /> class using the specified tab class name.</summary>
+        <param name="tabClassName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +75,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tabClass" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="tabClass">The type of tab to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyTabAttribute" /> class using the specified type of tab.</summary>
+        <param name="tabClass">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,20 +98,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tabClassName" Type="System.String" />
         <Parameter Name="tabScope" Type="System.ComponentModel.PropertyTabScope" />
       </Parameters>
       <Docs>
-        <param name="tabClassName">The assembly qualified name of the type of tab to create. For an example of this format convention, see <see cref="System.Type.AssemblyQualifiedName%2A" />.</param>
-        <param name="tabScope">A <see cref="T:System.ComponentModel.PropertyTabScope" /> that indicates the scope of this tab. If the scope is <see cref="T:System.ComponentModel.PropertyTabScope" />, it is shown only for components with the corresponding <see cref="T:System.ComponentModel.PropertyTabAttribute" />. If it is <see cref="T:System.ComponentModel.PropertyTabScope" />, it is shown for all components on the document.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyTabAttribute" /> class using the specified tab class name and tab scope.</summary>
+        <param name="tabClassName">To be added.</param>
+        <param name="tabScope">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="tabScope" /> is not <see cref="T:System.ComponentModel.PropertyTabScope" /> or <see cref="T:System.ComponentModel.PropertyTabScope" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -128,31 +123,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tabClass" Type="System.Type" />
         <Parameter Name="tabScope" Type="System.ComponentModel.PropertyTabScope" />
       </Parameters>
       <Docs>
-        <param name="tabClass">The type of tab to create.</param>
-        <param name="tabScope">A <see cref="T:System.ComponentModel.PropertyTabScope" /> that indicates the scope of this tab. If the scope is <see cref="T:System.ComponentModel.PropertyTabScope" />, it is shown only for components with the corresponding <see cref="T:System.ComponentModel.PropertyTabAttribute" />. If it is <see cref="T:System.ComponentModel.PropertyTabScope" />, it is shown for all components on the document.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyTabAttribute" /> class using the specified type of tab and tab scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.ComponentModel.PropertyTabAttribute> to specify a property tab.  
-  
- [!code-cs[PropertyTabExample#1](~/add/codesnippet/csharp/90708a69-f496-4c9c-bbee-_1.cs)]
- [!code-cpp[PropertyTabExample#1](~/add/codesnippet/cpp/90708a69-f496-4c9c-bbee-_1.cpp)]
- [!code-vb[PropertyTabExample#1](~/add/codesnippet/visualbasic/90708a69-f496-4c9c-bbee-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="tabScope" /> is not <see cref="T:System.ComponentModel.PropertyTabScope" /> or <see cref="T:System.ComponentModel.PropertyTabScope" />.</exception>
+        <param name="tabClass">To be added.</param>
+        <param name="tabScope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -162,8 +148,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -172,12 +162,10 @@
         <Parameter Name="other" Type="System.ComponentModel.PropertyTabAttribute" />
       </Parameters>
       <Docs>
-        <param name="other">A <see cref="T:System.ComponentModel.PropertyTabAttribute" /> to compare to this instance, or <see langword="null" />.</param>
-        <summary>Returns a value indicating whether this instance is equal to a specified attribute.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.ComponentModel.PropertyTabAttribute" /> instances are equal; otherwise, <see langword="false" />.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.TypeLoadException">The types specified by the <see cref="System.ComponentModel.PropertyTabAttribute.TabClassNames%2A" /> property of the <paramref name="other" /> parameter cannot be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -187,8 +175,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -197,12 +189,10 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">An object to compare to this instance, or <see langword="null" />.</param>
-        <summary>Returns a value indicating whether this instance is equal to a specified object.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="other" /> refers to the same <see cref="T:System.ComponentModel.PropertyTabAttribute" /> instance; otherwise, <see langword="false" />.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.TypeLoadException">The types specified by the <see cref="System.ComponentModel.PropertyTabAttribute.TabClassNames%2A" /> property of the<paramref name=" other" /> parameter could not be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -212,16 +202,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code for this object.</summary>
-        <returns>The hash code for the object the attribute belongs to.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +226,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -243,26 +241,10 @@
         <Parameter Name="tabScopes" Type="System.ComponentModel.PropertyTabScope[]" />
       </Parameters>
       <Docs>
-        <param name="tabClassNames">An array of fully qualified type names of the types to create for tabs on the Properties window.</param>
-        <param name="tabScopes">The scope of each tab. If the scope is <see cref="T:System.ComponentModel.PropertyTabScope" />, it is shown only for components with the corresponding <see cref="T:System.ComponentModel.PropertyTabAttribute" />. If it is <see cref="T:System.ComponentModel.PropertyTabScope" />, it is shown for all components on the document.</param>
-        <summary>Initializes the attribute using the specified names of tab classes and array of tab scopes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- InitializeArrays provides a utility function that can be used to set the types of tab classes that this <xref:System.ComponentModel.PropertyTabAttribute> specifies.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">One or more of the values in <paramref name="tabScopes" /> is not <see cref="T:System.ComponentModel.PropertyTabScope" /> or <see cref="T:System.ComponentModel.PropertyTabScope" />.  
-  
- -or-  
-  
- The length of the <paramref name="tabClassNames" /> and <paramref name="tabScopes" /> arrays do not match.  
-  
- -or-  
-  
- <paramref name="tabClassNames" /> or <paramref name="tabScopes" /> is <see langword="null" />.</exception>
+        <param name="tabClassNames">To be added.</param>
+        <param name="tabScopes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeArrays">
@@ -272,8 +254,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -283,26 +269,10 @@
         <Parameter Name="tabScopes" Type="System.ComponentModel.PropertyTabScope[]" />
       </Parameters>
       <Docs>
-        <param name="tabClasses">The types of tabs to create.</param>
-        <param name="tabScopes">The scope of each tab. If the scope is <see cref="T:System.ComponentModel.PropertyTabScope" />, it is shown only for components with the corresponding <see cref="T:System.ComponentModel.PropertyTabAttribute" />. If it is <see cref="T:System.ComponentModel.PropertyTabScope" />, it is shown for all components on the document.</param>
-        <summary>Initializes the attribute using the specified names of tab classes and array of tab scopes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.ComponentModel.PropertyTabAttribute.InitializeArrays%2A> provides a utility function that can be used to set the types of tab classes that this <xref:System.ComponentModel.PropertyTabAttribute> specifies.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">One or more of the values in <paramref name="tabScopes" /> is not <see cref="T:System.ComponentModel.PropertyTabScope" /> or <see cref="T:System.ComponentModel.PropertyTabScope" />.  
-  
- -or-  
-  
- The length of the <paramref name="tabClassNames" /> and <paramref name="tabScopes" /> arrays do not match.  
-  
- -or-  
-  
- <paramref name="tabClassNames" /> or <paramref name="tabScopes" /> is <see langword="null" />.</exception>
+        <param name="tabClasses">To be added.</param>
+        <param name="tabScopes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabClasses">
@@ -312,24 +282,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the types of tabs that this attribute uses.</summary>
-        <value>An array of types indicating the types of tabs that this attribute uses.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All specified types must be able to be assigned to a <xref:System.Windows.Forms.Design.PropertyTab>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.TypeLoadException">The types specified by the <see cref="System.ComponentModel.PropertyTabAttribute.TabClassNames%2A" /> property could not be found.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabClassNames">
@@ -339,15 +305,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the names of the tab classes that this attribute uses.</summary>
-        <value>The names of the tab classes that this attribute uses.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,15 +328,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyTabScope[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array of tab scopes of each tab of this <see cref="T:System.ComponentModel.PropertyTabAttribute" />.</summary>
-        <value>An array of <see cref="T:System.ComponentModel.PropertyTabScope" /> objects that indicate the scopes of the tabs.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageLookupAction" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies a message to peek at or receive from a message queue.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MessageLookupAction enumeration enables you to specify a message to peek at or receive from a message queue.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageLookupAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read the current message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageLookupAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read the first message in the queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Last">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageLookupAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read the last message in the queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageLookupAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read the following message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageLookupAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read the preceding message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

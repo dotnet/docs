@@ -15,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A contract behavior that enables you to specify whether or not to publish metadata for a given endpoint.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this feature to disable the publishing of endpoint metadata in your service’s WSDL.  This is particularly useful for endpoints consisting only of operations which don’t take SOAP messages.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceMetadataContractBehavior" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +47,8 @@
         <Parameter Name="metadataGenerationDisabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="metadataGenerationDisabled">Specifies if metadata generation is disabled for an endpoint.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceMetadataContractBehavior" />.</summary>
+        <param name="metadataGenerationDisabled">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +65,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether metadata generation should be disabled for the endpoint.</summary>
-        <value>
-          <see langword="true" /> if metadata generation should be disabled; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,10 +88,10 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="description">The contract description to modify.</param>
-        <param name="endpoint">The endpoint to modify.</param>
-        <param name="parameters">The objects the binding elements require to support the behavior.</param>
-        <summary>Configures binding elements to support the contract behavior.</summary>
+        <param name="description">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,10 +113,10 @@
         <Parameter Name="proxy" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="description">The contract description for which the extension is intended.</param>
-        <param name="endpoint">The endpoint that exposes the contract.</param>
-        <param name="proxy">The client runtime.</param>
-        <summary>Implements a modification of a client across a contract.</summary>
+        <param name="description">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <param name="proxy">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,10 +138,10 @@
         <Parameter Name="dispatch" Type="System.ServiceModel.Dispatcher.DispatchRuntime" />
       </Parameters>
       <Docs>
-        <param name="description">The contract description to be modified.</param>
-        <param name="endpoint">The endpoint that exposes the contract.</param>
-        <param name="dispatch">The dispatch runtime that controls service execution.</param>
-        <summary>Implements a modification of the service runtime across a contract.</summary>
+        <param name="description">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <param name="dispatch">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +162,9 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="description">The contract to validate.</param>
-        <param name="endpoint">The endpoint to validate.</param>
-        <summary>Confirms the contract and endpoint can support the contract behavior.</summary>
+        <param name="description">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

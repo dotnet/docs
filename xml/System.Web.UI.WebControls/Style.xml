@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Style" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,28 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the style of a Web server control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Style class encapsulates the properties that control the appearance of a Web server control and can be applied to multiple Web server controls to provide a common appearance. You can specify the background color and font color of a control by setting the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> and <xref:System.Web.UI.WebControls.WebControl.ForeColor%2A> properties, respectively. On controls that can display a border, you can control the border width, the border style, and the border color by setting the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A>, <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A>, and <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> properties. The size of a Web server control can also be specified by using the <xref:System.Web.UI.WebControls.WebControl.Height%2A> and <xref:System.Web.UI.WebControls.WebControl.Width%2A> properties.  
-  
-   
-  
-## Examples  
- This example demonstrates how to use a Style object to change the style properties of multiple controls at once. Each time one of the Style property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-vb[StyleClass#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_129_1.aspx)]
- [!code-cs[StyleClass#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_129_1.aspx)]  
-[!code-vb[StyleClass#3](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_129_2.aspx)]
-[!code-cs[StyleClass#3](~/add/codesnippet/csharp/t-system.web.ui.webcontr_129_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,33 +34,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class using default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Style> class.  
-  
-   
-  
-## Examples  
- This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-vb[StyleClass#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_57_1.aspx)]
- [!code-cs[StyleClass#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_57_1.aspx)]  
-[!code-vb[StyleClass#3](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_57_2.aspx)]
-[!code-cs[StyleClass#3](~/add/codesnippet/csharp/m-system.web.ui.webcontr_57_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,23 +49,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="bag" Type="System.Web.UI.StateBag" />
       </Parameters>
       <Docs>
-        <param name="bag">A <see cref="T:System.Web.UI.StateBag" /> that represents the state bag in which to store style information.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class with the specified state bag information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Style> class using the <xref:System.Web.UI.StateBag?displayProperty=fullName> specified by the `bag` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="bag">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -117,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,16 +76,9 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
-        <summary>Adds HTML attributes and styles that need to be rendered to the specified <see cref="T:System.Web.UI.HtmlTextWriter" />. This method is primarily used by control developers.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To render attributes and styles for a Web server control on the client, you typically call the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A?displayProperty=fullName> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=fullName> methods to insert each attribute and style individually to the <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> output stream. To simplify the process, this method encapsulates all calls to the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A?displayProperty=fullName> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=fullName> methods for every attribute and style associated with the Web server control. All attributes and styles are inserted into the <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> output stream in a single method call.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -146,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,25 +98,10 @@
         <Parameter Name="owner" Type="System.Web.UI.WebControls.WebControl" />
       </Parameters>
       <Docs>
-        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
-        <param name="owner">A <see cref="T:System.Web.UI.WebControls.WebControl" /> or <see cref="T:System.Web.UI.WebControls.WebControl" /> derived object that represents the Web server control associated with the <see cref="T:System.Web.UI.WebControls.Style" />.</param>
-        <summary>Adds HTML attributes and styles that need to be rendered to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> and Web server control. This method is primarily used by control developers.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To render attributes and styles for a Web server control on the client, you typically call the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A?displayProperty=fullName> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=fullName> methods to insert each attribute and style individually to the <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> output stream. To simplify the process, this method encapsulates all calls to the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A?displayProperty=fullName> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=fullName> methods for every attribute and style associated with the Web Server control. All attributes and styles are inserted into the <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> output stream in a single method call. This method is typically overridden by control developers in derived classes to insert the appropriate attributes and styles to the <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> output stream for the class.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to create a class that derives from the <xref:System.Web.UI.WebControls.WebControl> class. The base implementation of the <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A> method is overridden to add attributes appropriate to the derived class in the <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> output stream.  
-  
- [!code-cs[WebControlAddAttributesToRender#1](~/add/codesnippet/csharp/ff1c2c53-dddd-43c4-ac08-_1.cs)]
- [!code-vb[WebControlAddAttributesToRender#1](~/add/codesnippet/visualbasic/ff1c2c53-dddd-43c4-ac08-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -185,7 +111,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -203,36 +128,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color of the Web server control.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the control. The default is <see cref="T:System.Drawing.Color" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the BackColor property to specify the background color of the Web server control. This property is set using a <xref:System.Drawing.Color?displayProperty=fullName> object.  
-  
-> [!NOTE]
->  This property will render only for certain controls. For example, <xref:System.Web.UI.WebControls.Table>, <xref:System.Web.UI.WebControls.Panel>, <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Calendar>, and <xref:System.Web.UI.WebControls.ValidationSummary> will render this property. It will also work for <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.RadioButtonList> and <xref:System.Web.UI.WebControls.DataList> if their `RepeatLayout` property is `RepeatLayout.Table`, and not `RepeatLayout.Flow`.  
-  
- In general, only controls that render as a `<table>` tag can display a background color in HTML 3.2, whereas almost any control can in HTML 4.0.  
-  
- For controls that render as a `<span>` tag (including <xref:System.Web.UI.WebControls.Label>, all validation controls, and list controls with their `RepeatLayout` property set to `RepeatLayout.Flow`), this property will work in Microsoft Internet Explorer version 5 or later, but not for Microsoft Internet Explorer version 4.  
-  
-   
-  
-## Examples  
- This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-vb[StyleClass#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_923_1.aspx)]
- [!code-cs[StyleClass#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_923_1.aspx)]  
-[!code-vb[StyleClass#3](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_923_2.aspx)]
-[!code-cs[StyleClass#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_923_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -242,7 +140,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -260,32 +157,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border color of the Web server control.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the border color of the control. The default is <see cref="T:System.Drawing.Color" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the BorderColor property to specify the border color of the Web server control. This property is set using a <xref:System.Drawing.Color?displayProperty=fullName> object.  
-  
-> [!NOTE]
->  This property will render only for certain controls. For example, <xref:System.Web.UI.WebControls.Table>, <xref:System.Web.UI.WebControls.Panel>, <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Calendar>, and <xref:System.Web.UI.WebControls.ValidationSummary> will render this property. It will also work for <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.RadioButtonList>, and <xref:System.Web.UI.WebControls.DataList> if their `RepeatLayout` property is `RepeatLayout.Table` and not `RepeatLayout.Flow`. However, it is rendered as the `bordercolor` attribute, which may not work in all browsers.  
-  
-   
-  
-## Examples  
- This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-vb[StyleClass#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_136_1.aspx)]
- [!code-cs[StyleClass#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_136_1.aspx)]  
-[!code-vb[StyleClass#3](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_136_2.aspx)]
-[!code-cs[StyleClass#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_136_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -295,7 +169,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -310,46 +183,9 @@
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border style of the Web server control.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.BorderStyle" /> enumeration values. The default is <see langword="NotSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the BorderStyle property to specify the border style for the Web server control. This property is set using one of the <xref:System.Web.UI.WebControls.BorderStyle> enumeration values. The following table lists the possible values.  
-  
-|Border Style|Description|  
-|------------------|-----------------|  
-|`NotSet`|The border style is not set.|  
-|`None`|No border|  
-|`Dotted`|A dotted line border.|  
-|`Dashed`|A dashed line border.|  
-|`Solid`|A solid line border.|  
-|`Double`|A solid double line border.|  
-|`Groove`|A grooved border for a sunken border appearance.|  
-|`Ridge`|A ridged border for a raised border appearance.|  
-|`Inset`|An inset border for a sunken control appearance.|  
-|`Outset`|An outset border for a raised control appearance.|  
-  
-> [!NOTE]
->  This property will not render on some browsers.  
-  
-   
-  
-## Examples  
- This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-vb[StyleClass#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_108_1.aspx)]
- [!code-cs[StyleClass#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_108_1.aspx)]  
-[!code-vb[StyleClass#3](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_108_2.aspx)]
-[!code-cs[StyleClass#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_108_2.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.BorderStyle" /> enumeration values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -359,7 +195,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -374,38 +209,9 @@
         <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border width of the Web server control.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the border width of a Web server control. The default value is <see cref="T:System.Web.UI.WebControls.Unit" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the BorderWidth property to specify a border width for a control.  
-  
-> [!NOTE]
->  This property does not work with all Web server controls. It only applies to controls that display as a table, such as <xref:System.Web.UI.WebControls.Table> and <xref:System.Web.UI.WebControls.DataGrid>.  
-  
- This property is set with a <xref:System.Web.UI.WebControls.Unit> object. If the <xref:System.Web.UI.WebControls.Unit.Value%2A> property of the <xref:System.Web.UI.WebControls.Unit> contains a negative number, an exception is thrown.  
-  
-> [!NOTE]
->  The border width can only be expressed in pixels for browsers earlier than Microsoft Internet Explorer version 5. All unit types are supported in Microsoft Internet Explorer version 5 and later. Refer to the specific control for details.  
-  
-   
-  
-## Examples  
- This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-vb[StyleClass#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_663_1.aspx)]
- [!code-cs[StyleClass#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_663_1.aspx)]  
-[!code-vb[StyleClass#3](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_663_2.aspx)]
-[!code-cs[StyleClass#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_663_2.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The specified border width is a negative value.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
@@ -415,7 +221,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -425,23 +230,9 @@
         <Parameter Name="s" Type="System.Web.UI.WebControls.Style" />
       </Parameters>
       <Docs>
-        <param name="s">A <see cref="T:System.Web.UI.WebControls.Style" /> that represents the style to copy.</param>
-        <summary>Duplicates the style properties of the specified <see cref="T:System.Web.UI.WebControls.Style" /> into the instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class that this method is called from.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CopyFrom method to duplicate the style properties of the specified <xref:System.Web.UI.WebControls.Style> into the instance of the <xref:System.Web.UI.WebControls.Style> class that this method is called from.  
-  
- When a style is registered using <xref:System.Web.UI.IStyleSheet.RegisterStyle%2A>, and then copied using CopyFrom, only the <xref:System.Web.UI.WebControls.Style.CssClass%2A> property is copied to the destination, not all the individual properties. This could lead to unexpected results if you then copy or examine the properties of the destination style. For example, if you are using <xref:System.Web.UI.WebControls.FontInfo.CopyFrom%28System.Web.UI.WebControls.FontInfo%29?displayProperty=fullName> to copy font information from the <xref:System.Web.UI.WebControls.Style.Font%2A> property of a <xref:System.Web.UI.WebControls.Style> that is registered, you will not get the individual settings of the font from the style.  
-  
-> [!CAUTION]
->  All properties, including those that have been set in the current instance of the <xref:System.Web.UI.WebControls.Style> class, will be replaced by the associated property in the <xref:System.Web.UI.WebControls.Style> specified by the `s` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Web.UI.WebControls.Style.RegisteredCssClass%2A" /> has been set.</exception>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CssClass">
@@ -451,7 +242,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -469,31 +259,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the cascading style sheet (CSS) class rendered by the Web server control on the client.</summary>
-        <value>The CSS class rendered by the Web server control on the client. The default is <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CssClass property to specify the CSS class to render on the client for the Web server control. This property will render on browsers for all controls. It will always be rendered as the `class` attribute, regardless of the browser.  
-  
- For example, suppose you have the following Web server control declaration:  
-  
-```  
-<asp:TextBox id="TextBox1" ForeColor="Red" CssClass="class1" />  
-```  
-  
- The following HTML is rendered on the client for the previous Web server control declaration:  
-  
-```  
-<input type=text class="class1" style="ForeColor:red">  
-```  
-  
-> [!NOTE]
->  On browsers that do not support CSS, setting the CssClass property will have no effect.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillStyleAttributes">
@@ -503,7 +271,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -514,17 +281,10 @@
         <Parameter Name="urlResolver" Type="System.Web.UI.IUrlResolutionService" />
       </Parameters>
       <Docs>
-        <param name="attributes">The <see cref="T:System.Web.UI.CssStyleCollection" /> object to which to add the style properties.</param>
-        <param name="urlResolver">A <see cref="T:System.Web.UI.IUrlResolutionService" /> -implemented object that contains the context information for the current location (URL).</param>
-        <summary>Adds the specified object's style properties to a <see cref="T:System.Web.UI.CssStyleCollection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the FillStyleAttributes method to add the style properties of an object to the specified <xref:System.Web.UI.CssStyleCollection?displayProperty=fullName> object. The object that you specify must implement <xref:System.Web.UI.IUrlResolutionService?displayProperty=fullName>. All classes derived from <xref:System.Web.UI.Control> implement <xref:System.Web.UI.IUrlResolutionService?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="attributes">To be added.</param>
+        <param name="urlResolver">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -534,7 +294,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -549,36 +308,9 @@
         <ReturnType>System.Web.UI.WebControls.FontInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the font properties associated with the Web server control.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.FontInfo" /> that represents the font properties of the Web server control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Font property to specify the font properties of the Web server control. This property includes subproperties that can be accessed declaratively in the form of `Property-Subproperty` (for example `Font-Bold`) or programmatically in the form of `Property.Subproperty` (for example `Font.Bold`).  
-  
- All but one subproperty will render in browsers prior to Microsoft Internet Explorer version 4 for all controls. They are: <xref:System.Web.UI.WebControls.FontInfo.Bold%2A>, <xref:System.Web.UI.WebControls.FontInfo.Italic%2A>, <xref:System.Web.UI.WebControls.FontInfo.Name%2A>, <xref:System.Web.UI.WebControls.FontInfo.Names%2A>, <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A>, <xref:System.Web.UI.WebControls.FontInfo.Underline%2A>, and <xref:System.Web.UI.WebControls.FontInfo.Size%2A> (but only named font sizes, such as `Small`, `Smaller`, and so on, will work).  
-  
-> [!NOTE]
->  Although these subproperties render in browsers prior to Microsoft Internet Explorer version 4, the HTML that is rendered is different than in later browsers. Instead of rendering as style attributes, these subproperties are rendered as HTML elements, such as `<b>` and `<font>`.  
-  
- One subproperty that will not render on some browsers is <xref:System.Web.UI.WebControls.FontInfo.Overline%2A>.  
-  
-   
-  
-## Examples  
- This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-vb[StyleClass#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1254_1.aspx)]
- [!code-cs[StyleClass#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1254_1.aspx)]  
-[!code-vb[StyleClass#3](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1254_2.aspx)]
-[!code-cs[StyleClass#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1254_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -588,7 +320,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -606,32 +337,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the foreground color (typically the color of the text) of the Web server control.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the control. The default is <see cref="T:System.Drawing.Color" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ForeColor property to specify the foreground color of the Web server control. The foreground color is usually the color of the text. This property will render on browsers earlier than Microsoft Internet Explorer version 4 for all controls, except the <xref:System.Web.UI.WebControls.Image>, <xref:System.Web.UI.WebControls.AdRotator>, <xref:System.Web.UI.WebControls.HyperLink> and <xref:System.Web.UI.WebControls.LinkButton>.  
-  
-> [!NOTE]
->  On browsers that do not support styles, this property is rendered as a FONT element.  
-  
-   
-  
-## Examples  
- This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-vb[StyleClass#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_508_1.aspx)]
- [!code-cs[StyleClass#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_508_1.aspx)]  
-[!code-vb[StyleClass#3](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_508_2.aspx)]
-[!code-cs[StyleClass#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_508_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStyleAttributes">
@@ -641,7 +349,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -651,17 +358,10 @@
         <Parameter Name="urlResolver" Type="System.Web.UI.IUrlResolutionService" />
       </Parameters>
       <Docs>
-        <param name="urlResolver">A <see cref="T:System.Web.UI.IUrlResolutionService" />-implemented object that contains the context information for the current location (URL).</param>
-        <summary>Retrieves the <see cref="T:System.Web.UI.CssStyleCollection" /> object for the specified <see cref="T:System.Web.UI.IUrlResolutionService" />-implemented object.</summary>
-        <returns>A <see cref="T:System.Web.UI.CssStyleCollection" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GetStyleAttributes method to retrieve the <xref:System.Web.UI.CssStyleCollection?displayProperty=fullName> object for a specified <xref:System.Web.UI.IUrlResolutionService?displayProperty=fullName>-implemented object. All classes derived from <xref:System.Web.UI.Control> implement <xref:System.Web.UI.IUrlResolutionService?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="urlResolver">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -671,7 +371,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -686,17 +385,9 @@
         <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the height of the Web server control.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the height of the Web server control. The default is <see cref="T:System.Web.UI.WebControls.Unit" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Height property to specify or determine the height of the Web server control. This property is set with a <xref:System.Web.UI.WebControls.Unit>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="System.Web.UI.WebControls.Unit.Value%2A" /> property of the <see cref="T:System.Web.UI.WebControls.Unit" /> is negative.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -706,7 +397,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -721,9 +411,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A protected property. Gets a value indicating whether any style elements have been defined in the state bag.</summary>
-        <value>
-          <see langword="true" /> if the state bag has no style elements defined; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -734,24 +423,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a value indicating whether any style elements have been defined in the state bag.</summary>
-        <value>
-          <see langword="true" /> if there are style elements defined in the state bag; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the IsTrackingViewState property to determine whether any style elements have been defined in the state bag. This property is primarily used by control developers.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -761,7 +441,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -771,8 +450,8 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">The previously saved state.</param>
-        <summary>Loads the previously saved state.</summary>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,7 +462,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -793,21 +471,9 @@
         <Parameter Name="s" Type="System.Web.UI.WebControls.Style" />
       </Parameters>
       <Docs>
-        <param name="s">A <see cref="T:System.Web.UI.WebControls.Style" /> that represents the style to combine.</param>
-        <summary>Combines the style properties of the specified <see cref="T:System.Web.UI.WebControls.Style" /> with the instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class that this method is called from.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the MergeWith method to combine the style properties of the specified <xref:System.Web.UI.WebControls.Style> with the instance of the <xref:System.Web.UI.WebControls.Style> class that this method is called from.  
-  
-> [!CAUTION]
->  All properties, except those that have already been set on the current instance of the Style class, will be replaced by the corresponding property of the <xref:System.Web.UI.WebControls.Style> specified by the `s` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Web.UI.WebControls.Style.RegisteredCssClass%2A" /> has been set.</exception>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisteredCssClass">
@@ -817,7 +483,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -835,18 +500,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the cascading style sheet (CSS) class that is registered with the control.</summary>
-        <value>The CSS class name with which the current instance was registered on the page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the RegisteredCssClass property to retrieve the CSS class that is registered with the control.  
-  
- A style is registered on the current page with a <xref:System.Web.UI.IStyleSheet.RegisterStyle%2A> method, which looks for a `<head runat="server"``>` element on the page where the properties in the current instance are placed in an embedded style sheet, represented by a `<style>` element, under a class name unique to the associated control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -856,7 +512,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -864,15 +519,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes any defined style elements from the state bag.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to remove any defined style elements from the state bag.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -882,7 +530,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -890,8 +537,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>A protected method. Saves any state that has been modified after the <see cref="System.Web.UI.WebControls.Style.TrackViewState%2A" /> method was invoked.</summary>
-        <returns>An object that represents the saved state. The default is <see langword="null" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -902,7 +549,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -912,8 +558,8 @@
         <Parameter Name="bit" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="bit">A bitmask value.</param>
-        <summary>A protected internal method. Sets an internal bitmask field that indicates the style properties that are stored in the state bag.</summary>
+        <param name="bit">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -924,7 +570,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -932,15 +577,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Marks the <see cref="T:System.Web.UI.WebControls.Style" /> so that its state will be recorded in view state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SetDirty method is called directly by the <xref:System.Web.UI.WebControls.StyleCollection.SetDirtyObject%2A> method of a <xref:System.Web.UI.WebControls.StyleCollection>, to mark a <xref:System.Web.UI.WebControls.Style> object so that its state is recorded in view state.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -950,24 +588,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether a server control is tracking its view state changes.</summary>
-        <value>
-          <see langword="true" /> if there are style elements defined in the view state bag; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Style> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -977,7 +606,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -987,16 +615,9 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">The previously saved state.</param>
-        <summary>Loads the previously saved state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Style> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -1006,7 +627,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1014,16 +634,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the object containing state changes.</summary>
-        <returns>An object that represents the saved state. The default is <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Style> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -1033,7 +646,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1041,15 +653,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Starts tracking state changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Style> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1059,7 +664,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1067,7 +671,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>A protected method. Marks the beginning for tracking state changes on the control. Any changes made after tracking has begun will be tracked and saved as part of the control view state.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1078,7 +682,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1093,16 +696,9 @@
         <ReturnType>System.Web.UI.StateBag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the state bag that holds the style elements.</summary>
-        <value>A state bag that holds the style elements defined in it.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The private field name for the state bag is case sensitive.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1112,7 +708,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1127,17 +722,9 @@
         <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width of the Web server control.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the width of the Web server control. The default is <see cref="T:System.Web.UI.WebControls.Unit" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Width property to specify or determine the width of the Web server control. This property is set with a <xref:System.Web.UI.WebControls.Unit>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="System.Web.UI.WebControls.Unit.Value%2A" /> property of the <see cref="T:System.Web.UI.WebControls.Unit" /> is negative.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

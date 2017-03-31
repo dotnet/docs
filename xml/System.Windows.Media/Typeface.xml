@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Typeface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a combination of <see cref="T:System.Windows.Media.FontFamily" />, <see cref="T:System.Windows.FontWeight" />, <see cref="T:System.Windows.FontStyle" />, and <see cref="T:System.Windows.FontStretch" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A typeface is a single variation of a font within the same font family. An example of a typeface is an italic version of the "Times New Roman" font family. Typeface defines the weight, style and stretching features of a font.  
-  
-   
-  
-## Examples  
- [!code-cs[FontSnippets#102](~/add/codesnippet/csharp/FontSnippets/Window1.xaml.cs#102)]
- [!code-vb[FontSnippets#102](~/add/codesnippet/visualbasic/fontsnippets/window1.xaml.vb#102)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,24 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="typefaceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="typefaceName">The typeface name for the specified font family.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class for the specified font family typeface name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[FontSnippets#105](~/add/codesnippet/csharp/FontSnippets/Window1.xaml.cs#105)]
- [!code-vb[FontSnippets#105](~/add/codesnippet/visualbasic/fontsnippets/window1.xaml.vb#105)]  
-  
- ]]></format>
-        </remarks>
+        <param name="typefaceName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,20 +49,12 @@
         <Parameter Name="stretch" Type="System.Windows.FontStretch" />
       </Parameters>
       <Docs>
-        <param name="fontFamily">The font family of the typeface.</param>
-        <param name="style">The style of the typeface.</param>
-        <param name="weight">The relative weight of the typeface.</param>
-        <param name="stretch">The degree to which the typeface is stretched.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class for the specified font family name, <see cref="System.Windows.Media.Typeface.Style%2A" />, <see cref="System.Windows.Media.Typeface.Weight%2A" />, and <see cref="System.Windows.Media.Typeface.Stretch%2A" /> values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[FontSnippets#105](~/add/codesnippet/csharp/FontSnippets/Window1.xaml.cs#105)]
- [!code-vb[FontSnippets#105](~/add/codesnippet/visualbasic/fontsnippets/window1.xaml.vb#105)]  
-  
- ]]></format>
-        </remarks>
+        <param name="fontFamily">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="weight">To be added.</param>
+        <param name="stretch">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -96,7 +64,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -107,26 +74,13 @@
         <Parameter Name="fallbackFontFamily" Type="System.Windows.Media.FontFamily" />
       </Parameters>
       <Docs>
-        <param name="fontFamily">The font family of the typeface.</param>
-        <param name="style">The style of the typeface.</param>
-        <param name="weight">The relative weight of the typeface.</param>
-        <param name="stretch">The degree to which the typeface is stretched.</param>
-        <param name="fallbackFontFamily">The font family that is used when a character is encountered that the primary font family (specified by the <c>fontFamily</c> parameter) cannot display.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class for the specified font family name, <see cref="System.Windows.Media.Typeface.Style%2A" />, <see cref="System.Windows.Media.Typeface.Weight%2A" />, and <see cref="System.Windows.Media.Typeface.Stretch%2A" /> values. In addition, a fallback font family is specified.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Passing `null` for the `fallbackFontFamily` parameter causes box characters to be displayed for characters not included in the primary font family.  
-  
-   
-  
-## Examples  
- [!code-cs[FontSnippets#105](~/add/codesnippet/csharp/FontSnippets/Window1.xaml.cs#105)]
- [!code-vb[FontSnippets#105](~/add/codesnippet/visualbasic/fontsnippets/window1.xaml.vb#105)]  
-  
- ]]></format>
-        </remarks>
+        <param name="fontFamily">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="weight">To be added.</param>
+        <param name="stretch">To be added.</param>
+        <param name="fallbackFontFamily">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CapsHeight">
@@ -136,23 +90,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the distance from the baseline to the top of an English capital letter for the typeface.</summary>
-        <value>A <see cref="T:System.Double" /> that indicates the distance from the baseline to the top of an English capital letter, expressed as a fraction of the font em size.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A return value of `1` indicates that the top of an English capital letter is one font em above the baseline, while a return value of `0.5` indicates that it is half a font em above the baseline.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -162,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,10 +117,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The <see cref="T:System.Windows.Media.Typeface" /> to compare.</param>
-        <summary>Gets a value that indicates whether the current typeface and the specified typeface have the same <see cref="System.Windows.Media.Typeface.FontFamily%2A" />, <see cref="System.Windows.Media.Typeface.Style%2A" />, <see cref="System.Windows.Media.Typeface.Weight%2A" />, <see cref="System.Windows.Media.Typeface.Stretch%2A" />, and fallback font values.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="o" /> is equal to the current <see cref="T:System.Windows.Media.Typeface" /> object; otherwise, <see langword="false" />. If <paramref name="o" /> is not a <see cref="T:System.Windows.Media.Typeface" /> object, <see langword="false" /> is returned.</returns>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,15 +130,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.LanguageSpecificStringDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of culture-specific names for the <see cref="T:System.Windows.Media.Typeface" />.</summary>
-        <value>A <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> value that represents the culture-specific names for the typeface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,15 +148,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the font family from which the typeface was constructed.</summary>
-        <value>The <see cref="T:System.Windows.Media.FontFamily" /> from which the typeface was constructed.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,7 +166,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -232,8 +173,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Serves as a hash function for <see cref="T:System.Windows.Media.Typeface" />. It is suitable for use in hashing algorithms and data structures such as a hash table.</summary>
-        <returns>An <see cref="T:System.Int32" /> value that represents the hash code for the current object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,24 +185,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether to simulate a bold weight for the glyphs represented by the <see cref="T:System.Windows.Media.Typeface" />.</summary>
-        <value>
-          <see langword="true" /> if bold simulation is used for glyphs; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Media.Typeface> can simulate a bold weight by stretching a glyph. A non-simulated bold typeface is typically designed to have a better visual appearance than a simulated bold typeface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsObliqueSimulated">
@@ -271,24 +203,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether to simulate an italic style for the glyphs represented by the <see cref="T:System.Windows.Media.Typeface" />.</summary>
-        <value>
-          <see langword="true" /> if italic simulation is used for glyphs; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Media.Typeface> can simulate an italic style by shearing, or slanting, a glyph. A non-simulated italic typeface is typically designed to have a better visual appearance than a simulated italic typeface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
@@ -298,29 +221,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the stretch value for the <see cref="T:System.Windows.Media.Typeface" />. The stretch value determines whether a typeface is expanded or condensed when it is displayed.</summary>
-        <value>A <see cref="T:System.Windows.FontStretch" /> value that represents the stretch value for the typeface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A font stretch value describes the degree to which a font form is stretched from its normal aspect ratio, which is the original width to height ratio specified for the glyphs in the font.  
-  
-   
-  
-## Examples  
- [!code-cs[FontSnippets#108](~/add/codesnippet/csharp/FontSnippets/Window1.xaml.cs#108)]
- [!code-vb[FontSnippets#108](~/add/codesnippet/visualbasic/fontsnippets/window1.xaml.vb#108)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrikethroughPosition">
@@ -330,23 +239,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the distance from the baseline to the strikethrough for the typeface.</summary>
-        <value>A <see cref="T:System.Double" /> that indicates the strikethrough position, measured from the baseline and expressed as a fraction of the font em size.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A return value of `0.1` indicates that the strikethrough position is one-tenth of a font em above the baseline, while a return value of `0.25` indicates that its one-fourth of a font em above the baseline.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrikethroughThickness">
@@ -356,23 +257,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the thickness of the strikethrough relative to the font em size.</summary>
-        <value>A <see cref="T:System.Double" /> that indicates the strikethrough thickness, expressed as a fraction of the font em size.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A return value of `0.05` indicates that the strikethrough thickness is one-twentieth of the font em size, while a return value of `0.1` indicates that the strikethrough thickness is  one-tenth of the font em size.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -382,29 +275,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the style of the <see cref="T:System.Windows.Media.Typeface" />.</summary>
-        <value>A <see cref="T:System.Windows.FontStyle" /> value that represents the style value for the typeface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Three terms categorize the slant of a font: normal, oblique, and italic.  
-  
-   
-  
-## Examples  
- [!code-cs[FontSnippets#109](~/add/codesnippet/csharp/FontSnippets/Window1.xaml.cs#109)]
- [!code-vb[FontSnippets#109](~/add/codesnippet/visualbasic/fontsnippets/window1.xaml.vb#109)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetGlyphTypeface">
@@ -414,7 +293,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -424,19 +302,10 @@
         <Parameter Name="glyphTypeface" Type="System.Windows.Media.GlyphTypeface&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="glyphTypeface">
-          <see cref="T:System.Windows.Media.GlyphTypeface" /> object that corresponds to this typeface, or <see langword="null" /> if the typeface was constructed from a composite font.</param>
-        <summary>Retrieves the <see cref="T:System.Windows.Media.GlyphTypeface" /> that corresponds to the <see cref="T:System.Windows.Media.Typeface" />.</summary>
-        <returns>
-          <see langword="true" /> if the out parameter is set to a <see cref="T:System.Windows.Media.GlyphTypeface" /> value; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Media.GlyphTypeface> is font face that directly corresponds to a font file on the disk. A <xref:System.Windows.Media.Typeface>, however, is a representation of font face.  
-  
- ]]></format>
-        </remarks>
+        <param name="glyphTypeface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnderlinePosition">
@@ -446,23 +315,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the distance of the underline from the baseline for the typeface.</summary>
-        <value>A <see cref="T:System.Double" /> that indicates the underline position, measured from the baseline and expressed as a fraction of the font em size.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The return value is usually negative, to place the underline below the baseline. For example, a return value of `-0.1` indicates that the underline position is one-tenth of a font em below the baseline, while a return value of `-0.25` indicates that it is one-fourth of a font em below the baseline.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnderlineThickness">
@@ -472,23 +333,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the thickness of the underline relative to the font em size for the typeface.</summary>
-        <value>A <see cref="T:System.Double" /> that indicates the underline thickness, expressed as a fraction of the font em size.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A return value of `0.05` indicates that the underline thickness is one-twentieth of the font em size, while a return value of `0.1` indicates that the underline thickness is one-tenth of the font em size.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Weight">
@@ -498,31 +351,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the relative weight of the typeface.</summary>
-        <value>A <see cref="T:System.Windows.FontWeight" /> value that represents the relative weight of the typeface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Weight differences are generally differentiated by an increased stroke or thickness associated with a given character in a typeface, as compared to a "normal" character from that same typeface.  
-  
- **Note** Not all weights are available for all typefaces. When a weight is not available for a typeface, the closest matching weight is returned.  
-  
-   
-  
-## Examples  
- [!code-cs[FontSnippets#110](~/add/codesnippet/csharp/FontSnippets/Window1.xaml.cs#110)]
- [!code-vb[FontSnippets#110](~/add/codesnippet/visualbasic/fontsnippets/window1.xaml.vb#110)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XHeight">
@@ -532,23 +369,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the distance from the baseline to the top of an English lowercase letter for a typeface. The distance excludes ascenders.</summary>
-        <value>A <see cref="T:System.Double" /> that indicates the distance from the baseline to the top of an English lowercase letter (excluding ascenders), expressed as a fraction of the font em size.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A return value of `0.25` indicates that the top of an English letter is one-fourth of a font em above the baseline, while a return value of `0.75` indicates that the top of an English letter is three-fourths of a font em above the baseline.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ImeSentenceModeValues" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,18 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the mode of sentence conversion performed by an input method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.ImeSentenceMode%2A> property.  
-  
- [!code-vb[languageManager#2](~/add/codesnippet/visualbasic/inputmanager/window1.xaml.vb#2)]
- [!code-cs[languageManager#2](~/add/codesnippet/csharp/inputmanager/Window1.xaml.cs#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Automatic">
@@ -37,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The input method uses the sentence conversion method automatically.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Conversation">
@@ -54,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The input method uses conversation-style sentence conversion.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DoNotCare">
@@ -71,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The input method does not care what sentence conversion method is used; the actual sentence conversion mode is indeterminate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -88,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The input method does not perform any sentence conversion.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhrasePrediction">
@@ -105,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The input method uses phrase prediction sentence conversion.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PluralClause">
@@ -122,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The input method uses plural clause sentence conversion.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleConversion">
@@ -139,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The input method uses single Kanji/Hanja sentence conversion.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

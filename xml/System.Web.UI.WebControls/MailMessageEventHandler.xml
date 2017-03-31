@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MailMessageEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,28 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">A <see cref="T:System.Web.UI.WebControls.MailMessageEventArgs" /> that contains the mail message data for the event.</param>
-    <summary>Represents the method that handles mail events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MailMessageEventHandler delegate modifies the contents of an Internet e-mail message before the message is sent to the recipients. For example, you can add additional recipients or a custom message footer identifying your Web site to all messages using this handler.  
-  
- The `e` parameter is a <xref:System.Web.UI.WebControls.MailMessageEventArgs> instance that contains the e-mail message specified in the <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property.  
-  
- When you create a MailMessageEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code example creates a MailMessageEventHandler instance to modify an e-mail message before sending it to the recipient.  
-  
- [!code-cs[PasswordRecoveryOnBeforeSendMail#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_152_1.aspx)]
- [!code-vb[PasswordRecoveryOnBeforeSendMail#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_152_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

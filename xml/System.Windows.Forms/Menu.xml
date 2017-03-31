@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Menu" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,30 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the base functionality for all menus. Although <see cref="T:System.Windows.Forms.ToolStripDropDown" /> and <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> replace and add functionality to the Menu control of previous versions, Menu is retained for both backward compatibility and future use if you choose.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is the base class for the <xref:System.Windows.Forms.MainMenu>, <xref:System.Windows.Forms.MenuItem>, and <xref:System.Windows.Forms.ContextMenu> classes. You cannot create an instance of this class. The menus for an application consist of <xref:System.Windows.Forms.MenuItem> objects. These can contain other <xref:System.Windows.Forms.MenuItem> objects, representing submenu items. The <xref:System.Windows.Forms.MenuItem> objects can be stored in a <xref:System.Windows.Forms.MainMenu> for display as an entire menu structure for a form or a <xref:System.Windows.Forms.ContextMenu> that is used to display shortcut menus. This class provides functionality that is common for all the menu classes.  
-  
- Unlike many base classes, the Menu class uses its derived classes to define many of its properties. If you are using your menu in a multiple-document interface (MDI) application, you can use the <xref:System.Windows.Forms.Menu.MdiListItem%2A> property to specify a <xref:System.Windows.Forms.MenuItem> that displays a list of open MDI child forms in your application. The <xref:System.Windows.Forms.Menu.MenuItems%2A> property contains a list of <xref:System.Windows.Forms.MenuItem> objects stored in the menu class. For a <xref:System.Windows.Forms.MainMenu> or <xref:System.Windows.Forms.ContextMenu>, this property contains all the <xref:System.Windows.Forms.MenuItem> objects that are displayed. For a <xref:System.Windows.Forms.MenuItem>, the <xref:System.Windows.Forms.Menu.MenuItems%2A> property represents the submenu items associated with it.  
-  
- In addition to the properties that are provided for all the derived menu classes, the Menu class also provides methods, such as <xref:System.Windows.Forms.Menu.CloneMenu%2A> and <xref:System.Windows.Forms.Menu.MergeMenu%2A>, that enable you to create new menus from existing menus, and also merge two menu structures together.  
-  
- The Menu class also defines the nested class <xref:System.Windows.Forms.Menu.MenuItemCollection>. This class defines the collection of <xref:System.Windows.Forms.MenuItem> objects used by the <xref:System.Windows.Forms.Menu.MenuItems%2A> property. You can use the methods of the <xref:System.Windows.Forms.Menu.MenuItemCollection> class to add and remove menu items from a <xref:System.Windows.Forms.MainMenu>, <xref:System.Windows.Forms.ContextMenu>, or <xref:System.Windows.Forms.MenuItem>.  
-  
-   
-  
-## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.MenuItem>, to create a menu structure for a form. The example code adds a <xref:System.Windows.Forms.MenuItem> to represent the top-level menu item, adds a submenu item to it for selecting a font size, and then adds two submenu items to that menu item that represent large and small font choices in an application. The example requires that there is a <xref:System.Windows.Forms.MainMenu> object named `mainMenu1` and four <xref:System.Windows.Forms.MenuItem> objects named `menuItem1`, `menuItem2`, `menuItem3`, and `menuItem4`.  
-  
- [!code-cpp[Classic Menu Example#1](~/add/codesnippet/cpp/t-system.windows.forms.m_4_1.cpp)]
- [!code-cs[Classic Menu Example#1](~/add/codesnippet/csharp/t-system.windows.forms.m_4_1.cs)]
- [!code-vb[Classic Menu Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.m_4_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,23 +30,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="items" Type="System.Windows.Forms.MenuItem[]" />
       </Parameters>
       <Docs>
-        <param name="items">An array of type <see cref="T:System.Windows.Forms.MenuItem" /> containing the objects to add to the menu.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Menu" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Since <xref:System.Windows.Forms.Menu> is an abstract class, only inherited classes can call the Menu constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneMenu">
@@ -79,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,25 +57,9 @@
         <Parameter Name="menuSrc" Type="System.Windows.Forms.Menu" />
       </Parameters>
       <Docs>
-        <param name="menuSrc">The <see cref="T:System.Windows.Forms.Menu" /> to copy.</param>
-        <summary>Copies the <see cref="T:System.Windows.Forms.Menu" /> that is passed as a parameter to the current <see cref="T:System.Windows.Forms.Menu" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method copies the entire list of <xref:System.Windows.Forms.MenuItem> objects (stored in the <xref:System.Windows.Forms.Menu> passed in to `menuSrc`) into the current menu. You can use this method in your derived class to clone <xref:System.Windows.Forms.MenuItem> objects. They can then be reused by other classes that derive from <xref:System.Windows.Forms.Menu>, such as <xref:System.Windows.Forms.MainMenu>, <xref:System.Windows.Forms.ContextMenu>, and <xref:System.Windows.Forms.MenuItem>.  
-  
-   
-  
-## Examples  
- This example creates a main menu, `mainMenu1`, with three menu items: `File`, `Edit`, and `View`. It then uses the CloneMenu method to copy `mainMenu1` into `mainMenu2`. The cloned menu is then assigned to the form and displayed. This program requires that you have already created a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-cs[CloneMenu#1](~/add/codesnippet/csharp/m-system.windows.forms.m_6_1.cs)]
- [!code-vb[CloneMenu#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_6_1.vb)]
- [!code-cpp[CloneMenu#1](~/add/codesnippet/cpp/m-system.windows.forms.m_6_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="menuSrc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMenuHandle">
@@ -117,7 +69,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,10 +76,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new handle to the <see cref="T:System.Windows.Forms.Menu" />.</summary>
-        <returns>A handle to the menu if the method succeeds; otherwise, <see langword="null" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -138,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,20 +97,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Disposes of the resources, other than memory, used by the <see cref="T:System.Windows.Forms.Menu" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call Dispose when you are finished using the <xref:System.Windows.Forms.Menu>. The Dispose method leaves the <xref:System.Windows.Forms.Menu> in an unusable state. After calling Dispose, you must release all references to the <xref:System.Windows.Forms.Menu> so the memory it was occupying can be reclaimed by garbage collection.  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.Windows.Forms.Menu>. Otherwise, the resources the <xref:System.Windows.Forms.Menu> is using will not be freed until garbage collection calls the <xref:System.Windows.Forms.Menu> object's destructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindHandle">
@@ -171,7 +109,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,7 +116,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Specifies that the <see cref="System.Windows.Forms.Menu.FindMenuItem%2A" /> method should search for a handle.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,21 +137,11 @@
         <Parameter Name="value" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="type">The type of item to use to find the <see cref="T:System.Windows.Forms.MenuItem" />.</param>
-        <param name="value">The item to use to find the <see cref="T:System.Windows.Forms.MenuItem" />.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.MenuItem" /> that contains the value specified.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.MenuItem" /> that matches value; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To search for a <xref:System.Windows.Forms.MenuItem> using a handle, pass in the <xref:System.Windows.Forms.Menu.FindHandle> field as the type, and the handle of the <xref:System.Windows.Forms.MenuItem> you want to find as the value.  
-  
- To search for a <xref:System.Windows.Forms.MenuItem> using a shortcut, pass in the <xref:System.Windows.Forms.Menu.FindShortcut> field as the type, and the Shortcut value for the <xref:System.Windows.Forms.MenuItem> you want to find as the value.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for controls to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="type">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindMergePosition">
@@ -225,7 +151,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,17 +160,10 @@
         <Parameter Name="mergeOrder" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="mergeOrder">The merge order position for the menu item to be merged.</param>
-        <summary>Returns the position at which a menu item should be inserted into the menu.</summary>
-        <returns>The position at which a menu item should be inserted into the menu.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The merge order of a menu item specifies the relative position that this menu item will assume if the menu structure that the <xref:System.Windows.Forms.MenuItem> is contained in is merged with another.  
-  
- ]]></format>
-        </remarks>
+        <param name="mergeOrder">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindShortcut">
@@ -255,7 +173,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,7 +180,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that the <see cref="System.Windows.Forms.Menu.FindMenuItem%2A" /> method should search for a shortcut.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +191,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -282,25 +198,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.ContextMenu" /> that contains this menu.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.ContextMenu" /> that contains this menu. The default is <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method allows you to obtain a reference to the <xref:System.Windows.Forms.ContextMenu> that this menu is contained in. This property returns `null` if the menu is not contained in a <xref:System.Windows.Forms.ContextMenu>. This can occur if the menu is contained in a <xref:System.Windows.Forms.MenuItem> or <xref:System.Windows.Forms.MainMenu>, or if the menu is not contained in any menu. You can use this property to determine whether a menu is currently being used, and also to determine where.  
-  
-   
-  
-## Examples  
- In this example, you use the GetContextMenu method to obtain a reference to the shortcut menu that contains `menuItem1` or `menuItem2`, and display the shortcut menu information in a message box. You programmatically create a shortcut menu with two items, `New` and `Open`. You then add functionality to these items by creating the appropriate event handlers. When you run the example, you get a message box that tells you to right-click the form in order to display the shortcut menu. Then, when you click a menu item, you get another message that tells which item has been clicked and displays the information on the containing shortcut menu. This example requires that you have already created a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-cs[GetContextMenu2#1](~/add/codesnippet/csharp/m-system.windows.forms.m_15_1.cs)]
- [!code-cpp[GetContextMenu2#1](~/add/codesnippet/cpp/m-system.windows.forms.m_15_1.cpp)]
- [!code-vb[GetContextMenu2#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_15_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMainMenu">
@@ -310,7 +210,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,25 +217,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.MainMenu" /> that contains this menu.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.MainMenu" /> that contains this menu.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method allows you to obtain a reference to the <xref:System.Windows.Forms.MainMenu> this menu is currently located in. This property returns `null` if the menu is not contained in a <xref:System.Windows.Forms.MainMenu>. This can occur if the menu is contained in a <xref:System.Windows.Forms.MenuItem> or <xref:System.Windows.Forms.ContextMenu>, or if the menu is not contained in any menu. You can use this property to determine whether a menu is currently being used, and also to determine where.  
-  
-   
-  
-## Examples  
- This example declares a <xref:System.Windows.Forms.MainMenu>, `mainMenu1`, and four menu items, `menuItem1`, `menuItem2`, `menuItem3`, and `menuItem4`. Only the first three menu items are added to `mainMenu1` for display. The program then checks to see if `menuItem3` is being used, which is `true`, and determines the form in which it is used. A label text is used to display the name of the form that hosts the <xref:System.Windows.Forms.MainMenu>. If you change the menu item being tested to `menuItem4`, the condition evaluates to `false` because `menuItem4` has never been used. This example requires that you have created a <xref:System.Windows.Forms.Form> named `MyForm` that includes a <xref:System.Windows.Forms.Label> named `label1`.  
-  
- [!code-cpp[GetMainMenu#1](~/add/codesnippet/cpp/m-system.windows.forms.m_8_1.cpp)]
- [!code-cs[GetMainMenu#1](~/add/codesnippet/csharp/m-system.windows.forms.m_8_1.cs)]
- [!code-vb[GetMainMenu#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -346,7 +229,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -364,16 +246,9 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value representing the window handle for the menu.</summary>
-        <value>The HMENU value of the menu.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to obtain the handle to the menu to perform special operations to the menu outside of the functionality provided by this class or its derived classes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsParent">
@@ -383,7 +258,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -398,27 +272,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this menu contains any menu items. This property is read-only.</summary>
-        <value>
-          <see langword="true" /> if this menu contains <see cref="T:System.Windows.Forms.MenuItem" /> objects; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method to determine whether any <xref:System.Windows.Forms.MenuItem> objects are assigned to this menu. This is equivalent to checking for `null` in the <xref:System.Windows.Forms.Menu.MenuItems%2A> property.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.MainMenu> with two <xref:System.Windows.Forms.MenuItem> objects. It then uses the IsParent property to determine whether `mainMenu1` contains menu items. If the condition evaluates `true`, it sets the <xref:System.Windows.Forms.MainMenu.RightToLeft%2A> property to `true` and binds the main menu to the <xref:System.Windows.Forms.Form>. This example requires that you have a <xref:System.Windows.Forms.Form> created that is named `Form1`.  
-  
- [!code-cpp[IsParent#1](~/add/codesnippet/cpp/p-system.windows.forms.m_9_1.cpp)]
- [!code-cs[IsParent#1](~/add/codesnippet/csharp/p-system.windows.forms.m_9_1.cs)]
- [!code-vb[IsParent#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MdiListItem">
@@ -428,7 +284,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -443,16 +298,9 @@
         <ReturnType>System.Windows.Forms.MenuItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the <see cref="T:System.Windows.Forms.MenuItem" /> that is used to display a list of multiple document interface (MDI) child forms.</summary>
-        <value>A <see cref="T:System.Windows.Forms.MenuItem" /> that represents the menu item displaying a list of MDI child forms that are open in the application.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to determine whether a <xref:System.Windows.Forms.MenuItem> has been specified to display the list of open child windows in an MDI application. To use a specific <xref:System.Windows.Forms.MenuItem> as an MDI list, set the <xref:System.Windows.Forms.MenuItem.MdiList%2A> property in the <xref:System.Windows.Forms.MenuItem> to be used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuItems">
@@ -462,7 +310,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -480,25 +327,9 @@
         <ReturnType>System.Windows.Forms.Menu+MenuItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the collection of <see cref="T:System.Windows.Forms.MenuItem" /> objects associated with the menu.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Menu.MenuItemCollection" /> that represents the list of <see cref="T:System.Windows.Forms.MenuItem" /> objects stored in the menu.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to obtain a reference to the list of menu items that are currently stored in the menu. For <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> objects, the MenuItems property contains the entire menu structure in the control. For the <xref:System.Windows.Forms.MenuItem> class, the MenuItems property contains the list of submenu items associated with the <xref:System.Windows.Forms.MenuItem>. With the reference to the collection of menu items for the menu (provided by this property), you can add and remove menu items, determine the total number of menu items, and clear the list of menu items from the collection. For more information on maintaining the menu item collection for a menu, see the <xref:System.Windows.Forms.Menu.MenuItemCollection?displayProperty=fullName> documentation.  
-  
-   
-  
-## Examples  
- The following code example creates an instance of the derived class, <xref:System.Windows.Forms.MainMenu>, and adds a <xref:System.Windows.Forms.MenuItem> object to its collection of <xref:System.Windows.Forms.MenuItem> objects. This example requires that the method defined in this example is located within the class for a form and called by a method in that form class.  
-  
- [!code-vb[Classic Menu.MenuItems Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_29_1.vb)]
- [!code-cpp[Classic Menu.MenuItems Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_29_1.cpp)]
- [!code-cs[Classic Menu.MenuItems Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_29_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeMenu">
@@ -508,7 +339,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -518,32 +348,9 @@
         <Parameter Name="menuSrc" Type="System.Windows.Forms.Menu" />
       </Parameters>
       <Docs>
-        <param name="menuSrc">The <see cref="T:System.Windows.Forms.Menu" /> whose menu items are merged with the menu items of the current menu.</param>
-        <summary>Merges the <see cref="T:System.Windows.Forms.MenuItem" /> objects of one menu with the current menu.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method merges <xref:System.Windows.Forms.MenuItem> objects from one menu with the current menu. <xref:System.Windows.Forms.MenuItem> objects are merged according to the values of the <xref:System.Windows.Forms.MenuItem.MergeType%2A?displayProperty=fullName> and <xref:System.Windows.Forms.MenuItem.MergeOrder%2A?displayProperty=fullName> properties.  
-  
- Menu merging is typically done to merge the menus of a Multiple Document Interface (MDI) parent form with those of its active MDI child form. This is performed automatically by the .NET Framework common language runtime. For example, if an MDI parent form contains a set of menus for handling files and your MDI child form also has file-related menu items, the menu sets will automatically merge into a single file menu set when the child form is displayed in the MDI parent form.  
-  
- You can use the MergeMenu method if you are merging two menu structures that are not part of an MDI application. This implementation can be called by the <xref:System.Windows.Forms.MainMenu> or <xref:System.Windows.Forms.ContextMenu> classes to merge two or more objects that derive from <xref:System.Windows.Forms.Menu>.  
-  
- To merge two <xref:System.Windows.Forms.MenuItem> objects use the <xref:System.Windows.Forms.MenuItem.MergeMenu%2A?displayProperty=fullName> method.  
-  
-   
-  
-## Examples  
- This example creates two menus, `mainMenu1` and `mainMenu2`. The first menu contains one <xref:System.Windows.Forms.MenuItem>, `File`, and the second contains one <xref:System.Windows.Forms.MenuItem>, `Edit`. Using the MergeMenu method, `mainMenu2` is merged with `mainMenu1`. When displayed, `mainMenu1` will contain the two menu items, `File` and `Edit`. This example requires that you have created a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-cs[MergeMenu#1](~/add/codesnippet/csharp/m-system.windows.forms.m_25_1.cs)]
- [!code-cpp[MergeMenu#1](~/add/codesnippet/cpp/m-system.windows.forms.m_25_1.cpp)]
- [!code-vb[MergeMenu#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_25_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">It was attempted to merge the menu with itself.</exception>
+        <param name="menuSrc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -553,7 +360,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -568,16 +374,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.Windows.Forms.Menu" />.</summary>
-        <value>A string representing the name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- At design time, this property is set to the programmatic identifier of the control. However, this property has no bearing on the control at run time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
@@ -587,7 +386,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -598,11 +396,10 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="msg">A <see cref="T:System.Windows.Forms.Message" />, passed by reference that represents the window message to process.</param>
-        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a command key.</summary>
-        <returns>
-          <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
+        <param name="msg">To be added.</param>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -613,7 +410,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -634,8 +430,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets user-defined data associated with the control.</summary>
-        <value>An object representing the data.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -646,7 +442,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -654,16 +449,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> that represents the <see cref="T:System.Windows.Forms.Menu" /> control.</summary>
-        <returns>A <see cref="T:System.String" /> that represents the current <see cref="T:System.Windows.Forms.Menu" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToString method returns a <xref:System.String> that includes the type and the number of items in the <xref:System.Windows.Forms.Menu.MenuItems%2A> property of the control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

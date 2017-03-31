@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNodeTypes" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,34 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the different node types (leaf, parent, and root) in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TreeNodeTypes enumeration is used to represent the different node types that are available in the <xref:System.Web.UI.WebControls.TreeView> control. The following table describes the three different node types.  
-  
-|Node type|Description|  
-|---------------|-----------------|  
-|Leaf|A node with no child nodes.|  
-|Parent|A node with a parent node and one or more child nodes.|  
-|Root|A node with no parent node and one or more child nodes.|  
-  
- The TreeNodeTypes enumeration is a flag enumeration, which allows you to combine values through bitwise operations. For example, to represent the parent and leaf nodes, you can perform a bitwise `OR` operation on the Parent and Leaf values.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A> property uses the TreeNodeTypes enumeration to represent the node types that display check boxes in the <xref:System.Web.UI.WebControls.TreeView> control. When it is set to a value other than the None value, check boxes are displayed next to the specified node type, which allows users to select multiple items from the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TreeNodeTypes enumeration to indicate that the <xref:System.Web.UI.WebControls.TreeView> control should show a check box for each of the parent and leaf nodes only.  
-  
- [!code-vb[TreeViewShowCheckBoxes#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_407_1.aspx)]
- [!code-cs[TreeViewShowCheckBoxes#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_407_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -53,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All nodes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Leaf">
@@ -70,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A node with no child nodes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -87,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No nodes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -104,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A node with a parent node and one or more child nodes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -121,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A node with no parent node and one or more child nodes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

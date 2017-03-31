@@ -10,17 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies where a chart element, such as a legend or title, will be docked on the chart.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Docking enumeration represents the docking location on the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control that an chart element should be docked.  
-  
- Set the `IsDockedInsideChartArea` property of the relevant chart element to specify whether that element will be docked to the entire chart image or to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea>object. The chart area is specified in the [DockedToChartArea](assetId:///DockedToChartArea?qualifyHint=False&amp;autoUpgrade=True) property of the chart element.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -36,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Docked to the bottom of either the chart image or a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -52,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Docked to the left of either the chart image or a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -68,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Docked to the right of either the chart image or a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -84,7 +75,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Docked to the top of either the chart image or a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

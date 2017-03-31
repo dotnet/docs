@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceHostBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,33 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Extends the ServiceHostBase class to implement hosts that expose custom programming models.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ServiceHostBase class to create hosts that provide a custom programming model. The [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] service programming model uses the <xref:System.ServiceModel.ServiceHost> class.  
-  
- Special note for Managed C++ users deriving from this class:  
-  
--   Put your cleanup code in (On)(Begin)Close (and/or OnAbort), not in a destructor.  
-  
--   Avoid destructors; they cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
--   Avoid non-reference members; they can cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
--   Avoid finalizers; but if you include one, you should suppress the build warning and call <xref:System.GC.SuppressFinalize%28System.Object%29> and the finalizer itself from (On)(Begin)Close (and/or OnAbort) to emulate what would have been the auto-generated <xref:System.IDisposable> behavior.  
-  
-   
-  
-## Examples  
- This sample uses the <xref:System.ServiceModel.ServiceHost> class, which is derived from ServiceHostBase.  
-  
- [!code-cs[S_SelfHost#1](~/add/codesnippet/csharp/t-system.servicemodel.se_16_1.cs)]
- [!code-vb[S_SelfHost#1](~/add/codesnippet/visualbasic/t-system.servicemodel.se_16_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,20 +29,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceHostBase" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_SelfHost#30](~/add/codesnippet/csharp/m-system.servicemodel.se_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddBaseAddress">
@@ -78,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,17 +53,9 @@
         <Parameter Name="baseAddress" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="baseAddress">A <see cref="T:System.Uri" /> that contains the base address for services hosted on the current host.</param>
-        <summary>Adds a base address to the service host.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property allows users extending <xref:System.ServiceModel.ServiceHostBase> to provide the base address after the host is constructed. AddBaseAddress can be used to add base addresses to an existing host, but throws an exception if the description is already initialized.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <paramref name="baseAddress" /> cannot be called.</exception>
+        <param name="baseAddress">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddDefaultEndpoints">
@@ -115,8 +72,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds service endpoints for all base addresses in each contract found in the service host with the default binding.</summary>
-        <returns>A read-only collection of default endpoints.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,24 +93,9 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The service endpoint.</param>
-        <summary>Adds the specified service endpoint to the hosted service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using the method, the service host does a "by-configuration-name" validation on the contract description. In other words, the host verifies that <xref:System.ServiceModel.Description.ContractDescription.ConfigurationName%2A> exists in the list of configuration names of the service contracts implemented by the service. If the validation passes, the description in the <xref:System.ServiceModel.Description.ServiceEndpoint> is used as it is, even if the <xref:System.ServiceModel.Description.ContractDescription> reflected from the service is different.  
-  
- As an example, assume that the description in the ServiceEndpoint and the contract description reflected from the service have the same name, but different operation behaviors. The implication of only “by-configuration-name” validation is that there is no validation that the behaviors are the same and there are one updates to one description because of another description.  
-  
- If the `address` is a relative URI, one of the base addresses of the <xref:System.ServiceModel.ServiceHost> (depending on the binding protocol) is used as the endpoint's base address.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="Endpoint" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The host is not in a Created or an Opening state or there is no <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="Address" />, <paramref name="Binding, " /> or <paramref name="Contract" /> property is <see langword="null" />.</exception>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -163,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,22 +116,12 @@
         <Parameter Name="address" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="implementedContract">The contract implemented by the endpoint.</param>
-        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> for the endpoint added.</param>
-        <param name="address">The address for the endpoint added. This can be an absolute or relative URI. If it is a relative URI, one of the base address of the <see cref="T:System.ServiceModel.ServiceHost" /> (depending on the binding protocol) is used as the endpoint's base address.</param>
-        <summary>Adds a service endpoint to the hosted service with a specified contract, binding, and endpoint address.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the hosted service.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_SelfHost#40](~/add/codesnippet/csharp/edf6e090-b786-4010-8e21-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="implementedContract" /> or <paramref name="binding" /> or <paramref name="address" /> or is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The host is not in a <see cref="T:System.ServiceModel.CommunicationState" /> or an <see cref="T:System.ServiceModel.CommunicationState" /> state or there is no <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service and so an endpoint cannot be added or the binding lacks a transport of binding scheme.</exception>
+        <param name="implementedContract">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -200,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,15 +142,12 @@
         <Parameter Name="address" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="implementedContract">The contract implemented by the endpoint.</param>
-        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> for the endpoint added.</param>
-        <param name="address">The <see cref="T:System.Uri" /> that contains the address for the endpoint added. This can be an absolute or relative URI. If it is a relative URI, one of the base address of the <see cref="T:System.ServiceModel.ServiceHost" /> (depending on the binding protocol) is used as the endpoint's base address.</param>
-        <summary>Adds a service endpoint to the hosted service with a specified contract, binding, and a URI that contains the endpoint address.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the hosted service.</returns>
+        <param name="implementedContract">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="implementedContract" /> or <paramref name="binding" /> or <paramref name="address" /> or is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The host is not in a <see cref="T:System.ServiceModel.CommunicationState" /> or an <see cref="T:System.ServiceModel.CommunicationState" /> state or there is no <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service and so an endpoint cannot be added.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -230,7 +157,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,23 +169,13 @@
         <Parameter Name="listenUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="implementedContract">The contract implemented by the endpoint.</param>
-        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> for the endpoint added.</param>
-        <param name="address">The address for the endpoint added. This address can be an absolute or relative URI. If it is a relative URI, one of the base address of the <see cref="T:System.ServiceModel.ServiceHost" /> (depending on the binding protocol) is used as the endpoint's base address.</param>
-        <param name="listenUri">The <see cref="T:System.Uri" /> that contains the address which the endpoint listens to for incoming messages. This URI can be relative or absolute.</param>
-        <summary>Adds a service endpoint to the hosted service with a specified contract, binding, endpoint address and URI that contains the address at which it listens.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the hosted service.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `address` is a relative URI, one of the base addresses of the <xref:System.ServiceModel.ServiceHost> (depending on the binding protocol) is used as the endpoint's base address.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="implementedContract" /> or <paramref name="binding" /> or <paramref name="address" /> or is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The host is not in a <see cref="T:System.ServiceModel.CommunicationState" /> or an <see cref="T:System.ServiceModel.CommunicationState" /> state or there is no <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service and so an endpoint cannot be added.</exception>
+        <param name="implementedContract">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="address">To be added.</param>
+        <param name="listenUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -269,7 +185,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -282,16 +197,13 @@
         <Parameter Name="listenUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="implementedContract">The contract implemented by the endpoint.</param>
-        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> for the endpoint added.</param>
-        <param name="address">The <see cref="T:System.Uri" /> that contains the address for the endpoint added. If it is a relative URI, one of the base address of the <see cref="T:System.ServiceModel.ServiceHost" /> (depending on the binding protocol) is used as the endpoint's base address.</param>
-        <param name="listenUri">The <see cref="T:System.Uri" /> that contains the address at which the endpoint listens for incoming messages.</param>
-        <summary>Adds a service endpoint to the hosted service with the specified contract, binding, and URIs that contain the endpoint and listening addresses.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the hosted service. This URI can be absolute or relative.</returns>
+        <param name="implementedContract">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="address">To be added.</param>
+        <param name="listenUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="implementedContract" /> or <paramref name="binding" /> or <paramref name="address" /> or is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The host is not in a <see cref="T:System.ServiceModel.CommunicationState" /> or an <see cref="T:System.ServiceModel.CommunicationState" /> state or there is no <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service and so an endpoint cannot be added.</exception>
       </Docs>
     </Member>
     <Member MemberName="ApplyConfiguration">
@@ -301,7 +213,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,9 +220,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Loads the service description information from the configuration file and applies it to the runtime being constructed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The description of the service hosted is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Authentication">
@@ -327,8 +237,8 @@
         <ReturnType>System.ServiceModel.Description.ServiceAuthenticationBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the service authentication behavior.</summary>
-        <value>The service authentication behavior.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,23 +249,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceAuthorizationBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the authorization behavior for the service hosted.</summary>
-        <value>The <see cref="T:System.ServiceModel.Description.ServiceAuthorizationBehavior" /> for the service hosted.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_SelfHost#36](~/add/codesnippet/csharp/p-system.servicemodel.se_28_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseAddresses">
@@ -365,15 +267,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the base addresses used by the hosted service.</summary>
-        <value>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.Uri" /> that contains the base addresses for the hosted service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,15 +285,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.ChannelDispatcherCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of channel dispatchers used by the service host.</summary>
-        <value>The <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcherCollection" /> that contains the channel dispatchers used by the service host.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,27 +303,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval of time allowed for the service host to close.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time allowed for the service host to close.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_SelfHost#33](~/add/codesnippet/csharp/p-system.servicemodel.se_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value, in milliseconds, is less than zero or is larger than <see cref="F:System.Int32.MaxValue" /> (2,147,483,647 or, in hexadecimal notation, 0X7FFFFFFF).</exception>
-        <exception cref="T:System.InvalidOperationException">The host is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state and cannot be modified.</exception>
-        <exception cref="T:System.ObjectDisposedException">The host is already in a <see cref="T:System.ServiceModel.CommunicationState" /> state and cannot be modified.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The host is in a <see cref="T:System.ServiceModel.CommunicationState" /> state and cannot be modified.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDescription">
@@ -433,7 +321,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -443,17 +330,10 @@
         <Parameter Name="implementedContracts" Type="System.Collections.Generic.IDictionary&lt;System.String,System.ServiceModel.Description.ContractDescription&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="implementedContracts">The <see cref="System.Collections.Generic.IDictionary%602" /> that contains the <see cref="T:System.ServiceModel.Description.ContractDescription" /> objects for the service.</param>
-        <summary>When implemented in a derived class, creates the description of the hosted service.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_SelfHost#41](~/add/codesnippet/csharp/08a56b4f-56f2-446f-b0f7-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="implementedContracts">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Credentials">
@@ -463,23 +343,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceCredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the credential for the service hosted.</summary>
-        <value>The <see cref="T:System.ServiceModel.Description.ServiceCredentials" /> for the service hosted.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_SelfHost#37](~/add/codesnippet/csharp/p-system.servicemodel.se_17_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultCloseTimeout">
@@ -489,15 +361,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default interval of time allowed for the service host to close.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> that specifies the default interval of time allowed for the service host to close.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,23 +379,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default interval of time allowed for the service host to open.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> that specifies the default interval of time allowed for the service host to open.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_SelfHost#35](~/add/codesnippet/csharp/p-system.servicemodel.se_23_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -534,23 +397,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the description of the service hosted.</summary>
-        <value>The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_SelfHost#38](~/add/codesnippet/csharp/p-system.servicemodel.se_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Extensions">
@@ -560,15 +415,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.IExtensionCollection&lt;System.ServiceModel.ServiceHostBase&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the extensions for the current specified service host.</summary>
-        <value>An <see cref="System.ServiceModel.IExtensionCollection%601" /> of type <see cref="T:System.ServiceModel.ServiceHostBase" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -579,15 +433,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.ServiceModel.Description.ContractDescription&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the contracts implemented by the service hosted.</summary>
-        <value>The <see cref="System.Collections.Generic.IDictionary%602" /> that contains the <see cref="T:System.ServiceModel.Description.ContractDescription" /> objects for the service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -598,7 +451,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -608,23 +460,10 @@
         <Parameter Name="incrementBy" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="incrementBy">The number of messages by which to increase the flow control limit.</param>
-        <summary>Increases the limit on the flow rate of messages to the hosted service by a specified increment.</summary>
-        <returns>The new limit after the increment is added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This limit can be accessed using the <xref:System.ServiceModel.ServiceHostBase.ManualFlowControlLimit%2A> property.  
-  
-   
-  
-## Examples  
- [!code-cs[S_SelfHost#42](~/add/codesnippet/csharp/84777560-890d-4922-a9a5-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+        <param name="incrementBy">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeDescription">
@@ -634,7 +473,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -644,8 +482,8 @@
         <Parameter Name="baseAddresses" Type="System.ServiceModel.UriSchemeKeyedCollection" />
       </Parameters>
       <Docs>
-        <param name="baseAddresses">A <see cref="T:System.ServiceModel.UriSchemeKeyedCollection" /> that contains the base addresses for the service hosted.</param>
-        <summary>Creates and initializes the service host with the contract and service descriptions.</summary>
+        <param name="baseAddresses">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -656,7 +494,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -664,9 +501,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the runtime for the service host.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The description of the service hosted is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadConfigurationSection">
@@ -676,7 +512,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -686,12 +521,9 @@
         <Parameter Name="serviceSection" Type="System.ServiceModel.Configuration.ServiceElement" />
       </Parameters>
       <Docs>
-        <param name="serviceSection">The <see cref="T:System.ServiceModel.Configuration.ServiceElement" /> to be loaded from configuration.</param>
-        <summary>Loads the service element from the configuration file of the hosted service.</summary>
+        <param name="serviceSection">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="serviceSection" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The description of the service hosted is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ManualFlowControlLimit">
@@ -701,29 +533,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flow control limit for messages received by the service hosted.</summary>
-        <value>The flow control limit for messages received by the service hosted.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This limit can be incremented using the <xref:System.ServiceModel.ServiceHostBase.IncrementManualFlowControlLimit%28System.Int32%29> method.  
-  
-   
-  
-## Examples  
- [!code-cs[S_SelfHost#39](~/add/codesnippet/csharp/p-system.servicemodel.se_15_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAbort">
@@ -733,7 +551,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -741,7 +558,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aborts the service.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -752,7 +569,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -764,11 +580,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the on-close operation has to complete before timing out.</param>
-        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous operation on-close completion.</param>
-        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous on-close operation.</param>
-        <summary>Begins an asynchronous operation invoked on the close of the service host.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous on-close operation.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -779,7 +595,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -791,11 +606,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the on-open operation has to complete before timing out.</param>
-        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous operation on-open completion.</param>
-        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous on-open operation.</param>
-        <summary>Begins an asynchronous operation invoked on the opening of the service host.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous on-open operation.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -806,7 +621,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -816,24 +630,9 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the on-close operation has to complete before timing out.</param>
-        <summary>Closes down the hosted service, including their channel dispatchers and associated instance contexts and listeners.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling OnClose does the following:  
-  
--   Closes all input to <xref:System.ServiceModel.Dispatcher.ChannelDispatcher>, which also closes their associated <xref:System.ServiceModel.Channels.IChannelListener> instances. This stops any new channels from being accepting.  
-  
--   Calls <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.CloseInput%2A> on all <xref:System.ServiceModel.InstanceContext> objects, which mean they stop accepting new messages.  
-  
--   Waits for all <xref:System.ServiceModel.InstanceContext> objects to close down, which happens when their associated channels finish sending all pending messages.  
-  
--   Closes the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects associated with the host.  
-  
- ]]></format>
-        </remarks>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClosed">
@@ -850,7 +649,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases resources used by the service host.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -861,7 +660,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -871,8 +669,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="System.ServiceModel.ServiceHostBase.OnBeginClose%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29" /> method.</param>
-        <summary>Completes an asynchronous operation invoked on the closing of the service host.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -883,7 +681,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -893,8 +690,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="System.ServiceModel.ServiceHostBase.OnBeginOpen%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29" /> method.</param>
-        <summary>Completes an asynchronous operation invoked on the opening of the service host.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -905,7 +702,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -915,8 +711,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the on-open operation has to complete before timing out.</param>
-        <summary>Opens the channel dispatchers.</summary>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -927,7 +723,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -935,15 +730,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the service credentials,service authentication and authorization behavior for the hosted service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Once these behaviors are initialized when opening the service, they cannot be changed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenTimeout">
@@ -953,20 +741,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval of time allowed for the service host to open.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time allowed for the service host to open.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero or is larger than <see cref="F:System.Int32.MaxValue" /> (2,147,483,647 or, in hexadecimal notation, 0X7FFFFFFF).</exception>
-        <exception cref="T:System.InvalidOperationException">The host is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state and cannot be modified.</exception>
-        <exception cref="T:System.ObjectDisposedException">The host is already in a <see cref="T:System.ServiceModel.CommunicationState" /> state and cannot be modified.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The host is in a <see cref="T:System.ServiceModel.CommunicationState" /> state and cannot be modified.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReleasePerformanceCounters">
@@ -976,7 +759,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -984,17 +766,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the service and channel dispatcher performance counters for the hosted service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is invoked when calling <xref:System.ServiceModel.ServiceHostBase.OnClose%28System.TimeSpan%29> and  
-  
- <xref:System.ServiceModel.ServiceHostBase.OnEndClose%28System.IAsyncResult%29>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEndpointAddress">
@@ -1014,9 +787,9 @@
         <Parameter Name="relativeAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The service endpoint.</param>
-        <param name="relativeAddress">The endpoint address.</param>
-        <summary>Sets the endpoint address of the specified endpoint to the specified address.</summary>
+        <param name="endpoint">To be added.</param>
+        <param name="relativeAddress">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1027,7 +800,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1035,7 +807,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the service host.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1046,24 +818,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.ServiceModel.UnknownMessageReceivedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an unknown message is received.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!WARNING]
->  When using <xref:System.ServiceModel.WorkflowServiceHost>, exposing a hosting endpoint, and a UnknownMessageReceived exception is thrown, the host passes the message to the event handler. If an attempt is made to read this message an <xref:System.InvalidOperationException> is thrown. The description of the exception will say “This message cannot support the operation because it has been read.”  The WCF infrastructure reads the message while extracting the message parameters. This message is then passed to the event handler and any attempt to read it causes an exception. If you need to access message parameters in your <xref:System.InvalidOperationException> handler from a hosting endpoint, define the hosting endpoint contract using MessageContract and place the needed data into a message header. [!INCLUDE[crabout](~/add/includes/crabout-md.md)] hosting endpoints see [Workflow Service Host Extensibility](../Topic/Workflow%20Service%20Host%20Extensibility.md)  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

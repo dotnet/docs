@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TextSearch" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,32 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Enables a user to quickly access items in a set by typing prefixes of strings.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is used to assign a string to items in a control's collection. Assigning a string to each item in the collection accomplishes two objectives. It specifies the text to display when the item is selected, and it enables the user to select an item by typing the assigned string.  
-  
- For example, assume that a <xref:System.Windows.Controls.ComboBox> contains a collection of <xref:System.Windows.Controls.Image> objects, one of which is an image of a dog.  If you assign the string, "Dog" to that item, the user can select the dog by typing the word in the combo box's text box. As soon as the user types enough of the word to distinguish it from other items in the selection, the image of the dog will be selected. If <xref:System.Windows.Controls.ComboBox.IsEditable%2A> is set to `true` on the <xref:System.Windows.Controls.ComboBox>, "Dog" will appear in the text box.  
-  
- You can specify the text that identifies an item by using the <xref:System.Windows.Controls.TextSearch.TextPath%2A?displayProperty=fullName> property on a control or by setting the <xref:System.Windows.Controls.TextSearch.Text%2A> property on each item in the control's collection. Setting one of these properties ensures that unexpected text is not displayed. If you set the <xref:System.Windows.Controls.TextSearch.Text%2A> property on a control's collection item, the <xref:System.Windows.Controls.TextSearch.TextPath%2A> property will be ignored.  If you set the <xref:System.Windows.Controls.TextSearch.TextPath%2A> property to a value that is not the name of an actual property, <xref:System.Windows.Controls.TextSearch.TextPath%2A> is ignored.  
-  
-<a name="xamlTextUsage_TextSearch"></a>   
-## XAML Text Usage  
- You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)], but you can use its static properties to assign values in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
-   
-  
-## Examples  
- The following examples create <xref:System.Windows.Controls.ComboBox> controls that contain images as items instead of text.  Functionally, the examples are the same. The first example sets the <xref:System.Windows.Controls.TextSearch.TextPath%2A> property on the <xref:System.Windows.Controls.ComboBox> and the second example sets the <xref:System.Windows.Controls.AccessText.Text%2A> property on each item in the collection.  
-  
- [!code-xml[ComboBoxProps_snip#1](~/add/codesnippet/xaml/comboboxsimple/pane1.xaml#1)]  
-  
- [!code-xml[ComboBoxProps_snip#2](~/add/codesnippet/xaml/comboboxsimple/pane1.xaml#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetText">
@@ -47,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -62,17 +36,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which the property value is read.</param>
-        <summary>Returns the string to that identifies the specified item.</summary>
-        <returns>The string that identifies the specified item.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns the value of the <xref:System.Windows.Controls.TextSearch.Text%2A> attached property from the specified element.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTextPath">
@@ -82,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -97,17 +63,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which the property value is read.</param>
-        <summary>Returns the name of the property that identifies an item in the specified element's collection.</summary>
-        <returns>The name of the property that identifies the item to the user.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns the value of the <xref:System.Windows.Controls.TextSearch.TextPath%2A> attached property from the specified element.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetText">
@@ -117,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,9 +86,9 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The element to which the property value is written.</param>
-        <param name="text">The string that identifies the item.</param>
-        <summary>Writes the <see cref="System.Windows.Controls.TextSearch.Text%2A" /> attached property value to the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,9 +109,9 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The element to which the property value is written.</param>
-        <param name="path">The name of the property that identifies an item.</param>
-        <summary>Writes the <see cref="System.Windows.Controls.TextSearch.TextPath%2A" /> attached property to the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TextSearch.TextPath%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,14 +139,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TextSearch.Text%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,35 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlowDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines constants that specify the direction in which consecutive user interface (UI) elements are placed in a linear layout container</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FlowDirection enumeration describes the flow direction of consecutive UI elements, typically controls, on a design surface or container such as a form. This enumeration is used by linear layout containers such as <xref:System.Windows.Forms.FlowLayoutPanel>, which stores this information internally in the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A?displayProperty=fullName> property.  
-  
- The FlowDirection determines where a new control is placed by default when it is added to a supporting container. The flow direction of the container, along with the <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties of each contained control, determine the rearrangement of controls when their container is resized.  
-  
- The <xref:System.Windows.Forms.FlowLayoutPanel> control provides a `FlowBreak` property to its child controls. Setting the value of the `FlowBreak` property to `true` causes the <xref:System.Windows.Forms.FlowLayoutPanel> control to stop laying out controls in the current flow direction and wrap to the next row or column.  
-  
-   
-  
-## Examples  
- The following example shows how to set the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property on a <xref:System.Windows.Forms.FlowLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
-  
- [!code-cs[System.Windows.Forms.FlowLayoutPanel#4](~/add/codesnippet/csharp/t-system.windows.forms.f_7_1.cs)]
- [!code-cpp[System.Windows.Forms.FlowLayoutPanel#4](~/add/codesnippet/cpp/t-system.windows.forms.f_7_1.cpp)]
- [!code-vb[System.Windows.Forms.FlowLayoutPanel#4](~/add/codesnippet/visualbasic/t-system.windows.forms.f_7_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BottomUp">
@@ -42,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Elements flow from the bottom of the design surface to the top.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftToRight">
@@ -59,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Elements flow from the left edge of the design surface to the right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -76,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Elements flow from the right edge of the design surface to the left.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopDown">
@@ -93,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Elements flow from the top of the design surface to the bottom.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

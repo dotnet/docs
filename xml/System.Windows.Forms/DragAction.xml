@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DragAction" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,32 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies how and if a drag-and-drop operation should continue.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
-  
-   
-  
-## Examples  
- The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=fullName> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
-  
- The example also demonstrates using custom cursors for the drag-and-drop operation. The example assumes that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
-  
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to <xref:System.Windows.Forms.DragDropEffects?displayProperty=fullName>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
-  
- The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
-  
- This code excerpt demonstrates using the DragAction enumeration. See the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.Control.DoDragDrop#6](~/add/codesnippet/cpp/t-system.windows.forms.d_108_1.cpp)]
- [!code-vb[System.Windows.Forms.Control.DoDragDrop#6](~/add/codesnippet/visualbasic/t-system.windows.forms.d_108_1.vb)]
- [!code-cs[System.Windows.Forms.Control.DoDragDrop#6](~/add/codesnippet/csharp/t-system.windows.forms.d_108_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Cancel">
@@ -51,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operation is canceled with no drop message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Continue">
@@ -68,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operation will continue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Drop">
@@ -85,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operation will stop with a drop.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

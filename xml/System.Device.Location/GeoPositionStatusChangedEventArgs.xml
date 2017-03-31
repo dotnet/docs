@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains data for a GeoPositionStatusChanged event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,16 +28,9 @@
         <Parameter Name="status" Type="System.Device.Location.GeoPositionStatus" />
       </Parameters>
       <Docs>
-        <param name="status">The new status.</param>
-        <summary>Initializes a new instance of the GeoPositionStatusChangedEventArgs class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Used for implementations of <xref:System.Device.Location.IGeoPositionWatcher%601>.  
-  
- ]]></format>
-        </remarks>
+        <param name="status">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -53,8 +46,8 @@
         <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the updated status.</summary>
-        <value>The updated status.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

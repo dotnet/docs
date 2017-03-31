@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.MetadataItemCollectionFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a set of methods for creating metadata <see cref="T:System.Data.Metadata.Edm.ItemCollection" /> instances.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -39,10 +37,10 @@
         <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="readers">An <see cref="T:System.Collections.IEnumerable" /> of <see cref="T:System.Xml.XmlReader" /> that contains the metadata files.</param>
-        <param name="errors">An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" />. Any errors that are generated during the <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> creation are added to the list.</param>
-        <summary>Creates an <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> and loads the metadata that is contained in the <see cref="T:System.Collections.IEnumerable" /> of <see cref="T:System.Xml.XmlReader" />.</summary>
-        <returns>An <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> that contains the specified metadata.</returns>
+        <param name="readers">To be added.</param>
+        <param name="errors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,11 +62,11 @@
         <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="readers">An <see cref="T:System.Collections.IEnumerable" /> of <see cref="T:System.Xml.XmlReader" /> that contains the metadata files.</param>
-        <param name="targetEntityFrameworkVersion">The property of <see cref="T:System.Data.Entity.Design.EntityFrameworkVersions" /> that corresponds to the targeted version of the Entity Framework.</param>
-        <param name="errors">An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" />. Any errors that are generated during the <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> creation are added to the list.</param>
-        <summary>Creates an <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> and loads the metadata that is contained in the <see cref="T:System.Collections.IEnumerable" /> of <see cref="T:System.Xml.XmlReader" />.</summary>
-        <returns>An <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> that contains the specified metadata.</returns>
+        <param name="readers">To be added.</param>
+        <param name="targetEntityFrameworkVersion">To be added.</param>
+        <param name="errors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,12 +89,12 @@
         <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="edmCollection">An <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> object.</param>
-        <param name="storeCollection">A <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> object.</param>
-        <param name="readers">An <see cref="T:System.Collections.IEnumerable" /> of <see cref="T:System.Xml.XmlReader" /> containing the metadata files.</param>
-        <param name="errors">An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" />. Any errors generated during the <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> creation are added to the list.</param>
-        <summary>Creates a <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> and loads the metadata that is contained in the specified <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" />, <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" />, and collection of <see cref="T:System.Xml.XmlReader" /> objects.</summary>
-        <returns>A <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> that contains the specified metadata.</returns>
+        <param name="edmCollection">To be added.</param>
+        <param name="storeCollection">To be added.</param>
+        <param name="readers">To be added.</param>
+        <param name="errors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,13 +118,13 @@
         <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="edmCollection">An <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> object.</param>
-        <param name="storeCollection">A <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> object.</param>
-        <param name="readers">An <see cref="T:System.Collections.IEnumerable" /> of <see cref="T:System.Xml.XmlReader" /> containing the metadata files.</param>
-        <param name="targetEntityFrameworkVersion">The property of <see cref="T:System.Data.Entity.Design.EntityFrameworkVersions" /> that corresponds to the targeted version of the Entity Framework.</param>
-        <param name="errors">An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" />. Any errors generated during the <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> creation are added to the list.</param>
-        <summary>Creates a <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> from the mapping information in the <see cref="T:System.Xml.XmlReader" /> objects and the metadata in the specified <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> and <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> objects.</summary>
-        <returns>A <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> that contains the specified metadata.</returns>
+        <param name="edmCollection">To be added.</param>
+        <param name="storeCollection">To be added.</param>
+        <param name="readers">To be added.</param>
+        <param name="targetEntityFrameworkVersion">To be added.</param>
+        <param name="errors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,10 +145,10 @@
         <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="readers">A collection of <see cref="T:System.Xml.XmlReader" /> objects, each of which each reads from a storage model file. The storage model file is written in the store schema definition language (SSDL).</param>
-        <param name="errors">A list of errors that were encountered while loading the SSDL metadata.</param>
-        <summary>Constructs a <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> and provides a list of errors and warnings.</summary>
-        <returns>A <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> that provides a list of errors and warnings.</returns>
+        <param name="readers">To be added.</param>
+        <param name="errors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,11 +170,11 @@
         <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="readers">A collection of <see cref="T:System.Xml.XmlReader" /> objects, each of which each reads from a storage model file. The storage model file is written in the store schema definition language (SSDL).</param>
-        <param name="targetEntityFrameworkVersion">The property of <see cref="T:System.Data.Entity.Design.EntityFrameworkVersions" /> that corresponds to the targeted version of the Entity Framework.</param>
-        <param name="errors">A list of errors that were encountered while loading the SSDL metadata.</param>
-        <summary>Constructs a <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> and provides a list of errors and warnings.</summary>
-        <returns>A <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> that provides a list of errors and warnings.</returns>
+        <param name="readers">To be added.</param>
+        <param name="targetEntityFrameworkVersion">To be added.</param>
+        <param name="errors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

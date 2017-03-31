@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.IXpsFixedDocumentWriter" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,19 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines methods and properties for writing a <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.AddFixedDocument%2A> method in order to obtain a fixed-document writer for adding <xref:System.Windows.Documents.FixedPage> content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cs[XpsCreate#XpsCreateAddPkgContent](~/add/codesnippet/csharp/XpsCreate/XpsCreate.cs#xpscreateaddpkgcontent)]
- [!code-cpp[XpsCreate#XpsCreateAddPkgContent](~/add/codesnippet/cpp/xpscreate/XpsCreate.cpp#xpscreateaddpkgcontent)]
- [!code-vb[XpsCreate#XpsCreateAddPkgContent](~/add/codesnippet/visualbasic/xpscreate/xpscreate.vb#xpscreateaddpkgcontent)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddFixedPage">
@@ -35,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -43,20 +30,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds a new <see cref="T:System.Windows.Documents.FixedPage" /> to the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-        <returns>A writer for outputting the new <see cref="T:System.Windows.Documents.FixedPage" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the AddFixedPage method.  
-  
- [!code-cs[XpsCreate#XpsCreateAddDocContent](~/add/codesnippet/csharp/XpsCreate/XpsCreate.cs#xpscreateadddoccontent)]
- [!code-cpp[XpsCreate#XpsCreateAddDocContent](~/add/codesnippet/cpp/xpscreate/XpsCreate.cpp#xpscreateadddoccontent)]
- [!code-vb[XpsCreate#XpsCreateAddDocContent](~/add/codesnippet/visualbasic/xpscreate/xpscreate.vb#xpscreateadddoccontent)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddThumbnail">
@@ -66,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,17 +51,10 @@
         <Parameter Name="imageType" Type="System.Windows.Xps.Packaging.XpsImageType" />
       </Parameters>
       <Docs>
-        <param name="imageType">The image type of the thumbnail to add.</param>
-        <summary>Adds an <see cref="T:System.Windows.Xps.Packaging.XpsThumbnail" /> image for the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-        <returns>The new <see cref="T:System.Windows.Xps.Packaging.XpsThumbnail" /> for the <see cref="T:System.Windows.Documents.FixedDocument" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For example, the `imageType` might be <xref:System.Windows.Xps.Packaging.XpsImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType>.  
-  
- ]]></format>
-        </remarks>
+        <param name="imageType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -96,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,19 +71,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Flushes and closes the <see cref="T:System.Windows.Documents.FixedDocument" /> writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Commit method to flush and close the <xref:System.Windows.Documents.FixedDocument> writer.  
-  
- [!code-cs[XpsCreate#XpsCreateAddPkgContent](~/add/codesnippet/csharp/XpsCreate/XpsCreate.cs#xpscreateaddpkgcontent)]
- [!code-cpp[XpsCreate#XpsCreateAddPkgContent](~/add/codesnippet/cpp/xpscreate/XpsCreate.cpp#xpscreateaddpkgcontent)]
- [!code-vb[XpsCreate#XpsCreateAddPkgContent](~/add/codesnippet/visualbasic/xpscreate/xpscreate.vb#xpscreateaddpkgcontent)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentNumber">
@@ -126,23 +82,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the zero-based position of the <see cref="T:System.Windows.Documents.FixedDocument" /> in the <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</summary>
-        <value>The zero-based position of the <see cref="T:System.Windows.Documents.FixedDocument" /> in the <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DocumentNumber property is zero-based.  A DocumentNumber value of zero (0) indicates the first the <xref:System.Windows.Documents.FixedDocument> in the <xref:System.Windows.Documents.FixedDocumentSequence>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintTicket">
@@ -152,32 +100,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PrintTicket</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets default print options for the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this property does not validate or modify the specified <xref:System.Printing.PrintTicket> for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
-   
-  
-## Examples  
- The following example shows how to use the PrintTicket property to associate a <xref:System.Printing.PrintTicket> with a <xref:System.Windows.Documents.FixedDocument>.  
-  
- [!code-cs[XpsCreate#XpsCreateAddPkgContent](~/add/codesnippet/csharp/XpsCreate/XpsCreate.cs#xpscreateaddpkgcontent)]
- [!code-cpp[XpsCreate#XpsCreateAddPkgContent](~/add/codesnippet/cpp/xpscreate/XpsCreate.cpp#xpscreateaddpkgcontent)]
- [!code-vb[XpsCreate#XpsCreateAddPkgContent](~/add/codesnippet/visualbasic/xpscreate/xpscreate.vb#xpscreateaddpkgcontent)]  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Uri">
@@ -187,15 +118,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] of the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-        <value>The [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] of the <see cref="T:System.Windows.Documents.FixedDocument" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

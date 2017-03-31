@@ -25,46 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a ribbon toolbar that is always visible in the window frame to provide access to common commands.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You add a RibbonQuickAccessToolBar to a <xref:System.Windows.Controls.Ribbon.Ribbon> control by specifying it as the content of the <xref:System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBar%2A?displayProperty=fullName> property using XAML [Property Element Syntax](../Topic/XAML%20Syntax%20In%20Detail.md#property_element_syntax).  
-  
-```  
-<ribbon:Ribbon>  
-  <ribbon:Ribbon.QuickAccessToolBar>  
-    <ribbon:RibbonQuickAccessToolBar />  
-  </ribbon:Ribbon.QuickAccessToolBar>   
-...  
-</ribbon:Ribbon>  
-  
-```  
-  
- The following list shows the typical placement of the RibbonQuickAccessToolBar in the hierarchy of ribbon elements.  
-  
--   <xref:System.Windows.Controls.Ribbon.Ribbon>  
-  
-    -   <xref:System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBar%2A?displayProperty=fullName> property  
-  
-        -   RibbonQuickAccessToolBar  
-  
-            -   <xref:System.Windows.Controls.Ribbon.RibbonButton>, <xref:System.Windows.Controls.Ribbon.RibbonRadioButton>, <xref:System.Windows.Controls.Ribbon.RibbonToggleButton>, <xref:System.Windows.Controls.Ribbon.RibbonCheckBox>, <xref:System.Windows.Controls.Ribbon.RibbonTextBox>  
-  
-            -   <xref:System.Windows.Controls.Ribbon.RibbonComboBox>, <xref:System.Windows.Controls.Ribbon.RibbonMenuButton>, <xref:System.Windows.Controls.Ribbon.RibbonSplitButton>  
-  
-            -   <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.CustomizeMenuButton%2A>  
-  
-   
-  
-## Examples  
- The following example shows a simple ribbon that is created by the Visual Studio 2010 template, with help pane and Quick Access Toolbar elements added.  
-  
- [!code-xml[Ribbon_Snippets#RibbonDefault](~/add/codesnippet/xaml/wpfribbonapplication1/mainwindow.xaml#ribbondefault)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,9 +61,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The element to add the event to.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.Clone" /> routed event.</summary>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,17 +84,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element that is used to display the item.</param>
-        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <summary>Unloads the container for the specified item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.PrepareContainerForItemOverride%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneEvent">
@@ -148,7 +103,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.Clone" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,23 +120,9 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonMenuButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuButton" /> that is used to show the Quick Access Toolbar customization menu.</summary>
-        <value>A button that is used to show the Quick Access Toolbar customization menu.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_CustomizeMenuButton"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.CustomizeMenuButtonProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomizeMenuButtonProperty">
@@ -197,7 +138,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.CustomizeMenuButton%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,8 +156,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" /> object.</summary>
-        <returns>A new <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" /> container object that is used to display an item from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,11 +177,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.IsOverflowItem%2A" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.IsOverflowItem%2A" /> property value.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HasOverflowItems">
@@ -256,24 +196,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the Quick Access Toolbar has items hidden in the overflow menu.</summary>
-        <value>
-          <see langword="true" /> if the Quick Access Toolbar has items hidden in the overflow menu; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_HasOverflowItems"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.HasOverflowItemsProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasOverflowItemsProperty">
@@ -289,7 +214,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.HasOverflowItems%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,10 +234,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to test.</param>
-        <summary>Returns a value that indicates whether the specified item is (or is eligible to be) its own container.</summary>
-        <returns>
-          <see langword="true" /> if the item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" />; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,7 +253,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.IsOverflowItem%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,24 +275,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the Quick Access Toolbar overflow menu is open.</summary>
-        <value>
-          <see langword="true" /> if the Quick Access Toolbar overflow menu is open; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsOverflowOpen"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.IsOverflowOpenProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOverflowOpenProperty">
@@ -384,7 +293,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.IsOverflowOpen%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,8 +313,8 @@
         <Parameter Name="e" Type="System.Windows.Controls.ActivatingKeyTipEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Contains data about the activation.</param>
-        <summary>Called when the KeyTip or accelerator key is pressed.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,15 +332,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> when a new template is applied.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -448,8 +350,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" /> object for this control.</summary>
-        <returns>A new automation peer object for this control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,8 +371,8 @@
         <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Information about the change.</param>
-        <summary>Invoked when the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> property changes.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,8 +392,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyDown" /> routed event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -511,8 +413,8 @@
         <Parameter Name="e" Type="System.Windows.Controls.KeyTipAccessedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="System.Windows.Controls.KeyTipService.PreviewKeyTipAccessed" /> routed event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -533,9 +435,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element that is used to display the item.</param>
-        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <summary>Prepares the specified element to display the specified item.</summary>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,9 +458,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The element to remove the event from.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes the handler for the <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.Clone" /> routed event.</summary>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -575,24 +477,9 @@
         <ReturnType>System.Windows.Controls.Ribbon.Ribbon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to.</summary>
-        <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is set on the parent <xref:System.Windows.Controls.Ribbon.Ribbon> control and is inherited by the child controls. It is used to access visual style brushes defined on the <xref:System.Windows.Controls.Ribbon.Ribbon> class.  
-  
-<a name="dependencyPropertyInfo_Ribbon"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.RibbonProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RibbonProperty">
@@ -608,7 +495,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.Ribbon%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

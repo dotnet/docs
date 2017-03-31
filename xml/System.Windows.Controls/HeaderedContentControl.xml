@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.HeaderedContentControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,37 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the base implementation for all controls that contain single content and have a header.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- HeaderedContentControl inherits the <xref:System.Windows.Controls.ContentControl.Content%2A> property from <xref:System.Windows.Controls.ContentControl> and defines the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> property that is of type <xref:System.Object>.  <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> provides a heading for the control. Like the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> can be any type.  
-  
- The following illustration shows two <xref:System.Windows.Controls.TabItem> objects, which inherit from HeaderedContentControl. The first <xref:System.Windows.Controls.TabItem> has <xref:System.Windows.UIElement> objects as the content in both the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> and the <xref:System.Windows.Controls.ContentControl.Content%2A>: the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> is set to a <xref:System.Windows.Controls.StackPanel> that contains an <xref:System.Windows.Shapes.Ellipse> and a <xref:System.Windows.Controls.TextBlock>; the <xref:System.Windows.Controls.ContentControl.Content%2A> is set to a <xref:System.Windows.Controls.StackPanel> that contains a <xref:System.Windows.Controls.TextBlock> and a <xref:System.Windows.Controls.Label>.  The <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of the second <xref:System.Windows.Controls.TabItem> is set to a string and the <xref:System.Windows.Controls.ContentControl.Content%2A> is set to a single <xref:System.Windows.Controls.TextBlock>.  
-  
- ![TabControl](~/add/media/controlcontentmodelteabitem.PNG "TabControl")  
-TabControl with different types in the Header property  
-  
- A HeaderedContentControl has a limited default style. An application developer can create a HeaderedContentControl, but its appearance will be very simple. If you wish to enhance the appearance of the control, you can create a new <xref:System.Windows.Controls.ControlTemplate>. A HeaderedContentControl is useful for creating custom controls because it provides a model for single content controls with headers.  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-   
-  
-## Examples  
- The following example shows how to create the <xref:System.Windows.Controls.TabControl> shown in the Remarks section.  
-  
- [!code-xml[ControlContentOverviewSnippets#16](~/add/codesnippet/xaml/ControlContentOverviewSnippets/Window1.xaml#16)]  
-  
- The following examples show how to create a <xref:System.Windows.Controls.ControlTemplate> for a HeaderedContentControl.  
-  
- [!code-xml[HeaderedContentControl#HeaderedContentControlStyle](~/add/codesnippet/xaml/HeaderedContentControlSimple/Page1.xaml#headeredcontentcontrolstyle)]  
-  
- [!code-xml[HeaderedContentControl#HeaderedContentControl](~/add/codesnippet/xaml/HeaderedContentControlSimple/Page1.xaml#headeredcontentcontrol)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,12 +27,11 @@ TabControl with different types in the Header property
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.HeaderedContentControl" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +42,6 @@ TabControl with different types in the Header property
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -88,32 +56,9 @@ TabControl with different types in the Header property
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the header is <see langword="null" />.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Windows.Controls.HeaderedContentControl.Header%2A" /> property is not <see langword="null" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_HasHeader"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.HeaderedContentControl.HasHeaderProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example tests whether the control has a header containing content.  
-  
- [!code-cs[HeaderedContentControl#HasHeader](~/add/codesnippet/csharp/HeaderedContentControlSimple/Page1.xaml.cs#hasheader)]
- [!code-vb[HeaderedContentControl#HasHeader](~/add/codesnippet/visualbasic/HeaderedContentControlSimple/Page1.xaml.vb#hasheader)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasHeaderProperty">
@@ -123,14 +68,13 @@ TabControl with different types in the Header property
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.HeaderedContentControl.HasHeader%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,7 +85,6 @@ TabControl with different types in the Header property
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -159,41 +102,9 @@ TabControl with different types in the Header property
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data used for the header of each control.</summary>
-        <value>A header object. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Like the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.ContentControl>, the Header can be any type. The <xref:System.Windows.Controls.HeaderedContentControl> uses the same logic to display the Header that is described in <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=fullName>.  
-  
-<a name="dependencyPropertyInfo_Header"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.HeaderedContentControl.HeaderProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.TabControl> that contains two <xref:System.Windows.Controls.TabItem> objects, which inherit from <xref:System.Windows.Controls.HeaderedContentControl>.  The first <xref:System.Windows.Controls.TabItem> has <xref:System.Windows.UIElement> objects as the content in both the Header and the <xref:System.Windows.Controls.ContentControl.Content%2A>: the Header is set to a <xref:System.Windows.Controls.StackPanel> that contains an <xref:System.Windows.Shapes.Ellipse> and a <xref:System.Windows.Controls.TextBlock>; the <xref:System.Windows.Controls.ContentControl.Content%2A> is set to a <xref:System.Windows.Controls.StackPanel> that contains a <xref:System.Windows.Controls.TextBlock> and a <xref:System.Windows.Controls.Label>.  The Header of the second <xref:System.Windows.Controls.TabItem> is set to a string and the <xref:System.Windows.Controls.ContentControl.Content%2A> is set to a single <xref:System.Windows.Controls.TextBlock>.  
-  
- [!code-xml[ControlContentOverviewSnippets#16](~/add/codesnippet/xaml/ControlContentOverviewSnippets/Window1.xaml#16)]  
-  
- The following illustration shows the <xref:System.Windows.Controls.TabControl> created by the previous example.  
-  
- ![TabControl](~/add/media/controlcontentmodelteabitem.PNG "TabControl")  
-TabControl with different types in the Header property  
-  
- The following example creates two <xref:System.Windows.DataTemplate> objects to specify the appearance of the Header and <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.HeaderedContentControl>.  
-  
- [!code-xml[HeaderedContentControl#HeaderTemplate1](~/add/codesnippet/xaml/HeaderedContentControlSimple/Page1.xaml#headertemplate1)]  
-[!code-xml[HeaderedContentControl#HeaderTemplate2](~/add/codesnippet/xaml/HeaderedContentControlSimple/Page1.xaml#headertemplate2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderProperty">
@@ -203,14 +114,13 @@ TabControl with different types in the Header property
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.HeaderedContentControl.Header%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,7 +131,6 @@ TabControl with different types in the Header property
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -233,36 +142,9 @@ TabControl with different types in the Header property
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a composite string that specifies how to format the <see cref="System.Windows.Controls.HeaderedContentControl.Header%2A" /> property if it is displayed as a string.</summary>
-        <value>A composite string that specifies how to format the <see cref="System.Windows.Controls.HeaderedContentControl.Header%2A" /> property if it is displayed as a string. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- HeaderStringFormat can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md). If you set the <xref:System.Windows.Controls.HeaderedContentControl.HeaderTemplate%2A> or <xref:System.Windows.Controls.HeaderedContentControl.HeaderTemplateSelector%2A> property of a <xref:System.Windows.Controls.HeaderedContentControl>, the HeaderStringFormat property is ignored.  
-  
-<a name="dependencyPropertyInfo_HeaderStringFormat"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.HeaderedContentControl.HeaderStringFormatProperty>|  
-|Metadata properties set to **true**|None|  
-  
-   
-  
-## Examples  
- The following example binds a <xref:System.Windows.Controls.TabControl> to a collection of `Student` objects.  The `Student` class has a `Name` property, a collection of `Course` objects, and implements the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> method to return either the `Name` of the student or a string that lists the student's courses.  The example uses HeaderStringFormat to put a student's name in the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of each <xref:System.Windows.Controls.TabItem> (which inherits from <xref:System.Windows.Controls.HeaderedContentControl>), and the <xref:System.Windows.Controls.TabControl.ContentStringFormat%2A?displayProperty=fullName> to display the course list for each student in the Content of the <xref:System.Windows.Controls.TabItem>.  
-  
- [!code-xml[ContentStringSnippets#TabControl](~/add/codesnippet/xaml/ContentStringSnippets/Window1.xaml#tabcontrol)]  
-  
- The following example implements the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> method to return either the `Name` of the student or a string that lists the student's courses.  
-  
- [!code-cs[ContentStringSnippets#TabControlToString](~/add/codesnippet/csharp/ContentStringSnippets/Window1.xaml.cs#tabcontroltostring)]
- [!code-vb[ContentStringSnippets#TabControlToString](~/add/codesnippet/visualbasic/contentstringsnippets/window1.xaml.vb#tabcontroltostring)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderStringFormatProperty">
@@ -272,14 +154,13 @@ TabControl with different types in the Header property
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderStringFormat%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,7 +171,6 @@ TabControl with different types in the Header property
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -305,52 +185,9 @@ TabControl with different types in the Header property
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template used to display the content of the control's header.</summary>
-        <value>A data template. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_HeaderTemplate"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object HeaderTemplate="{ResourceExtension TemplateResourceKey}"/>  
-```  
-  
-<a name="xamlPropertyElementUsage_HeaderTemplate"></a>   
-## XAML Property Element Usage  
-  
-<a name="xamlValues_HeaderTemplate"></a>   
-## XAML Values  
- *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
-  
- *TemplateResourceKey*  
- The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
-  
-> [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md). A binding reference using  or  is also possible, but uncommon.  
-  
-<a name="dependencyPropertyInfo_HeaderTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.HeaderedContentControl.HeaderTemplateProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example creates two <xref:System.Windows.DataTemplate> objects to specify the appearance of the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> and <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.HeaderedContentControl>.  
-  
- [!code-xml[HeaderedContentControl#HeaderTemplate1](~/add/codesnippet/xaml/HeaderedContentControlSimple/Page1.xaml#headertemplate1)]  
-[!code-xml[HeaderedContentControl#HeaderTemplate2](~/add/codesnippet/xaml/HeaderedContentControlSimple/Page1.xaml#headertemplate2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplateProperty">
@@ -360,14 +197,13 @@ TabControl with different types in the Header property
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -378,7 +214,6 @@ TabControl with different types in the Header property
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -393,53 +228,9 @@ TabControl with different types in the Header property
         <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a data template selector that provides custom logic for choosing the template used to display the header.</summary>
-        <value>A data template selector object. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If both the HeaderTemplateSelector and the <xref:System.Windows.Controls.HeaderedContentControl.HeaderTemplate%2A> properties are set, the template selector property is ignored.  
-  
-<a name="xamlAttributeUsage_HeaderTemplateSelector"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object HeaderTemplateSelector="{ResourceExtension DataTemplateSelectorClassKey}"/>  
-```  
-  
-<a name="xamlPropertyElementUsage_HeaderTemplateSelector"></a>   
-## XAML Property Element Usage  
-  
-```  
-<object>  
-  <object.HeaderTemplateSelector>  
-    <MyDataTemplateSelectorImplementation .../>  
-  </object.HeaderTemplateSelector>  
-</object>  
-```  
-  
-<a name="xamlValues_HeaderTemplateSelector"></a>   
-## XAML Values  
- *MyDataTemplateSelectorImplementation*  
- A class derived from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
-  
- *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
-  
- *DataTemplateSelectorClassKey*  
- The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
-  
-<a name="dependencyPropertyInfo_HeaderTemplateSelector"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.HeaderedContentControl.HeaderTemplateSelectorProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplateSelectorProperty">
@@ -449,14 +240,13 @@ TabControl with different types in the Header property
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderTemplateSelector%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,15 +257,14 @@ TabControl with different types in the Header property
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an enumerator to the logical child elements of the <see cref="T:System.Windows.Controls.ControlTemplate" />.</summary>
-        <value>An enumerator.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,7 +275,6 @@ TabControl with different types in the Header property
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -497,9 +285,9 @@ TabControl with different types in the Header property
         <Parameter Name="newHeader" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="oldHeader">Old value of the <see cref="System.Windows.Controls.HeaderedContentControl.Header%2A" /> property.</param>
-        <param name="newHeader">New value of the <see cref="System.Windows.Controls.HeaderedContentControl.Header%2A" /> property.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.HeaderedContentControl.Header%2A" /> property of a <see cref="T:System.Windows.Controls.HeaderedContentControl" /> changes.</summary>
+        <param name="oldHeader">To be added.</param>
+        <param name="newHeader">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -510,7 +298,6 @@ TabControl with different types in the Header property
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -521,9 +308,9 @@ TabControl with different types in the Header property
         <Parameter Name="newHeaderStringFormat" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="oldHeaderStringFormat">The old value of the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderStringFormat%2A" /> property.</param>
-        <param name="newHeaderStringFormat">The new value of the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderStringFormat%2A" /> property.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderStringFormat%2A" /> property changes.</summary>
+        <param name="oldHeaderStringFormat">To be added.</param>
+        <param name="newHeaderStringFormat">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,7 +321,6 @@ TabControl with different types in the Header property
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -545,9 +331,9 @@ TabControl with different types in the Header property
         <Parameter Name="newHeaderTemplate" Type="System.Windows.DataTemplate" />
       </Parameters>
       <Docs>
-        <param name="oldHeaderTemplate">Old value of the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderTemplate%2A" /> property.</param>
-        <param name="newHeaderTemplate">New value of the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderTemplate%2A" /> property.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderTemplate%2A" /> property changes.</summary>
+        <param name="oldHeaderTemplate">To be added.</param>
+        <param name="newHeaderTemplate">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -558,7 +344,6 @@ TabControl with different types in the Header property
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -569,9 +354,9 @@ TabControl with different types in the Header property
         <Parameter Name="newHeaderTemplateSelector" Type="System.Windows.Controls.DataTemplateSelector" />
       </Parameters>
       <Docs>
-        <param name="oldHeaderTemplateSelector">Old value of the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderTemplateSelector%2A" /> property.</param>
-        <param name="newHeaderTemplateSelector">New value of the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderTemplateSelector%2A" /> property.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.HeaderedContentControl.HeaderTemplateSelector%2A" /> property changes.</summary>
+        <param name="oldHeaderTemplateSelector">To be added.</param>
+        <param name="newHeaderTemplateSelector">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -582,7 +367,6 @@ TabControl with different types in the Header property
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -590,8 +374,8 @@ TabControl with different types in the Header property
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides a string representation of a <see cref="T:System.Windows.Controls.HeaderedContentControl" />.</summary>
-        <returns>A string representation of the object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

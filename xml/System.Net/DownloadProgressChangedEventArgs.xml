@@ -4,38 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Net.DownloadProgressChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ComponentModel.ProgressChangedEventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Net.WebClient.DownloadProgressChanged" /> event of a <see cref="T:System.Net.WebClient" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Instances of this class are passed to the <xref:System.Net.DownloadProgressChangedEventHandler>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates setting an event handler for the <xref:System.Net.WebClient.DownloadProgressChanged> event.  
-  
- [!code-cpp[NCLWebClientAsync#19](~/add/codesnippet/cpp/t-system.net.downloadpro_1_1.cpp)]
- [!code-cs[NCLWebClientAsync#19](~/add/codesnippet/csharp/t-system.net.downloadpro_1_1.cs)]
- [!code-vb[NCLWebClientAsync#19](~/add/codesnippet/visualbasic/t-system.net.downloadpro_1_1.vb)]  
-  
- The following code example shows an implementation of a handler for this event.  
-  
- [!code-cpp[NCLWebClientAsync#42](~/add/codesnippet/cpp/t-system.net.downloadpro_1_2.cpp)]
- [!code-cs[NCLWebClientAsync#42](~/add/codesnippet/csharp/t-system.net.downloadpro_1_2.cs)]
- [!code-vb[NCLWebClientAsync#42](~/add/codesnippet/visualbasic/t-system.net.downloadpro_1_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BytesReceived">
@@ -45,32 +27,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of bytes received.</summary>
-        <value>An <see cref="T:System.Int64" /> value that indicates the number of bytes received.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property.  
-  
-   
-  
-## Examples  
- The following code example shows an implementation of a handler for the <xref:System.Net.WebClient.DownloadProgressChanged> event. The method displays the value of this property.  
-  
- [!code-cpp[NCLWebClientAsync#42](~/add/codesnippet/cpp/p-system.net.downloadpro_0_1.cpp)]
- [!code-cs[NCLWebClientAsync#42](~/add/codesnippet/csharp/p-system.net.downloadpro_0_1.cs)]
- [!code-vb[NCLWebClientAsync#42](~/add/codesnippet/visualbasic/p-system.net.downloadpro_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TotalBytesToReceive">
@@ -80,34 +50,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the total number of bytes in a <see cref="T:System.Net.WebClient" /> data download operation.</summary>
-        <value>An <see cref="T:System.Int64" /> value that indicates the number of bytes that will be received.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine the number of bytes already received, use the <xref:System.Net.DownloadProgressChangedEventArgs.BytesReceived%2A> property.  
-  
- To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property.  
-  
-   
-  
-## Examples  
- The following code example shows an implementation of a handler for the <xref:System.Net.WebClient.DownloadProgressChanged> event. The method displays the value of this property.  
-  
- [!code-cpp[NCLWebClientAsync#42](~/add/codesnippet/cpp/p-system.net.downloadpro_1_1.cpp)]
- [!code-cs[NCLWebClientAsync#42](~/add/codesnippet/csharp/p-system.net.downloadpro_1_1.cs)]
- [!code-vb[NCLWebClientAsync#42](~/add/codesnippet/visualbasic/p-system.net.downloadpro_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

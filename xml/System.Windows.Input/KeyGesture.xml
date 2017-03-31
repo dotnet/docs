@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyGesture" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,57 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a keyboard combination that can be used to invoke a command.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In most cases, a KeyGesture must be associated with one or more <xref:System.Windows.Input.ModifierKeys>. The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid KeyGesture by themselves. For example, you can create a KeyGesture by using only the F12 key, but to use the X key in a KeyGesture it must be paired with a modifier key.  
-  
- In general, you can  
-  
- You can use a <xref:System.Windows.Input.KeyBinding> to bind a KeyGesture to an <xref:System.Windows.Input.ICommand>, so that the command is invoked when the KeyGesture occurs.  
-  
- For KeyGesture [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] usages, the property that is generally set in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] is <xref:System.Windows.Input.KeyBinding.Gesture%2A>, in cases where the gesture represents both a standard key and a modifier key. You can also set the <xref:System.Windows.Input.KeyBinding.Gesture%2A> property to be just a function key, or just a modifier key combination. However, it is more common to set the <xref:System.Windows.Input.KeyBinding.Key%2A> property if the intended command binding is a function key with no modifiers, or <xref:System.Windows.Input.KeyBinding.Modifiers%2A> if the intended command binding is for modifier keys only.  
-  
-<a name="xamlAttributeUsage_KeyGesture"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="oneOrMoreModifierKeys+key"/>  
-- or -  
-<object property="functionKey"/>  
-```  
-  
-<a name="xamlValues_KeyGesture"></a>   
-## XAML Values  
- `functionKey`  
- <xref:System.Windows.Input.Key>  
-  
- A single key value, which must be one of the function keys (F1-12) or numeric keypad keys.  
-  
- `oneOrMoreModifierKeys`  
- One or more modifier keys, defined by the <xref:System.Windows.Input.ModifierKeys> enumeration, delimited with a "+" character.  
-  
- `key`  
- <xref:System.Windows.Input.Key>  
-  
- A single key value.  
-  
-   
-  
-## Examples  
- The following example shows how to bind the <xref:System.Windows.Input.ApplicationCommands.Close%2A> command to a KeyGesture using a <xref:System.Windows.Input.KeyBinding>.  
-  
- [!code-cs[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/add/codesnippet/csharp/CommandLibarySnippets/Window1.xaml.cs#keybindingwithkeyandmodifiers)]
- [!code-vb[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/add/codesnippet/visualbasic/commandlibarysnippets/window1.xaml.vb#keybindingwithkeyandmodifiers)]  
-  
- The following example shows how to use KeyGesture in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)]. Note that the [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] usage does not directly declare a `<KeyGesture>` element. That object element usage is not possible because KeyGesture does not expose a public default constructor. Instead, the [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] usage uses the typeconverter behavior to declare an entire KeyGesture inline as the `Gesture` attribute value.  
-  
- [!code-xml[commandWithHandler#CommandHandlerKeyBinding](~/add/codesnippet/xaml/commandWithHandler/Window1.xaml#commandhandlerkeybinding)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,35 +30,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="key" Type="System.Windows.Input.Key" />
       </Parameters>
       <Docs>
-        <param name="key">The key associated with this gesture.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyGesture" /> class with the specified <see cref="T:System.Windows.Input.Key" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>.  The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves.  
-  
-   
-  
-## Examples  
- The following example shows how to use this constructor to create a <xref:System.Windows.Input.KeyGesture> and associate it with a <xref:System.Windows.Input.KeyBinding>.  The <xref:System.Windows.Input.KeyBinding> is then added to the <xref:System.Windows.Input.InputBindingCollection> of a <xref:System.Windows.Window>.  
-  
- [!code-cs[commandlibrarysnippets#KeyBindingWithNoModifier](~/add/codesnippet/csharp/CommandLibarySnippets/Window1.xaml.cs#keybindingwithnomodifier)]
- [!code-vb[commandlibrarysnippets#KeyBindingWithNoModifier](~/add/codesnippet/visualbasic/commandlibarysnippets/window1.xaml.vb#keybindingwithnomodifier)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="key" /> is not a valid <see cref="T:System.Windows.Input.Key" />.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="key" /> is not a valid <see cref="T:System.Windows.Input.KeyGesture" />.</exception>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -118,7 +48,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -126,33 +55,10 @@
         <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
       </Parameters>
       <Docs>
-        <param name="key">The key associated with the gesture.</param>
-        <param name="modifiers">The modifier keys associated with the gesture.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyGesture" /> class with the specified <see cref="T:System.Windows.Input.Key" /> and <see cref="T:System.Windows.Input.ModifierKeys" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>. The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves.  
-  
-   
-  
-## Examples  
- The following example shows how to use this constructor to create a <xref:System.Windows.Input.KeyGesture> and associate it with a <xref:System.Windows.Input.KeyBinding>. The <xref:System.Windows.Input.KeyBinding> is then added to the <xref:System.Windows.Input.InputBindingCollection> of a <xref:System.Windows.Window>.  
-  
- [!code-cs[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/add/codesnippet/csharp/CommandLibarySnippets/Window1.xaml.cs#keybindingwithkeyandmodifiers)]
- [!code-vb[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/add/codesnippet/visualbasic/commandlibarysnippets/window1.xaml.vb#keybindingwithkeyandmodifiers)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="modifiers" /> is not a valid <see cref="T:System.Windows.Input.ModifierKeys" />  
-  
- -or-  
-  
- <paramref name="key" /> is not a valid <see cref="T:System.Windows.Input.Key" />.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="key" /> and <paramref name="modifiers" /> do not form a valid <see cref="T:System.Windows.Input.KeyGesture" />.</exception>
+        <param name="key">To be added.</param>
+        <param name="modifiers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -162,7 +68,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -171,28 +76,11 @@
         <Parameter Name="displayString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key associated with the gesture.</param>
-        <param name="modifiers">The modifier keys associated with the gesture.</param>
-        <param name="displayString">A string representation of the <see cref="T:System.Windows.Input.KeyGesture" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyGesture" /> class with the specified <see cref="T:System.Windows.Input.Key" />, <see cref="T:System.Windows.Input.ModifierKeys" />, and display string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.KeyGesture.DisplayString%2A> property is set to the `displayString` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="modifiers" /> is not a valid <see cref="T:System.Windows.Input.ModifierKeys" />  
-  
- -or-  
-  
- <paramref name="key" /> is not a valid <see cref="T:System.Windows.Input.Key" />.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="displayString" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="key" /> and <paramref name="modifiers" /> do not form a valid <see cref="T:System.Windows.Input.KeyGesture" />.</exception>
+        <param name="key">To be added.</param>
+        <param name="modifiers">To be added.</param>
+        <param name="displayString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayString">
@@ -202,25 +90,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string representation of this <see cref="T:System.Windows.Input.KeyGesture" />.</summary>
-        <value>The display string for this <see cref="T:System.Windows.Input.KeyGesture" />. The default value is <see cref="F:System.String.Empty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a display string was not set in the constructor, an empty string is returned.  
-  
- If this property is empty, the <xref:System.Windows.Input.KeyGesture.GetDisplayStringForCulture%2A> method returns a string created from the <xref:System.Windows.Input.KeyGesture.Key%2A> and <xref:System.Windows.Input.KeyGesture.Modifiers%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDisplayStringForCulture">
@@ -230,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -240,17 +117,10 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="culture">The culture specific information.</param>
-        <summary>Returns a string that can be used to display the <see cref="T:System.Windows.Input.KeyGesture" />.</summary>
-        <returns>The string to display</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the display string was set by the constructor, that string is returned; otherwise, a string is created from the <xref:System.Windows.Input.KeyGesture.Key%2A> and <xref:System.Windows.Input.KeyGesture.Modifiers%2A> with any necessary conversions being governed by the specified <xref:System.Globalization.CultureInfo> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -260,23 +130,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the key associated with this <see cref="T:System.Windows.Input.KeyGesture" />.</summary>
-        <value>The key associated with the gesture.  The default value is <see cref="T:System.Windows.Input.Key" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>.  The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -286,7 +148,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -297,27 +158,11 @@
         <Parameter Name="inputEventArgs" Type="System.Windows.Input.InputEventArgs" />
       </Parameters>
       <Docs>
-        <param name="targetElement">The target.</param>
-        <param name="inputEventArgs">The input event data to compare this gesture to.</param>
-        <summary>Determines whether this <see cref="T:System.Windows.Input.KeyGesture" /> matches the input associated with the specified <see cref="T:System.Windows.Input.InputEventArgs" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the event data matches this <see cref="T:System.Windows.Input.KeyGesture" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `targetElement` can be used to make a more specific decision on whether a command should be invoked on a specific element.  
-  
-   
-  
-## Examples  
- The following example shows how to test whether a <xref:System.Windows.Input.KeyGesture> matches the input associated with an instance of an <xref:System.Windows.Input.InputEventArgs>. A <xref:System.Windows.UIElement.KeyDown> event handler is created that compares the event data with the <xref:System.Windows.Input.KeyGesture> by using the Matches method.  
-  
- [!code-cs[commandlibrarysnippets#KeyDownHandlerKeyGestureMatches](~/add/codesnippet/csharp/CommandLibarySnippets/Window1.xaml.cs#keydownhandlerkeygesturematches)]
- [!code-vb[commandlibrarysnippets#KeyDownHandlerKeyGestureMatches](~/add/codesnippet/visualbasic/commandlibarysnippets/window1.xaml.vb#keydownhandlerkeygesturematches)]  
-  
- ]]></format>
-        </remarks>
+        <param name="targetElement">To be added.</param>
+        <param name="inputEventArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Modifiers">
@@ -327,23 +172,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ModifierKeys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the modifier keys associated with this <see cref="T:System.Windows.Input.KeyGesture" />.</summary>
-        <value>The modifier keys associated with the gesture. The default value is <see cref="T:System.Windows.Input.ModifierKeys" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>. The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves. For example, you can create a <xref:System.Windows.Input.KeyGesture> by using only the F12 key, but to use the X key in a <xref:System.Windows.Input.KeyGesture> it must be paired with a modifier key.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

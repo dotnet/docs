@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ITemplateEditingFrame" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -18,19 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an interface to manage a template editing area.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The ITemplateEditingFrame interface is obsolete. Use the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property to access template groups, and template definitions within template groups, for a control designer.  
-  
- A template editing frame represents the UI for a template editor of a templated control designer.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -40,7 +28,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,19 +37,9 @@
         <Parameter Name="saveChanges" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="saveChanges">
-          <see langword="true" /> if changes to the document should be saved; otherwise, <see langword="false" />.</param>
-        <summary>Closes the control and optionally saves any changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.Design.ITemplateEditingFrame> interface is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.GroupStyle%2A> property on each template group element in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> collection of a control designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="saveChanges">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlStyle">
@@ -72,25 +49,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the style for the editing frame.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that represents the Web server control style attributes for the editing frame.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.Design.ITemplateEditingFrame> interface is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.GroupStyle%2A> property on each template group element in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> collection of a control designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitialHeight">
@@ -100,25 +67,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the initial height of the control.</summary>
-        <value>The initial height of the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.Design.ITemplateEditingFrame> interface is obsolete. Use the <xref:System.Web.UI.WebControls.Style.Height%2A> property in the <xref:System.Web.UI.Design.TemplateGroup.GroupStyle%2A> property for each template group element in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> collection of a control designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitialWidth">
@@ -128,25 +85,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the initial width of the control.</summary>
-        <value>The initial width of the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.Design.ITemplateEditingFrame> interface is obsolete. Use the <xref:System.Web.UI.WebControls.Style.Width%2A> property in the <xref:System.Web.UI.Design.TemplateGroup.GroupStyle%2A> property for each template group element in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> collection of a control designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -156,25 +103,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the editing frame.</summary>
-        <value>The name of the editing frame.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.Design.ITemplateEditingFrame> interface is obsolete. The template group name is provided in the <xref:System.Web.UI.Design.TemplateGroup.GroupName%2A> property of each template group element in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> collection of a control designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -184,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,7 +128,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Opens and displays the control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,7 +139,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,19 +149,10 @@
         <Parameter Name="height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="width">The new width for the control.</param>
-        <param name="height">The new height for the control.</param>
-        <summary>Resizes the control to the specified width and height.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.Design.ITemplateEditingFrame> interface is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.GroupStyle%2A> property on each template group element in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> collection of a control designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -236,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,7 +169,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves any changes to the document.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,25 +180,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a set of names of templates to use.</summary>
-        <value>An array of template names.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.Design.ITemplateEditingFrame> interface is obsolete. A template name is provided through the <xref:System.Web.UI.Design.DesignerObject.Name%2A> property of a <xref:System.Web.UI.Design.TemplateDefinition> object. Enumerate the collection of template definitions by using the <xref:System.Web.UI.Design.TemplateGroup.Templates%2A> property of each <xref:System.Web.UI.Design.TemplateGroup> element in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> collection of a control designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TemplateStyles">
@@ -283,25 +198,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Style[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the template styles for the control.</summary>
-        <value>An array of <see cref="T:System.Web.UI.WebControls.Style" /> objects that represent the template styles for the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.Design.ITemplateEditingFrame> interface is obsolete. A template style is provided through the <xref:System.Web.UI.Design.TemplateDefinition.Style%2A> property of a <xref:System.Web.UI.Design.TemplateDefinition> object. Enumerate the collection of template definitions by using the <xref:System.Web.UI.Design.TemplateGroup.Templates%2A> property of each <xref:System.Web.UI.Design.TemplateGroup> element in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> collection of a control designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateControlName">
@@ -311,7 +216,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -321,18 +225,9 @@
         <Parameter Name="newName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="newName">The new name for the control.</param>
-        <summary>Changes the name of the control to the specified name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.Design.ITemplateEditingFrame> interface is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.GroupStyle%2A> property on each template group element in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> collection of a control designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="newName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Verb">
@@ -342,25 +237,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.TemplateEditingVerb</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the verb that invokes the template.</summary>
-        <value>A <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> that invokes the template.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.Design.ITemplateEditingFrame> interface is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.GroupName%2A> property of each template group in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> collection for a control designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

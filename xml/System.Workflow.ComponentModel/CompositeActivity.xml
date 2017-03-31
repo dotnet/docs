@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.CompositeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -32,48 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Derivative of <see cref="T:System.Workflow.ComponentModel.Activity" /> that is the base class for all activities that contain other activities. A CompositeActivity is responsible for managing the execution of its child activities.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- A CompositeActivity manages the execution of its child activities using <xref:System.Workflow.ComponentModel.ActivityExecutionContext> class methods and events defined on the <xref:System.Workflow.ComponentModel.Activity> class.  For example, a child activity is scheduled for execution using the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.ExecuteActivity%2A> of <xref:System.Workflow.ComponentModel.ActivityExecutionContext>. A CompositeActivity activity can be notified when a child activity completes its execution by subscribing to the <xref:System.Workflow.ComponentModel.Activity.Closed> event defined on <xref:System.Workflow.ComponentModel.Activity>.  
-  
- The workflow runtime enforces certain constraints on CompositeActivity execution, the most fundamental of which is that a CompositeActivity activity cannot move to the <xref:System.Workflow.ComponentModel.Activity.Closed> state if any child activities are still in a <xref:System.Workflow.ComponentModel.Activity.Executing>, <xref:System.Workflow.ComponentModel.Activity.Canceling>, <xref:System.Workflow.ComponentModel.Activity.Compensating>, or <xref:System.Workflow.ComponentModel.Activity.Faulting>, state.  
-  
-   
-  
-## Examples  
- This example shows a basic `CompositeActivity` that executes its first child activity for execution. When the child activity moves to the Closed state, the composite activity is notified and then completes its execution.  
-  
-```c#  
-public class HasOneChildActivity : CompositeActivity  
-{  
-    protected override ActivityExecutionStatus Execute(ActivityExecutionContext executionContext)  
-    {  
-        Activity child = this.EnabledActivities[0];  
-        child.Closed += this.ChildClosed;  
-        executionContext.ExecuteActivity(child);  
-  
-        return ActivityExecutionStatus.Executing;  
-    }  
-  
-    void ChildClosed(object sender, ActivityExecutionStatusChangedEventArgs e)  
-    {  
-        e.Activity.Closed -= this.ChildClosed;  
-        ActivityExecutionContext executionContext = sender as ActivityExecutionContext;  
-  
-        executionContext.CloseActivity();  
-    }  
-}  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,12 +42,11 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,15 +57,14 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="children" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="children">The <see cref="T:System.Object" /> implementing the <see cref="T:System.Collections.IEnumerable" /> interface with type <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> class from an <see cref="T:System.Object" /> which implements the <see cref="T:System.Collections.IEnumerable" /> interface with type <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <param name="children">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,18 +75,15 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name for the instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> class, along with the name for that activity.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Activities">
@@ -139,7 +93,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -154,27 +107,9 @@ public class HasOneChildActivity : CompositeActivity
         <ReturnType>System.Workflow.ComponentModel.ActivityCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object representing the collection, <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />, of all child activities.</summary>
-        <value>
-          <see cref="T:System.Workflow.ComponentModel.ActivityCollection" /> of all child activities.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Represents the collection of child activities managed by the composite activity. This collection can be updated.  
-  
-   
-  
-## Examples  
- The following code shows how to create activities and add them as children to a composite activity and includes setting the <xref:System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities%2A> permissive for this type.  
-  
- This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. For more information, see [Throw Sample](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
-  
- [!code-cs[WF_Samples#179](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#179)]
- [!code-vb[WF_Samples#179](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#179)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyWorkflowChanges">
@@ -184,7 +119,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,11 +128,9 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="workflowChanges" Type="System.Workflow.ComponentModel.WorkflowChanges" />
       </Parameters>
       <Docs>
-        <param name="workflowChanges">The <see cref="T:System.Workflow.ComponentModel.WorkflowChanges" /> to apply.</param>
-        <summary>Applies the <see cref="T:System.Workflow.ComponentModel.WorkflowChanges" /> manifest in the parameter to this instance.</summary>
+        <param name="workflowChanges">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="workflowChanges" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="CanModifyActivities">
@@ -208,29 +140,15 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value which controls whether the individual activities within <see cref="System.Workflow.ComponentModel.CompositeActivity.Activities%2A" /> can be modified.</summary>
-        <value>
-          <see langword="true" /> if the individual activities within <see cref="System.Workflow.ComponentModel.CompositeActivity.Activities%2A" /> can be modified; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to create activities and add them as children to a composite activity and includes setting the CanModifyActivities permissive for this type.  
-  
- This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. For more information, see [Throw Sample](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
-  
- [!code-cs[WF_Samples#179](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#179)]
- [!code-vb[WF_Samples#179](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#179)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -240,7 +158,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -250,17 +167,9 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources used by this instance and all child activities of this instance; <see langword="false" /> to release only the unmanaged resources of this instance.</param>
-        <summary>Calls <see cref="System.Workflow.ComponentModel.DependencyObject.Dispose%2A" /> on this instance, and optionally calls <see cref="System.Workflow.ComponentModel.DependencyObject.Dispose%2A" /> on all child activities of this instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Throughout an activity's lifetime, several .NET objects may be created or disposed. Every time a workflow instance is unloaded from memory, the .NET objects corresponding to the activities in the workflow tree are disposed (the <xref:System.Workflow.ComponentModel.DependencyObject.Dispose%2A> method is called on each activity). When the workflow instance is loaded back into memory, a new .NET object is created for each activity with the state from the corresponding unload.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnabledActivities">
@@ -270,7 +179,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -285,8 +193,8 @@ public class HasOneChildActivity : CompositeActivity
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the read-only collection that represents the subset of <see cref="System.Workflow.ComponentModel.CompositeActivity.Activities%2A" /> that are enabled.</summary>
-        <value>The read-only collection that represents the subset of <see cref="System.Workflow.ComponentModel.CompositeActivity.Activities%2A" /> that are enabled.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,7 +205,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -307,9 +214,9 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">The specified <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <summary>Returns an array that contains all of the currently executing instances of the specified activity.</summary>
-        <returns>An array of activity instances that are currently executing.</returns>
+        <param name="activity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,7 +227,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -331,13 +237,11 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for this instance.</param>
-        <param name="exception">The <see cref="T:System.Exception" /> that caused this fault.</param>
-        <summary>Called when an exception is raised within the context of the execution of this instance.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> that results from an attempt to cancel this instance.</returns>
+        <param name="executionContext">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="exception" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -347,7 +251,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -357,11 +260,9 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">The specified <see cref="T:System.IServiceProvider" />.</param>
-        <summary>Initializes all appropriate child activities of this instance and the specified <see cref="T:System.IServiceProvider" />.</summary>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnActivityChangeAdd">
@@ -371,7 +272,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,12 +282,10 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="addedActivity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="executionContext">The specified <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</param>
-        <param name="addedActivity">The specified <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <summary>Calls when an activity is added.</summary>
+        <param name="executionContext">To be added.</param>
+        <param name="addedActivity">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="addedActivity" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnActivityChangeRemove">
@@ -397,7 +295,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -408,17 +305,10 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="removedActivity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="executionContext">The specified <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</param>
-        <param name="removedActivity">The specified <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <summary>Called when an activity is removed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Current implementation provides no functionality.  
-  
- ]]></format>
-        </remarks>
+        <param name="executionContext">To be added.</param>
+        <param name="removedActivity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnActivityExecutionContextLoad">
@@ -428,7 +318,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -438,8 +327,8 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">An <see cref="T:System.Object" /> that implements <see cref="T:System.IServiceProvider" /> and provides services to this instance.</param>
-        <summary>Called by the workflow runtime engine every time the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for this activity is loaded.</summary>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,7 +339,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,8 +348,8 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">An <see cref="T:System.Object" /> that implements <see cref="T:System.IServiceProvider" /> and provides services to this instance.</param>
-        <summary>Called by the workflow runtime engine every time the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for this activity is unloaded.</summary>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -472,7 +360,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -482,8 +369,8 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="e" Type="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> broadcast by the event.</param>
-        <summary>Performs additional processing when the <see cref="System.Workflow.ComponentModel.CompositeActivity.Activities%2A" /> property changes.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -494,7 +381,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -504,9 +390,8 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="e" Type="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">
-          <see cref="T:System.EventArgs" /> relating to the event.</param>
-        <summary>Event that occurs before a change being made to the underlying <see cref="System.Workflow.ComponentModel.CompositeActivity.Activities%2A" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -517,7 +402,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -527,16 +411,9 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="rootContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="rootContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> associated with this instance.</param>
-        <summary>Called after changes have been made to the collection <see cref="System.Workflow.ComponentModel.CompositeActivity.Activities%2A" /> of this instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When overridden in a derived class, provides processing for this event.  
-  
- ]]></format>
-        </remarks>
+        <param name="rootContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Uninitialize">
@@ -546,7 +423,6 @@ public class HasOneChildActivity : CompositeActivity
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -556,16 +432,9 @@ public class HasOneChildActivity : CompositeActivity
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">An <see cref="T:System.Object" /> that implements <see cref="T:System.IServiceProvider" /> and provides services to this instance.</param>
-        <summary>Called by the workflow runtime engine when an activity transitions into the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> state from the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used for activity cleanup, such as clearing dependency properties and deleting queues.  
-  
- ]]></format>
-        </remarks>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

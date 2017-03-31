@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PageEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,22 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable" /> event of a class that implements the <see cref="T:System.Web.UI.WebControls.IPageableItemContainer" /> interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.ListView> object raises the <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event when the control has obtained the total number of records of the underlying data source object. The <xref:System.Web.UI.WebControls.DataPager> control provides an event handler for this event named <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A>. This event handler initializes page-related properties and creates the <xref:System.Web.UI.WebControls.DataPagerField> objects that are defined in the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> collection.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event is primarily used by control developers.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- For a list of initial property values for an instance of the PageEventArgs class, see the <xref:System.Web.UI.WebControls.PageEventArgs.%23ctor%2A> constructor.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,29 +30,11 @@
         <Parameter Name="totalRowCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="startRowIndex">The index of the first record on a page of data.</param>
-        <param name="maximumRows">The maximum number of items to display on each page of data.</param>
-        <param name="totalRowCount">The total number of records.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.PageEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.PageEventArgs> class.  
-  
-> [!NOTE]
->  This constructor is primarily used by control developers when raising events.  
-  
- The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.PageEventArgs> class.  
-  
-|Property|Initial Value|  
-|--------------|-------------------|  
-|<xref:System.Web.UI.WebControls.PageEventArgs.StartRowIndex%2A>|The value of the `startRowIndex` parameter.|  
-|<xref:System.Web.UI.WebControls.PageEventArgs.MaximumRows%2A>|The value of the `maximumRows` parameter.|  
-|<xref:System.Web.UI.WebControls.PageEventArgs.TotalRowCount%2A>|The value of the `totalRowCount` parameter.|  
-  
- ]]></format>
-        </remarks>
+        <param name="startRowIndex">To be added.</param>
+        <param name="maximumRows">To be added.</param>
+        <param name="totalRowCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumRows">
@@ -78,15 +44,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum number of records to display on each page.</summary>
-        <value>The maximum number of records to display on each page.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,15 +62,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the first record on a page.</summary>
-        <value>The index of the first record on a page.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,15 +80,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the total number of records in the underlying data source.</summary>
-        <value>The total number of records of the underlying data source.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

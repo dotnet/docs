@@ -3,51 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileVersionInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.FileVersionInfo" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides version information for a physical file on disk.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A file version number is a 64-bit number that holds the version number for a file as follows:  
-  
--   The first 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileMajorPart%2A> number.  
-  
--   The next 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileMinorPart%2A> number.  
-  
--   The third set of 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileBuildPart%2A> number.  
-  
--   The last 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FilePrivatePart%2A> number.  
-  
- Use the <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> method of this class to get a FileVersionInfo containing information about a file, then look at the properties for information about the file. The <xref:System.Diagnostics.FileVersionInfo.FileVersion%2A> property provides version information about the file. The <xref:System.Diagnostics.FileVersionInfo.ProductMajorPart%2A>, <xref:System.Diagnostics.FileVersionInfo.ProductMinorPart%2A>, <xref:System.Diagnostics.FileVersionInfo.ProductBuildPart%2A>, <xref:System.Diagnostics.FileVersionInfo.ProductPrivatePart%2A>, and <xref:System.Diagnostics.FileVersionInfo.ProductVersion%2A> properties provide version information for the product that the specified file is a part of. Call <xref:System.Diagnostics.FileVersionInfo.ToString%2A> to get a partial list of properties and their values for this file.  
-  
- The FileVersionInfo properties are based on version resource information built into the file. Version resources are often built into binary files such as .exe or .dll files; text files do not have version resource information.  
-  
- Version resources are typically specified in a Win32 resource file, or in assembly attributes. For example the <xref:System.Diagnostics.FileVersionInfo.IsDebug%2A> property reflects the `VS_FF_DEBUG` flag value in the file's `VS_FIXEDFILEINFO` block, which is built from the `VERSIONINFO` resource in a Win32 resource file.  For more information about specifying version resources in a Win32 resource file, see "About Resource Files" and "VERSIONINFO Resource" in the Platform SDK. For more information about specifying version resources in a .NET module, see the [Setting Assembly Attributes](../Topic/Setting%20Assembly%20Attributes.md) topic.  
-  
-> [!NOTE]
->  This class makes a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full trust permission. For details about link demands, see [Link Demands](../Topic/Link%20Demands.md).  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the FileVersionInfo for the Notepad. Then it prints the file description and version number in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo Example#1](~/add/codesnippet/csharp/t-system.diagnostics.fil_1.cs)]
- [!code-vb[Classic FileVersionInfo Example#1](~/add/codesnippet/visualbasic/t-system.diagnostics.fil_1.vb)]
- [!code-cpp[Classic FileVersionInfo Example#1](~/add/codesnippet/cpp/t-system.diagnostics.fil_1.cpp)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Comments">
@@ -56,33 +30,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.Comments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the comments associated with the file.</summary>
-        <value>The comments associated with the file or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property contains additional information that can be displayed for diagnostic purposes.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the comments in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.Comments Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_7_1.cs)]
- [!code-cpp[Classic FileVersionInfo.Comments Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_7_1.cpp)]
- [!code-vb[Classic FileVersionInfo.Comments Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CompanyName">
@@ -91,28 +57,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.CompanyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the company that produced the file.</summary>
-        <value>The name of the company that produced the file or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the CompanyName in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.CompanyName Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_20_1.cs)]
- [!code-cpp[Classic FileVersionInfo.CompanyName Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_20_1.cpp)]
- [!code-vb[Classic FileVersionInfo.CompanyName Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_20_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileBuildPart">
@@ -121,43 +84,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileBuildPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the build number of the file.</summary>
-        <value>A value representing the build number of the file or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A file version number is a 64-bit number that holds the version number for a file as follows:  
-  
--   The first 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileMajorPart%2A> number.  
-  
--   The next 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileMinorPart%2A> number.  
-  
--   The third set of 16 bits are the FileBuildPart number.  
-  
--   The last 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FilePrivatePart%2A> number.  
-  
- This property gets the third set of 16 bits.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the FileBuildPart in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.FileBuildPart Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_21_1.cs)]
- [!code-vb[Classic FileVersionInfo.FileBuildPart Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_21_1.vb)]
- [!code-cpp[Classic FileVersionInfo.FileBuildPart Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_21_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileDescription">
@@ -166,28 +111,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the description of the file.</summary>
-        <value>The description of the file or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the FileDescription in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.FileDescription Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_18_1.cs)]
- [!code-vb[Classic FileVersionInfo.FileDescription Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_18_1.vb)]
- [!code-cpp[Classic FileVersionInfo.FileDescription Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_18_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileMajorPart">
@@ -196,43 +138,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileMajorPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the major part of the version number.</summary>
-        <value>A value representing the major part of the version number or 0 (zero) if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A file version number is a 64-bit number that holds the version number for a file as follows:  
-  
--   The first 16 bits are the FileMajorPart number.  
-  
--   The next 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileMinorPart%2A> number.  
-  
--   The third set of 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileBuildPart%2A> number.  
-  
--   The last 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FilePrivatePart%2A> number.  
-  
- This property gets the first set of 16 bits.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the FileMajorPart in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.FileMajorPart Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_6_1.cs)]
- [!code-cpp[Classic FileVersionInfo.FileMajorPart Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_6_1.cpp)]
- [!code-vb[Classic FileVersionInfo.FileMajorPart Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileMinorPart">
@@ -241,43 +165,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileMinorPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the minor part of the version number of the file.</summary>
-        <value>A value representing the minor part of the version number of the file or 0 (zero) if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A file version number is a 64-bit number that holds the version number for a file as follows:  
-  
--   The first 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileMajorPart%2A> number.  
-  
--   The next 16 bits are the FileMinorPart number.  
-  
--   The third set of 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileBuildPart%2A> number.  
-  
--   The last 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FilePrivatePart%2A> number.  
-  
- This property gets the second set of 16 bits.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the FileMinorPart in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-vb[Classic FileVersionInfo.FileMinorPart Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_2_1.vb)]
- [!code-cpp[Classic FileVersionInfo.FileMinorPart Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_2_1.cpp)]
- [!code-cs[Classic FileVersionInfo.FileMinorPart Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -286,29 +192,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the file that this instance of <see cref="T:System.Diagnostics.FileVersionInfo" /> describes.</summary>
-        <value>The name of the file described by this instance of <see cref="T:System.Diagnostics.FileVersionInfo" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the FileName in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-vb[Classic FileVersionInfo.FileName Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_19_1.vb)]
- [!code-cpp[Classic FileVersionInfo.FileName Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_19_1.cpp)]
- [!code-cs[Classic FileVersionInfo.FileName Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_19_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">to get the file name. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FilePrivatePart">
@@ -317,43 +219,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FilePrivatePart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the file private part number.</summary>
-        <value>A value representing the file private part number or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A file version number is a 64-bit number that holds the version number for a file as follows:  
-  
--   The first 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileMajorPart%2A> number.  
-  
--   The next 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileMinorPart%2A> number.  
-  
--   The third set of 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileBuildPart%2A> number.  
-  
--   The last 16 bits are the FilePrivatePart number.  
-  
- This property gets the last set of 16 bits.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the FilePrivatePart in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.FilePrivatePart Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_13_1.cpp)]
- [!code-cs[Classic FileVersionInfo.FilePrivatePart Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_13_1.cs)]
- [!code-vb[Classic FileVersionInfo.FilePrivatePart Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_13_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileVersion">
@@ -362,41 +246,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the file version number.</summary>
-        <value>The version number of the file or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A file version number is a 64-bit number that holds the version number for a file as follows:  
-  
--   The first 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileMajorPart%2A> number.  
-  
--   The next 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileMinorPart%2A> number.  
-  
--   The third set of 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FileBuildPart%2A> number.  
-  
--   The last 16 bits are the <xref:System.Diagnostics.FileVersionInfo.FilePrivatePart%2A> number.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the file description and version number in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[classic fileversioninfo example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_12_1.cs)]
- [!code-vb[classic fileversioninfo example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_12_1.vb)]
- [!code-cpp[classic fileversioninfo example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_12_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetVersionInfo">
@@ -405,9 +273,17 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.FileVersionInfo.GetVersionInfo(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.FileVersionInfo</ReturnType>
@@ -416,24 +292,10 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">The fully qualified path and name of the file to retrieve the version information for.</param>
-        <summary>Returns a <see cref="T:System.Diagnostics.FileVersionInfo" /> representing the version information associated with the specified file.</summary>
-        <returns>A <see cref="T:System.Diagnostics.FileVersionInfo" /> containing information about the file. If the file did not contain version information, the <see cref="T:System.Diagnostics.FileVersionInfo" /> contains only the name of the file requested.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example calls GetVersionInfo to get the <xref:System.Diagnostics.FileVersionInfo> for Notepad and  displays the file description and version number in the console window.  
-  
- [!code-cs[classic fileversioninfo example#1](~/add/codesnippet/csharp/m-system.diagnostics.fil_1_1.cs)]
- [!code-vb[classic fileversioninfo example#1](~/add/codesnippet/visualbasic/m-system.diagnostics.fil_1_1.vb)]
- [!code-cpp[classic fileversioninfo example#1](~/add/codesnippet/cpp/m-system.diagnostics.fil_1_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.FileNotFoundException">The file specified cannot be found.</exception>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">to get the version information. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InternalName">
@@ -442,28 +304,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.InternalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the internal name of the file, if one exists.</summary>
-        <value>The internal name of the file. If none exists, this property will contain the original name of the file without the extension.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the InternalName in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.InternalName Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_23_1.cpp)]
- [!code-vb[Classic FileVersionInfo.InternalName Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_23_1.vb)]
- [!code-cs[Classic FileVersionInfo.InternalName Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_23_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDebug">
@@ -472,36 +331,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsDebug" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the file contains debugging information or is compiled with debugging features enabled.</summary>
-        <value>
-          <see langword="true" /> if the file contains debugging information or is compiled with debugging features enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Diagnostics.FileVersionInfo> properties are based on version resource information built into the file. Version resources are often built into binary files such as .exe or .dll files; text files do not have version resource information.  
-  
- Version resources are typically specified in a Win32 resource file, or in assembly attributes. The IsDebug property reflects the `VS_FF_DEBUG` flag value in the file's `VS_FIXEDFILEINFO` block, which is built from the `VERSIONINFO` resource in a Win32 resource file. For more information about specifying version resources in a Win32 resource file, see the Platform SDK `About Resource Files` topic and `VERSIONINFO Resource` topic topics.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it displays the state of the Boolean IsDebug in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.IsDebug Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_4_1.cs)]
- [!code-cpp[Classic FileVersionInfo.IsDebug Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_4_1.cpp)]
- [!code-vb[Classic FileVersionInfo.IsDebug Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPatched">
@@ -510,29 +358,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsPatched" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the file has been modified and is not identical to the original shipping file of the same version number.</summary>
-        <value>
-          <see langword="true" /> if the file is patched; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it displays the state of the Boolean IsPatched in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.IsPatched Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_5_1.cpp)]
- [!code-cs[Classic FileVersionInfo.IsPatched Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_5_1.cs)]
- [!code-vb[Classic FileVersionInfo.IsPatched Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPreRelease">
@@ -541,29 +385,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsPreRelease" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the file is a development version, rather than a commercially released product.</summary>
-        <value>
-          <see langword="true" /> if the file is prerelease; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it displays whether this version is a prerelease version in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.IsPreRelease Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_22_1.cpp)]
- [!code-cs[Classic FileVersionInfo.IsPreRelease Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_22_1.cs)]
- [!code-vb[Classic FileVersionInfo.IsPreRelease Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_22_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPrivateBuild">
@@ -572,34 +412,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsPrivateBuild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the file was built using standard release procedures.</summary>
-        <value>
-          <see langword="true" /> if the file is a private build; <see langword="false" /> if the file was built using standard release procedures or if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this value is `true`, <xref:System.Diagnostics.FileVersionInfo.PrivateBuild%2A> will describe how this version of the file differs from the standard version.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it displays the private build information in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.IsPrivateBuild Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_24_1.cs)]
- [!code-vb[Classic FileVersionInfo.IsPrivateBuild Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_24_1.vb)]
- [!code-cpp[Classic FileVersionInfo.IsPrivateBuild Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_24_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSpecialBuild">
@@ -608,34 +439,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsSpecialBuild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the file is a special build.</summary>
-        <value>
-          <see langword="true" /> if the file is a special build; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A file that is a special build was built using standard release procedures, but the file differs from a standard file of the same version number. If this value is `true`, the <xref:System.Diagnostics.FileVersionInfo.SpecialBuild%2A> property must specify how this file differs from the standard version.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it displays whether this version is a special build version in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.IsSpecialBuild Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_14_1.cpp)]
- [!code-vb[Classic FileVersionInfo.IsSpecialBuild Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_14_1.vb)]
- [!code-cs[Classic FileVersionInfo.IsSpecialBuild Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_14_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -644,16 +466,24 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default language string for the version info block.</summary>
-        <value>The description string for the Microsoft Language Identifier in the version resource or <see langword="null" /> if the file did not contain version information.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -663,33 +493,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.LegalCopyright" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all copyright notices that apply to the specified file.</summary>
-        <value>The copyright notices that apply to the specified file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This should include the full text of all notices, legal symbols, copyright dates, and so on or `null` if the file did not contain version information.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the LegalCopyright in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.LegalCopyright Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_3_1.cpp)]
- [!code-cs[Classic FileVersionInfo.LegalCopyright Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_3_1.cs)]
- [!code-vb[Classic FileVersionInfo.LegalCopyright Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LegalTrademarks">
@@ -698,33 +520,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.LegalTrademarks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the trademarks and registered trademarks that apply to the file.</summary>
-        <value>The trademarks and registered trademarks that apply to the file or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The legal trademarks include the full text of all notices, legal symbols, and trademark numbers.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the LegalTrademarks in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.LegalTrademarks Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_8_1.cpp)]
- [!code-cs[Classic FileVersionInfo.LegalTrademarks Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_8_1.cs)]
- [!code-vb[Classic FileVersionInfo.LegalTrademarks Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OriginalFilename">
@@ -733,33 +547,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.OriginalFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name the file was created with.</summary>
-        <value>The name the file was created with or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables an application to determine whether a file has been renamed.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the OriginalFilename in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.OriginalFilename Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_0_1.cpp)]
- [!code-vb[Classic FileVersionInfo.OriginalFilename Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_0_1.vb)]
- [!code-cs[Classic FileVersionInfo.OriginalFilename Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrivateBuild">
@@ -768,33 +574,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.PrivateBuild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets information about a private version of the file.</summary>
-        <value>Information about a private version of the file or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This information is present when <xref:System.Diagnostics.FileVersionInfo.IsPrivateBuild%2A> is `true`.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the private build information in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.PrivateBuild Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_16_1.cpp)]
- [!code-vb[Classic FileVersionInfo.PrivateBuild Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_16_1.vb)]
- [!code-cs[Classic FileVersionInfo.PrivateBuild Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_16_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProductBuildPart">
@@ -803,43 +601,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductBuildPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the build number of the product this file is associated with.</summary>
-        <value>A value representing the build number of the product this file is associated with or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A product version number is a 64-bit number that holds the version number as follows:  
-  
--   The first 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductMajorPart%2A> number.  
-  
--   The next 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductMinorPart%2A> number.  
-  
--   The third set of 16 bits are the ProductBuildPart number.  
-  
--   The last 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductPrivatePart%2A> number.  
-  
- This property gets the third set of 16 bits.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the ProductBuildPart in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.ProductBuildPart Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_10_1.cpp)]
- [!code-cs[Classic FileVersionInfo.ProductBuildPart Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_10_1.cs)]
- [!code-vb[Classic FileVersionInfo.ProductBuildPart Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProductMajorPart">
@@ -848,43 +628,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductMajorPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the major part of the version number for the product this file is associated with.</summary>
-        <value>A value representing the major part of the product version number or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A product version number is a 64-bit number that holds the version number as follows:  
-  
--   The first 16 bits are the ProductMajorPart number.  
-  
--   The next 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductMinorPart%2A> number.  
-  
--   The third set of 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductBuildPart%2A> number.  
-  
--   The last 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductPrivatePart%2A> number.  
-  
- This property gets the first set of 16 bits.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the ProductMajorPart in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-vb[Classic FileVersionInfo.ProductMajorPart Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_9_1.vb)]
- [!code-cpp[Classic FileVersionInfo.ProductMajorPart Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_9_1.cpp)]
- [!code-cs[Classic FileVersionInfo.ProductMajorPart Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProductMinorPart">
@@ -893,43 +655,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductMinorPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the minor part of the version number for the product the file is associated with.</summary>
-        <value>A value representing the minor part of the product version number or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A product version number is a 64-bit number that holds the version number as follows:  
-  
--   The first 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductMajorPart%2A> number.  
-  
--   The next 16 bits are the ProductMinorPart number.  
-  
--   The third set of 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductBuildPart%2A> number.  
-  
--   The last 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductPrivatePart%2A> number.  
-  
- This property gets the second set of 16 bits.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the ProductMinorPart in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.ProductMinorPart Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_11_1.cpp)]
- [!code-cs[Classic FileVersionInfo.ProductMinorPart Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_11_1.cs)]
- [!code-vb[Classic FileVersionInfo.ProductMinorPart Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProductName">
@@ -938,28 +682,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the product this file is distributed with.</summary>
-        <value>The name of the product this file is distributed with or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the ProductName in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.ProductName Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_17_1.cs)]
- [!code-cpp[Classic FileVersionInfo.ProductName Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_17_1.cpp)]
- [!code-vb[Classic FileVersionInfo.ProductName Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_17_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProductPrivatePart">
@@ -968,43 +709,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductPrivatePart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the private part number of the product this file is associated with.</summary>
-        <value>A value representing the private part number of the product this file is associated with or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A product version number is a 64-bit number that holds the version number as follows:  
-  
--   The first 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductMajorPart%2A> number.  
-  
--   The next 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductMinorPart%2A> number.  
-  
--   The third set of 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductBuildPart%2A> number.  
-  
--   The last 16 bits are the ProductPrivatePart number.  
-  
- This property gets the last set of 16 bits.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the ProductPrivatePart in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.ProductPrivatePart Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_25_1.cs)]
- [!code-vb[Classic FileVersionInfo.ProductPrivatePart Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_25_1.vb)]
- [!code-cpp[Classic FileVersionInfo.ProductPrivatePart Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_25_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProductVersion">
@@ -1013,41 +736,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of the product this file is distributed with.</summary>
-        <value>The version of the product this file is distributed with or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a version number is displayed as "major number.minor number.build number.private part number". A product version number is a 64-bit number that holds the version number as follows:  
-  
--   The first 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductMajorPart%2A> number.  
-  
--   The next 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductMinorPart%2A> number.  
-  
--   The third set of 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductBuildPart%2A> number.  
-  
--   The last 16 bits are the <xref:System.Diagnostics.FileVersionInfo.ProductPrivatePart%2A> number.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the ProductVersion in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.ProductVersion Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_15_1.cs)]
- [!code-cpp[Classic FileVersionInfo.ProductVersion Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_15_1.cpp)]
- [!code-vb[Classic FileVersionInfo.ProductVersion Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_15_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SpecialBuild">
@@ -1056,33 +763,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.SpecialBuild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the special build information for the file.</summary>
-        <value>The special build information for the file or <see langword="null" /> if the file did not contain version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Diagnostics.FileVersionInfo.IsSpecialBuild%2A> is `true`, SpecialBuild must specify how this file differs from the standard version of the file.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the special build information in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cpp[Classic FileVersionInfo.SpecialBuild Example#1](~/add/codesnippet/cpp/p-system.diagnostics.fil_1_1.cpp)]
- [!code-cs[Classic FileVersionInfo.SpecialBuild Example#1](~/add/codesnippet/csharp/p-system.diagnostics.fil_1_1.cs)]
- [!code-vb[Classic FileVersionInfo.SpecialBuild Example#1](~/add/codesnippet/visualbasic/p-system.diagnostics.fil_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1091,35 +790,26 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.FileVersionInfo.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a partial list of properties in the <see cref="T:System.Diagnostics.FileVersionInfo" /> and their values.</summary>
-        <returns>A list of the following properties in this class and their values:  
-  
- <see cref="System.Diagnostics.FileVersionInfo.FileName%2A" />, <see cref="System.Diagnostics.FileVersionInfo.InternalName%2A" />, <see cref="System.Diagnostics.FileVersionInfo.OriginalFilename%2A" />, <see cref="System.Diagnostics.FileVersionInfo.FileVersion%2A" />, <see cref="System.Diagnostics.FileVersionInfo.FileDescription%2A" />, <see cref="System.Diagnostics.FileVersionInfo.ProductName%2A" />, <see cref="System.Diagnostics.FileVersionInfo.ProductVersion%2A" />, <see cref="System.Diagnostics.FileVersionInfo.IsDebug%2A" />, <see cref="System.Diagnostics.FileVersionInfo.IsPatched%2A" />, <see cref="System.Diagnostics.FileVersionInfo.IsPreRelease%2A" />, <see cref="System.Diagnostics.FileVersionInfo.IsPrivateBuild%2A" />, <see cref="System.Diagnostics.FileVersionInfo.IsSpecialBuild%2A" />,  
-  
- <see cref="System.Diagnostics.FileVersionInfo.Language%2A" />.  
-  
- If the file did not contain version information, this list will contain only the name of the requested file. Boolean values will be <see langword="false" />, and all other entries will be <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it calls ToString to print a list of the file version information in a text box. This code assumes `textBox1` has been instantiated.  
-  
- [!code-cs[Classic FileVersionInfo.ToString Example#1](~/add/codesnippet/csharp/m-system.diagnostics.fil_0_1.cs)]
- [!code-cpp[Classic FileVersionInfo.ToString Example#1](~/add/codesnippet/cpp/m-system.diagnostics.fil_0_1.cpp)]
- [!code-vb[Classic FileVersionInfo.ToString Example#1](~/add/codesnippet/visualbasic/m-system.diagnostics.fil_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

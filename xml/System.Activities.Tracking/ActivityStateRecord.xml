@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a tracking record that is created when an activity changes state.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,11 +36,11 @@
         <Parameter Name="state" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">The instance ID of the activity.</param>
-        <param name="recordNumber">A sequence that defines the order in which tracking records are generated.</param>
-        <param name="activity">The activity.</param>
-        <param name="state">The activity state.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Tracking.ActivityStateRecord" /> class using the specified instance ID, record number, activity and activity state.</summary>
+        <param name="instanceId">To be added.</param>
+        <param name="recordNumber">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +57,8 @@
         <ReturnType>System.Activities.Tracking.ActivityInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Activities.Tracking.ActivityInfo" /> that contains information on the activity when the record is generated.</summary>
-        <value>The activity information.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current values of the tracked arguments associated with the activity when the record is generated.</summary>
-        <value>A <see cref="System.Collections.Generic.IDictionary%602" /> containing the arguments.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +112,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current state of the activity when the record is generated.</summary>
-        <value>The activity state.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +131,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that contains all the details of the tracking record.</summary>
-        <returns>The tracking data.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,8 +149,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current values of the tracked variables associated with the activity when the record is generated.</summary>
-        <value>The current values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

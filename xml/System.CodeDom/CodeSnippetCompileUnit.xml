@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeSnippetCompileUnit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,28 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a literal code fragment that can be compiled.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeSnippetCompileUnit can represent a literal block of code that is included directly in the source without modification.  
-  
- A CodeSnippetCompileUnit stores a section of code, exactly in its original format, as a string. The CodeDOM does not translate literal code fragments. Literal code fragments are stored and output in their original format. CodeDOM objects that contain literal code are provided so developers can encapsulate code that is already in the target language.  
-  
- The <xref:System.CodeDom.CodeSnippetCompileUnit.Value%2A> property contains the literal code fragment as a string. The <xref:System.CodeDom.CodeSnippetCompileUnit.LinePragma%2A> property is optional and specifies the position of the code within a source code document.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a new instance of the CodeSnippetCompileUnit class by using a string that represents literal code.  
-  
- [!code-cpp[CodeDomSampleBatch#8](~/add/codesnippet/cpp/t-system.codedom.codesni_0_1.cpp)]
- [!code-vb[CodeDomSampleBatch#8](~/add/codesnippet/visualbasic/t-system.codedom.codesni_0_1.vb)]
- [!code-cs[CodeDomSampleBatch#8](~/add/codesnippet/csharp/t-system.codedom.codesni_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,20 +30,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeSnippetCompileUnit" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you use this constructor you should also set the <xref:System.CodeDom.CodeSnippetCompileUnit.Value%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -74,27 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The literal code fragment to represent.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeSnippetCompileUnit" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to create a new instance of the <xref:System.CodeDom.CodeSnippetCompileUnit> class by using a string that represents literal code.  
-  
- [!code-cpp[CodeDomSampleBatch#8](~/add/codesnippet/cpp/m-system.codedom.codesni_1_1.cpp)]
- [!code-vb[CodeDomSampleBatch#8](~/add/codesnippet/visualbasic/m-system.codedom.codesni_1_1.vb)]
- [!code-cs[CodeDomSampleBatch#8](~/add/codesnippet/csharp/m-system.codedom.codesni_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinePragma">
@@ -104,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeLinePragma</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line and file information about where the code is located in a source code document.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeLinePragma" /> that indicates the position of the code fragment.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,15 +81,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the literal code fragment to represent.</summary>
-        <value>The literal code fragment.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

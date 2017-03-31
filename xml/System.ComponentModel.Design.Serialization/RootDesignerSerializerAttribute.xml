@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,32 +24,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates the base serializer to use for a root designer object. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- RootDesignerSerializerAttribute indicates the serializer to use when the serialization manager serializes the design document, and whether the specified serializer supports automatic reloading of the design document without first completely disposing of the document.  
-  
- This attribute contains the following significant members:  
-  
--   <xref:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.SerializerTypeName%2A> indicates what serialization object to use to serialize the class at design time.  
-  
--   <xref:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.SerializerBaseTypeName%2A> indicates the fully qualified name of the serialization object's base type.  
-  
--   <xref:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.Reloadable%2A> indicates whether the serializer supports reloading a design document without user interaction to open a new designer view.  
-  
-   
-  
-## Examples  
- The following example code applies a RootDesignerSerializerAttribute to a component.  
-  
- [!code-cs[IDesignerSerializationManagerSample#2](~/add/codesnippet/csharp/t-system.componentmodel._123_1.cs)]
- [!code-cpp[IDesignerSerializationManagerSample#2](~/add/codesnippet/cpp/t-system.componentmodel._123_1.cpp)]
- [!code-vb[IDesignerSerializationManagerSample#2](~/add/codesnippet/visualbasic/t-system.componentmodel._123_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,8 +35,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="serializerTypeName" Type="System.String" />
@@ -64,19 +48,11 @@
         <Parameter Name="reloadable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="serializerTypeName">The fully qualified name of the data type of the serializer.</param>
-        <param name="baseSerializerTypeName">The name of the base type of the serializer. A class can include multiple serializers as they all have different base types.</param>
-        <param name="reloadable">
-          <see langword="true" /> if this serializer supports dynamic reloading of the document; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" /> class using the specified attributes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Creates a new designer serialization attribute.  
-  
- ]]></format>
-        </remarks>
+        <param name="serializerTypeName">To be added.</param>
+        <param name="baseSerializerTypeName">To be added.</param>
+        <param name="reloadable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -86,8 +62,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="serializerTypeName" Type="System.String" />
@@ -95,19 +75,11 @@
         <Parameter Name="reloadable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="serializerTypeName">The fully qualified name of the data type of the serializer.</param>
-        <param name="baseSerializerType">The name of the base type of the serializer. A class can include multiple serializers, as they all have different base types.</param>
-        <param name="reloadable">
-          <see langword="true" /> if this serializer supports dynamic reloading of the document; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" /> class using the specified attributes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Creates a new designer serialization attribute.  
-  
- ]]></format>
-        </remarks>
+        <param name="serializerTypeName">To be added.</param>
+        <param name="baseSerializerType">To be added.</param>
+        <param name="reloadable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,8 +89,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="serializerType" Type="System.Type" />
@@ -126,19 +102,11 @@
         <Parameter Name="reloadable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="serializerType">The data type of the serializer.</param>
-        <param name="baseSerializerType">The base type of the serializer. A class can include multiple serializers as they all have different base types.</param>
-        <param name="reloadable">
-          <see langword="true" /> if this serializer supports dynamic reloading of the document; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" /> class using the specified attributes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Creates a new designer serialization attribute.  
-  
- ]]></format>
-        </remarks>
+        <param name="serializerType">To be added.</param>
+        <param name="baseSerializerType">To be added.</param>
+        <param name="reloadable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reloadable">
@@ -148,26 +116,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the root serializer supports reloading of the design document without first disposing the designer host.</summary>
-        <value>
-          <see langword="true" /> if the root serializer supports reloading; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property is set to `false`, the design document does not automatically perform a reload on behalf of the user. If this property is set to `false`, it is the user's responsibility to reopen the designer view window for the design document, if an update or reload is desired.  
-  
- Some serializers require the interaction of external components in the designer loading process in order to rebuild the design document. These serializers sometimes need to create a new designer host each time the design document is loaded. If this is the situation, Reloadable will be set to `false`, and the designer host must be recreated by user interaction (launching the designer for the document) after the design document is disposed. The events and services that were connected to the designer host, except through deserialization, do not remain and may need to be set again. If Reloadable is `true`, the design document can be reloaded after changes outside the designer are made to the code, without closing the designer window and reopening it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SerializerBaseTypeName">
@@ -177,15 +139,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the fully qualified type name of the base type of the serializer.</summary>
-        <value>The name of the base type of the serializer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,15 +162,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the fully qualified type name of the serializer.</summary>
-        <value>The name of the type of the serializer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,23 +185,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a unique ID for this attribute type.</summary>
-        <value>An object containing a unique ID for this attribute type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used by filtering algorithms to identify two attributes that are the same type. For most attributes, this just returns the <xref:System.Type> instance for the attribute. <xref:System.ComponentModel.EditorAttribute> overrides this to include the type of the editor base type.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.RolePrincipal" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,21 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents security information for the current HTTP request, including role membership. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RolePrincipal object implements the <xref:System.Security.Principal.IPrincipal> interface and represents the current security context for the HTTP request.  
-  
- When role management is enabled (see <xref:System.Web.Security.Roles>), the <xref:System.Web.Security.RoleManagerModule> assigns a RolePrincipal object to the <xref:System.Web.HttpContext.User%2A> property of the <xref:System.Web.HttpContext.Current%2A><xref:System.Web.HttpContext>.  
-  
- The RolePrincipal class exposes the security identity for the current HTTP request and additionally performs checks for role membership. If <xref:System.Web.Security.Roles.CacheRolesInCookie%2A> is `true`, then the RolePrincipal object manages the cached list of roles and looks up role membership for the current user in the cached list first, then the role <xref:System.Web.Security.Roles.Provider%2A>. If <xref:System.Web.Security.Roles.CacheRolesInCookie%2A> is `false`, the RolePrincipal object always looks up role membership using the role provider.  
-  
- The RolePrincipal object encrypts and decrypts role information cached in the cookie identified by the <xref:System.Web.Security.Roles.CookieName%2A> based on the <xref:System.Web.Security.Roles.CookieProtectionValue%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,35 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="identity" Type="System.Security.Principal.IIdentity" />
       </Parameters>
       <Docs>
-        <param name="identity">The user identity to create the <see cref="T:System.Web.Security.RolePrincipal" /> for.</param>
-        <summary>Instantiates a <see cref="T:System.Web.Security.RolePrincipal" /> object for the specified <paramref name="identity" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload of the RolePrincipal constructor creates a new <xref:System.Web.Security.RolePrincipal> object and initializes its property values. Cached role information is not read from the cookie identified by the <xref:System.Web.Security.Roles.CookieName%2A> property. The <xref:System.Web.Security.RolePrincipal.ProviderName%2A> property is set to the <xref:System.Configuration.Provider.ProviderBase.Name%2A> of the default role provider.  
-  
- For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
-   
-  
-## Examples  
- The following code example creates a new <xref:System.Web.Security.RolePrincipal> object. If <xref:System.Web.Security.Roles.CacheRolesInCookie%2A> is `true`, the example creates the <xref:System.Web.Security.RolePrincipal> with cookie information from the cookie identified by the <xref:System.Web.Security.Roles.CookieName%2A> property.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#2](~/add/codesnippet/csharp/39332c55-2f33-4fad-9306-_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#2](~/add/codesnippet/visualbasic/39332c55-2f33-4fad-9306-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="identity" /> is <see langword="null" />.</exception>
+        <param name="identity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,9 +51,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object to populate with data.</param>
-        <param name="context">The destination for this serialization.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.RolePrincipal" /> class using information that is contained in the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object and using the specified streaming context.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +64,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -106,33 +71,10 @@
         <Parameter Name="encryptedTicket" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identity">The user identity to create the <see cref="T:System.Web.Security.RolePrincipal" /> for.</param>
-        <param name="encryptedTicket">A string that contains encrypted role information.</param>
-        <summary>Instantiates a <see cref="T:System.Web.Security.RolePrincipal" /> object for the specified <paramref name="identity" /> with role information from the specified <paramref name="encryptedTicket" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload of the RolePrincipal constructor creates a new <xref:System.Web.Security.RolePrincipal> object and initializes its property values. Role information for the current user is read from the supplied `encryptedTicket` and cached with the <xref:System.Web.Security.RolePrincipal> object. The <xref:System.Web.Security.RolePrincipal.ProviderName%2A> property is set to the <xref:System.Configuration.Provider.ProviderBase.Name%2A> of the default role provider.  
-  
- For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
-   
-  
-## Examples  
- The following code example creates a new <xref:System.Web.Security.RolePrincipal> object. If <xref:System.Web.Security.Roles.CacheRolesInCookie%2A> is `true`, the example creates the <xref:System.Web.Security.RolePrincipal> with cookie information from the cookie identified by the <xref:System.Web.Security.Roles.CookieName%2A> property.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#2](~/add/codesnippet/csharp/9eda904c-406a-4e24-aa64-_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#2](~/add/codesnippet/visualbasic/9eda904c-406a-4e24-aa64-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="identity" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="encryptedTicket" /> is <see langword="null" />.</exception>
+        <param name="identity">To be added.</param>
+        <param name="encryptedTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -142,7 +84,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -150,27 +91,10 @@
         <Parameter Name="identity" Type="System.Security.Principal.IIdentity" />
       </Parameters>
       <Docs>
-        <param name="providerName">The name of the role provider for the user.</param>
-        <param name="identity">The user identity to create the <see cref="T:System.Web.Security.RolePrincipal" /> for.</param>
-        <summary>Instantiates a <see cref="T:System.Web.Security.RolePrincipal" /> object for the specified <paramref name="identity" /> using the specified <paramref name="providerName" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload of the RolePrincipal constructor creates a new <xref:System.Web.Security.RolePrincipal> object and initializes its property values. The <xref:System.Web.Security.RolePrincipal.ProviderName%2A> property is set to the value specified in the `providerName` parameter.  
-  
- For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="identity" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="providerName" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="providerName" /> refers to a role provider that does not exist in the configuration for the application.</exception>
+        <param name="providerName">To be added.</param>
+        <param name="identity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -180,7 +104,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -189,32 +112,11 @@
         <Parameter Name="encryptedTicket" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="providerName">The name of the role provider for the user.</param>
-        <param name="identity">The user identity to create the <see cref="T:System.Web.Security.RolePrincipal" /> for.</param>
-        <param name="encryptedTicket">A string that contains encrypted role information.</param>
-        <summary>Instantiates a <see cref="T:System.Web.Security.RolePrincipal" /> object for the specified <paramref name="identity" /> using the specified <paramref name="providerName" /> and role information from the specified <paramref name="encryptedTicket" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload of the <xref:System.Web.Security.RolePrincipal.%23ctor%2A> constructor creates a new <xref:System.Web.Security.RolePrincipal> object and initializes its property values. Role information for the current user is read from the supplied `encryptedTicket` and cached with the <xref:System.Web.Security.RolePrincipal> object. The <xref:System.Web.Security.RolePrincipal.ProviderName%2A> property is set to the value specified in the `providerName` parameter.  
-  
- For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="identity" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="encryptedTicket" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="providerName" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="providerName" /> refers to a role provider that does not exist in the configuration for the application.</exception>
+        <param name="providerName">To be added.</param>
+        <param name="identity">To be added.</param>
+        <param name="encryptedTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CachedListChanged">
@@ -224,34 +126,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the list of role names cached with the <see cref="T:System.Web.Security.RolePrincipal" /> object has been modified.</summary>
-        <value>
-          <see langword="true" /> if the list of role names cached with the <see cref="T:System.Web.Security.RolePrincipal" /> object has been modified; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CachedListChanged property will return `true` after role names have been retrieved from the default role <xref:System.Web.Security.Roles.Provider%2A> and added to the cache by the <xref:System.Web.Security.RolePrincipal.GetRoles%2A> method, or when the <xref:System.Web.Security.RolePrincipal.IsInRole%2A> method calls the <xref:System.Web.Security.RoleProvider.IsUserInRole%2A> method of the default role provider and then receives a response of `true`, resulting in the role name passed to the <xref:System.Web.Security.RolePrincipal.IsInRole%2A> method being added to the cache.  
-  
- The CachedListChanged property will also return true if <xref:System.Web.Security.Roles.CookieSlidingExpiration%2A> is set to `true` and the <xref:System.Web.Security.RolePrincipal.ExpireDate%2A> has passed, resulting in a new <xref:System.Web.Security.RolePrincipal.ExpireDate%2A> being set.  
-  
-   
-  
-## Examples  
- The following example displays role-caching information for the current user if role management is enabled. For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#1](~/add/codesnippet/csharp/p-system.web.security.ro_7_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#1](~/add/codesnippet/visualbasic/p-system.web.security.ro_7_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CookiePath">
@@ -261,31 +144,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the path for the cached role names cookie.</summary>
-        <value>The path of the cookie where role names are cached. The default is /.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CookiePath property returns the value of the `cookiePath` attribute from the Web.config file for your ASP.NET application. For more information on cookie paths, see <xref:System.Web.HttpCookie.Path%2A>.  
-  
-   
-  
-## Examples  
- The following example displays role-caching information for the current user if role management is enabled. For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#1](~/add/codesnippet/csharp/p-system.web.security.ro_9_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#1](~/add/codesnippet/visualbasic/p-system.web.security.ro_9_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -295,32 +162,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the roles cookie has expired.</summary>
-        <value>
-          <see langword="true" /> if the roles cookie has expired; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Expired property returns a `Boolean` value indicating whether the roles cookie has expired based on the <xref:System.Web.Security.RolePrincipal.ExpireDate%2A> and the current date and time.  
-  
-   
-  
-## Examples  
- The following example displays role-caching information for the current user if role management is enabled. For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#1](~/add/codesnippet/csharp/p-system.web.security.ro_1_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#1](~/add/codesnippet/visualbasic/p-system.web.security.ro_1_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpireDate">
@@ -330,26 +180,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the date and time when the roles cookie will expire.</summary>
-        <value>The <see cref="T:System.DateTime" /> value when the roles cookie will expire.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example displays role-caching information for the current user if role management is enabled. For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#1](~/add/codesnippet/csharp/p-system.web.security.ro_12_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#1](~/add/codesnippet/visualbasic/p-system.web.security.ro_12_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -369,17 +208,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object to populate with data.</param>
-        <param name="context">The destination for this serialization.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data that is required in order to serialize the target object using the specified streaming context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%28System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRoles">
@@ -389,7 +221,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -397,25 +228,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a list of roles that the <see cref="T:System.Web.Security.RolePrincipal" /> is a member of.</summary>
-        <returns>The list of roles that the <see cref="T:System.Web.Security.RolePrincipal" /> is a member of.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Web.Security.Roles.CacheRolesInCookie%2A> is `true` and role names have been cached for the user represented by the <xref:System.Web.Security.RolePrincipal>, then the GetRoles method will return the list of role names in the cache that the user is a member of. If role names have not been cached, then the GetRoles method returns the list of role names that the user is a member of from the default role <xref:System.Web.Security.Roles.Provider%2A>. Only role names for the current <xref:System.Web.Security.Roles.ApplicationName%2A> are returned. To determine whether role names have been cached in the <xref:System.Web.Security.RolePrincipal> object, check the <xref:System.Web.Security.RolePrincipal.IsRoleListCached%2A> property.  
-  
-   
-  
-## Examples  
- The following code example displays the roles that the logged-on user is a member of.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#7](~/add/codesnippet/csharp/m-system.web.security.ro_3_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#7](~/add/codesnippet/visualbasic/m-system.web.security.ro_3_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The <see cref="System.Web.Security.RolePrincipal.Identity%2A" /> property is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -425,31 +240,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.IIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the security identity for the current HTTP request.</summary>
-        <value>The security identity for the current HTTP request.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Identity of a <xref:System.Web.Security.RolePrincipal> object is set when the <xref:System.Web.Security.RolePrincipal> constructor is called.  
-  
-   
-  
-## Examples  
- The following example displays role-caching information for the current user if role management is enabled. For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#1](~/add/codesnippet/csharp/p-system.web.security.ro_2_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#1](~/add/codesnippet/visualbasic/p-system.web.security.ro_2_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInRole">
@@ -459,7 +258,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -469,29 +267,10 @@
         <Parameter Name="role" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="role">The role to search for.</param>
-        <summary>Gets a value indicating whether the user represented by the <see cref="T:System.Web.Security.RolePrincipal" /> is in the specified role.</summary>
-        <returns>
-          <see langword="true" /> if user represented by the <see cref="T:System.Web.Security.RolePrincipal" /> is in the specified role; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IsInRole first checks the <xref:System.Web.Security.RolePrincipal.IsRoleListCached%2A> property to determine whether a cached list of role names for the current user is available. If the <xref:System.Web.Security.RolePrincipal.IsRoleListCached%2A> property is `true`, the cached list is checked for the specified role. If the IsInRole method finds the specified role in the cached list, it returns `true`.  
-  
- If IsInRole does not find the specified role, it calls the <xref:System.Web.Security.RoleProvider.GetRolesForUser%2A> method of the default <xref:System.Web.Security.Roles.Provider%2A> instance to determine whether the user name is associated with a role from the data source for the configured <xref:System.Web.Security.Roles.ApplicationName%2A> value.  
-  
-   
-  
-## Examples  
- The following code example checks to see whether the logged-on user is in the Administrators role before allowing the user to view user roles.  
-  
- [!code-vb[System.Web.Security.RolePrincipal#8](~/add/codesnippet/visualbasic/m-system.web.security.ro_9_1.aspx)]
- [!code-cs[System.Web.Security.RolePrincipal#8](~/add/codesnippet/csharp/m-system.web.security.ro_9_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The <see cref="System.Web.Security.RolePrincipal.Identity%2A" /> property is <see langword="null" />.</exception>
+        <param name="role">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRoleListCached">
@@ -501,32 +280,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the list of roles for the user has been cached in a cookie.</summary>
-        <value>
-          <see langword="true" /> if role names are cached in a cookie; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `cacheRolesInCookie` attribute in the Web.config file for the application is set to `true`, then a list of role names for the current user is written to a cookie when user membership in a particular role is checked. The IsRoleListCached property indicates whether role names have been written to the cookie. Note that, even though the `cacheRolesInCookie` configuration attribute may be `true`, the IsRoleListCached property does not return `true` until after role information has been written to the cookie. If no role checks are performed for a user, IsRoleListCached will return `false`.  
-  
-   
-  
-## Examples  
- The following example displays role-caching information for the current user if role management is enabled. For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#1](~/add/codesnippet/csharp/p-system.web.security.ro_3_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#1](~/add/codesnippet/visualbasic/p-system.web.security.ro_3_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IssueDate">
@@ -536,26 +298,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the date and time that the roles cookie was issued.</summary>
-        <value>The <see cref="T:System.DateTime" /> that the roles cookie was issued.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example displays role-caching information for the current user if role management is enabled. For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#1](~/add/codesnippet/csharp/p-system.web.security.ro_8_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#1](~/add/codesnippet/visualbasic/p-system.web.security.ro_8_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -565,25 +316,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the role provider that stores and retrieves role information for the user.</summary>
-        <value>The name of the role provider that stores and retrieves role information for the user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProviderName property exposes the name of the role provider that manages the role information for the user represented by the <xref:System.Web.Security.RolePrincipal> object. This enables you to access the specific role-provider instance for a user by using the <xref:System.Web.Security.Roles.Providers%2A> property of the <xref:System.Web.Security.Roles> class regardless of whether the provider is the default provider for the application. For example, you may create a method that takes a <xref:System.Web.Security.RolePrincipal> as input and returns the list of roles for the represented user. You can ensure that the appropriate role provider is used to return the list of roles for the <xref:System.Web.Security.RolePrincipal> by calling the <xref:System.Web.Security.RoleProvider.GetRolesForUser%2A> method of the role provider from the <xref:System.Web.Security.Roles.Providers%2A> collection that is indexed by the ProviderName property value.  
-  
- To populate the <xref:System.Web.Security.RolePrincipal> object for each request, you must use a <xref:System.Web.Security.RoleManagerModule.GetRoles> event handler defined in the Global.asax file for the application.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetDirty">
@@ -593,7 +334,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -601,15 +341,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Marks the cached role list as having been changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SetDirty method marks the cached role list as having been changed by setting <xref:System.Web.Security.RolePrincipal.CachedListChanged%2A> to `true` and <xref:System.Web.Security.RolePrincipal.IsRoleListCached%2A> to `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -619,7 +352,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -630,17 +362,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
-        <param name="context">The destination for this serialization.</param>
-        <summary>For a description of this member, see <see cref="System.Runtime.Serialization.ISerializationSurrogate.GetObjectData%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit-interface member implementation. It can be used only when the <xref:System.Web.Security.RolePrincipal> instance is cast to an <xref:System.Runtime.Serialization.ISerializable> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToEncryptedTicket">
@@ -650,7 +375,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -658,24 +382,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the role information cached with the <see cref="T:System.Web.Security.RolePrincipal" /> object encrypted based on the <see cref="System.Web.Security.Roles.CookieProtectionValue%2A" />.</summary>
-        <returns>The role information cached with the <see cref="T:System.Web.Security.RolePrincipal" /> object encrypted based on the <see cref="System.Web.Security.Roles.CookieProtectionValue%2A" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value returned by the ToEncryptedTicket method is stored in the roles cookie when <xref:System.Web.Security.Roles.CacheRolesInCookie%2A> is `true`.  
-  
-   
-  
-## Examples  
- The following code example writes the results of the ToEncryptedTicket method to the roles cookie.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#6](~/add/codesnippet/csharp/m-system.web.security.ro_11_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#6](~/add/codesnippet/visualbasic/m-system.web.security.ro_11_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -685,31 +394,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version number of the roles cookie.</summary>
-        <value>The version number of the roles cookie.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By including a version number in the roles cookie, future releases of ASP.NET can modify the format of the roles cookie and use the Version property to distinguish between different formats.  
-  
-   
-  
-## Examples  
- The following example displays role-caching information for the current user if role management is enabled. For information on enabling role management, see the <xref:System.Web.Security.Roles> class.  
-  
- [!code-cs[System.Web.Security.RolePrincipal#1](~/add/codesnippet/csharp/p-system.web.security.ro_10_1.aspx)]
- [!code-vb[System.Web.Security.RolePrincipal#1](~/add/codesnippet/visualbasic/p-system.web.security.ro_10_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

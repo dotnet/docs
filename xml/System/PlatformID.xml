@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.PlatformID" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -16,36 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Identifies the operating system, or platform, supported by an assembly.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Environment.OSVersion%2A?displayProperty=fullName> and <xref:System.OperatingSystem.Platform%2A?displayProperty=fullName> properties to obtain the PlatformID enumeration for the currently executing operating system or development platform. Use the PlatformID enumeration to help determine whether the current operating system or development platform supports your application.  
-  
- You can use the underlying integer value of each PlatformID enumeration member, as shown in the table, as the `PlatformId` argument for the [SignTool.exe (Sign Tool)](../Topic/SignTool.exe%20\(Sign%20Tool\).md) utility.  
-  
-|Member|Underlying value|  
-|------------|----------------------|  
-|Win32S|0|  
-|Win32Windows|1|  
-|Win32NT|2|  
-|WinCE|3|  
-|Unix|4|  
-|Xbox|5|  
-|MacOSX|6|  
-  
-   
-  
-## Examples  
- The following example demonstrates using the PlatformID class to identify the currently executing operating system.  
-  
- [!code-vb[PlatformID.class#1](~/add/codesnippet/visualbasic/t-system.platformid_1.vb)]
- [!code-cpp[PlatformID.class#1](~/add/codesnippet/cpp/t-system.platformid_1.cpp)]
- [!code-cs[PlatformID.class#1](~/add/codesnippet/csharp/t-system.platformid_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="MacOSX">
@@ -55,14 +31,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.PlatformID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operating system is Macintosh.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unix">
@@ -72,14 +52,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.PlatformID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operating system is Unix.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Win32NT">
@@ -89,14 +73,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.PlatformID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operating system is Windows NT or later.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Win32S">
@@ -106,14 +94,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.PlatformID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operating system is Win32s. Win32s is a layer that runs on 16-bit versions of Windows to provide access to 32-bit applications.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Win32Windows">
@@ -123,14 +115,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.PlatformID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operating system is Windows 95 or Windows 98.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WinCE">
@@ -140,14 +136,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.PlatformID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operating system is Windows CE.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xbox">
@@ -157,14 +157,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.PlatformID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The development platform is Xbox 360.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

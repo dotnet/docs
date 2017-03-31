@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.KeyedByTypeCollection`1" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -19,16 +19,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TItem">The item types contained in the collection that also serve as the keys for the collection.</typeparam>
-    <summary>Provides a collection whose items are types that serve as keys.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only one object of each type is allowed in the collection because the type is the key and each key must be unique. But you can find objects of different types.  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TItem">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,12 +31,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.Collections.Generic.KeyedByTypeCollection%601" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,18 +47,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;TItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">The <see cref="System.Collections.Generic.IEnumerable%601" /> of generic type <see cref="T:System.Object" /> used to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="System.Collections.Generic.KeyedByTypeCollection%601" /> class for a specified enumeration of objects.</summary>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="items" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Find&lt;T&gt;">
@@ -75,7 +66,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,9 +77,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of item in the collection to find.</typeparam>
-        <summary>Returns the first item in the collection of a specified type.</summary>
-        <returns>The object of type <paramref name="T" /> if it is a reference type and the value of type <paramref name="T" /> if it is a value type. The default value of the type is returned if no object of type <paramref name="T" /> is contained in the collection: <see langword="null" /> if it is a reference type and 0 if it is a value type.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +90,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,9 +101,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of item in the collection to find.</typeparam>
-        <summary>Returns a collection of objects of type <paramref name="T" /> that are contained in the <see cref="System.Collections.Generic.KeyedByTypeCollection%601" />.</summary>
-        <returns>A <see cref="System.Collections.ObjectModel.Collection%601" /> of type <paramref name="T" /> that contains the objects of type <paramref name="T" /> from the original collection.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,7 +114,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,22 +124,20 @@
         <Parameter Name="item" Type="TItem" />
       </Parameters>
       <Docs>
-        <param name="item">The item in the collection whose type is to be retrieved.</param>
-        <summary>Gets the type of an item contained in the collection.</summary>
-        <returns>The type of the specified <paramref name="item" /> in the collection.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
-      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, TItem item);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !TItem item) cil managed" />
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, TItem kind);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !TItem kind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.InsertItem(System.Int32,`0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,12 +148,10 @@
         <Parameter Name="item" Type="TItem" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
-        <param name="item">The object to insert into the collection.</param>
-        <summary>Inserts an element into the collection at a specific location.</summary>
+        <param name="index">To be added.</param>
+        <param name="kind">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove&lt;T&gt;">
@@ -174,7 +161,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,9 +172,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of item in the collection to remove.</typeparam>
-        <summary>Removes an object of a specified type from the collection.</summary>
-        <returns>The object removed from the collection.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +185,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,20 +196,20 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of item in the collection to remove.</typeparam>
-        <summary>Removes all of the elements of a specified type from the collection.</summary>
-        <returns>The <see cref="System.Collections.ObjectModel.Collection%601" /> that contains the objects of type <paramref name="T" /> from the original collection.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
-      <MemberSignature Language="C#" Value="protected override void SetItem (int index, TItem item);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !TItem item) cil managed" />
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, TItem kind);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !TItem kind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.SetItem(System.Int32,`0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,12 +220,10 @@
         <Parameter Name="item" Type="TItem" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <c>item</c> to be replaced.</param>
-        <param name="item">The object to add to the collection.</param>
-        <summary>Replaces the item at the specified index with a new object.</summary>
+        <param name="index">To be added.</param>
+        <param name="kind">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcRowUpdatingEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,31 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Data.Odbc.OdbcDataAdapter.RowUpdating" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.Odbc.OdbcDataAdapter.RowUpdating> event is raised before an update to a row.  
-  
- When using the `Update` method, there are two events that occur for each data row updated: <xref:System.Data.Odbc.OdbcDataAdapter.RowUpdating> and <xref:System.Data.Odbc.OdbcDataAdapter.RowUpdated>. The order of execution for an update operation is as follows:  
-  
-1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
-  
-2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
-  
-3.  The command executes.  
-  
-4.  If the command is set to `FirstReturnedRecord`, then the first returned result is placed in the <xref:System.Data.DataRow>.  
-  
-5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
-  
-6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
-  
-7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -56,11 +31,11 @@
         <Parameter Name="tableMapping" Type="System.Data.Common.DataTableMapping" />
       </Parameters>
       <Docs>
-        <param name="row">The <see cref="T:System.Data.DataRow" /> to update.</param>
-        <param name="command">The <see cref="T:System.Data.Odbc.OdbcCommand" /> to execute during the update operation.</param>
-        <param name="statementType">One of the <see cref="T:System.Data.StatementType" /> values that specifies the type of query executed.</param>
-        <param name="tableMapping">The <see cref="T:System.Data.Common.DataTableMapping" /> sent through <see cref="System.Data.Common.DbDataAdapter.Update%2A" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcRowUpdatingEventArgs" /> class.</summary>
+        <param name="row">To be added.</param>
+        <param name="command">To be added.</param>
+        <param name="statementType">To be added.</param>
+        <param name="tableMapping">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +46,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,15 +64,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Odbc.OdbcCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Data.Odbc.OdbcCommand" /> to execute when <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> is called.</summary>
-        <value>The <see cref="T:System.Data.Odbc.OdbcCommand" /> to execute when <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> is called.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

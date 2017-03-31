@@ -4,26 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqAuthenticationMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of authentication used for the binding.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Values from this enumeration are used by the  
-  
- <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> property to indicate how a message must be authenticated by the MSMQ transport.  
-  
- If security is turned off by setting the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> to None, then the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> property must also be set to <xref:System.Net.Security.ProtectionLevel> for consistency.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Certificate">
@@ -33,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqAuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The client is authenticated using X.509 certificates. The client certificate must be present in the certificate store of the server.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -50,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqAuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No security is used with this binding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsDomain">
@@ -67,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqAuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Kerberos is used for authentication. The client and server must be joined to a trusted domain.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

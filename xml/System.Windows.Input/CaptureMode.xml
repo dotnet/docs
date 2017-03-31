@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CaptureMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the mouse capture policies.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When CaptureMode is set to Element, mouse capture is applied only to the element which has captured the mouse.  
-  
- When CaptureMode is set to SubTree, mouse capture is applied to the element that has mouse capture or one of its child elements if the mouse is over the child element.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Element">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.CaptureMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Mouse capture is applied to a single element.  Mouse input goes to the captured element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.CaptureMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No mouse capture.  Mouse input goes to the element under the mouse.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SubTree">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.CaptureMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Mouse capture is applied to a subtree of elements.  If the mouse is over a child of the element with capture, mouse input is sent to the child element.  Otherwise, mouse input is sent to the element with mouse capture.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.FirstMatchCodeGroup" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,35 +13,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("This type is obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
-    </Attribute>
-    <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Allows security policy to be defined by the union of the policy statement of a code group and that of the first child code group that matches. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Code groups are the building blocks of code access security policy. Each policy level consists of a root code group that can have child code groups. Each child code group can have their own child code groups; this behavior extends to any number of levels, forming a tree. Each code group has a membership condition that determines if a given assembly belongs to it based on the evidence for that assembly. Only code groups whose membership conditions match a given assembly and their child code groups apply policy.  
-  
- Like any code group, FirstMatchCodeGroup only applies when its membership condition matches evidence for an assembly. If there is a match, it tests the membership condition of each child in order, stopping when the first match occurs. The result of FirstMatchCodeGroup is the union of the policy statement of the root code group and the policy statement of the first child group of that code group that matches.  
-  
- FirstMatchCodeGroup is intended for programmatic use by application domain hosts to set domain policy.  
-  
-   
-  
-## Examples  
- The following example shows the use of members of the FirstMatchCodeGroup class.  
-  
- [!code-cpp[System.Security.Policy.FirstMatchCodeGroup_Evt#1](~/add/codesnippet/cpp/t-system.security.policy_7_1.cpp)]
- [!code-vb[System.Security.Policy.FirstMatchCodeGroup_Evt#1](~/add/codesnippet/visualbasic/t-system.security.policy_7_1.vb)]
- [!code-cs[System.Security.Policy.FirstMatchCodeGroup_Evt#1](~/add/codesnippet/csharp/t-system.security.policy_7_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -59,31 +36,10 @@
         <Parameter Name="policy" Type="System.Security.Policy.PolicyStatement" />
       </Parameters>
       <Docs>
-        <param name="membershipCondition">A membership condition that tests evidence to determine whether this code group applies policy.</param>
-        <param name="policy">The policy statement for the code group in the form of a permission set and attributes to grant code that matches the membership condition.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.FirstMatchCodeGroup" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor creates a basic code group and should be called from the constructors of custom code groups. Child code groups can be added using the <xref:System.Security.Policy.CodeGroup.AddChild%2A> method.  
-  
-   
-  
-## Examples  
- The following code shows the use of the FirstMatchCodeGroup constructor. This code example is part of a larger example provided for <xref:System.Security.Policy.FirstMatchCodeGroup> class.  
-  
- [!code-cpp[System.Security.Policy.FirstMatchCodeGroup_Evt#2](~/add/codesnippet/cpp/e1a4e309-d6ee-48c0-bd35-_1.cpp)]
- [!code-vb[System.Security.Policy.FirstMatchCodeGroup_Evt#2](~/add/codesnippet/visualbasic/e1a4e309-d6ee-48c0-bd35-_1.vb)]
- [!code-cs[System.Security.Policy.FirstMatchCodeGroup_Evt#2](~/add/codesnippet/csharp/e1a4e309-d6ee-48c0-bd35-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The type of the <paramref name="membershipCondition" /> parameter is not valid.  
-  
- -or-  
-  
- The type of the <paramref name="policy" /> parameter is not valid.</exception>
+        <param name="membershipCondition">To be added.</param>
+        <param name="policy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -93,7 +49,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,25 +57,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Makes a deep copy of the code group.</summary>
-        <returns>An equivalent copy of the code group, including its membership conditions and child code groups.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method makes a deep copy of the code group, meaning that copies of all objects it contains are made, as well.  
-  
-   
-  
-## Examples  
- The following code shows the use of Copy method to make a deep copy of the code group. This code example is part of a larger example provided for <xref:System.Security.Policy.FirstMatchCodeGroup> class.  
-  
- [!code-cpp[System.Security.Policy.FirstMatchCodeGroup_Evt#18](~/add/codesnippet/cpp/m-system.security.policy_1_1.cpp)]
- [!code-vb[System.Security.Policy.FirstMatchCodeGroup_Evt#18](~/add/codesnippet/visualbasic/m-system.security.policy_1_1.vb)]
- [!code-cs[System.Security.Policy.FirstMatchCodeGroup_Evt#18](~/add/codesnippet/csharp/m-system.security.policy_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeLogic">
@@ -129,27 +69,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the merge logic.</summary>
-        <value>The string "First Match".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows the use of the MergeLogic property to get the merge logic for this code group. This code example is part of a larger example provided for the <xref:System.Security.Policy.FirstMatchCodeGroup> class.  
-  
- [!code-cpp[System.Security.Policy.FirstMatchCodeGroup_Evt#15](~/add/codesnippet/cpp/p-system.security.policy_9_1.cpp)]
- [!code-vb[System.Security.Policy.FirstMatchCodeGroup_Evt#15](~/add/codesnippet/visualbasic/p-system.security.policy_9_1.vb)]
- [!code-cs[System.Security.Policy.FirstMatchCodeGroup_Evt#15](~/add/codesnippet/csharp/p-system.security.policy_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Resolve">
@@ -159,14 +88,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Policy.PolicyStatement</ReturnType>
       </ReturnValue>
@@ -174,36 +98,10 @@
         <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="evidence">The evidence for the assembly.</param>
-        <summary>Resolves policy for the code group and its descendants for a set of evidence.</summary>
-        <returns>A policy statement consisting of the permissions granted by the code group with optional attributes, or <see langword="null" /> if the code group does not apply (the membership condition does not match the specified evidence).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Given evidence for an assembly to be loaded, this method evaluates the code group by first checking the membership condition against the specified evidence. If there is a match, this method returns a policy statement for the code group, including evaluation of child code groups.  
-  
- For first-match code groups, each child code group's membership condition is tested against the evidence in the order in which they were added; only the first match is resolved with the evidence set. If there are no matches, the policy statement of the parent first-match code group applies. The matching child code group type determines how all child groups under it are applied, depending on how the <xref:System.Security.Policy.CodeGroup.Resolve%2A> methods of these child groups work.  
-  
- The .NET Framework security system uses <xref:System.Security.Policy.CodeGroup.Resolve%2A> on the policy levels to determine which permissions to grant to loaded code from the resulting policy statements and the code request on the assembly.  
-  
- This operation of this method is as follows:  
-  
- If the membership condition does not match the specified evidence, return `null`; otherwise, set the permission set to be returned (P) equal to the code group's policy statement and continue. For each child code group, resolve the code group with the same evidence; if the result is not `null`, return that policy statement. If no child code group matched, return P (the parent's policy statement).  
-  
-   
-  
-## Examples  
- The following code shows the use of the Resolve method to resolve policy for the code group. This code example is part of a larger example provided for the <xref:System.Security.Policy.FirstMatchCodeGroup> class.  
-  
- [!code-cpp[System.Security.Policy.FirstMatchCodeGroup_Evt#19](~/add/codesnippet/cpp/bb7a14a1-f12f-4535-b4af-_1.cpp)]
- [!code-vb[System.Security.Policy.FirstMatchCodeGroup_Evt#19](~/add/codesnippet/visualbasic/bb7a14a1-f12f-4535-b4af-_1.vb)]
- [!code-cs[System.Security.Policy.FirstMatchCodeGroup_Evt#19](~/add/codesnippet/csharp/bb7a14a1-f12f-4535-b4af-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="evidence" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Policy.PolicyException">More than one code group (including the parent code group and any child code groups) is marked <see cref="T:System.Security.Policy.PolicyStatementAttribute" />.</exception>
+        <param name="evidence">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveMatchingCodeGroups">
@@ -213,7 +111,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,29 +121,10 @@
         <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="evidence">The evidence for the assembly.</param>
-        <summary>Resolves matching code groups.</summary>
-        <returns>A <see cref="T:System.Security.Policy.CodeGroup" /> that is the root of the tree of matching code groups.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Given evidence for an assembly to be loaded, this method evaluates the code group by first checking the membership condition against the specified evidence. If there is a match, this method returns a root code group. The code group that is returned contains child code groups, which in turn can have child code groups as necessary to reflect the complete set of code groups that were matched by the evidence provided.  
-  
- For first-match code groups, each child code group's membership condition is tested against the evidence in the order in which they were added; only the first match is resolved with the evidence set. If there are no matches, the policy statement of the parent first-match code group applies. The matching child code group type determines how all child groups under it are applied, depending on how the <xref:System.Security.Policy.CodeGroup.ResolveMatchingCodeGroups%2A> methods of these child groups work.  
-  
-   
-  
-## Examples  
- The following code shows the use of the ResolveMatchingCodeGroups method to resolve matching code groups. This code example is part of a larger example provided for the <xref:System.Security.Policy.FirstMatchCodeGroup> class.  
-  
- [!code-cpp[System.Security.Policy.FirstMatchCodeGroup_Evt#9](~/add/codesnippet/cpp/890cea9a-b76c-4138-bf90-_1.cpp)]
- [!code-vb[System.Security.Policy.FirstMatchCodeGroup_Evt#9](~/add/codesnippet/visualbasic/890cea9a-b76c-4138-bf90-_1.vb)]
- [!code-cs[System.Security.Policy.FirstMatchCodeGroup_Evt#9](~/add/codesnippet/csharp/890cea9a-b76c-4138-bf90-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="evidence" /> parameter is <see langword="null" />.</exception>
+        <param name="evidence">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

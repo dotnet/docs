@@ -10,33 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether a <see cref="T:System.Windows.Controls.Calendar" /> displays a month, year, or decade.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Controls.Calendar> can display a month, a year, or a decade at a time. The following table lists how the user navigates to each mode.  
-  
-|DisplayMode|Action|  
-|-----------------|------------|  
-|Month|To navigate to Year mode, click the month heading.|  
-|Year|To navigate to Decade mode, click the year heading. To navigate to Month mode, click one of the displayed months.|  
-|Decade|To navigate to Year mode, click one of the displayed years.|  
-  
-   
-  
-## Examples  
- The following example creates a calendar that displays the months in a year and handles the <xref:System.Windows.Controls.Calendar.DisplayModeChanged> event so that when the user clicks on a month or the year, the calendar does not change its <xref:System.Windows.Controls.Calendar.DisplayMode%2A>.  
-  
- [!code-cs[CalendarSnippets#4](~/add/codesnippet/csharp/calendarsnippets/window1.xaml.cs#4)]
- [!code-xml[CalendarSnippets#4](~/add/codesnippet/xaml/calendarsnippets_xaml/window1.xaml#4)]
- [!code-vb[CalendarSnippets#4](~/add/codesnippet/visualbasic/calendarsnippets_vb/window1.xaml.vb#4)]  
-  
- [!code-cs[CalendarSnippets#5](~/add/codesnippet/csharp/calendarsnippets/window1.xaml.cs#5)]
- [!code-vb[CalendarSnippets#5](~/add/codesnippet/visualbasic/calendarsnippets_vb/window1.xaml.vb#5)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Decade">
@@ -52,7 +27,7 @@
         <ReturnType>System.Windows.Controls.CalendarMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Calendar" /> displays a decade at a time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Month">
@@ -68,7 +43,7 @@
         <ReturnType>System.Windows.Controls.CalendarMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Calendar" /> displays a month at a time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Year">
@@ -84,7 +59,7 @@
         <ReturnType>System.Windows.Controls.CalendarMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Calendar" /> displays a year at a time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

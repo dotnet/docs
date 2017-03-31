@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Data.IColumnMappingCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -13,27 +17,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains a collection of DataColumnMapping objects, and is implemented by the <see cref="T:System.Data.Common.DataColumnMappingCollection" />, which is used in common by .NET Framework data providers.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IColumnMappingCollection interface enables an inheriting class to implement a ColumnMapping collection. For more information, see [DataAdapter DataTable and DataColumn Mappings](../Topic/DataAdapter%20DataTable%20and%20DataColumn%20Mappings.md).  
-  
- An application does not create an instance of the IColumnMappingCollection interface directly, but creates an instance of a class that inherits IColumnMappingCollection.  
-  
- Classes that inherit IColumnMappingCollection must implement all inherited members, and typically define additional members to add provider-specific functionality. For example, the IColumnMappingCollection interface defines the <xref:System.Data.IColumnMappingCollection.RemoveAt%2A> method. In turn, the <xref:System.Data.Common.DataTableMappingCollection> class inherits this method, and defines two additional overloads of <xref:System.Data.Common.DataTableMappingCollection.RemoveAt%2A>.  
-  
-   
-  
-## Examples  
- The following example uses an instance of the derived class, <xref:System.Data.Common.DataTableMapping>, to <xref:System.Data.Common.DataColumnMappingCollection.Add%2A> several <xref:System.Data.Common.DataColumnMapping> objects to its <xref:System.Data.Common.DataTableMapping.ColumnMappings%2A> collection, and then displays a list of those mapped source tables. This example assumes that a <xref:System.Data.Common.DataTableMapping> has already been created.  
-  
- [!code-vb[Classic WebData DataColumnMappingCollection Example#1](~/add/codesnippet/visualbasic/t-system.data.icolumnmap_1_1.vb)]
- [!code-cs[Classic WebData DataColumnMappingCollection Example#1](~/add/codesnippet/csharp/t-system.data.icolumnmap_1_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -43,8 +28,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IColumnMapping</ReturnType>
@@ -54,10 +43,10 @@
         <Parameter Name="dataSetColumnName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceColumnName">The case-sensitive name of the source column.</param>
-        <param name="dataSetColumnName">The name of the <see cref="T:System.Data.DataSet" /> column.</param>
-        <summary>Adds a ColumnMapping object to the ColumnMapping collection using the source column and <see cref="T:System.Data.DataSet" /> column names.</summary>
-        <returns>The ColumnMapping object that was added to the collection.</returns>
+        <param name="sourceColumnName">To be added.</param>
+        <param name="dataSetColumnName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +57,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -78,10 +71,9 @@
         <Parameter Name="sourceColumnName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceColumnName">The case-sensitive name of the source column.</param>
-        <summary>Gets a value indicating whether the <see cref="T:System.Data.Common.DataColumnMappingCollection" /> contains a <see cref="T:System.Data.Common.DataColumnMapping" /> object with the specified source column name.</summary>
-        <returns>
-          <see langword="true" /> if a <see cref="T:System.Data.Common.DataColumnMapping" /> object with the specified source column name exists, otherwise <see langword="false" />.</returns>
+        <param name="sourceColumnName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +84,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IColumnMapping</ReturnType>
@@ -102,9 +98,9 @@
         <Parameter Name="dataSetColumnName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dataSetColumnName">The name of the <see cref="T:System.Data.DataSet" /> column within the collection.</param>
-        <summary>Gets the ColumnMapping object with the specified <see cref="T:System.Data.DataSet" /> column name.</summary>
-        <returns>The ColumnMapping object with the specified <see langword="DataSet" /> column name.</returns>
+        <param name="dataSetColumnName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +111,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -125,20 +125,10 @@
         <Parameter Name="sourceColumnName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceColumnName">The case-sensitive name of the source column.</param>
-        <summary>Gets the location of the <see cref="T:System.Data.Common.DataColumnMapping" /> object with the specified source column name. The name is case-sensitive.</summary>
-        <returns>The zero-based location of the <see langword="DataColumnMapping" /> object with the specified source column name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example searches for an instance of the derived class, <xref:System.Data.Common.DataColumnMapping>, with the given source column name within a <xref:System.Data.Common.DataColumnMappingCollection> collection. If the <xref:System.Data.Common.DataColumnMapping> exists, the example displays the name and the index of the mapping. If the mapping does not exist, the example displays an error. This example assumes that a <xref:System.Data.Common.DataColumnMappingCollection> collection has been created.  
-  
- [!code-cs[Classic WebData DataColumnMappingCollection.this1 Example#1](~/add/codesnippet/csharp/m-system.data.icolumnmap_1_1.cs)]
- [!code-vb[Classic WebData DataColumnMappingCollection.this1 Example#1](~/add/codesnippet/visualbasic/m-system.data.icolumnmap_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="sourceColumnName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -148,8 +138,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -158,9 +152,9 @@
         <Parameter Name="index" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">The <see langword="SourceColumn" /> name of the <see langword="IColumnMapping" /> object to find.</param>
-        <summary>Gets or sets the <see cref="T:System.Data.IColumnMapping" /> object with the specified <see langword="SourceColumn" /> name.</summary>
-        <value>The <see langword="IColumnMapping" /> object with the specified <see langword="SourceColumn" /> name.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,8 +165,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -181,20 +179,9 @@
         <Parameter Name="sourceColumnName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceColumnName">The case-sensitive <see langword="SourceColumn" /> name.</param>
-        <summary>Removes the <see cref="T:System.Data.IColumnMapping" /> object with the specified <see cref="System.Data.IColumnMapping.SourceColumn%2A" /> name from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example searches for an instance of the derived class, <xref:System.Data.Common.DataColumnMapping>, with the given `SourceColumn` name within a <xref:System.Data.Common.DataColumnMappingCollection> collection. If the <xref:System.Data.Common.DataColumnMapping> exists, the mapping is removed. This example assumes that a <xref:System.Data.Common.DataColumnMappingCollection> collection has been created.  
-  
- [!code-cs[Classic WebData DataColumnMappingCollection.RemoveAt1 Example#1](~/add/codesnippet/csharp/m-system.data.icolumnmap_0_1.cs)]
- [!code-vb[Classic WebData DataColumnMappingCollection.RemoveAt1 Example#1](~/add/codesnippet/visualbasic/m-system.data.icolumnmap_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">A <see cref="T:System.Data.Common.DataColumnMapping" /> object does not exist with the specified <see langword="SourceColumn" /> name.</exception>
+        <param name="sourceColumnName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

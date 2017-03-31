@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridSplitter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,47 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the control that redistributes space between columns or rows of a <see cref="T:System.Windows.Controls.Grid" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GridSplitter control redistributes space between rows or columns in a <xref:System.Windows.Controls.Grid>, without changing the dimensions of the <xref:System.Windows.Controls.Grid>. For example, when a GridSplitter resizes two columns, the <xref:System.Windows.Controls.ColumnDefinition.ActualWidth%2A> property of one column is increased while at the same time the <xref:System.Windows.Controls.ColumnDefinition.ActualWidth%2A> property of the other column is decreased by the same amount.  
-  
- The following table shows how to define a horizontal or vertical GridSplitter by setting the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties and by leaving the <xref:System.Windows.Controls.GridSplitter.ResizeDirection%2A> and <xref:System.Windows.Controls.GridSplitter.ResizeBehavior%2A> properties set to their default values.  
-  
- **How to create vertical and horizontal GridSplitter controls**  
-  
-|GridSplitter type|<xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value|<xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value|  
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-|Resizes rows|<xref:System.Windows.HorizontalAlignment>|<xref:System.Windows.VerticalAlignment>, <xref:System.Windows.VerticalAlignment>, <xref:System.Windows.VerticalAlignment>|  
-|Resizes columns|<xref:System.Windows.HorizontalAlignment>, <xref:System.Windows.HorizontalAlignment>, <xref:System.Windows.HorizontalAlignment>|<xref:System.Windows.VerticalAlignment>|  
-|If <xref:System.Windows.FrameworkElement.ActualHeight%2A> is greater than or equal to <xref:System.Windows.FrameworkElement.ActualWidth%2A>, this resizes the columns.<br /><br /> If <xref:System.Windows.FrameworkElement.ActualHeight%2A> is less than <xref:System.Windows.FrameworkElement.ActualWidth%2A>, this resizes the rows.|<xref:System.Windows.HorizontalAlignment>|<xref:System.Windows.VerticalAlignment>|  
-  
- A GridSplitter can overlap a row or column that contains other content, or it can occupy a row or column by itself. For more information about how to define a GridSplitter, see [How to: Resize Rows with a GridSplitter](../Topic/How%20to:%20Resize%20Rows%20with%20a%20GridSplitter.md) and [How to: Resize Columns with a GridSplitter](../Topic/How%20to:%20Resize%20Columns%20with%20a%20GridSplitter.md).  
-  
- If the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property settings do not achieve the desired GridSplitter behavior, you can change the <xref:System.Windows.Controls.GridSplitter.ResizeDirection%2A> and <xref:System.Windows.Controls.GridSplitter.ResizeBehavior%2A> property settings.  
-  
- A GridSplitter may be obscured by other objects that are contained in the <xref:System.Windows.Controls.Panel.Children%2A> collection of the <xref:System.Windows.Controls.Grid>. For information about how to prevent this situation, see [How to: Make Sure That a GridSplitter Is Visible](../Topic/How%20to:%20Make%20Sure%20That%20a%20GridSplitter%20Is%20Visible.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-   
-  
-## Examples  
- The following example shows how to define a GridSplitter that resizes columns in a <xref:System.Windows.Controls.Grid> by overlaying the edge of a column.  
-  
- [!code-cs[GridSplitterSnips#GridSplitterSimpleExample](~/add/codesnippet/csharp/GridSplitterSnips/Window1.xaml.cs#gridsplittersimpleexample)]
- [!code-vb[GridSplitterSnips#GridSplitterSimpleExample](~/add/codesnippet/visualbasic/gridsplittersnips/window1.xaml.vb#gridsplittersimpleexample)]
- [!code-xml[GridSplitterSnips#GridSplitterSimpleExample](~/add/codesnippet/xaml/GridSplitterSnips/Window1.xaml#gridsplittersimpleexample)]  
-  
- The following example shows how to define a GridSplitter that resizes columns in a <xref:System.Windows.Controls.Grid> and that occupies a column in the <xref:System.Windows.Controls.Grid>.  
-  
- [!code-xml[GridSplitterRowColumn#GridSplitterEntireColumnPart1](~/add/codesnippet/xaml/GridSplitterRowColumn/Window1.xaml#gridsplitterentirecolumnpart1)]  
-[!code-xml[GridSplitterRowColumn#GridSplitterEntireColumnPart2](~/add/codesnippet/xaml/GridSplitterRowColumn/Window1.xaml#gridsplitterentirecolumnpart2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.GridSplitter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,40 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum distance that a user must drag a mouse to resize rows or columns with a <see cref="T:System.Windows.Controls.GridSplitter" /> control.</summary>
-        <value>A value that represents the minimum distance that a user must use the mouse to drag a <see cref="T:System.Windows.Controls.GridSplitter" /> to resize rows or columns. The default is 1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The minimum distance that is defined by DragIncrement is reinitialized continually as the user drags the mouse. For example, when you drag the <xref:System.Windows.Controls.GridSplitter> by the DragIncrement amount, the rows or columns are resized. To resize the rows and columns more, you must drag the <xref:System.Windows.Controls.GridSplitter> the same amount. Therefore, changes to column and row sizes that are made by using the mouse or the keyboard to move the <xref:System.Windows.Controls.GridSplitter> are made in multiples of the DragIncrement.  
-  
-<a name="dependencyPropertyInfo_DragIncrement"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.GridSplitter.DragIncrementProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to set the DragIncrement property.  
-  
- [!code-cs[GridSplitterSnips#DragIncrement](~/add/codesnippet/csharp/GridSplitterSnips/Window1.xaml.cs#dragincrement)]
- [!code-vb[GridSplitterSnips#DragIncrement](~/add/codesnippet/visualbasic/gridsplittersnips/window1.xaml.vb#dragincrement)]
- [!code-xml[GridSplitterSnips#DragIncrement](~/add/codesnippet/xaml/GridSplitterSnips/Window1.xaml#dragincrement)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DragIncrementProperty">
@@ -126,14 +60,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.GridSplitter.DragIncrement%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,39 +77,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the distance that each press of an arrow key moves a <see cref="T:System.Windows.Controls.GridSplitter" /> control.</summary>
-        <value>The distance that the <see cref="T:System.Windows.Controls.GridSplitter" /> moves for each press of an arrow key. The default is 10.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_KeyboardIncrement"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.GridSplitter.KeyboardIncrementProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to set the KeyboardIncrement property.  
-  
- [!code-cs[GridSplitterSnips#KeyboardIncrement](~/add/codesnippet/csharp/GridSplitterSnips/Window1.xaml.cs#keyboardincrement)]
- [!code-vb[GridSplitterSnips#KeyboardIncrement](~/add/codesnippet/visualbasic/gridsplittersnips/window1.xaml.vb#keyboardincrement)]
- [!code-xml[GridSplitterSnips#KeyboardIncrement](~/add/codesnippet/xaml/GridSplitterSnips/Window1.xaml#keyboardincrement)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyboardIncrementProperty">
@@ -186,14 +95,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.GridSplitter.KeyboardIncrement%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,7 +112,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,8 +119,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates the implementation of <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the <see cref="T:System.Windows.Controls.GridSplitter" /> control.</summary>
-        <returns>A new <see cref="T:System.Windows.Automation.Peers.GridSplitterAutomationPeer" /> for this <see cref="T:System.Windows.Controls.ToolTip" /> control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,8 +140,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Input.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Called when a key is pressed.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,7 +152,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,8 +161,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Input.KeyboardFocusChangedEventArgs" /> that contains the event data.</param>
-        <summary>Called when the <see cref="T:System.Windows.Controls.GridSplitter" /> control loses keyboard focus.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,7 +173,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,16 +182,9 @@
         <Parameter Name="sizeInfo" Type="System.Windows.SizeChangedInfo" />
       </Parameters>
       <Docs>
-        <param name="sizeInfo">Information about the change in size of the <see cref="T:System.Windows.Controls.GridSplitter" />.</param>
-        <summary>Responds to a change in the dimensions of the <see cref="T:System.Windows.Controls.GridSplitter" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.GridSplitter> control determines what type of pointer to display after its <xref:System.Windows.Size> is set.  
-  
- ]]></format>
-        </remarks>
+        <param name="sizeInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewStyle">
@@ -297,51 +194,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style that customizes the appearance, effects, or other style characteristics for the <see cref="T:System.Windows.Controls.GridSplitter" /> control preview indicator that is displayed when the <see cref="System.Windows.Controls.GridSplitter.ShowsPreview%2A" /> property is set to <see langword="true" />.</summary>
-        <value>Returns the <see cref="T:System.Windows.Style" /> for the preview indicator that shows the potential change in <see cref="T:System.Windows.Controls.Grid" /> dimensions as you move the <see cref="T:System.Windows.Controls.GridSplitter" /> control. The default is the style that the current theme supplies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you set styles, there are some restrictions. For more information, see [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
-  
-<a name="xamlAttributeUsage_PreviewStyle"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object PreviewStyle="{ResourceExtension StyleResourceKey}"/>  
-```  
-  
-<a name="xamlValues_Style"></a>   
-## XAML Values  
- `ResourceExtension`  
- One of the following: `StaticResource` or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
-  
- `StyleResourceKey`  
- The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
-  
-> [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md). A binding reference using  or <xref:System.Windows.Data.Binding> is also possible, but uncommon.  
-  
-<a name="dependencyPropertyInfo_PreviewStyle"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.GridSplitter.PreviewStyleProperty>|  
-|Metadata properties set to `true`|None|  
-  
- A preview of changes to row or column boundaries is displayed while the user drags the <xref:System.Windows.Controls.GridSplitter> control, and the <xref:System.Windows.Controls.GridSplitter.ShowsPreview%2A> property is set to `true`. The column and row boundaries are set when the user releases the mouse button.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewStyleProperty">
@@ -351,22 +212,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.GridSplitter.PreviewStyle%2A" /> dependency property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The identifier for the <xref:System.Windows.Controls.GridSplitter.PreviewStyle%2A> dependency property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResizeBehavior">
@@ -376,40 +229,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets which columns or rows are resized relative to the column or row for which the <see cref="T:System.Windows.Controls.GridSplitter" /> control is defined.</summary>
-        <value>One of the enumeration values that indicates which columns or rows are resized by this <see cref="T:System.Windows.Controls.GridSplitter" /> control. The default is <see cref="T:System.Windows.Controls.GridResizeBehavior" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To specify a <xref:System.Windows.Controls.GridSplitter> that resizes rows or columns, set the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties. If you cannot achieve the desired behavior by setting the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties, change the <xref:System.Windows.Controls.GridSplitter.ResizeDirection%2A> or ResizeBehavior default values. For more information, see [How to: Resize Rows with a GridSplitter](../Topic/How%20to:%20Resize%20Rows%20with%20a%20GridSplitter.md) and [How to: Resize Columns with a GridSplitter](../Topic/How%20to:%20Resize%20Columns%20with%20a%20GridSplitter.md).  
-  
-<a name="dependencyPropertyInfo_ResizeBehavior"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.GridSplitter.ResizeBehaviorProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to set the ResizeBehavior property.  
-  
- [!code-cs[GridSplitterSnips#ResizeBehavior](~/add/codesnippet/csharp/GridSplitterSnips/Window1.xaml.cs#resizebehavior)]
- [!code-vb[GridSplitterSnips#ResizeBehavior](~/add/codesnippet/visualbasic/gridsplittersnips/window1.xaml.vb#resizebehavior)]
- [!code-xml[GridSplitterSnips#ResizeBehavior](~/add/codesnippet/xaml/GridSplitterSnips/Window1.xaml#resizebehavior)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResizeBehaviorProperty">
@@ -419,22 +247,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.GridSplitter.ResizeBehavior%2A" /> dependency property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The identifier for the <xref:System.Windows.Controls.GridSplitter.ResizeBehavior%2A> dependency property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResizeDirection">
@@ -444,40 +264,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.GridSplitter" /> control resizes rows or columns.</summary>
-        <value>One of the enumeration values that specifies whether to resize rows or columns. The default is <see cref="T:System.Windows.Controls.GridResizeDirection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To specify a <xref:System.Windows.Controls.GridSplitter> that resizes rows or columns, set the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties. If you cannot achieve the desired behavior by setting the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties, change the ResizeDirection or <xref:System.Windows.Controls.GridSplitter.ResizeBehavior%2A> default values. For more information, see [How to: Resize Rows with a GridSplitter](../Topic/How%20to:%20Resize%20Rows%20with%20a%20GridSplitter.md) and [How to: Resize Columns with a GridSplitter](../Topic/How%20to:%20Resize%20Columns%20with%20a%20GridSplitter.md).  
-  
-<a name="dependencyPropertyInfo_ResizeDirection"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.GridSplitter.ResizeDirectionProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to set the ResizeDirection property.  
-  
- [!code-cs[GridSplitterSnips#ResizeDirection](~/add/codesnippet/csharp/GridSplitterSnips/Window1.xaml.cs#resizedirection)]
- [!code-vb[GridSplitterSnips#ResizeDirection](~/add/codesnippet/visualbasic/gridsplittersnips/window1.xaml.vb#resizedirection)]
- [!code-xml[GridSplitterSnips#ResizeDirection](~/add/codesnippet/xaml/GridSplitterSnips/Window1.xaml#resizedirection)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResizeDirectionProperty">
@@ -487,14 +282,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.GridSplitter.ResizeDirection%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -505,45 +299,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.GridSplitter" /> control updates the column or row size as the user drags the control.</summary>
-        <value>
-          <see langword="true" /> if a <see cref="T:System.Windows.Controls.GridSplitter" /> preview is displayed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Controls.GridSplitter> requires an <xref:System.Windows.Documents.AdornerDecorator> object to be present in its parent tree in order to display drag preview feedback. This requirement is typically met by the <xref:System.Windows.Documents.AdornerDecorator> object that is available in the default style for the <xref:System.Windows.Window> or in the <xref:System.Windows.Documents.AdornerDecorator> object that is created by a <xref:System.Windows.Controls.ScrollViewer> object. However, if neither of these is available, the <xref:System.Windows.Controls.GridSplitter> control must define its own <xref:System.Windows.Documents.AdornerDecorator> object.  
-  
-<a name="dependencyPropertyInfo_ShowsPreview"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.GridSplitter.ShowsPreviewProperty>|  
-|Metadata properties set to `true`|None|  
-  
- When the ShowsPreview property is set to `true`, a preview of the change in the row or column sizes is shown. The actual size changes when the <xref:System.Windows.Controls.GridSplitter> is released. If the property is set to `false`, the column or row sizes are updated in real time as the user drags the <xref:System.Windows.Controls.GridSplitter> control.  
-  
- If the keyboard is used to move the <xref:System.Windows.Controls.GridSplitter> control, column or row sizes are updated in real time even if the ShowsPreview property is set to `true`.  
-  
-   
-  
-## Examples  
- The following example shows how to set the ShowsPreview property.  
-  
- [!code-cs[GridSplitterSnips#ShowsPreview](~/add/codesnippet/csharp/GridSplitterSnips/Window1.xaml.cs#showspreview)]
- [!code-vb[GridSplitterSnips#ShowsPreview](~/add/codesnippet/visualbasic/gridsplittersnips/window1.xaml.vb#showspreview)]
- [!code-xml[GridSplitterSnips#ShowsPreview](~/add/codesnippet/xaml/GridSplitterSnips/Window1.xaml#showspreview)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowsPreviewProperty">
@@ -553,14 +317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.GridSplitter.ShowsPreview%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

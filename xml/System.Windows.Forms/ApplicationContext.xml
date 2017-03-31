@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ApplicationContext" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,28 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Specifies the contextual information about an application thread.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the ApplicationContext class to redefine the circumstances that cause a message loop to exit. By default, the ApplicationContext listens to the <xref:System.Windows.Forms.Form.Closed> event on the application's main <xref:System.Windows.Forms.Form>, then exits the thread's message loop.  
-  
-   
-  
-## Examples  
- The following code example displays two forms and exits the application when both forms are closed. When the application starts and exits, the position of each form is remembered. This example demonstrates how to use an ApplicationContext, along with the `Application.Run(context)` method, to display multiple forms when the application starts.  
-  
- The class `MyApplicationContext` inherits from ApplicationContext and keeps track when each form is closed, and exits the current thread when they both are. The class stores the positions of each form for the user. The form position data is stored in a file titled `Appdata.txt` that is created in the location determined by <xref:System.Windows.Forms.Application.UserAppDataPath%2A>.  
-  
- The `Main` method calls `Application.Run(context)` to start the application, given the ApplicationContext.  
-  
- [!code-vb[Application#1](~/add/codesnippet/visualbasic/t-system.windows.forms.a_4_1.vb)]
- [!code-cpp[Application#1](~/add/codesnippet/cpp/t-system.windows.forms.a_4_1.cpp)]
- [!code-cs[Application#1](~/add/codesnippet/csharp/t-system.windows.forms.a_4_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ApplicationContext" /> class with no context.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,23 +41,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="mainForm" Type="System.Windows.Forms.Form" />
       </Parameters>
       <Docs>
-        <param name="mainForm">The main <see cref="T:System.Windows.Forms.Form" /> of the application to use for context.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ApplicationContext" /> class with the specified <see cref="T:System.Windows.Forms.Form" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Windows.Forms.ApplicationContext.OnMainFormClosed%2A> is not overridden, the message loop of the thread terminates when <xref:System.Windows.Forms.ApplicationContext.MainForm%2A> is closed.  
-  
- ]]></format>
-        </remarks>
+        <param name="mainForm">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -89,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,18 +66,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Windows.Forms.ApplicationContext" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call Dispose when you are finished using the <xref:System.Windows.Forms.ApplicationContext>. The Dispose method leaves the <xref:System.Windows.Forms.ApplicationContext> in an unusable state. After calling Dispose, you must release all references to the <xref:System.Windows.Forms.ApplicationContext> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.ApplicationContext> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.Windows.Forms.ApplicationContext>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Forms.ApplicationContext> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -118,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,19 +86,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ApplicationContext" /> and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected Dispose method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ApplicationContext> references. This method invokes the `Dispose()` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExitThread">
@@ -150,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,29 +105,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Terminates the message loop of the thread.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls <xref:System.Windows.Forms.ApplicationContext.ExitThreadCore%2A>.  
-  
-> [!NOTE]
->  ExitThread and <xref:System.Windows.Forms.ApplicationContext.ExitThreadCore%2A> do not actually cause the thread to terminate. These methods raise the <xref:System.Windows.Forms.Application.ThreadExit> event to which the <xref:System.Windows.Forms.Application> object listens. The <xref:System.Windows.Forms.Application> object then terminates the thread.  
-  
-   
-  
-## Examples  
- The following code example is an excerpt from the example in the <xref:System.Windows.Forms.ApplicationContext> class overview. This example keeps track of open forms and exits the current thread when all forms are closed. The `OnFormClosed` method is an event handler for the <xref:System.Windows.Forms.Form.Closed> event. When the number of open forms is equal to 0, then current thread is exited by calling the ExitThread method. The number of forms is tracked by incrementing the `formCount` variable when a form is shown, and decrementing it when a form is closed.  
-  
- Some code is not shown for the purpose of brevity. See <xref:System.Windows.Forms.ApplicationContext> for the whole code listing.  
-  
- [!code-vb[Application#3](~/add/codesnippet/visualbasic/m-system.windows.forms.a_8_1.vb)]
- [!code-cpp[Application#3](~/add/codesnippet/cpp/m-system.windows.forms.a_8_1.cpp)]
- [!code-cs[Application#3](~/add/codesnippet/csharp/m-system.windows.forms.a_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExitThreadCore">
@@ -190,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,18 +123,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Terminates the message loop of the thread.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called from <xref:System.Windows.Forms.ApplicationContext.ExitThread%2A>.  
-  
-> [!NOTE]
->  <xref:System.Windows.Forms.ApplicationContext.ExitThread%2A> and ExitThreadCore do not actually cause the thread to terminate. These methods raise the <xref:System.Windows.Forms.Application.ThreadExit> event to which the <xref:System.Windows.Forms.Application> object listens. The <xref:System.Windows.Forms.Application> object then terminates the thread.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -219,7 +134,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -227,19 +141,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Attempts to free resources and perform other cleanup operations before the application context is reclaimed by garbage collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName> and cleans up resources by calling `Dispose(false)`. Override `Dispose(Boolean)` to customize the cleanup.  
-  
- Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
-  
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MainForm">
@@ -249,23 +152,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.Form" /> to use as context.</summary>
-        <value>The <see cref="T:System.Windows.Forms.Form" /> to use as context.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines the main <xref:System.Windows.Forms.Form> for this context. This property can change at any time. If <xref:System.Windows.Forms.ApplicationContext.OnMainFormClosed%2A> is not overridden, the message loop of the thread terminates when the `mainForm` parameter closes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMainFormClosed">
@@ -275,7 +170,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -286,17 +180,10 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">The object that raised the event.</param>
-        <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Calls <see cref="System.Windows.Forms.ApplicationContext.ExitThreadCore%2A" />, which raises the <see cref="E:System.Windows.Forms.ApplicationContext.ThreadExit" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default implementation of this method calls <xref:System.Windows.Forms.ApplicationContext.ExitThreadCore%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -306,7 +193,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -327,18 +213,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an object that contains data about the control.</summary>
-        <value>An <see cref="T:System.Object" /> that contains data about the control. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Any type derived from the <xref:System.Object> class can be assigned to this property. If the Tag property is set through the Windows Forms designer, only text can be assigned.  
-  
- A common use for the Tag property is to store data that is closely associated with the control. For example, if you have a control that displays information about a customer, you might store a <xref:System.Data.DataSet> that contains the customer's order history in that control's Tag property so the data can be accessed quickly.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThreadExit">
@@ -348,27 +225,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the message loop of the thread should be terminated, by calling <see cref="System.Windows.Forms.ApplicationContext.ExitThread%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the ThreadExit event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ApplicationContext> named `ApplicationContext1`. Then ensure that the event handler is associated with the ThreadExit event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#75](~/add/codesnippet/csharp/e-system.windows.forms.a_5_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#75](~/add/codesnippet/visualbasic/e-system.windows.forms.a_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,25 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the string value to use as a ToolTip for a property of a Web Parts control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control provides a generic user interface (UI) that enables users to edit custom properties on <xref:System.Web.UI.WebControls.WebParts.WebPart> and server controls placed in <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones. The editing UI is provided for properties that are marked in the source code with the `WebBrowsable` attribute (from the <xref:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute> class). When a property is marked with this attribute, a <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control creates the editing UI based on the type of the property, and uses a <xref:System.ComponentModel.PropertyDescriptor> object if needed to convert the value in each editing control to the type of the property.  
-  
- The `WebDescription` attribute (from the WebDescriptionAttribute class) allows you to specify the ToolTip that appears with each control in the editing UI when the mouse pointer is positioned over the control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the WebDescriptionAttribute attribute to assign a ToolTip to a property on a Web Parts control. The custom `UserJobType` property is given the ToolTip "Select the category that corresponds to your job." to display in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control. This example is part of a larger example found in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> class overview.  
-  
- [!code-vb[WebParts_PropertyGridEditorPart_Overview#6](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_370_1.vb)]
- [!code-cs[WebParts_PropertyGridEditorPart_Overview#6](~/add/codesnippet/csharp/t-system.web.ui.webcontr_370_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,20 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WebDescriptionAttribute constructor sets the <xref:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.Description%2A> property to an empty string ("").  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,31 +42,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="description">The ToolTip to use in a <see cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute" /> class with the specified description.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WebDescriptionAttribute constructor sets the <xref:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.Description%2A> property to `description`. The `description` parameter is the value that will appear as a ToolTip for a property in a <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute> attribute to assign a ToolTip to a property on a Web Parts control. The custom `UserJobType` property is given the ToolTip "Select the category that corresponds to your job." to display in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control. The ToolTip is assigned through the WebDescriptionAttribute constructor. This example is part of a larger example found in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> class overview.  
-  
- [!code-vb[WebParts_PropertyGridEditorPart_Overview#6](~/add/codesnippet/visualbasic/b19cb990-a9ce-4540-a832-_1.vb)]
- [!code-cs[WebParts_PropertyGridEditorPart_Overview#6](~/add/codesnippet/csharp/b19cb990-a9ce-4540-a832-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -102,22 +60,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebDescriptionAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute" /> class with the <see cref="System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.Description%2A" /> property set to an empty string ("").</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Default field returns the same result as calling the <xref:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.%23ctor> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -127,15 +77,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ToolTip for a property to display in a <see cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" /> control.</summary>
-        <value>A <see cref="T:System.String" /> containing the value to display in a <see cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,23 +95,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ToolTip to display in the <see cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" /> control.</summary>
-        <value>A <see cref="T:System.String" /> containing the value to display in a <see cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DescriptionValue property gets or sets the same value that is accessed through the <xref:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.Description%2A> property. The DescriptionValue property is protected and therefore only accessible either within the class or through a derived class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -172,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,10 +122,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">An <see cref="T:System.Object" /> to compare with this instance, or <see langword="null" />.</param>
-        <summary>Returns a value that indicates whether this instance is equal to a specified object.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,8 +142,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for the display name value.</summary>
-        <returns>A 32-bit signed integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -224,9 +161,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the current instance is set to the default value.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute" /> equals <see cref="F:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.Default" />; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

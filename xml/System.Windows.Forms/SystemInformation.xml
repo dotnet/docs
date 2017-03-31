@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SystemInformation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information about the current system environment.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SystemInformation class provides `static` properties that can be used to get information about the current system environment. The class provides access to information such as Windows display element sizes, operating system settings, network availability, and the capabilities of hardware installed on the system. This class cannot be instantiated.  
-  
- For more information about system-wide parameters, see "SystemParametersInfo" in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com).  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the SystemInformation class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/t-system.windows.forms.s_29_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/t-system.windows.forms.s_29_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/t-system.windows.forms.s_29_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveWindowTrackingDelay">
@@ -41,27 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the active window tracking delay.</summary>
-        <value>The active window tracking delay, in milliseconds.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_128_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_128_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_128_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ArrangeDirection">
@@ -71,32 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ArrangeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the direction in which the operating system arranges minimized windows.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ArrangeDirection" /> values that indicates the direction in which the operating system arranges minimized windows.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ArrangeDirection> property indicates the direction in which minimized windows are arranged on the desktop or in a Multiple Document Interface (MDI) container.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_74_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_74_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_74_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ArrangeStartingPosition">
@@ -106,32 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Windows.Forms.ArrangeStartingPosition" /> value that indicates the starting position from which the operating system arranges minimized windows.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ArrangeStartingPosition" /> values that indicates the starting position from which the operating system arranges minimized windows.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ArrangeStartingPosition> property indicates the corner of a screen or window in which the operating system begins to arrange minimized windows.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_109_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_109_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_109_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BootMode">
@@ -141,33 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BootMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Forms.BootMode" /> value that indicates the boot mode the system was started in.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.BootMode" /> values that indicates the boot mode the system was started in.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BootMode property indicates whether the operating system was started in a normal or safe boot mode.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_99_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_99_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_99_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Border3DSize">
@@ -177,36 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the thickness, in pixels, of a three-dimensional (3-D) style window or system control border.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the width, in pixels, of a 3-D style vertical border, and the height, in pixels, of a 3-D style horizontal border.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Border3DSize property indicates the thickness, in pixels, of a three-dimensional (3-D) style system control border.  
-  
- The <xref:System.Drawing.Size.Width%2A> property of the Border3DSize property indicates the width of a vertical 3-D border. The <xref:System.Drawing.Size.Height%2A> property of the Border3DSize property indicates the height of a horizontal 3-D border.  
-  
- The <xref:System.Windows.Forms.SystemInformation.BorderSize%2A> property indicates the thickness of a window or system control border that is not a 3-D style border.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_95_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_95_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_95_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderMultiplierFactor">
@@ -216,27 +112,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the border multiplier factor that is used when determining the thickness of a window's sizing border.</summary>
-        <value>The multiplier used to determine the thickness of a window's sizing border.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_67_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_67_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_67_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderSize">
@@ -246,36 +130,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the thickness, in pixels, of a flat-style window or system control border.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the width, in pixels, of a vertical border, and the height, in pixels, of a horizontal border.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BorderSize property indicates the thickness of a flat-style system control border in pixels.  
-  
- The <xref:System.Drawing.Size.Width%2A> property of the BorderSize property indicates the width of a vertical flat-style border. The <xref:System.Drawing.Size.Height%2A> property of the BorderSize property indicates the height of a horizontal flat-style border.  
-  
- The <xref:System.Windows.Forms.SystemInformation.Border3DSize%2A> property of the <xref:System.Windows.Forms.SystemInformation> class indicates the thickness of a three-dimensional (3-D) style window or system control border.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_7_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_7_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_7_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionButtonSize">
@@ -285,34 +148,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the standard size, in pixels, of a button in a window's title bar.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the standard dimensions, in pixels, of a button in a window's title bar.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CaptionButtonSize property indicates the standard dimensions of a button in the title bar of a window.  
-  
- The value of this property can be used to ensure that a button is properly sized to fit within the title bar of a window. Window caption buttons should be sized less than or equal to the standard dimensions for window caption buttons to ensure that they can be displayed in view correctly.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_125_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_125_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_125_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionHeight">
@@ -322,32 +166,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the height, in pixels, of the standard title bar area of a window.</summary>
-        <value>The height, in pixels, of the standard title bar area of a window.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CaptionHeight property indicates the height of the standard window title bar area, in pixels.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_61_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_61_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_61_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CaretBlinkTime">
@@ -357,27 +184,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the caret blink time.</summary>
-        <value>The caret blink time.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_25_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_25_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_25_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CaretWidth">
@@ -387,36 +202,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the width, in pixels, of the caret in edit controls.</summary>
-        <value>The width, in pixels, of the caret in edit controls.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The caret indicates where text or graphics will be inserted into the edit control.  
-  
-> [!NOTE]
->  This property is supported only on Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_116_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_116_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_116_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The operating system does not support this feature.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ComputerName">
@@ -426,35 +220,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the NetBIOS computer name of the local computer.</summary>
-        <value>The name of this computer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ComputerName property retrieves the NetBIOS name of the local computer. This is accomplished with a call into the native System Information function GetComputerName. This name is established at system startup, when the system reads it from the registry. If the local computer is a node in a cluster, ComputerName returns the name of the cluster virtual server.  
-  
- You can use the ComputerName method to determine the name of the computer that is displayed to other users on a network.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_102_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_102_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_102_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CursorSize">
@@ -464,32 +238,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum size, in pixels, that a cursor can occupy.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the maximum dimensions of a cursor in pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The system cannot create cursors of other sizes.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_6_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_6_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DbcsEnabled">
@@ -499,33 +256,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the operating system is capable of handling double-byte character set (DBCS) characters.</summary>
-        <value>
-          <see langword="true" /> if the operating system supports DBCS; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DbcsEnabled property indicates whether the current operating system supports DBCS.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_44_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_44_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_44_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DebugOS">
@@ -535,29 +274,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the debug version of USER.EXE is installed.</summary>
-        <value>
-          <see langword="true" /> if the debugging version of USER.EXE is installed; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_148_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_148_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_148_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DoubleClickSize">
@@ -567,34 +292,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dimensions, in pixels, of the area within which the user must click twice for the operating system to consider the two clicks a double-click.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the dimensions, in pixels, of the area within which the user must click twice for the operating system to consider the two clicks a double-click.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DoubleClickSize property indicates the size of a rectangular area centered around the point at which the last click occurred. To cause a double-click, a second click must occur within the area of the rectangle before the double-click time elapses.  
-  
- The <xref:System.Windows.Forms.SystemInformation.DoubleClickTime%2A> property indicates the maximum number of milliseconds that can elapse before a second click for the second click to cause a double-click.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_133_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_133_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_133_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DoubleClickTime">
@@ -604,34 +310,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum number of milliseconds that can elapse between a first click and a second click for the OS to consider the mouse action a double-click.</summary>
-        <value>The maximum amount of time, in milliseconds, that can elapse between a first click and a second click for the OS to consider the mouse action a double-click.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A double-click is a series of two clicks of the mouse button, the second occurring within a specified length of time after, and within a specified distance from, the first. The double-click time is the maximum number of milliseconds that can elapse between the first and second click of a double-click.  
-  
- The <xref:System.Windows.Forms.SystemInformation.DoubleClickSize%2A> property indicates the size of a rectangular area centered around the point at which the last click occurred. To cause a double-click, a second click must occur within the area of the rectangle before the double-click time elapses.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_127_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_127_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_127_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DragFullWindows">
@@ -641,33 +328,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user has enabled full window drag.</summary>
-        <value>
-          <see langword="true" /> if the user has enabled full window drag; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this property is `true`, the content of a window is refreshed during a window move or resize drag, using the current position and size as they are updated.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_171_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_171_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_171_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DragSize">
@@ -677,34 +346,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the width and height of a rectangle centered on the point the mouse button was pressed, within which a drag operation will not begin.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that specifies the area of a rectangle, in pixels, centered on the point the mouse button was pressed, within which a drag operation will not begin.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DragSize property indicates the size, in pixels, of a rectangle centered around the point at which the mouse button was pressed. Windows uses the rectangle as a boundary within which it does not start a drag operation.  
-  
- A user can hold a mouse button down and move the mouse within this area before a drag operation begins, which enables the user to click and release the mouse button easily without unintentionally starting a drag operation.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_78_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_78_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_78_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FixedFrameBorderSize">
@@ -714,34 +364,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the thickness, in pixels, of the frame border of a window that has a caption and is not resizable.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that specifies the thickness, in pixels, of a fixed sized window border.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FixedFrameBorderSize property indicates the thickness of the frame, in pixels, around the perimeter of a window that has a caption but is not sizable.  
-  
- The <xref:System.Drawing.Size.Width%2A> property of FixedFrameBorderSize is the height of the horizontal border and the <xref:System.Drawing.Size.Height%2A> property of FixedFrameBorderSize is the width of the vertical border.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_173_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_173_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_173_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontSmoothingContrast">
@@ -751,36 +382,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the font smoothing contrast value used in ClearType smoothing.</summary>
-        <value>The ClearType font smoothing contrast value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default ClearType font smoothing value is 1400, but it can be any value from 1000 to 2200. Depending on the display device and the user's sensitivity to colors, a higher or lower contrast value may improve readability.  
-  
-> [!NOTE]
->  This property is supported only on Windows XP and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_66_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_66_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_66_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The operating system does not support this feature.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontSmoothingType">
@@ -790,44 +400,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current type of font smoothing.</summary>
-        <value>A value that indicates the current type of font smoothing.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FontSmoothingType property returns a value that indicates the type of currently active font smoothing.  
-  
- The following table indicates the meaning of the values returned by this property:  
-  
-|Value|Meaning|  
-|-----------|-------------|  
-|0|Font smoothing type could not be determined.|  
-|1|Standard font smoothing.|  
-|2|ClearType font smoothing.|  
-  
-> [!NOTE]
->  This property is supported only on Windows XP and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_60_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_60_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_60_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The operating system does not support this feature.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FrameBorderSize">
@@ -837,34 +418,103 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the thickness, in pixels, of the resizing border that is drawn around the perimeter of a window that is being drag resized.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the thickness, in pixels, of the width of a vertical resizing border and the height of a horizontal resizing border.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FrameBorderSize property indicates the width and height of the resizing border for a window.  
-  
- The <xref:System.Drawing.Size.Width%2A> value of this property is the width of a vertical resizing border. The <xref:System.Drawing.Size.Height%2A> value of this property is the height of a horizontal resizing border.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_22_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_22_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_22_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBorderSizeForDpi">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Size GetBorderSizeForDpi (int dpi);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetBorderSizeForDpi(int32 dpi) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.GetBorderSizeForDpi(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dpi" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dpi">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHorizontalScrollBarHeightForDpi">
+      <MemberSignature Language="C#" Value="public static int GetHorizontalScrollBarHeightForDpi (int dpi);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHorizontalScrollBarHeightForDpi(int32 dpi) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.GetHorizontalScrollBarHeightForDpi(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dpi" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dpi">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMenuFontForDpi">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Font GetMenuFontForDpi (int dpi);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Font GetMenuFontForDpi(int32 dpi) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.GetMenuFontForDpi(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dpi" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dpi">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVerticalScrollBarWidthForDpi">
+      <MemberSignature Language="C#" Value="public static int GetVerticalScrollBarWidthForDpi (int dpi);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetVerticalScrollBarWidthForDpi(int32 dpi) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.GetVerticalScrollBarWidthForDpi(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dpi" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dpi">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HighContrast">
@@ -874,38 +524,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user has enabled the high-contrast mode accessibility feature.</summary>
-        <value>
-          <see langword="true" /> if the user has enabled high-contrast mode; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The high-contrast accessibility feature can make the screen easier for some users to view by enabling a color scheme that can heighten screen contrast with alternative color combinations. Some of the schemes also change font sizes for easier reading.  
-  
- The high-contrast mode feature can be enabled or disabled through the Accessibility Options control panel.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_105_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_105_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_105_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalFocusThickness">
@@ -915,36 +542,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the thickness of the left and right edges of the system focus rectangle, in pixels.</summary>
-        <value>The thickness of the left and right edges of the system focus rectangle, in pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HorizontalFocusThickness property indicates the width of the left and right edges of the system focus rectangle, in pixels. The system focus rectangle is used to draw user's attention to a window or area by displaying a rectangular highlighted outline.  
-  
-> [!NOTE]
->  This is supported only on Windows XP and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_75_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_75_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_75_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The operating system does not support this feature.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalResizeBorderThickness">
@@ -954,32 +560,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the thickness of the left and right edges of the sizing border around the perimeter of a window being resized, in pixels.</summary>
-        <value>The width of the left and right edges of the sizing border around the perimeter of a window being resized, in pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HorizontalResizeBorderThickness property indicates the width of the vertical sizing border around the perimeter of a window being resized.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_49_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_49_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_49_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarArrowWidth">
@@ -989,27 +578,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the width, in pixels, of the arrow bitmap on the horizontal scroll bar.</summary>
-        <value>The width, in pixels, of the arrow bitmap on the horizontal scroll bar.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_117_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_117_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_117_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarHeight">
@@ -1019,27 +596,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default height, in pixels, of the horizontal scroll bar.</summary>
-        <value>The default height, in pixels, of the horizontal scroll bar.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_114_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_114_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_114_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarThumbWidth">
@@ -1049,32 +614,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the width, in pixels, of the scroll box in a horizontal scroll bar.</summary>
-        <value>The width, in pixels, of the scroll box in a horizontal scroll bar.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HorizontalScrollBarThumbWidth property indicates the width of the scroll box used to indicate scroll bar position and to drag the scroll bar to a new position. The scroll box is also called the thumb box.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_124_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_124_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_124_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IconHorizontalSpacing">
@@ -1084,32 +632,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the width, in pixels, of an icon arrangement cell in large icon view.</summary>
-        <value>The width, in pixels, of an icon arrangement cell in large icon view.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IconHorizontalSpacing property indicates the width of the space for an icon in large icon view. The system uses this distance to arrange icons in large icon view.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_141_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_141_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_141_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IconSize">
@@ -1119,27 +650,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dimensions, in pixels, of the Windows default program icon size.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the default dimensions, in pixels, for a program icon.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_43_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_43_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_43_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IconSpacingSize">
@@ -1149,32 +668,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size, in pixels, of the grid square used to arrange icons in a large-icon view.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that specifies the dimensions, in pixels, of the grid square used to arrange icons in a large-icon view.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IconSpacingSize property indicates the size of the grid rectangle that each icon fits into when the system arranges them in a large-icon view. This value is always greater than or equal to <xref:System.Windows.Forms.SystemInformation.IconSize%2A>.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_34_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_34_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_34_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IconVerticalSpacing">
@@ -1184,32 +686,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the height, in pixels, of an icon arrangement cell in large icon view.</summary>
-        <value>The height, in pixels, of an icon arrangement cell in large icon view.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IconVerticalSpacing property indicates the height of the space for an icon in large icon view. The system uses this distance to arrange icons in large icon view.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_101_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_101_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_101_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsActiveWindowTrackingEnabled">
@@ -1219,36 +704,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether active window tracking is enabled.</summary>
-        <value>
-          <see langword="true" /> if active window tracking is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsActiveWindowTrackingEnabled property indicates whether active window tracking is enabled. Active window tracking causes any window the mouse is directly over to become the active window.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_88_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_88_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_88_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsComboBoxAnimationEnabled">
@@ -1258,38 +722,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the slide-open effect for combo boxes is enabled.</summary>
-        <value>
-          <see langword="true" /> if the slide-open effect for combo boxes is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsComboBoxAnimationEnabled property indicates whether the slide-open effect for system control combo boxes is enabled.  
-  
- When the slide-open effect for system control combo boxes is enabled, the drop down menu of a combo box slides into view when it is displayed, instead of being immediately fully drawn in view.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_90_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_90_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_90_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDropShadowEnabled">
@@ -1299,35 +740,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the drop shadow effect is enabled.</summary>
-        <value>
-          <see langword="true" /> if the drop shadow effect is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  This property is supported only on Windows XP and the Windows Server 2003 family. On other platforms, this property returns `false`.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_2_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_2_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFlatMenuEnabled">
@@ -1337,15 +758,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether native user menus have a flat menu appearance.</summary>
-        <value>This property is not used and always returns <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1356,33 +776,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether font smoothing is enabled.</summary>
-        <value>
-          <see langword="true" /> if the font smoothing feature is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This font smoothing feature uses font antialiasing to make font curves appear smoother by painting pixels at different gray levels.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_162_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_162_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_162_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsHotTrackingEnabled">
@@ -1392,36 +794,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether hot tracking of user-interface elements, such as menu names on menu bars, is enabled.</summary>
-        <value>
-          <see langword="true" /> if hot tracking of user-interface elements is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsHotTrackingEnabled property indicates whether hot tracking of user-interface elements is enabled. Hot tracking means that when the cursor moves over an item, it is highlighted but not selected.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_93_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_93_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_93_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsIconTitleWrappingEnabled">
@@ -1431,28 +812,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether icon-title wrapping is enabled.</summary>
-        <value>
-          <see langword="true" /> if the icon-title wrapping feature is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_14_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_14_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_14_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardPreferred">
@@ -1462,36 +830,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user relies on the keyboard instead of the mouse, and prefers applications to display keyboard interfaces that would otherwise be hidden.</summary>
-        <value>
-          <see langword="true" /> if keyboard preferred mode is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsKeyboardPreferred property indicates whether the user has indicated a preference for keyboard-based input interfaces.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_172_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_172_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_172_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsListBoxSmoothScrollingEnabled">
@@ -1501,36 +848,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the smooth-scrolling effect for list boxes is enabled.</summary>
-        <value>
-          <see langword="true" /> if smooth-scrolling is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsListBoxSmoothScrollingEnabled property indicates whether the smooth-scrolling effect for system control list boxes is enabled.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_131_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_131_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_131_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMenuAnimationEnabled">
@@ -1540,38 +866,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether menu fade or slide animation features are enabled.</summary>
-        <value>
-          <see langword="true" /> if menu fade or slide animation is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsMenuAnimationEnabled property indicates whether either of the fade or slide animation features of system control menus is enabled.  
-  
- If the value of this property is `true`, the <xref:System.Windows.Forms.SystemInformation.IsMenuFadeEnabled%2A> property indicates whether menus use fade or slide animation.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_54_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_54_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_54_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMenuFadeEnabled">
@@ -1581,41 +884,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether menu fade animation is enabled.</summary>
-        <value>
-          <see langword="true" /> if fade animation is enabled; <see langword="false" /> if it is disabled.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsMenuFadeEnabled property indicates whether a menu uses fade animation, if menu animation is enabled. The <xref:System.Windows.Forms.SystemInformation.IsMenuAnimationEnabled%2A> property indicates whether menu animation is enabled.  
-  
- If menu animation is enabled and the value of this property is `true`, menus use fade animation. If menu animation is enabled and the value of this property is `false`, menus use slide animation. If menu animation is disabled, the value of this property is meaningless.  
-  
-> [!NOTE]
->  If the value of the <xref:System.Windows.Forms.SystemInformation.IsMenuAnimationEnabled%2A> is `false`, the value of this property is meaningless.  
-  
-> [!NOTE]
->  This property is supported only on Windows 2000, Windows XP, and the Windows Server 2003 family. On other platforms, this property returns `false`.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_52_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_52_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_52_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMinimizeRestoreAnimationEnabled">
@@ -1625,33 +902,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether window minimize and restore animation is enabled.</summary>
-        <value>
-          <see langword="true" /> if window minimize and restore animation is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsMinimizeRestoreAnimationEnabled property indicates whether the window minimize and restore sequence is animated.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_150_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_150_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_150_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelectionFadeEnabled">
@@ -1661,36 +920,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the selection fade effect is enabled.</summary>
-        <value>
-          <see langword="true" /> if the selection fade effect is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsSelectionFadeEnabled property indicates whether the selection fade effect is enabled. The selection fade effect causes a menu item selected by the user to remain on the screen briefly while fading out after the menu is dismissed.  
-  
-> [!NOTE]
->  This property is supported only on Windows 2000, Windows XP, and the Windows Server 2003 family. On other platforms, this property returns `false`.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_45_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_45_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_45_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSnapToDefaultEnabled">
@@ -1700,33 +938,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the snap-to-default-button feature is enabled.</summary>
-        <value>
-          <see langword="true" /> if the snap-to-default-button feature is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsSnapToDefaultEnabled property indicates whether the snap-to-default-button feature is enabled. If the feature is enabled, the mouse cursor automatically moves to the default button, such as **OK** or **Apply**, of a dialog box.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_84_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_84_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_84_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTitleBarGradientEnabled">
@@ -1736,36 +956,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the gradient effect for window title bars is enabled.</summary>
-        <value>
-          <see langword="true" /> if the gradient effect for window title bars is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsTitleBarGradientEnabled property indicates whether the background of window title bars are drawn using a gradient fill effect.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_118_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_118_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_118_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsToolTipAnimationEnabled">
@@ -1775,36 +974,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether <see cref="T:System.Windows.Forms.ToolTip" /> animation is enabled.</summary>
-        <value>
-          <see langword="true" /> if <see cref="T:System.Windows.Forms.ToolTip" /> animation is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsToolTipAnimationEnabled property indicates whether ToolTips can fade or slide into view.  
-  
-> [!NOTE]
->  This property is supported only on Windows 2000, Windows XP, and the Windows Server 2003 family. On other platforms, this property returns `false`.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_42_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_42_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_42_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KanjiWindowHeight">
@@ -1814,32 +992,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the height, in pixels, of the Kanji window at the bottom of the screen for double-byte character set (DBCS) versions of Windows.</summary>
-        <value>The height, in pixels, of the Kanji window.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The KanjiWindowHeight property indicates the height of the Kanji window on operating systems that support DBCS. The <xref:System.Windows.Forms.SystemInformation.DbcsEnabled%2A> property indicates whether the operating system supports DBCS.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_169_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_169_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_169_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyboardDelay">
@@ -1849,34 +1010,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the keyboard repeat-delay setting.</summary>
-        <value>The keyboard repeat-delay setting, from 0 (approximately 250 millisecond delay) through 3 (approximately 1 second delay).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property indicates the amount of time that elapses after a key is pressed and held down until keystroke repeat messages are sent by the operating system. This value is in the range from 0 (approximately 250 millisecond delay) through 3 (approximately 1 second delay). The actual delay associated with each value may vary depending on the hardware.  
-  
- The <xref:System.Windows.Forms.SystemInformation.KeyboardSpeed%2A> property indicates the repeat speed setting that determines the length of time between each keystroke repeat message sent by the operating system.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_165_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_165_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_165_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyboardSpeed">
@@ -1886,34 +1028,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the keyboard repeat-speed setting.</summary>
-        <value>The keyboard repeat-speed setting, from 0 (approximately 2.5 repetitions per second) through 31 (approximately 30 repetitions per second).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property indicates the time between each keystroke repeat message that is sent when a user presses and holds a key down. This is a value in the range from 0 (approximately 2.5 repetitions per second) through 31 (approximately 30 repetitions per second). The actual repeat rates are hardware-dependent and may vary from a linear scale by as much as 20%.  
-  
- The <xref:System.Windows.Forms.SystemInformation.KeyboardDelay%2A> property indicates the length of time after a key is pressed and held down before keystroke repeat messages are sent by the operating system.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_89_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_89_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_89_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxWindowTrackSize">
@@ -1923,32 +1046,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default maximum dimensions, in pixels, of a window that has a caption and sizing borders.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that specifies the maximum dimensions, in pixels, to which a window can be sized.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MaxWindowTrackSize property indicates the maximum dimensions to which a user can drag resize a window. The value returned by MaxWindowTrackSize refers to the dimensions of the entire desktop.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_82_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_82_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_82_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuAccessKeysUnderlined">
@@ -1958,36 +1064,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether menu access keys are always underlined.</summary>
-        <value>
-          <see langword="true" /> if menu access keys are always underlined; <see langword="false" /> if they are underlined only when the menu is activated or receives focus.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MenuAccessKeysUnderlined property indicates whether the menu shortcut keys are underlined in menu text even when the menu has not been activated or received focus.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_160_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_160_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_160_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuBarButtonSize">
@@ -1997,32 +1082,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default width, in pixels, for menu-bar buttons and the height, in pixels, of a menu bar.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the default width for menu-bar buttons, in pixels, and the height of a menu bar, in pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Drawing.Size.Width%2A?displayProperty=fullName> value of this property indicates the default width for a button on a menu-bar, in pixels. The <xref:System.Drawing.Size.Height%2A?displayProperty=fullName> value of this property indicates the height of a menu bar, in pixels.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_24_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_24_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_24_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuButtonSize">
@@ -2032,32 +1100,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default dimensions, in pixels, of menu-bar buttons.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the default dimensions, in pixels, of menu-bar buttons.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property indicates the default dimensions, in pixels, for menu-bar buttons, such as the child window close button used in the multiple document interface.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_149_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_149_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_149_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuCheckSize">
@@ -2067,32 +1118,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dimensions, in pixels, of the default size of a menu check mark area.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the default size, in pixels, of a menu check mark area.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MenuCheckSize property indicates the size of the image used by Windows to display a check mark area next to a selected menu item.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_126_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_126_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_126_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFont">
@@ -2102,32 +1136,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the font used to display text on menus.</summary>
-        <value>The <see cref="T:System.Drawing.Font" /> used to display text on menus.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MenuFont property indicates the font used to display text on menus.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_59_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_59_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_59_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuHeight">
@@ -2137,32 +1154,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the height, in pixels, of one line of a menu.</summary>
-        <value>The height, in pixels, of one line of a menu.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MenuHeight property indicates the height that is currently defined by Windows for a menu bar.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_3_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_3_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuShowDelay">
@@ -2172,32 +1172,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the time, in milliseconds, that the system waits before displaying a cascaded shortcut menu when the mouse cursor is over a submenu item.</summary>
-        <value>The time, in milliseconds, that the system waits before displaying a cascaded shortcut menu when the mouse cursor is over a submenu item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MenuShowDelay property indicates the time, in milliseconds, that the system waits before displaying a cascaded shortcut menu when the mouse cursor is over a submenu item.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_122_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_122_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_122_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MidEastEnabled">
@@ -2207,33 +1190,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the operating system is enabled for the Hebrew and Arabic languages.</summary>
-        <value>
-          <see langword="true" /> if the operating system is enabled for Hebrew or Arabic; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MidEastEnabled property indicates whether the operating system is enabled for the Hebrew and Arabic languages.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_8_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_8_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimizedWindowSize">
@@ -2243,32 +1208,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dimensions, in pixels, of a normal minimized window.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the dimensions, in pixels, of a normal minimized window.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MinimizedWindowSize property indicates the size of the area occupied by a normal minimized window.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_112_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_112_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_112_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimizedWindowSpacingSize">
@@ -2278,34 +1226,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dimensions, in pixels, of the area each minimized window is allocated when arranged.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the area each minimized window is allocated when arranged.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MinimizedWindowSpacingSize property indicates the size, in pixels, of an arrangement grid cell for a minimized window. Each minimized window fits into a rectangle this size when arranged.  
-  
- The value of this property is always greater than or equal to the value of the <xref:System.Windows.Forms.SystemInformation.MinimumWindowSize%2A> property.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_35_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_35_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_35_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumWindowSize">
@@ -2315,35 +1244,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the minimum width and height for a window, in pixels.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that specifies the minimum allowable dimensions of a window, in pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MinimumWindowSize property indicates the dimensions specified by Windows as the minimum size for a window. You can use this property to limit the resizing of windows to dimensions not exceeding either dimension returned by this property.  
-  
-> [!NOTE]
->  Developers of applications capable of resizing windows may want to use the value of this property to ensure that the application does not attempt to resize the window to a lesser width or height, since the dimensions of the window would be limited by the system.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_144_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_144_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_144_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinWindowTrackSize">
@@ -2353,34 +1262,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default minimum dimensions, in pixels, that a window may occupy during a drag resize.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the default minimum width and height of a window during resize, in pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MinWindowTrackSize property indicates the default smallest window size that can be produced by using the borders to size the window.  
-  
- The user cannot drag the window frame to a size smaller than these dimensions. A <xref:System.Windows.Forms.Form> can override these values by setting the <xref:System.Windows.Forms.Form.MinimumSize%2A> property.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_72_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_72_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_72_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MonitorCount">
@@ -2390,35 +1280,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of display monitors on the desktop.</summary>
-        <value>The number of monitors that make up the desktop.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MonitorCount property indicates the number of monitors currently recognized by the operating system. This property returns a value greater than one only if multiple monitors are currently recognized by the operating system.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_55_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_55_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_55_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MonitorsSameDisplayFormat">
@@ -2428,41 +1298,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether all the display monitors are using the same pixel color format.</summary>
-        <value>
-          <see langword="true" /> if all monitors are using the same pixel color format; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MonitorsSameDisplayFormat indicates whether all monitors currently recognized by the operating system are using the same pixel color format.  
-  
- Pixel formats define the data structure used to encode pixel color and luminosity information. The <xref:System.Drawing.Imaging.PixelFormat> enumeration indicates a set of standard pixel color formats. Pixel values can be encoded in a variety of formats, with differing color value ranges and bit precisions, and differing positions of bits in a pixel data format structure.  
-  
-> [!NOTE]
->  Two displays can have the same bit depth but different color formats.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_32_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_32_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_32_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseButtons">
@@ -2472,34 +1316,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of buttons on the mouse.</summary>
-        <value>The number of buttons on the mouse, or zero if no mouse is installed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MouseButtons property indicates the number of mouse buttons recognized on the currently installed mouse.  
-  
- You can use MouseButtons property to toggle additional functionality for users with more or less than the standard number of mouse buttons supported by your application.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_21_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_21_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_21_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseButtonsSwapped">
@@ -2509,28 +1334,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the functions of the left and right mouse buttons have been swapped.</summary>
-        <value>
-          <see langword="true" /> if the functions of the left and right mouse buttons are swapped; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_53_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_53_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_53_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseHoverSize">
@@ -2540,25 +1352,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dimensions, in pixels, of the rectangle within which the mouse pointer has to stay for the mouse hover time before a mouse hover message is generated.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the dimensions, in pixels, of the rectangle within which the mouse pointer has to stay for the mouse hover time before a mouse hover message is generated.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MouseHoverSize property indicates the size of the rectangle within which the mouse pointer has to stay for the mouse hover time before a mouse hover message is generated.  
-  
- The <xref:System.Windows.Forms.SystemInformation.MouseHoverTime%2A> property indicates the time, in milliseconds, that a mouse pointer must remain within an area the size of the MouseHoverSize property in order to generate a mouse hover message.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseHoverTime">
@@ -2568,34 +1370,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the time, in milliseconds, that the mouse pointer has to stay in the hover rectangle before a mouse hover message is generated.</summary>
-        <value>The time, in milliseconds, that the mouse pointer has to stay in the hover rectangle before a mouse hover message is generated.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MouseHoverTime property indicates the amount of time, in milliseconds, that a mouse pointer must remain within an area the size of the <xref:System.Windows.Forms.SystemInformation.MouseHoverSize%2A> property in order to generate a mouse hover message.  
-  
- The <xref:System.Windows.Forms.SystemInformation.MouseHoverSize%2A> property indicates the size of the rectangle within which the mouse pointer has to stay for the mouse hover time before a mouse hover message is generated.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_157_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_157_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_157_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MousePresent">
@@ -2605,7 +1388,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2617,26 +1399,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a pointing device is installed.</summary>
-        <value>
-          <see langword="true" /> if a mouse is installed; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MousePresent property indicates whether a pointing device is present or installed on the system. This is usually the case, so MousePresent almost always returns `true`.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_110_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_110_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_110_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseSpeed">
@@ -2646,35 +1411,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current mouse speed.</summary>
-        <value>A mouse speed value between 1 (slowest) and 20 (fastest).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The mouse speed determines how far the pointer will move based on the distance the mouse moves. The value of this property ranges between 1 (slowest) and 20 (fastest). A value of 10 is the default. The value can be set by an end user using the mouse control panel application or by an application using the `SystemParametersInfo` function of the Platform SDK.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_9_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_9_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseWheelPresent">
@@ -2684,36 +1429,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a mouse with a mouse wheel is installed.</summary>
-        <value>
-          <see langword="true" /> if a mouse with a mouse wheel is installed; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MouseWheelPresent property indicates whether the system recognizes a mouse wheel on the current mouse.  
-  
-> [!NOTE]
->  This property is supported only on Windows NT 4.0 or later, Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_5_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_5_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseWheelScrollDelta">
@@ -2723,32 +1447,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the amount of the delta value of a single mouse wheel rotation increment.</summary>
-        <value>The amount of the delta value of a single mouse wheel rotation increment.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The delta value is an integer value that represents a single mouse wheel rotation increment. A downward mouse wheel rotation produces a negative delta value.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_0_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_0_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseWheelScrollLines">
@@ -2758,35 +1465,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of lines to scroll when the mouse wheel is rotated.</summary>
-        <value>The number of lines to scroll on a mouse wheel rotation, or -1 if the "One screen at a time" mouse option is selected.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MouseWheelScrollLines property indicates how many lines to scroll, by default, in a multi-line control that has a scroll bar. The corresponding Platform SDK system-wide parameters are SPI_GETWHEELSCROLLLINES and SPI_SETWHEELSCROLLLINES. For more information about system-wide parameters, see "SystemParametersInfo" in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
-  
-> [!NOTE]
->  Be sure to handle the special case that occurs if the "One screen at a time" mouse option is selected. In this case, the MouseWheelScrollLines property has a value of -1.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_139_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_139_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_139_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NativeMouseWheelSupport">
@@ -2796,36 +1483,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the operating system natively supports a mouse wheel.</summary>
-        <value>
-          <see langword="true" /> if the operating system natively supports a mouse wheel; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Mouse wheel operations that occur through a <xref:System.Windows.Forms.Control> object work even if the operating system does not natively support the wheel.  
-  
-> [!NOTE]
->  This property is supported only on Windows NT 4.0 or later, Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_63_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_63_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_63_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Network">
@@ -2835,36 +1501,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a network connection is present.</summary>
-        <value>
-          <see langword="true" /> if a network connection is present; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Network property indicates whether the system has a currently established network connection.  
-  
-> [!NOTE]
->  This property always returns `true` on all Windows platforms supported by the .NET Framework. Use the <xref:System.Net.NetworkInformation> namespace to retrieve more accurate network status.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_30_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_30_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_30_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PenWindows">
@@ -2874,33 +1519,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the Microsoft Windows for Pen Computing extensions are installed.</summary>
-        <value>
-          <see langword="true" /> if the Windows for Pen Computing extensions are installed; <see langword="false" /> if Windows for Pen Computing extensions are not installed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PenWindows property indicates whether the Microsoft Windows for Pen Computing extensions are installed.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_10_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_10_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_10_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PopupMenuAlignment">
@@ -2910,27 +1537,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.LeftRightAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the side of pop-up menus that are aligned to the corresponding menu-bar item.</summary>
-        <value>A <see cref="T:System.Windows.Forms.LeftRightAlignment" /> that indicates whether pop-up menus are left-aligned or right-aligned, relative to the corresponding menu-bar item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_81_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_81_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_81_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PowerStatus">
@@ -2940,27 +1555,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PowerStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current system power status.</summary>
-        <value>A <see cref="T:System.Windows.Forms.PowerStatus" /> that indicates the current system power status.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_87_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_87_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_87_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrimaryMonitorMaximizedWindowSize">
@@ -2970,27 +1573,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default dimensions, in pixels, of a maximized window on the primary display.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that specifies the dimensions, in pixels, of a maximized window on the primary display.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_142_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_142_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_142_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrimaryMonitorSize">
@@ -3000,32 +1591,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dimensions, in pixels, of the current video mode of the primary display.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the dimensions, in pixels, of the current video mode of the primary display.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PrimaryMonitorSize property indicates the dimensions of the current video mode of the primary display adapter.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_58_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_58_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_58_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RightAlignedMenus">
@@ -3035,28 +1609,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether drop-down menus are right-aligned with the corresponding menu-bar item.</summary>
-        <value>
-          <see langword="true" /> if drop-down menus are right-aligned with the corresponding menu-bar item; <see langword="false" /> if the menus are left-aligned.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_164_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_164_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_164_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenOrientation">
@@ -3066,27 +1627,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScreenOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the orientation of the screen.</summary>
-        <value>The orientation of the screen, in degrees.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_19_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_19_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_19_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Secure">
@@ -3096,34 +1645,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a Security Manager is present on this operating system.</summary>
-        <value>
-          <see langword="true" /> if a Security Manager is present; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Secure property indicates whether a Security Manager is available from the operating system. Windows NT and Windows 2000 provide a Security Manager to determine access to the operating system registry and to the file system. Windows 98 does not provide a Security Manager.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_17_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_17_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_17_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSounds">
@@ -3133,35 +1663,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user prefers that an application present information in visual form in situations when it would present the information in audible form.</summary>
-        <value>
-          <see langword="true" /> if the application should visually show information about audible output; <see langword="false" /> if the application does not need to provide extra visual cues for audio events.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ShowSounds property indicates whether a user preference has been set that indicates the user prefers visual information displays for audio events.  
-  
- You can use this property to provide accessibility mode features to an application.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_140_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_140_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_140_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizingBorderWidth">
@@ -3171,27 +1681,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the width, in pixels, of the sizing border drawn around the perimeter of a window being resized.</summary>
-        <value>The width, in pixels, of the window sizing border drawn around the perimeter of a window being resized.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_41_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_41_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_41_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionButtonSize">
@@ -3201,32 +1699,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the width, in pixels, of small caption buttons, and the height, in pixels, of small captions.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the width, in pixels, of small caption buttons, and the height, in pixels, of small captions.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SmallCaptionButtonSize property indicates the width, in pixels, of small caption buttons, and the height, in pixels, of small captions.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_167_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_167_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_167_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallIconSize">
@@ -3236,32 +1717,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dimensions, in pixels, of a small icon.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that specifies the dimensions, in pixels, of a small icon.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SmallIconSize property indicates the size of small icons in Windows. Small icons typically appear in window captions and in the small icon view in Windows Explorer.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_106_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_106_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_106_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TerminalServerSession">
@@ -3271,36 +1735,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the calling process is associated with a Terminal Services client session.</summary>
-        <value>
-          <see langword="true" /> if the calling process is associated with a Terminal Services client session; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TerminalServerSession property indicates whether the calling process is associated with a Terminal Services client session.  
-  
-> [!NOTE]
->  This property is supported only on Windows NT 4.0 SP4 or later, Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_115_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_115_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_115_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolWindowCaptionButtonSize">
@@ -3310,32 +1753,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dimensions, in pixels, of small caption buttons.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that indicates the dimensions, in pixels, of small caption buttons.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToolWindowCaptionButtonSize property indicates the dimensions of the buttons placed in the caption of a tool window. You can use this property when adding your own custom buttons to the caption in a tool window.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_37_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_37_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_37_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolWindowCaptionHeight">
@@ -3345,27 +1771,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the height, in pixels, of a tool window caption.</summary>
-        <value>The height, in pixels, of a tool window caption in pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_12_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_12_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_12_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UIEffectsEnabled">
@@ -3375,49 +1789,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether user interface (UI) effects are enabled or disabled.</summary>
-        <value>
-          <see langword="true" /> if UI effects are enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- UI effects include animation, fading, hot tracking, and smooth scrolling of system controls, and drawing a shadow under the mouse cursor. When UI effects are disabled, these features are disabled. When UI effects are enabled, only the effects configured as active for the current user are enabled.  
-  
- The following table lists properties that indicate whether particular UI effects are enabled, if the value of this property is `true`:  
-  
-|Item|Description|  
-|----------|-----------------|  
-|<xref:System.Windows.Forms.SystemInformation.IsComboBoxAnimationEnabled%2A>|Indicates whether the slide-open effect for combo boxes is enabled.|  
-|<xref:System.Windows.Forms.SystemInformation.IsTitleBarGradientEnabled%2A>|Indicates whether the gradient effect for window title bars is enabled.|  
-|<xref:System.Windows.Forms.SystemInformation.IsHotTrackingEnabled%2A>|Indicates whether hot tracking of user-interface elements, such as menu names on menu bars, is enabled.|  
-|<xref:System.Windows.Forms.SystemInformation.IsListBoxSmoothScrollingEnabled%2A>|Indicates whether the smooth-scrolling effect for list boxes is enabled.|  
-|<xref:System.Windows.Forms.SystemInformation.IsMenuAnimationEnabled%2A>|Indicates whether menu fade or slide animation features are enabled.|  
-|<xref:System.Windows.Forms.SystemInformation.MenuAccessKeysUnderlined%2A>|Indicates whether menu access keys are always underlined.|  
-|<xref:System.Windows.Forms.SystemInformation.IsSelectionFadeEnabled%2A>|Indicates whether the selection fade effect is enabled.|  
-|<xref:System.Windows.Forms.SystemInformation.IsToolTipAnimationEnabled%2A>|Indicates whether ToolTip animation is enabled.|  
-  
-> [!NOTE]
->  This property is supported only on Windows 2000, Windows XP, and the Windows Server 2003 family. On other platforms, this property returns `false`.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_159_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_159_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_159_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UserDomainName">
@@ -3427,37 +1807,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the domain the user belongs to.</summary>
-        <value>The name of the user domain. If a local user account exists with the same name as the user name, this property gets the computer name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a local user account exists with the same name as the user name, this property gets the computer name.  
-  
-> [!NOTE]
->  This is not supported on Windows 98 and Windows Millennium Edition.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_161_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_161_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_161_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.Win32Exception">The operating system does not support this feature.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">for reading an environment variable. Associated enumeration: <see cref="T:System.Security.Permissions.EnvironmentPermissionAccess" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UserInteractive">
@@ -3467,38 +1825,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current process is running in user-interactive mode.</summary>
-        <value>
-          <see langword="true" /> if the current process is running in user-interactive mode; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the UserInteractive property is `false`, do not display any modal dialogs or message boxes, as there is no graphical user interface for the user to interact with.  
-  
- This property is `false` only when called from a service process or from a Web application.  
-  
-> [!NOTE]
->  This property is supported only on Windows NT 3.51 or later, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_76_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_76_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_76_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -3508,35 +1843,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the user name associated with the current thread.</summary>
-        <value>The user name of the user associated with the current thread.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  This property is supported only on Windows NT workstation, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_158_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_158_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_158_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalFocusThickness">
@@ -3546,36 +1861,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the thickness, in pixels, of the top and bottom edges of the system focus rectangle.</summary>
-        <value>The thickness, in pixels, of the top and bottom edges of the system focus rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The VerticalFocusThickness property indicates the height, in pixels, of the top and bottom edges of the system focus rectangle. The system focus rectangle is used to draw user's attention to a window or area by displaying a rectangular highlighted outline.  
-  
-> [!NOTE]
->  This property is supported only on Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_113_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_113_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_113_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The operating system does not support this feature.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalResizeBorderThickness">
@@ -3585,32 +1879,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the thickness, in pixels, of the top and bottom edges of the sizing border around the perimeter of a window being resized.</summary>
-        <value>The height, in pixels, of the top and bottom edges of the sizing border around the perimeter of a window being resized, in pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The VerticalResizeBorderThickness property indicates the height of the horizontal sizing border around the perimeter of a window being resized.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_138_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_138_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_138_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarArrowHeight">
@@ -3620,32 +1897,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the height, in pixels, of the arrow bitmap on the vertical scroll bar.</summary>
-        <value>The height, in pixels, of the arrow bitmap on the vertical scroll bar.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The VerticalScrollBarArrowHeight property indicates the height of the arrow bitmap on the vertical scroll bar system control.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_80_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_80_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_80_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarThumbHeight">
@@ -3655,32 +1915,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the height, in pixels, of the scroll box in a vertical scroll bar.</summary>
-        <value>The height, in pixels, of the scroll box in a vertical scroll bar.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The VerticalScrollBarThumbHeight property indicates the height of the scroll box used to indicate scroll bar position and to drag the scroll bar to a new position. The scroll box is also called the thumb box.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_130_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_130_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_130_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarWidth">
@@ -3690,27 +1933,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default width, in pixels, of the vertical scroll bar.</summary>
-        <value>The default width, in pixels, of the vertical scroll bar.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_151_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_151_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_151_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VirtualScreen">
@@ -3720,40 +1951,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounds of the virtual screen.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> that specifies the bounding rectangle of the entire virtual screen.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The VirtualScreen property indicates the bounds of the entire desktop on a multi-monitor system. You can use this property to determine the maximum visual space available on a system that has multiple monitors installed.  
-  
- The position coordinates of the rectangle indicate the position offset, in pixels, of the upper left corner of the virtual screen area relative to the upper left corner of the onscreen area of the primary display. The size values of the rectangle indicate the size of the virtual screen area.  
-  
-> [!NOTE]
->  The <xref:System.Drawing.Rectangle.X%2A> position coordinate of the rectangle is negative when the virtual screen starts to the left of the left edge of the primary display. The <xref:System.Drawing.Rectangle.Y%2A> coordinate of the rectangle is negative when the virtual screen starts above the top edge of the primary display.  
-  
-> [!NOTE]
->  This property is supported only on Windows 98, Windows Millennium Edition, Windows 2000, Windows XP, and the Windows Server 2003 family.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_28_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_28_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_28_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkingArea">
@@ -3763,34 +1969,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size, in pixels, of the working area of the screen.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the size, in pixels, of the working area of the screen.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WorkingArea property indicates the bounds of the screen that can be used by applications. The working area is the desktop area of the display, excluding taskbars, docked windows, and docked tool bars.  
-  
- WorkingArea always returns the work area of the primary monitor. If you need the work area of a monitor in a multiple display environment, you can call one of the overloads of <xref:System.Windows.Forms.Screen.GetWorkingArea%2A?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example lists all properties of the <xref:System.Windows.Forms.SystemInformation> class in a <xref:System.Windows.Forms.ListBox> and displays the current value of the property in a <xref:System.Windows.Forms.TextBox> when a list item selected.  
-  
- [!code-vb[SystemInformationBrowser#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_70_1.vb)]
- [!code-cpp[SystemInformationBrowser#1](~/add/codesnippet/cpp/p-system.windows.forms.s_70_1.cpp)]
- [!code-cs[SystemInformationBrowser#1](~/add/codesnippet/csharp/p-system.windows.forms.s_70_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,32 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.IHttpSessionState" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines the contract to implement a custom session-state container.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A session-state container provides access to the session-state values and related information for the current session. Session information included in a session-state container is exposed to application code through the <xref:System.Web.SessionState.HttpSessionState> class using the <xref:System.Web.HttpContext.Session%2A> property. The <xref:System.Web.SessionState.HttpSessionState> class is a wrapper class for a session-state container.  
-  
- The ASP.NET implementation of a session-state container is the <xref:System.Web.SessionState.HttpSessionStateContainer> class. At the beginning of a request, during the <xref:System.Web.HttpApplication.AcquireRequestState> event, the <xref:System.Web.SessionState.SessionStateModule> creates and populates an <xref:System.Web.SessionState.HttpSessionStateContainer> object and assigns it to the current <xref:System.Web.HttpContext>. At the end of a request, during the <xref:System.Web.HttpApplication.ReleaseRequestState> event, the <xref:System.Web.SessionState.SessionStateModule> retrieves the <xref:System.Web.SessionState.HttpSessionStateContainer> object from the current <xref:System.Web.HttpContext> and performs any required session work, such as writing the session values to the session store, or abandoning the session. If the request is abruptly terminated, such as through a redirect, the <xref:System.Web.SessionState.SessionStateModule> performs the same cleanup by calling the <xref:System.Web.SessionState.SessionStateStoreProviderBase.EndRequest%2A> method.  
-  
- To create a custom session-state container, create a class that implements the IHttpSessionState interface. If you are creating your own custom session-state container, you must also replace the <xref:System.Web.SessionState.SessionStateModule> with your own custom module. Your custom module will create an instance of your custom session-state container and add it to the current <xref:System.Web.HttpContext> using the <xref:System.Web.SessionState.SessionStateUtility.AddHttpSessionStateToContext%2A> method. An example of a custom session-state module is included in the <xref:System.Web.SessionState.SessionStateUtility> class overview.  
-  
-   
-  
-## Examples  
- The following code example implements the IHttpSessionState interface to create a new session-state container class named `MySessionState`.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#1](~/add/codesnippet/csharp/t-system.web.sessionstat_4_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#1](~/add/codesnippet/visualbasic/t-system.web.sessionstat_4_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Abandon">
@@ -39,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,23 +26,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the current session.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Abandon method is used to clear out session data and raise the **Session_OnEnd** event defined in the Global.asax file for the ASP.NET application.  
-  
-   
-  
-## Examples  
- The following code example implements the Abandon method of the <xref:System.Web.SessionState.IHttpSessionState> interface. The code example duplicates the behavior of the <xref:System.Web.SessionState.HttpSessionStateContainer> class in that it adds an <xref:System.Web.SessionState.HttpSessionStateContainer.IsAbandoned%2A> property that is set to `true` when the Abandon method is called. The <xref:System.Web.SessionState.HttpSessionStateContainer.IsAbandoned%2A> property is checked by the session-state module during the <xref:System.Web.HttpApplication.ReleaseRequestState> event to determine whether the session has been abandoned, and the session-state module clears out session data and executes the **Session_OnEnd** event.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#8](~/add/codesnippet/csharp/m-system.web.sessionstat_12_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#8](~/add/codesnippet/visualbasic/m-system.web.sessionstat_12_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -73,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,20 +47,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the item to add to the session-state collection.</param>
-        <param name="value">The value of the item to add to the session-state collection.</param>
-        <summary>Adds a new item to the session-state collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the Add method of the <xref:System.Web.SessionState.IHttpSessionState> interface to add a new item value to the internal session-state item collection.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#15](~/add/codesnippet/csharp/m-system.web.sessionstat_8_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#15](~/add/codesnippet/visualbasic/m-system.web.sessionstat_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -107,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,23 +67,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all values from the session-state item collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Clear performs the same function as <xref:System.Web.SessionState.IHttpSessionState.RemoveAll%2A>.  
-  
-   
-  
-## Examples  
- The following code example implements the Clear method of the <xref:System.Web.SessionState.IHttpSessionState> interface to delete all items from an internal session-state item collection.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#18](~/add/codesnippet/csharp/m-system.web.sessionstat_13_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#18](~/add/codesnippet/visualbasic/m-system.web.sessionstat_13_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CodePage">
@@ -141,33 +78,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the code-page identifier for the current session.</summary>
-        <value>The code-page identifier for the current session.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A character set (code page) is used to interpret multi-byte character data, determining character value, and therefore sort order. Code-page settings apply only to multi-byte character data, not to Unicode character data.  
-  
- This CodePage property is provided for compatibility with earlier versions of ASP only. If you do not need to maintain backward compatibility with ASP pages, use the <xref:System.Text.Encoding.CodePage%2A> property of the <xref:System.Web.HttpResponse.ContentEncoding%2A> property instead.  
-  
-   
-  
-## Examples  
- The following code example implements the CodePage property of the <xref:System.Web.SessionState.IHttpSessionState> interface to get and set the encoding for the current response.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#10](~/add/codesnippet/csharp/p-system.web.sessionstat_22_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#10](~/add/codesnippet/visualbasic/p-system.web.sessionstat_22_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CookieMode">
@@ -177,39 +96,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCookieMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the application is configured for cookieless sessions.</summary>
-        <value>One of the <see cref="T:System.Web.HttpCookieMode" /> values that indicate whether the application is configured for cookieless sessions. The default is <see cref="T:System.Web.HttpCookieMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CookieMode property returns a <xref:System.Web.HttpCookieMode> enumeration value that is based on the value of the `cookieless` attribute of the <xref:System.Web.Configuration.SystemWebSectionGroup.SessionState%2A> configuration element. If the `cookieless` attribute is set to `true`, then the CookieMode property returns <xref:System.Web.HttpCookieMode>; otherwise, the CookieMode property returns <xref:System.Web.HttpCookieMode>.  
-  
-   
-  
-## Examples  
- The following code example sets the `cookieless` attribute of the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element to `true` in the Web.config file to change the CookieMode property. For this sample application configuration, the CookieMode property would return <xref:System.Web.HttpCookieMode>.  
-  
-```  
-<configuration>  
-  <system.web>  
-    <sessionState  
-      mode="InProc"  
-      cookieless="true"  
-      timeout="30" />  
-  </system.web>  
-</configuration>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -219,7 +114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,20 +124,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The <see cref="T:System.Array" /> that receives the session values.</param>
-        <param name="index">The index in <c>array</c> where copying starts.</param>
-        <summary>Copies the collection of session-state item values to a one-dimensional array, starting at the specified index in the array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the CopyTo method of the <xref:System.Web.SessionState.IHttpSessionState> interface to copy session-state item values to an array.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#22](~/add/codesnippet/csharp/m-system.web.sessionstat_11_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#22](~/add/codesnippet/visualbasic/m-system.web.sessionstat_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -253,26 +137,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the session-state item collection.</summary>
-        <value>The number of items in the session-state item collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the Count property of the <xref:System.Web.SessionState.IHttpSessionState> interface to return the number of items in the internal session-state item collection.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#19](~/add/codesnippet/csharp/p-system.web.sessionstat_11_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#19](~/add/codesnippet/visualbasic/p-system.web.sessionstat_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -282,7 +155,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,19 +162,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can be used to read all the session-state item values in the current session.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can iterate through the values in the session-state item collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the GetEnumerator method of the <xref:System.Web.SessionState.IHttpSessionState> interface to return an enumerator for the internal session-state item collection.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#21](~/add/codesnippet/csharp/m-system.web.sessionstat_17_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#21](~/add/codesnippet/visualbasic/m-system.web.sessionstat_17_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCookieless">
@@ -312,32 +174,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the session ID is embedded in the URL or stored in an HTTP cookie.</summary>
-        <value>
-          <see langword="true" /> if the session is embedded in the URL; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For information on cookieless sessions, see [Session Identifiers](../Topic/Session%20Identifiers.md).  
-  
-   
-  
-## Examples  
- The following code example implements the IsCookieless property of the <xref:System.Web.SessionState.IHttpSessionState> interface.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#6](~/add/codesnippet/csharp/p-system.web.sessionstat_7_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#6](~/add/codesnippet/visualbasic/p-system.web.sessionstat_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNewSession">
@@ -347,27 +192,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the session was created with the current request.</summary>
-        <value>
-          <see langword="true" /> if the session was created with the current request; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the IsNewSession property of the <xref:System.Web.SessionState.IHttpSessionState> interface.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#4](~/add/codesnippet/csharp/p-system.web.sessionstat_19_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#4](~/add/codesnippet/visualbasic/p-system.web.sessionstat_19_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -377,32 +210,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the session is read-only.</summary>
-        <value>
-          <see langword="true" /> if the session is read-only; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Session state is set to read-only by setting the <xref:System.Web.Configuration.PagesSection.EnableSessionState%2A> page attribute to `ReadOnly`.  
-  
-   
-  
-## Examples  
- The following code example implements the IsReadOnly property of the <xref:System.Web.SessionState.IHttpSessionState> interface to return the value of an internal variable that was set in the constructor.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#24](~/add/codesnippet/csharp/p-system.web.sessionstat_4_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#24](~/add/codesnippet/visualbasic/p-system.web.sessionstat_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -412,27 +228,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the collection of session-state values is synchronized (thread safe).</summary>
-        <value>
-          <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the IsSynchronized property of the <xref:System.Web.SessionState.IHttpSessionState> interface.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#25](~/add/codesnippet/csharp/p-system.web.sessionstat_1_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#25](~/add/codesnippet/visualbasic/p-system.web.sessionstat_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -442,7 +246,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -452,20 +255,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The numerical index of the session-state item value.</param>
-        <summary>Gets or sets a session-state item value by numerical index.</summary>
-        <value>The session-state item value specified in the <paramref name="index" /> parameter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the <xref:System.Web.SessionState.IHttpSessionState.Item%2A> property of the <xref:System.Web.SessionState.IHttpSessionState> interface to store and return an internal dictionary session-state item value by numeric index.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#14](~/add/codesnippet/csharp/p-system.web.sessionstat_23_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#14](~/add/codesnippet/visualbasic/p-system.web.sessionstat_23_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -475,7 +268,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -485,20 +277,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The key name of the session-state item value.</param>
-        <summary>Gets or sets a session-state item value by name.</summary>
-        <value>The session-state item value specified in the <paramref name="name" /> parameter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the Item property of the <xref:System.Web.SessionState.IHttpSessionState> interface to store and return an internal dictionary session-state item value by its key name.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#13](~/add/codesnippet/csharp/p-system.web.sessionstat_16_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#13](~/add/codesnippet/visualbasic/p-system.web.sessionstat_16_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -508,26 +290,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameObjectCollectionBase+KeysCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of the keys for all values stored in the session-state item collection.</summary>
-        <value>The <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> that contains all the session-item keys.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the Keys property of the <xref:System.Web.SessionState.IHttpSessionState> interface to return a collection of session-state item key names from the internal session-state item collection.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#20](~/add/codesnippet/csharp/p-system.web.sessionstat_15_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#20](~/add/codesnippet/visualbasic/p-system.web.sessionstat_15_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LCID">
@@ -537,33 +308,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the locale identifier (LCID) of the current session.</summary>
-        <value>A <see cref="T:System.Globalization.CultureInfo" /> instance that specifies the culture of the current session.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This `LCID` property is provided for compatibility with earlier versions of ASP only. If you do not need to maintain backward compatibility with ASP pages, use the <xref:System.Globalization.CultureInfo.LCID%2A> property instead.  
-  
- ASP.NET does not store the locale identifier in session state. The LCID property calls the <xref:System.Globalization.CultureInfo.LCID%2A> to get and set the identifier.  
-  
-   
-  
-## Examples  
- The following code example implements the LCID property of the <xref:System.Web.SessionState.IHttpSessionState> interface to get and set the locale identifier for the current page.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#9](~/add/codesnippet/csharp/p-system.web.sessionstat_12_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#9](~/add/codesnippet/visualbasic/p-system.web.sessionstat_12_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -573,31 +326,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.SessionState.SessionStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current session-state mode.</summary>
-        <value>One of the <see cref="T:System.Web.SessionState.SessionStateMode" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For information on different session-state modes, see [Session-State Modes](../Topic/Session-State%20Modes.md).  
-  
-   
-  
-## Examples  
- The following code example implements the Mode property of the <xref:System.Web.SessionState.IHttpSessionState> interface.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#5](~/add/codesnippet/csharp/p-system.web.sessionstat_13_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#5](~/add/codesnippet/visualbasic/p-system.web.sessionstat_13_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -607,7 +344,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -617,19 +353,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the item to delete from the session-state item collection.</param>
-        <summary>Deletes an item from the session-state item collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the Remove method of the <xref:System.Web.SessionState.IHttpSessionState> interface to delete a session-state item from the session-state item collection by key name.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#16](~/add/codesnippet/csharp/m-system.web.sessionstat_18_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#16](~/add/codesnippet/visualbasic/m-system.web.sessionstat_18_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -639,7 +365,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -647,23 +372,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all values from the session-state item collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- RemoveAll performs the same function as <xref:System.Web.SessionState.IHttpSessionState.Clear%2A>.  
-  
-   
-  
-## Examples  
- The following code example implements the RemoveAll method of the <xref:System.Web.SessionState.IHttpSessionState> interface to delete all items from an internal session-state item collection.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#18](~/add/codesnippet/csharp/m-system.web.sessionstat_1_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#18](~/add/codesnippet/visualbasic/m-system.web.sessionstat_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -673,7 +383,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -683,19 +392,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the item to remove from the session-state collection.</param>
-        <summary>Deletes an item at a specified index from the session-state item collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the RemoveAt method of the <xref:System.Web.SessionState.IHttpSessionState> interface to delete a session-state item from the internal session-state item collection by numerical index.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#17](~/add/codesnippet/csharp/m-system.web.sessionstat_15_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#17](~/add/codesnippet/visualbasic/m-system.web.sessionstat_15_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -705,26 +404,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unique session identifier for the session.</summary>
-        <value>The session ID.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the SessionID property of the <xref:System.Web.SessionState.IHttpSessionState> interface.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#3](~/add/codesnippet/csharp/p-system.web.sessionstat_20_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#3](~/add/codesnippet/visualbasic/p-system.web.sessionstat_20_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StaticObjects">
@@ -734,31 +422,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpStaticObjectsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of objects declared by <see langword="&lt;object Runat=&quot;Server&quot; Scope=&quot;Session&quot;/&gt;" /> tags within the ASP.NET application file Global.asax.</summary>
-        <value>An <see cref="T:System.Web.HttpStaticObjectsCollection" /> containing objects declared in the Global.asax file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `StaticObjects` is provided for compatibility with earlier versions of ASP.  
-  
-   
-  
-## Examples  
- The following code example implements the StaticObjects property of the <xref:System.Web.SessionState.IHttpSessionState> interface.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#12](~/add/codesnippet/csharp/p-system.web.sessionstat_17_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#12](~/add/codesnippet/visualbasic/p-system.web.sessionstat_17_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -768,26 +440,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the collection of session-state values.</summary>
-        <value>An object that can be used to synchronize access to the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the SyncRoot property to return a copy of the current object that implements the <xref:System.Web.SessionState.IHttpSessionState> interface.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#23](~/add/codesnippet/csharp/p-system.web.sessionstat_2_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#23](~/add/codesnippet/visualbasic/p-system.web.sessionstat_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -797,26 +458,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the time-out period (in minutes) allowed between requests before the session-state provider terminates the session.</summary>
-        <value>The time-out period, in minutes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example implements the Timeout property of the <xref:System.Web.SessionState.IHttpSessionState> interface to get and set the session timeout value that is stored in an internal variable created in the class constructor.  
-  
- [!code-cs[System.Web.SessionState.IHttpSessionState#2](~/add/codesnippet/csharp/p-system.web.sessionstat_6_1.cs)]
- [!code-vb[System.Web.SessionState.IHttpSessionState#2](~/add/codesnippet/visualbasic/p-system.web.sessionstat_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

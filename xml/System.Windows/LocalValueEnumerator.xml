@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.LocalValueEnumerator" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,21 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides enumeration support for the local values of any dependency properties that exist on a <see cref="T:System.Windows.DependencyObject" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A *local value* is a value for a dependency property that was set directly on a dependency property, by calling <xref:System.Windows.DependencyObject.SetValue%2A>, or more typically by using the set accessor of a [!INCLUDE[TLA2#tla_clr](~/add/includes/tla2sharptla-clr-md.md)] property wrapper that calls <xref:System.Windows.DependencyObject.SetValue%2A> internally. Examples of other property system determinants that are not local values are values set through styles, or dependency property default values. For details, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
-  
- A LocalValueEnumerator is returned by the <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> method and implements the <xref:System.Collections.IEnumerator> interface. A public LocalValueEnumerator constructor does not exist; therefore, you must call <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> to obtain an instance of this class.  
-  
- Do not modify local values (by calling <xref:System.Windows.DependencyObject.SetValue%2A> or <xref:System.Windows.DependencyObject.ClearValue%2A>) while enumerating local values. If you change or clear the property values based on properties that are returned by the enumerator, the change or clear operations do not invalidate the enumerator collection, as is the case for many <xref:System.Collections.IEnumerator> implementations. Also, the enumerator view is a snapshot. A change to the collection is not guaranteed to be thread safe, and no lock is enforced. Other threads still have free access to the local values from a context other than the enumerator.  
-  
- Use this type if you have operations in your class where it is important to know whether a property's value came from a local value. For example, use this type in an <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> implementation, or where you want to query the metadata on all locally set properties.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -40,23 +26,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items that are represented in the collection.</summary>
-        <value>The number of items in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not a defined member of <xref:System.Collections.IEnumerator> but is provided as a convenience.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -66,23 +44,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalValueEntry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current element in the collection.</summary>
-        <value>The current <see cref="T:System.Windows.LocalValueEntry" /> in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This generally accessible version of the property relies on a snapshot of the collection that is taken at creation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -92,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,18 +71,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Windows.LocalValueEnumerator" /> to compare with the current <see cref="T:System.Windows.LocalValueEnumerator" />.</param>
-        <summary>Determines whether the provided <see cref="T:System.Windows.LocalValueEnumerator" /> is equivalent to this <see cref="T:System.Windows.LocalValueEnumerator" />.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Windows.LocalValueEnumerator" /> is equal to the current <see cref="T:System.Windows.LocalValueEnumerator" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation supports reference equality only.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -123,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,8 +91,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a hash code for the current <see cref="T:System.Windows.LocalValueEnumerator" />.</summary>
-        <returns>A 32-bit integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,9 +110,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Advances the enumerator to the next element of the collection.</summary>
-        <returns>
-          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,7 +122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,19 +132,11 @@
         <Parameter Name="obj2" Type="System.Windows.LocalValueEnumerator" />
       </Parameters>
       <Docs>
-        <param name="obj1">The first object to compare.</param>
-        <param name="obj2">The second object to compare.</param>
-        <summary>Compares whether two specified <see cref="T:System.Windows.LocalValueEnumerator" /> objects are the same.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="obj1" /><see cref="T:System.Windows.LocalValueEnumerator" /> is equal to the <paramref name="obj2" /><see cref="T:System.Windows.LocalValueEnumerator" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation supports reference equality only.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj1">To be added.</param>
+        <param name="obj2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -197,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,19 +156,11 @@
         <Parameter Name="obj2" Type="System.Windows.LocalValueEnumerator" />
       </Parameters>
       <Docs>
-        <param name="obj1">The first object to compare.</param>
-        <param name="obj2">The second object to compare.</param>
-        <summary>Compares two specified <see cref="T:System.Windows.LocalValueEnumerator" /> objects to determine whether they are not the same.</summary>
-        <returns>
-          <see langword="true" /> if the instances are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation supports reference equality only.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj1">To be added.</param>
+        <param name="obj2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -230,7 +170,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,7 +177,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,23 +188,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this members, see <see cref="System.Collections.IEnumerator.Current%2A" />.</summary>
-        <value>The current element in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.LocalValueEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,172 @@
+<Type Name="ImportDefinitionKind" FullName="System.Reflection.Metadata.ImportDefinitionKind">
+  <TypeSignature Language="C#" Value="public enum ImportDefinitionKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImportDefinitionKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ImportDefinitionKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AliasAssemblyNamespace">
+      <MemberSignature Language="C#" Value="AliasAssemblyNamespace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind AliasAssemblyNamespace = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.AliasAssemblyNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AliasAssemblyReference">
+      <MemberSignature Language="C#" Value="AliasAssemblyReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind AliasAssemblyReference = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.AliasAssemblyReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AliasNamespace">
+      <MemberSignature Language="C#" Value="AliasNamespace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind AliasNamespace = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.AliasNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AliasType">
+      <MemberSignature Language="C#" Value="AliasType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind AliasType = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.AliasType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportAssemblyNamespace">
+      <MemberSignature Language="C#" Value="ImportAssemblyNamespace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind ImportAssemblyNamespace = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.ImportAssemblyNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportAssemblyReferenceAlias">
+      <MemberSignature Language="C#" Value="ImportAssemblyReferenceAlias" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind ImportAssemblyReferenceAlias = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.ImportAssemblyReferenceAlias" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportNamespace">
+      <MemberSignature Language="C#" Value="ImportNamespace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind ImportNamespace = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.ImportNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportType">
+      <MemberSignature Language="C#" Value="ImportType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind ImportType = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.ImportType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportXmlNamespace">
+      <MemberSignature Language="C#" Value="ImportXmlNamespace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind ImportXmlNamespace = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.ImportXmlNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

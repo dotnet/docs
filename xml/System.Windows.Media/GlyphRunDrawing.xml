@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GlyphRunDrawing" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,36 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a <see cref="T:System.Windows.Media.Drawing" /> object that renders a <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.GlyphRun> object represents a sequence of glyphs from a single face of a single font at a single size, and with a single rendering style.  
-  
- <xref:System.Windows.Media.GlyphRun> contains font details such as glyph indices and individual glyph positions. In addition, <xref:System.Windows.Media.GlyphRun> contains the original Unicode code points the run was generated from, character to glyph buffer offset mapping information, and per-character and per-glyph flags.  
-  
- Each glyph in a <xref:System.Windows.Media.GlyphRun> defines metrics that specify how it aligns with other <xref:System.Windows.Documents.Glyphs>. The following graphic defines the various typographic qualities of two different glyph characters.  
-  
- ![Diagraph of glyph measurements](~/add/media/glyph-example.png "Diagraph of glyph measurements")  
-Various typographic qualities of two different glyph characters  
-  
- **Freezable Features:** A GlyphRunDrawing is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
-  
- **Caution:** GlyphRunDrawing objects do not support partial trust execution. An application must have full trust permissions to use GlyphRunDrawing objects.  
-  
-   
-  
-## Examples  
- The following example uses a GlyphRunDrawing to draw the text "Hello World".  
-  
- [!code-cs[DrawingMiscSnippets_snip#GlyphRunDrawingExampleInline](~/add/codesnippet/csharp/DrawingMiscSnippets_snip.misc_snippets/GlyphRunDrawingExample.cs#glyphrundrawingexampleinline)]
- [!code-xml[DrawingMiscSnippets_snip#GlyphRunDrawingExampleInline](~/add/codesnippet/xaml/DrawingMiscSnippets_snip.misc_snippets/GlyphRunExample.xaml#glyphrundrawingexampleinline)]  
-  
- A <xref:System.Windows.Media.GlyphRun> is a low-level object intended for use with fixed-format document presentation and print scenarios. A simpler way to draw text to the screen is to use a <xref:System.Windows.Controls.Label> or a <xref:System.Windows.Controls.TextBlock>. For more information about <xref:System.Windows.Media.GlyphRun>, see the [Introduction to the GlyphRun Object and Glyphs Element](../Topic/Introduction%20to%20the%20GlyphRun%20Object%20and%20Glyphs%20Element.md) overview.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,12 +22,11 @@ Various typographic qualities of two different glyph characters
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GlyphRunDrawing" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +37,6 @@ Various typographic qualities of two different glyph characters
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -75,9 +44,9 @@ Various typographic qualities of two different glyph characters
         <Parameter Name="glyphRun" Type="System.Windows.Media.GlyphRun" />
       </Parameters>
       <Docs>
-        <param name="foregroundBrush">The foreground brush to use for the <see cref="T:System.Windows.Media.GlyphRunDrawing" />.</param>
-        <param name="glyphRun">The <see cref="T:System.Windows.Media.GlyphRun" /> to use in this <see cref="T:System.Windows.Media.GlyphRunDrawing" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GlyphRunDrawing" /> class by specifying the foreground brush and <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <param name="foregroundBrush">To be added.</param>
+        <param name="glyphRun">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,7 +57,6 @@ Various typographic qualities of two different glyph characters
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,18 +64,9 @@ Various typographic qualities of two different glyph characters
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.GlyphRunDrawing" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -117,7 +76,6 @@ Various typographic qualities of two different glyph characters
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,18 +83,9 @@ Various typographic qualities of two different glyph characters
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.GlyphRunDrawing" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -146,7 +95,6 @@ Various typographic qualities of two different glyph characters
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,40 +114,15 @@ Various typographic qualities of two different glyph characters
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the foreground brush of the <see cref="T:System.Windows.Media.GlyphRunDrawing" />.</summary>
-        <value>The brush that paints the <see cref="T:System.Windows.Media.GlyphRun" />. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_ForegroundBrush"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.GlyphRunDrawing.ForegroundBrushProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example uses a <xref:System.Windows.Media.GlyphRunDrawing> to draw the text "Hello World".  
-  
- [!code-cs[DrawingMiscSnippets_snip#GlyphRunDrawingExampleInline](~/add/codesnippet/csharp/DrawingMiscSnippets_snip.misc_snippets/GlyphRunDrawingExample.cs#glyphrundrawingexampleinline)]
- [!code-xml[DrawingMiscSnippets_snip#GlyphRunDrawingExampleInline](~/add/codesnippet/xaml/DrawingMiscSnippets_snip.misc_snippets/GlyphRunExample.xaml#glyphrundrawingexampleinline)]  
-  
- A <xref:System.Windows.Media.GlyphRun> is a low-level object intended for use with fixed-format document presentation and print scenarios. A simpler way to draw text to the screen is to use a <xref:System.Windows.Controls.Label> or a <xref:System.Windows.Controls.TextBlock>. For more information about <xref:System.Windows.Media.GlyphRun>, see the [Introduction to the GlyphRun Object and Glyphs Element](../Topic/Introduction%20to%20the%20GlyphRun%20Object%20and%20Glyphs%20Element.md) overview.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForegroundBrushProperty">
@@ -209,14 +132,13 @@ Various typographic qualities of two different glyph characters
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.GlyphRunDrawing.ForegroundBrush%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,40 +149,15 @@ Various typographic qualities of two different glyph characters
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.GlyphRun</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Media.GlyphRun" /> that describes the text to draw.</summary>
-        <value>The <see cref="T:System.Windows.Media.GlyphRun" /> that describes the text to draw. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_GlyphRun"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.GlyphRunDrawing.GlyphRunProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example uses a <xref:System.Windows.Media.GlyphRunDrawing> to draw the text "Hello World".  
-  
- [!code-cs[DrawingMiscSnippets_snip#GlyphRunDrawingExampleInline](~/add/codesnippet/csharp/DrawingMiscSnippets_snip.misc_snippets/GlyphRunDrawingExample.cs#glyphrundrawingexampleinline)]
- [!code-xml[DrawingMiscSnippets_snip#GlyphRunDrawingExampleInline](~/add/codesnippet/xaml/DrawingMiscSnippets_snip.misc_snippets/GlyphRunExample.xaml#glyphrundrawingexampleinline)]  
-  
- A <xref:System.Windows.Media.GlyphRun> is a low-level object intended for use with fixed-format document presentation and print scenarios. A simpler way to draw text to the screen is to use a <xref:System.Windows.Controls.Label> or a <xref:System.Windows.Controls.TextBlock>. For more information about <xref:System.Windows.Media.GlyphRun>, see the [Introduction to the GlyphRun Object and Glyphs Element](../Topic/Introduction%20to%20the%20GlyphRun%20Object%20and%20Glyphs%20Element.md) overview.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GlyphRunProperty">
@@ -270,14 +167,13 @@ Various typographic qualities of two different glyph characters
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.GlyphRunDrawing.GlyphRun%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

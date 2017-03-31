@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewHitTestInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains information about an area of a <see cref="T:System.Windows.Forms.TreeView" /> control or a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TreeViewHitTestInfo is returned by the <xref:System.Windows.Forms.TreeView> class when the <xref:System.Windows.Forms.TreeView.HitTest%2A> method is called.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TreeViewHitTestInfo class. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> control named `treeView1`, and populate the <xref:System.Windows.Forms.TreeView> with items. Ensure that `treeview1` and the <xref:System.Windows.Forms.Control.MouseDown> event for the form are associated with the `HandleMouseDown` method.  
-  
- [!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/add/codesnippet/visualbasic/t-system.windows.forms.t_17_1.vb)]
- [!code-cs[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/add/codesnippet/csharp/t-system.windows.forms.t_17_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,17 +29,10 @@
         <Parameter Name="hitLocation" Type="System.Windows.Forms.TreeViewHitTestLocations" />
       </Parameters>
       <Docs>
-        <param name="hitNode">The tree node located at the position indicated by the hit test.</param>
-        <param name="hitLocation">One of the <see cref="T:System.Windows.Forms.TreeViewHitTestLocations" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeViewHitTestInfo" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `hitNode` parameter can be `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="hitNode">To be added.</param>
+        <param name="hitLocation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -66,26 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the location of a hit test on a <see cref="T:System.Windows.Forms.TreeView" /> control, in relation to the <see cref="T:System.Windows.Forms.TreeView" /> and the nodes it contains.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.TreeViewHitTestLocations" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Location property. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> control named `treeView1`, and populate the <xref:System.Windows.Forms.TreeView> with items. Ensure that `treeview1` and the <xref:System.Windows.Forms.Control.MouseDown> event for the form are associated with the `HandleMouseDown` method.  
-  
- [!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_217_1.vb)]
- [!code-cs[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/add/codesnippet/csharp/p-system.windows.forms.t_217_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Node">
@@ -95,32 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.TreeNode" /> at the position indicated by a hit test of a <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
-        <value>The <see cref="T:System.Windows.Forms.TreeNode" /> at the position indicated by a hit test of a <see cref="T:System.Windows.Forms.TreeView" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the hit test location is not on a <xref:System.Windows.Forms.TreeNode>, the Node property will be `null`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Node property. To run this example, create a Windows Form that contains a <xref:System.Windows.Forms.TreeView> named `treeView1`, and populate it with several levels of nodes. Paste the following code into a form, and associate the <xref:System.Windows.Forms.Control.MouseDown> event of `treeView1` with the `treeView1_MouseDown` method.  
-  
- [!code-cpp[System.Windows.Forms.TreeViewWhidbeyMembers#3](~/add/codesnippet/cpp/p-system.windows.forms.t_36_1.cpp)]
- [!code-cs[System.Windows.Forms.TreeViewWhidbeyMembers#3](~/add/codesnippet/csharp/p-system.windows.forms.t_36_1.cs)]
- [!code-vb[System.Windows.Forms.TreeViewWhidbeyMembers#3](~/add/codesnippet/visualbasic/p-system.windows.forms.t_36_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

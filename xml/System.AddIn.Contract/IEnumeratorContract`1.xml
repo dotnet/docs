@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IEnumeratorContract`1" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -16,24 +15,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">The type of objects being enumerated.</typeparam>
-    <summary>Enumerates the elements in an <see cref="System.AddIn.Contract.IListContract%601" /> collection.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. At this position, the return value of <xref:System.AddIn.Contract.IEnumeratorContract%601.GetCurrent%2A> is undefined. Therefore, you must call <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> to advance the enumerator to the first element of the collection before calling <xref:System.AddIn.Contract.IEnumeratorContract%601.GetCurrent%2A>.  
-  
- <xref:System.AddIn.Contract.IEnumeratorContract%601.GetCurrent%2A> returns the same object until <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> is called. <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> sets the return value of <xref:System.AddIn.Contract.IEnumeratorContract%601.GetCurrent%2A> to the next element.  
-  
- If <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> also return `false`. If the last call to <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> returned `false`, the return value of <xref:System.AddIn.Contract.IEnumeratorContract%601.GetCurrent%2A> is undefined.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetCurrent">
@@ -43,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,24 +34,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the object in the collection at the current position of the enumerator.</summary>
-        <returns>The <see cref="T:System.AddIn.Contract.IContract" /> in the collection at the current position of the enumerator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The return value of GetCurrent is undefined under any of the following conditions:  
-  
--   The enumerator is positioned before the first element in the collection, immediately after the enumerator is created or after <xref:System.AddIn.Contract.IEnumeratorContract%601.Reset%2A> is called. <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> must be called to advance the enumerator to the first element of the collection before calling GetCurrent.  
-  
--   The last call to <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> returned `false`, which indicates the end of the collection.  
-  
--   The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.  
-  
- GetCurrent returns the same object until <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> is called. <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> sets the return value of GetCurrent to the next element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -78,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,22 +53,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Advances the enumerator to the next element of the collection.</summary>
-        <returns>
-          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After an enumerator is created or after the <xref:System.AddIn.Contract.IEnumeratorContract%601.Reset%2A> method is called, an enumerator is positioned before the first element of the collection. The first call to the MoveNext method moves the enumerator to the first element of the collection.  
-  
- If MoveNext passes the end of the collection, the enumerator is positioned after the last element in the collection and MoveNext returns `false`. When the enumerator is at this position, subsequent calls to MoveNext also return `false` until <xref:System.AddIn.Contract.IEnumeratorContract%601.Reset%2A> is called.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to MoveNext or <xref:System.AddIn.Contract.IEnumeratorContract%601.Reset%2A> throws an <xref:System.InvalidOperationException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -111,7 +65,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,16 +72,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.AddIn.Contract.IEnumeratorContract%601.MoveNext%2A> or Reset throws an <xref:System.InvalidOperationException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

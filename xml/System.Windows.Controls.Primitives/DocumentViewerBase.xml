@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DocumentViewerBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,15 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a base class for viewers that are intended to display fixed or flow content (represented by a <see cref="T:System.Windows.Documents.FixedDocument" /> or <see cref="T:System.Windows.Documents.FlowDocument" />, respectively).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DocumentViewerBase is a minimal base class, intended to provide only basic functionality that is common across document viewing scenarios. This base class provides no user interface.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +34,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes base class values when called by a derived class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,15 +56,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancels any current printing job.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Print%2A>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanGoToNextPage">
@@ -84,32 +67,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether or not the viewer can jump to the next page in the current <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" />.</summary>
-        <value>**true** if the viewer can jump to the next page; otherwise, **false**.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_CanGoToNextPage"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPageProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanGoToNextPageProperty">
@@ -119,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,22 +102,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyPropertyKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage%2A" /> dependency property key.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing CanGoToNextPagePropertyKey as the `key` parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanGoToPage">
@@ -162,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,9 +128,9 @@
         <Parameter Name="pageNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pageNumber">A page number to check for as a valid jump target.</param>
-        <summary>Returns a value that indicates whether or the viewer is able to jump to the specified page number.</summary>
-        <returns>A Boolean value that indicates whether or the viewer is able to jump to the specified page number.</returns>
+        <param name="pageNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,32 +141,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether or not the viewer can jump to the previous page in the current <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" />.</summary>
-        <value>**true** if the viewer can jump to the previous page; otherwise, **false**.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_CanGoToPreviousPage"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPageProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanGoToPreviousPageProperty">
@@ -220,14 +159,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,22 +176,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyPropertyKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage%2A" /> dependency property key.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing CanGoToPreviousPagePropertyKey as the `key` parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -263,32 +193,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.IDocumentPaginatorSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Documents.IDocumentPaginatorSource" /> to be paginated and displayed by the viewer.</summary>
-        <value>A <see cref="T:System.Windows.Documents.IDocumentPaginatorSource" /> to be paginated and displayed by the viewer.  
-  
- The default property is **null**.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Document"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.DocumentProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentProperty">
@@ -298,14 +211,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +228,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -324,7 +235,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the viewer to jump to the first page of the current document (represented by the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" /> property).</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,7 +246,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,18 +255,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">A dependency object from which to retrieve the value of <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A" />.</param>
-        <summary>Returns the value of the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A" /> attached property for a specified dependency object.</summary>
-        <returns>The value of the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A" /> attached property, read from the dependency object specified by *element*.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">Raised if <paramref name="element" /> is <see langword="null" />.</exception>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMasterPageView">
@@ -366,7 +268,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -374,16 +275,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the current master <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> for this viewer.</summary>
-        <returns>The current master <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> for this viewer, or **null** if no master <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> can be found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPageViewsCollection">
@@ -393,7 +287,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -403,17 +296,10 @@
         <Parameter Name="changed" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="changed">Returns <see langword="true" /> on the first call to GetPageViewsCollection or if the collection has not changed since the previous GetPageViewsCollection call; otherwise, <see langword="false" /> if the collection has changed since the last GetPageViewsCollection call.</param>
-        <summary>Creates and returns a new, read-only collection of <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> objects that are associated with the current display document (represented by the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" /> property).</summary>
-        <returns>A read-only collection of <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> objects that are associated with the current display document.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  
-  
- ]]></format>
-        </remarks>
+        <param name="changed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToPage">
@@ -423,7 +309,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -433,16 +318,9 @@
         <Parameter Name="pageNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pageNumber">The number of the page to jump to.</param>
-        <summary>Causes the viewer to jump to a specified page number.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If *pageNumber* specifies an invalid page to go to (as indicated by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage%2A> method), this method does nothing.  
-  
- ]]></format>
-        </remarks>
+        <param name="pageNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidatePageViews">
@@ -452,7 +330,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,7 +337,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the working <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A" /> collection to be re-built.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -471,14 +348,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A" /> attached property</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -489,7 +365,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -497,7 +372,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the viewer to jump to the last page in the current document (represented by the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" /> property).</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,25 +383,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an enumerator for the children in the logical tree of the viewer.</summary>
-        <value>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to enumerate the logical children of the viewer.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the viewer has no logical children, an empty enumerator is returned.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MasterPageNumber">
@@ -536,33 +401,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the page number for the current master page.</summary>
-        <value>The page number for the current master page, or **0** if no Document is currently loaded.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
-<a name="dependencyPropertyInfo_MasterPageNumber"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumberProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MasterPageNumberProperty">
@@ -572,14 +419,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumber%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,22 +436,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyPropertyKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumber%2A" /> dependency property key.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumber%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing MasterPageNumberPropertyKey as the `key` parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NextPage">
@@ -615,7 +453,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -623,7 +460,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the viewer to jump to the next page in the current document (represented by the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" /> property).</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,7 +471,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -642,17 +478,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Builds the visual tree for the viewer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is invoked whenever <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> is called.  
-  
- This method overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBringIntoView">
@@ -662,7 +489,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -674,19 +500,11 @@
         <Parameter Name="pageNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which the <see cref="E:System.Windows.FrameworkElement.RequestBringIntoView" /> event originated.</param>
-        <param name="rect">A rectangular region, in the coordinate space of <c>element</c>, which should be made visible.</param>
-        <param name="pageNumber">The page number for the page that contains <c>element</c>.</param>
-        <summary>Invoked whenever the <see cref="E:System.Windows.FrameworkElement.RequestBringIntoView" /> event reaches an element derived from this class in its route.  Implement this method to add class handling for this event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The base implementation of this method will cause the viewer to jump to the page indicated by *pageNumber*.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">Raised if *element* is **null**.</exception>
+        <param name="element">To be added.</param>
+        <param name="rect">To be added.</param>
+        <param name="pageNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCancelPrintCommand">
@@ -696,7 +514,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -704,15 +521,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.ApplicationCommands.CancelPrint%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.ApplicationCommands.CancelPrint%2A> command is invoked.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -722,7 +532,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -730,16 +539,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates and returns an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this viewer.</summary>
-        <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this viewer.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDocumentChanged">
@@ -749,7 +551,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -757,15 +558,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called whenever the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" /> property is modified.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method causes the working set of <xref:System.Windows.Controls.Primitives.DocumentPageView> objects (represented by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> property) to be invalidated and regenerated.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDpiChanged">
@@ -785,9 +579,9 @@
         <Parameter Name="newDpiScaleInfo" Type="System.Windows.DpiScale" />
       </Parameters>
       <Docs>
-        <param name="oldDpiScaleInfo">The previous DPI scale setting.</param>
-        <param name="newDpiScaleInfo">The new DPI scale setting.</param>
-        <summary>Invoked when the DPI scale changes. Sets the DPI of the flow document to the new scale.</summary>
+        <param name="oldDpiScaleInfo">To be added.</param>
+        <param name="newDpiScaleInfo">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -798,7 +592,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -806,15 +599,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.FirstPage%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.NavigationCommands.FirstPage%2A> routed command causes the viewer to jump to the first page in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnGoToPageCommand">
@@ -824,7 +610,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -834,18 +619,9 @@
         <Parameter Name="pageNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pageNumber">The number of the page to jump to.</param>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.GoToPage%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.NavigationCommands.GoToPage%2A> routed command cause the viewer to jump to an indicated page number in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage%2A> method indicates whether or not a specified page number is a valid page to jump to in the current document.  
-  
- If *pageNumber* specifies an invalid page to go to (as indicated by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage%2A> method), this method does nothing.  
-  
- ]]></format>
-        </remarks>
+        <param name="pageNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLastPageCommand">
@@ -855,7 +631,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -863,15 +638,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.LastPage%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.NavigationCommands.LastPage%2A> routed command causes the viewer to jump to the last page in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMasterPageNumberChanged">
@@ -881,7 +649,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -889,15 +656,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called whenever the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumber%2A" /> property is modified.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnNextPageCommand">
@@ -907,7 +667,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -915,15 +674,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.NextPage%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.NavigationCommands.NextPage%2A> routed command causes the viewer to jump to the next page (if available) in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage%2A> property indicates whether or not there is a next page to go to in the current document.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPageViewsChanged">
@@ -933,7 +685,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -941,7 +692,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called whenever the working set of <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> objects for this viewer (represented by the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A" /> property) is modified.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -952,7 +703,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -960,15 +710,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.PreviousPage%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.NavigationCommands.PreviousPage%2A> routed command causes the viewer to jump to the next page (if available) in the current <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A>.  The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage%2A> property indicates whether or not there is a previous page to go to in the current document.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPrintCommand">
@@ -978,7 +721,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -986,15 +728,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.ApplicationCommands.Print%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called whenever the <xref:System.Windows.Input.ApplicationCommands.Print%2A> command is invoked.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -1004,33 +739,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the total number of pages in the current <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" />.</summary>
-        <value>The number of pages in the current document, or **0** if no document is currently loaded.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This value is updated as content is paginated.  Because flow content has no notion of fixed pages, the value of this property may change if the viewer is resized, or if the content being displayed is modified.  
-  
-<a name="dependencyPropertyInfo_PageCount"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageCountProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageCountProperty">
@@ -1040,14 +757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.PageCount%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1058,22 +774,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyPropertyKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.PageCount%2A" /> dependency property key.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you derive from <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, you need this key in order to set the value of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageCount%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing PageCountPropertyKey as the `key` parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageViews">
@@ -1083,7 +791,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1095,20 +802,9 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.Primitives.DocumentPageView&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a read-only collection of the active <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> objects contained within the viewer.</summary>
-        <value>A read-only collection of the active <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> objects contained within the viewer.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  The set of <xref:System.Windows.Controls.Primitives.DocumentPageView> objects represented by the PageViews property is used by the viewer in order to display content.  
-  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the PageViews collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageViewsChanged">
@@ -1118,14 +814,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the collection of <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" /> items associated with this viewer (represented by the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A" /> property) changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1136,7 +831,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1144,7 +838,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the viewer to jump to the previous page of the current document (represented by the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" /> property).</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1155,7 +849,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1163,17 +856,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invokes a standard **Print** dialog which can be used to print the contents of the viewer and configure printing preferences.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following figure shows an example of a standard **Print** dialog.  Note that the specific appearance of the **Print** dialog may vary depending on the hosting computer's configuration.  
-  
- ![Screenshot: Print dialog box](~/add/media/flowdocrdr-print.png "Screenshot: Print dialog box")  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetIsMasterPage">
@@ -1183,7 +867,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1194,18 +877,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">A dependency object on which to set the value of <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A" />.</param>
-        <param name="value">The new value to set the property to.</param>
-        <summary>Sets the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A" /> attached property on a specified dependency object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">Raised if *element* is **null**.</exception>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IServiceProvider.GetService">
@@ -1215,7 +890,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1225,9 +899,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">An object that specifies the type of service object to get.</param>
-        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
-        <returns>A service object of type <paramref name="serviceType" />.</returns>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1238,7 +912,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1248,8 +921,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">An object to add as a child.</param>
-        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1260,7 +933,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1270,8 +942,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">A string to add to the object.</param>
-        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

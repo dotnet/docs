@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MonthChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,30 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" /> event of a <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event is raised when the user clicks the <xref:System.Web.UI.WebControls.Calendar> navigation controls to display the next or previous month.  
-  
- For a list of initial property values for an instance of MonthChangedEventArgs, see the <xref:System.Web.UI.WebControls.MonthChangedEventArgs.%23ctor%2A> constructor.  
-  
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event that displays in a <xref:System.Web.UI.WebControls.Label> control whether the <xref:System.Web.UI.WebControls.Calendar> control has moved forward or backward one month.  
-  
- [!code-cs[CalendarVisibleMonthChanged#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_247_1.aspx)]
- [!code-vb[CalendarVisibleMonthChanged#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_247_1.aspx)]  
-  
- [!code-cs[CalendarVisibleMonthChanged2#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_247_2.aspx)]
- [!code-vb[CalendarVisibleMonthChanged2#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_247_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -53,22 +29,10 @@
         <Parameter Name="previousDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="newDate">The date that determines the month currently displayed by the <see cref="T:System.Web.UI.WebControls.Calendar" />.</param>
-        <param name="previousDate">The date that determines the month previously displayed by the <see cref="T:System.Web.UI.WebControls.Calendar" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MonthChangedEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.MonthChangedEventArgs>.  
-  
-|Property|Initial value|  
-|--------------|-------------------|  
-|`NewDate`|`newDate`|  
-|`PreviousDate`|`previousDate`|  
-  
- ]]></format>
-        </remarks>
+        <param name="newDate">To be added.</param>
+        <param name="previousDate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NewDate">
@@ -78,35 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the date that determines the currently displayed month in the <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
-        <value>The date that determines the month currently displayed by the <see cref="T:System.Web.UI.WebControls.Calendar" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to get the month currently displayed by the <xref:System.Web.UI.WebControls.Calendar> control and to compare the currently displayed month with another month. For example, you can use this property to calculate the number of months until or since a certain date.  
-  
- This date is normally the first date of the currently displayed month; however, it can be programmatically changed to any date within the month.  
-  
- The <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property can be assigned to this property programmatically to override the month change when the user clicks the navigation controls for the <xref:System.Web.UI.WebControls.Calendar> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to compare the months of the NewDate property and the <xref:System.Web.UI.WebControls.MonthChangedEventArgs.PreviousDate%2A> property to determine whether the <xref:System.Web.UI.WebControls.Calendar> control moved forward one month or backward one month.  
-  
- [!code-cs[CalendarVisibleMonthChanged#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1109_1.aspx)]
- [!code-vb[CalendarVisibleMonthChanged#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1109_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousDate">
@@ -116,35 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the date that determines the previously displayed month in the <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
-        <value>The date that determines the month previously displayed by the <see cref="T:System.Web.UI.WebControls.Calendar" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to determine the previously displayed month on the <xref:System.Web.UI.WebControls.Calendar> control. You can restore the <xref:System.Web.UI.WebControls.Calendar> control to the previously displayed month by setting the <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property to PreviousDate.  
-  
- This date is normally the first date of the previously displayed month; however, it can be programmatically changed to any date within the month.  
-  
- The <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property is updated to the date in this property before the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event is raised.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to compare the months of the <xref:System.Web.UI.WebControls.MonthChangedEventArgs.NewDate%2A> property and the PreviousDate property to determine whether the <xref:System.Web.UI.WebControls.Calendar> control moved forward one month or backward one month.  
-  
- [!code-cs[CalendarVisibleMonthChanged#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_715_1.aspx)]
- [!code-vb[CalendarVisibleMonthChanged#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_715_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

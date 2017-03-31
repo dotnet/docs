@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterInstanceLifetime" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the lifetime of a performance counter instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default behavior is Global, which specifies the removal of the performance counter instance when no counters are using the process category.  
-  
-> [!NOTE]
->  If the <xref:System.Diagnostics.PerformanceCounterCategory.CategoryType%2A> property is <xref:System.Diagnostics.PerformanceCounterCategoryType>, the <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A> value for the performance counter must be Global.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Global">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.PerformanceCounterInstanceLifetime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Remove the performance counter instance when no counters are using the process category.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.PerformanceCounterInstanceLifetime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Remove the performance counter instance when the process is closed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

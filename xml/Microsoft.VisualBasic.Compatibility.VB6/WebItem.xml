@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables upgraded Visual Basic 6.0 <see langword="WebClass" /> projects to run in [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a Visual Basic 6.0 `WebClass` project is upgraded to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)], it is converted to an [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] Web site project.  
-  
- Declarations are added to your project: one for the `WebClass` and one for each of the `WebItems` and `Templates` in the `WebClass` project. A `Page_Load` event procedure is added to the project, creating first a <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> object and then `WebItem` objects for each of the `WebItems` and `Templates` associated with the Visual Basic 6.0 `WebClass` project. Finally, in the `Page_Load` event procedure, you will see a call to the `WebClass` Compatibility runtime: <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass.ProcessEvents%2A>. This enables the runtime to render the WebItem specified in the Request URL. This code is the only new code added to your upgraded project and only serves to emulate the underlying behavior of the Visual Basic 6.0 `WebClass` runtime.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -48,20 +35,11 @@
         <Parameter Name="HtmlTemplateFilename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">A <see cref="T:System.String" /> that contains the <see langword="Name" /> property for the Visual Basic 6.0 <see langword="WebClass" /> object.</param>
-        <param name="AssociatedWebClass">The <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebClass" /> object that contains this <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" />.</param>
-        <param name="HtmlTemplateFilename">Optional. The file name of a Visual Basic 6.0 <see langword="Template" /> that was associated with the Visual Basic 6.0 <see langword="WebItem" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebItem> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] Web site project.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <param name="Name">To be added.</param>
+        <param name="AssociatedWebClass">To be added.</param>
+        <param name="HtmlTemplateFilename">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -71,27 +49,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name that is used in code to identify a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> object.</summary>
-        <value>A <see cref="T:System.String" /> that contains the name for the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Read-only.  
-  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebItem> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] Web site project.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReScanReplacements">
@@ -101,26 +67,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether to rescan for tokens that are contained within replacement text.</summary>
-        <value>
-          <see langword="true" /> if the text should be rescanned; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebItem> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] Web site project.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TagPrefix">
@@ -130,25 +85,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the string that is used to prefix replacement tag names in an HTML template.</summary>
-        <value>A <see cref="T:System.String" /> that identifies the <see langword="TagPrefix" /> sequence used to recognize replacement tags in an HTML template.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebItem> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] Web site project.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteTemplate">
@@ -158,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,19 +113,10 @@
         <Parameter Name="HtmlTemplateFilename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Response">A <see cref="T:System.Web.HttpResponse" /> object.</param>
-        <param name="HtmlTemplateFilename">Optional. The file name of a Visual Basic 6.0 <see langword="Template" /> that was associated with the Visual Basic 6.0 <see langword="WebItem" />.</param>
-        <summary>Processes an HTML template attached to a <see langword="WebItem" /> object and returns it to the browser.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebItem> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] Web site project.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <param name="Response">To be added.</param>
+        <param name="HtmlTemplateFilename">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

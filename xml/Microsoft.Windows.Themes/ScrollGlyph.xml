@@ -4,17 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ScrollGlyph" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Aero</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>PresentationFramework.Luna</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>PresentationFramework.Royale</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -25,11 +14,19 @@
     <AssemblyName>PresentationFramework.AeroLite</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Luna</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Royale</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the glyphs used to represent the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,6 +36,14 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.DownArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -50,7 +55,7 @@
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An arrow glyph pointing down.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HorizontalGripper">
@@ -60,17 +65,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework.Luna</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework.Royale</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -81,18 +75,6 @@
         <AssemblyName>PresentationFramework.AeroLite</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>horizontal gripper glyph.</summary>
-      </Docs>
-    </Member>
-    <Member MemberName="LeftArrow">
-      <MemberSignature Language="C#" Value="LeftArrow" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ScrollGlyph LeftArrow = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.LeftArrow" />
-      <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -105,7 +87,35 @@
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An arrow glyph pointing to the left.</summary>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftArrow">
+      <MemberSignature Language="C#" Value="LeftArrow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ScrollGlyph LeftArrow = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.LeftArrow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Luna</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Royale</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -115,17 +125,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework.Luna</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework.Royale</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -136,11 +135,19 @@
         <AssemblyName>PresentationFramework.AeroLite</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Luna</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Royale</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No glyph is used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightArrow">
@@ -149,6 +156,14 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.RightArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -160,7 +175,7 @@
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An arrow glyph pointing to the right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpArrow">
@@ -169,6 +184,14 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.UpArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -180,7 +203,7 @@
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An arrow glyph pointing up.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VerticalGripper">
@@ -190,17 +213,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework.Luna</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework.Royale</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -211,11 +223,19 @@
         <AssemblyName>PresentationFramework.AeroLite</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Luna</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Royale</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A vertical gripper glyph.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,32 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UpdatePanelRenderMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Represents the possible layout rendering options for the content of an <see cref="T:System.Web.UI.UpdatePanel" /> control on a page.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The UpdatePanelRenderMode enumeration defines which HTML elements to use to enclose the content of the <xref:System.Web.UI.UpdatePanel> control. The <xref:System.Web.UI.UpdatePanel.RenderMode%2A> property must be one of the values of the UpdatePanelRenderMode enumeration. The content of an <xref:System.Web.UI.UpdatePanel> control can be rendered inside either an HTML `<div>` element or a `<span>` element.  
-  
- The default <xref:System.Web.UI.UpdatePanel.RenderMode%2A> property value is Block.  
-  
-   
-  
-## Examples  
- The following example shows how to declaratively set the <xref:System.Web.UI.UpdatePanel.RenderMode%2A> property of an <xref:System.Web.UI.UpdatePanel> control to Inline. The <xref:System.Web.UI.UpdatePanel> control contains a string that represents the number of postbacks from the page. The contents are rendered inline with the surrounding text.  
-  
- [!code-vb[System.Web.UI.UpdatePanel.RenderMode#1](~/add/codesnippet/visualbasic/t-system.web.ui.updatepa_1_1.aspx)]
- [!code-cs[System.Web.UI.UpdatePanel.RenderMode#1](~/add/codesnippet/csharp/t-system.web.ui.updatepa_1_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Block">
@@ -39,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.UpdatePanelRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the content of the <see cref="T:System.Web.UI.UpdatePanel" /> control is rendered inside an HTML <see langword="&lt;div&gt;" /> element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inline">
@@ -56,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.UpdatePanelRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the content of the <see cref="T:System.Web.UI.UpdatePanel" /> control is rendered inside an HTML <see langword="&lt;span&gt;" /> element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

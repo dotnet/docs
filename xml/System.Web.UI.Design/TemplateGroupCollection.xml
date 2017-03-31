@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateGroupCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,47 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.UI.Design.TemplateGroup" /> objects within a control designer. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.ControlDesigner> class, and any derived class, defines the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property as a TemplateGroupCollection object. The TemplateGroupCollection property is typically used only by a design host such as [!INCLUDE[vsprvslong](~/add/includes/vsprvslong-md.md)].  
-  
- The collection dynamically increases in size as objects are added. Indexes in this collection are zero-based. Use the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property to determine how many groups are in the collection.  
-  
- Additionally, use the TemplateGroupCollection methods and properties to provide the following functionality:  
-  
--   The <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A> method to add a single group to the collection.  
-  
--   The <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method to add a group at a particular index within the collection.  
-  
--   The <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method to remove a group.  
-  
--   The <xref:System.Web.UI.Design.TemplateGroupCollection.RemoveAt%2A> method to remove the group at a particular index.  
-  
--   The <xref:System.Web.UI.Design.TemplateGroupCollection.Contains%2A> method to determine whether a particular group is already in the collection.  
-  
--   The <xref:System.Web.UI.Design.TemplateGroupCollection.IndexOf%2A> method to retrieve the index of a group within the collection.  
-  
--   The <xref:System.Web.UI.Design.TemplateGroupCollection.Item%2A> indexer to get or set the group at a particular index, using array notation.  
-  
--   The <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A> method to add multiple groups to the collection.  
-  
-     You can add multiple groups either as an array of groups or as a TemplateGroupCollection object that you retrieve through the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property of another control designer.  
-  
--   The <xref:System.Web.UI.Design.TemplateGroupCollection.Clear%2A> method to remove all groups from the collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to define a simple control designer that is derived from the <xref:System.Web.UI.Design.ControlDesigner> class. The derived control designer implements the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property by getting the template groups that are defined for the base class and adding a template group that is specific to the derived control designer.  
-  
- [!code-cs[System.Web.UI.Design.TemplateGroupCollection#1](~/add/codesnippet/csharp/t-system.web.ui.design.t_1_1.cs)]
- [!code-vb[System.Web.UI.Design.TemplateGroupCollection#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.t_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,20 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the TemplateGroupCollection constructor to create an empty collection. You can add elements to the collection by using the <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A>, <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A>, or <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -89,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,19 +50,10 @@
         <Parameter Name="group" Type="System.Web.UI.Design.TemplateGroup" />
       </Parameters>
       <Docs>
-        <param name="group">The <see cref="T:System.Web.UI.Design.TemplateGroup" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.UI.Design.TemplateGroup" /> object to the end of the collection.</summary>
-        <returns>The index at which the <see cref="T:System.Web.UI.Design.TemplateGroup" /> was added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Add method adds the specified <xref:System.Web.UI.Design.TemplateGroup> object to the end of the collection. To add a <xref:System.Web.UI.Design.TemplateGroup> object to the collection at a specific index location, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method.  
-  
- To add multiple groups to the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -121,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,18 +72,9 @@
         <Parameter Name="groups" Type="System.Web.UI.Design.TemplateGroupCollection" />
       </Parameters>
       <Docs>
-        <param name="groups">A <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> that contains the groups to add to the collection.</param>
-        <summary>Adds the template groups in an existing <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> object to the current <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddRange method adds multiple groups to the collection. To add a single <xref:System.Web.UI.Design.TemplateGroup> object to the end of the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A> method. To add a <xref:System.Web.UI.Design.TemplateGroup> object to the collection at a specific index location, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Insert%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="groups" /> is <see langword="null" />.</exception>
+        <param name="groups">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -152,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,15 +91,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all groups from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Clear method to remove all groups from the collection. To remove a specific group from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method. To remove a group at a particular index, use the <xref:System.Web.UI.Design.TemplateGroupCollection.RemoveAt%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -178,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,20 +111,10 @@
         <Parameter Name="group" Type="System.Web.UI.Design.TemplateGroup" />
       </Parameters>
       <Docs>
-        <param name="group">The <see cref="T:System.Web.UI.Design.TemplateGroup" /> to locate within the collection.</param>
-        <summary>Determines whether the specified group is contained within the collection.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="group" /> is in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Contains method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.TemplateGroup> objects.  
-  
- The Contains method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property. Because template group collections typically are small, the performance of the linear search operation is not critical.  
-  
- ]]></format>
-        </remarks>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -211,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,31 +134,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The <see cref="T:System.Array" /> that is the destination of the copied groups. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
-        <summary>Copies the groups in the collection to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The group elements are copied to the <xref:System.Array> object in the same order in which the group elements are indexed within the <xref:System.Web.UI.Design.TemplateGroupCollection> object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="array" /> is multidimensional.  
-  
- -or-  
-  
- <paramref name="index" /> is greater than or equal to the length of <paramref name="array" />.  
-  
- -or-  
-  
- The number of elements in the source <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -256,23 +147,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of <see cref="T:System.Web.UI.Design.TemplateGroup" /> objects in the collection.</summary>
-        <value>The number of <see cref="T:System.Web.UI.Design.TemplateGroup" /> objects in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Count property generally is used to determine the upper boundary index when iterating through objects in the collection. Because the collection indexes are zero-based, the first element is at index `0` and the last element is at index `Count-1`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -282,7 +165,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -292,19 +174,10 @@
         <Parameter Name="group" Type="System.Web.UI.Design.TemplateGroup" />
       </Parameters>
       <Docs>
-        <param name="group">The <see cref="T:System.Web.UI.Design.TemplateGroup" /> to locate within the collection.</param>
-        <summary>Returns the index of the specified <see cref="T:System.Web.UI.Design.TemplateGroup" /> object within the collection.</summary>
-        <returns>The zero-based index of the first occurrence of <paramref name="group" /> within the collection; otherwise, -1, if <paramref name="group" /> is not in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IndexOf method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.TemplateGroup> objects.  
-  
- The IndexOf performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property. Because template group collections typically are small, the performance of the linear search operation is not critical.  
-  
- ]]></format>
-        </remarks>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -314,7 +187,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -325,26 +197,10 @@
         <Parameter Name="group" Type="System.Web.UI.Design.TemplateGroup" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index within the collection at which to insert <c>group</c>.</param>
-        <param name="group">The <see cref="T:System.Web.UI.Design.TemplateGroup" /> to insert into the collection.</param>
-        <summary>Inserts a <see cref="T:System.Web.UI.Design.TemplateGroup" /> object into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Insert method adds a <xref:System.Web.UI.Design.TemplateGroup> object to the collection at a specific index location. To add a single <xref:System.Web.UI.Design.TemplateGroup> to the end of the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Add%2A> method. To add multiple groups to the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.AddRange%2A> method.  
-  
-> [!NOTE]
->  When you insert an item into the collection, the indexes change for subsequent items in the collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- \- or -  
-  
- <paramref name="index" /> is greater than the <see cref="System.Web.UI.Design.TemplateGroupCollection.Count%2A" /> property.</exception>
+        <param name="index">To be added.</param>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -354,7 +210,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,25 +219,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Web.UI.Design.TemplateGroup" /> to get or set in the collection.</param>
-        <summary>Gets or sets a <see cref="T:System.Web.UI.Design.TemplateGroup" /> object at the specified index in the collection.</summary>
-        <value>The <see cref="T:System.Web.UI.Design.TemplateGroup" /> at <paramref name="index" /> in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Item indexer to retrieve the group at a specified `index` within the collection or to set the group at a specified `index` within the collection. You can index elements in the collection by using array notation. For example, you can index an element at index `i` with the notation `TemplateGroups(i)` for Microsoft VisualBasic or `TemplateGroups[i]` for C#.  
-  
- When you have a reference to the group object and need the index of the object in the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.IndexOf%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="value" /> is less than zero.  
-  
- \- or -  
-  
- <paramref name="value" /> is greater than the <see cref="System.Web.UI.Design.TemplateGroupCollection.Count%2A" /> property.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -392,7 +232,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -402,25 +241,9 @@
         <Parameter Name="group" Type="System.Web.UI.Design.TemplateGroup" />
       </Parameters>
       <Docs>
-        <param name="group">The <see cref="T:System.Web.UI.Design.TemplateGroup" /> to remove from the collection.</param>
-        <summary>Removes the specified <see cref="T:System.Web.UI.Design.TemplateGroup" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Remove method removes the first occurrence of `group` from the collection. If the <xref:System.Web.UI.Design.TemplateGroupCollection> object does not contain `group`, the collection remains unchanged. No exception is thrown.  
-  
- The Remove method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.Design.TemplateGroup> objects.  
-  
- The Remove method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Web.UI.Design.TemplateGroupCollection.Count%2A> property. Because template group collections typically are small, the performance of the linear search operation is not critical.  
-  
- To remove a group at a particular index from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.RemoveAt%2A> method. To remove all the groups from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Clear%2A> method.  
-  
-> [!NOTE]
->  When you remove an item from the collection, the indexes change for subsequent items in the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -430,7 +253,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -440,25 +262,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index within the collection of the <see cref="T:System.Web.UI.Design.TemplateGroup" /> to remove.</param>
-        <summary>Removes the <see cref="T:System.Web.UI.Design.TemplateGroup" /> object at the specified index within the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the RemoveAt method to remove a group at a particular index from the collection. To remove a specified group from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Remove%2A> method. To remove all the groups from the collection, use the <xref:System.Web.UI.Design.TemplateGroupCollection.Clear%2A> method.  
-  
-> [!NOTE]
->  When you remove an item from the collection, the indexes change for subsequent items in the collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- \- or -  
-  
- <paramref name="index" /> is greater than the <see cref="System.Web.UI.Design.TemplateGroupCollection.Count%2A" /> property.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -468,7 +274,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -479,17 +284,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The <see cref="T:System.Array" /> that is the destination of the copied groups. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.CopyTo%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -499,23 +297,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.Count%2A" />.</summary>
-        <value>The number of elements in the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -525,24 +315,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.IsSynchronized%2A" />.</summary>
-        <value>
-          <see langword="false" />, if access to the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> is not synchronized (thread safe); otherwise, <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -552,23 +333,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.SyncRoot%2A" />.</summary>
-        <value>An object to use to synchronize access to the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -578,7 +351,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -586,16 +358,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IEnumerable.GetEnumerator%2A" />.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> to use to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -605,7 +370,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -615,17 +379,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The <see cref="T:System.Web.UI.Design.TemplateGroup" /> to add to the collection.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.Add%2A" />.</summary>
-        <returns>The index at which <paramref name="o" /> was added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -635,7 +392,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -643,15 +399,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.Clear%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -661,7 +410,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -671,18 +419,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The <see cref="T:System.Web.UI.Design.TemplateGroup" /> to locate within the collection.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.Contains%2A" />.</summary>
-        <returns>
-          <see langword="true" />, if <paramref name="o" /> is in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -692,7 +432,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -702,17 +441,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The <see cref="T:System.Web.UI.Design.TemplateGroup" /> to locate within the collection.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.IndexOf%2A" />.</summary>
-        <returns>The zero-based index of the first occurrence of <paramref name="o" /> within the collection; otherwise, -1, if <paramref name="o" /> is not in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -722,7 +454,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -733,17 +464,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index within the collection at which to insert <c>o</c>.</param>
-        <param name="o">The object to insert into the collection.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.Insert%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -753,24 +477,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.IsFixedSize%2A" />.</summary>
-        <value>
-          <see langword="false" />, if the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> dynamically increases as new objects are added; otherwise, <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -780,24 +495,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.IsReadOnly%2A" />.</summary>
-        <value>
-          <see langword="false" />, if the <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> can be added, modified, and removed; otherwise, <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -807,7 +513,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -817,17 +522,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the object to get in the collection.</param>
-        <summary>For a description of this member, see the <see cref="T:System.Collections.IList" /> class.</summary>
-        <value>The object at <paramref name="index" /> in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -837,7 +535,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -847,16 +544,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object to remove from the collection.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.Remove%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -866,7 +556,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -876,16 +565,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index within the collection of the object to remove.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.RemoveAt%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.TemplateGroupCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

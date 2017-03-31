@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RijndaelManagedTransform" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,19 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Performs a cryptographic transformation of data using the Rijndael algorithm. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Using this class is not recommended. A better practice is to use <xref:System.Security.Cryptography.RijndaelManaged> with a <xref:System.Security.Cryptography.CryptoStream> object. The <xref:System.Security.Cryptography.CryptoStream> object handles the padding issues that can occur when using RijndaelManagedTransform directly. For an example, see the <xref:System.Security.Cryptography.RijndaelManaged> class.  
-  
- Both the <xref:System.Security.Cryptography.RijndaelManaged.CreateEncryptor%2A> and <xref:System.Security.Cryptography.RijndaelManaged.CreateDecryptor%2A> methods return an instance of the RijndaelManagedTransform class that is initialized with the key information of the current <xref:System.Security.Cryptography.RijndaelManaged> object.  To encrypt or decrypt data using the Rijndael algorithm, pass the RijndaelManagedTransform object returned by these methods to a <xref:System.Security.Cryptography.CryptoStream> object.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BlockSizeValue">
@@ -43,15 +32,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the block size.</summary>
-        <value>The size of the data blocks in bytes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,15 +51,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current transform can be reused.</summary>
-        <value>Always <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,16 +70,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether multiple blocks can be transformed.</summary>
-        <value>
-          <see langword="true" /> if multiple blocks can be transformed; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +89,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,17 +97,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Security.Cryptography.RijndaelManagedTransform" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> class.  
-  
- Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.RijndaelManagedTransform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -129,6 +108,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,20 +116,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.RijndaelManagedTransform" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.RijndaelManagedTransform>. The `Dispose` method leaves the <xref:System.Security.Cryptography.RijndaelManagedTransform> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.RijndaelManagedTransform> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.RijndaelManagedTransform> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call `Dispose` before you release your last reference to the <xref:System.Security.Cryptography.RijndaelManagedTransform>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.RijndaelManagedTransform> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InputBlockSize">
@@ -159,15 +127,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the input block size.</summary>
-        <value>The size of the input data blocks in bytes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,15 +146,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the output block size.</summary>
-        <value>The size of the output data blocks in bytes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +165,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,15 +173,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the internal state of <see cref="T:System.Security.Cryptography.RijndaelManagedTransform" /> so it can be used again to do a different encryption or decryption.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Reset method is called automatically when you call <xref:System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock%2A>. The Reset method is not called when, for example, the encrypted input data is garbage and cannot be decrypted. In this case, an exception is thrown and Reset is not called. You can choose to manually call the Reset method in this case.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransformBlock">
@@ -223,7 +184,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,33 +198,14 @@
         <Parameter Name="outputOffset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="inputBuffer">The input to perform the operation on.</param>
-        <param name="inputOffset">The offset into the input byte array to begin using data from.</param>
-        <param name="inputCount">The number of bytes in the input byte array to use as data.</param>
-        <param name="outputBuffer">The output to write the data to.</param>
-        <param name="outputOffset">The offset into the output byte array to begin writing data from.</param>
-        <summary>Computes the transformation for the specified region of the input byte array and copies the resulting transformation to the specified region of the output byte array.</summary>
-        <returns>The number of bytes written.</returns>
+        <param name="inputBuffer">To be added.</param>
+        <param name="inputOffset">To be added.</param>
+        <param name="inputCount">To be added.</param>
+        <param name="outputBuffer">To be added.</param>
+        <param name="outputOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="inputBuffer" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The <paramref name="outputBuffer" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The length of the input buffer is less than the sum of the input offset and the input count.  
-  
- -or-  
-  
- The value of the <paramref name="inputCount" /> parameter is less than or equal to 0.  
-  
- -or-  
-  
- The value of the <paramref name="inputCount" /> parameter is greater than the length of the <paramref name="inputBuffer" /> parameter.  
-  
- -or-  
-  
- The length of the <paramref name="inputCount" /> parameter is not evenly devisable by input block size.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="inputOffset" /> parameter is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="TransformFinalBlock">
@@ -273,7 +215,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,20 +227,12 @@
         <Parameter Name="inputCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="inputBuffer">The input to perform the operation on.</param>
-        <param name="inputOffset">The offset into the byte array to begin using data from.</param>
-        <param name="inputCount">The number of bytes in the byte array to use as data.</param>
-        <summary>Computes the transformation for the specified region of the specified byte array.</summary>
-        <returns>The computed transformation.</returns>
+        <param name="inputBuffer">To be added.</param>
+        <param name="inputOffset">To be added.</param>
+        <param name="inputCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="inputBuffer" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The value of the <paramref name="inputCount" /> parameter is less than 0.  
-  
- -or-  
-  
- The value of the <paramref name="inputCount" /> parameter is grater than the length of <paramref name="inputBuffer" /> parameter.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="inputOffset" /> parameter is negative.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The length of the <paramref name="inputCount" /> parameter is not evenly devisable by input block size.</exception>
       </Docs>
     </Member>
   </Members>

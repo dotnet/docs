@@ -14,23 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A collection of message query objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.ServiceModel.Dispatcher.XPathMessageQueryCollection> class for a concrete implementation.  
-  
-   
-  
-## Examples  
- The following example creates a message and XPath message queries. The queries are evaluated by the <xref:System.ServiceModel.XPathMessageQuery> objects contained in an <xref:System.ServiceModel.Dispatcher.XPathMessageQueryCollection> object. The results of each query are tested using the <xref:System.ServiceModel.Dispatcher.XPathResult.ResultType%2A> property of the <xref:System.ServiceModel.Dispatcher.XPathResult> class.  
-  
- [!code-vb[XPathMessageQuery#0](~/add/codesnippet/visualbasic/t-system.servicemodel.di_4_1.vb)]
- [!code-cs[XPathMessageQuery#0](~/add/codesnippet/csharp/t-system.servicemodel.di_4_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MessageQueryCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,10 +52,10 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">The type of the result of the query.</typeparam>
-        <param name="message">The message to run the query against.</param>
-        <summary>Runs a query against the message and returns a result. The body cannot be queried.</summary>
-        <returns>The result of the query. The type is determined by the generic <paramref name="TResult" /> argument.</returns>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +78,10 @@
         <Parameter Name="buffer" Type="System.ServiceModel.Channels.MessageBuffer" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">The type of the object to return.</typeparam>
-        <param name="buffer">The message to run the query against.</param>
-        <summary>Runs a query against the message and returns a result.</summary>
-        <returns>The result of the query. The type is determined by the generic <paramref name="TResult" /> argument.</returns>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

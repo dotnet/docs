@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -19,16 +18,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/add/includes/cpp-iter-arg-md.md)]</typeparam>
-    <summary>Defines an iterator that accesses elements in a container in the reverse direction. Elements can be accessed in the forward direction by using the decrement operator and in the backward direction by using the increment operator. The element that the iterator points to cannot be modified. Constant reverse bidirectional iterators can be used anywhere that a constant reverse input or constant reverse output iterator is required.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[unnamed_parm](~/add/includes/unnamed-parm-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TValue">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Allocates and initializes a new <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,15 +63,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="_Iter" Type="Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Iter">An existing <see cref="Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator%601" /> object to copy.</param>
-        <summary>Allocates and initializes a new <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object from an existing <see cref="Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator%601" /> object.</summary>
+        <param name="_Iter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +81,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -111,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,8 +106,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the underlying base iterator for the <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</summary>
-        <returns>The underlying base iterator for the <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,8 +125,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a copy of the current <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</summary>
-        <returns>A copy of the current <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,8 +144,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the container that the iterator is traversing.</summary>
-        <returns>The container that the iterator is traversing.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,10 +187,9 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The <see cref="Microsoft.VisualC.StlClr.Generic.IInputIterator%601" /> object to compare with the current <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</param>
-        <summary>Determines whether the given <see cref="Microsoft.VisualC.StlClr.Generic.IInputIterator%601" /> object is the same as the current <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,7 +200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,7 +207,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Decrements the iterator to the previous position in the underlying container, or to the first position in front of the beginning of container if the container has been completely traversed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,7 +218,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -260,7 +240,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,7 +262,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -294,8 +272,8 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>Decrements the iterator by one element. Decrementing a reverse iterator is the same as incrementing a regular iterator. This is the prefix version of the decrement operator.</summary>
-        <returns>An iterator.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,9 +295,9 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="A_0">An unused parameter that indicates this is the postfix version of the operator.</param>
-        <summary>Decrements the iterator by one element. Decrementing a reverse iterator is the same as incrementing a regular iterator. This is the postfix version of the decrement operator.</summary>
-        <returns>An iterator.</returns>
+        <param name="A_0">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,7 +308,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -358,7 +335,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -373,10 +349,9 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The <see cref="Microsoft.VisualC.StlClr.Generic.IInputIterator%601" /> object to compare with the current <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</param>
-        <summary>Determines whether the given <see cref="Microsoft.VisualC.StlClr.Generic.IInputIterator%601" /> object is the same as the current <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -387,7 +362,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -407,7 +381,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -418,8 +391,8 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>Increments the iterator by one element. Incrementing a reverse iterator is the same as decrementing a regular iterator. This is the prefix version of the increment operator.</summary>
-        <returns>An iterator.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -441,9 +414,9 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="A_0">Indicates that this is the postfix version of the increment operator.</param>
-        <summary>Increments the iterator by one element. Incrementing a reverse iterator is the same as decrementing a regular iterator. This is the postfix version of the increment operator.</summary>
-        <returns>An iterator.</returns>
+        <param name="A_0">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,7 +427,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -477,7 +449,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -487,10 +458,9 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The <see cref="Microsoft.VisualC.StlClr.Generic.IInputIterator%601" /> object to compare with the current <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</param>
-        <summary>Determines whether the given <see cref="Microsoft.VisualC.StlClr.Generic.IInputIterator%601" /> object differs from the current <see cref="Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator%601" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,7 +471,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -532,7 +501,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -563,7 +531,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -571,7 +538,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Increments the iterator to the next position in the underlying container, or to the first position beyond the end of container if the container has been completely traversed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -582,7 +549,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -590,9 +556,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the iterator is valid and can be safely used to traverse the underlying container.</summary>
-        <returns>
-          <see langword="true" /> if the iterator is valid and safe to use; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseButtonState" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the possible states of a mouse button.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MouseButtonState enumeration specifies constants which correlate to the state of a mouse button.  
-  
-   
-  
-## Examples  
- The following example shows a mouse event handler that determines which buttons are currently pressed by checking the button state of each mouse button.  
-  
- [!code-vb[mousesnippetsample#MouseEventArgsMouseButton](~/add/codesnippet/visualbasic/mousesnippetsample/window1.xaml.vb#mouseeventargsmousebutton)]
- [!code-cs[mousesnippetsample#MouseEventArgsMouseButton](~/add/codesnippet/csharp/MouseSnippetSample/Window1.xaml.cs#mouseeventargsmousebutton)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Pressed">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The button is pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Released">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The button is released.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines what to do when the <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> object attempts to write to a log and there is less free disk space available than specified by the <see cref="Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A" /> property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property is set to DiscardMessages, the log messages are by default discarded if there is not enough reserved disk space. This prevents simple applications from failing if the disk gets too full.  
-  
- For a more robust application, set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property to ThrowException, and add `Try...Catch` blocks around all code that writes to the log.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DiscardMessages">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Discard log messages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThrowException">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Throw an exception.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

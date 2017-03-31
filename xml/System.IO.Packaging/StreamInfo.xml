@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.StreamInfo" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access and information for manipulating I/O streams within a <see cref="T:System.IO.Packaging.Package" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,23 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.IO.Packaging.CompressionOption" /> setting for the stream.</summary>
-        <value>The compression option setting for the package stream.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the CompressionOption property returns CompressionOption.<xref:System.IO.Packaging.CompressionOption>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EncryptionOption">
@@ -49,23 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.EncryptionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.IO.Packaging.EncryptionOption" /> setting for the stream.</summary>
-        <value>The encryption option setting for the package stream.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the EncryptionOption property returns EncryptionOption.<xref:System.IO.Packaging.EncryptionOption>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -75,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,16 +65,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a stream opened in a default <see cref="T:System.IO.FileMode" /> and <see cref="T:System.IO.FileAccess" />.</summary>
-        <returns>The I/O stream opened in a default <see cref="T:System.IO.Packaging.Package" /> root <see cref="T:System.IO.FileMode" /> and <see cref="T:System.IO.FileAccess" />..</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This GetStream method (without parameters), opens the stream in file mode <xref:System.IO.FileMode> with the default storage root <xref:System.IO.FileAccess>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -102,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,17 +86,10 @@
         <Parameter Name="mode" Type="System.IO.FileMode" />
       </Parameters>
       <Docs>
-        <param name="mode">The file mode in which to open the stream.</param>
-        <summary>Returns an I/O stream opened in a specified <see cref="T:System.IO.FileMode" />.</summary>
-        <returns>The stream opened in the specified file <paramref name="mode" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This GetStream method opens the stream with the default storage root <xref:System.IO.FileAccess>.  
-  
- ]]></format>
-        </remarks>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -132,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,10 +109,10 @@
         <Parameter Name="access" Type="System.IO.FileAccess" />
       </Parameters>
       <Docs>
-        <param name="mode">The file mode in which to open the stream.</param>
-        <param name="access">The file access mode in which to read or write to the stream.</param>
-        <summary>Returns an I/O stream opened in a specified <see cref="T:System.IO.FileMode" /> and with a given <see cref="T:System.IO.FileAccess" />.</summary>
-        <returns>The I/O stream opened in the specified <see cref="T:System.IO.FileMode" /> and with a given <see cref="T:System.IO.FileAccess" />.</returns>
+        <param name="mode">To be added.</param>
+        <param name="access">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,23 +123,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the stream.</summary>
-        <value>The name of this stream.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the Name property returns an empty string.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

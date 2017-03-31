@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridParentRowsLabelStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how the parent row labels of a <see cref="T:System.Windows.Forms.DataGrid" /> control are displayed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.DataGrid.ParentRowsLabelStyle%2A> property.  
-  
- Parent rows can be displayed only if the <xref:System.Windows.Forms.DataGrid> contains at least one <xref:System.Data.DataRelation> to a second <xref:System.Data.DataTable>, and if the <xref:System.Windows.Forms.DataGrid.AllowNavigation%2A> property is set to a value that allows navigation.  
-  
-   
-  
-## Examples  
- The following example iterates through each of the possible values for the DataGridParentRowsLabelStyle.  
-  
- [!code-vb[Classic DataGridParentRowsLabelStyle Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_133_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Both">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays both the parent table and column names.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColumnName">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays the parent column name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Display no parent row labels.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TableName">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays the parent table name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.IncrementalStrokeHitTester" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Dynamically hit tests a stroke with an eraser path.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IncrementalStrokeHitTester hit tests strokes by determining when a eraser path intersects that stroke. Use the <xref:System.Windows.Ink.IncrementalHitTester.AddPoints%2A> method in the stylus events to add the points to the IncrementalStrokeHitTester. When the points added to the IncrementalStrokeHitTester intersect a <xref:System.Windows.Ink.Stroke>, the IncrementalStrokeHitTester raises the <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to dynamically erase a portion of a <xref:System.Windows.Ink.Stroke>. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](../Topic/How%20to:%20Erase%20Ink%20on%20a%20Custom%20Control.md).  
-  
- [!code-cs[InkEraser#2](~/add/codesnippet/csharp/MyInkEraser/InkEraser.cs#2)]
- [!code-vb[InkEraser#2](~/add/codesnippet/visualbasic/MyInkEraser/InkEraser.vb#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddPointsCore">
@@ -38,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,8 +31,8 @@
         <Parameter Name="points" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt;" />
       </Parameters>
       <Docs>
-        <param name="points">The points to add</param>
-        <summary>Adds points to the <see cref="T:System.Windows.Ink.IncrementalHitTester" />.</summary>
+        <param name="points">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +43,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,8 +52,8 @@
         <Parameter Name="eventArgs" Type="System.Windows.Ink.StrokeHitEventArgs" />
       </Parameters>
       <Docs>
-        <param name="eventArgs">Event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit" /> event.</summary>
+        <param name="eventArgs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,25 +64,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Ink.StrokeHitEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Ink.IncrementalStrokeHitTester" /> intersects an ink <see cref="T:System.Windows.Ink.Stroke" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to dynamically erase a portion of a <xref:System.Windows.Ink.Stroke>. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](../Topic/How%20to:%20Erase%20Ink%20on%20a%20Custom%20Control.md).  
-  
- [!code-cs[InkEraser#2](~/add/codesnippet/csharp/MyInkEraser/InkEraser.cs#2)]
- [!code-vb[InkEraser#2](~/add/codesnippet/visualbasic/MyInkEraser/InkEraser.vb#2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

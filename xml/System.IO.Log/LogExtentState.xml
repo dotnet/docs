@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.LogExtentState" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the current state of a <see cref="T:System.IO.Log.LogExtent" /> instance.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance is being used as storage for the <see cref="T:System.IO.Log.LogStore" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ActivePendingDelete">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance is marked for deletion but still contains some active data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inactive">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance has been allocated to the <see cref="T:System.IO.Log.LogStore" /> but does not contain any active data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Initializing">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance has not yet been allocated to the <see cref="T:System.IO.Log.LogStore" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PendingArchive">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance does not contain any active data, but contains data that has not yet been archived.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PendingArchiveAndDelete">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance is marked for deletion but still contains data that has not been archived.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The status of the <see cref="T:System.IO.Log.LogExtent" /> instance is unknown.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

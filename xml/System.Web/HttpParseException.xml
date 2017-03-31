@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpParseException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The exception that is thrown when a parse error occurs.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpParseException class is an HTTP-specific exception class that enables ASP.NET to output parser exception information. For more information on throwing and handling exceptions, see [Exceptions](../Topic/Handling%20and%20Throwing%20Exceptions.md).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the HttpParseException to customize errors generated during page parsing. In this example, a customized <xref:System.Web.UI.HtmlControls.HtmlSelect> control is defined. If child elements of the custom control are not of a specified type then an HttpParseException is thrown in the overridden <xref:System.Web.UI.HtmlControls.HtmlSelectBuilder.GetChildControlType%2A> method of a custom <xref:System.Web.UI.HtmlControls.HtmlSelectBuilder>. To generate a parse exception, change the child element literal `MyCustomOption` to any other string.  
-  
- [!code-cs[HttpParseException#1](~/add/codesnippet/csharp/t-system.web.httpparseex_1.aspx)]
- [!code-vb[HttpParseException#1](~/add/codesnippet/visualbasic/t-system.web.httpparseex_1.aspx)]  
-  
- [!code-vb[HttpParseException#2](~/add/codesnippet/visualbasic/t-system.web.httpparseex_2.vb)]
- [!code-cs[HttpParseException#2](~/add/codesnippet/csharp/t-system.web.httpparseex_2.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpParseException" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,26 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The exception message to specify when the error occurs.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpParseException" /> class with a specified error message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the <xref:System.Web.HttpException.%23ctor%2A> constructor.  For a complete, working code example, see the <xref:System.Web.HttpParseException> overview topic.  
-  
- [!code-vb[HttpParseException#3](~/add/codesnippet/visualbasic/m-system.web.httpparseex_1.vb)]
- [!code-cs[HttpParseException#3](~/add/codesnippet/csharp/m-system.web.httpparseex_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -86,7 +55,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -94,9 +62,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">The exception message to specify when the error occurs.</param>
-        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpParseException" /> class with a specified error message and a reference to the inner.</summary>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,7 +75,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -118,12 +85,12 @@
         <Parameter Name="line" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">The exception message to specify when the error occurs.</param>
-        <param name="innerException">The exception that is the cause of the current exception. If <c>innerException</c> is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
-        <param name="virtualPath">The virtual path for the exception.</param>
-        <param name="sourceCode">The source code being compiled when the exception occurs.</param>
-        <param name="line">The line number on which the exception occurred.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpParseException" /> class with specific information about the source code being compiled and the line number on which the exception occurred.</summary>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <param name="virtualPath">To be added.</param>
+        <param name="sourceCode">To be added.</param>
+        <param name="line">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,23 +101,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the file being parsed when the error occurs.</summary>
-        <value>The physical path to the source file that is being parsed when the error occurs; otherwise, <see langword="null" />, if the physical path is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FileName property returns the physical path to the source file that has the error unless the physical path is `null`, in which case it returns `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -160,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,27 +129,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
-        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
-        <summary>When overridden in a derived class, sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with information about the exception.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetObjectData method sets a <xref:System.Runtime.Serialization.SerializationInfo> object with all the exception object data targeted for serialization. During deserialization, the exception is reconstituted from the SerializationInfo transmitted over the stream.  
-  
-   
-  
-## Examples  
- The following code example shows how to define a derived serializable <xref:System.Exception> class that implements the GetObjectData method, which makes minor changes to two properties, and then calls the base class to perform the serialization. The example forces a divide-by-0 error, and then creates an instance of the derived <xref:System.Exception>. The code serializes the instance to a file, deserializes the file into a new <xref:System.Exception>, which it throws, and then catches and displays the exception's data.  
-  
- [!code-cs[System.Exception.GetObjectData#1](~/add/codesnippet/csharp/6cb4e3e6-a72d-483a-994d-_1.cs)]
- [!code-cpp[System.Exception.GetObjectData#1](~/add/codesnippet/cpp/6cb4e3e6-a72d-483a-994d-_1.cpp)]
- [!code-vb[System.Exception.GetObjectData#1](~/add/codesnippet/visualbasic/6cb4e3e6-a72d-483a-994d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -201,15 +142,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of the line being parsed when the error occurs.</summary>
-        <value>The number of the line being parsed when the error occurs. This value is 1-based, not 0-based.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,15 +160,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ParserErrorCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parser errors for the current exception.</summary>
-        <value>A collection of the parser errors for the current exception.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,15 +178,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path to source file that generated the error.</summary>
-        <value>The virtual path to the source file that generated the error.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

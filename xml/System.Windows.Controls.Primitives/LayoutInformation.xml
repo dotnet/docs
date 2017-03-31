@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.LayoutInformation" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,18 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines methods that provide additional information about the layout state of an element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method to translate the bounding box of a <xref:System.Windows.FrameworkElement> into a <xref:System.Windows.Media.GeometryDrawing>.  
-  
- [!code-vb[LayoutInformation#2](~/add/codesnippet/visualbasic/LayoutInformation/Window1.xaml.vb#2)]
- [!code-cs[LayoutInformation#2](~/add/codesnippet/csharp/layoutslot/Window1.xaml.cs#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetLayoutClip">
@@ -33,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -43,17 +31,10 @@
         <Parameter Name="element" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.FrameworkElement" /> whose layout clip is desired.</param>
-        <summary>Returns a <see cref="T:System.Windows.Media.Geometry" /> that represents the visible region of an element.</summary>
-        <returns>A <see cref="T:System.Windows.Media.Geometry" /> that represents the visible region of an <paramref name="element" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a <xref:System.Windows.FrameworkElement.LayoutTransform%2A> has been applied to the `element`, the returned <xref:System.Windows.Media.Geometry> can be non-rectangular.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLayoutExceptionElement">
@@ -63,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,18 +53,10 @@
         <Parameter Name="dispatcher" Type="System.Windows.Threading.Dispatcher" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">The <see cref="T:System.Windows.Threading.Dispatcher" /> object that defines the scope of the operation. There is one dispatcher per layout engine instance.</param>
-        <summary>Returns a <see cref="T:System.Windows.UIElement" /> that was being processed by the layout engine at the moment of an unhandled exception.</summary>
-        <returns>A <see cref="T:System.Windows.UIElement" /> that was being processed by the layout engine at the moment of an unhandled exception.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can view the result of this operation from an application exception handler to fix problems in the layout of an application.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="dispatcher" /> is <see langword="null" />.</exception>
+        <param name="dispatcher">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLayoutSlot">
@@ -94,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,20 +75,10 @@
         <Parameter Name="element" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.FrameworkElement" /> whose layout slot is desired.</param>
-        <summary>Returns a <see cref="T:System.Windows.Rect" /> that represents the layout partition that is reserved for a child element.</summary>
-        <returns>A <see cref="T:System.Windows.Rect" /> that represents the layout slot of the element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the GetLayoutSlot method to translate the bounding box of a <xref:System.Windows.FrameworkElement> into a <xref:System.Windows.Media.GeometryDrawing>.  
-  
- [!code-vb[LayoutInformation#2](~/add/codesnippet/visualbasic/LayoutInformation/Window1.xaml.vb#2)]
- [!code-cs[LayoutInformation#2](~/add/codesnippet/csharp/layoutslot/Window1.xaml.cs#2)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

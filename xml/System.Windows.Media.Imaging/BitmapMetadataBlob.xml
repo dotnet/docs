@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapMetadataBlob" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a placeholder for metadata items that cannot be converted from [!INCLUDE[TLA#tla_cshrp](~/add/includes/tlasharptla-cshrp-md.md)] to an underlying data type that persists metadata. The blob is converted into an array of bytes to preserve the content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/add/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/add/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/add/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/add/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/add/includes/tlasharptla-xmp-md.md)].  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="blob" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="blob">Placeholder metadata.</param>
-        <summary>Initializes an instance of <see cref="T:System.Windows.Media.Imaging.BitmapMetadataBlob" /> and converts the metadata it holds into an array of bytes to persist its content.</summary>
+        <param name="blob">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,8 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an array of bytes that represents the value of a <see cref="T:System.Windows.Media.Imaging.BitmapMetadataBlob" />.</summary>
-        <returns>An array of bytes.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

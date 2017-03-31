@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TagMapInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,46 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains a single configuration tag remapping statement. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TagMapInfo class allows you to remap the types of tags at compile time. This remapping causes the mapped type to be used in place of the original tag type for all pages and controls in the ASP.NET application in the scope of the configuration file.  
-  
- The <xref:System.Web.Configuration.TagMapCollection> class allows you to programmatically access and modify the `tagMapping` subsection of the `pages` section of a configuration file. Within the `tagMappings` subsection, you can add and remove mappings between tag types by specifying the fully qualified strong names of the types.  
-  
-> [!NOTE]
->  Unlike other attributes and collections in the `pages` section, tag remapping has no matching ASP.NET page directive.  
-  
-   
-  
-## Examples  
- The following configuration file excerpt shows how to declaratively specify values for several properties of the TagMapInfo class.  
-  
-```  
-<system.web>  
-  <pages>  
-    <tagMapping>  
-      <add  
-        tagType=  
-          "System.Web.UI.WebControls.WebParts.WebPartManager"  
-        mappedTagType=  
-          "Microsoft.Sharepoint.WebPartPartManager,   
-           MSPS.Web.dll, Version='2.0.0.0'"   
-      />  
-    </tagMapping>  
-  </pages>  
-</system.web>  
-```  
-  
- The following code example shows how to use the <xref:System.Web.Configuration.TagMapCollection> class to programmatically modify tag-mapping settings. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
-  
- [!code-cs[System.Web.Configuration.PagesSection#17](~/add/codesnippet/csharp/t-system.web.configurati_73_1.cs)]
- [!code-vb[System.Web.Configuration.PagesSection#17](~/add/codesnippet/visualbasic/t-system.web.configurati_73_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -69,20 +29,10 @@
         <Parameter Name="mappedTagTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tagTypeName">The fully qualified name of the type for the tag that is being remapped.</param>
-        <param name="mappedTagTypeName">The name of the type to which the tag is remapped, along with the supporting details.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.TagMapInfo" /> class based on the passed property values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the TagMapInfo constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
-  
- [!code-cs[System.Web.Configuration.PagesSection#42](~/add/codesnippet/csharp/m-system.web.configurati_25_1.cs)]
- [!code-vb[System.Web.Configuration.PagesSection#42](~/add/codesnippet/visualbasic/m-system.web.configurati_25_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="tagTypeName">To be added.</param>
+        <param name="mappedTagTypeName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -92,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,10 +51,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">Object to compare.</param>
-        <summary>Compares this instance to another object.</summary>
-        <returns>
-          <see langword="true" /> if the objects are identical; otherwise, <see langword="false" />.</returns>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,8 +71,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a hash value for the current instance.</summary>
-        <returns>A hash value for the current instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +83,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -151,26 +97,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the type to which the tag is remapped.</summary>
-        <value>The name of the type to which the tag is remapped. The default is an empty string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Tag remapping occurs at compile time. This remapping causes the mapped type (specified by the MappedTagType property) to be used in place of the original tag type (specified by the <xref:System.Web.Configuration.TagMapInfo.TagType%2A> property) for all pages and controls in the ASP.NET application in the scope of the configuration file.  
-  
-> [!NOTE]
->  An empty string value for this property will cause the configuration system to throw an exception when the object is serialized.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the MappedTagType property. It is part of a larger example for the <xref:System.Web.Configuration.PagesSection> type.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -180,7 +109,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -224,7 +151,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -239,26 +165,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the original type for the tag that is being remapped.</summary>
-        <value>The name of the original type for the tag that is being remapped.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Tag remapping occurs at compile time. This remapping causes the mapped type (specified by the <xref:System.Web.Configuration.TagMapInfo.MappedTagType%2A> property) to be used in place of the original tag type (specified by the TagType property) for all pages and controls in the ASP.NET application in the scope of the configuration file.  
-  
-> [!NOTE]
->  An empty string value for this property will cause the configuration system to throw an exception when the object is serialized.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the TagType property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

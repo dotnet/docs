@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectSettingDataEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains arguments for the <see cref="T:System.Windows.DataObject" />.<see cref="System.Windows.DataObject.SettingData" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.DataObject.SettingData> event occurs as part of a copy command or a drag command, once for each of the data formats to be added to the associated data object. Typically, this event is connected to a content control such as <xref:System.Windows.Controls.TextBox>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -38,11 +29,10 @@
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dataObject">The <see cref="T:System.Windows.DataObject" /> to which a new data format is being added.</param>
-        <param name="format">A string specifying the new data format that is being added to the accompanying data object. See the <see cref="T:System.Windows.DataFormats" /> class for a set of predefined data formats.</param>
-        <summary>Initializes a new instance of <see cref="T:System.Windows.DataObjectSettingDataEventArgs" />.</summary>
+        <param name="dataObject">To be added.</param>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="dataObject" /> or <paramref name="format" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="DataObject">
@@ -52,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IDataObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.DataObject" /> associated with the <see cref="System.Windows.DataObject.SettingData" /> event.</summary>
-        <value>The <see cref="T:System.Windows.DataObject" /> associated with the <see cref="System.Windows.DataObject.SettingData" /> event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string specifying the new data format that is being added to the accompanying data object.</summary>
-        <value>A string specifying the new data format that is being added to the accompanying data object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

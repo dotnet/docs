@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,30 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents an item (row) in a <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A DataGridItem object represents an item (row) in a <xref:System.Web.UI.WebControls.DataGrid> control, such as a heading section, a footer section, or a data row.  
-  
- The data items of a <xref:System.Web.UI.WebControls.DataGrid> control are stored in a <xref:System.Web.UI.WebControls.DataGridItemCollection> collection that can be accessed by using the <xref:System.Web.UI.WebControls.DataGrid.Items%2A> property of the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
- You can use a DataGridItem object to programmatically access the properties of an item in a <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a DataGridItem object to display the contents of each data item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
-> [!NOTE]
->  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
- [!code-cs[DataGridItemDataBound#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_150_1.aspx)]
- [!code-vb[DataGridItemDataBound#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_150_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +26,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -58,26 +34,11 @@
         <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
       </Parameters>
       <Docs>
-        <param name="itemIndex">The index of the item from the <see cref="System.Web.UI.WebControls.DataGrid.Items%2A" /> collection in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</param>
-        <param name="dataSetIndex">The index number of the item, from the bound data source, that appears in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</param>
-        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGridItem> class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGridItem> class.  
-  
- [!code-cs[Classic DataGridItem.DataGridItem Example#1](~/add/codesnippet/csharp/6d2ff38b-5f4b-4fa3-af91-_1.cs)]
- [!code-vb[Classic DataGridItem.DataGridItem Example#1](~/add/codesnippet/visualbasic/6d2ff38b-5f4b-4fa3-af91-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="itemIndex">To be added.</param>
+        <param name="dataSetIndex">To be added.</param>
+        <param name="itemType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -87,37 +48,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data item represented by the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
-        <value>A <see cref="T:System.Object" /> that represents a data item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DataItem property to specify or determine the properties of a data item represented by the <xref:System.Web.UI.WebControls.DataGridItem> object in the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
-> [!NOTE]
->  This property applies only to data items in the <xref:System.Web.UI.WebControls.DataGrid> control. The <xref:System.Web.UI.WebControls.DataGridItem.ItemType%2A> property must be set to `ListItemType.Item`, `ListItemType.AlternatingItem`, `ListItemType.SelectedItem`, or `ListItemType.EditItem`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the DataItem property to display the contents of the data items in the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
-> [!NOTE]
->  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension.  
-  
- [!code-vb[Classic DataGridItem.DataItem Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_841_1.aspx)]
- [!code-cs[Classic DataGridItem.DataItem Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_841_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSetIndex">
@@ -127,37 +66,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object from the bound data source.</summary>
-        <value>The index of the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> from the bound data source.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DataSetIndex property to get the index of the <xref:System.Web.UI.WebControls.DataGridItem> object from the bound data source.  
-  
-> [!NOTE]
->  This property applies only to data items in the <xref:System.Web.UI.WebControls.DataGrid> control. The <xref:System.Web.UI.WebControls.DataGridItem.ItemType%2A> property of the <xref:System.Web.UI.WebControls.DataGridItem> object must be set to `ListItemType.Item`, `ListItemType.AlternatingItem`, `ListItemType.SelectedItem`, or `ListItemType.EditItem`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the DataSetIndex property to display the index of the <xref:System.Web.UI.WebControls.DataGridItem> object from the bound data source.  
-  
-> [!NOTE]
->  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension.  
-  
- [!code-cs[Classic DataGridItem.DataSetIndex Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_930_1.aspx)]
- [!code-vb[Classic DataGridItem.DataSetIndex Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_930_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -167,37 +84,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object from the <see cref="System.Web.UI.WebControls.DataGrid.Items%2A" /> collection of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
-        <value>The index of the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> from the <see cref="System.Web.UI.WebControls.DataGrid.Items%2A" /> collection of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ItemIndex property to determine the index of the <xref:System.Web.UI.WebControls.DataGridItem> object from the <xref:System.Web.UI.WebControls.DataGrid.Items%2A> collection of the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
-> [!NOTE]
->  This property applies only to data items in the <xref:System.Web.UI.WebControls.DataGrid> control. The <xref:System.Web.UI.WebControls.DataGridItem.ItemType%2A> property of the <xref:System.Web.UI.WebControls.DataGridItem> object must be set to `ListItemType.Item`, `ListItemType.AlternatingItem`, `ListItemType.SelectedItem`, or `ListItemType.EditItem`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ItemIndex property to display the index of the <xref:System.Web.UI.WebControls.DataGridItem> object from the <xref:System.Web.UI.WebControls.DataGrid.Items%2A> collection of the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
-> [!NOTE]
->  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
- [!code-vb[Classic DataGridItem.ItemIndex Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_659_1.aspx)]
- [!code-cs[Classic DataGridItem.ItemIndex Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_659_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -207,45 +102,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the item represented by the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ItemType property to determine the type of an item in the <xref:System.Web.UI.WebControls.DataGrid> control. The following table lists the various item types.  
-  
-|Item Type|Description|  
-|---------------|-----------------|  
-|`Header`|The heading section of the <xref:System.Web.UI.WebControls.DataGrid> control.|  
-|`Footer`|The footer section of the <xref:System.Web.UI.WebControls.DataGrid> control.|  
-|`Item`|An item in the <xref:System.Web.UI.WebControls.DataGrid> control.|  
-|`AlternatingItem`|An alternating item in the <xref:System.Web.UI.WebControls.DataGrid> control.|  
-|`SelectedItem`|The selected item in the <xref:System.Web.UI.WebControls.DataGrid> control.|  
-|`EditItem`|The item selected for editing in the <xref:System.Web.UI.WebControls.DataGrid> control.|  
-|`Separator`|A separator between the items of the <xref:System.Web.UI.WebControls.DataGrid> control.|  
-|`Pager`|The page selection section of the <xref:System.Web.UI.WebControls.DataGrid> control.|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ItemType property to determine the type of an item in the <xref:System.Web.UI.WebControls.DataGrid> control. The order in which items are created in the <xref:System.Web.UI.WebControls.DataGrid> control is displayed along with the item type.  
-  
-> [!NOTE]
->  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
- [!code-cs[DataGridItemDataBound#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_357_1.aspx)]
- [!code-vb[DataGridItemDataBound#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_357_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -255,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,11 +130,10 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">The source of the event.</param>
-        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Used internally by the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> class.</summary>
-        <returns>
-          <see langword="true" /> if the event has been canceled; otherwise, <see langword="false" />.</returns>
+        <param name="source">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -291,8 +153,8 @@
         <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
       </Parameters>
       <Docs>
-        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> values.</param>
-        <summary>Used internally by the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> class.</summary>
+        <param name="itemType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,23 +165,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Web.UI.IDataItemContainer.DataItem%2A" />.</summary>
-        <value>An object that represents a data item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.DataGridItem> instance is cast to an <xref:System.Web.UI.IDataItemContainer> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItemIndex">
@@ -329,23 +183,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Web.UI.IDataItemContainer.DataItemIndex%2A" />.</summary>
-        <value>The index of the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> from the bound data source.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.DataGridItem> instance is cast to an <xref:System.Web.UI.IDataItemContainer> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
@@ -355,23 +201,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Web.UI.IDataItemContainer.DisplayIndex%2A" />.</summary>
-        <value>The index of the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> from the <see cref="System.Web.UI.WebControls.DataGrid.Items%2A" /> collection of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.DataGridItem> instance is cast to an <xref:System.Web.UI.IDataItemContainer> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

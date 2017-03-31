@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.VoiceGender" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines the values for the gender of a synthesized voice.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- VoiceGender can indicate the gender of an existing voice or a gender preference when selecting a voice. All of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods and three of the <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods use VoiceGender to specify the gender when selecting a voice. The <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> property obtains the gender of an existing voice using a VoiceGender member.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Female">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a female voice.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Male">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a male voice.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Neutral">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a gender-neutral voice.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates no voice gender specification.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

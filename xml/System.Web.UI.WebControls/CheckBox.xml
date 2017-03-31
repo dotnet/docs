@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CheckBox" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -39,88 +38,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Displays a check box that allows the user to select a <see langword="true" /> or <see langword="false" /> condition.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this topic:  
-  
--   [Introduction](#Introduction)  
-  
--   [Declarative Syntax](#DeclarativeSyntax)  
-  
-<a name="Introduction"></a>   
-## Introduction  
- Use the CheckBox control to allow the user to select a `true` or `false` state.  
-  
- If you plan to use multiple CheckBox controls, the <xref:System.Web.UI.WebControls.CheckBoxList> control is an alternative control that provides convenient data binding capabilities. However, individual CheckBox controls provide greater control over layout.  
-  
-> [!IMPORTANT]
->  A CheckBox control accepts user input, which is a potential security threat. By default, ASP.NET mobile Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
-<a name="DeclarativeSyntax"></a>   
-## Declarative Syntax  
-  
-```  
-<asp:CheckBox  
-    AccessKey="string"  
-    AutoPostBack="True|False"  
-    BackColor="color name|#dddddd"  
-    BorderColor="color name|#dddddd"  
-    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-        Inset|Outset"  
-    BorderWidth="size"  
-    CausesValidation="True|False"  
-    Checked="True|False"  
-    CssClass="string"  
-    Enabled="True|False"  
-    EnableTheming="True|False"  
-    EnableViewState="True|False"  
-    Font-Bold="True|False"  
-    Font-Italic="True|False"  
-    Font-Names="string"  
-    Font-Overline="True|False"  
-    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-        Large|X-Large|XX-Large"  
-    Font-Strikeout="True|False"  
-    Font-Underline="True|False"  
-    ForeColor="color name|#dddddd"  
-    Height="size"  
-    ID="string"  
-    OnCheckedChanged="CheckedChanged event handler"  
-    OnDataBinding="DataBinding event handler"  
-    OnDisposed="Disposed event handler"  
-    OnInit="Init event handler"  
-    OnLoad="Load event handler"  
-    OnPreRender="PreRender event handler"  
-    OnUnload="Unload event handler"  
-    runat="server"  
-    SkinID="string"  
-    Style="string"  
-    TabIndex="integer"  
-    Text="string"  
-    TextAlign="Left|Right"  
-    ToolTip="string"  
-    ValidationGroup="string"  
-    Visible="True|False"  
-    Width="size"  
-/>  
-```  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use a CheckBox control to indicate whether tax is included in the calculation for a sales total.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-cs[CheckBoxCheckedChanged#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_128_1.aspx)]
- [!code-vb[CheckBoxCheckedChanged#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_128_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -130,30 +49,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CheckBox" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.CheckBox> class.  
-  
-   
-  
-## Examples  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-vb[CheckBoxCtor#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_17_1.aspx)]
- [!code-cs[CheckBoxCtor#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_17_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -163,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,16 +73,9 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
-        <summary>Adds the HTML attributes and styles of a <see cref="T:System.Web.UI.WebControls.CheckBox" /> control to be rendered to the specified output stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddAttributesToRender method is used primarily by control developers to insert the additional attributes and styles in the <xref:System.Web.UI.HtmlTextWriter> output stream for a <xref:System.Web.UI.WebControls.CheckBox> control. The AddAttributesToRender method overrides the <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoPostBack">
@@ -192,7 +85,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -207,33 +99,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.UI.WebControls.CheckBox" /> state automatically posts back to the server when clicked.</summary>
-        <value>
-          <see langword="true" /> to automatically post the state of the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control to the server when it is clicked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to specify whether the state of the <xref:System.Web.UI.WebControls.CheckBox> control is posted back to the server when clicked.  
-  
-> [!NOTE]
->  Setting this property to `true` causes a round trip to the server every time the control is clicked.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the AutoPostBack property to automatically post the state of the <xref:System.Web.UI.WebControls.CheckBox> control to the server when the control is clicked.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-cs[CheckBoxCheckedChanged#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_363_1.aspx)]
- [!code-vb[CheckBoxCheckedChanged#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_363_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -243,7 +111,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -258,23 +125,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether validation is performed when the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control is selected.</summary>
-        <value>
-          <see langword="true" /> if validation is performed when the <see cref="T:System.Web.UI.WebControls.CheckBox" /> is clicked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CausesValidation property to determine whether validation is performed on both the client and the server when a <xref:System.Web.UI.WebControls.CheckBox> control is selected. Page validation determines whether the input controls that are associated with a validation control on the page all pass the validation rules as specified by the validation control.  
-  
- By default, clicking a <xref:System.Web.UI.WebControls.CheckBox> control does not cause page validation. To perform page validation when the <xref:System.Web.UI.WebControls.CheckBox> control is clicked, set the CausesValidation property to `true`.  
-  
- When the value of the CausesValidation property is set to `true`, you can also use the <xref:System.Web.UI.WebControls.CheckBox.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.CheckBox> control causes validation.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -284,7 +137,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -302,30 +154,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control is checked.</summary>
-        <value>
-          <see langword="true" /> to indicate a checked state; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to determine whether the <xref:System.Web.UI.WebControls.CheckBox> control is checked. This property can also be used to programmatically set the state of the <xref:System.Web.UI.WebControls.CheckBox> control.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the Checked property to determine the state of the <xref:System.Web.UI.WebControls.CheckBox> control.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-cs[CheckBoxCheckedChanged#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_171_1.aspx)]
- [!code-vb[CheckBoxCheckedChanged#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_171_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckedChanged">
@@ -335,41 +166,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Web.UI.WebControls.CheckBox.Checked%2A" /> property changes between posts to the server.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CheckedChanged event is raised when the value of the <xref:System.Web.UI.WebControls.CheckBox.Checked%2A> property changes between posts to the server. This event does not post the page back to the server unless the <xref:System.Web.UI.WebControls.CheckBox.AutoPostBack%2A> property is set to `true`.  
-  
-> [!NOTE]
->  A <xref:System.Web.UI.WebControls.CheckBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
-  
- For more information about handling events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to specify and code the handler for the CheckedChanged event of a <xref:System.Web.UI.WebControls.CheckBox> control.  
-  
-> [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-cs[CheckBoxCheckedChanged#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_71_1.aspx)]
- [!code-vb[CheckBoxCheckedChanged#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_71_1.aspx)]  
-  
- [!code-cs[CheckBoxCheckedChanged2#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_71_2.aspx)]
- [!code-vb[CheckBoxCheckedChanged2#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_71_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InputAttributes">
@@ -379,7 +183,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -394,16 +197,9 @@
         <ReturnType>System.Web.UI.AttributeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the collection of attributes for the rendered input element of the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control.</summary>
-        <value>The collection of attribute names and values that are added to the rendered INPUT element for the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control. The default is an empty <see cref="T:System.Web.UI.AttributeCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBox> control is rendered and displayed using an HTML INPUT element. You can add additional attributes to the rendered INPUT element using the <xref:System.Web.UI.AttributeCollection.Add%2A> method on the InputAttributes property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelAttributes">
@@ -413,7 +209,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -428,16 +223,9 @@
         <ReturnType>System.Web.UI.AttributeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the collection of attributes for the rendered LABEL element of the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control.</summary>
-        <value>The collection of attribute names and values that are added to the rendered LABEL element for the <see cref="T:System.Web.UI.WebControls.CheckBox" />. The default is an empty <see cref="T:System.Web.UI.AttributeCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property of a <xref:System.Web.UI.WebControls.CheckBox> control is rendered and displayed using an HTML LABEL element. You can add additional attributes to the rendered LABEL element using the <xref:System.Web.UI.AttributeCollection.Add%2A> method on the LabelAttributes property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -447,7 +235,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -458,21 +245,11 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The index within the posted collection that references the content to load.</param>
-        <param name="postCollection">The collection posted to the server.</param>
-        <summary>Processes the postback data for the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control.</summary>
-        <returns>
-          <see langword="true" /> if the posted content is different from the last posting; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LoadPostData method is used primarily by control developers.  
-  
- The LoadPostData method checks if the postback data of the <xref:System.Web.UI.WebControls.CheckBox> control is different from its previous value, and if so, loads the content and returns `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="postDataKey">To be added.</param>
+        <param name="postCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -482,7 +259,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -492,18 +268,9 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">An object that contains the saved view state values for the control.</param>
-        <summary>Loads the previously saved view state of the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](../Topic/ASP.NET%20State%20Management%20Overview.md).  
-  
- The LoadViewState method restores view-state information for the <xref:System.Web.UI.WebControls.CheckBox> object from a previous page request that was saved by the <xref:System.Web.UI.WebControls.CheckBox.SaveViewState%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCheckedChanged">
@@ -513,7 +280,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -523,37 +289,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.CheckBox.CheckedChanged" /> event of the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control. This allows you to handle the event directly.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBox.CheckedChanged> event is raised when the value of the <xref:System.Web.UI.WebControls.CheckBox.Checked%2A> property changes between posts to the server.  
-  
-> [!NOTE]
->  A <xref:System.Web.UI.WebControls.CheckBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md)  
-  
- The OnCheckedChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to specify and code the handler for the <xref:System.Web.UI.WebControls.CheckBox.CheckedChanged> event of a <xref:System.Web.UI.WebControls.CheckBox> control.  
-  
-> [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-cs[CheckBoxCheckedChanged#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_231_1.aspx)]
- [!code-vb[CheckBoxCheckedChanged#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_231_1.aspx)]  
-  
- [!code-cs[CheckBoxCheckedChanged2#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_231_2.aspx)]
- [!code-vb[CheckBoxCheckedChanged2#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_231_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -563,7 +301,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -573,20 +310,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Registers client script for generating postback prior to rendering on the client if <see cref="System.Web.UI.WebControls.CheckBox.AutoPostBack%2A" /> is <see langword="true" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[CustomCheckBoxOnPreRender#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_124_1.aspx)]
- [!code-vb[CustomCheckBoxOnPreRender#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_124_1.aspx)]  
-  
- [!code-vb[CustomCheckBoxOnPreRender#2](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_124_2.vb)]
- [!code-cs[CustomCheckBoxOnPreRender#2](~/add/codesnippet/csharp/m-system.web.ui.webcontr_124_2.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -596,7 +322,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -604,17 +329,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invokes the <see cref="System.Web.UI.WebControls.CheckBox.OnCheckedChanged%2A" /> method when the posted data for the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RaisePostDataChangedEvent method is used primarily by control developers.  
-  
- The RaisePostDataChangedEvent method invokes the <xref:System.Web.UI.WebControls.CheckBox.OnCheckedChanged%2A> method if the posted data for the <xref:System.Web.UI.WebControls.CheckBox> control has changed. If the <xref:System.Web.UI.WebControls.CheckBox.CausesValidation%2A> property is `true`, the controls that are set in the <xref:System.Web.UI.WebControls.CheckBox.ValidationGroup%2A> property are validated.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -624,7 +340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -634,20 +349,9 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that contains the output stream to render on the client.</param>
-        <summary>Displays the <see cref="T:System.Web.UI.WebControls.CheckBox" /> on the client.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[CustomCheckBoxRender#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_177_1.aspx)]
- [!code-vb[CustomCheckBoxRender#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_177_1.aspx)]  
-  
- [!code-cs[CustomCheckBoxRender#2](~/add/codesnippet/csharp/m-system.web.ui.webcontr_177_2.cs)]
- [!code-vb[CustomCheckBoxRender#2](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_177_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -657,7 +361,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -665,20 +368,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the changes to the <see cref="T:System.Web.UI.WebControls.CheckBox" /> view state since the time the page was posted back to the server.</summary>
-        <returns>The object that contains the changes to the <see cref="T:System.Web.UI.WebControls.CheckBox" /> view state; otherwise, if no view state is associated with the object, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SaveViewState method is used primarily by control developers.  
-  
- View state is the accumulation of the values of a server control's properties. These values are automatically placed in the <xref:System.Web.UI.Control.ViewState%2A> property for the server control, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save-state stage of the server control's life cycle. For more information, see [ASP.NET Page Life Cycle Overview](../Topic/ASP.NET%20Page%20Life%20Cycle%20Overview.md).  
-  
- When view state is saved, this string object is returned to the client as a variable that is stored in a hidden HTML input element. When you author custom server controls, you can improve efficiency by overriding the SaveViewState and modifying the <xref:System.Web.UI.Control.ViewState%2A> property for your server control. For more information, see [Developing Custom ASP.NET Server Controls](../Topic/Developing%20Custom%20ASP.NET%20Server%20Controls.md) and [ASP.NET State Management Overview](../Topic/ASP.NET%20State%20Management%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -688,7 +380,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -699,19 +390,11 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The key value used to index an entry in the collection.</param>
-        <param name="postCollection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains post information.</param>
-        <summary>Processes posted data for the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control.</summary>
-        <returns>
-          <see langword="true" /> if the state of the <see cref="T:System.Web.UI.WebControls.CheckBox" /> has changed; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.UI.WebControls.CheckBox> determines the posted <xref:System.Web.UI.WebControls.CheckBox.Checked%2A> state.  
-  
- ]]></format>
-        </remarks>
+        <param name="postDataKey">To be added.</param>
+        <param name="postCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -721,7 +404,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -729,15 +411,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises when posted data for a control has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.UI.WebControls.CheckBox> fires an `CheckedChanged` event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -747,7 +422,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -765,32 +439,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text label associated with the <see cref="T:System.Web.UI.WebControls.CheckBox" />.</summary>
-        <value>The text label associated with the <see langword="CheckBox" />. The default value is <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to specify the text label associated with the <xref:System.Web.UI.WebControls.CheckBox> control. This property can also be used to programmatically get the text label associated with the <xref:System.Web.UI.WebControls.CheckBox> control.  
-  
-> [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the Text property to specify the text label associated with the <xref:System.Web.UI.WebControls.CheckBox> control.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-cs[CheckBoxCheckedChanged#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_875_1.aspx)]
- [!code-vb[CheckBoxCheckedChanged#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_875_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -800,7 +451,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -812,28 +462,9 @@
         <ReturnType>System.Web.UI.WebControls.TextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of the text label associated with the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values. The default value is <see langword="Right" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to specify the alignment of the text label associated with the <xref:System.Web.UI.WebControls.CheckBox> control. You can specify whether the text label appears to the right or left of the check box. Use the <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property to specify the label text.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the TextAlign property to display the text label to the right of the check box.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-cs[CheckBoxCheckedChanged#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_812_1.aspx)]
- [!code-vb[CheckBoxCheckedChanged#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_812_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -843,7 +474,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -851,15 +481,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Tracks view-state changes to the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control so that they can be stored in the control's <see cref="T:System.Web.UI.StateBag" /> object. This object is accessible through the <see cref="System.Web.UI.Control.ViewState%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET automatically calls the TrackViewState method when the <xref:System.Web.UI.WebControls.CheckBox> control is initialized.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -869,7 +492,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -884,20 +506,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the group of controls for which the <see cref="T:System.Web.UI.WebControls.CheckBox" /> control causes validation when it posts back to the server.</summary>
-        <value>The group of controls for which the <see cref="T:System.Web.UI.WebControls.CheckBox" /> causes validation when it posts back to the server. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Validation groups allow you to assign validation controls on a page to a specific category. Each validation group can be validated independently of other validation groups on the page. Use the ValidationGroup property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.CheckBox> control causes validation when it posts back to the server.  
-  
- The ValidationGroup property has an effect only when the value of the <xref:System.Web.UI.WebControls.CheckBox.CausesValidation%2A> property is set to `true`. When you specify a value for the ValidationGroup property, only the validation controls that are part of the specified group are validated when the <xref:System.Web.UI.WebControls.CheckBox> control posts back to the server. If you do not specify a value for the ValidationGroup and the <xref:System.Web.UI.WebControls.CheckBox.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the control posts back to the server.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

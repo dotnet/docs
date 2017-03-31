@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a [Task Element (MSBuild)](../Topic/Task%20Element%20\(MSBuild\).md) in an MSBuild project.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +37,10 @@
         <Parameter Name="itemType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="taskParameter">The name of the task which outputs to the item.</param>
-        <param name="itemType">The item type of the new item whose value is set to the output of the task.</param>
-        <summary>Adds an Output item after the last child.</summary>
-        <returns>Returns the added Output item.</returns>
+        <param name="taskParameter">To be added.</param>
+        <param name="itemType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,11 +62,11 @@
         <Parameter Name="condition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="taskParameter">The name of the parameter.</param>
-        <param name="itemType">The item type of the item.</param>
-        <param name="condition">The condition of the parameter.</param>
-        <summary>Adds a conditioned Output item to this task after the last child.</summary>
-        <returns>Returns the added conditioned Output item.</returns>
+        <param name="taskParameter">To be added.</param>
+        <param name="itemType">To be added.</param>
+        <param name="condition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +87,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="taskParameter">The name of the parameter.</param>
-        <param name="propertyName">The name of the property.</param>
-        <summary>Adds an Output property to this task after the last child.</summary>
-        <returns>Returns the added Output property.</returns>
+        <param name="taskParameter">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,11 +112,11 @@
         <Parameter Name="condition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="taskParameter">The name of the parameter.</param>
-        <param name="propertyName">The name of the property.</param>
-        <param name="condition">The condition of the property.</param>
-        <summary>Adds a conditioned Output property to this task after the last child.</summary>
-        <returns>Returns the added conditioned Output property.</returns>
+        <param name="taskParameter">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <param name="condition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,16 +141,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <c>ContinueOnError</c> attribute value.</summary>
-        <value>Returns the <c>ContinueOnError</c> attribute value. Returns an empty string if the attribute is not present.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Removes the `ContinueOnError` attribute if the value to set is set to null or an empty string.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueOnErrorLocation">
@@ -166,10 +159,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the "ContinueOnError" attribute on this element, if any.  
-  
- If there is no such attribute, returns null;</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,9 +180,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter.</param>
-        <summary>Gets the value of the parameter with the specified name.</summary>
-        <returns>Returns the value of the parameter with the specified name. If no parameter by that name exists in the task, returns an empty string.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,12 +207,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the architecture value for the task.  
-  
- Returns empty string if it is not present.  
-  
- Removes the attribute if the value to set is empty.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,10 +225,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the "MSBuildArchitecture" attribute on this element, if any.  
-  
- If there is no such attribute, returns null;</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,12 +251,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the runtime value for the task.  
-  
- Returns empty string if it is not present.  
-  
- Removes the attribute if the value to set is empty.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,10 +269,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the "MSBuildRuntime" attribute on this element, if any.  
-  
- If there is no such attribute, returns null;</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,8 +287,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of this task.</summary>
-        <value>Returns the name of this task.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,8 +305,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectOutputElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all [Output Element (MSBuild)](../Topic/Output%20Element%20\(MSBuild\).md) children.</summary>
-        <value>Returns all Output element children.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,14 +323,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,Microsoft.Build.Construction.ElementLocation&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enumerable over the locations of parameters on the task.  
-  
- Condition and ContinueOnError, which have their own properties, are not included in this collection.  
-  
- If parameters differ only by case only the last one will be returned.  
-  
- Hosts can still remove the other parameters by using RemoveAllParameters().</summary>
-        <value>Returns <see cref="System.Collections.Generic.IEnumerable%601" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,16 +341,9 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all unevaluated parameters of this task.</summary>
-        <value>Returns all unevaluated parameters of this task.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Condition` and `ContinueOnError` attributes are not included in this collection. If parameters differ only by case then only the last one will be returned. See also RemoveAllParameters().  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAllParameters">
@@ -394,7 +360,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all parameters from the task. Does not remove any <c>ContinueOnError</c> and/or <c>Condition</c> attributes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,8 +380,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter to remove.</param>
-        <summary>Removes any parameter on this task with the specified name. If no parameter by that name exists in the task, does nothing.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,17 +402,10 @@
         <Parameter Name="unevaluatedValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter to update or add.</param>
-        <param name="unevaluatedValue">The value of the parameter.</param>
-        <summary>Updates or adds a parameter on this task</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Updates the parameter to the specified value if a parameter by that name exists in the task. Otherwise, creates a parameter with the specified name and value, and adds it to the task.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="unevaluatedValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

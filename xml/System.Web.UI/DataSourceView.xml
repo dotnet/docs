@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,29 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Serves as the base class for all data source view classes, which define the capabilities of data source controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET supports a data-binding architecture that enables Web server controls to bind to data in a consistent fashion. Web server controls that bind to data are referred to as data-bound controls, and the classes that facilitate that binding are called data source controls. Data source controls can represent any data source: a relational database, a file, a stream, a business object, and so on. Data source controls present data in a consistent way to data-bound controls, regardless of the source or format of the underlying data.  
-  
- You use the data source controls that are provided with ASP.NET, including <xref:System.Web.UI.WebControls.SqlDataSource>, <xref:System.Web.UI.WebControls.AccessDataSource>, and <xref:System.Web.UI.WebControls.XmlDataSource>, to perform most Web development tasks. You use the base <xref:System.Web.UI.DataSourceControl> and DataSourceView classes when you want to implement your own custom data source control.  
-  
- You can think of a data source control as the combination of the <xref:System.Web.UI.IDataSource> object and its associated lists of data, called data source views. Each list of data is represented by a DataSourceView object. The DataSourceView class is the base class for all data source views, or lists of data, associated with data source controls. Data source views define the capabilities of a data source control. Because the underlying data storage contains one or more lists of data, a data source control is always associated with one or more named data source views. The data source control uses the <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> method to enumerate the data source views currently associated with the data source control and the <xref:System.Web.UI.DataSourceControl.GetView%2A> method to retrieve a specific data source view instance by name.  
-  
- All DataSourceView objects support data retrieval from the underlying data source using the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. All views optionally support a basic set of operations, including operations such as <xref:System.Web.UI.DataSourceView.ExecuteInsert%2A>, <xref:System.Web.UI.DataSourceView.ExecuteUpdate%2A>, and <xref:System.Web.UI.DataSourceView.ExecuteDelete%2A>. A data-bound control can discover the capabilities of a data source control by retrieving an associated data source view using the <xref:System.Web.UI.DataSourceControl.GetView%2A> and <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> methods, and by querying the view at design time or run time.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to extend the DataSourceView class to create a strongly typed view class for a data source control. The `CsVDataSourceView` class defines the capabilities of the `CsvDataSource` data source control and provides an implementation for data-bound controls to use data stored in comma-separated value (.csv) files. For more information on the `CsvDataSource` data source control, see the <xref:System.Web.UI.DataSourceControl> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#5](~/add/codesnippet/csharp/t-system.web.ui.datasour_1_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#5](~/add/codesnippet/visualbasic/t-system.web.ui.datasour_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -52,16 +29,10 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owner">The data source control that the <see cref="T:System.Web.UI.DataSourceView" /> is associated with.</param>
-        <param name="viewName">The name of the <see cref="T:System.Web.UI.DataSourceView" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataSourceView" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <param name="viewName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="owner" /> is <see langword="null" />.  
-  
- \- or -  
-  
- <paramref name="viewName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanDelete">
@@ -71,32 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.DataSourceView" /> object associated with the current <see cref="T:System.Web.UI.DataSourceControl" /> object supports the <see cref="System.Web.UI.DataSourceView.ExecuteDelete%2A" /> operation.</summary>
-        <value>
-          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />. The base class implementation returns <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanDelete property reflects not only a capability of the data source control, but also whether it is currently appropriate to perform an operation. For example, even though a data source view supports the <xref:System.Web.UI.DataSourceView.ExecuteDelete%2A> operation in general, if a required property or some other data is not set, the CanDelete property returns `false`, as a delete operation would fail.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the CanDelete property and the <xref:System.Web.UI.DataSourceView.ExecuteDelete%2A> method in a class that extends the <xref:System.Web.UI.DataSourceView> class. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceView> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#8](~/add/codesnippet/csharp/p-system.web.ui.datasour_3_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#8](~/add/codesnippet/visualbasic/p-system.web.ui.datasour_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanExecute">
@@ -115,10 +69,9 @@
         <Parameter Name="commandName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="commandName">The name of the command.</param>
-        <summary>Determines whether the specified command can be executed.</summary>
-        <returns>
-          <see langword="true" /> if the command can be executed; otherwise, <see langword="false" />.</returns>
+        <param name="commandName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,32 +82,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.DataSourceView" /> object associated with the current <see cref="T:System.Web.UI.DataSourceControl" /> object supports the <see cref="System.Web.UI.DataSourceView.ExecuteInsert%2A" /> operation.</summary>
-        <value>
-          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />. The base class implementation returns <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanInsert property reflects not only a capability of the data source control, but also whether it is currently appropriate to perform an operation. For example, even though a data source control supports the <xref:System.Web.UI.DataSourceView.ExecuteInsert%2A> operation, if a required insert command or some other data is not set, the CanInsert property returns `false`, as an insert operation would fail.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the CanInsert property and the <xref:System.Web.UI.DataSourceView.ExecuteInsert%2A> method in a class that extends the <xref:System.Web.UI.DataSourceView> class. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceView> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#9](~/add/codesnippet/csharp/p-system.web.ui.datasour_2_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#9](~/add/codesnippet/visualbasic/p-system.web.ui.datasour_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanPage">
@@ -164,24 +100,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.DataSourceView" /> object associated with the current <see cref="T:System.Web.UI.DataSourceControl" /> object supports paging through the data retrieved by the <see cref="System.Web.UI.DataSourceView.ExecuteSelect%2A" /> method.</summary>
-        <value>
-          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />. The base class implementation returns <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A data-bound control can request paging by adding the <xref:System.Web.UI.DataSourceCapabilities> field to the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests paging, but the CanPage property returns `false`, the data source view throws an exception.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRetrieveTotalRowCount">
@@ -191,24 +118,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.DataSourceView" /> object associated with the current <see cref="T:System.Web.UI.DataSourceControl" /> object supports retrieving the total number of data rows, instead of the data.</summary>
-        <value>
-          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />. The base class implementation returns <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A data-bound control can request a total row count by adding the <xref:System.Web.UI.DataSourceCapabilities?displayProperty=fullName> field to the <xref:System.Web.UI.DataSourceSelectArguments?displayProperty=fullName> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests a total row count, but the CanRetrieveTotalRowCount property returns `false`, the data source view throws an exception.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -218,32 +136,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.DataSourceView" /> object associated with the current <see cref="T:System.Web.UI.DataSourceControl" /> object supports a sorted view on the underlying data source.</summary>
-        <value>
-          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />. The default implementation returns <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A data-bound control can request sorting by adding the <xref:System.Web.UI.DataSourceCapabilities> field to the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests sorting, but the CanSort property returns `false`, the data source view throws an exception.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the CanSort property in a class that extends the <xref:System.Web.UI.DataSourceView> class. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceView> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#7](~/add/codesnippet/csharp/p-system.web.ui.datasour_1_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#7](~/add/codesnippet/visualbasic/p-system.web.ui.datasour_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -253,32 +154,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.DataSourceView" /> object associated with the current <see cref="T:System.Web.UI.DataSourceControl" /> object supports the <see cref="System.Web.UI.DataSourceView.ExecuteUpdate%2A" /> operation.</summary>
-        <value>
-          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />. The default implementation returns <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanUpdate property reflects not only a capability of the data source control, but also whether it is currently appropriate to perform an operation. For example, even though a data-bound control supports the <xref:System.Web.UI.DataSourceView.ExecuteUpdate%2A> operation, if a required update command or some other data is not set, the CanUpdate property returns `false`, as an update operation would fail.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the CanUpdate property and the <xref:System.Web.UI.DataSourceView.ExecuteUpdate%2A> method in a class that extends the <xref:System.Web.UI.DataSourceView> class. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceView> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#10](~/add/codesnippet/csharp/p-system.web.ui.datasour_0_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#10](~/add/codesnippet/visualbasic/p-system.web.ui.datasour_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSourceViewChanged">
@@ -288,24 +172,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the data source view has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The change to the data source view could be due to a change in the values of its properties, or to a change in the data due to a data operation performed by the data source view.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -315,7 +189,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,19 +200,11 @@
         <Parameter Name="callback" Type="System.Web.UI.DataSourceViewOperationCallback" />
       </Parameters>
       <Docs>
-        <param name="keys">An <see cref="T:System.Collections.IDictionary" /> of object or row keys to be deleted by the <see cref="System.Web.UI.DataSourceView.ExecuteDelete%2A" /> operation.</param>
-        <param name="oldValues">An <see cref="T:System.Collections.IDictionary" /> of name/value pairs that represent data elements and their original values.</param>
-        <param name="callback">A <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> delegate that is used to notify a data-bound control when the asynchronous operation is complete.</param>
-        <summary>Performs an asynchronous delete operation on the list of data that the <see cref="T:System.Web.UI.DataSourceView" /> object represents.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Delete method is the asynchronous data deletion interface for all data source view objects. The Delete method calls the <xref:System.Web.UI.DataSourceView.ExecuteDelete%2A> method using any `keys` and `oldValues` parameter values supplied. The `callback` parameter is a delegate that a data-bound control passes to the data source view, which is used to notify the data-bound control when the <xref:System.Web.UI.DataSourceView.ExecuteDelete%2A> operation has completed. The method uses the parameters of the <xref:System.Web.UI.DataSourceViewOperationCallback> delegate to return the number of affected records and any <xref:System.Exception> exception that is thrown by the <xref:System.Web.UI.DataSourceView.ExecuteDelete%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> supplied is <see langword="null" />.</exception>
+        <param name="keys">To be added.</param>
+        <param name="oldValues">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Events">
@@ -349,23 +214,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.EventHandlerList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of event-handler delegates for the data source view.</summary>
-        <value>The list of event-handler delegates.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is of type <xref:System.ComponentModel.EventHandlerList>, which uses a linear search algorithm to find entries in the list of delegates. A linear search algorithm is inefficient when working with a large number of entries. Therefore, when you have a large list, finding entries with this property will be slow.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteCommand">
@@ -386,11 +243,11 @@
         <Parameter Name="values" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="commandName">The name of the command.</param>
-        <param name="keys">A dictionary of object keys or row keys to act on.</param>
-        <param name="values">A dictionary of name/value pairs that represent data elements and their values.</param>
-        <summary>Executes the specified command.</summary>
-        <returns>The number of items that were affected by the operation.</returns>
+        <param name="commandName">To be added.</param>
+        <param name="keys">To be added.</param>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,19 +270,12 @@
         <Parameter Name="callback" Type="System.Web.UI.DataSourceViewOperationCallback" />
       </Parameters>
       <Docs>
-        <param name="commandName">The name of the command.</param>
-        <param name="keys">A dictionary of object keys or row keys to act on.</param>
-        <param name="values">A dictionary of name/value pairs that represent data elements and their values.</param>
-        <param name="callback">A <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> object.</param>
-        <summary>Executes the specified command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method does not return a value.  
-  
- ]]></format>
-        </remarks>
+        <param name="commandName">To be added.</param>
+        <param name="keys">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteDelete">
@@ -435,7 +285,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -446,32 +295,11 @@
         <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">An <see cref="T:System.Collections.IDictionary" /> of object or row keys to be deleted by the ExecuteDelete operation.</param>
-        <param name="oldValues">An <see cref="T:System.Collections.IDictionary" /> of name/value pairs that represent data elements and their original values.</param>
-        <summary>Performs a delete operation on the list of data that the <see cref="T:System.Web.UI.DataSourceView" /> object represents.</summary>
-        <returns>The number of items that were deleted from the underlying data storage.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Data-bound controls can determine whether the ExecuteDelete operation is supported by a data source control by retrieving the <xref:System.Web.UI.DataSourceView> object using the <xref:System.Web.UI.DataSourceControl.GetView%2A?displayProperty=fullName> method, and checking the <xref:System.Web.UI.DataSourceView.CanDelete%2A> property.  
-  
- The `keys` parameter represents the object or row keys of the data to delete. For data sources that represent relational data, such as the <xref:System.Web.UI.WebControls.SqlDataSource> control, the `keys` parameter is a collection of database primary keys. In other scenarios, the `keys` parameter is a collection of name/value pairs and is used to filter a list of data. Any data matching a name/value pair is deleted.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.DataSourceView> class's default implementation is to throw a <xref:System.NotSupportedException> exception. If you extend the <xref:System.Web.UI.DataSourceView> class, override the ExecuteDelete method if your class supports deletion from the underlying data storage.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how a class that extends the <xref:System.Web.UI.DataSourceView> class can override the <xref:System.Web.UI.DataSourceView.CanDelete%2A> property and the ExecuteDelete method. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceView> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#8](~/add/codesnippet/csharp/84991e4a-bbbd-47a3-bfea-_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#8](~/add/codesnippet/visualbasic/84991e4a-bbbd-47a3-bfea-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The ExecuteDelete operation is not supported by the <see cref="T:System.Web.UI.DataSourceView" />.</exception>
+        <param name="keys">To be added.</param>
+        <param name="oldValues">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteInsert">
@@ -481,7 +309,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -491,31 +318,10 @@
         <Parameter Name="values" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="values">An <see cref="T:System.Collections.IDictionary" /> of name/value pairs used during an insert operation.</param>
-        <summary>Performs an insert operation on the list of data that the <see cref="T:System.Web.UI.DataSourceView" /> object represents.</summary>
-        <returns>The number of items that were inserted into the underlying data storage.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Data-bound controls can determine whether the ExecuteInsert operation is supported by a data source control by retrieving the <xref:System.Web.UI.DataSourceView> object using the <xref:System.Web.UI.DataSourceControl.GetView%2A> method, and checking the <xref:System.Web.UI.DataSourceView.CanInsert%2A> property.  
-  
- The `values` parameter is a set of name/value pairs that represents data columns or fields and corresponding values to insert.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.DataSourceView> class's default implementation is to throw a <xref:System.NotSupportedException> exception. If you extend the <xref:System.Web.UI.DataSourceView> class, override the ExecuteInsert method if your class supports insertion into the underlying data storage.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how a class that extends the <xref:System.Web.UI.DataSourceView> class can override the <xref:System.Web.UI.DataSourceView.CanInsert%2A> property and the ExecuteInsert method. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceView> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#9](~/add/codesnippet/csharp/m-system.web.ui.datasour_0_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#9](~/add/codesnippet/visualbasic/m-system.web.ui.datasour_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The ExecuteInsert operation is not supported by the <see cref="T:System.Web.UI.DataSourceView" />.</exception>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteSelect">
@@ -525,7 +331,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -535,25 +340,10 @@
         <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" />
       </Parameters>
       <Docs>
-        <param name="arguments">A <see cref="T:System.Web.UI.DataSourceSelectArguments" /> that is used to request operations on the data beyond basic data retrieval.</param>
-        <summary>Gets a list of data from the underlying data storage.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerable" /> list of data from the underlying data storage.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ExecuteSelect method is called to retrieve data from the underlying data store and return it as an <xref:System.Collections.IEnumerable> object. All data source controls support data retrieval from their underlying data storage, even if other operations such as insertion and sorting are not supported. Because a data-bound control can request a list of data at any time as a result of a <xref:System.Web.UI.IDataSource.DataSourceChanged> event or a <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method call, the data retrieval must be performed on demand.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the ExecuteSelect method in a class that extends the <xref:System.Web.UI.DataSourceView> class. The `CsvDataSourceView` opens a comma-separated value (.csv) file, parses it line by line, and creates a <xref:System.Data.DataTable> object and a <xref:System.Data.DataView> object to hold the data in memory. Finally, a sort expression is applied if one is supplied by the <xref:System.Web.UI.DataSourceSelectArguments> object, and the <xref:System.Data.DataView> object is returned as an <xref:System.Collections.IEnumerable> instance. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceView> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#6](~/add/codesnippet/csharp/9907e30e-e760-42a4-aba2-_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#6](~/add/codesnippet/visualbasic/9907e30e-e760-42a4-aba2-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteUpdate">
@@ -563,7 +353,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -575,33 +364,12 @@
         <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">An <see cref="T:System.Collections.IDictionary" /> of object or row keys to be updated by the update operation.</param>
-        <param name="values">An <see cref="T:System.Collections.IDictionary" /> of name/value pairs that represent data elements and their new values.</param>
-        <param name="oldValues">An <see cref="T:System.Collections.IDictionary" /> of name/value pairs that represent data elements and their original values.</param>
-        <summary>Performs an update operation on the list of data that the <see cref="T:System.Web.UI.DataSourceView" /> object represents.</summary>
-        <returns>The number of items that were updated in the underlying data storage.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Data-bound controls can determine whether the ExecuteUpdate operation is supported by a data source control by using the <xref:System.Web.UI.DataSourceControl.GetView%2A?displayProperty=fullName> method to retrieve the <xref:System.Web.UI.DataSourceView> object and checking the value of the <xref:System.Web.UI.DataSourceView.CanUpdate%2A> property.  
-  
- The `keys` parameter represents the object or row keys of the data to update. For data sources that represent relational data, such as the <xref:System.Web.UI.WebControls.SqlDataSource> control, the `keys` parameter is a collection of database primary keys. In other scenarios, the `keys` parameter is a collection of name/value pairs and is used to filter a list of data. Any data matching a name/value pair is updated with the values found in the `values` parameter, which is a set of name/value pairs that represents new values for existing fields or columns.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.DataSourceView> class's default implementation is to throw a <xref:System.NotSupportedException> exception. If you extend the <xref:System.Web.UI.DataSourceView> class, override the ExecuteUpdate method if your class supports updating data in the underlying data storage.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how a class that extends the <xref:System.Web.UI.DataSourceView> class can override the <xref:System.Web.UI.DataSourceView.CanUpdate%2A> property and the ExecuteUpdate method. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceView> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#10](~/add/codesnippet/csharp/41646def-d513-4cd2-ab48-_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#10](~/add/codesnippet/visualbasic/41646def-d513-4cd2-ab48-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The ExecuteUpdate operation is not supported by the <see cref="T:System.Web.UI.DataSourceView" />.</exception>
+        <param name="keys">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="oldValues">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -611,7 +379,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -622,18 +389,10 @@
         <Parameter Name="callback" Type="System.Web.UI.DataSourceViewOperationCallback" />
       </Parameters>
       <Docs>
-        <param name="values">An <see cref="T:System.Collections.IDictionary" /> of name/value pairs used during an insert operation.</param>
-        <param name="callback">A <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> delegate that is used to notify a data-bound control when the asynchronous operation is complete.</param>
-        <summary>Performs an asynchronous insert operation on the list of data that the <see cref="T:System.Web.UI.DataSourceView" /> object represents.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Insert method is the asynchronous data insertion interface for all data source view objects. The Insert method calls the <xref:System.Web.UI.DataSourceView.ExecuteInsert%2A> method using any `values` supplied. The `callback` parameter is a delegate that a data-bound control passes to the data source view, which is used to notify the data-bound control when the <xref:System.Web.UI.DataSourceView.ExecuteInsert%2A> operation has completed. The method uses the parameters of the <xref:System.Web.UI.DataSourceViewOperationCallback> delegate to return the number of affected records and any <xref:System.Exception> exception that is thrown by the <xref:System.Web.UI.DataSourceView.ExecuteInsert%2A> method call.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> supplied is <see langword="null" />.</exception>
+        <param name="values">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -643,15 +402,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the data source view.</summary>
-        <value>The name of the <see cref="T:System.Web.UI.DataSourceView" />, if it has one. The default value is <see cref="F:System.String.Empty" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,7 +420,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -672,20 +429,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.DataSourceView.DataSourceViewChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnDataSourceViewChanged method notifies a data-bound control that the underlying data source has changed and that the control should rebind and perform any necessary work. Typically, the OnDataSourceViewChanged method is called when a property of the data source view has changed.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnDataSourceViewChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseUnsupportedCapabilityError">
@@ -695,7 +441,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -705,17 +450,9 @@
         <Parameter Name="capability" Type="System.Web.UI.DataSourceCapabilities" />
       </Parameters>
       <Docs>
-        <param name="capability">One of the <see cref="T:System.Web.UI.DataSourceCapabilities" /> values that is compared against the capabilities that the view supports.</param>
-        <summary>Called by the <see cref="System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError%2A" /> method to compare the capabilities requested for an <see cref="System.Web.UI.DataSourceView.ExecuteSelect%2A" /> operation against those that the view supports.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RaiseUnsupportedCapabilityError method is used by the data source view to examine each of the capabilities requested by a data-bound control, represented by the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.Select%2A> method, and compare it to the capabilities supported by the data source view.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The data source view does not support the data source capability specified.</exception>
+        <param name="capability">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -725,7 +462,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -736,18 +472,10 @@
         <Parameter Name="callback" Type="System.Web.UI.DataSourceViewSelectCallback" />
       </Parameters>
       <Docs>
-        <param name="arguments">A <see cref="T:System.Web.UI.DataSourceSelectArguments" /> that is used to request operations on the data beyond basic data retrieval.</param>
-        <param name="callback">A <see cref="T:System.Web.UI.DataSourceViewSelectCallback" /> delegate that is used to notify a data-bound control when the asynchronous operation is complete.</param>
-        <summary>Gets a list of data asynchronously from the underlying data storage.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Select method is the asynchronous data retrieval interface for all data source view objects. The Select method calls the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method, passing any <xref:System.Web.UI.DataSourceSelectArguments> supplied. The `callback` parameter is a delegate that a data-bound control passes to the data source view, which is used to notify the data-bound control when the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> operation has completed. The data returned by the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> call is returned in the parameter of the <xref:System.Web.UI.DataSourceViewSelectCallback> delegate.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewSelectCallback" /> supplied is <see langword="null" />.</exception>
+        <param name="arguments">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -757,7 +485,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -770,20 +497,12 @@
         <Parameter Name="callback" Type="System.Web.UI.DataSourceViewOperationCallback" />
       </Parameters>
       <Docs>
-        <param name="keys">An <see cref="T:System.Collections.IDictionary" /> of object or row keys to be updated by the update operation.</param>
-        <param name="values">An <see cref="T:System.Collections.IDictionary" /> of name/value pairs that represent data elements and their new values.</param>
-        <param name="oldValues">An <see cref="T:System.Collections.IDictionary" /> of name/value pairs that represent data elements and their original values.</param>
-        <param name="callback">A <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> delegate that is used to notify a data-bound control when the asynchronous operation is complete.</param>
-        <summary>Performs an asynchronous update operation on the list of data that the <see cref="T:System.Web.UI.DataSourceView" /> object represents.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Update method is the asynchronous data modification interface for all data source view objects. The Update method calls the <xref:System.Web.UI.DataSourceView.ExecuteUpdate%2A> method using any `keys`, `values`, and `oldValues` parameter values supplied. The `callback` parameter is a delegate that a data-bound control passes to the data source view, which is used to notify the data-bound control when the <xref:System.Web.UI.DataSourceView.ExecuteUpdate%2A> operation has completed. The method uses the parameters of the <xref:System.Web.UI.DataSourceViewOperationCallback> delegate to return the number of affected records and any <xref:System.Exception> exception that is thrown by the <xref:System.Web.UI.DataSourceView.ExecuteUpdate%2A> call.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> supplied is <see langword="null" />.</exception>
+        <param name="keys">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="oldValues">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

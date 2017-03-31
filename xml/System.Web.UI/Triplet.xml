@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Triplet" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a basic utility class that is used to store three related objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Triplet class is used as a basic structure to store three related objects. It is a utility class that is used in various ways throughout ASP.NET. You can use the Triplet class in your own code anywhere that you need a structure to contain three related objects and where data-hiding is not essential. The Triplet class does not encapsulate its `object` references, <xref:System.Web.UI.Triplet.First>, <xref:System.Web.UI.Triplet.Second>, and <xref:System.Web.UI.Triplet.Third>, in properties; it exposes them directly to all calling code as public class fields.  
-  
-   
-  
-## Examples  
- The following example uses a Triplet object to hold three integer values and another Triplet to hold three label controls.  
-  
-> [!NOTE]
->  When accessing reference types as members of a Triplet, only generic <xref:System.Object> methods are available for that member.  
-  
- [!code-cs[System.Web.UI.Triplet#1](~/add/codesnippet/csharp/t-system.web.ui.triplet_1.aspx)]
- [!code-vb[System.Web.UI.Triplet#1](~/add/codesnippet/visualbasic/t-system.web.ui.triplet_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Triplet" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -65,9 +44,9 @@
         <Parameter Name="y" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">Object assigned to <see cref="F:System.Web.UI.Triplet.First" />.</param>
-        <param name="y">Object assigned to <see cref="F:System.Web.UI.Triplet.Second" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Triplet" /> class and sets the first two objects.</summary>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +57,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -87,10 +65,10 @@
         <Parameter Name="z" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">Object assigned to <see cref="F:System.Web.UI.Triplet.First" />.</param>
-        <param name="y">Object assigned to <see cref="F:System.Web.UI.Triplet.Second" />.</param>
-        <param name="z">Object assigned to <see cref="F:System.Web.UI.Triplet.Third" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Triplet" /> class with the provided three objects.</summary>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="z">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,14 +79,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the first <see langword="object" /> of the triplet.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,14 +96,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the second <see langword="object" /> of the triplet.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,14 +113,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the third <see langword="object" /> of the triplet.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

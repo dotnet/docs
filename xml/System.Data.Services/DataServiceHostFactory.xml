@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceHostFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the class used by the infrastructure of [!INCLUDE[ssAstoria](~/add/includes/ssastoria-md.md)] to connect to Windows Communication Foundation (WCF).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class enables [!INCLUDE[ssAstoria](~/add/includes/ssastoria-md.md)] to hook up to WCF as a raw HTTP handler. Not recommended for use by third parties.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Data.Services.DataServiceHostFactory" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,10 +47,10 @@
         <Parameter Name="baseAddresses" Type="System.Uri[]" />
       </Parameters>
       <Docs>
-        <param name="serviceType">Specifies the type of WCF service to host.</param>
-        <param name="baseAddresses">An array of base addresses for the service.</param>
-        <summary>Creates a new <see cref="T:System.Data.Services.DataServiceHost" /> from the URI.</summary>
-        <returns>The created <see cref="T:System.Data.Services.DataServiceHost" /> object.</returns>
+        <param name="serviceType">To be added.</param>
+        <param name="baseAddresses">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

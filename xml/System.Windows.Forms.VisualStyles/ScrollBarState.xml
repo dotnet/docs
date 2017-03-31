@@ -4,36 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ScrollBarState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the visual state of a scroll bar that is drawn with visual styles.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ScrollBarState values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the following classes:  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.LeftTrackHorizontal>  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.RightTrackHorizontal>  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.LowerTrackVertical>  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.UpperTrackVertical>  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.ThumbButtonHorizontal>  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.ThumbButtonVertical>  
-  
- The ScrollBarState values are also used as an argument in the <xref:System.Windows.Forms.ScrollBarRenderer?displayProperty=fullName> class methods that draw the scroll bar track, scroll box (also known as the thumb), and scroll box grip.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -43,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll bar element is disabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hot">
@@ -60,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll bar element is hot.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -77,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll bar element is normal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pressed">
@@ -94,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll bar element is pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

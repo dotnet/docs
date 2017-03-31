@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ArrangeDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,15 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the direction in which the system arranges minimized windows.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.SystemInformation.ArrangeDirection%2A> property of the <xref:System.Windows.Forms.SystemInformation> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Down">
@@ -37,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ArrangeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Arranged vertically, from top to bottom. Valid with the <see cref="T:System.Windows.Forms.ArrangeStartingPosition" /> and <see cref="System.Windows.Forms.ArrangeStartingPosition.TopRight" /><see cref="T:System.Windows.Forms.ArrangeStartingPosition" /> enumeration values.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -54,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ArrangeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Arranged horizontally, from left to right. Valid with the <see cref="System.Windows.Forms.ArrangeStartingPosition.BottomRight" /> and <see cref="System.Windows.Forms.ArrangeStartingPosition.TopRight" /><see cref="T:System.Windows.Forms.ArrangeStartingPosition" /> enumeration values.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -71,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ArrangeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Arranged horizontally, from right to left. Valid with the <see cref="System.Windows.Forms.ArrangeStartingPosition.BottomLeft" /> and <see cref="System.Windows.Forms.ArrangeStartingPosition.TopLeft" /><see cref="T:System.Windows.Forms.ArrangeStartingPosition" /> enumeration values.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -88,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ArrangeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Arranged vertically, from bottom to top. Valid with the <see cref="System.Windows.Forms.ArrangeStartingPosition.BottomLeft" /> and <see cref="System.Windows.Forms.ArrangeStartingPosition.BottomRight" /><see cref="T:System.Windows.Forms.ArrangeStartingPosition" /> enumeration values.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

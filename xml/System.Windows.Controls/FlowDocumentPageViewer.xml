@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.FlowDocumentPageViewer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,38 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a control for viewing flow content in a fixed viewing mode that shows content one page at a time.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- FlowDocumentPageViewer allows only one <xref:System.Windows.Documents.FlowDocument> as a child element.  
-  
- FlowDocumentPageViewer shows content in page-at-a-time viewing mode. A similar control, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, shows content in continuous scrolling mode. Both FlowDocumentPageViewer and <xref:System.Windows.Controls.FlowDocumentScrollViewer> are fixed to a particular viewing mode. On the other hand, <xref:System.Windows.Controls.FlowDocumentReader> includes features that enable the user to dynamically choose between various viewing modes (as provided by the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> enumeration), at the cost of being poorer performing than FlowDocumentPageViewer or <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
-  
- The following illustration shows a FlowDocumentPageViewer control with its default [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)].  
-  
- ![Screenshot: FlowDocumentPageViewer](~/add/media/flowdocpageviewer-main.png "Screenshot: FlowDocumentPageViewer")  
-  
--   **Content Area** - The content area displays the contents of the <xref:System.Windows.Documents.FlowDocument> specified by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A> property.  
-  
--   **Toolbar** - The default toolbar is docked underneath the content area, and hosts controls for navigating pages, and changing the zoom level.  
-  
-    -   **Page Navigation Controls** - The page navigation controls include a button to jump to the next page (the down arrow) or previous page (the up arrow), as well as indicators for the current page number and total number of pages.  
-  
-    -   **Zoom Controls** - The zoom controls enable the user to increase or decrease the zoom level by clicking the plus or minus buttons, respectively. The zoom controls also include a slider for adjusting the zoom level. For more information, see <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A>.  
-  
-    -   **Search** - The user can use the Ctr+F keyboard shortcut or you can use <xref:System.Windows.Controls.FlowDocumentPageViewer.Find%2A> to toggle a search textbox that is used to find strings within the content. See <xref:System.Windows.Controls.FlowDocumentPageViewer.Find%2A> for more information.  
-  
-   
-  
-## Examples  
- The following example defines the FlowDocumentPageViewer pictured in the figure above.  
-  
- [!code-xml[FloaterFigureSnippets#_FlowDocumentPageViewerXAML](~/add/codesnippet/xaml/FloaterFigureSnippets/Window1.xaml#_flowdocumentpageviewerxaml)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,32 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A" /> level can be decreased.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A" /> level can be decreased; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling the <xref:System.Windows.Controls.FlowDocumentPageViewer.DecreaseZoom%2A> method decreases the <xref:System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A> level by the amount specified by the <xref:System.Windows.Controls.FlowDocumentPageViewer.ZoomIncrement%2A> property. The value of this property is subject to the value of the <xref:System.Windows.Controls.FlowDocumentPageViewer.MinZoom%2A> property.  
-  
-<a name="dependencyPropertyInfo_CanDecreaseZoom"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoomProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanDecreaseZoomProperty">
@@ -109,14 +60,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoom%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,22 +77,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyPropertyKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoom%2A" /> dependency property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you derive from <xref:System.Windows.Controls.FlowDocumentPageViewer>, you need this key in order to set the value of the <xref:System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoom%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing CanDecreaseZoomPropertyKey as the `key` parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanIncreaseZoom">
@@ -152,32 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A" /> level can be increased.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A" /> level can be increased; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling the <xref:System.Windows.Controls.FlowDocumentPageViewer.IncreaseZoom%2A> method increases the <xref:System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A> level by the amount specified by the <xref:System.Windows.Controls.FlowDocumentPageViewer.ZoomIncrement%2A> property. The value of this property is subject to the value of the <xref:System.Windows.Controls.FlowDocumentPageViewer.MaxZoom%2A> property.  
-  
-<a name="dependencyPropertyInfo_CanIncreaseZoom"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoomProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanIncreaseZoomProperty">
@@ -187,14 +112,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoom%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,22 +129,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyPropertyKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoom%2A" /> dependency property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you derive from <xref:System.Windows.Controls.FlowDocumentPageViewer>, you need this key in order to set the value of the <xref:System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoom%2A> dependency property. Call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>, passing CanIncreaseZoomPropertyKey as the `key` parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecreaseZoom">
@@ -230,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,19 +153,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Executes the <see cref="System.Windows.Input.NavigationCommands.DecreaseZoom%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method decreases the current <xref:System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A> level by the value specified by the <xref:System.Windows.Controls.FlowDocumentPageViewer.ZoomIncrement%2A> property.  
-  
- Default <xref:System.Windows.Controls.FlowDocumentPageViewer>[!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] includes a button to decrease the zoom.  
-  
- Calling this method has no effect if the <xref:System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoom%2A> property returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -260,7 +164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,29 +171,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Toggles the **Find** dialog.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, Ctrl+F provides a keyboard shortcut for toggling the **Find** dialog. The following figure shows the **Find** dialog on a <xref:System.Windows.Controls.FlowDocumentPageViewer> with default UI.  
-  
- ![Screenshot: Find Dialog of FlowDocumentPageViewer](~/add/media/flowdocpageviewer-find.png "Screenshot: Find Dialog of FlowDocumentPageViewer")  
-  
- The default **Find** dialog includes a field for entering search text, as well as buttons for **Find Next**, **Find Previous**, and **Options**. The following **Find** options are provided by default:  
-  
--   Match whole word only  
-  
--   Match case  
-  
--   Match diacritic  
-  
--   Match kashida  
-  
--   Match alef hamza  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncreaseZoom">
@@ -300,7 +182,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -308,19 +189,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Executes the <see cref="System.Windows.Input.NavigationCommands.IncreaseZoom%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method increases the current <xref:System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A> level by the value specified by the <xref:System.Windows.Controls.FlowDocumentPageViewer.ZoomIncrement%2A> property.  
-  
- Default <xref:System.Windows.Controls.FlowDocumentPageViewer>[!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] includes a button to increase the zoom.  
-  
- Calling this method has no effect if the <xref:System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoom%2A> property returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInactiveSelectionHighlightEnabled">
@@ -336,26 +206,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" /> displays selected text when the control does not have focus.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" /> displays selected text when the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" /> does not have focus; otherwise, <see langword="false" />.  
-  
- The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsInactiveSelectionHighlightEnabled"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer.IsInactiveSelectionHighlightEnabledProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInactiveSelectionHighlightEnabledProperty">
@@ -371,7 +224,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.IsInactiveSelectionHighlightEnabled%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,26 +241,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" /> has focus and selected text.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" /> displays selected text when the text box does not have focus; otherwise, <see langword="false" />.  
-  
- The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsSelectionActive"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer.IsSelectionActiveProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelectionActiveProperty">
@@ -423,7 +259,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.IsSelectionActive%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -434,41 +270,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum allowable <see cref="System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A" /> level for the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" />.</summary>
-        <value>The maximum allowable zoom level for the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" />, interpreted as a percentage. The default is 200.0 (a maximum zoom of 200%).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default <xref:System.Windows.Controls.FlowDocumentPageViewer> [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] includes a slider that can be used to adjust the <xref:System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A> level. This property specifies the upper-limit value for the slider.  
-  
-<a name="dependencyPropertyInfo_MaxZoom"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer.MaxZoomProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to use this property.  
-  
- [!code-xml[FlowDocumentSnippets#_FlowDocumentPageViewerXAML](~/add/codesnippet/xaml/FlowDocumentSnippets/Window1.xaml#_flowdocumentpageviewerxaml)]  
-  
- [!code-cs[FlowDocumentSnippets#_FlowDocumentPageViewer](~/add/codesnippet/csharp/FlowDocumentSnippets/Window1.xaml.cs#_flowdocumentpageviewer)]
- [!code-vb[FlowDocumentSnippets#_FlowDocumentPageViewer](~/add/codesnippet/visualbasic/flowdocumentsnippets/window1.xaml.vb#_flowdocumentpageviewer)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxZoomProperty">
@@ -478,14 +288,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.MaxZoom%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -496,41 +305,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum allowable <see cref="System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A" /> level for the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" />.</summary>
-        <value>The minimum allowable zoom level for the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" />, interpreted as a percentage. The default is 80.0 (a minimum zoom of 80%).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default <xref:System.Windows.Controls.FlowDocumentPageViewer> [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] includes a slider that can be used to adjust the <xref:System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A> level. This property specifies the lower-limit value for the slider.  
-  
-<a name="dependencyPropertyInfo_MinZoom"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer.MinZoomProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to use this property.  
-  
- [!code-xml[FlowDocumentSnippets#_FlowDocumentPageViewerXAML](~/add/codesnippet/xaml/FlowDocumentSnippets/Window1.xaml#_flowdocumentpageviewerxaml)]  
-  
- [!code-cs[FlowDocumentSnippets#_FlowDocumentPageViewer](~/add/codesnippet/csharp/FlowDocumentSnippets/Window1.xaml.cs#_flowdocumentpageviewer)]
- [!code-vb[FlowDocumentSnippets#_FlowDocumentPageViewer](~/add/codesnippet/visualbasic/flowdocumentsnippets/window1.xaml.vb#_flowdocumentpageviewer)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinZoomProperty">
@@ -540,14 +323,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.MinZoom%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -558,7 +340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -566,17 +347,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called whenever <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> is called.  
-  
- This method overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCancelPrintCommand">
@@ -586,7 +358,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -594,15 +365,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.ApplicationCommands.CancelPrint%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.ApplicationCommands.CancelPrint%2A> command is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnContextMenuOpening">
@@ -612,7 +376,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -622,18 +385,9 @@
         <Parameter Name="e" Type="System.Windows.Controls.ContextMenuEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Arguments of the event.</param>
-        <summary>Called whenever an unhandled <see cref="E:System.Windows.FrameworkElement.ContextMenuOpening" /> routed event reaches this class in its route. Implement this method to add class handling for this event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method has no default implementation. You should still call the base implementation in case an intermediate class in the inheritance has implemented this method.  
-  
- The purpose of this method is somewhat similar to [!INCLUDE[TLA#tla_clr](~/add/includes/tlasharptla-clr-md.md)] event pattern On* methods: it provides the means to handle the matching event from derived classes with a class handler instead of an instance handler. In this case, the matching event is a routed event. The implementation pattern of the On\* methods is different for routed events because the routed event might have been raised by a child element, not necessarily the element that will invoke handlers, so your implementation will need to take the event arguments' source properties into account (and should not try to re-raise the event in most cases). Subclasses of <xref:System.Windows.Controls.FlowDocumentPageViewer> could call private class handler methods when the event is received along the route. One potential scenario is to take the arguments of the event and deliberately mark the event as handled.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -643,7 +397,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -651,8 +404,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] automation infrastructure.</summary>
-        <returns>The appropriate <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation for this control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -663,7 +416,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -671,15 +423,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.DecreaseZoom%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.NavigationCommands.DecreaseZoom%2A> command is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDocumentChanged">
@@ -689,7 +434,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -697,15 +441,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when the <see cref="System.Windows.Controls.Primitives.DocumentViewerBase.Document%2A" /> property is changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Windows.Controls.Primitives.DocumentViewerBase.OnDocumentChanged%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnFindCommand">
@@ -715,7 +452,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -723,15 +459,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.ApplicationCommands.Find%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.ApplicationCommands.Find%2A> command is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnFirstPageCommand">
@@ -741,7 +470,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -749,17 +477,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.FirstPage%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.NavigationCommands.FirstPage%2A> command is called.  
-  
- This method overrides <xref:System.Windows.Controls.Primitives.DocumentViewerBase.OnFirstPageCommand%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnGoToPageCommand">
@@ -769,7 +488,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -779,18 +497,9 @@
         <Parameter Name="pageNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pageNumber">The page number to go to.</param>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.GoToPage%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.NavigationCommands.GoToPage%2A> command is called.  
-  
- This method overrides <xref:System.Windows.Controls.Primitives.DocumentViewerBase.OnGoToPageCommand%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="pageNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnIncreaseZoomCommand">
@@ -800,7 +509,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -808,15 +516,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.IncreaseZoom%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.NavigationCommands.IncreaseZoom%2A> command is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -826,7 +527,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -844,16 +544,9 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Input.KeyEventArgs" /> object that contains the arguments associated with the <see cref="E:System.Windows.UIElement.KeyDown" /> routed event.</param>
-        <summary>Handles the <see cref="E:System.Windows.UIElement.KeyDown" /> routed event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Windows.UIElement.OnKeyDown%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLastPageCommand">
@@ -863,7 +556,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -871,17 +563,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.LastPage%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.NavigationCommands.LastPage%2A> command is called.  
-  
- This method overrides <xref:System.Windows.Controls.Primitives.DocumentViewerBase.OnLastPageCommand%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseWheel">
@@ -891,7 +574,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -901,18 +583,9 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseWheelEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Input.MouseWheelEventArgs" /> object containing arguments associated with the <see cref="E:System.Windows.UIElement.MouseWheel" /> routed event.</param>
-        <summary>Handles the <see cref="E:System.Windows.UIElement.MouseWheel" /> routed event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called whenever the <xref:System.Windows.UIElement.MouseWheel> routed event is raised.  
-  
- This method overrides <xref:System.Windows.UIElement.OnMouseWheel%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnNextPageCommand">
@@ -922,7 +595,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -930,17 +602,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.NextPage%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.NavigationCommands.NextPage%2A> command is called.  
-  
- This method overrides <xref:System.Windows.Controls.Primitives.DocumentViewerBase.OnNextPageCommand%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPageViewsChanged">
@@ -950,7 +613,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -958,17 +620,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="E:System.Windows.Controls.Primitives.DocumentViewerBase.PageViewsChanged" /> routed event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called whenever the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViewsChanged> routed event is raised.  
-  
- This method overrides <xref:System.Windows.Controls.Primitives.DocumentViewerBase.OnPageViewsChanged%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreviousPageCommand">
@@ -978,7 +631,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -986,17 +638,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.NavigationCommands.PreviousPage%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.NavigationCommands.PreviousPage%2A> command is called.  
-  
- This method overrides <xref:System.Windows.Controls.Primitives.DocumentViewerBase.OnPreviousPageCommand%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPrintCommand">
@@ -1006,7 +649,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1014,15 +656,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Handles the <see cref="System.Windows.Input.ApplicationCommands.Print%2A" /> routed command.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Input.ApplicationCommands.Print%2A> command is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPrintCompleted">
@@ -1032,7 +667,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1040,7 +674,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when a printing job has completed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1051,32 +685,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.TextSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the selected content of the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" />.</summary>
-        <value>The selected content of the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Selection is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
-   
-  
-## Examples  
- The following example shows how to get the text that a user has selected in the <xref:System.Windows.Controls.FlowDocumentPageViewer>.  
-  
- [!code-xml[FlowDocSelection#1](~/add/codesnippet/xaml/FlowDocSelection/Window1.xaml#1)]  
-[!code-vb[FlowDocSelection#2](~/add/codesnippet/visualbasic/FlowDocSelection/Window1.xaml.vb#2)]
-[!code-cs[FlowDocSelection#2](~/add/codesnippet/csharp/FlowDocSelection/Window1.xaml.cs#2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBrush">
@@ -1092,24 +709,9 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush that highlights the selected text.</summary>
-        <value>A brush that highlights the selected text.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can specify the brush that highlights selected text in a <xref:System.Windows.Controls.FlowDocumentPageViewer> by setting the SelectionBrush and the <xref:System.Windows.Controls.FlowDocumentPageViewer.SelectionOpacity%2A> properties..  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.FlowDocumentPageViewer>, sets the SelectionBrush property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentPageViewer.SelectionOpacity%2A> property to 0.7.  
-  
- [!code-xml[FlowDocPgVwSelBrushSnippet#SelectionBrush](~/add/codesnippet/xaml/p-system.windows.control_375_1.xaml)]
- [!code-xml[FlowDocPgVwSelBrushSnippet#SelectionBrush](~/add/codesnippet/xaml/fdpvselectionbrushsnippet/window1.xaml#selectionbrush)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBrushProperty">
@@ -1125,7 +727,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.SelectionBrush%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1142,24 +744,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the opacity of the <see cref="System.Windows.Controls.FlowDocumentPageViewer.SelectionBrush%2A" />.</summary>
-        <value>The opacity of the <see cref="System.Windows.Controls.FlowDocumentPageViewer.SelectionBrush%2A" />. The default is 0.4.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you set the SelectionOpacity to 0, the <xref:System.Windows.Controls.FlowDocumentPageViewer.SelectionBrush%2A> is transparent and is not visible. If you set the SelectionOpacity to 1.0 or greater, the <xref:System.Windows.Controls.FlowDocumentPageViewer.SelectionBrush%2A> is opaque and the selected text is not visible.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.FlowDocumentPageViewer>, sets the <xref:System.Windows.Controls.FlowDocumentPageViewer.SelectionBrush%2A> property to pink, and sets the SelectionOpacity property to 0.7.  
-  
- [!code-xml[FlowDocPgVwSelBrushSnippet#SelectionBrush](~/add/codesnippet/xaml/p-system.windows.control_353_1.xaml)]
- [!code-xml[FlowDocPgVwSelBrushSnippet#SelectionBrush](~/add/codesnippet/xaml/fdpvselectionbrushsnippet/window1.xaml#selectionbrush)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionOpacityProperty">
@@ -1175,7 +762,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.SelectionOpacity%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1186,41 +773,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current zoom level for the <see cref="T:System.Windows.Controls.FlowDocumentPageViewer" />.</summary>
-        <value>The current zoom level, interpreted as a percentage. The default is 100.0 (a zoom level of 100%).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The zoom level is constrained by the values of the <xref:System.Windows.Controls.FlowDocumentPageViewer.MinZoom%2A> and <xref:System.Windows.Controls.FlowDocumentPageViewer.MaxZoom%2A> properties.  
-  
-<a name="dependencyPropertyInfo_Zoom"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer.ZoomProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to use this property.  
-  
- [!code-xml[FlowDocumentSnippets#_FlowDocumentPageViewerXAML](~/add/codesnippet/xaml/FlowDocumentSnippets/Window1.xaml#_flowdocumentpageviewerxaml)]  
-  
- [!code-cs[FlowDocumentSnippets#_FlowDocumentPageViewer](~/add/codesnippet/csharp/FlowDocumentSnippets/Window1.xaml.cs#_flowdocumentpageviewer)]
- [!code-vb[FlowDocumentSnippets#_FlowDocumentPageViewer](~/add/codesnippet/visualbasic/flowdocumentsnippets/window1.xaml.vb#_flowdocumentpageviewer)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ZoomIncrement">
@@ -1230,41 +791,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the zoom increment.</summary>
-        <value>The current zoom increment, interpreted as a percentage. The default is 10.0 (zoom increments by 10%).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The zoom increment is the percentage by which the <xref:System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A> level is increased or decreased when the <xref:System.Windows.Input.NavigationCommands.IncreaseZoom%2A> or <xref:System.Windows.Input.NavigationCommands.DecreaseZoom%2A> commands are executed, respectively.  
-  
-<a name="dependencyPropertyInfo_ZoomIncrement"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer.ZoomIncrementProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to use this property.  
-  
- [!code-xml[FlowDocumentSnippets#_FlowDocumentPageViewerXAML](~/add/codesnippet/xaml/FlowDocumentSnippets/Window1.xaml#_flowdocumentpageviewerxaml)]  
-  
- [!code-cs[FlowDocumentSnippets#_FlowDocumentPageViewer](~/add/codesnippet/csharp/FlowDocumentSnippets/Window1.xaml.cs#_flowdocumentpageviewer)]
- [!code-vb[FlowDocumentSnippets#_FlowDocumentPageViewer](~/add/codesnippet/visualbasic/flowdocumentsnippets/window1.xaml.vb#_flowdocumentpageviewer)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ZoomIncrementProperty">
@@ -1274,14 +809,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.ZoomIncrement%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1292,14 +826,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.FlowDocumentPageViewer.Zoom%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InputLanguageCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Stores <see cref="T:System.Windows.Forms.InputLanguage" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The InputLanguageCollection class is used by <xref:System.Windows.Forms.InputLanguage> to provide a list of the input languages installed on the system.  
-  
- You cannot directly create an instance of this class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Contains">
@@ -32,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,10 +31,9 @@
         <Parameter Name="value" Type="System.Windows.Forms.InputLanguage" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.InputLanguage" /> to locate.</param>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.InputLanguageCollection" /> contains the specified <see cref="T:System.Windows.Forms.InputLanguage" />.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.InputLanguage" /> is contained in the collection; otherwise, <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,20 +54,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional array that is the destination of the values copied from <see cref="T:System.Windows.Forms.InputLanguageCollection" />.</param>
-        <param name="index">The index in <c>array</c> where copying begins.</param>
-        <summary>Copies the <see cref="T:System.Windows.Forms.InputLanguageCollection" /> values to a one-dimensional <see cref="T:System.Array" /> at the specified index.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="array" /> specifies a multidimensional array.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.Windows.Forms.InputLanguageCollection" /> is greater than the available space between the <paramref name="index" /> and the end of <paramref name="array" />.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than the lower bound of <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -90,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,9 +76,9 @@
         <Parameter Name="value" Type="System.Windows.Forms.InputLanguage" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.InputLanguage" /> to locate.</param>
-        <summary>Returns the index of an <see cref="T:System.Windows.Forms.InputLanguage" /> in the <see cref="T:System.Windows.Forms.InputLanguageCollection" />.</summary>
-        <returns>The index of the <see cref="T:System.Windows.Forms.InputLanguage" /> in the <see cref="T:System.Windows.Forms.InputLanguageCollection" />, if found; otherwise, -1.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +89,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,12 +98,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the entry to locate in the collection.</param>
-        <summary>Gets the entry at the specified index of the <see cref="T:System.Windows.Forms.InputLanguageCollection" />.</summary>
-        <value>The <see cref="T:System.Windows.Forms.InputLanguage" /> at the specified index of the collection.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
       </Docs>
     </Member>
   </Members>

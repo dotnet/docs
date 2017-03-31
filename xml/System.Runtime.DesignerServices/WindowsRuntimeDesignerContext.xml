@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides customized assembly binding for designers that are used to create [!INCLUDE[win8_appname_long](~/add/includes/win8-appname-long-md.md)] apps.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This feature is used only in developer mode for [!INCLUDE[win8_appname_long](~/add/includes/win8-appname-long-md.md)] apps. It enables designers to supply isolated binding contexts as required, during iterative development of assemblies.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,22 +34,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="paths">The paths to search.</param>
-        <param name="name">The name of the context.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext" /> class, specifying the set of paths to search for third-party [!INCLUDE[wrt](~/add/includes/wrt-md.md)] types and for managed assemblies, and specifying the name of the context.</summary>
+        <param name="paths">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">The current application domain is not the default application domain.  
-  
- -or-  
-  
- The process is not running in the app container.  
-  
- -or-  
-  
- The computer does not have a developer license.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="paths" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetAssembly">
@@ -80,11 +61,10 @@
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">The full name of the assembly to load. For a description of full assembly names, see the <see cref="System.Reflection.Assembly.FullName%2A" /> property.</param>
-        <summary>Loads the specified assembly from the current context.</summary>
-        <returns>The assembly, if it is found in the current context; otherwise, <see langword="null" />.</returns>
+        <param name="assemblyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -108,11 +88,10 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="typeName">The assembly-qualified name of the type to load. For a description of assembly-qualified names, see the <see cref="System.Type.AssemblyQualifiedName%2A" /> property.</param>
-        <summary>Loads the specified type from the current context.</summary>
-        <returns>The type, if it is found in the current context; otherwise, <see langword="null" />.</returns>
+        <param name="typeName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="InitializeSharedContext">
@@ -136,34 +115,9 @@
         <Parameter Name="paths" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="paths">An enumerable collection of paths that are used to resolve binding requests that cannot be satisfied by the iteration context.</param>
-        <summary>Creates a context and sets it as the shared context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The shared context cannot be set more than once.  
-  
- <xref:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext> is supported only in the default application domain.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The shared context has already been set in this application domain.  
-  
- -or-  
-  
- The current application domain is not the default application domain.  
-  
- -or-  
-  
- The process is not running in the app container.  
-  
- -or-  
-  
- The computer does not have a developer license.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="paths" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <param name="paths">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -179,8 +133,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the designer binding context.</summary>
-        <value>The name of the context.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,22 +159,9 @@
         <Parameter Name="context" Type="System.Runtime.DesignerServices.WindowsRuntimeDesignerContext" />
       </Parameters>
       <Docs>
-        <param name="context">The context that handles iterations of assembly binding requests.</param>
-        <summary>Sets a context to handle iterations of assembly binding requests, as assemblies are recompiled during the design process.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The context can be replaced with a new binding context at any time, as required by the needs of the designer.  
-  
- <xref:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext> is supported only in the default application domain.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The current application domain is not the default application domain.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.InstanceData" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Holds instance data associated with a performance counter sample.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example displays the contents of the InstanceData objects that exist in a particular <xref:System.Diagnostics.PerformanceCounterCategory> on the local computer. It first displays a numbered list of <xref:System.Diagnostics.PerformanceCounter> categories. After the user enters the number of one of the categories, the sample displays, for each <xref:System.Diagnostics.PerformanceCounter> in the <xref:System.Diagnostics.PerformanceCounterCategory>, the instance data associated with each instance of the <xref:System.Diagnostics.PerformanceCounter>.  
-  
- [!code-cpp[System.Diagnostics.InstanceData.CopyTo#1](~/add/codesnippet/cpp/t-system.diagnostics.ins_1_1.cpp)]
- [!code-cs[System.Diagnostics.InstanceData.CopyTo#1](~/add/codesnippet/csharp/t-system.diagnostics.ins_1_1.cs)]
- [!code-vb[System.Diagnostics.InstanceData.CopyTo#1](~/add/codesnippet/visualbasic/t-system.diagnostics.ins_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -42,20 +29,10 @@
         <Parameter Name="sample" Type="System.Diagnostics.CounterSample" />
       </Parameters>
       <Docs>
-        <param name="instanceName">The name of an instance associated with the performance counter.</param>
-        <param name="sample">A <see cref="T:System.Diagnostics.CounterSample" /> taken from the instance specified by the <c>instanceName</c> parameter.</param>
-        <summary>Initializes a new instance of the InstanceData class, using the specified sample and performance counter instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates an <xref:System.Diagnostics.InstanceData> and displays the values of some of its fields.  
-  
- [!code-cs[System.Diagnostics.InstanceData.CopyTo#3](~/add/codesnippet/csharp/5b93c8cb-d77b-407c-adc0-_1.cs)]
- [!code-vb[System.Diagnostics.InstanceData.CopyTo#3](~/add/codesnippet/visualbasic/5b93c8cb-d77b-407c-adc0-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="instanceName">To be added.</param>
+        <param name="sample">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceName">
@@ -65,26 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the instance name associated with this instance data.</summary>
-        <value>The name of an instance associated with the performance counter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates an <xref:System.Diagnostics.InstanceData> and displays the value of its InstanceName property and other properties.  
-  
- [!code-cs[System.Diagnostics.InstanceData.CopyTo#3](~/add/codesnippet/csharp/p-system.diagnostics.ins_8_1.cs)]
- [!code-vb[System.Diagnostics.InstanceData.CopyTo#3](~/add/codesnippet/visualbasic/p-system.diagnostics.ins_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RawValue">
@@ -94,26 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the raw data value associated with the performance counter sample.</summary>
-        <value>The raw value read by the performance counter sample associated with the <see cref="System.Diagnostics.InstanceData.Sample%2A" /> property.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates an <xref:System.Diagnostics.InstanceData> and displays the value of its RawValue property and other properties.  
-  
- [!code-cs[System.Diagnostics.InstanceData.CopyTo#3](~/add/codesnippet/csharp/p-system.diagnostics.ins_3_1.cs)]
- [!code-vb[System.Diagnostics.InstanceData.CopyTo#3](~/add/codesnippet/visualbasic/p-system.diagnostics.ins_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Sample">
@@ -123,26 +78,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.CounterSample</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the performance counter sample that generated this data.</summary>
-        <value>A <see cref="T:System.Diagnostics.CounterSample" /> taken from the instance specified by the <see cref="System.Diagnostics.InstanceData.InstanceName%2A" /> property.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates an <xref:System.Diagnostics.InstanceData> and gets the value of its Sample property, which is a reference to a <xref:System.Diagnostics.CounterSample>. The example then displays the fields of the <xref:System.Diagnostics.CounterSample>.  
-  
- [!code-cs[System.Diagnostics.InstanceData.CopyTo#3](~/add/codesnippet/csharp/p-system.diagnostics.ins_9_1.cs)]
- [!code-vb[System.Diagnostics.InstanceData.CopyTo#3](~/add/codesnippet/visualbasic/p-system.diagnostics.ins_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

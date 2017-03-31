@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Contains options that specify whether the persistence provider should encode the instance state information using the GZip algorithm before saving the state information into the persistence store.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[netfx40_long](~/add/includes/netfx40-long-md.md)] ships with a SQL persistence provider as a constituent of the SQL Workflow Instance Store, which is a concrete implementation of the <xref:System.Runtime.Persistence.InstanceStore> class and is used to persist state information in to the SQL Server database. When the `instanceEncodingOption` attribute is set to GZip for the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> service behavior associated with a service, the SQL persistence provider uses the GZip algorithm to encode instance state information for the instance of the service before saving the state information into the SQL Server persistence database.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GZip">
@@ -34,7 +27,7 @@
         <ReturnType>System.Activities.DurableInstancing.InstanceEncodingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that instance data is compressed using the GZip algorithm.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -50,7 +43,7 @@
         <ReturnType>System.Activities.DurableInstancing.InstanceEncodingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that instance data is not compressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

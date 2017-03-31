@@ -16,36 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a tab in a <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You use a RibbonTab to organize related groups of commands in a <xref:System.Windows.Controls.Ribbon.Ribbon>. The RibbonTab hosts one or more <xref:System.Windows.Controls.Ribbon.RibbonGroup> instances. A <xref:System.Windows.Controls.Ribbon.RibbonGroup> then hosts controls that represent application commands.  
-  
- The following list shows the typical hierarchy of elements in a RibbonTab.  
-  
--   <xref:System.Windows.Controls.Ribbon.Ribbon>  
-  
-    -   RibbonTab  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonGroup>  
-  
-            -   <xref:System.Windows.Controls.Ribbon.RibbonButton>, <xref:System.Windows.Controls.Ribbon.RibbonRadioButton>, <xref:System.Windows.Controls.Ribbon.RibbonToggleButton>, <xref:System.Windows.Controls.Ribbon.RibbonCheckBox>, <xref:System.Windows.Controls.Ribbon.RibbonTextBox>  
-  
-            -   <xref:System.Windows.Controls.Ribbon.RibbonComboBox>, <xref:System.Windows.Controls.Ribbon.RibbonMenuButton>, <xref:System.Windows.Controls.Ribbon.RibbonSplitButton>  
-  
-            -   <xref:System.Windows.Controls.Ribbon.RibbonControlGroup>  
-  
-   
-  
-## Examples  
- The following example shows the markup for a simple ribbon tab.  
-  
- [!code-xml[Ribbon_Snippets#RibbonTabDefault](~/add/codesnippet/xaml/wpfribbonapplication1/mainwindow.xaml#ribbontabdefault)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,17 +52,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element that is used to display the item.</param>
-        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <summary>Unloads the container for the specified item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonTab.PrepareContainerForItemOverride%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextualTabGroup">
@@ -106,41 +71,9 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonContextualTabGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" /> that this tab is in.</summary>
-        <value>The contextual tab group that this tab is in; or <see langword="null" /> if this tab is not in a contextual tab group. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You use a *contextual tab* to display groups of commands that are relevant only in a particular context. Contextual tab groups are shown or hidden based on specified criteria. For example, an Ink Tools tab group might be shown when tablet input is detected, or a Picture Tools tab group might be shown when an Image object is selected.  
-  
-<a name="dependencyPropertyInfo_ContextualTabGroup"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTab.ContextualTabGroupProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows a <xref:System.Windows.Controls.Ribbon.RibbonTab> named **Pens** that is in the **Ink Tools** contextual tab group.  
-  
-```xaml  
-</ribbon:Ribbon>  
-    <ribbon:RibbonTab Name="Pens" Header="Pens" ContextualTabGroupHeader="Ink Tools" >  
-    <!-- Ribbon Tab Content -->  
-    </ribbon:RibbonTab>  
-    <ribbon:Ribbon.ContextualTabGroups>  
-        <ribbon:RibbonContextualTabGroup Header="Ink Tools" Visibility="Visible" Background="Green" />  
-    </ribbon:Ribbon.ContextualTabGroups>  
-</ribbon:Ribbon>  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextualTabGroupHeader">
@@ -156,23 +89,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the header content of the <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" /> that this tab is in.</summary>
-        <value>The header of the contextual tab group that this tab is in; or <see langword="null" /> if this tab is not in a contextual tab group. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_ContextualTabGroupHeader"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTab.ContextualTabGroupHeaderProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextualTabGroupHeaderProperty">
@@ -188,7 +107,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTab.ContextualTabGroupHeader%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,7 +124,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTab.ContextualTabGroup%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,8 +142,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> object.</summary>
-        <returns>A new <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> container object that is used to display an item from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,50 +165,9 @@
         <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a collection of <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> names that specify the order in which group size definitions are applied as the ribbon is reduced in size.</summary>
-        <value>A collection of <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> names that specify the order in which group size definitions are applied as the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is reduced in size. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_GroupSizeReductionOrder"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTab.GroupSizeReductionOrderProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to specify the GroupSizeReductionOrder.  
-  
-```xaml  
-<ribbon:RibbonTab Header="Home"   
-    GroupSizeReductionOrder="Clipboard, Insert, Insert, Paragraph, Clipboard, Editing, Font, Clipboard" >  
-    <ribbon:RibbonGroup Header="Clipboard" Name="Clipboard" SmallImageSource="Images/Paste16.png">  
-        ...    
-    </ribbon:RibbonGroup>  
-    <ribbon:RibbonGroup Header="Font" Name="Font" SmallImageSource="Images\FontColor16.png">  
-        ...  
-    </ribbon:RibbonGroup>  
-    <ribbon:RibbonGroup Header="Paragraph" Name="Paragraph" SmallImageSource="Images/AlignLeft16.png">  
-        ...  
-    </ribbon:RibbonGroup>  
-    <ribbon:RibbonGroup Header="Insert" Name="Insert" SmallImageSource="Images/InsertPicture16.png">  
-        ...  
-    </ribbon:RibbonGroup>  
-    <ribbon:RibbonGroup Header="Editing" Name="Editing" SmallImageSource="Images/Find16.png">  
-        ...  
-    </ribbon:RibbonGroup>  
-</ribbon:RibbonTab>  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupSizeReductionOrderProperty">
@@ -305,7 +183,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTab.GroupSizeReductionOrder%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,17 +200,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> supports custom keyboard scrolling.</summary>
-        <value>
-          <see langword="true" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used to notify the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.Ribbon.RibbonTab> that keyboard input has been handled the <xref:System.Windows.Controls.Ribbon.RibbonTab>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -348,23 +218,9 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style that is applied to the header of the ribbon tab.</summary>
-        <value>The style that is applied to the header of the ribbon tab. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_HeaderStyle"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTab.HeaderStyleProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderStyleProperty">
@@ -380,7 +236,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTab.HeaderStyle%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,10 +256,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to test.</param>
-        <summary>Returns a value that indicates whether the specified item is (or is eligible to be) its own container.</summary>
-        <returns>
-          <see langword="true" /> if the item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" />; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,24 +275,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the ribbon tab is selected.</summary>
-        <value>
-          <see langword="true" /> if this tab is selected; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsSelected"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTab.IsSelectedProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelectedProperty">
@@ -453,7 +293,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTab.IsSelected%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,26 +310,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the keyboard shortcut for the control.</summary>
-        <value>The keyboard shortcut for the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A KeyTip must be from 1 to 3 uppercase characters, and must not contain spaces, tabs, or newline characters.  
-  
- KeyTips are sometimes known as access keys or accelerators and are used as shortcut key combinations that activate controls. KeyTips appear on the <xref:System.Windows.Controls.Ribbon.Ribbon> when you press the ALT key.  
-  
-<a name="dependencyPropertyInfo_KeyTip"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTab.KeyTipProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyTipProperty">
@@ -505,7 +328,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTab.KeyTip%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -525,8 +348,8 @@
         <Parameter Name="e" Type="System.Windows.Controls.ActivatingKeyTipEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Contains data about the activation.</param>
-        <summary>Called when the KeyTip or accelerator key is pressed.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -544,8 +367,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonTabAutomationPeer" /> object for this control.</summary>
-        <returns>A new automation peer object for this control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -565,8 +388,8 @@
         <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Information about the change.</param>
-        <summary>Invoked when the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> property changes.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -586,8 +409,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyDown" /> routed event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -607,8 +430,8 @@
         <Parameter Name="e" Type="System.Windows.Controls.KeyTipAccessedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Contains data about the activation.</param>
-        <summary>Called when the KeyTip or accelerator key is accessed.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -628,16 +451,9 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="System.Windows.Controls.Primitives.Selector.Selected" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Controls.Ribbon.RibbonTab.IsSelected%2A> property changes to `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnUnselected">
@@ -656,16 +472,9 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="System.Windows.Controls.Primitives.Selector.Unselected" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when the <xref:System.Windows.Controls.Ribbon.RibbonTab.IsSelected%2A> property changes to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrepareContainerForItemOverride">
@@ -685,9 +494,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element that is used to display the item.</param>
-        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <summary>Prepares the specified element to display the specified item.</summary>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -704,24 +513,9 @@
         <ReturnType>System.Windows.Controls.Ribbon.Ribbon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to.</summary>
-        <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is set on the parent <xref:System.Windows.Controls.Ribbon.Ribbon> control and is inherited by the child controls. It is used to access visual style brushes defined on the <xref:System.Windows.Controls.Ribbon.Ribbon> class.  
-  
-<a name="dependencyPropertyInfo_Ribbon"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTab.RibbonProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RibbonProperty">
@@ -737,7 +531,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTab.Ribbon%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -754,23 +548,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the position of the left edge of the corresponding <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> in the coordinate space of this <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />.</summary>
-        <value>A value that indicates the position of the left edge of the corresponding <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> in the coordinate space of this <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_TabHeaderLeft"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTab.TabHeaderLeftProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabHeaderLeftProperty">
@@ -786,7 +566,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTab.TabHeaderLeft%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -803,23 +583,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the position of the right edge of the corresponding <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> in the coordinate space of this <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />.</summary>
-        <value>A value that indicates the position of the right edge of the corresponding <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> in the coordinate space of this <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />.The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_TabHeaderRight"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTab.TabHeaderRightProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabHeaderRightProperty">
@@ -835,7 +601,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTab.TabHeaderRight%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

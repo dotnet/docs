@@ -4,12 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IContentResolutionService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides an interface for access to a master page from a content page at design time, if provided by a design host, such as [!INCLUDE[vsprvslong](~/add/includes/vsprvslong-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -20,15 +19,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.Design.ContentDefinition" /> objects for the content placeholders that are identified in the master page.</summary>
-        <value>An <see cref="T:System.Collections.IDictionary" /> containing identifiers and <see cref="T:System.Web.UI.Design.ContentDefinition" /> objects.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,9 +46,9 @@
         <Parameter Name="identifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifier">The identifier for a content place holder.</param>
-        <summary>Retrieves the current state of the identified content place holder.</summary>
-        <returns>The current state of the identified content placeholder.</returns>
+        <param name="identifier">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,9 +69,9 @@
         <Parameter Name="state" Type="System.Web.UI.Design.ContentDesignerState" />
       </Parameters>
       <Docs>
-        <param name="identifier">The identifier for a content place holder.</param>
-        <param name="state">A <see cref="T:System.Web.UI.Design.ContentDesignerState" />.</param>
-        <summary>Sets the current state of the identified content place holder.</summary>
+        <param name="identifier">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -37,58 +37,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the root element of a ribbon user interface that hosts a Quick Access Toolbar, Application Menu, and tabs.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ribbon is a command bar that organizes the features of an application into a series of tabs at the top of the application window. It replaces both the traditional menu bar and toolbars.  
-  
- The Ribbon class is the root element of a ribbon user interface (UI) in Windows Presentation Foundation (WPF). The Ribbon class hosts a <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar>, a <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu>, and one or more <xref:System.Windows.Controls.Ribbon.RibbonTab> controls. These controls then host a variety of button and menu controls that enable access to application commands.  
-  
- The following list shows the typical hierarchy of ribbon elements.  
-  
--   Ribbon  
-  
-    -   <xref:System.Windows.Controls.Ribbon.Ribbon.HelpPaneContent%2A?displayProperty=fullName>  
-  
-    -   <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonButton>, <xref:System.Windows.Controls.Ribbon.RibbonRadioButton>, <xref:System.Windows.Controls.Ribbon.RibbonToggleButton>, <xref:System.Windows.Controls.Ribbon.RibbonCheckBox>, <xref:System.Windows.Controls.Ribbon.RibbonTextBox>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonComboBox>, <xref:System.Windows.Controls.Ribbon.RibbonMenuButton>, <xref:System.Windows.Controls.Ribbon.RibbonSplitButton>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.CustomizeMenuButton%2A>  
-  
-    -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent%2A>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent%2A>  
-  
-    -   <xref:System.Windows.Controls.Ribbon.RibbonTab>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonGroup>  
-  
-            -   <xref:System.Windows.Controls.Ribbon.RibbonButton>, <xref:System.Windows.Controls.Ribbon.RibbonRadioButton>, <xref:System.Windows.Controls.Ribbon.RibbonToggleButton>, <xref:System.Windows.Controls.Ribbon.RibbonCheckBox>, <xref:System.Windows.Controls.Ribbon.RibbonTextBox>  
-  
-            -   <xref:System.Windows.Controls.Ribbon.RibbonComboBox>, <xref:System.Windows.Controls.Ribbon.RibbonMenuButton>, <xref:System.Windows.Controls.Ribbon.RibbonSplitButton>  
-  
-            -   <xref:System.Windows.Controls.Ribbon.RibbonControlGroup>  
-  
-   
-  
-## Examples  
- The following example shows a simple ribbon that is created by the Visual Studio 2010 template, with help pane and Quick Access Toolbar elements added.  
-  
- [!code-xml[Ribbon_Snippets#RibbonDefault](~/add/codesnippet/xaml/wpfribbonapplication1/mainwindow.xaml#ribbondefault)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,47 +69,9 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonApplicationMenu</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenu" /> that is a logical child of this <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> control.</summary>
-        <value>The ribbon Application Menu that is a logical child of this <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You use the ApplicationMenu property to associate a <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu> object with the <xref:System.Windows.Controls.Ribbon.Ribbon>.  
-  
-<a name="dependencyPropertyInfo_ApplicationMenu"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.ApplicationMenuProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows a simple Application Menu attached to a ribbon control. For more examples, see <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu>.  
-  
-```xaml  
-xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"  
-...  
-<ribbon:Ribbon >  
-    <ribbon:Ribbon.ApplicationMenu>  
-        <ribbon:RibbonApplicationMenu SmallImageSource="Images\SmallIcon.png">  
-            <ribbon:RibbonApplicationMenuItem Header="Hello _Ribbon"  
-                                              x:Name="MenuItem1"  
-                                              ImageSource="Images\LargeIcon.png"/>  
-        </ribbon:RibbonApplicationMenu>  
-    </ribbon:Ribbon.ApplicationMenu>  
-    <ribbon:RibbonTab>  
-        <!-- Ribbon content goes here. -->  
-    </ribbon:RibbonTab>  
-</ribbon:Ribbon >  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplicationMenuProperty">
@@ -175,7 +87,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.ApplicationMenu%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,23 +104,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush that is used to draw the background of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the Checked state.</summary>
-        <value>The brush that is used to draw the background of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the Checked state. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_CheckedBackground"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.CheckedBackgroundProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckedBackgroundProperty">
@@ -224,7 +122,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.CheckedBackground%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,23 +139,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush that is used to draw the outer border of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the Checked state.</summary>
-        <value>The brush that is used to draw the outer border of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the Checked state. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_CheckedBorderBrush"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.CheckedBorderBrushProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckedBorderBrushProperty">
@@ -273,7 +157,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.CheckedBorderBrush%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,7 +174,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Controls.Ribbon.Ribbon.IsCollapsed%2A" /> property is changed to <see langword="true" /> and the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is collapsed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,7 +191,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.Ribbon.Ribbon.Collapsed" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,23 +208,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template that is used to display <see cref="System.Windows.Controls.Ribbon.RibbonContextualTabGroup.Header%2A" /> items in the <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" />.</summary>
-        <value>The template that is used to display <see cref="System.Windows.Controls.Ribbon.RibbonContextualTabGroup.Header%2A" /> items in the <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_ContextualTabGroupHeaderTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.ContextualTabGroupHeaderTemplateProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextualTabGroupHeaderTemplateProperty">
@@ -356,7 +226,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.ContextualTabGroupHeaderTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -378,33 +248,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Windows.Controls.Ribbon.RibbonContextualTabGroup&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection that contains all of the <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" /> items in the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
-        <value>The collection of <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" /> items in the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> if one exists; otherwise, a new empty collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You use a *contextual tab* to display groups of commands that are relevant only in a particular context. Contextual tab groups are shown or hidden based on specified criteria. For example, an Ink Tools tab group might be shown when tablet input is detected, or a Picture Tools tab group might be shown when an Image object is selected.  
-  
-   
-  
-## Examples  
- The following example shows a <xref:System.Windows.Controls.Ribbon.RibbonTab> named **Pens** that is in the **Ink Tools** contextual tab group.  
-  
-```xaml  
-</ribbon:Ribbon>  
-    <ribbon:RibbonTab Name="Pens" Header="Pens" ContextualTabGroupHeader="Ink Tools" >  
-    <!-- Ribbon Tab Content -->  
-    </ribbon:RibbonTab>  
-    <ribbon:Ribbon.ContextualTabGroups>  
-        <ribbon:RibbonContextualTabGroup Header="Ink Tools" Visibility="Visible" Background="Green" />  
-    </ribbon:Ribbon.ContextualTabGroups>  
-</ribbon:Ribbon>  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextualTabGroupsSource">
@@ -420,23 +266,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a collection used to generate the content of <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" /> items.</summary>
-        <value>A collection used to generate the content of <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" /> items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_ContextualTabGroupHeadersSource"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.ContextualTabGroupsSourceProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextualTabGroupsSourceProperty">
@@ -452,7 +284,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.ContextualTabGroupsSource%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,23 +301,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style that is used when rendering <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" /> items in the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
-        <value>The style applied to all <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" /> items in the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_ContextualTabGroupHeaderStyle"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.ContextualTabGroupStyleProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextualTabGroupStyleProperty">
@@ -501,7 +319,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.ContextualTabGroupStyle%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,7 +336,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Controls.Ribbon.Ribbon.IsCollapsed%2A" /> property is changed to <see langword="false" /> and the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is expanded.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -535,7 +353,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.Ribbon.Ribbon.Expanded" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,23 +370,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush used to draw the background of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls in the Focused state.</summary>
-        <value>The brush used to draw the background of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls in the Focused state. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_FocusedBackground"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.FocusedBackgroundProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusedBackgroundProperty">
@@ -584,7 +388,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.FocusedBackground%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -601,24 +405,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush used to draw the outer border of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls in the Focused state.</summary>
-        <value>The brush used to draw the outer border of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls in the Focused state. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To place keyboard focus on a ribbon control, press ALT+KeyTip letter and navigate with the ARROW keys.  
-  
-<a name="dependencyPropertyInfo_FocusedBorderBrush"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.FocusedBorderBrushProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusedBorderBrushProperty">
@@ -634,7 +423,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.FocusedBorderBrush%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -652,8 +441,8 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> object.</summary>
-        <returns>A new <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> container object that is used to display an item from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,24 +459,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the contents of the help pane.</summary>
-        <value>The contents of the help pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set the contents of the help pane to enable users to access help content for your application. You will typically set the HelpPaneContent property to a single button that launches a separate help window. However, you can define any content to go in the help pane. You can specify the layout and appearance of the content by setting the <xref:System.Windows.Controls.Ribbon.Ribbon.HelpPaneContentTemplate%2A> property.  
-  
-<a name="dependencyPropertyInfo_HelpPaneContent"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.HelpPaneContentProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpPaneContentProperty">
@@ -703,7 +477,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.HelpPaneContent%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -720,23 +494,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template that is used to display the content of the help pane.</summary>
-        <value>The template that is used to display the content of the help pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_HelpPaneContentTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.HelpPaneContentTemplateProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpPaneContentTemplateProperty">
@@ -752,7 +512,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.HelpPaneContentTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -769,27 +529,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is collapsed.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is collapsed; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ribbon collapses automatically when the application window is resized and does not have enough space to display the ribbon in a meaningful way. When the ribbon is collapsed, all ribbon elements are hidden from view.  
-  
- When the ribbon is collapsed, the <xref:System.Windows.Controls.Ribbon.Ribbon.Collapsed> event occurs. When the ribbon is expanded, the <xref:System.Windows.Controls.Ribbon.Ribbon.Expanded> event occurs.  
-  
-<a name="dependencyPropertyInfo_IsCollapsed"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.IsCollapsedProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCollapsedProperty">
@@ -805,7 +547,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.IsCollapsed%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -822,27 +564,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the drop-down for a <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> is open.</summary>
-        <value>
-          <see langword="true" /> if the drop-down for a <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> is open; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Windows.Controls.Ribbon.Ribbon.IsMinimized%2A> property is `true`, the Quick Access Toolbar, Application Menu, and tab headers are shown, but the tab contents are put in a drop-down and are not shown by default. When a user selects a tab header, the drop-down for the tab is opened and its contents are shown. Selecting or deselecting the tab header toggles the IsDropDownOpen property between `true` and `false`.  
-  
- If the <xref:System.Windows.Controls.Ribbon.Ribbon.IsMinimized%2A> property is `false`, the IsDropDownOpen property is also `false`.  
-  
-<a name="dependencyPropertyInfo_IsDropDownOpen"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.IsDropDownOpenProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDropDownOpenProperty">
@@ -858,7 +582,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.IsDropDownOpen%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -875,24 +599,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is currently hosted in a <see cref="T:System.Windows.Controls.Ribbon.RibbonWindow" />.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is hosted in a <see cref="T:System.Windows.Controls.Ribbon.RibbonWindow" />; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsHostedInRibbonWindow"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.IsHostedInRibbonWindowProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsHostedInRibbonWindowProperty">
@@ -908,7 +617,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.IsHostedInRibbonWindow%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -928,10 +637,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to test.</param>
-        <summary>Returns a value that indicates whether the specified item is (or is eligible to be) its own container.</summary>
-        <returns>
-          <see langword="true" /> if the item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -948,27 +656,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is minimized.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is minimized; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A user can minimize the ribbon by right-clicking the ribbon and selecting **Minimize the Ribbon** from the context menu. When the IsMinimized property is `true`, the Quick Access Toolbar, Application Menu, and tab headers are shown, but the tab contents are put in a drop-down and are not shown by default. When a user selects a tab header, the drop-down for the tab is opened and its contents are shown.  
-  
- If the IsMinimized property is `true`, selecting or deselecting the tab header toggles the <xref:System.Windows.Controls.Ribbon.Ribbon.IsDropDownOpen%2A> property between `true` and `false`. If the IsMinimized property is `false`, the <xref:System.Windows.Controls.Ribbon.Ribbon.IsDropDownOpen%2A> property is also `false`.  
-  
-<a name="dependencyPropertyInfo_IsMinimized"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.IsMinimizedProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMinimizedProperty">
@@ -984,7 +674,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.IsMinimized%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1001,7 +691,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.IEnumerator" /> that iterates through the child elements of the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1019,23 +709,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush that is used to draw the background of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the MouseOver state.</summary>
-        <value>The brush that is used to draw the background of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the MouseOver state. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_MouseOverBackground"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.MouseOverBackgroundProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseOverBackgroundProperty">
@@ -1051,7 +727,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.MouseOverBackground%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1068,23 +744,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush that is used to draw the outer border of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the MouseOver state.</summary>
-        <value>The brush that is used to draw the outer border of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the MouseOver state. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_MouseOverBorderBrush"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.MouseOverBorderBrushProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseOverBorderBrushProperty">
@@ -1100,7 +762,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.MouseOverBorderBrush%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1118,15 +780,8 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> when a new template is applied.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -1143,8 +798,8 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" /> object for this control.</summary>
-        <returns>A new automation peer object for this control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1164,8 +819,8 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Updates the current selection and synchronizes the headers when an item is changed in the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1185,8 +840,8 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyDown" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1206,8 +861,8 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseDown" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1227,8 +882,8 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.PreviewMouseDown" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1248,18 +903,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <Parameter Name="e" Type="System.Windows.Input.MouseWheelEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseWheel" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Spinning the mouse wheel while the mouse pointer is over the <xref:System.Windows.Controls.Ribbon.Ribbon> causes the <xref:System.Windows.Controls.Ribbon.Ribbon> to switch between tabs.  
-  
- This implementation marks the <xref:System.Windows.UIElement.MouseWheel> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectionChanged">
@@ -1278,16 +924,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <Parameter Name="e" Type="System.Windows.Controls.SelectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method enforces single-selection in the <xref:System.Windows.Controls.Ribbon.Ribbon>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrepareContainerForItemOverride">
@@ -1307,9 +946,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element used to display the <c>item</c>.</param>
-        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <summary>Prepares the specified element to display the specified item.</summary>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1326,23 +965,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush that is used to draw the background of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the Pressed state.</summary>
-        <value>The brush that is used to draw the background of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the Pressed state. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_PressedBackground"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.PressedBackgroundProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PressedBackgroundProperty">
@@ -1358,7 +983,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.PressedBackground%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1375,23 +1000,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the brush that is used to draw the outer border of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the Pressed state.</summary>
-        <value>The brush that is used to draw the outer border of <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls when they are in the Pressed state. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_PressedBorderBrush"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.PressedBorderBrushProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PressedBorderBrushProperty">
@@ -1407,7 +1018,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.PressedBorderBrush%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1424,23 +1035,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is a logical child of this <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
-        <value>The Quick Access Toolbar that is the logical child of this <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_QuichAccessToolBar"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBarProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="QuickAccessToolBarProperty">
@@ -1456,7 +1053,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBar%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1473,24 +1070,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to show the Quick Access Toolbar above the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
-        <value>
-          <see langword="true" /> if the Quick Access Toolbar is shown above the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />; <see langword="false" /> if the Quick Access Toolbar is shown below the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_ShowQuickAccessToolbarOnTop"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.ShowQuickAccessToolBarOnTopProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowQuickAccessToolBarOnTopProperty">
@@ -1506,7 +1088,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.ShowQuickAccessToolBarOnTop%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1523,23 +1105,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style that is used when rendering tab headers.</summary>
-        <value>The style that is used when rendering tab headers. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_TabHeaderStyle"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.TabHeaderStyleProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabHeaderStyleProperty">
@@ -1555,7 +1123,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.TabHeaderStyle%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1572,23 +1140,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template that is used to display tab headers.</summary>
-        <value>The template that is used to display tab headers. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_TabHeaderTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.TabHeaderTemplateProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabHeaderTemplateProperty">
@@ -1604,7 +1158,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.TabHeaderTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1621,28 +1175,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the title of this <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> control.</summary>
-        <value>The title of this <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You will typically set the <xref:System.Windows.Window.Title%2A> property on the <xref:System.Windows.Controls.Ribbon.RibbonWindow> instead of setting the Title property.  
-  
- The Title is shown in the title bar of the <xref:System.Windows.Controls.Ribbon.RibbonWindow> if the <xref:System.Windows.Window.Title%2A?displayProperty=fullName> property of the <xref:System.Windows.Controls.Ribbon.RibbonWindow> is `null`. If the <xref:System.Windows.Window.Title%2A?displayProperty=fullName> property is not `null`, the <xref:System.Windows.Controls.Ribbon.RibbonWindow> title is shown instead of the Title value.  
-  
- If the <xref:System.Windows.Controls.Ribbon.Ribbon> is hosted in a <xref:System.Windows.Window> instead of a <xref:System.Windows.Controls.Ribbon.RibbonWindow>, the Title is shown next to the Quick Access Toolbar, below the <xref:System.Windows.Window.Title%2A?displayProperty=fullName>.  
-  
-<a name="dependencyPropertyInfo_Title"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.TitleProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TitleProperty">
@@ -1658,7 +1193,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.Title%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1675,23 +1210,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template that is used to display the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> title.</summary>
-        <value>The template that is used to display the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> title. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_TitleTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.TitleTemplateProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TitleTemplateProperty">
@@ -1707,7 +1228,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.TitleTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1724,23 +1245,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Visibility" /> for the icon of the <see cref="T:System.Windows.Controls.Ribbon.RibbonWindow" /> that contains this <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
-        <value>One of the enumeration values that specifies the visibility of the icon. The registered default is <see cref="T:System.Windows.Visibility" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_WindowIconVisibility"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.Ribbon.WindowIconVisibilityProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowIconVisibilityProperty">
@@ -1756,7 +1263,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.Ribbon.WindowIconVisibility%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

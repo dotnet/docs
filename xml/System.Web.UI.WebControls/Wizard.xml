@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Wizard" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,280 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides navigation and a user interface (UI) to collect related data across multiple steps.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this topic:  
-  
--   [Introduction](#introduction)  
-  
--   [Wizard Components](#components)  
-  
--   [Wizard Steps](#wizard_steps)  
-  
--   [Collecting Wizard Data](#collecting_wizard_data)  
-  
--   [Wizard Command Names](#wizard_command_names)  
-  
--   [Dynamically Changing Steps](#dynamically_changing_steps)  
-  
--   [Wizard Appearance](#wizard_appearance)  
-  
--   [Formatting Using Layout Templates](#formatting_using_layout_templates)  
-  
--   [Accessibility](#accessibility)  
-  
--   [Declarative Syntax](#declarative_syntax)  
-  
-<a name="introduction"></a>   
-## Introduction  
- You can use the Wizard control to:  
-  
--   Collect related data across multiple steps.  
-  
--   Break up a larger Web page used to collect user input into smaller logical steps.  
-  
--   Allow for either linear or nonlinear navigation through the steps.  
-  
-<a name="components"></a>   
-## Wizard Components  
- The Wizard control is made up of the following components:  
-  
--   A <xref:System.Web.UI.WebControls.WizardStepCollection> collection of steps that contain the user interface for each step, as defined by the page developer.  
-  
--   Built-in navigation capabilities that determine the appropriate buttons to display based on the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A> value.  
-  
--   A header area that can be customized to display information specific to the step that the user is currently on.  
-  
--   A sidebar area that can be used to quickly navigate to steps in the control.  
-  
-    > [!NOTE]
-    >  If you are using Microsoft Visual Studio 2005, note that the <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> is persisted in Source view. If you change the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property in Design view by clicking the sidebar buttons, and you then run the page, the first step of the `Wizard` control might not be shown because the <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> might be pointing to a different step.  
-  
-<a name="wizard_steps"></a>   
-## Wizard Steps  
- Each of the steps in the Wizard control has a <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A> property that determines the kind of navigation functionality that the step has. If you do not specify a value for the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A> property, the default value is <xref:System.Web.UI.WebControls.WizardStepType>. The following table lists the available settings for the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A> property and the resulting behavior of the step.  
-  
- `WizardStepType.Auto`  
- The navigation UI that is rendered for the step is determined by the order in which the step is declared.  
-  
- `WizardStepType.Complete`  
- The step is the last one to appear. No navigation buttons are rendered.  
-  
- `WizardStepType.Finish`  
- The step is the last one that collects user data. The **Finish** button is rendered for navigation.  
-  
- `WizardStepType.Start`  
- The step is the first one to appear. A **Previous** button is not rendered.  
-  
- `WizardStepType.Step`  
- The step is any step between the first and last. **Previous** and **Next** buttons are rendered for navigation.  
-  
-<a name="collecting_wizard_data"></a>   
-## Collecting Wizard Data  
- Using the Wizard control, data can be collected through linear or nonlinear navigation. Some examples of nonlinear navigation are skipping unnecessary steps or returning to a previously completed step to change some value. The Wizard control maintains its state between steps, so the data entered on a step does not need to be persisted to a data store until all the steps of the Wizard control have been completed.  
-  
- Alternatively, if you want to persist the collected data to a data store as each step is completed, such as when the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event is raised, you should set the <xref:System.Web.UI.WebControls.WizardStepBase.AllowReturn%2A> property of the <xref:System.Web.UI.WebControls.WizardStepBase> object to `false` so that the user cannot return to a previously completed step and change the data once it has been submitted.  
-  
-<a name="wizard_command_names"></a>   
-## Wizard Command Names  
- The Wizard control inherits the following command names from the <xref:System.Web.UI.WebControls.View> class and <xref:System.Web.UI.WebControls.MultiView> class: <xref:System.Web.UI.WebControls.MultiView.NextViewCommandName>, <xref:System.Web.UI.WebControls.MultiView.PreviousViewCommandName>, <xref:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName>, and <xref:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName>. The Wizard control ignores these command names and does not include any special logic to enable these commands to automatically work for navigation. If a command name is removed or is missing from a button in the Wizard control, no exception is thrown. For example, if the <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A> button is missing a value for <xref:System.Web.UI.WebControls.Button.CommandName%2A>, no exception is thrown.  
-  
-<a name="dynamically_changing_steps"></a>   
-## Dynamically Changing Steps  
- You can use the <xref:System.Web.UI.WebControls.Wizard.MoveTo%2A> method or the <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> property to dynamically change the step that is currently displayed in the Wizard control.  
-  
-> [!NOTE]
->  If you programmatically add a <xref:System.Web.UI.WebControls.WizardStep> in the `Page_Load` event handler, you must add the navigation to that step prior to the page loading.  
-  
-<a name="wizard_appearance"></a>   
-## Wizard Appearance  
- The appearance of the Wizard control is fully customizable through templates, skins, and style settings. For example, you can use the <xref:System.Web.UI.WebControls.Wizard.HeaderTemplate%2A>, <xref:System.Web.UI.WebControls.Wizard.SideBarTemplate%2A>, <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A>, <xref:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate%2A>, and <xref:System.Web.UI.WebControls.Wizard.StepNavigationTemplate%2A> properties to customize the interface of the Wizard control.  
-  
-> [!NOTE]
->  Setting the <xref:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate%2A>, <xref:System.Web.UI.WebControls.Wizard.DisplaySideBar%2A>, <xref:System.Web.UI.WebControls.Wizard.HeaderTemplate%2A>, <xref:System.Web.UI.WebControls.Wizard.SideBarTemplate%2A>, <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A>, or <xref:System.Web.UI.WebControls.Wizard.StepNavigationTemplate%2A> property recreates the child controls of the Wizard control. As a result, the view state for the child controls is lost in the process. To avoid this situation, explicitly maintain the control state of the Wizard control's child controls explicitly, or avoid putting controls inside of templates.  
-  
- Note that the Wizard control does not support special Microsoft Internet Explorer rendering for non-standard or quirks mode. To get the best Internet Explorer rendering using the Wizard control, use the XHTML doc type, which is added by default in Visual Web Developer and Visual Studio.  
-  
-<a name="formatting_using_layout_templates"></a>   
-## Formatting Using Layout Templates  
- The Wizard control lets you specify the layout of the control without requiring you to use an HTML `table` element. Instead, you can use a `LayoutTemplate` element to specify the layout. In the template, you create placeholder controls to indicate where items should be dynamically inserted into the control. (This is similar to how the template model for the <xref:System.Web.UI.WebControls.ListView> control works.) For more information, see the <xref:System.Web.UI.WebControls.Wizard.LayoutTemplate%2A?displayProperty=fullName> property.  
-  
-<a name="accessibility"></a>   
-## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](../Topic/Accessibility%20in%20Visual%20Studio%20and%20ASP.NET.md) and [ASP.NET Controls and Accessibility](../Topic/ASP.NET%20Controls%20and%20Accessibility.md).  
-  
-<a name="declarative_syntax"></a>   
-## Declarative Syntax  
-  
-```  
-<asp:Wizard  
-    AccessKey="string"  
-    ActiveStepIndex="integer"  
-    BackColor="color name|#dddddd"  
-    BorderColor="color name|#dddddd"  
-    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-        Inset|Outset"  
-    BorderWidth="size"  
-    CancelButtonImageUrl="uri"  
-    CancelButtonText="string"  
-    CancelButtonType="Button|Image|Link"  
-    CancelDestinationPageUrl="uri"  
-    CellPadding="integer"  
-    CellSpacing="integer"  
-    CssClass="string"  
-    DisplayCancelButton="True|False"  
-    DisplaySideBar="True|False"  
-    Enabled="True|False"  
-    EnableTheming="True|False"  
-    EnableViewState="True|False"  
-    FinishCompleteButtonImageUrl="uri"  
-    FinishCompleteButtonText="string"  
-    FinishCompleteButtonType="Button|Image|Link"  
-    FinishDestinationPageUrl="uri"  
-    FinishPreviousButtonImageUrl="uri"  
-    FinishPreviousButtonText="string"  
-    FinishPreviousButtonType="Button|Image|Link"  
-    Font-Bold="True|False"  
-    Font-Italic="True|False"  
-    Font-Names="string"  
-    Font-Overline="True|False"  
-    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-        Large|X-Large|XX-Large"  
-    Font-Strikeout="True|False"  
-    Font-Underline="True|False"  
-    ForeColor="color name|#dddddd"  
-    HeaderText="string"  
-    Height="size"  
-    ID="string"  
-    OnActiveStepChanged="ActiveStepChanged event handler"  
-    OnCancelButtonClick="CancelButtonClick event handler"  
-    OnDataBinding="DataBinding event handler"  
-    OnDisposed="Disposed event handler"  
-    OnFinishButtonClick="FinishButtonClick event handler"  
-    OnInit="Init event handler"  
-    OnLoad="Load event handler"  
-    OnNextButtonClick="NextButtonClick event handler"  
-    OnPreRender="PreRender event handler"  
-    OnPreviousButtonClick="PreviousButtonClick event handler"  
-    OnSideBarButtonClick="SideBarButtonClick event handler"  
-    OnUnload="Unload event handler"  
-    runat="server"  
-    SkinID="string"  
-    SkipLinkText="string"  
-    StartNextButtonImageUrl="uri"  
-    StartNextButtonText="string"  
-    StartNextButtonType="Button|Image|Link"  
-    StepNextButtonImageUrl="uri"  
-    StepNextButtonText="string"  
-    StepNextButtonType="Button|Image|Link"  
-    StepPreviousButtonImageUrl="uri"  
-    StepPreviousButtonText="string"  
-    StepPreviousButtonType="Button|Image|Link"  
-    Style="string"  
-    TabIndex="integer"  
-    ToolTip="string"  
-    Visible="True|False"  
-    Width="size"  
->  
-        <CancelButtonStyle />  
-        <FinishCompleteButtonStyle />  
-        <FinishNavigationTemplate>  
-            <!-- child controls -->  
-        </FinishNavigationTemplate>  
-        <FinishPreviousButtonStyle />  
-        <HeaderStyle />  
-        <HeaderTemplate>  
-            <!-- child controls -->  
-        </HeaderTemplate>  
-        <NavigationButtonStyle />  
-        <NavigationStyle />  
-        <SideBarButtonStyle />  
-        <SideBarStyle />  
-        <SideBarTemplate>  
-            <!-- child controls -->  
-        </SideBarTemplate>  
-        <StartNavigationTemplate>  
-            <!-- child controls -->  
-        </StartNavigationTemplate>  
-        <StartNextButtonStyle />  
-        <StepNavigationTemplate>  
-            <!-- child controls -->  
-        </StepNavigationTemplate>  
-        <StepNextButtonStyle />  
-        <StepPreviousButtonStyle />  
-        <StepStyle />  
-        <WizardSteps>  
-                <asp:TemplatedWizardStep  
-                    AllowReturn="True|False"  
-                    ContentTemplateContainer="string"  
-                    EnableTheming="True|False"  
-                    EnableViewState="True|False"  
-                    ID="string"  
-                    OnActivate="Activate event handler"  
-                    OnDataBinding="DataBinding event handler"  
-                    OnDeactivate="Deactivate event handler"  
-                    OnDisposed="Disposed event handler"  
-                    OnInit="Init event handler"  
-                    OnLoad="Load event handler"  
-                    OnPreRender="PreRender event handler"  
-                    OnUnload="Unload event handler"  
-                    runat="server"  
-                    SkinID="string"  
-                    StepType="Auto|Complete|Finish|Start|Step"  
-                    Title="string"  
-                    Visible="True|False"  
->  
-                        <ContentTemplate>  
-                            <!-- child controls -->  
-                        </ContentTemplate>  
-                        <CustomNavigationTemplate>  
-                            <!-- child controls -->  
-                        </CustomNavigationTemplate>  
-                </asp:TemplatedWizardStep>  
-                <asp:WizardStep  
-                    AllowReturn="True|False"  
-                    EnableTheming="True|False"  
-                    EnableViewState="True|False"  
-                    ID="string"  
-                    OnActivate="Activate event handler"  
-                    OnDataBinding="DataBinding event handler"  
-                    OnDeactivate="Deactivate event handler"  
-                    OnDisposed="Disposed event handler"  
-                    OnInit="Init event handler"  
-                    OnLoad="Load event handler"  
-                    OnPreRender="PreRender event handler"  
-                    OnUnload="Unload event handler"  
-                    runat="server"  
-                    SkinID="string"  
-                    StepType="Auto|Complete|Finish|Start|Step"  
-                    Title="string"  
-                    Visible="True|False"  
-                />  
-        </WizardSteps>  
-</asp:Wizard>  
-```  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to define a Wizard control to collect a user's name and address, with the option to enter a separate shipping address. If the user does not select **SeparateShippingCheckBox**, thereby issuing a request to add a separate shipping address, the Wizard control moves directly from `Step2` to `Finish`. On the `Finish` step, the user has the option to return to the beginning of the Wizard control by clicking **GoBackButton**; however, it takes the user to `Step2` because the <xref:System.Web.UI.WebControls.WizardStepBase.AllowReturn%2A> property for `Step1` is set to `false`.  
-  
-> [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-cs[System.Web.UI.WebControls.Wizard#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_173_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.Wizard#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_173_1.aspx)]  
-  
- The following code example is the code-behind file for the Web page used in the preceding example.  
-  
- [!code-cs[System.Web.UI.WebControls.Wizard#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_173_2.cs)]
- [!code-vb[System.Web.UI.WebControls.Wizard#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_173_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -309,20 +36,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Wizard" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Wizard constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Wizard> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveStep">
@@ -332,7 +51,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -347,25 +65,9 @@
         <ReturnType>System.Web.UI.WebControls.WizardStepBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the step in the <see cref="System.Web.UI.WebControls.Wizard.WizardSteps%2A" /> collection that is currently displayed to the user.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> that is currently displayed to the user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ActiveStep property returns the <xref:System.Web.UI.WebControls.WizardStepBase> object that is currently displayed in the <xref:System.Web.UI.WebControls.Wizard> control. The ActiveStep property is read-only; however, you can use the ActiveStep property to access the properties of the current <xref:System.Web.UI.WebControls.WizardStepBase> object. Use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> property to dynamically change the ActiveStep to a different <xref:System.Web.UI.WebControls.WizardStepBase> object. Alternatively, you can use the <xref:System.Web.UI.WebControls.Wizard.MoveTo%2A> method to dynamically set the ActiveStep property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ActiveStep property to determine which step to set as the next ActiveStep property of the <xref:System.Web.UI.WebControls.Wizard> control. If the value of `CheckBox1.Checked` is `true`, the ActiveStep property is set to `Wizard1.Step3`; otherwise, the ActiveStep property is set to `Wizard1.Step2`.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardActiveStep#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_332_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardActiveStep#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_332_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The corresponding <see cref="System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A" /> is less than -1 or greater than the number of <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects in the <see cref="T:System.Web.UI.WebControls.Wizard" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveStepChanged">
@@ -375,32 +77,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user switches to a new step in the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ActiveStepChanged event is raised when the current step that is displayed in the <xref:System.Web.UI.WebControls.Wizard> control changes. Use the ActiveStepChanged event to provide additional processing when the current step of the <xref:System.Web.UI.WebControls.Wizard> control changes.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ActiveStepChanged event to update the <xref:System.Web.UI.WebControls.Wizard.HeaderText%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_23_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_23_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveStepIndex">
@@ -410,7 +94,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -425,36 +108,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index of the current <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> object.</summary>
-        <value>The index of the <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> that is currently displayed in the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ActiveStepIndex property provides the zero-based index of the <xref:System.Web.UI.WebControls.WizardStepBase> object that is currently displayed in the <xref:System.Web.UI.WebControls.Wizard> control. You can programmatically set the ActiveStepIndex property to control which step is displayed to the user at run time.  
-  
-> [!NOTE]
->  If you are using Microsoft Visual Studio 2005, note that the ActiveStepIndex is persisted in Source view. If you change the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property in Design view by clicking the sidebar buttons, and you then run the page, the first step of the `Wizard` control might not be shown because the ActiveStepIndex might be pointing to a different step.  
-  
- If you set the value of ActiveStepIndex to -1 to support a wizard with no steps by default, the following behavior occurs:  
-  
--   If you declaratively set ActiveStepIndex to -1 or set it to -1 as a default value, the control will always try to render the first step in the wizard.  
-  
--   If you programmatically set ActiveStepIndex to -1, the control will not render.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ActiveStepIndex property to set the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control. If the value of `CheckBox1.Checked` is `true`, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step3`; otherwise, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step2`.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardActiveStepIndex#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_672_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardActiveStepIndex#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_672_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is higher than the number of wizard steps defined in the <see cref="System.Web.UI.WebControls.Wizard.WizardSteps%2A" /> collection.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowNavigationToStep">
@@ -464,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -474,26 +129,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> object being checked.</param>
-        <summary>Uses a Boolean value to determine whether the <see cref="System.Web.UI.WebControls.Wizard.ActiveStep%2A" /> property can be set to the <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> object that corresponds to the index that is passed in.</summary>
-        <returns>
-          <see langword="false" /> if the index passed in refers to a <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> that has already been accessed and its <see cref="System.Web.UI.WebControls.WizardStepBase.AllowReturn%2A" /> property is set to <see langword="false" />; otherwise, <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AllowNavigationToStep method can be accessed from a derived class only because of its `protected` modifier. In a derived class, you can use the AllowNavigationToStep method to determine whether the index that is passed in can be used to set the <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> property. The AllowNavigationToStep method will return `false` if the index that is passed in refers to a <xref:System.Web.UI.WebControls.WizardStepBase> object that has already been accessed and has its <xref:System.Web.UI.WebControls.WizardStepBase.AllowReturn%2A> property set to `false`; otherwise, it will return `true`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a derived class named `CustomWizard` and override the <xref:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick%2A> method. When a button on the sidebar area of the `CustomWizard` control is clicked, the AllowNavigationToStep method is called to determine whether the selected step can be accessed. A message is then written to the containing Web page informing the user of what has occurred.  
-  
- [!code-vb[System.Web.UI.WebControls.WizardAllowNavigationToStep#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_28_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.WizardAllowNavigationToStep#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_28_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonClick">
@@ -503,32 +142,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the **Cancel** button is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CancelButtonClick event is raised when the **Cancel** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the CancelButtonClick event to provide additional processing when the **Cancel** button is clicked.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify an event handler for the CancelButtonClick event. When the **Cancel** button is clicked, the page is redirected to http://www.wingtiptoys.com/.  
-  
- [!code-vb[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_18_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_18_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonID">
@@ -538,22 +159,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the identifier for the **Cancel** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CancelButtonID field is used primarily by control developers. The value for the CancelButtonID is `"CancelButton"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonImageUrl">
@@ -563,7 +176,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -581,16 +193,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL of the image displayed for the **Cancel** button.</summary>
-        <value>The URL of the image displayed for the **Cancel** button on the <see cref="T:System.Web.UI.WebControls.Wizard" /> control. The default value is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.CancelButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType>, use the CancelButtonImageUrl property to specify the image to display for the **Cancel** button.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonStyle">
@@ -600,7 +205,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -621,18 +225,9 @@
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a collection of style properties that define the appearance of the **Cancel** button.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for **Cancel** on the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CancelButtonStyle property defines the appearance for the **Cancel** button on the <xref:System.Web.UI.WebControls.Wizard> control. The CancelButtonStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties. The style settings for the CancelButtonStyle property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property. Any setting that is applied in the CancelButtonStyle property overrides the corresponding setting in the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonText">
@@ -642,7 +237,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -654,27 +248,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text caption that is displayed for the **Cancel** button.</summary>
-        <value>The text caption displayed for **Cancel** on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is <c>"Cancel"</c>. The default text for the control is localized based on the current locale for the server.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CancelButtonText property contains the text that is displayed for the **Cancel** button on the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.CancelButtonType%2A> property, the CancelButtonText property can appear as text on a button, as text displayed as an alternative to an image, or as the text of a link. The following table lists the <xref:System.Web.UI.WebControls.Wizard.CancelButtonType%2A> values and their respective effects on the **Cancel** button text.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears on the button.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as alternative text for the image.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as a link.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonType">
@@ -684,7 +260,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -696,8 +271,8 @@
         <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of button that is rendered as the **Cancel** button.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="T:System.Web.UI.WebControls.ButtonType" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -708,22 +283,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the command name for the **Cancel** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CancelCommandName field is used primarily by control developers. The value for the CancelCommandName is `"Cancel"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelDestinationPageUrl">
@@ -733,7 +300,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -754,18 +320,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL that the user is directed to when they click the **Cancel** button.</summary>
-        <value>The URL that the user is redirected to when they click **Cancel** on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CancelDestinationPageUrl property specifies the step that is displayed when the user clicks the **Cancel** button on the <xref:System.Web.UI.WebControls.Wizard> control. If the <xref:System.Web.UI.WebControls.Wizard.DisplayCancelButton%2A> property is set to `true` and the CancelDestinationPageUrl property is not set, the Web page is refreshed and the <xref:System.Web.UI.WebControls.Wizard.OnCancelButtonClick%2A> event is raised.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -775,7 +332,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -787,24 +343,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the amount of space between the contents of the cell and the cell border.</summary>
-        <value>The amount of space, in pixels, between the contents of a cell and the cell border. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CellPadding property to control the spacing between the contents of a cell and the cell border. The padding amount that is specified is added to all four sides of the cell. All cells in a column share the same cell width; therefore, the spacing is applied to the widest cell in the column. Similarly, all cells in the same row share the same cell height. Thus, the spacing is applied to the tallest cell in the row. Individual cell sizes cannot be specified.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the CellPadding and <xref:System.Web.UI.WebControls.Wizard.CellSpacing%2A> properties to program the layout of the <xref:System.Web.UI.WebControls.Wizard> control declaratively.  
-  
- [!code-vb[System.Web.UI.WebControls.WizardCellPadding#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_524_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.WizardCellPadding#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_524_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -814,7 +355,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -826,24 +366,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the amount of space between cells.</summary>
-        <value>The amount of space, in pixels, between cells. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CellSpacing property to control the spacing between adjacent cells in a Wizard control. This spacing is applied both vertically and horizontally.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.CellPadding%2A> and CellSpacing properties to program the layout of the <xref:System.Web.UI.WebControls.Wizard> control declaratively.  
-  
- [!code-vb[System.Web.UI.WebControls.WizardCellPadding#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_686_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.WizardCellPadding#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_686_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -853,7 +378,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -861,7 +385,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates child controls.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -872,7 +396,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -880,7 +403,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates control collection.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -892,7 +415,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -900,9 +422,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates the hierarchy of child controls that make up the control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The sidebar template does not contain a <see cref="T:System.Web.UI.WebControls.DataList" /> control.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -912,7 +433,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -920,7 +440,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates control style.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -932,22 +452,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the identifier for a custom **Finish** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CustomFinishButtonID field is used primarily by control developers. The value for the CustomFinishButtonID is `"CustomFinishButton"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomNextButtonID">
@@ -957,22 +469,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the identifier for a custom **Next** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CustomNextButtonID field is used primarily by control developers. The value for the CustomNextButtonID is `"CustomNextButton"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomPreviousButtonID">
@@ -982,22 +486,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the identifier for a custom **Previous** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CustomPreviousButtonID field is used primarily by control developers. The value for the CustomPreviousButtonID is `"CustomPreviousButton"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataListID">
@@ -1007,22 +503,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the identifier for the sidebar <see cref="T:System.Web.UI.WebControls.DataList" /> collection. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataListID field is used primarily by control developers. The value for the DataListID is `"SideBarList"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayCancelButton">
@@ -1032,7 +520,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1047,11 +534,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value indicating whether to display a **Cancel** button.</summary>
-        <value>
-          <see langword="true" /> to display **Cancel** on the <see cref="T:System.Web.UI.WebControls.Wizard" />; otherwise, <see langword="false" />. The default is <see langword="false" />.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <see cref="T:System.Web.UI.ThemeableAttribute" /> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1062,7 +546,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1077,19 +560,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value indicating whether to display the sidebar area on the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
-        <value>
-          <see langword="true" /> to display the sidebar area on the <see cref="T:System.Web.UI.WebControls.Wizard" />; otherwise, <see langword="false" />. The default is <see langword="true" />.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <see cref="T:System.Web.UI.ThemeableAttribute" /> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There can be a difference in the rendering of the <xref:System.Web.UI.WebControls.Wizard> control depending on whether this property is set to `true` or `false`. When this property value is set to `true` and the sidebar is displayed, cell spacing is not applied to the `HeadCell`, `StepCell`, or `NavigationCell` elements of the control's table. When this value is `false`, cell spacing is applied. This may affect how the control is rendered.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishButtonClick">
@@ -1099,32 +572,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardNavigationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the **Finish** button is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FinishButtonClick event is raised when the **Finish** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the FinishButtonClick event to provide additional processing when the **Finish** button is clicked.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify an event handler for the FinishButtonClick event. When the **Finish** button is clicked, a confirmation message is written to `Label1` and the `Label1.Visible` property is set to `true` so that the message is displayed on the step.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_85_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_85_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishButtonID">
@@ -1134,22 +589,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the identifier for the **Finish** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FinishButtonID field is used primarily by control developers. The value for the FinishButtonID is `"FinishButton"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonImageUrl">
@@ -1159,7 +606,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1177,16 +623,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL of the image that is displayed for the **Finish** button.</summary>
-        <value>The URL of the image displayed for **Finish** on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType> field, use the FinishCompleteButtonImageUrl property to specify the image to display for the **Finish** button.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonStyle">
@@ -1196,7 +635,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1217,18 +655,9 @@
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the **Finish** button.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for **Finish** on the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FinishCompleteButtonStyle property defines the appearance for the **Finish** button on the <xref:System.Web.UI.WebControls.Wizard> control. The FinishCompleteButtonStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties. The style settings for the FinishCompleteButtonStyle property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property. Any setting that is applied in the FinishCompleteButtonStyle property overrides the corresponding setting in the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonText">
@@ -1238,7 +667,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1250,27 +678,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text caption that is displayed for the **Finish** button.</summary>
-        <value>The text caption displayed for **Finish** on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is <c>"Finish"</c>. The default text for the control is localized based on the current locale for the server.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FinishCompleteButtonText property contains the text that is displayed for the **Finish** button on the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType%2A> property, the FinishCompleteButtonText property can appear as text on a button, as text displayed as an alternative to an image in browsers that do not render images, or as the text of a link. The following table lists the field values for the <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType%2A> property and the respective effect of each on the **Finish** button text.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears on the button.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as alternative text for the image.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as link text.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonType">
@@ -1280,7 +690,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1292,8 +701,8 @@
         <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of button that is rendered as the **Finish** button.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="T:System.Web.UI.WebControls.ButtonType" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1304,7 +713,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1325,18 +733,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL that the user is redirected to when they click the **Finish** button.</summary>
-        <value>The URL that the user is redirected to when they click **Finish** on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FinishDestinationPageUrl property specifies the step that is displayed when the user clicks the **Finish** button on the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishNavigationTemplate">
@@ -1346,7 +745,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1367,34 +765,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template that is used to display the navigation area on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step.</summary>
-        <value>The <see cref="T:System.Web.UI.ITemplate" /> that defines the content for the navigation area for the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the FinishNavigationTemplate property to specify the custom content that is displayed for the navigation area on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the navigation area is rendered on the <xref:System.Web.UI.WebControls.WizardStepType> step.  
-  
- The custom content for the template is contained within the FinishNavigationTemplate object. You can add custom content to the FinishNavigationTemplate object either by using template-editing mode in design view or by defining the FinishNavigationTemplate object inline using `FinishNavigationTemplate` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
-> [!NOTE]
->  The FinishNavigationTemplate object that is contained in the FinishNavigationTemplate property must contain two <xref:System.Web.UI.WebControls.IButtonControl> controls, one with its <xref:System.Web.UI.WebControls.IButtonControl.CommandName%2A> property set to "MoveComplete" and the other with its <xref:System.Web.UI.WebControls.IButtonControl.CommandName%2A> property set to "MovePrevious", to enable the navigation feature.  
-  
- To access a control that is defined in a template programmatically, use the <xref:System.Web.UI.WebControls.CompositeControl.Controls%2A> collection of the <xref:System.Web.UI.WebControls.Wizard> object. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.Wizard> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the FinishNavigationTemplate property to create a custom template for the navigation area of the <xref:System.Web.UI.WebControls.WizardStepType> step for the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
-> [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-vb[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_336_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_336_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonID">
@@ -1404,22 +777,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the identifier for the **Previous** button on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FinishPreviousButtonID field is used primarily by control developers. The value for the FinishPreviousButtonID`"FinishPreviousButton"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonImageUrl">
@@ -1429,7 +794,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1447,16 +811,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL of the image that is displayed for the **Previous** button on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step.</summary>
-        <value>The URL of the image displayed for **Previous** on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> of the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType> field, use the FinishPreviousButtonImageUrl property to specify the image to display for the **Previous** button on the <xref:System.Web.UI.WebControls.WizardStepType> step.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonStyle">
@@ -1466,7 +823,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1487,18 +843,9 @@
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the **Previous** button on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for **Previous** on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> of the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FinishPreviousButtonStyle property defines the appearance for the **Previous** button on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. The FinishPreviousButtonStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties. The style settings for the FinishPreviousButtonStyle property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property. Any setting that is applied in the FinishPreviousButtonStyle property overrides the corresponding setting in the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonText">
@@ -1508,7 +855,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1520,27 +866,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text caption that is displayed for the **Previous** button on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step.</summary>
-        <value>The text caption displayed for **Previous** on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> of the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is <c>"Previous"</c>. The default text for the control is localized based on the current locale for the server.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FinishPreviousButtonText property contains the text that is displayed for the **Previous** button on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType%2A> property, the FinishPreviousButtonText property can appear as text on a button, as text displayed as an alternative to an image in browsers that do not render images, or as the text of a link. The following table lists the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType%2A> property field values and the respective effects on the **Previous** button text.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears on the button.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as alternative text for the image.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as a link.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonType">
@@ -1550,7 +878,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1562,8 +889,8 @@
         <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of button that is rendered as the **Previous** button on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="T:System.Web.UI.WebControls.ButtonType" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1574,7 +901,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1582,7 +908,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the design mode state.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1594,7 +920,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1602,16 +927,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a collection of <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects that have been accessed.</summary>
-        <returns>An <see cref="T:System.Collections.ICollection" /> containing the <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects that have been accessed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetHistory method returns a collection containing the <xref:System.Web.UI.WebControls.WizardStepBase> objects that have been accessed. The <xref:System.Web.UI.WebControls.WizardStepBase> objects are arranged in the order in which they were accessed: the first item in the collection is the previous <xref:System.Web.UI.WebControls.WizardStepBase> object, the second item in the collection is the <xref:System.Web.UI.WebControls.WizardStepBase> object that was accessed before the previous step, and so on.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStepType">
@@ -1621,7 +939,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1632,26 +949,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="wizardStep">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> for which the associated <see cref="T:System.Web.UI.WebControls.WizardStepType" /> is returned.</param>
-        <param name="index">The index of the <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> for which the associated <see cref="T:System.Web.UI.WebControls.WizardStepType" /> is returned.</param>
-        <summary>Returns the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> value for the specified <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> object.</summary>
-        <returns>One of the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GetStepType method to determine the <xref:System.Web.UI.WebControls.WizardStepType> value of the specified <xref:System.Web.UI.WebControls.WizardStepBase> object.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the GetStepType method to determine the associated <xref:System.Web.UI.WebControls.WizardStepType> value for the current step of the <xref:System.Web.UI.WebControls.Wizard> control. Each time the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event is raised, the new <xref:System.Web.UI.WebControls.WizardStepType> value is retrieved and a message is written to `Label1`.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardGetStepType#1](~/add/codesnippet/csharp/b96d4667-029f-4f59-b40e-_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardGetStepType#1](~/add/codesnippet/visualbasic/b96d4667-029f-4f59-b40e-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="wizardStep">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderPlaceholderId">
@@ -1667,15 +969,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID of the <see cref="System.Web.UI.WebControls.Wizard.HeaderTemplate%2A" /> placeholder in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The placeholder ID must be set to "headerPlaceHolder".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -1685,7 +980,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1706,18 +1000,9 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the header area on the control.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for the header area on the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HeaderStyle property defines the appearance for the header area on the <xref:System.Web.UI.WebControls.Wizard> control. The HeaderStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -1727,7 +1012,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1748,20 +1032,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template that is used to display the header area on the control.</summary>
-        <value>An <see cref="T:System.Web.UI.ITemplate" /> that contains the template for displaying the header area on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the HeaderTemplate property to specify the custom content that is displayed for the header area on a <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the header area is rendered.  
-  
- The custom content for the template is contained within the HeaderTemplate object. You can add custom content to the HeaderTemplate object either by using template-editing mode in design view or by defining the HeaderTemplate object inline using `HeaderTemplate` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
- To access a control that is defined in a template programmatically, use the <xref:System.Web.UI.WebControls.CompositeControl.Controls%2A> collection of the <xref:System.Web.UI.WebControls.Wizard> object. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.Wizard> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -1771,7 +1044,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1786,31 +1058,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text caption that is displayed for the header area on the control.</summary>
-        <value>The text caption displayed for the header area on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HeaderText property defines the text caption that is displayed for the header area on the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
- To control the style of the header area, use the <xref:System.Web.UI.WebControls.Wizard.HeaderStyle%2A> property. Alternatively, you can define your own custom UI for the header row by setting the <xref:System.Web.UI.WebControls.Wizard.HeaderTemplate%2A> property instead of the HeaderText property.  
-  
-> [!NOTE]
->  If both the HeaderText and <xref:System.Web.UI.WebControls.Wizard.HeaderTemplate%2A> properties are defined, the HeaderText property has no effect.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to update the HeaderText property of the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_909_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_909_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutTemplate">
@@ -1840,26 +1090,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the custom content of the root container in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
-        <value>An object that contains the custom content for the root container in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control. The default is <see langword="null" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the LayoutTemplate property to define a custom user interface (UI) for the <xref:System.Web.UI.WebControls.Wizard> control. To specify a layout template, add a `LayoutTemplate` element inside the <xref:System.Web.UI.WebControls.Wizard> control markup. Inside the `LayoutTemplate` element, add placeholders for the components of the <xref:System.Web.UI.WebControls.Wizard> control. Placeholders for the navigation, sidebar, and wizard-step sections of the <xref:System.Web.UI.WebControls.Wizard> control are required in the `LayoutTemplate` element.  
-  
-> [!NOTE]
->  You can modify the layout template in **Source** view. Editing the layout template in **Design** view is not supported.  
-  
-   
-  
-## Examples  
- The following example shows how to add a `LayoutTemplate` element to the `Wizard` control and how to format the components of the `Wizard` control by using `div` elements. When the control renders, the `div` elements will be used instead of HTML tables to format the control.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -1869,7 +1102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1879,8 +1111,8 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">The control state to be restored.</param>
-        <summary>Restores control state information.</summary>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1891,7 +1123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1901,11 +1132,9 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">The control state to be restored.</param>
-        <summary>Loads view-state information.</summary>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="savedState" /> is not a valid <see cref="System.Web.UI.PageStatePersister.ViewState%2A" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="MoveCompleteCommandName">
@@ -1915,22 +1144,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the command name that is associated with the **Finish** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MoveCompleteCommandName field is used primarily by control developers. The value for the MoveCompleteCommandName is `"MoveComplete"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNextCommandName">
@@ -1940,22 +1161,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the command name that is associated with the **Next** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MoveNextCommandName field is used primarily by control developers. The value for the MoveNextCommandName is `"MoveNext"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MovePreviousCommandName">
@@ -1965,22 +1178,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the command name that is associated with the **Previous** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MovePreviousCommandName field is used primarily by control developers. The value for the MovePreviousCommandName is `"MovePrevious"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveTo">
@@ -1990,7 +1195,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2000,26 +1204,9 @@
         <Parameter Name="wizardStep" Type="System.Web.UI.WebControls.WizardStepBase" />
       </Parameters>
       <Docs>
-        <param name="wizardStep">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object to set as the <see cref="System.Web.UI.WebControls.Wizard.ActiveStep%2A" />.</param>
-        <summary>Sets the specified <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object as the value for the <see cref="System.Web.UI.WebControls.Wizard.ActiveStep%2A" /> property of the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the MoveTo method to control which <xref:System.Web.UI.WebControls.WizardStepBase>-derived object is set as the value for the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property in the <xref:System.Web.UI.WebControls.Wizard> control programmatically. This way, you can change the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property dynamically based on other conditions during run time.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the MoveTo method to control the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control. If the value of `CheckBox1.Checked` is `true`, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step3`; otherwise, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step2`.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardMoveTo#1](~/add/codesnippet/csharp/c25db441-d055-4625-bea0-_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardMoveTo#1](~/add/codesnippet/visualbasic/c25db441-d055-4625-bea0-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A" /> of the associated <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is equal to -1.</exception>
+        <param name="wizardStep">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToCommandName">
@@ -2029,22 +1216,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the command name that is associated with each of the sidebar buttons. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MoveToCommandName field is used primarily by control developers. The value for the MoveToCommandName is `"Move"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigationButtonStyle">
@@ -2054,7 +1233,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2075,36 +1253,9 @@
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the buttons in the navigation area on the control.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for the buttons in the navigation area on the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The NavigationButtonStyle property defines the appearance for the buttons in the navigation area on the <xref:System.Web.UI.WebControls.Wizard> control. The NavigationButtonStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties. The style settings for the NavigationButtonStyle property are merged with the individual button styles. Any setting that is applied in the individual button style properties overrides the corresponding setting in the NavigationButtonStyle property. For example, if you set the `FinishPreviousButtonStyle.ForeColor` property to `"red"` and the `NavigationButtonStyle.ForeColor` property to `"green"`, the color for the button will be red because the individual style settings of the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle%2A> property override the settings of the NavigationButtonStyle property.  
-  
- The following NavigationButtonStyle property styles are overridden by individual button style settings:  
-  
--   <xref:System.Web.UI.WebControls.Style.BackColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderStyle%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderWidth%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Font%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.ForeColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Height%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Width%2A>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigationPlaceholderId">
@@ -2120,15 +1271,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID of the <see cref="System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A" /> placeholder in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The placeholder ID must be set to "navigationPlaceHolder".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigationStyle">
@@ -2138,7 +1282,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2159,38 +1302,9 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the navigation area on the control.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for the navigation area on the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The NavigationStyle property defines the appearance for the navigation area on the <xref:System.Web.UI.WebControls.Wizard> control. The NavigationStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties.  
-  
- The style settings for the NavigationStyle property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard> control. Any settings that are applied in the NavigationStyle property override the corresponding settings in the properties of the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
- The following <xref:System.Web.UI.WebControls.Wizard> style properties are overridden by the NavigationStyle settings:  
-  
--   <xref:System.Web.UI.WebControls.Style.BackColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderStyle%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderWidth%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Font%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.ForeColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Height%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Width%2A>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NextButtonClick">
@@ -2200,32 +1314,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardNavigationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the **Next** button is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The NextButtonClick event is raised when the **Next** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the NextButtonClick event to provide additional processing when the **Next** button is clicked.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify an event handler for the NextButtonClick event. Each time the **Next** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is increased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_36_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_36_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnActiveStepChanged">
@@ -2235,7 +1331,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2246,29 +1341,10 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">The source of the event.</param>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.Wizard.ActiveStepChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnActiveStepChanged method raises the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event when the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is changed. Use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to provide additional processing when the current step that is displayed in the <xref:System.Web.UI.WebControls.Wizard> control changes.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnActiveStepChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to update the <xref:System.Web.UI.WebControls.Wizard.HeaderText%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/add/codesnippet/csharp/25946c33-6a35-41b1-9139-_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/add/codesnippet/visualbasic/25946c33-6a35-41b1-9139-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="source">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -2278,7 +1354,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2289,11 +1364,10 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">The source of the event.</param>
-        <param name="e">Contains event data.</param>
-        <summary>Determines whether the event for the server control is passed up the page’s user interface server control hierarchy.</summary>
-        <returns>
-          <see langword="true" /> if the event for the server control is passed up the page’s user interface server control hierarchy; otherwise, <see langword="false" />.</returns>
+        <param name="source">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2304,7 +1378,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2314,28 +1387,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> containing the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.Wizard.CancelButtonClick" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event is raised when the **Cancel** button is clicked.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnCancelButtonClick method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event. When the **Cancel** button is clicked, the step is redirected to http://www.wingtiptoys.com/.  
-  
- [!code-vb[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_62_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_62_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnFinishButtonClick">
@@ -2345,7 +1399,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2355,28 +1408,9 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.WizardNavigationEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.WizardNavigationEventArgs" /> containing the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.Wizard.FinishButtonClick" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event is raised when the **Finish** button is clicked.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnFinishButtonClick method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event. When the **Finish** button is clicked, a confirmation message is written to `Label1` and the `Label1.Visible` property is set to `true` so that the message is displayed on the step.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/add/codesnippet/csharp/1330f632-d5c2-429b-b789-_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/add/codesnippet/visualbasic/1330f632-d5c2-429b-b789-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2386,7 +1420,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2396,8 +1429,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The raised event.</param>
-        <summary>Raises the Init event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2408,7 +1441,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2418,28 +1450,9 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.WizardNavigationEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.WizardNavigationEventArgs" /> containing the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.Wizard.NextButtonClick" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event is raised when the **Next** button is clicked.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnNextButtonClick method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event. Each time the **Next** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is increased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/add/codesnippet/csharp/b2aae22f-a455-4df2-b81d-_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/add/codesnippet/visualbasic/b2aae22f-a455-4df2-b81d-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreviousButtonClick">
@@ -2449,7 +1462,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2459,28 +1471,9 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.WizardNavigationEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.WizardNavigationEventArgs" /> containing event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.Wizard.PreviousButtonClick" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event is raised when the **Previous** button is clicked.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnPreviousButtonClick method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event. Each time the **Previous** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is decreased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/add/codesnippet/csharp/24310252-639b-4970-85be-_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/add/codesnippet/visualbasic/24310252-639b-4970-85be-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSideBarButtonClick">
@@ -2490,7 +1483,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2500,31 +1492,9 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.WizardNavigationEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.WizardNavigationEventArgs" /> containing event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.Wizard.SideBarButtonClick" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event is raised when a button on the sidebar area is clicked.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event does not raise an event if a <xref:System.Web.UI.WebControls.Button> control with the <xref:System.Web.UI.WebControls.Button.CommandName%2A> property set to `Move` is outside of the <xref:System.Web.UI.WebControls.DataList> control's sidebar list for the <xref:System.Web.UI.WebControls.Wizard.SideBarTemplate%2A> object.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnSideBarButtonClick method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event. Each time the <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event is raised, a message is written to the <xref:System.Web.UI.WebControls.Label.Text%2A> property for `Label1` with information on which sidebar area button was clicked.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/add/codesnippet/csharp/8ca77e8c-61c7-4b8c-b88a-_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/add/codesnippet/visualbasic/8ca77e8c-61c7-4b8c-b88a-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousButtonClick">
@@ -2534,32 +1504,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardNavigationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the **Previous** button is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PreviousButtonClick event is raised when the **Previous** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the PreviousButtonClick event to provide additional processing when the **Previous** button is clicked.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify an event handler for the PreviousButtonClick event. Each time the **Previous** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is decreased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_86_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_86_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterCommandEvents">
@@ -2569,7 +1521,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2579,8 +1530,8 @@
         <Parameter Name="button" Type="System.Web.UI.WebControls.IButtonControl" />
       </Parameters>
       <Docs>
-        <param name="button">The <see cref="T:System.Web.UI.WebControls.IButtonControl" /> for which the new instance of <see cref="T:System.Web.UI.WebControls.CommandEventHandler" /> is registered.</param>
-        <summary>Registers a new instance of the <see cref="T:System.Web.UI.WebControls.CommandEventHandler" /> class for the specified <see cref="T:System.Web.UI.WebControls.IButtonControl" /> object.</summary>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2591,7 +1542,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2601,8 +1551,8 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The HTML writer.</param>
-        <summary>Renders the control to the specified writer.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2613,7 +1563,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2621,8 +1570,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Save the control state.</summary>
-        <returns>The control state.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2633,7 +1582,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2641,8 +1589,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the view state.</summary>
-        <returns>The view state.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2653,35 +1601,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardNavigationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a button in the sidebar area is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SideBarButtonClick event is raised when a button in the sidebar area on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the SideBarButtonClick event to provide additional processing when a button in the sidebar area is clicked.  
-  
-> [!NOTE]
->  The SideBarButtonClick event does not raise an event if a <xref:System.Web.UI.WebControls.Button> control with the <xref:System.Web.UI.WebControls.Button.CommandName%2A> property set to `Move` is outside of the <xref:System.Web.UI.WebControls.DataList> control's sidebar list for the <xref:System.Web.UI.WebControls.Wizard.SideBarTemplate%2A> object.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify an event handler for the SideBarButtonClick event. Each time the SideBarButtonClick event is raised, a message is written to the <xref:System.Web.UI.WebControls.Label.Text%2A> property for `Label1` with information on which sidebar area button was clicked.  
-  
- [!code-cs[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_137_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_137_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SideBarButtonID">
@@ -2691,22 +1618,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the identifier that is associated with each of the sidebar buttons. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SideBarButtonID field is used primarily by control developers. The value for the SideBarButtonID is `"SideBarButton"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SideBarButtonStyle">
@@ -2716,7 +1635,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2737,40 +1655,9 @@
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the buttons on the sidebar.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for the buttons on the sidebar of the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SideBarButtonStyle property defines the appearance of the buttons on the sidebar of the <xref:System.Web.UI.WebControls.Wizard> control. The SideBarButtonStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties.  
-  
- The style settings for the SideBarButtonStyle property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard> control. Any settings that are applied in the SideBarButtonStyle property override the corresponding settings in the properties of the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
- The following <xref:System.Web.UI.WebControls.Wizard> style properties are overridden by SideBarButtonStyle settings:  
-  
--   <xref:System.Web.UI.WebControls.Style.BackColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderStyle%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderWidth%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Font%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.ForeColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Height%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Width%2A>  
-  
- However, when you use templates to define the appearance of the <xref:System.Web.UI.WebControls.Wizard> control sidebar, the SideBarButtonStyle property has no effect.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SideBarPlaceholderId">
@@ -2786,15 +1673,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID of the <see cref="System.Web.UI.WebControls.Wizard.SideBarTemplate%2A" /> placeholder in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The placeholder ID must be set to "sideBarPlaceHolder".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SideBarStyle">
@@ -2804,7 +1684,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2825,41 +1704,9 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the sidebar area on the control.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for the sidebar area on the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SideBarStyle property defines the appearance for the sidebar area on the <xref:System.Web.UI.WebControls.Wizard> control. The SideBarStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties.  
-  
- The style settings for the SideBarStyle property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard> control. Any settings that are applied in the SideBarStyle property override the corresponding settings in the properties of the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
-> [!NOTE]
->  The height property for SideBarStyle is ignored if the height is set to less than the height of the wizard. Values set for <xref:System.Web.UI.WebControls.Wizard.NavigationStyle%2A> height and <xref:System.Web.UI.WebControls.Wizard.HeaderStyle%2A> height add to the total height of the wizard. For example, if the Wizard height is set to 500px and <xref:System.Web.UI.WebControls.Wizard.NavigationStyle%2A> height or <xref:System.Web.UI.WebControls.Wizard.HeaderStyle%2A> height is set to 50px or 10%, then the total wizard height is 550px.  
-  
- The following <xref:System.Web.UI.WebControls.Wizard> style properties are overridden by SideBarStyle settings:  
-  
--   <xref:System.Web.UI.WebControls.Style.BackColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderStyle%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderWidth%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Font%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.ForeColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Height%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Width%2A>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SideBarTemplate">
@@ -2869,7 +1716,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2890,43 +1736,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template that is used to display the sidebar area on the control.</summary>
-        <value>An <see cref="T:System.Web.UI.ITemplate" /> that contains the template for displaying the sidebar area on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SideBarTemplate property to specify the custom content that is displayed for the sidebar area on a <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the sidebar area is rendered.  
-  
- The custom content for the template is contained within the SideBarTemplate object. You can add custom content to the SideBarTemplate object either by using template-editing mode in design view or by defining the SideBarTemplate object inline using `SideBarTemplate` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
-> [!NOTE]
->  The SideBarTemplate object must contain a <xref:System.Web.UI.WebControls.DataList> control or <xref:System.Web.UI.WebControls.ListView> control whose <xref:System.Web.UI.Control.ID%2A> property is set to `"SideBarList"` to enable the sidebar navigation feature. Also, the `"SideBarList"` on the <xref:System.Web.UI.WebControls.DataList> or <xref:System.Web.UI.WebControls.ListView> control must contain an <xref:System.Web.UI.WebControls.IButtonControl> control.  
-  
- To access a control that is defined in a template programmatically, use the <xref:System.Web.UI.WebControls.CompositeControl.Controls%2A> collection of the <xref:System.Web.UI.WebControls.Wizard> object. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.Wizard> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
-   
-  
-## Examples  
- The following example shows how to add a <xref:System.Web.UI.WebControls.ListView> control to the `SideBarTemplate` element and how to use a <xref:System.Web.UI.WebControls.LinkButton> control to navigate the steps.  
-  
-```  
-<SideBarTemplate>  
-  <asp:ListView ID="sideBarList" runat="server">  
-    <LayoutTemplate>  
-    <div id="ItemPlaceHolder" runat="server"/>  
-    </LayoutTemplate>  
-  
-    <ItemTemplate>  
-      <asp:LinkButton ID="sideBarButton" runat="server"   
-          Text="Button" />  
-    </ItemTemplate>  
-  </asp:ListView>  
-</SideBarTemplate>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -2936,7 +1748,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2948,21 +1759,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that is used to render alternate text that notifies screen readers to skip the content in the sidebar area.</summary>
-        <value>A string that the <see cref="T:System.Web.UI.WebControls.Wizard" /> renders as alternate text with an invisible image, as a hint to screen readers. The default is <c>"Skip Navigation Links"</c>. The default text for the control is localized based on the current locale for the server.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SkipLinkText property to specify the alternate text for a hidden image that is read by screen readers to provide the ability to skip the content  for a sidebar area. The text that you specify provides assistive technology devices with a description of the hidden image that can be used to make the control more accessible.  
-  
-> [!NOTE]
->  If the <xref:System.Web.UI.WebControls.Wizard.DisplaySideBar%2A> property is set to `false`, the SkipLinkText property does not create a hidden image with alternate text.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartNavigationTemplate">
@@ -2972,7 +1771,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2993,23 +1791,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template that is used to display the navigation area on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step of the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
-        <value>An <see cref="T:System.Web.UI.ITemplate" /> that contains the template for displaying the navigation area on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> for the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the StartNavigationTemplate property to specify the custom content that is displayed for the navigation area on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the navigation area is rendered on the <xref:System.Web.UI.WebControls.WizardStepType> step.  
-  
- The custom content for the template is contained within the StartNavigationTemplate object. You can add custom content to the StartNavigationTemplate object either by using template-editing mode in design view or by defining the StartNavigationTemplate object inline using `StartNavigationTemplate` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
-> [!NOTE]
->  The StartNavigationTemplate object that is contained in the StartNavigationTemplate property must contain an <xref:System.Web.UI.WebControls.IButtonControl> control with the <xref:System.Web.UI.WebControls.IButtonControl.CommandName%2A> property set to `"MoveNext"` to enable the navigation feature.  
-  
- To access a control that is defined in a template programmatically, use the <xref:System.Web.UI.WebControls.CompositeControl.Controls%2A> collection of the <xref:System.Web.UI.WebControls.Wizard> object. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.Wizard> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonID">
@@ -3019,22 +1803,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the identifier that is associated with the **Next** button on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StartNextButtonID is used primarily by control developers. The value for the StartNextButtonID is `"StartNextButton"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonImageUrl">
@@ -3044,7 +1820,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3062,16 +1837,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL of the image that is displayed for the **Next** button on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step.</summary>
-        <value>The URL of the image displayed for **Next** on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> of the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType> field, use the StartNextButtonImageUrl property to specify the image to display for the **Next** button.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonStyle">
@@ -3081,7 +1849,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3102,18 +1869,9 @@
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the **Next** button on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for **Next** on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> of the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StartNextButtonStyle property defines the appearance for the **Next** button on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. The StartNextButtonStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties. The style settings for the StartNextButtonStyle property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property. Any setting that is applied in the StartNextButtonStyle property overrides the corresponding setting in the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonText">
@@ -3123,7 +1881,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3135,27 +1892,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text caption that is displayed for the **Next** button on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step.</summary>
-        <value>The text caption displayed for **Next** on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> of the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is <c>"Next"</c>. The default text for the control is localized based on the current locale for the server.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StartNextButtonText property contains the text that is displayed for the **Next** button on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonType%2A> property, the StartNextButtonText property can appear as text on a button, as text displayed as an alternative to an image in browsers that do not render images, or as the text of a link. The following table lists the field values for the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonType%2A> property and the respective effect of each on the **Next** button text.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears on the button.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as alternative text for the image.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as a link.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonType">
@@ -3165,7 +1904,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3177,8 +1915,8 @@
         <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of button that is rendered as the **Next** button on the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="T:System.Web.UI.WebControls.ButtonType" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3189,7 +1927,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3210,23 +1947,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template that is used to display the navigation area on any <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects other than the <see cref="T:System.Web.UI.WebControls.WizardStepType" />, the <see cref="T:System.Web.UI.WebControls.WizardStepType" />, or <see cref="T:System.Web.UI.WebControls.WizardStepType" /> step.</summary>
-        <value>An <see cref="T:System.Web.UI.ITemplate" /> that contains the template for displaying the navigation area on any <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects of the <see cref="T:System.Web.UI.WebControls.Wizard" /> control other than the <see cref="T:System.Web.UI.WebControls.WizardStepType" />, <see cref="T:System.Web.UI.WebControls.WizardStepType" />, or <see cref="T:System.Web.UI.WebControls.WizardStepType" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A> property to specify the custom content that is displayed for the navigation area on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the navigation area is rendered on the <xref:System.Web.UI.WebControls.WizardStepType> step.  
-  
- The custom content for the template is contained within the StepNavigationTemplate object. You can add custom content to the StepNavigationTemplate object either by using template-editing mode in design view or by defining the StepNavigationTemplate object inline using `StepNavigationTemplate` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
-> [!NOTE]
->  The StepNavigationTemplate object that is contained in the StepNavigationTemplate property must contain two <xref:System.Web.UI.WebControls.IButtonControl> controls, one with its <xref:System.Web.UI.WebControls.IButtonControl.CommandName%2A> property set to `"MoveNext"` and one with its <xref:System.Web.UI.WebControls.IButtonControl.CommandName%2A> property set to `"MovePrevious"`, to enable the navigation feature.  
-  
- To access a control that is defined in a template programmatically, use the <xref:System.Web.UI.WebControls.CompositeControl.Controls%2A> collection of the <xref:System.Web.UI.WebControls.Wizard> object. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.Wizard> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonID">
@@ -3236,22 +1959,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the identifier that is associated with the **Next** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StepNextButtonID field is used primarily by control developers. The value for the StepNextButtonID is `"StepNextButton"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonImageUrl">
@@ -3261,7 +1976,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3279,16 +1993,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL of the image that is displayed for the **Next** button.</summary>
-        <value>The URL of the image displayed for **Next** on the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.StepNextButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType> field, use the StepNextButtonImageUrl property to specify the image to display for the **Next** button.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonStyle">
@@ -3298,7 +2005,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3319,18 +2025,9 @@
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the **Next** button.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for **Next** on the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StepNextButtonStyle property defines the appearance for the **Next** button on the <xref:System.Web.UI.WebControls.Wizard> control. The StepNextButtonStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties. The style settings for the StepNextButtonStyle property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property. Any setting that is applied in the StepNextButtonStyle property overrides the corresponding setting in the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonText">
@@ -3340,7 +2037,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3352,27 +2048,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text caption that is displayed for the **Next** button.</summary>
-        <value>The text caption displayed for **Next** on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is <c>"Next"</c>. The default text for the control is localized based on the current locale for the server.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StepNextButtonText property contains the text that is displayed for the **Next** button on the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.StepNextButtonType%2A> property, the StepNextButtonText property can appear as text on a button, as text displayed as an alternative to an image, or as the text of a link. The following table lists the field values for the <xref:System.Web.UI.WebControls.Wizard.StepNextButtonType%2A> property and the respective effect of each on the **Next** button text.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears on the button.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as alternative text for the image.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as a link.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonType">
@@ -3382,7 +2060,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3394,8 +2071,8 @@
         <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of button that is rendered as the **Next** button.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="T:System.Web.UI.WebControls.ButtonType" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3406,22 +2083,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the identifier that is associated with the **Previous** button. This field is static and read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StepPreviousButtonID field is used primarily by control developers. The value for the StepPreviousButtonID is `"StepPreviousButton"`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonImageUrl">
@@ -3431,7 +2100,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3449,16 +2117,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL of the image that is displayed for the **Previous** button.</summary>
-        <value>The URL of the image displayed for **Previous** on the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType> field, use the StepPreviousButtonImageUrl property to specify the image to display for the **Previous** button.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonStyle">
@@ -3468,7 +2129,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3489,18 +2149,9 @@
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the **Previous** button.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for **Previous** on a <see cref="T:System.Web.UI.WebControls.WizardStepType" /> for the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StepPreviousButtonStyle property defines the appearance of the **Previous** button on a <xref:System.Web.UI.WebControls.WizardStepType> step for the <xref:System.Web.UI.WebControls.Wizard> control. The StepPreviousButtonStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties. The style settings for the StepPreviousButtonStyle property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property. Any setting that is applied in the StepPreviousButtonStyle property overrides the corresponding setting in the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonText">
@@ -3510,7 +2161,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3522,27 +2172,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text caption that is displayed for the **Previous** button.</summary>
-        <value>The text caption displayed for **Previous** on the <see cref="T:System.Web.UI.WebControls.Wizard" />. The default is <c>"Previous"</c>. The default text for the control is localized based on the current locale for the server.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StepPreviousButtonText property contains the text that is displayed for the **Previous** button on the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonType%2A> property, the StepPreviousButtonText property can appear as text on a button, as text displayed as an alternative to an image in browsers that do not render images, or as the text of a link. The following table lists the field values for the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonType%2A> property and the respective effect of each on the **Previous** button text.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears on the button.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as alternative text for the image.  
-  
- <xref:System.Web.UI.WebControls.ButtonType>  
- Text appears as a link.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonType">
@@ -3552,7 +2184,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3564,8 +2195,8 @@
         <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of button that is rendered as the **Previous** button.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="T:System.Web.UI.WebControls.ButtonType" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3576,7 +2207,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3597,40 +2227,9 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.Style" /> object that defines the settings for the <see cref="T:System.Web.UI.WebControls.WizardStep" /> objects.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> that defines the style settings for the <see cref="T:System.Web.UI.WebControls.WizardStep" /> objects on the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StepStyle property gets a reference to a <xref:System.Web.UI.WebControls.Style> object that defines the appearance for the <xref:System.Web.UI.WebControls.WizardStep> objects on the <xref:System.Web.UI.WebControls.Wizard> control. The StepStyle property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
-  
- Common settings include custom background color, text color, and font properties. The style settings for the StepStyle property are merged with the style settings for the <xref:System.Web.UI.WebControls.WebControl.Style%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control. Any setting that is applied in the StepStyle property overrides the corresponding setting in the <xref:System.Web.UI.WebControls.WebControl.Style%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
- The following StepStyle properties can be set to override the <xref:System.Web.UI.WebControls.WebControl.Style%2A> properties of the <xref:System.Web.UI.WebControls.Wizard> control:  
-  
--   <xref:System.Web.UI.WebControls.Style.BackColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderStyle%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.BorderWidth%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.CssClass%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Font%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.ForeColor%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Height%2A>  
-  
--   <xref:System.Web.UI.WebControls.Style.Width%2A>  
-  
- When you use a <xref:System.Web.UI.WebControls.TemplatedWizardStep> template to define the appearance for the <xref:System.Web.UI.WebControls.WizardStep> objects, the StepStyle property has no effect.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -3640,23 +2239,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value that corresponds to the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
-        <value>The <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value that corresponds to the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TagKey property is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.Wizard> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3666,7 +2257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3674,7 +2264,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Tracks view state.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3691,15 +2281,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID of the <see cref="T:System.Web.UI.WebControls.WizardStep" /> placeholder in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The placeholder ID must be set to "WizardStepPlaceHolder".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WizardSteps">
@@ -3709,7 +2292,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3730,31 +2312,9 @@
         <ReturnType>System.Web.UI.WebControls.WizardStepCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection containing all the <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects that are defined for the control.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> representing all the <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects defined for the <see cref="T:System.Web.UI.WebControls.Wizard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WizardSteps property returns a collection of <xref:System.Web.UI.WebControls.WizardStepBase> objects that make up the <xref:System.Web.UI.WebControls.Wizard> control. You can use the WizardSteps collection to access the <xref:System.Web.UI.WebControls.WizardStepBase> objects that are contained in the <xref:System.Web.UI.WebControls.Wizard> control programmatically. Use the <xref:System.Web.UI.WebControls.WizardStepCollection.Add%2A>, <xref:System.Web.UI.WebControls.WizardStepCollection.Remove%2A>, <xref:System.Web.UI.WebControls.WizardStepCollection.Clear%2A>, and <xref:System.Web.UI.WebControls.WizardStepCollection.Insert%2A> methods to manipulate the <xref:System.Web.UI.WebControls.WizardStepBase> objects in the collection programmatically.  
-  
-> [!NOTE]
->  If you are using Microsoft Visual Studio 2005, note that the <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> is persisted in Source view. If you change the WizardSteps property in Design view by clicking the sidebar buttons, and you then run the page, the first step of the `Wizard` control might not be shown because the <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> might be pointing to a different step.  
-  
- If the <xref:System.Web.UI.WebControls.Wizard> control contains multiple <xref:System.Web.UI.WebControls.WizardStepCollection> collections, the collections will be merged.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Wizard> control programmatically and how to use the <xref:System.Web.UI.WebControls.WizardStepCollection.Add%2A> method to add <xref:System.Web.UI.WebControls.WizardStepBase> objects to the WizardSteps collection.  
-  
- [!code-vb[System.Web.UI.WebControls.WizardSteps#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_467_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.WizardSteps#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_467_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

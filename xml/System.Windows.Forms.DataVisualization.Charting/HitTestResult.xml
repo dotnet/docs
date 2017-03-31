@@ -11,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the results of a hit test.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HitTestResult class represents the results of a hit test, and is exposed as the return object from a <xref:System.Windows.Forms.DataVisualization.Charting.Chart.HitTest%2A> method call.  
-  
- A hit test checks a specified point in the chart to determine if a chart element is located at that point. If a chart element is detected, the HitTestResult class is used to obtain information about that chart element.  
-  
- If a chart element is found, the <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult.Object%2A> property returns a reference to the chart element; the only exception to this being <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint> objects, in which case the return value of this property is `null`.  
-  
- If a data point is located, you can use the <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult.PointIndex%2A> property to get the index of that data point; that is, the zero-based index of the point in the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCollection>. Use the <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult.Series%2A> property to get the associated <xref:System.Windows.Forms.DataVisualization.Charting.Series> object for that data point.  
-  
- The <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult.ChartArea%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult.Axis%2A> properties are used to get the associated chart area and axis of the chart element—if any—returned by the hit test. Note that these properties may be `null` if the returned chart element does not have an associated chart area or axis.  
-  
- Use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartElementType> property to determine the type of the chart element returned by a hit test.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.HitTestResult" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,18 +43,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that may be associated with a chart element returned by a hit test. The presence of an associated <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object depends on whether a chart element was detected at the given location, and the type of chart element returned.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object, otherwise <see langword="null" />. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the chart object returned by the hit test is an object that is associated with an axis—for example, a scrollbar element, tick mark, grid line or strip line—the Axis property will reference the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object with which the returned chart object is associated. Otherwise this property will be `null`.  
-  
- Note that the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.HitTest%2A> method can be called explicitly, in which case a chart element may or may not be at the specified location.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartArea">
@@ -87,20 +61,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object that may be associated with a chart element returned by a hit test. The presence of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object depends on whether a chart element was detected at the given location, and the type of chart element returned.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object, otherwise <see langword="null" />. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a Chart object is returned by the hit test, the ChartArea property will reference the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object that is associated with the returned chart element.  
-  
- If no chart element is returned by the hit test, the value of this property will be `null`.  
-  
- **Note** The <xref:System.Windows.Forms.DataVisualization.Charting.Chart.HitTest%2A> method can be called explicitly, in which case a chart element may or may not be at the specified location.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartElementType">
@@ -116,16 +79,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of chart element, if any, returned by a hit test.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElementType" /> enumeration value that indicates the type of chart element returned by a hit test. Defaults to <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElementType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to determine the type of chart element, if any, returned by a hit test.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -141,19 +97,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the object, if any, returned by a hit test.</summary>
-        <value>An object of type <see cref="T:System.Object" />, otherwise <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a chart element is located at the point that is checked by the hit test, this property will reference that chart element, otherwise the value of this property will be `null`.  
-  
-> [!NOTE]
->  If a data point is returned by the hit test, this property will still return a `null`. To obtain information about the data point, use the <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult.PointIndex%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult.Series%2A> properties instead.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PointIndex">
@@ -169,20 +115,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index of a data point, if any, returned by a hit test.</summary>
-        <value>An <see langword="integer" /> value that represents the index of a data point returned by a hit test. The default value is negative one (-1).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a data point is at the location that is checked by a hit test, the PointIndex property will return the zero-based index of that data point, otherwise it will return a negative one (-1).  
-  
- All data points are stored in a <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCollection>, which is exposed as the <xref:System.Windows.Forms.DataVisualization.Charting.Series.Points%2A> collection property of a <xref:System.Windows.Forms.DataVisualization.Charting.Series> object; the index of the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCollection> is zero-based.  
-  
- Use the <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult.Series%2A> property to determine the series to which the data point belongs.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Series">
@@ -198,18 +133,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Series</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the associated series of a data point, if any, returned by a hit test.</summary>
-        <value>The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that a data point returned by a hit test belongs to. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a data point is at the location checked by a hit test, this property will reference the <xref:System.Windows.Forms.DataVisualization.Charting.Series> object that the data point belongs to. If no data point is returned by the hit test, the value of this property will be `null`.  
-  
- To determine the index of a returned data point, use the <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult.PointIndex%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SubObject">
@@ -225,16 +151,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the sub-object, if any, returned by a hit test.</summary>
-        <value>A sub-object of type <see cref="T:System.Object" />, otherwise <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An example of a sub-object is an <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object that is displayed inside a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SessionStateSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,56 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Configures the session state for a Web application.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SessionStateSection class refers to the element in the Machine.config or Web.config configuration file identified by the `sessionState` tag.  
-  
- When a new client begins interacting with a Web application, a session ID is issued and associated with all the subsequent requests from the same client during the time that the session is valid. This ID is used to maintain server-side state associated with the client session across requests. The SessionStateSection controls how the ASP.NET application establishes and maintains this association on behalf of each client.  
-  
- This mechanism is very flexible and gives you the ability to host session-state information out of process and to track state without using cookies, among other things.  
-  
-   
-  
-## Examples  
- This section provides two code examples. The first demonstrates how to specify values declaratively for several attributes of the `sessionState` section, which can also be accessed as members of the SessionStateSection class. The second demonstrates how to use the SessionStateSection class.  
-  
- The following configuration file example shows how to specify values declaratively for the `sessionState` section.  
-  
-```  
-<configuration>  
-  <system.web>  
-    <sessionState mode="InProc"   
-      stateConnectionString="tcpip=127.0.0.1:42424"   
-      stateNetworkTimeout="10"  
-      sqlConnectionString="data source=127.0.0.1;  
-        Integrated Security=SSPI"  
-      sqlCommandTimeout="30"   
-      customProvider=""   
-      cookieless="UseDeviceProfile"   
-      cookieName="ASP.NET_SessionId"   
-      timeout="20"   
-      allowCustomSqlDatabase="False"   
-      regenerateExpiredSessionId="False"   
-      partitionResolverType=""   
-      useHostingIdentity="True">  
-      <providers>  
-        <clear />  
-      </providers>  
-    </sessionState>  
-  </system.web>  
-</configuration>  
-```  
-  
- The following code example demonstrates how to use the SessionStateSection class.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_37_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#1](~/add/codesnippet/csharp/t-system.web.configurati_37_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.SessionStateSection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SessionStateSection constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.SessionStateSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowCustomSqlDatabase">
@@ -94,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -106,20 +48,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the user can specify the initial catalog value in the <see cref="System.Web.Configuration.SessionStateSection.SqlConnectionString%2A" /> property.</summary>
-        <value>
-          <see langword="true" /> if the user is allowed to specify the catalog; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to get the AllowCustomSqlDatabase property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to access the <xref:System.Web.Configuration.SessionStateSection> object.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#2](~/add/codesnippet/visualbasic/p-system.web.configurati_109_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#2](~/add/codesnippet/csharp/p-system.web.configurati_109_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CompressionEnabled">
@@ -140,17 +71,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether compression is enabled for session-state data.</summary>
-        <value>
-          <see langword="true" /> if compression is enabled; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the CompressionEnabled value is set to `true`, ASP.NET uses the <xref:System.IO.Compression.GZipStream> class to compress and expand session-state data.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cookieless">
@@ -160,7 +83,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -172,36 +94,9 @@
         <ReturnType>System.Web.HttpCookieMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether cookies are used to identify client sessions.</summary>
-        <value>
-          <see langword="true" /> if all requests are treated as cookieless, or <see langword="false" /> if no requests are treated as cookieless, or one of the <see cref="T:System.Web.HttpCookieMode" /> values. The default value in ASP.NET version 2.0 is <see cref="T:System.Web.HttpCookieMode" />. In earlier versions, the default value was <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are two ways that session state can store the unique ID that associates the client with a server session: by storing an HTTP cookie on the client or by encoding the session ID in the URL. Storing the session ID in the cookie is more secure but requires the client browser to support cookies.  
-  
- For applications that allow clients that do not support cookies, such as a variety of mobile devices, the session ID may be stored in the URL. The URL option has several drawbacks. It requires that the links on the site be relative and that the page be redirected at the beginning of the session with new query-string values, and it exposes the session ID right in the query string, where it can be picked up for use in a security attack.  
-  
- You are encouraged to use the cookieless mode only if you need to support clients that lack cookie support.  
-  
- Session state also supports two additional options: <xref:System.Web.HttpCookieMode> and <xref:System.Web.HttpCookieMode>. The former enables the session-state module to determine what mode (cookie or cookieless) is used on a per-client basis based on the browser capabilities.  The <xref:System.Web.HttpCookieMode> option performs a handshake with the browser to verify whether a cookie may be stored, and therefore requires an additional request to make the determination. If you need to support cookieless clients, strongly consider using <xref:System.Web.HttpCookieMode> to generate cookieless URLs only for clients that require them.  
-  
-> [!NOTE]
->  With UP.Browser 4.1 or UP.Browser 3.2, <xref:System.Web.HttpResponse.Redirect%2A> always behaves as if the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsRedirectWithCookie%2A> property of the <xref:System.Web.HttpBrowserCapabilities> object is `false`, unless the Cookieless property in the <xref:System.Web.Configuration.SystemWebSectionGroup.SessionState%2A> section of Web.config has been explicitly set to `true`.  
->   
->  In ASP.NET version 1.1, the options for this setting were `true` or `false`, but with ASP.NET 2.0, the choices are expanded, and <xref:System.Web.HttpCookieMode> is now the default setting. If your Web application has the Cookieless property set to a Boolean value, then <xref:System.Web.HttpResponse.Redirect%2A> should work as expected for these browsers.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the Cookieless property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to access the <xref:System.Web.Configuration.SessionStateSection> object.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#7](~/add/codesnippet/visualbasic/p-system.web.configurati_358_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#7](~/add/codesnippet/csharp/p-system.web.configurati_358_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CookieName">
@@ -211,7 +106,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -223,24 +117,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the cookie name.</summary>
-        <value>The name of the HTTP cookie to use for session identification.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `"ASP.NET_SessionId"`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the CookieName property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to get the section.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#5](~/add/codesnippet/visualbasic/p-system.web.configurati_294_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#5](~/add/codesnippet/csharp/p-system.web.configurati_294_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomProvider">
@@ -250,7 +129,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -262,24 +140,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the custom provider from the <see cref="System.Web.Configuration.SessionStateSection.Providers%2A" /> collection.</summary>
-        <value>The custom provider name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The provider is only used when the session-state mode is set to <xref:System.Web.SessionState.SessionStateMode>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the CustomProvider property.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#4](~/add/codesnippet/visualbasic/p-system.web.configurati_55_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#4](~/add/codesnippet/csharp/p-system.web.configurati_55_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">
@@ -289,7 +152,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -308,7 +170,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -320,24 +181,9 @@
         <ReturnType>System.Web.SessionState.SessionStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying where to store the session state.</summary>
-        <value>One of the <see cref="T:System.Web.SessionState.SessionStateMode" /> values. The default value is <see cref="T:System.Web.SessionState.SessionStateMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.SessionState.SessionStateMode> is not a required attribute and can be inherited from a higher level in the configuration hierarchy or from the default value. However, the configuration handler for this section will always write out the mode based on the current inherited value when writing this section.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the Mode property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to access the <xref:System.Web.Configuration.SessionStateSection> object.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#14](~/add/codesnippet/visualbasic/p-system.web.configurati_21_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#14](~/add/codesnippet/csharp/p-system.web.configurati_21_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PartitionResolverType">
@@ -347,7 +193,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -359,18 +204,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying where to store the session state.</summary>
-        <value>A value specifying where to store the session state, or an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the PartitionResolverType property is specified, the <xref:System.Web.Configuration.SessionStateSection.SqlConnectionString%2A> property and <xref:System.Web.Configuration.SessionStateSection.StateConnectionString%2A> property are ignored.  The PartitionResolverType can be locked via the <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property like other properties within the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element. The connection string returned by the PartitionResolverType will be used on every request to connect to the appropriate server location for the remainder of the request.  If the connection string is invalid, ASP.NET will throw the same exception that is thrown when the configured connection string to the server is invalid.  
-  
- This property is used to partition session-state data across multiple backend nodes when in SQL or state-server mode.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">
@@ -380,7 +216,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -399,7 +234,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -418,7 +252,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -430,24 +263,9 @@
         <ReturnType>System.Configuration.ProviderSettingsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current <see cref="T:System.Configuration.ProviderSettingsCollection" /> providers.</summary>
-        <value>The collection containing the <see cref="T:System.Web.Configuration.SessionStateSection" /> providers.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property refers to the information contained by the configuration tag identified by the `providers` element.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the Providers property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to access the <xref:System.Web.Configuration.SessionStateSection> object.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#10](~/add/codesnippet/visualbasic/p-system.web.configurati_15_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#10](~/add/codesnippet/csharp/p-system.web.configurati_15_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegenerateExpiredSessionId">
@@ -457,7 +275,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -469,25 +286,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the session Id will be re-issued when an expired session ID is specified by the client.</summary>
-        <value>
-          <see langword="true" /> if the session ID must be regenerated; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, only cookieless URLs are reissued when RegenerateExpiredSessionId is enabled.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the RegenerateExpiredSessionId property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to access the <xref:System.Web.Configuration.SessionStateSection> object.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#3](~/add/codesnippet/visualbasic/p-system.web.configurati_367_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#3](~/add/codesnippet/csharp/p-system.web.configurati_367_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionIDManagerType">
@@ -497,7 +298,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -509,16 +309,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying the fully qualified type of session ID Manager.</summary>
-        <value>A fully qualified type of session ID Manager.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SessionIDManagerType overrides session ID generation and management for custom session ID management schemes. The default value is an empty string ("").  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SqlCommandTimeout">
@@ -528,7 +321,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -543,19 +335,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the duration time-out for the SQL commands using the SQL Server session state mode.</summary>
-        <value>The amount of time, in seconds, after which a SQL command will time out. The default is 30 seconds.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to get the SqlCommandTimeout property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to access the <xref:System.Web.Configuration.SessionStateSection> object.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#13](~/add/codesnippet/visualbasic/p-system.web.configurati_168_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#13](~/add/codesnippet/csharp/p-system.web.configurati_168_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SqlConnectionRetryInterval">
@@ -579,16 +361,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the time interval that should elapse before ASP.NET reconnects to the database.</summary>
-        <value>The time interval that should elapse before ASP.NET reconnects to the database.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SqlConnectionRetryInterval specifies the time interval in seconds before reconnecting to the database when a connection error has occurred.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SqlConnectionString">
@@ -598,7 +373,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -610,27 +384,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the SQL connection string.</summary>
-        <value>The SQL connection string. Its default value is the generic string: "data source=127.0.0.1;Integrated Security=SSPI"</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This `sqlConnectionString` attribute is required when <xref:System.Web.Configuration.SessionStateSection.Mode%2A> is set to <xref:System.Web.SessionState.SessionStateMode>.  
-  
-> [!NOTE]
->  To use the <xref:System.Web.SessionState.SessionStateMode> session state mode, you must run the InstallSqlState.sql SQL script (which is installed in [*drive*:]\WINDOWS\Microsoft.NET\Framework\\*VersionNumber* as part of the default .NET Framework installation) on the computer running SQL Server that will store the session state. This creates a database called ASPState with new stored procedures and creates new ASPStateTempApplications and ASPStateTempSessions tables in the TempDB database.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the SqlConnectionString property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to access the <xref:System.Web.Configuration.SessionStateSection> object.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#8](~/add/codesnippet/visualbasic/p-system.web.configurati_276_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#8](~/add/codesnippet/csharp/p-system.web.configurati_276_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StateConnectionString">
@@ -640,7 +396,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -652,27 +407,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the state server connection string.</summary>
-        <value>The state server connection string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property specifies the server name and the port when the session state is stored remotely. The `stateConnectionString` attribute is required when the <xref:System.Web.Configuration.SessionStateSection.Mode%2A> is set to <xref:System.Web.SessionState.SessionStateMode>.  
-  
-> [!NOTE]
->  Make sure the ASP.NET state service is running on the remote server that stores the session-state information. This service is installed with ASP.NET and is located by default at [*drive*:]\WINDOWS\Microsoft.NET\Framework\\*VersionNumber*\aspnet_state.exe.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the StateConnectionString property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to access the <xref:System.Web.Configuration.SessionStateSection> object.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#9](~/add/codesnippet/visualbasic/p-system.web.configurati_394_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#9](~/add/codesnippet/csharp/p-system.web.configurati_394_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StateNetworkTimeout">
@@ -682,7 +419,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -697,24 +433,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the amount of time the network connection between the Web server and the state server can remain idle.</summary>
-        <value>The time, in seconds, that the network connection between the Web server and the state server can remain idle before the session is abandoned. The default value is 10 seconds.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This `sessionStateSection` attribute is required when the <xref:System.Web.Configuration.SessionStateSection.Mode%2A> property is set to <xref:System.Web.SessionState.SessionStateMode>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the StateNetworkTimeout property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to access the <xref:System.Web.Configuration.SessionStateSection> object.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#6](~/add/codesnippet/visualbasic/p-system.web.configurati_340_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#6](~/add/codesnippet/csharp/p-system.web.configurati_340_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -724,7 +445,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -742,24 +462,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the session time-out</summary>
-        <value>The session time-out, in minutes. The default value is 20 minutes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Timeout property cannot be set to a value greater than 525,601 minutes (1 year).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the Timeout property. Refer to the code example in the <xref:System.Web.Configuration.SessionStateSection> class topic to learn how to access the <xref:System.Web.Configuration.SessionStateSection> object.  
-  
- [!code-vb[System.Web.Configuration.SessionStateSection#11](~/add/codesnippet/visualbasic/p-system.web.configurati_83_1.vb)]
- [!code-cs[System.Web.Configuration.SessionStateSection#11](~/add/codesnippet/csharp/p-system.web.configurati_83_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseHostingIdentity">
@@ -769,7 +474,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -781,9 +485,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying the whether the session state will use client impersonation when available, or will always revert to the hosting identity.</summary>
-        <value>
-          <see langword="true" /> if Web application should revert to hosting identity; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

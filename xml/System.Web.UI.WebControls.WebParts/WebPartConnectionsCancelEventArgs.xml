@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" /> and <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" /> events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnecting%2A> method, and it indicates that the connection process has begun (for example, a user has selected a control and clicked a connect verb), but is not yet completed. The event provides an opportunity to cancel a connection before it is complete. If the connection is successfully completed, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> event.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnecting%2A> method, and it indicates that a user has clicked a disconnect verb, or the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts%2A> method has otherwise been called. The event provides an opportunity to cancel the process of ending a connection before it is complete. If the connection is ended successfully, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> event.  
-  
- The WebPartConnectionsCancelEventArgs class contains information about the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting> and <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting> events. It provides access to the Web Parts controls that are being connected or disconnected.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -44,11 +31,11 @@
         <Parameter Name="consumerConnectionPoint" Type="System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
       </Parameters>
       <Docs>
-        <param name="provider">The Web Parts control providing data in the connection.</param>
-        <param name="providerConnectionPoint">The connection point for providing data.</param>
-        <param name="consumer">The Web Parts control consuming data in the connection.</param>
-        <param name="consumerConnectionPoint">The connection point for consuming data.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs" /> class without a specified connection.</summary>
+        <param name="provider">To be added.</param>
+        <param name="providerConnectionPoint">To be added.</param>
+        <param name="consumer">To be added.</param>
+        <param name="consumerConnectionPoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +46,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -70,12 +56,12 @@
         <Parameter Name="connection" Type="System.Web.UI.WebControls.WebParts.WebPartConnection" />
       </Parameters>
       <Docs>
-        <param name="provider">The Web Parts control providing data in the connection.</param>
-        <param name="providerConnectionPoint">The connection point for providing data.</param>
-        <param name="consumer">The Web Parts control consuming data in the connection.</param>
-        <param name="consumerConnectionPoint">The connection point for consuming data.</param>
-        <param name="connection">The Web Parts connection involved in the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" /> or <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" /> event.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs" /> class with the specified connection.</summary>
+        <param name="provider">To be added.</param>
+        <param name="providerConnectionPoint">To be added.</param>
+        <param name="consumer">To be added.</param>
+        <param name="consumerConnectionPoint">To be added.</param>
+        <param name="connection">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +72,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web Parts connection involved in the event.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> involved in the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" /> or <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" /> event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,15 +90,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web Parts control acting as the consumer in the connection.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> acting as the consumer in the connection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,15 +108,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the connection point that consumes data in the Web Parts connection.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,15 +126,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web Parts control acting as the provider in the connection.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> acting as the provider in the connection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,15 +144,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.ProviderConnectionPoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the connection point that provides data in the Web Parts connection.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

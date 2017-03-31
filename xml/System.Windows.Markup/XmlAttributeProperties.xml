@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlAttributeProperties" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates the XML language-related attributes of a <see cref="T:System.Windows.DependencyObject" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class implements attached property support for <xref:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps%2A>, <xref:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition%2A>, and <xref:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary%2A> and <xref:System.Windows.Markup.XmlAttributeProperties.XmlSpace%2A>.  
-  
- These properties are generally only used by the WPF XAML parser implementation for [!INCLUDE[net_v30_short](~/add/includes/net-v30-short-md.md)] and [!INCLUDE[net_v35_short](~/add/includes/net-v35-short-md.md)]. Actual user code attached property calls from XAML markup is not the primary scenario. The properties are implemented as attached properties primarily so that the properties can better support the property inheritance concept for dependency properties through all possible object graphs. As such, this is really an infrastructure support class. For more information, see [Property Value Inheritance](../Topic/Property%20Value%20Inheritance.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetXmlNamespaceMaps">
@@ -32,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -50,12 +39,10 @@
         <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">The object to obtain the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps%2A" /> property from.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps%2A" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>The value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps%2A" /> property for the specified object.</returns>
+        <param name="dependencyObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetXmlnsDefinition">
@@ -65,7 +52,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -86,12 +72,10 @@
         <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">The object to obtain the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition%2A" /> attached property value from.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition%2A" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>The value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition%2A" /> attached property for the specified object.</returns>
+        <param name="dependencyObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetXmlnsDictionary">
@@ -101,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -119,12 +102,10 @@
         <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">The object to obtain the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary%2A" /> attached property value from.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary%2A" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>The value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary%2A" /> attached property for the specified object.</returns>
+        <param name="dependencyObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetXmlSpace">
@@ -134,7 +115,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -152,12 +132,10 @@
         <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">The object to obtain the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlSpace%2A" /> attached property value from.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlSpace%2A" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>The value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlSpace%2A" /> attached property for the specified object.</returns>
+        <param name="dependencyObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetXmlNamespaceMaps">
@@ -167,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,12 +155,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">The object on which to set the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps%2A" /> attached property.</param>
-        <param name="value">The string value to set.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps%2A" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="dependencyObject">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetXmlnsDefinition">
@@ -193,7 +168,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,12 +178,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">The object on which to set the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition%2A" /> property.</param>
-        <param name="value">The XML namespace definition in string form.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition%2A" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="dependencyObject">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetXmlnsDictionary">
@@ -219,7 +191,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,12 +201,10 @@
         <Parameter Name="value" Type="System.Windows.Markup.XmlnsDictionary" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">The object on which to set the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary%2A" /> attached property.</param>
-        <param name="value">The <see langword="xmlns" /> dictionary in string form.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary%2A" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="dependencyObject">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetXmlSpace">
@@ -245,7 +214,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,12 +224,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">The object on which to set the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlSpace%2A" /> attached property.</param>
-        <param name="value">The string to use for an XML space.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlSpace%2A" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="dependencyObject">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="XmlNamespaceMapsProperty">
@@ -271,7 +237,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -283,7 +248,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,7 +259,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -306,7 +270,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,7 +281,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -329,7 +292,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,7 +303,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -355,7 +317,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Markup.XmlAttributeProperties.XmlSpace%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

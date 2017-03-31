@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSFederationHttpSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies the security settings for the <see cref="T:System.ServiceModel.WSFederationHttpBinding" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class specifies the kind of security to be applied to the `wsFederationHttpBinding` binding and the specific security settings.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSFederationHttpSecurity" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,31 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.FederatedMessageSecurityOverHttp</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the message security settings for the <see cref="T:System.ServiceModel.WSFederationHttpBinding" />.</summary>
-        <value>A <see cref="T:System.ServiceModel.FederatedMessageSecurityOverHttp" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The object returned specifies detailed message-level security properties for the `wsFederationHttpBinding`.  
-  
-   
-  
-## Examples  
- The following code shows how to access this property and use it to set properties of the `wsFederationHttpBinding`.  
-  
- [!code-vb[WSFederationHttpSecurity#2](~/add/codesnippet/visualbasic/p-system.servicemodel.ws_6_1.vb)]
- [!code-cs[WSFederationHttpSecurity#2](~/add/codesnippet/csharp/p-system.servicemodel.ws_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -79,37 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.WSFederationHttpSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of security to be applied.</summary>
-        <value>A <see cref="T:System.ServiceModel.WSFederationHttpSecurityMode" />. The default is <see cref="T:System.ServiceModel.WSFederationHttpSecurityMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The enumeration member returned specifies which general type of security is to be applied.  
-  
- The allowed values are <xref:System.ServiceModel.WSFederationHttpSecurityMode> and <xref:System.ServiceModel.WSFederationHttpSecurityMode>.  
-  
- In the <xref:System.ServiceModel.WSFederationHttpSecurityMode> security mode, the message is sent over HTTP and SOAP message security is used to protect the message. Client authentication is performed based on the issued token obtained from the security token service. Server authentication is based on the server's certificate.  
-  
- In the <xref:System.ServiceModel.WSFederationHttpSecurityMode> security mode, the message is sent over HTTPS. Client authentication is performed by including the issued token obtained from the security token service in the SOAP message. Server authentication, based on the server's certificate, is performed as part of the HTTPS connection setup.  
-  
-   
-  
-## Examples  
- The following code shows how to set this property.  
-  
- [!code-vb[WSFederationHttpSecurity#3](~/add/codesnippet/visualbasic/p-system.servicemodel.ws_5_1.vb)]
- [!code-cs[WSFederationHttpSecurity#3](~/add/codesnippet/csharp/p-system.servicemodel.ws_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeMessage">
@@ -131,9 +85,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.WSFederationHttpSecurity.Message%2A" /> property has changed from its default value and should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.WSFederationHttpSecurity.Message%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,9 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.WSFederationHttpSecurity.Mode%2A" /> property has changed from its default value and should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.WSFederationHttpSecurity.Mode%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

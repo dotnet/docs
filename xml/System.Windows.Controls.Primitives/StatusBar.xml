@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.StatusBar" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,43 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a control that displays items and information in a horizontal bar in an application window.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- StatusBar is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class.  
-  
- A StatusBar is a bar that typically displays a horizontal row of images and status information. You can divide the items in a StatusBar into groups that contain related items, by using <xref:System.Windows.Controls.Separator> controls. The items in a StatusBar can display text, graphics, or other complex content. Items in a StatusBar are defined as <xref:System.Windows.Controls.Primitives.StatusBarItem> objects.  
-  
- Events that are defined on a <xref:System.Windows.Controls.Primitives.StatusBarItem> are raised when the user clicks the item in the StatusBar.  
-  
- The StatusBar does not receive keyboard focus.  
-  
- The following illustration shows an example of a StatusBar.  
-  
- **Status Bar**  
-  
- ![Status bar](~/add/media/ss-ctl-statusbar.GIF "Status bar")  
-  
-## Customizing the StatusBar Control  
- To apply the same property settings to multiple StatusBar controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the StatusBar, see [StatusBar Styles and Templates](../Topic/StatusBar%20Styles%20and%20Templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-> [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
-   
-  
-## Examples  
- The following example creates a StatusBar.  
-  
- [!code-xml[StatusBar_Snips#1](~/add/codesnippet/xaml/StatusBar_Snips/Window1.xaml#1)]
- [!code-xml[StatusBar_Snips#1](~/add/codesnippet/xaml/t-system.windows.control_20_1.xaml)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.StatusBar" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,8 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Windows.Controls.Primitives.StatusBarItem" />.</summary>
-        <returns>The element used to display the specified item.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,17 +70,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The specified object to evaluate.</param>
-        <summary>Determines if the specified item is (or is eligible to be) its own container.</summary>
-        <returns>Returns <see langword="true" /> if the item is (or is eligible to be) its own container; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method return `true` if the item is a <xref:System.Windows.Controls.Primitives.StatusBarItem> or a <xref:System.Windows.Controls.Separator>.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemContainerTemplateSelector">
@@ -135,24 +89,9 @@
         <ReturnType>System.Windows.Controls.ItemContainerTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the custom logic for choosing a template used to display each item.</summary>
-        <value>A custom object that provides logic and returns an item container.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use an <xref:System.Windows.Controls.ItemContainerTemplateSelector> to choose different item containers if the items in your collection are the same type and you need to provide custom logic to choose the item container.  
-  
-<a name="dependencyPropertyInfo_ItemContainerTemplateSelector"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.StatusBar.ItemContainerTemplateSelectorProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemContainerTemplateSelectorProperty">
@@ -168,7 +107,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.StatusBar.ItemContainerTemplateSelector%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,8 +125,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Specifies an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the <see cref="T:System.Windows.Controls.Primitives.StatusBar" />.</summary>
-        <returns>A <see cref="T:System.Windows.Automation.Peers.StatusBarAutomationPeer" /> for this <see cref="T:System.Windows.Controls.Primitives.StatusBar" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,17 +147,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The item to display in the <see cref="T:System.Windows.Controls.Primitives.StatusBar" />.</param>
-        <param name="item">The content of the item to display.</param>
-        <summary>Prepares an item for display in the <see cref="T:System.Windows.Controls.Primitives.StatusBar" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `element` is a <xref:System.Windows.Controls.Separator>, this method sets its <xref:System.Windows.Style>.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SeparatorStyleKey">
@@ -230,29 +160,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key that represents the style to use for <see cref="T:System.Windows.Controls.Separator" /> objects in the <see cref="T:System.Windows.Controls.Primitives.StatusBar" />.</summary>
-        <value>A <see cref="T:System.Windows.ResourceKey" /> that references the style to use for <see cref="T:System.Windows.Controls.Separator" /> objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_SeparatorStyleKey"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object x:Key="{x:Static StatusBar.SeparatorStyleKey}"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldApplyItemContainerStyle">
@@ -262,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -273,19 +188,11 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="container">The container for the item.</param>
-        <param name="item">The object to evaluate.</param>
-        <summary>Determines whether to apply the <see cref="T:System.Windows.Style" /> for an item in the <see cref="T:System.Windows.Controls.Primitives.StatusBar" /> to an object.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="item" /> is not a <see cref="T:System.Windows.Controls.Separator" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method makes sure that the style for an item in a <xref:System.Windows.Controls.Primitives.StatusBar> is not applied to a <xref:System.Windows.Controls.Separator> element.  
-  
- ]]></format>
-        </remarks>
+        <param name="container">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsesItemContainerTemplate">
@@ -301,27 +208,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the menu selects different item containers, depending on the type of the item in the underlying collection or some other heuristic.</summary>
-        <value>
-          <see langword="true" /> the menu selects different item containers; otherwise, <see langword="false" />.  
-  
- The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is useful if you want to create a menu by binding to a collection.  The item container is the UI element that displays the object in a collection. If you want to bind to a collection to create a menu that contains <xref:System.Windows.Controls.Primitives.StatusBarItem> objects and <xref:System.Windows.Controls.Separator> objects, set the <xref:System.Windows.Controls.Primitives.MenuBase.UsesItemContainerTemplate%2A> property to true and create an <xref:System.Windows.Controls.ItemContainerTemplate> for each type of object in your collection.  Each <xref:System.Windows.Controls.ItemContainerTemplate> must contain either a <xref:System.Windows.Controls.Primitives.StatusBarItem> or a <xref:System.Windows.Controls.Separator>.  
-  
-<a name="dependencyPropertyInfo_UsesItemContainerTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.StatusBar.UsesItemContainerTemplateProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsesItemContainerTemplateProperty">
@@ -337,7 +226,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.StatusBar.UsesItemContainerTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

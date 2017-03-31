@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DialogResult" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,24 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies identifiers to indicate the return value of a dialog box.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Button.DialogResult%2A?displayProperty=fullName> property and the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=fullName> method use this enumeration.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to Yes, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cs[MessageBox.Show Variations#5](~/add/codesnippet/csharp/t-system.windows.forms.d_53_1.cs)]
- [!code-cpp[MessageBox.Show Variations#5](~/add/codesnippet/cpp/t-system.windows.forms.d_53_1.cpp)]
- [!code-vb[MessageBox.Show Variations#5](~/add/codesnippet/visualbasic/t-system.windows.forms.d_53_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Abort">
@@ -43,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="Abort" /> (usually sent from a button labeled Abort).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -60,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="Cancel" /> (usually sent from a button labeled Cancel).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ignore">
@@ -77,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="Ignore" /> (usually sent from a button labeled Ignore).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -94,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="No" /> (usually sent from a button labeled No).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -111,15 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="Nothing" /> is returned from the dialog box. This means that the modal dialog continues running.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OK">
@@ -129,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="OK" /> (usually sent from a button labeled OK).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Retry">
@@ -146,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="Retry" /> (usually sent from a button labeled Retry).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -163,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="Yes" /> (usually sent from a button labeled Yes).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CreateCSharpManifestResourceName extends Microsoft.Build.Tasks.CreateManifestResourceName" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.CreateCSharpManifestResourceName" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -15,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Creates a C#-style manifest name from a given resource file name.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,16 +21,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CreateCSharpManifestResourceName.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CreateCSharpManifestResourceName" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,10 +35,6 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string CreateManifestName(string fileName, string linkFileName, string rootNamespace, string dependentUponFileName, class System.IO.Stream binaryStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CreateCSharpManifestResourceName.CreateManifestName(System.String,System.String,System.String,System.String,System.IO.Stream)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,13 +50,13 @@
         <Parameter Name="binaryStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="fileName">The name of the resource file from which to create the C# manifest name.</param>
-        <param name="linkFileName">The name of the link file.</param>
-        <param name="rootNamespace">The root namespace of the resource file, typically taken from the project file. May be <see langword="null" />.</param>
-        <param name="dependentUponFileName">The file name of the parent of the resource file (usually a .cs file). May be <see langword="null" />.</param>
-        <param name="binaryStream">File contents binary stream. May be <see langword="null" />.</param>
-        <summary>Returns the C#-style manifest resource name that corresponds to the specified resource file.</summary>
-        <returns>The manifest resource name that corresponds to the specified resource file.</returns>
+        <param name="fileName">To be added.</param>
+        <param name="linkFileName">To be added.</param>
+        <param name="rootNamespace">To be added.</param>
+        <param name="dependentUponFileName">To be added.</param>
+        <param name="binaryStream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +65,6 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsSourceFile(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CreateCSharpManifestResourceName.IsSourceFile(System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,10 +76,9 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">The name of the file to examine.</param>
-        <summary>Indicates whether the specified file is a C# source file.</summary>
-        <returns>
-          <see langword="true" /> if the specified file is a C# source file; otherwise, <see langword="false" />.</returns>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

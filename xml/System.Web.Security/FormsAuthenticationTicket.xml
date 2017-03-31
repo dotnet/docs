@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsAuthenticationTicket" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,30 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to properties and values of the ticket used with forms authentication to identify users. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FormsAuthenticationTicket class is used to create an object that represents the authentication ticket that is used by forms authentication to identify an authenticated user. The properties and values of a forms-authentication ticket are converted to and from an encrypted string that is stored in a cookie or in the URL.  
-  
- The <xref:System.Web.Security.FormsAuthentication> class provides an <xref:System.Web.Security.FormsAuthentication.Encrypt%2A> method to create a string value that can be stored in a cookie or in the URL from a FormsAuthenticationTicket. The <xref:System.Web.Security.FormsAuthentication> class also provides a <xref:System.Web.Security.FormsAuthentication.Decrypt%2A> method to create a FormsAuthenticationTicket object from the encrypted authentication ticket retrieved from the forms-authentication cookie or the URL.  
-  
- The FormsAuthenticationTicket for the current authenticated user can be accessed using the <xref:System.Web.Security.FormsIdentity.Ticket%2A> property of the <xref:System.Web.Security.FormsIdentity> class. You can access the current <xref:System.Web.Security.FormsIdentity> object by casting the <xref:System.Security.Principal.IPrincipal.Identity%2A> property of the current <xref:System.Web.HttpContext.User%2A> as type <xref:System.Web.Security.FormsIdentity>.  
-  
-   
-  
-## Examples  
- The following code example stores the result of the <xref:System.Web.Security.FormsAuthentication.Encrypt%2A> method in a cookie using the <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> and redirects the user to the URL returned from the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method.  
-  
-> [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-cs[FormsAuthenticationTicketClass#1](~/add/codesnippet/csharp/t-system.web.security.fo_0_1.aspx)]
- [!code-vb[FormsAuthenticationTicketClass#1](~/add/codesnippet/visualbasic/t-system.web.security.fo_0_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -54,19 +30,11 @@
         <Parameter Name="timeout" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The user name associated with the ticket.</param>
-        <param name="isPersistent">
-          <see langword="true" /> if the ticket will be stored in a persistent cookie (saved across browser sessions); otherwise, <see langword="false" />. If the ticket is stored in the URL, this value is ignored.</param>
-        <param name="timeout">The time, in minutes, for which the authentication ticket is valid.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> class using a cookie name and expiration information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Security.FormsAuthenticationTicket> object created by this constructor will have a <xref:System.Web.Security.FormsAuthenticationTicket.CookiePath%2A> value set to the value of the <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> property, a <xref:System.Web.Security.FormsAuthenticationTicket.Version%2A> value of 2, an <xref:System.Web.Security.FormsAuthenticationTicket.IssueDate%2A> value of the current local date and time, a <xref:System.Web.Security.FormsAuthenticationTicket.UserData%2A> value of an empty string (""), and an <xref:System.Web.Security.FormsAuthenticationTicket.Expiration%2A> value that is set to the current local date and time plus the value of the `timeout` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="isPersistent">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,7 +44,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -88,25 +55,14 @@
         <Parameter Name="userData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="version">The version number of the ticket.</param>
-        <param name="name">The user name associated with the ticket.</param>
-        <param name="issueDate">The local date and time at which the ticket was issued.</param>
-        <param name="expiration">The local date and time at which the ticket expires.</param>
-        <param name="isPersistent">
-          <see langword="true" /> if the ticket will be stored in a persistent cookie (saved across browser sessions); otherwise, <see langword="false" />. If the ticket is stored in the URL, this value is ignored.</param>
-        <param name="userData">The user-specific data to be stored with the ticket.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> class with cookie name, version, expiration date, issue date, persistence, and user-specific data. The cookie path is set to the default value established in the application's configuration file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Security.FormsAuthenticationTicket> object created by this constructor will have a <xref:System.Web.Security.FormsAuthenticationTicket.CookiePath%2A> value set to the value of the <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A>.  
-  
-> [!NOTE]
->  The `userData` parameter cannot be `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="version">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="issueDate">To be added.</param>
+        <param name="expiration">To be added.</param>
+        <param name="isPersistent">To be added.</param>
+        <param name="userData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -116,7 +72,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -129,36 +84,15 @@
         <Parameter Name="cookiePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="version">The version number of the ticket.</param>
-        <param name="name">The user name associated with the ticket.</param>
-        <param name="issueDate">The local date and time at which the ticket was issued.</param>
-        <param name="expiration">The local date and time at which the ticket expires.</param>
-        <param name="isPersistent">
-          <see langword="true" /> if the ticket will be stored in a persistent cookie (saved across browser sessions); otherwise, <see langword="false" />. If the ticket is stored in the URL, this value is ignored.</param>
-        <param name="userData">The user-specific data to be stored with the ticket.</param>
-        <param name="cookiePath">The path for the ticket when stored in a cookie.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> class with cookie name, version, directory path, issue date, expiration date, persistence, and user-defined data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The `userData` parameter cannot be `null`.  
-  
-   
-  
-## Examples  
- The following code example stores the result of the <xref:System.Web.Security.FormsAuthentication.Encrypt%2A> method in a cookie using the <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> property and redirects the user to the URL returned from the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method.  
-  
-> [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-cs[FormsAuthenticationTicketClass#1](~/add/codesnippet/csharp/de709bc4-14d6-4126-84ae-_1.aspx)]
- [!code-vb[FormsAuthenticationTicketClass#1](~/add/codesnippet/visualbasic/de709bc4-14d6-4126-84ae-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="version">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="issueDate">To be added.</param>
+        <param name="expiration">To be added.</param>
+        <param name="isPersistent">To be added.</param>
+        <param name="userData">To be added.</param>
+        <param name="cookiePath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CookiePath">
@@ -168,34 +102,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the cookie path for the forms-authentication ticket.</summary>
-        <value>The cookie path for the forms-authentication ticket.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.Security.FormsAuthenticationTicket> is created using a constructor that does not supply a `cookiePath` parameter, the CookiePath property returns the value of the <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> property; otherwise, the version property returns the value supplied to the <xref:System.Web.Security.FormsAuthenticationTicket> constructor.  
-  
-   
-  
-## Examples  
- The following code example displays the property values of the <xref:System.Web.Security.FormsAuthenticationTicket> for the current logged-on user.  
-  
-> [!NOTE]
->  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
-  
- [!code-cs[FormsAuthenticationTicketProperties#1](~/add/codesnippet/csharp/p-system.web.security.fo_2_1.aspx)]
- [!code-vb[FormsAuthenticationTicketProperties#1](~/add/codesnippet/visualbasic/p-system.web.security.fo_2_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Expiration">
@@ -205,36 +120,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the local date and time at which the forms-authentication ticket expires.</summary>
-        <value>The <see cref="T:System.DateTime" /> at which the forms-authentication ticket expires.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.Security.FormsAuthenticationTicket> is created using the <xref:System.Web.Security.FormsAuthenticationTicket.%23ctor%28System.String%2CSystem.Boolean%2CSystem.Int32%29> constructor that does not supply a parameter for an expiration date and time, the Expiration property returns a value based on the current local date and time plus the value of the `timeout` parameter supplied to the constructor.  
-  
- If the <xref:System.Web.Security.FormsAuthenticationTicket> was created using a constructor that takes an `expiration` parameter, the Expiration property returns the value supplied to the `expiration` parameter.  
-  
-   
-  
-## Examples  
- The following code example displays the property values of the <xref:System.Web.Security.FormsAuthenticationTicket> for the current logged-on user.  
-  
-> [!NOTE]
->  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
-  
- [!code-cs[FormsAuthenticationTicketProperties#1](~/add/codesnippet/csharp/p-system.web.security.fo_3_1.aspx)]
- [!code-vb[FormsAuthenticationTicketProperties#1](~/add/codesnippet/visualbasic/p-system.web.security.fo_3_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -244,35 +138,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the forms-authentication ticket has expired.</summary>
-        <value>
-          <see langword="true" /> if the forms-authentication ticket has expired; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Expired property returns `true` if the <xref:System.Web.Security.FormsAuthenticationTicket.Expiration%2A> date and time is less than the current local date and time; otherwise, the Expired property returns `false`.  
-  
-   
-  
-## Examples  
- The following code example displays the property values of the <xref:System.Web.Security.FormsAuthenticationTicket> for the current logged-on user.  
-  
-> [!NOTE]
->  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
-  
- [!code-cs[FormsAuthenticationTicketProperties#1](~/add/codesnippet/csharp/p-system.web.security.fo_6_1.aspx)]
- [!code-vb[FormsAuthenticationTicketProperties#1](~/add/codesnippet/visualbasic/p-system.web.security.fo_6_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPersistent">
@@ -282,30 +156,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the cookie that contains the forms-authentication ticket information is persistent.</summary>
-        <value>
-          <see langword="true" /> if a durable cookie (a cookie that is saved across browser sessions) was issued; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example displays the property values of the <xref:System.Web.Security.FormsAuthenticationTicket> for the current logged-on user.  
-  
-> [!NOTE]
->  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
-  
- [!code-cs[FormsAuthenticationTicketProperties#1](~/add/codesnippet/csharp/p-system.web.security.fo_5_1.aspx)]
- [!code-vb[FormsAuthenticationTicketProperties#1](~/add/codesnippet/visualbasic/p-system.web.security.fo_5_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IssueDate">
@@ -315,34 +174,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the local date and time at which the forms-authentication ticket was originally issued.</summary>
-        <value>The <see cref="T:System.DateTime" /> when the forms-authentication ticket was originally issued.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IssueDate property represents the local date and time when the forms-authentication ticket was issued. The <xref:System.Web.Security.FormsAuthentication.RenewTicketIfOld%2A> method uses the IssueDate property value to determine whether the <xref:System.Web.Security.FormsAuthenticationTicket.Expiration%2A> date and time of a forms-authentication ticket needs to be renewed and also uses the IssueDate property value to determine the new <xref:System.Web.Security.FormsAuthenticationTicket.Expiration%2A> date and time. When a ticket is renewed, the IssueDate property is updated to the local date and time.  
-  
-   
-  
-## Examples  
- The following code example displays the property values of the <xref:System.Web.Security.FormsAuthenticationTicket> for the current logged-on user.  
-  
-> [!NOTE]
->  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
-  
- [!code-cs[FormsAuthenticationTicketProperties#1](~/add/codesnippet/csharp/p-system.web.security.fo_8_1.aspx)]
- [!code-vb[FormsAuthenticationTicketProperties#1](~/add/codesnippet/visualbasic/p-system.web.security.fo_8_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -352,29 +192,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the user name associated with the forms-authentication ticket.</summary>
-        <value>The user name associated with the forms-authentication ticket.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example displays the property values of the <xref:System.Web.Security.FormsAuthenticationTicket> for the current logged-on user.  
-  
-> [!NOTE]
->  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
-  
- [!code-cs[FormsAuthenticationTicketProperties#1](~/add/codesnippet/csharp/p-system.web.security.fo_4_1.aspx)]
- [!code-vb[FormsAuthenticationTicketProperties#1](~/add/codesnippet/visualbasic/p-system.web.security.fo_4_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UserData">
@@ -384,39 +210,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a user-specific string stored with the ticket.</summary>
-        <value>A user-specific string stored with the ticket. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.Security.FormsAuthenticationTicket> is created using a constructor that does not supply a `userData` parameter, the UserData property returns an empty string (""); otherwise, the version property returns the value supplied to the <xref:System.Web.Security.FormsAuthenticationTicket> constructor.  
-  
- You can use the UserData property to store additional user information with the <xref:System.Web.Security.FormsAuthenticationTicket> that is not maintained by the <xref:System.Web.Security.FormsAuthenticationTicket> property values.  
-  
-> [!NOTE]
->  You should limit the amount of data stored in the UserData property. You must ensure that the size of the UserData property does not result in an invalid cookie or an excessively long URL.  
-  
-   
-  
-## Examples  
- The following code example displays the property values of the <xref:System.Web.Security.FormsAuthenticationTicket> for the current logged-on user.  
-  
-> [!NOTE]
->  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
-  
- [!code-cs[FormsAuthenticationTicketProperties#1](~/add/codesnippet/csharp/p-system.web.security.fo_1_1.aspx)]
- [!code-vb[FormsAuthenticationTicketProperties#1](~/add/codesnippet/visualbasic/p-system.web.security.fo_1_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -426,34 +228,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version number of the ticket.</summary>
-        <value>The version number of the ticket. The default is 2.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.Security.FormsAuthenticationTicket> is created using a constructor that does not supply a `version` parameter, the Version property returns 2; otherwise, the version property returns the value supplied to the <xref:System.Web.Security.FormsAuthenticationTicket> constructor.  
-  
-   
-  
-## Examples  
- The following code example displays the property values of the <xref:System.Web.Security.FormsAuthenticationTicket> for the current logged-on user.  
-  
-> [!NOTE]
->  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
-  
- [!code-cs[FormsAuthenticationTicketProperties#1](~/add/codesnippet/csharp/p-system.web.security.fo_7_1.aspx)]
- [!code-vb[FormsAuthenticationTicketProperties#1](~/add/codesnippet/visualbasic/p-system.web.security.fo_7_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

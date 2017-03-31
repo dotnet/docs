@@ -8,17 +8,8 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Implements a callback to be executed when a service message is received by the <see cref="T:System.ServiceModel.Activities.Receive" /> and <see cref="System.ServiceModel.Activities.ReceiveParameters" /> activities.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to implement the IReceiveMessageCallback interface to access a message header when a message is received.  
-  
- [!code-cs[AccessingOperationContext#1](~/add/codesnippet/csharp/t-system.servicemodel.ac_9_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="OnReceiveMessage">
@@ -38,19 +29,10 @@
         <Parameter Name="activityExecutionProperties" Type="System.Activities.ExecutionProperties" />
       </Parameters>
       <Docs>
-        <param name="operationContext">The operation context under which the message received.</param>
-        <param name="activityExecutionProperties">The set of execution properties available within the workflow.</param>
-        <summary>Executed when a service message is received.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to implement the <xref:System.ServiceModel.Activities.IReceiveMessageCallback> interface to access a message header when a message is received.  
-  
- [!code-cs[AccessingOperationContext#1](~/add/codesnippet/csharp/a62c3857-4bbe-4c4e-b568-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="operationContext">To be added.</param>
+        <param name="activityExecutionProperties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

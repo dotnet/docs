@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsManageability" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Provides values to indicate which services should be made available to application settings.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ttribute is used to apply individual application settings properties and property groups to indicate that special, predefined services are to be provided for them. The SettingsManageability enumeration lists the services that are available. Most of these services will be provided by the Windows operating system.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Roaming">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.SettingsManageability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enables application settings to be stored in roaming user profiles. For more information about roaming user profiles, see [Isolated Storage and Roaming](http://msdn.microsoft.com/en-us/d3cca593-4521-408d-b323-ea398d226de3).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

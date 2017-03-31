@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CounterSampleCalculator" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a set of utility functions for interpreting performance counter data.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -33,29 +31,10 @@
         <Parameter Name="newSample" Type="System.Diagnostics.CounterSample" />
       </Parameters>
       <Docs>
-        <param name="newSample">A <see cref="T:System.Diagnostics.CounterSample" /> that indicates the most recent sample the system has taken.</param>
-        <summary>Computes the calculated value of a single raw counter sample.</summary>
-        <returns>A floating-point representation of the performance counter's calculated value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ComputeCounterValue method overload returns meaningful results only for performance counters of the following <xref:System.Diagnostics.PerformanceCounterType>:  
-  
--   <xref:System.Diagnostics.PerformanceCounterType>  
-  
--   <xref:System.Diagnostics.PerformanceCounterType>  
-  
--   <xref:System.Diagnostics.PerformanceCounterType>  
-  
--   <xref:System.Diagnostics.PerformanceCounterType>  
-  
--   <xref:System.Diagnostics.PerformanceCounterType>  
-  
- For other counter types, this overload always returns a value of 0 (zero).  
-  
- ]]></format>
-        </remarks>
+        <param name="newSample">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ComputeCounterValue">
@@ -65,9 +44,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO("What's the algorithm?")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
@@ -76,26 +59,11 @@
         <Parameter Name="newSample" Type="System.Diagnostics.CounterSample" />
       </Parameters>
       <Docs>
-        <param name="oldSample">A <see cref="T:System.Diagnostics.CounterSample" /> that indicates a previous sample the system has taken.</param>
-        <param name="newSample">A <see cref="T:System.Diagnostics.CounterSample" /> that indicates the most recent sample the system has taken.</param>
-        <summary>Computes the calculated value of two raw counter samples.</summary>
-        <returns>A floating-point representation of the performance counter's calculated value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the ComputeCounterValue method overload to calculate the value of two raw counter samples.  
-  
- [!code-cpp[PerformanceCounterType.AverageCounter64#1](~/add/codesnippet/cpp/398b3a8c-6226-4ab5-87ac-_1.cpp)]
- [!code-cs[PerformanceCounterType.AverageCounter64#1](~/add/codesnippet/csharp/398b3a8c-6226-4ab5-87ac-_1.cs)]
- [!code-vb[PerformanceCounterType.AverageCounter64#1](~/add/codesnippet/visualbasic/398b3a8c-6226-4ab5-87ac-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="oldSample" /> uses a counter type that is different from <paramref name="newSample" />.</exception>
-        <exception cref="T:System.ComponentModel.Win32Exception">
-          <paramref name="newSample" /> counter type has a Performance Data Helper (PDH) error. For more information, see "Checking PDH Interface Return Values" in the Win32 and COM Development section of this documentation.</exception>
+        <param name="oldSample">To be added.</param>
+        <param name="newSample">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

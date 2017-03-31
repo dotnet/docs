@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a container for elements of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object. An instance of this type is returned by the <see cref="System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe%2A" /> static method.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +25,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -37,18 +35,10 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index in which the element resides.</param>
-        <param name="item">The new value for the element in the specified index.</param>
-        <summary>Inserts a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> element into the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection" /> at the specified index or key.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Null` value elements are not allowed.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -58,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,18 +58,10 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index in which the element resides.</param>
-        <param name="item">The new value for the element in the specified index.</param>
-        <summary>Replaces the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> element at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Null` value elements are not allowed.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -90,7 +71,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,8 +78,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation of the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />, separated by commas.</summary>
-        <returns>Unicode string representing the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,44 +4,27 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataViewRowState" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DataViewRowStateEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DataViewRowStateEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Flags</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes the version of data in a <see cref="T:System.Data.DataRow" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataViewRowState values are used either to retrieve a particular version of data from a <xref:System.Data.DataRow>, or to determine what versions exist.  
-  
- Set the <xref:System.Data.DataView.RowStateFilter%2A> property of the <xref:System.Data.DataView> to specify which version or versions of data you want to view.  
-  
- You can use the Boolean operator Or with the values to get more than one version.  
-  
- The <xref:System.Data.DataTable> uses DataViewRowState in the <xref:System.Data.DataTable.Select%2A> method.  
-  
-   
-  
-## Examples  
- In the following example <xref:System.Data.DataTable> is created with a single column. The data is changed, and the <xref:System.Data.DataView.RowStateFilter%2A> of the <xref:System.Data.DataView> is set to display different row sets, depending on the DataViewRowState.  
-  
- [!code-vb[Classic WebData DataView.RowStateFilter Example#1](~/add/codesnippet/visualbasic/t-system.data.dataviewro_1.vb)]
- [!code-cs[Classic WebData DataView.RowStateFilter Example#1](~/add/codesnippet/csharp/t-system.data.dataviewro_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Added">
@@ -51,14 +34,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A new row.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrentRows">
@@ -68,14 +55,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Current rows including unchanged, new, and modified rows. By default, DataViewRowState is set to CurrentRows.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -85,14 +76,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A deleted row.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ModifiedCurrent">
@@ -102,14 +97,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A current version of original data that has been modified (see <see langword="ModifiedOriginal" />).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ModifiedOriginal">
@@ -119,14 +118,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The original version of the data that was modified. (Although the data has since been modified, it is available as <see langword="ModifiedCurrent" />).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -136,14 +139,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>None.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OriginalRows">
@@ -153,14 +160,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Original rows including unchanged and deleted rows.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unchanged">
@@ -170,14 +181,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unchanged row.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

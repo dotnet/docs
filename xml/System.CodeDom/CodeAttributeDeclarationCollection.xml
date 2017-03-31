@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeAttributeDeclarationCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,24 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CodeAttributeDeclarationCollection class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeAttributeDeclaration> objects.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of the CodeAttributeDeclarationCollection class methods.  
-  
- [!code-cpp[CodeAttributeDeclarationCollectionExample#1](~/add/codesnippet/cpp/t-system.codedom.codeatt_2_1.cpp)]
- [!code-cs[CodeAttributeDeclarationCollectionExample#1](~/add/codesnippet/csharp/t-system.codedom.codeatt_2_1.cs)]
- [!code-vb[CodeAttributeDeclarationCollectionExample#1](~/add/codesnippet/visualbasic/t-system.codedom.codeatt_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,17 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.CodeAttributeDeclaration[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> objects with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> class containing the specified array of <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> objects.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">One or more objects in the array are <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -83,18 +63,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.CodeAttributeDeclarationCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> class containing the elements of the specified source collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -104,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,21 +90,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeAttributeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object to add.</param>
-        <summary>Adds a <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object with the specified value to the collection.</summary>
-        <returns>The index at which the new element was inserted.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to add a <xref:System.CodeDom.CodeAttributeDeclaration> object to a <xref:System.CodeDom.CodeAttributeDeclarationCollection> instance.  
-  
- [!code-cpp[CodeAttributeDeclarationCollectionExample#3](~/add/codesnippet/cpp/9051987d-9700-42d7-8493-_1.cpp)]
- [!code-cs[CodeAttributeDeclarationCollectionExample#3](~/add/codesnippet/csharp/9051987d-9700-42d7-8493-_1.cs)]
- [!code-vb[CodeAttributeDeclarationCollectionExample#3](~/add/codesnippet/visualbasic/9051987d-9700-42d7-8493-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -138,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,22 +112,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeAttributeDeclaration[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of type <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> that contains the objects to add to the collection.</param>
-        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> array to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use AddRange method overload to add an array of <xref:System.CodeDom.CodeAttributeDeclaration> objects to a <xref:System.CodeDom.CodeAttributeDeclarationCollection>.  
-  
- [!code-cpp[CodeAttributeDeclarationCollectionExample#4](~/add/codesnippet/cpp/11c32c8d-c517-4b99-8664-_1.cpp)]
- [!code-cs[CodeAttributeDeclarationCollectionExample#4](~/add/codesnippet/csharp/11c32c8d-c517-4b99-8664-_1.cs)]
- [!code-vb[CodeAttributeDeclarationCollectionExample#4](~/add/codesnippet/visualbasic/11c32c8d-c517-4b99-8664-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -173,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,22 +133,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeAttributeDeclarationCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> that contains the objects to add to the collection.</param>
-        <summary>Copies the contents of another <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> object to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the AddRange method overload to add the members of one <xref:System.CodeDom.CodeAttributeDeclarationCollection> to another.  
-  
- [!code-cpp[CodeAttributeDeclarationCollectionExample#4](~/add/codesnippet/cpp/1d65ee61-69d0-4bb0-ae05-_1.cpp)]
- [!code-cs[CodeAttributeDeclarationCollectionExample#4](~/add/codesnippet/csharp/1d65ee61-69d0-4bb0-ae05-_1.cs)]
- [!code-vb[CodeAttributeDeclarationCollectionExample#4](~/add/codesnippet/visualbasic/1d65ee61-69d0-4bb0-ae05-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -208,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,22 +154,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeAttributeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object to locate.</param>
-        <summary>Gets or sets a value that indicates whether the collection contains the specified <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the Contains method to search for the presence of a specific <xref:System.CodeDom.CodeAttributeDeclaration> instance and gets the index value at which it was found.  
-  
- [!code-cpp[CodeAttributeDeclarationCollectionExample#5](~/add/codesnippet/cpp/74c6c3d7-4bf0-4504-8b9d-_1.cpp)]
- [!code-cs[CodeAttributeDeclarationCollectionExample#5](~/add/codesnippet/csharp/74c6c3d7-4bf0-4504-8b9d-_1.cs)]
- [!code-vb[CodeAttributeDeclarationCollectionExample#5](~/add/codesnippet/visualbasic/74c6c3d7-4bf0-4504-8b9d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -243,7 +167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,28 +177,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from the collection.</param>
-        <param name="index">The index of the array at which to begin inserting.</param>
-        <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance beginning at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeAttributeDeclarationCollection> to an array beginning at index 0.  
-  
- [!code-cpp[CodeAttributeDeclarationCollectionExample#6](~/add/codesnippet/cpp/81999a03-d982-4bde-8674-_1.cpp)]
- [!code-cs[CodeAttributeDeclarationCollectionExample#6](~/add/codesnippet/csharp/81999a03-d982-4bde-8674-_1.cs)]
- [!code-vb[CodeAttributeDeclarationCollectionExample#6](~/add/codesnippet/visualbasic/81999a03-d982-4bde-8674-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> is greater than the available space between the index of the target array specified by the <paramref name="index" /> parameter and the end of the target array.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the target array's minimum index.</exception>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -285,7 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,21 +199,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeAttributeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object to locate in the collection.</param>
-        <summary>Gets the index of the specified <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object in the collection, if it exists in the collection.</summary>
-        <returns>The index in the collection of the specified object, if found; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example searches for the presence of a specific <xref:System.CodeDom.CodeAttributeDeclaration> instance and uses the IndexOf method to get the index value at which it was found.  
-  
- [!code-cpp[CodeAttributeDeclarationCollectionExample#5](~/add/codesnippet/cpp/7e085c82-45df-4632-9a66-_1.cpp)]
- [!code-cs[CodeAttributeDeclarationCollectionExample#5](~/add/codesnippet/csharp/7e085c82-45df-4632-9a66-_1.cs)]
- [!code-vb[CodeAttributeDeclarationCollectionExample#5](~/add/codesnippet/visualbasic/7e085c82-45df-4632-9a66-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -319,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -330,21 +222,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeAttributeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index where the specified object should be inserted.</param>
-        <param name="value">The <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object to insert.</param>
-        <summary>Inserts the specified <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Insert method to add a <xref:System.CodeDom.CodeAttributeDeclaration> object to the <xref:System.CodeDom.CodeAttributeDeclarationCollection>.  
-  
- [!code-cpp[CodeAttributeDeclarationCollectionExample#8](~/add/codesnippet/cpp/e457f604-ecdd-4c50-8ed1-_1.cpp)]
- [!code-cs[CodeAttributeDeclarationCollectionExample#8](~/add/codesnippet/csharp/e457f604-ecdd-4c50-8ed1-_1.cs)]
- [!code-vb[CodeAttributeDeclarationCollectionExample#8](~/add/codesnippet/visualbasic/e457f604-ecdd-4c50-8ed1-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -354,7 +235,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,18 +244,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the collection to access.</param>
-        <summary>Gets or sets the <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object at the specified index.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> at each valid index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is an indexer that can be used to access the collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -385,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -395,21 +266,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeAttributeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object to remove from the collection.</param>
-        <summary>Removes the specified <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Remove method to delete a <xref:System.CodeDom.CodeAttributeDeclaration> object from the <xref:System.CodeDom.CodeAttributeDeclarationCollection>.  
-  
- [!code-cpp[CodeAttributeDeclarationCollectionExample#9](~/add/codesnippet/cpp/5d404da8-cfe4-45e0-86fa-_1.cpp)]
- [!code-cs[CodeAttributeDeclarationCollectionExample#9](~/add/codesnippet/csharp/5d404da8-cfe4-45e0-86fa-_1.cs)]
- [!code-vb[CodeAttributeDeclarationCollectionExample#9](~/add/codesnippet/visualbasic/5d404da8-cfe4-45e0-86fa-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

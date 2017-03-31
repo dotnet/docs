@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509SecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a security token that is based upon an X.509 certificate.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To get the details of the X.509 certificate, access the <xref:System.IdentityModel.Tokens.X509SecurityToken.Certificate%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,25 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
       </Parameters>
       <Docs>
-        <param name="certificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the X.509 certificate. Sets the <see cref="System.IdentityModel.Tokens.X509SecurityToken.Certificate%2A" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" /> class using the specified X.509 certificate.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor creates a unique identifier for the <xref:System.IdentityModel.Tokens.X509SecurityToken> security token and assigns that value to the <xref:System.IdentityModel.Tokens.X509SecurityToken.Id%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="certificate" /> is <see langword="null" />.</exception>
+        <param name="certificate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,7 +44,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -70,16 +51,10 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="certificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the X.509 certificate. Sets the <see cref="System.IdentityModel.Tokens.X509SecurityToken.Certificate%2A" /> property.</param>
-        <param name="id">A unique identifier of the security token. Sets the <see cref="System.IdentityModel.Tokens.X509SecurityToken.Id%2A" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" /> class using the specified X.509 certificate and unique identifier.</summary>
+        <param name="certificate">To be added.</param>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="certificate" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="id" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanCreateKeyIdentifierClause&lt;T&gt;">
@@ -89,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,18 +78,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that specifies the key identifier to create.</typeparam>
-        <summary>Gets a value indicating whether this security token is capable of creating the specified key identifier.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="T" /> is of type <see cref="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" />, <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" />, <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" />, or <see cref="T:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The key identifier for an X.509 certificate can be expressed using many different key identifier clauses. These key identifier clauses are represented by the <xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>, <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause>, <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>, and <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause> classes.  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Certificate">
@@ -125,23 +91,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the X.509 certificate associated with the security token.</summary>
-        <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the X.509 certificate.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Certificate property to get the details about the X.509 certificate associated with the <xref:System.IdentityModel.Tokens.X509SecurityToken> security token. For instance, the thumbprint of the X.509 certificate can be accessed using the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.Thumbprint%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateKeyIdentifierClause&lt;T&gt;">
@@ -151,7 +109,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,17 +123,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that specifies the key identifier to create.</typeparam>
-        <summary>Creates the specified key identifier clause.</summary>
-        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that is a key identifier clause for the security token.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The return value for the CreateKeyIdentifierClause(T) method is one of the key identifier clause types that an X.509 certificate key identifier can be expressed in. The possible return types are represented by the <xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>, <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause>, <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>, and <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause> classes.  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -186,7 +136,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,18 +143,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call the Dispose method when you are finished using the <xref:System.IdentityModel.Tokens.X509SecurityToken>. The Dispose method leaves the <xref:System.IdentityModel.Tokens.X509SecurityToken> in an unusable state. After calling the Dispose method, you must release all references to the <xref:System.IdentityModel.Tokens.X509SecurityToken> so the garbage collector can reclaim the memory that the <xref:System.IdentityModel.Tokens.X509SecurityToken> was occupying.  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.IdentityModel.Tokens.X509SecurityToken>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IdentityModel.Tokens.X509SecurityToken> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -215,26 +154,24 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a unique identifier of the security token.</summary>
-        <value>A unique identifier of the security token.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchesKeyIdentifierClause">
-      <MemberSignature Language="C#" Value="public override bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" />
+      <MemberSignature Language="C#" Value="public override bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,25 +181,10 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">An <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to compare to this instance.</param>
-        <summary>Returns a value indicating whether the key identifier for this instance is equal to the specified key identifier.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is one of the <see cref="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" />, <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" />, <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" />, or <see cref="T:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause" /> types and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MatchesKeyIdentifierClause method matches criteria in the X.509 certificate in the <xref:System.IdentityModel.Tokens.X509SecurityToken.Certificate%2A> property based on the type of the `keyIdentifierClause` parameter. The following table details what is matched.  
-  
-|Key identifier clause type|What is matched|  
-|--------------------------------|---------------------|  
-|<xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>|The value of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.IssuerName%2A> property and the issuer serial number returned from the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber%2A> method.|  
-|<xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>|The data returned from the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertData%2A> method.|  
-|<xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>|The subject key identifier extension in the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.Extensions%2A> property is matched.|  
-|<xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause>|The thumbprint that is returned by the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash%2A> method.|  
-  
- ]]></format>
-        </remarks>
+        <param name="skiClause">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SecurityKeys">
@@ -272,23 +194,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the cryptographic keys associated with the security token.</summary>
-        <value>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the security token.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SecurityKeys property to set the cryptographic keys for this security token to protect a SOAP message. The keys can be used, among other things, to digitally sign or encrypt SOAP messages.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThrowIfDisposed">
@@ -298,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -306,9 +219,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Throws an exception if the ThrowIfDisposed method has been called for this instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">the ThrowIfDisposed method has been called for this instance.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValidFrom">
@@ -318,23 +230,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the first instant in time at which this security token is valid.</summary>
-        <value>A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ValidFrom property is specified in Coordinated Universal Time (UTC) and is the value of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotBefore%2A> property of the X.509 certificate specified in the <xref:System.IdentityModel.Tokens.X509SecurityToken.Certificate%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidTo">
@@ -344,23 +248,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last instant in time at which this security token is valid.</summary>
-        <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IdentityModel.Tokens.X509SecurityToken.ValidFrom%2A> property is specified in Coordinated Universal Time (UTC) and is the value of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotAfter%2A> property of the X.509 certificate specified in the <xref:System.IdentityModel.Tokens.X509SecurityToken.Certificate%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

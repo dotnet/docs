@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Media.SystemSounds" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Retrieves sounds associated with a set of Windows operating system sound-event types. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SystemSounds class provides methods for retrieving the sounds associated with a set of operating system sound-event types for the current user. The sounds associated with each type of operating system sound event can be configured in Windows Control Panel.  
-  
- SystemSounds provides static methods to access the sounds associated with the <xref:System.Media.SystemSounds.Asterisk%2A>, <xref:System.Media.SystemSounds.Beep%2A>, <xref:System.Media.SystemSounds.Exclamation%2A>, <xref:System.Media.SystemSounds.Hand%2A> and <xref:System.Media.SystemSounds.Question%2A> sound events. Each property returns a <xref:System.Media.SystemSound> that can be used to play the sound.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Asterisk">
@@ -32,27 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Media.SystemSound</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the sound associated with the <see langword="Asterisk" /> program event in the current Windows sound scheme.</summary>
-        <value>A <see cref="T:System.Media.SystemSound" /> associated with the <see langword="Asterisk" /> program event in the current Windows sound scheme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the Asterisk property.  
-  
- [!code-cs[SystemSoundsExample#1](~/add/codesnippet/csharp/p-system.media.systemsou_1_1.cs)]
- [!code-vb[SystemSoundsExample#1](~/add/codesnippet/visualbasic/p-system.media.systemsou_1_1.vb)]
- [!code-cpp[SystemSoundsExample#1](~/add/codesnippet/cpp/p-system.media.systemsou_1_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Beep">
@@ -62,27 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Media.SystemSound</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the sound associated with the <see langword="Beep" /> program event in the current Windows sound scheme.</summary>
-        <value>A <see cref="T:System.Media.SystemSound" /> associated with the <see langword="Beep" /> program event in the current Windows sound scheme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the Beep property.  
-  
- [!code-cs[SystemSoundsExample#2](~/add/codesnippet/csharp/p-system.media.systemsou_3_1.cs)]
- [!code-vb[SystemSoundsExample#2](~/add/codesnippet/visualbasic/p-system.media.systemsou_3_1.vb)]
- [!code-cpp[SystemSoundsExample#2](~/add/codesnippet/cpp/p-system.media.systemsou_3_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Exclamation">
@@ -92,27 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Media.SystemSound</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the sound associated with the <see langword="Exclamation" /> program event in the current Windows sound scheme.</summary>
-        <value>A <see cref="T:System.Media.SystemSound" /> associated with the <see langword="Exclamation" /> program event in the current Windows sound scheme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the Exclamation property.  
-  
- [!code-cs[SystemSoundsExample#3](~/add/codesnippet/csharp/p-system.media.systemsou_2_1.cs)]
- [!code-vb[SystemSoundsExample#3](~/add/codesnippet/visualbasic/p-system.media.systemsou_2_1.vb)]
- [!code-cpp[SystemSoundsExample#3](~/add/codesnippet/cpp/p-system.media.systemsou_2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Hand">
@@ -122,27 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Media.SystemSound</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the sound associated with the <see langword="Hand" /> program event in the current Windows sound scheme.</summary>
-        <value>A <see cref="T:System.Media.SystemSound" /> associated with the <see langword="Hand" /> program event in the current Windows sound scheme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the Hand property.  
-  
- [!code-cs[SystemSoundsExample#4](~/add/codesnippet/csharp/p-system.media.systemsou_0_1.cs)]
- [!code-vb[SystemSoundsExample#4](~/add/codesnippet/visualbasic/p-system.media.systemsou_0_1.vb)]
- [!code-cpp[SystemSoundsExample#4](~/add/codesnippet/cpp/p-system.media.systemsou_0_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Question">
@@ -152,27 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Media.SystemSound</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the sound associated with the <see langword="Question" /> program event in the current Windows sound scheme.</summary>
-        <value>A <see cref="T:System.Media.SystemSound" /> associated with the <see langword="Question" /> program event in the current Windows sound scheme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the Question property.  
-  
- [!code-cs[SystemSoundsExample#5](~/add/codesnippet/csharp/p-system.media.systemsou_4_1.cs)]
- [!code-vb[SystemSoundsExample#5](~/add/codesnippet/visualbasic/p-system.media.systemsou_4_1.vb)]
- [!code-cpp[SystemSoundsExample#5](~/add/codesnippet/cpp/p-system.media.systemsou_4_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

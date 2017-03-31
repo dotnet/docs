@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageParameterAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,35 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Controls the name of the request and response parameter names. Cannot be used with <see cref="T:System.ServiceModel.Channels.Message" /> or message contracts.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the MessageParameterAttribute to control the name of the parameter or the return value. This attribute has no effect if the parameters are marked by the <xref:System.ServiceModel.MessageContractAttribute> attribute.  
-  
-> [!NOTE]
->  The value of the parameter names in the operation signature are part of the contract and are case sensitive. Use this attribute when you need to distinguish between the local parameter name and the metadata that describes the operation for client applications.  
-  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName>, [Specifying Data Transfer in Service Contracts](../Topic/Specifying%20Data%20Transfer%20in%20Service%20Contracts.md), and [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
-  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] creating message contracts, see [Using Message Contracts](../Topic/Using%20Message%20Contracts.md).  
-  
-   
-  
-## Examples  
- The following code example shows the use of MessageParameterAttribute to establish the name of the parameter and the return value in metadata.  
-  
- [!code-vb[MessageParameterAttribute#1](~/add/codesnippet/visualbasic/messageparameterattribute.client/services.vb#1)]
- [!code-cs[MessageParameterAttribute#1](~/add/codesnippet/csharp/messageparameterattribute.client/services.cs#1)]  
-  
- The following example shows the generated service contract for the preceding service. Note that the name of the parameter is now `Input`.  
-  
- [!code-cs[MessageParameterAttribute#2](~/add/codesnippet/csharp/messageparameterattribute.client/proxycode.cs#2)]
- [!code-vb[MessageParameterAttribute#2](~/add/codesnippet/visualbasic/messageparameterattribute.client/proxycode.vb#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,28 +28,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageParameterAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of <xref:System.ServiceModel.MessageParameterAttribute> to establish the name of the parameter and the return value in metadata.  
-  
- [!code-vb[MessageParameterAttribute#1](~/add/codesnippet/visualbasic/messageparameterattribute.client/services.vb#1)]
- [!code-cs[MessageParameterAttribute#1](~/add/codesnippet/csharp/messageparameterattribute.client/services.cs#1)]  
-  
- The following example shows the generated service contract for the preceding service. Note that the name of the parameter is now `Input`.  
-  
- [!code-cs[MessageParameterAttribute#2](~/add/codesnippet/csharp/messageparameterattribute.client/proxycode.cs#2)]
- [!code-vb[MessageParameterAttribute#2](~/add/codesnippet/visualbasic/messageparameterattribute.client/proxycode.vb#2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -86,31 +44,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtains or sets the name attribute of the parameter in the XML Schema (XSD).</summary>
-        <value>The name attribute of the parameter in the XSD.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of <xref:System.ServiceModel.MessageParameterAttribute> to establish the name of the parameter and the return value in metadata.  
-  
- [!code-vb[MessageParameterAttribute#1](~/add/codesnippet/visualbasic/messageparameterattribute.client/services.vb#1)]
- [!code-cs[MessageParameterAttribute#1](~/add/codesnippet/csharp/messageparameterattribute.client/services.cs#1)]  
-  
- The following example shows the generated service contract for the preceding service. Note that the name of the parameter is now `Input`.  
-  
- [!code-cs[MessageParameterAttribute#2](~/add/codesnippet/csharp/messageparameterattribute.client/proxycode.cs#2)]
- [!code-vb[MessageParameterAttribute#2](~/add/codesnippet/visualbasic/messageparameterattribute.client/proxycode.vb#2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

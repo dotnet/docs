@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides the implementation for the server channel sink provider that creates <see cref="T:System.Runtime.Remoting.MetadataServices.SdlChannelSink" /> instances.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Remoting.MetadataServices.SdlChannelSink> is used to create Web Services Description Language (WSDL) schema in situations where the URL ends with the string "?wsdl", for example, http://localhost/longbeard?wsdl.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider" /> class with default values.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +41,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -58,9 +48,9 @@
         <Parameter Name="providerData" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="properties">A <see cref="T:System.Collections.IDictionary" /> of configuration properties to use with the new instance of <see cref="T:System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider" />.</param>
-        <param name="providerData">A <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Runtime.Remoting.Channels.SinkProviderData" /> instances to use with the new instance of <see cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider" /> class with specified properties and provider data.</summary>
+        <param name="properties">To be added.</param>
+        <param name="providerData">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,9 +70,9 @@
         <Parameter Name="channel" Type="System.Runtime.Remoting.Channels.IChannelReceiver" />
       </Parameters>
       <Docs>
-        <param name="channel">The channel for which to create the channel sink chain.</param>
-        <summary>Creates a sink chain.</summary>
-        <returns>The first sink of the newly formed channel sink chain.</returns>
+        <param name="channel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,8 +92,8 @@
         <Parameter Name="localChannelData" Type="System.Runtime.Remoting.Channels.IChannelDataStore" />
       </Parameters>
       <Docs>
-        <param name="localChannelData">A <see cref="T:System.Runtime.Remoting.Channels.IChannelDataStore" /> object in which the channel data is to be returned.</param>
-        <summary>Returns the channel data for the channel that the current sink is associated with.</summary>
+        <param name="localChannelData">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,15 +104,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Channels.IServerChannelSinkProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the next <see cref="T:System.Runtime.Remoting.Channels.IServerChannelSinkProvider" /> in the sink provider chain.</summary>
-        <value>The next <see cref="T:System.Runtime.Remoting.Channels.IServerChannelSinkProvider" /> in the sink provider chain.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides properties and methods for defining how a URL maps to a physical file.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You pass an instance of PageRouteHandler to the <xref:System.Web.Routing.Route> constructor in order to map a URL of a physical file. The PageRouteHandler object specifies the virtual path of the physical file and determines whether authorization rules for the physical URL is checked.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,17 +32,9 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The virtual path of the physical file for this <see cref="System.Web.Routing.RouteData.Route%2A" /> object. The file must be located in the current application. Therefore, the path must begin with a tilde (~).</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.PageRouteHandler" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you use this constructor, the <xref:System.Web.Routing.PageRouteHandler.CheckPhysicalUrlAccess%2A> property is set to `true`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="virtualPath" /> parameter is <see langword="null" /> or is an empty string or does not start with "~/".</exception>
+        <param name="virtualPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,18 +51,10 @@
         <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The virtual path of the physical file of this <see cref="System.Web.Routing.RouteData.Route%2A" /> object. The file must be located in the current application. Therefore, the path must begin with a tilde (~).</param>
-        <param name="checkPhysicalUrlAccess">If this property is set to <see langword="false" />, authorization rules will be applied to the request URL and not to the URL of the physical page. If this property is set to <see langword="true" />, authorization rules will be applied to both the request URL and to the URL of the physical page.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.PageRouteHandler" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the <xref:System.Web.Routing.PageRouteHandler.CheckPhysicalUrlAccess%2A> property is `true`. Therefore, if you want authorization rules to be applied to both the URL of the physical page and to the route URL, you can use the <xref:System.Web.Routing.PageRouteHandler.%23ctor%28System.String%29> constructor instead of this constructor.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="virtualPath" /> parameter is <see langword="null" /> or is an empty string or does not start with "~/".</exception>
+        <param name="virtualPath">To be added.</param>
+        <param name="checkPhysicalUrlAccess">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckPhysicalUrlAccess">
@@ -93,49 +70,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that determines whether authorization rules are applied to the physical file's URL.</summary>
-        <value>
-          <see langword="true" /> if authorization is checked for the URL of the physical file that is associated with the route; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set the CheckPhysicalUrlAccess property when you use the <xref:System.Web.Routing.PageRouteHandler.%23ctor%28System.String%2CSystem.Boolean%29> constructor.  
-  
- The value of the CheckPhysicalUrlAccess property determines whether the <xref:System.Web.Routing.PageRouteHandler> object will check security permissions only for the route URL or for both the physical page and the route URL.  
-  
- When the CheckPhysicalUrlAccess property is set to `true` (which is its default value), a user must have permission to access both the route URL and the physical URL. When the CheckPhysicalUrlAccess property is set to `false`, a user requires only permission to access the route URL, and permissions for the physical URL are not checked.  
-  
- Permissions are defined in the Web.config file, as shown in the following example:  
-  
-```  
-<configuration>  
-  <location path="categoriespage.aspx">  
-    <system.web>  
-      <authorization>  
-        <allow roles="admin"/>  
-        <deny users="*"/>  
-      </authorization>  
-    </system.web>  
-  </location>  
-  <location path="category">  
-    <system.web>  
-      <authorization>  
-        <allow users="*"/>  
-      </authorization>  
-    </system.web>  
-  </location>  
-</configuration>  
-```  
-  
- For a request URL that contains `Category/food/show` after the domain name, if the route URL pattern is `Category/{action}/{categoryName}` and the physical page is Categoriespage.aspx, [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] applies the permissions defined in the previous example in one of the following ways:  
-  
--   If the CheckPhysicalUrlAccess property is `false`, all users are granted access, because all users are granted access to the URL pattern that starts with `category`.  
-  
--   If the CheckPhysicalUrlAccess property is `true`, only `admin` users are granted access. All users have access to the URL pattern that begins with `category`, but only `admin` users have access to the physical page Categoriespage.aspx.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHttpHandler">
@@ -154,11 +91,10 @@
         <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="requestContext">An object that encapsulates information about the request.</param>
-        <summary>Returns the object that processes the request.</summary>
-        <returns>The object that processes the request.</returns>
+        <param name="requestContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestContext" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSubstitutedVirtualPath">
@@ -177,18 +113,10 @@
         <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="requestContext">An object that encapsulates information about the request.</param>
-        <summary>Returns the virtual path of the physical file for the route after substitutions have been applied to any replacement parameters.</summary>
-        <returns>The URL of the physical file that was generated from a route.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.Routing.PageRouteHandler.VirtualPath%2A> value does not contain any replacement parameters, the GetSubstitutedVirtualPath method returns the same value as the <xref:System.Web.Routing.PageRouteHandler.VirtualPath%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestContext" /> parameter is <see langword="null" />.</exception>
+        <param name="requestContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VirtualPath">
@@ -204,16 +132,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path of the Web page that is associated with this route.</summary>
-        <value>The URL of the Web page, before substitutions have been applied for any replacement parameters.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You set the VirtualPath property in the <xref:System.Web.Routing.PageRouteHandler.%23ctor%2A?displayProperty=fullName> constructor or in the <xref:System.Web.Routing.PageRouteHandler.%23ctor%2A?displayProperty=fullName> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

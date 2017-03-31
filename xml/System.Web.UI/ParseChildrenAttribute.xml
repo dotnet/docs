@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ParseChildrenAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,38 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a metadata attribute that you can use when developing ASP.NET server controls. Use the ParseChildrenAttribute class to indicate how the page parser should treat content nested inside a server control tag declared on a page. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParseChildrenAttribute class allows you to specify parsing logic for a custom server control by marking the server control with the ParseChildrenAttribute metadata attribute.  
-  
- Marking your server control with the metadata attribute `ParseChildren(true)` instructs the parser to interpret the elements that are contained within the server control's tags as properties. In this scenario, the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property is `true`.  
-  
- Marking your server control with the metadata attribute `ParseChildren(true,"<Default Property>")` sets the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property to the name of the property that is passed into the attribute.  
-  
- Marking your server control with the metadata attribute `ParseChildren(false)`, the default value, instructs the parser to interpret the elements that are contained within the server control's tags as content that will be parsed with an associated <xref:System.Web.UI.ControlBuilder> that is, as controls. In this scenario, the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property is `false`.  
-  
- For information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
-  
-   
-  
-## Examples  
- The code example in this section contains two parts. The first code example demonstrates how to set properties for the ParseChildrenAttribute class. The second code example demonstrates how to use classes in an ASP.NET page.  
-  
- The following code example demonstrates how to set the ParseChildrenAttribute object of a custom server control named `CollectionPropertyControl`. The ParseChildrenAttribute sets the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property to `true` and the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property to the `Employee` class.  
-  
- [!code-cs[ParseChildrenAttribute_1#1](~/add/codesnippet/csharp/t-system.web.ui.parsechi_1.cs)]
- [!code-vb[ParseChildrenAttribute_1#1](~/add/codesnippet/visualbasic/t-system.web.ui.parsechi_1.vb)]  
-  
- The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page. Instances of the `Employee` class are added declaratively.  
-  
- [!code-vb[ParseChildrenAttribute_1#3](~/add/codesnippet/visualbasic/t-system.web.ui.parsechi_2.aspx)]
- [!code-cs[ParseChildrenAttribute_1#3](~/add/codesnippet/csharp/t-system.web.ui.parsechi_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,20 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A new instance of the <xref:System.Web.UI.ParseChildrenAttribute> class is created with the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property set to `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -81,39 +42,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="childrenAsProperties" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="childrenAsProperties">
-          <see langword="true" /> to parse the elements as properties of the server control; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class using the <see cref="System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A" /> property to determine if the elements that are contained within a server control are parsed as properties of the server control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `childrenAsProperties` is `false`, the elements that are contained within the server control are parsed as a control. `false` is the default for <xref:System.Web.UI.ParseChildrenAttribute>.  
-  
-   
-  
-## Examples  
- The code example in this section contains two parts. The first code example demonstrates how to set properties for the <xref:System.Web.UI.ParseChildrenAttribute> class. The second code example demonstrates how to use classes in an ASP.NET page.  
-  
- The following code example demonstrates how to set the <xref:System.Web.UI.ParseChildrenAttribute> object for a custom server control named `CollectionPropertyControl`. When the <xref:System.Web.UI.ParseChildrenAttribute> is declared before the class defining `CollectionPropertyControl`, the <xref:System.Web.UI.ParseChildrenAttribute> sets the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property to `true`.  
-  
- [!code-cs[ParseChildrenAttribute_2#1](~/add/codesnippet/csharp/m-system.web.ui.parsechi_0_1.cs)]
- [!code-vb[ParseChildrenAttribute_2#1](~/add/codesnippet/visualbasic/m-system.web.ui.parsechi_0_1.vb)]  
-  
- The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page. One instance of the `Employee` class is added declaratively and another is added programmatically.  
-  
- [!code-vb[ParseChildrenAttribute_2#3](~/add/codesnippet/visualbasic/m-system.web.ui.parsechi_0_2.aspx)]
- [!code-cs[ParseChildrenAttribute_2#3](~/add/codesnippet/csharp/m-system.web.ui.parsechi_0_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="childrenAsProperties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,18 +60,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="childControlType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="childControlType">The control type to parse as a property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class using the <see cref="System.Web.UI.ParseChildrenAttribute.ChildControlType%2A" /> property to determine which elements that are contained within a server control are parsed as controls.</summary>
+        <param name="childControlType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="childControlType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,7 +78,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -152,33 +85,10 @@
         <Parameter Name="defaultProperty" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="childrenAsProperties">
-          <see langword="true" /> to parse the elements as properties of the server control; otherwise, <see langword="false" />.</param>
-        <param name="defaultProperty">A string that defines a collection property of the server control into which nested content is parsed by default.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class using the <paramref name="childrenAsProperties" /> and <paramref name="defaultProperty" /> parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `childrenAsProperties` is `false`, the elements are parsed as controls.  
-  
-   
-  
-## Examples  
- The code example in this section contains two parts. The first code example demonstrates how to set properties for the <xref:System.Web.UI.ParseChildrenAttribute> class. The second code example demonstrates how to use classes in an ASP.NET page.  
-  
- The following code example demonstrates how to set the <xref:System.Web.UI.ParseChildrenAttribute> object of a custom server control named `CollectionPropertyControl`. The <xref:System.Web.UI.ParseChildrenAttribute> sets the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property to `true` and the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property to the `Employee` class.  
-  
- [!code-cs[ParseChildrenAttribute_1#2](~/add/codesnippet/csharp/m-system.web.ui.parsechi_1_1.cs)]
- [!code-vb[ParseChildrenAttribute_1#2](~/add/codesnippet/visualbasic/m-system.web.ui.parsechi_1_1.vb)]  
-  
- The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page.  
-  
- [!code-vb[ParseChildrenAttribute_1#3](~/add/codesnippet/visualbasic/m-system.web.ui.parsechi_1_2.aspx)]
- [!code-cs[ParseChildrenAttribute_1#3](~/add/codesnippet/csharp/m-system.web.ui.parsechi_1_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="childrenAsProperties">To be added.</param>
+        <param name="defaultProperty">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildControlType">
@@ -188,31 +98,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the allowed type of a control.</summary>
-        <value>The control type. The default is <see cref="T:System.Web.UI.Control" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the allowed control type is `null`, meaning that it has not been specified, the default type, which is a <xref:System.Web.UI.Control?displayProperty=fullName> control, is returned.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to query the ChildControlType property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute.%23ctor%2A>.  
-  
- [!code-vb[ParseChildrenAttribute_2#3](~/add/codesnippet/visualbasic/p-system.web.ui.parsechi_1_1.aspx)]
- [!code-cs[ParseChildrenAttribute_2#3](~/add/codesnippet/csharp/p-system.web.ui.parsechi_1_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildrenAsProperties">
@@ -222,33 +116,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether to parse the elements that are contained within a server control as properties.</summary>
-        <value>
-          <see langword="true" /> to parse the elements as properties; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the ChildrenAsProperties property is set to `false`, the elements that are contained within a server control are parsed as a control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to query the ChildrenAsProperties property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
-  
- [!code-vb[ParseChildrenAttribute_1#3](~/add/codesnippet/visualbasic/p-system.web.ui.parsechi_2_1.aspx)]
- [!code-cs[ParseChildrenAttribute_1#3](~/add/codesnippet/csharp/p-system.web.ui.parsechi_2_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The current <see cref="T:System.Web.UI.ParseChildrenAttribute" /> was invoked with <paramref name="childrenAsProperties" /> set to <see langword="false" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -258,22 +134,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.ParseChildrenAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Defines the default value for the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class. This field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value for the Default field is `false`, which means that elements are not parsed as properties of the server control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultProperty">
@@ -283,32 +151,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the default property for the server control into which the elements are parsed.</summary>
-        <value>The name of the default collection property of the server control into which the elements are parsed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DefaultProperty property is used only if a string is passed to the <xref:System.Web.UI.ParseChildrenAttribute> constructor. When the <xref:System.Web.UI.ParseChildrenAttribute> class is created, the DefaultProperty property defines the default property for the server control that is being parsed.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to query the DefaultProperty property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
-  
- [!code-vb[ParseChildrenAttribute_1#3](~/add/codesnippet/visualbasic/p-system.web.ui.parsechi_0_1.aspx)]
- [!code-cs[ParseChildrenAttribute_1#3](~/add/codesnippet/csharp/p-system.web.ui.parsechi_0_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The current <see cref="T:System.Web.UI.ParseChildrenAttribute" /> was invoked with <paramref name="childrenAsProperties" /> set to <see langword="false" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -318,7 +169,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,10 +178,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare with the current object.</param>
-        <summary>Determines whether the specified object is equal to the current object.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,7 +191,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -350,8 +198,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Serves as a hash function for the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> object.</summary>
-        <returns>A hash code for the current <see cref="T:System.Web.UI.ParseChildrenAttribute" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,7 +210,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -370,25 +217,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value indicating whether the value of the current instance of the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class is the default value of the derived class.</summary>
-        <returns>
-          <see langword="true" /> if the current <see cref="T:System.Web.UI.ParseChildrenAttribute" /> value is the default instance; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value for the <xref:System.Web.UI.ParseChildrenAttribute> class is the <xref:System.Web.UI.ParseChildrenAttribute.ParseAsChildren> field.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to query the IsDefaultAttribute property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
-  
- [!code-vb[ParseChildrenAttribute_1#3](~/add/codesnippet/visualbasic/m-system.web.ui.parsechi_2_1.aspx)]
- [!code-cs[ParseChildrenAttribute_1#3](~/add/codesnippet/csharp/m-system.web.ui.parsechi_2_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParseAsChildren">
@@ -398,22 +229,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.ParseChildrenAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the nested content that is contained within the server control is parsed as controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the ParseAsChildren field is called, the nested content that are contained within the server control are not parsed as properties; rather, they are parsed as a control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParseAsProperties">
@@ -423,22 +246,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.ParseChildrenAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the nested content that is contained within a server control is parsed as properties of the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the ParseAsProperties field is called, the nested content contained within a server control is parsed as properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

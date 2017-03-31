@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProfileGroupSettingsCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,55 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains a set of <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProfileGroupSettingsCollection class contains a collection of <xref:System.Web.Configuration.ProfileGroupSettings> objects, which each contain a collection of <xref:System.Web.Configuration.ProfilePropertySettings> objects.  
-  
- The <xref:System.Web.Configuration.ProfilePropertySettings> class provides a way to programmatically create, access, and modify the definition of an individual property added to the `<properties>` subsection of the `<profile>` section of a configuration file.  
-  
- The `<profile>` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `<profile>` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `<properties>` subsection of the `<profile>` section of the configuration file.  
-  
- For more information about profile properties, see [ASP.NET Profile Properties Overview](../Topic/ASP.NET%20Profile%20Properties%20Overview.md). For more information about the profile features added to ASP.NET version 2.0, see [ASP.NET Profile Properties Overview](../Topic/ASP.NET%20Profile%20Properties%20Overview.md).  
-  
-   
-  
-## Examples  
- The following configuration file excerpt shows how to declaratively specify values for several properties of the ProfileGroupSettingsCollection as `<group>` elements of the `<properties>` element of the `<profile>` configuration file section.  
-  
-```  
-<system.web>  
-  <profile enabled = "true"          defaultProvider="AspNetSqlProfileProvider">  
-    <providers>  
-      <add  name="AspNetSqlProfileProvider"  
-        type="System.Web.Profile.SqlProfileProvider "  
-        connectionStringName="LocalSqlServer"  
-        applicationName="/"  
-        description="Stores and retrieves profile data from the   
-        local Microsoft SQL Server database" />  
-    </providers>  
-  
-    <properties>  
-      <group name = "SiteColors" >  
-        <add name = "BackGround"/>  
-        <add name = "SideBar"/>  
-        <add name = "ForeGroundText"/>  
-        <add name = "ForeGroundBorders"/>  
-      </group>  
-      <group name="Forums">  
-        <add name = "HasAvatar" type="bool" provider="Forums"/>  
-        <add name = "LastLogin" type="DateTime" provider="Forums"/>  
-        <add name = "TotalPosts" type="int" provider="Forums"/>  
-      </group>  
-    </properties>  
-  </profile>  
-</system.web>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProfileGroupSettingsCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,25 +51,9 @@
         <Parameter Name="group" Type="System.Web.Configuration.ProfileGroupSettings" />
       </Parameters>
       <Docs>
-        <param name="group">A <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection must not already contain a <xref:System.Web.Configuration.ProfileGroupSettings> object with the same name.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Add method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
-  
- [!code-cs[System.Web.Configuration.ProfileSection#13](~/add/codesnippet/csharp/bd679910-6ae4-4b06-8872-_1.cs)]
- [!code-vb[System.Web.Configuration.ProfileSection#13](~/add/codesnippet/visualbasic/bd679910-6ae4-4b06-8872-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to add already exists in the collection, or the collection is read-only.</exception>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -129,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string array of all the key values in the collection.</summary>
-        <value>A string array of all the key values in the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,23 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> objects from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the appropriate section of the current configuration file are removed.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Clear method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
-  
- [!code-cs[System.Web.Configuration.ProfileSection#2](~/add/codesnippet/csharp/m-system.web.configurati_68_1.cs)]
- [!code-vb[System.Web.Configuration.ProfileSection#2](~/add/codesnippet/visualbasic/m-system.web.configurati_68_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -182,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,9 +127,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to get.</param>
-        <summary>Returns the <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object at the specified index.</summary>
-        <returns>The <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object at the specified index, or <see langword="null" /> if there is no object at that index.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,9 +149,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to get.</param>
-        <summary>Returns the <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object with the specified name.</summary>
-        <returns>The <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object with the specified name, or <see langword="null" /> if the name does not exist.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -271,7 +184,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -281,9 +193,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of a <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object.</param>
-        <summary>Returns the name of the <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object at the specified index.</summary>
-        <returns>The name of the <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object at the specified index, or <see langword="null" /> if there is no object at that index.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,7 +206,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -304,9 +215,9 @@
         <Parameter Name="group" Type="System.Web.Configuration.ProfileGroupSettings" />
       </Parameters>
       <Docs>
-        <param name="group">A <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object in the collection.</param>
-        <summary>Returns the index of the specified <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object.</summary>
-        <returns>The index of the specified <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object, or -1 if the specified <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object is not contained in the collection.</returns>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,7 +228,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -337,7 +247,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -347,9 +256,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of a <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object in the collection.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object at the specified index location.</summary>
-        <value>The <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object at the specified index, or <see langword="null" /> if there is no object at that index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,7 +269,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -370,9 +278,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of a <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object in the collection.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object with the specified name.</summary>
-        <value>The <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object with the specified name, or <see langword="null" /> if there is no object with that name.</value>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,7 +291,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -402,7 +309,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -412,25 +318,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to remove from the collection.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Remove method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
-  
- [!code-cs[System.Web.Configuration.ProfileSection#1](~/add/codesnippet/csharp/m-system.web.configurati_61_1.cs)]
- [!code-vb[System.Web.Configuration.ProfileSection#1](~/add/codesnippet/visualbasic/m-system.web.configurati_61_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">There is no <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object at the specified index in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -440,7 +330,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -450,17 +339,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to remove from the collection.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">There is no <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object at the specified index in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetModified">
@@ -470,7 +351,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -489,7 +369,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -499,17 +378,9 @@
         <Parameter Name="group" Type="System.Web.Configuration.ProfileGroupSettings" />
       </Parameters>
       <Docs>
-        <param name="group">A <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling this method has the same effect as calling the <xref:System.Web.Configuration.ProfileGroupSettingsCollection.Add%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object to add already exists in the collection, or the collection is read-only.</exception>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

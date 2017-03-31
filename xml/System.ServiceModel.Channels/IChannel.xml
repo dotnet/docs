@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IChannel" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,31 +13,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines the basic interface that all channel objects must implement. It requires that they implement the state machine interface shared by all communication objects and that they implement a method to retrieve objects from the channel stack.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Channels must satisfy the contract of a state machine as defined by the <xref:System.ServiceModel.ICommunicationObject> interface.  
-  
- The IChannel interface adds the  
-  
- <xref:System.ServiceModel.Channels.IChannel.GetProperty%2A> method to the <xref:System.ServiceModel.ICommunicationObject> interface. This method provides a mechanism for retrieving properties from the channel stack regardless of where in the stack those properties live. The term "property" in the method name refers to a piece of information that belongs to one of the channels in the stack. The CLR type for that property is determined by `T`. This method of retrieval is also used on channel factories and channel listeners.  
-  
- `IChannel` is inherited by each of the channel interfaces associated with the basic message-exchange patterns:  
-  
--   <xref:System.ServiceModel.Channels.IInputChannel> for receiving messages.  
-  
--   <xref:System.ServiceModel.Channels.IOutputChannel> for sending messages.  
-  
--   <xref:System.ServiceModel.Channels.IRequestChannel> for sending a request.  
-  
--   <xref:System.ServiceModel.Channels.IReplyChannel> for sending a reply.  
-  
--   <xref:System.ServiceModel.Channels.IDuplexChannel> for bi-directional messaging.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetProperty&lt;T&gt;">
@@ -47,7 +24,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,24 +39,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The typed object for which the method is querying.</typeparam>
-        <summary>Returns a typed object requested, if present, from the appropriate layer in the channel stack.</summary>
-        <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the channel stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no channel layer supported the requested object, then the method returns `null`.  
-  
-   
-  
-## Examples  
- The following sample shows how this property can be implemented by a channel that delegates the call down the stack using an`InnerChannel` property that retrieves the inner channel for this channel.  
-  
- [!code-cs[S_UEIChannel#0](~/add/codesnippet/csharp/s_ueichannel.cs/generatedclient.cs#0)]  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

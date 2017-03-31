@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputScopeConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,16 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts a <see cref="T:System.Windows.Input.InputScope" /> to and from other types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_InputScopeConverter"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputScopeConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An object that describes any type descriptor context.  This object must implement the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface.  This parameter may be <see langword="null" />.</param>
-        <param name="sourceType">A <see cref="T:System.Type" /> to check for conversion compatibility.</param>
-        <summary>Determines whether an <see cref="T:System.Windows.Input.InputScope" /> object can be converted from an object of a specified type.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="sourceType" /> is type <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An object that describes any type descriptor context.  This object must implement the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface.  This parameter may be <see langword="null" />.</param>
-        <param name="destinationType">A <see cref="T:System.Type" /> to check for conversion compatibility.</param>
-        <summary>Determines whether an <see cref="T:System.Windows.Input.InputScope" /> object can be converted to an object of a specified type.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="destinationType" /> is type <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,11 +96,11 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">An object that describes any type descriptor context.  This object must implement the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface.  This parameter may be <see langword="null" />.</param>
-        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object containing any cultural context for the conversion.  This parameter may be <see langword="null" />.</param>
-        <param name="source">A source object to convert from.  This object must be a string.</param>
-        <summary>Converts a source object (string) into an <see cref="T:System.Windows.Input.InputScope" /> object.</summary>
-        <returns>An <see cref="T:System.Windows.Input.InputScope" /> object converted from the specified source object.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,20 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An object that describes any type descriptor context.  This object must implement the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface.  This parameter may be <see langword="null" />.</param>
-        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object containing any cultural context for the conversion.  This parameter may be <see langword="null" />.</param>
-        <param name="value">An object to convert from.  This object must be of type <see cref="T:System.Windows.Input.InputScope" />.</param>
-        <param name="destinationType">A destination type to convert type.  This type must be string.</param>
-        <summary>Converts an <see cref="T:System.Windows.Input.InputScope" /> object into a specified object type (string).</summary>
-        <returns>A new object of the specified type (string) converted from the given <see cref="T:System.Windows.Input.InputScope" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `destinationType` must be <xref:System.String>.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

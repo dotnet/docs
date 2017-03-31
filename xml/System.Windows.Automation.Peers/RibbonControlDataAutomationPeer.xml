@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="itemsControlPeer" Type="System.Windows.Automation.Peers.ItemsControlAutomationPeer" />
       </Parameters>
       <Docs>
-        <param name="item">The element associated with this automation peer.</param>
-        <param name="itemsControlPeer">The automation peer that is associated with the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlGroup" /> that holds the <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" /> class.</summary>
+        <param name="item">To be added.</param>
+        <param name="itemsControlPeer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> enumeration value.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClassName%2A" />.</summary>
-        <returns>The class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +89,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
-        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" />.</summary>
-        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is the <see cref="T:System.Windows.Automation.Peers.PatternInterface" /> value; otherwise, <see langword="null" />.</returns>
+        <param name="patternInterface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

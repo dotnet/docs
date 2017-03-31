@@ -4,12 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IWhereParametersProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Implemented by parameter classes that provide one or many <see langword="Where" /> parameters.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -20,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -30,9 +28,9 @@
         <Parameter Name="dataSource" Type="System.Web.DynamicData.IDynamicDataSource" />
       </Parameters>
       <Docs>
-        <param name="dataSource">The source of the parameter.</param>
-        <summary>Gets the list of <see langword="Where" /> parameters that should be added to the <see langword="Where" /> parameter collection.</summary>
-        <returns>A list of parameters.</returns>
+        <param name="dataSource">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

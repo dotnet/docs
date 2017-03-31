@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.TableCellsCollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,18 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a user interface for editing the collection of cells in a table row.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example uses the <xref:System.ComponentModel.EditorAttribute> to associate the `TableCellsCollectionEditor` class and the <xref:System.Drawing.Design.UITypeEditor> class (the collection editor's base class) with a custom `TestCells` property.  
-  
- [!code-cs[Design.WebControls_CollectionEditorSamples#1](~/add/codesnippet/csharp/t-system.web.ui.design.w_34_1.cs)]
- [!code-vb[Design.WebControls_CollectionEditorSamples#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.w_34_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type of the collection to edit.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.TableCellsCollectionEditor" /> class.</summary>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,9 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether multiple table cells can be selected at the same time.</summary>
-        <returns>
-          <see langword="true" /> if multiple cells can be selected at the same time; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,9 +68,9 @@
         <Parameter Name="itemType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="itemType">The <see cref="T:System.Type" /> of the item to create.</param>
-        <summary>Creates an instance of the editor for use with the specified type.</summary>
-        <returns>An object of the specified type.</returns>
+        <param name="itemType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

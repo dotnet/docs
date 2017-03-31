@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeView" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,508 +35,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Displays hierarchical data, such as a table of contents, in a tree structure.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this topic:  
-  
--   [Introduction](#introduction)  
-  
--   [Nodes](#nodes)  
-  
--   [Static Data](#static_data)  
-  
--   [Binding to Data](#binding_to_data)  
-  
--   [Dynamic Node Population](#dynamic_node_population)  
-  
--   [Customizing the User Interface](#customizing_the_user_interface)  
-  
--   [Events](#events)  
-  
--   [Scrolling](#scrolling)  
-  
--   [Accessibility](#accessibility)  
-  
--   [Declarative Syntax](#declarative_syntax)  
-  
-<a name="introduction"></a>   
-## Introduction  
- The TreeView control is used to display hierarchical data, such as a table of contents or file directory, in a tree structure and supports the following features:  
-  
--   Data binding that allows the nodes of the control to be bound to XML, tabular, or relational data.  
-  
--   Site navigation through integration with the <xref:System.Web.UI.WebControls.SiteMapDataSource> control.  
-  
--   Node text that can be displayed as either plain text or hyperlinks.  
-  
--   Programmatic access to the TreeView object model to create trees, populate nodes, set properties, and so on dynamically.  
-  
--   Client-side node population (on supported browsers).  
-  
--   The ability to display a check box next to each node.  
-  
--   Customizable appearance through themes, user-defined images, and styles.  
-  
-    > [!NOTE]
-    >  The TreeView control is designed to be used inside an <xref:System.Web.UI.UpdatePanel> control only when <xref:System.Web.UI.WebControls.TreeView.EnableClientScript%2A> is set to `true`. <xref:System.Web.UI.UpdatePanel> controls are used to update selected regions of a page instead of updating the whole page with a postback. For more information, see [UpdatePanel Control Overview](../Topic/UpdatePanel%20Control%20Overview.md) and [Partial-Page Rendering Overview](../Topic/Partial-Page%20Rendering%20Overview.md).  
-  
-<a name="nodes"></a>   
-## Nodes  
- The TreeView control is made up of nodes. Each entry in the tree is called a node and is represented by a <xref:System.Web.UI.WebControls.TreeNode> object. Node types are defined as follows:  
-  
--   A node that contains other nodes is called a *parent node*.  
-  
--   The node that is contained by another node is called a *child node*.  
-  
--   A node that has no children is called a *leaf node*.  
-  
--   The node that is not contained by any other node but is the ancestor to all the other nodes is the *root node*.  
-  
- A node can be both a parent and a child, but root, parent, and leaf nodes are mutually exclusive. Several visual and behavioral properties of nodes are determined by whether a node is a root, child, or leaf node.  
-  
- Although a typical tree structure has only one root node, the TreeView control allows you to add multiple root nodes to your tree structure. This is useful when you want to display item listings without displaying a single root node, as in a list of product categories.  
-  
- Each node has a <xref:System.Web.UI.WebControls.TreeNode.Text%2A> property and a <xref:System.Web.UI.WebControls.TreeNode.Value%2A> property. The value of the <xref:System.Web.UI.WebControls.TreeNode.Text%2A> property is displayed in the TreeView, while the <xref:System.Web.UI.WebControls.TreeNode.Value%2A> property is used to store any additional data about the node, such as data that is passed to the postback event that is associated with the node.  
-  
- A node can be in one of two modes: selection mode and navigation mode. By default, a node is in selection mode. To put a node into navigation mode, set the <xref:System.Web.UI.WebControls.TreeNode.NavigateUrl%2A> property for the node to a value other than an empty string (""). To put a node into selection mode, set the <xref:System.Web.UI.WebControls.TreeNode.NavigateUrl%2A> property for the node to an empty string ("").  
-  
-> [!NOTE]
->  Some Internet browsers have a limitation that can affect the performance of the TreeView control. For example, Microsoft Internet Explorer 6.0 has a URL character limit of 2067 characters that it posts. If the number of characters in a URL of a node is larger than that number, expanding that node will fail and no exception is thrown.  
-  
-<a name="static_data"></a>   
-## Static Data  
- The simplest data model of the TreeView control is static data. To display static data using declarative syntax, first nest opening and closing `<Nodes>` tags between the opening and closing tags of the TreeView control. Next, create the tree structure by nesting `<asp:TreeNode>` elements between the opening and closing `<Nodes>` tags. Each `<asp:TreeNode>` element represents a node in the tree and maps to a <xref:System.Web.UI.WebControls.TreeNode> object. You can set the properties of each node by setting the attributes of its `<asp:TreeNode>` element. To create child nodes, nest additional `<asp:TreeNode>` elements between the opening and closing `<asp:TreeNode>` tags of the parent node.  
-  
-<a name="binding_to_data"></a>   
-## Binding to Data  
- The TreeView control can also be bound to data. You can use either of two methods to bind the TreeView control to the appropriate data source type:  
-  
--   The TreeView control can use any data source control that implements the <xref:System.Web.UI.IHierarchicalDataSource> interface, such as an <xref:System.Web.UI.WebControls.XmlDataSource> control or a <xref:System.Web.UI.WebControls.SiteMapDataSource> control. To bind to a data source control, set the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the TreeView control to the <xref:System.Web.UI.Control.ID%2A> value of the data source control. The TreeView control automatically binds to the specified data source control. This is the preferred method to bind to data.  
-  
--   The TreeView control can also be bound to an <xref:System.Xml.XmlDocument> object or a <xref:System.Data.DataSet> object with relations. To bind to one of these data sources, set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the TreeView control to the data source, and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method.  
-  
- When binding to a data source where each data item contains multiple properties (such as an XML element with several attributes), a node displays the value that is returned by the `ToString` method of the data item, by default. In the case of an XML element, the node displays the element name, which shows the underlying structure of the tree but is not very useful otherwise. You can bind a node to a specific data item property by specifying tree node bindings using the <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection. The <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection contains `TreeNodeBinding` objects that define the relationship between a data item and the node that it is binding to. You can specify the criteria for binding and the data item property to display in the node. For more information on tree node bindings, see <xref:System.Web.UI.WebControls.TreeNodeBinding>.  
-  
-> [!IMPORTANT]
->  A malicious user can create a callback request and get data for the nodes of the TreeView control that the page developer is not displaying. Therefore, security of the data must be implemented by the data source. Do not use the <xref:System.Web.UI.WebControls.TreeView.MaxDataBindDepth%2A> property to hide data.  
-  
-<a name="dynamic_node_population"></a>   
-## Dynamic Node Population  
- Sometimes, it is not practical to statically define the tree structure because the data source returns too much data or because the data to display depends on information that you get at run time. Because of this, the TreeView control supports dynamic node population. When the <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property for a node is set to `true`, that node gets populated at run time when the node is expanded. To populate a node dynamically, you must define an event-handling method that contains the logic to populate a node for the <xref:System.Web.UI.WebControls.TreeView.TreeNodePopulate> event.  
-  
- Browsers that support callback scripts can also take advantage of client-side node population. (This includes Internet Explorer 5.5 and later and some other browsers.) Client-side node population enables the TreeView control to populate a node using client script when users expand the node, without requiring a round trip to the server. For more information on client-side node population, see <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A>.  
-  
-<a name="customizing_the_user_interface"></a>   
-## Customizing the User Interface  
- There are many ways to customize the appearance of the TreeView control. First, you can specify a different style (such as font size and color) for each of the node types.  
-  
- If you use cascading style sheets (CSS) to customize the appearance of the control, use either inline styles or a separate CSS file, but not both. Using both inline styles and a separate CSS file could cause unexpected results. For more information on using style sheets with controls, see [Web Server Controls and CSS Styles](../Topic/ASP.NET%20Web%20Server%20Controls%20and%20CSS%20Styles.md).  
-  
- The following table lists the available node styles.  
-  
-|Node style property|Description|  
-|-------------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A>|The style settings for a node when the mouse pointer is positioned over it.|  
-|<xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A>|The style settings for the leaf nodes.|  
-|<xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A>|The default style settings for a node.|  
-|<xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A>|The style settings for the parent nodes.|  
-|<xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A>|The style settings for the root node.|  
-|<xref:System.Web.UI.WebControls.TreeView.SelectedNodeStyle%2A>|The style settings for a selected node.|  
-  
- You can also control the style of nodes at specific depths within the tree by using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection. The first style in the collection corresponds to the style of the nodes at the first level in the tree. The second style in the collection corresponds to the style of the nodes at the second level in the tree, and so on. This is most often used to generate table of contents–style navigation menus where nodes at a certain depth should have the same appearance, regardless of whether they have child nodes.  
-  
-> [!NOTE]
->  If a style is defined for a certain depth level using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection, that style overrides any root, parent, or leaf node style settings for the nodes at that depth.  
-  
- Another way to alter the appearance of the control is to customize the images that are displayed in the TreeView control. You can specify your own custom set of images for the different parts of the control by setting the properties shown in the following table.  
-  
-|Image property|Description|  
-|--------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.TreeView.CollapseImageUrl%2A>|The URL to an image displayed for the collapsible node indicator. This image is usually a minus sign (-).|  
-|<xref:System.Web.UI.WebControls.TreeView.ExpandImageUrl%2A>|The URL to an image displayed for the expandable node indicator. This image is usually a plus sign (+).|  
-|<xref:System.Web.UI.WebControls.TreeView.LineImagesFolder%2A>|The URL to the folder containing the line images used to connect parent nodes to child nodes. The <xref:System.Web.UI.WebControls.TreeView.ShowLines%2A> property must also be set to `true` for this property to have an effect.|  
-|<xref:System.Web.UI.WebControls.TreeView.NoExpandImageUrl%2A>|The URL to an image displayed for the non-expandable node indicator.|  
-  
-> [!NOTE]
->  You do not need to customize every image property. If an image property is not explicitly set, the built-in default image is used.  
-  
- The TreeView control also allows you to display a check box next to a node. When the <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A> property is set to a value other than `TreeNodeTypes.None`, check boxes are displayed next to the specified node types.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A> property can be set to a bitwise combination of the <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration member values.  
-  
- Each time the page is posted to the server, the <xref:System.Web.UI.WebControls.TreeView.CheckedNodes%2A> collection is automatically populated with the selected nodes. When check boxes are displayed, you can use the <xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged> event to run a custom routine whenever the state of a check box changes between posts to the server.  
-  
-<a name="events"></a>   
-## Events  
- The TreeView control provides several events that you can program against. This allows you to run a custom routine whenever an event occurs. The following table lists the events that are supported by the TreeView control.  
-  
-|Event|Description|  
-|-----------|-----------------|  
-|<xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged>|Occurs when the check boxes of the TreeView control change state between posts to the server.|  
-|<xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged>|Occurs when a node is selected in the TreeView control.|  
-|<xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded>|Occurs when a node is expanded in the TreeView control.|  
-|<xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed>|Occurs when a node is collapsed in the TreeView control.|  
-|<xref:System.Web.UI.WebControls.TreeView.TreeNodePopulate>|Occurs when a node with its <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property set to `true` is expanded in the TreeView control.|  
-|<xref:System.Web.UI.WebControls.TreeView.TreeNodeDataBound>|Occurs when a data item is bound to a node in the TreeView control.|  
-  
-<a name="scrolling"></a>   
-## Scrolling  
- The TreeView control does not have built-in scrolling. To add scrolling, place the TreeView control in a <xref:System.Web.UI.WebControls.Panel> control and add scrollbars to the <xref:System.Web.UI.WebControls.Panel> control. For more information, see [Panel Web Server Control Overview](../Topic/Panel%20Web%20Server%20Control%20Overview.md).  
-  
-<a name="accessibility"></a>   
-## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](../Topic/ASP.NET%20Controls%20and%20Accessibility.md).  
-  
-<a name="declarative_syntax"></a>   
-## Declarative Syntax  
-  
-```  
-<asp:TreeView  
-    AccessKey="string"  
-    AutoGenerateDataBindings="True|False"  
-    BackColor="color name|#dddddd"  
-    BorderColor="color name|#dddddd"  
-    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
-        Inset|Outset"  
-    BorderWidth="size"  
-    CollapseImageToolTip="string"  
-    CollapseImageUrl="uri"  
-    CssClass="string"  
-    DataSource="string"  
-    DataSourceID="string"  
-    EnableClientScript="True|False"  
-    Enabled="True|False"  
-    EnableTheming="True|False"  
-    EnableViewState="True|False"  
-    ExpandDepth="string|FullyExpand|0|1|2|3|4|5|6|7|8|9|10|11|12|13|  
-        14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30"  
-    ExpandImageToolTip="string"  
-    ExpandImageUrl="uri"  
-    Font-Bold="True|False"  
-    Font-Italic="True|False"  
-    Font-Names="string"  
-    Font-Overline="True|False"  
-    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
-       Large|X-Large|XX-Large"  
-    Font-Strikeout="True|False"  
-    Font-Underline="True|False"  
-    ForeColor="color name|#dddddd"  
-    Height="size"  
-    ID="string"  
-    ImageSet="Custom|XPFileExplorer|Msdn|WindowsHelp|Simple|Simple2|  
-        BulletedList|BulletedList2|BulletedList3|BulletedList4|  
-        Arrows|News|Contacts|Inbox|Events|Faq"  
-    LineImagesFolder="string"  
-    MaxDataBindDepth="integer"  
-    NodeIndent="integer"  
-    NodeWrap="True|False"  
-    NoExpandImageUrl="uri"  
-    OnDataBinding="DataBinding event handler"  
-    OnDataBound="DataBound event handler"  
-    OnDisposed="Disposed event handler"  
-    OnInit="Init event handler"  
-    OnLoad="Load event handler"  
-    OnPreRender="PreRender event handler"  
-    OnSelectedNodeChanged="SelectedNodeChanged event handler"  
-    OnTreeNodeCheckChanged="TreeNodeCheckChanged event handler"  
-    OnTreeNodeCollapsed="TreeNodeCollapsed event handler"  
-    OnTreeNodeDataBound="TreeNodeDataBound event handler"  
-    OnTreeNodeExpanded="TreeNodeExpanded event handler"  
-    OnTreeNodePopulate="TreeNodePopulate event handler"  
-    OnUnload="Unload event handler"  
-    PathSeparator="string"  
-    PopulateNodesFromClient="True|False"  
-    runat="server"  
-    ShowCheckBoxes="None|Root|Parent|Leaf|All"  
-    ShowExpandCollapse="True|False"  
-    ShowLines="True|False"  
-    SkinID="string"  
-    SkipLinkText="string"  
-    Style="string"  
-    TabIndex="integer"  
-    Target="string"  
-    ToolTip="string"  
-    Visible="True|False"  
-    Width="size"  
->  
-        <DataBindings>  
-                <asp:TreeNodeBinding  
-                    DataMember="string"  
-                    Depth="integer"  
-                    FormatString="string"  
-                    ImageToolTip="string"  
-                    ImageToolTipField="string"  
-                    ImageUrl="uri"  
-                    ImageUrlField="string"  
-                    NavigateUrl="uri"  
-                    NavigateUrlField="string"  
-                    PopulateOnDemand="True|False"  
-                    SelectAction="Select|Expand|SelectExpand|None"  
-                    ShowCheckBox="string"  
-                    Target="string"  
-                    TargetField="string"  
-                    Text="string"  
-                    TextField="string"  
-                    ToolTip="string"  
-                    ToolTipField="string"  
-                    Value="string"  
-                    ValueField="string"  
-                />  
-        </DataBindings>  
-        <HoverNodeStyle />  
-        <LeafNodeStyle  
-            BackColor="color name|#dddddd"  
-            BorderColor="color name|#dddddd"  
-            BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|  
-                Groove|Ridge|Inset|Outset"  
-            BorderWidth="size"  
-            ChildNodesPadding="size"  
-            CssClass="string"  
-            Font-Bold="True|False"  
-            Font-Italic="True|False"  
-            Font-Names="string"  
-            Font-Overline="True|False"  
-            Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|  
-                Medium|Large|X-Large|XX-Large"  
-            Font-Strikeout="True|False"  
-            Font-Underline="True|False"  
-            ForeColor="color name|#dddddd"  
-            Height="size"  
-            HorizontalPadding="size"  
-            ImageUrl="uri"  
-            NodeSpacing="size"  
-            OnDisposed="Disposed event handler"  
-            VerticalPadding="size"  
-            Width="size"  
-        />  
-        <LevelStyles>  
-                <asp:TreeNodeStyle  
-                    BackColor="color name|#dddddd"  
-                    BorderColor="color name|#dddddd"  
-                    BorderStyle="NotSet|None|Dotted|Dashed|Solid|  
-                        Double|Groove|Ridge|Inset|Outset"  
-                    BorderWidth="size"  
-                    ChildNodesPadding="size"  
-                    CssClass="string"  
-                    Font-Bold="True|False"  
-                    Font-Italic="True|False"  
-                    Font-Names="string"  
-                    Font-Overline="True|False"  
-                    Font-Size="string|Smaller|Larger|XX-Small|  
-                        X-Small|Small|Medium|Large|X-Large|XX-Large"  
-                    Font-Strikeout="True|False"  
-                    Font-Underline="True|False"  
-                    ForeColor="color name|#dddddd"  
-                    Height="size"  
-                    HorizontalPadding="size"  
-                    ImageUrl="uri"  
-                    NodeSpacing="size"  
-                    OnDisposed="Disposed event handler"  
-                    VerticalPadding="size"  
-                    Width="size"  
-                />  
-        </LevelStyles>  
-        <Nodes>  
-                <asp:TreeNode  
-                    Checked="True|False"  
-                    Expanded="string"  
-                    ImageToolTip="string"  
-                    ImageUrl="uri"  
-                    NavigateUrl="uri"  
-                    PopulateOnDemand="True|False"  
-                    SelectAction="Select|Expand|SelectExpand|None"  
-                    Selected="True|False"  
-                    ShowCheckBox="string"  
-                    Target="string"  
-                    Text="string"  
-                    ToolTip="string"  
-                    Value="string"  
->  
-                </asp:TreeNode>  
-        </Nodes>  
-        <NodeStyle  
-            BackColor="color name|#dddddd"  
-            BorderColor="color name|#dddddd"  
-            BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|  
-                Groove|Ridge|Inset|Outset"  
-            BorderWidth="size"  
-            ChildNodesPadding="size"  
-            CssClass="string"  
-            Font-Bold="True|False"  
-            Font-Italic="True|False"  
-            Font-Names="string"  
-            Font-Overline="True|False"  
-            Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|  
-                Medium|Large|X-Large|XX-Large"  
-            Font-Strikeout="True|False"  
-            Font-Underline="True|False"  
-            ForeColor="color name|#dddddd"  
-            Height="size"  
-            HorizontalPadding="size"  
-            ImageUrl="uri"  
-            NodeSpacing="size"  
-            OnDisposed="Disposed event handler"  
-            VerticalPadding="size"  
-            Width="size"  
-        />  
-        <ParentNodeStyle  
-            BackColor="color name|#dddddd"  
-            BorderColor="color name|#dddddd"  
-            BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|  
-                Groove|Ridge|Inset|Outset"  
-            BorderWidth="size"  
-            ChildNodesPadding="size"  
-            CssClass="string"  
-            Font-Bold="True|False"  
-            Font-Italic="True|False"  
-            Font-Names="string"  
-            Font-Overline="True|False"  
-            Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|  
-                Medium|Large|X-Large|XX-Large"  
-            Font-Strikeout="True|False"  
-            Font-Underline="True|False"  
-            ForeColor="color name|#dddddd"  
-            Height="size"  
-            HorizontalPadding="size"  
-            ImageUrl="uri"  
-            NodeSpacing="size"  
-            OnDisposed="Disposed event handler"  
-            VerticalPadding="size"  
-            Width="size"  
-        />  
-        <RootNodeStyle  
-            BackColor="color name|#dddddd"  
-            BorderColor="color name|#dddddd"  
-            BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|  
-                Groove|Ridge|Inset|Outset"  
-            BorderWidth="size"  
-            ChildNodesPadding="size"  
-            CssClass="string"  
-            Font-Bold="True|False"  
-            Font-Italic="True|False"  
-            Font-Names="string"  
-            Font-Overline="True|False"  
-            Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|  
-                Medium|Large|X-Large|XX-Large"  
-            Font-Strikeout="True|False"  
-            Font-Underline="True|False"  
-            ForeColor="color name|#dddddd"  
-            Height="size"  
-            HorizontalPadding="size"  
-            ImageUrl="uri"  
-            NodeSpacing="size"  
-            OnDisposed="Disposed event handler"  
-            VerticalPadding="size"  
-            Width="size"  
-        />  
-        <SelectedNodeStyle  
-            BackColor="color name|#dddddd"  
-            BorderColor="color name|#dddddd"  
-            BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|  
-                Groove|Ridge|Inset|Outset"  
-            BorderWidth="size"  
-            ChildNodesPadding="size"  
-            CssClass="string"  
-            Font-Bold="True|False"  
-            Font-Italic="True|False"  
-            Font-Names="string"  
-            Font-Overline="True|False"  
-            Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|  
-                Medium|Large|X-Large|XX-Large"  
-            Font-Strikeout="True|False"  
-            Font-Underline="True|False"  
-            ForeColor="color name|#dddddd"  
-            Height="size"  
-            HorizontalPadding="size"  
-            ImageUrl="uri"  
-            NodeSpacing="size"  
-            OnDisposed="Disposed event handler"  
-            VerticalPadding="size"  
-            Width="size"  
-        />  
-</asp:TreeView>  
-```  
-  
-   
-  
-## Examples  
- This section contains seven code examples:  
-  
--   The first code example demonstrates how to set up the frames for the second code example.  
-  
--   The second code example demonstrates how to use declarative syntax to display static data in the TreeView control.  
-  
--   The third code example demonstrates how to bind the TreeView control to an XML data source.  
-  
--   The fourth code example provides sample XML data for the third code example.  
-  
--   The fifth code example demonstrates how to use the TreeView control for site navigation by binding it to a <xref:System.Web.UI.WebControls.SiteMapDataSource> control.  
-  
--   The sixth code example provides sample site map data for the fifth code example.  
-  
--   The seventh code example demonstrates how to populate the nodes in the TreeView control from the client.  
-  
- The following code example demonstrates how to set up the frames for the following code example.  
-  
- [!code-vb[TreeViewFrameSet#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_351_1.aspx)]
- [!code-cs[TreeViewFrameSet#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_351_1.aspx)]  
-  
- The following code example demonstrates how to use declarative syntax to display static data in the TreeView control. This example is used within the frame set of the preceding example to display a table of contents.  
-  
- [!code-vb[TreeViewFrameExample#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_351_2.aspx)]
- [!code-cs[TreeViewFrameExample#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_351_2.aspx)]  
-  
- The following code example demonstrates how to bind the TreeView control to an XML data source. For this example to work correctly, you must copy the sample XML data, provided after this code example, to a file named Book.xml.  
-  
- [!code-cs[TreeViewXml#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_351_3.aspx)]
- [!code-vb[TreeViewXml#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_351_3.aspx)]  
-  
- The following code example provides sample XML data for the preceding example.  
-  
-```  
-<Book Title="Book Title">  
-    <Chapter Heading="Chapter 1">  
-        <Section Heading="Section 1">  
-        </Section>  
-        <Section Heading="Section 2">  
-        </Section>  
-    </Chapter>  
-    <Chapter Heading="Chapter 2">  
-        <Section Heading="Section 1">  
-        </Section>  
-    </Chapter>  
-</Book>  
-```  
-  
- The following code example demonstrates how to use the TreeView control for site navigation by binding it to a <xref:System.Web.UI.WebControls.SiteMapDataSource> control. For this example to work correctly, you must copy the sample site map data, provided after this code example, to a file named Web.sitemap.  
-  
- [!code-vb[TreeViewAutoGenerateBindings#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_351_4.aspx)]
- [!code-cs[TreeViewAutoGenerateBindings#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_351_4.aspx)]  
-  
- The following code example provides sample site map data for the preceding code example.  
-  
-```  
-<siteMap>  
-    <siteMapNode title="Home" description="Home" url="default.aspx">  
-        <siteMapNode title="Products" description="Products" url="Products.aspx">  
-            <siteMapNode title="Computers" url="Computers.aspx"/>  
-            <siteMapNode title="Accessories" url="Accessories.aspx"/>       
-        </siteMapNode>  
-    </siteMapNode>  
-</siteMap>  
-```  
-  
- The following code example demonstrates how to populate the nodes in the TreeView control from the client. When client-side node population is enabled, nodes are populated dynamically on the client, without the need to post back to the server.  
-  
- [!code-cs[TreeViewPopulateNodesFromClient#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_351_5.aspx)]
- [!code-vb[TreeViewPopulateNodesFromClient#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_351_5.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -547,47 +46,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeView" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the TreeView constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TreeView> class. To add a <xref:System.Web.UI.WebControls.TreeView> control to a page dynamically, create a new <xref:System.Web.UI.WebControls.TreeView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control, such as the <xref:System.Web.UI.WebControls.PlaceHolder> control.  
-  
-   
-  
-## Examples  
- This section contains two code examples. The first code example demonstrates how to use the TreeView constructor to add a <xref:System.Web.UI.WebControls.TreeView> control to a page dynamically. The second code example provides sample XML data for the first code example.  
-  
- The following code example demonstrates how to use the TreeView constructor to add a <xref:System.Web.UI.WebControls.TreeView> control to a page dynamically. For this example to work correctly, you must copy the sample XML data provided after this code example, to a file named Book.xml.  
-  
- [!code-cs[TreeViewCtor#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_71_1.aspx)]
- [!code-vb[TreeViewCtor#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_71_1.aspx)]  
-  
- The following code example provides sample XML data for the preceding example.  
-  
-```  
-<Book Title="Book Title">  
-  <Chapter Heading="Chapter 1">  
-    <Section Heading="Section 1">  
-    </Section>  
-    <Section Heading="Section 2">  
-    </Section>  
-  </Chapter>  
-  <Chapter Heading="Chapter 2">  
-    <Section Heading="Section 1">  
-    </Section>  
-  </Chapter>  
-</Book>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -597,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -607,16 +70,9 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
-        <summary>Adds HTML attributes and styles that need to be rendered to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddAttributesToRender method is used primarily by control developers.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateDataBindings">
@@ -626,7 +82,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -638,50 +93,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.UI.WebControls.TreeView" /> control automatically generates tree node bindings.</summary>
-        <value>
-          <see langword="true" /> to have the <see cref="T:System.Web.UI.WebControls.TreeView" /> control automatically generate tree node bindings; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Tree node bindings define the relationship between a data item and the node it is binding to. When binding to a data source where each data item contains multiple properties (such as an XML element with several attributes), the <xref:System.Web.UI.WebControls.TreeView> control needs to know which data item property to bind to which <xref:System.Web.UI.WebControls.TreeNode> property. If the AutoGenerateDataBindings property is set to `true`, the <xref:System.Web.UI.WebControls.TreeView> control automatically generates default tree node bindings that set the <xref:System.Web.UI.WebControls.TreeNode.Text%2A> property of the <xref:System.Web.UI.WebControls.TreeNode> object that is associated with the binding to the value that is returned by the `ToString` method of the data item.  
-  
-> [!NOTE]
->  The automatically generated tree node bindings are not added to the <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection.  
-  
- In the case of an XML element, the value that is returned by the `ToString` method is the element name, which shows the underlying structure of the XML file, but is not very useful otherwise. To create a more useful tree, you must define your own tree node bindings by populating the <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection.  
-  
-> [!NOTE]
->  If you define a <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection, the <xref:System.Web.UI.WebControls.TreeView> control uses those values instead of automatically generated tree node bindings.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- This section contains two code examples. The first code example demonstrates how to disable automatic tree node binding generation by setting the AutoGenerateDataBindings property to `false`. The second code example provides sample site map data for the first code example.  
-  
- The following code example demonstrates how to disable automatic tree node binding generation by setting the AutoGenerateDataBindings property to `false`. A <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection is then defined to establish the relationship between the data items in a <xref:System.Web.UI.WebControls.SiteMapDataSource> control and the nodes of the <xref:System.Web.UI.WebControls.TreeView> control. For this example to work correctly, you must copy the sample site map data, provided after this code example, to a file named Web.sitemap.  
-  
- [!code-vb[TreeViewAutoGenerateBindings#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_169_1.aspx)]
- [!code-cs[TreeViewAutoGenerateBindings#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_169_1.aspx)]  
-  
- The following code example provides sample site map data for the preceding example.  
-  
-```  
-<siteMap>  
-    <siteMapNode title="Home" description="Home" url="default.aspx">  
-        <siteMapNode title="Products" description="Products" url="Products.aspx">  
-            <siteMapNode title="Computers" url="Computers.aspx"/>  
-            <siteMapNode title="Accessories" url="Accessories.aspx"/>       
-        </siteMapNode>  
-    </siteMapNode>  
-</siteMap>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckedNodes">
@@ -691,7 +105,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -706,29 +119,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.Web.UI.WebControls.TreeNode" /> objects that represent the nodes in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control that display a selected check box.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> that contains the nodes in the <see cref="T:System.Web.UI.WebControls.TreeView" /> that display a selected check box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When check boxes are displayed in the <xref:System.Web.UI.WebControls.TreeView> control (by setting the <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A> property to a value other than `TreeNodeType.None`), use the CheckedNodes property to determine which nodes display a selected check box. This collection is commonly used to iterate through all the nodes that have a selected check box in the tree.  
-  
- The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged> event is raised when the check boxes of the <xref:System.Web.UI.WebControls.TreeView> control change state between posts to the server. This allows you to provide an event-handling method that performs a custom routine, such as updating a database or the displayed content, whenever this event occurs.  
-  
-> [!NOTE]
->  The CheckedNodes collection is populated using a depth-first traversal of the tree structure: each parent node is processed down to its child nodes before the next parent node is populated.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the CheckedNodes property to determine which nodes have a selected check box in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-vb[TreeViewShowCheckBoxes#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1136_1.aspx)]
- [!code-cs[TreeViewShowCheckBoxes#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1136_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollapseAll">
@@ -738,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -746,23 +138,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes every node in the tree.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CollapseAll method provides a convenient way to close every node in the tree.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the CollapseAll method to collapse all the nodes in the <xref:System.Web.UI.WebControls.TreeView> control at the same time.  
-  
- [!code-cs[TreeViewExpandAll#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_54_1.aspx)]
- [!code-vb[TreeViewExpandAll#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_54_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollapseImageToolTip">
@@ -772,7 +149,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -784,28 +160,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ToolTip for the image that is displayed for the collapsible node indicator.</summary>
-        <value>The ToolTip for the image displayed for the collapsible node indicator.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CollapseImageToolTip property to specify a ToolTip for the collapsible image. The text that you specify provides Assistive Technology devices with a description of the image that can be used to make the control more accessible.  
-  
- The value of this property is stored in view state.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the CollapseImageToolTip property to specify a ToolTip for an image that is displayed for the collapsible node indicator.  
-  
- [!code-cs[TreeViewCustomImage#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_978_1.aspx)]
- [!code-vb[TreeViewCustomImage#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_978_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollapseImageUrl">
@@ -815,7 +172,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -833,33 +189,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL to a custom image for the collapsible node indicator.</summary>
-        <value>The URL to a custom image to display for collapsible nodes. The default is an empty string (""), which displays the default minus sign (-) image.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CollapseImageUrl property to specify a custom image for the collapsible node indicator. This image is displayed next to a collapsible node and is usually a minus sign (-).  
-  
- When the <xref:System.Web.UI.WebControls.TreeView.ShowExpandCollapse%2A> property is set to `true`, the <xref:System.Web.UI.WebControls.TreeView> control displays a plus sign (+) or a minus sign(-) or a placeholder image next to a node to indicate whether the node is expandable, collapsible, or non-expandable, respectively. You can specify custom images by first setting the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property to `TreeViewImageSet.Custom`, and then setting the <xref:System.Web.UI.WebControls.TreeView.NoExpandImageUrl%2A>, <xref:System.Web.UI.WebControls.TreeView.ExpandImageUrl%2A>, and CollapseImageUrl properties to the URLs for the custom images. If no images are specified, the default images are used. To hide the expansion node indicators, set the <xref:System.Web.UI.WebControls.TreeView.ShowExpandCollapse%2A> property to `false`.  
-  
-> [!NOTE]
->  To ensure that nodes align correctly in the <xref:System.Web.UI.WebControls.TreeView> control when using custom images, make sure that all the images that are specified by the <xref:System.Web.UI.WebControls.TreeView.NoExpandImageUrl%2A>, <xref:System.Web.UI.WebControls.TreeView.ExpandImageUrl%2A>, and CollapseImageUrl properties have the same dimensions.  
-  
- When using a custom image for the collapsible node indicator, you should also consider setting the <xref:System.Web.UI.WebControls.TreeView.CollapseImageToolTip%2A> property to specify a ToolTip for the image.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the CollapseImageUrl property to specify a custom image for the collapsible node indicator. For the code example to display and the image to appear in the control, you must provide your own image and the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property must be set to `TreeNodeImageSet.Custom`.  
-  
- [!code-cs[TreeViewCustomImage#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1150_1.aspx)]
- [!code-vb[TreeViewCustomImage#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1150_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -869,7 +201,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -877,16 +208,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a collection to store child controls.</summary>
-        <returns>Always returns an <see cref="T:System.Web.UI.EmptyControlCollection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView> control does not support embedding of child controls. This method has been overridden to prevent the addition of child controls and always returns an <xref:System.Web.UI.EmptyControlCollection?displayProperty=fullName> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNode">
@@ -896,7 +220,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -904,18 +227,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNode" /> class. The CreateNode is a helper method.</summary>
-        <returns>A new instance of the <see cref="T:System.Web.UI.WebControls.TreeNode" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateNode method is a helper method that returns a new instance of the <xref:System.Web.UI.WebControls.TreeNode> class.  
-  
- The CreateNode method is used primarily by control developers. Control developers that want to extend the <xref:System.Web.UI.WebControls.TreeView> class by extending the <xref:System.Web.UI.WebControls.TreeNode> class should override this method to return an object that derives from the <xref:System.Web.UI.WebControls.TreeNode>. A common reason to extend the <xref:System.Web.UI.WebControls.TreeNode> class is to override the <xref:System.Web.UI.WebControls.TreeNode.RenderPreText%2A> and <xref:System.Web.UI.WebControls.TreeNode.RenderPostText%2A> methods.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -925,7 +239,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -933,15 +246,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Calls the <see cref="System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A" /> method of the base class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Data bound controls should override the <xref:System.Web.UI.WebControls.TreeView.PerformDataBinding%2A> method instead of the DataBind method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBindings">
@@ -951,7 +257,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -972,63 +277,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeBindingCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.Web.UI.WebControls.TreeNodeBinding" /> objects that define the relationship between a data item and the node that it is binding to.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.TreeNodeBindingCollection" /> that represents the relationship between a data item and the node that it is binding to.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataBindings collection contains <xref:System.Web.UI.WebControls.TreeNodeBinding> objects that define the relationship between a data item and the node that it is binding to. When binding to a data source where each data item contains multiple properties (such as an XML element with several attributes), a node displays the value that is returned by the `ToString` method of the data item, by default. In the case of an XML element, the node displays the element name, which shows the underlying structure of the tree, but is not very useful otherwise. You can bind a node to a specific data item property by specifying tree node bindings.  
-  
- When defining the relationship between a data item and a node, you must specify both the criteria for binding and the values to bind to the properties of <xref:System.Web.UI.WebControls.TreeNode> object. The criteria indicate when a data item should be bound to a node. The criteria can be specified with a node depth, a data member, or both. A node depth specifies the node level that gets bound. For example, if you specify a node depth of 0, all nodes in the tree structure at level 0 are bound using the tree node binding. A data member specifies the type of the data item in the underlying data source, but can represent different information depending on the data source. For example, the data member for an XML element specifies the name of the element.  
-  
- If multiple <xref:System.Web.UI.WebControls.TreeNodeBinding> objects are defined that conflict with each other, the <xref:System.Web.UI.WebControls.TreeView> control applies the tree node bindings in the following order of precedence:  
-  
-1.  The <xref:System.Web.UI.WebControls.TreeNodeBinding> object that defines both a depth and a data member.  
-  
-2.  The <xref:System.Web.UI.WebControls.TreeNodeBinding> object that defines only the depth.  
-  
-3.  The <xref:System.Web.UI.WebControls.TreeNodeBinding> object that defines only the data member.  
-  
-4.  The <xref:System.Web.UI.WebControls.TreeNodeBinding> object that defines neither the depth nor the data member.  
-  
- If multiple bindings are specified that meet the same precedence criteria, the first binding in the collection is applied.  
-  
- Once the binding criteria is established, you can then bind a property of a <xref:System.Web.UI.WebControls.TreeNode> object that can be bound to a value. You can either bind to an attribute or field of a data item or display a static value. For more information on binding the properties of a <xref:System.Web.UI.WebControls.TreeNode> object to a value, see <xref:System.Web.UI.WebControls.TreeNodeBinding>.  
-  
- Although the DataBindings collection can be programmatically populated, it is usually set declaratively. To specify the tree node bindings, first nest opening and closing `<DataBindings>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.TreeView> control. Next, place `<asp:TreeNodeBinding>` elements between the opening and closing `<DataBindings>` tags for each tree node binding you want to specify.  
-  
- When data bindings are created by setting the <xref:System.Web.UI.WebControls.TreeView.AutoGenerateDataBindings%2A> property of the <xref:System.Web.UI.WebControls.TreeView> control to `true`, the bindings that are created have the <xref:System.Web.UI.WebControls.TreeNodeBinding.PopulateOnDemand%2A> property set to `true`. Data bindings that are created declaratively have the <xref:System.Web.UI.WebControls.TreeNodeBinding.PopulateOnDemand%2A> property set to `false`. Using the declarative syntax allows you to control the behavior of individual data bindings.  
-  
-   
-  
-## Examples  
- This section contains two code examples. The first code example demonstrates how to use the DataBindings collection to define the relationship between a data item and the node that it is binding to. The second code example provides sample XML data for the first code example.  
-  
- The following code example demonstrates how to use the DataBindings collection to define the relationship between a data item and the node that it is binding to. For this example to work correctly, you must copy the sample XML data, provided after this code example, to a file named Book.xml. This example specifies only the <xref:System.Web.UI.WebControls.TreeNodeBinding.DataMember%2A> property of the binding. A slight performance gain could be added by also specifying the <xref:System.Web.UI.WebControls.TreeNodeBinding.Depth%2A> property.  
-  
- [!code-cs[TreeViewXml#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_387_1.aspx)]
- [!code-vb[TreeViewXml#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_387_1.aspx)]  
-  
- The following code example provides sample XML data for the preceding example.  
-  
-```  
-<Book Title="Book Title">  
-    <Chapter Heading="Chapter 1">  
-        <Section Heading="Section 1">  
-        </Section>  
-        <Section Heading="Section 2">  
-        </Section>  
-    </Chapter>  
-    <Chapter Heading="Chapter 2">  
-        <Section Heading="Section 1">  
-        </Section>  
-    </Chapter>  
-</Book>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableClientScript">
@@ -1038,7 +289,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1053,53 +303,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.UI.WebControls.TreeView" /> control renders client-side script to handle expanding and collapsing events.</summary>
-        <value>
-          <see langword="true" /> to render the client-side script on compatible browsers; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the EnableClientScript property to specify whether the <xref:System.Web.UI.WebControls.TreeView> control renders client-side script on compatible browsers to handle expanding and collapsing events. When this property is set to `true`, compatible browsers execute the code to expand and collapse nodes on the client. The tree node data must be known in advance for the client-side script to work. Using client script prevents a post back to the server each time a node is expanded or collapsed.  
-  
- When the tree node data is not known in advance, nodes can be populated from the client, if the `PopulateNodesFromClient` property is also set to `true`. In this scenario, you must also provide an event-handling method for the <xref:System.Web.UI.WebControls.TreeView.TreeNodePopulate> event to populate the nodes. For more information on client-side node population, see <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A>.  
-  
-> [!NOTE]
->  If the EnableClientScript property is set to `false`, the <xref:System.Web.UI.WebControls.TreeView> control posts back to the server each time a node is expanded or collapsed.  
-  
- The value of this property is stored in view state.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
-  
-   
-  
-## Examples  
- This section contains two code examples. The first code example demonstrates how to use the EnableClientScript property to render client-side script that is used to expand and collapse nodes on compatible browsers. The second code example provides sample XML data for the first code example.  
-  
- The following code example demonstrates how to use the EnableClientScript property to render client-side script that is used to expand and collapse nodes on compatible browsers. Notice that a post to the server is required to expand and collapse a node when the EnableClientScript property is set to `false`. For this example to work correctly, you must copy the sample XML data, provided after this code example, to a file named Book.xml.  
-  
- [!code-cs[TreeViewEnableClientScript#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1194_1.aspx)]
- [!code-vb[TreeViewEnableClientScript#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1194_1.aspx)]  
-  
- The following code example provides sample XML data for the preceding code example.  
-  
-```  
-<Book Title="Book Title">  
-    <Chapter Heading="Chapter 1">  
-        <Section Heading="Section 1">  
-        </Section>  
-        <Section Heading="Section 2">  
-        </Section>  
-    </Chapter>  
-    <Chapter Heading="Chapter 2">  
-        <Section Heading="Section 1">  
-        </Section>  
-    </Chapter>  
-</Book>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandAll">
@@ -1109,7 +315,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1117,23 +322,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Opens every node in the tree.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ExpandAll method provides a convenient way to open every node in the tree.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ExpandAll method to expand all the nodes in the <xref:System.Web.UI.WebControls.TreeView> control at the same time.  
-  
- [!code-cs[TreeViewExpandAll#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_100_1.aspx)]
- [!code-vb[TreeViewExpandAll#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_100_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandDepth">
@@ -1143,7 +333,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1158,16 +347,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of levels that are expanded when a <see cref="T:System.Web.UI.WebControls.TreeView" /> control is displayed for the first time.</summary>
-        <value>The depth to display when the <see cref="T:System.Web.UI.WebControls.TreeView" /> is initially displayed. The default is -1, which displays all the nodes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ExpandDepth property to control the rendering of the <xref:System.Web.UI.WebControls.TreeView> control the first time that it is displayed. On subsequent postbacks, the nodes retain their current expanded state.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandImageToolTip">
@@ -1177,7 +359,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1189,28 +370,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ToolTip for the image that is displayed for the expandable node indicator.</summary>
-        <value>The ToolTip for the image displayed for the expandable node indicator.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ExpandImageToolTip property to specify a ToolTip for the image. The text that you specify provides Assistive Technology devices with a description of the image that can be used to make the control more accessible.  
-  
- The value of this property is stored in view state.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ExpandImageToolTip property to specify a ToolTip for an image that is displayed for the expandable node indicator.  
-  
- [!code-cs[TreeViewCustomImage#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_839_1.aspx)]
- [!code-vb[TreeViewCustomImage#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_839_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandImageUrl">
@@ -1220,7 +382,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1238,35 +399,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL to a custom image for the expandable node indicator.</summary>
-        <value>The URL to a custom image to display for expandable nodes. The default is an empty string (""), which displays the default plus sign (+) image.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ExpandImageUrl property to specify a custom image for the expandable node indicator. This image is displayed next to an expandable node and is usually a plus sign (+).  
-  
- When the <xref:System.Web.UI.WebControls.TreeView.ShowExpandCollapse%2A> property is set to `true`, the <xref:System.Web.UI.WebControls.TreeView> control displays a plus sign (+) or minus sign (-) or a placeholder image next to a node to indicate whether the node is expandable, collapsible, or non-expandable, respectively. You can specify custom images by first setting the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property to `TreeViewImageSet.Custom`, and then setting the <xref:System.Web.UI.WebControls.TreeView.NoExpandImageUrl%2A>, ExpandImageUrl, and <xref:System.Web.UI.WebControls.TreeView.CollapseImageUrl%2A> properties to the URLs for the custom images. If no images are specified, the default images are used. To hide the expansion node indicators, set the <xref:System.Web.UI.WebControls.TreeView.ShowExpandCollapse%2A> property to `false`.  
-  
-> [!NOTE]
->  To ensure that nodes align correctly in the <xref:System.Web.UI.WebControls.TreeView> control when using custom images, make sure that all the images that are specified by the <xref:System.Web.UI.WebControls.TreeView.NoExpandImageUrl%2A>, ExpandImageUrl, and <xref:System.Web.UI.WebControls.TreeView.CollapseImageUrl%2A> properties have the same dimensions.  
-  
- To display a custom image correctly, you may need to set <xref:System.Web.UI.WebControls.TreeView.ShowLines%2A> to `false`.  
-  
- When using a custom image for the expandable node indicator, you should also consider setting the <xref:System.Web.UI.WebControls.TreeView.ExpandImageToolTip%2A> property to specify a ToolTip for the image.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ExpandImageUrl property to specify a custom image for the expandable node indicator. For the code example to display and the image to appear in the control, you must provide your own image and the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property must be set to `TreeNodeImageSet.Custom`.  
-  
- [!code-cs[TreeViewCustomImage#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_567_1.aspx)]
- [!code-vb[TreeViewCustomImage#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_567_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindNode">
@@ -1276,7 +411,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1286,28 +420,10 @@
         <Parameter Name="valuePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="valuePath">The value path of a node.</param>
-        <summary>Retrieves the <see cref="T:System.Web.UI.WebControls.TreeNode" /> object in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control at the specified value path.</summary>
-        <returns>The <see cref="T:System.Web.UI.WebControls.TreeNode" /> at the specified value path.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the FindNode method to get a node from the <xref:System.Web.UI.WebControls.TreeView> control at the specified value path. The value path contains a delimiter-separated list of node values that form a path from the root node to the current node. Each node stores its value path in the <xref:System.Web.UI.WebControls.TreeNode.ValuePath%2A> property. The <xref:System.Web.UI.WebControls.TreeView.PathSeparator%2A> property specifies the delimiter character that is used to separate the node values.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the FindNode method to retrieve a node from the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
-> [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-cs[TreeViewFindNode#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_72_1.aspx)]
- [!code-vb[TreeViewFindNode#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_72_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="valuePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCallbackResult">
@@ -1317,7 +433,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1325,16 +440,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the result of a callback event that targets a control.</summary>
-        <returns>The results of the callback.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView> control implements the <xref:System.Web.UI.ICallbackEventHandler> interface and uses the <xref:System.Web.UI.WebControls.TreeView.RaisePostBackEvent%2A> to retrieve data and the GetCallbackResult method to return the retrieved data to the control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HoverNodeStyle">
@@ -1344,7 +452,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1365,44 +472,9 @@
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> object that allows you to set the appearance of a node when the mouse pointer is positioned over it.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> that represents the style of a node when the mouse pointer is positioned over it.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the HoverNodeStyle property to control the appearance of a node when the mouse pointer is positioned over it. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object that it returns. The properties can be set declaratively in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object (for example, `HoverNodeStyle-ForeColor`). The properties can also be set programmatically in the form `Property.Subproperty` (for example, `HoverNodeStyle.ForeColor`). This feature is supported only on script-capable clients.  
-  
-> [!NOTE]
->  To use the HoverNodeStyle property, you must include a `<head>` element with a `runat="server"` attribute.  
-  
- Common settings usually include a custom background color, foreground color, font properties, and node spacing. Style properties are applied in the following order:  
-  
-1.  <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A>.  
-  
-2.  <xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A>, <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A>, or <xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A>, depending on the node type. If the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection is defined, it is applied at this time, overriding the other node style properties.  
-  
-3.  <xref:System.Web.UI.WebControls.TreeView.SelectedNodeStyle%2A>.  
-  
-4.  HoverNodeStyle.  
-  
-> [!NOTE]
->  The style settings for the HoverNodeStyle property override any corresponding node style settings that are in the <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A>, <xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A>, <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A>, <xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A>, or <xref:System.Web.UI.WebControls.TreeView.SelectedNodeStyle%2A> property.  
-  
- The HoverNodeStyle property is not rendered for a node with its <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property set to `TreeNodeSelectAction.None`.  
-  
- Unlike the <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A> and the <xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A> properties, which are <xref:System.Web.UI.WebControls.TreeNodeStyle> objects, the HoverNodeStyle property is a <xref:System.Web.UI.WebControls.Style> object.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the HoverNodeStyle property to control the appearance of a node when the mouse pointer is positioned over it. For this example to work, you must include a `<head>` element with a `runat="server"` attribute.  
-  
- [!code-vb[TreeViewHoverNodeStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_293_1.aspx)]
- [!code-cs[TreeViewHoverNodeStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_293_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageSet">
@@ -1412,7 +484,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1424,60 +495,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the group of images to use for the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.TreeViewImageSet" /> values. The default is <see langword="TreeViewImageSet.Custom" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ImageSet property to specify the group of images to use for the <xref:System.Web.UI.WebControls.TreeView> control. You can either select a predefined set of images to give the control a standard look or define your own custom set.  
-  
-> [!NOTE]
->  The ImageSet property does not affect any style settings for a node. Set the appropriate style property, such as the <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A> property, if you want to add custom colors and spacing.  
-  
- The following table lists the valid values for The ImageSet property.  
-  
-|Image set|Description|  
-|---------------|-----------------|  
-|`TreeViewImageSet.Arrows`|A predefined image set that uses arrow images.|  
-|`TreeViewImageSet.BulletedList`|A predefined image set that uses diamond-shaped bullet images.|  
-|`TreeViewImageSet.BulletedList2`|A predefined image set that uses square-shaped bullet images.|  
-|`TreeViewImageSet.BulletedList3`|A predefined set of sectioned, diamond shaped bullet images.|  
-|`TreeViewImageSet.BulletedList4`|A predefined set of alternate sectioned, diamond shaped bullet images in sizes that vary by level.|  
-|`TreeViewImageSet.Contacts`|A predefined image set that uses MSN Messenger images.|  
-|`TreeViewImageSet.Custom`|A user-defined image set.|  
-|`TreeViewImageSet.Events`|A predefined image set that uses event log-styled images.|  
-|`TreeViewImageSet.Faq`|A predefined image set that uses FAQ-styled images.|  
-|`TreeViewImageSet.Inbox`|A predefined image set that uses e-mail-styled images.|  
-|`TreeViewImageSet.News`|A predefined image set that uses newsgroup-styled images.|  
-|`TreeViewImageSet.Simple`|A predefined image set that uses simple shape outlines.|  
-|`TreeViewImageSet.Simple2`|A predefined image set that uses simple filled shapes.|  
-|`TreeViewImageSet.Msdn`|A predefined image set that uses MSDN images.|  
-|`TreeViewImageSet.WindowsHelp`|A predefined image set that uses Microsoft Windows Help images.|  
-|`TreeViewImageSet.XPFileExplorer`|A predefined image set that uses Windows Explorer images available in Microsoft Windows XP.|  
-  
- When defining a custom set of images, you should specify an image for each of the properties in the following table. Otherwise, the default image for that property is used.  
-  
-|Property|Description|  
-|--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.TreeView.CollapseImageUrl%2A>|The URL to a custom image for the collapsible node indicator.|  
-|<xref:System.Web.UI.WebControls.TreeView.ExpandImageUrl%2A>|The URL to a custom image for the expandable node indicator.|  
-|<xref:System.Web.UI.WebControls.TreeView.LineImagesFolder%2A>|The URL to a folder that contains custom images for the lines that connect nodes.|  
-|<xref:System.Web.UI.WebControls.TreeView.NoExpandImageUrl%2A>|The URL to a custom image for the non-expandable node indicator.|  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ImageSet property to display the Windows Explorer set of images in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-cs[TreeViewImageSet#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_587_1.aspx)]
- [!code-vb[TreeViewImageSet#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_587_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The specified image set is not one of the <see cref="T:System.Web.UI.WebControls.TreeViewImageSet" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LeafNodeStyle">
@@ -1487,7 +507,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1508,34 +527,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> object that allows you to set the appearance of leaf nodes.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> that represents the style of the leaf nodes in the <see cref="T:System.Web.UI.WebControls.TreeView" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the LeafNodeStyle property to control the appearance of the leaf nodes in the <xref:System.Web.UI.WebControls.TreeView> control. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object it returns. The properties can be set declaratively in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object (for example, `LeafNodeStyle-ForeColor`). The properties can also be set programmatically in the form `Property.Subproperty` (for example, `LeafNodeStyle.ForeColor`). Common settings usually include a custom background color, foreground color, font properties, and node spacing. Style properties are applied in the following order of precedence:  
-  
-1.  <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A>.  
-  
-2.  <xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A>, <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A>, or LeafNodeStyle, depending on the node type. If the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection is defined, it is applied at this time, overriding the other node style properties.  
-  
-3.  <xref:System.Web.UI.WebControls.TreeView.SelectedNodeStyle%2A>.  
-  
-4.  <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A>.  
-  
- If you need to generate table of contents–style navigation menus where nodes at a certain level should have the same appearance, regardless of whether they have child nodes, you might consider using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> property instead of setting the individual style properties.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the LeafNodeStyle property to control the appearance of the leaf nodes in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-vb[TreeViewLeafNodeStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_398_1.aspx)]
- [!code-cs[TreeViewLeafNodeStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_398_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LevelStyles">
@@ -1545,7 +539,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1563,34 +556,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeStyleCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.Web.UI.WebControls.Style" /> objects that represent the node styles at the individual levels of the tree.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.StyleCollection" /> that represents the node styles at the individual levels of the tree.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the LevelStyles collection as an alternative to the individual style properties (such as the <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A> property) to control the style of nodes at the individual levels of the tree. The first style in the collection corresponds to the style of nodes in the first level of the tree. The second style in the collection corresponds to the style of nodes in the second level of the tree, and so on. This property is most often used to generate table of contents–style navigation menus where nodes at a certain level should have the same appearance, regardless of whether they have child nodes.  
-  
- Style properties are applied in the following order:  
-  
-1.  <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A>.  
-  
-2.  <xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A>, <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A>, or <xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A>, depending on the node type. If the LevelStyles collection is defined, it is applied at this time, overriding the other node style properties.  
-  
-3.  <xref:System.Web.UI.WebControls.TreeView.SelectedNodeStyle%2A>.  
-  
-4.  <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A>  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the LevelStyles property to create a navigation menu. The control is always fully expanded, with the expansion node indicators and images hidden. Also, the <xref:System.Web.UI.WebControls.TreeNodeStyle.ChildNodesPadding%2A> property is used to control the spacing of the node levels.  
-  
- [!code-vb[TreeViewLevelStyles#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_985_1.aspx)]
- [!code-cs[TreeViewLevelStyles#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_985_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineImagesFolder">
@@ -1600,7 +568,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1612,52 +579,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path to a folder that contains the line images that are used to connect child nodes to parent nodes.</summary>
-        <value>The path to a folder that contains the line images used to connect nodes. The default is an empty string (""), which indicates that the LineImagesFolder property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView> control can display lines that connect child nodes to parent nodes when the <xref:System.Web.UI.WebControls.TreeView.ShowLines%2A> property is set to `true`. When lines are displayed, use the LineImagesFolder property to specify a Web-accessible folder that contains the set of pre-rendered images to use for the lines. The following table describes the images that are used by the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
-|Image|Description|  
-|-----------|-----------------|  
-|Dash.gif|A line image displayed next to the root node when there is only one root node in the tree structure and the root node is a leaf.|  
-|Dashminus.gif|A minus sign (-) image displayed next to the root node when there is only one root node in the tree structure to indicate that the root node is expanded.|  
-|Dashplus.gif|A plus sign (+) image displayed next to the root node when there is only one root node in the tree structure to indicate that the root node is collapsed.|  
-|I.gif|A line image displayed to connect adjacent nodes.|  
-|L.gif|A line image displayed next to the last node in a branch when the node is a leaf.|  
-|Lminus.gif|A line image displayed next to the last node in a branch to indicate that the node is expanded.|  
-|Lplus.gif|A line image displayed next to the last node in a branch to indicate that the node is collapsed.|  
-|Minus.gif|A minus sign (-) image displayed next to the first root node in a tree structure that contains multiple root nodes to indicate that the node is expanded. This image does not contain an extra line and is displayed only after the root node has been collapsed once. When the page is first loaded, the Rminus.gif image is displayed.|  
-|Noexpand.gif|A blank spacer image displayed next to a leaf node. This image allows text to line up vertically.|  
-|Plus.gif|A plus sign (+) image displayed next to the first root node in a tree structure that contains multiple root nodes to indicate that the node is collapsed. This image does not contain an extra line and is displayed only after the root node has been expanded once. When the page is first loaded, the Rplus.gif image is displayed.|  
-|R.gif|A line image displayed next to the first root node in a tree structure that contains multiple root nodes to indicate that the node is a leaf node.|  
-|Rminus.gif|A minus sign (-) image displayed next to the first root node in a tree structure that contains multiple root nodes to indicate that the node is expanded. This image contains an extra line and is displayed only when the page is first loaded. After the root node has been collapsed once, The Minus.gif image is displayed.|  
-|Rplus.gif|A plus sign (+) image displayed next to the first root node in a tree structure that contains multiple root nodes to indicate that the node is collapsed. This image contains an extra line and is displayed only when the page is first loaded. After the root node has been expanded once, the Plus.gif image is displayed.|  
-|T.gif|A line image displayed next to a node in the middle of the tree structure (at a t-intersection) to indicate that the node is a leaf.|  
-|Tminus.gif|A minus sign (-) image displayed next to a node in the middle of the tree structure (at a t-intersection) to indicate that the node is expanded.|  
-|Tplus.gif|A plus sign (+) image displayed next to a node in the middle of the tree structure (at a t-intersection) to indicate that the node is collapsed.|  
-  
-> [!NOTE]
->  If the LineImagesFolder property is not set, the <xref:System.Web.UI.WebControls.TreeView> control will use the built-in, default images (20 x 20 pixels).  
-  
- Some visual designers, such as Microsoft Visual Studio, provide tools to generate the line images.  
-  
- The run time does not flip custom images for right-to-left displays. To support both left-to-right and right-to-left Web pages, you must create image sets for both directions.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the LineImagesFolder property to specify the folder that contains the line images to display in the <xref:System.Web.UI.WebControls.TreeView> control. To work with this example, use the Line Designer tool beforehand to create a set of line images. Place them in a folder named LineImages within the directory for the sample application.  
-  
- [!code-cs[TreeViewLineImagesFolderUrl#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_52_1.aspx)]
- [!code-vb[TreeViewLineImagesFolderUrl#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_52_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -1667,7 +591,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1678,19 +601,11 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The key identifier for the control.</param>
-        <param name="postCollection">The collection of all incoming name values.</param>
-        <summary>Processes postback data for the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <returns>
-          <see langword="true" />, if the <see cref="T:System.Web.UI.WebControls.TreeView" /> control's state changes as a result of the postback event; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ASP.NET page framework tracks all the server controls that return `true` from the LoadPostData method call, and then invokes the <xref:System.Web.UI.WebControls.TreeView.RaisePostDataChangedEvent%2A> method on those controls.  
-  
- ]]></format>
-        </remarks>
+        <param name="postDataKey">To be added.</param>
+        <param name="postCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1700,7 +615,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1710,8 +624,8 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">A object that contains the saved view state values for the control.</param>
-        <summary>Loads the previously saved view state of the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1722,7 +636,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1734,49 +647,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of tree levels to bind to the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>The maximum number of tree levels to bind to the <see cref="T:System.Web.UI.WebControls.TreeView" /> control. The default is -1, which binds all the tree levels in the data source to the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When binding the <xref:System.Web.UI.WebControls.TreeView> control to a data source, use the MaxDataBindDepth property to limit the number of tree levels to bind to the control. For example, setting this property to `2` binds only the root node and any nodes that are immediately under the root node to the <xref:System.Web.UI.WebControls.TreeView> control. All remaining nodes in the data source are ignored.  
-  
-> [!IMPORTANT]
->  A malicious user can create a callback request and get data for the nodes of the <xref:System.Web.UI.WebControls.TreeView> control that the page developer is not displaying. Therefore, security of the data must be implemented by the data source. Do not use the MaxDataBindDepth property to hide data.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- This section contains two code examples. The first code example demonstrates how to use the MaxDataBindDepth property to bind only the first two node levels (depths 0 and 1) to the <xref:System.Web.UI.WebControls.TreeView> control. The second code example provides sample XML data for the first code example.  
-  
- The following code example demonstrates how to use the MaxDataBindDepth property to bind only the first two node levels (depths 0 and 1) to the <xref:System.Web.UI.WebControls.TreeView> control. All node levels in the data source are ignored. For this example to work correctly, you must copy the sample XML data, provided after this code example, to a file named Book.xml.  
-  
- [!code-cs[TreeViewMaxDataBindDepth#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1168_1.aspx)]
- [!code-vb[TreeViewMaxDataBindDepth#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1168_1.aspx)]  
-  
- The following code example provides sample XML data for the preceding code example.  
-  
-```  
-<Book Title="Book Title">  
-    <Chapter Heading="Chapter 1">  
-        <Section Heading="Section 1">  
-        </Section>  
-        <Section Heading="Section 2">  
-        </Section>  
-    </Chapter>  
-    <Chapter Heading="Chapter 2">  
-        <Section Heading="Section 1">  
-        </Section>  
-    </Chapter>  
-</Book>  
-```  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="-1" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeIndent">
@@ -1786,7 +659,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1798,29 +670,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the indentation amount (in pixels) for the child nodes of the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>The amount of space (in pixels) between a child node's left edge and its parent node's left edge. The default is 20.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the NodeIndent property to control the amount of spacing between the left edge of a child node and the left edge of its parent node.  
-  
-> [!NOTE]
->  The NodeIndent property affects every child node in the <xref:System.Web.UI.WebControls.TreeView> control. It is not possible to control the indentation amount of each node individually.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the NodeIndent property to control the indentation of child nodes.  
-  
- [!code-cs[TreeViewNodeIndent#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1001_1.aspx)]
- [!code-vb[TreeViewNodeIndent#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1001_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -1830,7 +682,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1851,31 +702,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.Web.UI.WebControls.TreeNode" /> objects that represents the root nodes in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> that contains the root nodes in the <see cref="T:System.Web.UI.WebControls.TreeView" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Nodes property to get a <xref:System.Web.UI.WebControls.TreeNodeCollection> object that contains all the root nodes in the tree. This collection is commonly used to quickly iterate through all the root nodes, or to access a specific root node in the tree.  
-  
-> [!NOTE]
->  A typical tree structure has only one root node; however, you can add multiple root nodes to the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- The Nodes property can also be used to manage the root nodes in the tree programmatically. You can add, insert, remove, and retrieve <xref:System.Web.UI.WebControls.TreeNode> objects from the collection. Any updates to the collection are automatically reflected in the <xref:System.Web.UI.WebControls.TreeView> control after the next round trip to the server.  
-  
- To access the child nodes of a root node, use the <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> property of the node. Use the <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> property of each subsequent parent-level node to navigate down the node levels.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Nodes property to traverse the tree.  
-  
- [!code-cs[TreeNodeCollectionCount#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1353_1.aspx)]
- [!code-vb[TreeNodeCollectionCount#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1353_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeStyle">
@@ -1885,7 +714,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1906,37 +734,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> object that allows you to set the default appearance of the nodes in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> that represents the default style of a node.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the NodeStyle property to control the default appearance of a node in the <xref:System.Web.UI.WebControls.TreeView> control. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object it returns. The properties can be set declaratively in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object (for example, `NodeStyle-ForeColor`). The properties can also be set programmatically in the form `Property.Subproperty` (for example, `NodeStyle.ForeColor`). Common settings usually include a custom background color, foreground color, font properties, and node spacing. Style properties are applied in the following order of precedence:  
-  
-1.  NodeStyle.  
-  
-2.  <xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A>, <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A>, or <xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A>, depending on the node type. If the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection is defined, it is applied at this time, overriding the other node style properties.  
-  
-3.  <xref:System.Web.UI.WebControls.TreeView.SelectedNodeStyle%2A>.  
-  
-4.  <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A>.  
-  
-> [!NOTE]
->  The corresponding node style settings in the <xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A>, <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A>, or <xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A> properties override the style settings of the NodeStyle property.  
-  
- If you need to generate table of contents-style navigation menus where nodes at a certain level should have the same appearance, regardless of whether they have child nodes, you might consider using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> property instead of setting the individual style properties.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the NodeStyle property to control the appearance of nodes in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-vb[TreeViewNodeStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_190_1.aspx)]
- [!code-cs[TreeViewNodeStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_190_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeWrap">
@@ -1946,7 +746,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1958,27 +757,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether text wraps in a node when the node runs out of space.</summary>
-        <value>
-          <see langword="true" /> to wrap the text; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the NodeWrap property to specify whether the text that is displayed in each node wraps when it runs out of space.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the NodeWrap property to wrap the text of the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-cs[TreeViewNodeWrap#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_767_1.aspx)]
- [!code-vb[TreeViewNodeWrap#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_767_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NoExpandImageUrl">
@@ -1988,7 +769,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2006,31 +786,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL to a custom image for the non-expandable node indicator.</summary>
-        <value>The URL to a custom image to display for non-expandable nodes. The default is an empty string (""), which displays the default blank image.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the NoExpandImageUrl property to specify a custom image for the non-expandable node indicator. The non-expandable node indicator image (or spacer) is displayed next to leaf nodes (in place of the expandable and collapsible node indicators) to align the leaf nodes with parent or root nodes.  
-  
- When the <xref:System.Web.UI.WebControls.TreeView.ShowExpandCollapse%2A> property is set to `true`, the <xref:System.Web.UI.WebControls.TreeView> control displays a plus sign (+) or minus sign (-) or a placeholder image next to a node to indicate whether the node is expandable, collapsible, or non-expandable, respectively. You can specify custom images by first setting the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property to `TreeViewImageSet.Custom`, and then setting the NoExpandImageUrl, <xref:System.Web.UI.WebControls.TreeView.ExpandImageUrl%2A>, and <xref:System.Web.UI.WebControls.TreeView.CollapseImageUrl%2A> properties to the URLs of the custom images. If no images are specified, the default images are used. To hide the expansion node indicators, set the <xref:System.Web.UI.WebControls.TreeView.ShowExpandCollapse%2A> property to `false`.  
-  
-> [!NOTE]
->  To ensure that nodes align correctly in the <xref:System.Web.UI.WebControls.TreeView> control when using custom images, make sure that all the images that are specified by the NoExpandImageUrl, <xref:System.Web.UI.WebControls.TreeView.ExpandImageUrl%2A>, and <xref:System.Web.UI.WebControls.TreeView.CollapseImageUrl%2A> properties have the same dimensions.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the NoExpandImageUrl property to specify a custom image for the non-expandable node indicator. For the code example to display and the image to appear in the control, you must provide your own image and the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property must be set to `TreeNodeImageSet.Custom`.  
-  
- [!code-cs[TreeViewCustomImage#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_258_1.aspx)]
- [!code-vb[TreeViewCustomImage#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_258_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2040,7 +798,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2050,20 +807,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnInit method is called by the <xref:System.Web.UI.WebControls.TreeView> control to raise the <xref:System.Web.UI.Control.Init> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.TreeView> class.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnInit method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2073,7 +819,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2083,20 +828,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnPreRender method is overridden to register for postback. If client script is enabled, it also renders the necessary script and hidden fields.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- The OnPreRender method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectedNodeChanged">
@@ -2106,7 +840,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2116,25 +849,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.TreeView.SelectedNodeChanged" /> event of the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event is raised when a node is selected in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine, such as updating the displayed content, whenever this event occurs.  
-  
- You can optionally set the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property of a node to specify which event is raised when that node is selected.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A> is not rendered for a node with its <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property set to `TreeNodeSelectAction.None`.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- The OnSelectedNodeChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTreeNodeCheckChanged">
@@ -2144,7 +861,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2154,20 +870,9 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.TreeNodeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.TreeNodeEventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged" /> event of the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged> event is raised when a check box in the <xref:System.Web.UI.WebControls.TreeView> control changes state between posts to the server. This allows you to provide an event-handling method that performs a custom routine, such as updating a database or the displayed content, whenever this event occurs.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- The OnTreeNodeCheckChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTreeNodeCollapsed">
@@ -2177,7 +882,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2187,20 +891,9 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.TreeNodeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.TreeNodeEventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed" /> event of the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event is raised when a node is collapsed in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- The OnTreeNodeCollapsed method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTreeNodeDataBound">
@@ -2210,7 +903,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2220,20 +912,9 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.TreeNodeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.TreeNodeEventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.TreeView.TreeNodeDataBound" /> event of the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView.TreeNodeDataBound> event is raised when a data item is bound to a node in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- The OnTreeNodeDataBound method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTreeNodeExpanded">
@@ -2243,7 +924,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2253,23 +933,9 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.TreeNodeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.TreeNodeEventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.TreeView.TreeNodeExpanded" /> event of the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is raised when a node is expanded in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
-  
-> [!NOTE]
->  If the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node is set to <xref:System.Web.UI.WebControls.TreeNodeSelectAction> or <xref:System.Web.UI.WebControls.TreeNodeSelectAction>, the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is also raised when that node is clicked in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- The OnTreeNodeExpanded method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTreeNodePopulate">
@@ -2279,7 +945,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2289,27 +954,9 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.TreeNodeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.TreeNodeEventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" /> event of the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Sometimes, it is not practical to statically predefine the tree structure due to data size or custom content that depends on user input. Because of this, the <xref:System.Web.UI.WebControls.TreeView> control supports dynamic node population. When the <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property for a node is set to `true`, that node gets populated at run time when the node is expanded.  
-  
- To populate a node dynamically, first set the <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property for the node to `true`. Next, define an event-handling method for the <xref:System.Web.UI.WebControls.TreeView.TreeNodePopulate> event that programmatically populates the node. A typical event-handling method retrieves node data from a data source, places the data into a node structure, and then adds the node structure to the <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> collection of the node being populated. A node structure is created by adding <xref:System.Web.UI.WebControls.TreeNode> objects to the <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> collection of a parent node.  
-  
-> [!NOTE]
->  When the <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property for a node is set to `true`, the node must be populated dynamically. You cannot declaratively nest another node below it; otherwise, an error will occur on the page.  
-  
- Supported browsers (Microsoft Internet Explorer 4.0-compatible browsers and later) can also take advantage of client-side node population. When enabled, this allows the <xref:System.Web.UI.WebControls.TreeView> control to populate a node on the client dynamically when that node is expanded, which prevents the need to post back to the server. For more information on client-side node population, see <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A>.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- The OnTreeNodePopulate method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentNodeStyle">
@@ -2319,7 +966,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2340,34 +986,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> object that allows you to set the appearance of parent nodes in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> that represents the style of the parent nodes in the <see cref="T:System.Web.UI.WebControls.TreeView" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ParentNodeStyle property to control the appearance of the parent nodes in the <xref:System.Web.UI.WebControls.TreeView> control. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object it returns. The properties can be set declaratively in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object (for example, `ParentNodeStyle-ForeColor`). The properties can also be set programmatically in the form `Property.Subproperty` (for example, `ParentNodeStyle.ForeColor`). Common settings usually include a custom background color, foreground color, font properties, and node spacing. Style properties are applied in the following order of precedence:  
-  
-1.  <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A>.  
-  
-2.  <xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A>, ParentNodeStyle, or <xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A>, depending on the node type. If the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection is defined, it is applied at this time, overriding the other node style properties.  
-  
-3.  <xref:System.Web.UI.WebControls.TreeView.SelectedNodeStyle%2A>.  
-  
-4.  <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A>.  
-  
- If you need to generate table of contents-style navigation menus where nodes at a certain level should have the same appearance, regardless of whether they have child nodes, you might consider using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> property instead of setting the individual style properties.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ParentNodeStyle property to control the appearance of the parent nodes in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-cs[TreeViewParentNodeStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_454_1.aspx)]
- [!code-vb[TreeViewParentNodeStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_454_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PathSeparator">
@@ -2377,7 +998,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2389,28 +1009,9 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the character that is used to delimit the node values that are specified by the <see cref="System.Web.UI.WebControls.TreeNode.ValuePath%2A" /> property.</summary>
-        <value>The character used to delimit the node values specified in the <see cref="System.Web.UI.WebControls.TreeNode.ValuePath%2A" /> property. The default is a slash mark (/).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.TreeNode.ValuePath%2A> property contains a delimiter-separated list of node values that form a path from the root node to the current node. Use the PathSeparator property to specify the delimiter character that is used to separate the node values. This value is commonly used when parsing the list for the individual values.  
-  
- Depending on the text that is displayed in the <xref:System.Web.UI.WebControls.TreeView> control, the delimiter character might need to be changed to prevent any conflicts. For example, if you set the delimiter character to a comma, the displayed text should not contain any commas; otherwise, the <xref:System.Web.UI.WebControls.TreeNode.ValuePath%2A> property cannot be parsed accurately.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the PathSeparator property to specify the delimiter character for the <xref:System.Web.UI.WebControls.TreeNode.ValuePath%2A> property of a node. This value is then used to parse the <xref:System.Web.UI.WebControls.TreeNode.ValuePath%2A> property for the individual values.  
-  
- [!code-cs[TreeViewPathSeparator2#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_62_1.aspx)]
- [!code-vb[TreeViewPathSeparator2#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_62_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -2420,7 +1021,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2428,15 +1028,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates all the nodes based on the data source.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PerformDataBinding method is a helper method that is called by the <xref:System.Web.UI.WebControls.TreeView> control to bind the specified data source to the control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PopulateNodesFromClient">
@@ -2446,7 +1039,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2458,40 +1050,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether node data is populated on demand from the client.</summary>
-        <value>
-          <see langword="true" /> to populate tree node data on demand from the client; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Sometimes, it is not practical to statically predefine the tree structure due to data size or custom content that depends on user input. Because of this, the <xref:System.Web.UI.WebControls.TreeView> control supports dynamic node population. When the <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property for a node is set to `true`, that node gets populated at run time when the node is expanded.  
-  
- In addition to populating nodes on demand, it is possible to populate the nodes directly on a supported client browser. When the PopulateNodesFromClient property is set to `true`, a service is called from the client to populate the tree nodes, which eliminates the need to post back to the server. Otherwise, the <xref:System.Web.UI.WebControls.TreeView> control posts back to the server to populate the nodes.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.WebControls.TreeView.EnableClientScript%2A> property must also be set to `true` in order for the PopulateNodesFromClient property to be set to `true`.  
-  
- To populate a node on the client, first set the PopulateNodesFromClient property to `true` and then set the <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property for the node to `true`. Next, define an event-handling method for the <xref:System.Web.UI.WebControls.TreeView.TreeNodePopulate> event that programmatically populates the node. A typical event-handling method retrieves node data from a data source, places the data into a node structure, and then adds the node structure to the <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> collection of the node being populated. You create a node structure by adding <xref:System.Web.UI.WebControls.TreeNode> objects to the <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> collection of a parent node.  
-  
-> [!NOTE]
->  When the <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property for a node is set to `true`, the node must be populated dynamically. You cannot declaratively nest another node below it; otherwise, an error will occur on the page.  
-  
-> [!NOTE]
->  The client-side node population feature is supported in browsers that support callback scripts. To check whether a browser supports callback scripts access, use the <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsCallback%2A> property of the <xref:System.Web.HttpBrowserCapabilities> class. You can access the instance of the <xref:System.Web.HttpBrowserCapabilities> class for the current request through the <xref:System.Web.HttpRequest.Browser%2A> property of the <xref:System.Web.HttpRequest> class.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the PopulateNodesFromClient property to enable client-side population of the nodes in the <xref:System.Web.UI.WebControls.TreeView> control. Notice that when client-side node population is enabled, nodes are populated dynamically on the client, without the need to post back to the server.  
-  
- [!code-cs[TreeViewPopulateNodesFromClient#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_522_1.aspx)]
- [!code-vb[TreeViewPopulateNodesFromClient#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_522_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseCallbackEvent">
@@ -2501,7 +1062,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2511,16 +1071,9 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventArgument">A string that represents an optional event argument to pass to the event handler.</param>
-        <summary>Raises the callback event using the specified arguments.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RaiseCallbackEvent method is a helper method for the <xref:System.Web.UI.WebControls.TreeView.System%23Web%23UI%23ICallbackEventHandler%23RaiseCallbackEvent%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="eventArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -2530,7 +1083,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2540,18 +1092,9 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventArgument">A string that represents an optional event argument to pass to the event handler.</param>
-        <summary>Enables the <see cref="T:System.Web.UI.WebControls.TreeView" /> control to process an event that is raised when a form is posted to the server. The RaisePostBackEvent method is a helper method for the <see cref="System.Web.UI.WebControls.TreeView.System%23Web%23UI%23ICallbackEventHandler%23RaiseCallbackEvent%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The page passes the value of the `eventArgument` parameter to the RaisePostBackEvent method of the control that implements the <xref:System.Web.UI.IPostBackEventHandler?displayProperty=fullName> interface. This <xref:System.Web.UI.WebControls.TreeView> control also renders the HTML element that causes the postback event to occur. If the control renders client-side script to post back to the server, the argument from the script is passed in the `eventArgument` parameter. If the postback event is caused by a simple submit to the server, the `eventArgument` parameter is `null`.  
-  
- The RaisePostBackEvent method provides the functionality for many events that are implemented by HTML and Web server controls.  
-  
- ]]></format>
-        </remarks>
+        <param name="eventArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -2561,7 +1104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2569,15 +1111,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the <see cref="T:System.Web.UI.WebControls.TreeView" /> control to notify the ASP.NET application that the state of the control has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Change events for the <xref:System.Web.UI.WebControls.TreeView> control are raised from the RaisePostDataChangedEvent method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -2587,7 +1122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2597,16 +1131,9 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
-        <summary>Renders the HTML opening tag of the control to the specified writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RenderBeginTag method is used primarily by control developers.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -2616,7 +1143,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2626,16 +1152,9 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream used to write content to a Web page.</param>
-        <summary>Renders the nodes in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the RenderContents method to render the nodes in the <xref:System.Web.UI.WebControls.TreeView> control to the client.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderEndTag">
@@ -2645,7 +1164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2655,16 +1173,9 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
-        <summary>Renders the HTML closing tag of the control to the specified writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RenderEndTag method is used primarily by control developers.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RootNodeStyle">
@@ -2674,7 +1185,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2695,34 +1205,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> object that allows you to set the appearance of the root node in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>A reference to the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> that represents the style of the root node in the <see cref="T:System.Web.UI.WebControls.TreeView" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the RootNodeStyle property to control the appearance of the root node in the <xref:System.Web.UI.WebControls.TreeView> control. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object it returns. The properties can be set declaratively in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object (for example, `RootNodeStyle-ForeColor`). The properties can also be set programmatically in the form `Property.Subproperty` (for example, `RootNodeStyle.ForeColor`). Common settings usually include a custom background color, foreground color, font properties, and node spacing. Style properties are applied in the following order of precedence:  
-  
-1.  <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A>.  
-  
-2.  RootNodeStyle, <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A>, or <xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A>, depending on the node type. If the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection is defined, it is applied at this time, overriding the other node style properties.  
-  
-3.  <xref:System.Web.UI.WebControls.TreeView.SelectedNodeStyle%2A>  
-  
-4.  <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A>.  
-  
- If you need to generate table of contents-style navigation menus where nodes at a certain level should have the same appearance, regardless of whether they have child nodes, you might consider using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> property instead of setting the individual style properties.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the RootNodeStyle property to control the appearance of the root node in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-vb[TreeViewRootNodeStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1116_1.aspx)]
- [!code-cs[TreeViewRootNodeStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1116_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -2732,7 +1217,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2740,8 +1224,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the state of the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <returns>The server control's current view state; otherwise, <see langword="null" />, if there is no view state associated with the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2752,7 +1236,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2767,41 +1250,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Web.UI.WebControls.TreeNode" /> object that represents the selected node in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.TreeNode" /> that represents the selected node in the <see cref="T:System.Web.UI.WebControls.TreeView" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The text of a node in the <xref:System.Web.UI.WebControls.TreeView> control can be in one of two modes: selection mode and navigation mode. By default, a node is in selection mode. To put a node into navigation mode, set the <xref:System.Web.UI.WebControls.TreeNode.NavigateUrl%2A> property for the node to a value other than an empty string (""). To put a node into selection mode, set the <xref:System.Web.UI.WebControls.TreeNode.NavigateUrl%2A> property for the node to empty string ("").  
-  
- When a node is in selection mode, the user can select a node by clicking on the text in the node. Use the SelectedNode property to determine which node is selected in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
-> [!NOTE]
->  A node cannot be selected when the <xref:System.Web.UI.WebControls.TreeView> control displays hyperlinks. When hyperlinks are displayed, the SelectedNode property always returns `null`.  
-  
- When the user selects a different node in the <xref:System.Web.UI.WebControls.TreeView> control by clicking the text in the new node, the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event is raised, by default. You can specify a different event by setting the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for the property. The following table lists the available options.  
-  
-|Selection action|Description|  
-|----------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Toggles the node between expanded and collapsed. Raises the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> or <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event, as appropriate.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises no events when a node is selected.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event when a node is selected.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises both the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> and <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> events when a node is selected. Nodes are only expanded, never collapsed.|  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A> is not rendered for a node with its <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property set to `TreeNodeSelectAction.None`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the SelectedNode property to determine the value of the selected node in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-cs[TreeViewSelectedNodeStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_601_1.aspx)]
- [!code-vb[TreeViewSelectedNodeStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_601_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedNodeChanged">
@@ -2811,46 +1262,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a node is selected in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SelectedNodeChanged event is raised when a node is selected in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine, such as updating the displayed content, whenever this event occurs.  
-  
- You can optionally set the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node to specify which event is raised when that node is selected. The following table lists the available options.  
-  
-|Selection action|Description|  
-|----------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Toggles the node between expanded and collapsed. Raises the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> or <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event, as appropriate.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises no events when a node is selected.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises the SelectedNodeChanged event when a node is selected.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises both the SelectedNodeChanged and <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> events when a node is selected. Nodes are only expanded, never collapsed.|  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A> is not rendered for a node with its <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property set to `TreeNodeSelectAction.None`.  
-  
- The SelectedNodeChanged event is fired only on post back when a user clicks a node. The event is not fired if the <xref:System.Web.UI.WebControls.TreeView.SelectedNode%2A> property is changed programmatically.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the SelectedNodeChanged event to update a <xref:System.Web.UI.WebControls.Label> control when a node is selected in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-cs[TreeViewSelectedNodeStyle#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_102_1.aspx)]
- [!code-vb[TreeViewSelectedNodeStyle#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_102_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedNodeStyle">
@@ -2860,7 +1279,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2881,32 +1299,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> object that controls the appearance of the selected node in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> that represents the style of the selected node in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control. The default is <see langword="null" />, which indicates that the SelectedNodeStyle property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SelectedNodeStyle property to control the appearance of the selected node in the <xref:System.Web.UI.WebControls.TreeView> control. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object it returns. The properties can be set declaratively in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object (for example, `SelectedNodeStyle-ForeColor`). The properties can also be set programmatically in the form `Property.Subproperty` (for example, `SelectedNodeStyle.ForeColor`). Common settings usually include a custom background color, foreground color, font properties, and node spacing. Style properties are applied in the following order of precedence:  
-  
-1.  <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A>.  
-  
-2.  <xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A>, <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A>, or <xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A>, depending on the node type. If the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection is defined, it is applied at this time, overriding the other node style properties.  
-  
-3.  SelectedNodeStyle.  
-  
-4.  <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the SelectedNodeStyle property to control the appearance of the selected node in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-cs[TreeViewSelectedNodeStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_204_1.aspx)]
- [!code-vb[TreeViewSelectedNodeStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_204_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -2916,7 +1311,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2934,16 +1328,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the selected node.</summary>
-        <value>The value of the selected node.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SelectedValue property provides a convenient way to determine the value of the selected node. This property simply returns the value of the <xref:System.Web.UI.WebControls.TreeNode.Value%2A> property of the <xref:System.Web.UI.WebControls.TreeNode> object that is referred to by the <xref:System.Web.UI.WebControls.TreeView.SelectedNode%2A> property. If no node is currently selected in the <xref:System.Web.UI.WebControls.TreeView> control, an empty string ("") is returned.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetNodeDataBound">
@@ -2953,7 +1340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2964,18 +1350,10 @@
         <Parameter Name="dataBound" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Web.UI.WebControls.TreeNode" /> to set.</param>
-        <param name="dataBound">
-          <see langword="true" /> to set the node as data-bound; otherwise, <see langword="false" />.</param>
-        <summary>Allows a derived class to set whether the specified <see cref="T:System.Web.UI.WebControls.TreeNode" /> control is data-bound.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SetNodeDataBound method to indicate whether the specified <xref:System.Web.UI.WebControls.TreeNode> is data-bound.  
-  
- ]]></format>
-        </remarks>
+        <param name="node">To be added.</param>
+        <param name="dataBound">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetNodeDataItem">
@@ -2985,7 +1363,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2996,17 +1373,10 @@
         <Parameter Name="dataItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Web.UI.WebControls.TreeNode" /> to set.</param>
-        <param name="dataItem">The data item for the <see cref="T:System.Web.UI.WebControls.TreeNode" />.</param>
-        <summary>Allows a derived class to set the data item for the specified <see cref="T:System.Web.UI.WebControls.TreeNode" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SetNodeDataItem method to specify the data item for the specified <xref:System.Web.UI.WebControls.TreeNode> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="node">To be added.</param>
+        <param name="dataItem">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetNodeDataPath">
@@ -3016,7 +1386,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3027,17 +1396,10 @@
         <Parameter Name="dataPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Web.UI.WebControls.TreeNode" /> to set.</param>
-        <param name="dataPath">The data path for the <see cref="T:System.Web.UI.WebControls.TreeNode" />.</param>
-        <summary>Allows a derived class to set the data path for the specified <see cref="T:System.Web.UI.WebControls.TreeNode" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SetNodeDataPath method to set the data path for the specified <xref:System.Web.UI.WebControls.TreeNode> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="node">To be added.</param>
+        <param name="dataPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCheckBoxes">
@@ -3047,7 +1409,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3059,44 +1420,9 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating which node types will display a check box in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>A bitwise combination of the <see cref="T:System.Web.UI.WebControls.TreeNodeTypes" /> values. The default is <see langword="TreeNodeType.None" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To provide multi-node selection support in the <xref:System.Web.UI.WebControls.TreeView> control, you can display check boxes next to the image for a node. Use the ShowCheckBoxes property to specify which node types will display a check box. For example, if this property is set to `TreeNodeType.Parent`, check boxes are displayed for each parent node in the tree. The following table lists the valid values for this property.  
-  
-|Node type|Description|  
-|---------------|-----------------|  
-|`TreeNodeType.All`|Check boxes are displayed for all nodes.|  
-|`TreeNodeType.Leaf`|Check boxes are displayed for all leaf nodes.|  
-|`TreeNodeType.None`|Check boxes are not displayed.|  
-|`TreeNodeType.Parent`|Check boxes are displayed for all parent nodes.|  
-|`TreeNodeType.Root`|Check boxes are displayed for all root nodes.|  
-  
- The enumeration type that is used for the ShowCheckBoxes property is a flag enumeration, which allows you to combine values through bitwise operations. For example, to display check boxes for the parent and leaf nodes, use the bitwise OR operator to combine the `TreeNodeType.Parent` and `TreeNodeType.Leaf` values.  
-  
- To determine which nodes have their check box selected, iterate through the nodes of the <xref:System.Web.UI.WebControls.TreeView.CheckedNodes%2A> collection.  
-  
-> [!NOTE]
->  You can override the ShowCheckBoxes setting by setting the <xref:System.Web.UI.WebControls.TreeNode.ShowCheckBox%2A> property for each node.  
-  
- If you need to provide only single-selection support, consider using the <xref:System.Web.UI.WebControls.TreeView.SelectedNode%2A> property.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ShowCheckBoxes property to show and hide the check boxes for the different node types.  
-  
- [!code-vb[TreeViewShowCheckBoxes#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_915_1.aspx)]
- [!code-cs[TreeViewShowCheckBoxes#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_915_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The bitwise combination value is outside the range of the <see cref="T:System.Web.UI.WebControls.TreeNodeTypes" /> enumeration.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowExpandCollapse">
@@ -3106,7 +1432,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3118,29 +1443,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether expansion node indicators are displayed.</summary>
-        <value>
-          <see langword="true" /> to show the expansion node indicators; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Expansion node indicators are used to show whether a node is expanded, collapsed, or non-expandable. Use the ShowExpandCollapse property to specify whether the expansion node indicators are displayed in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- When the ShowExpandCollapse property is set to `true`, the <xref:System.Web.UI.WebControls.TreeView> control displays a plus sign (+) or minus sign (-) or a placeholder image next to a node to indicate whether the node is expandable, collapsible, or non-expandable, respectively. You can specify custom images by first setting the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property to `TreeViewImageSet.Custom`, and then setting the <xref:System.Web.UI.WebControls.TreeView.NoExpandImageUrl%2A>, <xref:System.Web.UI.WebControls.TreeView.ExpandImageUrl%2A>, and <xref:System.Web.UI.WebControls.TreeView.CollapseImageUrl%2A> properties to the URLs of the custom images. If no images are specified, the default images are used.  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ShowExpandCollapse property to show and hide the expansion node icons.  
-  
- [!code-cs[TreeViewShowExpandCollapse#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_168_1.aspx)]
- [!code-vb[TreeViewShowExpandCollapse#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_168_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLines">
@@ -3150,7 +1455,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3162,30 +1466,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether lines connecting child nodes to parent nodes are displayed.</summary>
-        <value>
-          <see langword="true" /> to display lines connecting nodes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ShowLines property to specify whether the lines that are connecting child nodes to parent nodes are displayed. When this property is set to `true`, the <xref:System.Web.UI.WebControls.TreeView> control searches the Web-accessible folder that is specified by the <xref:System.Web.UI.WebControls.TreeView.LineImagesFolder%2A> property for the line images.  
-  
-> [!NOTE]
->  If the <xref:System.Web.UI.WebControls.TreeView.LineImagesFolder%2A> property is not set, the <xref:System.Web.UI.WebControls.TreeView> control will use the built-in, default images (20 x 20 pixels).  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ShowLines property to display lines connecting nodes in the <xref:System.Web.UI.WebControls.TreeView> control. Be sure to use the Line Designer tool to create a set of line images and place them in a folder named LineImages within the directory for the sample application.  
-  
- [!code-cs[TreeViewLineImagesFolderUrl#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_251_1.aspx)]
- [!code-vb[TreeViewLineImagesFolderUrl#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_251_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -3195,7 +1478,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3207,24 +1489,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that is used to render alternate text for screen readers to skip the content for the control.</summary>
-        <value>A string that the <see cref="T:System.Web.UI.WebControls.TreeView" /> renders as alternate text with an invisible image as a hint to screen readers. The default is "Skip Navigation Links."</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SkipLinkText property is a property that you can set to make a Web page more or less accessible. Web pages that contain content that repeats can provide for a mechanism for users of screen readers to skip the content from being read aloud.  
-  
- The <xref:System.Web.UI.WebControls.TreeView> control provides the SkipLinkText property as a way for the entire control to be skipped by screen readers. If the SkipLinkText property is set, an invisible image with alternate text is rendered, giving the user the option to jump to the end of the control. Screen readers read the alternate text aloud, while the image occupies only one pixel space. For pixel-precise control over the rendering of the page, set the SkipLinkText property to an empty string ("") and provide your own mechanism to skip the tree.  
-  
- The SkipLinkText property is set to the empty string by default, which makes screen readers not skip the control.  
-  
- The value of this property is stored in view state.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.ICallbackEventHandler.GetCallbackResult">
@@ -3234,7 +1501,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3242,16 +1508,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the result of a callback event that targets a control.</summary>
-        <returns>The results of the callback.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView> control implements the <xref:System.Web.UI.ICallbackEventHandler> interface and uses the <xref:System.Web.UI.WebControls.TreeView.RaisePostBackEvent%2A> to retrieve data and the <xref:System.Web.UI.WebControls.TreeView.GetCallbackResult%2A> method to return the retrieved data to the control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent">
@@ -3261,7 +1520,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3271,16 +1529,9 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventArgument">A string that represents an optional event argument to pass to the event handler.</param>
-        <summary>Raises the callback event using the specified arguments.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Control developers should override the <xref:System.Web.UI.WebControls.TreeView.RaiseCallbackEvent%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="eventArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -3290,7 +1541,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3301,19 +1551,11 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The key identifier for the control.</param>
-        <param name="postCollection">The collection of all incoming name values.</param>
-        <summary>Processes postback data for the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <returns>
-          <see langword="true" />, if the <see cref="T:System.Web.UI.WebControls.TreeView" /> control's state changes as a result of the postback event; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Control developers should override the <xref:System.Web.UI.WebControls.TreeView.LoadPostData%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="postDataKey">To be added.</param>
+        <param name="postCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -3323,7 +1565,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3331,15 +1572,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the <see cref="T:System.Web.UI.WebControls.TreeView" /> control to notify the ASP.NET application that the state of the control has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Control developers should override the <xref:System.Web.UI.WebControls.TreeView.RaisePostDataChangedEvent%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -3349,7 +1583,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3359,16 +1592,9 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventArgument">A string that represents an optional event argument to pass to the event handler.</param>
-        <summary>Enables the <see cref="T:System.Web.UI.WebControls.TreeView" /> control to process an event that is raised when a form is posted to the server.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Control developers should override the <xref:System.Web.UI.WebControls.TreeView.RaisePostBackEvent%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="eventArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -3378,23 +1604,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value for the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <value>Always returns a <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TagKey property allows the output stream to write the appropriate HTML mark-up for the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -3404,7 +1622,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3416,89 +1633,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the target window or frame in which to display the Web page content that is associated with a node.</summary>
-        <value>The target window or frame in which to display the linked Web page content. Values must begin with a letter in the range of A through Z (case insensitive), except for certain special values that begin with an underscore, as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Target value  
-  
- </term>  
-<description> Renders the content in  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="_blank" />  
-  
- </term>  
-<description> A new window without frames.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="_parent" />  
-  
- </term>  
-<description> The immediate frameset parent.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="_search" />  
-  
- </term>  
-<description> The search pane.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="_self" />  
-  
- </term>  
-<description> The frame with focus.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="_top" />  
-  
- </term>  
-<description> The full window without frames.  
-  
- </description>  
-</item>  
-</list>  
-  
- <block subset="none" type="note">  
- Check your browser documentation to determine if the <see langword="_search" /> value is supported.  For example, Microsoft Internet Explorer 5.0 and later supports the <see langword="_search" /> target value.  
-  
-</block>  
-  
- The default is an empty string (""), which refreshes the window or frame with focus.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Target property to specify the window or frame in which to display the Web content that is linked to a node when that node is clicked.  
-  
-> [!NOTE]
->  The Target property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the Target property, if the rendered output for the <xref:System.Web.UI.WebControls.TreeView> must be XHTML 1.1 compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](../Topic/XHTML%20Standards%20in%20Visual%20Studio%20and%20ASP.NET.md).  
->   
->  When creating accessible Web pages, you should avoid using the Target property to target another window. For more information, see [ASP.NET Controls and Accessibility](../Topic/ASP.NET%20Controls%20and%20Accessibility.md).  
-  
- The value of this property is stored in view state.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Target property to display the Web content that is linked to a node in a new window when that node is clicked.  
-  
- [!code-vb[TreeViewTarget#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1247_1.aspx)]
- [!code-cs[TreeViewTarget#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1247_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3508,7 +1645,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3516,15 +1652,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Tracks view-state changes to the <see cref="T:System.Web.UI.WebControls.TreeView" /> control so that they can be stored in the <see cref="T:System.Web.UI.StateBag" /> object for the control. This <see cref="T:System.Web.UI.StateBag" /> is accessible through the <see cref="System.Web.UI.Control.ViewState%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TrackViewState method is overridden to mark the starting point to begin tracking and saving changes to the control as part of the view state for the control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TreeNodeCheckChanged">
@@ -3534,34 +1663,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNodeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a check box in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control changes state between posts to the server.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TreeNodeCheckChanged event is raised when a check box in the <xref:System.Web.UI.WebControls.TreeView> control changes state between posts to the server. This allows you to provide an event-handling method that performs a custom routine, such as updating a database or the displayed content, whenever this event occurs.  
-  
- Even though the TreeNodeCheckChanged event is fired on post back, changing a check box does not cause a post back.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TreeNodeCheckChanged event to update a <xref:System.Web.UI.WebControls.Label> control when the check boxes of the <xref:System.Web.UI.WebControls.TreeView> control change state between posts to the server.  
-  
- [!code-vb[TreeViewCheckChanged#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_134_1.aspx)]
- [!code-cs[TreeViewCheckChanged#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_134_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TreeNodeCollapsed">
@@ -3571,32 +1680,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNodeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a node is collapsed in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TreeNodeCollapsed event is raised when a node is collapsed in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TreeNodeCollapsed event to update the content of a <xref:System.Web.UI.WebControls.Label> control when the user collapses a node in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-cs[TreeViewTreeNodeExpand#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_89_1.aspx)]
- [!code-vb[TreeViewTreeNodeExpand#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_89_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TreeNodeDataBound">
@@ -3606,51 +1697,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNodeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a data item is bound to a node in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TreeNodeDataBound event is raised when a data item is bound to a node in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- This section contains two code examples. The first code example demonstrates how to use the TreeNodeDataBound event to change the image for a node when some condition is met. The second code example provides sample XML data for the first code example.  
-  
- The following code example demonstrates how to use the TreeNodeDataBound event to change the image for a node when some condition is met. For this example to work correctly, you must copy the sample XML data, provided after this code example, to a file named Book.xml. Also be sure to provide your own images for this example to display.  
-  
- [!code-cs[TreeViewTreeNodeDataBound#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_83_1.aspx)]
- [!code-vb[TreeViewTreeNodeDataBound#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_83_1.aspx)]  
-  
- The following code example provides sample XML data for the preceding code example.  
-  
-```  
-<Book Title="Book Title">  
-    <Chapter Heading="Chapter 1">  
-        <Section Heading="Section 1">  
-        </Section>  
-        <Section Heading="Section 2">  
-        </Section>  
-    </Chapter>  
-    <Chapter Heading="Chapter 2">  
-        <Section Heading="Section 1">  
-        </Section>  
-    </Chapter>  
-</Book>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TreeNodeExpanded">
@@ -3660,35 +1714,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNodeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a node is expanded in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TreeNodeExpanded event is raised when a node is expanded in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
-  
-> [!NOTE]
->  If the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node is set to `TreeNodeSelectAction.Expand` or `TreeNodeSelectAction.SelectExpand`, the TreeNodeExpanded event is also raised when that node is clicked in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TreeNodeExpanded event to update the content of a <xref:System.Web.UI.WebControls.Label> control when the user expands a node in the <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-cs[TreeViewTreeNodeExpand#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_90_1.aspx)]
- [!code-vb[TreeViewTreeNodeExpand#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_90_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TreeNodePopulate">
@@ -3698,39 +1731,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TreeNodeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a node with its <see cref="System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A" /> property set to <see langword="true" /> is expanded in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Sometimes, it is not practical to statically predefine the tree structure due to data size or custom content that depends on user input. Because of this, the <xref:System.Web.UI.WebControls.TreeView> control supports dynamic node population. When the <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property for a node is set to `true`, that node gets populated at run time when the node is expanded.  
-  
- To populate a node dynamically, first set the <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property for the node to `true`. Next, define an event-handling method for the TreeNodePopulate event that populates the node programmatically. A typical event-handling method retrieves node data from a data source, places the data into a node structure, and then adds the node structure to the <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> collection of the node being populated. A node structure is created by adding <xref:System.Web.UI.WebControls.TreeNode> objects to the <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> collection of a parent node.  
-  
-> [!NOTE]
->  When the <xref:System.Web.UI.WebControls.TreeNode.PopulateOnDemand%2A> property for a node is set to `true`, the node must be populated dynamically. You cannot declaratively nest another node below it; otherwise, an error will occur on the page.  
-  
- Supported browsers (Microsoft Internet Explorer 4.0-compatible browsers and later) can also take advantage of client-side node population. When enabled, this allows the <xref:System.Web.UI.WebControls.TreeView> control to populate a node dynamically on the client when that node is expanded, which prevents the need to post back to the server. For more information on client-side node population, see <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A>.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TreeNodePopulate event to populate the nodes in the <xref:System.Web.UI.WebControls.TreeView> control dynamically on the server. Notice that the <xref:System.Web.UI.WebControls.TreeView.EnableClientScript%2A> property is set to `false` to prevent expanding-node events from being handled on the client.  
-  
- [!code-cs[TreeViewTreeNodePopulate#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_5_1.aspx)]
- [!code-vb[TreeViewTreeNodePopulate#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_5_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -3740,24 +1748,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the control is rendered as UI on the page.</summary>
-        <value>
-          <see langword="true" />, if the control is visible on the page; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the Visible property is set to `false`, the control is not rendered.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

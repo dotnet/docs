@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an empty key identifier clause. This class is used when an <see langword="&lt;EncryptedData&gt;" /> or a <see langword="&lt;Signature&gt;" /> element does not contain a <see langword="&lt;KeyInfo&gt;" /> element, which is used to describe the key required to decrypt the data or check the signature.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,15 +26,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor assumes that the user knows how to resolve the key required without any context.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -50,8 +43,8 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">Used to provide a hint when there is a need resolve an empty clause to a particular key. In the case of SAML11 and SAML2 tokens that have signatures without a <see langword="&lt;KeyInfo&gt;" /> element, this property will contain the assertion that is currently being processed.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause" /> class with the specified context.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,16 +61,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that is used to provide a hint when there is a need to resolve to a particular key.</summary>
-        <value>An object that provides a hint when there is a need to resolve to a particular key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the case of SAML11 and SAML2 tokens that have signatures without a `<KeyInfo>` element, this property will contain the assertion that is currently being processed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

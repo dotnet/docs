@@ -3,8 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit AsyncStateMachineAttribute extends System.Runtime.CompilerServices.StateMachineAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.AsyncStateMachineAttribute" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Runtime.CompilerServices.StateMachineAttribute</BaseTypeName>
@@ -16,33 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates whether a method is marked with either the [Async](../Topic/Async%20\(Visual%20Basic\).md) or [async](../Topic/async%20\(C%23%20Reference\).md) modifier.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You shouldn't apply the `AsyncStateMachine` attribute to methods in your code. For methods that have the async modifier, the compiler will apply the `AsyncStateMachine` attribute in the IL that the compiler emits.  
-  
- When a method (*MethodName*) has the Async or async modifier, the compiler emits IL that includes a state machine structure. This structure contains the code in the method. That IL also contains a stub method (*MethodName*) that calls into the state machine. The compiler adds the `AsyncStateMachine` attribute to the stub method so that tools can identify the corresponding state machine. Details of the emitted IL might change in future releases of the compilers.  
-  
- For information about the Async feature, see [Asynchronous Programming with Async and Await](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md).  
-  
-   
-  
-## Examples  
- As the following example shows, you can determine whether a method is marked with [Async](../Topic/Async%20\(Visual%20Basic\).md) or [async](../Topic/async%20\(C%23%20Reference\).md) modifier. In the example, `IsAsyncMethod` performs the following steps:  
-  
--   Obtains a <xref:System.Reflection.MethodInfo> object for the method name by using <xref:System.Type.GetMethod%2A?displayProperty=fullName>.  
-  
--   Obtains a <xref:System.Type> object for the attribute by using [GetType Operator](../Topic/GetType%20Operator%20\(Visual%20Basic\).md) or [typeof](../Topic/typeof%20\(C%23%20Reference\).md).  
-  
--   Obtains an attribute object for the method and attribute type by using `MethodInfo.GetCustomAttribute`. If `GetCustomAttribute` returns `Nothing` (Visual Basic) or `null` (C#), the method doesn't contain the attribute.  
-  
- [!code-vb[Runtime.CompilerServices.AsyncStateMachineAttribute#1](~/add/codesnippet/visualbasic/t-system.runtime.compile_22_1.vb)]
- [!code-cs[Runtime.CompilerServices.AsyncStateMachineAttribute#1](~/add/codesnippet/csharp/t-system.runtime.compile_22_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,15 +38,27 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncStateMachineAttribute.#ctor(System.Type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="stateMachineType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="stateMachineType">The type object for the underlying state machine type that's used to implement a state machine method.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.AsyncStateMachineAttribute" /> class.</summary>
+        <param name="stateMachineType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

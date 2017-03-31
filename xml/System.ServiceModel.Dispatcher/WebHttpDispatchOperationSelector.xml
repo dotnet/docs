@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>The operation selector that supports the Web programming model.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WebHttpDispatchOperationSelector dispatches method calls based on matching the Uniform Resource Identifier (URI) to a <xref:System.UriTemplateTable>. If multiple matches are found in the <xref:System.UriTemplateTable>, dispatch is done by the HTTP method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,15 +41,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The service endpoint.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector" /> with the specified endpoint.</summary>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +68,9 @@
         <Parameter Name="operationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="operationName">The operation.</param>
-        <summary>Gets the <see cref="T:System.UriTemplate" /> associated with the specified operation name.</summary>
-        <returns>The <see cref="T:System.UriTemplate" /> for the specified operation.</returns>
+        <param name="operationName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +87,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the message property on the request message that provides the name of the selected operation for the request.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,22 +98,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A string used as a key for storing the value that indicates whether a call to a service operation was matched by the URI but not by the HTTP method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Two different errors can occur when calling a service operation: "404 Endpoint/URI not found" and "405 Method Not Allowed." This string and its associated Boolean value allow the service model to differentiate between these two errors. The "404 Endpoint/URI" error occurs when an invalid URI is used. The "405 Method Not Allowed" error occurs when a valid URI is used but the HTTP method was not valid for the URI.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectOperation">
@@ -133,7 +115,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,9 +124,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> object sent to invoke a service operation.</param>
-        <summary>Selects the service operation to call.</summary>
-        <returns>The name of the service operation to call.</returns>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,18 +147,11 @@
         <Parameter Name="uriMatched" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> object sent to invoke a service operation.</param>
-        <param name="uriMatched">A value that specifies whether the URI matched a specific service operation.</param>
-        <summary>Selects the service operation to call.</summary>
-        <returns>The name of the service operation to call.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- It is possible that an incoming URI matches an operation, but the HTTP method is not allowed by the operation. In such cases, the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] runtime returns 404 (Not Found) when `uriMatched` is `false`, and returns 405 (Method Not Allowed) when `uriMatched` is `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="uriMatched">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

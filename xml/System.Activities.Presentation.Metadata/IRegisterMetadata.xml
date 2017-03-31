@@ -8,20 +8,8 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Specifies a class that will add extra attributes to the metadata store.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IRegisterMetadata types provide a way to encapsulate the association of design-time attributes to run-time types in a loosely coupled fashion. An application hosting the [!INCLUDE[wfd1](~/add/includes/wfd1-md.md)] can use the IRegisterMetadata interface to register the attributes for the activity. For instance, [!INCLUDE[vs2010](~/add/includes/vs2010-md.md)] searches for types that implement IRegisterMetadata when assemblies that contain these types are loaded in addition to also looking for types in the *.design assemblies.  
-  
-   
-  
-## Examples  
-   
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Register">
@@ -38,20 +26,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds additional metadata to the metadata store upon initialization of the designer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implementations should call <xref:System.Activities.Presentation.Metadata.MetadataStore.AddAttributeTable%2A> to add data to the metadata store.  
-  
-   
-  
-## Examples  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

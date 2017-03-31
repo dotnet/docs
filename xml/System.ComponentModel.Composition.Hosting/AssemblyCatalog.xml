@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,28 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Discovers attributed parts in a managed code assembly.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An AssemblyCatalog is used to parse all the parts present in a specified assembly. The target assembly can be indicated either by object reference or by path.  
-  
-> [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
- This type is thread safe.  
-  
-   
-  
-## Examples  
- The following code demonstrates the common scenario of an application creating an AssemblyCatalog to parse its own assembly. This is a straightforward way to load parts contained in a single project into the Managed Extensibility Framework (MEF).  
-  
- [!code-cs[Composition.CompositionContainer#1](~/add/codesnippet/csharp/composition.compositioncontainer.consoleapplication1/program.cs#1)]
- [!code-vb[Composition.CompositionContainer#1](~/add/codesnippet/visualbasic/compositioncontainerexample/module1.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,21 +32,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="assembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly that contains the attributed <see cref="T:System.Type" /> objects to add to the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified assembly.</summary>
+        <param name="assembly">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="assembly" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="assembly" /> was loaded in the reflection-only context.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,42 +51,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="codeBase" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="codeBase">A string that specifies the code base of the assembly (that is, the path to the assembly file) that contains the attributed <see cref="T:System.Type" /> objects to add to the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified code base.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The assembly referenced by `codeBase` is loaded into the load context.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.BadImageFormatException">
-          <paramref name="codeBase" /> is not a valid assembly.  
-  
- -or-  
-  
- Version 2.0 or earlier of the common language runtime is currently loaded and <paramref name="codeBase" /> was compiled with a later version.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have path discovery permission.</exception>
-        <exception cref="T:System.IO.FileLoadException">
-          <paramref name="codeBase" /> could not be loaded.  
-  
- -or-  
-  
- <paramref name="codeBase" /> specified a directory.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="codeBase" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="codeBase" /> is not found.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="codeBase" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
+        <param name="codeBase">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,6 +70,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -127,16 +78,10 @@
         <Parameter Name="definitionOrigin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly that contains the attributed <see cref="T:System.Type" /> objects to add to the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</param>
-        <param name="definitionOrigin">The element used by diagnostics to identify the sources of parts.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified assembly.</summary>
+        <param name="assembly">To be added.</param>
+        <param name="definitionOrigin">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="assembly" /> or <paramref name="definitionOrigin" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="assembly" /> was loaded in the reflection-only context.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -146,6 +91,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -153,16 +99,10 @@
         <Parameter Name="reflectionContext" Type="System.Reflection.ReflectionContext" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly that contains the attributed <see cref="T:System.Type" /> objects to add to the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</param>
-        <param name="reflectionContext">The context used by the catalog to interpret types.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified assembly and reflection context.</summary>
+        <param name="assembly">To be added.</param>
+        <param name="reflectionContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="assembly" /> or <paramref name="reflectionContext" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="assembly" /> was loaded in the reflection-only context.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -172,6 +112,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -179,30 +120,10 @@
         <Parameter Name="definitionOrigin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="codeBase">A string that specifies the code base of the assembly (that is, the path to the assembly file) that contains the attributed <see cref="T:System.Type" /> objects to add to the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</param>
-        <param name="definitionOrigin">The element used by diagnostics to identify the sources of parts.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified code base.</summary>
+        <param name="codeBase">To be added.</param>
+        <param name="definitionOrigin">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException">
-          <paramref name="codeBase" /> is not a valid assembly.  
-  
- -or-  
-  
- Version 2.0 or later of the common language runtime is currently loaded and <paramref name="codeBase" /> was compiled with a later version.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have path discovery permission.</exception>
-        <exception cref="T:System.IO.FileLoadException">
-          <paramref name="codeBase" /> could not be loaded.  
-  
- -or-  
-  
- <paramref name="codeBase" /> specified a directory.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="codebase" /> or <paramref name="definitionOrigin" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="codeBase" /> is not found.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="codeBase" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -212,6 +133,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -219,30 +141,10 @@
         <Parameter Name="reflectionContext" Type="System.Reflection.ReflectionContext" />
       </Parameters>
       <Docs>
-        <param name="codeBase">A string that specifies the code base of the assembly (that is, the path to the assembly file) that contains the attributed <see cref="T:System.Type" /> objects to add to the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</param>
-        <param name="reflectionContext">The context used by the catalog to interpret types.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified code base and reflection context.</summary>
+        <param name="codeBase">To be added.</param>
+        <param name="reflectionContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException">
-          <paramref name="codeBase" /> is not a valid assembly.  
-  
- -or-  
-  
- Version 2.0 or later of the common language runtime is currently loaded and <paramref name="codeBase" /> was compiled with a later version.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have path discovery permission.</exception>
-        <exception cref="T:System.IO.FileLoadException">
-          <paramref name="codeBase" /> could not be loaded.  
-  
- -or-  
-  
- <paramref name="codeBase" /> specified a directory.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="codebase" /> or <paramref name="reflectionContext" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="codeBase" /> is not found.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="codeBase" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -252,6 +154,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -260,17 +163,11 @@
         <Parameter Name="definitionOrigin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly that contains the attributed <see cref="T:System.Type" /> objects to add to the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</param>
-        <param name="reflectionContext">The context used by the catalog to interpret types.</param>
-        <param name="definitionOrigin">The element used by diagnostics to identify the sources of parts.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified assembly and reflection context.</summary>
+        <param name="assembly">To be added.</param>
+        <param name="reflectionContext">To be added.</param>
+        <param name="definitionOrigin">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="assembly" />, <paramref name="definitionOrigin" />, or <paramref name="reflectionContext" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="assembly" /> was loaded in the reflection-only context.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -280,6 +177,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -288,31 +186,11 @@
         <Parameter Name="definitionOrigin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="codeBase">A string that specifies the code base of the assembly (that is, the path to the assembly file) that contains the attributed <see cref="T:System.Type" /> objects to add to the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</param>
-        <param name="reflectionContext">The context used by the catalog to interpret types.</param>
-        <param name="definitionOrigin">The element used by diagnostics to identify the sources of parts.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified code base and reflection context.</summary>
+        <param name="codeBase">To be added.</param>
+        <param name="reflectionContext">To be added.</param>
+        <param name="definitionOrigin">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException">
-          <paramref name="codeBase" /> is not a valid assembly.  
-  
- -or-  
-  
- Version 2.0 or later of the common language runtime is currently loaded and <paramref name="codeBase" /> was compiled with a later version.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have path discovery permission.</exception>
-        <exception cref="T:System.IO.FileLoadException">
-          <paramref name="codeBase" /> could not be loaded.  
-  
- -or-  
-  
- <paramref name="codeBase" /> specified a directory.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="codebase" />, <paramref name="definitionOrigin" /> or <paramref name="reflectionContext" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="codeBase" /> is not found.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="codeBase" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
       </Docs>
     </Member>
     <Member MemberName="Assembly">
@@ -322,14 +200,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the assembly whose attributed types are contained in the assembly catalog.</summary>
-        <value>The assembly whose attributed <see cref="T:System.Type" /> objects are contained in the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,6 +219,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -349,9 +229,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,6 +241,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,8 +249,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the catalog.</summary>
-        <returns>An enumerator that can be used to iterate through the catalog.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,6 +261,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -390,9 +271,9 @@
         <Parameter Name="definition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
       </Parameters>
       <Docs>
-        <param name="definition">Conditions that specify which exports to match.</param>
-        <summary>Gets a collection of exports that match the conditions specified by the import definition.</summary>
-        <returns>A collection of exports that match the conditions specified by <paramref name="definition" />.</returns>
+        <param name="definition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,22 +284,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the display name of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</summary>
-        <value>A string that represents the type and assembly of this <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.AssemblyCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Composition.Primitives.ICompositionElement.Origin">
@@ -428,22 +303,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Composition.Primitives.ICompositionElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the composition element that this element originated from.</summary>
-        <value>Always <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.AssemblyCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -453,6 +322,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,8 +330,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a string representation of the assembly catalog.</summary>
-        <returns>A representation of the assembly catalog.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

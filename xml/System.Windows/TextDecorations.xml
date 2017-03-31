@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TextDecorations" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,58 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a set of static predefined text decorations.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are four types of text decorations: baseline, overline, strikethrough, and underline. The following example shows the locations of the text decorations relative to the text.  
-  
- ![Diagram of text decoration locations](~/add/media/textdecoration01.gif "Diagram of text decoration locations")  
-Example of text decoration types  
-  
-<a name="xamlAttributeUsage_FontFamily"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object textDecorationsProperty="textDecorationType[,textDecorationType]"/>  
-```  
-  
-<a name="xamlValues_FontFamily"></a>   
-## XAML Values  
- `textDecorationType`  
- The type of text decoration: <xref:System.Windows.TextDecorations.Baseline%2A>, <xref:System.Windows.TextDecorations.OverLine%2A>, <xref:System.Windows.TextDecorations.Strikethrough%2A>, or <xref:System.Windows.TextDecorations.Underline%2A>. More than one decoration is permitted, with values separated by commas. You can also specify "None" to indicate no type of text decoration.  
-  
-   
-  
-## Examples  
- In the following example, a strikethrough text decoration uses the default font value.  
-  
- [!code-cs[TextDecorationSnippets#TextDecorationSnippets1](~/add/codesnippet/csharp/TextDecorationSnippets/Window1.xaml.cs#textdecorationsnippets1)]
- [!code-xml[TextDecorationSnippets#TextDecorationSnippets1](~/add/codesnippet/xaml/TextDecorationSnippets/Window1.xaml#textdecorationsnippets1)]
- [!code-vb[TextDecorationSnippets#TextDecorationSnippets1](~/add/codesnippet/visualbasic/textdecorationsnippets/window1.xaml.vb#textdecorationsnippets1)]  
-  
- You can also specify multiple text decorations for the same text. In the following example, an underline and overline text decoration are used for the same text.  
-  
- [!code-xml[TextDecorationSnippets#TextDecorationSnippets4](~/add/codesnippet/xaml/TextDecorationSnippets/Window1.xaml#textdecorationsnippets4)]  
-  
- You can use the string value "None" to indicate that there are no text decorations in the TextDecorations collection. In the following example, the TextDecorations collection is set to "None".  
-  
- [!code-xml[TextDecorationSnippets#TextDecorationSnippets5](~/add/codesnippet/xaml/TextDecorationSnippets/Window1.xaml#textdecorationsnippets5)]  
-  
- You can remove all text decorations from text by using the <xref:System.Windows.TextDecorationCollection.Clear%2A> method. In the following example, the TextDecorations collection is cleared.  
-  
- [!code-cs[TextDecorationSnippets#TextDecorationSnippets5a](~/add/codesnippet/csharp/TextDecorationSnippets/Window1.xaml.cs#textdecorationsnippets5a)]
- [!code-vb[TextDecorationSnippets#TextDecorationSnippets5a](~/add/codesnippet/visualbasic/textdecorationsnippets/window1.xaml.vb#textdecorationsnippets5a)]  
-  
- By default, <xref:System.Windows.Documents.Hyperlink> uses a <xref:System.Windows.TextDecoration> object to display an underline. The following markup sample shows a <xref:System.Windows.Documents.Hyperlink> defined with and without an underline:  
-  
- [!code-xml[Performance#PerformanceSnippet11](~/add/codesnippet/xaml/Performance/Hyperlink.xaml#performancesnippet11)]  
-  
- <xref:System.Windows.TextDecoration> objects can be performance intensive to instantiate, particularly if you have many <xref:System.Windows.Documents.Hyperlink> objects. For more information, see [How to: Specify Whether a Hyperlink is Underlined](../Topic/How%20to:%20Specify%20Whether%20a%20Hyperlink%20is%20Underlined.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Baseline">
@@ -73,26 +22,15 @@ Example of text decoration types
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a baseline <see cref="T:System.Windows.TextDecoration" />.</summary>
-        <value>A value that represents a baseline <see cref="T:System.Windows.TextDecoration" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows the location of a baseline text decoration relative to the text.  
-  
- ![Diagram of text decoration locations](~/add/media/textdecoration01.gif "Diagram of text decoration locations")  
-Example of a baseline text decoration  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OverLine">
@@ -102,26 +40,15 @@ Example of a baseline text decoration
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies an overline <see cref="T:System.Windows.TextDecoration" />.</summary>
-        <value>A value that represents an overline <see cref="T:System.Windows.TextDecoration" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows the location of an overline text decoration relative to the text.  
-  
- ![Diagram of text decoration locations](~/add/media/textdecoration01.gif "Diagram of text decoration locations")  
-Example of an overline text decoration  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Strikethrough">
@@ -131,35 +58,15 @@ Example of an overline text decoration
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a strikethrough <see cref="T:System.Windows.TextDecoration" />.</summary>
-        <value>A value that represents a strikethrough <see cref="T:System.Windows.TextDecoration" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows the location of a strikethrough text decoration relative to the text.  
-  
- ![Diagram of text decoration locations](~/add/media/textdecoration01.gif "Diagram of text decoration locations")  
-Example of a strikethrough text decoration  
-  
-   
-  
-## Examples  
- In the following example, a strikethrough text decoration is created by using solid color brush for the pen. The <xref:System.Windows.TextDecoration.Location%2A> property is set to <xref:System.Windows.TextDecorationLocation>.  
-  
- [!code-cs[TextDecorationSnippets#TextDecorationSnippets1](~/add/codesnippet/csharp/TextDecorationSnippets/Window1.xaml.cs#textdecorationsnippets1)]
- [!code-xml[TextDecorationSnippets#TextDecorationSnippets1](~/add/codesnippet/xaml/TextDecorationSnippets/Window1.xaml#textdecorationsnippets1)]
- [!code-vb[TextDecorationSnippets#TextDecorationSnippets1](~/add/codesnippet/visualbasic/textdecorationsnippets/window1.xaml.vb#textdecorationsnippets1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -169,42 +76,15 @@ Example of a strikethrough text decoration
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies an underline <see cref="T:System.Windows.TextDecoration" />.</summary>
-        <value>A value that represents an underline <see cref="T:System.Windows.TextDecoration" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows the location of an underline text decoration relative to the text.  
-  
- ![Diagram of text decoration locations](~/add/media/textdecoration01.gif "Diagram of text decoration locations")  
-Example of an underline text decoration  
-  
- By default, <xref:System.Windows.Documents.Hyperlink> uses a <xref:System.Windows.TextDecoration> object to display an underline. For more information, see [How to: Specify Whether a Hyperlink is Underlined](../Topic/How%20to:%20Specify%20Whether%20a%20Hyperlink%20is%20Underlined.md).  
-  
-   
-  
-## Examples  
- The following illustration shows a text decoration that has been styled with a linear gradient brush and a dashed pen.  
-  
- ![Text decoration with linear gradient underline](~/add/media/textdecoration02.png "Text decoration with linear gradient underline")  
-Example of an underline styled with a linear gradient brush and dashed pen  
-  
- In the following code example, an underline text decoration is created by using a linear gradient brush for the dashed pen.  
-  
- [!code-cs[TextDecorationSnippets#TextDecorationSnippets3](~/add/codesnippet/csharp/TextDecorationSnippets/Window1.xaml.cs#textdecorationsnippets3)]
- [!code-xml[TextDecorationSnippets#TextDecorationSnippets3](~/add/codesnippet/xaml/TextDecorationSnippets/Window1.xaml#textdecorationsnippets3)]
- [!code-vb[TextDecorationSnippets#TextDecorationSnippets3](~/add/codesnippet/visualbasic/textdecorationsnippets/window1.xaml.vb#textdecorationsnippets3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

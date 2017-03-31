@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleAttributeTarget" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether the path in a <see cref="T:System.Workflow.Activities.Rules.RuleReadAttribute" /> or <see cref="T:System.Workflow.Activities.Rules.RuleWriteAttribute" /> is for a method parameter, or <see langword="this" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use with the <xref:System.Workflow.Activities.Rules.RuleReadAttribute> and <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> classes.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Parameter">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.Rules.RuleAttributeTarget</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the path is an absolute path beginning with a parameter name, which optionally can be followed by a path to an inner member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="This">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.Rules.RuleAttributeTarget</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the path is a relative or absolute path, beginning with the token <see langword="this" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -14,23 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LegendItemsCollection class represents a collection of <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> objects, which in turn represent items in a legend.  
-  
- This collection class is exposed in two ways:  
-  
--   As the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems%2A> object property of the <xref:System.Windows.Forms.DataVisualization.Charting.Legend> object, which can be used to add, delete or modify custom legend items. The term "custom" refers to legend items that have user-defined text, symbol color, and so forth. In comparison, "default" legend items are items that are automatically inserted into the legend and represent a data series or data point. Default legend item entries for pie and doughnut charts represent the plotted data points, whereas item entries for all other chart types represent the plotted series. The <xref:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems%2A> property is available at both design time and run time.  
-  
--   In the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event, as the <xref:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs> parameter. The <xref:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems%2A> property stores both default legend items and custom legend items that have been added to the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control at design time. Legend items can be modified or deleted; in addition, their order can be changed.  
-  
- To add legend items to the collection, use one of the overloaded `Add` and `Insert` methods in this class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -50,22 +35,11 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="color">The symbol color of the legend item.</param>
-        <param name="text">The legend item text.</param>
-        <summary>Adds a custom <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> object to the end of the collection.</summary>
-        <returns>An <see langword="integer" /> that represents the location in the zero-based index where the item was inserted into the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Appends a custom legend item with the specified text and symbol color to the end of the collection.  
-  
- To add a custom legend item that uses an image for its symbol, call the <xref:System.%2A> Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Add(System.String,System.String)?qualifyHint=False&autoUpgrade=True method.  
-  
- To insert a custom <xref:System.> Windows.Forms.DataVisualization.Charting.LegendItem?qualifyHint=False&autoUpgrade=True object into the collection, use one of the `Insert` methods in this class.  
-  
- ]]></format>
-        </remarks>
+        <param name="color">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -85,22 +59,11 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="image">The absolute or relative URL of the image file to be used for the legend item symbol.</param>
-        <param name="text">The legend item text.</param>
-        <summary>Adds a custom <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> object with the specified image to the end of the collection.</summary>
-        <returns>An <see langword="integer" /> that represents the location in the zero-based index where the item was inserted into the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Appends a custom legend item to the collection with the specified text and image to be used as the symbol for the legend item.  
-  
- To add a custom legend item that uses a color for its symbol, call the <xref:System.%2A> Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Add(System.Drawing.Color,System.String)?qualifyHint=False&autoUpgrade=True method.  
-  
- To insert a <xref:System.> Windows.Forms.DataVisualization.Charting.LegendItem?qualifyHint=False&autoUpgrade=True object into the collection use one of the `Insert` methods in this class.  
-  
- ]]></format>
-        </remarks>
+        <param name="image">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -121,22 +84,11 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">The location in the zero-based index where the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> object is to be inserted.</param>
-        <param name="color">The symbol color of the legend item.</param>
-        <param name="text">The legend item text.</param>
-        <summary>Inserts a <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> object with the specified text and symbol color into the collection at the specified location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Inserts a custom legend item into the collection at the specified location using the specified text and symbol color.  
-  
- To insert a legend item that uses an image for its symbol, use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Insert%2A> method.  
-  
- Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Add%2A> method to append a <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> object that uses a color for its symbol to the end if the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -157,22 +109,11 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">The location in the zero-based index where the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> object is to be inserted.</param>
-        <param name="image">The absolute or relative URL of the image file to be used for the legend item symbol.</param>
-        <param name="text">The legend item text.</param>
-        <summary>Inserts a <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> object with the specified text and symbol image into the collection at the specified location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Inserts a custom legend item into the collection at the specified location using the specified text and image for the symbol.  
-  
- To insert a legend item that uses a color for its symbol, use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Insert%2A> method.  
-  
- Use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Add%2A> method to append a <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> object with a symbol image to the end if the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="image">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reverse">
@@ -189,7 +130,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reverses the order of items in the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

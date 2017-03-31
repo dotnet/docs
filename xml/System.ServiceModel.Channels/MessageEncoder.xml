@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,36 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The encoder is the component that is used to write messages to a stream and to read messages from a stream.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- MessageEncoder is a base class that provides implementations that support a Multipurpose Internet Mail Extensions (MIME) content type and message version, and defines the interface for the serialization and deserialization of messages according to that content type. Use it as a base class for writing your own custom encoder.  
-  
- Use this class if you want to implement a custom message encoder. To implement your own custom message encoder, you must provide custom implementations of the following abstract base classes:  
-  
--   <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
-  
--   <xref:System.ServiceModel.Channels.MessageEncoderFactory>  
-  
--   MessageEncoder  
-  
- Override the <xref:System.ServiceModel.Channels.MessageEncoderFactory.Encoder%2A> to return an instance of your custom MessageEncoder. Then wire up your custom <xref:System.ServiceModel.Channels.MessageEncoderFactory> to the binding element stack used to configure the service or client by overriding the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method to return an instance of this factory.  
-  
- The task of converting between the in-memory representation of a message and an XML Information Set (Infoset) representation that can be written to a stream is encapsulated within the MessageEncoder class, which most commonly serves as a factory for XML readers and XML writers that support specific types of XML encodings.  
-  
- The key methods on MessageEncoder are <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> and <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A>. <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> takes a <xref:System.ServiceModel.Channels.Message> object and writes it into a <xref:System.IO.Stream> object. <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A> takes a <xref:System.IO.Stream> object and a maximum header size and returns a <xref:System.ServiceModel.Channels.Message> object.  
-  
-   
-  
-## Examples  
- The following code shows an example of a class that is derived from MessageEncoder.  
-  
- [!code-cs[S_UE_CustomTextMessageEncoder#0](~/add/codesnippet/csharp/t-system.servicemodel.ch_11_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,12 +23,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MessageEncoder" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,12 +51,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">The message.</param>
-        <param name="stream">The stream.</param>
-        <param name="callback">The callback.</param>
-        <param name="state">The state.</param>
-        <summary>Starts the writing of message for the message encoder with specified message, stream, callback and state.</summary>
-        <returns>The asynchronous result of the operation.</returns>
+        <param name="message">To be added.</param>
+        <param name="stream">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,30 +67,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the MIME content type used by the encoder.</summary>
-        <value>The content type that is supported by the message encoder.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The content type is a Multipurpose Internet Mail Exchange (MIME) header that appears at the beginning of a MIME message as well as within the separate body parts. Content-type headers are used to specify the media type and subtype of data in the body of a message and to fully specify the media type and subtype of data in the body of a message and to specify the character encoding (optional) of the data. An example of a MIME content type that can be supported: “application/soap+xml; charset=’utf8’”.  
-  
- A grammar that details the syntax of the content-type header is described in [RFC 2045](http://go.microsoft.com/fwlink/?LinkId=95945), Section 5.1. [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95944) provides detailed information on MIME media types and their parameters.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_CustomTextMessageEncoder#1](~/add/codesnippet/csharp/p-system.servicemodel.ch_23_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndWriteMessage">
@@ -137,8 +95,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The result of the operation.</param>
-        <summary>Ends the writing of messages for the message encoder.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,7 +107,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,17 +122,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The typed object for which the method is querying.</typeparam>
-        <summary>Returns a typed object requested, if present, from the appropriate layer in the channel stack.</summary>
-        <returns>The typed object <paramref name="T " />requested if it is present or <see langword="null" /> if it is not.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the channel stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no channel layer supported the requested object, then the method returns `null`.  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsContentTypeSupported">
@@ -184,7 +135,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,28 +145,10 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contentType">The message-level content-type being tested.</param>
-        <summary>Returns a value that indicates whether a specified message-level content-type value is supported by the message encoder.</summary>
-        <returns>
-          <see langword="true" /> if the message-level content-type specified is supported; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to determine whether the message encoder can be used to read a particular style of message, based on its content-type. The information in the <xref:System.Net.Mime.ContentType> class is used to describe the data that is contained in a message and is used to determine if there is a content-type match.  
-  
- A grammar that details the syntax of the content-type header is described in [RFC 2045](http://go.microsoft.com/fwlink/?LinkId=95945) Section 5.1. [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95944) provides detailed information on Multipurpose Internet Mail Extensions (MIME) media types and their parameters.  
-  
-   
-  
-## Examples  
- The following code example shows how to override this method to handle different content types with the same media type.  
-  
- [!code-cs[S_UE_CustomTextMessageEncoder#8](~/add/codesnippet/csharp/acb00cc9-88fb-4bf8-b106-_1.cs)]
- [!code-cs[S_UE_CustomTextMessageEncoder#8](~/add/codesnippet/csharp/acb00cc9-88fb-4bf8-b106-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="contentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MediaType">
@@ -225,30 +158,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the media type value that is used by the encoder.</summary>
-        <value>The media type that is supported by the message encoder.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The media type is part of the content-type header.  
-  
-   
-  
-## Examples  
- The following code shows how to implement the `MediaType` property.  
-  
- [!code-cs[S_UE_CustomTextMessageEncoder#2](~/add/codesnippet/csharp/p-system.servicemodel.ch_18_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageVersion">
@@ -258,30 +177,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the message version value that is used by the encoder.</summary>
-        <value>The <see cref="T:System.ServiceModel.Channels.MessageVersion" /> that is used by the encoder.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Specifies the versions of SOAP and WS-Addressing associated with a message and its exchange. If SOAP versions are not to be used, this property should be overridden to return <xref:System.ServiceModel.Channels.MessageVersion.None%2A>.  
-  
-   
-  
-## Examples  
- The following code shows how to implement the MessageVersion property.  
-  
- [!code-cs[S_UE_CustomTextMessageEncoder#3](~/add/codesnippet/csharp/p-system.servicemodel.ch_48_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadMessage">
@@ -291,7 +196,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,10 +207,10 @@
         <Parameter Name="bufferManager" Type="System.ServiceModel.Channels.BufferManager" />
       </Parameters>
       <Docs>
-        <param name="buffer">A <see cref="System.ArraySegment%601" /> of type <see cref="T:System.Byte" /> that provides the buffer from which the message is deserialized.</param>
-        <param name="bufferManager">The <see cref="T:System.ServiceModel.Channels.BufferManager" /> that manages the buffer from which the message is deserialized.</param>
-        <summary>When overridden in a derived class, reads a message from a specified buffer.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> that is read from the buffer specified.</returns>
+        <param name="buffer">To be added.</param>
+        <param name="bufferManager">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +221,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,10 +232,10 @@
         <Parameter Name="maxSizeOfHeaders" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="stream">The <see cref="T:System.IO.Stream" /> object from which the message is read.</param>
-        <param name="maxSizeOfHeaders">The maximum size of the headers that can be read from the message.</param>
-        <summary>When overridden in a derived class, reads a message from a specified stream.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> that is read from the stream specified.</returns>
+        <param name="stream">To be added.</param>
+        <param name="maxSizeOfHeaders">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,7 +246,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -353,21 +258,12 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="buffer">A <see cref="System.ArraySegment%601" /> of type <see cref="T:System.Byte" /> that provides the buffer from which the message is deserialized.</param>
-        <param name="bufferManager">The <see cref="T:System.ServiceModel.Channels.BufferManager" /> that manages the buffer from which the message is deserialized.</param>
-        <param name="contentType">The Multipurpose Internet Mail Extensions (MIME) message-level content-type.</param>
-        <summary>When overridden in a derived class, reads a message from a specified stream.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> that is read from the stream specified.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to implement the ReadMessage method.  
-  
- [!code-cs[S_UE_CustomTextMessageEncoder#4](~/add/codesnippet/csharp/3b93822c-fce3-4ecb-9639-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="buffer">To be added.</param>
+        <param name="bufferManager">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadMessage">
@@ -377,7 +273,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -389,21 +285,12 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="stream">The <see cref="T:System.IO.Stream" /> object from which the message is read.</param>
-        <param name="maxSizeOfHeaders">The maximum size of the headers that can be read from the message.</param>
-        <param name="contentType">The Multipurpose Internet Mail Extensions (MIME) message-level content-type.</param>
-        <summary>When overridden in a derived class, reads a message from a specified stream.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> that is read from the stream specified.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to implement the ReadMessage method.  
-  
- [!code-cs[S_UE_CustomTextMessageEncoder#5](~/add/codesnippet/csharp/ec2b220b-558f-431f-b770-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="stream">To be added.</param>
+        <param name="maxSizeOfHeaders">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -413,7 +300,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -421,8 +308,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the content type that is used by the message encoder.</summary>
-        <returns>The content type that is used by the message encoder.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,7 +320,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -444,19 +331,10 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to write to the <c>stream</c>.</param>
-        <param name="stream">The <see cref="T:System.IO.Stream" /> object to which the <c>message</c> is written.</param>
-        <summary>When overridden in a derived class, writes a message to a specified stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to implement the WriteMessage method.  
-  
- [!code-cs[S_UE_CustomTextMessageEncoder#7](~/add/codesnippet/csharp/6b0a3c3c-6141-4824-ae06-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteMessage">
@@ -466,7 +344,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -478,19 +356,12 @@
         <Parameter Name="bufferManager" Type="System.ServiceModel.Channels.BufferManager" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to write to the message buffer.</param>
-        <param name="maxMessageSize">The maximum message size that can be written.</param>
-        <param name="bufferManager">The <see cref="T:System.ServiceModel.Channels.BufferManager" /> that manages the buffer to which the message is written.</param>
-        <summary>Writes a message less than a specified size to a byte array buffer.</summary>
-        <returns>A <see cref="System.ArraySegment%601" /> of type <see langword="byte" /> that provides the buffer to which the message is serialized.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls the abstract method <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%28System.ServiceModel.Channels.Message%2CSystem.Int32%2CSystem.ServiceModel.Channels.BufferManager%2CSystem.Int32%29> with `messageOffset` = 0.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="maxMessageSize">To be added.</param>
+        <param name="bufferManager">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteMessage">
@@ -500,7 +371,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -513,27 +384,13 @@
         <Parameter Name="messageOffset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to write to the message buffer.</param>
-        <param name="maxMessageSize">The maximum message size that can be written.</param>
-        <param name="bufferManager">The <see cref="T:System.ServiceModel.Channels.BufferManager" /> that manages the buffer to which the message is written.</param>
-        <param name="messageOffset">The offset of the segment that begins from the start of the byte array that provides the buffer.</param>
-        <summary>When overridden in a derived class, writes a message of less than a specified size to a byte array buffer at the specified offset.</summary>
-        <returns>A <see cref="System.ArraySegment%601" /> of type <see langword="byte" /> that provides the buffer to which the message is serialized.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by WriteMessage.  
-  
-   
-  
-## Examples  
- The following code shows how to implement the WriteMessage method.  
-  
- [!code-cs[S_UE_CustomTextMessageEncoder#6](~/add/codesnippet/csharp/2656dde2-a02b-4ccc-b47b-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="maxMessageSize">To be added.</param>
+        <param name="bufferManager">To be added.</param>
+        <param name="messageOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.RoutedEventHandlerInfo" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides special handling information to inform event listeners whether specific handlers should be invoked.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -33,10 +31,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare to the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />.</param>
-        <summary>Determines whether the specified object is equivalent to the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />.</summary>
-        <returns>
-          <see langword="true" /> if the specified object is equivalent to the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,18 +53,10 @@
         <Parameter Name="handlerInfo" Type="System.Windows.RoutedEventHandlerInfo" />
       </Parameters>
       <Docs>
-        <param name="handlerInfo">The <see cref="T:System.Windows.RoutedEventHandlerInfo" /> to compare to the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />.</param>
-        <summary>Determines whether the specified <see cref="T:System.Windows.RoutedEventHandlerInfo" /> is equivalent to the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Windows.RoutedEventHandlerInfo" /> is equivalent to the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation relies on value equivalence of the <xref:System.Windows.RoutedEventHandlerInfo.Handler%2A><xref:System.Windows.RoutedEventHandlerInfo.InvokeHandledEventsToo%2A> properties. The <xref:System.Windows.RoutedEventHandlerInfo.Handler%2A> property is a delegate reference. Therefore, equivalence implies a duplicate reference to the same handler.  
-  
- ]]></format>
-        </remarks>
+        <param name="handlerInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -78,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,8 +73,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a hash code for the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />.</summary>
-        <returns>A hash code for the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,15 +85,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Delegate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the event handler.</summary>
-        <value>The event handler.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,16 +103,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the event handler is invoked when the routed event is marked handled.</summary>
-        <value>
-          <see langword="true" /> if the event handler is invoked when the routed event is marked handled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,11 +131,10 @@
         <Parameter Name="handlerInfo2" Type="System.Windows.RoutedEventHandlerInfo" />
       </Parameters>
       <Docs>
-        <param name="handlerInfo1">The first object to compare.</param>
-        <param name="handlerInfo2">The second object to compare.</param>
-        <summary>Determines whether the specified objects are equivalent.</summary>
-        <returns>
-          <see langword="true" /> if the objects are equivalent; otherwise, <see langword="false" />.</returns>
+        <param name="handlerInfo1">To be added.</param>
+        <param name="handlerInfo2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,11 +155,10 @@
         <Parameter Name="handlerInfo2" Type="System.Windows.RoutedEventHandlerInfo" />
       </Parameters>
       <Docs>
-        <param name="handlerInfo1">The first object to compare.</param>
-        <param name="handlerInfo2">The second object to compare.</param>
-        <summary>Determines whether the specified objects are not equivalent.</summary>
-        <returns>
-          <see langword="true" /> if the objects are not equivalent; otherwise, <see langword="false" />.</returns>
+        <param name="handlerInfo1">To be added.</param>
+        <param name="handlerInfo2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,20 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides an editing notification interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To create a new <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> column with special properties, you must first inherit from the <xref:System.Windows.Forms.DataGridColumnStyle> class. The IDataGridColumnStyleEditingNotificationService interface is provided to notify the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> when a column is being edited.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ColumnStartedEditing">
@@ -27,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -37,16 +28,9 @@
         <Parameter Name="editingControl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="editingControl">The <see cref="T:System.Windows.Forms.Control" /> that is editing the column.</param>
-        <summary>Informs the <see cref="T:System.Windows.Forms.DataGrid" /> that the user has begun editing the column.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When called, the ColumnStartedEditing method allows the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control to show a pencil in the row header indicating the row is being edited.  
-  
- ]]></format>
-        </remarks>
+        <param name="editingControl">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

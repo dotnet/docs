@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildMessageSeverity extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -22,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>This enumeration provides three levels of importance for build messages.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +28,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -43,7 +35,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the message corresponds to a build error.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -52,10 +44,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity.Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -63,7 +51,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the message corresponds to build information.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -72,10 +60,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -83,7 +67,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the message corresponds to a build warning.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

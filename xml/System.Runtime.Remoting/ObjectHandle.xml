@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.ObjectHandle" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,24 +24,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Wraps marshal-by-value object references, allowing them to be returned through an indirection.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ObjectHandle class is used to pass an object (in a wrapped state) between multiple application domains without loading the metadata for the wrapped object in each <xref:System.AppDomain> through which the ObjectHandle travels. Thus, the ObjectHandle class gives the caller control of when the <xref:System.Type> of the remote object is loaded into a domain.  
-  
-   
-  
-## Examples  
- The following code example shows how to create an object in another <xref:System.AppDomain>, and retrieve a proxy to the object from a ObjectHandle. In this example, you can assume that the code of the `MyType` class is compiled into an assembly called "ObjectHandleAssembly".  
-  
- [!code-cpp[ObjectHandle#1](~/add/codesnippet/cpp/t-system.runtime.remotin_58_1.cpp)]
- [!code-vb[ObjectHandle#1](~/add/codesnippet/visualbasic/t-system.runtime.remotin_58_1.vb)]
- [!code-cs[ObjectHandle#1](~/add/codesnippet/csharp/t-system.runtime.remotin_58_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,15 +35,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object that is wrapped by the new <see cref="T:System.Runtime.Remoting.ObjectHandle" />.</param>
-        <summary>Initializes an instance of the <see cref="T:System.Runtime.Remoting.ObjectHandle" /> class, wrapping the given object <paramref name="o" />.</summary>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,21 +54,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the lifetime lease of the wrapped object.</summary>
-        <returns>An initialized <see cref="T:System.Runtime.Remoting.Lifetime.ILease" /> that allows you to control the lifetime of the wrapped object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +74,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,20 +82,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the wrapped object.</summary>
-        <returns>The wrapped object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to activate an object in another <xref:System.AppDomain>, retrieve a proxy to it with the Unwrap method, and use the proxy to access the remote object.  
-  
- [!code-cpp[ObjectHandle#2](~/add/codesnippet/cpp/m-system.runtime.remotin_83_1.cpp)]
- [!code-vb[ObjectHandle#2](~/add/codesnippet/visualbasic/m-system.runtime.remotin_83_1.vb)]
- [!code-cs[ObjectHandle#2](~/add/codesnippet/csharp/m-system.runtime.remotin_83_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

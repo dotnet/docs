@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IDynamicMessageSink" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,15 +14,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates that the implementing message sink will be provided by dynamically registered properties.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Dynamic message sinks are provided with notifications of call start and call finish with flags indicating whether the call is currently on the client side or server side (this is useful for the context level sinks).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ProcessMessageFinish">
@@ -32,14 +25,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -49,18 +37,11 @@
         <Parameter Name="bAsync" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="replyMsg">A reply message.</param>
-        <param name="bCliSide">A value of <see langword="true" /> if the method is invoked on the client side and <see langword="false" /> if it is invoked on the server side.</param>
-        <param name="bAsync">A value of <see langword="true" /> if this is an asynchronic call and <see langword="false" /> if it is a synchronic call.</param>
-        <summary>Indicates that a call is returning.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Boolean parameters indicate whether the sink is located on the client side or the server side and whether the call is using the <xref:System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="replyMsg">To be added.</param>
+        <param name="bCliSide">To be added.</param>
+        <param name="bAsync">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessMessageStart">
@@ -70,14 +51,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -87,18 +63,11 @@
         <Parameter Name="bAsync" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="reqMsg">A request message.</param>
-        <param name="bCliSide">A value of <see langword="true" /> if the method is invoked on the client side and <see langword="false" /> if the method is on the server side.</param>
-        <param name="bAsync">A value of <see langword="true" /> if this is an asynchronic call and <see langword="false" /> if it is a synchronic call.</param>
-        <summary>Indicates that a call is starting.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Boolean parameters indicate whether the sink is located on the client side or the server side and whether the call is using the <xref:System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="reqMsg">To be added.</param>
+        <param name="bCliSide">To be added.</param>
+        <param name="bAsync">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

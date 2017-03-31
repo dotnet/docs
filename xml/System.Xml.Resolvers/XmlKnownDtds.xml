@@ -4,7 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Resolvers.XmlKnownDtds" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -15,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The XmlKnownDtds enumeration is used by the <see cref="T:System.Xml.Resolvers.XmlPreloadedResolver" /> and defines which well-known DTDs that the <see cref="T:System.Xml.Resolvers.XmlPreloadedResolver" /> recognizes.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,13 +31,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Resolvers.XmlKnownDtds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Xml.Resolvers.XmlPreloadedResolver" /> will recognize all currently supported DTDs. This is the default behavior.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -42,13 +52,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Resolvers.XmlKnownDtds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Xml.Resolvers.XmlPreloadedResolver" /> will not recognize any of the predefined DTDs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rss091">
@@ -58,13 +73,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Resolvers.XmlKnownDtds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Xml.Resolvers.XmlPreloadedResolver" /> will recognize DTDs and entities that are defined in RSS 0.91.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xhtml10">
@@ -74,13 +94,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Resolvers.XmlKnownDtds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Xml.Resolvers.XmlPreloadedResolver" /> will recognize DTDs and entities that are defined in XHTML 1.0.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ProgressBarHighlightConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Aero</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -20,17 +19,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Creates a <see cref="T:System.Windows.Media.DrawingBrush" /> used to draw the highlighting for the <see cref="T:System.Windows.Controls.ProgressBar" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.DrawingBrush> is twice as long as progress bar track and will animate to the right.  
-  
-<a name="xamlTextUsage_ProgressBarHighlightConverter"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,7 +30,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -49,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Windows.Themes.ProgressBarHighlightConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -77,12 +65,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="values">The <see cref="T:System.Windows.Media.Brush" /> used for the <see cref="System.Windows.Controls.Control.Foreground%2A" /> of the <see cref="T:System.Windows.Controls.ProgressBar" />, the <see cref="T:System.Double" /> defining the <see cref="System.Windows.FrameworkElement.Width%2A" />, and the <see cref="T:System.Double" /> defining the <see cref="System.Windows.FrameworkElement.Height%2A" />.</param>
-        <param name="targetType">This parameter is not used.</param>
-        <param name="parameter">This parameter is not used.</param>
-        <param name="culture">This parameter is not used.</param>
-        <summary>Creates the <see cref="T:System.Windows.Media.DrawingBrush" />.</summary>
-        <returns>The created <see cref="T:System.Windows.Media.DrawingBrush" />.</returns>
+        <param name="values">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -110,13 +97,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">This parameter is not used.</param>
-        <param name="targetTypes">This parameter is not used.</param>
-        <param name="parameter">This parameter is not used.</param>
-        <param name="culture">This parameter is not used.</param>
-        <summary>Not implemented.</summary>
-        <returns>
-          <see langword="null" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="targetTypes">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptResourceAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,31 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a resource in an assembly to be used from a client script file. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ScriptResourceAttribute class is valid only when you use it in assembly declarations. You use it to enable a specified embedded script resource in an assembly. You can define the name of the embedded script library, the name of the resource file for the script library, and the name that is used in a script file for retrieving the resource values. The <xref:System.Web.UI.ScriptManager> class uses the properties in ScriptResourceAttribute to determine the correct resource name for a script library. The <xref:System.Web.UI.ScriptResourceAttribute.TypeName%2A> property is used with a resource key to specify a resource.  
-  
-> [!NOTE]
->  The ScriptResourceAttribute class can be used only to identify text-based resources for JavaScript files. To associate a localized image (binary) file with a particular culture, consider storing only its URL as a localized resource, which then be resolved and loaded in script.  
-  
-   
-  
-## Examples  
- The following example shows a ScriptResourceAttribute attribute for a script file named CheckAnswer.js that uses resources from the VerificationResources resource files. The name `Answer` is used to reference these resources.  
-  
- [!code-cs[LocalizingClientResourcesWalkthrough#3](~/add/codesnippet/csharp/t-system.web.ui.scriptre_2_1.cs)]
- [!code-vb[LocalizingClientResourcesWalkthrough#3](~/add/codesnippet/visualbasic/t-system.web.ui.scriptre_2_1.vb)]  
-  
- The following example shows how to use the resources in client script. The resource keys (`Correct` and `Incorrect`) are prefixed with `Answer` to identify the script resource definition that contains the values.  
-  
- [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/add/codesnippet/javascript/t-system.web.ui.scriptre_2_2.js)]
- [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/add/codesnippet/javascript/t-system.web.ui.scriptre_2_2.js)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,8 +33,8 @@
         <Parameter Name="scriptName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="scriptName">The name of the script library.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptResourceAttribute" /> class.</summary>
+        <param name="scriptName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,29 +45,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="scriptName" Type="System.String" />
-        <Parameter Name="scriptResourceName" Type="System.String" />
-        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="stringResourceName" Type="System.String" />
+        <Parameter Name="stringResourceClientTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="scriptName">The name of the script library.</param>
-        <param name="stringResourceName">The name of the resource file for the script library.</param>
-        <param name="stringResourceClientTypeName">The name of the type to create for the values in the resource file.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptResourceAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ScriptResourceAttribute method is typically called by using the <xref:System.Web.UI.ScriptResourceAttribute> attribute as an assembly attribute in the application's AssemblyInfo file.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="scriptName" />, <paramref name="scriptResourceName" />, or <paramref name="typeName" /> is <see langword="null" /> or an empty string ("").</exception>
+        <param name="scriptName">To be added.</param>
+        <param name="stringResourceName">To be added.</param>
+        <param name="stringResourceClientTypeName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScriptName">
@@ -101,31 +67,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the script library.</summary>
-        <value>The name of the script library.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows a <xref:System.Web.UI.ScriptResourceAttribute> attribute for a script file named CheckAnswer.js that uses resources from the VerificationResources resource files. The name `Answer` is used to reference these resources. In this example, the ScriptName property returns "LocalizingResources.CheckAnswer.js".  
-  
- [!code-cs[LocalizingClientResourcesWalkthrough#3](~/add/codesnippet/csharp/p-system.web.ui.scriptre_3_1.cs)]
- [!code-vb[LocalizingClientResourcesWalkthrough#3](~/add/codesnippet/visualbasic/p-system.web.ui.scriptre_3_1.vb)]  
-  
- The following example shows how to use the resources in client script. The resource keys (`Correct` and `Incorrect`) are prefixed with `Answer` to identify the script resource definition that contains the values.  
-  
- [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/add/codesnippet/javascript/p-system.web.ui.scriptre_3_2.js)]
- [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/add/codesnippet/javascript/p-system.web.ui.scriptre_3_2.js)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScriptResourceName">
@@ -135,7 +85,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -147,24 +96,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the resource file for the script library.</summary>
-        <value>The name of the resource file for the script library.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows a <xref:System.Web.UI.ScriptResourceAttribute> attribute for a script file named CheckAnswer.js that uses resources from the VerificationResources resource files. The name `Answer` is used to reference these resources. In this example, the ScriptResourceName property returns "LocalizingResources.VerificationResources". The file name extension is not included when you define the ScriptResourceName.  
-  
- [!code-cs[LocalizingClientResourcesWalkthrough#3](~/add/codesnippet/csharp/p-system.web.ui.scriptre_2_1.cs)]
- [!code-vb[LocalizingClientResourcesWalkthrough#3](~/add/codesnippet/visualbasic/p-system.web.ui.scriptre_2_1.vb)]  
-  
- The following example shows how to use the resources in client script. The resource keys (`Correct` and `Incorrect`) are prefixed with `Answer` to identify the script resource definition that contains the values.  
-  
- [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/add/codesnippet/javascript/p-system.web.ui.scriptre_2_2.js)]
- [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/add/codesnippet/javascript/p-system.web.ui.scriptre_2_2.js)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StringResourceClientTypeName">
@@ -180,8 +114,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the client type to create for the values in the resource file.</summary>
-        <value>The name of the client type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +132,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the resource file for the script library.</summary>
-        <value>The name of the resource file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,7 +144,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -222,29 +155,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name that is used when retrieving the values in the resource file.</summary>
-        <value>The name that is used in client script when retrieving the values in the resource file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TypeName property contains the value that is used for retrieving localized resources in client script. The client script must include the TypeName value and the key name for the resource to be localized.  
-  
-   
-  
-## Examples  
- The following example shows a <xref:System.Web.UI.ScriptResourceAttribute> attribute for a script file named CheckAnswer.js that uses resources from the VerificationResources resource files. The name `Answer` is used to reference these resources. In this example, the TypeName property returns "Answer".  
-  
- [!code-cs[LocalizingClientResourcesWalkthrough#3](~/add/codesnippet/csharp/p-system.web.ui.scriptre_5_1.cs)]
- [!code-vb[LocalizingClientResourcesWalkthrough#3](~/add/codesnippet/visualbasic/p-system.web.ui.scriptre_5_1.vb)]  
-  
- The following example shows how to use the resources in client script. The resource keys (`Correct` and `Incorrect`) are prefixed with `Answer` to identify the script resource definition that contains the values.  
-  
- [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/add/codesnippet/javascript/p-system.web.ui.scriptre_5_2.js)]
- [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/add/codesnippet/javascript/p-system.web.ui.scriptre_5_2.js)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

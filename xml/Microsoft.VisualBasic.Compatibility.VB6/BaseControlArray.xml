@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,18 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Implements the basic functionality common to control arrays in applications upgraded from Visual Basic 6.0.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You do not typically inherit from `BaseControlArray`. To create your own control array, inherit from one of the control array classes in the `Microsoft.VisualBasic.Compatibility.VB6` namespace.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,23 +31,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays used in applications upgraded from Visual Basic 6.0. Because this class is not typically used to create an instance of the class, this constructor is typically not called directly but is instead called by a derived class.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,26 +46,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="Container" Type="System.ComponentModel.IContainer" />
       </Parameters>
       <Docs>
-        <param name="Container">The <see cref="T:System.ComponentModel.IContainer" /> where the control array will be hosted.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" /> class, optionally specifying a container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0. Because this class is not typically used to create an instance of the class, this constructor is usually not called directly but is instead called by a derived class.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="Container">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseCanExtend">
@@ -97,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,21 +73,10 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="target">The <see cref="T:System.Windows.Forms.Control" /> to test.</param>
-        <summary>Gets a value that indicates whether a control is a member of a control array.</summary>
-        <returns>
-          <see langword="true" /> if the control is a member of the control array; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0. Because this class is not typically used to create an instance of the class, this `Protected` method is usually not called directly but is instead called by a derived class.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseGetIndex">
@@ -131,7 +86,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -141,20 +95,10 @@
         <Parameter Name="ctl" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ctl">The <see cref="T:System.Windows.Forms.Control" /> for which you want to retrieve the index.</param>
-        <summary>Gets the index of a control in a control array.</summary>
-        <returns>A <see langword="Short" /> integer representing the index of the control in the control array.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0. Because this class is not typically used to create an instance of the class, this `Protected` method is usually not called directly but is instead called by a derived class.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="ctl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseGetItem">
@@ -164,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,20 +117,10 @@
         <Parameter Name="Index" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Index">An integer that represents the index of the control in the control array.</param>
-        <summary>Gets the control for a specified index in a control array.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.Control" /> at the specified <paramref name="Index" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0. Because this class is not typically used to create an instance of the class, this `Protected` method is usually not called directly but is instead called by a derived class.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="Index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseResetIndex">
@@ -197,7 +130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -207,21 +139,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">A <see cref="T:System.Windows.Forms.Control" />.</param>
-        <summary>Not supported in the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported.  
-  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0. -  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseSetIndex">
@@ -231,7 +151,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,21 +162,11 @@
         <Parameter Name="fIsDynamic" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="ctl">The <see cref="T:System.Windows.Forms.Control" /> for which you want to set the index.</param>
-        <param name="Index">A <see langword="Short" /> integer that represents the index for the control.</param>
-        <param name="fIsDynamic">Optional. A <see langword="Boolean" /> specifying whether the control was created at design time (<see langword="false" />) or at run time (<see langword="true" />).</param>
-        <summary>Sets the index for a control in a control array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0. Because this class is not typically used to create an instance of the class, this `Protected` method is usually not called directly but is instead called by a derived class.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="ctl">To be added.</param>
+        <param name="Index">To be added.</param>
+        <param name="fIsDynamic">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseShouldSerializeIndex">
@@ -267,7 +176,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,21 +185,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">A <see cref="T:System.Windows.Forms.Control" />.</param>
-        <summary>Returns a value that indicates whether a control is a member of a control array.</summary>
-        <returns>
-          <see langword="true" /> if the control is a member of the control array; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0. Because this class is not typically used to create an instance of the class, this `Protected` method is usually  not called directly but is instead called by a derived class.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="components">
@@ -301,25 +198,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Stores the container for a control array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="controlAddedAtDesignTime">
@@ -329,25 +215,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Stores values to track whether a control in a control array was created at design time or at run time.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="controls">
@@ -357,25 +232,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Stores values that represent the controls in a control array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -385,7 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,21 +256,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the number of controls in a control array.</summary>
-        <returns>A Short that contains the number of controls.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property in a [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md) to perform an operation on the controls in a control array.  
-  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -417,7 +268,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -427,19 +277,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources that are used by a control in a control array and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the disposing parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with the disposing parameter set to `false`.  
-  
- When the disposing parameter is `true`, this method releases all resources held by any managed objects that this control references. This method invokes the `Dispose()` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="fIsEndInitCalled">
@@ -449,25 +289,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Stores a value indicating whether the initialization code for a control array's container has finished executing.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetControlInstanceType">
@@ -477,7 +306,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -485,15 +313,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the type of a control in a control array.</summary>
-        <returns>This method must be overridden.  
-  
- The <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" /> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0. Because this class is not typically used to create an instance of the class, this <see langword="Protected" /> method is usually not called directly but is instead called by a derived class.  
-  
- <block subset="none" type="note">  
- Functions and objects in the <see cref="N:Microsoft.VisualBasic.Compatibility.VB6" /> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
-</block></returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -504,7 +325,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -512,19 +332,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a reference to an enumerator object, which is used to iterate over a control array.</summary>
-        <returns>A <see cref="T:System.Collections.IEnumerator" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HookUpControlEvents">
@@ -534,7 +344,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -544,21 +353,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">A <see cref="T:System.Windows.Forms.Control" />.</param>
-        <summary>Adds event handlers for a control in a control array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method must be overridden.  
-  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="indices">
@@ -568,25 +365,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Stores the indices for a control array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LBound">
@@ -596,7 +382,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -604,21 +389,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see langword="Short" /> that contains the smallest available subscript for a control array.</summary>
-        <returns>A <see langword="Short" /> that contains the lower bounds of a control array.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `LBound` function is used with the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.UBound%2A> function to determine the size of a control array.  
-  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -628,7 +401,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -638,21 +410,9 @@
         <Parameter Name="Index" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Index">A <see langword="Short" /> that represents the index of the new control.</param>
-        <summary>Creates a new element in a control array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is the equivalent of the Visual Basic 6.0 `Load` function for dynamically creating a new control array element.  
-  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="Index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
@@ -669,18 +429,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Begins the initialization of the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Design environments typically use this method to start the initialization of a component that is used on a form or used by another component. The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.EndInit%2A> method ends the initialization. Using the `BeginInit` and <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.EndInit%2A> methods prevents the control from being used before it is fully initialized. The initialization occurs at run time.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit">
@@ -697,18 +447,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the initialization of a control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Design environments typically use this method to finish the initialization of a component that is used on a form or used by another component. The `EndInit` method ends the initialization. Using the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BeginInit%2A> and `EndInit` methods prevents the control from being used before it is fully initialized. The initialization occurs at run time.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UBound">
@@ -718,7 +458,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -726,21 +465,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see langword="Short" /> that contains the largest available subscript for a control array.</summary>
-        <returns>A <see langword="Short" /> that contains the upper bounds of a control array.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `UBound` function is used with the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.LBound%2A> function to determine the size of a control array.  
-  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Unload">
@@ -750,7 +477,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -760,24 +486,9 @@
         <Parameter Name="Index" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Index">A <see langword="Short" /> that represents the index of the control to remove.</param>
-        <summary>Removes a control from a control array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is the equivalent of the Visual Basic 6.0 `Unload` function for dynamically removing a control array element.  
-  
-> [!NOTE]
->  Only controls that were added dynamically by using the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.Load%2A> method can be removed from the control array.  
-  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray> class is the base class for all control arrays that are used in applications upgraded from Visual Basic 6.0.  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="Index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

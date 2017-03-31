@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Enables setting message-level security properties on the <see cref="T:System.ServiceModel.NetMsmqBinding" /> binding.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -54,16 +51,9 @@
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the algorithm suite used for security messages at the SOAP level.</summary>
-        <value>The <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" /> setting for messages sent over the <see cref="T:System.ServiceModel.NetMsmqBinding" /> binding.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> defines a variety of algorithms, such as Canonicalization, Digest, KeyWrap, Signature, Encryption, and KeyDerivation. This property is most relevant when working with a platform that uses a set of algorithms different than the default. You should be aware of the strengths and weaknesses of the relevant algorithms when making modifications to this property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientCredentialType">
@@ -73,7 +63,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -85,31 +74,9 @@
         <ReturnType>System.ServiceModel.MessageCredentialType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.MessageCredentialType" /> security setting for messages sent over the MSMQ transport.</summary>
-        <value>The <see cref="T:System.ServiceModel.MessageCredentialType" /> security setting for messages sent over the MSMQ transport.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be set to one of the following values:  
-  
--   None: This allows the service to interact with anonymous clients. Neither the service nor the client requires a credential.  
-  
--   Windows: This enables the SOAP exchanges to be under the authenticated context of a Windows credential. This always performs Kerberos-based authentication.  
-  
--   UserName: This enables the service to require that the client be authenticated using a UserName credential. This credential needs to be specified using <xref:System.ServiceModel.Description.ClientCredentials> class.  
-  
-    > [!NOTE]
-    >  [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] does not support sending a password digest or deriving keys using password and using such keys for message security. As such, [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] enforces that the exchange is secured when using UserName credentials. This mode requires that the service certificate be specified on the client side using ClientCredential behavior and serviceCertificate.  
-  
--   Certificate: This enables the service to require that the client be authenticated using a certificate. The client credential in this case needs to be specified using the <xref:System.ServiceModel.Description.ClientCredentials> class or ClientCredentials behavior. The service credential in this case needs to be specified using the <xref:System.ServiceModel.Description.ClientCredentials> class or ClientCredentials behavior by specifying the serviceCertificate.  
-  
--   CardSpace: This allows the service to require that the client be authenticated using a [!INCLUDE[infocard1](~/add/includes/infocard1-md.md)]. The serviceCertiifcate must be provisioned in the ClientCredential behavior.  
-  
- The Certificate credential for the `MessageSecurityOverMsmq` is relevant only when the security mode is set to `Both` or `Message`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -119,7 +86,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

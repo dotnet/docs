@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Enables in-place updates to existing blocks of <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Windows.Media.Imaging.BitmapMetadata> is not associated with a <xref:System.Windows.Media.Imaging.BitmapFrame> that is obtained through a <xref:System.Windows.Media.Imaging.BitmapDecoder>, the attempt to write metadata by using the in-place writer will fail. Successful write operations apply the metadata directly to the image stream by means of a decoder.  
-  
- In-place metadata updates fail if an attempt is made to write metadata that a given bitmap format does not support.  
-  
- To perform in-place metadata edits, the bitmap must be decoded using either the <xref:System.Windows.Media.Imaging.BitmapCacheOption> or <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache options. <xref:System.Windows.Media.Imaging.BitmapCacheOption> does not guarantee access to the metadata stream needed for in-place metadata edits.  
-  
-   
-  
-## Examples  
- This example shows how you can modify metadata within an image without having to re-encode the image. The following example uses an InPlaceBitmapMetadataWriter to write metadata into an image.  
-  
- [!code-cpp[BitmapMetadata#SetQuery](~/add/codesnippet/cpp/bitmapmetadata/BitmapMetadata.cpp#setquery)]
- [!code-cs[BitmapMetadata#SetQuery](~/add/codesnippet/csharp/BitmapMetadata/BitmapMetadata.cs#setquery)]
- [!code-vb[BitmapMetadata#SetQuery](~/add/codesnippet/visualbasic/BitmapMetadata/BitmapMetadata.vb#setquery)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -43,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,18 +29,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -72,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -193,21 +156,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether image metadata can be saved successfully.</summary>
-        <returns>
-          <see langword="true" /> if bitmap metadata can be written successfully; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the TrySave method to determine whether metadata can be written successfully to a [!INCLUDE[TLA#tla_tiff](~/add/includes/tlasharptla-tiff-md.md)] image.  
-  
- [!code-cpp[bitmapmetadata#SetQuery](~/add/codesnippet/cpp/bitmapmetadata/BitmapMetadata.cpp#setquery)]
- [!code-cs[bitmapmetadata#SetQuery](~/add/codesnippet/csharp/BitmapMetadata/BitmapMetadata.cs#setquery)]
- [!code-vb[bitmapmetadata#SetQuery](~/add/codesnippet/visualbasic/BitmapMetadata/BitmapMetadata.vb#setquery)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

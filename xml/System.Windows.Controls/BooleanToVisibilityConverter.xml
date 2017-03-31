@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.BooleanToVisibilityConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the converter that converts Boolean values to and from <see cref="T:System.Windows.Visibility" /> enumeration values.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the BooleanToVisibilityConverter class to convert a Boolean to and from a <xref:System.Windows.Visibility> value. The <xref:System.Windows.Controls.BooleanToVisibilityConverter.Convert%2A> method returns <xref:System.Windows.Visibility?displayProperty=fullName> when `true` is passed in or <xref:System.Windows.Visibility?displayProperty=fullName> when `false` is passed in. Note that the <xref:System.Windows.Visibility?displayProperty=fullName> value hides the control and does not reserve space for it in a layout. When you call the <xref:System.Windows.Controls.BooleanToVisibilityConverter.ConvertBack%2A> method and specify a reference to an object, it returns `true` if the object is <xref:System.Windows.Visibility>; otherwise, it returns `false`.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +31,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.BooleanToVisibilityConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,13 +58,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">The Boolean value to convert. This value can be a standard Boolean value or a nullable Boolean value.</param>
-        <param name="targetType">This parameter is not used.</param>
-        <param name="parameter">This parameter is not used.</param>
-        <param name="culture">This parameter is not used.</param>
-        <summary>Converts a Boolean value to a <see cref="T:System.Windows.Visibility" /> enumeration value.</summary>
-        <returns>
-          <see cref="T:System.Windows.Visibility" /> if <paramref name="value" /> is <see langword="true" />; otherwise, <see cref="T:System.Windows.Visibility" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,13 +86,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Windows.Visibility" /> enumeration value.</param>
-        <param name="targetType">This parameter is not used.</param>
-        <param name="parameter">This parameter is not used.</param>
-        <param name="culture">This parameter is not used.</param>
-        <summary>Converts a <see cref="T:System.Windows.Visibility" /> enumeration value to a Boolean value.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="value" /> is <see cref="T:System.Windows.Visibility" />; otherwise, <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

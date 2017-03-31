@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,24 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides specifications for protocols and data formats for the messages used in the action supported by the XML Web service. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `OperationBinding` class corresponds to the Web Services Description Language (WSDL) `<operation>` element enclosed by the `<binding>` element, which in turn corresponds to the <xref:System.Web.Services.Description.Binding> class. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of the properties and methods exposed by the `OperationBinding` class. It takes an existing <xref:System.Web.Services.Description.ServiceDescription> and adds support for the SOAP protocol.  
-  
- [!code-cs[OperationBinding_OperationBinding#1](~/add/codesnippet/csharp/t-system.web.services.de_28_1.cs)]
- [!code-vb[OperationBinding_OperationBinding#1](~/add/codesnippet/visualbasic/t-system.web.services.de_28_1.vb)]
- [!code-cpp[OperationBinding_OperationBinding#1](~/add/codesnippet/cpp/t-system.web.services.de_28_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,12 +28,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.OperationBinding" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,30 +44,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.Binding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Services.Description.Binding" /> of which the current <see cref="T:System.Web.Services.Description.OperationBinding" /> is a member.</summary>
-        <value>A binding of which the current <see cref="T:System.Web.Services.Description.OperationBinding" /> is a member.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current <xref:System.Web.Services.Description.OperationBinding> is a member of the <xref:System.Web.Services.Description.Binding.Operations%2A> collection.  
-  
-   
-  
-## Examples  
- [!code-cs[OperationBinding_OperationBinding#5](~/add/codesnippet/csharp/p-system.web.services.de_8_1.cs)]
- [!code-vb[OperationBinding_OperationBinding#5](~/add/codesnippet/visualbasic/p-system.web.services.de_8_1.vb)]
- [!code-cpp[OperationBinding_OperationBinding#5](~/add/codesnippet/cpp/p-system.web.services.de_8_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Extensions">
@@ -93,7 +63,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -105,23 +75,9 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of extensibility elements specific to the current <see cref="T:System.Web.Services.Description.OperationBinding" />.</summary>
-        <value>A collection of extensibility elements.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
-## Examples  
- [!code-cs[OperationBinding_OperationBinding#6](~/add/codesnippet/csharp/p-system.web.services.de_75_1.cs)]
- [!code-vb[OperationBinding_OperationBinding#6](~/add/codesnippet/visualbasic/p-system.web.services.de_75_1.vb)]
- [!code-cpp[OperationBinding_OperationBinding#6](~/add/codesnippet/cpp/p-system.web.services.de_75_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Faults">
@@ -131,7 +87,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -143,18 +99,9 @@
         <ReturnType>System.Web.Services.Description.FaultBindingCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Services.Description.FaultBindingCollection" /> associated with the <see cref="T:System.Web.Services.Description.OperationBinding" /> instance.</summary>
-        <value>A fault binding collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[OperationBinding_OperationBinding#6](~/add/codesnippet/csharp/p-system.web.services.de_9_1.cs)]
- [!code-vb[OperationBinding_OperationBinding#6](~/add/codesnippet/visualbasic/p-system.web.services.de_9_1.vb)]
- [!code-cpp[OperationBinding_OperationBinding#6](~/add/codesnippet/cpp/p-system.web.services.de_9_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -164,7 +111,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -176,23 +123,9 @@
         <ReturnType>System.Web.Services.Description.InputBinding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.Services.Description.InputBinding" /> associated with the <see cref="T:System.Web.Services.Description.OperationBinding" />.</summary>
-        <value>An <see cref="T:System.Web.Services.Description.InputBinding" /> associated with the <see cref="T:System.Web.Services.Description.OperationBinding" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An `OperationBinding` will be associated with exactly one `InputBinding`.  
-  
-   
-  
-## Examples  
- [!code-cs[OperationBinding_OperationBinding#4](~/add/codesnippet/csharp/p-system.web.services.de_29_1.cs)]
- [!code-vb[OperationBinding_OperationBinding#4](~/add/codesnippet/visualbasic/p-system.web.services.de_29_1.vb)]
- [!code-cpp[OperationBinding_OperationBinding#4](~/add/codesnippet/cpp/p-system.web.services.de_29_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Output">
@@ -202,7 +135,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -214,21 +147,9 @@
         <ReturnType>System.Web.Services.Description.OutputBinding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.Services.Description.OutputBinding" /> associated with the <see cref="T:System.Web.Services.Description.OperationBinding" />.</summary>
-        <value>An <see cref="T:System.Web.Services.Description.OutputBinding" /> associated with the <see cref="T:System.Web.Services.Description.OperationBinding" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An `OperationBinding` will be associated with exactly one `OutputBinding`.  
-  
-   
-  
-## Examples  
- OperationBinding_OperationBinding#5  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

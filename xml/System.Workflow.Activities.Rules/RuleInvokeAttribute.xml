@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleInvokeAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,29 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates that a method is invoked by a condition. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute is used to support a forward chaining model that will cause the reevaluation of rules based on state change. The <xref:System.Workflow.Activities.Rules.RuleReadAttribute>, RuleInvokeAttribute, and <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> classes each indicate the properties used to read a condition, write an action, and invoke a method. These attributes enable the workflow to only reevaluate rules that will change the final output.  
-  
-   
-  
-## Examples  
- The following code example demonstrates proper usage of the RuleInvokeAttribute.  
-  
-```c#  
-[RuleInvokeAttribute("UpdateAttributeValue")]  
-  
-bool DoSomething()  
-{  
-    return attributevalue();  
-}  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,15 +27,14 @@ bool DoSomething()
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="methodInvoked" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="methodInvoked">The method invoked by the rule.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleInvokeAttribute" /> class.</summary>
+        <param name="methodInvoked">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,15 +45,14 @@ bool DoSomething()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the method invoked by the condition.</summary>
-        <value>The method invoked by the condition.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

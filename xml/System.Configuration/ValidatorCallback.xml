@@ -1,10 +1,9 @@
 <Type Name="ValidatorCallback" FullName="System.Configuration.ValidatorCallback">
-  <TypeSignature Language="C#" Value="public delegate void ValidatorCallback(object value);" />
+  <TypeSignature Language="C#" Value="public delegate void ValidatorCallback(object o);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidatorCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ValidatorCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,8 +16,8 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="value">The callback method.</param>
-    <summary>Represents a method to be called after the validation of an object.</summary>
+    <param name="o">To be added.</param>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

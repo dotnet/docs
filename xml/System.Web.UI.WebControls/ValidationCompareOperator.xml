@@ -4,35 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidationCompareOperator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the validation comparison operators used by the <see cref="T:System.Web.UI.WebControls.CompareValidator" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ValidationCompareOperator enumeration represents the comparison operations that can be performed by the <xref:System.Web.UI.WebControls.CompareValidator> control.  
-  
-> [!NOTE]
->  Unlike the other operators, `DataTypeCheck` is a unary operation. Only the data type of the input control being validated is checked. If the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> or <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> properties are set when this operation is used, those values are not checked.  
-  
-   
-  
-## Examples  
-  
-> [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-cs[Classic CompareValidator Example#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_67_1.aspx)]
- [!code-vb[Classic CompareValidator Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_67_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DataTypeCheck">
@@ -42,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A comparison for data type only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Equal">
@@ -59,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A comparison for equality.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThan">
@@ -76,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A comparison for greater than.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanEqual">
@@ -93,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A comparison for greater than or equal to.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -110,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A comparison for less than.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThanEqual">
@@ -127,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A comparison for less than or equal to.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotEqual">
@@ -144,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A comparison for inequality.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorageScope" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -19,24 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enumerates the levels of isolated storage scope that are supported by <see cref="T:System.IO.IsolatedStorage.IsolatedStorage" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use IsolatedStorageScope to specify a degree of scope for an isolated store. You can specify combinations of these levels that are supported by <xref:System.IO.IsolatedStorage.IsolatedStorage>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how the IsolatedStorageScope enumeration is used in the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> methods.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#15](~/add/codesnippet/visualbasic/t-system.io.isolatedstor_0_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#15](~/add/codesnippet/cpp/t-system.io.isolatedstor_0_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#15](~/add/codesnippet/csharp/t-system.io.isolatedstor_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -46,14 +34,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Isolated storage scoped to the application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Assembly">
@@ -63,14 +55,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Isolated storage scoped to the identity of the assembly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Domain">
@@ -80,14 +76,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Isolated storage scoped to the application domain identity.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Machine">
@@ -97,14 +97,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Isolated storage scoped to the machine.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -114,14 +118,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No isolated storage usage.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roaming">
@@ -131,14 +139,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The isolated store can be placed in a location on the file system that might roam (if roaming user data is enabled on the underlying operating system).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -148,14 +160,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Isolated storage scoped by user identity.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

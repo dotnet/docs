@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.PackageSerializationManager" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a base class to manage the serializers and type converters that insert [!INCLUDE[TLA#tla_wpf](~/add/includes/tlasharptla-wpf-md.md)] root objects into an [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] package.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +26,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -37,7 +35,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.PackageSerializationManager" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,8 +55,8 @@
         <Parameter Name="serializedObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="serializedObject">The object to save.</param>
-        <summary>When overridden in a derived class, saves the specified serialized object to an [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] package.</summary>
+        <param name="serializedObject">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This member supports the [!INCLUDE[TLA#tla_wpf](~/add/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.TextUnit" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,31 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents pre-defined units of text for the purposes of navigation within a document.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Any method using TextUnit will deprecate `up` to the next supported TextUnit if the given TextUnit is not supported by the control.  
-  
- The order, from smallest unit to largest, is listed below.  
-  
--   Character  
-  
--   Format  
-  
--   Word  
-  
--   Line  
-  
--   Paragraph  
-  
--   Page  
-  
--   Document  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Character">
@@ -53,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the text unit is one character in length.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -70,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the text unit is an entire document in length.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -87,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the text unit is the length of a single, common format specification, such as bold, italic, or similar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -104,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the text unit is one line in length.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -121,14 +93,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the text unit is one document-specific page in length.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Paragraph">
@@ -138,14 +109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the text unit is one paragraph in length.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Word">
@@ -155,14 +125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the text unit is one word in length.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

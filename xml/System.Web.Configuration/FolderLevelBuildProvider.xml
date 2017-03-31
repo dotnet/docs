@@ -11,33 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents configuration settings that enable use of the <see cref="T:System.Web.Compilation.BuildProvider" /> class for specific folders.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ASP.NET build environment uses FolderLevelBuildProvider objects to generate source code for different file types and subfolders in an application. Classes that are derived from the FolderLevelBuildProvider class generate source code for folders such as Bin, App_GlobalResources, App_LocalResources, App_WebReferences, App_Browsers, Theme, and for other custom folders. Typically, you do not create an instance of the FolderLevelBuildProvider class directly. Instead, you implement a class that derives from <xref:System.Web.Compilation.BuildProvider> and apply the <xref:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute> class to it, and then configure the derived class for use in the ASP.NET build environment. The <xref:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute> class targets folders instead of files.  
-  
- You use instances of the FolderLevelBuildProvider class together with <xref:System.Web.Compilation.AssemblyBuilder> objects to build one or more files into a compiled assembly. The FolderLevelBuildProvider instance generates source code in the appropriate language for individual files, and the <xref:System.Web.Compilation.AssemblyBuilder> object builds the source code contributed by each FolderLevelBuildProvider instance into a single assembly.  
-  
- The FolderLevelBuildProvider class is specified in the `configuration` section of the Web.config file.  
-  
-   
-  
-## Examples  
- The following example shows how to add a build provider named `BuildProvider1` to the Web.config file.  
-  
-```  
-<compilation>  
-  <folderLevelBuildProviders>  
-    <add type="BuildProvider1, Assembly1,Version=1.0.0.0,    
-        PublicKeyToken=xxxxx"/>  
-  </folderLevelBuildProviders>  
-</compilation>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,9 +29,9 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The identifier for the <see cref="T:System.Web.Compilation.BuildProvider" /> to use.</param>
-        <param name="type">The fully qualified name of the <see cref="T:System.Web.Compilation.BuildProvider" /> to use.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> class by using an identifier and the fully qualified name.</summary>
+        <param name="name">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,10 +51,9 @@
         <Parameter Name="provider" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="provider">The build provider object to compare.</param>
-        <summary>Returns a value that indicates whether a specified object is equal to the current <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the specified folder level build provider object is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,16 +71,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates a hash code for the <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object.</summary>
-        <returns>The hash code for the <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method generates an integer that can be use to identify the folder level build provider object. This method inherits from the <xref:System.Object.GetHashCode%2A> method. The <xref:System.Object.GetHashCode%2A> method is suitable for hashing algorithms and data structures such as a hash table.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -130,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object.</summary>
-        <value>The name of the build provider object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,8 +141,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set the fully qualified name of the build provider class.</summary>
-        <value>The fully qualified name of the build provider class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

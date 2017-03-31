@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,23 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides static methods for the serialization and deserialization of <see cref="T:System.TimeSpan" /> to a string that is formatted as XSD <see langword="duration" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about XSD data types, see the "XML Data Types Reference" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
-  
-   
-  
-## Examples  
- The following code example shows how to use the methods in the SoapDuration class to convert between a <xref:System.TimeSpan> object and an XSD `duration` string.  
-  
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#10](~/add/codesnippet/csharp/t-system.runtime.remotin_39_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#10](~/add/codesnippet/cpp/t-system.runtime.remotin_39_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,12 +28,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +44,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,22 +54,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.String" /> to convert.</param>
-        <summary>Converts the specified <see cref="T:System.String" /> into a <see cref="T:System.TimeSpan" /> object.</summary>
-        <returns>A <see cref="T:System.TimeSpan" /> object that is obtained from <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Parse method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class.  
-  
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#11](~/add/codesnippet/csharp/m-system.runtime.remotin_31_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#11](~/add/codesnippet/cpp/m-system.runtime.remotin_31_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Runtime.Remoting.RemotingException">
-          <paramref name="value" /> does not contain a date and time that corresponds to any of the recognized format patterns.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -94,14 +67,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -109,20 +77,10 @@
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeSpan">The <see cref="T:System.TimeSpan" /> object to convert.</param>
-        <summary>Returns the specified <see cref="T:System.TimeSpan" /> object as a <see cref="T:System.String" />.</summary>
-        <returns>A <see cref="T:System.String" /> representation of <paramref name="timeSpan" /> in the format "PxxYxxDTxxHxxMxx.xxxS" or "PxxYxxDTxxHxxMxxS". The "PxxYxxDTxxHxxMxx.xxxS" is used if <see cref="System.TimeSpan.Milliseconds%2A" /> does not equal zero.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the ToString method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class.  
-  
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#12](~/add/codesnippet/csharp/6011059d-3523-4af1-93bc-_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#12](~/add/codesnippet/cpp/6011059d-3523-4af1-93bc-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="timeSpan">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XsdType">
@@ -132,26 +90,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the XML Schema definition language (XSD) of the current SOAP type.</summary>
-        <value>A <see cref="T:System.String" /> that indicates the XSD of the current SOAP type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the XsdType property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration> class.  
-  
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#13](~/add/codesnippet/csharp/p-system.runtime.remotin_60_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration#13](~/add/codesnippet/cpp/p-system.runtime.remotin_60_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageCodecFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides attributes of an image encoder/decoder (codec).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ImageCodecFlags class is used by the <xref:System.Drawing.Imaging.ImageCodecInfo.Flags%2A> property of the <xref:System.Drawing.Imaging.ImageCodecInfo> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BlockingDecode">
@@ -34,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The decoder has blocking behavior during the decoding process.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Builtin">
@@ -51,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The codec is built into GDI+.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decoder">
@@ -68,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The codec supports decoding (reading).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Encoder">
@@ -85,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The codec supports encoding (saving).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SeekableEncode">
@@ -102,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The encoder requires a seekable output stream.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SupportBitmap">
@@ -119,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The codec supports raster images (bitmaps).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SupportVector">
@@ -136,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The codec supports vector images (metafiles).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -153,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -170,14 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

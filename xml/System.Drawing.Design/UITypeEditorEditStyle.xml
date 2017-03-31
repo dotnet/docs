@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.UITypeEditorEditStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies identifiers that indicate the value editing style of a <see cref="T:System.Drawing.Design.UITypeEditor" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use UITypeEditorEditStyle to specify the style of a custom <xref:System.Drawing.Design.UITypeEditor>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.DocumentDesigner> class.  
-  
- [!code-vb[System.Windows.Forms.Design.DocumentDesigner#93](~/add/codesnippet/visualbasic/t-system.drawing.design._4_1.vb)]
- [!code-cs[System.Windows.Forms.Design.DocumentDesigner#93](~/add/codesnippet/csharp/t-system.drawing.design._4_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DropDown">
@@ -32,25 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays a drop-down arrow button and hosts the user interface (UI) in a drop-down dialog box.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use UITypeEditorEditStyle to specify the style of a custom <xref:System.Drawing.Design.UITypeEditor>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.DocumentDesigner> class.  
-  
- [!code-vb[System.Windows.Forms.Design.DocumentDesigner#93](~/add/codesnippet/visualbasic/t-system.drawing.design._4_1.vb)]
- [!code-cs[System.Windows.Forms.Design.DocumentDesigner#93](~/add/codesnippet/csharp/t-system.drawing.design._4_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Modal">
@@ -60,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays an ellipsis (...) button to start a modal dialog box, which requires user input before continuing a program, or a modeless dialog box, which stays on the screen and is available for use at any time but permits other user activities.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -77,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides no interactive user interface (UI) component.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

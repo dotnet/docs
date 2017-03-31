@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AuthenticationTypes" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,26 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The AuthenticationTypes enumeration specifies the types of authentication used in <see cref="N:System.DirectoryServices" />. This enumeration has a <see cref="T:System.FlagsAttribute" /> attribute that allows a bitwise combination of its member values.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Secure flag can be used in combination with other flags such as ReadonlyServer, FastBind.  
-  
- Serverless binding refers to a process in which a client attempts to bind to an Active Directory Domain Services object without explicitly specifying an Active Directory Domain Services server in the binding string, for example:  
-  
-```  
-LDAP://CN=jsmith,DC=fabrikam,DC=Com  
-```  
-  
- This is possible because the Lightweight Directory Access Protocol (LDAP) provider relies on the locator services of Windows 2000 to find the best domain controller (DC) for the client. However, the client must have an account on the Active Directory Domain Services domain controller to take advantage of the serverless binding feature, and the domain controller that is used by a serverless bind will always be located in the default domain (the domain associated with the current security context of the thread that's doing the binding).  
-  
-> [!NOTE]
->  None of these options are supported by the Novell Netware Directory Service (NDS) system provider.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Anonymous">
@@ -45,14 +26,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No authentication is performed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delegation">
@@ -62,14 +42,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enables Active Directory Services Interface (ADSI) to delegate the user's security context, which is necessary for moving objects across domains.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Encryption">
@@ -79,14 +58,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attaches a cryptographic signature to the message that both identifies the sender and ensures that the message has not been modified in transit.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FastBind">
@@ -96,14 +74,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that ADSI will not attempt to query the Active Directory Domain Services objectClass property.  Therefore, only the base interfaces that are supported by all ADSI objects will be exposed.  Other interfaces that the object supports will not be available. A user can use this option to boost the performance in a series of object manipulations that involve only methods of the base interfaces. However, ADSI does not verify if any of the request objects actually exist on the server. For more information, see the topic "Fast Binding Option for Batch Write/Modify Operations" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  For more information about the objectClass property, see the "Object-Class" topic in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -113,14 +90,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Equates to zero, which means to use basic authentication (simple bind) in the LDAP provider.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadonlyServer">
@@ -130,14 +106,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a WinNT provider, ADSI tries to connect to a domain controller. For Active Directory Domain Services, this flag indicates that a writable server is not required for a serverless binding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sealing">
@@ -147,14 +122,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Encrypts data using Kerberos. The Secure flag must also be set to use sealing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Secure">
@@ -164,14 +138,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Requests secure authentication. When this flag is set, the WinNT provider uses NTLM to authenticate the client. Active Directory Domain Services uses Kerberos, and possibly NTLM, to authenticate the client. When the user name and password are a null reference (<see langword="Nothing" /> in Visual Basic), ADSI binds to the object using the security context of the calling thread, which is either the security context of the user account under which the application is running or of the client user account that the calling thread is impersonating.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SecureSocketsLayer">
@@ -181,14 +154,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attaches a cryptographic signature to the message that both identifies the sender and ensures that the message has not been modified in transit. Active Directory Domain Services requires the Certificate Server be installed to support Secure Sockets Layer (SSL) encryption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerBind">
@@ -198,14 +170,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If your ADsPath includes a server name, specify this flag when using the LDAP provider. Do not use this flag for paths that include a domain name or for serverless paths. Specifying a server name without also specifying this flag results in unnecessary network traffic.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Signing">
@@ -215,14 +186,13 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Verifies data integrity to ensure that the data received is the same as the data sent. The Secure flag must also be set to use signing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

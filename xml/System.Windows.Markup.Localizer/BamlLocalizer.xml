@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Extracts resources from a BAML file and generates a localized version of a BAML source.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is the primary entry point to the BAML localization API. You must create an instance of this class for each BAML source that you localize.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use a BamlLocalizer.  
-  
- [!code-cs[GrabBaml#1](~/add/codesnippet/csharp/GrabBaml/GrabBaml.cs#1)]
- [!code-vb[GrabBaml#1](~/add/codesnippet/visualbasic/grabbaml/grabbaml.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,18 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="source">A file stream that contains the BAML input to be localized.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" /> class with the specified BAML source stream.</summary>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -59,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -67,12 +47,10 @@
         <Parameter Name="resolver" Type="System.Windows.Markup.Localizer.BamlLocalizabilityResolver" />
       </Parameters>
       <Docs>
-        <param name="source">A file stream that contains the BAML input to be localized.</param>
-        <param name="resolver">An instance of <see cref="T:System.Windows.Markup.Localizer.BamlLocalizabilityResolver" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" /> class with the specified localizability resolver and BAML source stream.</summary>
+        <param name="source">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -82,7 +60,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -91,13 +68,11 @@
         <Parameter Name="comments" Type="System.IO.TextReader" />
       </Parameters>
       <Docs>
-        <param name="source">A file stream that contains the BAML input to be localized.</param>
-        <param name="resolver">An instance of <see cref="T:System.Windows.Markup.Localizer.BamlLocalizabilityResolver" />.</param>
-        <param name="comments">Reads the localized XML comments associated with this BAML input.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" /> class with the specified localizability resolver, BAML source stream, and <see cref="T:System.IO.TextReader" />.</summary>
+        <param name="source">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <param name="comments">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ErrorNotify">
@@ -107,24 +82,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" /> encounters abnormal conditions.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Under normal circumstances, <xref:System.Windows.Markup.Localizer.BamlLocalizer> ignores errors and continues localizing the source BAML input. As a result, the output BAML is partially localized. By listening for errors this event can be used to stop the <xref:System.Windows.Markup.Localizer.BamlLocalizer> and stop processing a source BAML file.  
-  
- The most common user case where ErrorNotify might be raised is as a result of an <xref:System.Windows.Markup.Localizer.BamlLocalizer.UpdateBaml%2A> call where the update contained errors. For example, the event is raised if an attempted update set a duplicate key, or if the original and update did not have UID values that align.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtractResources">
@@ -134,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,19 +106,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Extracts all localizable resources from a BAML stream.</summary>
-        <returns>A copy of the localizable resources from a BAML stream, in the form of a <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the ExtractResources method.  
-  
- [!code-cs[GrabBaml#1](~/add/codesnippet/csharp/GrabBaml/GrabBaml.cs#1)]
- [!code-vb[GrabBaml#1](~/add/codesnippet/visualbasic/grabbaml/grabbaml.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnErrorNotify">
@@ -164,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,16 +127,9 @@
         <Parameter Name="e" Type="System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Required event arguments.</param>
-        <summary>Raises the <see cref="E:System.Windows.Markup.Localizer.BamlLocalizer.ErrorNotify" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you override this method, call base, unless you do not want the derived class to raise the event.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateBaml">
@@ -193,7 +139,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,12 +149,10 @@
         <Parameter Name="updates" Type="System.Windows.Markup.Localizer.BamlLocalizationDictionary" />
       </Parameters>
       <Docs>
-        <param name="target">The stream that will receive the updated BAML.</param>
-        <param name="updates">The resource updates to be applied to the source BAML.</param>
-        <summary>Applies resource updates to the BAML source and writes the updated version to a specified stream in order to create a localized version of the source BAML.</summary>
+        <param name="target">To be added.</param>
+        <param name="updates">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="target" /> or <paramref name="updates" /> are <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

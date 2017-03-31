@@ -11,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a container for metadata for a model.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The word *model* is used differently in the context of this class than it is typically used elsewhere. In an ASP.NET Web Forms application, the <xref:System.Web.ModelBinding.ModelBindingContext.ModelType%2A> attribute of a data-bound control specifies the type of a data element that the data control is bound to. This type is typically referred to as the model, and it typically corresponds to a row in a database table. The properties of the model typically correspond to columns of the table.  
-  
- A ModelMetadata object can provide metadata for the model itself or for a property of the model, or for a property of a complex property. When the ModelMetadata object pertains to a property, the word *model* refers to the property, and the word *container* refers to the model.  
-  
- For example, the model might be **Contact**, which has **Name** and **Age** properties, and the **Name** property might be a complex property composed of **FirstName** and **LastName**. When the ModelMetadata object pertains to the **Contact** object, the model type is **Contact** and there is no container. When the ModelMetadata object pertains to the **Name** property, the model type is **Name** and the container type is **Contact**. When the ModelMetadata object pertains to the **FirstName** property, the model type is **FirstName** and the container type is **Name**.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,12 +32,12 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="provider">The provider object.</param>
-        <param name="containerType">The type of the container, or <see langword="null" /> to create metadata for the model type.</param>
-        <param name="modelAccessor">The model accessor.</param>
-        <param name="modelType">The type of the model.</param>
-        <param name="propertyName">The name of the property, or <see langword="null" /> to create metadata for the model type.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelMetadata" /> class.</summary>
+        <param name="provider">To be added.</param>
+        <param name="containerType">To be added.</param>
+        <param name="modelAccessor">To be added.</param>
+        <param name="modelType">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +54,8 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection that contains additional metadata about the model.</summary>
-        <value>A collection that contains additional metadata about the model.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +72,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the container.</summary>
-        <value>The type of the container, or <see langword="null" /> if there is no container.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,9 +90,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether empty strings that are submitted in forms should be converted to <see langword="null" />.</summary>
-        <value>
-          <see langword="true" /> if empty strings should be converted to <see langword="null" />; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,16 +108,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the data type.</summary>
-        <value>The name of the data type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be used to provide additional information about the type of data that is stored by the model. For example, if the <xref:System.Web.ModelBinding.ModelMetadata.ModelType%2A> property is set to <xref:System.String>, this property might be "EmailAddress" or "Url" — that is, a name that indicates more than just that the data is typed as a string.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultOrder">
@@ -146,7 +127,7 @@
       </ReturnValue>
       <MemberValue>10000</MemberValue>
       <Docs>
-        <summary>An integer value that is always set to <c>10000</c>.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,8 +144,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets text that describes the model.</summary>
-        <value>The description text.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,8 +162,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a format string that should be applied when the model is displayed in display mode (as opposed to in edit mode).</summary>
-        <value>The format string.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,8 +180,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text to use in UI when the name of the model is displayed.</summary>
-        <value>The text to use as the name of the model.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +198,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the format string to use in UI in edit mode.</summary>
-        <value>The format string.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,8 +217,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns text to display as the name of the model in UI.</summary>
-        <returns>Text to display as the name of the model in UI. The default is the value of the <see cref="System.Web.ModelBinding.ModelMetadata.DisplayName%2A" /> property if that value is not <see langword="null" />. If the <see cref="System.Web.ModelBinding.ModelMetadata.DisplayName%2A" /> property is <see langword="null" />, the default value is the value of the <see cref="System.Web.ModelBinding.ModelMetadata.PropertyName%2A" /> property. If the <see cref="System.Web.ModelBinding.ModelMetadata.PropertyName%2A" /> property is <see langword="null" />, the default value comes from the <see cref="System.Reflection.MemberInfo.Name%2A" /> property of the <see cref="System.Web.ModelBinding.ModelMetadata.ModelType%2A" /> property.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,20 +236,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns text to display for the model when the model represents a complex object.</summary>
-        <returns>The property value is derived by examining the following sequence of related values until a return value is found.  
-  
-1.  If the <see cref="System.Web.ModelBinding.ModelMetadata.SimpleDisplayText%2A" /> property value is not <see langword="null" />, that value is returned.  
-  
-2.  If the <see cref="System.Web.ModelBinding.ModelMetadata.Model%2A" /> property is <see langword="null" />, the <see cref="System.Web.ModelBinding.ModelMetadata.NullDisplayText%2A" /> property value is returned.  
-  
-3.  If an attempt to convert the <see cref="System.Web.ModelBinding.ModelMetadata.Model%2A" /> property to a string returns <see langword="null" />, an empty string is returned.  
-  
-4.  If the string conversion of the <see cref="System.Web.ModelBinding.ModelMetadata.Model%2A" /> property value is the same as the <see cref="System.Type.FullName%2A" /> property of the <see cref="System.Web.ModelBinding.ModelMetadata.Model%2A" /> property type, that value is returned.  
-  
-5.  If there are no properties in the <see cref="System.Web.ModelBinding.ModelMetadata.Properties%2A" /> collection, an empty string is returned.  
-  
-6.  If none of the preceding tests have returned a value, the return value comes from the first property in the <see cref="System.Web.ModelBinding.ModelMetadata.Properties%2A" /> collection. If the <see cref="System.Web.ModelBinding.ModelMetadata.Model%2A" /> property of the first property is <see langword="null" />, the <see cref="System.Web.ModelBinding.ModelMetadata.NullDisplayText%2A" /> property value is returned; otherwise the result of converting the first property's <see cref="System.Web.ModelBinding.ModelMetadata.Model%2A" /> property to a string is returned.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,9 +257,9 @@
         <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="context">The model binding execution context.</param>
-        <summary>Returns a collection of validators that apply to the model.</summary>
-        <returns>A collection of validators.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,9 +276,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether surrounding HTML should be hidden.</summary>
-        <value>
-          <see langword="true" /> if surrounding HTML should be hidden; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,17 +294,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the model is a complex type.</summary>
-        <value>
-          <see langword="true" /> if the model is a complex type; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Built-in .NET Framework types are not considered complex types for purposes of this property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNullableValueType">
@@ -352,9 +312,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the model is a nullable value type.</summary>
-        <value>
-          <see langword="true" /> if the model is a nullable value type; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,9 +330,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the model can be updated.</summary>
-        <value>
-          <see langword="true" /> if the model is read-only; otherwise, <see langword="false" /> The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,9 +348,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the property is required.</summary>
-        <value>
-          <see langword="true" /> if the property is required; otherwise, <see langword="false" />. The default is <see langword="true" /> for non-nullable value types and <see langword="false" /> for all other types.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,8 +366,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the model object.</summary>
-        <value>The model object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -427,8 +384,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the model.</summary>
-        <value>The type of the model.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,8 +402,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the string that should be displayed when the model is <see langword="null" />.</summary>
-        <value>The string to display when the model is <see langword="null" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -463,8 +420,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an integer that indicates the order in which to display this property relative to other properties.</summary>
-        <value>The relative order in which to display this property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,8 +438,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelMetadata&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of model metadata objects that describe the properties of the model.</summary>
-        <value>Metadata for all properties in the model.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,8 +456,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the property.</summary>
-        <value>The name of the property if the model is a property; otherwise, <see langword="null" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -517,8 +474,8 @@
         <ReturnType>System.Web.ModelBinding.ModelMetadataProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the provider object for this metadata.</summary>
-        <value>The provider object for this metadata.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -535,9 +492,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether request validation is enabled.</summary>
-        <value>
-          <see langword="true" /> if request validation is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -554,16 +510,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a short version of the display name.</summary>
-        <value>The text to display when a short version of the model name is required.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The short display name can be used in a tooltip or in any UI where the complete display name might not fit. If this field is `null`, the <xref:System.Web.ModelBinding.ModelMetadata.DisplayName%2A> property should be used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowForDisplay">
@@ -579,9 +528,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the model should be displayed in the UI in display mode (as opposed to edit mode).</summary>
-        <value>
-          <see langword="true" /> if the model should be displayed in display mode; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -598,9 +546,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the property should be displayed in edit mode (as opposed to display mode).</summary>
-        <value>
-          <see langword="true" /> if the property should be displayed in edit mode; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -617,8 +564,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets text to display for the model when the model represents a complex object</summary>
-        <value>Text to display in UI for a complex object. The default value is determined by calling the <see cref="System.Web.ModelBinding.ModelMetadata.GetSimpleDisplayText%2A" /> method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -635,8 +582,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates what template (data control) should be used in UI for the model.</summary>
-        <value>A value that indicates what template (data control) should be used in UI for the model.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -653,16 +600,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets watermark text for a text box.</summary>
-        <value>The watermark text.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property contains text to display as a watermark when a property is rendered for editing in a text box. The default value is `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

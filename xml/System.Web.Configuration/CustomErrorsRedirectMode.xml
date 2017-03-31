@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CustomErrorsRedirectMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies values for how the URL of the original request is handled when a custom error page is displayed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You use the CustomErrorsRedirectMode values when you set the <xref:System.Web.Configuration.CustomErrorsSection.RedirectMode%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ResponseRedirect">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.CustomErrorsRedirectMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Display the error page and change the URL of the original request.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResponseRewrite">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.CustomErrorsRedirectMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Display the error page without changing the original URL.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

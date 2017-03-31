@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the ImportGroup element in an MSBuild project.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,17 +36,10 @@
         <Parameter Name="project" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="project">The project to import.</param>
-        <summary>Adds a new import after the last import in this import group.</summary>
-        <returns>Returns the new import.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Convenience method that picks a location based on a heuristic.  
-  
- ]]></format>
-        </remarks>
+        <param name="project">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Imports">
@@ -62,8 +55,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectImportElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all properties in this project import.</summary>
-        <value>Returns all properties in this project import.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

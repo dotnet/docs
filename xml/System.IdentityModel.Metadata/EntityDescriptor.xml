@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an entity descriptor.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,15 +26,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IdentityModel.Metadata.EntityDescriptor.EntityId%2A> property is initialized to `null` in the new instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -50,8 +43,8 @@
         <Parameter Name="entityId" Type="System.IdentityModel.Metadata.EntityId" />
       </Parameters>
       <Docs>
-        <param name="entityId">The entity ID. Initializes the <see cref="System.IdentityModel.Metadata.EntityDescriptor.EntityId%2A" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> class that has the specified entity ID.</summary>
+        <param name="entityId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +61,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.ContactPerson&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of <see cref="T:System.IdentityModel.Metadata.ContactPerson" /> for this descriptor.</summary>
-        <value>The collection of contact person objects. The default is an empty collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +79,8 @@
         <ReturnType>System.IdentityModel.Metadata.EntityId</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the entity ID for this descriptor.</summary>
-        <value>The entity ID. The default is <see langword="null" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the federation ID for this descriptor.</summary>
-        <value>The federation ID. The default is <see langword="null" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +115,8 @@
         <ReturnType>System.IdentityModel.Metadata.Organization</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the organization for this descriptor.</summary>
-        <value>The organization. The default is <see langword="null" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +133,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.RoleDescriptor&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of role descriptors for this descriptor.</summary>
-        <value>The collection of role descriptors. The default is an empty collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

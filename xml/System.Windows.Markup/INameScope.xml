@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INameScope" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.INameScope" />
   <AssemblyInfo>
-    <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -17,22 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a contract for how names of elements should be accessed within a particular XAML namescope, and how to enforce uniqueness of names within that XAML namescope.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This interface is implemented by classes that have child elements that are intended to be reused through the template or defer metaphor. Templates, factories and similar constructs must have unique XAML namescopes that are separate from a main object graph and root XAML. The principle here is that there should be no name collisions when objects created from those child elements are introduced to an application's object graph, and so that DOM operations and XAML reference techniques that rely on the name identifier can rely on name uniqueness in each XAML namescope.  
-  
- In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/add/includes/net-v40-long-md.md)], INameScope is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
-  
-## WPF Usage Notes  
- This interface is implemented by the WPF class <xref:System.Windows.NameScope>. Most XAML namescope operations in [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] operate by using <xref:System.Windows.NameScope> instances, but information is occasionally communicated internally by using INameScope references.  
-  
- Examples of WPF classes that use a factory or defer metaphor combined with XAML representation are <xref:System.Windows.Style> and <xref:System.Windows.FrameworkTemplate>. These implementations usually rely on the explicit versions of the interface methods available from the <xref:System.Windows.NameScope> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FindName">
@@ -40,10 +22,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object FindName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.INameScope.FindName(System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,17 +33,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name identifier for the object being requested.</param>
-        <summary>Returns an object that has the provided identifying name.</summary>
-        <returns>The object, if found. Returns <see langword="null" /> if no object of that name was found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Valid name strings in XAML markup must match the requirements documented in [XamlName Grammar](../Topic/XamlName%20Grammar.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterName">
@@ -73,10 +44,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterName(string name, object scopedElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.INameScope.RegisterName(System.String,System.Object)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,17 +56,10 @@
         <Parameter Name="scopedElement" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name to register.</param>
-        <param name="scopedElement">The specific element that the provided <c>name</c> refers to.</param>
-        <summary>Registers the provided name into the current XAML namescope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Duplicate names in a XAML namescope are not permitted.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="scopedElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnregisterName">
@@ -107,10 +67,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.INameScope.UnregisterName(System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -122,8 +78,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name to unregister.</param>
-        <summary>Unregisters the provided name from the current XAML namescope.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.GroupScope" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the scope of the group principal.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The group's scope is global. This group type is supported on AD DS. When a global group is specified with an AD LDS directory, a Local group is created instead.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Local">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scope of the group is local. This group type is supported on AD DS and AD LDS.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Universal">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scope of the group is universal. This group type is supported on AD DS and AD LDS.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

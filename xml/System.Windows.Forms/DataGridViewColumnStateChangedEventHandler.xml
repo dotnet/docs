@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnStateChangedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,30 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewColumnStateChangedEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.DataGridView.ColumnStateChanged" /> event of a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised when the value of one of the following column properties changes for a <xref:System.Windows.Forms.DataGridViewColumn> in a <xref:System.Windows.Forms.DataGridView> control  
-  
--   <xref:System.Windows.Forms.DataGridViewBand.Displayed%2A>  
-  
--   <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A>  
-  
--   <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A>  
-  
--   <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A>  
-  
--   <xref:System.Windows.Forms.DataGridViewBand.Selected%2A>  
-  
--   <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A>  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

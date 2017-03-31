@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingCompleteState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the result of a completed binding operation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BindingCompleteState is used by the <xref:System.Windows.Forms.BindingCompleteEventArgs> type.  
-  
-   
-  
-## Examples  
- The following code example demonstrates handling the <xref:System.Windows.Forms.Binding.BindingComplete> event and using the BindingCompleteState. To run this code, paste it into an empty code file.  
-  
- [!code-cs[System.Windows.Forms.DataConnectorBindingComplete#3](~/add/codesnippet/csharp/t-system.windows.forms.b_14_1.cs)]
- [!code-cpp[System.Windows.Forms.DataConnectorBindingComplete#3](~/add/codesnippet/cpp/t-system.windows.forms.b_14_1.cpp)]
- [!code-vb[System.Windows.Forms.DataConnectorBindingComplete#3](~/add/codesnippet/visualbasic/t-system.windows.forms.b_14_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DataError">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingCompleteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An indication that the binding operation failed with a data error.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingCompleteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An indication that the binding operation failed with an exception.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingCompleteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An indication that the binding operation completed successfully.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

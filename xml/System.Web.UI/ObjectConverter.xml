@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ObjectConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Converts an object from one object type to another object type. This class is obsolete. Use the <see cref="T:System.Convert" /> class and the <see cref="System.String.Format%2A" /> method instead.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ObjectConverter" /> class. This class is obsolete. Use the <see cref="T:System.Convert" /> class and the <see cref="System.String.Format%2A" /> method instead.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,14 +53,12 @@
         <Parameter Name="formatString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The object to convert.</param>
-        <param name="toType">The <see cref="T:System.Type" /> to convert <c>value</c> to.</param>
-        <param name="formatString">The format string to apply during conversion.</param>
-        <summary>Converts an object from one object type to another object type. This class is obsolete. Use the <see cref="T:System.Convert" /> class and the <see cref="System.String.Format%2A" /> method instead.</summary>
-        <returns>The converted object.</returns>
+        <param name="value">To be added.</param>
+        <param name="toType">To be added.</param>
+        <param name="formatString">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> cannot be converted to type <paramref name="toType" /> with this method.</exception>
       </Docs>
     </Member>
   </Members>

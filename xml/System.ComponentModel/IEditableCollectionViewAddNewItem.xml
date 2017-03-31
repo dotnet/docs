@@ -12,49 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines methods and properties that a <see cref="T:System.Windows.Data.CollectionView" /> implements to enable specifying adding items of a specific type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IEditableCollectionViewAddNewItem interface enables application developers to specify what type of object to add to a collection. This interface extends <xref:System.ComponentModel.IEditableCollectionView>, so you can add, edit, and remove items in a collection. IEditableCollectionViewAddNewItem adds the <xref:System.ComponentModel.IEditableCollectionViewAddNewItem.AddNewItem%2A> method, which takes an object that is added to the collection. This method is useful when the collection and objects that you want to add have one or more of the following characteristics:  
-  
--   The objects in the <xref:System.Windows.Data.CollectionView> are different types.  
-  
--   The objects do not have a default constructor.  
-  
--   The object already exists.  
-  
--   You want to add a `null` object to the collection.  
-  
-   
-  
-## Examples  
- The following example enables a user to add various types of items to a collection. The user can enter a new item and submit the entry or cancel the transaction. The example gets an IEditableCollectionViewAddNewItem from the <xref:System.Windows.Controls.ItemsControl.Items%2A> property of a <xref:System.Windows.Controls.ListBox> and creates an object, whose type is determined by the user. Then the example calls the <xref:System.ComponentModel.IEditableCollectionViewAddNewItem.AddNewItem%2A> method to add the object to the collection.  
-  
- [!code-vb[IEditableCollectionViewAddItemExample#MainWindowLogic](~/add/codesnippet/visualbasic/ieditablecollectionviewadditemexample/window1.xaml.vb#mainwindowlogic)]
- [!code-cs[IEditableCollectionViewAddItemExample#MainWindowLogic](~/add/codesnippet/csharp/ieditablecollectionviewadditemexample/window1.xaml.cs#mainwindowlogic)]  
-  
- The following example creates the user interface for the previous example.  
-  
- [!code-xml[IEditableCollectionViewAddItemExample#MainWindowXaml](~/add/codesnippet/xaml/ieditablecollectionviewadditemexample/window1.xaml#mainwindowxaml)]  
-  
- The following example creates the `AddItemWindow` in which the user adds data for a new item.  
-  
- [!code-xml[IEditableCollectionViewAddItemExample#AddItemXaml](~/add/codesnippet/xaml/ieditablecollectionviewadditemexample/additem.xaml#additemxaml)]  
-  
- The following example shows the logic for the `AddItemWindow`.  
-  
- [!code-vb[IEditableCollectionViewAddItemExample#AddItemLogic](~/add/codesnippet/visualbasic/ieditablecollectionviewadditemexample/additemwindow.xaml.vb#additemlogic)]
- [!code-cs[IEditableCollectionViewAddItemExample#AddItemLogic](~/add/codesnippet/csharp/ieditablecollectionviewadditemexample/additem.xaml.cs#additemlogic)]  
-  
- The following example shows the data types and collection that is used in the previous examples.  
-  
- [!code-vb[IEditableCollectionViewAddItemExample#Data](~/add/codesnippet/visualbasic/ieditablecollectionviewadditemexample/data.vb#data)]
- [!code-cs[IEditableCollectionViewAddItemExample#Data](~/add/codesnippet/csharp/ieditablecollectionviewadditemexample/data.cs#data)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNewItem">
@@ -73,27 +32,10 @@
         <Parameter Name="newItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="newItem">The object to add to the collection.</param>
-        <summary>Adds the specified object to the collection.</summary>
-        <returns>The object that is added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you calling the AddNewItem method, it begins an add transaction. You should call the <xref:System.ComponentModel.IEditableCollectionView.CommitNew%2A> or <xref:System.ComponentModel.IEditableCollectionView.CancelNew%2A> methods to end the add transaction.  
-  
- A new item always appears in the collection view. Any filtering, sorting, or grouping that is applied to the view is applied to the new item when <xref:System.ComponentModel.IEditableCollectionView.CommitNew%2A> is called.  
-  
-   
-  
-## Examples  
- The following example calls the AddNewItem method to add an object to a collection. For the complete example, see the <xref:System.ComponentModel.IEditableCollectionViewAddNewItem> class.  
-  
- [!code-vb[IEditableCollectionViewAddItemExample#MainWindowLogic](~/add/codesnippet/visualbasic/ieditablecollectionviewadditemexample/window1.xaml.vb#mainwindowlogic)]
- [!code-cs[IEditableCollectionViewAddItemExample#MainWindowLogic](~/add/codesnippet/csharp/ieditablecollectionviewadditemexample/window1.xaml.cs#mainwindowlogic)]  
-  
- ]]></format>
-        </remarks>
+        <param name="newItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanAddNewItem">
@@ -109,17 +51,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether a specified object can be added to the collection.</summary>
-        <value>
-          <see langword="true" /> if a specified object can be added to the collection; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the CanAddNewItem property is `true`, you can specify an object to add to the collection by calling the <xref:System.ComponentModel.IEditableCollectionViewAddNewItem.AddNewItem%2A> method. CanAddNewItem is `false` if items cannot be added to the collection by using <xref:System.ComponentModel.IEditableCollectionViewAddNewItem.AddNewItem%2A>. If CanAddNewItem is `false`, you may still be able to add an object by using the <xref:System.ComponentModel.IEditableCollectionView.AddNew%2A?displayProperty=fullName> method. For example, you can add objects to an ADO.NET source by using <xref:System.ComponentModel.IEditableCollectionView.AddNew%2A>, but not by using <xref:System.ComponentModel.IEditableCollectionViewAddNewItem.AddNewItem%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

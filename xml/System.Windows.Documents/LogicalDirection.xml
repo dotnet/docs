@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.LogicalDirection" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies a logical direction in which to perform certain text operations, such as inserting, retrieving, or navigating through text relative to a specified position (a <see cref="T:System.Windows.Documents.TextPointer" />).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- One of the ways in which this enumeration is used to determine where to place a <xref:System.Windows.Documents.TextPointer> when new content is inserted.  A value of **Backward** places the text position directly before the new content, whereas a value of **Forward** places the <xref:System.Windows.Documents.TextPointer> directly after the new content.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Backward">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.LogicalDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backward, or from right to left.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forward">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.LogicalDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Forward, or from left to right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

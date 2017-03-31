@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Encapsulates principals that are computer accounts.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,23 +30,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> class and assigns it to the specified context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The computer principal account is not persisted when it is created. To save the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -57,7 +48,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -67,19 +57,12 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="samAccountName">The SAM account name for this computer principal.</param>
-        <param name="password">The password for this account.</param>
-        <param name="enabled">A Boolean value that specifies whether the account is enabled.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> class by using the specified context, SAM account name, password, and enabled value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The computer principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="samAccountName">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="enabled">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindByBadPasswordAttempt">
@@ -89,7 +72,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,19 +83,12 @@
         <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to find computers with bad password attempts.</param>
-        <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
-        <summary>Returns a <see cref="System.DirectoryService.AccountManagement.PrincipalSearchResult%271" /> collection of <see cref="System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that have had bad password attempts within the parameters specified.</summary>
-        <returns>A <see cref="System.DirectoryService.AccountManagement.PrincipalSearchResult%271" /> that contains one or more <see cref="System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="time">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindByExpirationTime">
@@ -123,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,19 +109,12 @@
         <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
-        <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
-        <summary>Returns a <see cref="System.DirectoryService.AccountManagement.PrincipalSearchResult%271" /> collection of <see cref="System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that have an expiration time within the specified date and time range.</summary>
-        <returns>A <see cref="System.DirectoryService.AccountManagement.PrincipalSearchResult%271" /> that contains one or more <see cref="System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="time">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindByIdentity">
@@ -157,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,12 +134,11 @@
         <Parameter Name="identityValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="identityValue">The identity of the computer. This parameter can be any format that is contained in the <see cref="System.DirectoryService.AccountManagement.IdentityType" /> enumeration.</param>
-        <summary>Returns a computer principal object that matches the specified identity value.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object that matches the specified identity value, or null if no matches are found.</returns>
+        <param name="context">To be added.</param>
+        <param name="identityValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.MultipleMatchesException">Multiple computer principal objects matching the current computer object were found.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindByIdentity">
@@ -183,7 +148,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,14 +159,12 @@
         <Parameter Name="identityValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="identityType">A <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the format of the <c>identityValue</c> parameter.</param>
-        <param name="identityValue">The identity of the computer. This parameter can be any format that is contained in the <see cref="System.DirectoryService.AccountManagement.IdentityType" /> enumeration.</param>
-        <summary>Returns a computer principal object that matches the specified identity type and value. This version of the <see cref="System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByIdentity%2A" /> method determines the format of the identity value.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object that matches the specified identity value and type, or null if no matches are found.</returns>
+        <param name="context">To be added.</param>
+        <param name="identityType">To be added.</param>
+        <param name="identityValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.MultipleMatchesException">Multiple computer principal objects matching the current computer object were found.</exception>
-        <exception cref="T:System.ComponenetModel.InvalidEnumerationOperatorException">The identity value is not a valid <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindByLockoutTime">
@@ -212,7 +174,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -224,19 +185,12 @@
         <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
-        <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
-        <summary>Returns a <see cref="System.DirectoryService.AccountManagement.PrincipalSearchResult%271" /> collection of <see cref="System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that have a lockout time within the specified date and time range.</summary>
-        <returns>A <see cref="System.DirectoryService.AccountManagement.PrincipalSearchResult%271" /> that contains one or more <see cref="System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="time">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindByLogonTime">
@@ -246,7 +200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,19 +211,12 @@
         <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
-        <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
-        <summary>Returns a <see cref="System.DirectoryService.AccountManagement.PrincipalSearchResult%271" /> collection of <see cref="System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that have a logon time within the specified date and time range.</summary>
-        <returns>A <see cref="System.DirectoryService.AccountManagement.PrincipalSearchResult%271" /> that contains one or more <see cref="System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="time">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindByPasswordSetTime">
@@ -280,7 +226,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -292,19 +237,12 @@
         <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
-        <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
-        <summary>Returns a <see cref="System.DirectoryService.AccountManagement.PrincipalSearchResult%271" /> collection of <see cref="System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that have a password set time within the specified date and time range.</summary>
-        <returns>A <see cref="System.DirectoryService.AccountManagement.PrincipalSearchResult%271" /> that contains one or more <see cref="System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="time">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServicePrincipalNames">
@@ -314,15 +252,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.PrincipalValueCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of the Service Principal Names (SPN) for the computer account.</summary>
-        <value>A collection of SPNs that specify the names of the accounts registered for this computer. The syntax for the SPN depends on the underlying store.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

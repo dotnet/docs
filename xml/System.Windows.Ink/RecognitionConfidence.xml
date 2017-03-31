@@ -4,33 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.RecognitionConfidence" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the confidence level that the <see cref="T:System.Windows.Ink.GestureRecognizer" /> determines for a particular ink gesture.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_RecognitionConfidence"></a>   
-## XAML Text Usage  
- This class is not typically used in XAML.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to identify a gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and that its <xref:System.Windows.Controls.InkCanvas.Gesture> event has been connected to the event handler in this example.  
-  
- [!code-cs[GestureSample#1](~/add/codesnippet/csharp/GestureSample/Window1.xaml.cs#1)]
- [!code-vb[GestureSample#1](~/add/codesnippet/visualbasic/GestureSample/Window1.xaml.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Intermediate">
@@ -40,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Ink.RecognitionConfidence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates intermediate confidence in the recognition result.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Poor">
@@ -57,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Ink.RecognitionConfidence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates poor confidence in the recognition result.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Strong">
@@ -74,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Ink.RecognitionConfidence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates strong confidence in the recognition result.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

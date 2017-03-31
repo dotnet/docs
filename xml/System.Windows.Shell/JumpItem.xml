@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the base class for the <see cref="T:System.Windows.Shell.JumpPath" /> and <see cref="T:System.Windows.Shell.JumpTask" /> classes.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,16 +28,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the category the <see cref="T:System.Windows.Shell.JumpItem" /> is grouped with in the [!INCLUDE[win7](~/add/includes/win7-md.md)] taskbar Jump List.</summary>
-        <value>The name of the category the <see cref="T:System.Windows.Shell.JumpItem" /> is grouped with. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the CustomCategory property is `null` or <xref:System.String.Empty>, the item is added to the **Tasks** category. If a value is specified, the item is added to a category that uses the specified name. Items in custom categories can be pinned to the Jump List by the user. When an item is pinned, it moves to an automatic category called **Pinned**. The user can also remove items from the Jump List.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

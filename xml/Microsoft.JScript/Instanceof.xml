@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Instanceof" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Determines whether an object can be coerced to the type of another object. This class belongs to the abstract syntax tree category.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,11 +32,10 @@
         <Parameter Name="v2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="v1">The object to coerce to the type of object <c>v2</c>.</param>
-        <param name="v2">The object that has the desired type.</param>
-        <summary>Determines whether the first specified object can be coerced to the type of the second specified object.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="v1" /> can be coerced to the type of object *v2*; otherwise, <see langword="false" />.</returns>
+        <param name="v1">To be added.</param>
+        <param name="v2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

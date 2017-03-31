@@ -8,17 +8,8 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines properties that specify how ASP.NET creates client IDs for a data-bound control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IDataKeysControl interface defines two properties that data-bound controls implement to let you specify how a client ID is created. A data-bound control that displays multiple instances of a control must create an ID for each instance of the control. That ID must be unique in order to enable access to the control from client script.  
-  
- The <xref:System.Web.UI.IDataKeysControl.ClientIDRowSuffix%2A> property lets you specify the name or names of data fields whose values are included in the generated value for the <xref:System.Web.UI.Control.ClientID%2A> property. These values are used to uniquely identify each instance of the control in a way that corresponds to a meaningful data value, instead of to an arbitrary value such as the order in which the controls are rendered on the page. For example, when you display records from a products data table, you can assign `ProductID` to the <xref:System.Web.UI.IDataKeysControl.ClientIDRowSuffix%2A> property. In that case, each instance of the data-bound control can be identified by the value from the `ProductID` field.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ClientIDRowSuffix">
@@ -34,8 +25,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the names of the data fields whose values are used to uniquely identify each instance of a data-bound control when ASP.NET generates the <see cref="System.Web.UI.Control.ClientID%2A" /> value by using the <see cref="T:System.Web.UI.ClientIDMode" /> algorithm.</summary>
-        <value>A collection of data-field names.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +43,8 @@
         <ReturnType>System.Web.UI.WebControls.DataKeyArray</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of the data values that are used to uniquely identify each instance of a data-bound control when ASP.NET generates the <see cref="System.Web.UI.Control.ClientID%2A" /> value.</summary>
-        <value>A collection of data-field values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

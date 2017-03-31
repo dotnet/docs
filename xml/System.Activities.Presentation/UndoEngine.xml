@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides undo and redo operation implementations for designers.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
       </Parameters>
       <Docs>
-        <param name="context">The editing context.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.UndoEngine" /> class.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
         <Parameter Name="unit" Type="System.Activities.Presentation.UndoUnit" />
       </Parameters>
       <Docs>
-        <param name="unit">The undo unit to add.</param>
-        <summary>Adds the specified unit to the undo stack.</summary>
+        <param name="unit">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves an <see cref="System.Collections.Generic.IEnumerable%601" /> collection of redo operations.</summary>
-        <returns>A simple iterator over a collection of redo operations.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +87,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves an <see cref="System.Collections.Generic.IEnumerable%601" /> collection of undo operations.</summary>
-        <returns>A simple iterator over a collection of undo operations.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,9 +105,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether an undo or redo operation is in progress.</summary>
-        <value>
-          <see langword="true" /> if an undo or redo operation is in progress; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +124,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the last <see cref="T:System.Activities.Presentation.UndoUnit" /> instance from the redo stack, and performs a redo operation on the unit. The <see cref="T:System.Activities.Presentation.UndoUnit" /> instance is then put into the undo stack.</summary>
-        <returns>
-          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +142,7 @@
         <ReturnType>System.EventHandler&lt;System.Activities.Presentation.UndoUnitEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the redo operation is completed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the last <see cref="T:System.Activities.Presentation.UndoUnit" /> instance from the undo stack, and performs an undo operation on the unit. The <see cref="T:System.Activities.Presentation.UndoUnit" /> instance is then put into the redo stack.</summary>
-        <returns>
-          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,7 +178,7 @@
         <ReturnType>System.EventHandler&lt;System.Activities.Presentation.UndoUnitEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the undo operation is completed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +195,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the buffers that hold undo and redo operations change.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,7 +212,7 @@
         <ReturnType>System.EventHandler&lt;System.Activities.Presentation.UndoUnitEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an undo unit is added to the undo stack.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,7 +229,7 @@
         <ReturnType>System.EventHandler&lt;System.Activities.Presentation.UndoUnitEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an undo unit is cancelled from the undo stack.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,7 +246,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an undo unit is removed from the undo stack, without first performing an undo operation.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,18 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the ResolveAddressCompletedEventArgs.  
-  
- [!code-cs[System.Device.Location.ResolveCivicAddressAsync#2](~/add/codesnippet/csharp/resolveaddressasync/resolvecivicaddressasync.cs#2)]
- [!code-vb[System.Device.Location.ResolveCivicAddressAsync#2](~/add/codesnippet/visualbasic/resolvecivicaddressasync/resolvecivicaddressasync.vb#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,20 +31,12 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="address">The <see cref="T:System.Device.Location.CivicAddress" /> that contains the address resolved from the latitude/longitude location, if successful.</param>
-        <param name="error">The exception object for any exception that may have occurred during the attempt to resolve the address.</param>
-        <param name="cancelled">
-          <see langword="true" /> if the operation was cancelled; otherwise, <see langword="false" />.</param>
-        <param name="userState">A token for tracking the request to resolve the address. May be <see langword="null" /> if not used.</param>
-        <summary>Initializes a new instance of <see cref="T:System.Device.Location.ResolveAddressCompletedEventArgs" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is public so that classes implementing the <xref:System.Device.Location.ICivicAddressResolver> interface can create this object to fire events.  
-  
- ]]></format>
-        </remarks>
+        <param name="address">To be added.</param>
+        <param name="error">To be added.</param>
+        <param name="cancelled">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Address">
@@ -70,8 +52,8 @@
         <ReturnType>System.Device.Location.CivicAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Device.Location.CivicAddress" /> associated with the <see cref="E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted" /> event.</summary>
-        <value>The <see cref="T:System.Device.Location.CivicAddress" /> associated with the <see cref="E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted" /> event. If the address could not be resolved, this property returns <see cref="F:System.Device.Location.CivicAddress.Unknown" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

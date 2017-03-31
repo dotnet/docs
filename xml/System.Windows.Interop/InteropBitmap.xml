@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.InteropBitmap" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>InteropBitmap enables developers to improve rendering performance of non-[!INCLUDE[TLA2#tla_wpf](~/add/includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui#plural](~/add/includes/tla2sharptla-uisharpplural-md.md)] that are hosted by [!INCLUDE[TLA2#tla_wpf](~/add/includes/tla2sharptla-wpf-md.md)] in interoperability scenarios.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -53,7 +51,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -83,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -111,7 +107,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -141,7 +136,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -171,7 +165,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -184,10 +177,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Forces the hosted non-[!INCLUDE[TLA2#tla_wpf](~/add/includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] to be rendered.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Interop.InteropBitmap" /> instance is frozen and cannot have its members written to.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -211,11 +202,9 @@
         <Parameter Name="dirtyRect" Type="System.Nullable&lt;System.Windows.Int32Rect&gt;" />
       </Parameters>
       <Docs>
-        <param name="dirtyRect">The area of the hosted non-[!INCLUDE[TLA2#tla_wpf](~/add/includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] to be rendered. If this parameter is null, the entire non-[!INCLUDE[TLA2#tla_wpf](~/add/includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] is rendered.</param>
-        <summary>Forces the specified area of the hosted non-[!INCLUDE[TLA2#tla_wpf](~/add/includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] to be rendered.</summary>
+        <param name="dirtyRect">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Interop.InteropBitmap" /> instance is frozen and cannot have its members written to.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

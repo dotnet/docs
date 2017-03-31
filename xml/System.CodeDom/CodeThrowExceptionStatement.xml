@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeThrowExceptionStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,26 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a statement that throws an exception.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeThrowExceptionStatement can represent a statement that throws an exception. The expression should be, or evaluate to, a reference to an instance of a type that derives from the <xref:System.Exception> class.  
-  
- The <xref:System.CodeDom.CodeThrowExceptionStatement.ToThrow%2A> property specifies the exception to throw.  
-  
-   
-  
-## Examples  
- This example demonstrates using a CodeThrowExceptionStatement to throw a new `System.Exception`.  
-  
- [!code-cs[CodeThrowExceptionStatement#2](~/add/codesnippet/csharp/t-system.codedom.codethr_1.cs)]
- [!code-cpp[CodeThrowExceptionStatement#2](~/add/codesnippet/cpp/t-system.codedom.codethr_1.cpp)]
- [!code-vb[CodeThrowExceptionStatement#2](~/add/codesnippet/visualbasic/t-system.codedom.codethr_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeThrowExceptionStatement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,15 +45,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="toThrow" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="toThrow">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the exception to throw.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeThrowExceptionStatement" /> class with the specified exception type instance.</summary>
+        <param name="toThrow">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the exception to throw.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpression" /> representing an instance of the exception to throw.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

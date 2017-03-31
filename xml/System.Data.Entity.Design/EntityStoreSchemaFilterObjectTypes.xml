@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the store object type to apply the schema filter to.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EntityStoreSchemaFilterObjectTypes enumeration is used with the <xref:System.Data.Entity.Design.EntityStoreSchemaFilterEntry> class to allow or exclude particular database objects during generation.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -34,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Apply the filter to all object types.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Function">
@@ -51,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Apply this filter to function object types.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -68,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Initial value. This is not a valid value to apply.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -85,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Apply the filter to table object types.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="View">
@@ -102,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Apply the filter to view object types.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

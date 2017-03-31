@@ -3,8 +3,21 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CustomQueryInterfaceResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CustomQueryInterfaceResult" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -15,7 +28,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides return values for the <see cref="System.Runtime.InteropServices.ICustomQueryInterface.GetInterface%2A" /> method.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,14 +38,27 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceResult.Failed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CustomQueryInterfaceResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The interface for a specific interface ID is not available. In this case, the returned interface is <see langword="null" />. E_NOINTERFACE is returned to the caller of [IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkId=144867).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Handled">
@@ -41,14 +67,27 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CustomQueryInterfaceResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The interface pointer that is returned from the <see cref="System.Runtime.InteropServices.ICustomQueryInterface.GetInterface%2A" /> method can be used as the result of [IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkId=144867).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotHandled">
@@ -57,14 +96,27 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CustomQueryInterfaceResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The custom <see langword="QueryInterface" /> was not used. Instead, the default implementation of [IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkId=144867) should be used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

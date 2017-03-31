@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,22 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> property of <xref:System.Web.Services.Discovery.DiscoveryClientProtocol> is of type DiscoveryClientReferenceCollection.  
-  
-   
-  
-## Examples  
- [!code-cs[DiscoveryClientReferenceCollection#1](~/add/codesnippet/csharp/t-system.web.services.di_9_1.cs)]
- [!code-cpp[DiscoveryClientReferenceCollection#1](~/add/codesnippet/cpp/t-system.web.services.di_9_1.cpp)]
- [!code-vb[DiscoveryClientReferenceCollection#1](~/add/codesnippet/visualbasic/t-system.web.services.di_9_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +23,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +39,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,18 +49,9 @@
         <Parameter Name="value" Type="System.Web.Services.Discovery.DiscoveryReference" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> to add to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</param>
-        <summary>Adds a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[DiscoveryClientReferenceCollection_Items#2](~/add/codesnippet/csharp/42e86f3f-8f0e-435c-b2ea-_1.cs)]
- [!code-vb[DiscoveryClientReferenceCollection_Items#2](~/add/codesnippet/visualbasic/42e86f3f-8f0e-435c-b2ea-_1.vb)]
- [!code-cpp[DiscoveryClientReferenceCollection_Items#2](~/add/codesnippet/cpp/42e86f3f-8f0e-435c-b2ea-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -84,7 +61,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,19 +72,10 @@
         <Parameter Name="value" Type="System.Web.Services.Discovery.DiscoveryReference" />
       </Parameters>
       <Docs>
-        <param name="url">The URL for the reference to add to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</param>
-        <param name="value">The <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> to add to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</param>
-        <summary>Adds a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> with the specified URL and value to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[DiscoveryClientReferenceCollection_Items#3](~/add/codesnippet/csharp/71a53cb6-dd95-4a17-8321-_1.cs)]
- [!code-vb[DiscoveryClientReferenceCollection_Items#3](~/add/codesnippet/visualbasic/71a53cb6-dd95-4a17-8321-_1.vb)]
- [!code-cpp[DiscoveryClientReferenceCollection_Items#3](~/add/codesnippet/cpp/71a53cb6-dd95-4a17-8321-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="url">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -117,7 +85,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,20 +95,10 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The URL for the <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> to locate within the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</param>
-        <summary>Determines if the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" /> contains a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> with the specified URL.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" /> contains a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> with the specified URL; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[DiscoveryClientReferenceCollection_Keys#3](~/add/codesnippet/cpp/bedba8dd-0046-43b7-b765-_1.cpp)]
- [!code-vb[DiscoveryClientReferenceCollection_Keys#3](~/add/codesnippet/visualbasic/bedba8dd-0046-43b7-b765-_1.vb)]
- [!code-cs[DiscoveryClientReferenceCollection_Keys#3](~/add/codesnippet/csharp/bedba8dd-0046-43b7-b765-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -150,7 +108,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,19 +118,10 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The URL for the <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> to get or set from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</param>
-        <summary>Gets or sets a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> object from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" /> with the specified URL.</summary>
-        <value>An <see langword="DiscoveryReference" /> representing a reference to a discovery document.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[DiscoveryClientReferenceCollection_Items#5](~/add/codesnippet/csharp/345c21dd-9bd2-4b65-8ad3-_1.cs)]
- [!code-vb[DiscoveryClientReferenceCollection_Items#5](~/add/codesnippet/visualbasic/345c21dd-9bd2-4b65-8ad3-_1.vb)]
- [!code-cpp[DiscoveryClientReferenceCollection_Items#5](~/add/codesnippet/cpp/345c21dd-9bd2-4b65-8ad3-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -182,25 +131,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object with all the keys in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> containing the keys of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[DiscoveryClientReferenceCollection_Keys#1](~/add/codesnippet/cpp/p-system.web.services.di_28_1.cpp)]
- [!code-vb[DiscoveryClientReferenceCollection_Keys#1](~/add/codesnippet/visualbasic/p-system.web.services.di_28_1.vb)]
- [!code-cs[DiscoveryClientReferenceCollection_Keys#1](~/add/codesnippet/csharp/p-system.web.services.di_28_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -210,7 +150,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -220,18 +160,9 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">A string that represents the URL for the object to remove from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</param>
-        <summary>Removes a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> with the specified URL from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[DiscoveryClientReferenceCollection_Items#4](~/add/codesnippet/csharp/77912c61-ac1a-4eb2-9273-_1.cs)]
- [!code-vb[DiscoveryClientReferenceCollection_Items#4](~/add/codesnippet/visualbasic/77912c61-ac1a-4eb2-9273-_1.vb)]
- [!code-cpp[DiscoveryClientReferenceCollection_Items#4](~/add/codesnippet/cpp/77912c61-ac1a-4eb2-9273-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -241,23 +172,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object with all the values in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> containing the values in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- DiscoveryClientReferenceCollection_Keys#2  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

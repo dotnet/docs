@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.LockCookie" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -17,28 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the lock that implements single-writer/multiple-reader semantics. This is a value type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to request a reader lock, upgrade the reader lock to a writer lock, and save the LockCookie. It then uses the LockCookie to downgrade to a reader lock again.  
-  
- This code is part of a larger example provided for the <xref:System.Threading.ReaderWriterLock> class.  
-  
- [!code-cpp[System.Threading.ReaderWriterLock#2](~/add/codesnippet/cpp/t-system.threading.lockc_1.cpp)]
- [!code-cs[System.Threading.ReaderWriterLock#2](~/add/codesnippet/csharp/t-system.threading.lockc_1.cs)]
- [!code-vb[System.Threading.ReaderWriterLock#2](~/add/codesnippet/visualbasic/t-system.threading.lockc_1.vb)]  
-[!code-cpp[System.Threading.ReaderWriterLock#5](~/add/codesnippet/cpp/t-system.threading.lockc_2.cpp)]
-[!code-cs[System.Threading.ReaderWriterLock#5](~/add/codesnippet/csharp/t-system.threading.lockc_2.cs)]
-[!code-vb[System.Threading.ReaderWriterLock#5](~/add/codesnippet/visualbasic/t-system.threading.lockc_2.vb)]  
-[!code-cpp[System.Threading.ReaderWriterLock#7](~/add/codesnippet/cpp/t-system.threading.lockc_3.cpp)]
-[!code-cs[System.Threading.ReaderWriterLock#7](~/add/codesnippet/csharp/t-system.threading.lockc_3.cs)]
-[!code-vb[System.Threading.ReaderWriterLock#7](~/add/codesnippet/visualbasic/t-system.threading.lockc_3.vb)]  
-  
- ]]></format>
-    </remarks>
-    <threadsafe>This type is thread safe.</threadsafe>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -48,8 +32,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -58,10 +46,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare to the current instance.</param>
-        <summary>Indicates whether a specified object is a <see cref="T:System.Threading.LockCookie" /> and is equal to the current instance.</summary>
-        <returns>
-          <see langword="true" /> if the value of <paramref name="obj" /> is equal to the value of the current instance; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +59,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -82,10 +73,9 @@
         <Parameter Name="obj" Type="System.Threading.LockCookie" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Threading.LockCookie" /> to compare to the current instance.</param>
-        <summary>Indicates whether the current instance is equal to the specified <see cref="T:System.Threading.LockCookie" />.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> is equal to the value of the current instance; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,16 +86,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance.</summary>
-        <returns>A 32-bit signed integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +110,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -127,11 +125,10 @@
         <Parameter Name="b" Type="System.Threading.LockCookie" />
       </Parameters>
       <Docs>
-        <param name="a">The <see cref="T:System.Threading.LockCookie" /> to compare to <c>b</c>.</param>
-        <param name="b">The <see cref="T:System.Threading.LockCookie" /> to compare to <c>a</c>.</param>
-        <summary>Indicates whether two <see cref="T:System.Threading.LockCookie" /> structures are equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +139,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -153,11 +154,10 @@
         <Parameter Name="b" Type="System.Threading.LockCookie" />
       </Parameters>
       <Docs>
-        <param name="a">The <see cref="T:System.Threading.LockCookie" /> to compare to <c>b</c>.</param>
-        <param name="b">The <see cref="T:System.Threading.LockCookie" /> to compare to <c>a</c>.</param>
-        <summary>Indicates whether two <see cref="T:System.Threading.LockCookie" /> structures are not equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

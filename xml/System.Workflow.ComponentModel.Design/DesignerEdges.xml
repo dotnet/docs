@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerEdges" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,21 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the edge or edges of an activity designer on a workflow design surface where design-time processing is performed, such as a <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> location on the activity designer.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- The enumeration value returned from <xref:System.Workflow.ComponentModel.Design.ConnectionPoint.ConnectionEdge%2A> that specifies where on the activity designer a <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> or a collection of <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> objects reside. The <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.GetConnectionPoints%2A> method can be used to retrieve this collection.  
-  
- You can also use it to determine which edge or edges of an activity designer a user is resizing by observing the DesignerEdges enumeration value returned from <xref:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs.SizingEdge%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -43,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All edges of the activity designer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bottom">
@@ -60,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bottom edge of the activity designer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -77,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left edge of the activity designer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -94,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>None of the edges of the activity designer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -111,14 +93,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right edge of the activity designer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -128,14 +109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The top edge of the activity designer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

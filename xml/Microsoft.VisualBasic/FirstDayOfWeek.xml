@@ -4,28 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FirstDayOfWeek" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the first day of the week to use when calling date-related functions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
-  
- The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
-  
- Date-related functions also return `FirstDayOfWeek` values (except `System`).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Friday">
@@ -35,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Friday This member is equivalent to the Visual Basic constant <see langword="vbFriday" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Monday">
@@ -52,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Monday This member is equivalent to the Visual Basic constant <see langword="vbMonday" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Saturday">
@@ -69,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Saturday This member is equivalent to the Visual Basic constant <see langword="vbSaturday" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sunday">
@@ -86,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sunday (default) This member is equivalent to the Visual Basic constant <see langword="vbSunday" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -103,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The first day of the week as specified in your system settings This member is equivalent to the Visual Basic constant <see langword="vbUseSystemDayOfWeek" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thursday">
@@ -120,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Thursday This member is equivalent to the Visual Basic constant <see langword="vbThursday" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tuesday">
@@ -137,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tuesday This member is equivalent to the Visual Basic constant <see langword="vbTuesday" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wednesday">
@@ -154,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wednesday This member is equivalent to the Visual Basic constant <see langword="vbWednesday" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListCommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,9 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides information data for the <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemCommand" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -37,9 +34,9 @@
         <Parameter Name="commandName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="item">Initializes the <see cref="System.Web.UI.MobileControls.ObjectListCommandEventArgs.ListItem%2A" /> property.</param>
-        <param name="commandName">Initializes the <see cref="System.Web.UI.MobileControls.Command.CommandName%2A" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectListCommandEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="item">To be added.</param>
+        <param name="commandName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +47,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -59,18 +55,11 @@
         <Parameter Name="originalArgs" Type="System.Web.UI.WebControls.CommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="item">Initializes the <see cref="System.Web.UI.MobileControls.ObjectListCommandEventArgs.ListItem%2A" /> property.</param>
-        <param name="commandSource">Initializes the <see cref="System.Web.UI.MobileControls.ObjectListCommandEventArgs.CommandSource%2A" /> property.</param>
-        <param name="originalArgs">The original arguments inherited from the <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectListCommandEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The item and <xref:System.Web.UI.MobileControls.ObjectListCommandEventArgs.CommandSource%2A> parameters initialize the <xref:System.Web.UI.WebControls.ListItem> and <xref:System.Web.UI.MobileControls.ObjectListCommandEventArgs.CommandSource%2A> properties with their respective values. The `originalArgs` parameter allows you to pass in a set of command arguments, which is useful for handling bubbled events.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <param name="commandSource">To be added.</param>
+        <param name="originalArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -80,15 +69,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the control that raised the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The control that raised the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,24 +87,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the default command. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When set, the <xref:System.Web.UI.MobileControls.ObjectList> attempts to render a shortcut to invoke the default command. In HTML, the default rendering in `ListView` displays the first field as a link to the `DetailsView` of the <xref:System.Web.UI.MobileControls.ObjectList>. By setting the DefaultCommand property, clicking the link invokes the default command. Invoking the default command raises the <xref:System.Web.UI.MobileControls.ObjectList.ItemCommand> event. The <xref:System.Web.UI.MobileControls.Command.CommandName%2A> of the <xref:System.Web.UI.MobileControls.ObjectListCommandEventArgs> object is set to the value of the DefaultCommand property.  
-  
- Even if a default command is defined, you should include a command with the same name in the commands collection. If the control cannot render a graphical element that includes a shortcut for the default command, the default command is still available through the rendering of the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListItem">
@@ -126,15 +104,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.ObjectListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the list item that generated the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The list item that generated the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

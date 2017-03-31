@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,16 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the base class for implementing a CodeDOM-based designer loader.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeDomDesignerLoader is an abstract class that provides a full designer loader based on the Code Document Object Model (CodeDOM). You provide the CodeDOM parser and generator, and a type resolution service.  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,12 +34,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,23 +49,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.CodeDomProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the CodeDomProvider this designer loader will use.</summary>
-        <value>The CodeDomProvider this designer loader will use</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The designer loader does not parse or generate code from the returned CodeDomProvider, but it does use the provider to obtain an <xref:System.CodeDom.Compiler.ICodeGenerator> that it can use to validate identifiers in the name-creation service. The designer loader will also check the CodeDomProvider to see if it implements the <xref:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload> interface. For more information on parsing or generating code, see the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.Parse%2A> and <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.Write%2A> methods.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -85,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,20 +74,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Dispose method removes services added by the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.Initialize%2A> method.  
-  
- Call Dispose when you are finished using the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader>. The Dispose method leaves the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> in an unusable state. After calling Dispose, you must release all references to the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -116,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,24 +92,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes services.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table describes the replaceable services that the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> adds to the service container.  
-  
-|Term|Definition|  
-|----------|----------------|  
-|<xref:System.ComponentModel.Design.Serialization.INameCreationService>|Provides semantics for creating names of objects. The service uses the CodeDOM provider’s <xref:System.CodeDom.Compiler.ICodeGenerator> interface to create names that are valid identifiers for the language. In addition, the name creation service supports empty names. Empty names should be interpreted as temporary local variables during serialization.|  
-|<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>|Allows other objects to serialize a group of components into a binary object. This service is most often used by features such as copy and paste or undo and redo. The <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> class provides a designer serialization service that is based on creating CodeDOM trees for objects.|  
-|<xref:System.ComponentModel.Design.Serialization.ComponentSerializationService>|This service replaces <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> as a means to serialize components to a binary object.|  
-  
- For details on replaceable and non-replaceable services, see <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerLoaderHost" /> has not been initialized, or the designer loader did not supply a type resolution service, which is required for CodeDom serialization.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReloadNeeded">
@@ -151,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,19 +110,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value indicating whether a reload is required.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.CodeDomProvider%2A" /> decides a reload is required; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsReloadNeeded method checks for the presence of the <xref:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload> interface on the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.CodeDomProvider%2A>. The provider will reparse the CodeDOM tree and pass the resulting parse tree to the <xref:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload.ShouldReloadDesigner%2A> method. If this method returns `false`, the designer will not be reloaded.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The language did not provide a code parser for this file; this file type may not support a designer.</exception>
-        <exception cref="T:System.InvalidOperationException">The class can be designed, but it is not the first class in the file, or the designer could not be shown for this file because none of the classes within it can be designed.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBeginLoad">
@@ -181,7 +122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,15 +129,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies the designer loader that loading is about to begin.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on the OnBeginLoad method, see <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnBeginLoad%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBeginUnload">
@@ -207,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,15 +147,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies the designer loader that unloading is about to begin.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on the OnBeginUnload method, see <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnBeginUnload%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnComponentRename">
@@ -233,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -245,10 +169,10 @@
         <Parameter Name="newName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="component">The component to rename.</param>
-        <param name="oldName">The original name of the component.</param>
-        <param name="newName">The new name of the component.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRename" /> event.</summary>
+        <param name="component">To be added.</param>
+        <param name="oldName">To be added.</param>
+        <param name="newName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +183,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,18 +193,10 @@
         <Parameter Name="errors" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="successful">
-          <see langword="true" /> to indicate that the load completed successfully; otherwise, <see langword="false" />.</param>
-        <param name="errors">An <see cref="T:System.Collections.ICollection" /> of objects (usually exceptions) that were reported as errors.</param>
-        <summary>Notifies the designer loader that loading is complete.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on the OnEndLoad method, see <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnEndLoad%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="successful">To be added.</param>
+        <param name="errors">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -291,7 +206,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,16 +213,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Parses the text or other persistent storage and returns a <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
-        <returns>A <see cref="T:System.CodeDom.CodeCompileUnit" /> resulting from a parse operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Parse method is called when the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> needs to parse the source code. The source code location and format must be specified by deriving classes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformFlush">
@@ -318,7 +225,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,23 +234,9 @@
         <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
       </Parameters>
       <Docs>
-        <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> from which to request the serializer.</param>
-        <summary>Requests serialization of the root component of the designer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PerformFlush method obtains the root <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> for the root component of the designer and invokes the serializer to serialize the component. If the result of this operation is a <xref:System.CodeDom.CodeTypeDeclaration>, then PerformFlush integrates the <xref:System.CodeDom.CodeTypeDeclaration> with the existing CodeDOM tree. The result is the original CodeDOM tree with matching members and statements replaced. Finally, PerformFlush calls the abstract <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.Write%2A> method to save this CodeDOM tree.  
-  
- If the serialization of the root designer component does not result in a <xref:System.CodeDom.CodeTypeDeclaration>, then PerformFlush does nothing further.  
-  
-> [!IMPORTANT]
->  It is the responsibility of the caller to ensure that a CodeDOM originates from a trusted source. Accepting a CodeDOM object from an untrusted party could allow that party to run malicious code. When flushing a CodeDOM into a file, the framework will run code represented by the CodeDOM object and the serialized content of the object as provided.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The language did not provide a code parser for this file; this file type may not support a designer.</exception>
-        <exception cref="T:System.InvalidOperationException">The class can be designed, but it is not the first class in the file, or the designer could not be shown for this file because none of the classes within it can be designed.</exception>
+        <param name="manager">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformLoad">
@@ -354,7 +246,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,21 +255,9 @@
         <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
       </Parameters>
       <Docs>
-        <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> from which to request the serializer.</param>
-        <summary>Parses code from a CodeDOM provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PerformLoad method obtains an <xref:System.CodeDom.Compiler.ICodeParser> from the CodeDOM provider and parses the code. PerformLoad locates the first class in the file, obtains a root <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> for the data type, and then invokes the serializer to deserialize the data type. PerformLoad assumes that this process will create all necessary components in the <xref:System.ComponentModel.IContainer> of the <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.LoaderHost%2A> property. Finally, PerformLoad calls the <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.SetBaseComponentClassName%2A> method with the fully qualified name of the type it passed to the CodeDOM serializer.  
-  
-> [!IMPORTANT]
->  It is the responsibility of the caller to ensure that a CodeDOM originates from a trusted source. Accepting a CodeDOM object from an untrusted party could allow that party to run malicious code. When loading a CodeDOM into the design surface, the framework will run code represented by the CodeDOM object and the serialized content of the object as provided.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The language did not provide a code parser for this file; this file type may not support a designer.</exception>
-        <exception cref="T:System.InvalidOperationException">The class can be designed, but it is not the first class in the file, or the designer could not be shown for this file because none of the classes within it can be designed.</exception>
+        <param name="manager">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationService.Deserialize">
@@ -388,7 +267,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -398,12 +276,10 @@
         <Parameter Name="serializationData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="serializationData">An object consisting of serialized data.</param>
-        <summary>Deserializes the specified serialization data object and returns a collection of objects represented by that data.</summary>
-        <returns>A collection of objects represented by <paramref name="serializationData" />.</returns>
+        <param name="serializationData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="serializationData" /> is not a <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationService.Serialize">
@@ -413,7 +289,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -423,11 +298,10 @@
         <Parameter Name="objects" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="objects">A collection of objects to serialize.</param>
-        <summary>Serializes the specified collection of objects and stores them in a serialization data object.</summary>
-        <returns>An object that contains the serialized state of the specified collection of objects.</returns>
+        <param name="objects">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ComponentModel.Design.Serialization.ComponentSerializationService" /> was not found.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.INameCreationService.CreateName">
@@ -437,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -448,13 +321,11 @@
         <Parameter Name="dataType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="container">The container where the new object is added.</param>
-        <param name="dataType">The data type of the object that receives the name.</param>
-        <summary>Creates a new name that is unique to all components in the specified container.</summary>
-        <returns>A unique name for the data type.</returns>
+        <param name="container">To be added.</param>
+        <param name="dataType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dataType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.INameCreationService.IsValidName">
@@ -464,7 +335,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -474,13 +344,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name to validate.</param>
-        <summary>Gets a value indicating whether the specified name is valid.</summary>
-        <returns>
-          <see langword="true" /> if the name is valid; otherwise, <see langword="false" />.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.INameCreationService.ValidateName">
@@ -490,7 +357,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -500,13 +366,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name to validate.</param>
-        <summary>Gets a value indicating whether the specified name is valid.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is not a valid identifier, or there is already a component with the same name.</exception>
       </Docs>
     </Member>
     <Member MemberName="TypeResolutionService">
@@ -516,23 +378,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.ITypeResolutionService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type resolution service to be used with this designer loader.</summary>
-        <value>An <see cref="T:System.ComponentModel.Design.ITypeResolutionService" /> that the CodeDOM serializers will use when resolving types.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> automatically adds this <xref:System.ComponentModel.Design.ITypeResolutionService> to the service container when the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.Initialize%2A> method is invoked. While the type resolution service is optional in many scenarios, it is required for code interpretation because source code contains type names, but no assembly references.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -542,7 +396,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -552,16 +405,9 @@
         <Parameter Name="unit" Type="System.CodeDom.CodeCompileUnit" />
       </Parameters>
       <Docs>
-        <param name="unit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to be persisted.</param>
-        <summary>Writes compile-unit changes to persistent storage.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Write method saves a <xref:System.CodeDom.CodeCompileUnit> to persistent storage. The deriving class is responsible for invoking the <xref:System.CodeDom.Compiler.ICodeGenerator> on the appropriate text writer to save the code. The <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> ensures that the CodeDOM objects that are passed to Write are the same instances of objects that were retrieved from <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.Parse%2A>, except in cases where the serialization process had to make changes to the code. This allows an optimized designer loader to store additional data in the <xref:System.CodeDom.CodeObject.UserData%2A> property of code elements. This data will be available during the Write method for any elements that were not replaced by the serialization process.  
-  
- ]]></format>
-        </remarks>
+        <param name="unit">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

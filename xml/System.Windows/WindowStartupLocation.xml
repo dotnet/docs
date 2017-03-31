@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.WindowStartupLocation" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the position that a <see cref="T:System.Windows.Window" /> will be shown in when it is first opened. Used by the <see cref="System.Windows.Window.WindowStartupLocation%2A" /> property.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.WindowStartupLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The startup location of a <see cref="T:System.Windows.Window" /> is the center of the <see cref="T:System.Windows.Window" /> that owns it, as specified by the <see cref="System.Windows.Window.Owner%2A" /> property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CenterScreen">
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.WindowStartupLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The startup location of a <see cref="T:System.Windows.Window" /> is the center of the screen that contains the mouse cursor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Manual">
@@ -61,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.WindowStartupLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The startup location of a <see cref="T:System.Windows.Window" /> is set from code, or defers to the default [!INCLUDE[TLA2#tla_mswin](~/add/includes/tla2sharptla-mswin-md.md)] location.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

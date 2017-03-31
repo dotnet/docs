@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ClientBase`1" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -26,38 +26,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TChannel">The channel to be used to connect to the service.</typeparam>
-    <summary>Provides the base implementation used to create [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] client objects that can call services.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Extend the ClientBase(TChannel) class to create a custom [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client object that can be used to connect to a service. Typically, the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client base class is extended by a tool such as the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md) on your behalf. For an example, see the Example section.  
-  
- The ClientBase(TChannel) class can be used quickly and easily by developers who prefer objects to the use of the interfaces and the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=fullName> class. In all cases this class wraps or exposes the methods and functionality of the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=fullName> class and the <xref:System.ServiceModel.IClientChannel?displayProperty=fullName> interface.  
-  
- As when using the <xref:System.ServiceModel.ServiceHost?displayProperty=fullName> class, you can create the class and modify the endpoint, channel factory, or security information prior to making any calls or calling <xref:System.ServiceModel.ClientBase%601.Open%2A>. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][WCF Client Overview](../Topic/WCF%20Client%20Overview.md) and [Accessing Services Using a WCF Client](../Topic/Accessing%20Services%20Using%20a%20WCF%20Client.md).  
-  
- Special note for Managed C++ users deriving from this class:  
-  
--   Put your clean-up code in (On)(Begin)Close (and/or OnAbort), not in a destructor.  
-  
--   Avoid destructors: they cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
--   Avoid non-reference members: they can cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
--   Avoid finalizers; but if you include one, you should suppress the build warning and call <xref:System.GC.SuppressFinalize%28System.Object%29> and the finalizer itself from (On)(Begin)Close (and/or OnAbort) to emulate what would have been the auto-generated <xref:System.IDisposable> behavior.  
-  
-   
-  
-## Examples  
- The following code example shows how the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md) extends the ClientBase(TChannel) class to create a [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client class.  
-  
- [!code-vb[ClientBase#1](~/add/codesnippet/visualbasic/t-system.servicemodel.cl_1_1.vb)]
- [!code-cs[ClientBase#1](~/add/codesnippet/csharp/t-system.servicemodel.cl_1_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TChannel">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,29 +38,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class using the default target endpoint from the application configuration file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create a [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client object to invoke a service. This constructor uses the type parameter as the target contract and the binding and address information from the application configuration file.  
-  
-   
-  
-## Examples  
- The following code example shows how a client uses this constructor in a `SampleServiceClient` class that extends the <xref:System.ServiceModel.ClientBase%601> class.  
-  
- [!code-cs[ServiceContractAttribute#3](~/add/codesnippet/csharp/servicecontractattribute.client/client.cs#3)]
- [!code-vb[ServiceContractAttribute#3](~/add/codesnippet/visualbasic/servicecontractattribute.client/client.vb#3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">Either there is no default endpoint information in the configuration file, more than one endpoint in the file, or no configuration file.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -99,51 +54,35 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The endpoint for a service that allows clients to find and communicate with the service.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class using the specified  <see cref="T:System.ServiceModel.Description.ServiceEndpoint" />.</summary>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance) cil managed" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">The callback object that the client application uses to listen for messages from the connected service.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class using the <paramref name="callbackInstance" /> as the callback object in a duplex conversation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor when the service contract requires a callback service instance. The target endpoint is constructed from the type parameter and information in the application configuration file.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this constructor with a `SampleDuplexHelloClient` class to pass a callback object that listens for messages from the service.  
-  
- [!code-cs[CallbackBehaviorAttribute#3](~/add/codesnippet/csharp/callbackbehaviorattribute.client/client.cs#3)]
- [!code-vb[CallbackBehaviorAttribute#3](~/add/codesnippet/visualbasic/callbackbehaviorattribute.client/client.vb#3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The callback instance is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">Either there is no default endpoint information in the configuration file, more than one endpoint in the file, or no configuration file.</exception>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -153,25 +92,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class using the configuration information specified in the application configuration file by <paramref name="endpointConfigurationName" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor when there is more than one target endpoint in the application configuration file. This value is the `name` attribute of the client [\&lt;endpoint\&gt;](../Topic/%3Cendpoint%3E%20of%20%3Cclient%3E.md) element.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified endpoint information is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+        <param name="endpointConfigurationName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -181,7 +111,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -189,20 +119,20 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="binding">The binding with which to make calls to the service.</param>
-        <param name="remoteAddress">The address of the service endpoint.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class using the specified binding and target address.</summary>
+        <param name="binding">To be added.</param>
+        <param name="remoteAddress">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The remote address is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Description.ServiceEndpoint endpoint);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -210,20 +140,20 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">The callback object that the client application uses to listen for messages from the connected service.</param>
-        <param name="endpoint">The endpoint for a service that allows clients to find and communicate with the service.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class using the specified  <see cref="T:System.ServiceModel.InstanceContext" /> and  <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> objects.</summary>
+        <param name="instance">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) cil managed" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -231,19 +161,10 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">The callback object that the client uses to listen for messages from the connected service.</param>
-        <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class using the specified callback service and endpoint configuration information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file. The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](../Topic/%3Cendpoint%3E%20of%20%3Cclient%3E.md) element.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The endpoint is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+        <param name="instance">To be added.</param>
+        <param name="endpointConfigurationName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -253,7 +174,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -261,19 +182,10 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
-        <param name="remoteAddress">The address of the service.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class using the specified target address and endpoint information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](../Topic/%3Cendpoint%3E%20of%20%3Cclient%3E.md) element) and the specified address.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The remote address is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+        <param name="endpointConfigurationName">To be added.</param>
+        <param name="remoteAddress">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -283,7 +195,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -291,29 +203,20 @@
         <Parameter Name="remoteAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
-        <param name="remoteAddress">The address of the service.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](../Topic/%3Cendpoint%3E%20of%20%3Cclient%3E.md) element) and the specified address.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The remote address is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+        <param name="endpointConfigurationName">To be added.</param>
+        <param name="remoteAddress">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -322,22 +225,21 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">The callback service.</param>
-        <param name="binding">The binding with which to call the service.</param>
-        <param name="remoteAddress">The address of the service endpoint.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class.</summary>
+        <param name="instance">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="remoteAddress">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The remote address is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -346,30 +248,21 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">The callback object that the client uses to listen for messages from the connected service.</param>
-        <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
-        <param name="remoteAddress">The address of the service.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](../Topic/%3Cendpoint%3E%20of%20%3Cclient%3E.md) element) and the specified address.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The remote address is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+        <param name="instance">To be added.</param>
+        <param name="endpointConfigurationName">To be added.</param>
+        <param name="remoteAddress">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) cil managed" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName, string remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName, string remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -378,20 +271,11 @@
         <Parameter Name="remoteAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">The callback object that the client uses to listen for messages from the connected service.</param>
-        <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
-        <param name="remoteAddress">The address of the service.</param>
-        <summary>Initializes a new instance of the <see cref="System.ServiceModel.ClientBase%601" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](../Topic/%3Cendpoint%3E%20of%20%3Cclient%3E.md) element) and the specified address.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The remote address is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+        <param name="instance">To be added.</param>
+        <param name="endpointConfigurationName">To be added.</param>
+        <param name="remoteAddress">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -401,7 +285,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -409,15 +293,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the <see cref="System.ServiceModel.ClientBase%601" /> object to transition immediately from its current state into the closed state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheSetting">
@@ -433,8 +310,8 @@
         <ReturnType>System.ServiceModel.CacheSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the cache setting.</summary>
-        <value>The cache setting.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,15 +322,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the inner channel used to send messages to variously configured service endpoints.</summary>
-        <value>A channel of a specified type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,23 +341,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ChannelFactory&lt;TChannel&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the underlying <see cref="System.ServiceModel.ChannelFactory%601" /> object.</summary>
-        <value>A <see cref="System.ServiceModel.ChannelFactory%601" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Used to obtain the inner channel factory that handles creation of the channel to the service.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientCredentials">
@@ -490,31 +360,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ClientCredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the client credentials used to call an operation.</summary>
-        <value>Returns a <see cref="T:System.ServiceModel.Description.ClientCredentials" /> that represents the proof of identity presented by the client.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ClientCredentials property to configure the credentials that the <xref:System.ServiceModel.ClientBase%601> object uses to connect to the service.  
-  
-   
-  
-## Examples  
- The following code shows how to use the ClientCredentials property to set the username and password prior to calling the service.  
-  
- [!code-vb[c_ProgrammingSecurity#4](~/add/codesnippet/visualbasic/p-system.servicemodel.cl_1.vb)]
- [!code-cs[c_ProgrammingSecurity#4](~/add/codesnippet/csharp/p-system.servicemodel.cl_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -524,7 +379,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -532,15 +387,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the <see cref="System.ServiceModel.ClientBase%601" /> object to transition from its current state into the closed state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -550,7 +398,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -558,16 +406,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new channel to the service.</summary>
-        <returns>A channel of the type of the service contract.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Returns the channel created by the inner channel factory. Exceptions thrown by <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=fullName> can be expected here.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayInitializationUI">
@@ -577,7 +418,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -585,15 +426,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Instructs the inner channel to display a user interface if one is required to initialize the channel prior to using it.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call the DisplayInitializationUI method if the inner channel requires user interaction prior to constructing the channel. For example, if a user must enter a username and password to secure the channel, that custom <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer?displayProperty=fullName> can be invoked by calling this method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Endpoint">
@@ -603,23 +437,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the target endpoint for the service to which the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client can connect.</summary>
-        <value>The target endpoint.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Endpoint property to obtain the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=fullName> object to inspect or modify prior to using the <xref:System.ServiceModel.ClientBase%601> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultValueForInitialization&lt;T&gt;">
@@ -629,7 +456,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -640,9 +467,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type that is identified as reference or numeric by the keyword.</typeparam>
-        <summary>Replicates the behavior of the default keyword in C#.</summary>
-        <returns>Returns <see langword="null" /> if <see langword="T" /> is a reference type and zero if <see langword="T" /> is a numeric value type.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -653,23 +480,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.IClientChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the underlying <see cref="T:System.ServiceModel.IClientChannel" /> implementation.</summary>
-        <value>The client channel for the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the InnerChannel property to obtain the <xref:System.ServiceModel.IClientChannel?displayProperty=fullName> that is used to connect to the service.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeAsync">
@@ -679,7 +499,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -693,20 +513,13 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="beginOperationDelegate">A delegate that is used for calling the asynchronous operation.</param>
-        <param name="inValues">The input values to the asynchronous call.</param>
-        <param name="endOperationDelegate">A delegate that is used to end the asynchronous call after it has completed.</param>
-        <param name="operationCompletedCallback">A client-supplied callback that is invoked when the asynchronous method is complete. The callback is passed to the <see cref="System.ServiceModel.ClientBase%601.BeginOperationDelegate" />.</param>
-        <param name="userState">The <c>userState</c> object to associate with the asynchronous call.</param>
-        <summary>Provides support for implementing the event-based asynchronous pattern. [!INCLUDE[crabout](~/add/includes/crabout-md.md)] this pattern, see [Event-based Asynchronous Pattern Overview](../Topic/Event-based%20Asynchronous%20Pattern%20Overview.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Provide a unique value, such as a GUID or hash code, in the `userState` parameter for each call to InvokeAsync, and when each operation is completed, your event handler can determine which instance of the operation raised the completion event.  
-  
- ]]></format>
-        </remarks>
+        <param name="beginOperationDelegate">To be added.</param>
+        <param name="inValues">To be added.</param>
+        <param name="endOperationDelegate">To be added.</param>
+        <param name="operationCompletedCallback">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -716,7 +529,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -724,15 +537,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the <see cref="System.ServiceModel.ClientBase%601" /> object to transition from the created state into the opened state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -742,23 +548,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current state of the <see cref="System.ServiceModel.ClientBase%601" /> object.</summary>
-        <value>The value of the <see cref="T:System.ServiceModel.CommunicationState" /> of the object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -768,7 +567,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -776,15 +575,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Explicit implementation of the <see cref="System.IDisposable.Dispose%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Closes the client object. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)]<xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.BeginClose">
@@ -794,7 +586,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -805,18 +597,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">The method that receives the callback on completion.</param>
-        <param name="state">The state data.</param>
-        <summary>Begins an asynchronous operation to close the <see cref="System.ServiceModel.ClientBase%601" />.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous close operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.BeginClose">
@@ -826,7 +611,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -838,19 +623,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The period within which the call must complete.</param>
-        <param name="callback">The callback object invoked when the operation completes.</param>
-        <param name="state">The state data.</param>
-        <summary>Begins an asynchronous operation to close the <see cref="System.ServiceModel.ClientBase%601" /> with a specified timeout.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous begin close operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.BeginOpen">
@@ -860,7 +638,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -871,18 +649,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">The method that receives the callback on completion.</param>
-        <param name="state">The state data.</param>
-        <summary>Begins an asynchronous operation to open the <see cref="System.ServiceModel.ClientBase%601" /> object.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous open operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.BeginOpen">
@@ -892,7 +663,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -904,19 +675,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time within which the call must complete.</param>
-        <param name="callback">The method that receives the callback on completion.</param>
-        <param name="state">The state data.</param>
-        <summary>Begins an asynchronous operation to open the <see cref="System.ServiceModel.ClientBase%601" /> object within a specified interval of time.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous open operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.Close">
@@ -926,7 +690,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -936,16 +700,9 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time within which the call must complete.</param>
-        <summary>Causes the <see cref="System.ServiceModel.ClientBase%601" /> object to transition from its current state into the closed state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.EndClose">
@@ -955,7 +712,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -965,16 +722,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> used to complete the asynchronous close operation.</param>
-        <summary>Completes an asynchronous operation to close the <see cref="System.ServiceModel.ClientBase%601" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.EndOpen">
@@ -984,7 +734,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -994,16 +744,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> used to complete the asynchronous end open operation.</param>
-        <summary>Completes an asynchronous operation to open the <see cref="System.ServiceModel.ClientBase%601" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.Open">
@@ -1013,7 +756,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1023,16 +766,9 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time period within which the call must complete.</param>
-        <summary>Causes the <see cref="System.ServiceModel.ClientBase%601" /> object to transition from the created state into the opened state within a specified interval of time.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

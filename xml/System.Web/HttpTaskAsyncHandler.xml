@@ -15,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides methods that a derived task handler class can implement in order to process an asynchronous task.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TheHttpTaskAsyncHandler class provides a simplified way to handle asynchronous tasks without having to implement the <xref:System.Web.IHttpAsyncHandler.BeginProcessRequest%2A> and <xref:System.Web.IHttpAsyncHandler.EndProcessRequest%2A> methods.  To create a handler for an asynchronous task, you can override the <xref:System.Web.HttpTaskAsyncHandler.ProcessRequestAsync%2A> method and implement custom task handling code.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.Web.HttpTaskAsyncHandler" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +47,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the task handler class instance can be reused for another asynchronous task.</summary>
-        <value>
-          <see langword="true" /> if the handler can be reused; otherwise, <see langword="false" />.  The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,10 +73,9 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">The HTTP context.</param>
-        <summary>When overridden in a derived class, provides code that handles a synchronous task.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">The method is implemented but does not provide any default handling for synchronous tasks.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProcessRequestAsync">
@@ -103,17 +94,10 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">The HTTP context.</param>
-        <summary>When overridden in a derived class, provides code that handles an asynchronous task.</summary>
-        <returns>The asynchronous task.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To create a custom handler for an asynchronous task, override the ProcessRequestAsync method.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpAsyncHandler.BeginProcessRequest">
@@ -134,19 +118,12 @@
         <Parameter Name="extraData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">The HTTP context.</param>
-        <param name="cb">The callback method to invoke when the method returns.</param>
-        <param name="extraData">Additional data for processing the task.</param>
-        <summary>Initiates asynchronous processing of a task in an HTTP task handler.</summary>
-        <returns>An object that contains status data about the asynchronous operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.HttpTaskAsyncHandler> instance is cast to an <xref:System.Web.IHttpAsyncHandler> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="cb">To be added.</param>
+        <param name="extraData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpAsyncHandler.EndProcessRequest">
@@ -165,16 +142,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The status of the asynchronous operation.</param>
-        <summary>Ends asynchronous processing of a task in an HTTP task handler.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.HttpTaskAsyncHandler> instance is cast to an <xref:System.Web.IHttpAsyncHandler> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

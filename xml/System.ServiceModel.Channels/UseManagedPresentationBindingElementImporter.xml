@@ -1,22 +1,19 @@
 <Type Name="UseManagedPresentationBindingElementImporter" FullName="System.ServiceModel.Channels.UseManagedPresentationBindingElementImporter">
-  <TypeSignature Language="C#" Value="public sealed class UseManagedPresentationBindingElementImporter : System.ServiceModel.Description.IPolicyImportExtension" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UseManagedPresentationBindingElementImporter extends System.Object implements class System.ServiceModel.Description.IPolicyImportExtension" />
+  <TypeSignature Language="C#" Value="public class UseManagedPresentationBindingElementImporter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UseManagedPresentationBindingElementImporter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.UseManagedPresentationBindingElementImporter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>System.ServiceModel.Description.IPolicyImportExtension</InterfaceName>
-    </Interface>
   </Interfaces>
   <Docs>
-    <summary>Converts WSDL-based policies for <see cref="T:System.ServiceModel.Channels.UseManagedPresentationBindingElement" />s into descriptions of the binding elements that can implement these policies for the service.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +24,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.UseManagedPresentationBindingElementImporter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -54,9 +50,9 @@
         <Parameter Name="policyContext" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="importer">The <see cref="T:System.ServiceModel.Description.MetadataImporter" /> object in use.</param>
-        <param name="policyContext">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> that contains both the policy assertions that can be imported and the collections of binding elements to which implementing binding elements can be added.</param>
-        <summary>Defines a method that can import custom policy assertions and add implementing binding elements.</summary>
+        <param name="importer">To be added.</param>
+        <param name="policyContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

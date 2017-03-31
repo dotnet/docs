@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.JpegBitmapEncoder" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines an encoder that is used to encode [!INCLUDE[TLA#tla_jpegorg](~/add/includes/tlasharptla-jpegorg-md.md)] format images.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[TLA#tla_jpegorg](~/add/includes/tlasharptla-jpegorg-md.md)] format bitmaps support frame level thumbnails and frame level metadata. They do not support preview, global thumbnails, global metadata, or multiple frames.  
-  
- Encoding does not work in partial trust. See [WPF Partial Trust Security](../Topic/WPF%20Partial%20Trust%20Security.md) for information on partial trust.  
-  
-<a name="xamlTextUsage_No"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -44,22 +31,8 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.JpegBitmapEncoder" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.JpegBitmapEncoder> to encode a new bitmap image.  
-  
- [!code-cpp[jpegbitmapdecoderencoder#2](~/add/codesnippet/cpp/jpegencoderdecoder/jpegencoderdecoder.cpp#2)]
- [!code-vb[jpegbitmapdecoderencoder#2](~/add/codesnippet/visualbasic/JpegEncoderDecoder/JpegEncoderDecoder.vb#2)]
- [!code-cs[jpegbitmapdecoderencoder#2](~/add/codesnippet/csharp/JpegEncoderDecoder/JpegEncoderDecoder.cs#2)]  
-[!code-cpp[jpegbitmapdecoderencoder#3](~/add/codesnippet/cpp/jpegencoderdecoder/jpegencoderdecoder.cpp#3)]
-[!code-vb[jpegbitmapdecoderencoder#3](~/add/codesnippet/visualbasic/JpegEncoderDecoder/JpegEncoderDecoder.vb#3)]
-[!code-cs[jpegbitmapdecoderencoder#3](~/add/codesnippet/csharp/JpegEncoderDecoder/JpegEncoderDecoder.cs#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlipHorizontal">
@@ -69,39 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a [!INCLUDE[TLA#tla_jpegorg](~/add/includes/tlasharptla-jpegorg-md.md)] image should be flipped horizontally during encoding.</summary>
-        <value>
-          <see langword="true" /> if the image is flipped horizontally during encoding; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_FlipHorizontal"></a>   
-## XAML Text Usage  
- The horizontal flip represents a lossless transformation of the source image and replaces any previous lossless transformation.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to set the value of the FlipHorizontal property.  
-  
- [!code-cpp[jpegbitmapdecoderencoder#2](~/add/codesnippet/cpp/jpegencoderdecoder/jpegencoderdecoder.cpp#2)]
- [!code-vb[jpegbitmapdecoderencoder#2](~/add/codesnippet/visualbasic/JpegEncoderDecoder/JpegEncoderDecoder.vb#2)]
- [!code-cs[jpegbitmapdecoderencoder#2](~/add/codesnippet/csharp/JpegEncoderDecoder/JpegEncoderDecoder.cs#2)]  
-[!code-cpp[jpegbitmapdecoderencoder#3](~/add/codesnippet/cpp/jpegencoderdecoder/jpegencoderdecoder.cpp#3)]
-[!code-vb[jpegbitmapdecoderencoder#3](~/add/codesnippet/visualbasic/JpegEncoderDecoder/JpegEncoderDecoder.vb#3)]
-[!code-cs[jpegbitmapdecoderencoder#3](~/add/codesnippet/csharp/JpegEncoderDecoder/JpegEncoderDecoder.cs#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlipVertical">
@@ -111,38 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a [!INCLUDE[TLA#tla_jpegorg](~/add/includes/tlasharptla-jpegorg-md.md)] image should be flipped vertically during encoding.</summary>
-        <value>
-          <see langword="true" /> if the image is flipped vertically during encoding; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The vertical flip represents a lossless transformation of the source image and replaces any previous lossless transformation.  
-  
-<a name="XAMLTextUsage_FlipVertical"></a>   
-## XAML Text Usage  
-   
-  
-## Examples  
- The following example demonstrates how to set the value of the FlipVertical property.  
-  
- [!code-cpp[jpegbitmapdecoderencoder#2](~/add/codesnippet/cpp/jpegencoderdecoder/jpegencoderdecoder.cpp#2)]
- [!code-vb[jpegbitmapdecoderencoder#2](~/add/codesnippet/visualbasic/JpegEncoderDecoder/JpegEncoderDecoder.vb#2)]
- [!code-cs[jpegbitmapdecoderencoder#2](~/add/codesnippet/csharp/JpegEncoderDecoder/JpegEncoderDecoder.cs#2)]  
-[!code-cpp[jpegbitmapdecoderencoder#3](~/add/codesnippet/cpp/jpegencoderdecoder/jpegencoderdecoder.cpp#3)]
-[!code-vb[jpegbitmapdecoderencoder#3](~/add/codesnippet/visualbasic/JpegEncoderDecoder/JpegEncoderDecoder.vb#3)]
-[!code-cs[jpegbitmapdecoderencoder#3](~/add/codesnippet/csharp/JpegEncoderDecoder/JpegEncoderDecoder.cs#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="QualityLevel">
@@ -152,36 +78,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates the quality level of the resulting [!INCLUDE[TLA#tla_jpegorg](~/add/includes/tlasharptla-jpegorg-md.md)] image.</summary>
-        <value>The quality level of the [!INCLUDE[TLA2#tla_jpegorg](~/add/includes/tla2sharptla-jpegorg-md.md)] image. The value range is 1 (lowest quality) to 100 (highest quality) inclusive.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_QualityLevel"></a>   
-## XAML Text Usage  
-   
-  
-## Examples  
- The following example demonstrates how to set the value of the QualityLevel property.  
-  
- [!code-cpp[jpegbitmapdecoderencoder#2](~/add/codesnippet/cpp/jpegencoderdecoder/jpegencoderdecoder.cpp#2)]
- [!code-vb[jpegbitmapdecoderencoder#2](~/add/codesnippet/visualbasic/JpegEncoderDecoder/JpegEncoderDecoder.vb#2)]
- [!code-cs[jpegbitmapdecoderencoder#2](~/add/codesnippet/csharp/JpegEncoderDecoder/JpegEncoderDecoder.cs#2)]  
-[!code-cpp[jpegbitmapdecoderencoder#3](~/add/codesnippet/cpp/jpegencoderdecoder/jpegencoderdecoder.cpp#3)]
-[!code-vb[jpegbitmapdecoderencoder#3](~/add/codesnippet/visualbasic/JpegEncoderDecoder/JpegEncoderDecoder.vb#3)]
-[!code-cs[jpegbitmapdecoderencoder#3](~/add/codesnippet/csharp/JpegEncoderDecoder/JpegEncoderDecoder.cs#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -191,39 +96,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.Rotation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents the degree to which a [!INCLUDE[TLA#tla_jpegorg](~/add/includes/tlasharptla-jpegorg-md.md)] image is rotated.</summary>
-        <value>The degree to which the image is rotated.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rotation is supported only in 90-degree increments.  
-  
- The rotation represents a lossless transformation of the source image and replaces any previous lossless transformation.  
-  
-<a name="XAMLTextUsage_Rotation"></a>   
-## XAML Text Usage  
-   
-  
-## Examples  
- The following example demonstrates how to set the value of the Rotation property.  
-  
- [!code-cpp[jpegbitmapdecoderencoder#2](~/add/codesnippet/cpp/jpegencoderdecoder/jpegencoderdecoder.cpp#2)]
- [!code-vb[jpegbitmapdecoderencoder#2](~/add/codesnippet/visualbasic/JpegEncoderDecoder/JpegEncoderDecoder.vb#2)]
- [!code-cs[jpegbitmapdecoderencoder#2](~/add/codesnippet/csharp/JpegEncoderDecoder/JpegEncoderDecoder.cs#2)]  
-[!code-cpp[jpegbitmapdecoderencoder#3](~/add/codesnippet/cpp/jpegencoderdecoder/jpegencoderdecoder.cpp#3)]
-[!code-vb[jpegbitmapdecoderencoder#3](~/add/codesnippet/visualbasic/JpegEncoderDecoder/JpegEncoderDecoder.vb#3)]
-[!code-cs[jpegbitmapdecoderencoder#3](~/add/codesnippet/csharp/JpegEncoderDecoder/JpegEncoderDecoder.cs#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,10 +1,14 @@
 <Type Name="ProtectedData" FullName="System.Security.Cryptography.ProtectedData">
-  <TypeSignature Language="C#" Value="public static class ProtectedData" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProtectedData extends System.Object" />
+  <TypeSignature Language="C#" Value="public sealed class ProtectedData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProtectedData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ProtectedData" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +16,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods for encrypting and decrypting data. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class provides access to the Data Protection API (DPAPI) available in Microsoft Windows 2000 and later operating systems. This is a service that is provided by the operating system and does not require additional libraries. It provides protection using the user or machine credentials to encrypt or decrypt data.  
-  
- The class consists of two wrappers for the unmanaged DPAPI, [Protect(Byte\[\], Byte\<xref:System.Security.Cryptography.ProtectedData.Protect%2A> and [Unprotect(Byte\[\], Byte\<xref:System.Security.Cryptography.ProtectedData.Unprotect%2A>. These two methods can be used to encrypt and decrypt data such as passwords, keys, and connection strings.  
-  
- If you use these methods during impersonation, you may receive the following error: "Key not valid for use in specified state." This occurs because the DPAPI stores the key data in user profiles. If the profile is not loaded, DPAPI won’t be able to perform the decryption. To prevent this error, load the profile of the user you want to impersonate before calling either method. Using DPAPI with impersonation can incur significant complication and requires careful design choices.  
-  
-   
-  
-## Examples  
- The following example shows how to use data protection.  
-  
- [!code-cs[Cryptography.DataProtectionSample#1](~/add/codesnippet/csharp/t-system.security.crypto_127_1.cs)]
- [!code-cpp[Cryptography.DataProtectionSample#1](~/add/codesnippet/cpp/t-system.security.crypto_127_1.cpp)]
- [!code-vb[Cryptography.DataProtectionSample#1](~/add/codesnippet/visualbasic/t-system.security.crypto_127_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Protect">
@@ -42,15 +26,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ProtectedData.Protect(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -60,36 +43,12 @@
         <Parameter Name="scope" Type="System.Security.Cryptography.DataProtectionScope" />
       </Parameters>
       <Docs>
-        <param name="userData">A byte array that contains data to encrypt.</param>
-        <param name="optionalEntropy">An optional additional byte array used to increase the complexity of the encryption, or <see langword="null" /> for no additional complexity.</param>
-        <param name="scope">One of the enumeration values that specifies the scope of encryption.</param>
-        <summary>Encrypts the data in a specified byte array and returns a byte array that contains the encrypted data.</summary>
-        <returns>A byte array representing the encrypted data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be used to encrypt data such as passwords, keys, or connection strings. The `optionalEntropy` parameter enables you to add data to increase the complexity of the encryption; specify `null` for no additional complexity. If provided, this information must also be used when decrypting the data using the <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A> method.  
-  
-> [!NOTE]
->  If you use this method during impersonation, you may receive the following error: "Key not valid for use in specified state." To prevent this error, load the profile of the user you want to impersonate before calling the method.  
-  
-   
-  
-## Examples  
- The following example shows how to use data protection.  
-  
- [!code-cs[Cryptography.DataProtectionSample#1](~/add/codesnippet/csharp/95867340-d3f0-4c9c-82ca-_1.cs)]
- [!code-cpp[Cryptography.DataProtectionSample#1](~/add/codesnippet/cpp/95867340-d3f0-4c9c-82ca-_1.cpp)]
- [!code-vb[Cryptography.DataProtectionSample#1](~/add/codesnippet/visualbasic/95867340-d3f0-4c9c-82ca-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="userData" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The encryption failed.</exception>
-        <exception cref="T:System.NotSupportedException">The operating system does not support this method.</exception>
-        <exception cref="T:System.OutOfMemoryException">The system ran out of memory while encrypting the data.</exception>
-        <permission cref="T:System.Security.Permissions.DataProtectionPermission">with the associated <see cref="System.Security.Permissions.DataProtectionPermissionAttribute.ProtectData%2A" /> flag for permission to protect data.</permission>
+        <param name="userData">To be added.</param>
+        <param name="optionalEntropy">To be added.</param>
+        <param name="scope">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Unprotect">
@@ -98,15 +57,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ProtectedData.Unprotect(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -116,36 +74,12 @@
         <Parameter Name="scope" Type="System.Security.Cryptography.DataProtectionScope" />
       </Parameters>
       <Docs>
-        <param name="encryptedData">A byte array containing data encrypted using the <see cref="System.Security.Cryptography.ProtectedData.Protect%2A" /> method.</param>
-        <param name="optionalEntropy">An optional additional byte array that was used to encrypt the data, or <see langword="null" /> if the additional byte array was not used.</param>
-        <param name="scope">One of the enumeration values that specifies the scope of data protection that was used to encrypt the data.</param>
-        <summary>Decrypts the data in a specified byte array and returns a byte array that contains the decrypted data.</summary>
-        <returns>A byte array representing the decrypted data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be used to unprotect data that was encrypted using the <xref:System.Security.Cryptography.ProtectedData.Protect%2A> method. If the `optionalEntropy` parameter was used during encryption, it must be supplied to unencrypt the data.  
-  
-> [!NOTE]
->  If you use this method during impersonation, you may receive the following error: "Key not valid for use in specified state." To prevent this error, load the profile of the user you want to impersonate before calling the method.  
-  
-   
-  
-## Examples  
- The following code example shows how to use data protection.  
-  
- [!code-cs[Cryptography.DataProtectionSample#1](~/add/codesnippet/csharp/52a5e76e-1631-47b1-9e44-_1.cs)]
- [!code-cpp[Cryptography.DataProtectionSample#1](~/add/codesnippet/cpp/52a5e76e-1631-47b1-9e44-_1.cpp)]
- [!code-vb[Cryptography.DataProtectionSample#1](~/add/codesnippet/visualbasic/52a5e76e-1631-47b1-9e44-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="encryptedData" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The decryption failed.</exception>
-        <exception cref="T:System.NotSupportedException">The operating system does not support this method.</exception>
-        <exception cref="T:System.OutOfMemoryException">Out of memory.</exception>
-        <permission cref="T:System.Security.Permissions.DataProtectionPermission">with the associated <see cref="System.Security.Permissions.DataProtectionPermissionAttribute.UnprotectData%2A" /> flag for permission to unprotect data.</permission>
+        <param name="encryptedData">To be added.</param>
+        <param name="optionalEntropy">To be added.</param>
+        <param name="scope">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

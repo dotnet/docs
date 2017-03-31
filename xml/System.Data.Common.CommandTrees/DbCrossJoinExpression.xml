@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbCrossJoinExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an unconditional join operation between the given collection arguments. This class cannot be inherited.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -33,11 +31,9 @@
         <Parameter Name="visitor" Type="System.Data.Common.CommandTrees.DbExpressionVisitor" />
       </Parameters>
       <Docs>
-        <param name="visitor">An instance of <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</param>
-        <summary>Implements the visitor pattern for expressions that do not produce a result value.</summary>
+        <param name="visitor">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="visitor" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Accept&lt;TResultType&gt;">
@@ -47,7 +43,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,13 +55,11 @@
         <Parameter Name="visitor" Type="System.Data.Common.CommandTrees.DbExpressionVisitor&lt;TResultType&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResultType">The type of the result produced by <c>visitor.</c></typeparam>
-        <param name="visitor">An instance of a typed <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" /> that produces a result value of a specific type.</param>
-        <summary>Implements the visitor pattern for expressions that produce a result value of a specific type.</summary>
-        <returns>A result value of a specific type produced by <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</returns>
+        <typeparam name="TResultType">To be added.</typeparam>
+        <param name="visitor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="visitor" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Inputs">
@@ -76,15 +69,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpressionBinding&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> list that provides the input sets to the join.</summary>
-        <value>A <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> list that provides the input sets to the join.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

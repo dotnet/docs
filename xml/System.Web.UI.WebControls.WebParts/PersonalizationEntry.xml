@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents core pieces of custom personalization state information contained in a <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> object. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class represents pieces of custom state information contained in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> object made available by the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable> interface. This information is used by other classes and interfaces in the personalization infrastructure.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -38,21 +29,10 @@
         <Parameter Name="scope" Type="System.Web.UI.WebControls.WebParts.PersonalizationScope" />
       </Parameters>
       <Docs>
-        <param name="value">An object of personalization data associated with the personalization scope in the <c>scope</c> parameter.</param>
-        <param name="scope">The <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> that applies to the custom personalization information.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" /> class using the specified value and scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Note that the custom state information contained in the `value` parameter must have an associated scope as specified in the `scope` parameter. Entries in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> must explicitly indicate whether a piece of custom data is considered personalizable in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> or <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
-  
- In this constructor, the value for the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property defaults to `false`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="scope" /> is set to a value that is not a valid member of <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" />.</exception>
+        <param name="value">To be added.</param>
+        <param name="scope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -71,18 +50,11 @@
         <Parameter Name="isSensitive" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">An object of personalization data associated with the personalization scope in the <c>scope</c> parameter.</param>
-        <param name="scope">The <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> that applies to the custom personalization information.</param>
-        <param name="isSensitive">A Boolean value indicating if the custom state information is sensitive and should not be exported.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" /> class using the provided parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor allows you to create a <xref:System.Web.UI.WebControls.WebParts.PersonalizationEntry> that contains data that should not be serialized in the exported Web Part format. If you set the value of `isSensitive` to `true`, the Web Parts export handler will not serialize the data for export.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="scope">To be added.</param>
+        <param name="isSensitive">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSensitive">
@@ -92,24 +64,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Boolean value that indicates if the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" /> contains sensitive information.</summary>
-        <value>
-          <see langword="true" /> if the sensitive setting for the attribute is set; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Web Parts personalization information can contain sensitive data that should not be exported to other controls. This property is used by the Web Parts import and export process. Setting <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> to `true` causes the Web Parts export handler to not serialize the data in the exported Web Part format.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -119,25 +82,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the personalization scope associated with this personalization data entry.</summary>
-        <value>The personalization scope associated with this personalization data entry.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property's effect is similar to specifying the scope associated with a public property using the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> class. You can use this property to set the personalization scope of the personalization information that makes up the <xref:System.Web.UI.WebControls.WebParts.PersonalizationEntry> instance. All entries must have a scope associated with it.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="scope" /> is set to a value that is not a valid member of <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -147,23 +100,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the personalization state information for this entry.</summary>
-        <value>An object representing personalization state information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Note that the custom state information contained in this property must have an associated scope, specified in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationEntry.Scope%2A> property. This property can be set to `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

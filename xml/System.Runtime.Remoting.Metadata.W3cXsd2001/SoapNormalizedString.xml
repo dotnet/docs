@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,18 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Wraps an XML <see langword="normalizedString" /> type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the members in the SoapNormalizedString class to convert between a SoapNormalizedString object and an XSD `normalizedString`.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#10](~/add/codesnippet/cpp/t-system.runtime.remotin_0_1.cpp)]
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#10](~/add/codesnippet/csharp/t-system.runtime.remotin_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,23 +32,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#21](~/add/codesnippet/cpp/m-system.runtime.remotin_21_1.cpp)]
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#21](~/add/codesnippet/csharp/m-system.runtime.remotin_21_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,28 +48,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.String" /> object that contains a normalized string.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString" /> class with a normalized string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#22](~/add/codesnippet/cpp/8fbd2fd6-5c73-4959-8032-_1.cpp)]
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#22](~/add/codesnippet/csharp/8fbd2fd6-5c73-4959-8032-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Runtime.Remoting.RemotingException">
-          <paramref name="value" /> contains invalid characters (0xD, 0xA, or 0x9).</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetXsdType">
@@ -99,7 +67,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,19 +75,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the XML Schema definition language (XSD) of the current SOAP type.</summary>
-        <returns>A <see cref="T:System.String" /> that indicates the XSD of the current SOAP type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#13](~/add/codesnippet/cpp/m-system.runtime.remotin_27_1.cpp)]
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#13](~/add/codesnippet/csharp/m-system.runtime.remotin_27_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -129,7 +87,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,22 +97,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The <see langword="String" /> to convert.</param>
-        <summary>Converts the specified <see cref="T:System.String" /> into a <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString" /> object.</summary>
-        <returns>A <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString" /> object obtained from <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#11](~/add/codesnippet/cpp/272ebdb4-32c9-428e-80ef-_1.cpp)]
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#11](~/add/codesnippet/csharp/272ebdb4-32c9-428e-80ef-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Runtime.Remoting.RemotingException">
-          <paramref name="value" /> contains invalid characters (0xD, 0xA, or 0x9).</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -164,7 +110,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,19 +118,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns <see cref="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString.Value%2A" /> as a <see cref="T:System.String" />.</summary>
-        <returns>A <see cref="T:System.String" /> that is obtained from <see cref="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString.Value%2A" /> in the format "&lt;![CDATA[" + <see cref="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString.Value%2A" /> + "]]&gt;".</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#12](~/add/codesnippet/cpp/m-system.runtime.remotin_67_1.cpp)]
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#12](~/add/codesnippet/csharp/m-system.runtime.remotin_67_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -194,28 +130,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a normalized string.</summary>
-        <value>A <see cref="T:System.String" /> object that contains a normalized string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use this property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#14](~/add/codesnippet/cpp/p-system.runtime.remotin_61_1.cpp)]
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#14](~/add/codesnippet/csharp/p-system.runtime.remotin_61_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Runtime.Remoting.RemotingException">
-          <paramref name="value" /> contains invalid characters (0xD, 0xA, or 0x9).</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XsdType">
@@ -225,26 +149,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the XML Schema definition language (XSD) of the current SOAP type.</summary>
-        <value>A <see cref="T:System.String" /> that indicates the XSD of the current SOAP type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use this property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#16](~/add/codesnippet/cpp/p-system.runtime.remotin_105_1.cpp)]
- [!code-cs[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNormalizedString#16](~/add/codesnippet/csharp/p-system.runtime.remotin_105_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

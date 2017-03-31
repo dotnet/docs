@@ -3,36 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TypeDescriptionProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeDescriptionProvider" />
   <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides supplemental metadata to the <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TypeDescriptionProvider class dynamically extends the type information associated with a type or object by adding, modifying, or hiding characteristics such as attributes, properties, and events. There can be multiple type description provider classes that offer metadata to a single <xref:System.ComponentModel.TypeDescriptor>.  
-  
- There are two ways to associate a TypeDescriptionProvider with a <xref:System.ComponentModel.TypeDescriptor>:  
-  
--   At design time, when the target class can be assigned the appropriate <xref:System.ComponentModel.TypeDescriptionProviderAttribute> tag.  
-  
--   At run time, when one of the <xref:System.ComponentModel.TypeDescriptor.AddProvider%2A> methods of the <xref:System.ComponentModel.TypeDescriptor> class can be called. These overloaded methods require either the target object or its class type.  
-  
- The TypeDescriptionProvider class relies on a parent object of the same type, supplied during construction. This allows classes that derive from <xref:System.ComponentModel.CustomTypeDescriptor> to selectively override methods.  
-  
- Instances of TypeDescriptionProvider are only built upon demand, minimizing the impact of custom type information on performance.  
-  
- This class cannot be inherited.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,21 +30,22 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProvider" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is equivalent to calling the other <xref:System.ComponentModel.TypeDescriptionProvider.%23ctor%28System.ComponentModel.TypeDescriptionProvider%29> constructor with a parameter value that is `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -64,34 +54,25 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.#ctor(System.ComponentModel.TypeDescriptionProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parent" Type="System.ComponentModel.TypeDescriptionProvider" />
       </Parameters>
       <Docs>
-        <param name="parent">The parent type description provider.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProvider" /> class using a parent type description provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `parent` parameter is `null`, all <xref:System.ComponentModel.TypeDescriptionProvider> methods will return default values. Otherwise, all <xref:System.ComponentModel.TypeDescriptionProvider> methods will delegate to the methods of `parent`.  
-  
- The following table shows the default return values for <xref:System.ComponentModel.TypeDescriptionProvider> methods.  
-  
-|Method|Default return value|  
-|------------|--------------------------|  
-|<xref:System.ComponentModel.TypeDescriptionProvider.GetCache%2A>|`null`|  
-|<xref:System.ComponentModel.TypeDescriptionProvider.CreateInstance%2A>|A newly created object through a call to the <xref:System.Activator.CreateInstance%2A> method.|  
-|<xref:System.ComponentModel.TypeDescriptionProvider.GetExtendedTypeDescriptor%2A>|A default instance of a <xref:System.ComponentModel.CustomTypeDescriptor> class.|  
-|<xref:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor%2A>|A default instance of a <xref:System.ComponentModel.CustomTypeDescriptor> class.|  
-|<xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A>|The `objectType` first parameter.|  
-  
- ]]></format>
-        </remarks>
+        <param name="parent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -100,9 +81,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -114,22 +103,13 @@
         <Parameter Name="args" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="provider">An optional service provider.</param>
-        <param name="objectType">The type of object to create. This parameter is never <see langword="null" />.</param>
-        <param name="argTypes">An optional array of types that represent the parameter types to be passed to the object's constructor. This array can be <see langword="null" /> or of zero length.</param>
-        <param name="args">An optional array of parameter values to pass to the object's constructor.</param>
-        <summary>Creates an object that can substitute for another data type.</summary>
-        <returns>The substitute <see cref="T:System.Object" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IServiceProvider> specified by the `provider` parameter is passed in by the <xref:System.ComponentModel.TypeDescriptor.CreateInstance%2A?displayProperty=fullName> method of the <xref:System.ComponentModel.TypeDescriptor> class. If `provider` is not `null`, the service provider can be used by the type description provider to obtain additional context about the creation call.  
-  
- The CreateInstance method is `virtual` and, by default, returns the result of the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method if `provider` is `null`. If `provider` is `null`, this method will invoke the CreateInstance method of the parent provider.  
-  
- ]]></format>
-        </remarks>
+        <param name="provider">To be added.</param>
+        <param name="objectType">To be added.</param>
+        <param name="argTypes">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCache">
@@ -138,9 +118,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetCache(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
@@ -149,19 +137,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">The object for which to get the cache.</param>
-        <summary>Gets a per-object cache, accessed as an <see cref="T:System.Collections.IDictionary" /> of key/value pairs.</summary>
-        <returns>An <see cref="T:System.Collections.IDictionary" /> if the provided object supports caching; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.ComponentModel.TypeDescriptor> may need to perform complex operations on collections of metadata. Because types are not unloaded for the life of a domain, the <xref:System.ComponentModel.TypeDescriptor> class will automatically cache the results of these operations based on type. However, some operations use live object instances. These operations cannot be cached within the <xref:System.ComponentModel.TypeDescriptor> class because caching them would prevent the object from being garbage collected. Instead, the <xref:System.ComponentModel.TypeDescriptor> class allows for a per-object cache, accessed as an <xref:System.Collections.IDictionary> of key/value pairs, to exist on an object. The GetCache method returns an instance of this cache. The GetCache method will return `null` if there is no supported cache for an object.  
-  
- The default <xref:System.ComponentModel.TypeDescriptionProvider> used by <xref:System.ComponentModel.TypeDescriptor> examines the object to see if it is a sited component that implements the <xref:System.ComponentModel.Design.IDictionaryService> interface. If the object is, it uses the dictionary service to store the object's cache. Otherwise, the object it returns `null`. Other type description providers may provide their own implementation here. For example, dependency objects can just attach a property of type <xref:System.Collections.IDictionary>.  
-  
- ]]></format>
-        </remarks>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExtendedTypeDescriptor">
@@ -170,9 +149,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetExtendedTypeDescriptor(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ICustomTypeDescriptor</ReturnType>
@@ -181,19 +168,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">The object for which to get the extended type descriptor.</param>
-        <summary>Gets an extended custom type descriptor for the given object.</summary>
-        <returns>An <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> that can provide extended metadata for the object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An extended type descriptor is a custom type descriptor that offers properties that other objects have added to this object, but that are not actually defined on the object. For example, in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] component model, objects that implement the <xref:System.ComponentModel.IExtenderProvider> interface can attach properties to other objects that reside in the same logical container. The overloaded <xref:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor%2A> methods do not return a type descriptor that provides these extra extended properties. The GetExtendedTypeDescriptor method returns the set of these extended properties. The <xref:System.ComponentModel.TypeDescriptor> will automatically merge the results of these two property collections. While the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] component model supports only extended properties, GetExtendedTypeDescriptor can be used for extended attributes as well as events, if the type description provider supports it.  
-  
- GetExtendedTypeDescriptor is `virtual` and, by default, returns a custom type descriptor that returns empty results if no parent provider was passed. If a parent provider was passed, this method will invoke the parent provider's GetExtendedTypeDescriptor method.  
-  
- ]]></format>
-        </remarks>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExtenderProviders">
@@ -202,8 +180,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetExtenderProviders(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IExtenderProvider[]</ReturnType>
@@ -212,12 +199,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">The object to get extender providers for.</param>
-        <summary>Gets the extender providers for the specified object.</summary>
-        <returns>An array of extender providers for <paramref name="instance" />.</returns>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="instance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFullComponentName">
@@ -226,9 +211,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetFullComponentName(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -237,12 +230,10 @@
         <Parameter Name="component" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="component">The specified component.</param>
-        <summary>Gets the name of the specified component, or <see langword="null" /> if the component has no name.</summary>
-        <returns>The name of the specified component.</returns>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="component" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetReflectionType">
@@ -251,9 +242,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetReflectionType(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -262,21 +261,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">An instance of the type (should not be <see langword="null" />).</param>
-        <summary>Performs normal reflection against the given object.</summary>
-        <returns>The type of reflection for this <paramref name="instance" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> method is a lower-level version of the <xref:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor%2A> method. If no custom type descriptor can be located for an object, <xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> is called to perform normal reflection against the object.  
-  
- Use this method overload if you have called a type descriptor member that uses an instance instead of a type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="instance" /> is <see langword="null" />.</exception>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetReflectionType">
@@ -285,9 +273,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetReflectionType(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -296,21 +292,10 @@
         <Parameter Name="objectType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="objectType">The type of object for which to retrieve the <see cref="T:System.Reflection.IReflect" />.</param>
-        <summary>Performs normal reflection against a type.</summary>
-        <returns>The type of reflection for this <paramref name="objectType" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> method is a lower-level version of the <xref:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor%2A> method. If no custom type descriptor can be located for an object, <xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> is called to perform normal reflection against the object.  
-  
- Use this method overload if you have called a type descriptor member that uses a type instead of an instance.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="objectType" /> is <see langword="null" />.</exception>
+        <param name="objectType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetReflectionType">
@@ -319,9 +304,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetReflectionType(System.Type,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -331,18 +324,11 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="objectType">The type of object for which to retrieve the <see cref="T:System.Reflection.IReflect" />.</param>
-        <param name="instance">An instance of the type. Can be <see langword="null" />.</param>
-        <summary>Performs normal reflection against the given object with the given type.</summary>
-        <returns>The type of reflection for this <paramref name="objectType" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> method is a lower-level version of the <xref:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor%2A> method. If no custom type descriptor can be located for an object, <xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> is called to perform normal reflection against the object.  
-  
- ]]></format>
-        </remarks>
+        <param name="objectType">To be added.</param>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeType">
@@ -351,8 +337,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -361,19 +356,10 @@
         <Parameter Name="reflectionType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="reflectionType">The type to convert to its runtime equivalent.</param>
-        <summary>Converts a reflection type into a runtime type.</summary>
-        <returns>A <see cref="T:System.Type" /> that represents the runtime equivalent of <paramref name="reflectionType" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetRuntimeType method reverses the<xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> method to convert a reflection type back into a runtime type. Using the GetRuntimeType method is preferred over using the <xref:System.Type.UnderlyingSystemType%2A> property, which was used in earlier versions to return the runtime type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="reflectionType" /> is <see langword="null" />.</exception>
+        <param name="reflectionType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeDescriptor">
@@ -382,9 +368,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ICustomTypeDescriptor</ReturnType>
@@ -393,12 +387,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">An instance of the type. Can be <see langword="null" /> if no instance was passed to the <see cref="T:System.ComponentModel.TypeDescriptor" />.</param>
-        <summary>Gets a custom type descriptor for the given object.</summary>
-        <returns>An <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> that can provide metadata for the type.</returns>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="instance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTypeDescriptor">
@@ -407,9 +399,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ICustomTypeDescriptor</ReturnType>
@@ -418,9 +418,9 @@
         <Parameter Name="objectType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="objectType">The type of object for which to retrieve the type descriptor.</param>
-        <summary>Gets a custom type descriptor for the given type.</summary>
-        <returns>An <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> that can provide metadata for the type.</returns>
+        <param name="objectType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -430,9 +430,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ICustomTypeDescriptor</ReturnType>
@@ -442,18 +450,11 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="objectType">The type of object for which to retrieve the type descriptor.</param>
-        <param name="instance">An instance of the type. Can be <see langword="null" /> if no instance was passed to the <see cref="T:System.ComponentModel.TypeDescriptor" />.</param>
-        <summary>Gets a custom type descriptor for the given type and object.</summary>
-        <returns>An <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> that can provide metadata for the type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is prototyped as `virtual` and, by default, returns an empty descriptor if no parent provider was passed. If a parent provider was passed, this method will invoke the parent provider's GetTypeDescriptor method.  
-  
- ]]></format>
-        </remarks>
+        <param name="objectType">To be added.</param>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSupportedType">
@@ -462,8 +463,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.IsSupportedType(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -472,13 +482,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type to test for compatibility.</param>
-        <summary>Gets a value that indicates whether the specified type is compatible with the type description and its chain of type description providers.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="type" /> is compatible with the type description and its chain of type description providers; otherwise, <see langword="false" />.</returns>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

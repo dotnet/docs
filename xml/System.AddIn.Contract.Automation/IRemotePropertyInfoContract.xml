@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,17 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines a contract that components can use to access information about a property across application domain and process boundaries.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An IRemotePropertyInfoContract represents a property of a remote object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
-  
- To access one or more properties of a remote object, use the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType%2A> method to get an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract> that represents the type of the remote object. Then, call the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetProperty%2A> or <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetProperties%2A> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetGetMethod">
@@ -33,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,8 +30,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the <see langword="get" /> accessor of the property that this <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> identifies.</summary>
-        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> that represents the <see langword="get" /> accessor of the property that this <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> identifies; <see langword="null" /> if the property does not have a <see langword="get" /> accessor.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,16 +49,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns information about the property that this <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> identifies.</summary>
-        <returns>A <see cref="T:System.AddIn.Contract.Automation.RemotePropertyData" /> that provides information about the property that this <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> identifies.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The information provided by the <xref:System.AddIn.Contract.Automation.RemotePropertyData> structure includes the type of the property value and whether the property is readable or writable.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSetMethod">
@@ -80,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,8 +68,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the <see langword="set" /> accessor of the property that this <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> identifies.</summary>
-        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> that represents the <see langword="set" /> accessor of the property that this <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> identifies; <see langword="null" /> if the property does not have a <see langword="set" /> accessor.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,20 +92,13 @@
         <Parameter Name="localeId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.AddIn.Contract.Automation.IRemoteObjectContract" /> that identifies the object that contains the property.</param>
-        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to invoke the property.</param>
-        <param name="index">An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" /> that specifies the index values for an indexed property; <see langword="null" /> if the property is not indexed.</param>
-        <param name="localeId">A locale ID to use for locale-specific conversions that are performed by the property.</param>
-        <summary>Returns the value of the property that this <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> identifies.</summary>
-        <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that specifies the property value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- It is recommended that GetValue implementations throw an <xref:System.ArgumentException> if the property is write-only.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="localeId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -136,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,20 +121,13 @@
         <Parameter Name="localeId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="target">The <see cref="T:System.AddIn.Contract.Automation.IRemoteObjectContract" /> that identifies the object that contains the property.</param>
-        <param name="value">A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that specifies the property value.</param>
-        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to invoke the property.</param>
-        <param name="index">An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" /> that specifies the index values for an indexed property; <see langword="null" /> if the property is not indexed.</param>
-        <param name="localeId">The locale ID that the property will use for any locale-specific type conversions.</param>
-        <summary>Sets the value of the property that this <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> identifies.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- It is recommended that SetValue implementations throw an <xref:System.ArgumentException> if the property is read-only.  
-  
- ]]></format>
-        </remarks>
+        <param name="target">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="localeId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

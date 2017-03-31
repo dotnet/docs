@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.CornerRadius" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,55 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the radii of a rectangle's corners.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class has four properties, <xref:System.Windows.CornerRadius.TopLeft%2A>, <xref:System.Windows.CornerRadius.TopRight%2A>, <xref:System.Windows.CornerRadius.BottomLeft%2A>, and <xref:System.Windows.CornerRadius.BottomRight%2A>, corresponding to the individual corners of the rectangle.  Each is a <xref:System.Double> structure that can be set independently of the others.  
-  
- The radii cannot be negative.  
-  
-<a name="xamlAttributeUsage_Duration"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="TopLeft,TopRight,BottomRight,BottomLeft "/>  
-- or -  
-<object property="AllCorners"/>  
-```  
-  
-<a name="xamlValues_Thickness"></a>   
-## XAML Values  
- *TopLeft*  
- <xref:System.Double> value that specifies the radius of the top left corner.  
-  
- *TopRight*  
- <xref:System.Double> value that specifies the top right corner.  
-  
- *BottomRight*  
- <xref:System.Double> value that specifies the bottom right corner.  
-  
- *BottomLeft*  
- <xref:System.Double> value that specifies the bottom left corner.  
-  
- *AllCorners*  
- If only a single <xref:System.Double> value is specified, that measure is applied to ALL of the *TopLeft*, *TopRight*, *BottomRight*, and *BottomLeft* corners of the CornerRadius.  
-  
-> [!NOTE]
->  Values need not include the decimal point explicitly when specified as a string. The string "1" provided in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] evaluates to a value of 1.0 when referenced in code.  
-  
-   
-  
-## Examples  
- The following example shows how to set the value of the <xref:System.Windows.Controls.Border.CornerRadius%2A> property by using [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-cs[ThicknessStruct#1](~/add/codesnippet/csharp/ThicknessSamp/ThicknessSamp.cs#1)]
- [!code-xml[ThicknessStruct#1](~/add/codesnippet/xaml/ThicknessXAML/default.xaml#1)]
- [!code-vb[ThicknessStruct#1](~/add/codesnippet/visualbasic/ThicknessSampVB/ThicknessSampVB.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,15 +31,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="uniformRadius" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="uniformRadius">The radius value applied to every corner of the rectangle.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.CornerRadius" /> class with a specified uniform radius value for every corner or the rectangle.</summary>
+        <param name="uniformRadius">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +49,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -108,11 +58,11 @@
         <Parameter Name="bottomLeft" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="topLeft">The radius of the top-left corner.</param>
-        <param name="topRight">The radius of the top-right corner.</param>
-        <param name="bottomRight">The radius of the bottom-right corner.</param>
-        <param name="bottomLeft">The radius of the bottom-left corner.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.CornerRadius" /> class with the specified radius values for each corner of the rectangle.</summary>
+        <param name="topLeft">To be added.</param>
+        <param name="topRight">To be added.</param>
+        <param name="bottomRight">To be added.</param>
+        <param name="bottomLeft">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,23 +73,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the radius of the bottom-left corner.</summary>
-        <value>The radius of the bottom-left corner. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The radius of the bottom-left corner can be set independently of the other corners of the rectangle.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -149,32 +91,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the radius of the bottom-right corner.</summary>
-        <value>The radius of the bottom-right corner. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The radius of the bottom-right corner can be set independently of the other corners of the rectangle.  
-  
-   
-  
-## Examples  
- <xref:System.Windows.CornerRadius.TopRight%2A>  
-  
- <xref:System.Windows.CornerRadius.BottomLeft%2A>  
-  
- <xref:System.Windows.CornerRadius.TopLeft%2A>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -184,7 +109,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,10 +118,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> to compare.</param>
-        <summary>Determines whether the specified <see cref="T:System.Object" /> is a <see cref="T:System.Windows.CornerRadius" /> and whether it contains the same corner radius values as this <see cref="T:System.Windows.CornerRadius" />.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Windows.CornerRadius" /> and contains the same corner radius values as this <see cref="T:System.Windows.CornerRadius" />; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,10 +140,9 @@
         <Parameter Name="cornerRadius" Type="System.Windows.CornerRadius" />
       </Parameters>
       <Docs>
-        <param name="cornerRadius">The <see cref="T:System.Windows.CornerRadius" /> to compare to this <see cref="T:System.Windows.CornerRadius" />.</param>
-        <summary>Compares two <see cref="T:System.Windows.CornerRadius" /> structures for equality.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="cornerRadius" /> contains the same corner radius values as this <see cref="T:System.Windows.CornerRadius" />; otherwise, <see langword="false" />.</returns>
+        <param name="cornerRadius">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -240,8 +160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this <see cref="T:System.Windows.CornerRadius" />.</summary>
-        <returns>The hash code for this <see cref="T:System.Windows.CornerRadius" /> structure.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,11 +182,10 @@
         <Parameter Name="cr2" Type="System.Windows.CornerRadius" />
       </Parameters>
       <Docs>
-        <param name="cr1">The first <see cref="T:System.Windows.CornerRadius" /> to compare.</param>
-        <param name="cr2">The second <see cref="T:System.Windows.CornerRadius" /> to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.CornerRadius" /> structures for equality.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="cr1" /> and <paramref name="cr2" /> have equal values for all corners (same values for <see cref="System.Windows.CornerRadius.TopLeft%2A" />, <see cref="System.Windows.CornerRadius.TopRight%2A" />, <see cref="System.Windows.CornerRadius.BottomLeft%2A" />, <see cref="System.Windows.CornerRadius.BottomRight%2A" />); <see langword="false" /> if <paramref name="cr1" /> and <paramref name="cr2" /> have different values for one or more corners.</returns>
+        <param name="cr1">To be added.</param>
+        <param name="cr2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +196,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -289,11 +206,10 @@
         <Parameter Name="cr2" Type="System.Windows.CornerRadius" />
       </Parameters>
       <Docs>
-        <param name="cr1">The first <see cref="T:System.Windows.CornerRadius" /> to compare.</param>
-        <param name="cr2">The second <see cref="T:System.Windows.CornerRadius" /> to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.CornerRadius" /> structures for inequality.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="cr1" /> and <paramref name="cr2" /> have different values for one or more corners (different values for <see cref="System.Windows.CornerRadius.TopLeft%2A" />, <see cref="System.Windows.CornerRadius.TopRight%2A" />, <see cref="System.Windows.CornerRadius.BottomLeft%2A" />, <see cref="System.Windows.CornerRadius.BottomRight%2A" />); <see langword="false" /> if <paramref name="cr1" /> and <paramref name="cr2" /> have identical corners.</returns>
+        <param name="cr1">To be added.</param>
+        <param name="cr2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,23 +220,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the radius of the top-left corner.</summary>
-        <value>The radius of the top-left corner. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The radius of the top-left corner can be set independently of the other corners of the rectangle.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -330,23 +238,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the radius of the top-right corner.</summary>
-        <value>The radius of the top-right corner. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The radius of the top-right corner can be set independently of the other corners of the rectangle.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -356,7 +256,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,8 +263,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the string representation of the <see cref="T:System.Windows.CornerRadius" />.</summary>
-        <returns>A string representation of the <see cref="T:System.Windows.CornerRadius" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

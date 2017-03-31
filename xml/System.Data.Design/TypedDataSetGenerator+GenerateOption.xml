@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Design.TypedDataSetGenerator.GenerateOption" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,22 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the <see cref="T:System.Data.Design.TypedDataSetGenerator" />with information for creating typed datasets that support LINQ to DataSet and hierarchical update.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TypedDataSetGenerator.GenerateOption enumeration provides the <xref:System.Data.Design.TypedDataSetGenerator> with information about the type of typed dataset to create when the `TypedDataSetGenerator.Generate` method is called.  
-  
- The TypedDataSetGenerator.GenerateOption enumeration enables you to implement new features in typed datasets without needing to create additional overloads to the `TypedDataSetGenerator.Generate` method.  
-  
-> [!NOTE]
->  LINQ to DataSet and hierarchical update are features that were added in [!INCLUDE[vs_orcas_long](~/add/includes/vs-orcas-long-md.md)].  
->   
->  Also see [Hierarchical Update Overview](../Topic/Hierarchical%20Update%20Overview.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="HierarchicalUpdate">
@@ -41,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Design.TypedDataSetGenerator+GenerateOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Generates typed datasets that have a TableAdapterManager and associated methods for enabling hierarchical update.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LinqOverTypedDatasets">
@@ -58,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Design.TypedDataSetGenerator+GenerateOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Generates typed datasets that have data tables that inherit from <see cref="System.Data.TypedTableBase%601" /> in order to enable the ability to perform LINQ queries on data tables.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Design.TypedDataSetGenerator+GenerateOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Generates typed datasets that are compatible with typed datasets generated in versions of Visual Studio earlier than [!INCLUDE[vs_orcas_long](~/add/includes/vs-orcas-long-md.md)].</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

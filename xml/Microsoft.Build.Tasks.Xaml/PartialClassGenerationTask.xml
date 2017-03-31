@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Accesses XAML files that define types (with <see langword="x:Class" />) and generates the corresponding source code that can be compiled into an assembly.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XAML files processed by this task define new types as well as instantiate those types. The PartialClassGenerationTask class reads in the new type definitions and generates source code files. In addition, it generates a XAML file that contains the markup that instantiates the newly generated types.  
-  
- This task should not be used to consume untrusted XAML inputs.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +48,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a list of XAML files to process, populated by MS Build.</summary>
-        <value>A list of <see cref="T:Microsoft.Build.Framework.ITaskItem" /> that represents the XAML files to process.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,16 +66,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the assembly being compiled.</summary>
-        <value>The name of the assembly being compiled.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only set when processing root-only XAML files.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildTaskPath">
@@ -100,8 +84,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path of the assembly that contains this build task.</summary>
-        <value>The build task path.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +103,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called by MS Build to execute the code generation task.</summary>
-        <returns>
-          <see langword="true" /> if the code is generated successfully; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +126,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a list of generated code files, one for each input file.</summary>
-        <value>A list of <see cref="T:Microsoft.Build.Framework.ITaskItem" /> that represents the source XAML files.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +149,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a list of XAML files that contain the markup for instantiating the newly generated types, one for each input file.</summary>
-        <value>A list of <see cref="T:Microsoft.Build.Framework.ITaskItem" /> that represents the generated XAML files.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +167,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the file extension to add to the generated source files.</summary>
-        <value>The file extension.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,8 +185,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the compilation of XAML markup is in process.</summary>
-        <value>True if the compilation of XAML markup is in process; otherwise, false.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +203,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the known reference paths.</summary>
-        <value>The known reference paths.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,8 +226,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the language to generate source code in.</summary>
-        <value>The language to generate source code in.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,8 +244,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the directory of MS build project.</summary>
-        <value>The directory of MS build project.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,8 +267,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the directory to place the generated files.</summary>
-        <value>The directory that stores the generated files.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,8 +285,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a list of assemblies to reference.</summary>
-        <value>A list of <see cref="T:Microsoft.Build.Framework.ITaskItem" /> that represents referenced assemblies.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,17 +308,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether this project requires executing the <see cref="T:Microsoft.Build.Tasks.Xaml.CompilationPass2Task" /> task.</summary>
-        <value>
-          <see langword="true" /> if there are unresolved types; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- While processing the XAML files, the <xref:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask> looks for unresolved types. If it finds any, it launches the <xref:Microsoft.Build.Tasks.Xaml.CompilationPass2Task> that compiles all of the XAML files in the project and checks to make sure all types are resolved.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RootNamespace">
@@ -351,8 +326,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the root namespace for the project.</summary>
-        <value>The root namespace.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,8 +344,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a list of source code files in the project.</summary>
-        <value>A list of <see cref="T:Microsoft.Build.Framework.ITaskItem" /> that represents the source code files in the project.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -387,8 +362,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection of extension names used in XAML build type generation.</summary>
-        <value>The collection of extension names used.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,8 +380,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection of extension names used in XAML build type inspection.</summary>
-        <value>The collection of extension names used.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

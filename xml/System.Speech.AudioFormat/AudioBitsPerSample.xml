@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.AudioFormat.AudioBitsPerSample" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumerates values that describe the bits-per-sample characteristic of an audio format.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.BitsPerSample%2A> property gets a member of AudioBitsPerSample that indicates the bits-per-sample of an audio format.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Eight">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.AudioFormat.AudioBitsPerSample</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The audio format has 8 bits per sample.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sixteen">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.AudioFormat.AudioBitsPerSample</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The audio format has 16 bits per sample.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

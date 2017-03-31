@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherProcessingDisabled" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,35 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the Dispatcher when it is in a disable state and provides a means to re-enable dispatcher processing.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A> returns a DispatcherProcessingDisabled object when it is called.  
-  
- Disabling dispatcher processing is an advanced method that is intended to eliminate the chance of unrelated reentrancy.  
-  
- The effects of disabling processing are as follows:  
-  
--   [!INCLUDE[TLA2#tla_clr#initcap](~/add/includes/tla2sharptla-clrsharpinitcap-md.md)] locks will not pump messages internally.  
-  
--   <xref:System.Windows.Threading.DispatcherFrame> objects are not allowed to be pushed.  
-  
--   Message processing is not permitted.  
-  
- Calling <xref:System.Windows.Threading.DispatcherProcessingDisabled.Dispose%2A> on the DispatcherProcessingDisabled object will re-enable dispatcher processing.  
-  
-   
-  
-## Examples  
- The following example shows how to disable dispatcher processing and re-enable dispatcher processing.  <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A> is called in a **using** statement.  <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A> returns a DispatcherProcessingDisabled structure which is used as the object to be disposed when the **using** block finishes.  Calling <xref:System.Windows.Threading.DispatcherProcessingDisabled.Dispose%2A> on the DispatcherProcessingDisabled structure re-enables dispatcher processing.  
-  
- [!code-vb[DispatcherSnippets#DispatcherDisableProcessing](~/add/codesnippet/visualbasic/dispatchersnippets/window1.xaml.vb#dispatcherdisableprocessing)]
- [!code-cs[DispatcherSnippets#DispatcherDisableProcessing](~/add/codesnippet/csharp/DispatcherSnippets/Window1.xaml.cs#dispatcherdisableprocessing)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -54,7 +26,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,23 +33,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Re-enables dispatcher processing.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Disabling dispatcher processing is an advanced method that is intended to eliminate the chance of unrelated reentrancy.  
-  
- The effects of disabling processing are as follows:  
-  
--   [!INCLUDE[TLA2#tla_clr#initcap](~/add/includes/tla2sharptla-clrsharpinitcap-md.md)] locks will not pump messages internally.  
-  
--   <xref:System.Windows.Threading.DispatcherFrame> objects are not allowed to be pushed.  
-  
--   Message processing is not permitted.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -88,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,10 +53,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to evaluate for equality.</param>
-        <summary>Determines whether the specified <see cref="T:System.Windows.Threading.DispatcherProcessingDisabled" /> object is equal to this <see cref="T:System.Windows.Threading.DispatcherProcessingDisabled" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the specified object is equal to this <see cref="T:System.Windows.Threading.DispatcherProcessingDisabled" /> object; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,8 +73,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a hash code for this instance.</summary>
-        <returns>A signed 32-bit integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,11 +95,10 @@
         <Parameter Name="right" Type="System.Windows.Threading.DispatcherProcessingDisabled" />
       </Parameters>
       <Docs>
-        <param name="left">The first object to compare.</param>
-        <param name="right">The second object to compare.</param>
-        <summary>Determines whether two <see cref="T:System.Windows.Threading.DispatcherProcessingDisabled" /> objects are equal.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.Threading.DispatcherProcessingDisabled" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,7 +109,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,11 +119,10 @@
         <Parameter Name="right" Type="System.Windows.Threading.DispatcherProcessingDisabled" />
       </Parameters>
       <Docs>
-        <param name="left">The first object to compare.</param>
-        <param name="right">The second object to compare.</param>
-        <summary>Determines whether two <see cref="T:System.Windows.Threading.DispatcherProcessingDisabled" /> objects are not equal.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.Threading.DispatcherProcessingDisabled" /> objects are not equal; otherwise, <see langword="false" />.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides extension methods for accessing user principal associated with the HTTP request message.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,9 +35,9 @@
         <Parameter Name="httpRequestMessage" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="httpRequestMessage">The HTTP request message from which to get the user principal.</param>
-        <summary>Gets the user principal associated with the specified HTTP request message.</summary>
-        <returns>The user principal associated with the specified HTTP request message.</returns>
+        <param name="httpRequestMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +58,31 @@
         <Parameter Name="user" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="httpRequestMessage">The HTTP request message from which to set the user principal.</param>
-        <param name="user">The user principal to set.</param>
-        <summary>Replaces the user principal associated with the specified HTTP request message.</summary>
+        <param name="httpRequestMessage">To be added.</param>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToMessage">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message ToMessage (this System.Net.Http.HttpRequestMessage httpRequestMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message ToMessage(class System.Net.Http.HttpRequestMessage httpRequestMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.ToMessage(System.Net.Http.HttpRequestMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpRequestMessage" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="httpRequestMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

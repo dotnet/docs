@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents part of an output-cache entry, stored as a file.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FileResponseElement class represents the body portion (instead of the header) of an output-cache entry. The data from a FileResponseElement object can be stored as either part or all of a file. Both ASP.NET and custom output-cache providers can return a response in multiple parts, using any combination of FileResponseElement objects. For example, a provider can return a response that is segmented into three different FileResponseElement objects, and each object can be retrieved from an offset into a different physical file.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,22 +30,11 @@
         <Parameter Name="length" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="path">The fully qualified path for the file.</param>
-        <param name="offset">The position in the file where the string starts.</param>
-        <param name="length">The length of the data, starting at the offset that represents the output-cache data in the file defined by <c>path</c>.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.FileResponseElement" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the complete output-cache response is contained in a single file, a provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using an offset of zero, and a length equal to the size of the whole file. If the complete output cache response is contained in only part of a file, a provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using the offset in the file where the output cache response starts, and a length equal to the size of the output-cache response that is stored in that file.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="length" /> is less than zero.</exception>
+        <param name="path">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -68,16 +50,9 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the data, starting at the offset that contains the data for a <see cref="T:System.Web.Caching.FileResponseElement" /> instance.</summary>
-        <value>The size of the data.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the complete output-cache response is contained in a single file, an output cache provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using a length equal to the size of the whole file. If the complete output cache response is contained in only part of a file, a provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using a length equal to the size of the output-cache response that is stored in that file.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -93,16 +68,9 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the position in the file where the data from a <see cref="T:System.Web.Caching.FileResponseElement" /> instance starts.</summary>
-        <value>The starting point of the data in the file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the complete output-cache response is contained in a single file, a provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using an offset of zero, If the complete output cache response is contained in only part of a file, a provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using the offset in the file where the output cache response starts.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -118,8 +86,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the location of the file that contains data from a <see cref="T:System.Web.Caching.FileResponseElement" /> instance.</summary>
-        <value>The fully qualified path of the file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the criteria to use when searching for services.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] using FindCriteria and the Find operation, see [Discovery Find and FindCriteria](../Topic/Discovery%20Find%20and%20FindCriteria.md)  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.FindCriteria" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +43,8 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contractType">The name of the contract type to search for.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.FindCriteria" /> class with the specified name of a contract type.</summary>
+        <param name="contractType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,16 +61,9 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlQualifiedName&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of contract type names to search for.</summary>
-        <value>The contract type names to search for.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If more than one contract name is specified, only service endpoints matching ALL contracts will reply.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMetadataExchangeEndpointCriteria">
@@ -94,8 +80,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates metadata exchange endpoint criteria to use when searching for services.</summary>
-        <returns>The endpoint criteria to use to find services.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,17 +101,10 @@
         <Parameter Name="contractTypeNames" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlQualifiedName&gt;" />
       </Parameters>
       <Docs>
-        <param name="contractTypeNames">A collection of enumerations that represent contract type names.</param>
-        <summary>Creates an object that contains metadata exchange endpoint criteria derived from the specified collection of XML qualified names.</summary>
-        <returns>The endpoint criteria to use to find services.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Xml.XmlQualifiedName> is a namespace-qualified local name in the format of `namespace:localname`.  
-  
- ]]></format>
-        </remarks>
+        <param name="contractTypeNames">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMetadataExchangeEndpointCriteria">
@@ -144,17 +123,10 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contractType">A type of service contract.</param>
-        <summary>Creates an object that contains metadata exchange endpoint criteria derived from the specified contract type.</summary>
-        <returns>The endpoint criteria to use to find services.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Discovery.FindCriteria> information is used to create an endpoint that can search for services.  
-  
- ]]></format>
-        </remarks>
+        <param name="contractType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -170,8 +142,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.TimeSpan" /> that specifies the find operation time-out period.</summary>
-        <value>The time-out period of the find operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +160,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.Linq.XElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of extensions in the <see cref="T:System.ServiceModel.Discovery.FindCriteria" /> instance.</summary>
-        <value>The XML extensions.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,10 +181,9 @@
         <Parameter Name="endpointDiscoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
       </Parameters>
       <Docs>
-        <param name="endpointDiscoveryMetadata">The endpoint discovery metadata that describes the service in question.</param>
-        <summary>Determines whether a set of criteria matches the service described by the specified <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the service matches the criteria, otherwise <see langword="false" />.</returns>
+        <param name="endpointDiscoveryMetadata">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,8 +200,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of responses required from the find operation.</summary>
-        <value>The maximum number of response required from the find operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,8 +218,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a URI that specifies how scopes are matched.</summary>
-        <value>The URI that specifies how scopes are matched.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,7 +236,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that scopes are matched by using a case-sensitive comparison (http://schemas.xmlsoap.org/ws/2004/10/discovery/strcmp0) as defined by the [WS-Discovery Specification](http://go.microsoft.com/fwlink/?LinkId=122347).</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,7 +253,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that scopes are matched by using the LDAP method (http://schemas.xmlsoap.org/ws/2004/10/discovery/ldap) as defined by the [WS-Discovery Specification](http://go.microsoft.com/fwlink/?LinkId=122347).</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,7 +270,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that scopes are ignored as defined by the [WS-Discovery Specification](http://go.microsoft.com/fwlink/?LinkId=122347).</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +287,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that scopes are matched using the prefix method (http://schemas.xmlsoap.org/ws/2004/10/discovery/rfc2396) as defined by the [WS-Discovery Specification](http://go.microsoft.com/fwlink/?LinkId=122347).</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,7 +304,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that scopes are matched by using the UUID method (http://schemas.xmlsoap.org/ws/2004/10/discovery/uuid) as defined by the [WS-Discovery Specification](http://go.microsoft.com/fwlink/?LinkId=122347).</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,16 +321,9 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of absolute URIs that represents scopes used to search for a service.</summary>
-        <value>A collection of absolute URIs used to search for a service.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If more than one scope is specified, only service endpoints matching ALL scopes will reply.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

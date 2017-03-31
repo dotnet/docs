@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SuppressMessageAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Diagnostics.Tools</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,28 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Suppresses reporting of a specific static analysis tool rule violation, allowing multiple suppressions on a single code artifact.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute can be applied to any application element. For a complete list of the violations that can be suppressed, see [Code Analysis for Managed Code Warnings](../Topic/Code%20Analysis%20for%20Managed%20Code%20Warnings.md).  
-  
-> [!NOTE]
->  The <xref:System.Diagnostics.ConditionalAttribute> is applied to this class, specifying the preprocessing symbol "CODE_ANALYSIS" as the conditional symbol that determines whether the attribute call is included or omitted. If the symbol is defined, the attribute call is included; otherwise, the call is omitted.  
->   
->  When you right-click a Code Analysis warning in the Visual Studio **Error List** and then click **Suppress Message(s)**, a **SuppressMessage** attribute is added either in your code or to the project's global suppressions file. For more information about the **SuppressMessage** attribute and its use in Visual Studio, see [In Source Suppression Overview](../Topic/In%20Source%20Suppression%20Overview.md).  
-  
-   
-  
-## Examples  
- The following code example shows the use of the SuppressMessageAttribute attribute to suppress performance warning messages.  
-  
- [!code-cs[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#1](~/add/codesnippet/csharp/t-system.diagnostics.cod_1.cs)]
- [!code-vb[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#1](~/add/codesnippet/visualbasic/t-system.diagnostics.cod_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,37 +38,27 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.#ctor(System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.Tools</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="category" Type="System.String" />
         <Parameter Name="checkId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="category">The category for the attribute.</param>
-        <param name="checkId">The identifier of the analysis tool rule the attribute applies to.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute" /> class, specifying the category of the static analysis tool and the identifier for an analysis rule.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `category` parameter value is specific to the analysis tool and categorizes the rule identified by the `checkId` parameter. The two parameters concatenated together form a unique identifier for the rule.  
-  
-> [!NOTE]
->  The preprocessor symbol "CODE_ANALYSIS" must be defined for this attribute to be effective. The absence of the preprocessor symbol results in the attribute not being applied.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute to suppress warnings for the `Microsoft.Performance` category and the `CA1801` and `CA1804` check identifiers. This code example is part of a larger example provided for the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> class.  
-  
- [!code-cs[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#2](~/add/codesnippet/csharp/e84a4bab-e659-4e58-ac72-_1.cs)]
- [!code-vb[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#2](~/add/codesnippet/visualbasic/e84a4bab-e659-4e58-ac72-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="category">To be added.</param>
+        <param name="checkId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -89,32 +67,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.Tools</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the category identifying the classification of the attribute.</summary>
-        <value>The category identifying the attribute.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Category property describes the tool or tool analysis category for which a message suppression attribute applies.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute to suppress warnings for the `Microsoft.Performance` category and the `CA1801` and `CA1804` check identifiers. This code example is part of a larger example provided for the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> class.  
-  
- [!code-cs[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#2](~/add/codesnippet/csharp/p-system.diagnostics.cod_2_1.cs)]
- [!code-vb[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#2](~/add/codesnippet/visualbasic/p-system.diagnostics.cod_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckId">
@@ -123,32 +94,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.CheckId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.Tools</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the identifier of the static analysis tool rule to be suppressed.</summary>
-        <value>The identifier of the static analysis tool rule to be suppressed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Concatenated together, the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Category%2A> and CheckId properties form a unique check identifier.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute to suppress warnings for the `Microsoft.Performance` category and the `CA1801` and `CA1804` check identifiers. This code example is part of a larger example provided for the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> class.  
-  
- [!code-cs[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#2](~/add/codesnippet/csharp/p-system.diagnostics.cod_1_1.cs)]
- [!code-vb[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#2](~/add/codesnippet/visualbasic/p-system.diagnostics.cod_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Justification">
@@ -157,16 +121,24 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Justification" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.Tools</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the justification for suppressing the code analysis message.</summary>
-        <value>The justification for suppressing the message.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,32 +148,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.MessageId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.Tools</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an optional argument expanding on exclusion criteria.</summary>
-        <value>A string containing the expanded exclusion criteria.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MessageId property is an optional argument that specifies additional exclusion where the literal metadata target is not sufficiently precise. For example, the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> cannot be applied within a method, and it may be desirable to suppress a violation against a statement in the method that will give a rule violation, but not against all statements in the method.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute to suppress warnings for a specific parameter in a method declaration and a specific field in the method. This code example is part of a larger example provided for the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> class.  
-  
- [!code-cs[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#2](~/add/codesnippet/csharp/p-system.diagnostics.cod_0_1.cs)]
- [!code-vb[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#2](~/add/codesnippet/visualbasic/p-system.diagnostics.cod_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -210,24 +175,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.Tools</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the scope of the code that is relevant for the attribute.</summary>
-        <value>The scope of the code that is relevant for the attribute.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Scope property is an optional argument that specifies the metadata scope for which the attribute is relevant. Possible values for managed metadata include "member", "resource", "module", "type", "method", or "namespace".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -236,24 +202,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.Tools</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a fully qualified path that represents the target of the attribute.</summary>
-        <value>A fully qualified path that represents the target of the attribute.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Target property is an optional argument identifying the analysis target of the attribute. An example value is "System.IO.Stream.ctor():System.Void". Because it is fully qualified, it can be long, particularly for targets such as parameters. The analysis tool user interface should be capable of automatically formatting the parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,32 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.AuthenticationType" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the method of rights management authentication.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- AuthenticationType specifies how users who access rights managed content are to be authenticated.  
-  
- `Internal` also provides authentication for the owner and author of a protected document or template.  
-  
-   
-  
-## Examples  
- The following example also shows use of the AuthenticationType enumeration.  
-  
- [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubsecenv)]
- [!code-cs[RightsManagedPackagePublish#RmPkgPubSecEnv](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubsecenv)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Internal">
@@ -39,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implicit authentication to any requesting user.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Passport">
@@ -56,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!INCLUDE[TLA#tla_passport](~/add/includes/tlasharptla-passport-md.md)] authentication.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows">
@@ -73,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!INCLUDE[TLA#tla_mswin](~/add/includes/tlasharptla-mswin-md.md)] authentication in a corporate domain environment.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsPassport">
@@ -90,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Either [!INCLUDE[TLA2#tla_win](~/add/includes/tla2sharptla-win-md.md)] authentication or [!INCLUDE[TLA2#tla_passport](~/add/includes/tla2sharptla-passport-md.md)] authentication.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

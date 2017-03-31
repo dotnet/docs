@@ -3,45 +3,24 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataRowVersion extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowVersion" />
   <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the version of a <see cref="T:System.Data.DataRow" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataRowVersion values are used when retrieving the value found in a <xref:System.Data.DataRow> using <xref:System.Data.DataRow.Item%2A> or the <xref:System.Data.DataRow.GetChildRows%2A> of the <xref:System.Data.DataRow> object.  
-  
- The DataRowVersion informs you what version of a <xref:System.Data.DataRow> exists. Versions change under the following circumstances:  
-  
--   After calling the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.BeginEdit%2A> method, if you change the value, the `Current` and `Proposed` values become available.  
-  
--   After calling the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.CancelEdit%2A> method, the `Proposed` value is deleted.  
-  
--   After calling the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.EndEdit%2A> method, the Proposed value becomes the `Current` value.  
-  
--   After calling the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.AcceptChanges%2A> method, the `Original` value becomes identical to the `Current` value.  
-  
--   After calling the <xref:System.Data.DataTable> object's <xref:System.Data.DataTable.AcceptChanges%2A> method, the `Original` value becomes identical to the `Current` value.  
-  
--   After calling the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.RejectChanges%2A> method, the `Proposed` value is discarded, and the version becomes `Current`.  
-  
-   
-  
-## Examples  
- The following example checks the DataRowVersion of a <xref:System.Data.DataRow> before invoking the <xref:System.Data.DataRow.AcceptChanges%2A> method.  
-  
- [!code-cs[Classic WebData DataRowVersion Example#1](~/add/codesnippet/csharp/t-system.data.datarowver_1.cs)]
- [!code-vb[Classic WebData DataRowVersion Example#1](~/add/codesnippet/visualbasic/t-system.data.datarowver_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -51,14 +30,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The row contains current values.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -67,15 +50,23 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowVersion.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default version of <see cref="T:System.Data.DataRowState" />. For a <see langword="DataRowState" /> value of <see langword="Added" />, <see langword="Modified" /> or <see langword="Deleted" />, the default version is <see langword="Current" />. For a <see cref="T:System.Data.DataRowState" /> value of <see langword="Detached" />, the version is <see langword="Proposed" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Original">
@@ -85,14 +76,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The row contains its original values.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Proposed">
@@ -102,14 +97,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The row contains a proposed value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

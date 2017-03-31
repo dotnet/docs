@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpCapabilitiesBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,23 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides access to detailed information about the capabilities of the client's browser.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- HttpCapabilitiesBase is the base class from which the <xref:System.Web.HttpBrowserCapabilities> class is derived. HttpCapabilitiesBase offers a large number of read-only properties that provide type-safe access to a browser's capabilities dictionary. You can access the <xref:System.Web.HttpBrowserCapabilities> class through the <xref:System.Web.HttpRequest.Browser%2A> property that is exposed by the ASP.NET <xref:System.Web.HttpRequest.Browser%2A?displayProperty=fullName> property.  
-  
-   
-  
-## Examples  
- The following example shows how to access information about the browser.  
-  
- [!code-cs[HttpCapabilitiesBase#1](~/add/codesnippet/csharp/t-system.web.configurati_61_1.aspx)]
- [!code-vb[HttpCapabilitiesBase#1](~/add/codesnippet/visualbasic/t-system.web.configurati_61_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.Configuration.HttpCapabilitiesBase" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,27 +41,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports ActiveX controls.</summary>
-        <value>
-          <see langword="true" /> if the browser supports ActiveX controls; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports ActiveX controls.  
-  
- [!code-cs[HttpCapabilitiesBase.ActiveXControls#1](~/add/codesnippet/csharp/p-system.web.configurati_350_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.ActiveXControls#1](~/add/codesnippet/visualbasic/p-system.web.configurati_350_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Adapters">
@@ -88,15 +59,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the collection of available control adapters.</summary>
-        <value>The collection of registered control adapters.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,8 +86,8 @@
         <Parameter Name="browserName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="browserName">The name of the browser to add.</param>
-        <summary>Used internally to add an entry to the internal collection of browsers for which capabilities are recognized.</summary>
+        <param name="browserName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,27 +98,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the client is an America Online (AOL) browser.</summary>
-        <value>
-          <see langword="true" /> if the browser is an AOL browser; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser is an AOL browser.  
-  
- [!code-cs[HttpCapabilitiesBase.AOL#1](~/add/codesnippet/csharp/p-system.web.configurati_269_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.AOL#1](~/add/codesnippet/visualbasic/p-system.web.configurati_269_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundSounds">
@@ -159,27 +116,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports playing background sounds using the <see langword="&lt;bgsounds&gt;" /> HTML element.</summary>
-        <value>
-          <see langword="true" /> if the browser supports playing background sounds; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports playing background sounds.  
-  
- [!code-cs[HttpCapabilitiesBase.BackgroundSounds#1](~/add/codesnippet/csharp/p-system.web.configurati_72_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.BackgroundSounds#1](~/add/codesnippet/visualbasic/p-system.web.configurati_72_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Beta">
@@ -189,32 +134,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser is a beta version.</summary>
-        <value>
-          <see langword="true" /> if the browser is a beta version; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Beta version browsers can exhibit unpredictable behavior.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser is a beta version.  
-  
- [!code-cs[HttpCapabilitiesBase.Beta#1](~/add/codesnippet/csharp/p-system.web.configurati_76_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.Beta#1](~/add/codesnippet/visualbasic/p-system.web.configurati_76_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Browser">
@@ -224,26 +152,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the browser string (if any) that was sent by the browser in the <see langword="User-Agent" /> request header.</summary>
-        <value>The contents of the <see langword="User-Agent" /> request header sent by the browser.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine the `User-Agent` request header sent by the browser.  
-  
- [!code-vb[HttpCapabilitiesBase.Browser#1](~/add/codesnippet/visualbasic/p-system.web.configurati_201_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.Browser#1](~/add/codesnippet/csharp/p-system.web.configurati_201_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BrowserCapabilitiesProvider">
@@ -259,8 +176,8 @@
         <ReturnType>System.Web.Configuration.HttpCapabilitiesProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.HttpCapabilitiesProvider" /> object for the current browser.</summary>
-        <value>The <see cref="T:System.Web.Configuration.HttpCapabilitiesProvider" /> object for the current browser.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,15 +188,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.ArrayList" /> of the browsers in the <see cref="System.Web.Configuration.HttpCapabilitiesBase.Capabilities%2A" /> dictionary.</summary>
-        <value>An <see cref="T:System.Collections.ArrayList" /> of the browsers in the <see cref="System.Web.Configuration.HttpCapabilitiesBase.Capabilities%2A" /> dictionary.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,32 +206,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports decks that contain multiple forms, such as separate cards.</summary>
-        <value>
-          <see langword="true" /> if the browser supports decks that contain multiple forms; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanCombineFormsInDeck property applies only to WML-compatible mobile devices. If true, the adapter can output multiple forms from the same page as cards of a single deck, where possible.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports decks that contain multiple forms, such as separate cards.  
-  
- [!code-cs[HttpCapabilitiesBase.CanCombineFormsInDeck#1](~/add/codesnippet/csharp/p-system.web.configurati_320_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.CanCombineFormsInDeck#1](~/add/codesnippet/visualbasic/p-system.web.configurati_320_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanInitiateVoiceCall">
@@ -325,32 +224,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser device is capable of initiating a voice call.</summary>
-        <value>
-          <see langword="true" /> if the browser device is capable of initiating a voice call; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanInitiateVoiceCall property applies only to WML-compatible mobile devices.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser device is capable of initiating a voice call.  
-  
- [!code-cs[HttpCapabilitiesBase.CanInitiateVoiceCall#1](~/add/codesnippet/csharp/p-system.web.configurati_5_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.CanInitiateVoiceCall#1](~/add/codesnippet/visualbasic/p-system.web.configurati_5_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRenderAfterInputOrSelectElement">
@@ -360,32 +242,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports page content following WML <see langword="&lt;select&gt;" /> or <see langword="&lt;input&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports page content following HTML <see langword="&lt;select&gt; " />or <see langword="&lt;input&gt; " />elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanRenderAfterInputOrSelectElement property applies only to WML-compatible mobile devices.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports page content following HTML `<select>` or `<input>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement#1](~/add/codesnippet/csharp/def23b48-6df6-4cb2-be79-_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement#1](~/add/codesnippet/visualbasic/def23b48-6df6-4cb2-be79-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRenderEmptySelects">
@@ -395,27 +260,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports empty HTML <see langword="&lt;select&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports empty HTML <see langword="&lt;select&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports empty HTML `<select>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.CanRenderEmptySelects#1](~/add/codesnippet/csharp/p-system.web.configurati_70_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.CanRenderEmptySelects#1](~/add/codesnippet/visualbasic/p-system.web.configurati_70_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRenderInputAndSelectElementsTogether">
@@ -425,32 +278,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports WML <see langword="INPUT" /> and <see langword="SELECT" /> elements together on the same card.</summary>
-        <value>
-          <see langword="true" /> if the browser supports WML <see langword="&lt;input&gt;" /> and <see langword="&lt;select&gt;" /> elements together; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanRenderInputAndSelectElementsTogether property applies only to WML-compatible mobile devices.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports HTML `<input>` and `<select>` elements together.  
-  
- [!code-cs[HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether#1](~/add/codesnippet/csharp/f29696c5-098f-4bb4-bc52-_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether#1](~/add/codesnippet/visualbasic/f29696c5-098f-4bb4-bc52-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRenderMixedSelects">
@@ -460,34 +296,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports WML <see langword="&lt;option&gt;" /> elements that specify both <see langword="onpick" /> and <see langword="value" /> attributes.</summary>
-        <value>
-          <see langword="true" /> if the browser supports WML <see langword="&lt;option&gt;" /> elements that specify both <see langword="onpick" /> and <see langword="value" /> attributes; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanRenderMixedSelects property applies only to WML-compatible mobile devices.  
-  
- If `false`, `onpick` values are displayed as hyperlinks and `value` attributes require a `<do>` element for postback.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports HTML `<option>` elements that specify both `onpick` and `value` attributes.  
-  
- [!code-cs[HttpCapabilitiesBase.CanRenderMixedSelects#1](~/add/codesnippet/csharp/p-system.web.configurati_159_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.CanRenderMixedSelects#1](~/add/codesnippet/visualbasic/p-system.web.configurati_159_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRenderOneventAndPrevElementsTogether">
@@ -497,34 +314,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports WML <see langword="&lt;onevent&gt;" /> and <see langword="&lt;prev&gt;" /> elements that coexist within the same WML card.</summary>
-        <value>
-          <see langword="true" /> if the browser supports WML <see langword="&lt;onevent&gt;" /> and <see langword="&lt;prev&gt;" /> elements that coexist within the same WML card; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanRenderOneventAndPrevElementsTogether property applies only to WML-compatible mobile devices.  
-  
- If `false`, WML `<onevent>` and `<prev>` elements that coexist within the same WML card will not be properly rendered.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports WML `<onevent>` and `<prev>` elements that coexist within the same WML card.  
-  
- [!code-cs[HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether#1](~/add/codesnippet/csharp/3effd139-a28b-4ed4-a597-_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether#1](~/add/codesnippet/visualbasic/3effd139-a28b-4ed4-a597-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRenderPostBackCards">
@@ -534,34 +332,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports WML cards for postback.</summary>
-        <value>
-          <see langword="true" /> if the browser supports WML cards for postback; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanRenderPostBackCards property applies only to WML-compatible mobile-device browsers.  
-  
- If `false`, postback cards will not be properly rendered by the browser.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports WML cards for postback.  
-  
- [!code-cs[HttpCapabilitiesBase.CanRenderPostBackCards#1](~/add/codesnippet/csharp/p-system.web.configurati_38_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.CanRenderPostBackCards#1](~/add/codesnippet/visualbasic/p-system.web.configurati_38_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRenderSetvarZeroWithMultiSelectionList">
@@ -571,34 +350,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports WML <see langword="&lt;setvar&gt;" /> elements with a <see langword="value" /> attribute of 0.</summary>
-        <value>
-          <see langword="true" /> if the browser supports WML <see langword="&lt;setvar&gt;" /> elements with a <see langword="value" /> attribute of <see langword="0" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanRenderSetvarZeroWithMultiSelectionList property applies only to WML-compatible mobile devices.  
-  
- If `false`, HTML `<setvar>` elements with a `value` attribute of `0` will not display correctly.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports WML `<setvar>` elements with a `value` attribute of 0.  
-  
- [!code-cs[HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList#1](~/add/codesnippet/csharp/965cbaf2-04ba-434c-aba7-_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList#1](~/add/codesnippet/visualbasic/965cbaf2-04ba-434c-aba7-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSendMail">
@@ -608,27 +368,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports sending e-mail by using the HTML <see langword="&lt;mailto&gt;" /> element for displaying electronic addresses.</summary>
-        <value>
-          <see langword="true" /> if the browser supports sending e-mail by using the HTML <see langword="&lt;mailto&gt;" /> element for displaying electronic addresses; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports sending e-mail by using the HTML `<mailto>` element for displaying electronic addresses.  
-  
- [!code-vb[HttpCapabilitiesBase.CanSendMail#1](~/add/codesnippet/visualbasic/p-system.web.configurati_221_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.CanSendMail#1](~/add/codesnippet/csharp/p-system.web.configurati_221_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Capabilities">
@@ -638,15 +386,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used internally to get the defined capabilities of the browser.</summary>
-        <value>The defined capabilities of the browser.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -657,27 +404,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports Channel Definition Format (CDF) for webcasting.</summary>
-        <value>
-          <see langword="true" /> if the browser supports CDF; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports CDF.  
-  
- [!code-vb[HttpCapabilitiesBase.CDF#1](~/add/codesnippet/visualbasic/p-system.web.configurati_293_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.CDF#1](~/add/codesnippet/csharp/p-system.web.configurati_293_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClrVersion">
@@ -687,27 +422,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of the .NET Framework that is installed on the client.</summary>
-        <value>The common language runtime <see cref="T:System.Version" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ClrVersion property is supported only when the browser is Internet Explorer version 5.0 and later.  
-  
- If the .NET Framework is not installed on the client, the value of the version elements returned is `0, 0,-1,-1`.  
-  
- If more than one version of the .NET Framework is installed on the client, the ClrVersion property returns the latest version.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cookies">
@@ -717,32 +440,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports cookies.</summary>
-        <value>
-          <see langword="true" /> if the browser supports cookies; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Cookies property indicates whether the browser application supports cookies. If the user has disabled cookies in their application, the Cookies property will not be affected.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports cookies.  
-  
- [!code-vb[HttpCapabilitiesBase.Cookies#1](~/add/codesnippet/visualbasic/p-system.web.configurati_7_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.Cookies#1](~/add/codesnippet/csharp/p-system.web.configurati_7_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Crawler">
@@ -752,27 +458,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser is a search engine Web crawler.</summary>
-        <value>
-          <see langword="true" /> if the browser is a search engine; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the client is a search engine Web crawler.  
-  
- [!code-vb[HttpCapabilitiesBase.Crawler#1](~/add/codesnippet/visualbasic/p-system.web.configurati_34_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.Crawler#1](~/add/codesnippet/csharp/p-system.web.configurati_34_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHtmlTextWriter">
@@ -782,7 +476,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -792,12 +485,10 @@
         <Parameter Name="w" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="w">
-          <see cref="T:System.IO.TextWriter" /> to be created.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.HtmlTextWriter" /> to be used.</summary>
-        <returns>A new instance of the <see cref="T:System.Web.UI.HtmlTextWriter" /> to be used.</returns>
+        <param name="w">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Exception">The method failed to create an instance of <see cref="T:System.Web.UI.HtmlTextWriter" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DefaultSubmitButtonLimit">
@@ -807,25 +498,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the maximum number of Submit buttons that are allowed for a form.</summary>
-        <value>The maximum number of Submit buttons that are allowed for a form.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DefaultSubmitButtonLimit property primarily represents the number of soft keys that are available on a WML-compatible mobile device.  
-  
- Web Forms pages for mobile devices can contain a <xref:System.Web.UI.MobileControls.SelectionList> object and more than one <xref:System.Web.UI.MobileControls.Command> control. The DefaultSubmitButtonLimit allows you to choose which of the <xref:System.Web.UI.MobileControls.Command> controls should be assigned to a soft key on devices that have multiple soft keys.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisableOptimizedCacheKey">
@@ -835,7 +516,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -843,7 +523,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Used internally to disable use of an optimized cache key.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -854,26 +534,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version number of ECMAScript that the browser supports.</summary>
-        <value>The version number of ECMAScript that the browser supports.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports an ECMAScript major version number greater than 1.  
-  
- [!code-cs[HttpCapabilitiesBase.EcmaScriptVersion#1](~/add/codesnippet/csharp/p-system.web.configurati_75_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.EcmaScriptVersion#1](~/add/codesnippet/visualbasic/p-system.web.configurati_75_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Frames">
@@ -883,27 +552,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports HTML frames.</summary>
-        <value>
-          <see langword="true" /> if the browser supports frames; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports HTML frames.  
-  
- [!code-cs[HttpCapabilitiesBase.Frames#1](~/add/codesnippet/csharp/p-system.web.configurati_188_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.Frames#1](~/add/codesnippet/visualbasic/p-system.web.configurati_188_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GatewayMajorVersion">
@@ -913,17 +570,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the major version number of the wireless gateway used to access the server, if known.</summary>
-        <value>The major version number of the wireless gateway used to access the server, if known. The default is <see langword="0" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpUnhandledException">The major version number of the wireless gateway cannot be parsed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GatewayMinorVersion">
@@ -933,17 +588,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the minor version number of the wireless gateway used to access the server, if known.</summary>
-        <value>The minor version number of the wireless gateway used to access the server, if known. The default is <see langword="0" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpUnhandledException">The minor version number of the wireless gateway cannot be parsed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GatewayVersion">
@@ -953,26 +606,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of the wireless gateway used to access the server, if known.</summary>
-        <value>The version number of the wireless gateway used to access the server, if known. The default is <see langword="None" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the gateway is an `UP` gateway.  
-  
- [!code-vb[HttpCapabilitiesBase.GatewayVersion#1](~/add/codesnippet/visualbasic/p-system.web.configurati_11_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.GatewayVersion#1](~/add/codesnippet/csharp/p-system.web.configurati_11_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClrVersions">
@@ -982,7 +624,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -990,16 +631,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns all versions of the .NET Framework common language runtime that are installed on the client.</summary>
-        <returns>An array of <see cref="T:System.Version" /> objects.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetClrVersions method is supported only when the browser is Internet Explorer version 5.0 or later. If the common language runtime is not installed on the client, the property returns an array containing a single <xref:System.Version> object with the values 0, 0,-1,-1.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConfigCapabilities">
@@ -1009,7 +643,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1020,10 +653,10 @@
         <Parameter Name="request" Type="System.Web.HttpRequest" />
       </Parameters>
       <Docs>
-        <param name="configKey">The name of the configuration section that configures browser capabilities.</param>
-        <param name="request">The <see cref="T:System.Web.HttpRequest" /> generated by the browser for which to return capabilities and which is usually the current <see cref="T:System.Web.HttpRequest" />.</param>
-        <summary>Used internally to return an instance of <see cref="T:System.Web.Configuration.HttpCapabilitiesBase" /> representing the browser that generated the specified <see cref="T:System.Web.HttpRequest" />.</summary>
-        <returns>An instance of <see cref="T:System.Web.Configuration.HttpCapabilitiesBase" /> representing the browser that generated the specified <see cref="T:System.Web.HttpRequest" />.</returns>
+        <param name="configKey">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1034,32 +667,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser has a dedicated **Back** button.</summary>
-        <value>
-          <see langword="true" /> if the browser has a dedicated **Back** button; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `false`, a link control might be necessary when a **Back** button is not available.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser has a dedicated **Back** button.  
-  
- [!code-vb[HttpCapabilitiesBase.HasBackButton#1](~/add/codesnippet/visualbasic/p-system.web.configurati_229_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.HasBackButton#1](~/add/codesnippet/csharp/p-system.web.configurati_229_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HidesRightAlignedMultiselectScrollbars">
@@ -1069,27 +685,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the scrollbar of an HTML <see langword="&lt;select multiple&gt;" /> element with an <see langword="align" /> attribute value of <see langword="right" /> is obscured upon rendering.</summary>
-        <value>
-          <see langword="true" /> if the scrollbar of an HTML <see langword="&lt;select multiple&gt;" /> element with an <see langword="align" /> attribute value of <see langword="right" /> is obscured upon rendering; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser obscures the scrollbar for right-aligned multi-select elements.  
-  
- [!code-vb[HttpCapabilitiesBase.HidesRightAlignedMultiselectScrollbars#1](~/add/codesnippet/visualbasic/35e8f82c-ef59-4da6-a070-_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.HidesRightAlignedMultiselectScrollbars#1](~/add/codesnippet/csharp/35e8f82c-ef59-4da6-a070-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HtmlTextWriter">
@@ -1099,15 +703,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the fully qualified class name of the <see cref="T:System.Web.UI.HtmlTextWriter" /> to use.</summary>
-        <value>The fully qualified class name of the <see cref="T:System.Web.UI.HtmlTextWriter" /> to use.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1118,15 +721,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the internal identifier of the browser as specified in the browser definition file.</summary>
-        <value>Internal identifier of the browser as specified in the browser definition file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1137,7 +739,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1145,7 +746,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Used internally to initialize an internal set of values.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1156,37 +757,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the type of input supported by browser.</summary>
-        <value>The type of input supported by browser. The default is <c>telephoneKeypad</c>.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Possible return values include:  
-  
--   `virtualKeyboard`  
-  
--   `telephoneKeypad`  
-  
--   `keyboard`  
-  
-   
-  
-## Examples  
- The following code example shows how to determine the type of input support.  
-  
- [!code-cs[HttpCapabilitiesBase.InputType#1](~/add/codesnippet/csharp/p-system.web.configurati_266_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.InputType#1](~/add/codesnippet/visualbasic/p-system.web.configurati_266_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBrowser">
@@ -1196,7 +775,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1206,18 +784,10 @@
         <Parameter Name="browserName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="browserName">The specified browser.</param>
-        <summary>Gets a value indicating whether the client browser is the same as the specified browser.</summary>
-        <returns>
-          <see langword="true" /> if the client browser is the same as the specified browser; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsBrowser method also returns `true` if the client browser definition inherits from the specified browser.  
-  
- ]]></format>
-        </remarks>
+        <param name="browserName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsColor">
@@ -1227,27 +797,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser has a color display.</summary>
-        <value>
-          <see langword="true" /> if the browser has a color display; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows whether the client's browser supports color. The returned value could be used to determine the appropriate image to send to the browser.  
-  
- [!code-cs[HttpCapabilitiesBase.IsColor#1](~/add/codesnippet/csharp/p-system.web.configurati_262_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.IsColor#1](~/add/codesnippet/visualbasic/p-system.web.configurati_262_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMobileDevice">
@@ -1257,27 +815,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser is a recognized mobile device.</summary>
-        <value>
-          <see langword="true" /> if the browser is a recognized mobile device; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser is a mobile device.  
-  
- [!code-cs[HttpCapabilitiesBase.IsMobileDevice#1](~/add/codesnippet/csharp/p-system.web.configurati_270_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.IsMobileDevice#1](~/add/codesnippet/visualbasic/p-system.web.configurati_270_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1287,7 +833,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1297,17 +842,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the browser capability to retrieve.</param>
-        <summary>Gets the value of the specified browser capability. In C#, this property is the indexer for the class.</summary>
-        <value>The browser capability with the specified key name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In JScript, you can use the default indexed properties defined by a type, but you cannot explicitly define your own. However, specifying the `expando` attribute on a class automatically provides a default indexed property with a type of `Object` and an index type of `String`.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="JavaApplets">
@@ -1317,27 +855,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports Java.</summary>
-        <value>
-          <see langword="true" /> if the browser supports Java; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports Java.  
-  
- [!code-cs[HttpCapabilitiesBase.JavaApplets#1](~/add/codesnippet/csharp/p-system.web.configurati_397_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.JavaApplets#1](~/add/codesnippet/visualbasic/p-system.web.configurati_397_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="JavaScript">
@@ -1347,7 +873,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1359,25 +884,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports JavaScript.</summary>
-        <value>
-          <see langword="true" /> if the browser supports JavaScript; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the browser supports JavaScript but scripting is disabled through a security setting, the JavaScript property will return `true` but script will not execute on the browser.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports JavaScript.  
-  
- [!code-vb[HttpCapabilitiesBase.JavaScript#1](~/add/codesnippet/visualbasic/p-system.web.configurati_318_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.JavaScript#1](~/add/codesnippet/csharp/p-system.web.configurati_318_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="JScriptVersion">
@@ -1387,15 +896,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the JScript version that the browser supports.</summary>
-        <value>The <see cref="T:System.Version" /> of JScript that the browser supports.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1406,27 +914,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the major (integer) version number of the browser.</summary>
-        <value>The major version number of the browser.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example adds the major and minor (integer and decimal) values of the browser version number and sends the result to browser.  
-  
- [!code-cs[HttpCapabilitiesBase.MajorVersion#1](~/add/codesnippet/csharp/p-system.web.configurati_241_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.MajorVersion#1](~/add/codesnippet/visualbasic/p-system.web.configurati_241_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Exception">The major version value is not an integer.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumHrefLength">
@@ -1436,15 +932,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum length in characters for the <see langword="href" /> attribute of an HTML <see langword="&lt;a&gt;" /> (anchor) element.</summary>
-        <value>The maximum length in characters for the <see langword="href" /> attribute of an HTML <see langword="&lt;a&gt;" /> (anchor) element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1455,25 +950,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum length of the page, in bytes, which the browser can display.</summary>
-        <value>The maximum length of the page, in bytes, which the browser can display. The default is <c>2000</c>.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Processing by an intermediate gateway can change the number of bytes that reach the browser. ASP.NET does not enforce this limit on page size.  
-  
- MaximumRenderedPageSize is primarily useful when working with mobile-client browsers.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumSoftkeyLabelLength">
@@ -1483,31 +968,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the maximum length of the text that a soft-key label can display.</summary>
-        <value>The maximum length of the text that a soft-key label can display. The default is <see langword="5" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MaximumSoftkeyLabelLength property applies only to WML-compatible mobile devices.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine the maximum length of the soft-key label for the browser.  
-  
- [!code-cs[HttpCapabilitiesBase.MaximumSoftkeyLabelLength#1](~/add/codesnippet/csharp/p-system.web.configurati_145_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.MaximumSoftkeyLabelLength#1](~/add/codesnippet/visualbasic/p-system.web.configurati_145_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorVersion">
@@ -1517,27 +986,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the minor (that is, decimal) version number of the browser.</summary>
-        <value>The minor version number of the browser.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example returns the minor version of the browser.  
-  
- [!code-cs[HttpCapabilitiesBase.MinorVersion#1](~/add/codesnippet/csharp/p-system.web.configurati_84_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.MinorVersion#1](~/add/codesnippet/visualbasic/p-system.web.configurati_84_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpUnhandledException">The minor version number in the header is not valid.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorVersionString">
@@ -1547,15 +1004,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the minor (decimal) version number of the browser as a string.</summary>
-        <value>The minor version number of the browser.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1566,15 +1022,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the name of the manufacturer of a mobile device, if known.</summary>
-        <value>The name of the manufacturer of a mobile device, if known. The default is <see langword="Unknown" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1585,15 +1040,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the model name of a mobile device, if known.</summary>
-        <value>The model name of a mobile device, if known. The default is <see langword="Unknown" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1604,26 +1058,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of Microsoft HTML (MSHTML) Document Object Model (DOM) that the browser supports.</summary>
-        <value>The number of the MSHTML DOM version that the browser supports.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports an MSHTML DOM major version greater than 1.  
-  
- [!code-vb[HttpCapabilitiesBase.MSDomVersion#1](~/add/codesnippet/visualbasic/p-system.web.configurati_222_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.MSDomVersion#1](~/add/codesnippet/csharp/p-system.web.configurati_222_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberOfSoftkeys">
@@ -1633,25 +1076,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the number of soft keys on a mobile device.</summary>
-        <value>The number of soft keys supported on a mobile device. The default is <see langword="0" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The NumberOfSoftkeys property applies only to WML-compatible mobile devices.  
-  
- Soft keys are special keys that the application can usually map to custom tasks. Soft-key text is displayed on the screen in the lower-left and lower-right corners.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Platform">
@@ -1661,55 +1094,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the platform that the client uses, if it is known.</summary>
-        <value>The operating system that the client uses, if it is known, otherwise the value is set to <see langword="Unknown" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some of the possible values for the Platform property are as follows:  
-  
--   `Unknown`  
-  
--   `Win95`  
-  
--   `Win98`  
-  
--   `Windows NT 5.0` (Windows 2000)  
-  
--   `Windows NT 5.1` (Windows XP)  
-  
--   `WinNT` (all other versions of Windows NT)  
-  
--   `Win16`  
-  
--   `WinCE`  
-  
--   `Mac68K`  
-  
--   `MacPPC`  
-  
--   `UNIX`  
-  
--   `WebTV`  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser is running on the Windows NT platform.  
-  
- [!code-cs[HttpCapabilitiesBase.Platform#1](~/add/codesnippet/csharp/p-system.web.configurati_235_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.Platform#1](~/add/codesnippet/visualbasic/p-system.web.configurati_235_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredImageMime">
@@ -1719,26 +1112,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the MIME type of the type of image content typically preferred by the browser.</summary>
-        <value>The MIME type of the type of image content typically preferred by the browser. The default is <see langword="image/gif" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine the type of image typically preferred by a browser.  
-  
- [!code-vb[HttpCapabilitiesBase.PreferredImageMime#1](~/add/codesnippet/visualbasic/p-system.web.configurati_205_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.PreferredImageMime#1](~/add/codesnippet/csharp/p-system.web.configurati_205_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredRenderingMime">
@@ -1748,26 +1130,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the MIME type of the type of content typically preferred by the browser.</summary>
-        <value>The MIME type of the type of content typically preferred by the browser. The default is <see langword="text/html" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine the MIME type typically preferred by the browser.  
-  
- [!code-cs[HttpCapabilitiesBase.PreferredRenderingMime#1](~/add/codesnippet/csharp/p-system.web.configurati_125_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.PreferredRenderingMime#1](~/add/codesnippet/visualbasic/p-system.web.configurati_125_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredRenderingType">
@@ -1777,27 +1148,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the general name for the type of content that the browser prefers.</summary>
-        <value>
-          <see langword="html32" /> or <see langword="chtml10" />. The default is <see langword="html32" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine the type of content that the browser prefers.  
-  
- [!code-cs[HttpCapabilitiesBase.PreferredRenderingType#1](~/add/codesnippet/csharp/p-system.web.configurati_61_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.PreferredRenderingType#1](~/add/codesnippet/visualbasic/p-system.web.configurati_61_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredRequestEncoding">
@@ -1807,15 +1166,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the request encoding preferred by the browser.</summary>
-        <value>The request encoding preferred by the browser.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1826,15 +1184,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the response encoding preferred by the browser.</summary>
-        <value>The response encoding preferred by the browser.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1845,34 +1202,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser renders a line break before <see langword="&lt;select&gt;" /> or <see langword="&lt;input&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser renders a line break before <see langword="&lt;select&gt;" /> or <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RendersBreakBeforeWmlSelectAndInput property applies only to WML-compatible mobile devices.  
-  
- If `true`, content following `<select>` or `<input>` elements will automatically be placed on a new line.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser renders a line break before `<select>` or `<input>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput#1](~/add/codesnippet/csharp/9303e792-7cc5-4e57-92b0-_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput#1](~/add/codesnippet/visualbasic/9303e792-7cc5-4e57-92b0-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RendersBreaksAfterHtmlLists">
@@ -1882,32 +1220,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser renders a line break after list-item elements.</summary>
-        <value>
-          <see langword="true" /> if the browser renders a line break after list-item elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `true`, content following list-item elements will automatically be placed on a new line.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser renders a line break after list-item elements.  
-  
- [!code-cs[HttpCapabilitiesBase.RendersBreaksAfterHtmlLists#1](~/add/codesnippet/csharp/p-system.web.configurati_162_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RendersBreaksAfterHtmlLists#1](~/add/codesnippet/visualbasic/p-system.web.configurati_162_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RendersBreaksAfterWmlAnchor">
@@ -1917,34 +1238,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser renders a line break after a stand-alone HTML <see langword="&lt;a&gt;" /> (anchor) element.</summary>
-        <value>
-          <see langword="true" /> if the browser renders a line break after a stand-alone HTML <see langword="&lt;a&gt;" /> (anchor) element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RendersBreaksAfterWmlAnchor property applies only to WML-compatible mobile devices.  
-  
- If `true`, content following a stand-alone HTML `<a>` (anchor) element will automatically be placed on a new line.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser renders a line break after a stand-alone WML `<a>` (anchor) element.  
-  
- [!code-vb[HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor#1](~/add/codesnippet/visualbasic/p-system.web.configurati_28_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor#1](~/add/codesnippet/csharp/p-system.web.configurati_28_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RendersBreaksAfterWmlInput">
@@ -1954,34 +1256,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser renders a line break after an HTML <see langword="&lt;input&gt;" /> element.</summary>
-        <value>
-          <see langword="true" /> if the browser renders a line break after an HTML <see langword="&lt;input&gt; " />element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RendersBreaksAfterWmlInput property applies only to WML-compatible mobile devices.  
-  
- If `true`, content following an HTML `<input>` element will automatically be placed on a new line.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser renders a line break after an HTML `<input>` element.  
-  
- [!code-cs[HttpCapabilitiesBase.RendersBreaksAfterWmlInput#1](~/add/codesnippet/csharp/p-system.web.configurati_299_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RendersBreaksAfterWmlInput#1](~/add/codesnippet/visualbasic/p-system.web.configurati_299_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RendersWmlDoAcceptsInline">
@@ -1991,32 +1274,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the mobile-device browser renders a WML <see langword="do" />-based form accept construct as an inline button rather than as a soft key.</summary>
-        <value>
-          <see langword="true" /> if the mobile-device browser renders a WML <see langword="do" />-based form-accept construct as an inline button; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RendersWmlDoAcceptsInline property applies only to WML-compatible mobile devices.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser renders a WML `do`-based form-accept construct as an inline button.  
-  
- [!code-vb[HttpCapabilitiesBase.RendersWmlDoAcceptsInline#1](~/add/codesnippet/visualbasic/p-system.web.configurati_225_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.RendersWmlDoAcceptsInline#1](~/add/codesnippet/csharp/p-system.web.configurati_225_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RendersWmlSelectsAsMenuCards">
@@ -2026,32 +1292,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser renders WML <see langword="&lt;select&gt;" /> elements as menu cards, rather than as a combo box.</summary>
-        <value>
-          <see langword="true" /> if the browser renders WML <see langword="&lt;select&gt;" /> elements as menu cards; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RendersWmlSelectsAsMenuCards property applies only to WML-compatible mobile devices.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser renders WML `<select>` elements as menu cards.  
-  
- [!code-vb[HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards#1](~/add/codesnippet/visualbasic/p-system.web.configurati_310_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards#1](~/add/codesnippet/csharp/p-system.web.configurati_310_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiredMetaTagNameValue">
@@ -2061,27 +1310,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used internally to produce a meta-tag required by some browsers.</summary>
-        <value>A meta-tag required by some browsers.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Intended for internal use only. Some browsers require a meta-tag similar to the following for the browser to render properly.  
-  
-```  
-<META NAME="NAME" CONTENT="VALUE">  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresAttributeColonSubstitution">
@@ -2091,32 +1328,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires colons in element attribute values to be substituted with a different character.</summary>
-        <value>
-          <see langword="true" /> if the browser requires colons in element attribute values to be substituted with a different character; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some browsers do not recognize colons in element attribute values. If `true`, a different character will be substituted on rendering and returned in postback data.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser requires colons in element attribute values to be substituted with a different character.  
-  
- [!code-cs[HttpCapabilitiesBase.RequiresAttributeColonSubstitution#1](~/add/codesnippet/csharp/75aeaef6-dcfa-4061-9538-_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RequiresAttributeColonSubstitution#1](~/add/codesnippet/visualbasic/75aeaef6-dcfa-4061-9538-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresContentTypeMetaTag">
@@ -2126,38 +1346,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires an HTML <see langword="&lt;meta&gt;" /> element for which the <see langword="content-type" /> attribute is specified.</summary>
-        <value>
-          <see langword="true" /> if the browser requires an HTML <see langword="&lt;meta&gt;" /> element for which the <see langword="content-type" /> attribute is specified; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `true`, server-control adapters insert the following tag into the HTML `<head>` element of a Web page:  
-  
-```  
-<META HTTP-EQUIV="CONTENT-TYPE" CONTENT=""; CHARSET="">  
-```  
-  
- In this example, `CONTENT` is the value returned by the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingMime%2A> property, and `charset` is the character encoding used.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser requires an HTML `<meta>` element for which the `content-type` attribute is specified.  
-  
- [!code-vb[HttpCapabilitiesBase.RequiresContentTypeMetaTag#1](~/add/codesnippet/visualbasic/p-system.web.configurati_102_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.RequiresContentTypeMetaTag#1](~/add/codesnippet/csharp/p-system.web.configurati_102_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresControlStateInSession">
@@ -2167,27 +1364,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires control state to be maintained in sessions.</summary>
-        <value>
-          <see langword="true" /> if the browser requires control state to be maintained in sessions; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser requires control state to be maintained in sessions.  
-  
- [!code-cs[HttpCapabilitiesBase.RequiresControlStateInSession#1](~/add/codesnippet/csharp/p-system.web.configurati_387_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RequiresControlStateInSession#1](~/add/codesnippet/visualbasic/p-system.web.configurati_387_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresDBCSCharacter">
@@ -2197,27 +1382,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires a double-byte character set.</summary>
-        <value>
-          <see langword="true" /> if the browser requires a double-byte character set; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser requires a double-byte character set.  
-  
- [!code-vb[HttpCapabilitiesBase.RequiresDBCSCharacter#1](~/add/codesnippet/visualbasic/p-system.web.configurati_51_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.RequiresDBCSCharacter#1](~/add/codesnippet/csharp/p-system.web.configurati_51_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresHtmlAdaptiveErrorReporting">
@@ -2227,32 +1400,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires nonstandard error messages.</summary>
-        <value>
-          <see langword="true" /> if the browser requires nonstandard error messages; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `true`, the browser does not properly render HTTP error messages. To correct this, server control adapters generate a custom error page for the browser.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser requires nonstandard error messages.  
-  
- [!code-cs[HttpCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting#1](~/add/codesnippet/csharp/2ba3dcba-bae8-4562-b395-_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting#1](~/add/codesnippet/visualbasic/2ba3dcba-bae8-4562-b395-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresLeadingPageBreak">
@@ -2262,32 +1418,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires the first element in the body of a Web page to be an HTML <see langword="&lt;br&gt;" /> element.</summary>
-        <value>
-          <see langword="true" /> if the browser requires the first element in the body of a Web page to be an HTML <see langword="BR" /> element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `true`, server-control adapters insert an additional `<br>` element immediately following the `<body>` tag in a Web page.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser requires the first element in the body of a Web page to be an HTML `<br>` element.  
-  
- [!code-vb[HttpCapabilitiesBase.RequiresLeadingPageBreak#1](~/add/codesnippet/visualbasic/p-system.web.configurati_195_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.RequiresLeadingPageBreak#1](~/add/codesnippet/csharp/p-system.web.configurati_195_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresNoBreakInFormatting">
@@ -2297,32 +1436,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser does not support HTML <see langword="&lt;br&gt;" /> elements to format line breaks.</summary>
-        <value>
-          <see langword="true" /> if the browser does not support HTML <see langword="&lt;br&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `true`, the browser will not correctly render pages containing the HTML `<br>` element.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser does not support HTML `<br>` elements to format line breaks.  
-  
- [!code-vb[HttpCapabilitiesBase.RequiresNoBreakInFormatting#1](~/add/codesnippet/visualbasic/p-system.web.configurati_224_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.RequiresNoBreakInFormatting#1](~/add/codesnippet/csharp/p-system.web.configurati_224_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresOutputOptimization">
@@ -2332,35 +1454,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires pages to contain a size-optimized form of markup language tags.</summary>
-        <value>
-          <see langword="true" /> if the browser requires pages to contain a size-optimized form of markup language tags; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `true`, server control adapters generate minimal output to reduce the size of the resulting page.  
-  
-> [!NOTE]
->  The RequiresOutputOptimization property returns `true` for i-mode–compatible browsers.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser requires pages to contain a size-optimized form of markup language tags.  
-  
- [!code-cs[HttpCapabilitiesBase.RequiresOutputOptimization#1](~/add/codesnippet/csharp/p-system.web.configurati_64_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RequiresOutputOptimization#1](~/add/codesnippet/visualbasic/p-system.web.configurati_64_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresPhoneNumbersAsPlainText">
@@ -2370,32 +1472,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports phone dialing based on plain text, or whether it requires special markup.</summary>
-        <value>
-          <see langword="true" /> if the browser supports phone dialing based on plain text only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RequiresPhoneNumbersAsPlainText property applies only to browsers for which the <xref:System.Web.Configuration.HttpCapabilitiesBase.CanInitiateVoiceCall%2A> property is `true`.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports phone dialing based on plain text, or whether it requires special markup.  
-  
- [!code-cs[HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText#1](~/add/codesnippet/csharp/p-system.web.configurati_169_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText#1](~/add/codesnippet/visualbasic/p-system.web.configurati_169_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresSpecialViewStateEncoding">
@@ -2405,38 +1490,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires <see langword="VIEWSTATE" /> values to be specially encoded.</summary>
-        <value>
-          <see langword="true" /> if the browser requires <see langword="VIEWSTATE" /> values to be specially encoded; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- HTTP is a stateless protocol, and `VIEWSTATE` is one mechanism used to persist client changes across multiple requests. Each control on a Web page contains a <xref:System.Web.UI.Control.ViewState%2A> property, which represents the accumulation of any changes made by the client. In a Web Forms page, these changes are encoded in postback data as the `value` of an HTML `<input>` element with a `type` attribute of `hidden`. For example:  
-  
-```  
-<input type="hidden" name="__VIEWSTATE" value="t0PH_u56?cDxleHQ7P=" />  
-```  
-  
- If `true`, non-alphabetic characters in the `VIEWSTATE` value will not be sent correctly by the browser, nor by an intermediate gateway. To correct this, server-control adapters replace non-alphabetic characters in the `VIEWSTATE` value with ones that do not require encoding in HTTP requests.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser requires `VIEWSTATE` values to be specially encoded.  
-  
- [!code-cs[HttpCapabilitiesBase.RequiresSpecialViewStateEncoding#1](~/add/codesnippet/csharp/ded66d43-c984-472a-ab07-_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RequiresSpecialViewStateEncoding#1](~/add/codesnippet/visualbasic/ded66d43-c984-472a-ab07-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresUniqueFilePathSuffix">
@@ -2446,32 +1508,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires unique form-action URLs.</summary>
-        <value>
-          <see langword="true" /> if the browser requires unique form-action URLs; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A self-referring HTML `<form>` element is one for which the `action` attribute specifies its own URL. If `true`, self-referring forms do not return the correct results. This is due to caching by either the browser or an intermediate gateway. To correct this, server control adapters append a default query string (`__ufps=``uniquefilepathsuffix`) onto the form-action URL values of self-referring forms.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser requires unique form-action URLs.  
-  
- [!code-vb[HttpCapabilitiesBase.RequiresUniqueFilePathSuffix#1](~/add/codesnippet/visualbasic/p-system.web.configurati_74_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.RequiresUniqueFilePathSuffix#1](~/add/codesnippet/csharp/p-system.web.configurati_74_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresUniqueHtmlCheckboxNames">
@@ -2481,27 +1526,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires unique <see langword="name" /> attribute values of multiple HTML <see langword="&lt;input type=&quot;checkbox&quot;&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser requires unique <see langword="name" /> attribute values of multiple HTML <see langword="&lt;input type=&quot;checkbox&quot;&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser requires unique `NAME` attribute values of multiple HTML `<input type="checkbox">` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.RequiresUniqueHtmlCheckboxNames#1](~/add/codesnippet/csharp/p-system.web.configurati_384_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RequiresUniqueHtmlCheckboxNames#1](~/add/codesnippet/visualbasic/p-system.web.configurati_384_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresUniqueHtmlInputNames">
@@ -2511,27 +1544,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser requires unique <see langword="name" /> attribute values of multiple HTML <see langword="&lt;input&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser requires unique <see langword="name" /> attribute values of multiple HTML <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser requires unique `name` attribute values of multiple HTML `<input>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.RequiresUniqueHtmlInputNames#1](~/add/codesnippet/csharp/p-system.web.configurati_285_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.RequiresUniqueHtmlInputNames#1](~/add/codesnippet/visualbasic/p-system.web.configurati_285_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresUrlEncodedPostfieldValues">
@@ -2541,27 +1562,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether postback data sent by the browser will be <see langword="UrlEncoded" />.</summary>
-        <value>
-          <see langword="true" /> if postback data sent by the browser will be <see langword="UrlEncoded" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser `UrlEncodes` postback data.  
-  
- [!code-vb[HttpCapabilitiesBase.RequiresUrlEncodedPostfieldValues#1](~/add/codesnippet/visualbasic/f29bbebb-6fc1-44b9-b9d3-_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.RequiresUrlEncodedPostfieldValues#1](~/add/codesnippet/csharp/f29bbebb-6fc1-44b9-b9d3-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenBitDepth">
@@ -2571,15 +1580,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the depth of the display, in bits per pixel.</summary>
-        <value>The depth of the display, in bits per pixel. The default is <see langword="1" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2590,23 +1598,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the approximate height of the display, in character lines.</summary>
-        <value>The approximate height of the display, in character lines. The default is <see langword="6" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned value can be derived from the assumed character size and actual screen pixel size. The algorithm for determining the height uses a combination of the default font sizes (from a .config file), browser-specific sizes (again, from a .config file), and explicit headers sent by the browser. Some browsers might rely on internal default values, which only approximate the actual height.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenCharactersWidth">
@@ -2616,23 +1616,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the approximate width of the display, in characters.</summary>
-        <value>The approximate width of the display, in characters. The default is <see langword="12" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned value can be derived from the assumed character size and actual screen pixel size. The algorithm for determining the width uses a combination of the default font sizes (from a .config file), device-specific sizes (again, from a .config file), and explicit headers sent by the devices. These values are not necessarily exact (especially for variable-width fonts, these values are approximate). Some devices might rely on internal default values, which only approximate the actual width.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenPixelsHeight">
@@ -2642,23 +1634,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the approximate height of the display, in pixels.</summary>
-        <value>The approximate height of the display, in pixels. The default is <see langword="72" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned value can be derived from the assumed character size and character height. The algorithm for determining the pixel height uses a combination of the default font sizes (from a .config file), device-specific sizes (again, from a .config file), and explicit headers sent by the devices. These values are not necessarily exact. Some devices might rely on internal default values, which only approximate the actual height.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenPixelsWidth">
@@ -2668,23 +1652,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the approximate width of the display, in pixels.</summary>
-        <value>The approximate width of the display, in pixels. The default is <see langword="96" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned value can be derived from the assumed character size and character width. The algorithm for determining the pixel width uses a combination of the default font sizes (from a .config file), device-specific sizes (again, from a .config file), and explicit headers sent by the devices. These values are not necessarily exact (especially for variable-width fonts, these values are approximate). Some devices might rely on internal default values, which only approximate the actual width.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsAccesskeyAttribute">
@@ -2694,32 +1670,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="ACCESSKEY" /> attribute of HTML <see langword="&lt;a&gt;" /> (anchor) and <see langword="&lt;input&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="accesskey" /> attribute of HTML <see langword="&lt;a&gt;" /> (anchor) and <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `accesskey` attribute extends control of forms and links on a Web page to mobile and accessible platforms by assigning a soft key or other controller on the device to interact with HTML `<a>` (anchor) and `<input>` elements.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `accesskey` attribute of HTML `<a>` (anchor) and `<input>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsAccesskeyAttribute#1](~/add/codesnippet/csharp/p-system.web.configurati_98_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsAccesskeyAttribute#1](~/add/codesnippet/visualbasic/p-system.web.configurati_98_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsBodyColor">
@@ -2729,27 +1688,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="bgcolor" /> attribute of the HTML <see langword="&lt;body&gt;" /> element.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="bgcolor" /> attribute of the HTML <see langword="&lt;body&gt;" /> element; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `bgcolor` attribute of the HTML `<body>` element.  
-  
- [!code-vb[HttpCapabilitiesBase.SupportsBodyColor#1](~/add/codesnippet/visualbasic/p-system.web.configurati_366_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.SupportsBodyColor#1](~/add/codesnippet/csharp/p-system.web.configurati_366_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsBold">
@@ -2759,27 +1706,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports HTML <see langword="&lt;b&gt;" /> elements to format bold text.</summary>
-        <value>
-          <see langword="true" /> if the browser supports HTML <see langword="&lt;b&gt;" /> elements to format bold text; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports HTML `<b>` elements to format bold text.  
-  
- [!code-vb[HttpCapabilitiesBase.SupportsBold#1](~/add/codesnippet/visualbasic/p-system.web.configurati_211_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.SupportsBold#1](~/add/codesnippet/csharp/p-system.web.configurati_211_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsCacheControlMetaTag">
@@ -2789,46 +1724,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="cache-control" /> value for the <see langword="http-equiv" /> attribute of HTML <see langword="&lt;meta&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="cache-control" /> value for the <see langword="http-equiv" /> attribute of HTML <see langword="&lt;meta&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `cache-control` value for the `http-equiv` attribute of HTML `<meta>` elements allows control over client caching of downloaded content, which includes Web pages. The following HTML fragment shows an example:  
-  
-```  
-<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"/>  
-```  
-  
- If `true`, the inclusion of this tag in the `<head>` element of a Web page should force the browser to reload content from the server.  
-  
- If `false`, server control adapters append a default query string (`__ufps=``uniquefilepathsuffix`) onto link URL values that do not already have one. This forces the browser to reload content from the server.  
-  
- The SupportsCacheControlMetaTag property also applies to the equivalent HTTP header form:  
-  
-```  
-CACHE-CONTROL: NO-CACHE  
-```  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `cache-control` value for the `http-equiv` attribute of HTML `<meta>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsCacheControlMetaTag#1](~/add/codesnippet/csharp/p-system.web.configurati_207_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsCacheControlMetaTag#1](~/add/codesnippet/visualbasic/p-system.web.configurati_207_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsCallback">
@@ -2838,27 +1742,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports callback scripts.</summary>
-        <value>
-          <see langword="true" /> if the browser supports callback scripts; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports callback scripts.  
-  
- [!code-vb[HttpCapabilitiesBase.SupportsCallback#1](~/add/codesnippet/visualbasic/p-system.web.configurati_321_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.SupportsCallback#1](~/add/codesnippet/csharp/p-system.web.configurati_321_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsCss">
@@ -2868,27 +1760,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports Cascading Style Sheets (CSS).</summary>
-        <value>
-          <see langword="true" /> if the browser supports CSS; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports CSS.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsCss#1](~/add/codesnippet/csharp/p-system.web.configurati_129_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsCss#1](~/add/codesnippet/visualbasic/p-system.web.configurati_129_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsDivAlign">
@@ -2898,32 +1778,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="align" /> attribute of HTML <see langword="&lt;div&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="align" /> attribute of HTML <see langword="&lt;div&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- HTML `<div>` elements are used to group multiple HTML elements so that CSS styles can be applied to them as a whole. The `align` attribute sets the horizontal alignment of a `<div>` group on a Web page.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `align` attribute of HTML `<div>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsDivAlign#1](~/add/codesnippet/csharp/p-system.web.configurati_329_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsDivAlign#1](~/add/codesnippet/visualbasic/p-system.web.configurati_329_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsDivNoWrap">
@@ -2933,32 +1796,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="nowrap" /> attribute of HTML <see langword="&lt;div&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="nowrap" /> attribute of HTML <see langword="&lt;div&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- HTML `<div>` elements are used to group multiple HTML elements so that CSS styles can be applied to them as a whole. The `nowrap` attribute specifies that the elements contained in the `<div>` group should remain adjacent to each other without wrapping to a new line.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `nowrap` attribute of HTML `<div>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsDivNoWrap#1](~/add/codesnippet/csharp/p-system.web.configurati_108_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsDivNoWrap#1](~/add/codesnippet/visualbasic/p-system.web.configurati_108_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsEmptyStringInCookieValue">
@@ -2968,27 +1814,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports empty (<see langword="null" />) strings in cookie values.</summary>
-        <value>
-          <see langword="true" /> if the browser supports empty (<see langword="null" />) strings in cookie values; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports empty (`null`) strings in cookie values.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsEmptyStringInCookieValue#1](~/add/codesnippet/csharp/88f116fb-05a4-493a-9e0f-_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsEmptyStringInCookieValue#1](~/add/codesnippet/visualbasic/88f116fb-05a4-493a-9e0f-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsFontColor">
@@ -2998,27 +1832,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="color" /> attribute of HTML <see langword="&lt;font&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="color" /> attribute of HTML <see langword="&lt;font&gt; " />elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `color` attribute of HTML `<font>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsFontColor#1](~/add/codesnippet/csharp/p-system.web.configurati_306_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsFontColor#1](~/add/codesnippet/visualbasic/p-system.web.configurati_306_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsFontName">
@@ -3028,27 +1850,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="name" /> attribute of HTML <see langword="&lt;font&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="name" /> attribute of HTML <see langword="&lt;font&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `name` attribute of HTML `<font>` elements.  
-  
- [!code-vb[HttpCapabilitiesBase.SupportsFontName#1](~/add/codesnippet/visualbasic/p-system.web.configurati_341_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.SupportsFontName#1](~/add/codesnippet/csharp/p-system.web.configurati_341_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsFontSize">
@@ -3058,27 +1868,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="size" /> attribute of HTML <see langword="&lt;font&gt; " />elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="size" /> attribute of HTML <see langword="&lt;font&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `size` attribute of HTML `<font>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsFontSize#1](~/add/codesnippet/csharp/p-system.web.configurati_328_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsFontSize#1](~/add/codesnippet/visualbasic/p-system.web.configurati_328_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsImageSubmit">
@@ -3088,27 +1886,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports using a custom image in place of a standard form Submit button.</summary>
-        <value>
-          <see langword="true" /> if the browser supports using a custom image in place of a standard form Submit button; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports using a custom image in place of a standard form Submit button.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsImageSubmit#1](~/add/codesnippet/csharp/p-system.web.configurati_33_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsImageSubmit#1](~/add/codesnippet/visualbasic/p-system.web.configurati_33_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsIModeSymbols">
@@ -3118,34 +1904,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports i-mode symbols.</summary>
-        <value>
-          <see langword="true" /> if the browser supports i-mode symbols; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
-  
- Set i-Phone–specific picture symbols for i-mode–compatible browsers by using the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A>property.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports i-mode symbols.  
-  
- [!code-vb[HttpCapabilitiesBase.SupportsIModeSymbols#1](~/add/codesnippet/visualbasic/p-system.web.configurati_346_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.SupportsIModeSymbols#1](~/add/codesnippet/csharp/p-system.web.configurati_346_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsInputIStyle">
@@ -3155,34 +1922,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="istyle" /> attribute of HTML <see langword="&lt;input&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="istyle" /> attribute of HTML <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
-  
- The `istyle` attribute is used for setting the input style of a text-input field on i-mode–compatible browsers.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `istyle` attribute of HTML `<input>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsInputIStyle#1](~/add/codesnippet/csharp/p-system.web.configurati_164_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsInputIStyle#1](~/add/codesnippet/visualbasic/p-system.web.configurati_164_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsInputMode">
@@ -3192,34 +1940,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="mode" /> attribute of HTML <see langword="&lt;input&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="mode" /> attribute of HTML <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SupportsInputMode property applies only to i-mode–compatible devices.  
-  
- The `MODE` attribute is used for setting the input mode of a text input field on i-mode–compatible browsers.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `mode` attribute of HTML `<input>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsInputMode#1](~/add/codesnippet/csharp/p-system.web.configurati_141_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsInputMode#1](~/add/codesnippet/visualbasic/p-system.web.configurati_141_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsItalic">
@@ -3229,27 +1958,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports HTML <see langword="&lt;i&gt;" /> elements to format italic text.</summary>
-        <value>
-          <see langword="true" /> if the browser supports HTML <see langword="&lt;i&gt;" /> elements to format italic text; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports HTML `<i>` elements to format italic text.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsItalic#1](~/add/codesnippet/csharp/p-system.web.configurati_198_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsItalic#1](~/add/codesnippet/visualbasic/p-system.web.configurati_198_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsJPhoneMultiMediaAttributes">
@@ -3259,46 +1976,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports J-Phone multimedia attributes.</summary>
-        <value>
-          <see langword="true" /> if the browser supports J-Phone multimedia attributes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SupportsJPhoneMultiMediaAttributes property applies only to J-Phone–compatible mobile devices.  
-  
- J-Phone is a markup language specification, based on HTML, for J-Phone–compatible browsers. If `true`, the browser supports additional attributes for HTML `<a>` (anchor) and `<select>` elements. The additional attributes supported are as follows:  
-  
--   `src`  
-  
--   `soundstart`  
-  
--   `loop`  
-  
--   `volume`  
-  
--   `vibration`  
-  
--   `viblength`  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports J-Phone multimedia attributes.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes#1](~/add/codesnippet/csharp/a19a3fd7-eca4-43f9-8389-_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes#1](~/add/codesnippet/visualbasic/a19a3fd7-eca4-43f9-8389-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsJPhoneSymbols">
@@ -3308,34 +1994,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports J-Phone–specific picture symbols.</summary>
-        <value>
-          <see langword="true" /> if the browser supports J-Phone–specific picture symbols; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SupportsJPhoneSymbols property applies only to J-Phone–compatible mobile devices.  
-  
- Set J-Phone–specific picture symbols for J-Phone–compatible browsers by using the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports J-Phone–specific picture symbols.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsJPhoneSymbols#1](~/add/codesnippet/csharp/p-system.web.configurati_401_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsJPhoneSymbols#1](~/add/codesnippet/visualbasic/p-system.web.configurati_401_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsQueryStringInFormAction">
@@ -3345,32 +2012,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports a query string in the <see langword="action" /> attribute value of HTML <see langword="&lt;form&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports a query string in the <see langword="action" /> attribute value of HTML <see langword="&lt;form&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `false`, query string parameters are sent, in postback data, as HTML `<input>` elements with the `type` attributes set to `hidden`.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports a query string in the value for the `action` attribute of HTML `<form>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsQueryStringInFormAction#1](~/add/codesnippet/csharp/p-system.web.configurati_376_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsQueryStringInFormAction#1](~/add/codesnippet/visualbasic/p-system.web.configurati_376_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsRedirectWithCookie">
@@ -3380,34 +2030,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports cookies on redirection.</summary>
-        <value>
-          <see langword="true" /> if the browser supports cookies on redirection; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- With UP.Browser 4.1 or UP.Browser 3.2, the <xref:System.Web.HttpResponse.Redirect%2A> method behaves as if the value of the SupportsRedirectWithCookie property of the <xref:System.Web.HttpBrowserCapabilities> object is `false`, unless the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> property in the <xref:System.Web.Configuration.SystemWebSectionGroup.SessionState%2A> section of Web.config has been explicitly set to `true`.  
-  
- In ASP.NET 1.1, the options for this setting were `true` or `false`, but with ASP.NET 2.0, the choices are expanded, and <xref:System.Web.HttpCookieMode> is now the default setting. If your Web application has the `cookieless` attribute of the `<sessionState>` section in the Web.config file set to a Boolean value, <xref:System.Web.HttpResponse.Redirect%2A> should work as expected for these browsers.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the browser supports cookies on redirection.  
-  
- [!code-vb[HttpCapabilitiesBase.SupportsRedirectWithCookie#1](~/add/codesnippet/visualbasic/p-system.web.configurati_97_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.SupportsRedirectWithCookie#1](~/add/codesnippet/csharp/p-system.web.configurati_97_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsSelectMultiple">
@@ -3417,27 +2048,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="multiple" /> attribute of HTML <see langword="&lt;select&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports the <see langword="multiple" /> attribute of HTML <see langword="&lt;select&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports the `multiple` attribute of HTML `<select>` elements.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsSelectMultiple#1](~/add/codesnippet/csharp/p-system.web.configurati_289_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsSelectMultiple#1](~/add/codesnippet/visualbasic/p-system.web.configurati_289_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsUncheck">
@@ -3447,32 +2066,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the clearing of a checked HTML <see langword="&lt;input type=checkbox&gt;" /> element is reflected in postback data.</summary>
-        <value>
-          <see langword="true" /> if the clearing of a checked HTML <see langword="&lt;input type=checkbox&gt;" /> element is reflected in postback data; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `false`, the value of the `checked` attribute of HTML `<input type=checkbox>` elements is omitted from postback data.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine whether the clearing of a checked HTML `<input type=checkbox>` element is reflected in postback data.  
-  
- [!code-vb[HttpCapabilitiesBase.SupportsUncheck#1](~/add/codesnippet/visualbasic/p-system.web.configurati_253_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.SupportsUncheck#1](~/add/codesnippet/csharp/p-system.web.configurati_253_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsXmlHttp">
@@ -3482,27 +2084,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports receiving XML over HTTP.</summary>
-        <value>
-          <see langword="true" /> if the browser supports receiving XML over HTTP; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports receiving XML over HTTP.  
-  
- [!code-cs[HttpCapabilitiesBase.SupportsXmlHttp#1](~/add/codesnippet/csharp/p-system.web.configurati_261_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.SupportsXmlHttp#1](~/add/codesnippet/visualbasic/p-system.web.configurati_261_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IFilterResolutionService.CompareFilters">
@@ -3512,7 +2102,6 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3523,10 +2112,10 @@ CACHE-CONTROL: NO-CACHE
         <Parameter Name="filter2" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filter1">The first filter to compare.</param>
-        <param name="filter2">The second filter to compare.</param>
-        <summary>Used internally to compare filters.</summary>
-        <returns>1 if <paramref name="filter1" /> is a parent of <paramref name="filter2" />; -1 if <paramref name="filter2" /> is a parent of <paramref name="filter1" />; 0 if there is no parent-child relationship between <paramref name="filter1" /> and <paramref name="filter2" />.</returns>
+        <param name="filter1">To be added.</param>
+        <param name="filter2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3537,7 +2126,6 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3547,10 +2135,9 @@ CACHE-CONTROL: NO-CACHE
         <Parameter Name="filterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filterName">The filter to evaluate.</param>
-        <summary>Used internally to evaluate a filter.</summary>
-        <returns>
-          <see langword="true" /> if the filter was successfully evaluated; otherwise, <see langword="false" />.</returns>
+        <param name="filterName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3561,27 +2148,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports HTML <see langword="&lt;table&gt;" /> elements.</summary>
-        <value>
-          <see langword="true" /> if the browser supports HTML <see langword="&lt;table&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports HTML `<table>` elements.  
-  
- [!code-vb[HttpCapabilitiesBase.Tables#1](~/add/codesnippet/visualbasic/p-system.web.configurati_259_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.Tables#1](~/add/codesnippet/csharp/p-system.web.configurati_259_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TagWriter">
@@ -3591,17 +2166,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used internally to get the type of the object that is used to write tags for the browser.</summary>
-        <value>The <see cref="T:System.Type" /> of the object that is used to write tags for the browser.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpUnhandledException">There is a parse error.</exception>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -3611,26 +2184,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name and major (integer) version number of the browser.</summary>
-        <value>The name and major version number of the browser.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser is Internet Explorer version 6.  
-  
- [!code-cs[HttpCapabilitiesBase.Type#1](~/add/codesnippet/csharp/p-system.web.configurati_44_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.Type#1](~/add/codesnippet/visualbasic/p-system.web.configurati_44_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseOptimizedCacheKey">
@@ -3640,16 +2202,14 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used internally to get a value indicating whether to use an optimized cache key.</summary>
-        <value>
-          <see langword="true" /> to use an optimized cache key; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3660,27 +2220,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports Visual Basic Scripting edition (VBScript).</summary>
-        <value>
-          <see langword="true" /> if the browser supports VBScript; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser supports VBScript.  
-  
- [!code-cs[HttpCapabilitiesBase.VBScript#1](~/add/codesnippet/csharp/p-system.web.configurati_206_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.VBScript#1](~/add/codesnippet/visualbasic/p-system.web.configurati_206_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -3690,31 +2238,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the full version number (integer and decimal) of the browser as a string.</summary>
-        <value>The full version number of the browser as a string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Version property returns a string. In some scenarios, the Version property might contain letter characters, as in the case of a browser or client device that is a beta version such as "7.0b." To correctly get the version as a data type that can be used in a numeric comparison, concatenate the <xref:System.Web.Configuration.HttpCapabilitiesBase.MajorVersion%2A> and <xref:System.Web.Configuration.HttpCapabilitiesBase.MinorVersion%2A> property values.  
-  
-   
-  
-## Examples  
- The following code example shows how to determine the Version of the browser. The <xref:System.Web.Configuration.HttpCapabilitiesBase.MajorVersion%2A> property and <xref:System.Web.Configuration.HttpCapabilitiesBase.MinorVersion%2A> property are concatenated and the result is used to determine whether the browser version is greater than 5.01.  
-  
- [!code-vb[HttpCapabilitiesBase.Version#1](~/add/codesnippet/visualbasic/p-system.web.configurati_244_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.Version#1](~/add/codesnippet/csharp/p-system.web.configurati_244_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="W3CDomVersion">
@@ -3724,26 +2256,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of the World Wide Web Consortium (W3C) XML Document Object Model (DOM) that the browser supports.</summary>
-        <value>The number of the W3C XML DOM version number that the browser supports.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser W3C XML DOM version is greater than 1.  
-  
- [!code-vb[HttpCapabilitiesBase.W3CDomVersion#1](~/add/codesnippet/visualbasic/p-system.web.configurati_110_1.aspx)]
- [!code-cs[HttpCapabilitiesBase.W3CDomVersion#1](~/add/codesnippet/csharp/p-system.web.configurati_110_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Win16">
@@ -3753,27 +2274,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the client is a Win16-based computer.</summary>
-        <value>
-          <see langword="true" /> if the browser is running on a Win16-based computer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the browser is running on a Win16-based computer.  
-  
- [!code-cs[HttpCapabilitiesBase.Win16#1](~/add/codesnippet/csharp/p-system.web.configurati_210_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.Win16#1](~/add/codesnippet/visualbasic/p-system.web.configurati_210_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Win32">
@@ -3783,27 +2292,15 @@ CACHE-CONTROL: NO-CACHE
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the client is a Win32-based computer.</summary>
-        <value>
-          <see langword="true" /> if the client is a Win32-based computer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to determine whether the client is a Win32-based computer.  
-  
- [!code-cs[HttpCapabilitiesBase.Win32#1](~/add/codesnippet/csharp/p-system.web.configurati_30_1.aspx)]
- [!code-vb[HttpCapabilitiesBase.Win32#1](~/add/codesnippet/visualbasic/p-system.web.configurati_30_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

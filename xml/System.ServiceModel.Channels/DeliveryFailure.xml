@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.DeliveryFailure" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the possible types of delivery failure for a message read from the queue.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can get the <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> property to determine why a message failed delivery and was sent to the dead-letter queue. For additional information about message processing in a dead-letter queue, see [Using Dead-Letter Queues to Handle Message Transfer Failures](../Topic/Using%20Dead-Letter%20Queues%20to%20Handle%20Message%20Transfer%20Failures.md).  
-  
-   
-  
-## Examples  
- The example below shows how to access the DeliveryFailure of a message within a service operation.  
-  
- [!code-vb[S_DeadLetter#0](~/add/codesnippet/visualbasic/t-system.servicemodel.ch_22_1.vb)]
- [!code-cs[S_DeadLetter#0](~/add/codesnippet/csharp/t-system.servicemodel.ch_22_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AccessDenied">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The sender does not have access rights to place messages in the destination queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadDestinationQueue">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The destination queue was not found.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadEncryption">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The destination queue manager cannot decrypt the message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadSignature">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The destination queue manager cannot authenticate the message because the attached signature is invalid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CouldNotEncrypt">
@@ -105,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The source queue manager cannot encrypt the message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HopCountExceeded">
@@ -122,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message hop count was exceeded, which indicates the number of intermediate servers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotTransactionalMessage">
@@ -139,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A nontransactional message was sent to a transactional queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotTransactionalQueue">
@@ -156,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A transactional message was sent to a nontransactional queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Purged">
@@ -173,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message was purged before reaching the destination queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueDeleted">
@@ -190,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The destination queue was deleted before the message could be delivered to the application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueExceedMaximumSize">
@@ -207,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message was not delivered because the destination queue is full.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueuePurged">
@@ -224,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The queue was purged and the message no longer exists.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReachQueueTimeout">
@@ -241,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message did not reach the destination queue before timing out.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReceiveTimeout">
@@ -258,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message was not delivered to the application on time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -275,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unknown error occurred.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

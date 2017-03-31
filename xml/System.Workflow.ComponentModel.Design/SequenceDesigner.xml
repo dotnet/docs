@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.SequenceDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,33 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides design-time support for <see cref="T:System.Workflow.Activities.SequenceActivity" /> and all classes that derive from it.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- SequenceDesigner provides design-time support for the following classes that derive from <xref:System.Workflow.Activities.SequenceActivity>:  
-  
--   <xref:System.Workflow.Activities.EventDrivenActivity>  
-  
--   <xref:System.Workflow.Activities.IfElseBranchActivity>  
-  
--   <xref:System.Workflow.Activities.StateFinalizationActivity>  
-  
--   <xref:System.Workflow.Activities.StateInitializationActivity>  
-  
--   <xref:System.Workflow.ComponentModel.TransactionScopeActivity>  
-  
--   <xref:System.Workflow.ComponentModel.SynchronizationScopeActivity>  
-  
--   <xref:System.Workflow.Activities.ReplicatorActivity>  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.SequenceDesigner" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

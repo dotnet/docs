@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXFileRef" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,35 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a link to an external resource.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ResXFileRef class is used to include references to files in an XML resource (.resx) file. A ResXFileRef object represents a link to an external resource in an XML resource (.resx) file. You add the ResXFileRef object to a .resx file by calling the <xref:System.Resources.ResXResourceWriter.AddResource%28System.Resources.ResXDataNode%29?displayProperty=fullName> method.  
-  
- In a data entry in a .resx file, the type is ResXFileRef, and the value is the path location on disk. When the resource manager deserializes the object, the ResXFileRef performs the I/O to get the file. The following is an example of a .resx file.  
-  
-```  
-<data name="iconclip" type="System.Resources.ResXFileRef, System.Windows.Forms">  
- <value>lookout.bmp;System.Drawing.Bitmap, System.Drawing</value>  
-</data>  
-<data name="mailbackground" type="System.Resources.ResXFileRef, System.Windows.Forms">  
- <value>mailbackground.bmp;System.Drawing.Bitmap, System.Drawing</value>  
-</data>  
-<data name="xplogo" type="System.Resources.ResXFileRef, System.Windows.Forms">  
- <value>xplogo.png;System.Drawing.Bitmap, System.Drawing</value>  
-</data>  
-```  
-  
- To add a ResXFileRef object to a .resx file programmatically, you call the <xref:System.Resources.ResXDataNode.%23ctor%28System.String%2CSystem.Resources.ResXFileRef%29?displayProperty=fullName> constructor to instantiate a <xref:System.Resources.ResXDataNode> object. You then pass this <xref:System.Resources.ResXDataNode> object to the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=fullName> method.  
-  
- When you compile a .resx file with [Resgen.exe (Resource File Generator)](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md), the resources specified in the .resx file are embedded in the resulting document resource file.  
-  
- ]]></format>
-    </remarks>
-    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
-    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -63,20 +34,10 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">The file to reference.</param>
-        <param name="typeName">The type of the resource that is referenced.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Resources.ResXFileRef" /> class that references the specified file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The type referred to by the `typeName` parameter must support a public constructor that accepts a <xref:System.IO.Stream> object as a parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="fileName" /> or <paramref name="typeName " />is <see langword="null" />.</exception>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <param name="fileName">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -86,7 +47,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -95,19 +55,11 @@
         <Parameter Name="textFileEncoding" Type="System.Text.Encoding" />
       </Parameters>
       <Docs>
-        <param name="fileName">The file to reference.</param>
-        <param name="typeName">The type name of the resource that is referenced.</param>
-        <param name="textFileEncoding">The encoding used in the referenced file.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXFileRef" /> class that references the specified file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The type referred to by the `typeName` parameter must support a public constructor that accepts a <xref:System.IO.Stream> object as a parameter.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <param name="fileName">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <param name="textFileEncoding">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -117,15 +69,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the file name specified in the current <see cref="System.Resources.ResXFileRef.%23ctor%2A" /> constructor.</summary>
-        <value>The name of the referenced file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,15 +87,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the encoding specified in the current <see cref="System.Resources.ResXFileRef.%23ctor%2A" /> constructor.</summary>
-        <value>The encoding used in the referenced file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -163,8 +112,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the text representation of the current <see cref="T:System.Resources.ResXFileRef" /> object.</summary>
-        <returns>A string that consists of the concatenated text representations of the parameters specified in the current <see cref="System.Resources.ResXFileRef.%23ctor%2A" /> constructor.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,15 +124,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type name specified in the current <see cref="System.Resources.ResXFileRef.%23ctor%2A" /> constructor.</summary>
-        <value>The type name of the resource that is referenced.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

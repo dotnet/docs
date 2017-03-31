@@ -3,9 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit DictionaryEntry extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Collections.DictionaryEntry" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -17,32 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a dictionary key/value pair that can be set or retrieved.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Collections.IDictionaryEnumerator.Entry%2A?displayProperty=fullName> method returns an instance of this type.  
-  
- The `foreach` statement of the C# language (`for each` in Visual C++, `For Each` in Visual Basic) requires the type of each element in the collection. Since each element of the <xref:System.Collections.IDictionary> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is DictionaryEntry. For example:  
-  
- [!code-cpp[System.Collections.DictionaryEntry#01](~/add/codesnippet/cpp/t-system.collections.dic_0_1.cpp)]
- [!code-vb[System.Collections.DictionaryEntry#01](~/add/codesnippet/visualbasic/t-system.collections.dic_0_1.vb)]
- [!code-cs[System.Collections.DictionaryEntry#01](~/add/codesnippet/csharp/t-system.collections.dic_0_1.cs)]  
-  
- The `foreach` statement is a wrapper around the enumerator, which only allows reading from, not writing to, the collection.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of DictionaryEntry to iterate through a <xref:System.Collections.Hashtable> object.  
-  
- [!code-cpp[System.Collections.DictionaryEntry#00](~/add/codesnippet/cpp/t-system.collections.dic_0_2.cpp)]
- [!code-vb[System.Collections.DictionaryEntry#00](~/add/codesnippet/visualbasic/t-system.collections.dic_0_2.vb)]
- [!code-cs[System.Collections.DictionaryEntry#00](~/add/codesnippet/csharp/t-system.collections.dic_0_2.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,28 +38,30 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryEntry.#ctor(System.Object,System.Object)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="key" Type="System.Object" />
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The object defined in each key/value pair.</param>
-        <param name="value">The definition associated with <c>key</c>.</param>
-        <summary>Initializes an instance of the <see cref="T:System.Collections.DictionaryEntry" /> type with the specified key and value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the [!INCLUDE[dnprdnlong](~/add/includes/dnprdnlong-md.md)] `key` can be `null`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="key" /> is <see langword="null" /> and the .NET Framework version is 1.0 or 1.1.</exception>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -81,28 +70,28 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryEntry.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the key in the key/value pair.</summary>
-        <value>The key in the key/value pair.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Key property. This code example is part of a larger example provided for the <xref:System.Collections.DictionaryEntry> class.  
-  
- [!code-cpp[Dictionary#9](~/add/codesnippet/cpp/p-system.collections.dic_0_1.cpp)]
- [!code-cs[Dictionary#9](~/add/codesnippet/csharp/p-system.collections.dic_0_1.cs)]
- [!code-vb[Dictionary#9](~/add/codesnippet/visualbasic/p-system.collections.dic_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -111,28 +100,28 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryEntry.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value in the key/value pair.</summary>
-        <value>The value in the key/value pair.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Value property. This code example is part of a larger example provided for the <xref:System.Collections.DictionaryEntry> class.  
-  
- [!code-cpp[Dictionary#9](~/add/codesnippet/cpp/p-system.collections.dic_2_1.cpp)]
- [!code-cs[Dictionary#9](~/add/codesnippet/csharp/p-system.collections.dic_2_1.cs)]
- [!code-vb[Dictionary#9](~/add/codesnippet/visualbasic/p-system.collections.dic_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

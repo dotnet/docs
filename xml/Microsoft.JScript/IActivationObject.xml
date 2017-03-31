@@ -4,12 +4,11 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IActivationObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines methods for resolving scope. This interface is implemented by all objects that take part in a scope hierarchy.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -20,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -28,8 +26,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, gets the current default scope. Either the contained object of a <see langword="with" /> statement scope, or the global scope.</summary>
-        <returns>The current default scope.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -40,7 +38,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,18 +48,11 @@
         <Parameter Name="lexLevel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the field to search for.</param>
-        <param name="lexLevel">The lexical level to search.</param>
-        <summary>When implemented in a class, returns a field that has the specified name by searching the scope hierarchy. This method searches only the scope that is specified by the lexical level.</summary>
-        <returns>A <see cref="T:System.Reflection.FieldInfo" /> object that has the specified name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method applies to fields that cannot be resolved at compile time. This happens when an `eval` expression refers to a field in the outer scope. Because the `eval` expression can declare a local field with the same name, the field cannot be early bound to the outer scope field.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="lexLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetGlobalScope">
@@ -72,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -80,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, gets the global scope by searching the scope hierarchy until it finds a scope that includes static variables, for example, a module scope.</summary>
-        <returns>The global scope.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,9 +90,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the field.</param>
-        <summary>When implemented in a class, gets the local declaration of a field that has the specified name. This is used at compile time for error checking.</summary>
-        <returns>The local declaration of the field.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,18 +113,11 @@
         <Parameter Name="lexlevel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the member to search for.</param>
-        <param name="lexlevel">The lexical level to search.</param>
-        <summary>When implemented in a class, gets the value of the specified member by searching the scope hierarchy. This method searches only the scope that is specified by the lexical level.</summary>
-        <returns>The value of the member <paramref name="name" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method applies to members that cannot be resolved at compile time. This occurs when an `eval` expression refers to a member in the outer scope. Because the `eval` expression can declare a local member with the same name, the member cannot be early bound to the outer scope member.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="lexlevel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

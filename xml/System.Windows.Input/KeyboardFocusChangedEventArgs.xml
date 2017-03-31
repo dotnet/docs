@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardFocusChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,43 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for <see cref="E:System.Windows.UIElement.LostKeyboardFocus" /> and <see cref="E:System.Windows.UIElement.GotKeyboardFocus" /> routed events, as well as related attached and Preview events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event data class is used with the following attached events:  
-  
--   <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=fullName>  
-  
--   <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=fullName>  
-  
- This event data class is also used with the following routed events on base elements. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)].  
-  
--   <xref:System.Windows.UIElement.GotKeyboardFocus?displayProperty=fullName>  
-  
--   <xref:System.Windows.UIElement.LostKeyboardFocus?displayProperty=fullName>  
-  
--   <xref:System.Windows.UIElement.PreviewGotKeyboardFocus?displayProperty=fullName>  
-  
--   <xref:System.Windows.UIElement.PreviewLostKeyboardFocus?displayProperty=fullName>  
-  
--   <xref:System.Windows.ContentElement.GotKeyboardFocus?displayProperty=fullName>  
-  
--   <xref:System.Windows.ContentElement.LostKeyboardFocus?displayProperty=fullName>  
-  
--   <xref:System.Windows.ContentElement.PreviewGotKeyboardFocus?displayProperty=fullName>  
-  
--   <xref:System.Windows.ContentElement.PreviewLostKeyboardFocus?displayProperty=fullName>  
-  
- The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](../Topic/Input%20Overview.md).  
-  
- If the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> event or the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus> event is handled (<xref:System.Windows.RoutedEventArgs.Handled%2A> is set to `true` in the event data), keyboard focus will not change.  
-  
- If the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> event or the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus> event is handled, keyboard focus will not change.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -68,11 +31,11 @@
         <Parameter Name="newFocus" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="keyboard">The logical keyboard device associated with this event.</param>
-        <param name="timestamp">The time when the input occurred.</param>
-        <param name="oldFocus">The element that previously had focus.</param>
-        <param name="newFocus">The element that now has focus.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyboardFocusChangedEventArgs" /> class.</summary>
+        <param name="keyboard">To be added.</param>
+        <param name="timestamp">To be added.</param>
+        <param name="oldFocus">To be added.</param>
+        <param name="newFocus">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,17 +56,10 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
-        <param name="genericTarget">The target to call the handler on.</param>
-        <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation casts the generic handler as a <xref:System.Windows.Input.KeyboardFocusChangedEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="genericHandler">To be added.</param>
+        <param name="genericTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NewFocus">
@@ -114,15 +69,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element that focus has moved to.</summary>
-        <value>The element with focus.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,15 +87,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element that previously had focus.</summary>
-        <value>The previously focused element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

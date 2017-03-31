@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A class that wraps a specified reader and delegates all <see cref="T:System.Xml.XmlDictionaryReader" /> calls to the wrapped reader.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The reader that is wrapped can be accessed through the <xref:System.IdentityModel.DelegatingXmlDictionaryReader.InnerReader%2A> property. Call the <xref:System.IdentityModel.DelegatingXmlDictionaryReader.InitializeInnerReader%2A> method to set the wrapped reader and initialize the property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.DelegatingXmlDictionaryReader" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +43,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of attributes at the current reader position.</summary>
-        <value>The number of attributes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +61,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the base URI of the current node.</summary>
-        <value>The base URI.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +80,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the reader and changes the <see cref="System.Xml.XmlReader.ReadState%2A" /> to Closed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +97,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Depth of the current node.</summary>
-        <value>The depth.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +115,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the reader is positioned at the end of the stream.</summary>
-        <value>
-          <see langword="true" /> if the user is at the end of the stream; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,17 +136,10 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">The index of the attribute. The index is 0 based index.</param>
-        <summary>Gets the value of the attribute at the given index.</summary>
-        <returns>The value of the attribute at the specified index.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The method does not move the reader position.  
-  
- ]]></format>
-        </remarks>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -173,17 +158,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The qualified name of the attribute.</param>
-        <summary>Gets the value of the attribute with the given name.</summary>
-        <returns>The value of the attribute. If the attribute is not found null is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The method does not move the reader position.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -203,18 +181,11 @@
         <Parameter Name="namespaceURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The local name of the attribute.</param>
-        <param name="namespaceURI">The namespace of the attribute.</param>
-        <summary>Gets the value of the attribute with the given name and namespace Uri.</summary>
-        <returns>The value of the attribute. If the attribute is not found null is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The method does not move the reader.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="namespaceURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasValue">
@@ -230,9 +201,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the current node can have a <see cref="System.Xml.XmlReader.Value%2A" />.</summary>
-        <value>
-          <see langword="true" /> if the current node can have a <see cref="System.Xml.XmlReader.Value%2A" />; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,18 +222,9 @@
         <Parameter Name="innerReader" Type="System.Xml.XmlDictionaryReader" />
       </Parameters>
       <Docs>
-        <param name="innerReader">The reader that is to be wrapped by this instance.</param>
-        <summary>Initializes this instance with the specified inner reader.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Sets the <xref:System.IdentityModel.DelegatingXmlDictionaryReader.InnerReader%2A> property to the reader specified by the `innerReader` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="innerReader" /> is <see langword="null" />.</exception>
+        <param name="innerReader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InnerReader">
@@ -279,8 +240,8 @@
         <ReturnType>System.Xml.XmlDictionaryReader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the inner reader that is wrapped by this instance.</summary>
-        <value>The inner reader.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,9 +258,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the current node is an attribute that was generated from the default value defined in the DTD or Schema.</summary>
-        <value>
-          <see langword="true" /> if the current node was generated from the default value; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,9 +276,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the current node is an empty element.</summary>
-        <value>
-          <see langword="true" /> if the current node is an empty element; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,9 +297,9 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">The index of the attribute.</param>
-        <summary>Gets the value of the attribute with the specified index.</summary>
-        <value>The attribute value at the specified index.</value>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,9 +319,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The qualified name of the attribute.</param>
-        <summary>Gets the value of the attribute with the specified name (as returned by the <see cref="System.Xml.XmlReader.Name%2A" /> property from the wrapped reader).</summary>
-        <value>The value of the specified attribute. If the attribute is not found, <see langword="null" /> is returned.</value>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,10 +342,10 @@
         <Parameter Name="namespaceURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The local name of the attribute.</param>
-        <param name="namespaceURI">The namespace URI of the attribute.</param>
-        <summary>Gets the value of the attribute with the specified local name and namespace URI (as returned by the <see cref="System.Xml.XmlReader.LocalName%2A" /> property and the <see cref="System.Xml.XmlReader.NamespaceURI%2A" /> property from the wrapped reader.</summary>
-        <value>The value of the specified attribute. If the attribute is not found, <see langword="null" /> is returned.</value>
+        <param name="name">To be added.</param>
+        <param name="namespaceURI">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,8 +362,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the local name of the current node.</summary>
-        <value>The name of the current node with the prefix removed.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,9 +383,9 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">Prefix whose namespace Uri to be resolved.</param>
-        <summary>Resolves a namespace prefix in the current element scope.</summary>
-        <returns>The namespace Uri to which the prefix matches or null if no matching prefix is found.</returns>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,8 +405,8 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">The index of the attribute.</param>
-        <summary>Moves to the attribute with the specified index.</summary>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,9 +426,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The qualified name of the attribute.</param>
-        <summary>Moves to the attribute with the given local name.</summary>
-        <returns>true if the attribute is found; otherwise, false.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,10 +449,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The local name of the attribute.</param>
-        <param name="ns">The namespace URI of the attribute.</param>
-        <summary>Moves to the attribute with the specified System.Xml.XmlReader.LocalName and System.Xml.XmlReader.NamespaceURI.</summary>
-        <returns>true if the attribute is found; otherwise, false.</returns>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -511,8 +470,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Moves to a node of type Element.</summary>
-        <returns>true if the reader is positioned on an element else false</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,16 +489,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Moves to the first attribute.</summary>
-        <returns>Returns true if the reader is positioned at a attribute else false.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When returning false the reader position will not be changed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToNextAttribute">
@@ -556,16 +508,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Moves the reader to the next attribute.</summary>
-        <returns>Returns true if the reader is positioned at an attribute else false.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When returning false the reader position will not be changed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -581,8 +526,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the qualified name of the current node.</summary>
-        <value>The qualified name of the current node.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,8 +544,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the namespace URI of the current node.</summary>
-        <value>The namespace URI of the current node..</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -617,8 +562,8 @@
         <ReturnType>System.Xml.XmlNameTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Xml.XmlNameTable" /> associated with this instance.</summary>
-        <value>The <see cref="T:System.Xml.XmlNameTable" /> enabling you to get the atomized version of a string within the node.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -635,8 +580,8 @@
         <ReturnType>System.Xml.XmlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the current node.</summary>
-        <value>One of the <see cref="T:System.Xml.XmlNodeType" /> values representing the type of the current node.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -653,8 +598,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the namespace prefix associated with the current node.</summary>
-        <value>The namespace prefix associated with the current node.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -671,8 +616,8 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the quotation mark character used to enclose the value of an attribute node. (" or ').</summary>
-        <value>The quotation mark character (" or ') used to enclose the value of an attribute node.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -690,8 +635,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads the next node from the stream.</summary>
-        <returns>true if the next node was read successfully.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -709,8 +654,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Parses the attribute value into one or more Text, EntityReference, or EndEntity nodes.</summary>
-        <returns>true if there are nodes to return.false if the reader is not positioned on an attribute node when the initial call is made or if all the attribute values have been read.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -732,11 +677,11 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">The buffer into which to copy the resulting text. This value cannot be null.</param>
-        <param name="index">The offset into the buffer where to start copying the result.</param>
-        <param name="count">The maximum number of bytes to copy into the buffer.</param>
-        <summary>Reads the content and returns the Base64 decoded binary bytes.</summary>
-        <returns>The number of bytes written to the buffer.</returns>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -758,11 +703,11 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">The buffer into which to copy the resulting text. This value cannot be null.</param>
-        <param name="index">The offset into the buffer where to start copying the result.</param>
-        <param name="count">The maximum number of bytes to copy into the buffer.</param>
-        <summary>Reads the content and returns the BinHex decoded binary bytes.</summary>
-        <returns>The number of bytes written to the buffer.</returns>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -780,8 +725,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads the content and returns the contained string.</summary>
-        <returns>Returns <see cref="T:System.Xml.UniqueId" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -798,8 +743,8 @@
         <ReturnType>System.Xml.ReadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the state of the reader.</summary>
-        <value>One of the <see cref="T:System.Xml.ReadState" /> values that specifies the state of the reader.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -821,11 +766,11 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">The array of characters that serves as the buffer to which the text contents are written. This value cannot be null.</param>
-        <param name="index">The offset within the buffer where the System.Xml.XmlReader can start to copy the results.</param>
-        <param name="count">The maximum number of characters to copy into the buffer. The actual number of characters copied is returned from this method.</param>
-        <summary>Reads large streams of text embedded in an XML document.</summary>
-        <returns>The number of characters read into the buffer. The value zero is returned when there is no more text content.</returns>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -843,7 +788,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resolves the entity reference for EntityReference nodes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -860,8 +805,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the text value of the current node.</summary>
-        <value>The text value of the current node. For more information, see the <see cref="System.Xml.XmlReader.Value%2A" /> property</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -878,8 +823,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Common Language Runtime (CLR) type of the current node.</summary>
-        <value>The CLR type that corresponds to the typed value of the node. The default is <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -896,8 +841,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see langword="xml:lang" /> scope.</summary>
-        <value>The <see langword="xml:lang" /> scope.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -914,8 +859,8 @@
         <ReturnType>System.Xml.XmlSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current <see langword="xml:space" /> scope.</summary>
-        <value>One of the <see cref="T:System.Xml.XmlSpace" /> values. If no <see langword="xml:space" /> scope exists, this property defaults to <see cref="T:System.Xml.XmlSpace" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

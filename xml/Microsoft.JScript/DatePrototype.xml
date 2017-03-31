@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.DatePrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.DateObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.DateConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
-        <value>A reference to a prototype-based object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -57,9 +54,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the date value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
-        <returns>The date value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -85,9 +81,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the day-of-the-week value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
-        <returns>The day-of-the-week value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +94,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -113,9 +108,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the year value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
-        <returns>The year value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -141,9 +135,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the hour value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
-        <returns>The hour value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +148,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -169,9 +162,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the millisecond value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
-        <returns>The millisecond value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,7 +175,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -197,9 +189,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the minutes value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
-        <returns>The minutes value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,7 +202,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -225,9 +216,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the month value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
-        <returns>The month value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,7 +229,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -253,9 +243,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the seconds value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
-        <returns>The seconds value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,7 +256,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -281,9 +270,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the time value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
-        <returns>The time value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,7 +283,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -309,9 +297,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the offset of the specified <see cref="T:Microsoft.JScript.DateObject" /> from Coordinated Universal Time (UTC).</summary>
-        <returns>The difference between <paramref name="thisob" /> and Coordinated Universal Time (UTC).</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,7 +310,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -337,9 +324,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the date value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The date value of <paramref name="thisob" />, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,7 +337,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -365,9 +351,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the day-of-the-week value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The day-of-the-week value of <paramref name="thisob" />, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -378,7 +364,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -393,9 +378,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the year value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The year value of <paramref name="thisob" />, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,7 +391,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -421,9 +405,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the hour value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The hour value of <paramref name="thisob" />, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -434,7 +418,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -449,9 +432,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the millisecond value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The millisecond value of <paramref name="thisob" />, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,7 +445,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -477,9 +459,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the minutes value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The minutes value of <paramref name="thisob" />, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,7 +472,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -505,9 +486,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the month value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The month value of <paramref name="thisob" />, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,7 +499,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -533,9 +513,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the seconds value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The seconds value of <paramref name="thisob" />, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -546,7 +526,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -561,9 +540,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Returns the specified <see cref="T:Microsoft.JScript.DateObject" /> as a <see cref="T:System.DateTime" /> object.</summary>
-        <returns>The value of <paramref name="thisob" />, expressed as a <see cref="T:System.DateTime" /> object.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -574,7 +553,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -592,9 +570,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Gets the year value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The year value of <paramref name="thisob" />, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,7 +583,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -621,10 +598,10 @@
         <Parameter Name="ddate" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="ddate">The date value to set for <c>thisob</c>.</param>
-        <summary>Sets the date value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified date value.</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="ddate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -635,7 +612,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -653,12 +629,12 @@
         <Parameter Name="date" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dyear">The year value to set for <c>thisob</c>.</param>
-        <param name="month">The month value to set for <c>thisob</c>.</param>
-        <param name="date">The date value to set for <c>thisob</c>.</param>
-        <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value.</summary>
-        <returns>The year value that is set for <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dyear">To be added.</param>
+        <param name="month">To be added.</param>
+        <param name="date">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -669,7 +645,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -688,13 +663,13 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dhour">The hour value to set for <c>thisob</c>.</param>
-        <param name="min">The minutes value to set for <c>thisob</c>.</param>
-        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
-        <summary>Sets the hour value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified hour value.</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dhour">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="sec">To be added.</param>
+        <param name="msec">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -705,7 +680,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -721,10 +695,10 @@
         <Parameter Name="dmsec" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmsec">The millisecond value to set for <c>thisob</c>.</param>
-        <summary>Sets the millisecond value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified millisecond value.</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dmsec">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -735,7 +709,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -753,12 +726,12 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmin">The minutes value to set for <c>thisob</c>.</param>
-        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
-        <summary>Sets the minutes value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified minutes value.</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dmin">To be added.</param>
+        <param name="sec">To be added.</param>
+        <param name="msec">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -769,7 +742,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -786,11 +758,11 @@
         <Parameter Name="date" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmonth">The month value to set for <c>thisob</c>.</param>
-        <param name="date">The date value to set for <c>thisob</c>.</param>
-        <summary>Sets the month value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified month value.</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dmonth">To be added.</param>
+        <param name="date">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -801,7 +773,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -818,11 +789,11 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dsec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
-        <summary>Sets the seconds value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified seconds value.</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dsec">To be added.</param>
+        <param name="msec">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -833,7 +804,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -849,10 +819,10 @@
         <Parameter Name="time" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="time">The time value to set for <c>thisob</c>.</param>
-        <summary>Sets the time value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified time value.</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="time">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -863,7 +833,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -879,10 +848,10 @@
         <Parameter Name="ddate" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="ddate">The date value to set for <c>thisob</c>.</param>
-        <summary>Sets the date value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified date value, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="ddate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -893,7 +862,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -911,12 +879,12 @@
         <Parameter Name="date" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dyear">The year value to set for <c>thisob</c>.</param>
-        <param name="month">The month value to set for <c>thisob</c>.</param>
-        <param name="date">The date value to set for <c>thisob</c>.</param>
-        <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dyear">To be added.</param>
+        <param name="month">To be added.</param>
+        <param name="date">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -927,7 +895,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -946,13 +913,13 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dhour">The hour value to set for <c>thisob</c>.</param>
-        <param name="min">The minutes value to set for <c>thisob</c>.</param>
-        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
-        <summary>Sets the hour value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified hour value, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dhour">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="sec">To be added.</param>
+        <param name="msec">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -963,7 +930,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -979,10 +945,10 @@
         <Parameter Name="dmsec" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmsec">The millisecond value to set for <c>thisob</c>.</param>
-        <summary>Sets the millisecond value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified millisecond value, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dmsec">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -993,7 +959,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1011,12 +976,12 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmin">The minutes value to set for <c>thisob</c>.</param>
-        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
-        <summary>Sets the minutes value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified minutes value, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dmin">To be added.</param>
+        <param name="sec">To be added.</param>
+        <param name="msec">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1027,7 +992,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1044,11 +1008,11 @@
         <Parameter Name="date" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dmonth">The month value to set for <c>thisob</c>.</param>
-        <param name="date">The date value to set for <c>thisob</c>.</param>
-        <summary>Sets the month value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified month value, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dmonth">To be added.</param>
+        <param name="date">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1059,7 +1023,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1076,11 +1039,11 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dsec">The seconds value to set for <c>thisob</c>.</param>
-        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
-        <summary>Sets the seconds value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified seconds value, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dsec">To be added.</param>
+        <param name="msec">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1091,7 +1054,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1110,10 +1072,10 @@
         <Parameter Name="dyear" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dyear">The year value to set for <c>thisob</c>.</param>
-        <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value.</summary>
-        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dyear">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1124,7 +1086,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1139,9 +1100,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, and the year.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1152,7 +1113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1170,9 +1130,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, the year, and the time, expressed in Coordinated Universal Time (UTC). Use <see cref="Microsoft.JScript.DatePrototype.toUTCString%2A" /> instead, when you can.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1183,7 +1143,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1198,9 +1157,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the date but not the time.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1211,7 +1170,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1226,9 +1184,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the date and time.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1239,7 +1197,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1254,9 +1211,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the time but not the date.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1267,7 +1224,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1282,9 +1238,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, the time, the time zone, and the year.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1295,7 +1251,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1310,9 +1265,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the time and the time zone.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1323,7 +1278,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1338,9 +1292,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, the year, and the time, expressed in Coordinated Universal Time (UTC).</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1351,7 +1305,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1366,9 +1319,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Returns the value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
-        <returns>The value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeNodeMouseClickEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.TreeView.NodeMouseClick" /> and <see cref="E:System.Windows.Forms.TreeView.NodeMouseDoubleClick" /> events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to handle the <xref:System.Windows.Forms.TreeView.NodeMouseDoubleClick> event and how to use the TreeNodeMouseClickEventArgs. To run this example, paste the code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> named `treeView1`. Populate `treeView1` with the names of files located in the `c:\` directory of the system the sample is running on, and associate the <xref:System.Windows.Forms.TreeView.NodeMouseDoubleClick> event of `treeView1` with the `treeView1_NodeMouseDoubleClick` method in this example.  
-  
- [!code-cpp[System.Windows.Forms.TreeViewWhidbeyMembers#5](~/add/codesnippet/cpp/t-system.windows.forms.t_4_1.cpp)]
- [!code-cs[System.Windows.Forms.TreeViewWhidbeyMembers#5](~/add/codesnippet/csharp/t-system.windows.forms.t_4_1.cs)]
- [!code-vb[System.Windows.Forms.TreeViewWhidbeyMembers#5](~/add/codesnippet/visualbasic/t-system.windows.forms.t_4_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -45,12 +32,12 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="node">The node that was clicked.</param>
-        <param name="button">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> members.</param>
-        <param name="clicks">The number of clicks that occurred.</param>
-        <param name="x">The x-coordinate where the click occurred.</param>
-        <param name="y">The y-coordinate where the click occurred.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNodeMouseClickEventArgs" /> class.</summary>
+        <param name="node">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="clicks">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,27 +48,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the node that was clicked.</summary>
-        <value>The <see cref="T:System.Windows.Forms.TreeNode" /> that was clicked.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to handle the <xref:System.Windows.Forms.TreeView.NodeMouseDoubleClick> event and how to use the <xref:System.Windows.Forms.TreeNodeMouseClickEventArgs>. To run this example, paste the code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> named `treeView1`. Populate the `treeView1` with the names of files located in the `c:\` directory of the system the sample is running on, and associate the <xref:System.Windows.Forms.TreeView.NodeMouseDoubleClick> event of `treeView1` with the `treeView1_NodeMouseDoubleClick` method in this example.  
-  
- [!code-cpp[System.Windows.Forms.TreeViewWhidbeyMembers#5](~/add/codesnippet/cpp/p-system.windows.forms.t_94_1.cpp)]
- [!code-cs[System.Windows.Forms.TreeViewWhidbeyMembers#5](~/add/codesnippet/csharp/p-system.windows.forms.t_94_1.cs)]
- [!code-vb[System.Windows.Forms.TreeViewWhidbeyMembers#5](~/add/codesnippet/visualbasic/p-system.windows.forms.t_94_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

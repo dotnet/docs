@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PrintPreviewControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,26 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the raw preview part of print previewing from a Windows Forms application, without any dialog boxes or buttons. Most PrintPreviewControl objects are found on <see cref="T:System.Windows.Forms.PrintPreviewDialog" /> objects, but they do not have to be.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you create an instance of the PrintPreviewControl class, some of the read/write properties are set to initial values. For a list of these values, see the <xref:System.Windows.Forms.PrintPreviewControl.%23ctor%2A> constructor.  
-  
- For more information about printing with Windows Forms, see the <xref:System.Drawing.Printing> namespace overview. If you wish to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the PrintPreviewControl. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form’s constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
-  
- [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/cpp/t-system.windows.forms.p_15_1.cpp)]
- [!code-cs[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/csharp/t-system.windows.forms.p_15_1.cs)]
- [!code-vb[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/visualbasic/t-system.windows.forms.p_15_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,39 +33,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PrintPreviewControl" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you create an instance of the <xref:System.Windows.Forms.PrintPreviewControl> class, the following read/write properties are initialized.  
-  
-|Property|Default Value|  
-|--------------|-------------------|  
-|<xref:System.Windows.Forms.PrintPreviewControl.AutoZoom%2A>|`true`|  
-|<xref:System.Windows.Forms.PrintPreviewControl.Document%2A>|`null`|  
-|<xref:System.Windows.Forms.PrintPreviewControl.Columns%2A>|1|  
-|<xref:System.Windows.Forms.PrintPreviewControl.Rows%2A>|0|  
-|<xref:System.Windows.Forms.PrintPreviewControl.StartPage%2A>|0|  
-  
- You can change the value for any of these properties through a separate call to the property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form’s constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
-  
- [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/cpp/m-system.windows.forms.p_4_1.cpp)]
- [!code-cs[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/csharp/m-system.windows.forms.p_4_1.cs)]
- [!code-vb[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/visualbasic/m-system.windows.forms.p_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoZoom">
@@ -94,7 +48,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -106,9 +59,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether resizing the control or changing the number of pages shown automatically adjusts the <see cref="System.Windows.Forms.PrintPreviewControl.Zoom%2A" /> property.</summary>
-        <value>
-          <see langword="true" /> if the changing the control size or number of pages adjusts the <see cref="System.Windows.Forms.PrintPreviewControl.Zoom%2A" /> property; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +71,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -131,10 +82,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of pages displayed horizontally across the screen.</summary>
-        <value>The number of pages displayed horizontally across the screen. The default is 1.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 1.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -144,15 +94,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the required creation parameters when the control handle is created.</summary>
-        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,7 +112,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -175,20 +123,9 @@
         <ReturnType>System.Drawing.Printing.PrintDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the document to preview.</summary>
-        <value>The <see cref="T:System.Drawing.Printing.PrintDocument" /> representing the document to preview.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the Document, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form’s constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
-  
- [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/cpp/p-system.windows.forms.p_12_1.cpp)]
- [!code-cs[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/csharp/p-system.windows.forms.p_12_1.cs)]
- [!code-vb[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/visualbasic/p-system.windows.forms.p_12_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidatePreview">
@@ -198,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,15 +142,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Refreshes the preview of the document.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this method if the document appearance has changed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -224,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,8 +162,8 @@
         <Parameter Name="pevent" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="pevent">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Overrides the <see cref="System.Windows.Forms.Control.OnPaint%2A" /> method.</summary>
+        <param name="pevent">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,7 +174,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,16 +183,9 @@
         <Parameter Name="eventargs" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="eventargs">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Windows.Forms.PrintPreviewControl.AutoZoom%2A> property is set to `true`, the OnResize method resizes the page in proportion to the <xref:System.Windows.Forms.PrintPreviewControl> control. If <xref:System.Windows.Forms.PrintPreviewControl.AutoZoom%2A> is `false`, the <xref:System.Windows.Forms.PrintPreviewControl> centers the page on the control.  
-  
- ]]></format>
-        </remarks>
+        <param name="eventargs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnStartPageChanged">
@@ -275,7 +195,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,18 +204,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.PrintPreviewControl.StartPageChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnStartPageChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetBackColor">
@@ -306,7 +216,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -319,15 +228,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the <see cref="System.Windows.Forms.Control.BackColor%2A" /> property to <see cref="System.Drawing.SystemColors.AppWorkspace%2A" />, which is the default color.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.PrintPreviewControl> or creating your own control incorporating the <xref:System.Windows.Forms.PrintPreviewControl>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetForeColor">
@@ -337,7 +239,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -350,15 +251,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the foreground color of the <see cref="T:System.Windows.Forms.PrintPreviewControl" /> to <see cref="System.Drawing.Color.White%2A" />, which is the default color.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.PrintPreviewControl> or creating your own control incorporating the <xref:System.Windows.Forms.PrintPreviewControl>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -368,7 +262,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -383,8 +276,8 @@
         <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether control's elements are aligned to support locales using right-to-left fonts.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.RightToLeft" /> values. The default is <see cref="T:System.Windows.Forms.RightToLeft" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,7 +288,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -407,10 +299,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of pages displayed vertically down the screen.</summary>
-        <value>The number of pages displayed vertically down the screen. The default is 0.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 1.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartPage">
@@ -420,7 +311,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -432,10 +322,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the page number of the upper left page.</summary>
-        <value>The page number of the upper left page. The default is 0.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 0.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartPageChanged">
@@ -445,32 +334,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the start page changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the StartPageChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PrintPreviewControl> named `PrintPreviewControl1`. Then ensure that the event handler is associated with the StartPageChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#654](~/add/codesnippet/csharp/e-system.windows.forms.p_8_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#654](~/add/codesnippet/visualbasic/e-system.windows.forms.p_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -480,7 +351,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -501,8 +371,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text associated with this control.</summary>
-        <value>The text associated with this control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -513,7 +383,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -528,7 +397,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.PrintPreviewControl.Text%2A" /> property changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -539,7 +408,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -551,26 +419,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether printing uses the anti-aliasing features of the operating system.</summary>
-        <value>
-          <see langword="true" /> if anti-aliasing is used; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Anti-aliasing removes jagged lines when fonts are rendered.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, UseAntiAlias, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form’s constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
-  
- [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/cpp/p-system.windows.forms.p_34_1.cpp)]
- [!code-cs[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/csharp/p-system.windows.forms.p_34_1.cs)]
- [!code-vb[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/visualbasic/p-system.windows.forms.p_34_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -580,7 +431,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -590,8 +440,8 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Overrides the <see cref="System.Windows.Forms.Control.WndProc%2A" /> method.</summary>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -602,7 +452,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -614,21 +463,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating how large the pages will appear.</summary>
-        <value>A value indicating how large the pages will appear. A value of 1.0 indicates full size.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and Zoom properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form’s constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
-  
- [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/cpp/p-system.windows.forms.p_25_1.cpp)]
- [!code-cs[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/csharp/p-system.windows.forms.p_25_1.cs)]
- [!code-vb[System.Windows.Forms.PrintPreviewControlExample#1](~/add/codesnippet/visualbasic/p-system.windows.forms.p_25_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value is less than or equal to 0.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

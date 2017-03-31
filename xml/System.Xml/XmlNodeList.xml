@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlNodeList extends System.Object implements class System.Collections.IEnumerable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeList" />
   <AssemblyInfo>
+    <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,23 +27,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents an ordered collection of nodes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Changes to the children of the node object that the XmlNodeList collection was created from are immediately reflected in the nodes returned by the `XmlNodeList` properties and methods. `XmlNodeList` supports iteration and indexed access.  
-  
- `XmlNodeList` is returned by the following properties and methods.  
-  
--   <xref:System.Xml.XmlNode.ChildNodes%2A?displayProperty=fullName> - Returns an `XmlNodeList` containing all the children of the node.  
-  
--   <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> - Returns an `XmlNodeList` containing a collection of nodes matching the XPath query.  
-  
--   `GetElementsByTagName` - Returns an `XmlNodeList` containing a list of all descendant elements that match the specified name. This method is available in both the <xref:System.Xml.XmlDocument> and <xref:System.Xml.XmlElement> classes.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,13 +37,21 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeList.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlNodeList" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,32 +61,25 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeList.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of nodes in the <see langword="XmlNodeList" />.</summary>
-        <value>The number of nodes in the <see langword="XmlNodeList" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Xml.XmlDocument> object and uses the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method and the resulting `XmlNodeList` to display all the book titles.  
-  
- [!code-cpp[Classic WebData XmlElement.GetElementsByTagName Example#1](~/add/codesnippet/cpp/p-system.xml.xmlnodelist_0_1.cpp)]
- [!code-vb[Classic WebData XmlElement.GetElementsByTagName Example#1](~/add/codesnippet/visualbasic/p-system.xml.xmlnodelist_0_1.vb)]
- [!code-cs[Classic WebData XmlElement.GetElementsByTagName Example#1](~/add/codesnippet/csharp/p-system.xml.xmlnodelist_0_1.cs)]  
-  
- The example uses the file `2books.xml` as input.  
-  
- [!code-xml[Classic WebData XmlElement.GetElementsByTagName Example#2](~/add/codesnippet/xml/p-system.xml.xmlnodelist_0_2.xml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -94,38 +88,26 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeList.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an enumerator that iterates through the collection of nodes.</summary>
-        <returns>An enumerator used to iterate through the collection of nodes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Provides a simple "foreach" style iteration over the collection of nodes in the `XmlNodeList`.  
-  
-   
-  
-## Examples  
- The following example displays all the book titles.  
-  
- [!code-cpp[Classic WebData XmlNodeList.GetEnumerator Example#1](~/add/codesnippet/cpp/m-system.xml.xmlnodelist_0_1.cpp)]
- [!code-vb[Classic WebData XmlNodeList.GetEnumerator Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlnodelist_0_1.vb)]
- [!code-cs[Classic WebData XmlNodeList.GetEnumerator Example#1](~/add/codesnippet/csharp/m-system.xml.xmlnodelist_0_1.cs)]  
-  
- The example uses the file `2books.xml` as input.  
-  
- [!code-xml[Classic WebData XmlNodeList.GetEnumerator Example#2](~/add/codesnippet/xml/m-system.xml.xmlnodelist_0_2.xml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -134,9 +116,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeList.Item(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -145,21 +135,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index into the list of nodes.</param>
-        <summary>Retrieves a node at the given index.</summary>
-        <returns>The <see cref="T:System.Xml.XmlNode" /> with the specified index in the collection. If <paramref name="index" /> is greater than or equal to the number of nodes in the list, this returns <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example gets and displays the second node in the `XmlNodeList`.  
-  
- [!code-cpp[Classic WebData XmlNodeList.Item Example#1](~/add/codesnippet/cpp/m-system.xml.xmlnodelist_1_1.cpp)]
- [!code-vb[Classic WebData XmlNodeList.Item Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlnodelist_1_1.vb)]
- [!code-cs[Classic WebData XmlNodeList.Item Example#1](~/add/codesnippet/csharp/m-system.xml.xmlnodelist_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemOf">
@@ -168,9 +147,17 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeList.ItemOf(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -179,25 +166,10 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">The zero-based index into the list of nodes.</param>
-        <summary>Gets a node at the given index.</summary>
-        <value>The <see cref="T:System.Xml.XmlNode" /> with the specified index in the collection. If index is greater than or equal to the number of nodes in the list, this returns <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates an <xref:System.Xml.XmlDocument> object and uses the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method and the resulting `XmlNodeList` to display all the book titles.  
-  
- [!code-cpp[Classic WebData XmlElement.GetElementsByTagName Example#1](~/add/codesnippet/cpp/p-system.xml.xmlnodelist_1_1.cpp)]
- [!code-vb[Classic WebData XmlElement.GetElementsByTagName Example#1](~/add/codesnippet/visualbasic/p-system.xml.xmlnodelist_1_1.vb)]
- [!code-cs[Classic WebData XmlElement.GetElementsByTagName Example#1](~/add/codesnippet/csharp/p-system.xml.xmlnodelist_1_1.cs)]  
-  
- The example uses the file `2books.xml` as input.  
-  
- [!code-xml[Classic WebData XmlElement.GetElementsByTagName Example#2](~/add/codesnippet/xml/p-system.xml.xmlnodelist_1_2.xml)]  
-  
- ]]></format>
-        </remarks>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrivateDisposeNodeList">
@@ -206,15 +178,24 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeList.PrivateDisposeNodeList" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Disposes resources in the node list privately.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,15 +205,24 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeList.System#IDisposable#Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Xml.XmlNodeList" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

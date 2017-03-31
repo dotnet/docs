@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.ResourceConsumptionAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,23 +24,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the resource consumed by the member of a class. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the ResourceConsumptionAttribute attribute is applied to a member, the <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute must also be applied.  
-  
- If the resource scope of the consumed resource is different than the resource scope of how it is consumed, the constructor that takes a `consumptionScope` parameter should be used to specify how the resource is consumed. For example, a resource may be exposed as a <xref:System.Runtime.Versioning.ResourceScope> resource, but only used at the <xref:System.Runtime.Versioning.ResourceScope> and <xref:System.Runtime.Versioning.ResourceScope> scope. For this example the `consumptionScope` parameter is set to <xref:System.Runtime.Versioning.ResourceScope> &#124; <xref:System.Runtime.Versioning.ResourceScope>.  
-  
- The `resourceScope` parameter in the constructor must specify a <xref:System.Runtime.Versioning.ResourceScope> greater than or equal to the resource exposure of all called members.  For example, a method consuming two <xref:System.Runtime.Versioning.ResourceScope> resources and one <xref:System.Runtime.Versioning.ResourceScope> resource would be identified as consuming a <xref:System.Runtime.Versioning.ResourceScope> and a <xref:System.Runtime.Versioning.ResourceScope> resource by setting `resourceScope` to <xref:System.Runtime.Versioning.ResourceScope> &#124; <xref:System.Runtime.Versioning.ResourceScope>.  
-  
- `Public` members cannot expose <xref:System.Runtime.Versioning.ResourceScope> or <xref:System.Runtime.Versioning.ResourceScope> resources.  <xref:System.Runtime.Versioning.ResourceScope> members cannot expose <xref:System.Runtime.Versioning.ResourceScope> resources.  
-  
- The graph of methods terminates when a <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute with a resource scope of <xref:System.Runtime.Versioning.ResourceScope> is applied to a method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,15 +35,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceScope" Type="System.Runtime.Versioning.ResourceScope" />
       </Parameters>
       <Docs>
-        <param name="resourceScope">The <see cref="T:System.Runtime.Versioning.ResourceScope" /> for the consumed resource.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Versioning.ResourceConsumptionAttribute" /> class specifying the scope of the consumed resource.</summary>
+        <param name="resourceScope">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,27 +58,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceScope" Type="System.Runtime.Versioning.ResourceScope" />
         <Parameter Name="consumptionScope" Type="System.Runtime.Versioning.ResourceScope" />
       </Parameters>
       <Docs>
-        <param name="resourceScope">The <see cref="T:System.Runtime.Versioning.ResourceScope" /> for the consumed resource.</param>
-        <param name="consumptionScope">The <see cref="T:System.Runtime.Versioning.ResourceScope" /> used by this member.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Versioning.ResourceConsumptionAttribute" /> class specifying the scope of the consumed resource and the scope of how it is consumed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute specifies a scope of <xref:System.Runtime.Versioning.ResourceScope>, then the <xref:System.Runtime.Versioning.ResourceConsumptionAttribute> attribute must specify a resource it consumes and how it consumes it, by specifying a value for the `consumptionScope` parameter.  
-  
- The scope specified by `consumptionScope` should be less than or equal to the scope specified by `resourceScope`. For example, a <xref:System.Runtime.Versioning.ResourceScope> scope can be consumed as a <xref:System.Runtime.Versioning.ResourceScope> or <xref:System.Runtime.Versioning.ResourceScope> scope, but not as a <xref:System.Runtime.Versioning.ResourceScope> scope.  
-  
- ]]></format>
-        </remarks>
+        <param name="resourceScope">To be added.</param>
+        <param name="consumptionScope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConsumptionScope">
@@ -95,15 +83,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the consumption scope for this member.</summary>
-        <value>A <see cref="T:System.Runtime.Versioning.ResourceScope" /> object specifying the resource scope used by this member.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,15 +106,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the resource scope for the consumed resource.</summary>
-        <value>A <see cref="T:System.Runtime.Versioning.ResourceScope" /> object specifying the resource scope of the consumed member.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

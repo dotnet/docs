@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.MultipleViewPattern" /> object using its <see cref="System.Windows.Automation.MultipleViewPattern.Current%2A" /> or <see cref="System.Windows.Automation.MultipleViewPattern.Cached%2A" /> accessors.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,33 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the current control-specific view.</summary>
-        <value>The integer value for the current view of the <see cref="T:System.Windows.Automation.AutomationElement" />. The default value is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection of view identifiers is identical across instances.  
-  
-   
-  
-## Examples  
- In the following example, an integer identifier is obtained, representing the current view for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
-  
- [!code-cs[UIAMultipleViewPattern_snip#101](~/add/codesnippet/csharp/UIAMultipleViewPattern_snip/UIAMultipleViewPattern_snippets.cs#101)]
- [!code-vb[UIAMultipleViewPattern_snip#101](~/add/codesnippet/visualbasic/UIAMultipleViewPattern_snip/UIAMultipleViewPattern_snippets.vb#101)]  
-[!code-cs[UIAMultipleViewPattern_snip#1035](~/add/codesnippet/csharp/UIAMultipleViewPattern_snip/UIAMultipleViewPattern_snippets.cs#1035)]
-[!code-vb[UIAMultipleViewPattern_snip#1035](~/add/codesnippet/visualbasic/UIAMultipleViewPattern_snip/UIAMultipleViewPattern_snippets.vb#1035)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSupportedViews">
@@ -59,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,28 +47,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a collection of control-specific view identifiers.</summary>
-        <returns>A collection of integer values that identify the views available for an <see cref="T:System.Windows.Automation.AutomationElement" />. The default is an empty integer array.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection of view identifiers is identical across instances.  
-  
- View identifier values can be passed to <xref:System.Windows.Automation.MultipleViewPattern.GetViewName%2A>.  
-  
-   
-  
-## Examples  
- In the following example, a collection of integer identifiers is obtained, representing the views available for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
-  
- [!code-cs[UIAMultipleViewPattern_snip#101](~/add/codesnippet/csharp/UIAMultipleViewPattern_snip/UIAMultipleViewPattern_snippets.cs#101)]
- [!code-vb[UIAMultipleViewPattern_snip#101](~/add/codesnippet/visualbasic/UIAMultipleViewPattern_snip/UIAMultipleViewPattern_snippets.vb#101)]  
-[!code-cs[UIAMultipleViewPattern_snip#1025](~/add/codesnippet/csharp/UIAMultipleViewPattern_snip/UIAMultipleViewPattern_snippets.cs#1025)]
-[!code-vb[UIAMultipleViewPattern_snip#1025](~/add/codesnippet/visualbasic/UIAMultipleViewPattern_snip/UIAMultipleViewPattern_snippets.vb#1025)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

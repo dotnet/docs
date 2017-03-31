@@ -1,0 +1,453 @@
+<Type Name="PEHeaderBuilder" FullName="System.Reflection.PortableExecutable.PEHeaderBuilder">
+  <TypeSignature Language="C#" Value="public sealed class PEHeaderBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PEHeaderBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEHeaderBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PEHeaderBuilder (System.Reflection.PortableExecutable.Machine machine = System.Reflection.PortableExecutable.Machine.Unknown, int sectionAlignment = 8192, int fileAlignment = 512, ulong imageBase = 4194304, byte majorLinkerVersion = 48, byte minorLinkerVersion = 0, ushort majorOperatingSystemVersion = 4, ushort minorOperatingSystemVersion = 0, ushort majorImageVersion = 0, ushort minorImageVersion = 0, ushort majorSubsystemVersion = 4, ushort minorSubsystemVersion = 0, System.Reflection.PortableExecutable.Subsystem subsystem = System.Reflection.PortableExecutable.Subsystem.WindowsCui, System.Reflection.PortableExecutable.DllCharacteristics dllCharacteristics = System.Reflection.PortableExecutable.DllCharacteristics.DynamicBase | System.Reflection.PortableExecutable.DllCharacteristics.NxCompatible | System.Reflection.PortableExecutable.DllCharacteristics.NoSeh | System.Reflection.PortableExecutable.DllCharacteristics.TerminalServerAware, System.Reflection.PortableExecutable.Characteristics imageCharacteristics = System.Reflection.PortableExecutable.Characteristics.Dll, ulong sizeOfStackReserve = 1048576, ulong sizeOfStackCommit = 4096, ulong sizeOfHeapReserve = 1048576, ulong sizeOfHeapCommit = 4096);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Reflection.PortableExecutable.Machine machine, int32 sectionAlignment, int32 fileAlignment, unsigned int64 imageBase, unsigned int8 majorLinkerVersion, unsigned int8 minorLinkerVersion, unsigned int16 majorOperatingSystemVersion, unsigned int16 minorOperatingSystemVersion, unsigned int16 majorImageVersion, unsigned int16 minorImageVersion, unsigned int16 majorSubsystemVersion, unsigned int16 minorSubsystemVersion, valuetype System.Reflection.PortableExecutable.Subsystem subsystem, valuetype System.Reflection.PortableExecutable.DllCharacteristics dllCharacteristics, valuetype System.Reflection.PortableExecutable.Characteristics imageCharacteristics, unsigned int64 sizeOfStackReserve, unsigned int64 sizeOfStackCommit, unsigned int64 sizeOfHeapReserve, unsigned int64 sizeOfHeapCommit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEHeaderBuilder.#ctor(System.Reflection.PortableExecutable.Machine,System.Int32,System.Int32,System.UInt64,System.Byte,System.Byte,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.Reflection.PortableExecutable.Subsystem,System.Reflection.PortableExecutable.DllCharacteristics,System.Reflection.PortableExecutable.Characteristics,System.UInt64,System.UInt64,System.UInt64,System.UInt64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="machine" Type="System.Reflection.PortableExecutable.Machine" />
+        <Parameter Name="sectionAlignment" Type="System.Int32" />
+        <Parameter Name="fileAlignment" Type="System.Int32" />
+        <Parameter Name="imageBase" Type="System.UInt64" />
+        <Parameter Name="majorLinkerVersion" Type="System.Byte" />
+        <Parameter Name="minorLinkerVersion" Type="System.Byte" />
+        <Parameter Name="majorOperatingSystemVersion" Type="System.UInt16" />
+        <Parameter Name="minorOperatingSystemVersion" Type="System.UInt16" />
+        <Parameter Name="majorImageVersion" Type="System.UInt16" />
+        <Parameter Name="minorImageVersion" Type="System.UInt16" />
+        <Parameter Name="majorSubsystemVersion" Type="System.UInt16" />
+        <Parameter Name="minorSubsystemVersion" Type="System.UInt16" />
+        <Parameter Name="subsystem" Type="System.Reflection.PortableExecutable.Subsystem" />
+        <Parameter Name="dllCharacteristics" Type="System.Reflection.PortableExecutable.DllCharacteristics" />
+        <Parameter Name="imageCharacteristics" Type="System.Reflection.PortableExecutable.Characteristics" />
+        <Parameter Name="sizeOfStackReserve" Type="System.UInt64" />
+        <Parameter Name="sizeOfStackCommit" Type="System.UInt64" />
+        <Parameter Name="sizeOfHeapReserve" Type="System.UInt64" />
+        <Parameter Name="sizeOfHeapCommit" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="machine">To be added.</param>
+        <param name="sectionAlignment">To be added.</param>
+        <param name="fileAlignment">To be added.</param>
+        <param name="imageBase">To be added.</param>
+        <param name="majorLinkerVersion">To be added.</param>
+        <param name="minorLinkerVersion">To be added.</param>
+        <param name="majorOperatingSystemVersion">To be added.</param>
+        <param name="minorOperatingSystemVersion">To be added.</param>
+        <param name="majorImageVersion">To be added.</param>
+        <param name="minorImageVersion">To be added.</param>
+        <param name="majorSubsystemVersion">To be added.</param>
+        <param name="minorSubsystemVersion">To be added.</param>
+        <param name="subsystem">To be added.</param>
+        <param name="dllCharacteristics">To be added.</param>
+        <param name="imageCharacteristics">To be added.</param>
+        <param name="sizeOfStackReserve">To be added.</param>
+        <param name="sizeOfStackCommit">To be added.</param>
+        <param name="sizeOfHeapReserve">To be added.</param>
+        <param name="sizeOfHeapCommit">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateExecutableHeader">
+      <MemberSignature Language="C#" Value="public static System.Reflection.PortableExecutable.PEHeaderBuilder CreateExecutableHeader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PortableExecutable.PEHeaderBuilder CreateExecutableHeader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEHeaderBuilder.CreateExecutableHeader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PEHeaderBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLibraryHeader">
+      <MemberSignature Language="C#" Value="public static System.Reflection.PortableExecutable.PEHeaderBuilder CreateLibraryHeader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PortableExecutable.PEHeaderBuilder CreateLibraryHeader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEHeaderBuilder.CreateLibraryHeader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PEHeaderBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DllCharacteristics">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DllCharacteristics DllCharacteristics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DllCharacteristics DllCharacteristics" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.DllCharacteristics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DllCharacteristics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileAlignment">
+      <MemberSignature Language="C#" Value="public int FileAlignment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FileAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.FileAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageBase">
+      <MemberSignature Language="C#" Value="public ulong ImageBase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 ImageBase" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.ImageBase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageCharacteristics">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.Characteristics ImageCharacteristics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.Characteristics ImageCharacteristics" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.ImageCharacteristics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.Characteristics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Machine">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.Machine Machine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.Machine Machine" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.Machine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.Machine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorImageVersion">
+      <MemberSignature Language="C#" Value="public ushort MajorImageVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MajorImageVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.MajorImageVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorLinkerVersion">
+      <MemberSignature Language="C#" Value="public byte MajorLinkerVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 MajorLinkerVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.MajorLinkerVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorOperatingSystemVersion">
+      <MemberSignature Language="C#" Value="public ushort MajorOperatingSystemVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MajorOperatingSystemVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.MajorOperatingSystemVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorSubsystemVersion">
+      <MemberSignature Language="C#" Value="public ushort MajorSubsystemVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MajorSubsystemVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.MajorSubsystemVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorImageVersion">
+      <MemberSignature Language="C#" Value="public ushort MinorImageVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MinorImageVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.MinorImageVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorLinkerVersion">
+      <MemberSignature Language="C#" Value="public byte MinorLinkerVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 MinorLinkerVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.MinorLinkerVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorOperatingSystemVersion">
+      <MemberSignature Language="C#" Value="public ushort MinorOperatingSystemVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MinorOperatingSystemVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.MinorOperatingSystemVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorSubsystemVersion">
+      <MemberSignature Language="C#" Value="public ushort MinorSubsystemVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MinorSubsystemVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.MinorSubsystemVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SectionAlignment">
+      <MemberSignature Language="C#" Value="public int SectionAlignment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SectionAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.SectionAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfHeapCommit">
+      <MemberSignature Language="C#" Value="public ulong SizeOfHeapCommit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 SizeOfHeapCommit" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.SizeOfHeapCommit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfHeapReserve">
+      <MemberSignature Language="C#" Value="public ulong SizeOfHeapReserve { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 SizeOfHeapReserve" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.SizeOfHeapReserve" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfStackCommit">
+      <MemberSignature Language="C#" Value="public ulong SizeOfStackCommit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 SizeOfStackCommit" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.SizeOfStackCommit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfStackReserve">
+      <MemberSignature Language="C#" Value="public ulong SizeOfStackReserve { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 SizeOfStackReserve" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.SizeOfStackReserve" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subsystem">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.Subsystem Subsystem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.Subsystem Subsystem" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeaderBuilder.Subsystem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.Subsystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

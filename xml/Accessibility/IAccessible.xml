@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Accessibility.IAccessible" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The IAccessible interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about IAccessible, see the documentation for `IAccessible` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="accChild">
@@ -35,7 +27,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -56,17 +47,10 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>An object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accChild, see the documentation for `IAccessible::get_accChild` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accChildCount">
@@ -76,7 +60,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -94,16 +77,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>An integer representing the count.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accChildCount, see the documentation for `IAccessible::get_accChildCount` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accDefaultAction">
@@ -113,7 +89,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -134,17 +109,10 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>A string representing the action.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accDefaultAction, see the documentation for `IAccessible::get_DefaultAction` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accDescription">
@@ -154,7 +122,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -175,17 +142,10 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>A string representing the description.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accDescription, see the documentation for `IAccessible::get_accDescription` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accDoDefaultAction">
@@ -195,7 +155,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -213,16 +172,9 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accDoDefaultAction, see the documentation for `IAccessible::accDoDefaultAction` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accFocus">
@@ -232,7 +184,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -250,16 +201,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>If successful, returns S_OK. Otherwise, returns another standard COM error code.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accFocus, see the documentation for `IAccessible::get_accFocus` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accHelp">
@@ -269,7 +213,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -290,17 +233,10 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>A string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accHelp, see the documentation for `IAccessible::get_Help` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accHelpTopic">
@@ -310,7 +246,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -332,18 +267,11 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pszHelpFile">This parameter is intended for internal use only.</param>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>An integer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accHelpTopic, see the documentation for `IAccessible::get_HelpTopic` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pszHelpFile">To be added.</param>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accHitTest">
@@ -353,7 +281,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -372,18 +299,11 @@
         <Parameter Name="yTop" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="xLeft">This parameter is intended for internal use only.</param>
-        <param name="yTop">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <returns>An object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accHitTest, see the documentation for `IAccessible::accHitTest` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="xLeft">To be added.</param>
+        <param name="yTop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accKeyboardShortcut">
@@ -393,7 +313,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -414,17 +333,10 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>A string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accKeyboardShortcut, see the documentation for `IAccessible::get_accKeyboardShortcut` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accLocation">
@@ -434,7 +346,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -456,20 +367,13 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pxLeft">This parameter is intended for internal use only.</param>
-        <param name="pyTop">This parameter is intended for internal use only.</param>
-        <param name="pcxWidth">This parameter is intended for internal use only.</param>
-        <param name="pcyHeight">This parameter is intended for internal use only.</param>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accLocation, see the documentation for `IAccessible::accLocation` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pxLeft">To be added.</param>
+        <param name="pyTop">To be added.</param>
+        <param name="pcxWidth">To be added.</param>
+        <param name="pcyHeight">To be added.</param>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accName">
@@ -479,7 +383,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -506,17 +409,10 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>A string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accName, see the documentation for `IAccessible::get_accName` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accNavigate">
@@ -526,7 +422,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -545,18 +440,11 @@
         <Parameter Name="varStart" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="navDir">This parameter is intended for internal use only.</param>
-        <param name="varStart">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <returns>If successful, returns S_OK. For other possible return values, see the documentation for <see langword="IAccessible::accNavigate" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accNavigate, see the documentation for `IAccessible::accNavigate` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="navDir">To be added.</param>
+        <param name="varStart">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accParent">
@@ -566,7 +454,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -584,16 +471,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>An object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accParent, see the documentation for `IAccessible::get_Parent` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accRole">
@@ -603,7 +483,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -624,17 +503,10 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>An object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accRole, see the documentation for `IAccessible::get_accRole` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accSelect">
@@ -644,7 +516,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -663,17 +534,10 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="flagsSelect">This parameter is intended for internal use only.</param>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accSelect, see the documentation for `IAccessible::accSelect` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="flagsSelect">To be added.</param>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accSelection">
@@ -683,7 +547,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -701,16 +564,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>An object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accSelection, see the documentation for `IAccessible::get_accSelection` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accState">
@@ -720,7 +576,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -741,17 +596,10 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>An object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accState, see the documentation for `IAccessible::get_accState` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="accValue">
@@ -761,7 +609,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -788,17 +635,10 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">This parameter is intended for internal use only.</param>
-        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
-        <value>A string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about accValue, see the documentation for `IAccessible::get_accValue` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="varChild">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

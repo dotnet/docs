@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Int32Rect" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,49 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes the width, height, and location of an integer rectangle.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_Duration"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="X,Y,Width,Height"/>  
-- or   
-<object property="Empty"/>  
-```  
-  
-<a name="xamlValues_MinWidth"></a>   
-## XAML Values  
- *X*  
- <xref:System.Int32?displayProperty=fullName>  
-  
- The x-coordinate of the top-left corner of the rectangle.  
-  
- *Y*  
- <xref:System.Int32?displayProperty=fullName>  
-  
- The y-coordinate of the top-left corner of the rectangle.  
-  
- *Width*  
- <xref:System.Int32?displayProperty=fullName>  
-  
- The width of the rectangle.  
-  
- *Height*  
- <xref:System.Int32?displayProperty=fullName>  
-  
- The height of the rectangle.  
-  
-<a name="xamlTextUsage_Int32Rect"></a>   
-## XAML Text Usage  
- You can also use whitespace instead of commas to delimit values. Whitespace can also be used with a comma delimited value set.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,7 +34,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -86,11 +43,11 @@
         <Parameter Name="height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">The <see cref="System.Windows.Int32Rect.X%2A" /> of the new <see cref="T:System.Windows.Int32Rect" /> instance which specifies the x-coordinate of the top-left corner of the rectangle.</param>
-        <param name="y">The <see cref="System.Windows.Int32Rect.Y%2A" /> of the new <see cref="T:System.Windows.Int32Rect" /> instance which specifies the y-coordinate of the top-left corner of the rectangle.</param>
-        <param name="width">The <see cref="System.Windows.Int32Rect.Width%2A" /> of the new <see cref="T:System.Windows.Int32Rect" /> instance which specifies the width of the rectangle.</param>
-        <param name="height">The <see cref="System.Windows.Int32Rect.Height%2A" /> of the new <see cref="T:System.Windows.Int32Rect" /> instance which specifies the height of the rectangle.</param>
-        <summary>Initializes a new instance of an <see cref="T:System.Windows.Int32Rect" /> with the specified <see cref="System.Windows.Int32Rect.X%2A" /> and <see cref="System.Windows.Int32Rect.Y%2A" /> coordinates and the specified <see cref="System.Windows.Int32Rect.Width%2A" /> and <see cref="System.Windows.Int32Rect.Height%2A" />.</summary>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,35 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Int32Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the empty rectangle, a special value that represents a rectangle with no position or area.</summary>
-        <value>An empty rectangle with no position or area.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is the same as calling the constructor using 0 for all parameter values.  
-  
-<a name="xamlAttributeUsage_Automatic"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="Empty" />  
-```  
-  
-<a name="xamlValues_Automatic"></a>   
-## XAML Values  
- *property*  
- A property that accepts a <xref:System.Windows.Int32Rect> value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -139,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,17 +85,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object to compare to the current rectangle.</param>
-        <summary>Determines whether the specified rectangle is equal to this rectangle.</summary>
-        <returns>**true** if *o* is an <see cref="T:System.Windows.Int32Rect" /> and the same <see cref="System.Windows.Int32Rect.X%2A" />, <see cref="System.Windows.Int32Rect.Y%2A" />, <see cref="System.Windows.Int32Rect.Width%2A" />, and <see cref="System.Windows.Int32Rect.Height%2A" /> as this rectangle; otherwise, **false**.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation tests for object equality.  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -169,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,17 +107,10 @@
         <Parameter Name="value" Type="System.Windows.Int32Rect" />
       </Parameters>
       <Docs>
-        <param name="value">The rectangle to compare to the current rectangle.</param>
-        <summary>Determines whether the specified rectangle is equal to this rectangle.</summary>
-        <returns>**true** if both rectangles have the same <see cref="System.Windows.Int32Rect.X%2A" />, <see cref="System.Windows.Int32Rect.Y%2A" />, <see cref="System.Windows.Int32Rect.Width%2A" />, and <see cref="System.Windows.Int32Rect.Height%2A" /> as this rectangle; otherwise, **false**.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation tests for object equality.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -199,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,18 +130,11 @@
         <Parameter Name="int32Rect2" Type="System.Windows.Int32Rect" />
       </Parameters>
       <Docs>
-        <param name="int32Rect1">The first rectangle to compare.</param>
-        <param name="int32Rect2">The second rectangle to compare.</param>
-        <summary>Determines whether the specified rectangles are equal.</summary>
-        <returns>**true** if *int32Rect1* and *int32Rect2* have the same <see cref="System.Windows.Int32Rect.X%2A" />, <see cref="System.Windows.Int32Rect.Y%2A" />, <see cref="System.Windows.Int32Rect.Width%2A" />, and <see cref="System.Windows.Int32Rect.Height%2A" />; otherwise, **false**.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation tests for object equality.  
-  
- ]]></format>
-        </remarks>
+        <param name="int32Rect1">To be added.</param>
+        <param name="int32Rect2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -231,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,8 +151,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a hash code from this rectangle's <see cref="System.Windows.Int32Rect.X%2A" />, <see cref="System.Windows.Int32Rect.Y%2A" />, <see cref="System.Windows.Int32Rect.Width%2A" />, and <see cref="System.Windows.Int32Rect.Height%2A" /> values.</summary>
-        <returns>This rectangle's hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,8 +169,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="System.Windows.Int32Rect.Width%2A" /> and <see cref="System.Windows.Int32Rect.Height%2A" /> properties of the <see cref="T:System.Windows.Int32Rect" /> are greater than 0.</summary>
-        <value>true if the <see cref="System.Windows.Int32Rect.Width%2A" /> and <see cref="System.Windows.Int32Rect.Height%2A" /> properties of the <see cref="T:System.Windows.Int32Rect" /> are greater than 0; otherwise, <paramref name="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,15 +181,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the height of the rectangle.</summary>
-        <value>The height of the rectangle. The default value is <c>0</c>.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,15 +199,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the rectangle is empty.</summary>
-        <value>**true** if the rectangle is empty; otherwise, **false**. The default value is **true**.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,7 +217,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,10 +227,10 @@
         <Parameter Name="int32Rect2" Type="System.Windows.Int32Rect" />
       </Parameters>
       <Docs>
-        <param name="int32Rect1">The first rectangle to compare.</param>
-        <param name="int32Rect2">The second rectangle to compare.</param>
-        <summary>Compares two rectangles for exact equality.</summary>
-        <returns>**true** if *int32Rect1* and *int32Rect2* have the same <see cref="System.Windows.Int32Rect.X%2A" />, <see cref="System.Windows.Int32Rect.Y%2A" />, <see cref="System.Windows.Int32Rect.Width%2A" />, and <see cref="System.Windows.Int32Rect.Height%2A" />; otherwise, **false**.</returns>
+        <param name="int32Rect1">To be added.</param>
+        <param name="int32Rect2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,7 +241,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -343,10 +251,10 @@
         <Parameter Name="int32Rect2" Type="System.Windows.Int32Rect" />
       </Parameters>
       <Docs>
-        <param name="int32Rect1">The first rectangle to compare.</param>
-        <param name="int32Rect2">The second rectangle to compare.</param>
-        <summary>Compares two rectangles for inequality.</summary>
-        <returns>**false** if *int32Rect1* and *int32Rect2* have the same <see cref="System.Windows.Int32Rect.X%2A" />, <see cref="System.Windows.Int32Rect.Y%2A" />, <see cref="System.Windows.Int32Rect.Width%2A" />, and <see cref="System.Windows.Int32Rect.Height%2A" />; otherwise, if all of these values are the same, then **true**.</returns>
+        <param name="int32Rect1">To be added.</param>
+        <param name="int32Rect2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,7 +265,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -367,9 +274,9 @@
         <Parameter Name="source" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="source">A string representation of an <see cref="T:System.Windows.Int32Rect" />.</param>
-        <summary>Creates an <see cref="T:System.Windows.Int32Rect" /> structure from the specified <see cref="T:System.String" /> representation.</summary>
-        <returns>The equivalent <see cref="T:System.Windows.Int32Rect" /> structure.</returns>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,7 +287,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -391,18 +297,11 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">The format to use.</param>
-        <param name="provider">The provider to use to format the value</param>
-        <summary>Formats the value of the current instance using the specified format.</summary>
-        <returns>The value of the current instance in the specified format.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Int32Rect> instance is cast to an <xref:System.IFormattable> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="format">To be added.</param>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -412,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -420,8 +318,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a string representation of this <see cref="T:System.Windows.Int32Rect" />.</summary>
-        <returns>A string containing the same <see cref="System.Windows.Int32Rect.X%2A" />, <see cref="System.Windows.Int32Rect.Y%2A" />, <see cref="System.Windows.Int32Rect.Width%2A" />, and <see cref="System.Windows.Int32Rect.Height%2A" /> values of this <see cref="T:System.Windows.Int32Rect" /> structure.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,7 +330,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -442,9 +339,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">The format provider to use. If provider is <see langword="null" />, the current culture is used.</param>
-        <summary>Creates a string representation of this <see cref="T:System.Windows.Int32Rect" /> based on the supplied <see cref="T:System.IFormatProvider" />.</summary>
-        <returns>A string representation of this instance of <see cref="T:System.Windows.Int32Rect" />.</returns>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,15 +352,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width of the rectangle.</summary>
-        <value>The width of the rectangle. The default value is <c>0</c>.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -474,15 +370,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the x-coordinate of the top-left corner of the rectangle.</summary>
-        <value>The x-coordinate of the top-left corner of the rectangle. The default value is <c>0</c>.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -493,15 +388,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the y-coordinate of the top-left corner of the rectangle.</summary>
-        <value>The y-coordinate of the top-left corner of the rectangle. The default value is <c>0</c>.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

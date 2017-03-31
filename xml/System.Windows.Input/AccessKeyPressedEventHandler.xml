@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.AccessKeyPressedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,16 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The object where the event handler is attached.</param>
-    <param name="e">The event data.</param>
-    <summary>Represents the method that will handle the <see cref="System.Windows.Input.AccessKeyManager.AccessKeyPressed" /> attached event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Access keys in [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] are handled by a manager class that acts somewhat like a service for access keys, and forwards access key input to the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] input system. Rather than handling access key pressed events specifically by attaching a handler for the <xref:System.Windows.Input.AccessKeyManager.AccessKeyPressed> attached event on a specific object, it is generally a better practice to associate the access key with a particular command through a command binding, and then handle the routed commands through the corresponding routed events. This technique provides a unified event system for user input regardless of what input mode initiated the input. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

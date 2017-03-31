@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>An enumeration that specifies a hint to the rendering engine that text can be rendered with ClearType.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A?displayProperty=fullName> attached property to control how text is rendered on a translucent background. For more information, see <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A?displayProperty=fullName>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Auto">
@@ -34,7 +27,7 @@
         <ReturnType>System.Windows.Media.ClearTypeHint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The rendering engine uses ClearType when it is possible. If opacity is introduced, ClearType is disabled for that subtree.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -50,7 +43,7 @@
         <ReturnType>System.Windows.Media.ClearTypeHint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The rendering engine re-enables ClearType for the current subtree. Where opacity is introduced in this subtree, ClearType is disabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

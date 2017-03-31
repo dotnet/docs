@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,47 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the collection of selected items in a list view control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ListView.SelectedListViewItemCollection stores the selected items in a <xref:System.Windows.Forms.ListView> control. The items stored in the ListView.SelectedListViewItemCollection are items contained in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>. The <xref:System.Windows.Forms.ListView.ListViewItemCollection> stores all items displayed in the <xref:System.Windows.Forms.ListView>.  
-  
- The following table shows an example of how the <xref:System.Windows.Forms.ListView.ListViewItemCollection> stores the items of the <xref:System.Windows.Forms.ListView> as well as their selection states in an example <xref:System.Windows.Forms.ListView> control.  
-  
-|Index|Item|Selection state in the ListView|  
-|-----------|----------|-------------------------------------|  
-|0|Item1|Unselected|  
-|1|Item2|Selected|  
-|2|Item3|Unselected|  
-|3|Item4|Selected|  
-|4|Item5|Selected|  
-  
- Based on the <xref:System.Windows.Forms.ListView.ListViewItemCollection> example in the previous table, the following table demonstrates how the ListView.SelectedListViewItemCollection would appear.  
-  
-|Index|Selected item in the ListViewItemCollection|  
-|-----------|-------------------------------------------------|  
-|0|Item2|  
-|1|Item4|  
-|2|Item5|  
-  
- You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> class is a member of the ListView.SelectedListViewItemCollection. Once you know that the item is in the collection, you can use the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the ListView.SelectedListViewItemCollection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.ListView.SelectedItems%2A>, <xref:System.Windows.Forms.ListView.SelectedIndexChanged> event, and <xref:System.Windows.Forms.ListView.HeaderStyle%2A> members and the ListView.SelectedListViewItemCollection class. To run this example, paste the following code in a form that contains a <xref:System.Windows.Forms.ListView> object named `ListView1` and a <xref:System.Windows.Forms.TextBox> named `TextBox1`. Call the `InitializeListView` method from the form's constructor or the <xref:System.Windows.Forms.Form.Load> event handler. This example requires that the event handler is correctly associated with the <xref:System.Windows.Forms.ListView.SelectedIndexChanged> event  
-  
- [!code-cs[System.Windows.Forms.ListView1#1](~/add/codesnippet/csharp/t-system.windows.forms.l_10_1.cs)]
- [!code-vb[System.Windows.Forms.ListView1#1](~/add/codesnippet/visualbasic/t-system.windows.forms.l_10_1.vb)]
- [!code-cpp[System.Windows.Forms.ListView1#1](~/add/codesnippet/cpp/t-system.windows.forms.l_10_1.cpp)]  
-[!code-cs[System.Windows.Forms.ListView1#2](~/add/codesnippet/csharp/t-system.windows.forms.l_10_2.cs)]
-[!code-vb[System.Windows.Forms.ListView1#2](~/add/codesnippet/visualbasic/t-system.windows.forms.l_10_2.vb)]
-[!code-cpp[System.Windows.Forms.ListView1#2](~/add/codesnippet/cpp/t-system.windows.forms.l_10_2.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,23 +31,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.ListView" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Forms.ListView" /> control that owns the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListView> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -97,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,15 +56,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method enables you to clear all selections from the <xref:System.Windows.Forms.ListView> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -123,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,18 +76,10 @@
         <Parameter Name="item" Type="System.Windows.Forms.ListViewItem" />
       </Parameters>
       <Docs>
-        <param name="item">A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item to locate in the collection.</param>
-        <summary>Determines whether the specified item is located in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the specified item is located in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Contains method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> class is one of the selected items stored in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>. Once you know that the item is in the selected item collection, you can use the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -154,7 +89,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,20 +98,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the item to find in the collection.</param>
-        <summary>Determines whether an item with the specified key is contained in the collection.</summary>
-        <returns>
-          <see langword="true" /> to indicate the specified item is contained in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, ContainsKey returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -187,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,17 +121,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">An <see cref="T:System.Array" /> representing the array to copy the contents of the collection to.</param>
-        <param name="index">The location within the destination array to copy the items from the collection to.</param>
-        <summary>Copies the entire collection into an existing array at a specified location within the array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method to combine the selected items from multiple collections into a single array.  
-  
- ]]></format>
-        </remarks>
+        <param name="dest">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -218,7 +134,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -230,16 +145,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the collection.</summary>
-        <value>The number of items in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables you to determine the number of selected items in the <xref:System.Windows.Forms.ListView> control. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop. Unless the <xref:System.Windows.Forms.ListView.MultiSelect%2A> property of the <xref:System.Windows.Forms.ListView> is set to `true`, this property always returns a value of zero (0) or one (1) depending on whether you have a selected item.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -249,7 +157,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,8 +164,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can be used to iterate through the selected item collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the collection of selected items.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,7 +176,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -279,17 +185,10 @@
         <Parameter Name="item" Type="System.Windows.Forms.ListViewItem" />
       </Parameters>
       <Docs>
-        <param name="item">A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item to locate in the collection.</param>
-        <summary>Returns the index within the collection of the specified item.</summary>
-        <returns>The zero-based index of the item in the collection. If the item is not located in the collection, the return value is negative one (-1).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Once you know that an item is in the selected item collection (using the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection.Contains%2A> method), you can use the IndexOf method to determine the position of the item in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -299,7 +198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,21 +207,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the item to find in the collection.</param>
-        <summary>Returns the index of the first occurrence of the item with the specified key.</summary>
-        <returns>The zero-based index of the first item with the specified key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, IndexOfKey returns -1.  
-  
- If IndexOfKey is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -333,24 +220,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is read-only.</summary>
-        <value>
-          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is always `true` for this collection. The items in the collection can only be modified by the <xref:System.Windows.Forms.ListView> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -360,7 +238,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -370,18 +247,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the item in the collection to retrieve.</param>
-        <summary>Gets the item at the specified index within the collection.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item located at the specified index within the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This indexer enables you to get a specific item from the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>. The item stored in the collection is an item in the <xref:System.Windows.Forms.ListView.ListViewItemCollection> of the <xref:System.Windows.Forms.ListView> that represents a selected item in the <xref:System.Windows.Forms.ListView>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="System.Windows.Forms.ListView.ListViewItemCollection.Count%2A" /> property of the <see cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -391,7 +260,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -401,19 +269,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the item to retrieve from the collection.</param>
-        <summary>Gets an item with the specified key from the collection.</summary>
-        <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> with the specified key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, Item returns `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -423,16 +282,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -443,15 +300,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the collection of controls.</summary>
-        <value>The object used to synchronize the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,7 +318,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,18 +327,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">An object to be added to the <see cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />.</param>
-        <summary>Adds an item to the collection.</summary>
-        <returns>The location of the added item.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To add a <xref:System.Windows.Forms.ListViewItem> to the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -493,7 +340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -503,10 +349,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">An object that represents the item to locate in the collection.</param>
-        <summary>Determines whether the specified item is located in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the specified item is located in the collection; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -517,7 +362,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -527,9 +371,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">An object that represents the item to locate in the collection.</param>
-        <summary>Returns the index, within the collection, of the specified item.</summary>
-        <returns>The zero-based index of the item if it is in the collection; otherwise, -1</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -540,7 +384,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -551,18 +394,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the item to be inserted.</param>
-        <param name="value">An object to be added to the <see cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />.</param>
-        <summary>Inserts an item into the collection at a specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To add a <xref:System.Windows.Forms.ListViewItem> to the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -572,16 +407,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
-        <value>
-          <see langword="true" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -592,7 +425,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -602,9 +434,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get.</param>
-        <summary>Gets or sets an an object from the collection.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> that represents the item located at the specified index within the collection.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -615,7 +447,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -625,17 +456,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to remove from the <see cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />.</param>
-        <summary>Removes the first occurrence of a specified item from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -645,7 +468,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -655,17 +477,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the item to remove.</param>
-        <summary>Removes an item from the collection at a specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Selected%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Serves as the base class for the different column types of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataGridColumn class is the base class for all column types of the <xref:System.Web.UI.WebControls.DataGrid> control. It defines the properties and methods that are common to all column types. An instance of the DataGridColumn class is not created directly.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,23 +31,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize an instance of the <xref:System.Web.UI.WebControls.DataGridColumn> class.  
-  
-> [!NOTE]
->  Instances of this class are typically not created directly. It is a base class that defines the properties and methods common to all column type classes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DesignMode">
@@ -65,26 +46,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the column is in design mode.</summary>
-        <value>
-          <see langword="true" /> if the column is in design mode; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DesignMode property to programmatically determine whether the column is in design mode.  
-  
- For more information about design mode, see <xref:System.ComponentModel.ISite.DesignMode%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
@@ -94,7 +64,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -112,24 +81,9 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the style properties for the footer section of the column.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> that contains the style properties for the footer section of the column. The default value is an empty <see cref="T:System.Web.UI.WebControls.TableItemStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to provide a custom style for the footer section of the column. Common style attributes that can be adjusted include foreground color, background color, font, and content alignment within the cell. Providing a different style enhances the appearance of the column in the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the FooterStyle property to set the style properties for the footer section of the column.  
-  
- [!code-vb[DataGridColumnFooterStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1000_1.aspx)]
- [!code-cs[DataGridColumnFooterStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1000_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterText">
@@ -139,7 +93,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -151,27 +104,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text displayed in the footer section of the column.</summary>
-        <value>The text displayed in the footer section of the column. The default value is <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the FooterText property to specify or determine the text displayed in the footer section of the column.  
-  
-> [!CAUTION]
->  Text is not HTML-encoded before it is displayed in the footer section of the column. This makes it possible to embed script within HTML tags in the text. If this property is set dynamically using user input, be sure to validate the value to reduce security vulnerabilities.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the FooterText property to specify the text displayed in the footer section of the column.  
-  
- [!code-vb[DataGridColumnFooterText#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_124_1.aspx)]
- [!code-cs[DataGridColumnFooterText#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_124_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderImageUrl">
@@ -181,7 +116,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -196,27 +130,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location of an image to display in the header section of the column.</summary>
-        <value>The location of an image to display in the header section of the column. The default value is <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the HeaderImageUrl property to specify the URL of an image to display in the header section of the column. You can use a relative or an absolute URL. A relative URL relates the location of the image to the location of the Web page without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the path to the image in code. An absolute URL provides the complete path, so moving the site to another directory requires updating the code.  
-  
-> [!NOTE]
->  If you want to display text instead of an image in the header section of the column, set the <xref:System.Web.UI.WebControls.DataGridColumn.HeaderText%2A> property instead of this property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the HeaderImageUrl property to specify the image displayed in the header section of the column.  
-  
- [!code-cs[DataGridColumnHeaderImageUrl#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1038_1.aspx)]
- [!code-vb[DataGridColumnHeaderImageUrl#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1038_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -226,7 +142,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -244,24 +159,9 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the style properties for the header section of the column.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> that contains the style properties for the header section of the column. The default value is an empty <see cref="T:System.Web.UI.WebControls.TableItemStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to provide a custom style for the header section of the column. Common style attributes that can be adjusted include foreground color, background color, font, and content alignment within the cell. Providing a different style enhances the appearance of the column in the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the HeaderStyle property to get the style properties for the header section of the column.  
-  
- [!code-vb[DataGridColumnFooterStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_664_1.aspx)]
- [!code-cs[DataGridColumnFooterStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_664_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -271,7 +171,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -283,27 +182,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text displayed in the header section of the column.</summary>
-        <value>The text displayed in the header section of the column. The default value is <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the HeaderText property to specify or determine the text displayed in the header section of the column. If you want to display an image instead of text in the header section of the column, set the <xref:System.Web.UI.WebControls.DataGridColumn.HeaderImageUrl%2A> property instead of this property.  
-  
-> [!CAUTION]
->  Text is not HTML-encoded before it is displayed in the header section of the column. This makes it possible to embed script within HTML tags in the text. If this property is set dynamically using user input, be sure to validate the value to reduce security vulnerabilities.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the HeaderText property to specify the text for the header section of the column.  
-  
- [!code-vb[DataGridColumnFooterText#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_90_1.aspx)]
- [!code-cs[DataGridColumnFooterText#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_90_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -313,7 +194,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -321,20 +201,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides the base implementation to reset a column derived from the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> class to its initial state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Initialize method provides the base implementation to reset a column derived from the <xref:System.Web.UI.WebControls.DataGridColumn> class to its initial state. This method is not called directly. Instead, this method is inherited by a derived column class, which can then be used to reset a column of the derived type. You can optionally override this method in the derived class to provide a custom initialization routine. This base implementation of the Initialize method is often called from the overridden method to reset properties common to all column types derived from the <xref:System.Web.UI.WebControls.DataGridColumn> class. The Initialize method is usually called during data binding, prior to the first row being bound.  
-  
- When the Initialize method is used, the design mode of the column is set to `true`.  
-  
-> [!NOTE]
->  This method is commonly used by control developers.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -344,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,29 +223,11 @@
         <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
       </Parameters>
       <Docs>
-        <param name="cell">A <see cref="T:System.Web.UI.WebControls.TableCell" /> that represents the cell to reset.</param>
-        <param name="columnIndex">The column number where the cell is located.</param>
-        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> values.</param>
-        <summary>Provides the base implementation to reset the specified cell from a column derived from the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> class to its initial state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The InitializeCell method provides the base implementation to reset the specified cell from a column derived from the <xref:System.Web.UI.WebControls.DataGridColumn> class to its initial state. This method is not called directly. Instead, this method is inherited by a derived column class, which can then be used to reset a cell in the column of the derived type. You can optionally override this method in the derived class to provide a custom initialization routine. This base implementation of the InitializeCell method is often called from the overridden method to reset properties common to all cells in columns derived from the <xref:System.Web.UI.WebControls.DataGridColumn> class.  
-  
- In this implementation, the InitializeCell method resets only the header and footer cells. Other types of cells are not affected by this method.  
-  
- When sorting is enabled (by setting the <xref:System.Web.UI.WebControls.DataGrid.AllowSorting%2A> property to `true`), a <xref:System.Web.UI.WebControls.LinkButton> control is added to the header cell by default. This allows you to sort the column when the <xref:System.Web.UI.WebControls.LinkButton> control is clicked. If you specify an image for the header cell (by setting the <xref:System.Web.UI.WebControls.DataGridColumn.HeaderImageUrl%2A> property), an <xref:System.Web.UI.WebControls.ImageButton> control is created instead.  
-  
- When sorting is disabled, the text specified by the <xref:System.Web.UI.WebControls.DataGridColumn.HeaderText%2A> property is displayed in the header cell. If you specify an image for the header cell (by setting the <xref:System.Web.UI.WebControls.DataGridColumn.HeaderImageUrl%2A> property), an <xref:System.Web.UI.WebControls.Image> control is added to the header cell.  
-  
- Because a browser will not display an empty cell, if an image in not displayed in the header cell and the <xref:System.Web.UI.WebControls.DataGridColumn.HeaderText%2A> property is not set, a nonbreaking space HTML entity (`&nbsp;`) is displayed in the header cell. Similarly, if the footer cell does not have any content (if the <xref:System.Web.UI.WebControls.DataGridColumn.FooterText%2A> property is not set), a nonbreaking space HTML entity is displayed in the footer cell.  
-  
-> [!NOTE]
->  This method is commonly used by control developers.  
-  
- ]]></format>
-        </remarks>
+        <param name="cell">To be added.</param>
+        <param name="columnIndex">To be added.</param>
+        <param name="itemType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -388,16 +237,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that determines whether the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> object is marked to save its state.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> is marked; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,7 +255,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -426,24 +272,9 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the style properties for the item cells of the column.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> that contains the style properties for the item cells of the column. The default value is an empty <see cref="T:System.Web.UI.WebControls.TableItemStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to provide a custom style for the item cells of the column. Common style attributes that can be adjusted include foreground color, background color, font, and content alignment within the cell. Providing a different style enhances the appearance of the column in the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ItemStyle property to get the style properties of the item cells in a column.  
-  
- [!code-cs[DataGridColumnItemStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_141_1.aspx)]
- [!code-vb[DataGridColumnItemStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_141_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -453,7 +284,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -463,18 +293,9 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">An <see cref="T:System.Object" /> that contains the saved state of the <see cref="T:System.Web.UI.WebControls.DataGridColumn" />.</param>
-        <summary>Loads the state of the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](../Topic/ASP.NET%20State%20Management%20Overview.md).  
-  
- Use the LoadViewState method to load the state of the <xref:System.Web.UI.WebControls.DataGridColumn> object. This allows a column to perform custom view-state management.  
-  
- ]]></format>
-        </remarks>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnColumnChanged">
@@ -484,7 +305,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -492,15 +312,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Calls the <see cref="System.Web.UI.Design.WebControls.DataGridDesigner.OnColumnsChanged%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the properties of a column derived from the <xref:System.Web.UI.WebControls.DataGridColumn> class change, the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.OnColumnsChanged%2A?displayProperty=fullName> method should be called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -510,23 +323,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGrid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control that the column is a member of.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.DataGrid" /> control that the column is a member of.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Owner property to programmatically determine the <xref:System.Web.UI.WebControls.DataGrid> control that the column is a member of.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -536,7 +341,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -544,16 +348,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the current state of the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> object.</summary>
-        <returns>An <see cref="T:System.Object" /> that contains the saved state of the <see cref="T:System.Web.UI.WebControls.DataGridColumn" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SaveViewState method to save the state of the <xref:System.Web.UI.WebControls.DataGridColumn> object. This allows a column to perform custom view-state management.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -563,7 +360,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -575,34 +371,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the field or expression to pass to the <see cref="System.Web.UI.WebControls.DataGrid.OnSortCommand%2A" /> method when a column is selected for sorting.</summary>
-        <value>The name of the field to pass to <see cref="System.Web.UI.WebControls.DataGrid.OnSortCommand%2A" /> when a column is selected for sorting. The default value is <see cref="F:System.String.Empty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SortExpression property to specify or determine the name of the field to pass to the <xref:System.Web.UI.WebControls.DataGrid.OnSortCommand%2A> method when a column is selected for sorting.  
-  
-> [!NOTE]
->  This property does not bind the column to a field in data source. To bind a column to a field, see the documentation for the specific column type.  
-  
- When sorting is enabled, <xref:System.Web.UI.WebControls.LinkButton> controls are rendered in the heading section of each column where the SortExpression property is set.  
-  
-> [!NOTE]
->  When the <xref:System.Web.UI.WebControls.DataGrid.AutoGenerateColumns%2A> property is set to `true`, the SortExpression property for each column in the <xref:System.Web.UI.WebControls.DataGrid> control that supports data binding is automatically set with the field name bound to the column. If the <xref:System.Web.UI.WebControls.DataGrid.AutoGenerateColumns%2A> property is set to `false`, you need to manually set the SortExpression property with the field name bound to the column for each column that you want to enable sorting for.  
-  
- These <xref:System.Web.UI.WebControls.LinkButton> controls allow you to sort the <xref:System.Web.UI.WebControls.DataGrid> control by the selected column. When a <xref:System.Web.UI.WebControls.LinkButton> control for a column is clicked, the <xref:System.Web.UI.WebControls.DataGrid.SortCommand> event is raised. The value of the SortExpression property for the selected column is passed to the <xref:System.Web.UI.WebControls.DataGrid.OnSortCommand%2A> event handler as part of the <xref:System.Web.UI.WebControls.DataGridSortCommandEventArgs> object.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the SortExpression property to specify the field name to use for sorting.  
-  
- [!code-cs[DataGridColumnSortExpression#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_758_1.aspx)]
- [!code-vb[DataGridColumnSortExpression#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_758_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -612,24 +383,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the column is tracking view state changes.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> object is tracking its view-state changes; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.DataGridColumn.IsTrackingViewState%2A> member is used primarily by control developers when deriving a custom implementation from the <xref:System.Web.UI.WebControls.DataGridColumn> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -639,7 +401,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -649,8 +410,8 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">An <see cref="T:System.Object" /> that represents the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> object to restore.</param>
-        <summary>Loads previously saved state.</summary>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,7 +422,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -669,8 +429,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an object containing state changes.</summary>
-        <returns>The <see cref="T:System.Object" /> that contains the view state changes.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -681,7 +441,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -689,7 +448,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Starts tracking state changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -700,7 +459,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -708,19 +466,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the string representation of the column.</summary>
-        <returns>Returns <see cref="T:System.String" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ToString method to get the string representation of the column.  
-  
-> [!NOTE]
->  This method is inherited from the <xref:System.Object?displayProperty=fullName> class and is not applicable to the <xref:System.Web.UI.WebControls.DataGridColumn> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -730,7 +478,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -738,15 +485,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes tracking of view-state changes to the server control so they can be stored in the server control's <see cref="T:System.Web.UI.StateBag" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the TrackViewState method to track view-state changes on the server control so they can be stored in the server control's <xref:System.Web.UI.StateBag?displayProperty=fullName> object. This allows a column to perform custom view-state management.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -756,23 +496,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.StateBag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.StateBag" /> object that allows a column derived from the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> class to store its properties.</summary>
-        <value>The <see cref="T:System.Web.UI.StateBag" /> for the <see cref="T:System.Web.UI.WebControls.DataGridColumn" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ViewState property to retrieve the <xref:System.Web.UI.StateBag?displayProperty=fullName> object that allows a column derived from the <xref:System.Web.UI.WebControls.DataGridColumn> class to store its properties. The state of each property is automatically managed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -782,7 +514,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -794,25 +525,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the column is visible in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
-        <value>
-          <see langword="true" /> if the column is visible in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Visible property to programmatically control whether the column is visible in the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Visible property to indicate whether a column is visible.  
-  
- [!code-cs[DataGridColumnVisible#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_217_1.aspx)]
- [!code-vb[DataGridColumnVisible#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_217_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

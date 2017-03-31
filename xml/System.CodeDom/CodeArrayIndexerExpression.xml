@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeArrayIndexerExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,24 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a reference to an index of an array.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeArrayIndexerExpression can be used to represent a reference to an index of an array of one or more dimensions. Use <xref:System.CodeDom.CodeIndexerExpression> for representing a reference to an index of a code (non-array) indexer. The <xref:System.CodeDom.CodeArrayIndexerExpression.TargetObject%2A> property indicates the indexer object. The <xref:System.CodeDom.CodeArrayIndexerExpression.Indices%2A> property indicates either a single index within the target array, or a set of indexes that together specify a specific intersection of indexes across the dimensions of the array.  
-  
-   
-  
-## Examples  
- The following code creates a CodeArrayIndexerExpression that references index 5 of an array of integers named `x` :  
-  
- [!code-vb[CodeArrayIndexerExpressionSnippet#1](~/add/codesnippet/visualbasic/t-system.codedom.codearr_0_1.vb)]
- [!code-cpp[CodeArrayIndexerExpressionSnippet#1](~/add/codesnippet/cpp/t-system.codedom.codearr_0_1.cpp)]
- [!code-cs[CodeArrayIndexerExpressionSnippet#1](~/add/codesnippet/csharp/t-system.codedom.codearr_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayIndexerExpression" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -77,9 +58,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="targetObject">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the array the indexer targets.</param>
-        <param name="indices">The index or indexes to reference.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayIndexerExpression" /> class using the specified target object and indexes.</summary>
+        <param name="targetObject">To be added.</param>
+        <param name="indices">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,23 +71,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpressionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index or indexes of the indexer expression.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpressionCollection" /> that indicates the index or indexes of the indexer expression.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This <xref:System.CodeDom.CodeExpressionCollection> can contain a <xref:System.CodeDom.CodeExpression> that specifies a single index within the target array, or multiple <xref:System.CodeDom.CodeExpression> objects that together specify a specific intersection of indexes across the dimensions of the array.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetObject">
@@ -116,23 +89,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the target object of the array indexer.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that represents the array being indexed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property typically contains either a <xref:System.CodeDom.CodeVariableReferenceExpression>, a <xref:System.CodeDom.CodePropertyReferenceExpression>, or a <xref:System.CodeDom.CodeFieldReferenceExpression>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

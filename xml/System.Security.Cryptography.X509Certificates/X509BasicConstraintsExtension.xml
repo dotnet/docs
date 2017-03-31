@@ -3,33 +3,26 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit X509BasicConstraintsExtension extends System.Security.Cryptography.X509Certificates.X509Extension" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Cryptography.X509Certificates.X509Extension</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the constraints set on a certificate. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class provides properties that define the basic constraints set on a certificate.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the X509BasicConstraintsExtension class to display the information.  
-  
- [!code-cs[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/csharp/t-system.security.crypto_65_1.cs)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/visualbasic/t-system.security.crypto_65_1.vb)]
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/cpp/t-system.security.crypto_65_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,25 +31,23 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
-  
- [!code-cs[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/csharp/61f39d50-05d0-49a3-b816-_1.cs)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/visualbasic/61f39d50-05d0-49a3-b816-_1.vb)]
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/cpp/61f39d50-05d0-49a3-b816-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,27 +56,28 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor(System.Security.Cryptography.AsnEncodedData,System.Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encodedBasicConstraints" Type="System.Security.Cryptography.AsnEncodedData" />
         <Parameter Name="critical" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="encodedBasicConstraints">The encoded data to use to create the extension.</param>
-        <param name="critical">
-          <see langword="true" /> if the extension is critical; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" /> class using an <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object and a value that identifies whether the extension is critical.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor if the information to create an extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="encodedBasicConstraints">To be added.</param>
+        <param name="critical">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,9 +86,18 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor(System.Boolean,System.Boolean,System.Int32,System.Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="certificateAuthority" Type="System.Boolean" />
@@ -105,14 +106,11 @@
         <Parameter Name="critical" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="certificateAuthority">
-          <see langword="true" /> if the certificate is a certificate authority (CA) certificate; otherwise, <see langword="false" />.</param>
-        <param name="hasPathLengthConstraint">
-          <see langword="true" /> if the certificate has a restriction on the number of path levels it allows; otherwise, <see langword="false" />.</param>
-        <param name="pathLengthConstraint">The number of levels allowed in a certificate's path.</param>
-        <param name="critical">
-          <see langword="true" /> if the extension is critical; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" /> class. Parameters specify a value that indicates whether a certificate is a certificate authority (CA) certificate, a value that indicates whether the certificate has a restriction on the number of path levels it allows, the number of levels allowed in a certificate's path, and a value that indicates whether the extension is critical.</summary>
+        <param name="certificateAuthority">To be added.</param>
+        <param name="hasPathLengthConstraint">To be added.</param>
+        <param name="pathLengthConstraint">To be added.</param>
+        <param name="critical">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,34 +120,26 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CertificateAuthority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a certificate is a certificate authority (CA) certificate.</summary>
-        <value>
-          <see langword="true" /> if the certificate is a certificate authority (CA) certificate, otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to determine if the certificate is a certificate authority (CA) certificate.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
-  
- [!code-cs[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/csharp/81d2d95c-6fb7-46bc-8d4d-_1.cs)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/visualbasic/81d2d95c-6fb7-46bc-8d4d-_1.vb)]
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/cpp/81d2d95c-6fb7-46bc-8d4d-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
@@ -158,9 +148,18 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CopyFrom(System.Security.Cryptography.AsnEncodedData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -169,16 +168,9 @@
         <Parameter Name="asnEncodedData" Type="System.Security.Cryptography.AsnEncodedData" />
       </Parameters>
       <Docs>
-        <param name="asnEncodedData">The encoded data to use to create the extension.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" /> class using an <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor if the information to create an extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="asnEncodedData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasPathLengthConstraint">
@@ -187,35 +179,26 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.HasPathLengthConstraint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a certificate has a restriction on the number of path levels it allows.</summary>
-        <value>
-          <see langword="true" /> if the certificate has a restriction on the number of path levels it allows, otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A certificate issuer can restrict the number of levels in a certificate path. This property indicates whether the certificate has this restriction. If this value is `true`, you can use the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.PathLengthConstraint%2A> property to determine the number of levels allowed.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
-  
- [!code-cs[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/csharp/a312dc6e-560d-4b07-a1b5-_1.cs)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/visualbasic/a312dc6e-560d-4b07-a1b5-_1.vb)]
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/cpp/a312dc6e-560d-4b07-a1b5-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The extension cannot be decoded.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PathLengthConstraint">
@@ -224,34 +207,26 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.PathLengthConstraint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of levels allowed in a certificate's path.</summary>
-        <value>An integer indicating the number of levels allowed in a certificate's path.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a certificate has a constraint on the number of path levels it allows, this property indicates how many levels are allowed.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension> class to display the information.  
-  
- [!code-cs[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/csharp/43c6ba08-6598-4ea2-96d7-_1.cs)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/visualbasic/43c6ba08-6598-4ea2-96d7-_1.vb)]
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/add/codesnippet/cpp/43c6ba08-6598-4ea2-96d7-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The extension cannot be decoded.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,13 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ImportSource" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies values that indicate how the MEF composition engine searches for imports.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -21,13 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Composition.ImportSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Imports may be satisfied from the current scope or any ancestor scope.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Local">
@@ -37,13 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Composition.ImportSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Imports may be satisfied only from the current scope.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonLocal">
@@ -53,13 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Composition.ImportSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Imports may be satisfied only from an ancestor scope.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

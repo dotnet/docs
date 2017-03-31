@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,29 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowCompleted" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- When the workflow completes, the workflow runtime engine raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowCompleted> event. The workflow runtime engine passes all of the output parameters of the workflow in a WorkflowCompletedEventArgs.  These include the `out` and `ref` parameters of the workflow.  
-  
-   
-  
-## Examples  
- The following code example demonstrates an event handler method that takes WorkflowCompletedEventArgs as a parameter. The `OnWorkflowCompleted` method is called when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowCompleted> event is raised. The code uses the <xref:System.Workflow.Runtime.WorkflowCompletedEventArgs.OutputParameters%2A> property to obtain the value associated with the `Status` key and writes it to the console.  
-  
- This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow With Parameters](http://msdn.microsoft.com/en-us/17157f2d-8fed-4848-a386-e4efa381b66b).  
-  
- [!code-cs[wf_samples#192](~/add/codesnippet/csharp/wf_snippets/snippets19.cs#192)]
- [!code-vb[wf_samples#192](~/add/codesnippet/visualbasic/wf_snippets/snippets19.vb#192)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="OutputParameters">
@@ -49,33 +27,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the output from the workflow.</summary>
-        <value>A <see cref="System.Collections.Generic.Dictionary%602" /> of values keyed by parameter name that contains the output parameters of the workflow.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OutputParameters contains the `out` and `ref` parameters of the workflow.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to obtain a value from a key stored in the OutputParameters property. The `OnWorkflowCompleted` method has a parameter that takes a <xref:System.Workflow.Runtime.WorkflowCompletedEventArgs>. This method is called when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowCompleted> event is raised. The code uses the OutputParameters property to obtain the value associated with the `Status` key and writes it to the console.  
-  
- This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow With Parameters](http://msdn.microsoft.com/en-us/17157f2d-8fed-4848-a386-e4efa381b66b).  
-  
- [!code-cs[WF_Samples#192](~/add/codesnippet/csharp/wf_snippets/snippets19.cs#192)]
- [!code-vb[WF_Samples#192](~/add/codesnippet/visualbasic/wf_snippets/snippets19.vb#192)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkflowDefinition">
@@ -85,15 +45,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Workflow.ComponentModel.Activity" /> that represents the workflow definition on completion of the workflow instance.</summary>
-        <value>An <see cref="T:System.Workflow.ComponentModel.Activity" /> that represents the workflow definition on completion of the workflow instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

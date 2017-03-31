@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationConverterBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,54 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The base class for the configuration converter types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ConfigurationConverterBase is the base class for the converter configuration types. These are types that convert strings, found in the configuration file, to and from the related strongly typed properties.  
-  
-   
-  
-## Examples  
- The following code examples show how to derive from the ConfigurationConverterBase class to create a custom <xref:System.TimeSpan> converter type. Also, the examples show how to use this type in a custom section.  
-  
- The following code example shows how to create a custom <xref:System.TimeSpan> converter type from the ConfigurationConverterBase class.  
-  
- [!code-vb[System.Configuration.TimeSpanMinutesConverter#1](~/add/codesnippet/visualbasic/t-system.configuration.c_16_1.vb)]
- [!code-cs[System.Configuration.TimeSpanMinutesConverter#1](~/add/codesnippet/csharp/t-system.configuration.c_16_1.cs)]  
-  
- The following code example shows how to define a custom section that uses the previous custom <xref:System.TimeSpan> converter.  
-  
- [!code-cs[System.Configuration.ConfigurationConvertersCustomSection#1](~/add/codesnippet/csharp/t-system.configuration.c_16_2.cs)]
- [!code-vb[System.Configuration.ConfigurationConvertersCustomSection#1](~/add/codesnippet/visualbasic/t-system.configuration.c_16_2.vb)]  
-  
- The following code example shows how to create and modify a configuration file using the previous custom section.  
-  
- [!code-vb[System.Configuration.ConfigurationConverterBase#1](~/add/codesnippet/visualbasic/t-system.configuration.c_16_3.vb)]
- [!code-cs[System.Configuration.ConfigurationConverterBase#1](~/add/codesnippet/csharp/t-system.configuration.c_16_3.cs)]  
-  
- The following is a configuration excerpt as used by the previous example.  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<configuration>  
-  <configSections>  
-    <section name="CustomSection"   
-      type="Samples.AspNet.CustomSection,   
-      ConfigurationConverters,   
-      Version=1.0.0.0, Culture=neutral,   
-      PublicKeyToken=null"   
-      allowDefinition="Everywhere"   
-      allowExeDefinition="MachineToApplication"   
-      restartOnExternalChanges="true" />  
-  </configSections>  
-  <CustomSection fileName="default.txt" maxIdleTime="90" />  
-</configuration>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationConverterBase" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because you normally use the converter types provided by the system, the only time you need the ConfigurationConverterBase constructor is when you must create your own conversion type.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -92,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,27 +47,11 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="ctx">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used for type conversions.</param>
-        <param name="type">The <see cref="T:System.Type" /> to convert from.</param>
-        <summary>Determines whether the conversion is allowed.</summary>
-        <returns>
-          <see langword="true" /> if the conversion is allowed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanConvertFrom method determines whether a conversion can be performed on strongly typed properties to obtain value strings used in the configuration file.  
-  
-   
-  
-## Examples  
- The following example code shows how to override the CanConvertFrom method to create a custom <xref:System.TimeSpan> converter type. Also, the example shows how to use this type in a custom section.  
-  
- [!code-vb[System.Configuration.TimeSpanMinutesConverter#3](~/add/codesnippet/visualbasic/27fca184-0b30-4d07-aa35-_1.vb)]
- [!code-cs[System.Configuration.TimeSpanMinutesConverter#3](~/add/codesnippet/csharp/27fca184-0b30-4d07-aa35-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="ctx">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -133,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,27 +71,11 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="ctx">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used for type conversion.</param>
-        <param name="type">The type to convert to.</param>
-        <summary>Determines whether the conversion is allowed.</summary>
-        <returns>
-          <see langword="true" /> if the conversion is allowed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Configuration.ConfigurationConverterBase.CanConvertFrom%2A> method determines whether the strings contained in the configuration file can be converted to the related strongly typed properties.  
-  
-   
-  
-## Examples  
- The following example code shows how to override the <xref:System.Configuration.ConfigurationConverterBase.CanConvertFrom%2A> method to create a custom <xref:System.TimeSpan> converter type. Also, the example shows how to use this type in a custom section.  
-  
- [!code-vb[System.Configuration.TimeSpanMinutesConverter#2](~/add/codesnippet/visualbasic/67ef9904-b052-4e8b-90db-_1.vb)]
- [!code-cs[System.Configuration.TimeSpanMinutesConverter#2](~/add/codesnippet/csharp/67ef9904-b052-4e8b-90db-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="ctx">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

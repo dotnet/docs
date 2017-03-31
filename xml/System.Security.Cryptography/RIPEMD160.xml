@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RIPEMD160" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,29 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the abstract class from which all implementations of the MD160 hash algorithm inherit.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Hash functions map binary strings of an arbitrary length to small binary strings of a fixed length. A cryptographic hash function has the property that it is computationally infeasible to find two distinct inputs that hash to the same value; that is, hashes of two sets of data should match if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
-  
- RIPEMD-160 is a 160-bit cryptographic hash function. It is intended for use as a replacement for the 128-bit hash functions MD4, MD5, and RIPEMD. RIPEMD was developed in the framework of the EU project RIPE (RACE Integrity Primitives Evaluation, 1988-1992).  
-  
-> [!NOTE]
->  RIPEMD160 has been superseded by the Secure Hash Algorithms SHA-256 and SHA-512 and their derived classes. <xref:System.Security.Cryptography.SHA256> and <xref:System.Security.Cryptography.SHA512> offer better security and performance than RIPEMD160. Use RIPEMD160 only for compatibility with legacy applications and data.  
-  
-   
-  
-## Examples  
- The following code example calculates the RIPEMD160 hash for all files in a directory.  
-  
- [!code-cpp[RIPEMD160#1](~/add/codesnippet/cpp/t-system.security.crypto_46_1.cpp)]
- [!code-vb[RIPEMD160#1](~/add/codesnippet/visualbasic/t-system.security.crypto_46_1.vb)]
- [!code-cs[RIPEMD160#1](~/add/codesnippet/csharp/t-system.security.crypto_46_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,29 +28,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RIPEMD160" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot create an instance of an abstract class. Application code will create a new instance of a derived class. For more information, see the <xref:System.Security.Cryptography.RIPEMD160Managed> class.  
-  
-   
-  
-## Examples  
- The following code example calculates the <xref:System.Security.Cryptography.RIPEMD160> hash for all files in a directory.  
-  
- [!code-cpp[RIPEMD160#1](~/add/codesnippet/cpp/m-system.security.crypto_121_1.cpp)]
- [!code-vb[RIPEMD160#1](~/add/codesnippet/visualbasic/m-system.security.crypto_121_1.vb)]
- [!code-cs[RIPEMD160#1](~/add/codesnippet/csharp/m-system.security.crypto_121_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -81,7 +44,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,26 +52,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the default implementation of the <see cref="T:System.Security.Cryptography.RIPEMD160" /> hash algorithm.</summary>
-        <returns>A new instance of the <see cref="T:System.Security.Cryptography.RIPEMD160" /> hash algorithm.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot create an instance of an abstract class. Application code will create a new instance of a derived class. For more information, see the <xref:System.Security.Cryptography.RIPEMD160Managed> class.  
-  
-   
-  
-## Examples  
- The following code example calculates the <xref:System.Security.Cryptography.RIPEMD160> hash for all files in a directory.  
-  
- [!code-cpp[RIPEMD160#1](~/add/codesnippet/cpp/m-system.security.crypto_50_1.cpp)]
- [!code-vb[RIPEMD160#1](~/add/codesnippet/visualbasic/m-system.security.crypto_50_1.vb)]
- [!code-cs[RIPEMD160#1](~/add/codesnippet/csharp/m-system.security.crypto_50_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Reflection.TargetInvocationException">The algorithm was used with Federal Information Processing Standards (FIPS) mode enabled, but it is not FIPS-compatible.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -118,7 +64,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,18 +74,10 @@
         <Parameter Name="hashName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hashName">The name of the specific implementation of <see cref="T:System.Security.Cryptography.RIPEMD160" /> to use.</param>
-        <summary>Creates an instance of the specified implementation of the <see cref="T:System.Security.Cryptography.RIPEMD160" /> hash algorithm.</summary>
-        <returns>A new instance of the specified implementation of <see cref="T:System.Security.Cryptography.RIPEMD160" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot create an instance of an abstract class. Application code will create a new instance of a derived class. For more information, see the <xref:System.Security.Cryptography.RIPEMD160Managed> class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Reflection.TargetInvocationException">The algorithm described by the <paramref name="hashName" /> parameter was used with Federal Information Processing Standards (FIPS) mode enabled, but it is not FIPS-compatible.</exception>
+        <param name="hashName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

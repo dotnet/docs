@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DialogResultConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,16 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts the <see cref="System.Windows.Window.DialogResult%2A" /> property, which is a <see cref="System.Nullable%601" /> value of type <see cref="T:System.Boolean" />, to and from other types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_DialogResultConverter"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.DialogResultConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="sourceType">A <see cref="T:System.Type" /> that represents the type to convert from.</param>
-        <summary>
-          <see cref="T:System.Windows.DialogResultConverter" /> does not support converting from other types to <see cref="System.Windows.Window.DialogResult%2A" /> (a <see cref="System.Nullable%601" /> value of type <see cref="T:System.Boolean" />).</summary>
-        <returns>A <see cref="T:System.Boolean" /> that always returns <see langword="false" />.</returns>
+        <param name="typeDescriptorContext">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="destinationType">A <see cref="T:System.Type" /> that represents the type to convert to.</param>
-        <summary>
-          <see cref="T:System.Windows.DialogResultConverter" /> does not support converting from <see cref="System.Windows.Window.DialogResult%2A" /> (a <see cref="System.Nullable%601" /> value of type <see cref="T:System.Boolean" />) to other types.</summary>
-        <returns>A <see cref="T:System.Boolean" /> that always returns <see langword="false" />.</returns>
+        <param name="typeDescriptorContext">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,14 +96,12 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> to use as the current culture. If <see langword="null" /> is passed, the current culture is assumed.</param>
-        <param name="source">The <see cref="T:System.Object" /> to convert.</param>
-        <summary>
-          <see cref="T:System.Windows.DialogResultConverter" /> does not support converting from <see cref="System.Windows.Window.DialogResult%2A" /> (a <see cref="System.Nullable%601" /> value of type <see cref="T:System.Boolean" />) to other types.</summary>
-        <returns>Always raises <see cref="T:System.InvalidOperationException" />.</returns>
+        <param name="typeDescriptorContext">To be added.</param>
+        <param name="cultureInfo">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">ConvertFrom is called.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -128,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -141,16 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> to use as the current culture. If <see langword="null" /> is passed, the current culture is assumed.</param>
-        <param name="value">The <see cref="T:System.Object" /> to convert.</param>
-        <param name="destinationType">The <see cref="T:System.Type" /> to convert the value parameter to.</param>
-        <summary>
-          <see cref="T:System.Windows.DialogResultConverter" /> does not support converting from other types to <see cref="System.Windows.Window.DialogResult%2A" /> (a <see cref="System.Nullable%601" /> value of type <see cref="T:System.Boolean" />).</summary>
-        <returns>Always raises <see cref="T:System.InvalidOperationException" />.</returns>
+        <param name="typeDescriptorContext">To be added.</param>
+        <param name="cultureInfo">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Windows.DialogResultConverter.CanConvertTo%2A" /> is called.</exception>
       </Docs>
     </Member>
   </Members>

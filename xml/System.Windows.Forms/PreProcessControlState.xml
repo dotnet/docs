@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PreProcessControlState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Provides options that specify the relationship between the control and preprocessing messages.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PreProcessControlState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the control requires the message and that processing should continue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MessageNotNeeded">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PreProcessControlState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the control does not require the message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MessageProcessed">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PreProcessControlState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the message has been processed and no further processing is required.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

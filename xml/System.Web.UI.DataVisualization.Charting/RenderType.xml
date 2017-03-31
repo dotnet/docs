@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how the image of the chart will be rendered.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RenderType enumeration represents the way in which the chart image will be rendered, and is used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BinaryStreaming">
@@ -34,7 +27,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.RenderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Chart is streamed directly to the client.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImageMap">
@@ -50,7 +43,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.RenderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Chart is rendered as an image map.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImageTag">
@@ -66,7 +59,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.RenderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Chart is rendered using an HTML image tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides functionality for an activity designer debugger view.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,8 @@
         <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented in a derived class, gets or sets the scope of execution within the source file.</summary>
-        <value>The starting point location for execution within the source file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented in a derived class, gets or sets the current location of execution in a file being processed by the debugger.</summary>
-        <value>The current location of execution in a file being processed by the debugger.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
       </Parameters>
       <Docs>
-        <param name="sourceLocation">A specific location in a target source code file.</param>
-        <summary>When implemented in a derived class, removes a breakpoint at the specified location in the source file.</summary>
+        <param name="sourceLocation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
         <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
       </Parameters>
       <Docs>
-        <param name="sourceLocation">A specific location in a target source code file.</param>
-        <summary>Ensures that the <see cref="T:System.Activities.Presentation.Debug.IDesignerDebugView" /> is visible.</summary>
+        <param name="sourceLocation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +104,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, returns a list of currently set breakpoint location-and-type pairs.</summary>
-        <returns>A list of currently set breakpoint location-and-type pairs.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +125,9 @@
         <Parameter Name="approximateLocation" Type="System.Activities.Debugger.SourceLocation" />
       </Parameters>
       <Docs>
-        <param name="approximateLocation">A position within a source file that is known to be inexact.</param>
-        <summary>When implemented in a derived class, returns an exact location in a source file based upon an approximate location.</summary>
-        <returns>An exact location within the source file.</returns>
+        <param name="approximateLocation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +144,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the Xaml source file name should be hidden.</summary>
-        <value>
-          <see langword="true" /> if the Xaml source file name should be hidden; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +166,9 @@
         <Parameter Name="breakpointType" Type="System.Activities.Presentation.Debug.BreakpointTypes" />
       </Parameters>
       <Docs>
-        <param name="sourceLocation">A specific location in a target source code file.</param>
-        <param name="breakpointType">The member of an enumeration of breakpoint types which may include Bounded, Conditional, Enabled, and None.</param>
-        <summary>When implemented in a derived class, places a breakpoint at the specified location in a file.</summary>
+        <param name="sourceLocation">To be added.</param>
+        <param name="breakpointType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +185,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented in a derived class, gets or sets a value that indicates whether debugging is enabled.</summary>
-        <value>
-          <see langword="true" /> if debugging is enabled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,7 +204,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, resets the position of the breakpoint in a file.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,8 +221,8 @@
         <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented in a derived class, gets the selected <see cref="T:System.Activities.Debugger.SourceLocation" />.</summary>
-        <value>The selected source location.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,9 +243,9 @@
         <Parameter Name="breakpointType" Type="System.Activities.Presentation.Debug.BreakpointTypes" />
       </Parameters>
       <Docs>
-        <param name="sourceLocation">A specific location in a target source code file.</param>
-        <param name="breakpointType">A specified type of breakpoint; for example, line, method, or exception breakpoints.</param>
-        <summary>When implemented in a derived class, updates the type of the breakpoint at a specified location in a file.</summary>
+        <param name="sourceLocation">To be added.</param>
+        <param name="breakpointType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

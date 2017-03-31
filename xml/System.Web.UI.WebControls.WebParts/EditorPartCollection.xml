@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,51 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls used for editing the properties, layout, appearance, and behavior of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EditorPartCollection class is a read-only collection of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, typically used by an <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone to track the set of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls contained by the zone.  
-  
- When a Web Parts page enters edit mode, and a user selects a control to edit, the editing process begins. The zone creates a new EditorPartCollection object consisting of the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls contained by the zone. At various phases in the editing process, the zone accesses the EditorPartCollection object to save or retrieve property values between the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the collection and the <xref:System.Web.UI.WebControls.WebParts.WebPart> control currently being edited.  
-  
- You can create an EditorPartCollection collection of controls for your own programmatic use if, for example, you need to perform some mass operation on a set of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. Even though the EditorPartCollection object is read-only, you can make programmatic changes to the properties of the underlying controls referenced in the collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates several uses of the EditorPartCollection class. There are four parts to this code example:  
-  
--   A user control that enables you to change display modes on a Web Parts page.  
-  
--   A class for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`, which is referenced in the Web page and is edited by the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls.  
-  
--   A Web page that references the `TextDisplayWebPart` control, contains an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control with several of the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls from the Web Parts control set declared in the zone, and contains some event-driven code to create and manipulate an EditorPartCollection object.  
-  
--   An explanation of how the code example works when you load it in a browser.  
-  
- The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](../Topic/Walkthrough:%20Changing%20Display%20Modes%20on%20a%20Web%20Parts%20Page.md).  
-  
- [!code-cs[WebParts_EditorPartCollection_Overview#4](~/add/codesnippet/csharp/t-system.web.ui.webcontr_212_1.ascx)]
- [!code-vb[WebParts_EditorPartCollection_Overview#4](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_212_1.ascx)]  
-  
- The second part of the code example is the `TextDisplayWebPart` control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](../Topic/Walkthrough:%20Developing%20and%20Using%20a%20Custom%20Web%20Server%20Control.md).  
-  
- Note that the control has a property named `ContentText`; this property holds the value that the user enters in the text box. This custom property can be edited when the control is in edit mode, along with the standard <xref:System.Web.UI.WebControls.WebParts.WebPart> control properties.  
-  
- [!code-cs[WebParts_EditorPartCollection_Overview#3](~/add/codesnippet/csharp/t-system.web.ui.webcontr_212_2.cs)]
- [!code-vb[WebParts_EditorPartCollection_Overview#3](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_212_2.vb)]  
-  
- The third part of the code example is the Web page. Notice that the `<asp:editorzone>` element for the page contains declarations for three <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. Two of these controls become part of a custom EditorPartCollection object that is created when the `Button1_Click` method executes.  
-  
- [!code-cs[WebParts_EditorPartCollection_Overview#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_212_3.aspx)]
- [!code-vb[WebParts_EditorPartCollection_Overview#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_212_3.aspx)]  
-  
- When you load the page in a browser, you can switch the page into edit mode by selecting **Edit** in the **Display Mode** drop-down list control. You can click the verbs menu (the downward arrow) in the title bar of the `TextDisplayWebPart` control, and click **Edit** to edit the control. When the editing user interface (UI) is visible, you can see all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. You click the **Create EditorPartCollection** button to see the effects on the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls that are created by the code that is manipulating the EditorPartCollection object. Also, notice that the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control allows you to edit the custom `TextDisplayWebPart.ContentText` property. This is possible because the property is marked with a `WebBrowsable` attribute in the source code for the control. If you update the property value in the editing UI, you must return the page to normal browse mode to see the effect of updating the `TextDisplayWebPart.ContentText` property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,22 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes an empty new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EditorPartCollection constructor initializes an empty instance of the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> class. This overload of the constructor is used internally by the <xref:System.Web.UI.WebControls.WebParts.EditorZone> class in its <xref:System.Web.UI.WebControls.WebParts.EditorZone.CreateEditorParts%2A> method to create an empty collection object. The zone then creates instances of all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls declared in the child zone template, and uses an internal method to add them to the collection.  
-  
- You cannot use this overload of the EditorPartCollection constructor to create a new instance of <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> and add <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls to it. You must use one of the other overloads for the EditorPartCollection constructor instead.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,41 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="editorParts" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="editorParts">An <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class by passing in an <see cref="T:System.Collections.ICollection" /> collection of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EditorPartCollection constructor initializes an instance of the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> class and passes in a collection of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. This is one overload of the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection.%23ctor%2A> constructor that you can use to create a new <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object and add <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls to it.  
-  
- Even though the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> instance created by the constructor is read-only, you can still access the individual <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the collection programmatically and call their properties and methods.  
-  
- One common scenario for using the EditorPartCollection constructor would be if you want to perform some batch operation on an entire set of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, such as changing the content, appearance, or position of a related group of them.  
-  
- Another common scenario for using the EditorPartCollection constructor is developing custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls that you want to associate with a server control, so that users can edit custom properties on your control. In this scenario, your server control must implement the <xref:System.Web.UI.WebControls.WebParts.IWebEditable> interface, and as part of that task, it must implement the <xref:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts%2A> method. In that method, to enable the custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls to edit your server control, you must add the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls to an <xref:System.Collections.ICollection> instance, such as an <xref:System.Collections.ArrayList> object. Then you can pass the collection of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls to the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection.%23ctor%2A> constructor to create a new <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object, which the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone uses to set up all the controls and begin the editing process.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a custom <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> and, even though the collection is read-only, still perform a batch operation to change the individual <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the collection. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> class overview.  
-  
- The code in the `Button1_Click` event creates an <xref:System.Collections.ArrayList> object, adds two of the three <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the page to the object, and then creates a new <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object using the EditorPartCollection constructor. It also demonstrates how you can make changes to the underlying <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, even though the collection is read-only.  
-  
- [!code-cs[WebParts_EditorPartCollection_Overview#2](~/add/codesnippet/csharp/e5070951-5a25-4f76-bb91-_1.aspx)]
- [!code-vb[WebParts_EditorPartCollection_Overview#2](~/add/codesnippet/visualbasic/e5070951-5a25-4f76-bb91-_1.aspx)]  
-  
- You can load the page in a browser and switch the page into edit mode by selecting **Edit** in the **Display Mode** drop-down list control. You can click the verbs menu (the downward arrow) in the title bar of the `TextDisplayWebPart` control, and click **Edit** to edit the control. When the editing user interface (UI) is visible, you can see all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. You click the **Create EditorPartCollection** button to see the effects on the two <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls that are added to the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="editorParts">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -135,7 +55,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -143,9 +62,9 @@
         <Parameter Name="editorParts" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="existingEditorParts">An <see cref="T:System.Collections.ICollection" /> of existing <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls in a zone.</param>
-        <param name="editorParts">An <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls not in a zone, but created programmatically.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class by passing in an <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> collection of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls, and an <see cref="T:System.Collections.ICollection" /> collection of additional <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
+        <param name="existingEditorParts">To be added.</param>
+        <param name="editorParts">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +75,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,29 +84,10 @@
         <Parameter Name="editorPart" Type="System.Web.UI.WebControls.WebParts.EditorPart" />
       </Parameters>
       <Docs>
-        <param name="editorPart">The <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> being tested for its status as a member of the collection.</param>
-        <summary>Returns a value that indicates whether a particular control is in the collection.</summary>
-        <returns>A Boolean value that indicates whether the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> is in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Contains method determines whether a specific <xref:System.Web.UI.WebControls.WebParts.EditorPart> control is already in the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to determine whether a particular <xref:System.Web.UI.WebControls.WebParts.EditorPart> control is in an <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> class overview.  
-  
- The code in the `Button1_Click` event does not add the `LayoutEditorPart1` control to the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object when it adds the other controls. To confirm that the `LayoutEditorPart1` control is not in the collection, the code uses the Contains method.  
-  
- [!code-cs[WebParts_EditorPartCollection_Overview#2](~/add/codesnippet/csharp/969094d1-8b47-4d8c-86ee-_1.aspx)]
- [!code-vb[WebParts_EditorPartCollection_Overview#2](~/add/codesnippet/visualbasic/969094d1-8b47-4d8c-86ee-_1.aspx)]  
-  
- When you load the page in a browser, you can switch the page into edit mode by selecting **Edit** in the **Display Mode** drop-down list control. You can click the verbs menu (the downward arrow) in the title bar of the `TextDisplayWebPart` control, and click **Edit** to edit the control. When the editing user interface (UI) is visible, you can see the all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. If you click the **Create EditorPartCollection** button, you will notice that the background color of the `LayoutEditorPart1` control is different from the other controls, because it is not part of the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="editorPart">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -198,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,29 +107,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> to contain the copied collection of controls.</param>
-        <param name="index">The starting point in the array at which to place the collection contents.</param>
-        <summary>Copies the collection to an array of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CopyTo method is useful when you want to create a custom array that can contain the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object, a subset of those controls, or a superset of those controls.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the CopyTo method to create a custom array of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> class overview.  
-  
- The code in the `Button1_Click` event creates an array of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, adds the `LayoutEditorPart1` control to the array, and then uses the CopyTo method to copy the controls from the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object to the array.  
-  
- [!code-cs[WebParts_EditorPartCollection_Overview#2](~/add/codesnippet/csharp/3d4bbcff-7b5d-49cc-93ed-_1.aspx)]
- [!code-vb[WebParts_EditorPartCollection_Overview#2](~/add/codesnippet/visualbasic/3d4bbcff-7b5d-49cc-93ed-_1.aspx)]  
-  
- When you load the page in a browser, you can switch the page into edit mode by selecting **Edit** in the **Display Mode** drop-down list control. You can click the verbs menu (the downward arrow) in the title bar of the `TextDisplayWebPart` control, and click **Edit** to edit the control. When the editing user interface (UI) is visible, you can see all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. If you click the **Create EditorPartCollection** button, you will notice that the titles of all the controls in the custom array are listed near the bottom of the page.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -241,22 +120,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.EditorPartCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>References a static, read-only, empty instance of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A static, read-only, empty instance of <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> reduces memory usage in cases where you want an empty collection instance to return the proper object type from a method or to compare the instance with another object, but you do not need to add members to the instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -266,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -276,29 +146,10 @@
         <Parameter Name="editorPart" Type="System.Web.UI.WebControls.WebParts.EditorPart" />
       </Parameters>
       <Docs>
-        <param name="editorPart">An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> that is a member of the collection.</param>
-        <summary>Returns the position of a particular member of the collection.</summary>
-        <returns>An integer that corresponds to the index of an <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IndexOf method is useful if you have multiple <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls on a Web Parts page, and you need to locate a particular control in the collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the IndexOf method to locate an <xref:System.Web.UI.WebControls.WebParts.EditorPart> control in an <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> class overview.  
-  
- The code in the `Button1_Click` event creates an <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object, and then uses the IndexOf method to locate the `PropertyGridEditorPart1` control in the collection, and set its <xref:System.Web.UI.WebControls.WebParts.Part.ChromeType%2A> property.  
-  
- [!code-cs[WebParts_EditorPartCollection_Overview#2](~/add/codesnippet/csharp/77edafbe-2b10-4862-af07-_1.aspx)]
- [!code-vb[WebParts_EditorPartCollection_Overview#2](~/add/codesnippet/visualbasic/77edafbe-2b10-4862-af07-_1.aspx)]  
-  
- When you load the page in a browser, you can switch the page into edit mode by selecting **Edit** in the **Display Mode** drop-down list control. You can click the verbs menu (the downward arrow) in the title bar of the `TextDisplayWebPart` control, and click **Edit** to edit the control. When the editing user interface (UI) is visible, you can see all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. If you click the **Create EditorPartCollection** button, you will notice that the `PropertyGridEditorPart1` control, which is near the bottom of the page, has a title but no border.  
-  
- ]]></format>
-        </remarks>
+        <param name="editorPart">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -308,7 +159,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,9 +168,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of a particular <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> in a collection.</param>
-        <summary>Returns a specific member of the collection according to a unique identifier.</summary>
-        <value>An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> at the specified index in the collection.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

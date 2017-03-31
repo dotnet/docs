@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.ServiceOperationRights" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,33 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An enumeration used to define access rights to service operations deployed by [!INCLUDE[ssAstoria](~/add/includes/ssastoria-md.md)].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example sets all rights access to the service operation `OrdersByCity`.  
-  
-```  
-namespace AccountingServiceWebApp  
-{  
-  public class AccountingService : DataService<DataModel>  
-  {  
-      public static void InitializeService(IDataServiceConfiguration config)  
-      {  
-          config.SetServiceOperationAccessRule("OrdersInCity", ServiceOperationRights.All);  
-      }  
-      public IQueryable<Orders> OrdersByCity(string city)  
-      {  
-          return this.CurrentDataSource.Orders.Where(o => o.ShippingCity == city);  
-      }  
-  }  
-}  
-  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -52,14 +26,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All rights assigned to the service operation..</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllRead">
@@ -69,14 +42,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to read single or multiple data items deployed by the service operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -86,14 +58,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No authorization to access the service operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverrideEntitySetRights">
@@ -103,14 +74,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Overrides entity set rights that are explicitly defined in the data service with the service operation rights.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadMultiple">
@@ -120,14 +90,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to read multiple data items by using the service operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadSingle">
@@ -137,14 +106,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to read a single data item by using the service operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

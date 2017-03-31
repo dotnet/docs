@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.IntegerProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Identifies the integer properties of a visual style element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IntegerProperty enumeration represents a set of integer properties that describe visual style elements. The IntegerProperty values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetInteger%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AlphaLevel">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The alpha value for an icon, between 0 and 255.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlphaThreshold">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The minimum alpha value of a solid pixel, between 0 and 255.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderSize">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The size of the border line for elements with a filled-border background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlyphIndex">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The index into the font for font-based glyphs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientRatio1">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The amount of <see cref="System.Windows.Forms.VisualStyles.ColorProperty.GradientColor1" /> to use in a color gradient. The sum of the five <see langword="GradientRatio" /> properties must equal 255.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientRatio2">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The amount of <see cref="System.Windows.Forms.VisualStyles.ColorProperty.GradientColor2" /> to use in a color gradient. The sum of the five <see langword="GradientRatio" /> properties must equal 255.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientRatio3">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The amount of <see cref="System.Windows.Forms.VisualStyles.ColorProperty.GradientColor3" /> to use in a color gradient. The sum of the five <see langword="GradientRatio" /> properties must equal 255.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientRatio4">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The amount of <see cref="System.Windows.Forms.VisualStyles.ColorProperty.GradientColor4" /> to use in a color gradient. The sum of the five <see langword="GradientRatio" /> properties must equal 255.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientRatio5">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The amount of <see cref="System.Windows.Forms.VisualStyles.ColorProperty.GradientColor5" /> to use in a color gradient. The sum of the five <see langword="GradientRatio" /> properties must equal 255.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The height of an element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImageCount">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The number of state images in multiple-image file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MinDpi1">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The minimum dots per inch (DPI) that <see cref="System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile1" /> was designed for.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MinDpi2">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The minimum DPI that <see cref="System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile2" /> was designed for.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MinDpi3">
@@ -250,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The minimum DPI that <see cref="System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile3" /> was designed for.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MinDpi4">
@@ -267,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The minimum DPI that <see cref="System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile4" /> was designed for.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MinDpi5">
@@ -284,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The minimum DPI that <see cref="System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile5" /> was designed for.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProgressChunkSize">
@@ -301,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The size of progress bar elements.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProgressSpaceSize">
@@ -318,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The size of spaces between progress bar elements.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoundCornerHeight">
@@ -335,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A percentage value that represents the height of a rounded corner, from 0 to 100.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoundCornerWidth">
@@ -352,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A percentage value that represents the width of a rounded corner, from 0 to 100.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Saturation">
@@ -369,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The amount of saturation for an image, between 0 and 255.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextBorderSize">
@@ -386,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The size of the border around text characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TrueSizeStretchMark">
@@ -403,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A percentage value indicating how far a fixed-size element will stretch when the target exceeds the source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -420,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.IntegerProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The width of an element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

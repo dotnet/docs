@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Implements an accessible object that <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> classes use to adjust the designer user interface for users who have impairments.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="activityDesigner" Type="System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="activityDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> to apply to the accessible object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject" /> class by using the specified <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</summary>
+        <param name="activityDesigner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,9 +54,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the child accessible object.</param>
-        <summary>Returns the child accessible object associated with the activity designer at the specified index location.</summary>
-        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> associated with the child <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> at the specified index location.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,8 +74,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the number of child accessible objects that belong to the <see cref="T:System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject" />.</summary>
-        <returns>The number of children that belong to the <see cref="T:System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,25 +86,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the accessible state of the current <see cref="T:System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject" />.</summary>
-        <value>A combination of <see cref="T:System.Windows.Forms.AccessibleStates" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- State has the following possible values:  
-  
- <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, and <xref:System.Windows.Forms.AccessibleStates>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

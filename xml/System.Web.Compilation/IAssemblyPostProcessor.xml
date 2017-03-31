@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.IAssemblyPostProcessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,35 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines the method a class implements to process an assembly after the assembly has been built.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A class implementing this interface can access an assembly after it has been compiled. The <xref:System.Web.Compilation.AssemblyBuilder> class compiles assemblies and then checks to see whether an IAssemblyPostProcessor interface has been registered in the Web configuration file. If so, the <xref:System.Web.Compilation.AssemblyBuilder> instance calls the <xref:System.Web.Compilation.IAssemblyPostProcessor.PostProcessAssembly%2A> method for the IAssemblyPostProcessor interface to perform any action after the compilation and before loading the assembly. For example, a profiler tool could implement this interface to establish probes in the assembly.  
-  
- When an IAssemblyPostProcessor interface is registered, the ASP.NET application and its assemblies will always be compiled in debug mode.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create an implementation of the IAssemblyPostProcessor interface, and register it in the Web.config file of a Web application.  
-  
- The first part of the code example creates a class named `Samples.Process.postProcessTest` that implements the IAssemblyPostProcessor interface. This class performs the simple action of writing a file when the <xref:System.Web.Compilation.IAssemblyPostProcessor.PostProcessAssembly%2A> method is called.  
-  
- [!code-vb[System.Web.Compilation.IAssemblyPostProcessor#1](~/add/codesnippet/visualbasic/t-system.web.compilation_8_1.vb)]
- [!code-cs[System.Web.Compilation.IAssemblyPostProcessor#1](~/add/codesnippet/csharp/t-system.web.compilation_8_1.cs)]  
-  
- Compile the class into a .dll file with the command `csc /target:library postProcessTest.cs`. Add the resulting .dll file to the Bin folder of an ASP.NET application and register the .dll in the Web.config file, as shown in the following code.  
-  
-```  
-<compilation debug="true" assemblyPostProcessorType="Samples.Process.postProcessTest" />  
-```  
-  
- When a user visits the Web site, the Web application is dynamically compiled and the file MyTest.txt will be written to C:\compile.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="PostProcessAssembly">
@@ -51,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,34 +32,9 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path to the assembly.</param>
-        <summary>Called before the assembly is loaded to allow the implementing class to modify the assembly.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Compilation.AssemblyBuilder> class calls this method after the assembly has been compiled. Any actions to be taken before loading the assembly should be included in this method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create an implementation of the <xref:System.Web.Compilation.IAssemblyPostProcessor> interface, and register it in the Web.config file of a Web application.  
-  
- The first part of the code example creates a class named `Samples.Process.postProcessTest` that implements the <xref:System.Web.Compilation.IAssemblyPostProcessor> interface. This class performs the simple action of writing a file when the PostProcessAssembly method is called.  
-  
- [!code-vb[System.Web.Compilation.IAssemblyPostProcessor#1](~/add/codesnippet/visualbasic/30b129b5-63b2-48bd-ad9f-_1.vb)]
- [!code-cs[System.Web.Compilation.IAssemblyPostProcessor#1](~/add/codesnippet/csharp/30b129b5-63b2-48bd-ad9f-_1.cs)]  
-  
- Compile the class into a .dll file with the command `csc /target:library postProcessTest.cs`. Add the resulting .dll file to the Bin folder of an ASP.NET application and register the .dll in the Web.config file, as shown in the following code.  
-  
-```  
-<compilation debug="true" assemblyPostProcessorType="Samples.Process.postProcessTest" />  
-```  
-  
- When a user visits the Web site, the Web application is dynamically compiled and the file MyTest.txt will be written to C:\compile.  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -10,9 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the cookie handler modes that are supported.  
-  
- Defines the possible values of the <see cref="System.IdentityModel.Services.CookieHandlerElement.Mode%2A" /> property. This property defines the kind of cookie handler that a <see cref="T:System.IdentityModel.Services.CookieHandlerElement" /> object configures. For more information, see the <see cref="T:System.IdentityModel.Services.CookieHandlerElement" /> class.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +27,7 @@
         <ReturnType>System.IdentityModel.Services.CookieHandlerMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a chunked cookie handler; a cookie handler that is an instance of or that derives from the <see cref="T:System.IdentityModel.Services.ChunkedCookieHandler" /> class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -45,7 +43,7 @@
         <ReturnType>System.IdentityModel.Services.CookieHandlerMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a custom cookie handler; a custom cookie handler that derives from the <see cref="T:System.IdentityModel.Services.CookieHandler" /> class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -61,7 +59,7 @@
         <ReturnType>System.IdentityModel.Services.CookieHandlerMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the default type of cookie handler is used. For the <see cref="T:System.IdentityModel.Services.CookieHandlerElement" /> class the default is a chunked cookie handler.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

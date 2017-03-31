@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,26 +20,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the post-schema-validation infoset of a validated XML node.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
-  
- [!code-cs[XmlSchemaValidatorExamples#1](~/add/codesnippet/csharp/t-system.xml.schema.xmls_16_1.cs)]
- [!code-vb[XmlSchemaValidatorExamples#1](~/add/codesnippet/visualbasic/t-system.xml.schema.xmls_16_1.vb)]  
-  
- The example takes the `contosoBooks.xml` file as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/add/codesnippet/xml/t-system.xml.schema.xmls_16_2.xml)]  
-  
- The example also takes the `contosoBooks.xsd` as an input.  
-  
- [!code-xml[XPathXMLExamples#3](~/add/codesnippet/xml/t-system.xml.schema.xmls_16_3.xsd)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,20 +31,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaInfo" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For an example of the XmlSchemaInfo constructor, see the <xref:System.Xml.Schema.XmlSchemaInfo> class reference topic.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -68,15 +51,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaContentType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Xml.Schema.XmlSchemaContentType" /> object that corresponds to the content type of this validated XML node.</summary>
-        <value>An <see cref="T:System.Xml.Schema.XmlSchemaContentType" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,23 +74,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating if this validated XML node was set as the result of a default being applied during XML Schema Definition Language (XSD) schema validation.</summary>
-        <value>A <see langword="bool" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsDefault property does not report DTD defaults.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNil">
@@ -113,23 +97,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating if the value for this validated XML node is nil.</summary>
-        <value>A <see langword="bool" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of an XML node is nil if its `xsi:nil` attribute is `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -139,23 +120,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaSimpleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the dynamic schema type for this validated XML node.</summary>
-        <value>An <see cref="T:System.Xml.Schema.XmlSchemaSimpleType" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MemberType property is set only if the static type of the XML node is a union type in which case the MemberType property will return the type from the union the XML node validated against.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SchemaAttribute">
@@ -165,34 +143,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the compiled <see cref="T:System.Xml.Schema.XmlSchemaAttribute" /> object that corresponds to this validated XML node.</summary>
-        <value>An <see cref="T:System.Xml.Schema.XmlSchemaAttribute" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
-  
- [!code-cs[XmlSchemaValidatorExamples#1](~/add/codesnippet/csharp/p-system.xml.schema.xmls_5_1.cs)]
- [!code-vb[XmlSchemaValidatorExamples#1](~/add/codesnippet/visualbasic/p-system.xml.schema.xmls_5_1.vb)]  
-  
- The example takes the `contosoBooks.xml` file as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/add/codesnippet/xml/p-system.xml.schema.xmls_5_2.xml)]  
-  
- The example also takes the `contosoBooks.xsd` as an input.  
-  
- [!code-xml[XPathXMLExamples#3](~/add/codesnippet/xml/p-system.xml.schema.xmls_5_3.xsd)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SchemaElement">
@@ -202,34 +166,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the compiled <see cref="T:System.Xml.Schema.XmlSchemaElement" /> object that corresponds to this validated XML node.</summary>
-        <value>An <see cref="T:System.Xml.Schema.XmlSchemaElement" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
-  
- [!code-cs[XmlSchemaValidatorExamples#1](~/add/codesnippet/csharp/p-system.xml.schema.xmls_6_1.cs)]
- [!code-vb[XmlSchemaValidatorExamples#1](~/add/codesnippet/visualbasic/p-system.xml.schema.xmls_6_1.vb)]  
-  
- The example takes the `contosoBooks.xml` file as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/add/codesnippet/xml/p-system.xml.schema.xmls_6_2.xml)]  
-  
- The example also takes the `contosoBooks.xsd` as an input.  
-  
- [!code-xml[XPathXMLExamples#3](~/add/codesnippet/xml/p-system.xml.schema.xmls_6_3.xsd)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SchemaType">
@@ -239,39 +189,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the static XML Schema Definition Language (XSD) schema type of this validated XML node.</summary>
-        <value>An <see cref="T:System.Xml.Schema.XmlSchemaType" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The static type of an XML node is the type that was declared in the XSD schema.  
-  
-   
-  
-## Examples  
- The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
-  
- [!code-cs[XmlSchemaValidatorExamples#1](~/add/codesnippet/csharp/p-system.xml.schema.xmls_2_1.cs)]
- [!code-vb[XmlSchemaValidatorExamples#1](~/add/codesnippet/visualbasic/p-system.xml.schema.xmls_2_1.vb)]  
-  
- The example takes the `contosoBooks.xml` file as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/add/codesnippet/xml/p-system.xml.schema.xmls_2_2.xml)]  
-  
- The example also takes the `contosoBooks.xsd` as an input.  
-  
- [!code-xml[XPathXMLExamples#3](~/add/codesnippet/xml/p-system.xml.schema.xmls_2_3.xsd)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validity">
@@ -281,39 +212,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaValidity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Xml.Schema.XmlSchemaValidity" /> value of this validated XML node.</summary>
-        <value>An <see cref="T:System.Xml.Schema.XmlSchemaValidity" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The possible <xref:System.Xml.Schema.XmlSchemaValidity> values for this XML node are <xref:System.Xml.Schema.XmlSchemaValidity>, <xref:System.Xml.Schema.XmlSchemaValidity>, and <xref:System.Xml.Schema.XmlSchemaValidity>.  
-  
-   
-  
-## Examples  
- The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
-  
- [!code-cs[XmlSchemaValidatorExamples#1](~/add/codesnippet/csharp/p-system.xml.schema.xmls_8_1.cs)]
- [!code-vb[XmlSchemaValidatorExamples#1](~/add/codesnippet/visualbasic/p-system.xml.schema.xmls_8_1.vb)]  
-  
- The example takes the `contosoBooks.xml` file as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/add/codesnippet/xml/p-system.xml.schema.xmls_8_2.xml)]  
-  
- The example also takes the `contosoBooks.xsd` as an input.  
-  
- [!code-xml[XPathXMLExamples#3](~/add/codesnippet/xml/p-system.xml.schema.xmls_8_3.xsd)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

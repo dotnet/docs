@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Inline" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An abstract class that provides a base for all inline flow content elements.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes base class values when called by a derived class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,32 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.BaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the baseline alignment for the <see cref="T:System.Windows.Documents.Inline" /> element.</summary>
-        <value>A member or the <see cref="T:System.Windows.BaselineAlignment" /> enumeration specifying the baseline alignment for the <see cref="T:System.Windows.Documents.Inline" /> element.  
-  
- The default value is <see cref="T:System.Windows.BaselineAlignment" />.**Baseline**.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_BaselineAlignment"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.Inline.BaselineAlignmentProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaselineAlignmentProperty">
@@ -79,14 +60,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.Inline.BaselineAlignment%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,47 +77,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies the relative direction for flow of content within a <see cref="T:System.Windows.Documents.Inline" /> element.</summary>
-        <value>A member of the <see cref="T:System.Windows.FlowDirection" /> enumeration specifying the relative flow direction.  Getting this property returns the currently effective flow direction.  Setting this property causes the contents of the <see cref="T:System.Windows.Documents.Inline" /> element to re-flow in the indicated direction.  
-  
- The default value is <see cref="T:System.Windows.FlowDirection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The flow direction of content typically corresponds to the innate flow direction of the language being represented.  Hebrew and Arabic provide examples of languages that naturally flow from right-to-left.  English, German, and Russian provide examples of languages that naturally flow from left-to-right.  
-  
- **Note:** The value of this property is not automatically changed to match the language used by the operating system. If you need to use a different value then the default of <xref:System.Windows.FlowDirection>, you must specify it yourself.  
-  
-<a name="dependencyPropertyInfo_FlowDirection"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.Inline.FlowDirectionProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the FlowDirection attribute of a <xref:System.Windows.Documents.Inline> element (<xref:System.Windows.Documents.Run>).  
-  
- [!code-xml[InlineSnippets#_Inline_FlowDirectionXAML](~/add/codesnippet/xaml/InlineSnippets/Window1.xaml#_inline_flowdirectionxaml)]  
-  
- The following example shows how to set the FlowDirection property programmatically.  
-  
- [!code-cs[InlineSnippets#_Inline_FlowDirection](~/add/codesnippet/csharp/InlineSnippets/Window1.xaml.cs#_inline_flowdirection)]
- [!code-vb[InlineSnippets#_Inline_FlowDirection](~/add/codesnippet/visualbasic/inlinesnippets/window1.xaml.vb#_inline_flowdirection)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlowDirectionProperty">
@@ -147,14 +95,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.Inline.FlowDirection%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,31 +112,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Inline</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the next <see cref="T:System.Windows.Documents.Inline" /> element that is a peer to this element.</summary>
-        <value>An <see cref="T:System.Windows.Documents.Inline" /> object representing the next <see cref="T:System.Windows.Documents.Inline" /> element that is a peer to this element, or **null** if there is no next <see cref="T:System.Windows.Documents.Inline" /> element.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the NextInline property.  
-  
- [!code-cs[InlineSnippets#_Inline_SiblingBase](~/add/codesnippet/csharp/InlineSnippets/Window1.xaml.cs#_inline_siblingbase)]
- [!code-vb[InlineSnippets#_Inline_SiblingBase](~/add/codesnippet/visualbasic/inlinesnippets/window1.xaml.vb#_inline_siblingbase)]  
-  
- [!code-cs[InlineSnippets#_Inline_NextSibling](~/add/codesnippet/csharp/InlineSnippets/Window1.xaml.cs#_inline_nextsibling)]
- [!code-vb[InlineSnippets#_Inline_NextSibling](~/add/codesnippet/visualbasic/inlinesnippets/window1.xaml.vb#_inline_nextsibling)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousInline">
@@ -199,31 +130,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Inline</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the previous <see cref="T:System.Windows.Documents.Inline" /> element that is a peer to this element.</summary>
-        <value>An <see cref="T:System.Windows.Documents.Inline" /> object representing the previous <see cref="T:System.Windows.Documents.Inline" /> element that is a peer to this element, or **null** if there is no previous <see cref="T:System.Windows.Documents.Inline" /> element.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Documents.Inline.NextInline%2A> property.  
-  
- [!code-cs[InlineSnippets#_Inline_SiblingBase](~/add/codesnippet/csharp/InlineSnippets/Window1.xaml.cs#_inline_siblingbase)]
- [!code-vb[InlineSnippets#_Inline_SiblingBase](~/add/codesnippet/visualbasic/inlinesnippets/window1.xaml.vb#_inline_siblingbase)]  
-  
- [!code-cs[InlineSnippets#_Inline_PreviousSibling](~/add/codesnippet/csharp/InlineSnippets/Window1.xaml.cs#_inline_previoussibling)]
- [!code-vb[InlineSnippets#_Inline_PreviousSibling](~/add/codesnippet/visualbasic/inlinesnippets/window1.xaml.vb#_inline_previoussibling)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SiblingInlines">
@@ -233,36 +148,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.InlineCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Windows.Documents.InlineCollection" /> that contains the <see cref="T:System.Windows.Documents.Inline" /> elements that are siblings (peers) to this element.</summary>
-        <value>An <see cref="T:System.Windows.Documents.InlineCollection" /> object that contains the <see cref="T:System.Windows.Documents.Inline" /> elements that are siblings to this element.  
-  
- This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection returned by this property always contains the element through which the collection is requested.  That is, an inline element is considered to be its own sibling for the purpose of building a collection of siblings for the element.  
-  
-   
-  
-## Examples  
- The following example shows how to use the SiblingInlines property.  
-  
- [!code-cs[InlineSnippets#_Inline_SiblingBase](~/add/codesnippet/csharp/InlineSnippets/Window1.xaml.cs#_inline_siblingbase)]
- [!code-vb[InlineSnippets#_Inline_SiblingBase](~/add/codesnippet/visualbasic/inlinesnippets/window1.xaml.vb#_inline_siblingbase)]  
-  
- [!code-cs[InlineSnippets#_Inline_Siblings](~/add/codesnippet/csharp/InlineSnippets/Window1.xaml.cs#_inline_siblings)]
- [!code-vb[InlineSnippets#_Inline_Siblings](~/add/codesnippet/visualbasic/inlinesnippets/window1.xaml.vb#_inline_siblings)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextDecorations">
@@ -272,57 +166,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.TextDecorationCollection" /> that contains text decorations to apply to this element.</summary>
-        <value>A <see cref="T:System.Windows.TextDecorationCollection" /> collection that contains text decorations to apply to this element.  
-  
- The default value is **null** (no text decorations applied).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline.  For more information about text decorations, see [How to: Create a Text Decoration](../Topic/How%20to:%20Create%20a%20Text%20Decoration.md).  
-  
-<a name="dependencyPropertyInfo_TextDecorations"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.Inline.TextDecorationsProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the TextDecorations attribute of a <xref:System.Windows.Documents.Inline> element (<xref:System.Windows.Documents.Run>).  
-  
- [!code-xml[InlineSnippets#_Inline_TextDecXAML](~/add/codesnippet/xaml/InlineSnippets/Window1.xaml#_inline_textdecxaml)]  
-  
- The following figure shows how this example renders.  
-  
- ![Screenshot: Text with default strikethrough effect](~/add/media/inline-textdec-strike.png "Screenshot: Text with default strikethrough effect")  
-  
- The following figures show how the **Overline**, **Baseline**, and **Underline** decorations render, respectively.  
-  
- ![Screenshot: Overline TextDecorator](~/add/media/inline-textdec-over.png "Screenshot: Overline TextDecorator")  
-  
- ![Screenshot: Default baseline effect on text](~/add/media/inline-textdec-base.png "Screenshot: Default baseline effect on text")  
-  
- ![Screenshot: Text with default underline effect](~/add/media/inline-textdec-under.png "Screenshot: Text with default underline effect")  
-  
- The following example shows how to set the TextDecorations property programmatically.  
-  
- [!code-cs[InlineSnippets#_Inline_TextDec](~/add/codesnippet/csharp/InlineSnippets/Window1.xaml.cs#_inline_textdec)]
- [!code-vb[InlineSnippets#_Inline_TextDec](~/add/codesnippet/visualbasic/inlinesnippets/window1.xaml.vb#_inline_textdec)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextDecorationsProperty">
@@ -332,14 +184,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.Inline.TextDecorations%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

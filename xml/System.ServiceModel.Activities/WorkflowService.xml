@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables you to create, configure, and access the properties of a workflow service.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowService" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,17 +57,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the workflow service has buffered receive processing enabled for incoming messages.</summary>
-        <value>
-          <see langword="true" /> if the workflow service has buffered receive processing enabled for incoming messages; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The buffered receive feature enables a workflow service to process out-of-order messages without relying on complicated poison message handling.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -88,8 +80,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the activity tree for this workflow service.</summary>
-        <value>The activity tree for this workflow service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +103,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the workflow service configuration name.</summary>
-        <value>The workflow service configuration name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +126,8 @@
         <ReturnType>System.Activities.WorkflowIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the definition identity of the workflow service.</summary>
-        <value>The definition identity of the workflow service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +144,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Endpoint&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of endpoints of this workflow service.</summary>
-        <value>The collection of endpoints of this workflow service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,8 +163,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a dictionary of contract descriptions keyed by the contract name.</summary>
-        <returns>A dictionary of contract descriptions keyed by the contract name.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +182,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the root of the activity tree.</summary>
-        <returns>The root of the activity tree.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +200,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the contracts implemented by the workflow service.</summary>
-        <value>The <see cref="System.Collections.ObjectModel.Collection%601" /> object that contains the contracts implemented by the workflow service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,8 +226,8 @@
         <ReturnType>System.Xml.Linq.XName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the workflow service as an <see cref="T:System.Xml.Linq.XName" /> object.</summary>
-        <value>The name of the workflow service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,8 +244,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Activities.WorkflowIdentity,System.Activities.DynamicUpdate.DynamicUpdateMap&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dynamic update maps.</summary>
-        <value>A <see cref="System.Collections.Generic.IDictionary%602" /> object that represents the dynamic update maps.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,9 +265,9 @@
         <Parameter Name="settings" Type="System.Activities.Validation.ValidationSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">The custom settings that customize the behavior of the validation process.</param>
-        <summary>Verifies that a workflow service is correctly configured according to the validation logic.</summary>
-        <returns>A collection of validation errors and validation warnings as a result of the validation process.</returns>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

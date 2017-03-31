@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the action that occurs when a workflow becomes idle when persistence is allowed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> function is invoked when the scheduler has no more pending work items and the workflow runtime can persist. Note that the <xref:System.Activities.WorkflowApplication.Idle%2A> function is invoked when persistence is not allowed, and both <xref:System.Activities.WorkflowApplication.Idle%2A> and <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> are invoked in that order when persistence is allowed. None is the default action if no <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> handler is provided.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -34,7 +27,7 @@
         <ReturnType>System.Activities.PersistableIdleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that no action is taken.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Persist">
@@ -50,7 +43,7 @@
         <ReturnType>System.Activities.PersistableIdleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should persist the workflow.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unload">
@@ -66,7 +59,7 @@
         <ReturnType>System.Activities.PersistableIdleAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should persist and unload the workflow.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

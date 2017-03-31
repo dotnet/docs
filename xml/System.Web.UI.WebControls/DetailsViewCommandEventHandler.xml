@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewCommandEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,44 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">A <see cref="T:System.Web.UI.WebControls.DetailsViewCommandEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.DetailsView.ItemCommand" /> event of a <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.DetailsView> control raises the <xref:System.Web.UI.WebControls.DetailsView.ItemCommand> event when a button within a <xref:System.Web.UI.WebControls.ButtonField>, <xref:System.Web.UI.WebControls.CommandField>, or <xref:System.Web.UI.WebControls.TemplateField> row field is clicked. This allows you to provide an event handler that performs a custom routine whenever this event occurs.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.WebControls.DetailsView> control also raises other specialized events when certain buttons are clicked (buttons with the `CommandName` property set to "Delete", "Insert", "Page", or "Update"). When using one of these buttons, you should consider using one of the specialized events provided by the control (such as <xref:System.Web.UI.WebControls.DetailsView.ItemDeleted> or <xref:System.Web.UI.WebControls.DetailsView.ItemDeleting>).  
-  
- When you create a DetailsViewCommandEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to programmatically add a DetailsViewCommandEventHandler delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemCommand> event of a <xref:System.Web.UI.WebControls.DetailsView> control. This example uses the single-file coding model.  
-  
- [!code-vb[DetailsViewCommandEventHandlerCodeInline#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_124_1.aspx)]
- [!code-cs[DetailsViewCommandEventHandlerCodeInline#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_124_1.aspx)]  
-  
- The following code example shows a code-behind coding model version of the previous example. For this example to work, you must copy the code below into the associated code-behind file.  
-  
- [!code-cs[DetailsViewCommandEventHandlerCodeBehind#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_124_2.aspx)]
- [!code-vb[DetailsViewCommandEventHandlerCodeBehind#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_124_2.aspx)]  
-  
- The following code example shows the code-behind file for the previous example.  
-  
- [!code-vb[DetailsViewCommandEventHandlerCodeBehind#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_124_3.vb)]
- [!code-cs[DetailsViewCommandEventHandlerCodeBehind#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_124_3.cs)]  
-  
- The following code example demonstrates how to declaratively add a DetailsViewCommandEventHandler delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemCommand> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
-  
- [!code-vb[DetailsViewItemCommand#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_124_4.aspx)]
- [!code-cs[DetailsViewItemCommand#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_124_4.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

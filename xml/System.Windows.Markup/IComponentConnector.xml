@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentConnector" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IComponentConnector" />
   <AssemblyInfo>
-    <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -17,22 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides markup compile and tools support for named XAML elements and for attaching event handlers to them.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This interface is used internally by <xref:System.Windows.Baml2006.Baml2006Reader>.  
-  
- Implementations of <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> are widely observable as part of the infrastructure provided by frameworks or technologies that use XAML combined with application and programming models. For example, whenever you look at the generated classes for XAML root elements in WPF pages and applications, you will see <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> defined in the output. That method also exists in the compiled assembly and plays a role in the WPF application model of loading the XAML UI content at XAML parse time. For more information on the WPF integration of the `InitializeComponent` concept, see [Application Management Overview](../Topic/Application%20Management%20Overview.md) or [Code-Behind and XAML in WPF](../Topic/Code-Behind%20and%20XAML%20in%20WPF.md).  
-  
- In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/add/includes/net-v40-long-md.md)], IComponentConnector is in the System.Xaml assembly. . For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
-  
-> [!TIP]
->  A failure to resolve IComponentConnector during an attempted build is often an indicator that you have not updated your WPF project correctly. In particular, the project is not referencing the System.Xaml assembly for a project that targets [!INCLUDE[net_v40_short](~/add/includes/net-v40-short-md.md)]. Try running the `devenv /upgrade` option for the project, or otherwise adjust the project assembly references so that System.Xaml is in the reference list.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Connect">
@@ -40,10 +22,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Connect(int32 connectionId, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,17 +34,10 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="connectionId">An identifier token to distinguish calls.</param>
-        <param name="target">The target to connect events and names to.</param>
-        <summary>Attaches events and names to compiled content.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Markup.IComponentConnector> is used internally by <xref:System.Windows.Baml2006.Baml2006Reader>.  
-  
- ]]></format>
-        </remarks>
+        <param name="connectionId">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeComponent">
@@ -74,10 +45,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeComponent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IComponentConnector.InitializeComponent" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,17 +54,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Loads the compiled page of a component.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Markup.IComponentConnector> is used internally by <xref:System.Windows.Baml2006.Baml2006Reader>.  
-  
- Implementations of InitializeComponent are widely observable as part of the infrastructure provided by frameworks or technologies that use XAML combined with application and programming models. For example, whenever you look at the generated classes for XAML root elements in WPF pages and applications, you will see InitializeComponent defined in the output. That method also exists in the compiled assembly and plays a role in the WPF application model of loading the XAML UI content at XAML parse time. For more information on the WPF integration of the `InitializeComponent` concept, see [Application Management Overview](../Topic/Application%20Management%20Overview.md) or [Code-Behind and XAML in WPF](../Topic/Code-Behind%20and%20XAML%20in%20WPF.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

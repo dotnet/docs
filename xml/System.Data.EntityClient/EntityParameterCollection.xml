@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityParameterCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of parameters associated with a <see cref="T:System.Data.EntityClient.EntityCommand" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -33,13 +31,10 @@
         <Parameter Name="value" Type="System.Data.EntityClient.EntityParameter" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Data.EntityClient.EntityParameter" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Data.EntityClient.EntityParameter" /> object to the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
-        <returns>A new <see cref="T:System.Data.EntityClient.EntityParameter" /> object.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="T:System.Data.EntityClient.EntityParameter" /> specified in the <paramref name="value" /> parameter is already added to this or another <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</exception>
-        <exception cref="T:System.InvalidCastException">The parameter passed was not a <see cref="T:System.Data.EntityClient.EntityParameter" />.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -49,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -64,9 +58,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Object" />.</param>
-        <summary>Adds the specified object to the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
-        <returns>The index of the new <see cref="T:System.Data.EntityClient.EntityParameter" /> object.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +71,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,10 +81,10 @@
         <Parameter Name="dbType" Type="System.Data.DbType" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The name of the parameter.</param>
-        <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
-        <summary>Adds a <see cref="T:System.Data.EntityClient.EntityParameter" /> to the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> given the parameter name and the data type.</summary>
-        <returns>A new <see cref="T:System.Data.EntityClient.EntityParameter" /> object.</returns>
+        <param name="parameterName">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,11 +106,11 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The name of the parameter.</param>
-        <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
-        <param name="size">The column length.</param>
-        <summary>Adds a <see cref="T:System.Data.EntityClient.EntityParameter" /> to the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> with the parameter name, the data type, and the column length.</summary>
-        <returns>A new <see cref="T:System.Data.EntityClient.EntityParameter" /> object.</returns>
+        <param name="parameterName">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,8 +130,8 @@
         <Parameter Name="values" Type="System.Array" />
       </Parameters>
       <Docs>
-        <param name="values">The <see cref="T:System.Array" /> values to add.</param>
-        <summary>Adds an array of values to the end of the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,8 +151,8 @@
         <Parameter Name="values" Type="System.Data.EntityClient.EntityParameter[]" />
       </Parameters>
       <Docs>
-        <param name="values">The <see cref="T:System.Data.EntityClient.EntityParameter" /> values to add.</param>
-        <summary>Adds an array of <see cref="T:System.Data.EntityClient.EntityParameter" /> values to the end of the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -184,10 +173,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The name of the parameter.</param>
-        <param name="value">The value to be added.</param>
-        <summary>Adds a value to the end of the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
-        <returns>A <see cref="T:System.Data.EntityClient.EntityParameter" /> object.</returns>
+        <param name="parameterName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +187,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,7 +194,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all the <see cref="T:System.Data.EntityClient.EntityParameter" /> objects from the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -227,10 +214,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Object" /> value.</param>
-        <summary>Determines whether the specified <see cref="T:System.Object" /> is in this <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> contains the value; otherwise <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -251,10 +236,9 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The <see cref="T:System.Data.EntityClient.EntityParameter" /> value.</param>
-        <summary>Determines whether the specified <see cref="T:System.Data.EntityClient.EntityParameter" /> is in this <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> contains the value; otherwise <see langword="false" />.</returns>
+        <param name="parameterName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,7 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -276,9 +259,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the current <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</param>
-        <param name="index">A 32-bit integer that represents the index in the <see cref="T:System.Array" /> at which copying starts.</param>
-        <summary>Copies all the elements of the current <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> to the specified one-dimensional <see cref="T:System.Array" /> starting at the specified destination <see cref="T:System.Array" /> index.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,7 +272,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,9 +282,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> that is the destination of the elements copied from the current <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</param>
-        <param name="index">A 32-bit integer that represents the index in the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> at which copying starts.</param>
-        <summary>Copies all the elements of the current <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> to the specified <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> starting at the specified destination index.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,15 +295,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an Integer that contains the number of elements in the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
-        <value>The number of elements in the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> as an Integer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,7 +313,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -340,8 +320,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,7 +332,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -375,7 +354,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -398,7 +376,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -408,9 +385,9 @@
         <Parameter Name="value" Type="System.Data.EntityClient.EntityParameter" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Data.EntityClient.EntityParameter" /> to find.</param>
-        <summary>Gets the location of the specified <see cref="T:System.Data.EntityClient.EntityParameter" /> in the collection.</summary>
-        <returns>The zero-based location of the specified <see cref="T:System.Data.EntityClient.EntityParameter" /> that is a <see cref="T:System.Data.EntityClient.EntityParameter" /> in the collection. Returns -1 when the object does not exist in the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,7 +398,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -431,9 +407,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Object" /> to find.</param>
-        <summary>Gets the location of the specified <see cref="T:System.Object" /> in the collection.</summary>
-        <returns>The zero-based location of the specified <see cref="T:System.Object" /> that is a <see cref="T:System.Data.EntityClient.EntityParameter" /> in the collection. Returns -1 when the object does not exist in the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -444,7 +420,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -454,9 +429,9 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The case-sensitive name of the <see cref="T:System.Data.EntityClient.EntityParameter" /> to find.</param>
-        <summary>Gets the location of the specified <see cref="T:System.Data.EntityClient.EntityParameter" /> with the specified name.</summary>
-        <returns>The zero-based location of the specified <see cref="T:System.Data.EntityClient.EntityParameter" /> with the specified case-sensitive name. Returns -1 when the object does not exist in the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</returns>
+        <param name="parameterName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,7 +442,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -478,9 +452,9 @@
         <Parameter Name="value" Type="System.Data.EntityClient.EntityParameter" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which value should be inserted.</param>
-        <param name="value">A <see cref="T:System.Data.EntityClient.EntityParameter" /> object to be inserted in the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</param>
-        <summary>Inserts a <see cref="T:System.Data.EntityClient.EntityParameter" /> object into the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,7 +465,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -502,9 +475,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which value should be inserted.</param>
-        <param name="value">An <see cref="T:System.Object" /> to be inserted in the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</param>
-        <summary>Inserts an <see cref="T:System.Object" /> into the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,15 +488,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> has a fixed size.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> has a fixed size; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,15 +506,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> is read-only.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> is read only; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,15 +524,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> is synchronized.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> is synchronized; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,7 +542,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -582,11 +551,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the parameter to retrieve.</param>
-        <summary>Gets the <see cref="T:System.Data.EntityClient.EntityParameter" /> at the specified index.</summary>
-        <value>The <see cref="T:System.Data.EntityClient.EntityParameter" /> at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.IndexOutOfRangeException">The specified index does not exist.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -596,7 +564,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -606,11 +573,10 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The name of the parameter to retrieve.</param>
-        <summary>Gets the <see cref="T:System.Data.EntityClient.EntityParameter" /> with the specified name.</summary>
-        <value>The <see cref="T:System.Data.EntityClient.EntityParameter" /> with the specified name.</value>
+        <param name="parameterName">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.IndexOutOfRangeException">The specified name does not exist.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -620,7 +586,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -630,11 +595,9 @@
         <Parameter Name="value" Type="System.Data.EntityClient.EntityParameter" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Data.EntityClient.EntityParameter" /> object to remove from the collection.</param>
-        <summary>Removes the specified <see cref="T:System.Data.EntityClient.EntityParameter" /> from the collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidCastException">The parameter is not a <see cref="T:System.Data.EntityClient.EntityParameter" />.</exception>
-        <exception cref="T:System.SystemException">The parameter does not exist in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -644,7 +607,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -654,8 +616,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Object" /> object to remove from the collection.</param>
-        <summary>Removes the specified parameter from the collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -666,7 +628,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -676,8 +637,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Data.EntityClient.EntityParameter" /> object to remove.</param>
-        <summary>Removes the <see cref="T:System.Data.EntityClient.EntityParameter" /> from the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -688,7 +649,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -698,8 +658,8 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The name of the <see cref="T:System.Data.EntityClient.EntityParameter" /> to remove.</param>
-        <summary>Removes the <see cref="T:System.Data.EntityClient.EntityParameter" /> from the <see cref="T:System.Data.EntityClient.EntityParameterCollection" /> at the specified parameter name.</summary>
+        <param name="parameterName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -710,7 +670,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -734,7 +693,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -758,15 +716,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="T:System.Data.EntityClient.EntityParameterCollection" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

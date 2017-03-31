@@ -3,9 +3,19 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Expression`1&lt;TDelegate&gt; extends System.Linq.Expressions.LambdaExpression" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.Expression`1" />
   <AssemblyInfo>
-    <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TDelegate" />
@@ -15,37 +25,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TDelegate">The type of the delegate that the Expression(TDelegate) represents.</typeparam>
-    <summary>Represents a strongly typed lambda expression as a data structure in the form of an expression tree. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a lambda expression is assigned to a variable, field, or parameter whose type is Expression(TDelegate), the compiler emits instructions to build an expression tree.  
-  
-> [!NOTE]
->  A conversion from a lambda expression to type `Expression<D>` (`Expression(Of D)` in Visual Basic) exists if a conversion from the lambda expression to a delegate of type `D` exists. However, the conversion may fail, for example, if the body of the lambda expression is a block. This means that delegates and expression trees behave similarly with regard to overload resolution.  
-  
- The expression tree is an in-memory data representation of the lambda expression. The expression tree makes the structure of the lambda expression transparent and explicit. You can interact with the data in the expression tree just as you can with any other data structure.  
-  
- The ability to treat expressions as data structures enables APIs to receive user code in a format that can be inspected, transformed, and processed in a custom manner. For example, the [!INCLUDE[vbtecdlinq](~/add/includes/vbtecdlinq-md.md)] data access implementation uses this facility to translate expression trees to Transact-SQL statements that can be evaluated by the database.  
-  
- Many standard query operators defined in the <xref:System.Linq.Queryable> class have one or more parameters of type Expression(TDelegate).  
-  
- The <xref:System.Linq.Expressions.Expression.NodeType%2A> of an Expression(TDelegate) is <xref:System.Linq.Expressions.ExpressionType>.  
-  
- Use the <xref:System.Linq.Expressions.Expression.Lambda%60%601%28System.Linq.Expressions.Expression%2CSystem.Collections.Generic.IEnumerable%7BSystem.Linq.Expressions.ParameterExpression%7D%29> or [Lambda<TDelegate\>(Expression, ParameterExpression\<xref:System.Linq.Expressions.Expression.Lambda%60%601%28System.Linq.Expressions.Expression%2CSystem.Linq.Expressions.ParameterExpression%5B%5D%29> method to create an Expression(TDelegate) object.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to represent a lambda expression both as executable code in the form of a delegate and as data in the form of an expression tree. It also demonstrates how to turn the expression tree back into executable code by using the <xref:System.Linq.Expressions.Expression%601.Compile%2A> method.  
-  
- [!code-vb[System.Linq.Expressions.ExpressionT#1](~/add/codesnippet/visualbasic/t-system.linq.expression_18_1.vb)]
- [!code-cs[System.Linq.Expressions.ExpressionT#1](~/add/codesnippet/csharp/ExpressionT/ExpressionT.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TDelegate">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -54,8 +36,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression`1.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -76,35 +69,58 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression`1.Compile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TDelegate</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Compiles the lambda expression described by the expression tree into executable code and produces a delegate that represents the lambda expression.</summary>
-        <returns>A delegate of type <paramref name="TDelegate" /> that represents the compiled lambda expression described by the <see cref="System.Linq.Expressions.Expression%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Compile method produces a delegate of type `TDelegate` at runtime. When that delegate is executed, it has the behavior described by the semantics of the <xref:System.Linq.Expressions.Expression%601>.  
-  
- The Compile method can be used to obtain the value of any expression tree. First, create a lambda expression that has the expression as its body by using the <xref:System.Linq.Expressions.Expression.Lambda%2A> method. Then call Compile to obtain a delegate, and execute the delegate to obtain the value of the expression.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how Compile is used to execute an expression tree.  
-  
- [!code-vb[System.Linq.Expressions.ExpressionT#2](~/add/codesnippet/visualbasic/m-system.linq.expression_11_1.vb)]
- [!code-cs[System.Linq.Expressions.ExpressionT#2](~/add/codesnippet/csharp/ExpressionT/ExpressionT.cs#2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compile">
+      <MemberSignature Language="C#" Value="public TDelegate Compile (bool preferInterpretation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TDelegate Compile(bool preferInterpretation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression`1.Compile(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TDelegate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="preferInterpretation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="preferInterpretation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile">
@@ -114,7 +130,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TDelegate</ReturnType>
@@ -123,9 +144,9 @@
         <Parameter Name="debugInfoGenerator" Type="System.Runtime.CompilerServices.DebugInfoGenerator" />
       </Parameters>
       <Docs>
-        <param name="debugInfoGenerator">Debugging information generator used by the compiler to mark sequence points and annotate local variables.</param>
-        <summary>Produces a delegate that represents the lambda expression.</summary>
-        <returns>A delegate containing the compiled version of the lambda.</returns>
+        <param name="debugInfoGenerator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +156,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression`1.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression&lt;TDelegate&gt;</ReturnType>
@@ -146,10 +178,10 @@
         <Parameter Name="parameters" Type="System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.ParameterExpression&gt;" />
       </Parameters>
       <Docs>
-        <param name="body">The <see cref="System.Linq.Expressions.LambdaExpression.Body%2A" /> property of the result.</param>
-        <param name="parameters">The <see cref="System.Linq.Expressions.LambdaExpression.Parameters%2A" /> property of the result.</param>
-        <summary>Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.</summary>
-        <returns>This expression if no children are changed or an expression with the updated children.</returns>
+        <param name="body">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

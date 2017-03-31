@@ -3,14 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HostObjectInitializationStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.HostObjectInitializationStatus" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -18,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines the next action for <see cref="T:Microsoft.Build.Utilities.ToolTask" /> after an attempt to initialize the host object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- HostObjectInitializationStatus is the return type of the <xref:Microsoft.Build.Utilities.ToolTask.InitializeHostObject%2A> method of the <xref:Microsoft.Build.Utilities.ToolTask> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="NoActionReturnFailure">
@@ -35,14 +20,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.HostObjectInitializationStatus.NoActionReturnFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -50,7 +27,7 @@
         <ReturnType>Microsoft.Build.Utilities.HostObjectInitializationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that some of the parameters being passed into the task are invalid, and that the task should fail immediately.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoActionReturnSuccess">
@@ -59,14 +36,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.HostObjectInitializationStatus.NoActionReturnSuccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -74,7 +43,7 @@
         <ReturnType>Microsoft.Build.Utilities.HostObjectInitializationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the host object is up to date, and that no further action is necessary.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseAlternateToolToExecute">
@@ -83,14 +52,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.HostObjectInitializationStatus.UseAlternateToolToExecute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -98,7 +59,7 @@
         <ReturnType>Microsoft.Build.Utilities.HostObjectInitializationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that either a host object is not available, or that the host object is not capable of supporting all of the features required for this build. Therefore, <see cref="T:Microsoft.Build.Utilities.ToolTask" /> should fallback to an alternate means of doing the build, such as invoking the command-line tool.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseHostObjectToExecute">
@@ -107,14 +68,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.HostObjectInitializationStatus.UseHostObjectToExecute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -122,7 +75,7 @@
         <ReturnType>Microsoft.Build.Utilities.HostObjectInitializationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that an appropriate host object for this task exists, which can support all of the parameters passed in and should be invoked to do the real work of the task.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

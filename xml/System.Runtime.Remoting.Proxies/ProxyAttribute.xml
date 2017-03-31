@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Proxies.ProxyAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,36 +17,15 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=true)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates that an object type requires a custom proxy.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Apply the current attribute to types that need custom proxies. You can use the ProxyAttribute class to intercept the `new` (`New` in Visual Basic) statement by deriving from the ProxyAttribute and placing the attribute on a child of `ContextBoundObject`. (Placing the proxy attribute on a child of `MarshalByRefObject` is not supported.)  
-  
-> [!NOTE]
->  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
-  
-   
-  
-## Examples  
- [!code-cpp[CustomProxy_Attribute_RealProxy#11](~/add/codesnippet/cpp/t-system.runtime.remotin_46_1.cpp)]
- [!code-cs[CustomProxy_Attribute_RealProxy#11](~/add/codesnippet/csharp/t-system.runtime.remotin_46_1.cs)]
- [!code-vb[CustomProxy_Attribute_RealProxy#11](~/add/codesnippet/visualbasic/t-system.runtime.remotin_46_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission Value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,22 +35,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Proxies.ProxyAttribute" /> class with default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[CustomProxy_Attribute_RealProxy#11](~/add/codesnippet/cpp/m-system.runtime.remotin_97_1.cpp)]
- [!code-cs[CustomProxy_Attribute_RealProxy#11](~/add/codesnippet/csharp/m-system.runtime.remotin_97_1.cs)]
- [!code-vb[CustomProxy_Attribute_RealProxy#11](~/add/codesnippet/visualbasic/m-system.runtime.remotin_97_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -81,14 +51,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.MarshalByRefObject</ReturnType>
       </ReturnValue>
@@ -96,19 +61,10 @@
         <Parameter Name="serverType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serverType">The object type to create an instance of.</param>
-        <summary>Creates either an uninitialized <see cref="T:System.MarshalByRefObject" /> or a transparent proxy, depending on whether the specified type can exist in the current context.</summary>
-        <returns>An uninitialized <see cref="T:System.MarshalByRefObject" /> or a transparent proxy.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[CustomProxy_Attribute_RealProxy#1](~/add/codesnippet/cpp/m-system.runtime.remotin_64_1.cpp)]
- [!code-cs[CustomProxy_Attribute_RealProxy#1](~/add/codesnippet/csharp/m-system.runtime.remotin_64_1.cs)]
- [!code-vb[CustomProxy_Attribute_RealProxy#1](~/add/codesnippet/visualbasic/m-system.runtime.remotin_64_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="serverType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateProxy">
@@ -118,14 +74,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Proxies.RealProxy</ReturnType>
       </ReturnValue>
@@ -136,29 +87,13 @@
         <Parameter Name="serverContext" Type="System.Runtime.Remoting.Contexts.Context" />
       </Parameters>
       <Docs>
-        <param name="objRef">The object reference to the remote object for which to create a proxy.</param>
-        <param name="serverType">The type of the server where the remote object is located.</param>
-        <param name="serverObject">The server object.</param>
-        <param name="serverContext">The context in which the server object is located.</param>
-        <summary>Creates an instance of a remoting proxy for a remote object described by the specified <see cref="T:System.Runtime.Remoting.ObjRef" />, and located on the server.</summary>
-        <returns>The new instance of remoting proxy for the remote object that is described in the specified <see cref="T:System.Runtime.Remoting.ObjRef" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The current method is called when a proxy is created out of a<xref:System.Runtime.Remoting.ObjRef> instance that references a class that is marked with the <xref:System.Runtime.Remoting.Proxies.ProxyAttribute> attribute. Therefore, the method is used only when a <xref:System.Runtime.Remoting.ObjRef> is received from a return or parameter on a call, or during the activation of a client-activated object. The <xref:System.Runtime.Remoting.Proxies.ProxyAttribute> is not used for well-known object types.  
-  
-   
-  
-## Examples  
- [!code-cpp[CustomProxy_Attribute_RealProxy#2](~/add/codesnippet/cpp/4e0cc5ef-1c99-4045-aa8d-_1.cpp)]
- [!code-cs[CustomProxy_Attribute_RealProxy#2](~/add/codesnippet/csharp/4e0cc5ef-1c99-4045-aa8d-_1.cs)]
- [!code-vb[CustomProxy_Attribute_RealProxy#2](~/add/codesnippet/visualbasic/4e0cc5ef-1c99-4045-aa8d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="objRef">To be added.</param>
+        <param name="serverType">To be added.</param>
+        <param name="serverObject">To be added.</param>
+        <param name="serverContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesForNewContext">
@@ -168,15 +103,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -186,8 +118,8 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Activation.IConstructionCallMessage" />
       </Parameters>
       <Docs>
-        <param name="msg">The message for which the context is to be retrieved.</param>
-        <summary>Gets properties for a new context.</summary>
+        <param name="msg">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,15 +130,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -217,10 +146,10 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Activation.IConstructionCallMessage" />
       </Parameters>
       <Docs>
-        <param name="ctx">The context to be verified.</param>
-        <param name="msg">The message for the remote call.</param>
-        <summary>Checks the specified context.</summary>
-        <returns>The specified context.</returns>
+        <param name="ctx">To be added.</param>
+        <param name="msg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

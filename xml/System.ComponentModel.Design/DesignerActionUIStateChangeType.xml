@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionUIStateChangeType" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the display state of a smart tag panel.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DesignerActionUIStateChangeType enumeration is used in the <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs> class and is associated with the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, which indicates whether the panel is being displayed or hidden.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Hide">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The smart tag panel is being hidden.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The smart tag panel is being refreshed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The smart tag panel is being displayed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

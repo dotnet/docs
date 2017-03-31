@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeBinaryOperatorExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,24 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an expression that consists of a binary operation between two expressions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeBinaryOperatorExpression can be used to represent code expressions that include a binary operator. Some examples of binary operators are equality (`==`), addition (`+`), and bitwise (`|`) operators. The <xref:System.CodeDom.CodeBinaryOperatorType> enumeration represents a set of basic, commonly used binary operators that are supported in many languages.  
-  
-   
-  
-## Examples  
- This example demonstrates use of a CodeBinaryOperatorExpression to add two numbers together.  
-  
- [!code-cs[CodeBinaryOperatorExpression#2](~/add/codesnippet/csharp/t-system.codedom.codebin_1.cs)]
- [!code-cpp[CodeBinaryOperatorExpression#2](~/add/codesnippet/cpp/t-system.codedom.codebin_1.cpp)]
- [!code-vb[CodeBinaryOperatorExpression#2](~/add/codesnippet/visualbasic/t-system.codedom.codebin_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeBinaryOperatorExpression" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -72,10 +53,10 @@
         <Parameter Name="right" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="left">The <see cref="T:System.CodeDom.CodeExpression" /> on the left of the operator.</param>
-        <param name="op">A <see cref="T:System.CodeDom.CodeBinaryOperatorType" /> indicating the type of operator.</param>
-        <param name="right">The <see cref="T:System.CodeDom.CodeExpression" /> on the right of the operator.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeBinaryOperatorExpression" /> class using the specified parameters.</summary>
+        <param name="left">To be added.</param>
+        <param name="op">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +67,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the code expression on the left of the operator.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the left operand.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,23 +85,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the operator in the binary operator expression.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeBinaryOperatorType" /> that indicates the type of operator in the expression.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A binary operator performs an evaluation on two operands. Some examples of binary operators are equality (`==`), addition (`+`), and bitwise (`|`) operators. Many commonly used binary operators can be found in the <xref:System.CodeDom.CodeBinaryOperatorType> enumeration.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -131,15 +103,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the code expression on the right of the operator.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the right operand.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

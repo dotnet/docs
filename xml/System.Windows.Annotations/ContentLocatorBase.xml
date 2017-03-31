@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.ContentLocatorBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents an object that identifies an item of content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Derived from ContentLocatorBase, a <xref:System.Windows.Annotations.ContentLocator> identifies a data item through an ordered list of <xref:System.Windows.Annotations.ContentLocatorPart> elements.  
-  
- Derived from ContentLocatorBase, a <xref:System.Windows.Annotations.ContentLocatorGroup> identifies a data item through a set of <xref:System.Windows.Annotations.ContentLocator> elements.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -36,7 +26,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,20 +33,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable deep copy clone of this <see cref="T:System.Windows.Annotations.ContentLocatorBase" />.</summary>
-        <returns>A modifiable deep copy clone of this <see cref="T:System.Windows.Annotations.ContentLocatorBase" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This Clone method creates modifiable copies of frozen <xref:System.Windows.Freezable> objects.  For convenience, Clone shadows the inherited version with a strongly typed implementation.  For more details, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- The cloned <xref:System.Windows.Annotations.ContentLocatorBase>'s <xref:System.Windows.Freezable.IsFrozen%2A> property will be `false` even if this source <xref:System.Windows.Annotations.ContentLocatorBase>'s <xref:System.Windows.Freezable.IsFrozen%2A> property is `true.`  
-  
- When copying dependency properties, Clone copies resource references and data bindings (although they might no longer resolve) but does not copy not animations or current animation values.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

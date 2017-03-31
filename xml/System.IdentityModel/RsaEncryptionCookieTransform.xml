@@ -11,20 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encrypts a cookie using <see cref="T:System.Security.Cryptography.RSA" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Cookies encrypted with this transform may be decrypted by any computer that shares the same RSA private key (generally associated with an X.509 certificate).  
-  
- The given data is encrypted using a random AES256 key. This key is then encrypted using RSA, and the RSA public key is sent in plain text so that when decoding the class knows which RSA key to use.  
-  
-> [!IMPORTANT]
->  When using the RsaEncryptionCookieTransform with a service, if a key provided by a certificate changes the service must be restarted.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,11 +28,9 @@
         <Parameter Name="key" Type="System.Security.Cryptography.RSA" />
       </Parameters>
       <Docs>
-        <param name="key">The key to use as the default encryption and decryption key. Initializes the <see cref="System.IdentityModel.RsaEncryptionCookieTransform.DecryptionKeys%2A" /> and <see cref="System.IdentityModel.RsaEncryptionCookieTransform.EncryptionKey%2A" /> properties.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.RsaEncryptionCookieTransform" /> class that uses the specified key for encryption and decryption.</summary>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,19 +46,9 @@
         <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
       </Parameters>
       <Docs>
-        <param name="certificate">The certificate whose private key is used to encrypt and decrypt.  
-  
- The certificate whose private key will be used as the default encryption and decryption key. Initializes the <see cref="System.IdentityModel.RsaEncryptionCookieTransform.DecryptionKeys%2A" /> and <see cref="System.IdentityModel.RsaEncryptionCookieTransform.EncryptionKey%2A" /> properties.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.RsaEncryptionCookieTransform" /> class that uses the private key of the specified X.509 certificate for encryption and decryption.</summary>
+        <param name="certificate">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="certificate" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="certificate" /> does not have a private key.  
-  
- -or-  
-  
- The private key is not RSA.</exception>
       </Docs>
     </Member>
     <Member MemberName="Decode">
@@ -91,16 +67,10 @@
         <Parameter Name="encoded" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="encoded">The encoded data</param>
-        <summary>Decrypts the specified data by using the provided RSA key(s) to decrypt an AES key, which decrypts the cookie.</summary>
-        <returns>The decoded data</returns>
+        <param name="encoded">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="encoded" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="encoded" /> contains zero bytes.</exception>
-        <exception cref="T:System.NotSupportedException">The platform does not support the requested algorithm.</exception>
-        <exception cref="T:System.InvalidOperationException">There are no decryption keys or none of the keys match.</exception>
       </Docs>
     </Member>
     <Member MemberName="DecryptionKeys">
@@ -116,8 +86,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Cryptography.RSA&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the keys used for decryption By default, this property returns a list that contains only the encryption key.</summary>
-        <value>The keys to use for decryption.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,15 +107,10 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="value">The data to encode</param>
-        <summary>Encodes the specified data. The data is encrypted using the default encryption algorithm (AES-256), then the AES key is encrypted using RSA and the RSA public key is appended.</summary>
-        <returns>The encoded data</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> contains zero bytes.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.IdentityModel.RsaEncryptionCookieTransform.EncryptionKey%2A" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="EncryptionKey">
@@ -161,16 +126,9 @@
         <ReturnType>System.Security.Cryptography.RSA</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the RSA key used for encryption</summary>
-        <value>The RSA key used for encryption.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this property also sets the <xref:System.IdentityModel.RsaEncryptionCookieTransform.DecryptionKeys%2A> property to a collection that contains the same key as its only element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HashName">
@@ -186,18 +144,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the hash algorithm to use.</summary>
-        <value>The name of the hash algorithm to use. The default is “SHA2566”.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SHA256 is the default algorithm. This may require a minimum platform of Windows Server 2003 and .NET 3.5 SP1.  
-  
- If SHA256 is not supported, set the HashName property to "SHA1".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.CatalogReflectionContextAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>When applied to a <see cref="T:System.Reflection.Assembly" /> object, enables an <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object to discover custom <see cref="T:System.Reflection.ReflectionContext" /> objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +28,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="reflectionContextType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="reflectionContextType">The type of the reflection context.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified <see cref="T:System.Reflection.ReflectionContext" /> type.</summary>
+        <param name="reflectionContextType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,6 +47,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,8 +55,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the custom <see cref="T:System.Reflection.ReflectionContext" /> object.</summary>
-        <returns>An instance of the custom reflection context.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,24 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IWebPartParameters" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines the contract a Web Parts control implements to pass a parameter value in a Web Parts connection.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Data is usually sent from a provider to a consumer in a Web Parts connection. However, in some cases, a provider needs a parameter from the consumer to determine which values it should send back. The IWebPartParameters interface defines members to implement that facilitate the passing of a parameter from a consumer to a provider.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.RowToParametersTransformer> class implements the IWebPartParameters interface. Transformers are used to translate data between two Web Parts controls with incompatible connection points. A <xref:System.Web.UI.WebControls.WebParts.RowToParametersTransformer> object transforms data from a provider implementing the <xref:System.Web.UI.WebControls.WebParts.IWebPartRow> interface when the provider needs a parameter from the consumer.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.IWebPartParameters.GetParametersData%2A> method retrieves the data from the provider and provides a callback method to process the data for the consumer. The callback method can be a customized method within the consumer that sets the return values accordingly.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetParametersData">
@@ -31,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,16 +28,9 @@
         <Parameter Name="callback" Type="System.Web.UI.WebControls.WebParts.ParametersCallback" />
       </Parameters>
       <Docs>
-        <param name="callback">The method to call to process the data from the provider.</param>
-        <summary>Gets the value of the data from the connection provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetParametersData method is used to retrieve the values from the provider based on a parameter. The method represented by the `callback` parameter processes the data for use by the consumer.  
-  
- ]]></format>
-        </remarks>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -60,23 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the property descriptors for the data to be received by the consumer.</summary>
-        <value>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> describing the data.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Schema property provides property information for the data passed by the interface. Transformer and consumer controls can query this property to get information about the type, contents, and other details of the field contained in the <xref:System.Web.UI.WebControls.WebParts.IWebPartParameters> interface instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetConsumerSchema">
@@ -86,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,8 +67,8 @@
         <Parameter Name="schema" Type="System.ComponentModel.PropertyDescriptorCollection" />
       </Parameters>
       <Docs>
-        <param name="schema">The <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> returned by <see cref="System.Web.UI.WebControls.WebParts.IWebPartParameters.Schema%2A" />.</param>
-        <summary>Sets the property descriptors for the properties that the consumer receives when calling the <see cref="System.Web.UI.WebControls.WebParts.IWebPartParameters.GetParametersData%2A" /> method.</summary>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

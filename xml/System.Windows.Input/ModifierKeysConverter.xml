@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ModifierKeysConverter" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts a <see cref="T:System.Windows.Input.ModifierKeys" /> object to and from other types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ModifierKeysConverter converts to and from a <xref:System.String> using the "+" character as the delimiter.  For example, the string `Control+ALT` would be converted into a <xref:System.Windows.Input.ModifierKeys> object consisting of the <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.ModifierKeys> keys. This behavior differs from the default XAML parser-level enumeration combine character of ",".  
-  
-<a name="xamlTextUsage_ModifierKeysConverter"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.ModifierKeysConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
-        <param name="sourceType">The type being evaluated for conversion.</param>
-        <summary>Determines whether an object of the specified type can be converted to an instance of <see cref="T:System.Windows.Input.ModifierKeys" />, using the specified context.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="sourceType" /> is type <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
-        <param name="destinationType">The type being evaluated for conversion.</param>
-        <summary>Determines whether an instance of <see cref="T:System.Windows.Input.ModifierKeys" /> can be converted to the specified type, using the specified context.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="destinationType" /> is type <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,21 +96,12 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
-        <param name="culture">Culture specific information.</param>
-        <param name="source">The object to convert.</param>
-        <summary>Attempts to convert the specified object to a <see cref="T:System.Windows.Input.ModifierKeys" />, using the specified context.</summary>
-        <returns>The converted object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.ModifierKeysConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter.  For example, the string `Control+ALT` would be converted into a <xref:System.Windows.Input.ModifierKeys> consisting of the <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.ModifierKeys> keys.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="source" /> cannot be converted.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -136,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,28 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
-        <param name="culture">Culture specific information.</param>
-        <param name="value">The object to convert.</param>
-        <param name="destinationType">The type to convert the object to.</param>
-        <summary>Attempts to convert a <see cref="T:System.Windows.Input.ModifierKeys" /> to the specified type, using the specified context.</summary>
-        <returns>The converted object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `destinationType` must be <xref:System.String>.  
-  
- The <xref:System.Windows.Input.ModifierKeysConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter.  For example, the string `Control+ALT` would be converted into a <xref:System.Windows.Input.ModifierKeys> consisting of the <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.ModifierKeys> keys.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="destinationType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="value" /> does not map to a valid <see cref="T:System.Windows.Input.ModifierKeys" />.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="value" /> cannot be converted.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDefinedModifierKeys">
@@ -180,7 +139,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,10 +148,9 @@
         <Parameter Name="modifierKeys" Type="System.Windows.Input.ModifierKeys" />
       </Parameters>
       <Docs>
-        <param name="modifierKeys">The value to check for validity.</param>
-        <summary>Determines whether the specified value is a valid <see cref="T:System.Windows.Input.ModifierKeys" /> value.</summary>
-        <returns>
-          <see langword="true" /> if input is a valid <see cref="T:System.Windows.Input.ModifierKeys" /> value; otherwise, <see langword="false" />.</returns>
+        <param name="modifierKeys">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,28 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PenLineJoin" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the shape that joins two lines or segments.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows several different joints used at the vertices of a shape.  
-  
- [!code-xml[drawingwithshapeelements#PolylineExample1](~/add/codesnippet/xaml/drawingwithshapeelements/polylineexample.xaml#polylineexample1)]  
-  
- The following illustration shows the different line joins.  
-  
- ![Example of line joins.](~/add/media/graphicslinejoins.png "Example of line joins.")  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bevel">
@@ -35,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.PenLineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Beveled vertices.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Miter">
@@ -52,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.PenLineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Regular angular vertices.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -69,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.PenLineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Rounded vertices.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

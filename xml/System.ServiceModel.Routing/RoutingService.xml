@@ -35,7 +35,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the routing service, which is responsible for routing messages between endpoints based on filter criteria.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,7 +53,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,19 +80,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to be processed.</param>
-        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that is invoked when the message processing has completed.</param>
-        <param name="state">A user-defined state object that is passed to the callback procedure.</param>
-        <summary>Begins the asynchronous processing of the message.</summary>
-        <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results, or both; this value is also needed when invoking <see cref="System.ServiceModel.Routing.RoutingService.System%23ServiceModel%23Routing%23IDuplexSessionRouter%23EndProcessMessage%2A" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on using the IDuplexSessionRouter contract, see <xref:System.ServiceModel.Routing.IDuplexSessionRouter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Routing.IDuplexSessionRouter.EndProcessMessage">
@@ -111,16 +104,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by the call to <see cref="System.ServiceModel.Routing.RoutingService.System%23ServiceModel%23Routing%23IDuplexSessionRouter%23BeginProcessMessage%2A" /></param>
-        <summary>Completes the asynchronous execution of message processing.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on using the IDuplexSessionRouter contract, see <xref:System.ServiceModel.Routing.IDuplexSessionRouter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Routing.IRequestReplyRouter.BeginProcessRequest">
@@ -146,19 +132,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to be processed.</param>
-        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that is invoked when the message processing has completed.</param>
-        <param name="state">A user-defined state object that is passed to the callback procedure.</param>
-        <summary>Initiates the asynchronous processing of the message.</summary>
-        <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results, or both; this value is also needed when invoking <see cref="System.ServiceModel.Routing.RoutingService.System%23ServiceModel%23Routing%23IRequestReplyRouter%23EndProcessRequest%2A" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on using the IRequestReplyRouter contract, see <xref:System.ServiceModel.Routing.IRequestReplyRouter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Routing.IRequestReplyRouter.EndProcessRequest">
@@ -177,17 +156,10 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by the call to <see cref="System.ServiceModel.Routing.RoutingService.System%23ServiceModel%23Routing%23IRequestReplyRouter%23BeginProcessRequest%2A" /></param>
-        <summary>Finishes asynchronous execution of message processing.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that contains the reply.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on using the IRequestReplyRouter contract, see <xref:System.ServiceModel.Routing.IRequestReplyRouter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Routing.ISimplexDatagramRouter.BeginProcessMessage">
@@ -213,19 +185,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to be processed.</param>
-        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that is invoked when the message processing has completed.</param>
-        <param name="state">A user-defined state object that is passed to the callback procedure.</param>
-        <summary>Initiates the asynchronous processing of the message.</summary>
-        <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results, or both; this value is also needed when invoking <see cref="System.ServiceModel.Routing.RoutingService.System%23ServiceModel%23Routing%23ISimplexDatagramRouter%23EndProcessMessage%2A" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on using the ISimplexDatagramRouter contract, see <xref:System.ServiceModel.Routing.ISimplexDatagramRouter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Routing.ISimplexDatagramRouter.EndProcessMessage">
@@ -244,16 +209,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by the call to <see cref="System.ServiceModel.Routing.RoutingService.System%23ServiceModel%23Routing%23ISimplexDatagramRouter%23BeginProcessMessage%2A" />.</param>
-        <summary>Finishes asynchronous execution of message processing.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on using the ISimplexDatagramRouter contract, see <xref:System.ServiceModel.Routing.ISimplexDatagramRouter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Routing.ISimplexSessionRouter.BeginProcessMessage">
@@ -279,19 +237,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to be processed.</param>
-        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that is invoked when the message processing has completed.</param>
-        <param name="state">A user-defined state object that is passed to the callback procedure.</param>
-        <summary>Initiates the asynchronous processing of the message.</summary>
-        <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results, or both; this value is also needed when invoking <see cref="System.ServiceModel.Routing.RoutingService.System%23ServiceModel%23Routing%23ISimplexSessionRouter%23EndProcessMessage%2A" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on using the ISimplexSessionRouter contract, see <xref:System.ServiceModel.Routing.ISimplexSessionRouter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Routing.ISimplexSessionRouter.EndProcessMessage">
@@ -310,16 +261,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by the call to <see cref="System.ServiceModel.Routing.RoutingService.System%23ServiceModel%23Routing%23ISimplexSessionRouter%23BeginProcessMessage%2A" />.</param>
-        <summary>Finishes asynchronous execution of message processing.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on using the ISimplexSessionRouter contract, see <xref:System.ServiceModel.Routing.ISimplexSessionRouter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,20 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebAdministrationService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides an interface for creating services for administering a Web site at design time.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The specified arguments can be used to specify how the Web administration user interface (UI) should be launched. The arguments are optional and the design host can choose to ignore them.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Start">
@@ -27,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -37,8 +28,8 @@
         <Parameter Name="arguments" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="arguments">An <see cref="T:System.Collections.IDictionary" />.</param>
-        <summary>Starts the Web administration facility in the design host.</summary>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

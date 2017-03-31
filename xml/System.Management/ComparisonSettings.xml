@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ComparisonSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes the object comparison modes that can be used with <see cref="System.Management.ManagementBaseObject.CompareTo%2A" />. Note that these values may be combined.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ComparisonSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A mode that compares string values in a case-insensitive manner. This applies to strings and to qualifier values. Property and qualifier names are always compared in a case-insensitive manner whether this flag is specified or not. Value: 16.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreClass">
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ComparisonSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A mode that assumes that the objects being compared are instances of                    the same class. Consequently, this value causes comparison of instance-related information only. Use this flag to optimize performance. If the objects are not of the same class, the results are undefined. Value: 8.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreDefaultValues">
@@ -61,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ComparisonSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A mode that ignores the default values of properties. This value is only meaningful when comparing classes. Value: 4.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreFlavor">
@@ -78,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ComparisonSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A mode that ignores qualifier *flavors*. This flag still takes qualifier values into account, but ignores flavor distinctions such as propagation rules and override restrictions. Value: 32.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreObjectSource">
@@ -95,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ComparisonSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A mode that ignores the source of the objects, namely the server and the namespace they came from, in comparison to other objects. Value: 2.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreQualifiers">
@@ -112,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ComparisonSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A mode that compares the objects, ignoring *qualifiers*. Value: 1.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncludeAll">
@@ -129,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ComparisonSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A mode that compares all elements of the compared objects. Value: 0.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

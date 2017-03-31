@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.NetSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Gets the section group information for the networking namespaces. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class corresponds to the [\&lt;system.Net\&gt; Element (Network Settings)](../Topic/%3Csystem.Net%3E%20Element%20\(Network%20Settings\).md) configuration element described in the [Network Settings Schema](../Topic/Network%20Settings%20Schema.md) documentation.  
-  
- This section group controls configuration settings for the following namespaces:  
-  
--   <xref:System.Net>  
-  
--   <xref:System.Net.Cache>  
-  
--   <xref:System.Net.Mail>  
-  
- This class provides programmatic access to information that can be stored in configuration files.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,20 +22,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.NetSectionGroup" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor does nothing.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationModules">
@@ -63,7 +42,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -75,16 +53,9 @@
         <ReturnType>System.Net.Configuration.AuthenticationModulesSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration section containing the authentication modules registered for the local computer.</summary>
-        <value>A <see cref="T:System.Net.Configuration.AuthenticationModulesSection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The section returned by this property corresponds to the [\&lt;authenticationModules\&gt; Element (Network Settings)](../Topic/%3CauthenticationModules%3E%20Element%20\(Network%20Settings\).md) configuration element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionManagement">
@@ -94,7 +65,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -106,16 +76,9 @@
         <ReturnType>System.Net.Configuration.ConnectionManagementSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration section containing the connection management settings for the local computer.</summary>
-        <value>A <see cref="T:System.Net.Configuration.ConnectionManagementSection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The section returned by this property corresponds to the [\&lt;connectionManagement\&gt; Element (Network Settings)](../Topic/%3CconnectionManagement%3E%20Element%20\(Network%20Settings\).md) configuration element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultProxy">
@@ -125,7 +88,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -137,16 +99,9 @@
         <ReturnType>System.Net.Configuration.DefaultProxySection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration section containing the default Web proxy server settings for the local computer.</summary>
-        <value>A <see cref="T:System.Net.Configuration.DefaultProxySection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The section returned by this property corresponds to the [\&lt;defaultProxy\&gt; Element (Network Settings)](../Topic/%3CdefaultProxy%3E%20Element%20\(Network%20Settings\).md) configuration element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSectionGroup">
@@ -156,9 +111,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Configuration.NetSectionGroup</ReturnType>
       </ReturnValue>
@@ -166,17 +125,10 @@
         <Parameter Name="config" Type="System.Configuration.Configuration" />
       </Parameters>
       <Docs>
-        <param name="config">A <see cref="T:System.Configuration.Configuration" /> that represents a configuration file.</param>
-        <summary>Gets the <see langword="System.Net" /> configuration section group from the specified configuration file.</summary>
-        <returns>A <see cref="T:System.Net.Configuration.NetSectionGroup" /> that represents the <see langword="System.Net" /> settings in <paramref name="config" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to extract the network settings from a configuration file.  
-  
- ]]></format>
-        </remarks>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MailSettings">
@@ -186,23 +138,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Configuration.MailSettingsSectionGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration section containing the SMTP client e-mail settings for the local computer.</summary>
-        <value>A <see cref="T:System.Net.Configuration.MailSettingsSectionGroup" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The section returned by this property corresponds to the [\&lt;mailSettings\&gt; Element (Network Settings)](../Topic/%3CmailSettings%3E%20Element%20\(Network%20Settings\).md) configuration element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestCaching">
@@ -212,7 +156,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -224,16 +167,9 @@
         <ReturnType>System.Net.Configuration.RequestCachingSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration section containing the cache configuration settings for the local computer.</summary>
-        <value>A <see cref="T:System.Net.Configuration.RequestCachingSection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The section returned by this property corresponds to the [\&lt;requestCaching\&gt; Element (Network Settings)](../Topic/%3CrequestCaching%3E%20Element%20\(Network%20Settings\).md) configuration element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Settings">
@@ -243,7 +179,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -255,16 +190,9 @@
         <ReturnType>System.Net.Configuration.SettingsSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration section containing the network settings for the local computer.</summary>
-        <value>A <see cref="T:System.Net.Configuration.SettingsSection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The section returned by this property corresponds to the [\&lt;settings\&gt; Element (Network Settings)](../Topic/%3Csettings%3E%20Element%20\(Network%20Settings\).md) configuration element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WebRequestModules">
@@ -274,7 +202,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -286,16 +213,9 @@
         <ReturnType>System.Net.Configuration.WebRequestModulesSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration section containing the modules registered for use with the <see cref="T:System.Net.WebRequest" /> class.</summary>
-        <value>A <see cref="T:System.Net.Configuration.WebRequestModulesSection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The section returned by this property corresponds to the [\&lt;webRequestModules\&gt; Element (Network Settings)](../Topic/%3CwebRequestModules%3E%20Element%20\(Network%20Settings\).md) configuration element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

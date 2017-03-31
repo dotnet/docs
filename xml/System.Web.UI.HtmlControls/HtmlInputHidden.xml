@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputHidden" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,31 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Allows programmatic access to the HTML <see langword="&lt;input type=hidden&gt;" /> element on the server.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the HtmlInputHidden control to embed information that is hidden from the user within a `<form>` element. This information is sent when the Web page is posted back to the server. The HtmlInputHidden control provides a <xref:System.Web.UI.HtmlControls.HtmlInputHidden.ServerChange> event that is raised when the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Value%2A> property changes values between posts to the server. This allows you to create an event handler that performs a custom set of instructions each time the event is raised.  
-  
-> [!NOTE]
->  The HtmlInputHidden control does not provide a built-in way to post back to the server. You must provide another control on the Web page that supports posting to the server, such as an <xref:System.Web.UI.HtmlControls.HtmlButton> control, to send the value of the control back to the server.  
-  
-> [!NOTE]
->  The ASP.NET page framework uses this HTML feature to automatically load and persist the view state of server controls on a page.  
-  
- For a list of initial property values for an instance of HtmlInputHidden, see the <xref:System.Web.UI.HtmlControls.HtmlInputHidden.%23ctor%2A> constructor.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use an HtmlInputHidden control to store information on the Web page between posts to the server.  
-  
- [!code-vb[Classic HtmlInputHidden Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.htmlcont_5_1.aspx)]
- [!code-cs[Classic HtmlInputHidden Example#1](~/add/codesnippet/csharp/t-system.web.ui.htmlcont_5_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,34 +34,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputHidden> class.  
-  
- The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
-  
-|Property|Initial Value|  
-|--------------|-------------------|  
-|<xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A>|The "hidden" literal string.|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputHidden> control and place it on the Web page.  
-  
- [!code-vb[HtmlInputHiddenCtor#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_7_1.aspx)]
- [!code-cs[HtmlInputHiddenCtor#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_7_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -95,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,21 +59,11 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The key identifier for the control.</param>
-        <param name="postCollection">The collection of all incoming name values.</param>
-        <summary>Processes the postback data for the <see cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" /> control.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" /> control's state has changed as a result of the postback; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LoadPostData method checks to see whether the postback value of the <xref:System.Web.UI.HtmlControls.HtmlInputHidden> control is different from the previous value, and if so, returns `true`.  
-  
- The LoadPostData method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputHidden> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="postDataKey">To be added.</param>
+        <param name="postCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -130,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,27 +82,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnPreRender method is called just prior to rendering the <xref:System.Web.UI.HtmlControls.HtmlInputHidden> control. The OnPreRender method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputHidden> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the OnPreRender method so that it applies HTML encoding to the input value in a custom <xref:System.Web.UI.HtmlControls.HtmlInputHidden> server control.  
-  
- [!code-cs[CustomHtmlInputHiddenOnPreRender#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_51_1.aspx)]
- [!code-vb[CustomHtmlInputHiddenOnPreRender#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_51_1.aspx)]  
-  
- [!code-cs[CustomHtmlInputHiddenOnPreRender#2](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_51_2.cs)]
- [!code-vb[CustomHtmlInputHiddenOnPreRender#2](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_51_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnServerChange">
@@ -170,7 +94,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,23 +103,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.HtmlControls.HtmlInputHidden.ServerChange" /> event. This method allows you to handle the event directly.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlInputHidden.ServerChange> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Value%2A> property is changed on the server.  
-  
-> [!NOTE]
->  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputHidden.ServerChange> event to work correctly.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnServerChange method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -206,7 +115,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,15 +122,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Calls the <see cref="System.Web.UI.HtmlControls.HtmlInputHidden.OnServerChange%2A" /> method to signal the <see cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" /> control that the state of the control has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RaisePostDataChangedEvent method is used primarily by control developers to extend the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputHidden> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -232,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,8 +142,8 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that contains the output stream to render on the client.</param>
-        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" /> control's attributes to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,27 +154,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Web.UI.HtmlControls.HtmlInputControl.Value%2A" /> property is changed on the server.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ServerChange event is raised when the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Value%2A> property is changed between posts to the server.  
-  
-> [!NOTE]
->  The control must have view state enabled for the ServerChange event to work correctly.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -284,7 +171,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,11 +181,10 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The key identifier for the control.</param>
-        <param name="postCollection">The collection of all incoming name values.</param>
-        <summary>Implements the <see cref="System.Web.UI.IPostBackDataHandler.LoadPostData%2A" /> interface method by calling the <see cref="System.Web.UI.HtmlControls.HtmlInputHidden.LoadPostData%2A" /> method.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" /> control's state has changed as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <param name="postDataKey">To be added.</param>
+        <param name="postCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +195,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,7 +202,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Implements the <see cref="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A" /> interface method by calling the <see cref="System.Web.UI.HtmlControls.HtmlInputHidden.RaisePostDataChangedEvent%2A" /> method.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,9 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a mobile text writer adapter class for the WML device adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -38,18 +35,11 @@
         <Parameter Name="page" Type="System.Web.UI.MobileControls.MobilePage" />
       </Parameters>
       <Docs>
-        <param name="writer">The base writer object.</param>
-        <param name="device">An object of the <see cref="T:System.Web.Mobile.MobileCapabilities" /> class that provides the capability information for the specific device.</param>
-        <param name="page">The mobile page to write to.</param>
-        <summary>Creates a new instance of the specified class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Adapters are usually constructed automatically by ASP.NET, and must have a default constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="device">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFormVariable">
@@ -59,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,19 +60,11 @@
         <Parameter Name="generateRandomID" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="clientID">The identifier for the control containing the variable to initialize.</param>
-        <param name="value">The value to which the variable is initialized when the browser renders the form.</param>
-        <param name="generateRandomID">
-          <see langword="true" /> to encrypt the identifier for the control; otherwise, <see langword="false" />.</param>
-        <summary>Adds a variable to be initialized when the browser renders the form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All references to the client identifier on the page are mapped, resulting in the same postback regardless of mapping. The AddFormVariable method also can scramble client IDs that must be encrypted for security reasons. Only visible controls generate variables.  
-  
- ]]></format>
-        </remarks>
+        <param name="clientID">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="generateRandomID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnalyzeMode">
@@ -93,24 +74,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns whether the writer is in analyze mode. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>
-          <see langword="true" /> if the writer is in analyze mode; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- WML rendering is done in two phases. In the first phase, all calls to the renderer are analyzed for correctness. In the second phase, the rendering is performed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnalyzePostBack">
@@ -120,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,18 +102,10 @@
         <Parameter Name="postBackType" Type="System.Web.UI.MobileControls.Adapters.WmlPostFieldType" />
       </Parameters>
       <Docs>
-        <param name="includeVariables">
-          <see langword="true" /> to include in the post fields the information for all <see cref="T:System.Web.UI.IPostBackDataHandler" /> interfaces in the form; <see langword="false" /> to include no <see cref="T:System.Web.UI.IPostBackDataHandler" /> information.</param>
-        <param name="postBackType">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" />.</param>
-        <summary>Analyzes a single postback. Called internally by the writer and inherited classes. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override or call this method when advanced extensibility is required while extending the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter> class.  
-  
- ]]></format>
-        </remarks>
+        <param name="includeVariables">To be added.</param>
+        <param name="postBackType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginCustomMarkup">
@@ -152,7 +115,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,15 +122,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Begins a custom markup section. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BeginCustomMarkup and <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndCustomMarkup%2A> methods allow a device adapter to create a section of custom markup elements.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginForm">
@@ -178,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,16 +142,9 @@
         <Parameter Name="form" Type="System.Web.UI.MobileControls.Form" />
       </Parameters>
       <Docs>
-        <param name="form">The form to begin.</param>
-        <summary>Begins the given form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method and the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndForm%2A> method when rendering a form.  
-  
- ]]></format>
-        </remarks>
+        <param name="form">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CalculateFormPostBackUrl">
@@ -207,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,20 +164,11 @@
         <Parameter Name="encode" Type="System.Boolean&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="externalSubmit">
-          <see langword="true" /> to indicate that the current form submits to an external URL; otherwise, <see langword="false" />.</param>
-        <param name="encode">
-          <see langword="true" /> to encode the URL string; otherwise, <see langword="false" />.</param>
-        <summary>Returns the calculated URL required to post the form to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>The calculated URL required to post the form to the server.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class (writer).  
-  
- ]]></format>
-        </remarks>
+        <param name="externalSubmit">To be added.</param>
+        <param name="encode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CalculateFormQueryString">
@@ -241,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -249,16 +185,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the query string to add to the URL to post the form to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>The query string.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseCharacterFormat">
@@ -268,7 +197,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -276,15 +204,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes any currently open character formatting tags. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseParagraph">
@@ -294,7 +215,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,15 +222,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes an open paragraph. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentForm">
@@ -320,15 +233,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the form currently being rendered. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The form currently being rendered.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,23 +251,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter+WmlFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the default character formatting used by the device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The default character formatting used by the device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by inheriting classes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultLayout">
@@ -365,23 +269,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter+WmlLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the default layout used by the device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The default layout used by the device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by inheriting classes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCustomMarkup">
@@ -391,7 +287,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -399,15 +294,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends a custom markup section. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginCustomMarkup%2A> and EndCustomMarkup methods allow a device adapter to create a section of custom markup elements.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndForm">
@@ -417,7 +305,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -425,15 +312,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the current form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginForm%2A> method and this method when rendering a form.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnsureFormat">
@@ -443,7 +323,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -451,15 +330,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ensures that character formatting tags corresponding to the current format have been written. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnsureLayout">
@@ -469,7 +341,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -477,15 +348,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ensures that a <see langword="&lt; p &gt;" /> tag corresponding to the current layout has been written. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnterFormat">
@@ -495,7 +359,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -505,8 +368,8 @@
         <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">The specified style to use for formatting characters</param>
-        <summary>Begins a block by using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -517,7 +380,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -527,8 +389,8 @@
         <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">The style reference.</param>
-        <summary>Begins a block by using the formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -539,7 +401,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -549,8 +410,8 @@
         <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">The specified style to use for formatting characters.</param>
-        <summary>Ends a block that has been using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -561,7 +422,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -572,9 +432,9 @@
         <Parameter Name="breakAfter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="style">The style reference.</param>
-        <param name="breakAfter">If <c>breakAfter</c> is true, a break is added after the closing style element. The first form of the method assumes <c>breakAfter</c> to be <see langword="true" />.</param>
-        <summary>Ends a block by using the formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="style">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -585,7 +445,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -595,18 +454,10 @@
         <Parameter Name="label" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="label">The label to validate.</param>
-        <summary>Returns whether the given string is a valid softkey label for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>
-          <see langword="true" /> if the given string is a valid softkey label for the target device; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Adapters can use this method to determine whether a label is appropriate for a softkey.  
-  
- ]]></format>
-        </remarks>
+        <param name="label">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MapClientIDToShortName">
@@ -616,7 +467,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -627,20 +477,11 @@
         <Parameter Name="generateRandomID" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="clientID">The client ID of a control to map.</param>
-        <param name="generateRandomID">Determines whether the client ID is encrypted.</param>
-        <summary>Maps the client ID of a control to a short name to be used in rendering on the form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>A string representation of the client identifier of the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the client identifier of a control is longer than 16 characters, ASP.NET substitutes a uniquely mapped short name.  
-  
- All references to the client identifier on the page are mapped, resulting in the same postback regardless of mapping. MapClientIDToShortName can also scramble client IDs that must be encrypted for security reasons.  
-  
- ]]></format>
-        </remarks>
+        <param name="clientID">To be added.</param>
+        <param name="generateRandomID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberOfSoftkeys">
@@ -650,23 +491,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the number of softkeys supported on the device. The default value is 0. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The number of softkeys supported on the device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Softkeys are special keys that the application can usually map to custom tasks. Softkey text is displayed on the screen in the lower-left and lower-right corners.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenCharacterFormat">
@@ -676,7 +509,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -689,19 +521,12 @@
         <Parameter Name="writeSize" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="format">An enumerated value representing the WML format to use while writing.</param>
-        <param name="writeBold">Whether to open bold character formatting.</param>
-        <param name="writeItalic">Whether to open italic character formatting.</param>
-        <param name="writeSize">Whether to open character size formatting.</param>
-        <summary>Opens character formatting tags for the given format. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <param name="format">To be added.</param>
+        <param name="writeBold">To be added.</param>
+        <param name="writeItalic">To be added.</param>
+        <param name="writeSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenParagraph">
@@ -711,7 +536,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -723,18 +547,11 @@
         <Parameter Name="writeWrapping" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="layout">An enumerated value representing the layout to use when opening a paragraph.</param>
-        <param name="writeAlignment">Whether to open paragraph alignment formatting.</param>
-        <param name="writeWrapping">Whether to open paragraph wrapping formatting.</param>
-        <summary>Opens a paragraph with the given layout. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <param name="layout">To be added.</param>
+        <param name="writeAlignment">To be added.</param>
+        <param name="writeWrapping">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -744,23 +561,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.MobilePage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the page associated with the device adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The page associated with the device adapter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Equivalent to calling the `Control.MobilePage`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PendingBreak">
@@ -770,16 +579,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the <see langword="&lt; br &gt;" /> tag needs to be sent to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>
-          <see langword="true" /> if the <see langword="&lt; br &gt;" /> tag needs to be sent to the output stream; otherwise, false.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -790,7 +597,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -798,15 +604,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Analyzes a form after it is completed during the analyze phase. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginForm">
@@ -816,7 +615,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -826,16 +624,9 @@
         <Parameter Name="form" Type="System.Web.UI.MobileControls.Form" />
       </Parameters>
       <Docs>
-        <param name="form">The form to begin rendering.</param>
-        <summary>Renders the beginning of a form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <param name="form">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginHyperlink">
@@ -845,7 +636,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -859,20 +649,13 @@
         <Parameter Name="mapToSoftkey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="targetUrl">The URL target.</param>
-        <param name="encodeUrl">Set to <see langword="true" /> if the URL is encoded.</param>
-        <param name="softkeyLabel">The softkey text to use for the link if the <c>mapToSoftKey</c> parameter is set to <see langword="true" />.</param>
-        <param name="implicitSoftkeyLabel">Set to <see langword="true" /> if the softkey label comes from the adapter itself (the default label, or something else that is adapter-specified, such as "Call" for a <see cref="T:System.Web.UI.MobileControls.PhoneCall" /> control, rather than a softkey label explicitly specified by the application author).</param>
-        <param name="mapToSoftkey">Set to <see langword="true" /> if mapping to a softkey on the device.</param>
-        <summary>Begins rendering a hyperlink element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This call can be followed by calls to render text or by a call to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderImage%2A> method to render the hyperlink contents, followed by a call to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndHyperlink%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="targetUrl">To be added.</param>
+        <param name="encodeUrl">To be added.</param>
+        <param name="softkeyLabel">To be added.</param>
+        <param name="implicitSoftkeyLabel">To be added.</param>
+        <param name="mapToSoftkey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginPostBack">
@@ -882,7 +665,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -894,10 +676,10 @@
         <Parameter Name="mapToSoftkey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="softkeyLabel">The softkey text to use for the link if the <c>mapToSoftKey</c> parameter is set to <see langword="true" />.</param>
-        <param name="implicitSoftkeyLabel">Set to <see langword="true" /> if the softkey label comes from the adapter itself, rather than being a softkey label explicitly specified by the application author.</param>
-        <param name="mapToSoftkey">Set to <see langword="true" /> if mapping to a softkey on the device.</param>
-        <summary>Begins the rendering of a postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="softkeyLabel">To be added.</param>
+        <param name="implicitSoftkeyLabel">To be added.</param>
+        <param name="mapToSoftkey">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -908,7 +690,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -922,22 +703,13 @@
         <Parameter Name="multiSelect" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the control.</param>
-        <param name="iname">The name that the browser must use to submit the selected index back to the server.</param>
-        <param name="ivalue">The initial value.</param>
-        <param name="title">The <see langword="Title" /> attribute on WML devices.</param>
-        <param name="multiSelect">Whether to allow multiple selections.</param>
-        <summary>Begins rendering a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Either `name` or `iname` must be non-null.  
-  
- This method can be followed by calls to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderSelectOption%2A> method for each option, followed by a call to the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndSelect%2A> method to end the selection list.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="iname">To be added.</param>
+        <param name="ivalue">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="multiSelect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderDoEvent">
@@ -947,7 +719,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -962,21 +733,14 @@
         <Parameter Name="includeVariables" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="doType">The type of action to render. Maps to the type attribute of the <see langword="&lt; do &gt;" /> element. Usually "accept" or "options".</param>
-        <param name="target">The ID of the control targeted by the action. When the user selects the action, a postback is generated, targeting the control specified by this ID.</param>
-        <param name="arg">The argument for the action. The argument is included in the postback generated when the user selects the action.</param>
-        <param name="postBackType">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" /> type used for <c>arg.</c></param>
-        <param name="text">The label associated with the action. This usually appears as a softkey label on the device.</param>
-        <param name="includeVariables">Whether to include all variables on the form when posting back to the server.</param>
-        <summary>Renders a <see langword="&lt; do &gt;" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the control you are targeting is the current form and you want to include all the variables when posting back to the server, you can use the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderFormDoEvent%2A> method. Called internally by the writer and inherited classes.  
-  
- ]]></format>
-        </remarks>
+        <param name="doType">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="arg">To be added.</param>
+        <param name="postBackType">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="includeVariables">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderEndForm">
@@ -986,7 +750,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -994,15 +757,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Completes rendering of a form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderEndHyperlink">
@@ -1012,7 +768,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1022,8 +777,8 @@
         <Parameter Name="breakAfter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="breakAfter">Set to <see langword="true" /> if a break is required after the link.</param>
-        <summary>Completes the rendering of a hyperlink element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1034,7 +789,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1048,12 +802,12 @@
         <Parameter Name="breakAfter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="target">Contains the target URL of the postback.</param>
-        <param name="argument">Contains the argument associated with the target URL.</param>
-        <param name="postBackType">Specifies the type of postback. Must be a value from the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" /> enumeration.</param>
-        <param name="includeVariables">Contains a Boolean value indicating whether postback variables should be calculated.</param>
-        <param name="breakAfter">Contains <see langword="true" /> if a line break should follow the control. Contains <see langword="false" /> otherwise.</param>
-        <summary>Completes the rendering of a postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="target">To be added.</param>
+        <param name="argument">To be added.</param>
+        <param name="postBackType">To be added.</param>
+        <param name="includeVariables">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1064,7 +818,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1074,8 +827,8 @@
         <Parameter Name="breakAfter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="breakAfter">Indicates whether a break must follow the selection list.</param>
-        <summary>Completes rendering a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1086,7 +839,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1094,15 +846,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Renders any extra cards that the writer needs to send to the browser. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Depending on the content of the form, the writer might need to send additional cards to the browser. Called by the form adapter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderFormDoEvent">
@@ -1112,7 +857,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1125,19 +869,12 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="doType">The type of action to render. Maps to the type attribute of the &lt;do&gt; element. Usually "accept" or "options".</param>
-        <param name="arg">The argument for the action. The argument is included in the postback generated when the user selects the action.</param>
-        <param name="postBackType">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" /> type used for <c>arg.</c></param>
-        <param name="text">The label associated with the action. This usually appears as a softkey label on the device.</param>
-        <summary>Renders a <see langword="&lt; do &gt;" /> event for the current form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer and inherited classes.  
-  
- ]]></format>
-        </remarks>
+        <param name="doType">To be added.</param>
+        <param name="arg">To be added.</param>
+        <param name="postBackType">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderGoAction">
@@ -1147,7 +884,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1160,19 +896,12 @@
         <Parameter Name="includeVariables" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="target">The ID of the control targeted by the action. When the user selects the action, a postback is generated, targeting the control specified by this ID.</param>
-        <param name="argument">The argument for the action. The argument is included in the postback generated when the user selects the action.</param>
-        <param name="postBackType">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" /> type used for <c>arg.</c></param>
-        <param name="includeVariables">Whether to include all variables on the form when posting back to the server.</param>
-        <summary>Renders a <see langword="&lt; go &gt;" /> action. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer or inherited classes.  
-  
- ]]></format>
-        </remarks>
+        <param name="target">To be added.</param>
+        <param name="argument">To be added.</param>
+        <param name="postBackType">To be added.</param>
+        <param name="includeVariables">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderImage">
@@ -1182,7 +911,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1195,11 +923,11 @@
         <Parameter Name="breakAfter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="source">Specifies the image URL.</param>
-        <param name="localSource">Specifies an optional local image name.</param>
-        <param name="alternateText">Specifies text to display if the image cannot be displayed.</param>
-        <param name="breakAfter">Set to <see langword="true" /> if a break is required after the image.</param>
-        <summary>Renders an image element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="source">To be added.</param>
+        <param name="localSource">To be added.</param>
+        <param name="alternateText">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1210,7 +938,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1220,8 +947,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The option text.</param>
-        <summary>Renders a single option within a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1232,7 +959,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1243,9 +969,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The option text.</param>
-        <param name="value">(Optional.) The option value.</param>
-        <summary>Renders a single option within a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="text">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1256,7 +982,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1266,8 +991,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text string to be rendered.</param>
-        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1278,7 +1003,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1289,9 +1013,9 @@
         <Parameter Name="breakAfter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="text">The text string to be rendered.</param>
-        <param name="breakAfter">Specifies whether a break must follow the element.</param>
-        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="text">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1302,7 +1026,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1314,10 +1037,10 @@
         <Parameter Name="encodeText" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="text">The text string to be rendered.</param>
-        <param name="breakAfter">Specifies whether a break must follow the element.</param>
-        <param name="encodeText">Specifies whether the text must be encoded.</param>
-        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="text">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <param name="encodeText">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1328,7 +1051,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1346,24 +1068,17 @@
         <Parameter Name="breakAfter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="id">Identifies the control.</param>
-        <param name="value">Specifies the initial value of the text box.</param>
-        <param name="format">Specifies an optional WML format string.</param>
-        <param name="title">Contains the title of the text box.</param>
-        <param name="password">Specifies the password.</param>
-        <param name="size">Sets the size of the string.</param>
-        <param name="maxLength">Specifies the maximum length of the string.</param>
-        <param name="generateRandomID">Determines whether the identifier for the control (ID) is encrypted.</param>
-        <param name="breakAfter">Set to <see langword="true" /> if a break is required after the control is rendered.</param>
-        <summary>Renders a text-box element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can also scramble client IDs that must be encrypted for security reasons.  
-  
- ]]></format>
-        </remarks>
+        <param name="id">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="format">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="generateRandomID">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetFormattingState">
@@ -1373,7 +1088,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1381,15 +1095,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the character formatting. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method closes all character formatting tags, such as `< b >`, that have been opened.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsePostBackCard">
@@ -1399,7 +1106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1409,18 +1115,10 @@
         <Parameter Name="includeVariables" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includeVariables">Whether to include any variables in the additional card.</param>
-        <summary>Whether the writer must use an additional card for postbacks. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>
-          <see langword="true" /> if the writer must use an additional card for postbacks; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called internally by the writer, and can be overridden by an inheriting class.  
-  
- ]]></format>
-        </remarks>
+        <param name="includeVariables">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAttribute">
@@ -1430,7 +1128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1442,11 +1139,10 @@
         <Parameter Name="encode" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attribute">The markup attribute to write to the output stream.</param>
-        <param name="value">The value assigned to the attribute.</param>
-        <param name="encode">
-          <see langword="true" /> to encode the attribute and its assigned value; otherwise, <see langword="false" />.</param>
-        <summary>Writes the specified markup attribute and value to the output stream, and, if specified, writes the value encoded. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="attribute">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="encode">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1457,7 +1153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1465,7 +1160,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Writes a line break.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1476,7 +1171,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1486,8 +1180,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text string to encode and write to the output stream.</param>
-        <summary>Encodes the specified text for the requesting device, and then writes it to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1498,7 +1192,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1508,8 +1201,8 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The URL string to encode and write to the output stream.</param>
-        <summary>Encodes the specified URL, and then writes it to the output stream. The URL might include parameters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1520,7 +1213,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1531,17 +1223,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The field name.</param>
-        <param name="value">The post field value.</param>
-        <summary>Writes a <see langword="&lt; postfield &gt;" /> element, using the provided parameters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There is an assumed `type` parameter that defaults to <xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WritePostField">
@@ -1551,7 +1236,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1563,10 +1247,10 @@
         <Parameter Name="type" Type="System.Web.UI.MobileControls.Adapters.WmlPostFieldType" />
       </Parameters>
       <Docs>
-        <param name="name">The field name.</param>
-        <param name="value">The post field value.</param>
-        <param name="type">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" />.</param>
-        <summary>Writes a &lt; <see langword="postfield" /> &gt; element, treating the value as specified by the <paramref name="type" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1577,7 +1261,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1588,17 +1271,10 @@
         <Parameter Name="arg" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The field name.</param>
-        <param name="arg">The variable name to write.</param>
-        <summary>Writes a post field, treating the <paramref name="arg" /> parameter as a variable name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the short form as follows: `WritePostField(name, value, WmlPostFieldType.Normal)`.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteText">
@@ -1608,7 +1284,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1619,17 +1294,10 @@
         <Parameter Name="encodeText" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="text">The text to write.</param>
-        <param name="encodeText">If <see langword="true" />, encodes the text.</param>
-        <summary>Writes the given text, encoding it if desired. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Encoding involves mapping characters with HTML/WML meanings to the appropriate character code.  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <param name="encodeText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteTextEncodedAttribute">
@@ -1639,7 +1307,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1650,17 +1317,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="attribute">The name of the attribute to encode.</param>
-        <param name="value">The value of the attribute to encode.</param>
-        <summary>Writes the given attribute, encoding the value by using WML text encoding. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Encoding involves mapping characters with HTML/WML meanings to the appropriate character code.  
-  
- ]]></format>
-        </remarks>
+        <param name="attribute">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

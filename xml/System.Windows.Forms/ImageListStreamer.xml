@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImageListStreamer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,15 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides the data portion of an <see cref="T:System.Windows.Forms.ImageList" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a sealed class, so you can not inherit from it. Also, the constructor is private, so you cannot create a new instance of it. An ImageListStreamer is returned by the <xref:System.Windows.Forms.ImageList.ImageStream%2A> property of the <xref:System.Windows.Forms.ImageList>. However, you cannot use this class to load images to an <xref:System.Windows.Forms.ImageList> control by directly assigning the <xref:System.Windows.Forms.ImageList.ImageStream%2A> property from one <xref:System.Windows.Forms.ImageList>. Instead you should directly assign one <xref:System.Windows.Forms.ImageList> instance to another (for example, `ImageList2 = ImageList1)`.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -44,20 +36,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the current instance of the <see cref="T:System.Windows.Forms.ImageListStreamer" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Windows.Forms.ImageListStreamer>. The `Dispose` method leaves the <xref:System.Windows.Forms.ImageListStreamer> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Windows.Forms.ImageListStreamer> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.ImageListStreamer> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call `Dispose` before you release your last reference to the <xref:System.Windows.Forms.ImageListStreamer>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Forms.ImageListStreamer> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -67,7 +47,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,19 +57,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="si">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
-        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that is the destination for this serialization.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information and a code example, see <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> cannot be populated with data because no data exists, or it is not in the correct format.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for providing serialization services. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="si">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

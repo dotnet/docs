@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.UseLicense" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,23 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a license that enables access to protected rights managed content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- As with other <xref:System.Security.RightsManagement> types, UseLicense is only usable in full trust applications.  
-  
-   
-  
-## Examples  
- The following example shows how to use this class to initialize a <xref:System.Security.RightsManagement.PublishLicense>.  
-  
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubencrypt)]
- [!code-cs[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubencrypt)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,20 +27,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="useLicense" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="useLicense">A use license in serialized [!INCLUDE[TLA#tla_xrml](~/add/includes/tlasharptla-xrml-md.md)] form.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.UseLicense" /> class.</summary>
+        <param name="useLicense">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="useLicense" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.RightsManagement.RightsManagementException">
-          <paramref name="useLicense" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="ApplicationData">
@@ -66,25 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the application data dictionary that contains key/value pairs passed from the publishing application to the consuming application.</summary>
-        <value>The application data dictionary that contains key/value pairs passed from the publishing application to the consuming application.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- One data key/value pair that is processed by a Rights Management Services (RMS) server is the string pair "Allow_Server_Editing"/"True".  When the issuance license "Allow_Server_Editing"/"True" is set, the service, or any trusted service, can reuse the content key.  
-  
- The key/value pair "NOLICCACHE" / "1" controls the Use License embedding policy of consuming applications.  When "NOLICCACHE" / "1" is set, applications are expected not to embed the Use License within the rights managed document.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Bind">
@@ -94,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,29 +72,10 @@
         <Parameter Name="secureEnvironment" Type="System.Security.RightsManagement.SecureEnvironment" />
       </Parameters>
       <Docs>
-        <param name="secureEnvironment">The environment to bind the license to.</param>
-        <summary>Binds the license to a given <see cref="T:System.Security.RightsManagement.SecureEnvironment" />.</summary>
-        <returns>A <see cref="T:System.Security.RightsManagement.CryptoProvider" /> instance if the license binding succeeded; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After the license is bound to a secure environment, the application can examine and exercise the rights granted by the license.  
-  
- The returned <xref:System.Security.RightsManagement.CryptoProvider> instance provides decryption and access to the protected rights managed content.  
-  
-   
-  
-## Examples  
- The following example shows how to use this method to initialize a <xref:System.Security.RightsManagement.CryptoProvider>.  
-  
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubencrypt)]
- [!code-cs[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubencrypt)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="secureEnvironment" /> is <see langword="null" />.</exception>
+        <param name="secureEnvironment">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentId">
@@ -136,23 +85,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the content identifier created by the publisher.</summary>
-        <value>The content identifier created by the publisher.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ContentId is created by the publisher and can be used to match content to a <xref:System.Security.RightsManagement.UseLicense> and <xref:System.Security.RightsManagement.PublishLicense>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -162,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,18 +112,10 @@
         <Parameter Name="x" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">The license to compare.</param>
-        <summary>Indicates if this license is equivalent to another given license.</summary>
-        <returns>
-          <see langword="true" /> if both licenses are the equivalent; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Equals tests for equivalence comparing the serialized [!INCLUDE[TLA#tla_xrml](~/add/includes/tlasharptla-xrml-md.md)] strings specified to the <xref:System.Security.RightsManagement.UseLicense.%23ctor%2A> constructors.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -193,7 +125,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,16 +132,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code associated with this license.</summary>
-        <returns>A hash code for this license.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned hash code is based on the serialized [!INCLUDE[TLA#tla_xrml](~/add/includes/tlasharptla-xrml-md.md)] string passed to the <xref:System.Security.RightsManagement.UseLicense.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -220,23 +144,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentUser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the owner of the license.</summary>
-        <value>The owner of the license.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The license owner is obtained from the serialized [!INCLUDE[TLA#tla_xrml](~/add/includes/tlasharptla-xrml-md.md)] string passed to the <xref:System.Security.RightsManagement.UseLicense.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -246,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,8 +169,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the serialized [!INCLUDE[TLA2#tla_xrml](~/add/includes/tla2sharptla-xrml-md.md)] string used to create this license.</summary>
-        <returns>The serialized [!INCLUDE[TLA#tla_xrml](~/add/includes/tlasharptla-xrml-md.md)] string originally passed to the <see cref="System.Security.RightsManagement.UseLicense.%23ctor%2A" /> constructor.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

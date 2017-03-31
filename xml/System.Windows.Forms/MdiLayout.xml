@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MdiLayout" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the layout of multiple document interface (MDI) child windows in an MDI parent window.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the members of this enumeration when calling the <xref:System.Windows.Forms.Form.LayoutMdi%2A> method of the <xref:System.Windows.Forms.Form> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ArrangeIcons">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All MDI child icons are arranged within the client region of the MDI parent form.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cascade">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All MDI child windows are cascaded within the client region of the MDI parent form.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileHorizontal">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All MDI child windows are tiled horizontally within the client region of the MDI parent form.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileVertical">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All MDI child windows are tiled vertically within the client region of the MDI parent form.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

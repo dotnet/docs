@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The execution context for an asynchronous activity.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a sealed class and is derived from <xref:System.Activities.CodeActivityContext>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="IsCancellationRequested">
@@ -35,9 +28,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the currently executing <see cref="T:System.Activities.AsyncCodeActivity" /> is to be canceled.</summary>
-        <value>
-          <see langword="true" /> if the currently executing <see cref="T:System.Activities.AsyncCodeActivity" /> is to be canceled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +47,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Marks the current activity instance as canceled.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +64,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a user-defined object associated with the current asynchronous activity.</summary>
-        <value>The user-defined object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

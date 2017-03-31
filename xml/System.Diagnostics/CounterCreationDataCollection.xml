@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CounterCreationDataCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a strongly typed collection of <see cref="T:System.Diagnostics.CounterCreationData" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the CounterCreationDataCollection class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
-  
- [!code-cpp[PerformanceCounterType.AverageCounter64#1](~/add/codesnippet/cpp/t-system.diagnostics.cou_1_1.cpp)]
- [!code-cs[PerformanceCounterType.AverageCounter64#1](~/add/codesnippet/csharp/t-system.diagnostics.cou_1_1.cs)]
- [!code-vb[PerformanceCounterType.AverageCounter64#1](~/add/codesnippet/visualbasic/t-system.diagnostics.cou_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.CounterCreationDataCollection" /> class, with no associated <see cref="T:System.Diagnostics.CounterCreationData" /> instances.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,29 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Diagnostics.CounterCreationData[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of <see cref="T:System.Diagnostics.CounterCreationData" /> instances with which to initialize this <see cref="T:System.Diagnostics.CounterCreationDataCollection" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.CounterCreationDataCollection" /> class by using the specified array of <see cref="T:System.Diagnostics.CounterCreationData" /> instances.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to create a <xref:System.Diagnostics.CounterCreationDataCollection> object by using a <xref:System.Diagnostics.CounterCreationData> array.  
-  
- [!code-vb[CounterCreationDataCollection_CounterCreationData#1](~/add/codesnippet/visualbasic/31d22b4d-4f6a-4386-b1d4-_1.vb)]
- [!code-cs[CounterCreationDataCollection_CounterCreationData#1](~/add/codesnippet/csharp/31d22b4d-4f6a-4386-b1d4-_1.cs)]
- [!code-cpp[CounterCreationDataCollection_CounterCreationData#1](~/add/codesnippet/cpp/31d22b4d-4f6a-4386-b1d4-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -82,29 +55,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Diagnostics.CounterCreationDataCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Diagnostics.CounterCreationDataCollection" /> that holds <see cref="T:System.Diagnostics.CounterCreationData" /> instances with which to initialize this <see cref="T:System.Diagnostics.CounterCreationDataCollection" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.CounterCreationDataCollection" /> class by using the specified collection of <see cref="T:System.Diagnostics.CounterCreationData" /> instances.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to create a <xref:System.Diagnostics.CounterCreationDataCollection> object by using <xref:System.Diagnostics.CounterCreationData> objects from another <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cs[CounterCreationDataCollection_CounterCreationDataCollection#1](~/add/codesnippet/csharp/657e907e-64f2-48fd-938e-_1.cs)]
- [!code-cpp[CounterCreationDataCollection_CounterCreationDataCollection#1](~/add/codesnippet/cpp/657e907e-64f2-48fd-938e-_1.cpp)]
- [!code-vb[CounterCreationDataCollection_CounterCreationDataCollection#1](~/add/codesnippet/visualbasic/657e907e-64f2-48fd-938e-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -114,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,25 +82,10 @@
         <Parameter Name="value" Type="System.Diagnostics.CounterCreationData" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Diagnostics.CounterCreationData" /> object to append to the existing collection.</param>
-        <summary>Adds an instance of the <see cref="T:System.Diagnostics.CounterCreationData" /> class to the collection.</summary>
-        <returns>The index of the new <see cref="T:System.Diagnostics.CounterCreationData" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Add method to add a <xref:System.Diagnostics.CounterCreationData> object to a <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[PerformanceCounterType.AverageCounter64#1](~/add/codesnippet/cpp/9a91e38e-b322-49eb-82ff-_1.cpp)]
- [!code-cs[PerformanceCounterType.AverageCounter64#1](~/add/codesnippet/csharp/9a91e38e-b322-49eb-82ff-_1.cs)]
- [!code-vb[PerformanceCounterType.AverageCounter64#1](~/add/codesnippet/visualbasic/9a91e38e-b322-49eb-82ff-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> is not a <see cref="T:System.Diagnostics.CounterCreationData" /> object.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -152,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,11 +104,9 @@
         <Parameter Name="value" Type="System.Diagnostics.CounterCreationData[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of <see cref="T:System.Diagnostics.CounterCreationData" /> instances to append to the existing collection.</param>
-        <summary>Adds the specified array of <see cref="T:System.Diagnostics.CounterCreationData" /> instances to the collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -176,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,22 +125,9 @@
         <Parameter Name="value" Type="System.Diagnostics.CounterCreationDataCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A collection of <see cref="T:System.Diagnostics.CounterCreationData" /> instances to append to the existing collection.</param>
-        <summary>Adds the specified collection of <see cref="T:System.Diagnostics.CounterCreationData" /> instances to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the AddRange method overload to add <xref:System.Diagnostics.CounterCreationData> objects from one <xref:System.Diagnostics.CounterCreationDataCollection> to another <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[CounterCreationDataCollection_AddRange#2](~/add/codesnippet/cpp/c1d1c51d-8433-4255-a4e6-_1.cpp)]
- [!code-cs[CounterCreationDataCollection_AddRange#2](~/add/codesnippet/csharp/c1d1c51d-8433-4255-a4e6-_1.cs)]
- [!code-vb[CounterCreationDataCollection_AddRange#2](~/add/codesnippet/visualbasic/c1d1c51d-8433-4255-a4e6-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -211,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -221,22 +146,10 @@
         <Parameter Name="value" Type="System.Diagnostics.CounterCreationData" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Diagnostics.CounterCreationData" /> object to find in the collection.</param>
-        <summary>Determines whether a <see cref="T:System.Diagnostics.CounterCreationData" /> instance exists in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Diagnostics.CounterCreationData" /> object exists in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Contains method to find a <xref:System.Diagnostics.CounterCreationData> object in a <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[CounterCreationDataCollection_Contains#1](~/add/codesnippet/cpp/9415181c-8a19-4b3e-9d9a-_1.cpp)]
- [!code-cs[CounterCreationDataCollection_Contains#1](~/add/codesnippet/csharp/9415181c-8a19-4b3e-9d9a-_1.cs)]
- [!code-vb[CounterCreationDataCollection_Contains#1](~/add/codesnippet/visualbasic/9415181c-8a19-4b3e-9d9a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -246,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,15 +169,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">An array of <see cref="T:System.Diagnostics.CounterCreationData" /> instances to add to the collection.</param>
-        <param name="index">The location at which to add the new instances.</param>
-        <summary>Copies the elements of the <see cref="T:System.Diagnostics.CounterCreationData" /> to an array, starting at the specified index of the array.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0.</exception>
-        <exception cref="T:System.ArgumentException">The number of elements in the <see cref="T:System.Diagnostics.CounterCreationDataCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -275,7 +182,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,21 +191,10 @@
         <Parameter Name="value" Type="System.Diagnostics.CounterCreationData" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Diagnostics.CounterCreationData" /> object to locate in the collection.</param>
-        <summary>Returns the index of a <see cref="T:System.Diagnostics.CounterCreationData" /> object in the collection.</summary>
-        <returns>The zero-based index of the specified <see cref="T:System.Diagnostics.CounterCreationData" />, if it is found, in the collection; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example retrieves <xref:System.Diagnostics.CounterCreationData> entries from a <xref:System.Diagnostics.CounterCreationDataCollection> and uses the IndexOf method to display their names and indexes.  
-  
- [!code-cpp[CounterCreationDataCollection_Insert_IndexOf#1](~/add/codesnippet/cpp/3a3df9e1-953e-46ca-833a-_1.cpp)]
- [!code-cs[CounterCreationDataCollection_Insert_IndexOf#1](~/add/codesnippet/csharp/3a3df9e1-953e-46ca-833a-_1.cs)]
- [!code-vb[CounterCreationDataCollection_Insert_IndexOf#1](~/add/codesnippet/visualbasic/3a3df9e1-953e-46ca-833a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -309,7 +204,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -320,31 +214,10 @@
         <Parameter Name="value" Type="System.Diagnostics.CounterCreationData" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the location at which the <see cref="T:System.Diagnostics.CounterCreationData" /> is to be inserted.</param>
-        <param name="value">The <see cref="T:System.Diagnostics.CounterCreationData" /> to insert into the collection.</param>
-        <summary>Inserts a <see cref="T:System.Diagnostics.CounterCreationData" /> object into the collection, at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Insert method to insert a <xref:System.Diagnostics.CounterCreationData> object into a <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[CounterCreationDataCollection_Insert_IndexOf#1](~/add/codesnippet/cpp/1e4ba1f1-9664-453f-a739-_1.cpp)]
- [!code-cs[CounterCreationDataCollection_Insert_IndexOf#1](~/add/codesnippet/csharp/1e4ba1f1-9664-453f-a739-_1.cs)]
- [!code-vb[CounterCreationDataCollection_Insert_IndexOf#1](~/add/codesnippet/visualbasic/1e4ba1f1-9664-453f-a739-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> is not a <see cref="T:System.Diagnostics.CounterCreationData" /> object.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0.  
-  
- -or-  
-  
- <paramref name="index" /> is greater than the number of items in the collection.</exception>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -354,7 +227,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,16 +236,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An index into the <see cref="T:System.Diagnostics.CounterCreationDataCollection" />.</param>
-        <summary>Indexes the <see cref="T:System.Diagnostics.CounterCreationData" /> collection.</summary>
-        <value>The collection index, which is used to access individual elements of the collection.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0.  
-  
- -or-  
-  
- <paramref name="index" /> is equal to or greater than the number of items in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -383,7 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,20 +258,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object that will be validated.</param>
-        <summary>Checks the specified object to determine whether it is a valid <see cref="T:System.Diagnostics.CounterCreationData" /> type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnValidate method determines whether the object specified in the `value` parameter is a <xref:System.Diagnostics.CounterCreationData> instance. If not, it throws an <xref:System.ArgumentException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> is not a <see cref="T:System.Diagnostics.CounterCreationData" /> object.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -416,7 +270,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -426,28 +279,9 @@
         <Parameter Name="value" Type="System.Diagnostics.CounterCreationData" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Diagnostics.CounterCreationData" /> to remove from the collection.</param>
-        <summary>Removes a <see cref="T:System.Diagnostics.CounterCreationData" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Remove method to delete a <xref:System.Diagnostics.CounterCreationData> object from the <xref:System.Diagnostics.CounterCreationDataCollection>.  
-  
- [!code-cpp[CounterCreationDataCollection_Contains#2](~/add/codesnippet/cpp/9747bf72-ffaf-42a4-8912-_1.cpp)]
- [!code-cs[CounterCreationDataCollection_Contains#2](~/add/codesnippet/csharp/9747bf72-ffaf-42a4-8912-_1.cs)]
- [!code-vb[CounterCreationDataCollection_Contains#2](~/add/codesnippet/visualbasic/9747bf72-ffaf-42a4-8912-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> is not a <see cref="T:System.Diagnostics.CounterCreationData" /> object.  
-  
- -or-  
-  
- <paramref name="value" /> does not exist in the collection.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.StyleCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,33 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.Style" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the StyleCollection class to store and manage <xref:System.Web.UI.WebControls.Style> objects for a control. Control developers can use this class to contain a set of styles that apply to different portions of the control.  
-  
- The collection dynamically increases in size as objects are added. Indexes in this collection are zero-based. Use the <xref:System.Web.UI.StateManagedCollection.Count%2A> property to determine how many objects are in the collection.  
-  
- Additionally, use the StyleCollection methods and properties to provide the following functionality:  
-  
--   The <xref:System.Web.UI.WebControls.StyleCollection.Add%2A> method to add a single style to the collection.  
-  
--   The <xref:System.Web.UI.WebControls.StyleCollection.Insert%2A> method to add a style at a particular index within the collection.  
-  
--   The <xref:System.Web.UI.WebControls.StyleCollection.Remove%2A> method to remove a style from the collection.  
-  
--   The <xref:System.Web.UI.WebControls.StyleCollection.RemoveAt%2A> method to remove the style located at a particular index.  
-  
--   The <xref:System.Web.UI.WebControls.StyleCollection.Contains%2A> method to determine whether a particular style is already in the collection.  
-  
--   The <xref:System.Web.UI.WebControls.StyleCollection.IndexOf%2A> method to retrieve the index of a style within the collection.  
-  
--   The <xref:System.Web.UI.StateManagedCollection.Clear%2A> method to remove all the styles from the collection.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -48,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,19 +31,10 @@
         <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">The <see cref="T:System.Web.UI.WebControls.Style" /> object to add to the collection.</param>
-        <summary>Appends a specified <see cref="T:System.Web.UI.WebControls.Style" /> object to the end of the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> object.</summary>
-        <returns>The index at which the style was added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Add method to append the specified <xref:System.Web.UI.WebControls.Style> object to the end of the <xref:System.Web.UI.WebControls.StyleCollection> object.  
-  
- To add a <xref:System.Web.UI.WebControls.Style> object to the collection at a specific index location, use the <xref:System.Web.UI.WebControls.StyleCollection.Insert%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -80,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,18 +53,10 @@
         <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">The <see cref="T:System.Web.UI.WebControls.Style" /> to locate within the collection.</param>
-        <summary>Determines whether the specified style is contained within the collection.</summary>
-        <returns>
-          <see langword="true" /> if the style is in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Contains method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.WebControls.Style> objects.  
-  
- ]]></format>
-        </remarks>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -111,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,17 +76,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="styleArray">The <see cref="T:System.Array" /> that is the destination of the copied styles. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>styleArray</c> at which copying begins.</param>
-        <summary>Copies the elements of the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> to a one-dimensional <see cref="T:System.Web.UI.WebControls.Style" /> array, starting at the specified index of the target array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The style elements are copied to the <xref:System.Array> object in the same order in which they are indexed within the <xref:System.Web.UI.WebControls.StyleCollection> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="styleArray">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -142,7 +89,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,9 +98,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index, from the ordered list of types returned by <see cref="System.Web.UI.WebControls.StyleCollection.GetKnownTypes%2A" />, of the type of the <see cref="T:System.Web.UI.IStateManager" /> object to create. Because the <see cref="System.Web.UI.WebControls.StyleCollection.GetKnownTypes%2A" /> method of <see cref="T:System.Web.UI.WebControls.StyleCollection" /> returns a list with only one type, the input <c>index</c> is ignored.</param>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class, based on the single element collection returned by the <see cref="System.Web.UI.WebControls.StyleCollection.GetKnownTypes%2A" /> method.</summary>
-        <returns>An instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,8 +118,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array of the <see cref="T:System.Web.UI.IStateManager" /> types that the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> can contain.</summary>
-        <returns>An array containing one <see cref="T:System.Type" /> object for the <see cref="T:System.Web.UI.WebControls.Style" /> class, which indicates that the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> can contain <see cref="T:System.Web.UI.WebControls.Style" /> objects.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,7 +130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,17 +139,10 @@
         <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">The <see cref="T:System.Web.UI.WebControls.Style" /> to locate within the collection.</param>
-        <summary>Returns the index of the specified <see cref="T:System.Web.UI.WebControls.Style" /> object within the collection.</summary>
-        <returns>The zero-based index of the first occurrence of <paramref name="style" /> within the collection; otherwise, -1 if the style is not in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.StyleCollection.Contains%2A> method determines equality by using the <xref:System.Object.Equals%2A> method on the <xref:System.Web.UI.WebControls.Style> objects.  
-  
- ]]></format>
-        </remarks>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -215,7 +152,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,19 +162,10 @@
         <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index location at which to insert the <see cref="T:System.Web.UI.WebControls.Style" /> object.</param>
-        <param name="style">The <see cref="T:System.Web.UI.WebControls.Style" /> object to insert into the collection.</param>
-        <summary>Inserts a specified <see cref="T:System.Web.UI.WebControls.Style" /> object into the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> at the specified index location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Insert method to insert a specified <xref:System.Web.UI.WebControls.Style> object into the <xref:System.Web.UI.WebControls.StyleCollection> object at a specified index location.  
-  
- To add a <xref:System.Web.UI.WebControls.Style> object at the end of the <xref:System.Web.UI.WebControls.StyleCollection> object, use the <xref:System.Web.UI.WebControls.StyleCollection.Add%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -248,7 +175,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,17 +184,10 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">The zero-based index location of the <see cref="T:System.Web.UI.WebControls.Style" /> object in the <see cref="T:System.Web.UI.WebControls.StyleCollection" />.</param>
-        <summary>Gets the <see cref="T:System.Web.UI.WebControls.Style" /> object at the specified index location in the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> object.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.Style" /> object at the specified index in the <see cref="T:System.Web.UI.WebControls.StyleCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this indexer to access a <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> at the specified index, using simple array notation. The indexer allows you to modify or replace a <xref:System.Web.UI.WebControls.Style> object in the collection directly.  
-  
- ]]></format>
-        </remarks>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -278,7 +197,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -288,18 +206,9 @@
         <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">The <see cref="T:System.Web.UI.WebControls.Style" /> object to remove from the collection.</param>
-        <summary>Removes the specified <see cref="T:System.Web.UI.WebControls.Style" /> object from the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Remove method to remove the specified <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> object. All items that follow the <xref:System.Web.UI.WebControls.Style> object are then moved up to fill in the vacant position. The indexes of the moved items are also updated.  
-  
- To remove a <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> object at a specific index location, use the <xref:System.Web.UI.WebControls.StyleCollection.RemoveAt%2A> method. You can also remove every <xref:System.Web.UI.WebControls.Style> object in the collection using the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -309,7 +218,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -319,18 +227,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index location of the <see cref="T:System.Web.UI.WebControls.Style" /> object to remove.</param>
-        <summary>Removes the <see cref="T:System.Web.UI.WebControls.Style" /> object at the specified index location from the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the RemoveAt method to remove the <xref:System.Web.UI.WebControls.Style> object at a specified index location from the <xref:System.Web.UI.WebControls.StyleCollection> object. All items that follow that <xref:System.Web.UI.WebControls.Style> object are then moved up to fill in the vacant position. The indexes of the moved items are also updated.  
-  
- To remove a specific <xref:System.Web.UI.WebControls.Style> object from the <xref:System.Web.UI.WebControls.StyleCollection> object, use the <xref:System.Web.UI.WebControls.StyleCollection.Remove%2A> method. You can also remove every <xref:System.Web.UI.WebControls.Style> object in the collection using the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">
@@ -340,7 +239,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -350,8 +248,8 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The <see cref="T:System.Web.UI.WebControls.Style" /> object that should serialize itself completely.</param>
-        <summary>Instructs the input <see cref="T:System.Web.UI.WebControls.Style" /> object contained in the collection to record its entire state to view state, rather than recording only change information.</summary>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

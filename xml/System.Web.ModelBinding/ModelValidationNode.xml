@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a container for model validation information.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="modelStateKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="modelMetadata">The model metadata.</param>
-        <param name="modelStateKey">The model state key.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelValidationNode" /> class, using the model metadata and state key.</summary>
+        <param name="modelMetadata">To be added.</param>
+        <param name="modelStateKey">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,12 +50,11 @@
         <Parameter Name="childNodes" Type="System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidationNode&gt;" />
       </Parameters>
       <Docs>
-        <param name="modelMetadata">The model metadata.</param>
-        <param name="modelStateKey">The model state key.</param>
-        <param name="childNodes">The model child nodes.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelValidationNode" /> class, using the model metadata, the model state key, and child model-validation nodes.</summary>
+        <param name="modelMetadata">To be added.</param>
+        <param name="modelStateKey">To be added.</param>
+        <param name="childNodes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="modelMetadata" /> or <paramref name="modelStateKey" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ChildNodes">
@@ -71,8 +70,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Web.ModelBinding.ModelValidationNode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the child nodes.</summary>
-        <value>The child nodes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +91,8 @@
         <Parameter Name="otherNode" Type="System.Web.ModelBinding.ModelValidationNode" />
       </Parameters>
       <Docs>
-        <param name="otherNode">The model validation node to combine with the current instance.</param>
-        <summary>Combines the current <see cref="T:System.Web.ModelBinding.ModelValidationNode" /> instance with a specified <see cref="T:System.Web.ModelBinding.ModelValidationNode" /> instance.</summary>
+        <param name="otherNode">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +109,8 @@
         <ReturnType>System.Web.ModelBinding.ModelMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the model metadata.</summary>
-        <value>The model metadata.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +127,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the model state key.</summary>
-        <value>The model state key.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +145,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether validation should be suppressed.</summary>
-        <value>
-          <see langword="true" /> if validation should be suppressed; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,17 +166,9 @@
         <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">The execution context.</param>
-        <summary>Validates the model using the specified execution context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.ModelBinding.ModelValidationNode.SuppressValidation%2A> property is `true`, this method does nothing.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="modelBindingExecutionContext" /> parameter is <see langword="null" />.</exception>
+        <param name="modelBindingExecutionContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -198,9 +188,9 @@
         <Parameter Name="parentNode" Type="System.Web.ModelBinding.ModelValidationNode" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">The execution context.</param>
-        <param name="parentNode">The parent node.</param>
-        <summary>Validates the model using the specified execution context and parent node.</summary>
+        <param name="modelBindingExecutionContext">To be added.</param>
+        <param name="parentNode">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,9 +207,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether all properties of the model should be validated.</summary>
-        <value>
-          <see langword="true" /> if all properties of the model should be validated, or <see langword="false" /> if validation should be skipped.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,7 +225,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.ModelBinding.ModelValidatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the model has been validated.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,7 +242,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.ModelBinding.ModelValidatingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the model is being validated.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

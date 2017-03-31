@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,21 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the debug stepping behavior for composite activities whose child activities can execute concurrently.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- This attribute is used by workflow debugger to determine the order of debugging for child activities that can execute concurrently. This is to allow you to either keep the focus on one branch of your composite activity, or shift back and forth between the concurrently executing child activities.  
-  
- This attribute should decorate the composite activity, not the child activities.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,15 +30,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="steppingOption" Type="System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" />
       </Parameters>
       <Docs>
-        <param name="steppingOption">A <see cref="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" /> enumeration value specifying the stepping behavior for the concurrently executing child activities.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute" /> class by using a <see cref="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" /> enumeration value.</summary>
+        <param name="steppingOption">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,15 +48,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the stepping behavior for the composite activity.</summary>
-        <value>A <see cref="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" /> enumeration value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

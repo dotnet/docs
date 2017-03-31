@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.TimeSeekOrigin" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the origin of a seek operation. The offset of the seek operation is relative to this origin.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.TimeSeekOrigin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The offset is relative to the beginning of the activation period of the <see cref="T:System.Windows.Media.Animation.Timeline" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.TimeSeekOrigin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The offset is relative to the <see cref="System.Windows.Media.Animation.Timeline.Duration%2A" /> of the <see cref="T:System.Windows.Media.Animation.Timeline" />, the length of a single iteration. This value has no meaning if the <see cref="System.Windows.Media.Animation.Timeline.Duration%2A" /> of the <see cref="T:System.Windows.Media.Animation.Timeline" /> is not resolved.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

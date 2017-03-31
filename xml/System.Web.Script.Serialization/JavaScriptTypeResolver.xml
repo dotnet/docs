@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.JavaScriptTypeResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,33 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides the abstract base class for implementing a custom type resolver.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The JavaScriptTypeResolver class provides the services for:  
-  
--   Converting managed type information to a string value through the <xref:System.Web.Script.Serialization.JavaScriptTypeResolver.ResolveTypeId%2A> method.  
-  
--   Resolving a string value back to the appropriate managed type through the <xref:System.Web.Script.Serialization.JavaScriptTypeResolver.ResolveType%2A> method.  
-  
- When the <xref:System.Web.Script.Serialization.JavaScriptSerializer> object serializes custom types, it can optionally include in the serialized JavaScript Object Notation (JSON) string a value that contains type information. During deserialization, <xref:System.Web.Script.Serialization.JavaScriptSerializer> can then reference this string value to determine the appropriate managed type to which the JSON string will be converted.  
-  
- If you provide a type resolver to the <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance, the serializer will use the <xref:System.Web.Script.Serialization.JavaScriptTypeResolver.ResolveTypeId%2A> and <xref:System.Web.Script.Serialization.JavaScriptTypeResolver.ResolveType%2A> methods to map between the managed type and the string value during the serialization and deserialization process, respectively.  
-  
- The JavaScriptTypeResolver class is the base class for the <xref:System.Web.Script.Serialization.SimpleTypeResolver> class, which provides an implementation of a type resolver that uses the managed type assembly-qualified name.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to create a custom type resolver.  
-  
- [!code-vb[System.Web.Script.Serialization.TypeResolver#2](~/add/codesnippet/visualbasic/t-system.web.script.seri_0_1.vb)]
- [!code-cs[System.Web.Script.Serialization.TypeResolver#2](~/add/codesnippet/csharp/t-system.web.script.seri_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Script.Serialization.JavaScriptTypeResolver" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,17 +46,10 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">The name of the managed type.</param>
-        <summary>When overridden in a derived class, returns the <see cref="T:System.Type" /> object that is associated with the specified type name.</summary>
-        <returns>The <see cref="T:System.Type" /> object that is associated with the specified type name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a type resolver is associated with a <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance, the serializer uses the ResolveType method when it iterates through a JSON string to determine the specific managed type to which the JSON type should be converted.  
-  
- ]]></format>
-        </remarks>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveTypeId">
@@ -94,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,17 +68,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The managed type to be resolved.</param>
-        <summary>When overridden in a derived class, returns the type name for the specified <see cref="T:System.Type" /> object.</summary>
-        <returns>The name of the specified managed type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the ResolveTypeId method returns either `null` or <xref:System.String>, then the type resolver does not support the type.  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

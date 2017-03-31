@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,28 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Manages user interface in the designer. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the BehaviorService is created, it adds a transparent window over the designer frame. The BehaviorService can then use this window to render user interface elements, called <xref:System.Windows.Forms.Design.Behavior.Glyph> objects, as well as catch all mouse messages. In this way, the BehaviorService can control designer behavior.  
-  
- The BehaviorService class supports a behavior stack, onto which <xref:System.Windows.Forms.Design.Behavior.Behavior> objects can be pushed. When a message is intercepted through the transparent window, the BehaviorService can send the message to the <xref:System.Windows.Forms.Design.Behavior.Behavior> at the top of the stack. This enables different user interface modes depending on the currently pushed <xref:System.Windows.Forms.Design.Behavior.Behavior>. The BehaviorService is used to render all <xref:System.Windows.Forms.Design.Behavior.Glyph> objects, such as selection borders, sizing handles, and smart tags. The BehaviorService also controls many design-time behaviors, such as using snaplines, dragging, and selecting.  
-  
- For more information, see [Behavior Service Overview](../Topic/Behavior%20Service%20Overview.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create your own <xref:System.Windows.Forms.Design.Behavior.Behavior> based class that responds to user clicks.  
-  
- [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#1](~/add/codesnippet/cpp/t-system.windows.forms.d_35_1.cpp)]
- [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_35_1.vb)]
- [!code-cs[System.Windows.Forms.Design.Behavior.BehaviorService#1](~/add/codesnippet/csharp/t-system.windows.forms.d_35_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Adorners">
@@ -47,32 +26,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection" />.</summary>
-        <value>A collection of adorner.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Adorners property provides access to the <xref:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection> managed by the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to add <xref:System.Windows.Forms.Design.Behavior.Adorner> objects to and remove them from a <xref:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
-  
- [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#2](~/add/codesnippet/cpp/p-system.windows.forms.d_386_1.cpp)]
- [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#2](~/add/codesnippet/visualbasic/p-system.windows.forms.d_386_1.vb)]
- [!code-cs[System.Windows.Forms.Design.Behavior.BehaviorService#2](~/add/codesnippet/csharp/p-system.windows.forms.d_386_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AdornerWindowGraphics">
@@ -82,15 +44,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> for the adorner window.</summary>
-        <value>The <see cref="T:System.Drawing.Graphics" /> for the adorner window.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,9 +71,9 @@
         <Parameter Name="p" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="p">The <see cref="T:System.Drawing.Point" /> value to transform.</param>
-        <summary>Translates a <see cref="T:System.Drawing.Point" /> in the adorner window to screen coordinates.</summary>
-        <returns>The transformed <see cref="T:System.Drawing.Point" /> value, in screen coordinates.</returns>
+        <param name="p">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,8 +91,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the location of the adorner window in screen coordinates.</summary>
-        <returns>The location, from the upper-left corner of the adorner window, in screen coordinates.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,24 +103,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> starts a drag-and-drop operation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> raises the BeginDrag event immediately before it starts a drag-and-drop operation.  
-  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlRectInAdornerWindow">
@@ -171,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -181,17 +129,10 @@
         <Parameter Name="c" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="c">The <see cref="T:System.Windows.Forms.Control" /> to translate.</param>
-        <summary>Returns the bounding <see cref="T:System.Drawing.Rectangle" /> of a <see cref="T:System.Windows.Forms.Control" />.</summary>
-        <returns>The bounding <see cref="T:System.Drawing.Rectangle" /> of a <see cref="T:System.Windows.Forms.Control" /> translated to the adorner window coordinates.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The adorner window is a transparent window that resides on top of the designer's frame. This window is used by the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> to intercept all messages. It also serves as a unified canvas on which to paint a <xref:System.Windows.Forms.Design.Behavior.Glyph>.  
-  
- ]]></format>
-        </remarks>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlToAdornerWindow">
@@ -201,7 +142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,21 +151,10 @@
         <Parameter Name="c" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="c">The <see cref="T:System.Windows.Forms.Control" /> to translate.</param>
-        <summary>Returns the location of a <see cref="T:System.Windows.Forms.Control" /> translated to adorner window coordinates.</summary>
-        <returns>A <see cref="T:System.Drawing.Point" /> value indicating the location of <paramref name="c" /> in adorner window coordinates.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
-  
- [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/add/codesnippet/cpp/7900e300-6026-4ea0-ae57-_1.cpp)]
- [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/add/codesnippet/visualbasic/7900e300-6026-4ea0-ae57-_1.vb)]
- [!code-cs[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/add/codesnippet/csharp/7900e300-6026-4ea0-ae57-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentBehavior">
@@ -235,15 +164,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.Behavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> at the top of the behavior stack without removing it.</summary>
-        <value>The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> at the top of the behavior stack.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,7 +182,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -262,18 +189,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call Dispose when you are finished using the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. The Dispose method leaves the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> in an unusable state. After calling Dispose, you must release all references to the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndDrag">
@@ -283,24 +200,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> completes a drag operation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Design.Behavior.BehaviorService> raises the EndDrag event immediately after the drag operation is complete.  
-  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextBehavior">
@@ -310,7 +217,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -320,9 +226,9 @@
         <Parameter Name="behavior" Type="System.Windows.Forms.Design.Behavior.Behavior" />
       </Parameters>
       <Docs>
-        <param name="behavior">The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> preceding the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> to be returned.</param>
-        <summary>Returns the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> immediately after the given <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> in the behavior stack.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> immediately after <paramref name="behavior" /> in the behavior stack, or <see langword="null" /> if there is no following behavior.</returns>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,7 +239,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -341,15 +246,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invalidates the adorner window of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling the <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate%2A> method forces a refresh of all <xref:System.Windows.Forms.Design.Behavior.Adorner> objects and, in turn, all <xref:System.Windows.Forms.Design.Behavior.Glyph> objects.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -359,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,16 +266,9 @@
         <Parameter Name="rect" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="rect">The rectangular area to invalidate.</param>
-        <summary>Invalidates, within the adorner window, the specified area of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Invalidate method will force a refresh of all <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Adorners%2A> and, in turn, all <xref:System.Windows.Forms.Design.Behavior.Adorner.Glyphs%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -388,7 +278,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -398,16 +287,9 @@
         <Parameter Name="r" Type="System.Drawing.Region" />
       </Parameters>
       <Docs>
-        <param name="r">The region to invalidate.</param>
-        <summary>Invalidates, within the adorner window, the specified area of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Invalidate method will force a refresh of all <xref:System.Windows.Forms.Design.Behavior.BehaviorService.Adorners%2A> and, in turn, all <xref:System.Windows.Forms.Design.Behavior.Adorner.Glyphs%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="r">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MapAdornerWindowPoint">
@@ -417,7 +299,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -428,10 +309,10 @@
         <Parameter Name="pt" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="handle">An adorner window's handle.</param>
-        <param name="pt">A <see cref="T:System.Drawing.Point" /> in a handle's coordinate system.</param>
-        <summary>Converts a point in a handle's coordinate system to the adorner window coordinates.</summary>
-        <returns>A <see cref="T:System.Drawing.Point" /> in the adorner window coordinates.</returns>
+        <param name="handle">To be added.</param>
+        <param name="pt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +323,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -452,18 +332,10 @@
         <Parameter Name="behavior" Type="System.Windows.Forms.Design.Behavior.Behavior" />
       </Parameters>
       <Docs>
-        <param name="behavior">The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> to remove from the stack.</param>
-        <summary>Removes and returns the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> at the top of the stack.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> that was removed from the stack.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Removes the current <xref:System.Windows.Forms.Design.Behavior.Behavior> from the behavior stack internally maintained by the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> stack is empty.</exception>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PushBehavior">
@@ -473,7 +345,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -483,18 +354,9 @@
         <Parameter Name="behavior" Type="System.Windows.Forms.Design.Behavior.Behavior" />
       </Parameters>
       <Docs>
-        <param name="behavior">The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> to push.</param>
-        <summary>Pushes a <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> onto the behavior stack.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PushBehavior method is often performed by means of a hit-tested <xref:System.Windows.Forms.Design.Behavior.Glyph>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="behavior" /> is <see langword="null" />.</exception>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PushCaptureBehavior">
@@ -504,7 +366,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -514,18 +375,9 @@
         <Parameter Name="behavior" Type="System.Windows.Forms.Design.Behavior.Behavior" />
       </Parameters>
       <Docs>
-        <param name="behavior">The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> to push.</param>
-        <summary>Pushes a <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> onto the behavior stack and assigns mouse capture to the behavior.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Pushing a capture behavior is often done through a hit-tested <xref:System.Windows.Forms.Design.Behavior.Glyph>. If a behavior calls the PushCaptureBehavior method and mouse capture is lost, the behavior's <xref:System.Windows.Forms.Design.Behavior.Behavior.OnLoseCapture%2A> method is called.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="behavior" /> is <see langword="null" />.</exception>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenToAdornerWindow">
@@ -535,7 +387,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -545,9 +396,9 @@
         <Parameter Name="p" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="p">The <see cref="T:System.Drawing.Point" /> value to transform.</param>
-        <summary>Translates a point in screen coordinates into the adorner window coordinates of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
-        <returns>The transformed <see cref="T:System.Drawing.Point" /> value, in adorner window coordinates.</returns>
+        <param name="p">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -558,22 +409,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the current selection should be refreshed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncSelection">
@@ -583,7 +426,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -591,7 +433,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Synchronizes all selection glyphs.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,25 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a collection container that enables ASP.NET server controls to maintain a list of their child controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can access any of the properties and methods of the ControlCollection class through the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> property. Since the <xref:System.Web.UI.Control> class is the base class for all ASP.NET server controls, all server controls inherit this property.  
-  
- For more information about collections, see [Collections and Data Structures](../Topic/Collections%20and%20Data%20Structures.md).  
-  
-   
-  
-## Examples  
- The following code example overrides the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method to create two controls, both instances of the custom class named `ChildControl`, which has a string property named `Message`. When created, the two controls are added to the ControlCollection. The <xref:System.Web.UI.ControlCollection.Add%2A> method is called on each of these controls to add them to the class that contains this version of <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName>. The <xref:System.Web.UI.Control.ChildControlsCreated%2A> property is set to `true` so that these controls will not be created again unnecessarily.  
-  
- [!code-vb[Control_Sample_1#1](~/add/codesnippet/visualbasic/t-system.web.ui.controlc_0_1.vb)]
- [!code-cs[Control_Sample_1#1](~/add/codesnippet/csharp/t-system.web.ui.controlc_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,27 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="owner">The ASP.NET server control that the control collection is created for.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ControlCollection" /> class for the specified parent server control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is a custom <xref:System.Web.UI.ControlCollection> class that overrides the constructor to write messages (which include the name of the <xref:System.Web.UI.ControlCollection.Owner%2A> property) to the trace log when an instance of the collection is created. You must enable tracing for the page or application for this example to work.  
-  
- [!code-cs[System.Web.UI.ControlCollection_CTor_Owner#1](~/add/codesnippet/csharp/m-system.web.ui.controlc_10_1.cs)]
- [!code-vb[System.Web.UI.ControlCollection_CTor_Owner#1](~/add/codesnippet/visualbasic/m-system.web.ui.controlc_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">Occurs if the <paramref name="owner" /> parameter is <see langword="null" />.</exception>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -74,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,28 +53,9 @@
         <Parameter Name="child" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="child">The <see cref="T:System.Web.UI.Control" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The new control is added to the end of an ordinal index array. The control can be an instance of any ASP.NET server control, a custom server control you create, or a literal control.  
-  
- To add a control to the collection at a specific index location, use the <xref:System.Web.UI.ControlCollection.AddAt%2A> method.  
-  
-   
-  
-## Examples  
- The following code example uses the Add method to add a series of template items, the number of which are taken from the server control's view state, to a custom templated control.  
-  
- [!code-cs[TemplatedDataBoundControl#2](~/add/codesnippet/csharp/m-system.web.ui.controlc_5_1.cs)]
- [!code-vb[TemplatedDataBoundControl#2](~/add/codesnippet/visualbasic/m-system.web.ui.controlc_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown if the <paramref name="child" /> parameter does not specify a control.</exception>
-        <exception cref="T:System.Web.HttpException">Thrown if the <see cref="T:System.Web.UI.ControlCollection" /> is read-only.</exception>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -115,7 +65,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,28 +75,10 @@
         <Parameter Name="child" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="index">The location in the array at which to add the child control.</param>
-        <param name="child">The <see cref="T:System.Web.UI.Control" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the collection at the specified index location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The added control can be an instance of any ASP.NET server control, a custom server control you create, or a literal control.  
-  
-   
-  
-## Examples  
- The following code example uses the AddAt method to create a new <xref:System.Web.UI.LiteralControl> named `ChildControl2` and add it to the `myButton` control's <xref:System.Web.UI.ControlCollection> collection at the index location of 1.  
-  
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#1](~/add/codesnippet/visualbasic/m-system.web.ui.controlc_0_1.aspx)]
- [!code-cs[System.Web.UI.ControlCollection_NewSamples#1](~/add/codesnippet/csharp/m-system.web.ui.controlc_0_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="child" /> parameter does not specify a control.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than the <see cref="System.Web.UI.ControlCollection.Count%2A" /> property.</exception>
-        <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.UI.ControlCollection" /> is read-only.</exception>
+        <param name="index">To be added.</param>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -157,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,23 +95,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all controls from the current server control's <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to empty a custom control's <xref:System.Web.UI.ControlCollection> when you override the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> and <xref:System.Web.UI.Control.DataBind%2A> methods. Do this when you develop composite, templated controls or templated data-bound controls.  
-  
-   
-  
-## Examples  
- The following code example demonstrates overriding the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method, and using the Clear method to delete all child controls previously in the <xref:System.Web.UI.ControlCollection> object. In this case, you must do this so that outdated objects in your control's <xref:System.Web.UI.ControlCollection> are not displayed inappropriately.  
-  
- [!code-cs[TemplatedDataBoundControl#2](~/add/codesnippet/csharp/m-system.web.ui.controlc_6_1.cs)]
- [!code-vb[TemplatedDataBoundControl#2](~/add/codesnippet/visualbasic/m-system.web.ui.controlc_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -191,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,19 +115,10 @@
         <Parameter Name="c" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="c">The server control to search for in the collection.</param>
-        <summary>Determines whether the specified server control is in the parent server control's <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the specified server control exists in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[System.Web.UI.ctrlCollection_Contains#1](~/add/codesnippet/csharp/m-system.web.ui.controlc_3_1.aspx)]
- [!code-vb[System.Web.UI.ctrlCollection_Contains#1](~/add/codesnippet/visualbasic/m-system.web.ui.controlc_3_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -223,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,12 +138,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The <see cref="T:System.Array" /> to copy the child controls to.</param>
-        <param name="index">The zero-based relative index in <c>array</c> where copying begins.</param>
-        <summary>Copies the child controls stored in the <see cref="T:System.Web.UI.ControlCollection" /> object to an <see cref="T:System.Array" /> object, beginning at the specified index location in the <see cref="T:System.Array" />.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">
-          <paramref name="array" /> is not <see langword="null" /> and not one-dimensional.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -249,26 +151,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of server controls in the <see cref="T:System.Web.UI.ControlCollection" /> object for the specified ASP.NET server control.</summary>
-        <value>The number of server controls in the <see cref="T:System.Web.UI.ControlCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Count property to iterate through a control's <xref:System.Web.UI.ControlCollection> object. The use of the <xref:System.Web.UI.Control.HasControls%2A?displayProperty=fullName> property verifies that the control has child controls. If <xref:System.Web.UI.Control.HasControls%2A?displayProperty=fullName> returns `false`, the remaining code does not run.  
-  
- [!code-vb[Classic Control.HasControls Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.controlc_1_1.vb)]
- [!code-cs[Classic Control.HasControls Example#1](~/add/codesnippet/csharp/p-system.web.ui.controlc_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -278,7 +169,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -286,19 +176,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves an enumerator that can iterate through the <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
-        <returns>The enumerator to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is completed, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
-  
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/add/codesnippet/visualbasic/m-system.web.ui.controlc_1_1.aspx)]
- [!code-cs[System.Web.UI.ControlCollection_NewSamples#2](~/add/codesnippet/csharp/m-system.web.ui.controlc_1_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -308,7 +188,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,25 +197,10 @@
         <Parameter Name="value" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Web.UI.Control" /> for which the index is returned.</param>
-        <summary>Retrieves the index of a specified <see cref="T:System.Web.UI.Control" /> object in the collection.</summary>
-        <returns>The index of the specified server control. If the server control is not currently a member of the collection, it returns -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to determine the index location of the specified server control in the <xref:System.Web.UI.ControlCollection> object.  
-  
-   
-  
-## Examples  
- The following code example uses the IndexOf method to write the index location of a control, `myLiteralControl`, in the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control named `myButton`.  
-  
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#1](~/add/codesnippet/visualbasic/m-system.web.ui.controlc_4_1.aspx)]
- [!code-cs[System.Web.UI.ControlCollection_NewSamples#1](~/add/codesnippet/csharp/m-system.web.ui.controlc_4_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -346,27 +210,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.ControlCollection" /> object is read-only.</summary>
-        <value>
-          <see langword="true" /> if the control is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is complete, the value of the IsReadOnly property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
-  
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/add/codesnippet/visualbasic/p-system.web.ui.controlc_5_1.aspx)]
- [!code-cs[System.Web.UI.ControlCollection_NewSamples#2](~/add/codesnippet/csharp/p-system.web.ui.controlc_5_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -376,26 +228,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.ControlCollection" /> object is synchronized.</summary>
-        <value>This property is always <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the IsSynchronized property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is complete, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
-  
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/add/codesnippet/visualbasic/p-system.web.ui.controlc_6_1.aspx)]
- [!code-cs[System.Web.UI.ControlCollection_NewSamples#2](~/add/codesnippet/csharp/p-system.web.ui.controlc_6_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -405,7 +246,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -415,21 +255,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The location of the server control in the <see cref="T:System.Web.UI.ControlCollection" />.</param>
-        <summary>Gets a reference to the server control at the specified index location in the <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
-        <value>The reference to the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example uses the Item property to specify the index location of a child control that is removed in a <xref:System.Web.UI.ControlCollection.Remove%2A> method call. This is performed by the `myButton.Controls.Remove` syntax.  
-  
- [!code-vb[ControlCollection_ReSubmit_2#1](~/add/codesnippet/visualbasic/p-system.web.ui.controlc_2_1.aspx)]
- [!code-cs[ControlCollection_ReSubmit_2#1](~/add/codesnippet/csharp/p-system.web.ui.controlc_2_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to <see cref="System.Web.UI.ControlCollection.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -439,26 +268,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ASP.NET server control to which the <see cref="T:System.Web.UI.ControlCollection" /> object belongs.</summary>
-        <value>The <see cref="T:System.Web.UI.Control" /> to which the <see cref="T:System.Web.UI.ControlCollection" /> belongs.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is a custom <xref:System.Web.UI.ControlCollection> class that overrides the <xref:System.Web.UI.ControlCollection.%23ctor%2A> method to write messages (which include the name of the Owner property) to the trace log when an instance of the collection is created. You must enable tracing for the page or application for this example to work.  
-  
- [!code-cs[System.Web.UI.ControlCollection_CTor_Owner#1](~/add/codesnippet/csharp/p-system.web.ui.controlc_4_1.cs)]
- [!code-vb[System.Web.UI.ControlCollection_CTor_Owner#1](~/add/codesnippet/visualbasic/p-system.web.ui.controlc_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -468,7 +286,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -478,24 +295,9 @@
         <Parameter Name="value" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="value">The server control to be removed.</param>
-        <summary>Removes the specified server control from the parent server control's <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To remove a control from an index location, use the <xref:System.Web.UI.ControlCollection.RemoveAt%2A> method.  
-  
-   
-  
-## Examples  
- The following code example uses the Remove method to delete a child control from the `myButton` server control. First the code uses the <xref:System.Web.UI.ControlCollection.Contains%2A> method to determine whether the `myChildControl` is contained in the <xref:System.Web.UI.ControlCollection> object, and, if it is, removes it.  
-  
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#4](~/add/codesnippet/visualbasic/m-system.web.ui.controlc_9_1.aspx)]
- [!code-cs[System.Web.UI.ControlCollection_NewSamples#4](~/add/codesnippet/csharp/m-system.web.ui.controlc_9_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -505,7 +307,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -515,25 +316,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The ordinal index of the server control to be removed from the collection.</param>
-        <summary>Removes a child control, at the specified index location, from the <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To remove a control from the collection based on its value, use the <xref:System.Web.UI.ControlCollection.Remove%2A> method.  
-  
-   
-  
-## Examples  
- The following code example uses the RemoveAt method to delete a child control from the `myButton` server control. The method call first specifies an index location of 1 from which the control is deleted. The example then writes to the containing page a text message saying that the control at that location has been deleted from the <xref:System.Web.UI.ControlCollection> collection.  
-  
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#5](~/add/codesnippet/visualbasic/m-system.web.ui.controlc_7_1.aspx)]
- [!code-cs[System.Web.UI.ControlCollection_NewSamples#5](~/add/codesnippet/csharp/m-system.web.ui.controlc_7_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">Thrown if the <see cref="T:System.Web.UI.ControlCollection" /> is read-only.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -543,26 +328,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the collection of controls.</summary>
-        <value>The <see cref="T:System.Object" /> used to synchronize the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the SyncRoot property is used to obtain an object to make the operation thread safe. When the enumeration is complete, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
-  
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/add/codesnippet/visualbasic/p-system.web.ui.controlc_3_1.aspx)]
- [!code-cs[System.Web.UI.ControlCollection_NewSamples#2](~/add/codesnippet/csharp/p-system.web.ui.controlc_3_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

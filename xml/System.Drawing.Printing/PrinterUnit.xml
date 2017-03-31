@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterUnit" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies several of the units of measure used for printing.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Drawing.Printing.PreviewPrintController>, <xref:System.Drawing.Printing.PrinterSettings>, and <xref:System.Windows.Forms.PageSetupDialog> classes use this enumeration.  
-  
- For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Display">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default unit (0.01 in.).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HundredthsOfAMillimeter">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One-hundredth of a millimeter (0.01 mm).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TenthsOfAMillimeter">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One-tenth of a millimeter (0.1 mm).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThousandthsOfAnInch">
@@ -82,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One-thousandth of an inch (0.001 in.).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

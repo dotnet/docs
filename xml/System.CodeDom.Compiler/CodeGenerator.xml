@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CodeGenerator" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,20 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides an example implementation of the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> interface. This class is abstract.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a useful base class for code generators to derive from. Code generators are capable of rendering source code in a specific language according to the structure of a Code Document Object Model (CodeDOM) graph. This class provides many functions and methods to generate specific types of code from a CodeDOM graph.  
-  
-> [!NOTE]
->  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
-  
- ]]></format>
-    </remarks>
-    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
-    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,14 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CodeGenerator" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="ContinueOnNewLine">
@@ -56,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,8 +50,8 @@
         <Parameter Name="st" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="st">The string to write on the new line.</param>
-        <summary>Generates a line-continuation character and outputs the specified string on a new line.</summary>
+        <param name="st">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,20 +71,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to create an escaped identifier for.</param>
-        <summary>Creates an escaped identifier for the specified value.</summary>
-        <returns>The escaped identifier for the value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CreateEscapedIdentifier tests whether the identifier conflicts with reserved or language keywords, and if so, returns an equivalent name with language-specific escape code formatting. The returned name is referred to an escaped identifier. The escaped identifier contains the same `value` but includes escape code formatting to differentiate it from conflicting keywords. For example, `value` could be preceded by an at sign ("@") or delimited by square brackets ("[" and "]") to create an escaped identifier.  
-  
-> [!NOTE]
->  The default implementation of this method does nothing.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateValidIdentifier">
@@ -111,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -121,20 +93,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">A string to create a valid identifier for.</param>
-        <summary>Creates a valid identifier for the specified value.</summary>
-        <returns>A valid identifier for the value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CreateValidIdentifier tests whether the identifier conflicts with reserved or language keywords, and if so, returns a valid identifier name that does not conflict. The returned identifier contains the same `value` but includes escape code formatting to differentiate it from conflicting keywords. Typically, if the value requires modification, it is preceded by an underscore "_".  
-  
-> [!NOTE]
->  The default implementation of this method does nothing.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentClass">
@@ -144,15 +106,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeTypeDeclaration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the code type declaration for the current class.</summary>
-        <value>The code type declaration for the current class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,15 +124,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeTypeMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current member of the class.</summary>
-        <value>The current member of the class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,15 +142,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current member name.</summary>
-        <value>The name of the current member.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,15 +160,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current class name.</summary>
-        <value>The current class name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,8 +187,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeArgumentReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.CodeDom.CodeArgumentReferenceExpression" /> that indicates the expression to generate code for.</param>
-        <summary>Generates code for the specified argument reference expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +199,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,8 +208,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeArrayCreateExpression" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> that indicates the expression to generate code for.</param>
-        <summary>Generates code for the specified array creation expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,7 +220,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,8 +229,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeArrayIndexerExpression" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.CodeDom.CodeArrayIndexerExpression" /> that indicates the expression to generate code for.</param>
-        <summary>Generates code for the specified array indexer expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,7 +241,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -296,8 +250,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeAssignStatement" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.CodeDom.CodeAssignStatement" /> that indicates the statement to generate code for.</param>
-        <summary>Generates code for the specified assignment statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,7 +262,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,8 +271,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeAttachEventStatement" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.CodeDom.CodeAttachEventStatement" /> that indicates the statement to generate code for.</param>
-        <summary>Generates code for the specified attach event statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,7 +283,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -340,8 +292,8 @@
         <Parameter Name="attributes" Type="System.CodeDom.CodeAttributeDeclarationCollection" />
       </Parameters>
       <Docs>
-        <param name="attributes">A <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> that indicates the end of the attribute block to generate code for.</param>
-        <summary>Generates code for the specified attribute block end.</summary>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,7 +304,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -362,8 +313,8 @@
         <Parameter Name="attributes" Type="System.CodeDom.CodeAttributeDeclarationCollection" />
       </Parameters>
       <Docs>
-        <param name="attributes">A <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> that indicates the start of the attribute block to generate code for.</param>
-        <summary>Generates code for the specified attribute block start.</summary>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,7 +325,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -384,8 +334,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeBaseReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.CodeDom.CodeBaseReferenceExpression" /> that indicates the expression to generate code for.</param>
-        <summary>Generates code for the specified base reference expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,7 +346,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -406,11 +355,9 @@
         <Parameter Name="e" Type="System.CodeDom.CodeBinaryOperatorExpression" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.CodeDom.CodeBinaryOperatorExpression" /> that indicates the expression to generate code for.</param>
-        <summary>Generates code for the specified binary operator expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateCastExpression">
@@ -420,7 +367,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -430,8 +376,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeCastExpression" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.CodeDom.CodeCastExpression" /> that indicates the expression to generate code for.</param>
-        <summary>Generates code for the specified cast expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +388,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -454,19 +399,11 @@
         <Parameter Name="options" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="member">The class member to generate code for.</param>
-        <param name="writer">The text writer to output code to.</param>
-        <param name="options">The options to use when generating the code.</param>
-        <summary>Generates code for the specified class member using the specified text writer and code generator options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Code for members is generated differently depending on the context. For example, code for methods on an interface or fields on an enumeration is generated differently from code for the same member on a class. This implementation assumes that the member is being generated for the class context.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.CodeDom.Compiler.CodeGenerator.Output%2A" /> property is not <see langword="null" />.</exception>
+        <param name="member">To be added.</param>
+        <param name="writer">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateComment">
@@ -476,7 +413,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -486,8 +422,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeComment" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.CodeDom.CodeComment" /> to generate code for.</param>
-        <summary>Generates code for the specified comment.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -498,7 +434,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -508,10 +443,9 @@
         <Parameter Name="e" Type="System.CodeDom.CodeCommentStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified comment statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="System.CodeDom.CodeCommentStatement.Comment%2A" /> property of <paramref name="e " />is not set.</exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateCommentStatements">
@@ -521,7 +455,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -531,8 +464,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeCommentStatementCollection" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified comment statements.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -543,7 +476,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -553,8 +485,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeCompileUnit" />
       </Parameters>
       <Docs>
-        <param name="e">The compile unit to generate code for.</param>
-        <summary>Generates code for the specified compile unit.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -565,7 +497,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -575,8 +506,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeCompileUnit" />
       </Parameters>
       <Docs>
-        <param name="e">The compile unit to generate code for.</param>
-        <summary>Generates code for the end of a compile unit.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,7 +518,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -597,8 +527,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeCompileUnit" />
       </Parameters>
       <Docs>
-        <param name="e">The compile unit to generate code for.</param>
-        <summary>Generates code for the start of a compile unit.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,7 +539,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -619,16 +548,9 @@
         <Parameter Name="e" Type="System.CodeDom.CodeConditionStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified conditional statement.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For most languages, this method will generate code for an `if` statement.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateConstructor">
@@ -638,7 +560,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -649,9 +570,9 @@
         <Parameter Name="c" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="e">The constructor to generate code for.</param>
-        <param name="c">The type of the object that this constructor constructs.</param>
-        <summary>Generates code for the specified constructor.</summary>
+        <param name="e">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,7 +583,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -672,8 +592,8 @@
         <Parameter Name="d" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="d">The decimal value to generate code for.</param>
-        <summary>Generates code for the specified decimal value.</summary>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -684,7 +604,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -694,8 +613,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeDefaultValueExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The reference to generate code for.</param>
-        <summary>Generates code for the specified reference to a default value.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -706,7 +625,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -716,8 +634,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeDelegateCreateExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified delegate creation expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -728,7 +646,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -738,8 +655,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeDelegateInvokeExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified delegate invoke expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -750,7 +667,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -760,8 +676,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeDirectionExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified direction expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -772,7 +688,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -782,8 +697,8 @@
         <Parameter Name="directives" Type="System.CodeDom.CodeDirectiveCollection" />
       </Parameters>
       <Docs>
-        <param name="directives">The code directives to generate code for.</param>
-        <summary>Generates code for the specified code directives.</summary>
+        <param name="directives">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -794,7 +709,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -804,8 +718,8 @@
         <Parameter Name="d" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="d">The value to generate code for.</param>
-        <summary>Generates code for a double-precision floating point number.</summary>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -816,7 +730,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -827,9 +740,9 @@
         <Parameter Name="c" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="e">The entry point for the code.</param>
-        <param name="c">The code that declares the type.</param>
-        <summary>Generates code for the specified entry point method.</summary>
+        <param name="e">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -840,7 +753,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -851,9 +763,9 @@
         <Parameter Name="c" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="e">The member event to generate code for.</param>
-        <param name="c">The type of the object that this event occurs on.</param>
-        <summary>Generates code for the specified event.</summary>
+        <param name="e">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -864,7 +776,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -874,8 +785,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeEventReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified event reference expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -886,7 +797,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -896,13 +806,9 @@
         <Parameter Name="e" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The code expression to generate code for.</param>
-        <summary>Generates code for the specified code expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="e" /> is not a valid <see cref="T:System.CodeDom.CodeStatement" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateExpressionStatement">
@@ -912,7 +818,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -922,8 +827,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeExpressionStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified expression statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -934,7 +839,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -944,8 +848,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeMemberField" />
       </Parameters>
       <Docs>
-        <param name="e">The field to generate code for.</param>
-        <summary>Generates code for the specified member field.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -956,7 +860,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -966,8 +869,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeFieldReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified field reference expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -978,7 +881,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -988,8 +890,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeGotoStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified <see langword="goto" /> statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1000,7 +902,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1010,8 +911,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeIndexerExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified indexer expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1022,7 +923,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1032,16 +932,9 @@
         <Parameter Name="e" Type="System.CodeDom.CodeIterationStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified iteration statement.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For most languages, this method will generate code for a `for` loop or a `while` loop.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateLabeledStatement">
@@ -1051,7 +944,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1061,8 +953,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeLabeledStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified labeled statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1073,7 +965,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1083,8 +974,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeLinePragma" />
       </Parameters>
       <Docs>
-        <param name="e">The end of the line pragma to generate code for.</param>
-        <summary>Generates code for the specified line pragma end.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1095,7 +986,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1105,8 +995,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeLinePragma" />
       </Parameters>
       <Docs>
-        <param name="e">The start of the line pragma to generate code for.</param>
-        <summary>Generates code for the specified line pragma start.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1117,7 +1007,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1128,9 +1017,9 @@
         <Parameter Name="c" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="e">The member method to generate code for.</param>
-        <param name="c">The type of the object that this method occurs on.</param>
-        <summary>Generates code for the specified method.</summary>
+        <param name="e">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1141,7 +1030,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1151,8 +1039,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeMethodInvokeExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified method invoke expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1163,7 +1051,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1173,8 +1060,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeMethodReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified method reference expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1185,7 +1072,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1195,8 +1081,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeMethodReturnStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified method return statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1207,7 +1093,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1217,8 +1102,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeNamespace" />
       </Parameters>
       <Docs>
-        <param name="e">The namespace to generate code for.</param>
-        <summary>Generates code for the specified namespace.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1229,7 +1114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1239,8 +1123,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeNamespace" />
       </Parameters>
       <Docs>
-        <param name="e">The namespace to generate code for.</param>
-        <summary>Generates code for the end of a namespace.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1251,7 +1135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1261,8 +1144,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeNamespaceImport" />
       </Parameters>
       <Docs>
-        <param name="e">The namespace import to generate code for.</param>
-        <summary>Generates code for the specified namespace import.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1273,7 +1156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1283,8 +1165,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeNamespace" />
       </Parameters>
       <Docs>
-        <param name="e">The namespace import to generate code for.</param>
-        <summary>Generates code for the specified namespace import.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1295,7 +1177,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1305,8 +1186,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeCompileUnit" />
       </Parameters>
       <Docs>
-        <param name="e">The compile unit to generate namespaces for.</param>
-        <summary>Generates code for the namespaces in the specified compile unit.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1317,7 +1198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1327,8 +1207,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeNamespace" />
       </Parameters>
       <Docs>
-        <param name="e">The namespace to generate code for.</param>
-        <summary>Generates code for the start of a namespace.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1339,7 +1219,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1349,8 +1228,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeObjectCreateExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified object creation expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1361,7 +1240,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1371,8 +1249,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeParameterDeclarationExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified parameter declaration expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1383,7 +1261,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1393,29 +1270,9 @@
         <Parameter Name="e" Type="System.CodeDom.CodePrimitiveExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified primitive expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="e" /> uses an invalid data type. Only the following data types are valid:  
-  
--   string  
-  
--   char  
-  
--   byte  
-  
--   Int16  
-  
--   Int32  
-  
--   Int64  
-  
--   Single  
-  
--   Double  
-  
--   Decimal</exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateProperty">
@@ -1425,7 +1282,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1436,9 +1292,9 @@
         <Parameter Name="c" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="e">The property to generate code for.</param>
-        <param name="c">The type of the object that this property occurs on.</param>
-        <summary>Generates code for the specified property.</summary>
+        <param name="e">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1449,7 +1305,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1459,8 +1314,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodePropertyReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified property reference expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1471,7 +1326,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1481,8 +1335,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodePropertySetValueReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified property set value reference expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1493,7 +1347,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1503,8 +1356,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeRemoveEventStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified remove event statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1515,7 +1368,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1525,8 +1377,8 @@
         <Parameter Name="s" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="s">The value to generate code for.</param>
-        <summary>Generates code for a single-precision floating point number.</summary>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1537,7 +1389,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1547,8 +1398,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeSnippetCompileUnit" />
       </Parameters>
       <Docs>
-        <param name="e">The literal code fragment compile unit to generate code for.</param>
-        <summary>Outputs the code of the specified literal code fragment compile unit.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1559,7 +1410,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1569,8 +1419,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeSnippetExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Outputs the code of the specified literal code fragment expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1581,7 +1431,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1591,8 +1440,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeSnippetTypeMember" />
       </Parameters>
       <Docs>
-        <param name="e">The member to generate code for.</param>
-        <summary>Outputs the code of the specified literal code fragment class member.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1603,7 +1452,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1613,8 +1461,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeSnippetStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Outputs the code of the specified literal code fragment statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1625,7 +1473,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1635,11 +1482,9 @@
         <Parameter Name="e" Type="System.CodeDom.CodeStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="e" /> is not a valid <see cref="T:System.CodeDom.CodeStatement" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateStatements">
@@ -1649,7 +1494,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1659,8 +1503,8 @@
         <Parameter Name="stms" Type="System.CodeDom.CodeStatementCollection" />
       </Parameters>
       <Docs>
-        <param name="stms">The statements to generate code for.</param>
-        <summary>Generates code for the specified statement collection.</summary>
+        <param name="stms">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1671,7 +1515,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1681,8 +1524,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeThisReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified this reference expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1693,7 +1536,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1703,8 +1545,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeThrowExceptionStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified throw exception statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1715,7 +1557,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1725,8 +1566,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeTryCatchFinallyStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified <see langword="try...catch...finally" /> statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1737,7 +1578,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1747,8 +1587,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeTypeConstructor" />
       </Parameters>
       <Docs>
-        <param name="e">The class constructor to generate code for.</param>
-        <summary>Generates code for the specified class constructor.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1759,7 +1599,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1769,8 +1608,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="e">The end of the class to generate code for.</param>
-        <summary>Generates code for the specified end of the class.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1781,7 +1620,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1791,8 +1629,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeTypeOfExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified type of expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1803,7 +1641,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1813,8 +1650,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeTypeReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified type reference expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1825,7 +1662,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1835,8 +1671,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeNamespace" />
       </Parameters>
       <Docs>
-        <param name="e">The namespace to generate classes for.</param>
-        <summary>Generates code for the specified namespace and the classes it contains.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1847,7 +1683,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1857,8 +1692,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="e">The start of the class to generate code for.</param>
-        <summary>Generates code for the specified start of the class.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1869,7 +1704,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1879,8 +1713,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeVariableDeclarationStatement" />
       </Parameters>
       <Docs>
-        <param name="e">The statement to generate code for.</param>
-        <summary>Generates code for the specified variable declaration statement.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1891,7 +1725,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1901,8 +1734,8 @@
         <Parameter Name="e" Type="System.CodeDom.CodeVariableReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <summary>Generates code for the specified variable reference expression.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1913,7 +1746,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1923,9 +1755,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeTypeReference" />
       </Parameters>
       <Docs>
-        <param name="value">The type whose name will be returned.</param>
-        <summary>Gets the name of the specified data type.</summary>
-        <returns>The name of the data type reference.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1936,23 +1768,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the amount of spaces to indent each indentation level.</summary>
-        <value>The number of spaces to indent for each indentation level.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Segments of code are commonly indented for ease of recognition.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCurrentClass">
@@ -1962,16 +1786,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current object being generated is a class.</summary>
-        <value>
-          <see langword="true" /> if the current object is a class; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1982,16 +1804,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current object being generated is a delegate.</summary>
-        <value>
-          <see langword="true" /> if the current object is a delegate; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2002,16 +1822,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current object being generated is an enumeration.</summary>
-        <value>
-          <see langword="true" /> if the current object is an enumeration; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2022,16 +1840,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current object being generated is an interface.</summary>
-        <value>
-          <see langword="true" /> if the current object is an interface; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2042,16 +1858,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current object being generated is a value type or struct.</summary>
-        <value>
-          <see langword="true" /> if the current object is a value type or struct; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2062,7 +1876,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2072,10 +1885,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The value to test for conflicts with valid identifiers.</param>
-        <summary>Gets a value indicating whether the specified value is a valid identifier.</summary>
-        <returns>
-          <see langword="true" /> if the value is a valid identifier; otherwise, <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2086,7 +1898,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2096,19 +1907,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to test for validity.</param>
-        <summary>Gets a value indicating whether the specified string is a valid identifier.</summary>
-        <returns>
-          <see langword="true" /> if the specified string is a valid identifier; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method checks the specified string to ensure that it does not contain certain characters that can be used to escape an identifier field. The <xref:System.CodeDom.Compiler.CodeGenerator.ValidateIdentifiers%2A> method calls this method to perform string validation. Calling the <xref:System.CodeDom.Compiler.CodeGenerator.ValidateIdentifiers%2A> method and passing a <xref:System.CodeDom.CodeCompileUnit> before generating code from it can prevent the use of certain character sequences to include hidden code within an identifier field.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NullToken">
@@ -2118,15 +1920,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the token that represents <see langword="null" />.</summary>
-        <value>The token that represents <see langword="null" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2137,15 +1938,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.CodeGeneratorOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the options to be used by the code generator.</summary>
-        <value>An object that indicates the options for the code generator to use.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2156,15 +1956,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.TextWriter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the text writer to use for output.</summary>
-        <value>The text writer to use for output.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2175,7 +1974,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2185,8 +1983,8 @@
         <Parameter Name="arg" Type="System.CodeDom.CodeAttributeArgument" />
       </Parameters>
       <Docs>
-        <param name="arg">The attribute argument to generate code for.</param>
-        <summary>Outputs an argument in an attribute block.</summary>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2197,7 +1995,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2207,8 +2004,8 @@
         <Parameter Name="attributes" Type="System.CodeDom.CodeAttributeDeclarationCollection" />
       </Parameters>
       <Docs>
-        <param name="attributes">The attributes to generate code for.</param>
-        <summary>Generates code for the specified attribute declaration collection.</summary>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2219,7 +2016,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2229,8 +2025,8 @@
         <Parameter Name="dir" Type="System.CodeDom.FieldDirection" />
       </Parameters>
       <Docs>
-        <param name="dir">One of the enumeration values that indicates the attribute of the field.</param>
-        <summary>Generates code for the specified <see cref="T:System.CodeDom.FieldDirection" />.</summary>
+        <param name="dir">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2241,7 +2037,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2251,8 +2046,8 @@
         <Parameter Name="expressions" Type="System.CodeDom.CodeExpressionCollection" />
       </Parameters>
       <Docs>
-        <param name="expressions">The expressions to generate code for.</param>
-        <summary>Generates code for the specified expression list.</summary>
+        <param name="expressions">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2263,7 +2058,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2274,10 +2068,9 @@
         <Parameter Name="newlineBetweenItems" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="expressions">The expressions to generate code for.</param>
-        <param name="newlineBetweenItems">
-          <see langword="true" /> to insert a new line after each item; otherwise, <see langword="false" />.</param>
-        <summary>Generates code for the specified expression list.</summary>
+        <param name="expressions">To be added.</param>
+        <param name="newlineBetweenItems">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2288,7 +2081,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2298,8 +2090,8 @@
         <Parameter Name="attributes" Type="System.CodeDom.MemberAttributes" />
       </Parameters>
       <Docs>
-        <param name="attributes">One of the enumeration values that specifies the attributes.</param>
-        <summary>Outputs a field scope modifier that corresponds to the specified attributes.</summary>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2310,7 +2102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2320,8 +2111,8 @@
         <Parameter Name="ident" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ident">The identifier to output.</param>
-        <summary>Outputs the specified identifier.</summary>
+        <param name="ident">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2332,7 +2123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2342,8 +2132,8 @@
         <Parameter Name="attributes" Type="System.CodeDom.MemberAttributes" />
       </Parameters>
       <Docs>
-        <param name="attributes">One of the enumeration values that indicates the member access modifier to generate code for.</param>
-        <summary>Generates code for the specified member access modifier.</summary>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2354,7 +2144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2364,8 +2153,8 @@
         <Parameter Name="attributes" Type="System.CodeDom.MemberAttributes" />
       </Parameters>
       <Docs>
-        <param name="attributes">One of the enumeration values that indicates the member scope modifier to generate code for.</param>
-        <summary>Generates code for the specified member scope modifier.</summary>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2376,7 +2165,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2386,8 +2174,8 @@
         <Parameter Name="op" Type="System.CodeDom.CodeBinaryOperatorType" />
       </Parameters>
       <Docs>
-        <param name="op">The operator to generate code for.</param>
-        <summary>Generates code for the specified operator.</summary>
+        <param name="op">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2398,7 +2186,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2408,8 +2195,8 @@
         <Parameter Name="parameters" Type="System.CodeDom.CodeParameterDeclarationExpressionCollection" />
       </Parameters>
       <Docs>
-        <param name="parameters">The parameter declaration expressions to generate code for.</param>
-        <summary>Generates code for the specified parameters.</summary>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2420,7 +2207,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2430,8 +2216,8 @@
         <Parameter Name="typeRef" Type="System.CodeDom.CodeTypeReference" />
       </Parameters>
       <Docs>
-        <param name="typeRef">The type to generate code for.</param>
-        <summary>Generates code for the specified type.</summary>
+        <param name="typeRef">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2442,7 +2228,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2454,12 +2239,10 @@
         <Parameter Name="isEnum" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributes">One of the enumeration values that indicates the type attributes to generate code for.</param>
-        <param name="isStruct">
-          <see langword="true" /> if the type is a struct; otherwise, <see langword="false" />.</param>
-        <param name="isEnum">
-          <see langword="true" /> if the type is an enum; otherwise, <see langword="false" />.</param>
-        <summary>Generates code for the specified type attributes.</summary>
+        <param name="attributes">To be added.</param>
+        <param name="isStruct">To be added.</param>
+        <param name="isEnum">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2470,7 +2253,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2481,9 +2263,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="typeRef">The type.</param>
-        <param name="name">The name for the object.</param>
-        <summary>Generates code for the specified object type and name pair.</summary>
+        <param name="typeRef">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2494,7 +2276,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2504,17 +2285,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to convert.</param>
-        <summary>Converts the specified string by formatting it with escape codes.</summary>
-        <returns>The converted string.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns a modified version of the specified string that has been formatted with escape code characters. For example, `/"` might be used to represent `"`. These escape codes are used to replace elements of the specified string that might otherwise conflict with language syntax.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Supports">
@@ -2524,7 +2298,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2534,10 +2307,9 @@
         <Parameter Name="support" Type="System.CodeDom.Compiler.GeneratorSupport" />
       </Parameters>
       <Docs>
-        <param name="support">The type of code generation support to test for.</param>
-        <summary>Gets a value indicating whether the specified code generation support is provided.</summary>
-        <returns>
-          <see langword="true" /> if the specified code generation support is provided; otherwise, <see langword="false" />.</returns>
+        <param name="support">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2548,7 +2320,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2558,9 +2329,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to create an escaped identifier for.</param>
-        <summary>Creates an escaped identifier for the specified value.</summary>
-        <returns>The escaped identifier for the value.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2571,7 +2342,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2581,9 +2351,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to generate a valid identifier for.</param>
-        <summary>Creates a valid identifier for the specified value.</summary>
-        <returns>A valid identifier for the specified value.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2594,7 +2364,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2606,13 +2375,11 @@
         <Parameter Name="o" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="e">The CodeDOM compilation unit to generate code for.</param>
-        <param name="w">The text writer to output code to.</param>
-        <param name="o">The options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) compilation unit and outputs it to the specified text writer using the specified options.</summary>
+        <param name="e">To be added.</param>
+        <param name="w">To be added.</param>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="w" /> is not available. <paramref name="w" /> may have been closed before the method call was made.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression">
@@ -2622,7 +2389,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2634,13 +2400,11 @@
         <Parameter Name="o" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="e">The expression to generate code for.</param>
-        <param name="w">The text writer to output code to.</param>
-        <param name="o">The options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) expression and outputs it to the specified text writer.</summary>
+        <param name="e">To be added.</param>
+        <param name="w">To be added.</param>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="w" /> is not available. <paramref name="w" /> may have been closed before the method call was made.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace">
@@ -2650,7 +2414,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2662,13 +2425,11 @@
         <Parameter Name="o" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="e">The namespace to generate code for.</param>
-        <param name="w">The text writer to output code to.</param>
-        <param name="o">The options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) namespace and outputs it to the specified text writer using the specified options.</summary>
+        <param name="e">To be added.</param>
+        <param name="w">To be added.</param>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="w" /> is not available. <paramref name="w" /> may have been closed before the method call was made.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement">
@@ -2678,7 +2439,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2690,13 +2450,11 @@
         <Parameter Name="o" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="e">The statement that contains the CodeDOM elements to translate.</param>
-        <param name="w">The text writer to output code to.</param>
-        <param name="o">The options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) statement and outputs it to the specified text writer using the specified options.</summary>
+        <param name="e">To be added.</param>
+        <param name="w">To be added.</param>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="w" /> is not available. <paramref name="w" /> may have been closed before the method call was made.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType">
@@ -2706,7 +2464,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2718,13 +2475,11 @@
         <Parameter Name="o" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="e">The type to generate code for.</param>
-        <param name="w">The text writer to output code to.</param>
-        <param name="o">The options to use for generating code.</param>
-        <summary>Generates code for the specified Code Document Object Model (CodeDOM) type declaration and outputs it to the specified text writer using the specified options.</summary>
+        <param name="e">To be added.</param>
+        <param name="w">To be added.</param>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="w" /> is not available. <paramref name="w" /> may have been closed before the method call was made.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput">
@@ -2734,7 +2489,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2744,9 +2498,9 @@
         <Parameter Name="type" Type="System.CodeDom.CodeTypeReference" />
       </Parameters>
       <Docs>
-        <param name="type">The type to return.</param>
-        <summary>Gets the type indicated by the specified <see cref="T:System.CodeDom.CodeTypeReference" />.</summary>
-        <returns>The name of the data type reference.</returns>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2757,7 +2511,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2767,10 +2520,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The value to test.</param>
-        <summary>Gets a value that indicates whether the specified value is a valid identifier for the current language.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="value" /> parameter is a valid identifier; otherwise, <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2781,7 +2533,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2791,10 +2542,9 @@
         <Parameter Name="support" Type="System.CodeDom.Compiler.GeneratorSupport" />
       </Parameters>
       <Docs>
-        <param name="support">The capabilities to test the generator for.</param>
-        <summary>Gets a value indicating whether the generator provides support for the language features represented by the specified <see cref="T:System.CodeDom.Compiler.GeneratorSupport" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the specified capabilities are supported; otherwise, <see langword="false" />.</returns>
+        <param name="support">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2805,7 +2555,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2815,8 +2564,8 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The identifier to validate.</param>
-        <summary>Throws an exception if the specified value is not a valid identifier.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2827,7 +2576,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2837,10 +2585,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The identifier to test for validity as an identifier.</param>
-        <summary>Throws an exception if the specified string is not a valid identifier.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If the specified identifier is invalid or conflicts with reserved or language keywords.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateIdentifiers">
@@ -2850,7 +2597,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2860,22 +2606,9 @@
         <Parameter Name="e" Type="System.CodeDom.CodeObject" />
       </Parameters>
       <Docs>
-        <param name="e">An object to test for invalid identifiers.</param>
-        <summary>Attempts to validate each identifier field contained in the specified <see cref="T:System.CodeDom.CodeObject" /> or <see cref="N:System.CodeDom" /> tree.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- It is possible for the identifier fields of <xref:System.CodeDom.CodeObject> objects to contain field escape characters and hidden code which can allow security violations. This method checks the literal fields of each <xref:System.CodeDom.CodeObject> in a <xref:System.CodeDom> tree for characters which could be used to hide code, and throws an exception if an identifier field contains an invalid character.  
-  
- This method calls the <xref:System.CodeDom.Compiler.CodeGenerator.IsValidLanguageIndependentIdentifier%2A> method to validate each identifier in the specified <xref:System.CodeDom.CodeObject> or <xref:System.CodeDom> tree, and throws an exception if an identifier is invalid or contains invalid characters.  
-  
- Call this method and pass it the <xref:System.CodeDom.CodeCompileUnit> containing the code graph to generate before generating code to block the use of certain character sequences that can be used to include hidden code within an identifier field. This method is not called automatically by any generate code methods.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The specified <see cref="T:System.CodeDom.CodeObject" /> contains an invalid identifier.</exception>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

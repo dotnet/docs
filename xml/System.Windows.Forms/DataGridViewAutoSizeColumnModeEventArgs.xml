@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property of a column in a <xref:System.Windows.Forms.DataGridView> control changes.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this type. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Manipulate%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#180](~/add/codesnippet/cpp/t-system.windows.forms.d_75_1.cpp)]
- [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#180](~/add/codesnippet/visualbasic/t-system.windows.forms.d_75_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.ButtonDemos#180](~/add/codesnippet/csharp/t-system.windows.forms.d_75_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -49,9 +29,9 @@
         <Parameter Name="previousMode" Type="System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
       </Parameters>
       <Docs>
-        <param name="dataGridViewColumn">The column with the <see cref="System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A" /> property that changed.</param>
-        <param name="previousMode">The previous <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" /> value of the column's <see cref="System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs" /> class.</summary>
+        <param name="dataGridViewColumn">To be added.</param>
+        <param name="previousMode">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,27 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the column with the <see cref="System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A" /> property that changed.</summary>
-        <value>The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> with the <see cref="System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A" /> property that changed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example illustrates the use of this property. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Manipulate%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#180](~/add/codesnippet/cpp/p-system.windows.forms.d_315_1.cpp)]
- [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#180](~/add/codesnippet/visualbasic/p-system.windows.forms.d_315_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.ButtonDemos#180](~/add/codesnippet/csharp/p-system.windows.forms.d_315_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousMode">
@@ -92,28 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the previous value of the <see cref="System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A" /> property of the column.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" /> value representing the previous value of the <see cref="System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A" /> property of the <see cref="System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs.Column%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#280](~/add/codesnippet/csharp/p-system.windows.forms.d_317_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#280](~/add/codesnippet/visualbasic/p-system.windows.forms.d_317_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

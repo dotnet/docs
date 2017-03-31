@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.WebServiceProtocols" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the transmission protocols that are used to decrypt data sent from a client browser in the HTTP request.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!CAUTION]
->  Using the HttpPostLocalhost value of this enumeration does not prevent access to the test or web service from remote computers. This value checks only the host header of the request; no other validation, authentication, or authorization checks are performed. This check mitigates only browser-based redirection attacks. Authentication and authorization are still required to restrict access to a Web service.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AnyHttpSoap">
@@ -36,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Any version of the HTTP SOAP protocol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Documentation">
@@ -53,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Web Services Documentation protocol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HttpGet">
@@ -70,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The HTTP GET protocol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HttpPost">
@@ -87,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The HTTP POST protocol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HttpPostLocalhost">
@@ -104,24 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The HTTP POST LOCALHOST protocol.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!CAUTION]
->  See the Remarks section. This value only checks the request's host header to mitigate only browser-redirect attacks. Authentication and authorization are still required to restrict access to a Web service.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HttpSoap">
@@ -131,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The HTTP SOAP protocol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HttpSoap12">
@@ -148,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The HTTP SOAP version 1.2 protocol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -165,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unknown protocol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the key for an entry in a <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCache" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When caching a <xref:System.IdentityModel.Tokens.SessionSecurityToken> there are two indexes required. One is the context ID, represented by the <xref:System.IdentityModel.Tokens.SessionSecurityToken.ContextId%2A?displayProperty=fullName> property, that is unique across all session tokens. The other is the key generation, represented by the <xref:System.IdentityModel.Tokens.SessionSecurityToken.KeyGeneration%2A?displayProperty=fullName> property, which is unique within a session token. When a session token is issued it has only a context ID. When the session token is renewed, the key generation is added. After renewal, the renewed session token is uniquely identifiable via the context ID and key generation.  
-  
- Objects of type SessionSecurityTokenCacheKey are used as the indexes to the session token cache. An index will always have a valid <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.ContextId%2A> property specified, but the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property may be `null`, depending on whether the token has been renewed. There is also an optional <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.EndpointId%2A> which gives the endpoint to which the token is scoped.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,10 +30,10 @@
         <Parameter Name="keyGeneration" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="endpointId">The endpoint ID to which the cache entry is scoped. This is should be the value of the <see cref="System.IdentityModel.Tokens.SessionSecurityToken.EndpointId%2A" /> property of the cached token.</param>
-        <param name="contextId">The context ID of the cache entry. This is should be the value of the <see cref="System.IdentityModel.Tokens.SessionSecurityToken.ContextId%2A" /> property of the cached token.</param>
-        <param name="keyGeneration">The key generation of the cache entry. This is should be the value of the <see cref="System.IdentityModel.Tokens.SessionSecurityToken.KeyGeneration%2A" /> property of the cached token. This value is available when the token is renewed. It will be <see langword="null" /> when caching a new token.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" /> class.</summary>
+        <param name="endpointId">To be added.</param>
+        <param name="contextId">To be added.</param>
+        <param name="keyGeneration">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,16 +50,9 @@
         <ReturnType>System.Xml.UniqueId</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the context ID for the cache key.</summary>
-        <value>The context ID for the cache key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This corresponds to the <xref:System.IdentityModel.Tokens.SessionSecurityToken.ContextId%2A> property of the cached token.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndpointId">
@@ -84,16 +68,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Endpoint ID to which this cache entry is scoped.</summary>
-        <value>The Endpoint ID to which this cache entry is scoped.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This corresponds to the <xref:System.IdentityModel.Tokens.SessionSecurityToken.EndpointId%2A> property of the cached token.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -112,18 +89,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to be compared to the current cache key. Should be assignable from <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />.</param>
-        <summary>Determines whether the specified object is the same as the current cache key.</summary>
-        <returns>
-          <see langword="true" /> if the specified object is the same as the current cache key; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in the comparison.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -140,16 +109,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a hash code for the current cache key.</summary>
-        <returns>The hash code for the current cache key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in generating the hash code.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreKeyGeneration">
@@ -165,17 +127,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether key generation can be ignored when doing index comparison.</summary>
-        <value>
-          <see langword="true" /> to ignore key generation; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property affects the manner in which the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is treated by the following methods and operators: <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.Equals%2A>, <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.GetHashCode%2A>, <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Equality%2A>, <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Inequality%2A>, and <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.ToString%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyGeneration">
@@ -191,16 +145,9 @@
         <ReturnType>System.Xml.UniqueId</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the key generation for the cache key</summary>
-        <value>The key generation for the cache key</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This corresponds to the <xref:System.IdentityModel.Tokens.SessionSecurityToken.KeyGeneration%2A> property of the cached token.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -220,19 +167,11 @@
         <Parameter Name="second" Type="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
       </Parameters>
       <Docs>
-        <param name="first">The first cache key to compare.</param>
-        <param name="second">The second cache key to compare.</param>
-        <summary>Implements the equality operator for the <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" /> class.</summary>
-        <returns>
-          <see langword="true" /> if the cache keys are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in the comparison.  
-  
- ]]></format>
-        </remarks>
+        <param name="first">To be added.</param>
+        <param name="second">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -252,19 +191,11 @@
         <Parameter Name="second" Type="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
       </Parameters>
       <Docs>
-        <param name="first">The first cache key to compare.</param>
-        <param name="second">The second cache key to compare.</param>
-        <summary>Implements the equality operator for the <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" /> class.</summary>
-        <returns>
-          <see langword="true" /> if the cache keys are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in the comparison.  
-  
- ]]></format>
-        </remarks>
+        <param name="first">To be added.</param>
+        <param name="second">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -281,16 +212,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Overrides <see cref="System.Object.ToString%2A" /> to provide a unique identifier.</summary>
-        <returns>The key in string form.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

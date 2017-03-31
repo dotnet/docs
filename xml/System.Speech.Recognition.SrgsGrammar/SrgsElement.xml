@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,33 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the base class for classes in the <see cref="N:System.Speech.Recognition.SrgsGrammar" /> namespace that correspond to the elements in an SRGS grammar.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SrgsElement class is the base class for the following classes, which correspond to elements defined in the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761):  
-  
--   <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem>  
-  
--   <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag>  
-  
--   <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf>  
-  
--   <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef>  
-  
--   <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag>  
-  
--   <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken>  
-  
- Two additional classes inherit from SrgsElement and represent the text contained within the classes listed above (SrgsText), and recognition matching modes (SrgsSubset):  
-  
--   <xref:System.Speech.Recognition.SrgsGrammar.SrgsSubset>  
-  
--   <xref:System.Speech.Recognition.SrgsGrammar.SrgsText>  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

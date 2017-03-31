@@ -1,40 +1,17 @@
 <Type Name="Acknowledgment" FullName="System.Messaging.Acknowledgment">
   <TypeSignature Language="C#" Value="public enum Acknowledgment" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Acknowledgment extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed Acknowledgment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.Acknowledgment" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the result of an attempted message delivery.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Acknowledgment class defines the types of acknowledgment messages that Message Queuing posts in the administration queue and the conditions that cause an acknowledgment message to be sent. Acknowledgment types can be divided broadly into four groups: positive arrival acknowledgments, positive read acknowledgments, negative arrival acknowledgments, and negative read acknowledgments.  
-  
- The administration queue associated with message is specified in the <xref:System.Messaging.Message.AdministrationQueue%2A?displayProperty=fullName> property.  
-  
- Message Queuing sets the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property to one of the Acknowledgment enumeration values when it creates an acknowledgment message. The <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property value is typically meaningful only when the instance refers to a system-sent acknowledgment message. Reading the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property for a message other than an acknowledgment message throws an exception.  
-  
- Message Queuing does not send an acknowledgment message unless the sending application requests that it do so. Your application makes this request by setting the appropriate value for the <xref:System.Messaging.Message.AcknowledgeType%2A?displayProperty=fullName> property. Message Queuing sends all acknowledgment messages to the administration queue specified in the <xref:System.Messaging.Message.AdministrationQueue%2A> property of the original <xref:System.Messaging.Message>.  
-  
-   
-  
-## Examples  
- The following code example sends and receives a message containing an order to and from a queue. It specifically requests a positive acknowledgment when the original message reaches or is retrieved from the queue.  
-  
- [!code-cs[Message.Acknowledgment#1](~/add/codesnippet/csharp/t-system.messaging.ackno_0_1.cs)]
- [!code-cpp[Message.Acknowledgment#1](~/add/codesnippet/cpp/t-system.messaging.ackno_0_1.cpp)]
- [!code-vb[Message.Acknowledgment#1](~/add/codesnippet/visualbasic/t-system.messaging.ackno_0_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AccessDenied">
@@ -44,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that the sending application does not have the necessary rights to send a message to the destination queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadDestinationQueue">
@@ -61,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that the destination queue is not available to the sending application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadEncryption">
@@ -78,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that the destination queue manager could not decrypt a private message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadSignature">
@@ -95,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that the original message's digital signature is not valid and could not be authenticated by Message Queuing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CouldNotEncrypt">
@@ -112,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that the source queue manager could not encrypt a private message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HopCountExceeded">
@@ -129,22 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that the original message's hop count (which indicates the number of intermediate servers) was exceeded.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The maximum hop count, 15, is set by Message Queuing and is immutable.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -154,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message is not an acknowledgment message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotTransactionalMessage">
@@ -171,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that a non-transactional message was sent to a transactional queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotTransactionalQueue">
@@ -188,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that a transactional message was sent to a non-transactional queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Purged">
@@ -205,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that the message was purged before reaching its destination queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueDeleted">
@@ -222,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative read acknowledgment indicating that the queue was deleted before the message could be read.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueExceedMaximumSize">
@@ -239,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that the original message was not delivered because its destination queue is full.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueuePurged">
@@ -256,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative read acknowledgment indicating that the queue was purged before the message could be read.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReachQueue">
@@ -273,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A positive arrival acknowledgment indicating that the original message reached its destination queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReachQueueTimeout">
@@ -290,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that the time-to-reach-queue or time-to-be-received timer expired before the original message could reach the destination queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -307,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A positive read acknowledgment indicating that the original message was received by the receiving application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReceiveTimeout">
@@ -324,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A negative read acknowledgment indicating that the original message was not received from the queue before its time-to-be-received timer expired.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityProviderFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a set of methods for creating instances of a provider's implementation of the data source classes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EntityProviderFactory provides a common entry point to obtain <xref:System.Data.EntityClient> classes.  
-  
- For conceptual information about how to use EntityProviderFactory, see [ADO.NET Entity Framework](../Topic/ADO.NET%20Entity%20Framework.md) and [DbProviderFactories](../Topic/DbProviderFactories.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateCommand">
@@ -36,7 +26,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,8 +33,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new instance of the provider's class that implements the <see cref="T:System.Data.EntityClient.EntityCommand" /> class.</summary>
-        <returns>A new instance of <see cref="T:System.Data.EntityClient.EntityCommand" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,8 +52,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Throws a <see cref="T:System.NotSupportedException" />. This method is currently not supported.</summary>
-        <returns>This method is currently not supported.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,8 +71,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new instance of the provider's class that implements the <see cref="T:System.Data.EntityClient.EntityConnection" /> class.</summary>
-        <returns>A new instance of <see cref="T:System.Data.EntityClient.EntityConnection" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,8 +90,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new instance of the provider's class that implements the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> class.</summary>
-        <returns>A new instance of <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,8 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>CreateDataAdapter is not supported in this version of the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)].</summary>
-        <returns>A <see cref="T:System.NotSupportedException" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,8 +128,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new instance of the provider's class that implements the <see cref="T:System.Data.EntityClient.EntityParameter" /> class.</summary>
-        <returns>A new instance of <see cref="T:System.Data.EntityClient.EntityParameter" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,9 +149,9 @@
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
       <Docs>
-        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
-        <summary>Returns a new instance of the provider's class that implements the provider's version of the <see cref="T:System.Security.CodeAccessPermission" /> class.</summary>
-        <returns>A <see cref="T:System.Security.CodeAccessPermission" /> object for the specified <see cref="T:System.Security.Permissions.PermissionState" />.</returns>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,14 +162,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.EntityClient.EntityProviderFactory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This <see cref="T:System.Data.EntityClient.EntityProviderFactory" /> instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +179,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -207,9 +188,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">The <see cref="T:System.Type" /> to return.</param>
-        <summary>Returns the requested <see cref="T:System.IServiceProvider" /> class.</summary>
-        <returns>A new instance of <see cref="T:System.IServiceProvider" />. The supported types are <see cref="T:System.Data.Common.DbProviderServices" />, <see cref="System.Data.Common.DbCommandDefinitionBuilder" />, and <see cref="System.Data.IEntityAdapter" />. Returns null (or <see langword="Nothing" /> in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]) for every other type.</returns>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,28 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.UpdateCheck" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies when objects are to be tested for concurrency conflicts.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The code example after the table specifies that `HomePage` objects should never be tested.  
-  
-   
-  
-## Examples  
- [!code-cs[System.Data.Linq.Mapping.UpdateCheck#1](~/add/codesnippet/csharp/updatecheck/northwind.cs#1)]
- [!code-vb[System.Data.Linq.Mapping.UpdateCheck#1](~/add/codesnippet/visualbasic/udpatecheck/northwind.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Always">
@@ -35,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.UpdateCheck</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Always check. This is the default unless <see cref="System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A" /> is <see langword="true" /> for a member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -52,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.UpdateCheck</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Never check.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WhenChanged">
@@ -69,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.UpdateCheck</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Check only when the object has been changed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

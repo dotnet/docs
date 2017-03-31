@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TogglePattern.TogglePatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.TogglePattern" /> object using its <see cref="System.Windows.Automation.TogglePattern.Current%2A" /> or <see cref="System.Windows.Automation.TogglePattern.Cached%2A" /> accessors.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,31 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ToggleState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the toggle state of the <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <value>The <see cref="T:System.Windows.Automation.ToggleState" /> of the <see cref="T:System.Windows.Automation.AutomationElement" />. The default value is <see cref="T:System.Windows.Automation.ToggleState" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState> and, if supported, <xref:System.Windows.Automation.ToggleState>.  
-  
-   
-  
-## Examples  
- In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
-  
- [!code-cs[UIATogglePattern_snip#100](~/add/codesnippet/csharp/UIATogglePattern_snip/UIATogglePattern_snippets.cs#100)]
- [!code-vb[UIATogglePattern_snip#100](~/add/codesnippet/visualbasic/UIATogglePattern_snip/UIATogglePattern_snippets.vb#100)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

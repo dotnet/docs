@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.FieldDirection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,24 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines identifiers used to indicate the direction of parameter and argument declarations.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- FieldDirection allows for passing arguments to functions by reference, or using incoming or outgoing parameters.  
-  
-   
-  
-## Examples  
- The following example demonstrates use of FieldDirection to indicate the field direction types of the parameters of a method in a method declaration.  
-  
- [!code-cs[CodeParameterDeclarationExample#3](~/add/codesnippet/csharp/t-system.codedom.fielddi_1.cs)]
- [!code-vb[CodeParameterDeclarationExample#3](~/add/codesnippet/visualbasic/t-system.codedom.fielddi_1.vb)]
- [!code-cpp[CodeParameterDeclarationExample#3](~/add/codesnippet/cpp/t-system.codedom.fielddi_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="In">
@@ -43,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.FieldDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An incoming field.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Out">
@@ -60,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.FieldDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An outgoing field.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ref">
@@ -77,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.FieldDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A field by reference.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

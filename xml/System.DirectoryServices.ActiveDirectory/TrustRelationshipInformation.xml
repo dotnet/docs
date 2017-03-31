@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The TrustRelationshipInformation class contains information for a trust relationship between a pair of <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtains the name of the source <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</summary>
-        <value>A string that contains the name of the source <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,15 +40,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtains the name of the target <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</summary>
-        <value>A string that contains the name of the target <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +58,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.TrustDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtains the <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> objects for this trust relationship relative to the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects that created the trust.</summary>
-        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value for this trust relationship relative to the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects that created the trust.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,15 +76,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.TrustType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtains the <see cref="T:System.DirectoryServices.ActiveDirectory.TrustType" /> object of the trust relationship.</summary>
-        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.TrustType" /> value that represents the type of the trust relationship.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

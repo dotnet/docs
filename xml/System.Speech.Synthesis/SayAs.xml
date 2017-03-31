@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SayAs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumerates the content types for the speaking of elements such as times, dates, and currency.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithHint%2A> method uses members of the SayAs enumeration to specify the content type of the appended text, which the speech synthesis engine can use to inform its pronunciation.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Date">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a date. For example, speak “05/19/2004” or “19.5.2004” as “may nineteenth two thousand four”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Day">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number as the day in a date. For example, speak “3rd” as “third”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DayMonth">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a day and month. For example, speak “12/05” as “May twelfth”, and speak “05/12” as “December 5th”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DayMonthYear">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a date including the day, month, and year. For example, speak “12/05/2004” as “May twelfth two thousand four”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Month">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a word as a month. For example, speak “June” as “June”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MonthDay">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a month and day. For example, speak “05/12” as “may twelfth”, and speak “12/5” as “December 5th”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MonthDayYear">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a date including the day, month, and year. For example, speak “12/05/2004” as “December fifth two thousand four”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MonthYear">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a month and year. For example, speak “05/2004” as “May two thousand four”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumberCardinal">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number as a cardinal number. For example, speak "3" as "three".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumberOrdinal">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number as an ordinal number. For example, speak "3rd" as "third".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SpellOut">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spell the word or phrase. For example, say “clock” as “C L O C K”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Telephone">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a U.S. telephone number. For example, speak “(306) 555-1212” as “Area code three zero six five five five one two one two”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak the word or phrase as text. For example, speak “timeline” as “timeline”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -250,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a time. For example, speak “9:45” as “nine forty-five”, and speak “9:45am” as “nine forty-five A M”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time12">
@@ -267,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a time using the 12-hour clock. For example, speak “03:25” as “three twenty-five”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time24">
@@ -284,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a time using the 24-hour clock. For example, speak “18:00” as “eighteen hundred hours”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Year">
@@ -301,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number as a year. For example, speak “1998” as “nineteen ninety-eight”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="YearMonth">
@@ -318,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a year and month. For example, speak “2004/05” as “May two thousand four”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="YearMonthDay">
@@ -335,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speak a number sequence as a date including the day, month, and year. For example, speak “2004/05/12” as “May twelfth two thousand four”.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

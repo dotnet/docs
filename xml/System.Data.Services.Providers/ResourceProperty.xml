@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourceProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,25 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a type to describe a property on a resource.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following Unicode characters are allowed in XML names but not in identifiers in EDM:  
-  
-1.  U+00B7 '•'  
-  
-2.  U+0387 '·'  
-  
-3.  U+06DE '۞'  
-  
-4.  U+212E '℮'  
-  
- If your property names can contain these characters, make sure that they are escaped properly in your provider implementation. The <xref:System.Xml.XmlConvert.EncodeName%2A> method will not properly escape these invalid EDM characters."  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -54,29 +35,11 @@
         <Parameter Name="propertyResourceType" Type="System.Data.Services.Providers.ResourceType" />
       </Parameters>
       <Docs>
-        <param name="name">Property name for the property as string.</param>
-        <param name="kind">
-          <see cref="T:System.Data.Services.Providers.ResourcePropertyKind" />.</param>
-        <param name="propertyResourceType">The <see cref="T:System.Data.Services.Providers.ResourceType" /> of the resource to which the property refers.</param>
-        <summary>Initializes a new <see cref="T:System.Data.Services.Providers.ResourceProperty" /> for an open property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following Unicode characters are allowed in XML names but not in identifiers in EDM:  
-  
-1.  U+00B7 '•'  
-  
-2.  U+0387 '·'  
-  
-3.  U+06DE '۞'  
-  
-4.  U+212E '℮'  
-  
- If your property names can contain these characters, make sure that they are escaped properly in your provider implementation. The <xref:System.Xml.XmlConvert.EncodeName%2A> method will not properly escape these invalid EDM characters."  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="kind">To be added.</param>
+        <param name="propertyResourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanReflectOnInstanceTypeProperty">
@@ -86,26 +49,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this property can be accessed through reflection on the declaring resource instance type.</summary>
-        <value>
-          <see langword="true" /> when the property can be accessed through reflection; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the CanReflectOnInstanceTypeProperty property returns `true`, the data service runtime uses reflection to get the property information on the declaring.<xref:System.Data.Services.Providers.ResourceType.InstanceType%2A> of the <xref:System.Data.Services.Providers.ResourceType>.  
-  
- When the CanReflectOnInstanceTypeProperty property returns `false`, the data service runtime uses the <xref:System.Data.Services.Providers.IDataServiceQueryProvider> interface to get or set this property value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomState">
@@ -115,15 +67,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets custom state information about a resource property that is defined by the developer.</summary>
-        <value>State information.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,16 +85,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the property is read-only.</summary>
-        <value>
-          <see langword="True" /> if the property is read-only.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +103,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -169,8 +117,8 @@
         <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the kind of the resource property with regard to the resource.</summary>
-        <value>A <see cref="T:System.Data.Services.Providers.ResourcePropertyKind" /> value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,7 +129,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -193,16 +140,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets MIME type for the property.</summary>
-        <value>String value that indicates MIME type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Null MIME type is not specified.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -212,7 +152,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -224,8 +163,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the resource property.</summary>
-        <value>The name of the resource property as string.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,7 +175,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -248,8 +186,8 @@
         <ReturnType>System.Data.Services.Providers.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the resource property.</summary>
-        <value>The <see cref="T:System.Data.Services.Providers.ResourceType" /> of the resource property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,7 +198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,7 +205,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the resource property to read-only.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

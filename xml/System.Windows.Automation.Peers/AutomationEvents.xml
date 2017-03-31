@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.AutomationEvents" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the event that is raised by the element through the associated <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is passed to the <xref:System.Windows.Automation.Peers.AutomationPeer.RaiseAutomationEvent%2A> method to raise an event.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AsyncContentLoaded">
@@ -29,16 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.AsyncContentLoadedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AutomationFocusChanged">
@@ -48,16 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InputDiscarded">
@@ -73,9 +59,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputDiscardedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InputReachedOtherElement">
@@ -91,9 +75,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedOtherElementEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InputReachedTarget">
@@ -109,9 +91,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedTargetEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvokePatternOnInvoked">
@@ -121,16 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MenuClosed">
@@ -140,16 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.MenuClosedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MenuOpened">
@@ -159,16 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.MenuOpenedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -178,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used to raise a notification that a property has changed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionItemPatternOnElementAddedToSelection">
@@ -195,16 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionItemPatternOnElementRemovedFromSelection">
@@ -214,16 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionItemPatternOnElementSelected">
@@ -233,16 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionPatternOnInvalidated">
@@ -252,16 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StructureChanged">
@@ -271,16 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextPatternOnTextChanged">
@@ -290,16 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.TextPatternIdentifiers.TextChangedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextPatternOnTextSelectionChanged">
@@ -309,16 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.TextPatternIdentifiers.TextSelectionChangedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ToolTipClosed">
@@ -328,16 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.ToolTipClosedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ToolTipOpened">
@@ -347,16 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.ToolTipOpenedEvent" />
-        </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

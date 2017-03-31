@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,44 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Enables developers to override the rendering for only the selected sections of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls in an <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> zone.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Chrome refers to the peripheral user interface (UI) elements that frame each Web Parts control or server control contained in a zone. The chrome for a control includes its border, its title bar, and the icons, title text, and verbs menu that appear within the title bar. The appearance of the chrome is set at the zone level, and applies to all the controls in the zone.  
-  
- The Web Parts control set uses the EditorPartChrome class to render the chrome for <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. Additionally, this class provides a way for developers to customize the rendering of any <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in an <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone. For example, you can override the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome.CreateEditorPartChromeStyle%2A> method to customize some specific style attributes defined in the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone.  
-  
- The EditorPartChrome class contains several important methods that are useful when you want to override the rendering of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. One is the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome.%23ctor%2A> constructor, which you use when you override the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome%2A> method in a custom <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class to create an instance of your custom EditorPartChrome object. Another useful method is the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome.RenderPartContents%2A> method, which you can use to control the rendering of the content area of controls in a zone (as opposed to chrome elements such as headers, footers, and title bars). Finally, if you want complete programmatic control over all aspects of rendering the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, you can override the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome.RenderEditorPart%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the EditorPartChrome class to override the default rendering of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in an <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone.  
-  
- The code example has three parts:  
-  
--   A user control that enables you to change display modes on a Web Parts page.  
-  
--   A Web page that hosts all the controls in the example.  
-  
--   A class that contains the source code for a custom EditorPartChrome class and <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone.  
-  
- The first part of the code example is the user control. The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](../Topic/Walkthrough:%20Changing%20Display%20Modes%20on%20a%20Web%20Parts%20Page.md) topic, and place the file in the same folder as the .aspx page in this code example.  
-  
- The second part of the example is the Web page. Note that there is a `Register` directive near the top of the file to register the compiled component and a tag prefix. Also note that the page references the custom editor zone using the element `<aspSample:MyEditorZone>`.  
-  
- [!code-vb[WebParts_EditorPartChrome_Overview#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_273_1.aspx)]
- [!code-cs[WebParts_EditorPartChrome_Overview#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_273_1.aspx)]  
-  
- The third part of the example contains the implementation of the custom editor part chrome and editor part zone. `MyEditorZone` extends <xref:System.Web.UI.WebControls.WebParts.EditorZone> and overrides <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome%2A> to return the custom editor part chrome. `MyEditorPartChrome` changes the background color of the editor part control in the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome.CreateEditorPartChromeStyle%2A> method. The background color of the zone is changed in the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome.PerformPreRender%2A> method, and text is added to the editor part in the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome.RenderPartContents%2A> method.  
-  
- [!code-cs[WebParts_EditorPartChrome_Overview#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_273_2.cs)]
- [!code-vb[WebParts_EditorPartChrome_Overview#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_273_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,24 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="zone" Type="System.Web.UI.WebControls.WebParts.EditorZoneBase" />
       </Parameters>
       <Docs>
-        <param name="zone">The associated <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EditorPartChrome constructor initializes a new instance of the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> class. It is used primarily by an <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone in its <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome%2A> method to create an instance of the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> object that handles the chrome rendering and any custom rendering for <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the zone.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> that <paramref name="zone" /> refers to is <see langword="null" />.</exception>
+        <param name="zone">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateEditorPartChromeStyle">
@@ -86,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,29 +50,11 @@
         <Parameter Name="chromeType" Type="System.Web.UI.WebControls.WebParts.PartChromeType" />
       </Parameters>
       <Docs>
-        <param name="editorPart">The control that is currently being rendered.</param>
-        <param name="chromeType">The type of chrome for a particular control; one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> enumeration values.</param>
-        <summary>Creates the style object that supplies style attributes for each <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control rendered by the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" /> object.</summary>
-        <returns>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for <paramref name="editorPart" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateEditorPartChromeStyle method creates a <xref:System.Web.UI.WebControls.Style> object that is used by the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> object to render an <xref:System.Web.UI.WebControls.WebParts.EditorPart> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the CreateEditorPartChromeStyle method to change the background color of the editor part control. For the full code required to run the example, including the Web page to host these controls, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> class overview.  
-  
- [!code-cs[WebParts_EditorPartChrome_Overview#3](~/add/codesnippet/csharp/ea7f0051-cf04-451d-96f8-_1.cs)]
- [!code-vb[WebParts_EditorPartChrome_Overview#3](~/add/codesnippet/visualbasic/ea7f0051-cf04-451d-96f8-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The control that <paramref name="editorPart" /> refers to is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="chromeType" /> is not a <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" />.</exception>
+        <param name="editorPart">To be added.</param>
+        <param name="chromeType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformPreRender">
@@ -129,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,23 +71,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs tasks that must be done prior to rendering <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PerformPreRender method allows you to perform tasks that must be done during the <xref:System.Web.UI.Control.PreRender> event and cannot be done when the control is rendered, such as applying a style sheet to a control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the PerformPreRender method to change the background color of the editor zone. For the full code required to run the example, including the Web page to host these controls, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> class overview.  
-  
- [!code-cs[WebParts_EditorPartChrome_Overview#4](~/add/codesnippet/csharp/m-system.web.ui.webcontr_132_1.cs)]
- [!code-vb[WebParts_EditorPartChrome_Overview#4](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_132_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderEditorPart">
@@ -163,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,18 +92,10 @@
         <Parameter Name="editorPart" Type="System.Web.UI.WebControls.WebParts.EditorPart" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <c>editorPart</c> content.</param>
-        <param name="editorPart">The control currently being rendered.</param>
-        <summary>Renders a complete <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control with all its sections.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RenderEditorPart method renders the complete <xref:System.Web.UI.WebControls.WebParts.EditorPart> control, with header, contents, and footer. Overriding this method gives a developer complete programmatic control over rendering all aspects of `editorPart`; for that reason, overriding this method is quite complex.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The control that <paramref name="editorPart" /> refers to is <see langword="null" />.</exception>
+        <param name="writer">To be added.</param>
+        <param name="editorPart">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderPartContents">
@@ -195,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,25 +115,10 @@
         <Parameter Name="editorPart" Type="System.Web.UI.WebControls.WebParts.EditorPart" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <c>editorPart</c> content.</param>
-        <param name="editorPart">The control currently being rendered.</param>
-        <summary>Renders the main content area of an <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control, excluding the header and footer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RenderPartContents method enables you to override the rendering of the body area of `editorPart`, while leaving rendering of the header and footer to the default rendering.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the RenderPartContents method to add text to the editor part. For the full code required to run the example, including the Web page to host these controls, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> class overview.  
-  
- [!code-cs[WebParts_EditorPartChrome_Overview#5](~/add/codesnippet/csharp/f55c27b3-54ad-4c81-bb46-_1.cs)]
- [!code-vb[WebParts_EditorPartChrome_Overview#5](~/add/codesnippet/visualbasic/f55c27b3-54ad-4c81-bb46-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="editorPart">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Zone">
@@ -234,23 +128,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.EditorZoneBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the associated <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> zone.</summary>
-        <value>A reference to an <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> that is associated with the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Zone property provides a reference to the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone that contains the controls for which the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> object provides rendering.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

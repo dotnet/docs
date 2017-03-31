@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ISelectionService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -14,24 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an interface for a designer to select components.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a component is selected, its viewable or editable properties are shown in the Properties window.  
-  
-   
-  
-## Examples  
- The following example demonstrates use of the ISelectionService to handle the <xref:System.ComponentModel.Design.ISelectionService.SelectionChanged> and <xref:System.ComponentModel.Design.ISelectionService.SelectionChanging> events.  
-  
- [!code-vb[ISelectionServiceSample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._54_1.vb)]
- [!code-cpp[ISelectionServiceSample#1](~/add/codesnippet/cpp/t-system.componentmodel._54_1.cpp)]
- [!code-cs[ISelectionServiceSample#1](~/add/codesnippet/csharp/t-system.componentmodel._54_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetComponentSelected">
@@ -41,8 +29,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -51,18 +43,10 @@
         <Parameter Name="component" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="component">The component to test.</param>
-        <summary>Gets a value indicating whether the specified component is currently selected.</summary>
-        <returns>
-          <see langword="true" /> if the component is part of the user's current selection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be used to check whether a specific component is currently selected. This process is generally quicker than getting and parsing the entire list of selected components.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedComponents">
@@ -72,16 +56,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a collection of components that are currently selected.</summary>
-        <returns>A collection that represents the current set of components that are selected.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,23 +80,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that is currently the primary selected object.</summary>
-        <value>The object that is currently the primary selected object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When multiple components are selected at design time, one of the objects is the primary selected object. Some operations behave differently depending on which selected component is the primary selected object. The primary selected object is typically the last object that was selected, but the primary object of a multiple component selection can be changed to any of the selected components. The primary selected object has a selection border that is distinct in appearance from the other selected objects. The specific type of visual distinction depends on the development environment's implementation of a selection user interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionChanged">
@@ -118,34 +103,19 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the current selection changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Minimize processing when handling this event, because processing that occurs within this event handler can significantly affect the overall performance of the form designer.  
-  
-   
-  
-## Examples  
- The following example illustrates how to use the SelectionChanged event.  
-  
- [!code-cs[ISelectionService#2](~/add/codesnippet/csharp/e-system.componentmodel._0_1.cs)]
- [!code-cpp[ISelectionService#2](~/add/codesnippet/cpp/e-system.componentmodel._0_1.cpp)]
- [!code-vb[ISelectionService#2](~/add/codesnippet/visualbasic/e-system.componentmodel._0_1.vb)]  
-[!code-cs[ISelectionService#3](~/add/codesnippet/csharp/e-system.componentmodel._0_2.cs)]
-[!code-cpp[ISelectionService#3](~/add/codesnippet/cpp/e-system.componentmodel._0_2.cpp)]
-[!code-vb[ISelectionService#3](~/add/codesnippet/visualbasic/e-system.componentmodel._0_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionChanging">
@@ -155,34 +125,19 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the current selection is about to change.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Minimize processing when handling this event, because processing that occurs within this event handler can significantly affect the overall performance of the form designer.  
-  
-   
-  
-## Examples  
- The following example illustrates how to use the SelectionChanging event.  
-  
- [!code-cs[ISelectionService#4](~/add/codesnippet/csharp/e-system.componentmodel._1_1.cs)]
- [!code-cpp[ISelectionService#4](~/add/codesnippet/cpp/e-system.componentmodel._1_1.cpp)]
- [!code-vb[ISelectionService#4](~/add/codesnippet/visualbasic/e-system.componentmodel._1_1.vb)]  
-[!code-cs[ISelectionService#5](~/add/codesnippet/csharp/e-system.componentmodel._1_2.cs)]
-[!code-cpp[ISelectionService#5](~/add/codesnippet/cpp/e-system.componentmodel._1_2.cpp)]
-[!code-vb[ISelectionService#5](~/add/codesnippet/visualbasic/e-system.componentmodel._1_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionCount">
@@ -192,15 +147,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the count of selected objects.</summary>
-        <value>The number of selected objects.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +170,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -221,16 +184,9 @@
         <Parameter Name="components" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="components">The collection of components to select.</param>
-        <summary>Selects the specified collection of components.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the array is `null` or does not contain any components, SetSelectedComponents selects the top-level component in the designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="components">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedComponents">
@@ -240,8 +196,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -251,17 +211,10 @@
         <Parameter Name="selectionType" Type="System.ComponentModel.Design.SelectionTypes" />
       </Parameters>
       <Docs>
-        <param name="components">The collection of components to select.</param>
-        <param name="selectionType">A value from the <see cref="T:System.ComponentModel.Design.SelectionTypes" /> enumeration. The default is <see cref="T:System.ComponentModel.Design.SelectionTypes" />.</param>
-        <summary>Selects the components from within the specified collection of components that match the specified selection type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the array is `null` or does not contain any components, <xref:System.ComponentModel.Design.ISelectionService.SetSelectedComponents%2A> selects the top-level component in the designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="components">To be added.</param>
+        <param name="selectionType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

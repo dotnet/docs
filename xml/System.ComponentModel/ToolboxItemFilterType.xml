@@ -4,26 +4,19 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ToolboxItemFilterType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines identifiers used to indicate the type of filter that a <see cref="T:System.ComponentModel.ToolboxItemFilterAttribute" /> uses.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to apply the <xref:System.ComponentModel.ToolboxItemFilterAttribute>.  
-  
- [!code-vb[IToolboxUserExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._60_1.vb)]
- [!code-cs[IToolboxUserExample#1](~/add/codesnippet/csharp/t-system.componentmodel._60_1.cs)]
- [!code-cpp[IToolboxUserExample#1](~/add/codesnippet/cpp/t-system.componentmodel._60_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Allow">
@@ -33,14 +26,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ToolboxItemFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a toolbox item filter string is allowed, but not required.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -50,31 +47,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ToolboxItemFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that custom processing is required to determine whether to use a toolbox item filter string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type of ToolboxItemFilterType is typically specified on a root designer class to indicate that the designer wishes to accept or reject a toolbox item through code. The designer must implement the <xref:System.Drawing.Design.IToolboxUser.GetToolSupported%2A> method of the <xref:System.Drawing.Design.IToolboxUser> interface.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to apply the <xref:System.ComponentModel.ToolboxItemFilterAttribute>.  
-  
- [!code-vb[IToolboxUserExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._60_1.vb)]
- [!code-cs[IToolboxUserExample#1](~/add/codesnippet/csharp/t-system.componentmodel._60_1.cs)]
- [!code-cpp[IToolboxUserExample#1](~/add/codesnippet/cpp/t-system.componentmodel._60_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Prevent">
@@ -84,22 +68,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ToolboxItemFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a toolbox item filter string is not allowed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a designer and a component class both have a filter string and one has a ToolboxItemFilterType of Prevent, the toolbox item will not be available.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Require">
@@ -109,22 +89,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ToolboxItemFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a toolbox item filter string must be present for a toolbox item to be enabled.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a toolbox item with a filter type of Require to be enabled, the designer and the component class must have a matching filter string. Additionally, neither the designer or component class can have a ToolboxItemFilterType of Prevent for the toolbox item to be enabled.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.FormatConvertedBitmap" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,21 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides pixel format conversion functionality for a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- FormatConvertedBitmap implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can occur only during object initialization. Call <xref:System.Windows.Media.Imaging.FormatConvertedBitmap.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.FormatConvertedBitmap.EndInit%2A> to signal that initialization has completed. After initialization, property changes are ignored.  
-  
- FormatConvertedBitmap objects created using the <xref:System.Windows.Media.Imaging.FormatConvertedBitmap.%23ctor%28System.Windows.Media.Imaging.BitmapSource%2CSystem.Windows.Media.PixelFormat%2CSystem.Windows.Media.Imaging.BitmapPalette%2CSystem.Double%29> constructor are automatically initialized, and property changes are ignored.  
-  
- For format conversions between RGB color spaces with different characteristics, the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> class should be used. Conversions between color spaces need a source color profile and destination color profile for gamut mapping to provide a reliable color conversion. The color profiles are provided by the <xref:System.Windows.Media.ColorContext> parameters of the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.%23ctor%2A> or by the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.DestinationColorContext%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.SourceColorContext%2A> properties.  
-  
- Metadata tags related to image data must be updated if an image is saved to a file after a transform is applied.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,20 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Imaging.FormatConvertedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. To initialize a <xref:System.Windows.Media.Imaging.FormatConvertedBitmap> created using this constructor, you must perform property initialization between <xref:System.Windows.Media.Imaging.FormatConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.FormatConvertedBitmap.EndInit%2A> calls.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,7 +41,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,19 +50,12 @@
         <Parameter Name="alphaThreshold" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.Source%2A" /> of the new <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> instance.</param>
-        <param name="destinationFormat">The <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationFormat%2A" /> of the new <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> instance.</param>
-        <param name="destinationPalette">The <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPalette%2A" /> of the new <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> instance if <c>destinationFormat</c> is an indexed format.</param>
-        <param name="alphaThreshold">The <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.AlphaThreshold%2A" /> of the new <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> class that has the specified <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.Source%2A" />, <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationFormat%2A" />, <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPalette%2A" />, and <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.AlphaThreshold%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Imaging.FormatConvertedBitmap> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
-  
- ]]></format>
-        </remarks>
+        <param name="source">To be added.</param>
+        <param name="destinationFormat">To be added.</param>
+        <param name="destinationPalette">To be added.</param>
+        <param name="alphaThreshold">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AlphaThreshold">
@@ -95,33 +65,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alpha channel threshold of a bitmap when converting to palletized formats that recognizes an alpha color.</summary>
-        <value>The alpha channel threshold for this <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" />. The default value is 0.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AlphaThreshold value is used to determine what level of opacity will be mapped to the fully transparent color in the converted format. A value of 9.8 implies that any pixel with an alpha value of less than 25 will be mapped to the transparent color. A value of 100 maps all pixels which are not fully opaque to the transparent color.  
-  
- The destination palette should provide a transparent color; otherwise, the transparent color will be the one closest to zero, often black.  
-  
-<a name="dependencyPropertyInfo_AlphaThreshold"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.FormatConvertedBitmap.AlphaThresholdProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AlphaThresholdProperty">
@@ -131,14 +83,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.AlphaThreshold%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,28 +107,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the start of the <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> initialization.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Property initialization must be done between BeginInit and <xref:System.Windows.Media.Imaging.FormatConvertedBitmap.EndInit%2A> calls. After the <xref:System.Windows.Media.Imaging.FormatConvertedBitmap> has been initialized, property changes are ignored.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.FormatConvertedBitmap> with a set of properties by using the BeginInit and <xref:System.Windows.Media.Imaging.FormatConvertedBitmap.EndInit%2A> methods.  
-  
- [!code-vb[ImagingSnippetGallery_procedural_snip#FormatConvertedBitmapCodeExampleWholePage](~/add/codesnippet/visualbasic/ImagingSnippetGallery/FormatConvertedBitmapExample.vb#formatconvertedbitmapcodeexamplewholepage)]
- [!code-cs[ImagingSnippetGallery_procedural_snip#FormatConvertedBitmapCodeExampleWholePage](~/add/codesnippet/csharp/ImagingSnippetGallery_csharp/FormatConvertedBitmapExample.cs#formatconvertedbitmapcodeexamplewholepage)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> is currently being initialized. BeginInit has already been called.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> has already been initialized.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -188,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,18 +125,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -217,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,18 +165,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -268,7 +177,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,7 +198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,30 +217,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the pixel format to convert the bitmap to.</summary>
-        <value>The pixel format to apply to the bitmap. The default value is <see cref="System.Windows.Media.PixelFormats.Pbgra32%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_DestinationFormat"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationFormatProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DestinationFormatProperty">
@@ -343,14 +235,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationFormat%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,31 +252,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the palette to apply to the bitmap if the format is indexed.</summary>
-        <value>The destination palette to apply to the bitmap. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You must set this property if you want to use an indexed pixel format for the <xref:System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationFormat%2A>.  
-  
-<a name="dependencyPropertyInfo_DestinationPalette"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPaletteProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DestinationPaletteProperty">
@@ -395,14 +270,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPalette%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,7 +287,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -426,36 +299,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the end of the <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> initialization.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Property initialization must be done between <xref:System.Windows.Media.Imaging.FormatConvertedBitmap.BeginInit%2A> and EndInit calls, as demonstrated in the following example. After the <xref:System.Windows.Media.Imaging.FormatConvertedBitmap> has been initialized, property changes are ignored.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.FormatConvertedBitmap> with a set of properties by using the <xref:System.Windows.Media.Imaging.FormatConvertedBitmap.BeginInit%2A> and EndInit methods.  
-  
- [!code-vb[ImagingSnippetGallery_procedural_snip#FormatConvertedBitmapCodeExampleWholePage](~/add/codesnippet/visualbasic/ImagingSnippetGallery/FormatConvertedBitmapExample.vb#formatconvertedbitmapcodeexamplewholepage)]
- [!code-cs[ImagingSnippetGallery_procedural_snip#FormatConvertedBitmapCodeExampleWholePage](~/add/codesnippet/csharp/ImagingSnippetGallery_csharp/FormatConvertedBitmapExample.cs#formatconvertedbitmapcodeexamplewholepage)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.Source%2A" /> property is <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationFormat%2A" /> property is an indexed format and the <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPalette%2A" /> property is <see langword="null" />.  
-  
- -or-  
-  
- The palette colors do not match the destination format.  
-  
- -or-  
-  
- The EndInit method is called without first calling <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.BeginInit%2A" />.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -465,7 +310,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -487,7 +331,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -509,31 +352,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the source for the bitmap.</summary>
-        <value>The source for the bitmap. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can chain a <xref:System.Windows.Media.Imaging.FormatConvertedBitmap> to another <xref:System.Windows.Media.Imaging.BitmapSource> by setting the Source property of the <xref:System.Windows.Media.Imaging.FormatConvertedBitmap> to the <xref:System.Windows.Media.Imaging.BitmapSource> that you want. See [How to: Chain BitmapSource Objects Together](../Topic/How%20to:%20Chain%20BitmapSource%20Objects%20Together.md) for an example of chaining.  
-  
-<a name="dependencyPropertyInfo_Source"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.FormatConvertedBitmap.SourceProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceProperty">
@@ -543,14 +370,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.FormatConvertedBitmap.Source%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

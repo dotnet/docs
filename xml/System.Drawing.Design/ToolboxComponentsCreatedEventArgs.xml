@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxComponentsCreatedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Drawing.Design.ToolboxItem.ComponentsCreated" /> event that occurs when components are added to the toolbox.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Drawing.Design.ToolboxItem.ComponentsCreated> event is raised when components are added to the toolbox. ToolboxComponentsCreatedEventArgs provides data indicating which component or components are being added.  
-  
-   
-  
-## Examples  
- The following example method returns a ToolboxComponentsCreatedEventArgs that indicates the components that have been created:  
-  
- [!code-cs[MoreEventArgsExamples#3](~/add/codesnippet/csharp/t-system.drawing.design._18_1.cs)]
- [!code-cpp[MoreEventArgsExamples#3](~/add/codesnippet/cpp/t-system.drawing.design._18_1.cpp)]
- [!code-vb[MoreEventArgsExamples#3](~/add/codesnippet/visualbasic/t-system.drawing.design._18_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="components" Type="System.ComponentModel.IComponent[]" />
       </Parameters>
       <Docs>
-        <param name="components">The components to include in the toolbox.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxComponentsCreatedEventArgs" /> class.</summary>
+        <param name="components">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,15 +40,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IComponent[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an array containing the components to add to the toolbox.</summary>
-        <value>An array of type <see cref="T:System.ComponentModel.IComponent" /> indicating the components to add to the toolbox.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

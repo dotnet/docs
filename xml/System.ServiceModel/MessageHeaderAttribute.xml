@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageHeaderAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,67 +13,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false, Inherited=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies that a data member is a SOAP message header.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MessageHeaderAttribute attribute allows you to map fields and properties of a type marked with the <xref:System.ServiceModel.MessageContractAttribute> attribute to SOAP message headers. The field or property can be of a simple type or a composite type that can be serialized.  
-  
- For information on controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName>, [Specifying Data Transfer in Service Contracts](../Topic/Specifying%20Data%20Transfer%20in%20Service%20Contracts.md), and [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
-  
- For more information about creating message contracts, see [Using Message Contracts](../Topic/Using%20Message%20Contracts.md).  
-  
- The SOAP standard defines the following attributes that can exist on a header:  
-  
--   `Actor` or `Role` (`Actor` in SOAP 1.1, `Role` in SOAP 1.2)  
-  
--   `MustUnderstand`  
-  
--   `Relay`  
-  
- The `Actor` or `Role` attribute specifies the URI of the node for which a given header is intended. The `MustUnderstand` attribute specifies whether the header understands the node processing. The `Relay` attribute specifies whether the header is to be relayed to downstream nodes. [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] does not perform any processing of these attributes on incoming messages, except for the `MustUnderstand` attribute.  
-  
- You can, however, read and write these attributes, even though they are not sent by default. You can set the attribute values in two ways. First, you can change the <xref:System.ServiceModel.MessageHeaderAttribute.Actor%2A>, <xref:System.ServiceModel.MessageHeaderAttribute.MustUnderstand%2A> and <xref:System.ServiceModel.MessageHeaderAttribute.Relay%2A> properties on the MessageHeaderAttribute. (There is no `Role` property – set the <xref:System.ServiceModel.MessageHeaderAttribute.Actor%2A> property and `Role` is passed if SOAP 1.2 is used). For example:  
-  
-   
-  
- The second way to control these attributes is by making the desired header type the type parameter of the <xref:System.ServiceModel.MessageHeader%601> class and using the resulting type together with the MessageHeaderAttribute. Then use the <xref:System.ServiceModel.MessageHeader%601> properties programmatically to set the SOAP attributes. For example:  
-  
-   
-  
-   
-  
- If both the dynamic and the static control mechanisms are used, the static settings are the default but can be overridden using the dynamic mechanism. For example:  
-  
-   
-  
-   
-  
- Creating repeated headers with dynamic attribute control is allowed. For example:  
-  
-```  
-[MessageHeaderArray] public MessageHeader<Person> documentApprovers[];  
-```  
-  
- On the receiving side, reading these SOAP attributes can only be done if the generic <xref:System.ServiceModel.MessageHeader%601> class is used. Examine the <xref:System.ServiceModel.MessageHeader%601.Actor%2A>, <xref:System.ServiceModel.MessageHeader%601.Relay%2A> or <xref:System.ServiceModel.MessageHeader%601.MustUnderstand%2A> properties of a header of the <xref:System.ServiceModel.MessageHeader%601> type to discover the attribute settings on the received message.  
-  
- When a message is received and then sent back, the SOAP attribute settings only roundtrip for headers of the <xref:System.ServiceModel.MessageHeader%601> type.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the MessageHeaderAttribute to create a SOAP header for the response message with the <xref:System.ServiceModel.MessageContractMemberAttribute.Name%2A>, <xref:System.ServiceModel.MessageContractMemberAttribute.Namespace%2A> and <xref:System.ServiceModel.MessageHeaderAttribute.MustUnderstand%2A> properties set to values appropriate for this header. The code example is followed by an example of the message when sent.  
-  
- [!code-vb[MessageHeaderAttribute#4](~/add/codesnippet/visualbasic/messageheaderattribute.client/services.vb#4)]
- [!code-cs[MessageHeaderAttribute#4](~/add/codesnippet/csharp/messageheaderattribute.client/services.cs#4)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,12 +28,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageHeaderAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,23 +44,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a URI that indicates the node at which this header is targeted. Maps to the role header attribute when SOAP 1.2 is used and the actor header attribute when SOAP 1.1 is used.</summary>
-        <value>A URI that indicates the node at which this header is targeted. This URI maps to the role header attribute when SOAP 1.2 is used and the actor header attribute when SOAP 1.1 is used.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see the Remarks section of <xref:System.ServiceModel.MessageHeaderAttribute> for details.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MustUnderstand">
@@ -125,35 +63,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether the node acting in the <see cref="System.ServiceModel.MessageHeaderAttribute.Actor%2A" /> role must understand this header. This is mapped to the <see langword="mustUnderstand" /> SOAP header attribute.</summary>
-        <value>
-          <see langword="true" /> if the node acting in the <see cref="System.ServiceModel.MessageHeaderAttribute.Actor%2A" /> role must understand this header; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see the Remarks section of <xref:System.ServiceModel.MessageHeaderAttribute> for details.  
-  
-> [!IMPORTANT]
->  It is important to remember that if the MustUnderstand property is `true` in a message being sent and the application on the receiving side does not understand the header a fault is generated. Conversely, if a header with the `mustUnderstand` SOAP header attribute set to `true` is received by [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)], it must be a part of the message contract (or must be processed by one of the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] channels); otherwise, it is assumed that the header is not understood and an exception is thrown.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the <xref:System.ServiceModel.MessageHeaderAttribute> to create a SOAP header for the response message with the <xref:System.ServiceModel.MessageContractMemberAttribute.Name%2A>, <xref:System.ServiceModel.MessageContractMemberAttribute.Namespace%2A> and MustUnderstand properties set to values appropriate for this header. The code example is followed by an example of the message when sent.  
-  
- [!code-vb[MessageHeaderAttribute#4](~/add/codesnippet/visualbasic/messageheaderattribute.client/services.vb#4)]
- [!code-cs[MessageHeaderAttribute#4](~/add/codesnippet/csharp/messageheaderattribute.client/services.cs#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Relay">
@@ -163,24 +82,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether this header is to be relayed to downstream nodes. This is mapped to the <see langword="relay" /> SOAP header attribute.</summary>
-        <value>
-          <see langword="true" /> if this header is to be relayed to downstream nodes; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is ignored when SOAP 1.1 is used. For more information, see the Remarks section of <xref:System.ServiceModel.MessageHeaderAttribute> for details.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

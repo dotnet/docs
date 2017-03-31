@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FixedPanel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies that <see cref="System.Windows.Forms.SplitContainer.Panel1%2A" />, <see cref="System.Windows.Forms.SplitContainer.Panel2%2A" />, or neither panel is fixed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use a value of FixedPanel to specify which panel stays the same size and which panel increases in size when a user resizes the <xref:System.Windows.Forms.SplitContainer>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FixedPanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that neither <see cref="System.Windows.Forms.SplitContainer.Panel1%2A" />, <see cref="System.Windows.Forms.SplitContainer.Panel2%2A" /> is fixed. A <see cref="E:System.Windows.Forms.Control.Resize" /> event affects both panels.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Panel1">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FixedPanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that <see cref="System.Windows.Forms.SplitContainer.Panel1%2A" /> is fixed. A <see cref="E:System.Windows.Forms.Control.Resize" /> event affects only <see cref="System.Windows.Forms.SplitContainer.Panel2%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Panel2">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FixedPanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that <see cref="System.Windows.Forms.SplitContainer.Panel2%2A" /> is fixed. A <see cref="E:System.Windows.Forms.Control.Resize" /> event affects only <see cref="System.Windows.Forms.SplitContainer.Panel1%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

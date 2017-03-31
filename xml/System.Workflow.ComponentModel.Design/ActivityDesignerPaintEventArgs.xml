@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="System.Workflow.ComponentModel.Design.ActivityDesigner.OnPaint%2A" />, <see cref="System.Workflow.ComponentModel.Design.ConnectionPoint.OnPaint%2A" />, <see cref="System.Workflow.ComponentModel.Design.Connector.OnPaint%2A" />, and <see cref="System.Workflow.ComponentModel.Design.DesignerGlyph.OnPaint%2A" /> methods and any overridden versions of <see langword="OnPaint" /> in classes that derive from them, when they are drawn on a workflow design surface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- `OnPaint` method calls occur when an activity designer, glyph, or connector is redrawn on a workflow design surface. ActivityDesignerPaintEventArgs specifies the graphics to use to draw the object and the clipping rectangle in which to draw it.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -49,11 +36,11 @@
         <Parameter Name="designerTheme" Type="System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> used to draw the item.</param>
-        <param name="clipRectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the rectangle in which to draw.</param>
-        <param name="viewPort">The view port in which to draw.</param>
-        <param name="designerTheme">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> associated with the object to draw.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> class with the specified graphics, clipping rectangle, viewport and designer theme.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="clipRectangle">To be added.</param>
+        <param name="viewPort">To be added.</param>
+        <param name="designerTheme">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,23 +51,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.AmbientTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> associated with the workflow design surface.</summary>
-        <value>An <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> that contains theme information for the workflow.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> is used to describe workflow look and feel properties, such as colors, styles and backgrounds.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClipRectangle">
@@ -90,23 +69,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Rectangle" /> in which to draw.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> that describes the area to draw.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The area described by the clipping rectangle is the area on the screen that will be redrawn using the <xref:System.Drawing.Graphics> supplied by <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DesignerTheme">
@@ -116,23 +87,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesignerTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> associated with the designer.</summary>
-        <value>An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> that describes the designer look and feel.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a designer has an <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> associated with it, the designer will use the look and feel properties described by the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> to paint itself. If no <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> is associated with the designer, the designer will use the <xref:System.Workflow.ComponentModel.Design.AmbientTheme> to repaint its look and feel properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -142,23 +105,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> used to draw the item on the workflow design surface.</summary>
-        <value>The <see cref="T:System.Drawing.Graphics" /> used to draw the item on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Drawing.Graphics> provides methods for drawing objects on the workflow design surface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

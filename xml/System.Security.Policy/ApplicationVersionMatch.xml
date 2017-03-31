@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.ApplicationVersionMatch" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies how to match versions when locating application trusts in a collection.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Security.Policy.ApplicationTrustCollection.Remove%2A> and <xref:System.Security.Policy.ApplicationTrustCollection.Find%2A> methods of an <xref:System.Security.Policy.ApplicationTrustCollection> can act either on all versions of an application or on the exact version. The ApplicationVersionMatch enumeration allows the caller to specify the desired behavior.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="MatchAllVersions">
@@ -34,14 +27,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Policy.ApplicationVersionMatch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Match on all versions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MatchExactVersion">
@@ -51,14 +44,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Policy.ApplicationVersionMatch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Match on the exact version.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the presence status of a peer.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PeerPresenceStatus values can be set for specific peer collaboration network endpoints to indicate the current level of participation of a peer to subscribed remote peers.  
-  
- These status values are analogous to those utilized by the MSN Messenger system.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Away">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the peer is "Away" and unable to respond.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeRightBack">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the peer has stepped away from the application and will participate soon.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Busy">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the peer is "Busy" and does not wish to be disturbed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Idle">
@@ -82,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the peer is idling.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Offline">
@@ -99,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the peer is Offline.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Online">
@@ -116,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the peer is actively participating in the Peer Collaboration network.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnThePhone">
@@ -133,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the peer is currently on the phone and does not wish to be disturbed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutToLunch">
@@ -150,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the peer is currently "Out to Lunch" and unable to respond.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

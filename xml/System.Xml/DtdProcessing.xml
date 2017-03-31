@@ -3,22 +3,26 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DtdProcessing extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.DtdProcessing" />
   <AssemblyInfo>
-    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the options for processing DTDs. The DtdProcessing enumeration is used by the <see cref="T:System.Xml.XmlReaderSettings" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is set on the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property or the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Ignore">
@@ -27,24 +31,25 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.DtdProcessing.Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Causes the DOCTYPE element to be ignored. No DTD processing occurs.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  The DTD/DOCTYPE will be lost on output.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -54,13 +59,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used for parsing DTDs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Prohibit">
@@ -69,14 +79,25 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.DtdProcessing.Prohibit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that when a DTD is encountered, an <see cref="T:System.Xml.XmlException" /> is thrown with a message that states that DTDs are prohibited. This is the default behavior.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

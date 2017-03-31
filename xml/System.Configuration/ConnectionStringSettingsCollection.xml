@@ -1,10 +1,9 @@
 <Type Name="ConnectionStringSettingsCollection" FullName="System.Configuration.ConnectionStringSettingsCollection">
   <TypeSignature Language="C#" Value="public sealed class ConnectionStringSettingsCollection : System.Configuration.ConfigurationElementCollection" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConnectionStringSettingsCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConnectionStringSettingsCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConnectionStringSettingsCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,39 +12,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Configuration.ConnectionStringSettings))</AttributeName>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Configuration.ConnectionStringSettings), CollectionType=System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.Configuration.ConnectionStringSettings" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ConnectionStringSettingsCollection object contains a collection of <xref:System.Configuration.ConnectionStringSettings> objects. Each <xref:System.Configuration.ConnectionStringSettings> object represents a single entry in the `<connectionStrings>` configuration-file section.  
-  
-   
-  
-## Examples  
- The following example shows how to access the ConnectionStringSettingsCollection.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#2](~/add/codesnippet/csharp/t-system.configuration.c_6_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#2](~/add/codesnippet/visualbasic/t-system.configuration.c_6_1.vb)]  
-  
- The following example is an excerpt from the configuration file used by the previous example.  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<configuration>  
-  <connectionStrings>  
-    <add name="ConnStr1" connectionString="LocalSqlServer: data source=127.0.0.1;Integrated Security=SSPI;Initial Catalog=aspnetdb"  
-      providerName="System.Data.SqlClient" />  
-  </connectionStrings>  
-</configuration>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConnectionStringSettingsCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,19 +51,9 @@
         <Parameter Name="settings" Type="System.Configuration.ConnectionStringSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">A <see cref="T:System.Configuration.ConnectionStringSettings" /> object to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Configuration.ConnectionStringSettings" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to add a <xref:System.Configuration.ConnectionStringSettings> object to a <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#7](~/add/codesnippet/csharp/235ad41f-5ce2-4c76-9b46-_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#7](~/add/codesnippet/visualbasic/235ad41f-5ce2-4c76-9b46-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseAdd">
@@ -103,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,7 +86,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,23 +93,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all the <see cref="T:System.Configuration.ConnectionStringSettings" /> objects from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Clear method removes all the connection strings from the configuration file at the current configuration hierarchy level and writes a `<clear>` tag in the file. The `<clear>` tag signifies that all the connection strings defined in the parent configuration files are disregarded by the system.  
-  
-   
-  
-## Examples  
- The following example shows how to remove all the <xref:System.Configuration.ConnectionStringSettings> objects from the <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#9](~/add/codesnippet/csharp/m-system.configuration.c_22_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#9](~/add/codesnippet/visualbasic/m-system.configuration.c_22_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -161,7 +104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -181,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,20 +154,10 @@
         <Parameter Name="settings" Type="System.Configuration.ConnectionStringSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">A <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
-        <summary>Returns the collection index of the passed <see cref="T:System.Configuration.ConnectionStringSettings" /> object.</summary>
-        <returns>The collection index of the specified <see cref="T:System.Configuration.ConnectionStringSettingsCollection" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to get the index of the specified <xref:System.Configuration.ConnectionStringSettings> object.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#10](~/add/codesnippet/csharp/64cb603b-c8cf-4234-8861-_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#10](~/add/codesnippet/visualbasic/64cb603b-c8cf-4234-8861-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -237,7 +167,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,35 +176,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
-        <summary>Gets or sets the connection string at the specified index in the collection.</summary>
-        <value>The <see cref="T:System.Configuration.ConnectionStringSettings" /> object at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In C#, this property is the indexer for the <xref:System.Configuration.ConnectionStringSettingsCollection> class.  
-  
-   
-  
-## Examples  
- The following example shows how to access a <xref:System.Configuration.ConnectionStringSettings> object at a given index in a <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#14](~/add/codesnippet/csharp/p-system.configuration.c_34_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#14](~/add/codesnippet/visualbasic/p-system.configuration.c_34_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
-      <MemberSignature Language="C#" Value="public System.Configuration.ConnectionStringSettings this[string name] { get; }" />
+      <MemberSignature Language="C#" Value="public System.Configuration.ConnectionStringSettings this[string Name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConnectionStringSettings Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,25 +198,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
-        <summary>Gets or sets the <see cref="T:System.Configuration.ConnectionStringSettings" /> object with the specified name in the collection.</summary>
-        <value>The <see cref="T:System.Configuration.ConnectionStringSettings" /> object with the specified name; otherwise, <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In C#, this property is the indexer for the <xref:System.Configuration.ConnectionStringSettingsCollection> class.  
-  
-   
-  
-## Examples  
- The following example shows how to access a named <xref:System.Configuration.ConnectionStringSettings> object in a <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#15](~/add/codesnippet/csharp/p-system.configuration.c_29_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#15](~/add/codesnippet/visualbasic/p-system.configuration.c_29_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="Name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -313,7 +211,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,7 +229,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -342,19 +238,9 @@
         <Parameter Name="settings" Type="System.Configuration.ConnectionStringSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">A <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
-        <summary>Removes the specified <see cref="T:System.Configuration.ConnectionStringSettings" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to remove the specified <xref:System.Configuration.ConnectionStringSettings> object from the collection.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#11](~/add/codesnippet/csharp/c803f310-d68d-426d-bb58-_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#11](~/add/codesnippet/visualbasic/c803f310-d68d-426d-bb58-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -364,7 +250,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -374,19 +259,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
-        <summary>Removes the specified <see cref="T:System.Configuration.ConnectionStringSettings" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to remove the <xref:System.Configuration.ConnectionStringSettings> object with the specified name from the collection.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#12](~/add/codesnippet/csharp/m-system.configuration.c_23_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#12](~/add/codesnippet/visualbasic/m-system.configuration.c_23_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -396,7 +271,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -406,19 +280,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
-        <summary>Removes the <see cref="T:System.Configuration.ConnectionStringSettings" /> object at the specified index in the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to remove the <xref:System.Configuration.ConnectionStringSettings> object at the specified index in the collection.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#13](~/add/codesnippet/csharp/m-system.configuration.c_40_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#13](~/add/codesnippet/visualbasic/m-system.configuration.c_40_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

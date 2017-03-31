@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DependencyObjectType" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements an underlying type cache for all <see cref="T:System.Windows.DependencyObject" /> derived types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DependencyObjectType represents a specific underlying system ([!INCLUDE[TLA2#tla_clr](~/add/includes/tla2sharptla-clr-md.md)]) <xref:System.Type> of a <xref:System.Windows.DependencyObject>. DependencyObjectType is essentially a wrapper for the ([!INCLUDE[TLA2#tla_clr](~/add/includes/tla2sharptla-clr-md.md)]) <xref:System.Type> so that it can extend some of its capabilities.  
-  
- This class has no public constructor. Instances of this class can only be obtained through properties on other objects (such as <xref:System.Windows.DependencyObject.DependencyObjectType%2A?displayProperty=fullName>), or through the static method <xref:System.Windows.DependencyObjectType.FromSystemType%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BaseType">
@@ -32,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyObjectType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.DependencyObjectType" /> of the immediate base class of the current <see cref="T:System.Windows.DependencyObjectType" />.</summary>
-        <value>The type of the base class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,25 +49,10 @@
         <Parameter Name="systemType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="systemType">The system ([!INCLUDE[TLA2#tla_clr](~/add/includes/tla2sharptla-clr-md.md)]) type to convert.</param>
-        <summary>Returns a <see cref="T:System.Windows.DependencyObjectType" /> that represents a given system ([!INCLUDE[TLA2#tla_clr](~/add/includes/tla2sharptla-clr-md.md)]) type.</summary>
-        <returns>A <see cref="T:System.Windows.DependencyObjectType" /> that represents the system ([!INCLUDE[TLA2#tla_clr](~/add/includes/tla2sharptla-clr-md.md)]) type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each <xref:System.Windows.DependencyObject> maintains a <xref:System.Windows.DependencyObject.DependencyObjectType%2A> property that returns a <xref:System.Windows.DependencyObjectType>, but this requires having a particular <xref:System.Windows.DependencyObject> instance. You can use this static utility method if you do not yet have a <xref:System.Windows.DependencyObject> instance and require a <xref:System.Windows.DependencyObjectType>.  
-  
-   
-  
-## Examples  
- The following example calls FromSystemType , creating a <xref:System.Windows.DependencyObjectType> based on the type of the <xref:System.Windows.Window> class.  
-  
- [!code-cs[PropertiesOvwSupport#DOTFromSystemType](~/add/codesnippet/csharp/PropertiesOvwSupport/page3.xaml.cs#dotfromsystemtype)]
- [!code-vb[PropertiesOvwSupport#DOTFromSystemType](~/add/codesnippet/visualbasic/propertiesovwsupport/page3.xaml.vb#dotfromsystemtype)]  
-  
- ]]></format>
-        </remarks>
+        <param name="systemType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -89,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,16 +69,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this <see cref="T:System.Windows.DependencyObjectType" />.</summary>
-        <returns>A 32-bit signed integer hash code.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation is linked to the value of the <xref:System.Windows.DependencyObjectType.Id%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -116,23 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a zero-based unique identifier for constant-time array lookup operations.</summary>
-        <value>An internal identifier.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Do not use for general hashing functions. There is no guarantee on this value. It can vary between application runs.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInstanceOfType">
@@ -142,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,18 +108,10 @@
         <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">The object to compare with the current <see cref="T:System.Windows.DependencyObjectType" />.</param>
-        <summary>Determines whether the specified object is an instance of the current <see cref="T:System.Windows.DependencyObjectType" />.</summary>
-        <returns>
-          <see langword="true" /> if the class represented by the current <see cref="T:System.Windows.DependencyObjectType" /> is in the inheritance hierarchy of the <see cref="T:System.Windows.DependencyObject" /> passed as <paramref name="d" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Objects of the exact same type return `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="dependencyObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSubclassOf">
@@ -173,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,10 +130,9 @@
         <Parameter Name="dependencyObjectType" Type="System.Windows.DependencyObjectType" />
       </Parameters>
       <Docs>
-        <param name="dependencyObjectType">The <see cref="T:System.Windows.DependencyObjectType" /> to compare.</param>
-        <summary>Determines whether the current <see cref="T:System.Windows.DependencyObjectType" /> derives from the specified <see cref="T:System.Windows.DependencyObjectType" />.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="dependencyObjectType" /> parameter and the current <see cref="T:System.Windows.DependencyObjectType" /> represent types of classes, and the class represented by the current <see cref="T:System.Windows.DependencyObjectType" /> derives from the class represented by <paramref name="dependencyObjectType" />. Otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="dependencyObjectType" /> and the current <see cref="T:System.Windows.DependencyObjectType" /> represent the same class.</returns>
+        <param name="dependencyObjectType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,23 +143,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the represented [!INCLUDE[TLA#tla_clr](~/add/includes/tlasharptla-clr-md.md)] system type.</summary>
-        <value>The name of the represented [!INCLUDE[TLA2#tla_clr](~/add/includes/tla2sharptla-clr-md.md)] system type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of Name is the same string as the name of the type name of the <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SystemType">
@@ -223,15 +161,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [!INCLUDE[TLA#tla_clr](~/add/includes/tlasharptla-clr-md.md)] system type represented by this <see cref="T:System.Windows.DependencyObjectType" />.</summary>
-        <value>The [!INCLUDE[TLA2#tla_clr](~/add/includes/tla2sharptla-clr-md.md)] system type represented by this <see cref="T:System.Windows.DependencyObjectType" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

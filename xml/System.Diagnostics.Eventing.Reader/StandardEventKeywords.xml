@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.StandardEventKeywords" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the standard keywords that are attached to events by the event provider. For more information about keywords, see <see cref="T:System.Diagnostics.Eventing.Reader.EventKeyword" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attached to all failed security audit events. This keyword should only be used for events in the Security log.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AuditSuccess">
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attached to all successful security audit events. This keyword should only be used for events in the Security log.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CorrelationHint">
@@ -61,7 +58,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -73,7 +69,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attached to transfer events where the related Activity ID (Correlation ID) is a computed value and is not guaranteed to be unique (not a real GUID).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CorrelationHint2">
@@ -89,7 +85,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attached to transfer events where the related Activity ID (Correlation ID) is a computed value and is not guaranteed to be unique (not a real GUID).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EventLogClassic">
@@ -99,14 +95,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attached to events which are raised using the RaiseEvent function.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -116,14 +111,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This value indicates that no filtering on keyword is performed when the event is published.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResponseTime">
@@ -139,7 +133,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attached to all response time events.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sqm">
@@ -149,14 +143,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attached to all Service Quality Mechanism (SQM) events.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WdiContext">
@@ -166,14 +159,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attached to all Windows Diagnostic Infrastructure (WDI) context events.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WdiDiagnostic">
@@ -183,14 +175,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Attached to all Windows Diagnostic Infrastructure (WDI) diagnostic events.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

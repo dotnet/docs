@@ -3,33 +3,26 @@
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit X509ChainStatus extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509ChainStatus" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a simple structure for storing X509 chain status and error information.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This structure is used in conjunction with the <xref:System.Security.Cryptography.X509Certificates.X509Chain.ChainStatus%2A> property.  
-  
-   
-  
-## Examples  
- The following example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
-  
- [!code-cpp[x509chaintest#3](~/add/codesnippet/cpp/t-system.security.crypto_5_1.cpp)]
- [!code-cs[x509chaintest#3](~/add/codesnippet/csharp/t-system.security.crypto_5_1.cs)]
- [!code-vb[x509chaintest#3](~/add/codesnippet/visualbasic/t-system.security.crypto_5_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Status">
@@ -38,33 +31,26 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainStatus.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the status of the X509 chain.</summary>
-        <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The flag can be used to determine the details of a chain error.  
-  
-   
-  
-## Examples  
- The following example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
-  
- [!code-cpp[x509chaintest#4](~/add/codesnippet/cpp/p-system.security.crypto_53_1.cpp)]
- [!code-cs[x509chaintest#4](~/add/codesnippet/csharp/p-system.security.crypto_53_1.cs)]
- [!code-vb[x509chaintest#4](~/add/codesnippet/visualbasic/p-system.security.crypto_53_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusInformation">
@@ -73,33 +59,26 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainStatus.StatusInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a description of the <see cref="System.Security.Cryptography.X509Certificates.X509Chain.ChainStatus%2A" /> value.</summary>
-        <value>A localizable string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is a localized string that provides a description of the <xref:System.Security.Cryptography.X509Certificates.X509Chain.ChainStatus%2A> enumeration.  
-  
-   
-  
-## Examples  
- The following example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
-  
- [!code-cpp[x509chaintest#4](~/add/codesnippet/cpp/124f723c-f443-4269-858f-_1.cpp)]
- [!code-cs[x509chaintest#4](~/add/codesnippet/csharp/124f723c-f443-4269-858f-_1.cs)]
- [!code-vb[x509chaintest#4](~/add/codesnippet/visualbasic/124f723c-f443-4269-858f-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

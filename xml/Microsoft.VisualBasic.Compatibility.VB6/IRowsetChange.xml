@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetChange" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -20,15 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an implementation of the OLE DB <see langword="IRowsetChange" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DeleteRows">
@@ -38,7 +30,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,19 +42,12 @@
         <Parameter Name="rgRowStatus" Type="System.Int32[]&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="hChapterReserved">The chapter handle.</param>
-        <param name="cRows">The number of rows to be deleted.</param>
-        <param name="rghRows">An array of handles of the rows to be deleted.</param>
-        <param name="rgRowStatus">An array with <c>cRows</c> elements in which to return values indicating the status of each row specified in <c>rghRows</c>.</param>
-        <summary>Deletes rows.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <param name="hChapterReserved">To be added.</param>
+        <param name="cRows">To be added.</param>
+        <param name="rghRows">To be added.</param>
+        <param name="rgRowStatus">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertRow">
@@ -73,7 +57,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,19 +69,12 @@
         <Parameter Name="hRow" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="hChapterReserved">The chapter handle.</param>
-        <param name="hAccessor">The handle of the accessor to use.</param>
-        <param name="pData">A pointer to memory containing the new data values, at offsets that correspond to the bindings in the accessor.</param>
-        <param name="hRow">A pointer to memory in which to return the handle of the new row.</param>
-        <summary>Creates and initializes a new row.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <param name="hChapterReserved">To be added.</param>
+        <param name="hAccessor">To be added.</param>
+        <param name="pData">To be added.</param>
+        <param name="hRow">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -108,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,18 +95,11 @@
         <Parameter Name="pData" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="hRow">The handle of the row in which to set data.</param>
-        <param name="hAccessor">The handle of the accessor to use.</param>
-        <param name="pData">A pointer to memory containing the new data values, at offsets that correspond to the bindings in the accessor.</param>
-        <summary>Sets data values in one or more columns in a row.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <param name="hRow">To be added.</param>
+        <param name="hAccessor">To be added.</param>
+        <param name="pData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,22 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A utility class that encapsulates the operations typically performed by a Federated Passive Security Token Service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When implementing a passive security token service (STS), call the static methods exposed by this class from your code-behind to invoke an instance of your custom STS to process an incoming WS-Federation request message. You implement a custom STS by deriving from the <xref:System.IdentityModel.SecurityTokenService> class.  
-  
-   
-  
-## Examples  
- The code example that is used in this topic is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT), and it includes an implementation of a passive STS that is capable of serving an SWT token. For information about this sample and other samples available for WIF and about where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md). The following code shows how to invoke a custom passive STS to process a WS-Federation request by calling the <xref:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest%28System.Web.HttpRequest%2CSystem.Security.Claims.ClaimsPrincipal%2CSystem.IdentityModel.SecurityTokenService%2CSystem.Web.HttpResponse%29> method from the code behind in the `default.aspx.cs` file.  
-  
- [!code-cs[WIFCustomTokenSTS#1](~/add/codesnippet/csharp/passivests/default.aspx.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ProcessRequest">
@@ -48,35 +34,12 @@
         <Parameter Name="response" Type="System.Web.HttpResponse" />
       </Parameters>
       <Docs>
-        <param name="request">The incoming HTTP request.</param>
-        <param name="principal">The principal associated with this request.</param>
-        <param name="sts">The security token service (STS) to use to issue tokens.</param>
-        <param name="response">The outgoing HTTP response.</param>
-        <summary>Processes an incoming WS-Federation Passive Protocol request.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The code example that is used in this topic is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT), and it includes an implementation of a passive STS that is capable of serving an SWT token. For information about this sample and other samples available for WIF and about where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md). The following code shows how to invoke a custom passive STS to process a WS-Federation request by calling the ProcessRequest method from the code behind in the `default.aspx.cs` file.  
-  
- [!code-cs[WIFCustomTokenSTS#1](~/add/codesnippet/csharp/passivests/default.aspx.cs#1)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="request" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="principal" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="sts" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="response" /> is <see langword="null" />.</exception>
+        <param name="request">To be added.</param>
+        <param name="principal">To be added.</param>
+        <param name="sts">To be added.</param>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessRequest">
@@ -99,27 +62,13 @@
         <Parameter Name="federationSerializer" Type="System.IdentityModel.Services.WSFederationSerializer" />
       </Parameters>
       <Docs>
-        <param name="request">The incoming HTTP request.</param>
-        <param name="principal">The principal associated with this request.</param>
-        <param name="sts">The security token service (STS) to use to issue tokens.</param>
-        <param name="response">The outgoing HTTP response.</param>
-        <param name="federationSerializer">The serializer to use for handling WS-Federation Passive Protocol messages.</param>
-        <summary>Processes an incoming WS-Federation Passive Protocol request by using the specified WS-Federation serializer.</summary>
+        <param name="request">To be added.</param>
+        <param name="principal">To be added.</param>
+        <param name="sts">To be added.</param>
+        <param name="response">To be added.</param>
+        <param name="federationSerializer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="request" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="principal" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="sts" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="response" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProcessSignInRequest">
@@ -140,22 +89,12 @@
         <Parameter Name="sts" Type="System.IdentityModel.SecurityTokenService" />
       </Parameters>
       <Docs>
-        <param name="requestMessage">The incoming sign-in request message.</param>
-        <param name="principal">The principal associated with the request.</param>
-        <param name="sts">The security token service (STS) to use to issue tokens.</param>
-        <summary>Processes an incoming WS-Federation Passive Protocol SignIn request.</summary>
-        <returns>The sign-in response message that results from handling the request.</returns>
+        <param name="requestMessage">To be added.</param>
+        <param name="principal">To be added.</param>
+        <param name="sts">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="requestMessage" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="principal" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="sts" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProcessSignInRequest">
@@ -177,23 +116,13 @@
         <Parameter Name="federationSerializer" Type="System.IdentityModel.Services.WSFederationSerializer" />
       </Parameters>
       <Docs>
-        <param name="requestMessage">The incoming sign-in request message.</param>
-        <param name="principal">The principal associated with the request.</param>
-        <param name="sts">The security token service (STS) to use to issue tokens.</param>
-        <param name="federationSerializer">The serializer to use for handling WS-Federation Passive Protocol messages.</param>
-        <summary>Processes an incoming WS-Federation Passive Protocol SignIn request by using the specified WS-Federation serializer.</summary>
-        <returns>The sign-in response message that results from handling the request.</returns>
+        <param name="requestMessage">To be added.</param>
+        <param name="principal">To be added.</param>
+        <param name="sts">To be added.</param>
+        <param name="federationSerializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="requestMessage" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="principal" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="sts" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProcessSignInResponse">
@@ -213,23 +142,10 @@
         <Parameter Name="httpResponse" Type="System.Web.HttpResponse" />
       </Parameters>
       <Docs>
-        <param name="signInResponseMessage">The sign-in response message to be processed.</param>
-        <param name="httpResponse">The outgoing HTTP response.</param>
-        <summary>Processes a sign-in response message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This typical usage of this method is to process the <xref:System.IdentityModel.Services.SignInResponseMessage> returned from one of the overloaded <xref:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessSignInRequest%2A> methods.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="signInResponseMessage" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="httpResponse" /> is <see langword="null" />.</exception>
+        <param name="signInResponseMessage">To be added.</param>
+        <param name="httpResponse">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessSignOutRequest">
@@ -251,24 +167,12 @@
         <Parameter Name="httpResponse" Type="System.Web.HttpResponse" />
       </Parameters>
       <Docs>
-        <param name="requestMessage">The incoming WS-Federation message representing a sign-out request. By default, this must be an instance of <see cref="T:System.IdentityModel.Services.SignOutRequestMessage" /> or <see cref="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" />.</param>
-        <param name="principal">The principal associated with the request.</param>
-        <param name="reply">The reply URL to be redirected to after sign-out.</param>
-        <param name="httpResponse">The outgoing HTTP response.</param>
-        <summary>Processes an incoming WS-Federation Passive Protocol SignOut request.</summary>
+        <param name="requestMessage">To be added.</param>
+        <param name="principal">To be added.</param>
+        <param name="reply">To be added.</param>
+        <param name="httpResponse">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="httpRequest" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="principal" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="httpResponse" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="httpRequest" /> is not an instance of <see cref="T:System.IdentityModel.Services.SignOutRequestMessage" /> or of <see cref="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" />.</exception>
       </Docs>
     </Member>
   </Members>

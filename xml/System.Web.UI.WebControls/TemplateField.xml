@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TemplateField" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,50 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a field that displays custom content in a data-bound control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TemplateField class is used by data-bound controls (such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>) to display custom content for each record displayed. When you need to display content in a data-bound control that is not provided by one of the predefined data control fields (such as <xref:System.Web.UI.WebControls.BoundField>), use the TemplateField class to create your custom user interface (UI). The TemplateField object is displayed differently depending on the data-bound control in which it is used. For example, the <xref:System.Web.UI.WebControls.GridView> control displays a TemplateField object as a column, and the <xref:System.Web.UI.WebControls.DetailsView> control displays it as a row.  
-  
- You can define a custom template for the different parts of the TemplateField object using the templates listed in the following table.  
-  
-|Template|Description|  
-|--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate%2A>|Specifies the content to display for the alternating items in a TemplateField object.|  
-|<xref:System.Web.UI.WebControls.TemplateField.EditItemTemplate%2A>|Specifies the content to display for an item in edit mode in a TemplateField object.|  
-|<xref:System.Web.UI.WebControls.TemplateField.FooterTemplate%2A>|Specifies the content to display for the footer section of a TemplateField object.|  
-|<xref:System.Web.UI.WebControls.TemplateField.HeaderTemplate%2A>|Specifies the content to display for the header section of a TemplateField object.|  
-|<xref:System.Web.UI.WebControls.TemplateField.InsertItemTemplate%2A>|Specifies the content to display for an item in insert mode in a TemplateField object. This template is supported only by the <xref:System.Web.UI.WebControls.DetailsView> control.|  
-|<xref:System.Web.UI.WebControls.TemplateField.ItemTemplate%2A>|Specifies the content to display for the items in a TemplateField object.|  
-  
- You can hide a TemplateField object in a data-bound control by setting the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property to `false`.  
-  
- As an alternative to defining a custom <xref:System.Web.UI.WebControls.TemplateField.HeaderTemplate%2A> or <xref:System.Web.UI.WebControls.TemplateField.FooterTemplate%2A> template, you can customize the header and footer sections of a TemplateField object by setting other properties of the TemplateField object. To display a caption in the header or footer sections, set the <xref:System.Web.UI.WebControls.DataControlField.HeaderText%2A> or the <xref:System.Web.UI.WebControls.DataControlField.FooterText%2A> property, respectively. Instead of displaying text in the header section, you can display an image by setting the <xref:System.Web.UI.WebControls.DataControlField.HeaderImageUrl%2A> property. The header section can be hidden in the TemplateField object by setting the <xref:System.Web.UI.WebControls.DataControlField.ShowHeader%2A> property to `false`.  
-  
-> [!NOTE]
->  Some data-bound controls (such as the <xref:System.Web.UI.WebControls.GridView> control) can show or hide only the entire header section of the control. These data-bound controls do not support the <xref:System.Web.UI.WebControls.DataControlField.ShowHeader%2A> property for an individual bound field. To show or hide the entire header section of a data-bound control, use the control's `ShowHeader` property (if available).  
-  
- You also can customize the appearance of the TemplateField object (font color, background color, and so on) by setting the style properties for the different parts of the field. The following table lists the different style properties.  
-  
-|Style property|Description|  
-|--------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.DataControlField.ControlStyle%2A>|The style settings for the child Web server controls of the TemplateField object.|  
-|<xref:System.Web.UI.WebControls.DataControlField.FooterStyle%2A>|The style settings for the footer section of the TemplateField object.|  
-|<xref:System.Web.UI.WebControls.DataControlField.HeaderStyle%2A>|The style settings for the header section of the TemplateField object.|  
-|<xref:System.Web.UI.WebControls.DataControlField.ItemStyle%2A>|The style settings for the data items in the TemplateField object.|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a custom TemplateField object that displays two fields in the same cell. The first name and last name fields are combined into the same TemplateField object.  
-  
- [!code-cs[TemplateField#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_104_1.aspx)]
- [!code-vb[TemplateField#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_104_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,33 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TemplateField" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.TemplateField> class. This constructor is commonly used when adding fields to a dynamically created data-bound control.  
-  
- To dynamically add a <xref:System.Web.UI.WebControls.TemplateField> object to a data-bound control, create a new <xref:System.Web.UI.WebControls.TemplateField> object, define the appropriate templates, and then add it to the data-bound control's field collection. For example, if you are using the <xref:System.Web.UI.WebControls.GridView> control, add the <xref:System.Web.UI.WebControls.TemplateField> object to the <xref:System.Web.UI.WebControls.GridView.Columns%2A> collection.  
-  
-> [!NOTE]
->  Although you can dynamically add fields to a data-bound control, it is strongly recommended that fields be statically declared and then shown or hidden, as appropriate. Statically declaring all your fields reduces the size of the view state for the parent data-bound control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.TemplateField> field column to a <xref:System.Web.UI.WebControls.GridView> control.  
-  
- [!code-cs[TemplateFieldCtor#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_118_1.aspx)]
- [!code-vb[TemplateFieldCtor#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_118_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AlternatingItemTemplate">
@@ -101,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -122,31 +57,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template for displaying the alternating items in a <see cref="T:System.Web.UI.WebControls.TemplateField" /> object.</summary>
-        <value>A <see cref="T:System.Web.UI.ITemplate" />-implemented object that contains the template for displaying the alternating items in a <see cref="T:System.Web.UI.WebControls.TemplateField" />. The default is <see langword="null" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the AlternatingItemTemplate property to specify the custom content displayed for the alternating items in a <xref:System.Web.UI.WebControls.TemplateField> object. Define the content by creating a template that specifies how the alternating items are rendered.  
-  
-> [!NOTE]
->  The AlternatingItemTemplate property is commonly used in combination with the <xref:System.Web.UI.WebControls.TemplateField.ItemTemplate%2A> property to create a different appearance for every other item in the data-bound control.  
-  
- To specify a template, first place opening and closing `<AlternatingItemTemplate>` tags between the opening and closing tags of  the `<TemplateField>` element. Next, add the custom content between the opening and closing `<AlternatingItemTemplate>` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
- To programmatically access a control defined in a template, first determine which <xref:System.Web.UI.WebControls.TableCell> object in the data-bound control contains the control. Next, use the <xref:System.Web.UI.Control.Controls%2A> collection of the <xref:System.Web.UI.WebControls.TableCell> object to access the control. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.TableCell> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the AlternatingItemTemplate property to create a custom template for the alternating items in a <xref:System.Web.UI.WebControls.TemplateField> field column of a <xref:System.Web.UI.WebControls.GridView> control. The template is a variation of the template specified by the <xref:System.Web.UI.WebControls.TemplateField.ItemTemplate%2A> property, where an image is displayed on the opposite side of the cell.  
-  
- [!code-vb[TemplateFieldAlternatingItemTemplate#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1029_1.aspx)]
- [!code-cs[TemplateFieldAlternatingItemTemplate#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1029_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertEmptyStringToNull">
@@ -156,7 +69,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -168,19 +80,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the value that the <see cref="T:System.Web.UI.WebControls.TemplateField" /> object is bound to should be converted to <see langword="null" /> if it is <see cref="F:System.String.Empty" />.</summary>
-        <value>
-          <see langword="true" /> if the value that the <see cref="T:System.Web.UI.WebControls.TemplateField" /> is bound to should be converted to <see langword="null" /> when it is <see cref="F:System.String.Empty" />; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property applies to two-way data-binding statements made in the template. The conversion is done after extracting the values from the two-way bound template, and before passing the values to the data source for an update or insertion operation.  
-  
- For example, a user might enter an empty string ("") for a field value when updating or inserting records. Use the ConvertEmptyStringToNull property to specify whether an empty string value is automatically converted to `null` when the data field is updated in the data source.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -190,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,16 +101,9 @@
         <Parameter Name="newField" Type="System.Web.UI.WebControls.DataControlField" />
       </Parameters>
       <Docs>
-        <param name="newField">The <see cref="T:System.Web.UI.WebControls.DataControlField" /> to copy the properties of the current <see cref="T:System.Web.UI.WebControls.TemplateField" /> to.</param>
-        <summary>Copies the properties of the current <see cref="T:System.Web.UI.WebControls.TemplateField" />-derived object to the specified <see cref="T:System.Web.UI.WebControls.DataControlField" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CopyProperties method is a helper method used to copy the properties of the current <xref:System.Web.UI.WebControls.TemplateField>-derived object to the <xref:System.Web.UI.WebControls.DataControlField> object created by the method.  
-  
- ]]></format>
-        </remarks>
+        <param name="newField">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -219,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -227,16 +120,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Web.UI.WebControls.TemplateField" /> object.</summary>
-        <returns>Always returns a new <see cref="T:System.Web.UI.WebControls.TemplateField" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateField method overrides the base method to return a <xref:System.Web.UI.WebControls.TemplateField> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditItemTemplate">
@@ -246,7 +132,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -267,28 +152,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template for displaying an item in edit mode in a <see cref="T:System.Web.UI.WebControls.TemplateField" /> object.</summary>
-        <value>A <see cref="T:System.Web.UI.ITemplate" />-implemented object that contains the template for displaying an item in edit mode in a <see cref="T:System.Web.UI.WebControls.TemplateField" />. The default is <see langword="null" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the EditItemTemplate property to specify the custom content displayed for an item that is in edit mode in a <xref:System.Web.UI.WebControls.TemplateField> object. Define the content by creating a template that specifies how an item in edit mode is rendered. The EditItemTemplate property usually contains input controls for the user to modify a value in a data source.  
-  
- To specify a template, first place opening and closing `<EditItemTemplate>` tags between the opening and closing tags of the `<TemplateField>` element. Next, add the custom content between the opening and closing `<EditItemTemplate>` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
- To programmatically access a control defined in a template, first determine which <xref:System.Web.UI.WebControls.TableCell> object in the data-bound control contains the control. Next, use the <xref:System.Web.UI.Control.Controls%2A> collection of the <xref:System.Web.UI.WebControls.TableCell> object to access the control. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.TableCell> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the EditItemTemplate property to create a custom template for an item in edit mode in a <xref:System.Web.UI.WebControls.TemplateField> field column of a <xref:System.Web.UI.WebControls.GridView> control. The template contains validation server controls to prevent a user from leaving a value field empty.  
-  
- [!code-cs[TemplateFieldEditItemTemplate#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_821_1.aspx)]
- [!code-vb[TemplateFieldEditItemTemplate#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_821_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtractValuesFromCell">
@@ -298,7 +164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -311,20 +176,12 @@
         <Parameter Name="includeReadOnly" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="dictionary">An <see cref="T:System.Collections.Specialized.IOrderedDictionary" />.</param>
-        <param name="cell">A <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that contains the text or controls of the <see cref="T:System.Web.UI.WebControls.TemplateField" />.</param>
-        <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> values.</param>
-        <param name="includeReadOnly">
-          <see langword="true" /> to indicate that the values of read-only fields are included in the <c>dictionary</c> collection; otherwise, <see langword="false" />.</param>
-        <summary>Extracts the value of the data control fields as specified by one or more two-way binding statements (<see langword="DataBind" />) from the current table cell and adds the values to the specified <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ExtractValuesFromCell method is implemented by types derived from <xref:System.Web.UI.WebControls.DataControlField>, such as <xref:System.Web.UI.WebControls.TemplateField>. This method is called to extract the values of two-way data-bound fields in the template to populate dictionaries to be passed to the data source for an update, insert, or delete operation. The field/value pair is stored in the dictionary collection that is passed to the method. The ExtractValuesFromCell method is called by the `ExtractRowValues` method of data controls such as <xref:System.Web.UI.WebControls.DetailsView> and <xref:System.Web.UI.WebControls.GridView>.  
-  
- ]]></format>
-        </remarks>
+        <param name="dictionary">To be added.</param>
+        <param name="cell">To be added.</param>
+        <param name="rowState">To be added.</param>
+        <param name="includeReadOnly">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -334,7 +191,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -355,28 +211,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template for displaying the footer section of a <see cref="T:System.Web.UI.WebControls.TemplateField" /> object.</summary>
-        <value>A <see cref="T:System.Web.UI.ITemplate" />-implemented object that contains the template for displaying the footer section of a <see cref="T:System.Web.UI.WebControls.TemplateField" />. The default is <see langword="null" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the FooterTemplate property to specify the custom content displayed in the footer section of a <xref:System.Web.UI.WebControls.TemplateField> object. Define the content by creating a template that specifies how the footer section is rendered.  
-  
- To specify a template, first place opening and closing `<FooterTemplate>` tags between the opening and closing tags of the `<TemplateField>` element. Next, add the custom content between the opening and closing `<FooterTemplate>` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
- To programmatically access a control defined in a template, first determine which <xref:System.Web.UI.WebControls.TableCell> object in the data-bound control contains the control. Next, use the <xref:System.Web.UI.Control.Controls%2A> collection of the <xref:System.Web.UI.WebControls.TableCell> object to access the control. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.TableCell> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the FooterTemplate property to create a custom template for the footer section of a <xref:System.Web.UI.WebControls.TemplateField> field column in a <xref:System.Web.UI.WebControls.GridView> control. The template displays the sum of the values in the <xref:System.Web.UI.WebControls.TemplateField> field column.  
-  
- [!code-cs[TemplateFieldFooterTemplate#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1286_1.aspx)]
- [!code-vb[TemplateFieldFooterTemplate#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1286_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -386,7 +223,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -407,28 +243,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template for displaying the header section of a <see cref="T:System.Web.UI.WebControls.TemplateField" /> object.</summary>
-        <value>A <see cref="T:System.Web.UI.ITemplate" />-implemented object that contains the template for displaying the header section of a <see cref="T:System.Web.UI.WebControls.TemplateField" /> in a data-bound control. The default is <see langword="null" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the HeaderTemplate property to specify the custom content displayed for the header section of a <xref:System.Web.UI.WebControls.TemplateField> object. Define the content by creating a template that specifies how the header section is rendered.  
-  
- To specify a template, first place opening and closing `<HeaderTemplate>` tags between the opening and closing tags of the `<TemplateField>` element. Next, add the custom content between the opening and closing `<HeaderTemplate>` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
- To programmatically access a control defined in a template, first determine which <xref:System.Web.UI.WebControls.TableCell> object in the data-bound control contains the control. Next, use the <xref:System.Web.UI.Control.Controls%2A> collection of the <xref:System.Web.UI.WebControls.TableCell> object to access the control. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.TableCell> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the HeaderTemplate property to create a custom template for the header section of a <xref:System.Web.UI.WebControls.TemplateField> field column in a <xref:System.Web.UI.WebControls.GridView> control. The template displays a check box that allows the user to show or hide the rows of the <xref:System.Web.UI.WebControls.GridView> control.  
-  
- [!code-cs[TemplateFieldHeaderTemplate#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1149_1.aspx)]
- [!code-vb[TemplateFieldHeaderTemplate#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1149_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -438,7 +255,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -451,19 +267,12 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="cell">A <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that contains the text or controls of the <see cref="T:System.Web.UI.WebControls.DataControlField" />.</param>
-        <param name="cellType">One of the <see cref="T:System.Web.UI.WebControls.DataControlCellType" /> values.</param>
-        <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> values, specifying the state of the row that contains the <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" />.</param>
-        <param name="rowIndex">The index of the row that the <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> is contained in.</param>
-        <summary>Adds text or controls to a cell's controls collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this method when you are creating a custom data-bound control that uses <xref:System.Web.UI.WebControls.DataControlFieldCell> objects to initialize the cells of the table structure with data or controls.  
-  
- ]]></format>
-        </remarks>
+        <param name="cell">To be added.</param>
+        <param name="cellType">To be added.</param>
+        <param name="rowState">To be added.</param>
+        <param name="rowIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertItemTemplate">
@@ -473,7 +282,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -494,31 +302,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template for displaying an item in insert mode in a <see cref="T:System.Web.UI.WebControls.TemplateField" /> object.</summary>
-        <value>A <see cref="T:System.Web.UI.ITemplate" />-implemented object that contains the template for displaying an item in insert mode in a <see cref="T:System.Web.UI.WebControls.TemplateField" />. The default is <see langword="null" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the InsertItemTemplate property to specify the custom content displayed for an item in insert mode in a <xref:System.Web.UI.WebControls.TemplateField> object. Define the content by creating a template that specifies how the item in insert mode is rendered.  
-  
- To specify a template, first place opening and closing `<InsertItemTemplate>` tags between the opening and closing tags of the `<TemplateField>` element. Next, add the custom content between the opening and closing `<InsertItemTemplate>` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
- To programmatically access a control defined in a template, first determine which <xref:System.Web.UI.WebControls.TableCell> object in the data-bound control contains the control. Next, use the <xref:System.Web.UI.Control.Controls%2A> collection of the <xref:System.Web.UI.WebControls.TableCell> object to access the control. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.TableCell> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
-> [!NOTE]
->  Not all data-bound controls support this template This template is supported only by data-bound controls that allow you to insert a record, such as the <xref:System.Web.UI.WebControls.DetailsView> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the InsertItemTemplate property to create a custom template for an item in insert mode in a <xref:System.Web.UI.WebControls.TemplateField> field row in a <xref:System.Web.UI.WebControls.DetailsView> control. The template displays a <xref:System.Web.UI.WebControls.DropDownList> control that allows the user to select a value from a predefined list.  
-  
- [!code-vb[TemplateFieldInsertItemTemplate#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_855_1.aspx)]
- [!code-cs[TemplateFieldInsertItemTemplate#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_855_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemTemplate">
@@ -528,7 +314,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -549,31 +334,9 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template for displaying an item in a data-bound control.</summary>
-        <value>A <see cref="T:System.Web.UI.ITemplate" />-implemented object that contains the template for displaying an item in a <see cref="T:System.Web.UI.WebControls.TemplateField" />. The default is <see langword="null" />, which indicates that this property is not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ItemTemplate property to specify the custom content displayed for the items in a <xref:System.Web.UI.WebControls.TemplateField> object. Define the content by creating a template that specifies how the items are rendered.  
-  
-> [!NOTE]
->  You can optionally define the <xref:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate%2A> property in combination with the ItemTemplate property to create a different appearance for every other item in the data-bound control.  
-  
- To specify a template, first place opening and closing `<ItemTemplate>` tags between the opening and closing tags of the `<TemplateField>` element. Next, add the custom content between the opening and closing `<ItemTemplate>` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
-  
- To programmatically access a control defined in a template, first determine which <xref:System.Web.UI.WebControls.TableCell> object in the data-bound control contains the control. Next, use the <xref:System.Web.UI.Control.Controls%2A> collection of the <xref:System.Web.UI.WebControls.TableCell> object to access the control. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.TableCell> object to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ItemTemplate property to create a custom template for the items of a <xref:System.Web.UI.WebControls.TemplateField> field in a <xref:System.Web.UI.WebControls.GridView> control. The template displays the field's value in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
-  
- [!code-cs[TemplateFieldItemTemplate#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_239_1.aspx)]
- [!code-vb[TemplateFieldItemTemplate#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_239_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">
@@ -594,9 +357,8 @@
         <ReturnType>System.Web.UI.ValidateRequestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the control validates client input.</summary>
-        <value>
-          <see langword="true" /> if the control validates client input; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -607,7 +369,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -615,16 +376,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the controls contained in a <see cref="T:System.Web.UI.WebControls.TemplateField" /> object support page callbacks.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ValidateSupportsCallback method is not supported for this class and always throws a <xref:System.NotSupportedException> exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The default implementation of this method is called.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

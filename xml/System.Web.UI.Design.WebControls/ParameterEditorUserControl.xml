@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ParameterEditorUserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a reusable <see cref="T:System.Windows.Forms.UserControl" /> object for editing <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> class provides a user interface for editing the <xref:System.Web.UI.WebControls.Parameter> elements of <xref:System.Web.UI.WebControls.ParameterCollection> objects that are referenced by several different properties of controls at design time.  
-  
- The ParameterEditorUserControl class encapsulates most of the functionality of the <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor>. The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> consists of an enclosing form that holds the ParameterEditorUserControl, and **OK** and **Cancel** buttons.  
-  
- The <xref:System.Web.UI.Design.WebControls.ParameterEditorUserControl.AddParameters%2A> method adds an array of existing parameters to the ParameterEditorUserControl. The <xref:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ClearParameters%2A> method removes all parameters from the ParameterEditorUserControl. The <xref:System.Web.UI.Design.WebControls.ParameterEditorUserControl.GetParameters%2A> method gets all parameters from the ParameterEditorUserControl.  
-  
- The <xref:System.Web.UI.Design.WebControls.ParameterEditorUserControl.SetAllowCollectionChanges%2A> method controls whether additions and deletions can be made to the parameters in the ParameterEditorUserControl.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,23 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">An <see cref="T:System.IServiceProvider" /> interface to the current design host, such as [!INCLUDE[vsprvslong](~/add/includes/vsprvslong-md.md)].</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ParameterEditorUserControl" /> class using the specified <see cref="T:System.IServiceProvider" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParameterEditorUserControl constructor initializes the component controls of the <xref:System.Web.UI.Design.WebControls.ParameterEditorUserControl> object, initializes UI elements, connects events for the individual component editors, and adds the component editors to the <xref:System.Windows.Forms.Control.Controls%2A> collection for the <xref:System.Web.UI.Design.WebControls.ParameterEditorUserControl>.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddParameters">
@@ -62,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,16 +49,9 @@
         <Parameter Name="parameters" Type="System.Web.UI.WebControls.Parameter[]" />
       </Parameters>
       <Docs>
-        <param name="parameters">A <see cref="T:System.Web.UI.WebControls.Parameter" /> array of existing parameters to add to the editor.</param>
-        <summary>Adds an array of existing parameters to the editor.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddParameters method adds the <xref:System.Web.UI.WebControls.Parameter> elements of `parameters` to the <xref:System.Windows.Forms.ListView> control in the <xref:System.Web.UI.Design.WebControls.ParameterEditorUserControl> object. If there is more than one <xref:System.Web.UI.WebControls.Parameter> element, the AddParameters selects the first one in the <xref:System.Windows.Forms.ListView>. Then the AddParameters refreshes the <xref:System.Windows.Forms.ListView> control and raises the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged> event.  
-  
- ]]></format>
-        </remarks>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearParameters">
@@ -91,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,15 +68,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all parameters from the editor.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ClearParameters method removes the parameters from the <xref:System.Windows.Forms.ListView> control in the <xref:System.Web.UI.Design.WebControls.ParameterEditorUserControl> object. Then the ClearParameters refreshes the <xref:System.Windows.Forms.ListView> control and raises the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged> event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
@@ -117,7 +79,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,16 +86,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets all parameters from the editor.</summary>
-        <returns>A <see cref="T:System.Web.UI.WebControls.Parameter" /> array of all parameters from the editor.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetParameters method populates a <xref:System.Web.UI.WebControls.Parameter> array with all parameters from the <xref:System.Windows.Forms.ListView> control in the <xref:System.Web.UI.Design.WebControls.ParameterEditorUserControl>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnParametersChanged">
@@ -144,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,9 +108,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">The source of the event.</param>
-        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ParametersChanged" /> event when the state of a parameter in the editor changes.</summary>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,14 +121,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when any parameter or one of the parameter's properties is changed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,16 +138,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a value indicating whether all the parameters in the editor are configured.</summary>
-        <value>
-          <see langword="true" /> if all parameters in the editor are fully configured; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -216,16 +165,9 @@
         <Parameter Name="allowChanges" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="allowChanges">A <see cref="T:System.Boolean" /> that indicates whether additions and deletions can be made to the <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> being edited.</param>
-        <summary>Controls whether additions and deletions can be made to the values in the editor.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SetAllowCollectionChanges method controls whether additions and deletions can be made to the <xref:System.Web.UI.WebControls.ParameterCollection> element in the <xref:System.Web.UI.Design.WebControls.ParameterEditorUserControl> object. The SetAllowCollectionChanges enables or disables the Up, Down, Add, and Delete buttons but it does not affect the editing of individual <xref:System.Web.UI.WebControls.Parameter> elements.  
-  
- ]]></format>
-        </remarks>
+        <param name="allowChanges">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeDescriptionProvider">
@@ -241,8 +183,8 @@
         <ReturnType>System.ComponentModel.TypeDescriptionProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides metadata for the <see cref="T:System.Web.UI.Design.WebControls.ParameterEditorUserControl" /> class.</summary>
-        <value>A type descriptor provider object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

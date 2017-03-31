@@ -16,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Calls a public method of a specified object or type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates creating an InvokeMethod activity. This example is from the [Using the InvokeMethod Activity](../Topic/Using%20the%20InvokeMethod%20Activity.md) sample.  
-  
- [!code-cs[wfs_InvokeMethod#1](~/add/codesnippet/csharp/invokemethodusage/program.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,17 +31,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.InvokeMethod" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates creating an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](../Topic/Using%20the%20InvokeMethod%20Activity.md) sample.  
-  
- [!code-cs[wfs_InvokeMethod#1](~/add/codesnippet/csharp/invokemethodusage/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginExecute">
@@ -136,23 +118,9 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The generic type arguments of the contained method.</summary>
-        <value>The arguments.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The generic type arguments must only be set if the called method is generic.  
-  
-   
-  
-## Examples  
- The following code sample demonstrates setting the GenericTypeArguments of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](../Topic/Using%20the%20InvokeMethod%20Activity.md) sample.  
-  
- [!code-cs[wfs_InvokeMethod#5](~/add/codesnippet/csharp/invokemethodusage/program.cs#5)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MethodName">
@@ -168,23 +136,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the method to be invoked when the activity executes.</summary>
-        <value>The method name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The invoked method must be declared as public.  
-  
-   
-  
-## Examples  
- The following code sample demonstrates setting the MethodName property of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](../Topic/Using%20the%20InvokeMethod%20Activity.md) sample.  
-  
- [!code-cs[wfs_InvokeMethod#1](~/add/codesnippet/csharp/invokemethodusage/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -200,23 +154,9 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Argument&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The parameter collection of the method to be invoked.</summary>
-        <value>The parameter collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The parameters must be added to the collection in the same order that they appear in the method signature. Parameters cannot be named `TargetObject` or `Result`.  
-  
-   
-  
-## Examples  
- The following code sample demonstrates setting the Parameters of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](../Topic/Using%20the%20InvokeMethod%20Activity.md) sample.  
-  
- [!code-cs[wfs_InvokeMethod#1](~/add/codesnippet/csharp/invokemethodusage/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -237,18 +177,9 @@
         <ReturnType>System.Activities.OutArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The return value of the method operation.</summary>
-        <value>The operation’s return value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates setting the Result property of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](../Topic/Using%20the%20InvokeMethod%20Activity.md) sample.  
-  
- [!code-cs[wfs_InvokeMethod#2](~/add/codesnippet/csharp/invokemethodusage/program.cs#2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RunAsynchronously">
@@ -269,19 +200,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the activity’s method is invoked asynchronously.</summary>
-        <value>
-          <see langword="true" /> if the method executes asynchronously.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates setting the RunAsynchronously property of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](../Topic/Using%20the%20InvokeMethod%20Activity.md) sample.  
-  
- [!code-cs[wfs_InvokeMethod#3](~/add/codesnippet/csharp/invokemethodusage/program.cs#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetObject">
@@ -302,18 +223,9 @@
         <ReturnType>System.Activities.InArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The object that contains the method to execute.</summary>
-        <value>The object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates setting the TargetObject property of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](../Topic/Using%20the%20InvokeMethod%20Activity.md) sample.  
-  
- [!code-cs[wfs_InvokeMethod#3](~/add/codesnippet/csharp/invokemethodusage/program.cs#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetType">
@@ -334,23 +246,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type of the <see cref="System.Activities.Statements.InvokeMethod.TargetObject%2A" />.</summary>
-        <value>The target object type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This parameter must only be set if the invoked method is static.  
-  
-   
-  
-## Examples  
- The following code sample demonstrates setting the TargetType property of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](../Topic/Using%20the%20InvokeMethod%20Activity.md) sample.  
-  
- [!code-cs[wfs_InvokeMethod#4](~/add/codesnippet/csharp/invokemethodusage/program.cs#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

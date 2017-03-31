@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Localization" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The Localization class defines attached properties for localization attributes and comments.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Markup authors may have specific requirements for elements in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] UI, such as constraints for text length, font family, or font size. Localizers need to know about them in order to provide consistent localization. Localization properties can be specified inside [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)], allowing authors to communicate their localization needs to localizers. These properties provide rules and hints for localization, which can be used to modify the application. There are two types of localization properties:  
-  
--   Localization attributes. The attributes specify which resources, such as <xref:System.Windows.Media.FontFamily>, are to be localized.  
-  
--   Localization comments. The comments are free-form text that the markup author includes.  
-  
- For more information on how to use these localization properties, see [Localization Attributes and Comments](../Topic/Localization%20Attributes%20and%20Comments.md).  
-  
-   
-  
-## Examples  
- The following code example shows localization attributes and comments defined for a text block.  
-  
- [!code-xml[AttributesSnippets#AttributesSnippet4](~/add/codesnippet/xaml/AttributesSnippets/Comments.xaml#attributessnippet4)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AttributesProperty">
@@ -43,24 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Localization.Attributes%2A" /> attached property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to get and set the <xref:System.Windows.Localization.Attributes%2A> attached property for a button.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommentsProperty">
@@ -70,24 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Localization.Comments%2A" /> attached property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to get and set the <xref:System.Windows.Localization.Comments%2A> attached property for a text block.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAttributes">
@@ -97,7 +56,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -112,24 +70,10 @@
         <Parameter Name="element" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">A <see cref="T:System.Object" /> that represents the element whose attached property you want to retrieve.</param>
-        <summary>Gets the value of the <see cref="F:System.Windows.Localization.AttributesProperty" /> attached property from a specified element.</summary>
-        <returns>A <see cref="T:System.String" /> value that represents the localization attribute.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Localization attributes specify which resources are to be localized.  
-  
-   
-  
-## Examples  
- The following code example shows how to retrieve the localization attributes defined for a button.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetComments">
@@ -139,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -154,24 +97,10 @@
         <Parameter Name="element" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">A <see cref="T:System.Object" /> that represents the element whose attached property you want to retrieve.</param>
-        <summary>Gets the value of the <see cref="F:System.Windows.Localization.CommentsProperty" /> attached property from a specified element.</summary>
-        <returns>A <see cref="T:System.String" /> value that represents the localization comment.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Localization comments are free-form text that the application developer includes.  
-  
-   
-  
-## Examples  
- The following code example shows how to retrieve the localization comments defined for a text block.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAttributes">
@@ -181,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,24 +120,10 @@
         <Parameter Name="attributes" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">A <see cref="T:System.Object" /> that represents the element whose attached property you want to set.</param>
-        <param name="attributes">A <see cref="T:System.String" /> that specifies the localization attributes.</param>
-        <summary>Sets the <see cref="F:System.Windows.Localization.AttributesProperty" /> attached property for the specified element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Localization attributes specify which resources are to be localized. For more information on how to define localization attributes, see [Localization Attributes and Comments](../Topic/Localization%20Attributes%20and%20Comments.md).  
-  
-   
-  
-## Examples  
- The following code example shows how to set the localization attributes for a button.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetComments">
@@ -219,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,24 +143,10 @@
         <Parameter Name="comments" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">A <see cref="T:System.Object" /> that represents the element whose attached property you want to set.</param>
-        <param name="comments">A <see cref="T:System.String" /> that specifies the localization comments.</param>
-        <summary>Sets the <see cref="F:System.Windows.Localization.CommentsProperty" /> attached property to the specified element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Localization comments are free-form text that the application developer includes. For more information on how to define localization comments, see [Localization Attributes and Comments](../Topic/Localization%20Attributes%20and%20Comments.md).  
-  
-   
-  
-## Examples  
- The following code example shows how to set the localization comments for a text block.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="comments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

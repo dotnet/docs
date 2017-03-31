@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ComponentCommands" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a standard set of component-related commands, which have predefined key input gestures and <see cref="System.Windows.Input.RoutedUICommand.Text%2A" /> properties.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The commands in the ComponentCommands class and commands in the other command library classes, such as <xref:System.Windows.Input.ApplicationCommands> and <xref:System.Windows.Input.NavigationCommands>, are intended to represent a set of common commands that application programmers encounter frequently.  The commands only represent the instance of the <xref:System.Windows.Input.RoutedCommand> and not the implementation logic for the command. The implementation logic is bound to the command via a <xref:System.Windows.UIElement.CommandBindings%2A>. For example, if the <xref:System.Windows.Input.ComponentCommands.MoveLeft%2A> command is executed on a control (the command target), the logic that performs the <xref:System.Windows.Input.ComponentCommands.MoveLeft%2A> command may not be provided by the command target, so the application writer is responsible for writing the logic that determines how the command target handles the command.  
-  
- Many controls do provide implementation logic, though, for many of the commands in the command library.  For example, the <xref:System.Windows.Controls.TextBox> class provides logic for the <xref:System.Windows.Input.ApplicationCommands.Paste%2A> command, <xref:System.Windows.Input.ApplicationCommands.Cut%2A> command, <xref:System.Windows.Input.ApplicationCommands.Copy%2A> command, <xref:System.Windows.Input.ApplicationCommands.Undo%2A> command, and <xref:System.Windows.Input.ApplicationCommands.Redo%2A> command. See the class documentation for particular control classes for more information.  
-  
- For more information on commands and commanding, see [Commanding Overview](../Topic/Commanding%20Overview.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ExtendSelectionDown">
@@ -34,57 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Extend Selection Down command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Shift+Down  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Extend Selection Down  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to extend the selection downward.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_ExtendSelectionDown"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="ExtendSelectionDown"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtendSelectionLeft">
@@ -94,57 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Extend Selection Left command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Shift+Left  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Extend Selection Left  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to extend the selection to the left.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_ExtendSelectionLeft"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="ExtendSelectionLeft"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtendSelectionRight">
@@ -154,57 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Extend Selection Right command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Shift+Right  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Extend Selection Right  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to extend the selection to the right.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_ExtendSelectionRight"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="ExtendSelectionRight"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtendSelectionUp">
@@ -214,57 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Extend Selection Up command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Shift+Up  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Extend Selection Up  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to extend the selection upward.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_ExtendSelectionUp"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="ExtendSelectionUp"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveDown">
@@ -274,57 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move Down command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Down  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move Down  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to extend the selection down.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveDown"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveDown"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveFocusBack">
@@ -334,57 +112,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move Focus Back command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Ctrl+Left  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move Focus Back  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to extend the selection backward.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveFocusBack"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveFocusBack"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveFocusDown">
@@ -394,57 +130,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move Focus Down command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Ctrl+Down  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move Focus Down  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to extend move the focus down.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveFocusDown"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveFocusDown"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveFocusForward">
@@ -454,57 +148,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move Focus Forward command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Ctrl+Right  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move Focus Forward  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the focus forward.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveFocusForward"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveFocusForward"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveFocusPageDown">
@@ -514,57 +166,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move Focus Page Down command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Ctrl+PageDown  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move Focus Page Down  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the focus down one page.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveFocusPageDown"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveFocusPageDown"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveFocusPageUp">
@@ -574,57 +184,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move Focus Page Up command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Ctrl+PageUp  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move Focus Page Up  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the focus up one page.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveFocusPageUp"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveFocusPageUp"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveFocusUp">
@@ -634,57 +202,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move Focus Up command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Ctrl+Up  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move Focus Up  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the focus up.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveFocusUp"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveFocusUp"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveLeft">
@@ -694,57 +220,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move Left command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Left  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move Left  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the selection left.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveLeft"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveLeft"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveRight">
@@ -754,57 +238,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move Right command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Right  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move Right  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the selection right.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveRight"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveRight"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToEnd">
@@ -814,57 +256,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move To End command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> End  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move To End  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the selection to the last item.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveToEnd"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveToEnd"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToHome">
@@ -874,57 +274,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move To Home command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Home  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move To Home  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the selection to the first item.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveToHome"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveToHome"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToPageDown">
@@ -934,57 +292,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move To Page Down command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> PageDown  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move To Page Down  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the selection down one page.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveToPageDown"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveToPageDown"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToPageUp">
@@ -994,57 +310,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move To Page Up command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> PageUp  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move To Page Up  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the selection up one page.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveToPageUp"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveToPageUp"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveUp">
@@ -1054,57 +328,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Move Up command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Up  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Move Up  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to move the selection up.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_MoveUp"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="MoveUp"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollByLine">
@@ -1114,57 +346,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Scroll By Line command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> No gesture defined  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Scroll By Line  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to scroll vertically upward by a given number of lines.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_ScrollByLine"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="ScrollByLine"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollPageDown">
@@ -1174,57 +364,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Scroll Page Down command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> PageDown  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Scroll Page Down  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to scroll vertically downward by a page.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_ScrollPageDown"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="ScrollPageDown"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollPageLeft">
@@ -1234,57 +382,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Scroll Page Left command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> No gesture defined.  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Scroll Page Left  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to scroll one page to the left.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_ScrollPageLeft"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="ScrollPageLeft"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollPageRight">
@@ -1294,57 +400,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Scroll Page Right command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> No gesture defined.  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Scroll Page Right  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to scroll one page to the right.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_ScrollPageRight"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="ScrollPageRight"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollPageUp">
@@ -1354,57 +418,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Scroll Page Up command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> PageUp  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Scroll Page Up  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to scroll vertically upward by a page.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_ScrollPageUp"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="ScrollPageUp"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectToEnd">
@@ -1414,57 +436,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Select To End command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Shift+End  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Select To End  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to select the items from the current item to the last item.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_SelectToEnd"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="SelectToEnd"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectToHome">
@@ -1474,57 +454,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Select To Home command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Shift+Home  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Select To Home  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to extend select the items from the current item to the first item.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_SelectToHome"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="SelectToHome"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectToPageDown">
@@ -1534,57 +472,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Select To Page Down command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Shift+PageDown  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Select To Page Down  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to select from the current item down one page.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_SelectToPageDown"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="SelectToPageDown"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectToPageUp">
@@ -1594,57 +490,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that represents the Select To Page Up command.</summary>
-        <value>The command.  
-  
- <list type="table">  
-<listheader>  
-<term> Default Values  
-  
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
-  
- </term>  
-<description> Shift+PageUp  
-  
- </description>  
-</item>  
-<item>  
-<term> UI Text  
-  
- </term>  
-<description> Select To Page Up  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This command indicates the intention to select from the current item up one page.  
-  
- There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
-  
-<a name="xamlAttributeUsage_SelectToPageUp"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="SelectToPageUp"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

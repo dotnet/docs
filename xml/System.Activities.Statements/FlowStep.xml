@@ -16,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:System.Activities.Statements.FlowNode" /> element that executes a specified <see cref="System.Activities.Statements.FlowStep.Action%2A" /> and has a <see cref="System.Activities.Statements.FlowStep.Next%2A" /> pointer.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates creating a FlowStep node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
-  
- [!code-cs[wfs_FlowChartWithFaultHandling#4](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#4)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,17 +31,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Returns a new instance of the <see cref="T:System.Activities.Statements.FlowStep" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
-  
- [!code-cs[wfs_FlowChartWithFaultHandling#4](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -71,18 +53,9 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Activities.Activity" /> that the <see cref="T:System.Activities.Statements.FlowStep" /> executes.</summary>
-        <value>The activity to be executed as part of this step of the flowchart.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates using the Action property of a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
-  
- [!code-cs[wfs_FlowChartWithFaultHandling#4](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -106,18 +79,9 @@
         <ReturnType>System.Activities.Statements.FlowNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The next <see cref="T:System.Activities.Statements.FlowNode" />in the flowchart to execute after executing the current <see cref="T:System.Activities.Statements.FlowStep" />.</summary>
-        <value>The specified element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates using the Next property of a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
-  
- [!code-cs[wfs_FlowChartWithFaultHandling#4](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

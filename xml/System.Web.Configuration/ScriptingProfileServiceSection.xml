@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingProfileServiceSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,39 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the configuration section for profile-service settings. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ScriptingProfileServiceSection class enables you to programmatically access and modify the `profileService` element of the configuration section for ASP.NET applications that use AJAX functionality.  
-  
- The profile service is used to get and set profile properties for the user identity that is associated with the current request. This means that the profile service works for authenticated users. It also works for anonymous users when the anonymous identification feature is enabled (or available) in the configuration file.  
-  
-   
-  
-## Examples  
- The following example shows how to declaratively specify values for properties of the ScriptingProfileServiceSection class in a configuration file.  
-  
-```  
-<system.web.extensions>  
-  <scripting>  
-    <webServices>  
-      <profileService enabled="true"   
-        readAccessProperties="FirstName,LastName"   
-        writeAccessProperties="FirstName,LastName" />  
-    </webServices>  
-  </scripting>  
-</system.web.extensions>  
-```  
-  
- The following example shows how to access the ScriptingProfileServiceSection section programmatically.  
-  
- [!code-cs[System.Web.Configuration#2](~/add/codesnippet/csharp/t-system.web.configurati_50_1.cs)]
- [!code-vb[System.Web.Configuration#2](~/add/codesnippet/visualbasic/t-system.web.configurati_50_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ScriptingProfileServiceSection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -82,9 +48,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the profile service is available in the AJAX-enabled ASP.NET application.</summary>
-        <value>
-          <see langword="true" /> if the profile service is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +60,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,7 +78,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -126,18 +89,9 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the read-access profile properties.</summary>
-        <value>An array that contains the names of the read-access profile properties.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In order to use read-access profile properties in AJAX-enabled applications, add one or more profile property names to the ReadAccessProperties property.  
-  
- You can set ReadAccessProperties to an empty string array. This means that no profile properties are allowed to be read from client script.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAccessProperties">
@@ -147,7 +101,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -159,18 +112,9 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the write-access profile properties.</summary>
-        <value>An array that contains the names of the write-access profile properties.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In order to use write-access profile properties in AJAX-enabled applications, add one or more profile property names to the WriteAccessProperties property.  
-  
- You can set WriteAccessProperties to an empty string array. This means that no profile properties are allowed to be set from client script.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

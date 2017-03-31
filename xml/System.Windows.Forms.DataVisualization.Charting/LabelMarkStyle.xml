@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies a mark for custom labels.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LabelMarkStyle enumeration represents mark(s) for custom labels that are displayed along the second axis label row. This row can only be generated from custom labels. This enumeration is used in conjunction with the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.LabelMark%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Box">
@@ -34,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Draws a box around the label. The box always starts at the axis position.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LineSideMark">
@@ -50,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Custom labels use line and side marks.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -66,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No label marks are used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SideMark">
@@ -82,7 +75,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Custom labels use side marks.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

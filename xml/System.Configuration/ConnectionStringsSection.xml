@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConnectionStringsSection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,35 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides programmatic access to the connection strings configuration-file section.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ConnectionStringsSection class allows you to programmatically modify the `connectionStrings` section of the configuration file. The connection strings are provided as a <xref:System.Configuration.ConnectionStringSettingsCollection> of <xref:System.Configuration.ConnectionStringSettings>`add` configuration elements.  
-  
-   
-  
-## Examples  
- The following example shows how to use the ConnectionStringsSection.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#1](~/add/codesnippet/csharp/t-system.configuration.c_17_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#1](~/add/codesnippet/visualbasic/t-system.configuration.c_17_1.vb)]  
-  
- The following excerpt shows the configuration used by the previous example.  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<configuration>  
-  <connectionStrings>  
-    <add name="ConnStr1" connectionString="LocalSqlServer: data source=127.0.0.1;Integrated Security=SSPI;Initial Catalog=aspnetdb"  
-      providerName="System.Data.SqlClient" />  
-  </connectionStrings>  
-</configuration>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConnectionStringsSection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -78,19 +48,9 @@
         <ReturnType>System.Configuration.ConnectionStringSettingsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Configuration.ConnectionStringSettingsCollection" /> collection of <see cref="T:System.Configuration.ConnectionStringSettings" /> objects.</summary>
-        <value>A <see cref="T:System.Configuration.ConnectionStringSettingsCollection" /> collection of <see cref="T:System.Configuration.ConnectionStringSettings" /> objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the ConnectionStrings property of the <xref:System.Configuration.ConnectionStringsSection> object.  
-  
- [!code-cs[System.Configuration.ConnectionStrings#2](~/add/codesnippet/csharp/p-system.configuration.c_25_1.cs)]
- [!code-vb[System.Configuration.ConnectionStrings#2](~/add/codesnippet/visualbasic/p-system.configuration.c_25_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeObject">
@@ -100,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,7 +79,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

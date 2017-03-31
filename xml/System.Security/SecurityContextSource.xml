@@ -4,21 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityContextSource" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Identifies the source for the security context.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SecurityContextSource enumeration is used to supply parameters for some assembly load methods.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CurrentAppDomain">
@@ -28,13 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityContextSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The current application domain is the source for the security context.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrentAssembly">
@@ -44,13 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityContextSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The current assembly is the source for the security context.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

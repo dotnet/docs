@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DownloadApplicationCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Deployment.Application.InPlaceHostingManager.DownloadApplicationCompleted" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the path of the ClickOnce log file.</summary>
-        <value>The path of the ClickOnce log file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,23 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the contents of an .appref-ms file that can launch this ClickOnce application.</summary>
-        <value>The contents of an .appref-ms file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property contains the text a custom installer can write to a .appref-ms file to launch this ClickOnce application. ClickOnce creates this launch file for you when install a ClickOnce application that is available offline, except for applications that include the `<customUX>` element. A custom installer can create a shortcut to launch a ClickOnce application that contains a `<customUX>` element by writing the text in this property to a new .appref-ms file in Unicode format. For more information, see [\&lt;entryPoint\&gt; Element](../Topic/%3CentryPoint%3E%20Element%20\(ClickOnce%20Application\).md) and [Walkthrough: Creating a Custom Installer for a ClickOnce Application](../Topic/Walkthrough:%20Creating%20a%20Custom%20Installer%20for%20a%20ClickOnce%20Application.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

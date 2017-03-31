@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.EncryptedPackageEnvelope" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents an OLE compound file that contains an encrypted package.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- EncryptedPackageEnvelope has no public constructors.  An EncryptedPackageEnvelope is created by use of the static <xref:System.IO.Packaging.EncryptedPackageEnvelope.Create%2A>, <xref:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage%2A>, or <xref:System.IO.Packaging.EncryptedPackageEnvelope.Open%2A> methods.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -34,7 +26,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,18 +33,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the encrypted package and the OLE compound file that holds it.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use this method to close an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
-  
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubencrypt)]
- [!code-cs[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubencrypt)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -63,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,23 +55,12 @@
         <Parameter Name="cryptoProvider" Type="System.Security.RightsManagement.CryptoProvider" />
       </Parameters>
       <Docs>
-        <param name="envelopeStream">The stream on which to create the file.</param>
-        <param name="publishLicense">The publish license that is embedded in the compound file.</param>
-        <param name="cryptoProvider">An object that determines what operations the current user is allowed to perform on the encrypted content.</param>
-        <summary>Creates and returns an <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> on the specified stream.</summary>
-        <returns>The newly created <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current user has read/write access to the new file.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="envelopeStream" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="envelopeStream" /> does not provide read/write access.</exception>
+        <param name="envelopeStream">To be added.</param>
+        <param name="publishLicense">To be added.</param>
+        <param name="cryptoProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -101,7 +70,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,23 +81,12 @@
         <Parameter Name="cryptoProvider" Type="System.Security.RightsManagement.CryptoProvider" />
       </Parameters>
       <Docs>
-        <param name="envelopeFileName">The name of the OLE compound file.</param>
-        <param name="publishLicense">The publish license that is embedded in the compound file.</param>
-        <param name="cryptoProvider">An object that determines what operations the current user is allowed to perform on the encrypted content.</param>
-        <summary>Creates and returns an <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> and gives it the specified file name.</summary>
-        <returns>The newly created <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a file with the specified name already exists, it is overwritten.  
-  
- The current user has read/write access to the file.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="envelopeFileName" /> is <see langword="null" />.</exception>
+        <param name="envelopeFileName">To be added.</param>
+        <param name="publishLicense">To be added.</param>
+        <param name="cryptoProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFromPackage">
@@ -139,7 +96,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,32 +108,13 @@
         <Parameter Name="cryptoProvider" Type="System.Security.RightsManagement.CryptoProvider" />
       </Parameters>
       <Docs>
-        <param name="envelopeStream">The stream on which to create the file.</param>
-        <param name="packageStream">The stream representing the existing unencrypted package.</param>
-        <param name="publishLicense">The publish license that is embedded in the compound file.</param>
-        <param name="cryptoProvider">An object that determines what operations the current user is allowed to perform on the encrypted content.</param>
-        <summary>Creates and returns an <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> (on the specified stream) that uses the specified unencrypted package as its content.</summary>
-        <returns>The newly created <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current user has read/write access to the new file.  
-  
-   
-  
-## Examples  
- The following example shows how to use the <xref:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage%2A> method to instantiate an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
-  
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubencrypt)]
- [!code-cs[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubencrypt)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="envelopeStream" /> or <paramref name="packageStream" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="envelopeStream" /> does not provide read/write access.</exception>
+        <param name="envelopeStream">To be added.</param>
+        <param name="packageStream">To be added.</param>
+        <param name="publishLicense">To be added.</param>
+        <param name="cryptoProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFromPackage">
@@ -187,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,32 +136,13 @@
         <Parameter Name="cryptoProvider" Type="System.Security.RightsManagement.CryptoProvider" />
       </Parameters>
       <Docs>
-        <param name="envelopeFileName">The name of the OLE compound file.</param>
-        <param name="packageStream">The stream representing the existing unencrypted package.</param>
-        <param name="publishLicense">The publish license that is embedded in the compound file.</param>
-        <param name="cryptoProvider">An object that determines what operations the current user is allowed to perform on the encrypted content.</param>
-        <summary>Creates and returns an <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> that uses the specified unencrypted package as its content, and gives it the specified file name.</summary>
-        <returns>The newly created <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a file with the specified name already exists, it is overwritten.  
-  
- The current user has read/write access to the file.  
-  
-   
-  
-## Examples  
- The following example shows how to use the CreateFromPackage method to instantiate an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
-  
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubencrypt)]
- [!code-cs[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubencrypt)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="envelopeFileName" /> or <paramref name="packageStream" /> is <see langword="null" />.</exception>
+        <param name="envelopeFileName">To be added.</param>
+        <param name="packageStream">To be added.</param>
+        <param name="publishLicense">To be added.</param>
+        <param name="cryptoProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -235,7 +152,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,18 +159,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call Dispose when finished with a <xref:System.IO.Packaging.EncryptedPackageEnvelope>. The Dispose method leaves the <xref:System.IO.Packaging.EncryptedPackageEnvelope> in an unusable state. After calling Dispose, you must release all references to the <xref:System.IO.Packaging.EncryptedPackageEnvelope> so the garbage collector can reclaim the memory that the <xref:System.IO.Packaging.EncryptedPackageEnvelope> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.IO.Packaging.EncryptedPackageEnvelope>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IO.Packaging.EncryptedPackageEnvelope> object's <xref:System.Object.Finalize%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -264,7 +170,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,19 +179,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.IO.Packaging.EncryptedPackageEnvelope> references. This method invokes the `Dispose()` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileOpenAccess">
@@ -296,15 +191,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the file was opened with access to read, write, or both.</summary>
-        <value>The <see cref="T:System.IO.FileAccess" /> value that was used to open the file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,7 +209,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -323,7 +216,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Flush the stream for both the <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> and its package content.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -342,8 +234,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the encrypted package inside the <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</summary>
-        <returns>The <see cref="T:System.IO.Packaging.Package" /> in the envelope.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,7 +246,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,13 +255,10 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">The stream that is tested.</param>
-        <summary>Gets a value specifying whether the specified stream is an OLE compound file with an encrypted package stream.</summary>
-        <returns>
-          <see langword="true" /> if the specified stream is an OLE compound file with an encrypted package stream; otherwise, <see langword="false" />.</returns>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="stream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsEncryptedPackageEnvelope">
@@ -380,7 +268,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -390,23 +277,10 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">The file that is tested.</param>
-        <summary>Gets a value specifying whether the specified file is an OLE compound file with an encrypted package stream.</summary>
-        <returns>
-          <see langword="true" /> if the specified file is an OLE compound file with an encrypted package stream; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use this method to test for encryption.  
-  
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubencrypt)]
- [!code-cs[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubencrypt)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="fileName" /> is <see langword="null" />.</exception>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -416,7 +290,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -426,17 +299,10 @@
         <Parameter Name="envelopeStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="envelopeStream">The stream containing the encrypted package.</param>
-        <summary>Open the encrypted package in the specified stream.</summary>
-        <returns>The <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> that is opened.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The stream must have an encrypted package.  
-  
- ]]></format>
-        </remarks>
+        <param name="envelopeStream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -446,7 +312,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -456,19 +321,10 @@
         <Parameter Name="envelopeFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="envelopeFileName">The file containing the encrypted package.</param>
-        <summary>Open the encrypted package in the specified file as read only and unshared.</summary>
-        <returns>The <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> that is opened.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The file must have an encrypted package.  
-  
- The opened file is read only and unshared.  
-  
- ]]></format>
-        </remarks>
+        <param name="envelopeFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -478,7 +334,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -489,20 +344,11 @@
         <Parameter Name="access" Type="System.IO.FileAccess" />
       </Parameters>
       <Docs>
-        <param name="envelopeFileName">The file containing the encrypted package.</param>
-        <param name="access">The type of access.</param>
-        <summary>Open the encrypted package in the specified file as unshared and with the specified access.</summary>
-        <returns>The <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> that is opened.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The file must have an encrypted package.  
-  
- The opened file is unshared.  
-  
- ]]></format>
-        </remarks>
+        <param name="envelopeFileName">To be added.</param>
+        <param name="access">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -512,7 +358,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -524,19 +369,12 @@
         <Parameter Name="sharing" Type="System.IO.FileShare" />
       </Parameters>
       <Docs>
-        <param name="envelopeFileName">The file containing the encrypted package.</param>
-        <param name="access">The type of access.</param>
-        <param name="sharing">The type of sharing.</param>
-        <summary>Open the encrypted package in the specified file and gives it the specified access and sharing.</summary>
-        <returns>The <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" /> that is opened.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The file must have an encrypted package.  
-  
- ]]></format>
-        </remarks>
+        <param name="envelopeFileName">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="sharing">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PackageProperties">
@@ -546,23 +384,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.PackageProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the core package properties (such as Title and Subject) of the rights managed document.</summary>
-        <value>The <see cref="T:System.IO.Packaging.PackageProperties" /> for the package.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These core properties are stored in the standard OLE property streams (\005SummaryInformation and \005DocumentSummaryInformation). The core properties are also stored in the package itself. It is the responsibility of the application to keep the two sets of properties synchronized.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RightsManagementInformation">
@@ -572,26 +402,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.RightsManagementInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the rights management information stored in the <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />; specifically, the <see cref="T:System.Security.RightsManagement.PublishLicense" /> and the <see cref="T:System.Security.RightsManagement.UseLicense" />s stored in the OLE compound file that embodies the rights-management protected package</summary>
-        <value>The <see cref="T:System.IO.Packaging.RightsManagementInformation" /> for the package.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to obtain <xref:System.IO.Packaging.RightsManagementInformation> for an encrypted package by use the RightsManagementInformation property.  
-  
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubencrypt)]
- [!code-cs[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubencrypt)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StorageInfo">
@@ -601,15 +420,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.StorageInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that provides access to the compound file streams outside the encrypted package.</summary>
-        <value>A <see cref="T:System.IO.Packaging.StorageInfo" /> representing streams in the OLE compound file that are outside the encrypted package.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

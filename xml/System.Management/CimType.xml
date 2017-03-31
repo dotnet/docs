@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Management.CimType" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the possible CIM types for properties, *qualifiers*, or method parameters.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Boolean. This value maps to the <see cref="T:System.Boolean" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Char16">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A 16-bit character. This value maps to the <see cref="T:System.Char" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A date or time value, represented in a string in DMTF date/time format: *yyyymmddHHMMSS.mmmmmmsUUU*, where *yyyymmdd* is the date in year/month/day; *HHMMSS* is the time in hours/minutes/seconds; *mmmmmm* is the number of microseconds in 6 digits; and *sUUU* is a sign (+ or -) and a 3-digit UTC offset. This value maps to the <see cref="T:System.DateTime" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A null value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An embedded object. Note that embedded objects differ from references in that the embedded object does not have a path and its lifetime is identical to the lifetime of the containing object. This value maps to the <see cref="T:System.Object" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Real32">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A floating-point 32-bit number. This value maps to the <see cref="T:System.Single" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Real64">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A floating point 64-bit number. This value maps to the <see cref="T:System.Double" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reference">
@@ -141,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A reference to another object. This is represented by a string containing the path to the referenced object. This value maps to the <see cref="T:System.Int16" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SInt16">
@@ -158,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A signed 16-bit integer. This value maps to the <see cref="T:System.Int16" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SInt32">
@@ -175,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A signed 32-bit integer. This value maps to the <see cref="T:System.Int32" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SInt64">
@@ -192,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A signed 64-bit integer. This value maps to the <see cref="T:System.Int64" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SInt8">
@@ -209,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A signed 8-bit integer. This value maps to the <see cref="T:System.SByte" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -226,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A string. This value maps to the <see cref="T:System.String" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt16">
@@ -243,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unsigned 16-bit integer. This value maps to the <see cref="T:System.UInt16" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt32">
@@ -260,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unsigned 32-bit integer. This value maps to the <see cref="T:System.UInt32" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt64">
@@ -277,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unsigned 64-bit integer. This value maps to the <see cref="T:System.UInt64" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt8">
@@ -294,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.CimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unsigned 8-bit integer. This value maps to the <see cref="T:System.Byte" /> type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

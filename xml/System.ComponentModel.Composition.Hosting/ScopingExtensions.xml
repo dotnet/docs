@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.ScopingExtensions" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -11,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines static convenience methods for scoping.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,6 +23,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -36,13 +38,12 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the metadata value.</typeparam>
-        <param name="part">The part to search.</param>
-        <param name="key">The metadata key.</param>
-        <param name="value">The metadata value.</param>
-        <summary>Gets a value that indicates whether the specified part contains metadata that has the specified key and value.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="part" /> contains metadata that has the specified key, value type, and value; otherwise, <see langword="false" />.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="part">To be added.</param>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,6 +54,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,11 +65,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="part">The part to search.</param>
-        <param name="key">The metadata key.</param>
-        <summary>Gets a value that indicates whether the specified part contains metadata that has the specified key.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="part" /> contains metadata that has the specified key; otherwise, <see langword="false" />.</returns>
+        <param name="part">To be added.</param>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,6 +79,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,11 +90,10 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="part">The part to search.</param>
-        <param name="contractName">The name of the contract.</param>
-        <summary>Gets a value that indicates whether the specified part exports the specified contract.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="part" /> exports the specified contract; otherwise, <see langword="false" />.</returns>
+        <param name="part">To be added.</param>
+        <param name="contractName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,6 +104,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,10 +115,10 @@
         <Parameter Name="filter" Type="System.Func&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="catalog">The catalog to filter.</param>
-        <param name="filter">The filter function.</param>
-        <summary>Filters the specified catalog with the specified filter function.</summary>
-        <returns>A new catalog filtered by using the specified filter.</returns>
+        <param name="catalog">To be added.</param>
+        <param name="filter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,6 +129,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,11 +140,10 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="part">The part to search.</param>
-        <param name="contractName">The name of the contract.</param>
-        <summary>Determines whether the specified part imports the specified contract.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="part" /> imports the specified contract; otherwise, <see langword="false" />.</returns>
+        <param name="part">To be added.</param>
+        <param name="contractName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,6 +154,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -163,12 +166,11 @@
         <Parameter Name="importCardinality" Type="System.ComponentModel.Composition.Primitives.ImportCardinality" />
       </Parameters>
       <Docs>
-        <param name="part">The part to search.</param>
-        <param name="contractName">The name of the contract.</param>
-        <param name="importCardinality">The cardinality of the contract.</param>
-        <summary>Determines whether the specified part imports the specified contract with the specified cardinality.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="part" /> imports a contract that has the specified name and cardinality; otherwise, <see langword="false" />.</returns>
+        <param name="part">To be added.</param>
+        <param name="contractName">To be added.</param>
+        <param name="importCardinality">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

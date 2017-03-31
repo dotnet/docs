@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.RelatedEnd" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,19 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a base class that implements common functionality for a related end.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- RelatedEnd is the base class for the <xref:System.Data.Objects.DataClasses.EntityCollection%601> class and the <xref:System.Data.Objects.DataClasses.EntityReference%601> class.  
-  
- The RelatedEnd class implements functionality that is shared between the <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> classes.  
-  
- This class is not intended to be used directly in your code.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AssociationChanged">
@@ -43,36 +31,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a change is made to a related end.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AssociationChanged event is raised by the following methods:  
-  
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Add%2A?displayProperty=fullName>  
-  
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Remove%2A?displayProperty=fullName>  
-  
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A?displayProperty=fullName>  
-  
--   <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A?displayProperty=fullName>  
-  
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A?displayProperty=fullName>  
-  
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A?displayProperty=fullName>  
-  
- Events may be suppressed during bulk operations, such as `Load`, <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A>, and <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -82,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,8 +55,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that iterates through the collection of related objects.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that iterates through the collection of related objects.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +67,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -117,27 +81,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether all related objects have been loaded.</summary>
-        <value>
-          <see langword="true" /> if the related end contains all the related objects from the database; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method sets the IsLoaded flag to `true`.  
-  
- Calling the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A> method on an <xref:System.Data.Objects.DataClasses.EntityCollection%601> sets IsLoaded to `false`.  
-  
- An <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> may also be loaded if the related end is included in the query path. For more information about span, see [Loading Related Objects](http://msdn.microsoft.com/en-us/452347d2-7b3b-44cd-9001-231299a28cb1).  
-  
- The `Load` method on <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> loads related objects from the data source whether or not IsLoaded is `true`.  
-  
- When an object is detached, the IsLoaded flag is changed from `false` to `true`.  
-  
- To guarantee that a related end is fully loaded before doing processing, you should check whether IsLoaded is `false`. If IsLoaded is `false`, you should call the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -147,7 +93,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,28 +100,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, loads the related object or objects into the related end with the default merge option.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default merge option is <xref:System.Data.Objects.MergeOption> for tracked objects or <xref:System.Data.Objects.MergeOption> when the object is not tracked in the <xref:System.Data.Objects.ObjectStateManager>. To specify a merge option other than <xref:System.Data.Objects.MergeOption>, call the `Load` method on the <xref:System.Data.Objects.DataClasses.EntityCollection%601> or the <xref:System.Data.Objects.DataClasses.EntityReference%601> that takes a specific <xref:System.Data.Objects.MergeOption> parameter.  
-  
- Calling the Load method sets the <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> flag to `true`.  
-  
- The Load method loads related objects from the data source whether or not <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `true`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">When the source object was retrieved by using a <see cref="T:System.Data.Objects.MergeOption" /> query and the <see cref="T:System.Data.Objects.MergeOption" /> is not <see cref="T:System.Data.Objects.MergeOption" /> or the related objects are already loaded.  
-  
- -or-  
-  
- When the source object is not attached to the <see cref="T:System.Data.Objects.ObjectContext" />.  
-  
- -or-  
-  
- When the source object is being tracked but is in the <see cref="T:System.Data.EntityState" /> or <see cref="T:System.Data.EntityState" /> state or the <see cref="T:System.Data.Objects.MergeOption" /> used for Load is <see cref="T:System.Data.Objects.MergeOption" />.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -186,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,31 +120,9 @@
         <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
       </Parameters>
       <Docs>
-        <param name="mergeOption">The <see cref="T:System.Data.Objects.MergeOption" /> to use when merging objects into an existing <see cref="System.Data.Objects.DataClasses.EntityCollection%601" />.</param>
-        <summary>When overridden in a derived class, loads an object or objects from the related end with the specified merge option.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Both <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> override this method to load related objects. `Load` is called to explicitly load related objects from a related end exposed by a navigation property. For more information, see [Loading Related Objects](http://msdn.microsoft.com/en-us/452347d2-7b3b-44cd-9001-231299a28cb1).  
-  
- Calling the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method sets the <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> flag to `true`.  
-  
- The Load method loads related objects from the data source whether or not <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `true`.  
-  
- The default merge option is <xref:System.Data.Objects.MergeOption> for tracked objects or <xref:System.Data.Objects.MergeOption> when the object is not tracked in the <xref:System.Data.Objects.ObjectStateManager>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">When the source object was retrieved by using a <see cref="T:System.Data.Objects.MergeOption" /> query and the <see cref="T:System.Data.Objects.MergeOption" /> is not <see cref="T:System.Data.Objects.MergeOption" /> or the related objects are already loaded.  
-  
- -or-  
-  
- When the source object is not attached to the <see cref="T:System.Data.Objects.ObjectContext" />.  
-  
- -or-  
-  
- When the source object is being tracked but is in the <see cref="T:System.Data.EntityState" /> or <see cref="T:System.Data.EntityState" /> state or the <see cref="T:System.Data.Objects.MergeOption" /> used for <see cref="System.Data.Objects.DataClasses.RelatedEnd.Load%2A" /> is <see cref="T:System.Data.Objects.MergeOption" />.</exception>
+        <param name="mergeOption">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDeserialized">
@@ -250,8 +152,8 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="context">The serialized stream.</param>
-        <summary>Used internally to deserialize entity objects along with the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" /> instances.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,7 +164,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -277,8 +178,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the relationship in which this related end participates.</summary>
-        <value>The name of the relationship in which this <see cref="T:System.Data.Objects.DataClasses.RelatedEnd" /> participates. The relationship name is not namespace qualified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,7 +190,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -304,8 +204,8 @@
         <ReturnType>System.Data.Metadata.Edm.RelationshipSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the metadata for the related end.</summary>
-        <value>A <see cref="T:System.Data.Metadata.Edm.RelationshipSet" /> object that contains metadata for the end of a relationship.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +216,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -331,26 +230,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the role name at the source end of the relationship.</summary>
-        <value>A <see cref="T:System.String" /> that is the role name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/en-us/c305169a-8af7-432f-9ba7-800a163aed41).  
-  
-   
-  
-## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832), which was generated by the [Entity Data Model Wizard](http://msdn.microsoft.com/en-us/423ec9a7-5464-43b7-a7ef-9f5f000848b5).  
-  
- The following example adds new `SalesOrderHeader` entities to the `Contact` entity. Then it gets all related ends from the `Contact` entity and displays relationship name, source role name, and target role name for each related end.  
-  
- [!code-vb[DP ObjectServices Concepts#IRelatedEnd](~/add/codesnippet/visualbasic/objectservicesconceptsvb/Source.vb#irelatedend)]
- [!code-cs[DP ObjectServices Concepts#IRelatedEnd](~/add/codesnippet/csharp/objectservicesconceptscs/Source.cs#irelatedend)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Add">
@@ -360,7 +242,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -370,18 +251,9 @@
         <Parameter Name="entity" Type="System.Data.Objects.DataClasses.IEntityWithRelationships" />
       </Parameters>
       <Docs>
-        <param name="entity">An object to add to the collection. This object must implement the <see cref="T:System.Data.Objects.DataClasses.IEntityWithRelationships" /> interface.</param>
-        <summary>Adds an object to the related end.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.DataClasses.RelatedEnd> instance is cast to an <xref:System.Data.Objects.DataClasses.IRelatedEnd> interface.  
-  
- The IRelatedEnd.Add method is only maintained for compatibility with previous versions of the .NET Framework.  
-  
- ]]></format>
-        </remarks>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Add">
@@ -400,16 +272,9 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">An entity instance to add to the related end.</param>
-        <summary>Adds an object to the related end.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the source entity object is attached to a cache, then all the connected ends are added to the object cache and their corresponding relationships are also added to the <xref:System.Data.Objects.ObjectStateManager>. The <xref:System.Data.Objects.DataClasses.RelatedEnd> of the relationship is also fixed.  
-  
- ]]></format>
-        </remarks>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Attach">
@@ -419,7 +284,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -429,18 +293,9 @@
         <Parameter Name="entity" Type="System.Data.Objects.DataClasses.IEntityWithRelationships" />
       </Parameters>
       <Docs>
-        <param name="entity">The object being attached.</param>
-        <summary>Attaches an object at the related end.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.DataClasses.RelatedEnd> instance is cast to an <xref:System.Data.Objects.DataClasses.IRelatedEnd> interface.  
-  
- The IRelatedEnd.Attach method is only maintained for compatibility with previous versions of the .NET Framework.  
-  
- ]]></format>
-        </remarks>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Attach">
@@ -459,18 +314,9 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">An entity instance to attach to the related end.</param>
-        <summary>Attaches an object to the related end.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the related end already has some entities attached to it, the existing entities will be merged with the new entity. The new entity is not assumed to be the complete set of related entity objects.  
-  
- The source entity object and all entity objects passed in must be in an <xref:System.Data.EntityState> or <xref:System.Data.EntityState> state. Deleted elements are allowed only when the state manager is already tracking the relationship instance.  
-  
- ]]></format>
-        </remarks>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.CreateSourceQuery">
@@ -480,7 +326,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -488,18 +333,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IEnumerable" /> that represents the objects that belong to the related end.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerable" /> that represents the objects that belong to the related end.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.DataClasses.RelatedEnd> instance is cast to an <xref:System.Data.Objects.DataClasses.IRelatedEnd> interface.  
-  
- <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> both override IRelatedEnd.CreateSourceQuery to return an <xref:System.Data.Objects.ObjectQuery%601>. This query, when it is executed, returns the same set of objects that belong to the related end.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Remove">
@@ -509,7 +345,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -519,19 +354,10 @@
         <Parameter Name="entity" Type="System.Data.Objects.DataClasses.IEntityWithRelationships" />
       </Parameters>
       <Docs>
-        <param name="entity">The entity instance to remove from the collection.</param>
-        <summary>Removes an object from the collection at the related end.</summary>
-        <returns>A value that indicates whether the object was removed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.DataClasses.RelatedEnd> instance is cast to an <xref:System.Data.Objects.DataClasses.IRelatedEnd> interface.  
-  
- The IRelatedEnd.Remove method is only maintained for compatibility with previous versions of the .NET Framework.  
-  
- ]]></format>
-        </remarks>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Remove">
@@ -550,18 +376,10 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">An entity instance to remove from the related end.</param>
-        <summary>Removes an object from the related end if the object is part of the related end.</summary>
-        <returns>
-          <see langword="true" /> if the entity was successfully removed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the source entity object is attached to a cache, the relationship is marked for deletion.  
-  
- ]]></format>
-        </remarks>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetRoleName">
@@ -571,7 +389,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -586,24 +403,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the role name at the target end of the relationship.</summary>
-        <value>A <see cref="T:System.String" /> that is the role name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/en-us/c305169a-8af7-432f-9ba7-800a163aed41).  
-  
-   
-  
-## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example adds new `SalesOrderHeader` entities to the `Contact` entity. Then it gets all related ends from the `Contact` entity and displays relationship name, source role name, and target role name for each related end.  
-  
- [!code-vb[DP ObjectServices Concepts#IRelatedEnd](~/add/codesnippet/visualbasic/objectservicesconceptsvb/Source.vb#irelatedend)]
- [!code-cs[DP ObjectServices Concepts#IRelatedEnd](~/add/codesnippet/csharp/objectservicesconceptscs/Source.cs#irelatedend)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

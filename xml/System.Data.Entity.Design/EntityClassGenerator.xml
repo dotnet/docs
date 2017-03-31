@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityClassGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Generates object context and entity classes (object layer code) from conceptual schema definition language (CSDL) files.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityClassGenerator" /> class with a <see cref="T:System.Data.Entity.Design.LanguageOption" /> language option.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="languageOption" Type="System.Data.Entity.Design.LanguageOption" />
       </Parameters>
       <Docs>
-        <param name="languageOption">A <see cref="T:System.Data.Entity.Design.LanguageOption" /> value that specifies the language of the generated code. The default language is C#.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityClassGenerator" /> class with the specified <see cref="T:System.Data.Entity.Design.LanguageOption" />.</summary>
+        <param name="languageOption">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,23 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.EdmToObjectNamespaceMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Data.Entity.Design.EdmToObjectNamespaceMap" /> that contains the conceptual schema definition language (CSDL) to code namespace mappings.</summary>
-        <value>The CSDL to code namespace mappings.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Namespace mappings can be used to specify a different code namespace for generating code than what is specified in the CSDL file. The namespace mappings are consulted when a reference to a type is to be generated. If an entry is found, the value will be used to generate the qualified reference to the type; otherwise, the CSDL namespace will be used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateCode">
@@ -84,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,10 +83,10 @@
         <Parameter Name="targetFilePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceEdmSchemaFilePath">The CSDL file path.</param>
-        <param name="targetFilePath">The generated source code file path.</param>
-        <summary>Generates a source code file that contains the objects that were generated from the specified conceptual schema definition language (CSDL) file.</summary>
-        <returns>An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" /> that contains any generated errors.</returns>
+        <param name="sourceEdmSchemaFilePath">To be added.</param>
+        <param name="targetFilePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,10 +107,10 @@
         <Parameter Name="target" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="sourceEdmSchema">An <see cref="T:System.Xml.XmlReader" /> that contains the CSDL file.</param>
-        <param name="target">The <see cref="T:System.IO.TextWriter" /> to which the source code is written.</param>
-        <summary>Generates source code using the conceptual schema definition language (CSDL) file contained in the <see cref="T:System.Xml.XmlReader" /> object and outputs the generated source code to a <see cref="T:System.IO.TextWriter" />.</summary>
-        <returns>An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" /> that contains any generated errors.</returns>
+        <param name="sourceEdmSchema">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,11 +132,11 @@
         <Parameter Name="additionalEdmSchemaFilePaths" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="sourceEdmSchemaFilePath">The CSDL file path.</param>
-        <param name="targetPath">The generated source code file path.</param>
-        <param name="additionalEdmSchemaFilePaths">A list of schema file paths that can be used to resolve any references in the source schema (the CSDL file). If the source schema does not have any dependencies, pass in an empty list.</param>
-        <summary>Generates source code using the specified conceptual schema definition language (CSDL) file. The list of schema file paths is used to resolve any references contained in the CSDL file.</summary>
-        <returns>An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" /> objects that contains any generated errors.</returns>
+        <param name="sourceEdmSchemaFilePath">To be added.</param>
+        <param name="targetPath">To be added.</param>
+        <param name="additionalEdmSchemaFilePaths">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,7 +147,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,11 +158,11 @@
         <Parameter Name="additionalEdmSchemas" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
       </Parameters>
       <Docs>
-        <param name="sourceEdmSchema">An <see cref="T:System.Xml.XmlReader" /> that contains the CSDL file.</param>
-        <param name="target">The <see cref="T:System.IO.TextWriter" /> to which you want to output the generated source code.</param>
-        <param name="additionalEdmSchemas">The list of <see cref="T:System.Xml.XmlReader" /> objects that contain schemas that are referenced by the source schema (the CSDL file). If the source schema does not have any dependencies, pass in an empty <see cref="T:System.Collections.IList" /> object.</param>
-        <summary>Generates source code based on the conceptual schema definition language (CSDL) file in the <see cref="T:System.Xml.XmlReader" /> object, then outputs the generated source code to a <see cref="T:System.IO.TextWriter" />. An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Xml.XmlReader" /> objects is used to resolve any references that are contained in the CSDL file.</summary>
-        <returns>A list of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" /> objects that contains any generated errors.</returns>
+        <param name="sourceEdmSchema">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="additionalEdmSchemas">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,15 +173,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.LanguageOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Data.Entity.Design.LanguageOption" /> value that indicates the language of the generated code.</summary>
-        <value>One of the <see cref="T:System.Data.Entity.Design.LanguageOption" /> values. The default is <see cref="T:System.Data.Entity.Design.LanguageOption" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,22 +191,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.PropertyGeneratedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTypeGenerated">
@@ -232,22 +208,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.TypeGeneratedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when type information has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

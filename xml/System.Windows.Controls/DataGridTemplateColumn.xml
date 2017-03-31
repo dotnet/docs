@@ -11,36 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a <see cref="T:System.Windows.Controls.DataGrid" /> column that hosts template-specified content in its cells.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataGridTemplateColumn type enables you to create your own column types by specifying the cell templates to use when displaying and editing values. To specify the template that is used to display the contents of a cell that is not in editing mode, set the <xref:System.Windows.Controls.DataGridTemplateColumn.CellTemplate%2A> property. To specify the template that is used to display the contents of a cell that is in editing mode, set the <xref:System.Windows.Controls.DataGridTemplateColumn.CellEditingTemplate%2A> property. For more information about templates, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md) and [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
-  
- For convenience, <xref:System.Windows.Controls.DataGrid> provides the following pre-defined column types:  
-  
-|Column Type|Data Display|  
-|-----------------|------------------|  
-|<xref:System.Windows.Controls.DataGridHyperlinkColumn>|Use to display URI data.|  
-|<xref:System.Windows.Controls.DataGridComboBoxColumn>|Use to display enumeration data.|  
-|<xref:System.Windows.Controls.DataGridTextColumn>|Use to display text.|  
-|<xref:System.Windows.Controls.DataGridCheckBoxColumn>|Use to display Boolean data.|  
-  
-   
-  
-## Examples  
- The following example shows how to create a DataGridTemplateColumn.  
-  
- [!code-xml[DataGrid_TemplateColumn#1](~/add/codesnippet/xaml/datagrid_templatecolumn/window1.xaml#1)]
- [!code-xml[DataGrid_TemplateColumn#1](~/add/codesnippet/xaml/t-system.windows.control_101_1.xaml)]  
-  
- The following illustration shows the output from the previous XAML.  
-  
- ![A column using a DataTemplate](~/add/media/ndp-wpf-templatecolumn.png "A column using a DataTemplate")  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridTemplateColumn" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,30 +43,9 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template to use to display the contents of a cell that is in editing mode.</summary>
-        <value>The template that is used to display the contents of a cell that is in editing mode. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The cell editing template defines how the content is displayed in the column cells when in editing mode. For more information about data templates, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md) and [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
-  
- To define the template for the cell that is not in editing mode, use the <xref:System.Windows.Controls.DataGridTemplateColumn.CellTemplate%2A>.  
-  
-   
-  
-## Examples  
- The following example shows how to create the CellEditingTemplate for displaying and editing a column of dates.  
-  
- [!code-xml[DataGrid_TemplateColumn#1](~/add/codesnippet/xaml/datagrid_templatecolumn/window1.xaml#1)]
- [!code-xml[DataGrid_TemplateColumn#1](~/add/codesnippet/xaml/p-system.windows.control_196_1.xaml)]  
-  
- The following illustration shows the output from the previous XAML.  
-  
- ![A column using a DataTemplate](~/add/media/ndp-wpf-templatecolumn.png "A column using a DataTemplate")  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellEditingTemplateProperty">
@@ -110,7 +61,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridTemplateColumn.CellEditingTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +78,8 @@
         <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the object that determines which template to use to display the contents of a cell that is in editing mode.</summary>
-        <value>The object that determines which template to use to display the contents of a cell that is in editing mode. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +96,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridTemplateColumn.CellEditingTemplateSelector%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,30 +113,9 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the template to use to display the contents of a cell that is not in editing mode.</summary>
-        <value>The template to use to display the contents of a cell that is not in editing mode. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The cell template defines how the content is displayed in the column cells. For more information about data templates, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md) and [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
-  
- To define the template for a cell that is in editing mode, use the <xref:System.Windows.Controls.DataGridTemplateColumn.CellEditingTemplate%2A>.  
-  
-   
-  
-## Examples  
- The following example shows how to create the CellTemplate for displaying a column of dates.  
-  
- [!code-xml[DataGrid_TemplateColumn#1](~/add/codesnippet/xaml/datagrid_templatecolumn/window1.xaml#1)]
- [!code-xml[DataGrid_TemplateColumn#1](~/add/codesnippet/xaml/p-system.windows.control_409_1.xaml)]  
-  
- The following illustration shows the output from the previous XAML.  
-  
- ![A column using a DataTemplate](~/add/media/ndp-wpf-templatecolumn.png "A column using a DataTemplate")  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellTemplateProperty">
@@ -201,7 +131,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridTemplateColumn.CellTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +148,8 @@
         <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the object that determines which template to use to display the contents of a cell that is not in editing mode.</summary>
-        <value>The object that determines which template to use. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,7 +166,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridTemplateColumn.CellEditingTemplateSelector%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,10 +187,10 @@
         <Parameter Name="dataItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="cell">The cell that will contain the generated element.</param>
-        <param name="dataItem">The data item represented by the row that contains the intended cell.</param>
-        <summary>Gets an element defined by the <see cref="System.Windows.Controls.DataGridTemplateColumn.CellEditingTemplate%2A" /> that is bound to the column's <see cref="System.Windows.Controls.DataGridBoundColumn.Binding%2A" /> property value.</summary>
-        <returns>A new editing element that is bound to the column's <see cref="System.Windows.Controls.DataGridBoundColumn.Binding%2A" /> property value.</returns>
+        <param name="cell">To be added.</param>
+        <param name="dataItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,10 +211,10 @@
         <Parameter Name="dataItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="cell">The cell that will contain the generated element.</param>
-        <param name="dataItem">The data item represented by the row that contains the intended cell.</param>
-        <summary>Gets an element defined by the <see cref="System.Windows.Controls.DataGridTemplateColumn.CellTemplate%2A" /> that is bound to the column's <see cref="System.Windows.Controls.DataGridBoundColumn.Binding%2A" /> property value.</summary>
-        <returns>A new, read-only element that is bound to the column's <see cref="System.Windows.Controls.DataGridBoundColumn.Binding%2A" /> property value.</returns>
+        <param name="cell">To be added.</param>
+        <param name="dataItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,9 +235,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The cell to update.</param>
-        <param name="propertyName">The name of the column property that has changed.</param>
-        <summary>Refreshes the contents of a cell in the column in response to a template property value change.</summary>
+        <param name="element">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

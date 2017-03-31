@@ -3,8 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MemoryMappedFileRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.MemoryMappedFiles.MemoryMappedFileRights" />
   <AssemblyInfo>
-    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -15,15 +24,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies access rights to a memory-mapped file that is not associated with a file on disk.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can specify access rights when you use the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.OpenExisting%2A?displayProperty=fullName> method to open an existing memory-mapped file.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AccessSystemSecurity">
@@ -32,14 +34,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.AccessSystemSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to get or set permissions on a file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ChangePermissions">
@@ -48,14 +59,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.ChangePermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to change the security and audit rules associated with a file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CopyOnWrite">
@@ -64,14 +84,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.CopyOnWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to read and write to a file with the restriction that write operations will not be seen by other processes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -80,14 +109,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to delete a file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -96,14 +134,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.Execute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to run an application file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullControl">
@@ -112,14 +159,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.FullControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to exert full control over a file, and to modify access control and audit rules. This value represents the right to do anything with a file and is the combination of all rights in this enumeration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -128,14 +184,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to open and copy a file as read-only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadExecute">
@@ -144,14 +209,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadExecute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to open and copy a folder or file as read-only, and to run application files. This right includes the Read right and the Execute right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadPermissions">
@@ -160,14 +234,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadPermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to open and copy access and audit rules from a file. This does not include the right to read data, file system attributes, or extended file system attributes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadWrite">
@@ -176,14 +259,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to open and copy a file, and the right to add data to a file or remove data from a file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadWriteExecute">
@@ -192,14 +284,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadWriteExecute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to open and copy a file, the right to add data to a file or remove data from a file, and the right to run an application file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TakeOwnership">
@@ -208,14 +309,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.TakeOwnership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to change the owner of a file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -224,14 +334,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileRights.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right to add data to a file or remove data from a file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

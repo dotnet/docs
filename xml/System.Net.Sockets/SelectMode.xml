@@ -3,32 +3,24 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SelectMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SelectMode" />
   <AssemblyInfo>
+    <AssemblyName>System.Net.Sockets</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines the polling modes for the <see cref="System.Net.Sockets.Socket.Poll%2A" /> method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SelectMode enumeration defines the polling modes that can be passed to the <xref:System.Net.Sockets.Socket.Poll%2A?displayProperty=fullName> method. Use the SelectRead value to determine if a listening <xref:System.Net.Sockets.Socket> has incoming connection requests. Use the SelectWrite value to determine if a <xref:System.Net.Sockets.Socket> is writeable. Use the SelectError value to determine if there is an error condition present on the <xref:System.Net.Sockets.Socket>. For explanations of writeability, readability, and the presence of error conditions, see the <xref:System.Net.Sockets.Socket.Poll%2A?displayProperty=fullName> method.  
-  
-   
-  
-## Examples  
- The following example checks the status of a <xref:System.Net.Sockets.Socket> using all three SelectMode enumeration values. A call to <xref:System.Net.Sockets.Socket.Poll%2A> using the SelectWrite enumerated value should return `true`.  
-  
- [!code-cs[SelectModeExample#1](~/add/codesnippet/csharp/t-system.net.sockets.sel_1.cs)]
- [!code-cpp[SelectModeExample#1](~/add/codesnippet/cpp/t-system.net.sockets.sel_1.cpp)]
- [!code-vb[SelectModeExample#1](~/add/codesnippet/visualbasic/t-system.net.sockets.sel_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="SelectError">
@@ -37,15 +29,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SelectMode.SelectError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SelectMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Error status mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectRead">
@@ -54,15 +54,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SelectMode.SelectRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SelectMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read status mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectWrite">
@@ -71,15 +79,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SelectMode.SelectWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SelectMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Write status mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.HwndHost" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,18 +21,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Hosts a [!INCLUDE[TLA#tla_win32](~/add/includes/tlasharptla-win32-md.md)] window as an element within [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To host a [!INCLUDE[TLA2#tla_win32](~/add/includes/tla2sharptla-win32-md.md)] window, create a class that derives from HwndHost. Override the <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A> method and create your [!INCLUDE[TLA2#tla_win32](~/add/includes/tla2sharptla-win32-md.md)] window as a child of the parent window that is passed into the method.  
-  
-> [!IMPORTANT]
->  Although HwndHost derives from <xref:System.Windows.FrameworkElement>, various properties of HwndHost that come from <xref:System.Windows.FrameworkElement> and other intermediate classes such as <xref:System.Windows.UIElement> are not generally mapped to possible [!INCLUDE[TLA#tla_win32](~/add/includes/tlasharptla-win32-md.md)] equivalents. Also, not all <xref:System.Windows.FrameworkElement> / <xref:System.Windows.UIElement> input events transfer across the interoperation boundary. HwndHost derives from <xref:System.Windows.FrameworkElement> primarily so that an HwndHost instance can be inserted into the widest variety of possible content models, and so that default <xref:System.Windows.FrameworkElement> layout characteristics can apply. For more details on HwndHost, see [WPF and Win32 Interoperation](../Topic/WPF%20and%20Win32%20Interoperation.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,7 +32,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -53,17 +41,8 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndHost" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildWindowCore">
@@ -73,7 +52,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,19 +61,10 @@
         <Parameter Name="hwndParent" Type="System.Runtime.InteropServices.HandleRef" />
       </Parameters>
       <Docs>
-        <param name="hwndParent">The window handle of the parent window.</param>
-        <summary>When overridden in a derived class, creates the window to be hosted.</summary>
-        <returns>The handle to the child [!INCLUDE[TLA2#tla_win32](~/add/includes/tla2sharptla-win32-md.md)] window to create.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method's implementation is called from within the internal implementation of BuildWindowCore.  
-  
- The child window will be created only if the window is owned by the calling thread.  
-  
- ]]></format>
-        </remarks>
+        <param name="hwndParent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DestroyWindowCore">
@@ -105,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,18 +83,9 @@
         <Parameter Name="hwnd" Type="System.Runtime.InteropServices.HandleRef" />
       </Parameters>
       <Docs>
-        <param name="hwnd">A structure that contains the window handle.</param>
-        <summary>When overridden in a derived class, destroys the hosted window.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
-  
- ]]></format>
-        </remarks>
+        <param name="hwnd">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -136,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,19 +102,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Immediately frees any system resources that the object might hold.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
->   
->  This method can be overridden, but not by this signature. See <xref:System.Windows.Interop.HwndHost.Dispose%28System.Boolean%29> for the overridable signature. This parameterless signature is the one required by the interface contract, and it effectively calls the active <xref:System.Windows.Interop.HwndHost.Dispose%28System.Boolean%29> implementation with `disposing``true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -166,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -184,24 +130,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">Set to <see langword="true" /> if called from an explicit disposer and <see langword="false" /> otherwise.</param>
-        <summary>Immediately frees any system resources that the object might hold.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
-  
- Derived classes can override this method if they need to do additional cleanup. However, they should also call the base implementation to ensure that all resources are freed. The base implementation does fairly substantial work to free resources that are known to the base class.  
-  
- If a window is being hosted, it will be destroyed.  
-  
- The calling thread must be the same as the dispatcher.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DpiChanged">
@@ -217,7 +148,7 @@
         <ReturnType>System.Windows.DpiChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs after the DPI of the screen on which the HwndHost is displayed changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,7 +165,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Windows.RoutedEvent" /> for when the DPI of the screen the HwndHost is on changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,7 +176,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -253,15 +183,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs the final cleanup before the garbage collector destroys the object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Like most finalizers, this calls `Dispose(false)`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -271,7 +194,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -283,10 +205,9 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the window handle  of the hosted window.</summary>
-        <value>The window handle.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to get this object. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="HasFocusWithinCore">
@@ -311,9 +232,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the sink or one of its contained components has focus.</summary>
-        <returns>
-          <see langword="true" /> if the sink or one of its contained components has focus; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,7 +244,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -342,20 +261,10 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">The size of the <see cref="T:System.Windows.Interop.HwndHost" /> object.</param>
-        <summary>Returns the size of the window represented by the <see cref="T:System.Windows.Interop.HwndHost" /> object, as requested by layout engine operations.</summary>
-        <returns>The size of the <see cref="T:System.Windows.Interop.HwndHost" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">in order to adjust the layout (by having the layout engine act upon the hosted region). Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="constraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageHook">
@@ -365,7 +274,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -380,18 +288,8 @@
         <ReturnType>System.Windows.Interop.HwndSourceHook</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs for each unhandled message that is received by the hosted window.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to add or remove handlers of this event. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -401,7 +299,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -409,16 +306,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for <see cref="T:System.Windows.Interop.HwndHost" /> .</summary>
-        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The implementation of this method is typically to call the constructor of a specific <xref:System.Windows.Automation.Peers.AutomationPeer> implementation, and return it as the return value. The <xref:System.Windows.Interop.HwndHost> implementation of OnCreateAutomationPeer does this, but the automation peer that it returns is an internal class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDpiChanged">
@@ -438,9 +328,9 @@
         <Parameter Name="newDpi" Type="System.Windows.DpiScale" />
       </Parameters>
       <Docs>
-        <param name="oldDpi">The original DPI scale setting.</param>
-        <param name="newDpi">The new DPI scale setting.</param>
-        <summary>Called when the DPI at which this HwndHost is rendered changes.</summary>
+        <param name="oldDpi">To be added.</param>
+        <param name="newDpi">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,7 +341,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -469,20 +358,9 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Called when the hosted window receives a [WM_KEYDOWN](http://go.microsoft.com/fwlink/?LinkId=161282) message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
->   
->  This is an override of the class handler <xref:System.Windows.UIElement.OnKeyDown%2A> and provides the behavior of translating the [!INCLUDE[TLA#tla_win32](~/add/includes/tlasharptla-win32-md.md)] message into a [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] event, marking the event as handled whenever appropriate.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -492,7 +370,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -510,20 +387,9 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Called when the hosted window receives a [WM_KEYUP](http://go.microsoft.com/fwlink/?LinkId=161283) message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
->   
->  This is an override of the class handler <xref:System.Windows.UIElement.OnKeyUp%2A> and provides the behavior of translating the [!INCLUDE[TLA#tla_win32](~/add/includes/tlasharptla-win32-md.md)] message into a [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] event, marking the event as handled whenever appropriate.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMnemonicCore">
@@ -548,10 +414,10 @@
         <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
       </Parameters>
       <Docs>
-        <param name="msg">The message for the mnemonic and associated data.</param>
-        <param name="modifiers">Modifier keys.</param>
-        <summary>Called when one of the mnemonics (access keys) for this sink is invoked.</summary>
-        <returns>Always returns <see langword="false" />.</returns>
+        <param name="msg">To be added.</param>
+        <param name="modifiers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -562,7 +428,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -577,18 +442,9 @@
         <Parameter Name="rcBoundingBox" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="rcBoundingBox">The window's position.</param>
-        <summary>Called when the hosted window's position changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
-  
- ]]></format>
-        </remarks>
+        <param name="rcBoundingBox">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterKeyboardInputSinkCore">
@@ -612,9 +468,9 @@
         <Parameter Name="sink" Type="System.Windows.Interop.IKeyboardInputSink" />
       </Parameters>
       <Docs>
-        <param name="sink">The <see cref="T:System.Windows.Interop.IKeyboardInputSink" /> sink of the contained component.</param>
-        <summary>Registers the <see cref="T:System.Windows.Interop.IKeyboardInputSink" /> interface of a contained component.</summary>
-        <returns>The <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> site of the contained component.</returns>
+        <param name="sink">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -625,7 +481,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -633,17 +488,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Windows.Media.FamilyTypefaceCollection.System%23Collections%23IList%23Remove%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the sink or one of its contained components has focus; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite">
@@ -653,7 +500,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -665,17 +511,9 @@
         <ReturnType>System.Windows.Interop.IKeyboardInputSite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite%2A" />.</summary>
-        <value>A reference to the container's <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> interface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.OnMnemonic">
@@ -685,7 +523,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -701,19 +538,11 @@
         <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
       </Parameters>
       <Docs>
-        <param name="msg">The message for the mnemonic and associated data. Do not modify this message structure. It is passed by reference for performance reasons only.</param>
-        <param name="modifiers">Modifier keys.</param>
-        <summary>For a description of this member, see <see cref="System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the message was handled; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="msg">To be added.</param>
+        <param name="modifiers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink">
@@ -723,7 +552,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -738,18 +566,10 @@
         <Parameter Name="sink" Type="System.Windows.Interop.IKeyboardInputSink" />
       </Parameters>
       <Docs>
-        <param name="sink">The <see cref="T:System.Windows.Interop.IKeyboardInputSink" /> sink of the contained component.</param>
-        <summary>For a description of this member, see <see cref="System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> site of the contained component.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="sink">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.TabInto">
@@ -759,7 +579,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -769,19 +588,10 @@
         <Parameter Name="request" Type="System.Windows.Input.TraversalRequest" />
       </Parameters>
       <Docs>
-        <param name="request">Specifies whether focus should be set to the first or the last tab stop.</param>
-        <summary>For a description of this member, see <see cref="System.Windows.Interop.IKeyboardInputSink.TabInto%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the focus has been set as requested; <see langword="false" />, if there are no tab stops.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator">
@@ -791,7 +601,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -807,20 +616,11 @@
         <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
       </Parameters>
       <Docs>
-        <param name="msg">The message and associated data. Do not modify this structure. It is passed by reference for performance reasons only.</param>
-        <param name="modifiers">Modifier keys.</param>
-        <summary>For a description of this member, see <see cref="System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the message was handled by the method implementation; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="msg">To be added.</param>
+        <param name="modifiers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.TranslateChar">
@@ -830,7 +630,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -846,19 +645,11 @@
         <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
       </Parameters>
       <Docs>
-        <param name="msg">The message and associated data. Do not modify this structure. It is passed by reference for performance reasons only.</param>
-        <param name="modifiers">Modifier keys.</param>
-        <summary>For a description of this member, see <see cref="System.Windows.Interop.IKeyboardInputSink.TranslateChar%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the message was processed and <see cref="System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A" /> should not be called; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Interop.HwndHost> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="msg">To be added.</param>
+        <param name="modifiers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabIntoCore">
@@ -877,9 +668,9 @@
         <Parameter Name="request" Type="System.Windows.Input.TraversalRequest" />
       </Parameters>
       <Docs>
-        <param name="request">Specifies whether focus should be set to the first or the last tab stop.</param>
-        <summary>Sets focus on either the first tab stop or the last tab stop of the sink.</summary>
-        <returns>Always returns <see langword="false" />.</returns>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -905,10 +696,10 @@
         <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
       </Parameters>
       <Docs>
-        <param name="msg">The message and associated data. Do not modify this structure. It is passed by reference for performance reasons only.</param>
-        <param name="modifiers">Modifier keys.</param>
-        <summary>Processes keyboard input at the keydown message level.</summary>
-        <returns>Always returns <see langword="false" />.</returns>
+        <param name="msg">To be added.</param>
+        <param name="modifiers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -934,10 +725,10 @@
         <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
       </Parameters>
       <Docs>
-        <param name="msg">The message and associated data. Do not modify this structure. It is passed by reference for performance reasons only.</param>
-        <param name="modifiers">Modifier keys.</param>
-        <summary>Processes WM_CHAR, WM_SYSCHAR, WM_DEADCHAR, and WM_SYSDEADCHAR input messages before the <see cref="System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A" /> method is called.</summary>
-        <returns>Always returns <see langword="false" />.</returns>
+        <param name="msg">To be added.</param>
+        <param name="modifiers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -948,7 +739,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -961,17 +751,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Updates the child window's size, visibility, and position to reflect the current state of the element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -981,7 +762,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1000,24 +780,14 @@
         <Parameter Name="handled" Type="System.Boolean&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="hwnd">The window handle of the hosted window.</param>
-        <param name="msg">The message to act upon.</param>
-        <param name="wParam">Information that may be relevant to handling the message. This is typically used to store small pieces of information, such as flags.</param>
-        <param name="lParam">Information that may be relevant to handling the message. This is typically used to reference an object.</param>
-        <param name="handled">Whether events resulting should be marked handled.</param>
-        <summary>When overridden in a derived class, accesses the window process (handle) of the hosted child window.</summary>
-        <returns>The window handle of the child window.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This type or member is not available in the Internet security zone.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="hwnd">To be added.</param>
+        <param name="msg">To be added.</param>
+        <param name="wParam">To be added.</param>
+        <param name="lParam">To be added.</param>
+        <param name="handled">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

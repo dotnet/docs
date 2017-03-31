@@ -4,26 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.PartialResultProcessing" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The PartialResultProcessing enumeration specifies the required type of partial results processing.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An application performing an asynchronous operation can use the <xref:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest%2A> method, <xref:System.DirectoryServices.Protocols.LdapConnection.EndSendRequest%2A> method, and (optionally) the <xref:System.AsyncCallback> delegate in the standard .NET style.  
-  
- An application retrieving partial results can call the <xref:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest%2A> and pass either ReturnPartialResults or ReturnPartialResultsAndNotifyCallback as the `partialMode` parameter.  
-  
- In most scenarios, use NoPartialResultSupport for better performance and scalability. The use of ReturnPartialResults or ReturnPartialResultsAndNotifyCallback is only recommended in the scenario where the retrieval of partial results is desired. For example, when performing a search with the <xref:System.DirectoryServices.Protocols.DirectoryNotificationControl> specified, the search results are returned only when changes are made to that object. The search never completes and partial results are returned.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="NoPartialResultSupport">
@@ -33,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.PartialResultProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The application will not retrieve partial results. The value is equal to 0.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReturnPartialResults">
@@ -50,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.PartialResultProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The application will retrieve partial results. The value is equal to 1.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReturnPartialResultsAndNotifyCallback">
@@ -67,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.PartialResultProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An application will retrieve partial results and use the callback mechanism. The value is equal to 2.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

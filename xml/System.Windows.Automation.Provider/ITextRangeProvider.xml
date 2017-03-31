@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ITextRangeProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -20,17 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Exposes methods and properties to support UI Automation client access to a span of continuous text in a text container that implements <see cref="T:System.Windows.Automation.Provider.ITextProvider" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TextPattern> control pattern.  
-  
- A <xref:System.Windows.Automation.Text.TextPatternRange> can represent an insertion point, a subset, or all of the text in a <xref:System.Windows.Automation.TextPattern> container.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddToSelection">
@@ -40,7 +30,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,18 +37,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds to the collection of highlighted text in a text container that supports multiple, disjoint selections.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The text insertion point moves to the area of the new selection.  
-  
- Providing a degenerate text range moves the insertion point.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">If text provider does not support multiple, disjoint selections (that is, <see cref="System.Windows.Automation.Provider.ITextProvider.SupportedTextSelection%2A" /> must have a value of <see langword="Multiple" />).</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -69,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,16 +55,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new <see cref="T:System.Windows.Automation.Provider.ITextRangeProvider" /> identical to the original <see cref="T:System.Windows.Automation.Provider.ITextRangeProvider" /> and inheriting all properties of the original.</summary>
-        <returns>The new text range. A null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) is never returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The new range can be manipulated independently from the original.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -96,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,12 +76,10 @@
         <Parameter Name="range" Type="System.Windows.Automation.Provider.ITextRangeProvider" />
       </Parameters>
       <Docs>
-        <param name="range">A text range to compare</param>
-        <summary>Returns a value that indicates whether the span (the <see cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" /> endpoint to the <see cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" /> endpoint) of a text range is the same as another text range.</summary>
-        <returns>
-          <see langword="true" /> if the span of both text ranges is identical; otherwise <see langword="false" />.</returns>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If the range being compared does not come from the same text provider.</exception>
       </Docs>
     </Member>
     <Member MemberName="CompareEndpoints">
@@ -121,7 +89,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,17 +100,12 @@
         <Parameter Name="targetEndpoint" Type="System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The <see cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" /> or <see cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" /> endpoint of the caller.</param>
-        <param name="targetRange">The target range for comparison.</param>
-        <param name="targetEndpoint">The <see cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" /> or <see cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" /> endpoint of the target.</param>
-        <summary>Returns a value that specifies whether two text ranges have identical endpoints.</summary>
-        <returns>Returns a negative value if the caller's endpoint occurs earlier in the text than the target endpoint.  
-  
- Returns zero if the caller's endpoint is at the same location as the target endpoint.  
-  
- Returns a positive value if the caller's endpoint occurs later in the text than the target endpoint.</returns>
+        <param name="endpoint">To be added.</param>
+        <param name="targetRange">To be added.</param>
+        <param name="targetEndpoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="targetRange" /> is from a different text provider.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExpandToEnclosingUnit">
@@ -153,7 +115,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -163,52 +124,9 @@
         <Parameter Name="unit" Type="System.Windows.Automation.Text.TextUnit" />
       </Parameters>
       <Docs>
-        <param name="unit">The textual unit.</param>
-        <summary>Expands the text range to the specified text unit.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the range is already an exact quantity of the specified units then it remains unchanged.  
-  
- There is a series of steps are involved behind the scenes in order for the <xref:System.Windows.Automation.Provider.ITextRangeProvider.Move%2A> method to execute successfully.  
-  
-1.  The text range is normalized; that is, the text range is collapsed to a degenerate range at the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint, which makes the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint superfluous. This step is necessary to remove ambiguity in situations where a text range spans `unit` boundaries; for example, "{The U}RL [http://www.microsoft.com](http://www.microsoft.com) is embedded in text" where "{" and "}" are the text range endpoints.  
-  
-2.  The resulting range is moved backward in the <xref:System.Windows.Automation.Provider.ITextProvider.DocumentRange%2A> to the beginning of the requested `unit` boundary.  
-  
-3.  The range is moved forward or backward in the <xref:System.Windows.Automation.Provider.ITextProvider.DocumentRange%2A> by the requested number of `unit` boundaries.  
-  
-4.  The range is then expanded from a degenerate range state by moving the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint by one requested `unit` boundary.  
-  
- ![Range adjustments by Move & ExpandToEnclosingUnit](~/add/media/uia-textpattern-moveandexpand-examples.png "Range adjustments by Move & ExpandToEnclosingUnit")  
-Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()  
-  
-> [!NOTE]
->  These steps are necessary since it is common for a screen reader to read out a full word, sentence, or entire paragraph at the insertion point or any virtual cursor position.  
-  
- ExpandToEnclosingUnit respects both hidden and visible text.  
-  
- ExpandToEnclosingUnit defers to the next largest <xref:System.Windows.Automation.Text.TextUnit> supported if the given <xref:System.Windows.Automation.Text.TextUnit> is not supported by the control.  
-  
- The order, from smallest unit to largest, is listed below.  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
- ]]></format>
-        </remarks>
+        <param name="unit">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindAttribute">
@@ -218,7 +136,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,20 +147,12 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
         <Parameter Name="backward" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attribute">The attribute to search for.</param>
-        <param name="value">The attribute value to search for. This value must match the type specified for the attribute.</param>
-        <param name="backward">
-          <see langword="true" /> if the last occurring text range should be returned instead of the first; otherwise <see langword="false" />.</param>
-        <summary>Returns a text range subset that has the specified attribute value.</summary>
-        <returns>A text range having a matching attribute and attribute value; otherwise null (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There is no differentiation between hidden and visible text.  
-  
- ]]></format>
-        </remarks>
+        <param name="attribute">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="backward">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindText">
@@ -253,7 +162,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,21 +173,12 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="text">The text string to search for.</param>
-        <param name="backward">
-          <see langword="true" /> if the last occurring text range should be returned instead of the first; otherwise <see langword="false" />.</param>
-        <param name="ignoreCase">
-          <see langword="true" /> if case should be ignored; otherwise <see langword="false" />.</param>
-        <summary>Returns a text range subset that contains the specified text.</summary>
-        <returns>A text range matching the specified text; otherwise null (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There is no differentiation between hidden and visible text.  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <param name="backward">To be added.</param>
+        <param name="ignoreCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAttributeValue">
@@ -289,7 +188,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,22 +197,10 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
         <Parameter Name="attribute" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="attribute">The text attribute.</param>
-        <summary>Retrieves the value of the specified attribute across the text range.</summary>
-        <returns>Retrieves an object representing the value of the specified attribute. For example, <c>GetAttributeValue(TextPattern.FontNameAttribute)</c> would return a string that represents the font name of the text range while <c>GetAttributeValue(TextPattern.IsItalicAttribute)</c> would return a value of type <see cref="T:System.Boolean" />.  
-  
- Returns <see cref="F:System.Windows.Automation.TextPattern.MixedAttributeValue" /> if the value of the specified attribute varies over the text range.  
-  
- Returns <see cref="F:System.Windows.Automation.AutomationElement.NotSupported" /> if the specified attribute is not supported by the provider or the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There is no differentiation between hidden and visible text.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">If the specified attribute is not valid.</exception>
+        <param name="attribute">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBoundingRectangles">
@@ -324,7 +210,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,12 +217,8 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a collection of bounding rectangles for each fully or partially visible line of text in a text range.</summary>
-        <returns>An array of bounding rectangles for each full or partial line of text in a text range.  
-  
- An empty array for a degenerate range.  
-  
- An empty array for a text range that has screen coordinates placing it completely off-screen, scrolled out of view, or obscured by an overlapping window.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,7 +229,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,10 +236,8 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a collection of all embedded objects that fall within the text range.</summary>
-        <returns>A collection of child objects that fall within the range. Children that overlap with the text range but are not entirely enclosed by it will also be included in the collection.  
-  
- Returns an empty collection if there are no child objects.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,7 +248,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -378,8 +255,8 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the innermost control that encloses the text range.</summary>
-        <returns>The enclosing control, typically the text provider that supplies the text range. However, if the text provider supports child elements such as tables or hyperlinks, then the enclosing element could be a descendant of the text provider.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,7 +267,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -400,22 +276,10 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
         <Parameter Name="maxLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="maxLength">The maximum length of the string to return. Use <c>-1</c> if no limit is required.</param>
-        <summary>Retrieves the plain text of the range.</summary>
-        <returns>The plain text of the text range, possibly truncated at the specified <paramref name="maxLength" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetText respects both hidden and visible text.  
-  
- If `maxLength` is greater than the length of the text span of the caller, the string returned will be the plain text of the text range.  
-  
- GetText will not be affected by the order of endpoints in the text flow; it will always return the text between the Start and End endpoints of the text range in the logical text flow order.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">If <paramref name="maxLength" /> is less than -1.</exception>
+        <param name="maxLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -425,7 +289,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -436,58 +299,11 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="unit">The text unit boundary.</param>
-        <param name="count">The number of text units to move.  
-  
- A positive value moves the text range forward, a negative value moves the text range backward, and 0 has no effect.</param>
-        <summary>Moves the text range the specified number of text units.</summary>
-        <returns>The number of units actually moved. This can be less than the number requested if either of the new text range endpoints is greater than or less than the <see cref="System.Windows.Automation.Provider.ITextProvider.DocumentRange%2A" /> endpoints.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When it is necessary to traverse the content of a text range, a series of steps are involved behind the scenes in order for the Move method to execute successfully.  
-  
-1.  The text range is normalized; that is, the text range is collapsed to a degenerate range at the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint, which makes the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint superfluous. This step is necessary to remove ambiguity in situations where a text range spans `unit` boundaries; for example, "{The U}RL [http://www.microsoft.com](http://www.microsoft.com) is embedded in text" where "{" and "}" are the text range endpoints.  
-  
-2.  The resulting range is moved backward in the <xref:System.Windows.Automation.Provider.ITextProvider.DocumentRange%2A> to the beginning of the requested `unit` boundary.  
-  
-3.  The range is moved forward or backward in the <xref:System.Windows.Automation.Provider.ITextProvider.DocumentRange%2A> by the requested number of `unit` boundaries.  
-  
-4.  The range is then expanded from a degenerate range state by moving the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint by one requested `unit` boundary.  
-  
- ![Range adjustments by Move & ExpandToEnclosingUnit](~/add/media/uia-textpattern-moveandexpand-examples.png "Range adjustments by Move & ExpandToEnclosingUnit")  
-Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()  
-  
- The textual content (or inner text) of a text container and an embedded object, such as a hyperlink or table cell, is exposed as a single, continuous text stream in both the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] tree; object boundaries are ignored.  
-  
- ![Text ranges spanned by embedded objects.](~/add/media/uia-textpattern-embeddedobjecttextranges.png "Text ranges spanned by embedded objects.")  
-Example of a text stream with embedded objects and their range spans  
-  
- Move respects both hidden and visible text.  
-  
- Move defers to the next largest <xref:System.Windows.Automation.Text.TextUnit> supported if the given <xref:System.Windows.Automation.Text.TextUnit> is not supported by the control.  
-  
- The order, from smallest unit to largest, is listed below.  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
- The text is not altered in any way, the text range just spans a different part of the text.  
-  
- ]]></format>
-        </remarks>
+        <param name="unit">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveEndpointByRange">
@@ -497,7 +313,6 @@ Example of a text stream with embedded objects and their range spans
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -509,18 +324,11 @@ Example of a text stream with embedded objects and their range spans
         <Parameter Name="targetEndpoint" Type="System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The endpoint to move.</param>
-        <param name="targetRange">Another range from the same text provider.</param>
-        <param name="targetEndpoint">An endpoint on the other range.</param>
-        <summary>Moves one endpoint of a text range to the specified endpoint of a second text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the endpoint being moved crosses the other endpoint of the same text range then that other endpoint is moved also, resulting in a degenerate range and ensuring the correct ordering of the endpoints (that is, <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> is always less than or equal to <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint>).  
-  
- ]]></format>
-        </remarks>
+        <param name="endpoint">To be added.</param>
+        <param name="targetRange">To be added.</param>
+        <param name="targetEndpoint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveEndpointByUnit">
@@ -530,7 +338,6 @@ Example of a text stream with embedded objects and their range spans
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -542,46 +349,12 @@ Example of a text stream with embedded objects and their range spans
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The endpoint to move.</param>
-        <param name="unit">The textual unit for moving.</param>
-        <param name="count">The number of units to move. A positive value moves the endpoint forward. A negative value moves backward. A value of 0 has no effect.</param>
-        <summary>Moves one endpoint of the text range the specified number of text units within the document range.</summary>
-        <returns>The number of units actually moved, which can be less than the number requested if moving the endpoint runs into the beginning or end of the document.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When it is necessary to traverse the content of a text range, a series of steps are involved behind the scenes in order for the <xref:System.Windows.Automation.Provider.ITextRangeProvider.Move%2A> method to execute successfully.  
-  
-1.  The text range is normalized; that is, the text range is collapsed to a degenerate range at the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint, which makes the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint superfluous. This step is necessary to remove ambiguity in situations where a text range spans `unit` boundaries; for example, "{The U}RL [http://www.microsoft.com](http://www.microsoft.com) is embedded in text" where "{" and "}" are the text range endpoints.  
-  
-2.  The resulting range is moved backward in the <xref:System.Windows.Automation.Provider.ITextProvider.DocumentRange%2A> to the beginning of the requested `unit` boundary.  
-  
-3.  The range is then expanded from a degenerate range state by moving the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint by one requested `unit` boundary.  
-  
- ![Range adjustments by Move & ExpandToEnclosingUnit](~/add/media/uia-textpattern-moveandexpand-examples.png "Range adjustments by Move & ExpandToEnclosingUnit")  
-Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()  
-  
- MoveEndpointByUnit defers to the next largest <xref:System.Windows.Automation.Text.TextUnit> supported if the given <xref:System.Windows.Automation.Text.TextUnit> is not supported by the control.  
-  
- The order, from smallest unit to largest, is listed below.  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
--   <xref:System.Windows.Automation.Text.TextUnit>  
-  
- ]]></format>
-        </remarks>
+        <param name="endpoint">To be added.</param>
+        <param name="unit">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveFromSelection">
@@ -591,7 +364,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -599,18 +371,8 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes a highlighted section of text, corresponding to the caller's <see cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" /> and <see cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" /> endpoints, from the collection of highlighted text in a text container that supports multiple, disjoint selections.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The text insertion point will move to the area of the removed highlight.  
-  
- Providing a degenerate text range will move the insertion point.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">If text provider does not support multiple, disjoint selections (for example, <see cref="System.Windows.Automation.TextPattern.SupportedTextSelection%2A" /> must have a value of <see langword="Multiple" />).</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -620,7 +382,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -630,19 +391,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
         <Parameter Name="alignToTop" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="alignToTop">
-          <see langword="true" /> if the text control should be scrolled so the text range is flush with the top of the viewport; <see langword="false" /> if it should be flush with the bottom of the viewport.</param>
-        <summary>Causes the text control to scroll vertically until the text range is visible in the viewport.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ScrollIntoView respects both hidden and visible text.  
-  
- If the text range is hidden, the text control will scroll only if the hidden text has an anchor in the viewport.  
-  
- ]]></format>
-        </remarks>
+        <param name="alignToTop">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -652,7 +403,6 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -660,16 +410,8 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Highlights text in the text control corresponding to the text range <see cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" /> and <see cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" /> endpoints.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a degenerate text range is provided, the text insertion point will move to the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint of the text range.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">Occurs when text selection is not supported by the text control.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

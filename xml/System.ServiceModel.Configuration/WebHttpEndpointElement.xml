@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a WCF configuration element for a web service application.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.WebHttpEndpointElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +48,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether automatic formatting selection is turned on.</summary>
-        <value>
-          <see langword="true" /> if automatic formatting is enabled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +74,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of MIME content of the data sent by a web service operations.</summary>
-        <value>A string that contains the name of a MIME content.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,9 +95,9 @@
         <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">An object of type <see cref="T:System.ServiceModel.Description.ContractDescription" /> that specifies what an endpoint communicates to the outside world, including the signature of the operations in terms of messages exchanged, the data types of these messages, the location of the operations, and the specific protocols and serialization formats that are used to support successful communication with the service.</param>
-        <summary>Creates a new endpoint of type <see cref="T:System.ServiceModel.Description.WebHttpEndpoint" /> with the specified contract description.</summary>
-        <returns>A service endpoint.</returns>
+        <param name="contractDescription">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +119,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether a condition is enabled that allows code injection into web pages viewed by other users.</summary>
-        <value>
-          <see langword="true" /> if access is enabled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +142,8 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the default format for responses sent out from a web service operations.</summary>
-        <value>A format object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +160,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the <see cref="T:System.ServiceModel.Description.WebHttpEndpoint" />.</summary>
-        <value>A type object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,8 +183,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flag that specifies whether a FaultException is generated when an internal server error (HTTP status code: 500) occurs.</summary>
-        <value>Returns <see langword="true" /> if the flag is enabled; otherwise returns <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,9 +206,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether help is enabled.</summary>
-        <value>
-          <see langword="true" /> if help is enabled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,8 +232,8 @@
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the web service host name and URI matching rule that is configured in the binding element and used by transports such as HTTP, TCP, and named pipes when dispatching incoming messages.</summary>
-        <value>An enumerated comparison mode.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,8 +258,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum amount of memory allocated for the buffer manager that manages the buffers required by endpoints using this binding.</summary>
-        <value>A 64-bit representation of a number.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,8 +284,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum buffer size to use.</summary>
-        <value>A number representing buffer size.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,8 +310,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of messages that can be received by the web service.</summary>
-        <value>A 64-bit number representing a maximum quantity.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,9 +332,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to which web HTTP configuration settings are applied.</param>
-        <param name="serviceEndpointElement">Not implemented.</param>
-        <summary>Converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a <see cref="T:System.ServiceModel.Description.WebHttpEndpoint" />.</summary>
+        <param name="endpoint">To be added.</param>
+        <param name="serviceEndpointElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,9 +355,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to which web HTTP configuration settings are applied.</param>
-        <param name="serviceEndpointElement">Not implemented.</param>
-        <summary>Converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a <see cref="T:System.ServiceModel.Description.WebHttpEndpoint" />.</summary>
+        <param name="endpoint">To be added.</param>
+        <param name="serviceEndpointElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,8 +377,8 @@
         <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="channelEndpointElement">The channel endpoint element to initialize and validate.</param>
-        <summary>Initializes and verifies the format of a specified channel endpoint element and configures it to include web HTTP content.</summary>
+        <param name="channelEndpointElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,8 +398,8 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpointElement">The service endpoint element to initialize and validate.</param>
-        <summary>Initializes and verifies the format of a specified service endpoint element and configures it to include web HTTP content.</summary>
+        <param name="serviceEndpointElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -419,8 +416,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects associated with the current <see cref="T:System.ServiceModel.Configuration.WebHttpEndpointElement" />.</summary>
-        <value>A collection of configuration properties.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,8 +439,8 @@
         <ReturnType>System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement" /> object that contains contraints on length and complexity of XML strings that are read by the XML dictionary reader.</summary>
-        <value>An object that contains XML dictionary reader quotas.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,8 +462,8 @@
         <ReturnType>System.ServiceModel.Configuration.WebHttpSecurityElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an element that configures the security for a web service with endpoints that receive HTTP requests.</summary>
-        <value>A web service security element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,16 +488,9 @@
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the WCF method of transporting data across a network between endpoints.</summary>
-        <value>An enumeration of transfer modes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The three main transport modes are HTTP, TCP, and named pipes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteEncoding">
@@ -524,8 +514,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the string to be encoded.</summary>
-        <value>Encoded text.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

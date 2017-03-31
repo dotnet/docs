@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AsyncContentLoadedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for a <see cref="F:System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,17 +29,10 @@
         <Parameter Name="percentComplete" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="asyncContentState">The state of content loading.</param>
-        <param name="percentComplete">Percentage of content that has been loaded.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.AsyncContentLoadedEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `percentComplete` should be 0.0 when `asyncContentState` is <xref:System.Windows.Automation.AsyncContentLoadedState> and 100.0 when it is <xref:System.Windows.Automation.AsyncContentLoadedState>.  
-  
- ]]></format>
-        </remarks>
+        <param name="asyncContentState">To be added.</param>
+        <param name="percentComplete">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AsyncContentLoadedState">
@@ -51,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AsyncContentLoadedState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the state of the content loading.</summary>
-        <value>One of the <see cref="T:System.Windows.Automation.AsyncContentLoadedState" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the percentage of content that has been loaded.</summary>
-        <value>The percentage of content that has been loaded.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

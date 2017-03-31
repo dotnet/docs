@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ValueSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Reports the information returned from <see cref="System.Windows.DependencyPropertyHelper.GetValueSource%2A" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Most of the information that ValueSource transmits is contained in the <xref:System.Windows.ValueSource.BaseValueSource%2A> property. This property contains an enumeration value that specifies exactly one aspect of the overall [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] property system that is responsible for the effective value of a dependency property.  
-  
- Besides the base value, the other information that might be interesting about a dependency property value is whether the value is being animated, and whether the value involves an expression (such as a binding, or a dynamic resource reference). This information is reported by <xref:System.Windows.ValueSource.IsAnimated%2A> and <xref:System.Windows.ValueSource.IsExpression%2A> respectively. Also, if coercion is acting on a property value, the property retains a desired value, and the property value will attempt to reach that desired value if the constraints of the specific coercion are changed or lifted. A coerced property that is not at its desired value will report that <xref:System.Windows.ValueSource.IsCoerced%2A> is `true`.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BaseValueSource">
@@ -32,25 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.BaseValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value of the <see cref="T:System.Windows.BaseValueSource" /> enumeration, which reports the source that provided the dependency property system with a value.</summary>
-        <value>A value of the enumeration.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The base value is not the effective value if either coercion or animation is acting on the property. Check <xref:System.Windows.ValueSource.IsAnimated%2A> and <xref:System.Windows.ValueSource.IsCoerced%2A> if you want to determine whether the base value is the effective value.  
-  
- You might also want to check <xref:System.Windows.ValueSource.IsExpression%2A> to see if the base value was evaluated out of an expression.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -60,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,18 +49,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object to compare with this <see cref="T:System.Windows.ValueSource" />.</param>
-        <summary>Returns a value indicating whether this <see cref="T:System.Windows.ValueSource" /> is equal to a specified object.</summary>
-        <returns>
-          <see langword="true" /> if the provided object is equivalent to the current <see cref="T:System.Windows.ValueSource" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation supports value equality, based on each of the property values of each <xref:System.Windows.ValueSource> structure.  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -91,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,16 +69,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this <see cref="T:System.Windows.ValueSource" />.</summary>
-        <returns>A 32-bit unsigned integer hash code.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This hash code is based on the <xref:System.Windows.ValueSource.BaseValueSource%2A> value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAnimated">
@@ -118,24 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that declares whether the property is being animated.</summary>
-        <value>
-          <see langword="true" /> if the property is animated; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For any property that is currently being animated, the source reported by <xref:System.Windows.ValueSource.BaseValueSource%2A> is not immediately relevant, because the animation operates at higher dependency property precedence than the base value. For more information about precedence and animations, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCoerced">
@@ -145,26 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that declares whether this value resulted from a <see cref="T:System.Windows.CoerceValueCallback" /> implementation applied to a dependency property.</summary>
-        <value>
-          <see langword="true" /> if the value resulted from a <see cref="T:System.Windows.CoerceValueCallback" /> implementation applied to a dependency property; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If coercion is acting on a property value, the property retains a desired value, and the property value will attempt to reach that desired value if the constraints of the specific coercion are changed or lifted. A coerced property that is not at its desired value will report that IsCoerced is `true`.  
-  
- Coercion acts at higher precedence than the base value, and is not strictly speaking a participant in how the base value is set. Therefore the state of being coerced is reported by this property, rather than by a value of the <xref:System.Windows.BaseValueSource> enumeration. For more information about coercion, base values, and precedence, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCurrent">
@@ -180,9 +123,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the value was set by the <see cref="System.Windows.DependencyObject.SetCurrentValue%2A" /> method.</summary>
-        <value>
-          <see langword="true" /> if the value was set by the <see cref="System.Windows.DependencyObject.SetCurrentValue%2A" /> method; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,26 +135,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that declares whether this value resulted from an evaluated expression. This might be a <see cref="T:System.Windows.Data.BindingExpression" /> supporting a binding, or an internal expression such as those that support the [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md).</summary>
-        <value>
-          <see langword="true" /> if the value came from an evaluated expression; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An evaluated expression will also report the specific base value setting condition where the expression was applied, as a value in <xref:System.Windows.ValueSource.BaseValueSource%2A>. The <xref:System.Windows.ValueSource.BaseValueSource%2A> is still very relevant for any property where IsExpression is `true`. Knowing whether a value came through an expression can be particularly useful if the value was set indirectly, such as through a template or an inherited property value.  
-  
- If an expression fails to evaluate (the binding failed; no resource of that name was found), then the value will come from some other participant in the property system, most likely the default value. That source is then reported in <xref:System.Windows.ValueSource.BaseValueSource%2A>. Failed expression evaluations will return `false` for IsExpression.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -222,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,19 +163,11 @@
         <Parameter Name="vs2" Type="System.Windows.ValueSource" />
       </Parameters>
       <Docs>
-        <param name="vs1">The first <see cref="T:System.Windows.ValueSource" /> to compare.</param>
-        <param name="vs2">The second <see cref="T:System.Windows.ValueSource" /> to compare.</param>
-        <summary>Determines whether two <see cref="T:System.Windows.ValueSource" /> instances have the same value.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.ValueSource" /> instances are equivalent; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation calls <xref:System.Windows.ValueSource.Equals%2A>, and supports value equality based on all properties of <xref:System.Windows.ValueSource>.  
-  
- ]]></format>
-        </remarks>
+        <param name="vs1">To be added.</param>
+        <param name="vs2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -255,7 +177,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,19 +187,11 @@
         <Parameter Name="vs2" Type="System.Windows.ValueSource" />
       </Parameters>
       <Docs>
-        <param name="vs1">The first <see cref="T:System.Windows.ValueSource" /> to compare.</param>
-        <param name="vs2">The second <see cref="T:System.Windows.ValueSource" /> to compare.</param>
-        <summary>Determines whether two <see cref="T:System.Windows.ValueSource" /> instances do not have the same value.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.ValueSource" /> instances are not equivalent; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation calls <xref:System.Windows.ValueSource.Equals%2A>, returning its negation, and supports value equality based on all properties of <xref:System.Windows.ValueSource>.  
-  
- ]]></format>
-        </remarks>
+        <param name="vs1">To be added.</param>
+        <param name="vs2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

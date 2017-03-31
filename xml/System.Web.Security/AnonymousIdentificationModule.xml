@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AnonymousIdentificationModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,50 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Manages anonymous identifiers for the ASP.NET application.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AnonymousIdentificationModule class creates and manages anonymous identifiers for an ASP.NET application. Anonymous identifiers are used by features that support anonymous identification such as the ASP.NET <xref:System.Web.Profile>.  
-  
- The AnonymousIdentificationModule exposes a <xref:System.Web.Security.AnonymousIdentificationModule.Creating> event that enables you to set the anonymous identifier to a custom value. If you do not specify a custom anonymous identifier value, a <xref:System.Guid> is used.  
-  
- The <xref:System.Web.Security.AnonymousIdentificationModule.Creating> event is accessed by specifying a subroutine named **AnonymousIdentification_Creating** in the Global.asax file for your ASP.NET application.  
-  
- The AnonymousIdentificationModule is only used when anonymous identification is <xref:System.Web.Security.AnonymousIdentificationModule.Enabled%2A> by setting the enabled attribute of the  configuration element to `true`.  
-  
-> [!NOTE]
->  Anonymous identification is independent of any type of ASP.NET authentication.  
-  
-   
-  
-## Examples  
- The following code example shows a Web.config file for an application that enables anonymous identification.  
-  
-```  
-<configuration>  
-  <system.web>  
-    <authentication mode="Forms" >  
-      <forms loginUrl="login.aspx" name=".ASPXFORMSAUTH" />  
-    </authentication>  
-  
-    <anonymousIdentification enabled="true" />  
-  
-    <profile defaultProvider="AspNetSqlProvider">  
-      <properties>  
-        <add name="ZipCode" allowAnonymous="true" />  
-        <add name="CityAndState" allowAnonymous="true" />  
-        <add name="StockSymbols" type="System.Collections.ArrayList"   
-          allowAnonymous="true" />  
-      </properties>  
-    </profile>  
-  </system.web>  
-</configuration>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,22 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.Security.AnonymousIdentificationModule" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is not intended to be called from application code.  
-  
- ASP.NET calls this constructor to create an instance of the <xref:System.Web.Security.AnonymousIdentificationModule> class. After calling the constructor, it calls the <xref:System.Web.Security.AnonymousIdentificationModule.Init%2A> method to initialize the new <xref:System.Web.Security.AnonymousIdentificationModule> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearAnonymousIdentifier">
@@ -94,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,34 +48,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the anonymous cookie or identifier associated with a session.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ClearAnonymousIdentifier method removes the anonymous identifier associated with a session on a Web site.  Use the ClearAnonymousIdentifier method to remove the anonymous identifier associated with a session when the user switches to an authenticated session associated with a user ID, for example when the <xref:System.Web.Profile.ProfileModule.MigrateAnonymous> event occurs.  
-  
- Since a new anonymous identifier will be issued immediately if the current anonymous identifier is removed, the ClearAnonymousIdentifier method will throw a <xref:System.NotSupportedException> if it is called while the session is identified by an anonymous identifier.  
-  
- If the site is using cookies, the ClearAnonymousIdentifier method issues a clear cookie to remove the anonymous identifier from the browser. The clear cookie is issued even if an anonymous cookie was not sent on the previous request.  
-  
- The clear cookie is constructed as follows:  
-  
--   If the browser supports empty strings in a cookie, the cookie is issued with the empty string as its value; otherwise, the cookie is issued with "NoCookie" as its value.  
-  
--   The values for the cookie name, path, and domain are set to the defaults configured in the Web application's configuration file.  
-  
--   The expiration date is set to October 12, 1999.  
-  
- If the site is using cookieless authentication, and an anonymous identifier is present in the URL, the anonymous identifier is removed from the URL. No other changes are made to the address or query string. After the URL is modified, a redirect is issued to return to the currently executing page.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Calling ClearAnonymousIdentifier when the anonymous identification is not enabled.  
-  
- -or-  
-  
- The user for the current request is anonymous.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Creating">
@@ -139,36 +59,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.AnonymousIdentificationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a new anonymous identifier is created.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Creating event is raised during the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event.  
-  
- You can access the Creating event of the <xref:System.Web.Security.AnonymousIdentificationModule> class by specifying a subroutine named **AnonymousIdentification_Creating** in the Global.asax file for your ASP.NET application.  
-  
- You can use the <xref:System.Web.Security.AnonymousIdentificationEventArgs.AnonymousID%2A> property of the <xref:System.Web.Security.AnonymousIdentificationEventArgs> object supplied to the **AnonymousIdentification_Creating** event to set the anonymous identifier to a custom value. If you do not specify a value for the <xref:System.Web.Security.AnonymousIdentificationEventArgs.AnonymousID%2A> property during the **AnonymousIdentification_Creating** event, a <xref:System.Guid> is used.  
-  
- The **AnonymousIdentification_Creating** event is only raised when the anonymous identification is <xref:System.Web.Security.AnonymousIdentificationModule.Enabled%2A>.  
-  
-   
-  
-## Examples  
- The following code example uses the **AnonymousIdentification_Creating** event to set the anonymous identifier to a custom value.  
-  
- [!code-cs[System.Web.Security.AnonymousIdentificationModule#1](~/add/codesnippet/csharp/e-system.web.security.an_1.asax)]
- [!code-vb[System.Web.Security.AnonymousIdentificationModule#1](~/add/codesnippet/visualbasic/e-system.web.security.an_1.asax)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -178,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,15 +83,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources, other than memory, used by the <see cref="T:System.Web.Security.AnonymousIdentificationModule" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not intended to be called from application code.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -204,45 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether anonymous identification is enabled for the ASP.NET application.</summary>
-        <value>
-          <see langword="true" /> if anonymous identification is enabled for the ASP.NET application; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows a Web.config file for an application that enables anonymous identification.  
-  
-```  
-<configuration>  
-  <system.web>  
-    <authentication mode="Forms" >  
-      <forms loginUrl="login.aspx" name=".ASPXFORMSAUTH" />  
-    </authentication>  
-  
-    <anonymousIdentification enabled="true" />  
-  
-    <profile defaultProvider="AspNetSqlProvider">  
-      <properties>  
-        <add name="ZipCode" allowAnonymous="true" />  
-        <add name="CityAndState" allowAnonymous="true" />  
-        <add name="StockSymbols" type="System.Collections.ArrayList"   
-          allowAnonymous="true" />  
-      </properties>  
-    </profile>  
-  </system.web>  
-</configuration>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -252,7 +112,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -262,18 +121,9 @@
         <Parameter Name="app" Type="System.Web.HttpApplication" />
       </Parameters>
       <Docs>
-        <param name="app">The current <see cref="T:System.Web.HttpApplication" /> instance.</param>
-        <summary>Initializes the <see cref="T:System.Web.Security.AnonymousIdentificationModule" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not intended to be called from application code.  
-  
- The Init method ensures that the <xref:System.Web.Security.AnonymousIdentificationModule> is included in the processing of the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event.  
-  
- ]]></format>
-        </remarks>
+        <param name="app">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

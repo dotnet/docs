@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataSetViewSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,25 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the structure, or schema, of a <see cref="T:System.Data.DataTable" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DataSetViewSchema class to list the structure of data using a <xref:System.Data.DataTable> at design time. Use the <xref:System.Web.UI.Design.DataSetViewSchema.GetFields%2A> method to get a list of information about each field as <xref:System.Data.DataColumn> objects.  
-  
- The DataSetViewSchema class is used by custom control designer components to provide UI options to the user at design time that accurately reflect the structure of the data.  
-  
- To examine the components of data using a <xref:System.Data.DataSet>, use the following classes.  
-  
--   <xref:System.Web.UI.Design.DataSetSchema>  
-  
--   DataSetViewSchema  
-  
--   <xref:System.Web.UI.Design.DataSetFieldSchema>  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,15 +26,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dataTable" Type="System.Data.DataTable" />
       </Parameters>
       <Docs>
-        <param name="dataTable">The <see cref="T:System.Data.DataTable" /> that the <see cref="T:System.Web.UI.Design.DataSetViewSchema" /> instance will describe.</param>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.Design.DataSetViewSchema" /> class using a specified <see cref="T:System.Data.DataTable" />.</summary>
+        <param name="dataTable">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,17 +51,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array representing the child views contained in the current view.</summary>
-        <returns>
-          <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetChildren method inherited from <xref:System.Web.UI.Design.IDataSourceViewSchema> is not implemented in this class and always returns `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -91,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,16 +70,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array containing information about each data field in the view.</summary>
-        <returns>An array of <see cref="T:System.Web.UI.Design.IDataSourceFieldSchema" /> objects.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetFields method does not return information about hidden fields.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -118,15 +82,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the view using its <see cref="System.Data.DataTable.TableName%2A" /> property.</summary>
-        <value>The name of the view.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

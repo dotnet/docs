@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.AddRequest" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The AddRequest class adds an entry to the directory.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The request may be added to the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument> or it can be used as the parameter for <xref:System.DirectoryServices.Protocols.DirectoryConnection.SendRequest%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>The AddRequest constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.AddRequest" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -60,9 +50,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="distinguishedName">The <c>distinguishedName</c> of the new object in the directory.</param>
-        <param name="attributes">An array, of  <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> objects, that contains the attributes for this object. This parameter may be <see langword="null" />.</param>
-        <summary>The AddRequest constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.AddRequest" /> class using the specified distinguished name and attributes.</summary>
+        <param name="distinguishedName">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +63,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -81,18 +70,10 @@
         <Parameter Name="objectClass" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="distinguishedName">The <c>distinguishedName</c> of the new object in the directory.</param>
-        <param name="objectClass">The object class for this object. If this parameter is <see langword="null" />, an exception is thrown.</param>
-        <summary>The AddRequest constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.AddRequest" /> class using the specified <paramref name="distinguishedName" /> and the object class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value specified in the `objectClass` parameter is added to the <xref:System.DirectoryServices.Protocols.AddRequest.Attributes%2A> property. This value can be modified after this constructor is called.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="objectClass" /> parameter contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="distinguishedName">To be added.</param>
+        <param name="objectClass">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -102,23 +83,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.DirectoryAttributeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Attributes property contains a <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> of attribute-value pairs for the object.</summary>
-        <value>A <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> of attribute-value pairs for the object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property cannot be set.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DistinguishedName">
@@ -128,15 +101,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DistinguishedName property contains the distinguished name of the object.</summary>
-        <value>The distinguished name of the object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,9 +128,9 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="doc">A <see cref="T:System.Xml.XmlDocument" /> object.</param>
-        <summary>The ToXmlNode method creates an XML node from the specified  <see cref="T:System.Xml.XmlDocument" /> object.</summary>
-        <returns>The resulting <see cref="T:System.Xml.XmlElement" /> object.</returns>
+        <param name="doc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

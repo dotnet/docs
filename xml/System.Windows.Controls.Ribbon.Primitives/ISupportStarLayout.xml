@@ -8,15 +8,8 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Represents an element that controls the star layout.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the panels that lay out the ribbon use *star sizing* to show the largest possible control variation that can fit in the available space. Star sizing is a convention where the available space is divided evenly between the elements that need to occupy the space. The name derives from the fact that you specify star sizing by using an asterisk (*) in XAML.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="IsStarLayoutPass">
@@ -32,9 +25,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the current layout pass is after the star layout pass.</summary>
-        <value>
-          <see langword="true" /> if the current pass is a star layout pass; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +46,8 @@
         <Parameter Name="starLayoutInfoProvider" Type="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
       </Parameters>
       <Docs>
-        <param name="starLayoutInfoProvider">The element to register.</param>
-        <summary>Registers an element to participate in the star layout.</summary>
+        <param name="starLayoutInfoProvider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +67,8 @@
         <Parameter Name="starLayoutInfoProvider" Type="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
       </Parameters>
       <Docs>
-        <param name="starLayoutInfoProvider">The element to remove.</param>
-        <summary>Removes an element from participation in the star layout.</summary>
+        <param name="starLayoutInfoProvider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

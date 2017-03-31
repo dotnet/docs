@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationAuthorChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Annotations.Annotation.AuthorChanged" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- AnnotationAuthorChangedEventArgs is passed as a parameter to the <xref:System.Windows.Annotations.AnnotationAuthorChangedEventHandler> whenever an <xref:System.Windows.Annotations.Annotation.AuthorChanged> event occurs on an <xref:System.Windows.Annotations.Annotation>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -39,22 +30,11 @@
         <Parameter Name="author" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="annotation">The annotation raising the event.</param>
-        <param name="action">The author operation performed: <see cref="T:System.Windows.Annotations.AnnotationAction" />, <see cref="T:System.Windows.Annotations.AnnotationAction" />, or <see cref="T:System.Windows.Annotations.AnnotationAction" />.</param>
-        <param name="author">The author object being changed by the event.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationAuthorChangedEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **AnnotationAuthorChangedEventArgs** is passed as a parameter to the <xref:System.Windows.Annotations.AnnotationAuthorChangedEventHandler> whenever an <xref:System.Windows.Annotations.Annotation.AuthorChanged> event occurs on an annotation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="annotation" /> or <paramref name="action" /> is a null reference (**Nothing** in Visual Basic).</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="action" /> is an invalid <see cref="T:System.Windows.Annotations.AnnotationAction" />.</exception>
+        <param name="annotation">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="author">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -64,15 +44,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the author change operation for the event.</summary>
-        <value>The author change operation: <see cref="T:System.Windows.Annotations.AnnotationAction" />, <see cref="T:System.Windows.Annotations.AnnotationAction" />, or <see cref="T:System.Windows.Annotations.AnnotationAction" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,15 +62,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.Annotation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the annotation that raised the event.</summary>
-        <value>The annotation that raised the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,15 +80,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the author object that is the target of the event.</summary>
-        <value>The author object that is the target of the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

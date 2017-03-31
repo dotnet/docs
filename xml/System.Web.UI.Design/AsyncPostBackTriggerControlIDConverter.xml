@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.AsyncPostBackTriggerControlIDConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions.Design</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type converter that retrieves a list of control IDs in the current container.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AsyncPostBackTriggerControlIDConverter class derives from the <xref:System.ComponentModel.StringConverter> class and provides a list of control IDs for display in a property grid control in design-time environments.  
-  
- For more information about type converters, see [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md) and [Generalized Type Conversion](../Topic/Generalized%20Type%20Conversion.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,22 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.AsyncPostBackTriggerControlIDConverter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -57,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,9 +46,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An object that provides a format context that can be used to extract additional information about the environment from which this converter is invoked. This parameter, or properties of this parameter, can be <see langword="null" />.</param>
-        <summary>Returns a collection of control IDs from the container in the <see cref="T:System.ComponentModel.Design.IDesignerHost" /> object when provided with a format context.</summary>
-        <returns>An object that holds a set of strings that represent the control IDs of the controls in the current container. If the container has no controls, returns an empty collection. If the context is <see langword="null" /> or if there is no current container, returns <see langword="null" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,10 +68,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An object that provides a format context.</param>
-        <summary>Returns a value that indicates whether the collection of standard values that is returned from the <see cref="System.Web.UI.Design.AsyncPostBackTriggerControlIDConverter.GetStandardValues%2A" /> method is an exclusive list of possible values, by using the specified context.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> object that is returned from the <see cref="System.Web.UI.Design.AsyncPostBackTriggerControlIDConverter.GetStandardValues%2A" /> method provides an exhaustive list of possible values; <see langword="false" /> if other values are possible. The default is <see langword="false" /></returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,10 +90,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An object that provides a format context.</param>
-        <summary>Returns a value that indicates whether this converter supports a standard set of control IDs that can be picked from a list, by using the specified context.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.Web.UI.Design.AsyncPostBackTriggerControlIDConverter.GetStandardValues%2A" /> method should be called to find a common set of control IDs that the object supports; otherwise, <see langword="false" />. The default is <see langword="true" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

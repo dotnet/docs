@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides methods that ASP.NET uses to communicate with [!INCLUDE[iisver](~/add/includes/iisver-md.md)] while the server preloads an application.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,11 +39,11 @@
         <Parameter Name="parametersForStartupObj" Type="System.String[]&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="context">The application context.</param>
-        <param name="enabled">When this method returns, contains <see langword="true" /> to indicate that the application has to be preloaded; otherwise, <see langword="false" />. This parameter is passed uninitialized.</param>
-        <param name="startupObjType">When this method returns, contains a string that identifies the managed type that is part of the preload process. This parameter is passed uninitialized.</param>
-        <param name="parametersForStartupObj">When this method returns, contains the data that will be passed to the preloaded type. This parameter is passed uninitialized.</param>
-        <summary>Gets initialization data that is required in order to preload an application. This method is called by ASP.NET.</summary>
+        <param name="context">To be added.</param>
+        <param name="enabled">To be added.</param>
+        <param name="startupObjType">To be added.</param>
+        <param name="parametersForStartupObj">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,10 +65,10 @@
         <Parameter Name="errorMessage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">The application context.</param>
-        <param name="errorCode">The numeric error code.</param>
-        <param name="errorMessage">The error text.</param>
-        <summary>Reports that an error occurred in [!INCLUDE[iisver](~/add/includes/iisver-md.md)] while the server was preloading the ASP.NET application.</summary>
+        <param name="context">To be added.</param>
+        <param name="errorCode">To be added.</param>
+        <param name="errorMessage">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

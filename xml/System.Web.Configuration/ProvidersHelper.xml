@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProvidersHelper" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods for creating provider instances, either singly or in a batch.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,21 +32,11 @@
         <Parameter Name="providerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="providerSettings">The settings to be passed to the provider upon initialization.</param>
-        <param name="providerType">The <see cref="T:System.Type" /> of the provider to be initialized.</param>
-        <summary>Initializes and returns a single provider of the given type using the supplied settings.</summary>
-        <returns>A new provider of the given type using the supplied settings.</returns>
+        <param name="providerSettings">To be added.</param>
+        <param name="providerType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The provider type defined in configuration was <see langword="null" /> or an empty string ("").  
-  
- \- or -  
-  
- The provider type defined in configuration is not compatible with the type used by the feature that is attempting to create a new instance of the provider.</exception>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The provider threw an exception while it was being initialized.  
-  
- \- or -  
-  
- An error occurred while attempting to resolve a <see cref="T:System.Type" /> instance for the provider specified in <paramref name="providerSettings" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="InstantiateProviders">
@@ -58,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,18 +57,11 @@
         <Parameter Name="providerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="configProviders">A collection of settings to be passed to the provider upon initialization.</param>
-        <param name="providers">The collection used to contain the initialized providers after the method returns.</param>
-        <param name="providerType">The <see cref="T:System.Type" /> of the providers to be initialized.</param>
-        <summary>Initializes a collection of providers of the given type using the supplied settings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls the <xref:System.Web.Configuration.ProvidersHelper.InstantiateProvider%2A> method, and any exceptions thrown by that method will bubble up through the InstantiateProviders method.  
-  
- ]]></format>
-        </remarks>
+        <param name="configProviders">To be added.</param>
+        <param name="providers">To be added.</param>
+        <param name="providerType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

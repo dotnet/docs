@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Exposes <see cref="T:System.Windows.Controls.ItemsControl" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,15 +26,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.ItemsControl" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Controls.ItemsControl" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" />.</param>
-        <summary>Provides initialization for base class values when called by the constructor of a derived class.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,9 +53,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The data item that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</param>
-        <summary>When overridden in a derived class, creates a new instance of the <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> for a data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection of this <see cref="T:System.Windows.Controls.ItemsControl" />.</summary>
-        <returns>The new <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> created.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +83,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to get an <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> for.</param>
-        <summary>Returns an <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> for the specified object.</summary>
-        <returns>An <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> for the specified object.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +96,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,8 +103,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.ItemsControl" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetChildren%2A" />.</summary>
-        <returns>The collection of child elements.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +115,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,9 +124,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">One of the enumeration values.</param>
-        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.ItemsControl" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.ScrollViewerAutomationPeer" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" />.</returns>
+        <param name="patternInterface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,9 +143,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" /> should return <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> objects for child items that are not virtualized.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" /> should return <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> objects for child items that are not virtualized; <see langword="false" /> if the <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" /> should return <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> objects all child items.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,19 +166,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="startAfter">The item in the container after which to begin the search.</param>
-        <param name="propertyId">The property that contains the value to retrieve.</param>
-        <param name="value">The value to retrieve.</param>
-        <summary>Retrieves an element by the specified property value.</summary>
-        <returns>The first item that matches the search criterion; otherwise, <see langword="null" /> if no items match.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.ItemsControlAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IItemContainerProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="startAfter">To be added.</param>
+        <param name="propertyId">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

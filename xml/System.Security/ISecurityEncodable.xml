@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Security.ISecurityEncodable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -14,27 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the methods that convert permission object state to and from XML element representation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XML representation of permissions is used to describe instances of permissions for code requests, declarative security permission sets, and security policy configuration.  
-  
-> [!NOTE]
->  You must implement this interface for any new permission object.  
-  
-   
-  
-## Examples  
- This example shows how to define a permission class for use with code access security. All of the necessary permission interfaces are implemented.  
-  
- [!code-cs[Permission#1](~/add/codesnippet/csharp/t-system.security.isecur_1.cs)]
- [!code-vb[Permission#1](~/add/codesnippet/visualbasic/t-system.security.isecur_1.vb)]
- [!code-cpp[Permission#1](~/add/codesnippet/cpp/t-system.security.isecur_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FromXml">
@@ -44,8 +29,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -54,25 +43,9 @@
         <Parameter Name="e" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="e">The XML encoding to use to reconstruct the security object.</param>
-        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Custom code that extends security objects needs to implement the <xref:System.Security.ISecurityEncodable.ToXml%2A> and FromXml methods to make the objects security-encodable.  
-  
-   
-  
-## Examples  
- The following code example demonstrates implementing the FromXml method. This code example is part of a larger example provided for the <xref:System.Security.ISecurityEncodable> class.  
-  
- [!code-cs[Permission#6](~/add/codesnippet/csharp/m-system.security.isecur_1_1.cs)]
- [!code-vb[Permission#6](~/add/codesnippet/visualbasic/m-system.security.isecur_1_1.vb)]
- [!code-cpp[Permission#6](~/add/codesnippet/cpp/m-system.security.isecur_1_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -82,33 +55,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityElement</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an XML encoding of the security object and its current state.</summary>
-        <returns>An XML encoding of the security object, including any state information.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Custom code that extends security objects needs to implement the ToXml and <xref:System.Security.ISecurityEncodable.FromXml%2A> methods to make the objects security-encodable.  
-  
-   
-  
-## Examples  
- The following code example demonstrates implementing the <xref:System.Security.ISecurityEncodable.FromXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.ISecurityEncodable> class.  
-  
- [!code-cs[Permission#7](~/add/codesnippet/csharp/m-system.security.isecur_0_1.cs)]
- [!code-vb[Permission#7](~/add/codesnippet/visualbasic/m-system.security.isecur_0_1.vb)]
- [!code-cpp[Permission#7](~/add/codesnippet/cpp/m-system.security.isecur_0_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

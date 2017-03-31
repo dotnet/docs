@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ThreadState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadState" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Threading.Thread</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -19,43 +27,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the execution states of a <see cref="T:System.Threading.Thread" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ThreadState enumeration is of interest only in a few debugging scenarios. Your code should never use the thread state to synchronize the activities of threads.  
-  
- ThreadState defines a set of all possible execution states for threads. Once a thread is created, it is in at least one of the states until it terminates. Threads created within the common language runtime are initially in the `Unstarted` state, while external threads that come into the runtime are already in the `Running` state. An `Unstarted` thread is transitioned into the `Running` state by calling <xref:System.Threading.Thread.Start%2A>. Not all combinations of `ThreadState` values are valid; for example, a thread cannot be in both the `Aborted` and `Unstarted` states.  
-  
-> [!IMPORTANT]
->  There are two thread state enumerations,ThreadState and <xref:System.Diagnostics.ThreadState?displayProperty=fullName>.  
-  
- The following table shows the actions that cause a change of state.  
-  
-|Action|ThreadState|  
-|------------|-----------------|  
-|A thread is created within the common language runtime.|Unstarted|  
-|Another thread calls the <xref:System.Threading.Thread.Start%2A?displayProperty=fullName> method on the new thread, and the call returns.<br /><br /> The <xref:System.Threading.Thread.Start%2A> method does not return until the new thread has started running. There is no way to know at what point the new thread will start running, during the call to <xref:System.Threading.Thread.Start%2A>.|Running|  
-|The thread calls <xref:System.Threading.Thread.Sleep%2A>|WaitSleepJoin|  
-|The thread calls <xref:System.Threading.Monitor.Wait%2A> on another object.|WaitSleepJoin|  
-|The thread calls <xref:System.Threading.Thread.Join%2A> on another thread.|WaitSleepJoin|  
-|Another thread calls <xref:System.Threading.Thread.Interrupt%2A>|Running|  
-|Another thread calls <xref:System.Threading.Thread.Suspend%2A>|SuspendRequested|  
-|The thread responds to a <xref:System.Threading.Thread.Suspend%2A> request.|Suspended|  
-|Another thread calls <xref:System.Threading.Thread.Resume%2A>|Running|  
-|Another thread calls <xref:System.Threading.Thread.Abort%2A>|AbortRequested|  
-|The thread responds to a <xref:System.Threading.Thread.Abort%2A> request.|Stopped|  
-|A thread is terminated.|Stopped|  
-  
- In addition to the states noted above, there is also the `Background` state, which indicates whether the thread is running in the background or foreground.  
-  
- A thread can be in more than one state at a given time. For example, if a thread is blocked on a call to <xref:System.Threading.Monitor.Wait%2A>, and another thread calls <xref:System.Threading.Thread.Abort%2A> on the blocked thread, the blocked thread will be in both the `WaitSleepJoin` and the `AbortRequested` states at the same time. In this case, as soon as the thread returns from the call to <xref:System.Threading.Monitor.Wait%2A> or is interrupted, it will receive the <xref:System.Threading.ThreadAbortException> to begin aborting.  
-  
- The <xref:System.Threading.Thread.ThreadState%2A?displayProperty=fullName> property of a thread provides the current state of a thread. Applications must use a bitmask to determine whether a thread is running. Since the value for `Running` is zero (0), test whether a thread is running by using C# code such as `(myThread.ThreadState & (ThreadState.Stopped | ThreadState.Unstarted)) == 0` or Visual Basic code such as `(myThread.ThreadState And (ThreadState.Stopped Or ThreadState.Unstarted)) = 0`.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Aborted">
@@ -64,15 +37,23 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread state includes AbortRequested and the thread is now dead, but its state has not yet changed to Stopped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AbortRequested">
@@ -81,15 +62,23 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.AbortRequested" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.Threading.Thread.Abort%2A" /> method has been invoked on the thread, but the thread has not yet received the pending <see cref="T:System.Threading.ThreadAbortException" /> that will attempt to terminate it.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Background">
@@ -98,15 +87,23 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Background" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is being executed as a background thread, as opposed to a foreground thread. This state is controlled by setting the <see cref="System.Threading.Thread.IsBackground%2A" /> property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Running">
@@ -115,15 +112,23 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Running" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread has been started, it is not blocked, and there is no pending <see cref="T:System.Threading.ThreadAbortException" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stopped">
@@ -132,15 +137,23 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Stopped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread has stopped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StopRequested">
@@ -149,15 +162,23 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.StopRequested" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is being requested to stop. This is for internal use only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suspended">
@@ -166,15 +187,23 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Suspended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread has been suspended.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SuspendRequested">
@@ -183,15 +212,23 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.SuspendRequested" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is being requested to suspend.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unstarted">
@@ -200,15 +237,23 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Unstarted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.Threading.Thread.Start%2A" /> method has not been invoked on the thread.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WaitSleepJoin">
@@ -217,15 +262,23 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.WaitSleepJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is blocked. This could be the result of calling <see cref="System.Threading.Thread.Sleep%2A" /> or <see cref="System.Threading.Thread.Join%2A" />, of requesting a lock — for example, by calling <see cref="System.Threading.Monitor.Enter%2A" /> or <see cref="System.Threading.Monitor.Wait%2A" /> — or of waiting on a thread synchronization object such as <see cref="T:System.Threading.ManualResetEvent" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

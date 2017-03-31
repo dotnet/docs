@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintAction" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of print operation occurring.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PrintAction is used by the <xref:System.Drawing.Printing.PrintEventArgs> type to indicate what type of <xref:System.Drawing.Printing.PrintDocument.Print%2A> event is occurring.  
-  
-> [!NOTE]
->  The <xref:System.Drawing.Printing.PrintEventArgs.PrintAction%2A?displayProperty=fullName> does not reliably indicate the type of print operation occurring, and returns PrintToFile in all cases.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="PrintToFile">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The print operation is printing to a file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrintToPreview">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The print operation is a print preview.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrintToPrinter">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The print operation is printing to a printer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

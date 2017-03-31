@@ -4,12 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.IContentHost" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>This interface is implemented by layouts which host <see cref="T:System.Windows.ContentElement" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -20,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -30,12 +28,10 @@
         <Parameter Name="child" Type="System.Windows.ContentElement" />
       </Parameters>
       <Docs>
-        <param name="child">The child element that the bounding rectangles are returned for.</param>
-        <summary>Returns a collection of bounding rectangles for a child element.</summary>
-        <returns>A collection of bounding rectangles for a child element.</returns>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">If *child* is null.</exception>
-        <exception cref="T:System.ArgumentException">If the element is not a direct descendant (i.e. element must be a child of the <see cref="T:System.Windows.IContentHost" /> or a <see cref="T:System.Windows.ContentElement" /> which is a direct descendant  of the <see cref="T:System.Windows.IContentHost" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="HostedElements">
@@ -45,15 +41,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Windows.IInputElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an enumeration containing all descendant <see cref="T:System.Windows.ContentElement" />-derived classes, as well as all <see cref="T:System.Windows.UIElement" />-derived classes that are a direct descendant of the <see cref="T:System.Windows.IContentHost" /> or one of its descendant <see cref="T:System.Windows.ContentElement" /> classes.</summary>
-        <value>Enumeration containing all descendant <see cref="T:System.Windows.ContentElement" />-derived classes, as well as all <see cref="T:System.Windows.UIElement" />-derived classes that are a direct descendant of the <see cref="T:System.Windows.IContentHost" /> or one of its descendant <see cref="T:System.Windows.ContentElement" /> classes. In other words, elements for which the <see cref="T:System.Windows.IContentHost" /> creates a visual representation (<see cref="T:System.Windows.ContentElement" />-derived classes) or whose layout is driven by the <see cref="T:System.Windows.IContentHost" /> (the first-level descendant <see cref="T:System.Windows.UIElement" />-derived classes).</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,9 +68,9 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point">Mouse coordinates relative to the ContentHost.</param>
-        <summary>Performs hit-testing for child elements.</summary>
-        <returns>A descendant of <see cref="T:System.Windows.IInputElement" />, or **NULL** if no such element exists.</returns>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,11 +90,9 @@
         <Parameter Name="child" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="child">Child element whose <see cref="System.Windows.UIElement.DesiredSize%2A" /> has changed</param>
-        <summary>Called when a <see cref="T:System.Windows.UIElement" />-derived class which is hosted by a <see cref="T:System.Windows.IContentHost" /> changes its <see cref="System.Windows.UIElement.DesiredSize%2A" />.</summary>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">If *child* is null.</exception>
-        <exception cref="T:System.ArgumentException">If *child* is not a direct descendant (i.e. *child* must be a child of the <see cref="T:System.Windows.IContentHost" /> or a <see cref="T:System.Windows.ContentElement" /> which is a direct descendant of the <see cref="T:System.Windows.IContentHost" />).</exception>
       </Docs>
     </Member>
   </Members>

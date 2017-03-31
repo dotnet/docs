@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationMessage" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a message type passed by the action of an XML Web service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class serves as the base class for the following classes:  
-  
--   <xref:System.Web.Services.Description.OperationFault>  
-  
--   <xref:System.Web.Services.Description.OperationInput>  
-  
--   <xref:System.Web.Services.Description.OperationOutput>  
-  
-   
-  
-## Examples  
- [!code-cpp[OperationMessage_Properties#1](~/add/codesnippet/cpp/t-system.web.services.de_19_1.cpp)]
- [!code-cs[OperationMessage_Properties#1](~/add/codesnippet/csharp/t-system.web.services.de_19_1.cs)]
- [!code-vb[OperationMessage_Properties#1](~/add/codesnippet/visualbasic/t-system.web.services.de_19_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,12 +23,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.OperationMessage" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +39,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -71,18 +51,9 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an abstract, typed definition of the data being communicated.</summary>
-        <value>An XML qualified name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[OperationMessage_Properties#3](~/add/codesnippet/cpp/p-system.web.services.de_68_1.cpp)]
- [!code-cs[OperationMessage_Properties#3](~/add/codesnippet/csharp/p-system.web.services.de_68_1.cs)]
- [!code-vb[OperationMessage_Properties#3](~/add/codesnippet/visualbasic/p-system.web.services.de_68_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Operation">
@@ -92,23 +63,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.Operation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Services.Description.Operation" /> of which the <see cref="T:System.Web.Services.Description.OperationMessage" /> is a member.</summary>
-        <value>The operation of which the <see cref="T:System.Web.Services.Description.OperationMessage" /> is a member.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- OperationMessage_Properties#4  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

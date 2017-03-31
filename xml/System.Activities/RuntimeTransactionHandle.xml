@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides access to the run-time transaction in a workflow instance.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeTransactionHandle" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <Parameter Name="rootTransaction" Type="System.Transactions.Transaction" />
       </Parameters>
       <Docs>
-        <param name="rootTransaction">The root transaction.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeTransactionHandle" /> class using the specified root transaction.</summary>
+        <param name="rootTransaction">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,17 +73,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the workflow instance should be aborted if the transaction fails.</summary>
-        <value>
-          <see langword="true" /> if the workflow instance should be aborted if the transaction fails; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If AbortInstanceOnTransactionFailure is `false`, transaction failure results in the exception that causes the failure to be propagated as normal. The default value for AbortInstanceOnTransactionFailure is `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CompleteTransaction">
@@ -102,8 +94,8 @@
         <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The current execution environment.</param>
-        <summary>Completes the current run-time transaction.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +116,9 @@
         <Parameter Name="callback" Type="System.Activities.BookmarkCallback" />
       </Parameters>
       <Docs>
-        <param name="context">The current execution environment.</param>
-        <param name="callback">The bookmark callback to be invoked when the transaction completes.</param>
-        <summary>Completes the current run-time transaction and schedules the bookmark callback when the transaction is complete.</summary>
+        <param name="context">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +138,9 @@
         <Parameter Name="context" Type="System.Activities.AsyncCodeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The current execution environment.</param>
-        <summary>Returns a reference to the current run-time transaction.</summary>
-        <returns>The current transaction.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,9 +160,9 @@
         <Parameter Name="context" Type="System.Activities.CodeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The current execution environment.</param>
-        <summary>Returns a reference to the current run-time transaction.</summary>
-        <returns>The current transaction.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,9 +182,9 @@
         <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The current execution environment.</param>
-        <summary>Returns a reference to the current run-time transaction.</summary>
-        <returns>The current run-time transaction.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,18 +248,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">The current execution environment.</param>
-        <param name="callback">The method to be called when the <see cref="T:System.Activities.NativeActivityTransactionContext" /> is created.</param>
-        <param name="state">An optional user-provided state that contains information about the request.</param>
-        <summary>Initiates the creation of a <see cref="T:System.Activities.NativeActivityTransactionContext" /> for use with a new transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used when the activity creates a new transaction for use by the runtime. The workflow could potentially persist one or more times before the callback is called. This method allows transaction scopes in multiple branches of a parallel to queue up simultaneous requests without blocking each other from persisting at the completion of the transaction. To avoid errors if the workflow persists, make sure the state object can be serialized.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequireTransactionContext">
@@ -288,18 +273,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">The current execution environment.</param>
-        <param name="callback">The method to be called when the <see cref="T:System.Activities.NativeActivityTransactionContext" /> is created.</param>
-        <param name="state">An optional user-provided state that contains information about the request.</param>
-        <summary>Initiates the creation of a <see cref="T:System.Activities.NativeActivityTransactionContext" /> for use with an existing transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used when the activity has a transaction that it requires the runtime to use. The workflow cannot persist between a call to RequireTransactionContext and the subsequent callback. Calling RequireTransactionContext again before the first call completes is not allowed and all calls after the first call result in exceptions. This method allows transactions flowed in from the host to be provided to the runtime without risking an intermediate persistence point. The state object that can be serialized is not necessary because the instance is guaranteed not to persist when this method is used.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressTransaction">
@@ -315,9 +293,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether this run-time transaction is suppressed.</summary>
-        <value>
-          <see langword="true" /> if the run-time transaction is suppressed; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,7 +312,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Activities.IExecutionProperty.CleanupWorkflowThread%2A" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,7 +330,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Activities.IExecutionProperty.SetupWorkflowThread%2A" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,8 +350,8 @@
         <Parameter Name="context" Type="System.Activities.RegistrationContext" />
       </Parameters>
       <Docs>
-        <param name="context">For a description of this parameter, see <see cref="System.Activities.IPropertyRegistrationCallback.Register%2A" />.</param>
-        <summary>For a description of this member, see <see cref="System.Activities.IPropertyRegistrationCallback.Register%2A" />.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,8 +371,8 @@
         <Parameter Name="context" Type="System.Activities.RegistrationContext" />
       </Parameters>
       <Docs>
-        <param name="context">For a description of this parameter, see <see cref="System.Activities.IPropertyRegistrationCallback.UnRegister%2A" />.</param>
-        <summary>For a description of this member, see <see cref="System.Activities.IPropertyRegistrationCallback.UnRegister%2A" />.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

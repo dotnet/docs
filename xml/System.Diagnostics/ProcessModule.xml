@@ -3,12 +3,21 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessModule extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessModule" />
   <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Process</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
+    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.ComponentModel.Component</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
@@ -17,29 +26,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a.dll or .exe file that is loaded into a particular process.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A module is an executable file or a dynamic link library (DLL). Each process consists of one or more modules. You can use this class to get information about the module.  
-  
-> [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
-   
-  
-## Examples  
- The following code sample demonstrates how to use the ProcessModule class to get and display information about all the modules that are used by the Notepad.exe application.  
-  
- [!code-cpp[ProcessModule#1](~/add/codesnippet/cpp/t-system.diagnostics.pro_0_1.cpp)]
- [!code-cs[ProcessModule#1](~/add/codesnippet/csharp/t-system.diagnostics.pro_0_1.cs)]
- [!code-vb[ProcessModule#1](~/add/codesnippet/visualbasic/t-system.diagnostics.pro_0_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
-    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BaseAddress">
@@ -48,33 +36,30 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.BaseAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.MonitoringDescription("ProcModBaseAddress")</AttributeName>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The base memory address of this module")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the memory address where the module was loaded.</summary>
-        <value>The load address of the module.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a new process for the Notepad.exe application. The code iterates through the <xref:System.Diagnostics.ProcessModuleCollection> class to obtain a <xref:System.Diagnostics.ProcessModule> object for each module in the collection. The <xref:System.Diagnostics.ProcessModule.ModuleName%2A> and  BaseAddress properties are used to display the module name and the memory address where each module was loaded.  
-  
- [!code-cpp[ProcessModule_BaseAddress#1](~/add/codesnippet/cpp/p-system.diagnostics.pro_30_1.cpp)]
- [!code-vb[ProcessModule_BaseAddress#1](~/add/codesnippet/visualbasic/p-system.diagnostics.pro_30_1.vb)]
- [!code-cs[ProcessModule_BaseAddress#1](~/add/codesnippet/csharp/p-system.diagnostics.pro_30_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EntryPointAddress">
@@ -83,41 +68,30 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.EntryPointAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.MonitoringDescription("ProcModEntryPointAddress")</AttributeName>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The base memory address of the entry point of this module")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the memory address for the function that runs when the system loads and runs the module.</summary>
-        <value>The entry point of the module.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The module's entry point is the location of the function that is called during process startup, thread startup, process shutdown, and thread shutdown. While the entry point is not the address of the DllMain function, it should be close enough for most purposes.  
-  
-> [!NOTE]
->  Due to changes in the way that Windows loads assemblies, EntryPointAddress will always return 0 on [!INCLUDE[win8](~/add/includes/win8-md.md)] or [!INCLUDE[win81](~/add/includes/win81-md.md)] and should not be relied on for those platforms.  
-  
-   
-  
-## Examples  
- The following code example creates a new process for the Notepad.exe application. The code iterates through the <xref:System.Diagnostics.ProcessModuleCollection> class to obtain a <xref:System.Diagnostics.ProcessModule> object for each module in the collection. The <xref:System.Diagnostics.ProcessModule.ModuleName%2A> and EntryPointAddress properties are used to display the name and the entry point address for each module.  
-  
- [!code-cpp[ProcessModule_EntryPoint#1](~/add/codesnippet/cpp/p-system.diagnostics.pro_4_1.cpp)]
- [!code-cs[ProcessModule_EntryPoint#1](~/add/codesnippet/csharp/p-system.diagnostics.pro_4_1.cs)]
- [!code-vb[ProcessModule_EntryPoint#1](~/add/codesnippet/visualbasic/p-system.diagnostics.pro_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -126,38 +100,30 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.MonitoringDescription("ProcModFileName")</AttributeName>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The file name of this module")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the full path to the module.</summary>
-        <value>The fully qualified path that defines the location of the module.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the file name is longer than the maximum number of characters allowed, the file name is truncated.  
-  
-   
-  
-## Examples  
- The following code example creates a new process for the Notepad.exe application. The code iterates through the <xref:System.Diagnostics.ProcessModuleCollection> class to obtain a <xref:System.Diagnostics.ProcessModule> object for each module in the collection. The <xref:System.Diagnostics.ProcessModule.ModuleName%2A> and FileName properties are used to display the module name and the full path information for each module.  
-  
- [!code-cs[ProcessModule_FileName#1](~/add/codesnippet/csharp/p-system.diagnostics.pro_5_1.cs)]
- [!code-cpp[ProcessModule_FileName#1](~/add/codesnippet/cpp/p-system.diagnostics.pro_5_1.cpp)]
- [!code-vb[ProcessModule_FileName#1](~/add/codesnippet/visualbasic/p-system.diagnostics.pro_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileVersionInfo">
@@ -167,8 +133,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -179,20 +149,9 @@
         <ReturnType>System.Diagnostics.FileVersionInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets version information about the module.</summary>
-        <value>A <see cref="T:System.Diagnostics.FileVersionInfo" /> that contains the module's version information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a new process for the Notepad.exe application. The code iterates through the <xref:System.Diagnostics.ProcessModuleCollection> class to obtain a <xref:System.Diagnostics.ProcessModule> object for each module in the collection. The <xref:System.Diagnostics.ProcessModule.ModuleName%2A> and FileVersionInfo properties are used to display the module name and the file version information for each module.  
-  
- [!code-cs[ProcessModule_FileVersionInfo#1](~/add/codesnippet/csharp/p-system.diagnostics.pro_1_1.cs)]
- [!code-cpp[ProcessModule_FileVersionInfo#1](~/add/codesnippet/cpp/p-system.diagnostics.pro_1_1.cpp)]
- [!code-vb[ProcessModule_FileVersionInfo#1](~/add/codesnippet/visualbasic/p-system.diagnostics.pro_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ModuleMemorySize">
@@ -201,38 +160,30 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.ModuleMemorySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.MonitoringDescription("ProcModModuleMemorySize")</AttributeName>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The memory needed by this module")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the amount of memory that is required to load the module.</summary>
-        <value>The size, in bytes, of the memory that the module occupies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ModuleMemorySize does not include any additional memory allocations that the module makes once it is running; it includes only the size of the static code and data in the module file.  
-  
-   
-  
-## Examples  
- The following code example creates a new process for the Notepad.exe application. The code iterates through the <xref:System.Diagnostics.ProcessModuleCollection> class to obtain a <xref:System.Diagnostics.ProcessModule> object for each module in the collection. The <xref:System.Diagnostics.ProcessModule.ModuleName%2A> and ModuleMemorySize properties are used to display the module name and the amount of memory needed for each module.  
-  
- [!code-vb[ProcessModule_ModuleMemorySize#1](~/add/codesnippet/visualbasic/p-system.diagnostics.pro_16_1.vb)]
- [!code-cs[ProcessModule_ModuleMemorySize#1](~/add/codesnippet/csharp/p-system.diagnostics.pro_16_1.cs)]
- [!code-cpp[ProcessModule_ModuleMemorySize#1](~/add/codesnippet/cpp/p-system.diagnostics.pro_16_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ModuleName">
@@ -241,38 +192,30 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessModule.ModuleName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.MonitoringDescription("ProcModModuleName")</AttributeName>
+          <AttributeName>System.Diagnostics.MonitoringDescription("The name of this module")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the process module.</summary>
-        <value>The name of the module.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the name is longer than the maximum number of characters allowed, it is truncated.  
-  
-   
-  
-## Examples  
- The following code example creates a new process for the Notepad.exe application. The code iterates through the <xref:System.Diagnostics.ProcessModuleCollection> class to obtain a <xref:System.Diagnostics.ProcessModule> object for each module in the collection. The ModuleName property is used to display the name of each module.  
-  
- [!code-vb[ProcessModule_ModuleName#1](~/add/codesnippet/visualbasic/p-system.diagnostics.pro_8_1.vb)]
- [!code-cs[ProcessModule_ModuleName#1](~/add/codesnippet/csharp/p-system.diagnostics.pro_8_1.cs)]
- [!code-cpp[ProcessModule_ModuleName#1](~/add/codesnippet/cpp/p-system.diagnostics.pro_8_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -281,29 +224,26 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessModule.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts the name of the module to a string.</summary>
-        <returns>The value of the <see cref="System.Diagnostics.ProcessModule.ModuleName%2A" /> property.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a new process for the Notepad.exe application. The code iterates through the <xref:System.Diagnostics.ProcessModuleCollection> class to obtain a <xref:System.Diagnostics.ProcessModule> object for each module in the collection. The ToString method is used to display the name for each module.  
-  
- [!code-cs[ProcessModule_ToString#1](~/add/codesnippet/csharp/m-system.diagnostics.pro_5_1.cs)]
- [!code-vb[ProcessModule_ToString#1](~/add/codesnippet/visualbasic/m-system.diagnostics.pro_5_1.vb)]
- [!code-cpp[ProcessModule_ToString#1](~/add/codesnippet/cpp/m-system.diagnostics.pro_5_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

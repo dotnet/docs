@@ -1,10 +1,9 @@
 <Type Name="ToolBarPanel" FullName="System.Windows.Controls.Primitives.ToolBarPanel">
   <TypeSignature Language="C#" Value="public class ToolBarPanel : System.Windows.Controls.StackPanel" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolBarPanel extends System.Windows.Controls.StackPanel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi ToolBarPanel extends System.Windows.Controls.StackPanel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ToolBarPanel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Arranges <see cref="T:System.Windows.Controls.ToolBar" /> items inside a <see cref="T:System.Windows.Controls.ToolBar" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ToolBarPanel determines which <xref:System.Windows.Controls.ToolBar> items will fit inside a <xref:System.Windows.Controls.ToolBar> and which must be put in the overflow area. The <xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=fullName> property determines how items should be distributed between the ToolBarPanel and the <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.ToolBarPanel" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,9 +46,9 @@
         <Parameter Name="arrangeSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeSize">The size that the <see cref="T:System.Windows.Controls.Primitives.ToolBarPanel" /> assumes to position its children.</param>
-        <summary>Arranges and sizes <see cref="T:System.Windows.Controls.ToolBar" /> items inside a <see cref="T:System.Windows.Controls.Primitives.ToolBarPanel" />.</summary>
-        <returns>The size of the panel.</returns>
+        <param name="arrangeSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,9 +68,9 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">The measurement constraints; a <see cref="T:System.Windows.Controls.Primitives.ToolBarPanel" /> cannot return a size larger than the constraint.</param>
-        <summary>Remeasures a toolbar panel.</summary>
-        <returns>The desired size of the panel.</returns>
+        <param name="constraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

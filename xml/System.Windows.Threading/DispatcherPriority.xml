@@ -4,36 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherPriority" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the priorities at which operations can be invoked by way of the <see cref="T:System.Windows.Threading.Dispatcher" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There is no specific system state or "idleness" corresponding to ApplicationIdle and ContextIdle in the current version of [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)].  Both are still valid priorities; therefore, an operation with a priority of ContextIdle has a higher priority than an operation with a priority of SystemIdle.  
-  
- The <xref:System.Windows.Threading.Dispatcher> does not throttle the execution of an operation if it exceeds a certain percentage of the CPU.  One way to throttle a process it to use a timer.  
-  
- If an operation is posted using <xref:System.Windows.Threading.Dispatcher.Invoke%2A> on its own <xref:System.Windows.Threading.Dispatcher> at a priority of Send, the operation bypasses the queue and is immediately executed.  
-  
-<a name="xamlTextUsage_DispatcherPriority"></a>   
-## XAML Text Usage  
-   
-  
-## Examples  
- The following example is a call to <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> that passes a delegate which accepts an argument.  The priority is set to Normal.  
-  
- [!code-vb[ThreadingWeatherForecast#ThreadingWeatherDispatcherOneArge](~/add/codesnippet/visualbasic/threadingweatherforecastsample/window1.xaml.vb#threadingweatherdispatcheronearge)]
- [!code-cs[ThreadingWeatherForecast#ThreadingWeatherDispatcherOneArge](~/add/codesnippet/csharp/ThreadingWeatherForecastSample/Window1.xaml.cs#threadingweatherdispatcheronearge)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ApplicationIdle">
@@ -43,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 2.  Operations are processed when the application is idle.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Background">
@@ -60,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 4.  Operations are processed after all other non-idle operations are completed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContextIdle">
@@ -77,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 3.  Operations are processed after background operations have completed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -94,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 8.  Operations are processed at the same priority as data binding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inactive">
@@ -111,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 0.  Operations are not processed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -128,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 5.  Operations are processed at the same priority as input.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -145,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is -1.  This is an invalid priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Loaded">
@@ -162,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 6.  Operations are processed when layout and render has finished but just before items at input priority are serviced. Specifically this is used when raising the Loaded event.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -179,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 9.  Operations are processed at normal priority.  This is the typical application priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -196,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 7.  Operations processed at the same priority as rendering.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -213,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 10.  Operations are processed before other asynchronous operations.  This is the highest priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemIdle">
@@ -230,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The enumeration value is 1.  Operations are processed when the system is idle.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

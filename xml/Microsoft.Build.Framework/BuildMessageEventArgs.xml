@@ -4,8 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildMessageEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.MessageRaised" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,13 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildMessageEventArgs" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -41,8 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -52,11 +46,11 @@
         <Parameter Name="importance" Type="Microsoft.Build.Framework.MessageImportance" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the event.</param>
-        <param name="helpKeyword">The Help keyword associated with the event.</param>
-        <param name="senderName">The source of the event.</param>
-        <param name="importance">A <see cref="T:Microsoft.Build.Framework.MessageImportance" /> value indicating the importance of the event.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildMessageEventArgs" /> class with the specified <see cref="Microsoft.Build.Framework.BuildEventArgs.Message%2A" />, <see cref="Microsoft.Build.Framework.BuildEventArgs.HelpKeyword%2A" />, <see cref="Microsoft.Build.Framework.BuildEventArgs.SenderName%2A" />, and <see cref="Microsoft.Build.Framework.BuildMessageEventArgs.Importance%2A" /> values.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="importance">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,12 +71,12 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="message">The message text.</param>
-        <param name="helpKeyword">The keyword to link to a help topic.</param>
-        <param name="senderName">The name of the event sender.</param>
-        <param name="importance">The importance of the message</param>
-        <param name="eventTimestamp">The data and time associated with the event.</param>
-        <summary>Initializes the <see cref="T:Microsoft.Build.Framework.BuildMessageEventArgs" /> object.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="importance">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,13 +104,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="message">The message text.</param>
-        <param name="helpKeyword">The keyword to link to a help topic.</param>
-        <param name="senderName">The name of the event sender.</param>
-        <param name="importance">The importance of the message</param>
-        <param name="eventTimestamp">The data and time associated with the event.</param>
-        <param name="messageArgs">The message arguments.</param>
-        <summary>Initializes the <see cref="T:Microsoft.Build.Framework.BuildMessageEventArgs" /> object.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="importance">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <param name="messageArgs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,18 +137,18 @@
         <Parameter Name="importance" Type="Microsoft.Build.Framework.MessageImportance" />
       </Parameters>
       <Docs>
-        <param name="subcategory">event subcategory</param>
-        <param name="code">event code</param>
-        <param name="file">file associated with the event</param>
-        <param name="lineNumber">line number (0 if not applicable)</param>
-        <param name="columnNumber">column number (0 if not applicable)</param>
-        <param name="endLineNumber">end line number (0 if not applicable)</param>
-        <param name="endColumnNumber">end column number (0 if not applicable)</param>
-        <param name="message">text message</param>
-        <param name="helpKeyword">help keyword</param>
-        <param name="senderName">name of event sender</param>
-        <param name="importance">importance of the message</param>
-        <summary>This constructor allows all event data to be initialized</summary>
+        <param name="subcategory">To be added.</param>
+        <param name="code">To be added.</param>
+        <param name="file">To be added.</param>
+        <param name="lineNumber">To be added.</param>
+        <param name="columnNumber">To be added.</param>
+        <param name="endLineNumber">To be added.</param>
+        <param name="endColumnNumber">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="importance">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,19 +176,19 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="subcategory">event subcategory</param>
-        <param name="code">event code</param>
-        <param name="file">file associated with the event</param>
-        <param name="lineNumber">line number (0 if not applicable)</param>
-        <param name="columnNumber">column number (0 if not applicable)</param>
-        <param name="endLineNumber">end line number (0 if not applicable)</param>
-        <param name="endColumnNumber">end column number (0 if not applicable)</param>
-        <param name="message">text message</param>
-        <param name="helpKeyword">help keyword</param>
-        <param name="senderName">name of event sender</param>
-        <param name="importance">importance of the message</param>
-        <param name="eventTimestamp">custom timestamp for the event</param>
-        <summary>This constructor allows timestamp to be set</summary>
+        <param name="subcategory">To be added.</param>
+        <param name="code">To be added.</param>
+        <param name="file">To be added.</param>
+        <param name="lineNumber">To be added.</param>
+        <param name="columnNumber">To be added.</param>
+        <param name="endLineNumber">To be added.</param>
+        <param name="endColumnNumber">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="importance">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,20 +223,20 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="subcategory">event subcategory</param>
-        <param name="code">event code</param>
-        <param name="file">file associated with the event</param>
-        <param name="lineNumber">line number (0 if not applicable)</param>
-        <param name="columnNumber">column number (0 if not applicable)</param>
-        <param name="endLineNumber">end line number (0 if not applicable)</param>
-        <param name="endColumnNumber">end column number (0 if not applicable)</param>
-        <param name="message">text message</param>
-        <param name="helpKeyword">help keyword</param>
-        <param name="senderName">name of event sender</param>
-        <param name="importance">importance of the message</param>
-        <param name="eventTimestamp">custom timestamp for the event</param>
-        <param name="messageArgs">message arguments</param>
-        <summary>This constructor allows timestamp to be set</summary>
+        <param name="subcategory">To be added.</param>
+        <param name="code">To be added.</param>
+        <param name="file">To be added.</param>
+        <param name="lineNumber">To be added.</param>
+        <param name="columnNumber">To be added.</param>
+        <param name="endLineNumber">To be added.</param>
+        <param name="endColumnNumber">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="importance">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <param name="messageArgs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,8 +253,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Code associated with event.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,8 +271,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Column number of interest in associated file.</summary>
-        <value>Returns <see cref="T:System.Int32" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,8 +289,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ending column number of interest in associated file.</summary>
-        <value>Returns <see cref="T:System.Int32" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,8 +307,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ending line number of interest in associated file.</summary>
-        <value>Returns <see cref="T:System.Int32" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,8 +325,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>File associated with event.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,16 +337,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.MessageImportance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the importance of the event.</summary>
-        <value>A <see cref="T:Microsoft.Build.Framework.MessageImportance" /> value indicating the importance of the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,8 +361,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Line number of interest in associated file.</summary>
-        <value>Returns <see cref="T:System.Int32" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -387,8 +379,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The project which was building when the message was issued.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,8 +397,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The custom sub-type of the event.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

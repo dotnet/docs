@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines a localized URI.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,15 +26,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.LocalizedUri" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IdentityModel.Metadata.LocalizedUri.Uri%2A> property is initialized to `null` in the new instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +44,9 @@
         <Parameter Name="language" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="uri">The URI for this instance. Initializes the  <see cref="System.IdentityModel.Metadata.LocalizedUri.Uri%2A" /> property.</param>
-        <param name="language">The <see cref="T:System.Globalization.CultureInfo" /> that defines the language for this instance. Initializes the <see cref="System.IdentityModel.Metadata.LocalizedEntry.Language%2A" /> property.</param>
-        <summary>Constructs a <see cref="T:System.IdentityModel.Metadata.LocalizedUri" /> with the <paramref name="uri" /> and <paramref name="language" />.</summary>
+        <param name="uri">To be added.</param>
+        <param name="language">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +63,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URI.</summary>
-        <value>The URI.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

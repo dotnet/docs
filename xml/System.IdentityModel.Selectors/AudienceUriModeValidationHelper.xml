@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.AudienceUriModeValidationHelper" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A helper class for the <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> class that verifies that the <see cref="System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A" /> property is set to a valid value.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -33,10 +31,9 @@
         <Parameter Name="validationMode" Type="System.IdentityModel.Selectors.AudienceUriMode" />
       </Parameters>
       <Docs>
-        <param name="validationMode">The <see cref="T:System.IdentityModel.Selectors.AudienceUriMode" /> to verify its validity.</param>
-        <summary>Gets a value that indicates whether the value of the specified <see cref="T:System.IdentityModel.Selectors.AudienceUriMode" /> is valid.</summary>
-        <returns>
-          <see langword="true" /> when the <paramref name="validationMode" /> is <see cref="T:System.IdentityModel.Selectors.AudienceUriMode" />, <see cref="T:System.IdentityModel.Selectors.AudienceUriMode" />, or <see cref="T:System.IdentityModel.Selectors.AudienceUriMode" />; otherwise, <see langword="false" />.</returns>
+        <param name="validationMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

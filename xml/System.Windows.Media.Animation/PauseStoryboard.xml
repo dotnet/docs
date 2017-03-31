@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.PauseStoryboard" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,22 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A trigger action that pauses a <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use a PauseStoryboard with an <xref:System.Windows.EventTrigger> or a <xref:System.Windows.Trigger> to pause a Storyboard.  
-  
- PauseStoryboard only affects a <xref:System.Windows.Media.Animation.Storyboard> when it is active (after the <xref:System.Windows.Media.Animation.Storyboard> starts).  
-  
- To control a <xref:System.Windows.Media.Animation.Storyboard>, the PauseStoryboard must reference the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> of the <xref:System.Windows.Media.Animation.BeginStoryboard> that controls that <xref:System.Windows.Media.Animation.Storyboard>. See [How to: Use Event Triggers to Control a Storyboard After It Starts](../Topic/How%20to:%20Use%20Event%20Triggers%20to%20Control%20a%20Storyboard%20After%20It%20Starts.md) for an example.  
-  
-## Beginning a Paused Animation  
- When a <xref:System.Windows.Media.Animation.BeginStoryboard> action is triggered after it has been paused, it appears to resume and restart. That's not what actually happens, however: the <xref:System.Windows.Media.Animation.BeginStoryboard> action actually replaces itself with an unpaused version. Each time a <xref:System.Windows.Media.Animation.BeginStoryboard> action is triggered, clock objects are created for its storyboard. These clocks are distributed to the properties they animate. So, when a <xref:System.Windows.Media.Animation.BeginStoryboard> is triggered again, it doesn't restart its clocks, it replaces them with new clocks.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.PauseStoryboard" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

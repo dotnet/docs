@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.MenuDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,49 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.Menu> class provides a hierarchical menu Web server control.  
-  
- In a visual designer, when you switch from Source to Design view, the markup source code that describes the associated <xref:System.Web.UI.WebControls.Menu> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to markup and added to the existing markup for the Web page. The MenuDesigner class provides design-time support for <xref:System.Web.UI.WebControls.Menu> controls in a visual designer.  
-  
- The <xref:System.Web.UI.Design.WebControls.MenuDesigner.ActionLists%2A> property returns a <xref:System.ComponentModel.Design.DesignerActionListCollection> object, which typically contains an object that is derived from the <xref:System.ComponentModel.Design.DesignerActionList> class for each level in the inheritance tree of the designer. The <xref:System.Web.UI.Design.WebControls.MenuDesigner.AutoFormats%2A> property returns a collection of formatting schemes for display in the **Auto Format** dialog box.  
-  
- The <xref:System.Web.UI.Design.WebControls.MenuDesigner.TemplateGroups%2A> property returns a collection of template groups for the templates of the associated <xref:System.Web.UI.WebControls.Menu> control. The <xref:System.Web.UI.Design.WebControls.MenuDesigner.UsePreviewControl%2A> property always returns `true`, indicating that the designer creates a temporary copy of the associated <xref:System.Web.UI.WebControls.Menu> to generate the design-time markup.  
-  
- The MenuDesigner class methods provide the following functionality:  
-  
--   The <xref:System.Web.UI.Design.WebControls.MenuDesigner.Initialize%2A> method prepares the designer to view, edit, and design the associated <xref:System.Web.UI.WebControls.Menu> control. The <xref:System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml%2A> method returns the markup that is used to render the associated <xref:System.Web.UI.WebControls.Menu> at design time.  
-  
--   The <xref:System.Web.UI.Design.WebControls.MenuDesigner.GetEmptyDesignTimeHtml%2A> method gets the markup that renders a placeholder for the associated control at design time when no markup is otherwise available. The <xref:System.Web.UI.Design.WebControls.MenuDesigner.GetErrorDesignTimeHtml%2A> method provides the markup that renders the associated control at design time when an error has occurred.  
-  
--   The <xref:System.Web.UI.Design.WebControls.MenuDesigner.DataBind%2A> method binds the associated <xref:System.Web.UI.WebControls.Menu> control to the design-time data source. The <xref:System.Web.UI.Design.WebControls.MenuDesigner.GetSampleDataSource%2A> method constructs a sample data source that can be used at design time for the associated control.  
-  
-   
-  
-## Examples  
- The following code example shows how to extend the MenuDesigner class to change the appearance of controls that are derived from the <xref:System.Web.UI.WebControls.Menu> control at design time.  
-  
- The example derives the `MyMenu` class from the <xref:System.Web.UI.WebControls.Menu>. The `MyMenu` class is a copy of the <xref:System.Web.UI.WebControls.Menu>. The example also derives the `MyMenuDesigner` class from the MenuDesigner class, and then applies a <xref:System.ComponentModel.DesignerAttribute> attribute for the `MyMenuDesigner` on the `MyMenu` class.  
-  
- `The MyMenuDesigner` overrides the following MenuDesigner members:  
-  
--   The <xref:System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml%2A> method to draw an orange, dotted border around the control to make its extent more visible.  
-  
--   The <xref:System.Web.UI.Design.WebControls.MenuDesigner.GetErrorDesignTimeHtml%2A> method to generate the markup for a placeholder that includes the error message, which is rendered in red, bold text.  
-  
--   The <xref:System.Web.UI.Design.WebControls.MenuDesigner.GetEmptyDesignTimeHtml%2A> to generate the markup for a placeholder that contains a message indicating that no menu items are defined.  
-  
--   The <xref:System.Web.UI.Design.WebControls.MenuDesigner.Initialize%2A> method to throw an <xref:System.ArgumentException> exception, if the associated control is not a `MyMenu` object.  
-  
- [!code-vb[System.Web.UI.Design.WebControls.MenuDesigner#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.w_7_1.vb)]
- [!code-cs[System.Web.UI.Design.WebControls.MenuDesigner#1](~/add/codesnippet/csharp/t-system.web.ui.design.w_7_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,20 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.MenuDesigner" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.MenuDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.Menu> control or a copy of that control on the design surface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -91,23 +41,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the designer action list collection for this designer.</summary>
-        <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ActionLists property creates a <xref:System.ComponentModel.Design.DesignerActionList> object for the <xref:System.Web.UI.Design.WebControls.MenuDesigner> class, adds it to the <xref:System.ComponentModel.Design.DesignerActionListCollection> that is obtained from the <xref:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.ActionLists%2A> base property, and then returns the <xref:System.ComponentModel.Design.DesignerActionListCollection>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -117,23 +59,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.DesignerAutoFormatCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of predefined formatting schemes to display in the **Auto Format** dialog box.</summary>
-        <value>A <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> that contains the predefined schemes for the <see cref="T:System.Web.UI.WebControls.Menu" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is populated from predefined internal constants.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -143,16 +77,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the provider can refresh the schema.</summary>
-        <value>
-          <see langword="true" /> if the schema can be refreshed; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,24 +104,9 @@
         <Parameter Name="dataBoundControl" Type="System.Web.UI.WebControls.BaseDataBoundControl" />
       </Parameters>
       <Docs>
-        <param name="dataBoundControl">The <see cref="T:System.Web.UI.WebControls.Menu" /> to bind to the design-time data source.</param>
-        <summary>Binds the associated control to the design-time data source.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If one of the following conditions is true, the DataBind method clears the <xref:System.Web.UI.WebControls.Menu.Items%2A> property, and then calls the <xref:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.DataBind%2A> base method:  
-  
--   The <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID%2A> property is not `null` or an empty string ("").  
-  
--   The <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property is not `null`.  
-  
--   The <xref:System.Web.UI.WebControls.Menu.Items%2A> collection contains one or more elements.  
-  
- The `dataBoundControl` parameter is the <xref:System.Web.UI.WebControls.Menu> control that is associated with this designer or a copy of that control.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataBoundControl">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -200,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,24 +123,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the markup that is used to render the associated control at design time.</summary>
-        <returns>A string containing the markup used to render the <see cref="T:System.Web.UI.WebControls.Menu" /> at design time.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetDesignTimeHtml method calls the <xref:System.Web.UI.Design.WebControls.MenuDesigner.DataBind%2A> method to bind the design-time data source to the associated <xref:System.Web.UI.WebControls.Menu> control, and then the GetDesignTimeHtml calls the <xref:System.Web.UI.WebControls.Menu.GetDesignModeState%2A> method to cause the <xref:System.Web.UI.WebControls.Menu> control to generate its static-view and dynamic-view markup. The GetDesignTimeHtml returns the markup for the current view. If the current view is not defined, the GetDesignTimeHtml calls the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml%2A> base method.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the GetDesignTimeHtml method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.MenuDesigner> class. The overridden method changes the appearance of a control that is derived from the <xref:System.Web.UI.WebControls.Menu> control at design time. The example draws an orange, dotted border around the control to make its extent more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value.  
-  
- [!code-vb[System.Web.UI.Design.WebControls.MenuDesigner#4](~/add/codesnippet/visualbasic/m-system.web.ui.design.w_9_1.vb)]
- [!code-cs[System.Web.UI.Design.WebControls.MenuDesigner#4](~/add/codesnippet/csharp/m-system.web.ui.design.w_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -235,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,24 +142,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the markup that renders a placeholder for the associated control at design time when no markup is otherwise available.</summary>
-        <returns>A string containing markup text that renders to a placeholder on the design surface.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetEmptyDesignTimeHtml method generates the markup for a placeholder that specifies the <xref:System.Web.UI.WebControls.Menu> control name and a message instructing you to use the collection editor to add items.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the GetEmptyDesignTimeHtml method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.MenuDesigner> class. The overridden method changes the appearance of a control that is derived from the <xref:System.Web.UI.WebControls.Menu> class at design time. The example generates the markup for a placeholder that includes a message indicating that no menu items are defined for the associated control.  
-  
- [!code-vb[System.Web.UI.Design.WebControls.MenuDesigner#5](~/add/codesnippet/visualbasic/m-system.web.ui.design.w_1_1.vb)]
- [!code-cs[System.Web.UI.Design.WebControls.MenuDesigner#5](~/add/codesnippet/csharp/m-system.web.ui.design.w_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -270,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,25 +163,10 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Exception" /> object that was thrown.</param>
-        <summary>Provides the markup that renders the associated control at design time when an error has occurred.</summary>
-        <returns>A string that contains the markup used to render the associated <see cref="T:System.Web.UI.WebControls.Menu" /> at design time after an error has occurred.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetErrorDesignTimeHtml method generates markup that renders the error design-time <xref:System.Web.UI.WebControls.Menu> control as a placeholder that contains the type name, the control name, and messages describing the error.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the GetErrorDesignTimeHtml method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.MenuDesigner> class. The overridden method changes the appearance of a control that is derived from the <xref:System.Web.UI.WebControls.Menu> class at design time. The example generates the markup for a placeholder that includes the error message, which is rendered in red, bold text.  
-  
- [!code-vb[System.Web.UI.Design.WebControls.MenuDesigner#2](~/add/codesnippet/visualbasic/fde777b7-303b-40a6-92c9-_1.vb)]
- [!code-cs[System.Web.UI.Design.WebControls.MenuDesigner#2](~/add/codesnippet/csharp/fde777b7-303b-40a6-92c9-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSampleDataSource">
@@ -308,7 +176,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -316,16 +183,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Constructs a sample data source to use at design time for the associated control.</summary>
-        <returns>An object implementing the <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> to use as a data source for the associated <see cref="T:System.Web.UI.WebControls.Menu" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The sample data source that is constructed by the GetSampleDataSource method has several root menu items with empty paths. This sample data source is used at design time if no menu items are defined for the associated <xref:System.Web.UI.WebControls.Menu> control and if the menu cannot be bound to a data source.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -335,7 +195,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,27 +204,9 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">A <see cref="T:System.Web.UI.WebControls.Menu" />, which implements the <see cref="T:System.ComponentModel.IComponent" /> interface.</param>
-        <summary>Prepares the designer to view, edit, and design the associated control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The visual designer calls the Initialize method when it is ready to use the designer to render the <xref:System.Web.UI.WebControls.Menu> control. The Initialize method and its base methods configure properties and set up events that are necessary for the operation of the designer.  
-  
- The `component` parameter is the <xref:System.Web.UI.WebControls.Menu> control that is associated with this designer or a copy of that control.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the Initialize method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.MenuDesigner> class. The overridden method changes the behavior of a control that is derived from the <xref:System.Web.UI.WebControls.Menu> class at design time. The example throws an <xref:System.ArgumentException> exception, if the associated control is not a `MyMenu` object.  
-  
- [!code-vb[System.Web.UI.Design.WebControls.MenuDesigner#6](~/add/codesnippet/visualbasic/a44810a4-5995-41ad-a0f5-_1.vb)]
- [!code-cs[System.Web.UI.Design.WebControls.MenuDesigner#6](~/add/codesnippet/csharp/a44810a4-5995-41ad-a0f5-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">*component* is not a <see cref="T:System.Web.UI.WebControls.Menu" /> or of a class derived from <see cref="T:System.Web.UI.WebControls.Menu" />.</exception>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -375,7 +216,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -385,16 +225,9 @@
         <Parameter Name="preferSilent" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="preferSilent">If <see langword="true" />, does not display error messages when exceptions occur during processing; otherwise, exception messages are displayed.</param>
-        <summary>Refreshes the schema of the data source view for the associated <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RefreshSchema method will be called by the design host only if the <xref:System.Web.UI.Design.WebControls.MenuDesigner.CanRefreshSchema%2A> property is true.  
-  
- ]]></format>
-        </remarks>
+        <param name="preferSilent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -404,15 +237,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.IDataSourceViewSchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a schema that describes the data source view for the associated <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>
-        <value>An <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> object that describes the structure of the data source.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,24 +255,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the provider can refresh the schema. For a description of this member, see the <see cref="System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema%2A" /> property.</summary>
-        <value>
-          <see langword="true" />, if the schema can be refreshed; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.MenuDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataBindingSchemaProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema">
@@ -450,7 +273,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,17 +282,9 @@
         <Parameter Name="preferSilent" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="preferSilent">
-          <see langword="true" /> to indicate that error messages should not be displayed when exceptions occur during processing; otherwise, <see langword="false" />.</param>
-        <summary>For a description of this member, see the <see cref="System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.MenuDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataBindingSchemaProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="preferSilent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.Schema">
@@ -480,23 +294,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.IDataSourceViewSchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current schema object for the designer. For a description of this member, see the <see cref="System.Web.UI.Design.IDataBindingSchemaProvider.Schema%2A" /> property.</summary>
-        <value>The current schema object for the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.MenuDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataBindingSchemaProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -506,23 +312,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.TemplateGroupCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of template groups for the templates of the associated control.</summary>
-        <value>A <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> containing an element for each template in the <see cref="T:System.Web.UI.WebControls.Menu" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TemplateGroups property gets a <xref:System.Web.UI.Design.TemplateGroupCollection> object from the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> base property. It then adds to the <xref:System.Web.UI.Design.TemplateGroupCollection> a <xref:System.Web.UI.Design.TemplateGroup> object named "`ItemTemplates`" that contains two <xref:System.Web.UI.Design.TemplateDefinition> objects named "StaticItemTemplate" and "DynamicItemTemplate". The TemplateGroups property returns this <xref:System.Web.UI.Design.TemplateGroupCollection> to the caller.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -532,25 +330,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the designer should use a copy of the associated control or use the control itself to generate the design-time markup.</summary>
-        <value>Always <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the UsePreviewControl property is always `true`, the designer uses a <xref:System.Web.UI.WebControls.View> control that contains a copy of the associated <xref:System.Web.UI.WebControls.Menu> control to generate the design-time markup. The <xref:System.Web.UI.WebControls.View> control does not affect any persistence for the <xref:System.Web.UI.WebControls.Menu> object.  
-  
- If the UsePreviewControl property has been overridden to return `false`, the designer uses the associated <xref:System.Web.UI.WebControls.Menu> object itself to generate the design-time markup, and design-time changes to the control are persisted to the page markup source.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

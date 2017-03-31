@@ -16,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Supports the creation and execution of an auxiliary debugging thread, or island, on a dedicated worker thread. This type is a utility class used by the framework and is not intended for public use.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This worker thread is needed to enable simulation of multithread-like execution of parallel activities.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.ThreadWorkerController" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,16 +51,9 @@
         <Parameter Name="controller" Type="System.Activities.Debugger.ThreadWorkerController" />
       </Parameters>
       <Docs>
-        <param name="controller">The auxiliary debugger thread to execute.</param>
-        <summary>Directs execution to a particular auxiliary debugger thread.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a static function.  
-  
- ]]></format>
-        </remarks>
+        <param name="controller">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

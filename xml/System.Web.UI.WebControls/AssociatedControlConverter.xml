@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AssociatedControlConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type converter that retrieves a list of <see cref="T:System.Web.UI.WebControls.WebControl" /> controls in the current container.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AssociatedControlConverter class derives from the <xref:System.Web.UI.WebControls.ControlIDConverter> class and provides a type converter specifically for controls that derive from the <xref:System.Web.UI.WebControls.WebControl> class. It is used by the <xref:System.Web.UI.WebControls.Label.AssociatedControlID%2A> property of the <xref:System.Web.UI.WebControls.Label> control.  
-  
- For more information about type converters, see [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md) or [Generalized Type Conversion](../Topic/Generalized%20Type%20Conversion.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AssociatedControlConverter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **Note** You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterControl">
@@ -55,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,10 +46,9 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="control">The control instance to test whether it is a <see cref="T:System.Web.UI.WebControls.WebControl" />.</param>
-        <summary>Indicates whether the provided control inherits from <see cref="T:System.Web.UI.WebControls.WebControl" />.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="control" /> inherits from the <see cref="T:System.Web.UI.WebControls.WebControl" /> class; otherwise, <see langword="false" />.</returns>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

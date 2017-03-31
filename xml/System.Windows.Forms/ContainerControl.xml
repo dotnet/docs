@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,22 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides focus-management functionality for controls that can function as a container for other controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ContainerControl represents a control that can function as a container for other controls and provides focus management. Controls that inherit from this class can track the active control they contain, even when the focus moves somewhere within a different container.  
-  
- ContainerControl objects provide a logical boundary for contained controls. The container control can capture the TAB key press and move focus to the next control in the collection.  
-  
-> [!NOTE]
->  The container control does not receive focus; the focus is always set to the first child control in the collection of contained controls.  
-  
- You do not typically inherit directly from the ContainerControl class. <xref:System.Windows.Forms.Form>, <xref:System.Windows.Forms.UserControl>, and <xref:System.Windows.Forms.UpDownBase> classes inherit from ContainerControl.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,24 +34,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContainerControl" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
-  
- [!code-cs[IContainerControl Implementation#1](~/add/codesnippet/csharp/m-system.windows.forms.c_79_1.cs)]
- [!code-cpp[IContainerControl Implementation#1](~/add/codesnippet/cpp/m-system.windows.forms.c_79_1.cpp)]
- [!code-vb[IContainerControl Implementation#1](~/add/codesnippet/visualbasic/m-system.windows.forms.c_79_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveControl">
@@ -76,7 +49,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -91,28 +63,9 @@
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the active control on the container control.</summary>
-        <value>The <see cref="T:System.Windows.Forms.Control" /> that is currently active on the <see cref="T:System.Windows.Forms.ContainerControl" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ActiveControl property activates or retrieves the active control on the container control.  
-  
- In order to receive a valid value from this property, the object that calls it must either contain or be contained in the control it is calling. If one form tries to call another form's ActiveControl properties, it will receive an undefined value. In this case, you need to define your own communication mechanism between the forms to pass this data.  
-  
-   
-  
-## Examples  
- The following code example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
-  
- [!code-cs[IContainerControl Implementation#1](~/add/codesnippet/csharp/p-system.windows.forms.c_17_1.cs)]
- [!code-cpp[IContainerControl Implementation#1](~/add/codesnippet/cpp/p-system.windows.forms.c_17_1.cpp)]
- [!code-vb[IContainerControl Implementation#1](~/add/codesnippet/visualbasic/p-system.windows.forms.c_17_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Forms.Control" /> assigned could not be activated.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AdjustFormScrollbars">
@@ -122,7 +75,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -137,9 +89,8 @@
         <Parameter Name="displayScrollbars" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="displayScrollbars">
-          <see langword="true" /> to show the scroll bars; otherwise, <see langword="false" />.</param>
-        <summary>Adjusts the scroll bars on the container based on the current control positions and the control currently selected.</summary>
+        <param name="displayScrollbars">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,7 +101,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -171,19 +121,9 @@
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the dimensions that the control was designed to.</summary>
-        <value>A <see cref="T:System.Drawing.SizeF" /> containing the dots per inch (DPI) or <see cref="T:System.Drawing.Font" /> size that the control was designed to.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AutoScaleDimensions property represents the DPI or font setting of the screen that the control was scaled to or designed for. Specifically, at design time this property will be set by the Windows Forms designer to the value your monitor is currently using. Then, when the form loads at run time, if the <xref:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions%2A> property is different from the AutoScaleDimensions, the <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A> method will be called to perform scaling of the control and all of its children. Afterwards, AutoScaleDimensions will be updated to reflect the new scaling size.  
-  
- For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The width or height of the <see cref="T:System.Drawing.SizeF" /> value is less than 0 when setting this value.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScaleFactor">
@@ -193,25 +133,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scaling factor between the current and design-time automatic scaling dimensions.</summary>
-        <value>A <see cref="T:System.Drawing.SizeF" /> containing the scaling ratio between the current and design-time scaling automatic scaling dimensions.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AutoScaleFactor property represents the scaling factor between the <xref:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions%2A> and <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A> properties. This value is calculated when it is required. For example, if <xref:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions%2A> is (192, 144) and <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A> is (96, 96) then the AutoScaleFactor is (2.0, 1.5).  
-  
- For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScaleMode">
@@ -221,7 +151,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -239,19 +168,9 @@
         <ReturnType>System.Windows.Forms.AutoScaleMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the automatic scaling mode of the control.</summary>
-        <value>An <see cref="T:System.Windows.Forms.AutoScaleMode" /> that represents the current scaling mode. The default is <see cref="T:System.Windows.Forms.AutoScaleMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AutoScaleMode property specifies the current automatic scaling mode of this control. Scaling by <xref:System.Windows.Forms.AutoScaleMode> is useful if you want to have a control or form stretch or shrink according to the size of the fonts in the operating system, and should be used when the absolute size of the control or form does not matter. Scaling by <xref:System.Windows.Forms.AutoScaleMode> is useful when you want to size a control or form relative to the screen. For example, you may want to use dots per inch (DPI) scaling on a control displaying a chart or other graphic so that it always occupies a certain percentage of the screen.  
-  
- For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">An <see cref="T:System.Windows.Forms.AutoScaleMode" /> value that is not valid was used to set this property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoValidate">
@@ -261,7 +180,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -279,27 +197,9 @@
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether controls in this container will be automatically validated when the focus changes.</summary>
-        <value>An <see cref="T:System.Windows.Forms.AutoValidate" /> enumerated value that indicates whether contained controls are implicitly validated on focus change. The default is <see cref="T:System.Windows.Forms.AutoValidate" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value for AutoValidate will differ for each control. For more details on implicit validation, see [User Input Validation in Windows Forms](../Topic/User%20Input%20Validation%20in%20Windows%20Forms.md).  
-  
- Setting this property to a new value will raise the <xref:System.Windows.Forms.ContainerControl.AutoValidateChanged> event.  
-  
-   
-  
-## Examples  
- The following code example turns off implicit validation for a form and all of its contained controls, and instead manually performs validation of all of the form's children when a mouse button is clicked.  
-  
- [!code-cs[ValidateChildren#1](~/add/codesnippet/csharp/p-system.windows.forms.c_5_1.cs)]
- [!code-vb[ValidateChildren#1](~/add/codesnippet/visualbasic/p-system.windows.forms.c_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A <see cref="T:System.Windows.Forms.AutoValidate" /> value that is not valid was used to set this property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoValidateChanged">
@@ -309,7 +209,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -324,22 +223,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ContainerControl.AutoValidate%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A>  
-  
- <xref:System.Windows.Forms.ContainerControl.OnAutoValidateChanged%2A>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BindingContext">
@@ -349,7 +234,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -361,8 +245,8 @@
         <ReturnType>System.Windows.Forms.BindingContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.BindingContext" /> for the control.</summary>
-        <value>A <see cref="T:System.Windows.Forms.BindingContext" /> for the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,26 +257,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="System.Windows.Forms.Control.ImeMode%2A" /> property can be set to an active value, to enable IME support.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the [!INCLUDE[dnprdnlong](~/add/includes/dnprdnlong-md.md)] and later, IME functionality is handled by the framework and native IME support for individual controls is disabled.  
-  
- A user control that derives from the <xref:System.Windows.Forms.ContainerControl> class can enable native IME support by overriding this property to return `true`. However, the application is then responsible for making sure that there are no conflicts between the native IME and the Windows Forms IME. This scenario is not supported.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -402,15 +275,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the required creation parameters when the control handle is created.</summary>
-        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,7 +293,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -436,27 +307,9 @@
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current run-time dimensions of the screen.</summary>
-        <value>A <see cref="T:System.Drawing.SizeF" /> containing the current dots per inch (DPI) or <see cref="T:System.Drawing.Font" /> size of the screen.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CurrentAutoScaleDimensions property represents the reference dimensions on the current screen. In contrast, the <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A> property represents the design-time reference dimensions of the design environment for the current control, while the <xref:System.Windows.Forms.ContainerControl.AutoScaleFactor%2A> property is the ratio of the two.  
-  
- The interpretation of the dimension value depends on the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property in the following ways:  
-  
--   If the mode is <xref:System.Windows.Forms.AutoScaleMode>, this property represents the resolution of the screen, in dots per inch.  
-  
--   If the mode is <xref:System.Windows.Forms.AutoScaleMode>, this property represents the average font character size in pixels.  
-  
- If the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property is set to <xref:System.Windows.Forms.AutoScaleMode>, CurrentAutoScaleDimensions is set equal to <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>.  
-  
- For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.Win32Exception">A Win32 device context could not be created for the current screen.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -466,7 +319,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -476,9 +328,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Control" /> and its child controls and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -489,7 +340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -499,18 +349,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ContainerControl.AutoValidateChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnAutoValidateChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateControl">
@@ -520,7 +361,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -528,7 +368,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises the <see cref="System.Windows.Forms.Control.CreateControl%2A" /> method.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -539,7 +379,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -554,20 +393,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Changing the font used by a <xref:System.Windows.Forms.ContainerControl> will cause the layout to be recalculated and reapplied to the contained controls if the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property has a value of <xref:System.Windows.Forms.AutoScaleMode>.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnFontChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -577,7 +405,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -587,8 +414,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,7 +426,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -609,8 +435,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -621,7 +447,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -636,25 +461,9 @@
         <ReturnType>System.Windows.Forms.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the form that the container control is assigned to.</summary>
-        <value>The <see cref="T:System.Windows.Forms.Form" /> that the container control is assigned to. This property will return null if the control is hosted inside of Internet Explorer or in another hosting context where there is no parent form.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to create two forms: `Form1` and `Form2`. Set the <xref:System.Windows.Forms.Form.IsMdiContainer%2A> property of `Form1` to `true` and make it the <xref:System.Windows.Forms.Form.MdiParent%2A> of `Form2`. Next, create a button, `button1`, on each form. When the button on the parent form is clicked, the event handler displays the child form. When the button on the child form is clicked, the event handler displays the <xref:System.Windows.Forms.Control.Name%2A> property of its parent form. Use the following two code segments to overwrite `button1` event handlers in both forms.  
-  
- [!code-cs[ParentForm2#1](~/add/codesnippet/csharp/p-system.windows.forms.c_82_1.cs)]
- [!code-cpp[ParentForm2#1](~/add/codesnippet/cpp/p-system.windows.forms.c_82_1.cpp)]
- [!code-vb[ParentForm2#1](~/add/codesnippet/visualbasic/p-system.windows.forms.c_82_1.vb)]  
-  
- [!code-vb[ParentForm2#2](~/add/codesnippet/visualbasic/p-system.windows.forms.c_82_2.vb)]
- [!code-cpp[ParentForm2#2](~/add/codesnippet/cpp/p-system.windows.forms.c_82_2.cpp)]
- [!code-cs[ParentForm2#2](~/add/codesnippet/csharp/p-system.windows.forms.c_82_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for all windows to get this property value. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformAutoScale">
@@ -664,7 +473,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -672,19 +480,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs scaling of the container control and its children.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An explicit call to the PerformAutoScale method is typically only required after programmatic changes to the layout during run time. PerformAutoScale is implicitly called from the <xref:System.Windows.Forms.ContainerControl.OnLayout%2A> method.  
-  
- PerformAutoScale is recursive; each child control, if it is a container, will have its version of this method called when the container's version executes.  
-  
- For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
@@ -694,7 +491,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -705,11 +501,10 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="msg">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>
-        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a command key.</summary>
-        <returns>
-          <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
+        <param name="msg">To be added.</param>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -720,7 +515,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -735,10 +529,9 @@
         <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="charCode">The character to process.</param>
-        <summary>Processes a dialog character.</summary>
-        <returns>
-          <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
+        <param name="charCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -749,7 +542,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -759,10 +551,9 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a dialog key.</summary>
-        <returns>
-          <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -773,7 +564,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -783,10 +573,9 @@
         <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="charCode">The character to process.</param>
-        <summary>Processes a mnemonic character.</summary>
-        <returns>
-          <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
+        <param name="charCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -797,7 +586,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -807,19 +595,10 @@
         <Parameter Name="forward" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="forward">
-          <see langword="true" /> to cycle forward through the controls in the <see cref="T:System.Windows.Forms.ContainerControl" />; otherwise, <see langword="false" />.</param>
-        <summary>Selects the next available control and makes it the active control.</summary>
-        <returns>
-          <see langword="true" /> if a control is selected; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A control with its <xref:System.Windows.Forms.Control.TabStop%2A> property set to `false` cannot be selected, so the next available control will be selected.  
-  
- ]]></format>
-        </remarks>
+        <param name="forward">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -829,7 +608,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -840,11 +618,9 @@
         <Parameter Name="forward" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="directed">
-          <see langword="true" /> to specify the direction of the control to select; otherwise, <see langword="false" />.</param>
-        <param name="forward">
-          <see langword="true" /> to move forward in the tab order; <see langword="false" /> to move backward in the tab order.</param>
-        <summary>Activates a child control. Optionally specifies the direction in the tab order to select the control from.</summary>
+        <param name="directed">To be added.</param>
+        <param name="forward">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -855,7 +631,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -865,27 +640,10 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">The <see cref="T:System.Windows.Forms.Control" /> to activate.</param>
-        <summary>Activates the specified control.</summary>
-        <returns>
-          <see langword="true" /> if the control is successfully activated; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `control` parameter must be a child of the container control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to inherit from the <xref:System.Windows.Forms.ScrollableControl> class and implement the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
-  
- [!code-cs[IContainerControl Implementation#1](~/add/codesnippet/csharp/51a3e820-05be-4d60-83df-_1.cs)]
- [!code-cpp[IContainerControl Implementation#1](~/add/codesnippet/cpp/51a3e820-05be-4d60-83df-_1.cpp)]
- [!code-vb[IContainerControl Implementation#1](~/add/codesnippet/visualbasic/51a3e820-05be-4d60-83df-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateDefaultButton">
@@ -895,7 +653,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -903,15 +660,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden by a derived class, updates which button is the default button.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ContainerControl> class does not provide an implementation for the UpdateDefaultButton method. Classes that inherit this method must implement UpdateDefaultButton to update the default button.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -921,7 +671,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -929,17 +678,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Verifies the value of the control losing focus by causing the <see cref="E:System.Windows.Forms.Control.Validating" /> and <see cref="E:System.Windows.Forms.Control.Validated" /> events to occur, in that order.</summary>
-        <returns>
-          <see langword="true" /> if validation is successful; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ContainerControl.Validate%2A> method validates the last child control that is not validated and its ancestors up through, but not including, the current container control. This overloaded version always performs validation, regardless of the value of the <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property of the control's parent. Therefore use it to unconditionally force validation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -949,7 +690,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -959,22 +699,10 @@
         <Parameter Name="checkAutoValidate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="checkAutoValidate">If <see langword="true" />, the value of the <see cref="System.Windows.Forms.ContainerControl.AutoValidate%2A" /> property is used to determine if validation should be performed; if <see langword="false" />, validation is unconditionally performed.</param>
-        <summary>Verifies the value of the control that is losing focus; conditionally dependent on whether automatic validation is turned on.</summary>
-        <returns>
-          <see langword="true" /> if validation is successful; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ContainerControl.Validate%2A> method validates the last child control that is not validated and its ancestors up through, but not including, the current container control. This overloaded version performs validation based on the following conditions:  
-  
--   If the `checkAutoValidate` parameter is `true`, validation always occurs for child controls that are not validated.  
-  
--   If the `checkAutoValidate` parameter is `false`, validation occurs only if the <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property of the control's parent is enabled.  
-  
- ]]></format>
-        </remarks>
+        <param name="checkAutoValidate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateChildren">
@@ -984,7 +712,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1000,29 +727,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes all of the child controls within a control that support validation to validate their data.</summary>
-        <returns>
-          <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ValidateChildren will descend a control's hierarchy and examine each control to see if it supports validation. If the control can be selected by the user and its <xref:System.Windows.Forms.Control.CausesValidation%2A> property is `true`, ValidateChildren will cause the <xref:System.Windows.Forms.Control.Validating> event to occur. If any of the controls cancel the <xref:System.Windows.Forms.Control.Validating> event, this method will return `false`; otherwise, it will return `true`.  
-  
- If a control is bound to a data source, and the <xref:System.Windows.Forms.Control.Validating> event occurs, it will cause the control to push its current data back to the data source.  
-  
- Calling ValidateChildren is equivalent to calling <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A> with a <xref:System.Windows.Forms.ValidationConstraints> of <xref:System.Windows.Forms.ValidationConstraints>.  
-  
-   
-  
-## Examples  
- The following code example turns off implicit validation for a form and all of its contained controls, and instead manually performs validation of all of the form's children when a mouse button is clicked.  
-  
- [!code-cs[ValidateChildren#1](~/add/codesnippet/csharp/m-system.windows.forms.c_7_1.cs)]
- [!code-vb[ValidateChildren#1](~/add/codesnippet/visualbasic/m-system.windows.forms.c_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateChildren">
@@ -1032,7 +739,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1050,34 +756,10 @@
         <Parameter Name="validationConstraints" Type="System.Windows.Forms.ValidationConstraints" />
       </Parameters>
       <Docs>
-        <param name="validationConstraints">Places restrictions on which controls have their <see cref="E:System.Windows.Forms.Control.Validating" /> event raised.</param>
-        <summary>Causes all of the child controls within a control that support validation to validate their data.</summary>
-        <returns>
-          <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ValidateChildren will examine all the children of the current control, causing the <xref:System.Windows.Forms.Control.Validating> event to occur on a control if it meets the criteria spelled out by <xref:System.Windows.Forms.ValidationConstraints>.  
-  
- You may use several <xref:System.Windows.Forms.ValidationConstraints> parameters at once by combining them with a bitwise OR operator. Combining parameters with a bitwise OR operator will result in a logical AND operation. For example, calling `ValidateChildren(ValidationConstraints.ImmediateChildren | ValidationConstraints.Enabled)` will only raise the <xref:System.Windows.Forms.Control.Validating> event on controls that are both immediate children of the container AND are enabled.  
-  
- Regardless of which parameters you specify for this method, a control must have its <xref:System.Windows.Forms.Control.CausesValidation%2A> property set to `true` in order for its <xref:System.Windows.Forms.Control.Validating> event to occur. You should also set the <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property of the control or of the control's container to `false` if you want validation to happen only when you call ValidateChildren, and not when the user shifts focus from the control.  
-  
- If a control is bound to a data source, and the <xref:System.Windows.Forms.Control.Validating> event occurs, it will cause the control to push its current data back to the data source.  
-  
- You cannot achieve the opposite effect of a <xref:System.Windows.Forms.ValidationConstraints> parameter by applying a bitwise negation operator. For example, if you supply the negative value of the <xref:System.Windows.Forms.ValidationConstraints> field to ValidateChildren, it will not validate all children that are not visible on the container. Supplying any negative parameter to ValidateChildren will have no effect on the container or its children.  
-  
-   
-  
-## Examples  
- The following code example will only cause the <xref:System.Windows.Forms.Control.Validating> event to occur for immediate children of the form whose <xref:System.Windows.Forms.Control.Enabled%2A> property is `true`.  
-  
- [!code-vb[ValidateChildrenWithConstraints#1](~/add/codesnippet/visualbasic/6ed19d03-32eb-43cf-9854-_1.vb)]
- [!code-cs[ValidateChildrenWithConstraints#1](~/add/codesnippet/csharp/6ed19d03-32eb-43cf-9854-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="validationConstraints">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -1087,7 +769,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1102,8 +783,8 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,34 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Controls.DatePicker.DateValidationError" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.DatePicker.DateValidationError?displayProperty=fullName> event occurs when <xref:System.Windows.Controls.DatePicker.Text%2A?displayProperty=fullName> is set to a value that cannot be interpreted as a date or when the date cannot be selected. You can subscribe to this event and specify whether an exception is raised by setting the <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A> property. If <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A?displayProperty=fullName> is `true`, one of the following exceptions is raised:  
-  
-|Exception type|Condition|  
-|--------------------|---------------|  
-|<xref:System.FormatException>|The text entered cannot be parsed to a valid date, and the exception is not suppressed.|  
-|<xref:System.ArgumentOutOfRangeException>|The text entered parses to a date that is not selectable.|  
-  
- If <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A?displayProperty=fullName> is `false`, the application continues execution as usual.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.DatePicker> that displays the dates in August 2009 and specifies that each Saturday and Sunday is not selectable. The <xref:System.Windows.Controls.DatePicker> handles the <xref:System.Windows.Controls.DatePicker.DateValidationError> event. If the user enters a date that is not selectable, the example displays a message. If the user enters text that is not a valid date, an exception is thrown.  
-  
- [!code-cs[DatePickerSnippets#2](~/add/codesnippet/csharp/datepickersnippets.datepickersnippets/window1.xaml.cs#2)]
- [!code-vb[DatePickerSnippets#2](~/add/codesnippet/visualbasic/datepickersnippets/window1.xaml.vb#2)]
- [!code-xml[DatePickerSnippets#2](~/add/codesnippet/xaml/datepickersnippets.datepickersnippets/window1.xaml#2)]  
-  
- [!code-cs[DatePickerSnippets#3](~/add/codesnippet/csharp/datepickersnippets.datepickersnippets/window1.xaml.cs#3)]
- [!code-vb[DatePickerSnippets#3](~/add/codesnippet/visualbasic/datepickersnippets/window1.xaml.vb#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,9 +29,9 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="exception">The initial exception from the <see cref="E:System.Windows.Controls.DatePicker.DateValidationError" /> event.</param>
-        <param name="text">The text that caused the <see cref="E:System.Windows.Controls.DatePicker.DateValidationError" /> event.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DatePickerDateValidationErrorEventArgs" /> class.</summary>
+        <param name="exception">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +48,8 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the initial exception associated with the <see cref="E:System.Windows.Controls.DatePicker.DateValidationError" /> event.</summary>
-        <value>The exception associated with the validation failure.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +66,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text that caused the <see cref="E:System.Windows.Controls.DatePicker.DateValidationError" /> event.</summary>
-        <value>The text that caused the validation failure.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,9 +84,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether <see cref="System.Windows.Controls.DatePickerDateValidationErrorEventArgs.Exception%2A" /> should be thrown.</summary>
-        <value>
-          <see langword="true" /> if the exception should be thrown; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

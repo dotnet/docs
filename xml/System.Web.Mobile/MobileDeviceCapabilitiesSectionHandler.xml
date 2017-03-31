@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,9 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Reads the [deviceFilters Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/2fb323b9-675b-48de-861b-8998fa0c51ba) section of a configuration file that specifies the set of device filters for use with ASP.NET mobile controls. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,12 +31,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler" /> class. This method supports the .NET Framework infrastructure. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,13 +57,12 @@
         <Parameter Name="node" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="parent">The parent node in the configuration file, or <see langword="null" /> (<see langword="Nothing" /> in Visual Basic) if creating the parent node.</param>
-        <param name="context">An <see cref="T:System.Web.Configuration.HttpConfigurationContext" /> object.</param>
-        <param name="node">The node to be created.</param>
-        <summary>Creates a dictionary of the device filter information contained in the <see cref="T:System.Xml.XmlNode" /> specified by the <paramref name="node" /> parameter. If the object referenced by the <paramref name="parent" /> property is not <see langword="null" />, then dictionary entries are appended to the parent dictionary. This method supports the .NET Framework infrastructure. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>A dictionary of the device filter information contained in the specified <paramref name="node" />.</returns>
+        <param name="parent">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">Required attributes are not present or empty, or the <see langword="type" /> attribute refers to a non-existent <see cref="T:System.Type" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Configuration.IConfigurationSectionHandler.Create">
@@ -77,7 +72,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,11 +83,11 @@
         <Parameter Name="node" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="parent">The parent node in the configuration file, or <see langword="null" /> (<see langword="Nothing" /> in Visual Basic) if creating the parent node.</param>
-        <param name="context">An <see cref="T:System.Web.Configuration.HttpConfigurationContext" /> object.</param>
-        <param name="node">The node to be created.</param>
-        <summary>Creates a dictionary of the device filter information contained in the <see cref="T:System.Xml.XmlNode" /> specified by the <paramref name="node" /> parameter. If the object referenced by the <paramref name="parent" /> property is not <see langword="null" />, then dictionary entries are appended to the parent dictionary. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>A dictionary of the device filter information contained in the specified <paramref name="node" />.</returns>
+        <param name="parent">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

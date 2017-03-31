@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.BaseDataListComponentEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a component editor base class for Web server controls that are derived from the <see cref="T:System.Web.UI.WebControls.BaseDataList" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A component editor provides a user interface for editing the properties of a control. Component editors are invoked from control designers by using the **Property Builder** menu item from the context menu on the control. Component editors that are derived from the BaseDataListComponentEditor class are invoked from designers derived from the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> class, and are used to edit the properties of controls that are derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. For examples of such controls, see <xref:System.Web.UI.WebControls.DataGrid> and <xref:System.Web.UI.WebControls.DataList>.  
-  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.EditComponent%2A> method displays a component editor for the associated control, if one can be created. The <xref:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.GetInitialComponentEditorPageIndex%2A> method returns the index of the initial page to be displayed in the component editor.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,23 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="initialPage" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="initialPage">The index in the array of page control types, of the initial page to display.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.BaseDataListComponentEditor" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A designer that is derived from the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner> class creates a component editor that is derived from the <xref:System.Web.UI.Design.WebControls.BaseDataListComponentEditor> class, when the user selects **Property Builder** from the context menu within the designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="initialPage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditComponent">
@@ -58,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,20 +51,12 @@
         <Parameter Name="parent" Type="System.Windows.Forms.IWin32Window" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that can be used to gain additional context information.</param>
-        <param name="obj">An <see cref="T:System.Object" /> implementing the <see cref="T:System.ComponentModel.IComponent" />, which represents the component to edit.</param>
-        <param name="parent">The <see cref="T:System.Windows.Forms.IWin32Window" /> that represents the parent window.</param>
-        <summary>Edits the specified component by using the specified context descriptor and parent window.</summary>
-        <returns>
-          <see langword="true" /> the component was successfully edited; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.EditComponent%2A> method gets a <xref:System.Type> array of page control types by using the <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetComponentEditorPages%2A> method. It creates a <xref:System.Windows.Forms.Design.ComponentEditorForm> object, and then calls its <xref:System.Windows.Forms.Design.ComponentEditorForm.ShowForm%2A> method to display the component editor.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="obj">To be added.</param>
+        <param name="parent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInitialComponentEditorPageIndex">
@@ -93,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,16 +73,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the index of the initial page to display in the component editor.</summary>
-        <returns>The index of the initial page in the array.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The initial page is specified when the <xref:System.Web.UI.Design.WebControls.BaseDataListComponentEditor> object is created.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

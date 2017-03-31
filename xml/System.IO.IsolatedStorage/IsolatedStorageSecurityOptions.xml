@@ -4,23 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorageSecurityOptions" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies options that affect security in isolated storage.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState.Options%2A?displayProperty=fullName> property gets this enumeration to determine which operations can be performed in isolated storage.  
-  
- A host application can override the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=fullName> method to perform policy decisions based on a <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState> object, and then allow or prevent the increase in the quota size for isolated storage.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="IncreaseQuotaForApplication">
@@ -30,13 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageSecurityOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The quota can be increased for isolated storage.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

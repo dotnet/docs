@@ -10,18 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the image type of the chart.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ChartImageFormat enumeration represents an image type that is used to save the chart to a file or stream.  
-  
-> [!NOTE]
->  Only charts saved to disk can use the EmfDual or EmfDual format. Charts cannot be rendered on a Web page using EMF-dual or EMF+.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bmp">
@@ -37,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A bitmap (BMP) image format.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Emf">
@@ -53,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Windows Enhanced Metafile (EMF) image format.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfDual">
@@ -69,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Windows Enhanced Metafile Dual (EMF-dual) image format.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPlus">
@@ -85,7 +75,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Windows Enhanced Metafile Plus (EMF+) image format.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gif">
@@ -101,7 +91,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A GIF image format.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Jpeg">
@@ -117,7 +107,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A JPEG image format.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Png">
@@ -133,7 +123,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A PNG image format.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tiff">
@@ -149,7 +139,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A TIFF image format.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

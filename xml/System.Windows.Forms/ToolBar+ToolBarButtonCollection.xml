@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBar.ToolBarButtonCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,24 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Encapsulates a collection of <see cref="T:System.Windows.Forms.ToolBarButton" /> controls for use by the <see cref="T:System.Windows.Forms.ToolBar" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToolBar.ToolBarButtonCollection is a zero-based indexed collection used by the <xref:System.Windows.Forms.ToolBar> class to hold all the <xref:System.Windows.Forms.ToolBarButton> controls assigned to the toolbar. Use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add%2A> method to add individual buttons and the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove%2A> method to delete them. Call the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear%2A> method to remove all the buttons from the collection.  
-  
-   
-  
-## Examples  
- The following code example creates and initializes a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls. The toolbar buttons are assigned to the toolbar and the toolbar is added to the form. This code requires that a <xref:System.Windows.Forms.Form> has already been created.  
-  
- [!code-cs[Classic ToolBar.Buttons Example#1](~/add/codesnippet/csharp/t-system.windows.forms.t_57_1.cs)]
- [!code-vb[Classic ToolBar.Buttons Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.t_57_1.vb)]
- [!code-cpp[Classic ToolBar.Buttons Example#1](~/add/codesnippet/cpp/t-system.windows.forms.t_57_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,23 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.ToolBar" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Forms.ToolBar" /> that is the parent of the collection of <see cref="T:System.Windows.Forms.ToolBarButton" /> controls.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolBar.ToolBarButtonCollection" /> class and assigns it to the specified toolbar.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You do not typically create a <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> and explicitly call its constructor. By referencing the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property of the <xref:System.Windows.Forms.ToolBar> control, a <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is created. You can then gain access to its properties and methods, and assign <xref:System.Windows.Forms.ToolBarButton> controls to the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -69,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,28 +53,10 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display on the new <see cref="T:System.Windows.Forms.ToolBarButton" />.</param>
-        <summary>Adds a new toolbar button to the end of the toolbar button collection with the specified <see cref="System.Windows.Forms.ToolBarButton.Text%2A" /> property value.</summary>
-        <returns>The zero-based index value of the <see cref="T:System.Windows.Forms.ToolBarButton" /> added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can also add new <xref:System.Windows.Forms.ToolBarButton> objects to the collection by using the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.AddRange%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Insert%2A> methods, or the other version of the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add%2A> method.  
-  
- To remove a <xref:System.Windows.Forms.ToolBarButton> that you have previously added, use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove%2A>, <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.RemoveAt%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example removes an existing <xref:System.Windows.Forms.ToolBarButton> from a <xref:System.Windows.Forms.ToolBar> control if it exists and adds and inserts four new <xref:System.Windows.Forms.ToolBarButton> objects to the <xref:System.Windows.Forms.ToolBar>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.ToolBar> control on it.  
-  
- [!code-cpp[ToolBar#2](~/add/codesnippet/cpp/m-system.windows.forms.t_61_1.cpp)]
- [!code-cs[ToolBar#2](~/add/codesnippet/csharp/m-system.windows.forms.t_61_1.cs)]
- [!code-vb[ToolBar#2](~/add/codesnippet/visualbasic/m-system.windows.forms.t_61_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -110,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,28 +75,10 @@
         <Parameter Name="button" Type="System.Windows.Forms.ToolBarButton" />
       </Parameters>
       <Docs>
-        <param name="button">The <see cref="T:System.Windows.Forms.ToolBarButton" /> to be added after all existing buttons.</param>
-        <summary>Adds the specified toolbar button to the end of the toolbar button collection.</summary>
-        <returns>The zero-based index value of the <see cref="T:System.Windows.Forms.ToolBarButton" /> added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can also add new <xref:System.Windows.Forms.ToolBarButton> objects to the collection by using the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.AddRange%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Insert%2A> methods, or the other version of the Add method.  
-  
- To remove a <xref:System.Windows.Forms.ToolBarButton> that you have previously added, use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove%2A>, <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.RemoveAt%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example adds a new <xref:System.Windows.Forms.ToolBarButton> control to an existing <xref:System.Windows.Forms.ToolBar> with existing buttons. The toolbar button will be added to the end of the <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=fullName> collection.  
-  
- [!code-cpp[Classic ToolBar.ToolBarButtonCollection.Add Example#1](~/add/codesnippet/cpp/2c83695b-7968-40df-8281-_1.cpp)]
- [!code-vb[Classic ToolBar.ToolBarButtonCollection.Add Example#1](~/add/codesnippet/visualbasic/2c83695b-7968-40df-8281-_1.vb)]
- [!code-cs[Classic ToolBar.ToolBarButtonCollection.Add Example#1](~/add/codesnippet/csharp/2c83695b-7968-40df-8281-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -151,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,29 +97,9 @@
         <Parameter Name="buttons" Type="System.Windows.Forms.ToolBarButton[]" />
       </Parameters>
       <Docs>
-        <param name="buttons">The collection of <see cref="T:System.Windows.Forms.ToolBarButton" /> controls to add to this <see cref="T:System.Windows.Forms.ToolBar.ToolBarButtonCollection" /> contained in an array.</param>
-        <summary>Adds a collection of toolbar buttons to this toolbar button collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBarButton> objects contained in the `nodes` array are appended to the end of the collection.  
-  
- You can use method to quickly add a group of previously created <xref:System.Windows.Forms.ToolBarButton> objects to the collection instead of manually adding each <xref:System.Windows.Forms.ToolBarButton> to the collection using the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add%2A> method.  
-  
- To remove a <xref:System.Windows.Forms.ToolBarButton> that you have previously added, use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove%2A>, <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.RemoveAt%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example removes an existing <xref:System.Windows.Forms.ToolBarButton> from a <xref:System.Windows.Forms.ToolBar> control if it exists and adds and inserts four new <xref:System.Windows.Forms.ToolBarButton> objects to the <xref:System.Windows.Forms.ToolBar>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.ToolBar> control on it.  
-  
- [!code-cpp[ToolBar#2](~/add/codesnippet/cpp/27958fd7-3326-4156-a98d-_1.cpp)]
- [!code-cs[ToolBar#2](~/add/codesnippet/csharp/27958fd7-3326-4156-a98d-_1.cs)]
- [!code-vb[ToolBar#2](~/add/codesnippet/visualbasic/27958fd7-3326-4156-a98d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="buttons">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -193,7 +109,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,28 +116,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all buttons from the toolbar button collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Clear method iterates through the collection and removes all toolbar buttons assigned to the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>.  
-  
- To remove an individual toolbar button from the collection, use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.RemoveAt%2A> methods.  
-  
- To add new <xref:System.Windows.Forms.ToolBarButton> objects to the collection, use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add%2A>, <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.AddRange%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Insert%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example displays the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Count%2A> of the <xref:System.Windows.Forms.ToolBar.Buttons%2A> before and after the Clear method is called. This code requires that a <xref:System.Windows.Forms.ToolBar> with at least one <xref:System.Windows.Forms.ToolBarButton> has been created.  
-  
- [!code-cs[Classic ToolBar.ToolBarButtonCollection.Count Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_41_1.cs)]
- [!code-vb[Classic ToolBar.ToolBarButtonCollection.Count Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_41_1.vb)]
- [!code-cpp[Classic ToolBar.ToolBarButtonCollection.Count Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_41_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -232,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,27 +136,10 @@
         <Parameter Name="button" Type="System.Windows.Forms.ToolBarButton" />
       </Parameters>
       <Docs>
-        <param name="button">The <see cref="T:System.Windows.Forms.ToolBarButton" /> to locate in the collection.</param>
-        <summary>Determines if the specified toolbar button is a member of the collection.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolBarButton" /> is a member of the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method enables you to determine whether a <xref:System.Windows.Forms.ToolBarButton> is member of the collection before attempting to perform operations on the <xref:System.Windows.Forms.ToolBarButton>. You can use this method to confirm that a <xref:System.Windows.Forms.ToolBarButton> has been added to or is still a member of the collection.  
-  
-   
-  
-## Examples  
- The following code example removes an existing <xref:System.Windows.Forms.ToolBarButton> from a <xref:System.Windows.Forms.ToolBar> control if it exists and adds and inserts four new <xref:System.Windows.Forms.ToolBarButton> objects to the <xref:System.Windows.Forms.ToolBar>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.ToolBar> control on it.  
-  
- [!code-cpp[ToolBar#2](~/add/codesnippet/cpp/04897711-6ea3-4970-82fc-_1.cpp)]
- [!code-cs[ToolBar#2](~/add/codesnippet/csharp/04897711-6ea3-4970-82fc-_1.cs)]
- [!code-vb[ToolBar#2](~/add/codesnippet/visualbasic/04897711-6ea3-4970-82fc-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -272,7 +149,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -282,20 +158,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the <see cref="T:System.Windows.Forms.ToolBarButton" /> to search for.</param>
-        <summary>Determines if a <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key is contained in the collection.</summary>
-        <returns>
-          <see langword="true" /> to indicate a <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key is found; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBarButton.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ToolBarButton> in the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Item%2A> returns `false.`  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -305,7 +171,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -317,25 +182,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of buttons in the toolbar button collection.</summary>
-        <value>The number of the <see cref="T:System.Windows.Forms.ToolBarButton" /> controls assigned to the toolbar.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Count property holds the actual number of <xref:System.Windows.Forms.ToolBarButton> controls assigned to the collection. It is common to use the Count property value as the upper bounds of a loop to iterate through a collection. The index value of a collection is a zero-based index, so you must subtract one from the looping variable otherwise you will exceed the upper bounds of the collection and throw an exception.  
-  
-   
-  
-## Examples  
- The following code example displays the Count of the <xref:System.Windows.Forms.ToolBar.Buttons%2A> before and after the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear%2A> method is called. This code requires that a <xref:System.Windows.Forms.ToolBar> with at least one <xref:System.Windows.Forms.ToolBarButton> has been created.  
-  
- [!code-cs[Classic ToolBar.ToolBarButtonCollection.Count Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_9_1.cs)]
- [!code-vb[Classic ToolBar.ToolBarButtonCollection.Count Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_9_1.vb)]
- [!code-cpp[Classic ToolBar.ToolBarButtonCollection.Count Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_9_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -345,7 +194,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -353,20 +201,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can be used to iterate through the toolbar button collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the tree node collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example removes an existing <xref:System.Windows.Forms.ToolBarButton> from a <xref:System.Windows.Forms.ToolBar> control if it exists and adds and inserts four new <xref:System.Windows.Forms.ToolBarButton> objects to the <xref:System.Windows.Forms.ToolBar>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.ToolBar> control on it.  
-  
- [!code-cpp[ToolBar#2](~/add/codesnippet/cpp/m-system.windows.forms.t_45_1.cpp)]
- [!code-cs[ToolBar#2](~/add/codesnippet/csharp/m-system.windows.forms.t_45_1.cs)]
- [!code-vb[ToolBar#2](~/add/codesnippet/visualbasic/m-system.windows.forms.t_45_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -376,7 +213,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -386,26 +222,10 @@
         <Parameter Name="button" Type="System.Windows.Forms.ToolBarButton" />
       </Parameters>
       <Docs>
-        <param name="button">The <see cref="T:System.Windows.Forms.ToolBarButton" /> to locate in the collection.</param>
-        <summary>Retrieves the index of the specified toolbar button in the collection.</summary>
-        <returns>The zero-based index of the item found in the collection; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method gives you easy access to the index value of the <xref:System.Windows.Forms.ToolBarButton> in the collection. The index value allows you to easily determine which <xref:System.Windows.Forms.ToolBarButton> was clicked on the <xref:System.Windows.Forms.ToolBar>. The <xref:System.Windows.Forms.ToolBarButton> clicked can be determined by evaluating the IndexOf value of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A?displayProperty=fullName> property.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls. The toolbar buttons are assigned to the button collection, the collection is assigned to the toolbar, and the toolbar is added to the form. On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the toolbar, the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> is evaluated, and the appropriate dialog box opened. This code requires that a <xref:System.Windows.Forms.Form>, an <xref:System.Windows.Forms.OpenFileDialog>, a <xref:System.Windows.Forms.SaveFileDialog>, and a <xref:System.Windows.Forms.PrintDialog> have all been created.  
-  
- [!code-cpp[Classic ToolBar.ToolBarButtonCollection.IndexOf Example#1](~/add/codesnippet/cpp/b9bfa993-7cfe-46ab-810a-_1.cpp)]
- [!code-cs[Classic ToolBar.ToolBarButtonCollection.IndexOf Example#1](~/add/codesnippet/csharp/b9bfa993-7cfe-46ab-810a-_1.cs)]
- [!code-vb[Classic ToolBar.ToolBarButtonCollection.IndexOf Example#1](~/add/codesnippet/visualbasic/b9bfa993-7cfe-46ab-810a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -415,7 +235,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -425,21 +244,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the <see cref="T:System.Windows.Forms.ToolBarButton" /> to search for.</param>
-        <summary>Retrieves the index of the first occurrence of a <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key.</summary>
-        <returns>The index of the first occurrence of a <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key, if found; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If IndexOfKey is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
- The <xref:System.Windows.Forms.ToolBarButton.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ToolBarButton> in the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Item%2A> returns -1.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -449,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,28 +267,10 @@
         <Parameter Name="button" Type="System.Windows.Forms.ToolBarButton" />
       </Parameters>
       <Docs>
-        <param name="index">The indexed location within the collection to insert the toolbar button.</param>
-        <param name="button">The <see cref="T:System.Windows.Forms.ToolBarButton" /> to insert.</param>
-        <summary>Inserts an existing toolbar button in the toolbar button collection at the specified location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can also add new <xref:System.Windows.Forms.ToolBarButton> objects to the collection by using the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.AddRange%2A> methods.  
-  
- To remove a <xref:System.Windows.Forms.ToolBarButton> that you have previously added, use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove%2A>, <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.RemoveAt%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example removes an existing <xref:System.Windows.Forms.ToolBarButton> from a <xref:System.Windows.Forms.ToolBar> control if it exists and adds and inserts four new <xref:System.Windows.Forms.ToolBarButton> objects to the <xref:System.Windows.Forms.ToolBar>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.ToolBar> control on it.  
-  
- [!code-cpp[ToolBar#2](~/add/codesnippet/cpp/d82cccd7-ad64-48fc-8474-_1.cpp)]
- [!code-cs[ToolBar#2](~/add/codesnippet/csharp/d82cccd7-ad64-48fc-8474-_1.cs)]
- [!code-vb[ToolBar#2](~/add/codesnippet/visualbasic/d82cccd7-ad64-48fc-8474-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -491,28 +280,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is read-only.</summary>
-        <value>
-          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example removes an existing <xref:System.Windows.Forms.ToolBarButton> from a <xref:System.Windows.Forms.ToolBar> control if it exists and adds and inserts four new <xref:System.Windows.Forms.ToolBarButton> objects to the <xref:System.Windows.Forms.ToolBar>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.ToolBar> control on it.  
-  
- [!code-cpp[ToolBar#2](~/add/codesnippet/cpp/p-system.windows.forms.t_82_1.cpp)]
- [!code-cs[ToolBar#2](~/add/codesnippet/csharp/p-system.windows.forms.t_82_1.cs)]
- [!code-vb[ToolBar#2](~/add/codesnippet/visualbasic/p-system.windows.forms.t_82_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -522,7 +298,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -532,32 +307,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The indexed location of the <see cref="T:System.Windows.Forms.ToolBarButton" /> in the collection.</param>
-        <summary>Gets or sets the toolbar button at the specified indexed location in the toolbar button collection.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ToolBarButton" /> that represents the toolbar button at the specified indexed location.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To assign <xref:System.Windows.Forms.ToolBarButton> controls to a specific location, or to retrieve them from the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>, you can reference the collection object with a specific index value. The index value of the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is a zero-based index.  
-  
-   
-  
-## Examples  
- The following code example replaces the last toolbar button on a toolbar. This code requires that a <xref:System.Windows.Forms.ToolBar> and at least one <xref:System.Windows.Forms.ToolBarButton> have been created. The example gets the number of buttons on the toolbar and replaces the last button with a newly created one. The `index` value of the toolbar button being replaced is set to the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Count%2A> property, minus one, since the <xref:System.Windows.Forms.ToolBarButton> collection is a zero-based index.  
-  
- [!code-cs[Classic ToolBar.ToolBarButtonCollection.this Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_23_1.cs)]
- [!code-vb[Classic ToolBar.ToolBarButtonCollection.this Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_23_1.vb)]
- [!code-cpp[Classic ToolBar.ToolBarButtonCollection.this Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_23_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="index" /> value is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> value is less than zero.  
-  
- -or-  
-  
- The <paramref name="index" /> value is greater than the number of buttons in the collection, and the collection of buttons is not <see langword="null" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -567,7 +320,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -577,19 +329,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the <see cref="T:System.Windows.Forms.ToolBarButton" /> to retrieve.</param>
-        <summary>Gets a <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key from the collection.</summary>
-        <value>The <see cref="T:System.Windows.Forms.ToolBarButton" /> whose <see cref="System.Windows.Forms.ToolBarButton.Name%2A" /> property matches the specified key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBarButton.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ToolBarButton> in the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, Item returns `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -599,7 +342,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -609,27 +351,9 @@
         <Parameter Name="button" Type="System.Windows.Forms.ToolBarButton" />
       </Parameters>
       <Docs>
-        <param name="button">The <see cref="T:System.Windows.Forms.ToolBarButton" /> to remove from the collection.</param>
-        <summary>Removes a given button from the toolbar button collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To remove toolbar buttons from the collection, use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.RemoveAt%2A>, or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear%2A> methods.  
-  
- To add new <xref:System.Windows.Forms.ToolBarButton> objects to the collection, use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add%2A>, <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.AddRange%2A> or <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Insert%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example removes an existing <xref:System.Windows.Forms.ToolBarButton> from a <xref:System.Windows.Forms.ToolBar> control if it exists and adds and inserts four new <xref:System.Windows.Forms.ToolBarButton> objects to the <xref:System.Windows.Forms.ToolBar>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.ToolBar> control on it.  
-  
- [!code-cpp[ToolBar#2](~/add/codesnippet/cpp/c04c08d5-e2e9-4673-bc0d-_1.cpp)]
- [!code-cs[ToolBar#2](~/add/codesnippet/csharp/c04c08d5-e2e9-4673-bc0d-_1.cs)]
- [!code-vb[ToolBar#2](~/add/codesnippet/visualbasic/c04c08d5-e2e9-4673-bc0d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -639,7 +363,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -649,26 +372,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The indexed location of the <see cref="T:System.Windows.Forms.ToolBarButton" /> in the collection.</param>
-        <summary>Removes a given button from the toolbar button collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove%2A> method removes the <xref:System.Windows.Forms.ToolBarButton> at the specified location in the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>. If you want to remove all <xref:System.Windows.Forms.ToolBarButton> controls from the collection, use the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear%2A> method.  
-  
-   
-  
-## Examples  
- The following code example removes the last <xref:System.Windows.Forms.ToolBarButton> on a <xref:System.Windows.Forms.ToolBar>. The index value of the toolbar button being removed is set equal to the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Count%2A> property, minus one, since the <xref:System.Windows.Forms.ToolBarButton> collection is a zero-based index.  
-  
- [!code-vb[Classic ToolBar.ToolBarButtonCollection.RemoveAt Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_78_1.vb)]
- [!code-cpp[Classic ToolBar.ToolBarButtonCollection.RemoveAt Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_78_1.cpp)]
- [!code-cs[Classic ToolBar.ToolBarButtonCollection.RemoveAt Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_78_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> value is less than 0, or it is greater than the number of buttons in the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -678,7 +384,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -688,16 +393,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the <see cref="T:System.Windows.Forms.ToolBarButton" /> to remove from the collection.</param>
-        <summary>Removes the <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBarButton.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ToolBarButton> in the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -707,7 +405,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -718,17 +415,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>dest</c> at which copying begins.</param>
-        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="dest">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -738,24 +428,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -765,23 +446,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the collection of buttons.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -791,7 +464,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -801,19 +473,10 @@
         <Parameter Name="button" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="button">The <see cref="T:System.Windows.Forms.ToolBarButton" /> to be added after all existing buttons.</param>
-        <summary>Adds the specified toolbar button to the end of the toolbar button collection.</summary>
-        <returns>The zero-based index value of the <see cref="T:System.Windows.Forms.ToolBarButton" /> added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="button" /> is not a <see cref="T:System.Windows.Forms.ToolBarButton" />.</exception>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -823,7 +486,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -833,18 +495,10 @@
         <Parameter Name="button" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="button">The item to locate in the collection.</param>
-        <summary>Determines whether the collection contains a specific value.</summary>
-        <returns>
-          <see langword="true" /> if the item is found in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -854,7 +508,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -864,17 +517,10 @@
         <Parameter Name="button" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="button">The item to locate in the collection.</param>
-        <summary>Determines the index of a specific item in the collection.</summary>
-        <returns>The index of <paramref name="button" /> if found in the list; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -884,7 +530,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -895,19 +540,10 @@
         <Parameter Name="button" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The indexed location within the collection to insert the toolbar button.</param>
-        <param name="button">The <see cref="T:System.Windows.Forms.ToolBarButton" /> to insert.</param>
-        <summary>Inserts an existing toolbar button in the toolbar button collection at the specified location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="button" /> is not a <see cref="T:System.Windows.Forms.ToolBarButton" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -917,24 +553,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -944,7 +571,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -954,17 +580,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get or set.</param>
-        <summary>Gets or sets the item at a specified index.</summary>
-        <value>The element at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -974,7 +593,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -984,16 +602,9 @@
         <Parameter Name="button" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="button">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Removes the first occurrence of an item from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

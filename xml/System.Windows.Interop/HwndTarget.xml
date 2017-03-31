@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.HwndTarget" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,9 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a binding to a window handle that supports visual composition.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <threadsafe>A HwndTarget is not thread-safe. You can reference a HwndTarget only from the thread that created it. If you try to access HwndTarget from a different thread, an <see cref="T:System.InvalidOperationException" /> is thrown.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -24,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -36,10 +33,9 @@
         <Parameter Name="hwnd" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="hwnd">The handle for the window that this object draws to.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndTarget" /> class, using the specified HWND.</summary>
+        <param name="hwnd">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.UIPermissionWindow">to create an instance. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="BackgroundColor">
@@ -49,23 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color of the window referenced by this <see cref="T:System.Windows.Interop.HwndTarget" />.</summary>
-        <value>The background color, as a <see cref="T:System.Windows.Media.Color" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The background is drawn before any other visual component. The color used must have an alpha component of 1.0. If you attempt to specify a different alpha value in the provided <xref:System.Windows.Media.Color>, it automatically resets to 1.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -75,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -88,7 +75,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Windows.Interop.HwndTarget" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +86,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -111,8 +97,8 @@
         <ReturnType>System.Windows.Interop.RenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rendering mode for the window referenced by this <see cref="T:System.Windows.Interop.HwndTarget" />.</summary>
-        <value>One of the <see cref="T:System.Windows.Interop.RenderMode" /> values that specifies the current render mode. The default is <see cref="T:System.Windows.Interop.RenderMode" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,7 +109,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -135,18 +120,9 @@
         <ReturnType>System.Windows.Media.Visual</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the root visual object of the page that is hosted by the window.</summary>
-        <value>The root visual object of the hosted page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This class only overrides the set{} implementation of this property. Although a get{} implementation exists, it comes from the <xref:System.Windows.Media.CompositionTarget> base class that originally declared this virtual property. On <xref:System.Windows.Interop.HwndTarget> instances, this property is really read-write, despite how the syntax reads in this documentation topic.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransformFromDevice">
@@ -156,15 +132,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Matrix</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a matrix that transforms the coordinates of the device that is associated with the rendering destination of this target.</summary>
-        <value>The transform matrix.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,15 +150,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Matrix</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a matrix that transforms the coordinates of this target to the device that is associated with the rendering destination.</summary>
-        <value>The transform matrix.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,24 +168,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that declares whether the per-pixel opacity value of the source window content is used for rendering.</summary>
-        <value>
-          <see langword="true" /> if using per-pixel opacity; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you enable  per-pixel opacity, the rendering subsystem no longer draws the non-client area (edge of window).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.NamespaceCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,40 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains a collection of namespace objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The NamespaceCollection contains <xref:System.Web.Configuration.NamespaceInfo> objects. Each <xref:System.Web.Configuration.NamespaceInfo> object is the same as an `Import` (`<%@ Import %>`) directive that applies to all pages and controls in the scope of the configuration file. The `Import` directive allows you to import a namespace into your ASP.NET page, making all its classes available for use on your page.  
-  
-   
-  
-## Examples  
- The following configuration file excerpt shows how to declaratively specify values for several properties of the NamespaceCollection class.  
-  
-```  
-<system.web>  
-  <pages>  
-    <namespaces>  
-      <add namespace="System" />  
-      <add namespace="System.Collections" />  
-      <add namespace="System.Collections.Specialized" />  
-      <add namespace="System.ComponentModel" />  
-      <add namespace="System.Configuration" />  
-      <add namespace="System.Web" />  
-    </namespaces>  
-  </pages>  
-</system.web>  
-```  
-  
- The following code example shows how to use the NamespaceCollection type. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
-  
- [!code-cs[System.Web.Configuration.PagesSection#2](~/add/codesnippet/csharp/t-system.web.configurati_3_1.cs)]
- [!code-vb[System.Web.Configuration.PagesSection#2](~/add/codesnippet/visualbasic/t-system.web.configurati_3_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.NamespaceCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,25 +51,9 @@
         <Parameter Name="namespaceInformation" Type="System.Web.Configuration.NamespaceInfo" />
       </Parameters>
       <Docs>
-        <param name="namespaceInformation">A <see cref="T:System.Web.Configuration.NamespaceInfo" /> object to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Web.Configuration.NamespaceInfo" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection must not already contain a <xref:System.Web.Configuration.NamespaceInfo> object with the same <xref:System.Web.Configuration.NamespaceInfo.Namespace%2A> property value.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Add method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
-  
- [!code-cs[System.Web.Configuration.PagesSection#23](~/add/codesnippet/csharp/a220a202-9442-4a70-a2f5-_1.cs)]
- [!code-vb[System.Web.Configuration.PagesSection#23](~/add/codesnippet/visualbasic/a220a202-9442-4a70-a2f5-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.NamespaceInfo" /> object to add already exists in the collection or the collection is read-only.</exception>
+        <param name="namespaceInformation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoImportVBNamespace">
@@ -114,7 +63,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -126,25 +74,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether the Visual Basic namespace is imported without having to specify it.</summary>
-        <value>
-          <see langword="true" /> if the Visual Basic namespace is imported automatically; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For ASP.NET pages written using Visual Basic the <xref:Microsoft.VisualBasic> namespace is automatically imported unless the AutoImportVBNamespace property is `false`.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the AutoImportVBNamespace property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
-  
- [!code-cs[System.Web.Configuration.PagesSection#20](~/add/codesnippet/csharp/p-system.web.configurati_252_1.cs)]
- [!code-vb[System.Web.Configuration.PagesSection#20](~/add/codesnippet/visualbasic/p-system.web.configurati_252_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -154,7 +86,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,23 +93,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Web.Configuration.NamespaceInfo" /> objects from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method empties the collection and inserts a `clear` element into the appropriate section of the configuration file to remove all references to elements defined in higher-level configuration files and in the current configuration file.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Clear method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
-  
- [!code-cs[System.Web.Configuration.PagesSection#24](~/add/codesnippet/csharp/m-system.web.configurati_5_1.cs)]
- [!code-vb[System.Web.Configuration.PagesSection#24](~/add/codesnippet/visualbasic/m-system.web.configurati_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -188,7 +104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,7 +145,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,26 +154,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of a <see cref="T:System.Web.Configuration.NamespaceInfo" /> object in the collection.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.NamespaceInfo" /> object at the specified index in the collection.</summary>
-        <value>
-          <see cref="T:System.Web.Configuration.NamespaceInfo" /> object at the specified index, or <see langword="null" /> if there is no object at that index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property overwrites the <xref:System.Web.Configuration.NamespaceInfo> object if it already exists at the specified index; otherwise, a new object is created and added to the collection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Item property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
-  
- [!code-cs[System.Web.Configuration.PagesSection#21](~/add/codesnippet/csharp/p-system.web.configurati_103_1.cs)]
- [!code-vb[System.Web.Configuration.PagesSection#21](~/add/codesnippet/visualbasic/p-system.web.configurati_103_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -270,7 +167,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -289,7 +185,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,33 +194,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The namespace of a <see cref="T:System.Web.Configuration.NamespaceInfo" /> object to remove from the collection.</param>
-        <summary>Removes the <see cref="T:System.Web.Configuration.NamespaceInfo" /> object with the specified key from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified element is defined in a higher-level configuration file, this method inserts a `remove` element into the appropriate section of the configuration file at the level of the current application. If the element is defined in the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection; if it does not, a <xref:System.Configuration.ConfigurationException> is thrown.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Remove method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
-  
- [!code-cs[System.Web.Configuration.PagesSection#26](~/add/codesnippet/csharp/m-system.web.configurati_14_1.cs)]
- [!code-vb[System.Web.Configuration.PagesSection#26](~/add/codesnippet/visualbasic/m-system.web.configurati_14_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.NamespaceInfo" /> object with the specified key in the collection.  
-  
- \- or -  
-  
- The element has already been removed.  
-  
- \- or -  
-  
- The collection is read-only.</exception>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -335,7 +206,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,33 +215,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of a <see cref="T:System.Web.Configuration.NamespaceInfo" /> object to remove from the collection.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> object from the specified index in the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified element is defined in a higher-level configuration file, this method inserts a `remove` element into the appropriate section of the configuration file at the level of the current application. If the element is defined in the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection; if it does not, a <xref:System.Configuration.ConfigurationException> is thrown.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the RemoveAt method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
-  
- [!code-cs[System.Web.Configuration.PagesSection#25](~/add/codesnippet/csharp/m-system.web.configurati_58_1.cs)]
- [!code-vb[System.Web.Configuration.PagesSection#25](~/add/codesnippet/visualbasic/m-system.web.configurati_58_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.NamespaceInfo" /> object at the specified index in the collection.  
-  
- \- or -  
-  
- The element has already been removed.  
-  
- \- or -  
-  
- The collection is read-only.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

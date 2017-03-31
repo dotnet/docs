@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,19 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A collection of <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataGridViewRowCollection contains the <xref:System.Windows.Forms.DataGridViewRow> objects in a <xref:System.Windows.Forms.DataGridView> control. You can retrieve an instance of this class through the control <xref:System.Windows.Forms.DataGridView.Rows%2A> property. The collection maintains a reference to the control through the <xref:System.Windows.Forms.DataGridViewRowCollection.DataGridView%2A> property.  
-  
- To improve performance, a DataGridViewRowCollection includes shared and unshared rows. Shared rows share memory to reduce the cost of a large record set. If your record set is very large, you should be careful to keep the rows shared as much as possible.  
-  
- For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,15 +34,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dataGridView" Type="System.Windows.Forms.DataGridView" />
       </Parameters>
       <Docs>
-        <param name="dataGridView">The <see cref="T:System.Windows.Forms.DataGridView" /> that owns the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" /> class.</summary>
+        <param name="dataGridView">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +52,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -78,56 +64,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds a new row to the collection.</summary>
-        <returns>The index of the new row.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Add overload adds rows that are based on the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> of the <xref:System.Windows.Forms.DataGridView>. The new row is shared, if possible. Be sure that the row specified in the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property can be shared for best scalability. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- This operation would add a frozen row after unfrozen rows.</exception>
-        <exception cref="T:System.ArgumentException">The row returned by the <see cref="System.Windows.Forms.DataGridView.RowTemplate%2A" /> property has more cells than there are columns in the control.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -137,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -152,62 +90,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="count">The number of rows to add to the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Adds the specified number of new rows to the collection.</summary>
-        <returns>The index of the last row that was added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Add method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>. The new rows are based on the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> of the <xref:System.Windows.Forms.DataGridView>. Be sure that the row specified in the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property can be shared for best scalability. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is less than 1.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- The row returned by the <see cref="System.Windows.Forms.DataGridView.RowTemplate%2A" /> property has more cells than there are columns in the control.  
-  
- -or-  
-  
- This operation would add frozen rows after unfrozen rows.</exception>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -217,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -238,66 +123,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="values">A variable number of objects that populate the cells of the new <see cref="T:System.Windows.Forms.DataGridViewRow" />.</param>
-        <summary>Adds a new row to the collection, and populates the cells with the specified objects.</summary>
-        <returns>The index of the new row.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Add method adds an unshared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="values" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.VirtualMode%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is set to <see langword="true" />.  
-  
- \- or -  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- The row returned by the <see cref="System.Windows.Forms.DataGridView.RowTemplate%2A" /> property has more cells than there are columns in the control.  
-  
- -or-  
-  
- This operation would add a frozen row after unfrozen rows.</exception>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -307,7 +136,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,68 +145,10 @@
         <Parameter Name="dataGridViewRow" Type="System.Windows.Forms.DataGridViewRow" />
       </Parameters>
       <Docs>
-        <param name="dataGridViewRow">The <see cref="T:System.Windows.Forms.DataGridViewRow" /> to add to the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Adds the specified <see cref="T:System.Windows.Forms.DataGridViewRow" /> to the collection.</summary>
-        <returns>The index of the new <see cref="T:System.Windows.Forms.DataGridViewRow" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Add method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridViewElement.DataGridView%2A" /> property of the <paramref name="dataGridViewRow" /> is not <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="dataGridViewRow" /> has a <see cref="System.Windows.Forms.DataGridViewRow.Selected%2A" /> property value of <see langword="true" />.  
-  
- -or-  
-  
- This operation would add a frozen row after unfrozen rows.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dataGridViewRow" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="dataGridViewRow" /> has more cells than there are columns in the control.</exception>
+        <param name="dataGridViewRow">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCopies">
@@ -388,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -399,59 +168,11 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="indexSource">The index of the row on which to base the new rows.</param>
-        <param name="count">The number of rows to add to the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Adds the specified number of rows to the collection based on the row at the specified index.</summary>
-        <returns>The index of the last row that was added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new <xref:System.Windows.Forms.DataGridViewRow> has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the <xref:System.Windows.Forms.DataGridViewRow> positioned at `indexSource`. The AddCopies method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="indexSource" /> is less than zero or greater than or equal to the number of rows in the control.  
-  
- -or-  
-  
- <paramref name="count" /> is less than zero.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- This operation would add a frozen row after unfrozen rows.</exception>
+        <param name="indexSource">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCopy">
@@ -461,7 +182,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -471,54 +191,10 @@
         <Parameter Name="indexSource" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="indexSource">The index of the row on which to base the new row.</param>
-        <summary>Adds a new row based on the row at the specified index.</summary>
-        <returns>The index of the new row.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new row has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the row positioned at `indexSource`. The AddCopy method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="indexSource" /> is less than zero or greater than or equal to the number of rows in the collection.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- This operation would add a frozen row after unfrozen rows.</exception>
+        <param name="indexSource">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -528,7 +204,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -549,94 +224,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="dataGridViewRows">An array of <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects to be added to the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Adds the specified <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddRange method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
-> [!IMPORTANT]
->  Due to a bug, the AddRange method will make your application stop responding if the <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property is `true` and the row for new records is selected. To work around this bug, you must cancel the selection of the row before calling this method, and then reselect the row. For more information, see the code example in this topic.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the AddRange method when the row for new records is selected to work around the bug indicated in the Remarks section.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc2#30](~/add/codesnippet/csharp/52159e5e-6a64-421b-b688-_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc2#30](~/add/codesnippet/visualbasic/52159e5e-6a64-421b-b688-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dataGridViewRows" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="dataGridViewRows" /> contains only one row, and the row it contains has more cells than there are columns in the control.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- At least one entry in the <paramref name="dataGridViewRows" /> array is <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- At least one row in the <paramref name="dataGridViewRows" /> array has a <see cref="System.Windows.Forms.DataGridViewElement.DataGridView%2A" /> property value that is not <see langword="null" />.  
-  
- -or-  
-  
- At least one row in the <paramref name="dataGridViewRows" /> array has a <see cref="System.Windows.Forms.DataGridViewRow.Selected%2A" /> property value of <see langword="true" />.  
-  
- -or-  
-  
- Two or more rows in the <paramref name="dataGridViewRows" /> array are identical.  
-  
- -or-  
-  
- At least one row in the <paramref name="dataGridViewRows" /> array contains one or more cells of a type that is incompatible with the type of the corresponding column in the control.  
-  
- -or-  
-  
- At least one row in the <paramref name="dataGridViewRows" /> array contains more cells than there are columns in the control.  
-  
- -or-  
-  
- This operation would add frozen rows after unfrozen rows.</exception>
+        <param name="dataGridViewRows">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -646,7 +236,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -654,37 +243,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The collection is data bound and the underlying data source does not support clearing the row data.  
-  
- -or-  
-  
- The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents the row collection from being modified:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" /></exception>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
@@ -694,32 +254,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the contents of the collection change.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the CollectionChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridViewRowCollection> named `DataGridViewRowCollection1`. Then ensure that the event handler is associated with the CollectionChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#373](~/add/codesnippet/csharp/e-system.windows.forms.d_91_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#373](~/add/codesnippet/visualbasic/e-system.windows.forms.d_91_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -729,7 +271,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -739,10 +280,9 @@
         <Parameter Name="dataGridViewRow" Type="System.Windows.Forms.DataGridViewRow" />
       </Parameters>
       <Docs>
-        <param name="dataGridViewRow">The <see cref="T:System.Windows.Forms.DataGridViewRow" /> to locate in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Determines whether the specified <see cref="T:System.Windows.Forms.DataGridViewRow" /> is in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.DataGridViewRow" /> is in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />; otherwise, <see langword="false" />.</returns>
+        <param name="dataGridViewRow">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -753,7 +293,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -764,20 +303,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A <see cref="T:System.Windows.Forms.DataGridViewRow" /> array that is the destination of the items copied from the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
-        <summary>Copies the items from the collection into the specified <see cref="T:System.Windows.Forms.DataGridViewRow" /> array, starting at the specified index.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="array" /> is multidimensional.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" /> is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -787,15 +316,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of rows in the collection.</summary>
-        <value>The number of rows in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -806,15 +334,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.DataGridView" /> that owns the collection.</summary>
-        <value>The <see cref="T:System.Windows.Forms.DataGridView" /> that owns the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -825,7 +352,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -835,12 +361,10 @@
         <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
       </Parameters>
       <Docs>
-        <param name="includeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <summary>Returns the index of the first <see cref="T:System.Windows.Forms.DataGridViewRow" /> that meets the specified criteria.</summary>
-        <returns>The index of the first <see cref="T:System.Windows.Forms.DataGridViewRow" /> that has the attributes specified by <paramref name="includeFilter" />; -1 if no row is found.</returns>
+        <param name="includeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="includeFilter" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFirstRow">
@@ -850,7 +374,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -861,12 +384,11 @@
         <Parameter Name="excludeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
       </Parameters>
       <Docs>
-        <param name="includeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <param name="excludeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <summary>Returns the index of the first <see cref="T:System.Windows.Forms.DataGridViewRow" /> that meets the specified inclusion and exclusion criteria.</summary>
-        <returns>The index of the first <see cref="T:System.Windows.Forms.DataGridViewRow" /> that has the attributes specified by <paramref name="includeFilter" />, and does not have the attributes specified by <paramref name="excludeFilter" />; -1 if no row is found.</returns>
+        <param name="includeFilter">To be added.</param>
+        <param name="excludeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">One or both of the specified filter values is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetLastRow">
@@ -876,7 +398,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -886,12 +407,10 @@
         <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
       </Parameters>
       <Docs>
-        <param name="includeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <summary>Returns the index of the last <see cref="T:System.Windows.Forms.DataGridViewRow" /> that meets the specified criteria.</summary>
-        <returns>The index of the last <see cref="T:System.Windows.Forms.DataGridViewRow" /> that has the attributes specified by <paramref name="includeFilter" />; -1 if no row is found.</returns>
+        <param name="includeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="includeFilter" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNextRow">
@@ -901,7 +420,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -912,22 +430,11 @@
         <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
       </Parameters>
       <Docs>
-        <param name="indexStart">The index of the row where the method should begin to look for the next <see cref="T:System.Windows.Forms.DataGridViewRow" />.</param>
-        <param name="includeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <summary>Returns the index of the next <see cref="T:System.Windows.Forms.DataGridViewRow" /> that meets the specified criteria.</summary>
-        <returns>The index of the first <see cref="T:System.Windows.Forms.DataGridViewRow" /> after <paramref name="indexStart" /> that has the attributes specified by <paramref name="includeFilter" />, or -1 if no row is found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetNextRow method begins looking for the row that matches the criteria starting with the row positioned after `indexStart`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="indexStart" /> is less than -1.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="includeFilter" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+        <param name="indexStart">To be added.</param>
+        <param name="includeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextRow">
@@ -937,7 +444,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -949,22 +455,12 @@
         <Parameter Name="excludeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
       </Parameters>
       <Docs>
-        <param name="indexStart">The index of the row where the method should begin to look for the next <see cref="T:System.Windows.Forms.DataGridViewRow" />.</param>
-        <param name="includeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <param name="excludeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <summary>Returns the index of the next <see cref="T:System.Windows.Forms.DataGridViewRow" /> that meets the specified inclusion and exclusion criteria.</summary>
-        <returns>The index of the next <see cref="T:System.Windows.Forms.DataGridViewRow" /> that has the attributes specified by <paramref name="includeFilter" />, and does not have the attributes specified by <paramref name="excludeFilter" />; -1 if no row is found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetNextRow method begins looking for the row that matches the criteria starting with the row positioned after `indexStart`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="indexStart" /> is less than -1.</exception>
-        <exception cref="T:System.ArgumentException">One or both of the specified filter values is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+        <param name="indexStart">To be added.</param>
+        <param name="includeFilter">To be added.</param>
+        <param name="excludeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPreviousRow">
@@ -974,7 +470,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -985,22 +480,11 @@
         <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
       </Parameters>
       <Docs>
-        <param name="indexStart">The index of the row where the method should begin to look for the previous <see cref="T:System.Windows.Forms.DataGridViewRow" />.</param>
-        <param name="includeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <summary>Returns the index of the previous <see cref="T:System.Windows.Forms.DataGridViewRow" /> that meets the specified criteria.</summary>
-        <returns>The index of the previous <see cref="T:System.Windows.Forms.DataGridViewRow" /> that has the attributes specified by <paramref name="includeFilter" />; -1 if no row is found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetPreviousRow method begins looking for the row that matches the criteria starting with the row positioned before `indexStart`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="indexStart" /> is greater than the number of rows in the collection.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="includeFilter" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+        <param name="indexStart">To be added.</param>
+        <param name="includeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPreviousRow">
@@ -1010,7 +494,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1022,22 +505,12 @@
         <Parameter Name="excludeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
       </Parameters>
       <Docs>
-        <param name="indexStart">The index of the row where the method should begin to look for the previous <see cref="T:System.Windows.Forms.DataGridViewRow" />.</param>
-        <param name="includeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <param name="excludeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <summary>Returns the index of the previous <see cref="T:System.Windows.Forms.DataGridViewRow" /> that meets the specified inclusion and exclusion criteria.</summary>
-        <returns>The index of the previous <see cref="T:System.Windows.Forms.DataGridViewRow" /> that has the attributes specified by <paramref name="includeFilter" />, and does not have the attributes specified by <paramref name="excludeFilter" />; -1 if no row is found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetPreviousRow method begins looking for the row that matches the criteria starting with the row positioned before `indexStart`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="indexStart" /> is greater than the number of rows in the collection.</exception>
-        <exception cref="T:System.ArgumentException">One or both of the specified filter values is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+        <param name="indexStart">To be added.</param>
+        <param name="includeFilter">To be added.</param>
+        <param name="excludeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRowCount">
@@ -1047,7 +520,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1057,22 +529,10 @@
         <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
       </Parameters>
       <Docs>
-        <param name="includeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <summary>Returns the number of <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects in the collection that meet the specified criteria.</summary>
-        <returns>The number of <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" /> that have the attributes specified by <paramref name="includeFilter" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example illustrates the use of this method to get the number of selected rows.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewSelectedCollections#20](~/add/codesnippet/csharp/1e578323-a5ac-454e-a3e5-_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewSelectedCollections#20](~/add/codesnippet/visualbasic/1e578323-a5ac-454e-a3e5-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="includeFilter" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+        <param name="includeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRowsHeight">
@@ -1082,7 +542,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1092,12 +551,10 @@
         <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
       </Parameters>
       <Docs>
-        <param name="includeFilter">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</param>
-        <summary>Returns the cumulative height of the <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects that meet the specified criteria.</summary>
-        <returns>The cumulative height of <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" /> that have the attributes specified by <paramref name="includeFilter" />.</returns>
+        <param name="includeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="includeFilter" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRowState">
@@ -1107,7 +564,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1117,12 +573,10 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rowIndex">The index of the row.</param>
-        <summary>Gets the state of the row with the specified index.</summary>
-        <returns>A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values indicating the state of the specified row.</returns>
+        <param name="rowIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="rowIndex" /> is less than zero and greater than the number of rows in the collection minus one.</exception>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -1132,7 +586,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1142,9 +595,9 @@
         <Parameter Name="dataGridViewRow" Type="System.Windows.Forms.DataGridViewRow" />
       </Parameters>
       <Docs>
-        <param name="dataGridViewRow">The <see cref="T:System.Windows.Forms.DataGridViewRow" /> to locate in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Returns the index of a specified item in the collection.</summary>
-        <returns>The index of <paramref name="value" /> if it is a <see cref="T:System.Windows.Forms.DataGridViewRow" /> found in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />; otherwise, -1.</returns>
+        <param name="dataGridViewRow">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1155,7 +608,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1166,70 +618,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rowIndex">The position at which to insert the rows.</param>
-        <param name="count">The number of rows to insert into the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Inserts the specified number of rows into the collection at the specified location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Insert method adds rows that are based on the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> of the <xref:System.Windows.Forms.DataGridView>. The new row is shared, if possible. Be sure that the row specified in the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property can be shared for best scalability. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="rowIndex" /> is less than zero or greater than the number of rows in the collection.  
-  
- -or-  
-  
- <paramref name="count" /> is less than 1.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- <paramref name="rowIndex" /> is equal to the number of rows in the collection and the <see cref="System.Windows.Forms.DataGridView.AllowUserToAddRows%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is set to <see langword="true" />.  
-  
- -or-  
-  
- The row returned by the <see cref="System.Windows.Forms.DataGridView.RowTemplate%2A" /> property has more cells than there are columns in the control.  
-  
- -or-  
-  
- This operation would insert a frozen row after unfrozen rows or an unfrozen row before frozen rows.</exception>
+        <param name="rowIndex">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1239,7 +631,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1256,73 +647,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="rowIndex">The position at which to insert the row.</param>
-        <param name="values">A variable number of objects that populate the cells of the new row.</param>
-        <summary>Inserts a row into the collection at the specified position, and populates the cells with the specified objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Insert method adds an unshared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>.  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="rowIndex" /> is less than zero or greater than the number of rows in the collection.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="values" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.VirtualMode%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is set to <see langword="true" />.  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- <paramref name="rowIndex" /> is equal to the number of rows in the collection and the <see cref="System.Windows.Forms.DataGridView.AllowUserToAddRows%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is set to <see langword="true" />.  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridViewElement.DataGridView%2A" /> property of the row returned by the control's <see cref="System.Windows.Forms.DataGridView.RowTemplate%2A" /> property is not <see langword="null" />.  
-  
- -or-  
-  
- This operation would insert a frozen row after unfrozen rows or an unfrozen row before frozen rows.</exception>
-        <exception cref="T:System.ArgumentException">The row returned by the control's <see cref="System.Windows.Forms.DataGridView.RowTemplate%2A" /> property has more cells than there are columns in the control.</exception>
+        <param name="rowIndex">To be added.</param>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1332,7 +660,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1343,74 +670,10 @@
         <Parameter Name="dataGridViewRow" Type="System.Windows.Forms.DataGridViewRow" />
       </Parameters>
       <Docs>
-        <param name="rowIndex">The position at which to insert the row.</param>
-        <param name="dataGridViewRow">The <see cref="T:System.Windows.Forms.DataGridViewRow" /> to insert into the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Inserts the specified <see cref="T:System.Windows.Forms.DataGridViewRow" /> into the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Insert method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="rowIndex" /> is less than zero or greater than the number of rows in the collection.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dataGridViewRow" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="rowIndex" /> is equal to the number of rows in the collection and the <see cref="System.Windows.Forms.DataGridView.AllowUserToAddRows%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is set to <see langword="true" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridViewElement.DataGridView%2A" /> property of <paramref name="dataGridViewRow" /> is not <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="dataGridViewRow" /> has a <see cref="System.Windows.Forms.DataGridViewRow.Selected%2A" /> property value of <see langword="true" />.  
-  
- -or-  
-  
- This operation would insert a frozen row after unfrozen rows or an unfrozen row before frozen rows.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="dataGridViewRow" /> has more cells than there are columns in the control.</exception>
+        <param name="rowIndex">To be added.</param>
+        <param name="dataGridViewRow">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertCopies">
@@ -1420,7 +683,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1432,63 +694,11 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="indexSource">The index of the <see cref="T:System.Windows.Forms.DataGridViewRow" /> on which to base the new rows.</param>
-        <param name="indexDestination">The position at which to insert the rows.</param>
-        <param name="count">The number of <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects to add to the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Inserts rows into the collection at the specified position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new <xref:System.Windows.Forms.DataGridViewRow> objects has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the <xref:System.Windows.Forms.DataGridViewRow> positioned at `indexSource`. The InsertCopies method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="indexSource" /> is less than zero or greater than the number of rows in the collection minus one.  
-  
- -or-  
-  
- <paramref name="indexDestination" /> is less than zero or greater than the number of rows in the collection.  
-  
- -or-  
-  
- <paramref name="count" /> is less than 1.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- <paramref name="indexDestination" /> is equal to the number of rows in the collection and <see cref="System.Windows.Forms.DataGridView.AllowUserToAddRows%2A" /> is <see langword="true" />.  
-  
- -or-  
-  
- This operation would insert frozen rows after unfrozen rows or unfrozen rows before frozen rows.</exception>
+        <param name="indexSource">To be added.</param>
+        <param name="indexDestination">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertCopy">
@@ -1498,7 +708,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1509,58 +718,10 @@
         <Parameter Name="indexDestination" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="indexSource">The index of the row on which to base the new row.</param>
-        <param name="indexDestination">The position at which to insert the row.</param>
-        <summary>Inserts a row into the collection at the specified position, based on the row at specified position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method assigns the new row the index specified in the `indexDestination` parameter and increments the indexes for all subsequent rows. The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new <xref:System.Windows.Forms.DataGridViewRow> has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the <xref:System.Windows.Forms.DataGridViewRow> positioned at `indexSource`. The InsertCopy method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="indexSource" /> is less than zero or greater than the number of rows in the collection minus one.  
-  
- -or-  
-  
- <paramref name="indexDestination" /> is less than zero or greater than the number of rows in the collection.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- <paramref name="indexDestination" /> is equal to the number of rows in the collection and <see cref="System.Windows.Forms.DataGridView.AllowUserToAddRows%2A" /> is <see langword="true" />.  
-  
- -or-  
-  
- This operation would insert a frozen row after unfrozen rows or an unfrozen row before frozen rows.</exception>
+        <param name="indexSource">To be added.</param>
+        <param name="indexDestination">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertRange">
@@ -1570,7 +731,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1587,101 +747,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="rowIndex">The position at which to insert the rows.</param>
-        <param name="dataGridViewRows">An array of <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects to add to the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Inserts the <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects into the collection at the specified position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The InsertRange method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
-> [!IMPORTANT]
->  Due to a bug, the InsertRange method will make your application stop responding if any rows with an index greater than `rowIndex` are selected. To work around this bug, you must cancel the selection of these rows before calling this method, and reselect the rows afterward. For more information, see the code example in this topic.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the InsertRange method to insert rows before selected rows to work around the bug indicated in the Remarks section.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc2#40](~/add/codesnippet/csharp/624753a9-bfe4-4385-9274-_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc2#40](~/add/codesnippet/visualbasic/624753a9-bfe4-4385-9274-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dataGridViewRows" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="rowIndex" /> is less than zero or greater than the number of rows in the collection.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="dataGridViewRows" /> contains only one row, and the row it contains has more cells than there are columns in the control.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- <paramref name="rowIndex" /> is equal to the number of rows in the collection and <see cref="System.Windows.Forms.DataGridView.AllowUserToAddRows%2A" /> is <see langword="true" />.  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- At least one entry in the <paramref name="dataGridViewRows" /> array is <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- At least one row in the <paramref name="dataGridViewRows" /> array has a <see cref="System.Windows.Forms.DataGridViewElement.DataGridView%2A" /> property value that is not <see langword="null" />.  
-  
- -or-  
-  
- At least one row in the <paramref name="dataGridViewRows" /> array has a <see cref="System.Windows.Forms.DataGridViewRow.Selected%2A" /> property value of <see langword="true" />.  
-  
- -or-  
-  
- Two or more rows in the <paramref name="dataGridViewRows" /> array are identical.  
-  
- -or-  
-  
- At least one row in the <paramref name="dataGridViewRows" /> array contains one or more cells of a type that is incompatible with the type of the corresponding column in the control.  
-  
- -or-  
-  
- At least one row in the <paramref name="dataGridViewRows" /> array contains more cells than there are columns in the control.  
-  
- -or-  
-  
- This operation would insert frozen rows after unfrozen rows or unfrozen rows before frozen rows.</exception>
+        <param name="rowIndex">To be added.</param>
+        <param name="dataGridViewRows">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1691,7 +760,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1701,16 +769,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Windows.Forms.DataGridViewRow" /> to get.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.DataGridViewRow" /> at the specified index.</summary>
-        <value>The <see cref="T:System.Windows.Forms.DataGridViewRow" /> at the specified index. Accessing a <see cref="T:System.Windows.Forms.DataGridViewRow" /> with this indexer causes the row to become unshared. To keep the row shared, use the <see cref="System.Windows.Forms.DataGridViewRowCollection.SharedRow%2A" /> method. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0.  
-  
- \- or -  
-  
- <paramref name="index" /> is equal to or greater than <see cref="System.Windows.Forms.DataGridViewRowCollection.Count%2A" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -1720,23 +782,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array of <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects.</summary>
-        <value>An array of <see cref="T:System.Windows.Forms.DataGridViewRow" /> objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The List unshares all the rows in the <xref:System.Windows.Forms.DataGridViewRowCollection>, so you should avoid using this property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanged">
@@ -1746,7 +800,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1756,18 +809,9 @@
         <Parameter Name="e" Type="System.ComponentModel.CollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.DataGridViewRowCollection.CollectionChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnCollectionChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1777,7 +821,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1787,50 +830,9 @@
         <Parameter Name="dataGridViewRow" Type="System.Windows.Forms.DataGridViewRow" />
       </Parameters>
       <Docs>
-        <param name="dataGridViewRow">The row to remove from the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Removes the row from the collection.</summary>
+        <param name="dataGridViewRow">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dataGridViewRow" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="dataGridViewRow" /> is not contained in this collection.  
-  
- -or-  
-  
- <paramref name="dataGridViewRow" /> is a shared row.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- <paramref name="dataGridViewRow" /> is the row for new records.  
-  
- -or-  
-  
- The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is bound to an <see cref="T:System.ComponentModel.IBindingList" /> implementation with <see cref="System.ComponentModel.IBindingList.AllowRemove%2A" /> and <see cref="System.ComponentModel.IBindingList.SupportsChangeNotification%2A" /> property values that are not both <see langword="true" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -1840,7 +842,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1850,44 +851,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The position of the row to remove.</param>
-        <summary>Removes the row at the specified position from the collection.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero and greater than the number of rows in the collection minus one.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- <paramref name="index" /> is equal to the number of rows in the collection and the <see cref="System.Windows.Forms.DataGridView.AllowUserToAddRows%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is set to <see langword="true" />.  
-  
- -or-  
-  
- The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is bound to an <see cref="T:System.ComponentModel.IBindingList" /> implementation with <see cref="System.ComponentModel.IBindingList.AllowRemove%2A" /> and <see cref="System.ComponentModel.IBindingList.SupportsChangeNotification%2A" /> property values that are not both <see langword="true" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SharedRow">
@@ -1897,7 +863,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1907,17 +872,10 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rowIndex">The index of the <see cref="T:System.Windows.Forms.DataGridViewRow" /> to get.</param>
-        <summary>Returns the <see cref="T:System.Windows.Forms.DataGridViewRow" /> at the specified index.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.DataGridViewRow" /> positioned at the specified index.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SharedRow method returns a <xref:System.Windows.Forms.DataGridViewRow> without unsharing the row. If you modify a shared row, all the rows that share that row will be modified.  
-  
- ]]></format>
-        </remarks>
+        <param name="rowIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -1927,7 +885,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1938,28 +895,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
-        <summary>Copies the elements of the collection to an <see cref="T:System.Array" />, starting at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="array" /> is multidimensional.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" /> is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
-        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Windows.Forms.DataGridViewRowCollection" /> cannot be cast automatically to the type of <paramref name="array" />.</exception>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -1969,23 +908,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of elements contained in the collection.</summary>
-        <value>The number of elements contained in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -1995,24 +926,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -2022,23 +944,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -2048,7 +962,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2056,16 +969,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -2075,7 +981,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2085,72 +990,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Adds a <see cref="T:System.Windows.Forms.DataGridViewRow" /> to the collection.</summary>
-        <returns>The index of the new <see cref="T:System.Windows.Forms.DataGridViewRow" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- This method calls the <xref:System.Windows.Forms.DataGridViewRowCollection.Add%28System.Windows.Forms.DataGridViewRow%29> overload, passing in `value` after casting it to a <xref:System.Windows.Forms.DataGridViewRow>.  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">
-          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.DataGridViewRow" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridViewElement.DataGridView%2A" /> property of the <paramref name="value" /> is not <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="value" /> has a <see cref="System.Windows.Forms.DataGridViewRow.Selected%2A" /> property value of <see langword="true" />.  
-  
- -or-  
-  
- This operation would add a frozen row after unfrozen rows.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> has more cells than there are columns in the control.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -2160,7 +1003,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2168,44 +1010,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The collection is data bound and the underlying data source does not support clearing the row data.  
-  
- -or-  
-  
- The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" /></exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -2215,7 +1021,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2225,18 +1030,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The item to locate in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Determines whether the collection contains the specified item.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="value" /> is a <see cref="T:System.Windows.Forms.DataGridViewRow" /> found in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -2246,7 +1043,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2256,17 +1052,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to locate in the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Returns the index of a specified item in the collection.</summary>
-        <returns>The index of <paramref name="value" /> if it is a <see cref="T:System.Windows.Forms.DataGridViewRow" /> found in the list; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -2276,7 +1065,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2287,78 +1075,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
-        <param name="value">The <see cref="T:System.Windows.Forms.DataGridViewRow" /> to insert into the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Inserts a <see cref="T:System.Windows.Forms.DataGridViewRow" /> into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- This method calls the <xref:System.Windows.Forms.DataGridViewRowCollection.Insert%28System.Int32%2CSystem.Windows.Forms.DataGridViewRow%29> overload, passing in value after casting it to a <xref:System.Windows.Forms.DataGridViewRow>.  
-  
- Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">
-          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.DataGridViewRow" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero or greater than the number of rows in the collection.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridView.DataSource%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="index" /> is equal to the number of rows in the collection and the <see cref="System.Windows.Forms.DataGridView.AllowUserToAddRows%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is set to <see langword="true" />.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Forms.DataGridView" /> has no columns.  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.DataGridViewElement.DataGridView%2A" /> property of the <paramref name="value" /> is not <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="value" /> has a <see cref="System.Windows.Forms.DataGridViewRow.Selected%2A" /> property value of <see langword="true" />.  
-  
- -or-  
-  
- This operation would insert a frozen row after unfrozen rows or an unfrozen row before frozen rows.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> has more cells than there are columns in the control.</exception>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -2368,24 +1088,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -2395,24 +1106,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is read-only.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -2422,7 +1124,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2432,26 +1133,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get or set.</param>
-        <summary>Gets or sets the element at the specified index.</summary>
-        <value>The <see cref="T:System.Windows.Forms.DataGridViewRow" /> at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation does not support setting this property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The user tried to set this property.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0.  
-  
- \- or -  
-  
- <paramref name="index" /> is equal to or greater than <see cref="System.Windows.Forms.DataGridViewRowCollection.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -2461,7 +1146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2471,59 +1155,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.DataGridViewRow" /> to remove from the <see cref="T:System.Windows.Forms.DataGridViewRowCollection" />.</param>
-        <summary>Removes the specified <see cref="T:System.Windows.Forms.DataGridViewRow" /> from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">
-          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.DataGridViewRow" />.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> is not contained in this collection.  
-  
- -or-  
-  
- <paramref name="value" /> is a shared row.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- <paramref name="value" /> is the row for new records.  
-  
- -or-  
-  
- The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is bound to an <see cref="T:System.ComponentModel.IBindingList" /> implementation with <see cref="System.ComponentModel.IBindingList.AllowRemove%2A" /> and <see cref="System.ComponentModel.IBindingList.SupportsChangeNotification%2A" /> property values that are not both <see langword="true" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -2533,7 +1167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2543,51 +1176,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Windows.Forms.DataGridViewRow" /> to remove.</param>
-        <summary>Removes the <see cref="T:System.Windows.Forms.DataGridViewRow" /> from the collection at the specified position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero and greater than the number of rows in the collection minus one.</exception>
-        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new rows from being added:  
-  
--   Selecting all cells in the control.  
-  
--   Clearing the selection.  
-  
- -or-  
-  
- This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
-  
--   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
-  
- -or-  
-  
- <paramref name="index" /> is equal to the number of rows in the collection and the <see cref="System.Windows.Forms.DataGridView.AllowUserToAddRows%2A" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is set to <see langword="true" />.  
-  
- -or-  
-  
- The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is bound to an <see cref="T:System.ComponentModel.IBindingList" /> implementation with <see cref="System.ComponentModel.IBindingList.AllowRemove%2A" /> and <see cref="System.ComponentModel.IBindingList.SupportsChangeNotification%2A" /> property values that are not both <see langword="true" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

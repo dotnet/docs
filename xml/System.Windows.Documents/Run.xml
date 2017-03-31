@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Run" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,18 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An inline-level flow content element intended to contain a run of formatted or unformatted text.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Starting in the [!INCLUDE[net_v40_short](~/add/includes/net-v40-short-md.md)], the <xref:System.Windows.Documents.Run.Text%2A> property of the Run object is a dependency property, which means that you can bind the <xref:System.Windows.Documents.Run.Text%2A> property to a data source. The <xref:System.Windows.Documents.Run.Text%2A> property fully supports one-way binding in <xref:System.Windows.Controls.FlowDocumentReader> and other controls that display read-only text. For more information about data binding, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
-  
-> [!NOTE]
->  Binding text to a Run object contained within <xref:System.Windows.Controls.RichTextBox> is not supported. Editing operations within the <xref:System.Windows.Controls.RichTextBox> may cause the binding to be cleared.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new, default instance of the <see cref="T:System.Windows.Documents.Run" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,26 +42,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">A string specifying the initial contents of the <see cref="T:System.Windows.Documents.Run" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Run" /> class, taking a specified string as the initial contents of the text run.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of this constructor.  
-  
- [!code-vb[RunSnippets#_Run_Const1](~/add/codesnippet/visualbasic/runsnippets/window1.xaml.vb#_run_const1)]
- [!code-cs[RunSnippets#_Run_Const1](~/add/codesnippet/csharp/RunSnippets/Window1.xaml.cs#_run_const1)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -83,7 +60,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -91,20 +67,10 @@
         <Parameter Name="insertionPosition" Type="System.Windows.Documents.TextPointer" />
       </Parameters>
       <Docs>
-        <param name="text">A string specifying the initial contents of the <see cref="T:System.Windows.Documents.Run" /> object.</param>
-        <param name="insertionPosition">A <see cref="T:System.Windows.Documents.TextPointer" /> specifying an insertion position at which to insert the text run after it is created, or <see langword="null" /> for no automatic insertion.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Run" /> class, taking a specified string as the initial contents of the text run, and a <see cref="T:System.Windows.Documents.TextPointer" /> specifying an insertion position for the text run.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of this constructor.  
-  
- [!code-vb[RunSnippets#_Run_Const2](~/add/codesnippet/visualbasic/runsnippets/window1.xaml.vb#_run_const2)]
- [!code-cs[RunSnippets#_Run_Const2](~/add/codesnippet/csharp/RunSnippets/Window1.xaml.cs#_run_const2)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <param name="insertionPosition">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeText">
@@ -114,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -129,13 +94,10 @@
         <Parameter Name="manager" Type="System.Windows.Markup.XamlDesignerSerializationManager" />
       </Parameters>
       <Docs>
-        <param name="manager">A serialization service manager object for this object.</param>
-        <summary>Returns a value that indicates whether or not the effective value of the <see cref="System.Windows.Documents.Run.Text%2A" /> property should be serialized during serialization of a <see cref="T:System.Windows.Documents.Run" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.Windows.Documents.Run.Text%2A" /> property should be serialized; otherwise, <see langword="false" />.</returns>
+        <param name="manager">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NullReferenceException">
-          <paramref name="manager" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -145,34 +107,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the unformatted text contents of this text <see cref="T:System.Windows.Documents.Run" />.</summary>
-        <value>A string that specifies the unformatted text contents of this text <see cref="T:System.Windows.Documents.Run" />. The default is <see cref="F:System.String.Empty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Starting in the [!INCLUDE[net_v40_short](~/add/includes/net-v40-short-md.md)], the Text property of the <xref:System.Windows.Documents.Run> object is a dependency property, which means that you can bind the Text property to a data source. The Text property fully supports one-way binding in <xref:System.Windows.Controls.FlowDocumentReader> and other controls that display read-only text. For more information about data binding, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
-  
-> [!NOTE]
->  Binding text to a <xref:System.Windows.Documents.Run> object contained within <xref:System.Windows.Controls.RichTextBox> is not supported. Editing operations within the <xref:System.Windows.Controls.RichTextBox> may cause the binding to be cleared.  
-  
-   
-  
-## Examples  
- The following example shows how to set the Text attribute of a <xref:System.Windows.Documents.Run> element directly and by using binding.  
-  
- [!code-xml[BindableRunSnippet#BindableRun](~/add/codesnippet/xaml/p-system.windows.documen_155_1.xaml)]
- [!code-xml[BindableRunSnippet#BindableRun](~/add/codesnippet/xaml/bindablerunsnippet/window1.xaml#bindablerun)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextProperty">
@@ -188,7 +131,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.Run.Text%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

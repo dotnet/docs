@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A class that wraps a specified writer and delegates all <see cref="T:System.Xml.XmlDictionaryWriter" /> calls to the wrapped writer.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The writer that is wrapped can be accessed through the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InnerWriter%2A> property. Call the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InitializeInnerWriter%2A> method to set the wrapped writer and initialize the property. You can call the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InitializeTracingWriter%2A> method to set an <xref:System.Xml.XmlWriter> to which non-canonical XML will be echoed.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.DelegatingXmlDictionaryWriter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +43,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a value indicating if the reader is capable of Canonicalization.</summary>
-        <value>true if the reader is capable of Canonicalization; otherwise, false.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +62,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the underlying stream.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +80,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Stops the canonicalization started by the matching <see cref="System.Xml.XmlDictionaryWriter.StartCanonicalization%2A" /> call.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +98,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Flushes the underlying stream.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,16 +118,9 @@
         <Parameter Name="innerWriter" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="innerWriter">The writer that is to be wrapped by this instance.</param>
-        <summary>Initializes this instance with the specified inner writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Sets the <xref:System.IdentityModel.DelegatingXmlDictionaryWriter.InnerWriter%2A> property to the writer specified by the `innerWriter` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="innerWriter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeTracingWriter">
@@ -153,8 +139,8 @@
         <Parameter Name="tracingWriter" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="tracingWriter">A writer to which all calls will be echoed. If <see langword="null" />, calls are not echoed.</param>
-        <summary>Initializes this instance with a writer to which all calls will be echoed and that will write non-canonical XML.</summary>
+        <param name="tracingWriter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,8 +157,8 @@
         <ReturnType>System.Xml.XmlDictionaryWriter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the wrapped writer.</summary>
-        <value>Returns a <see cref="T:System.Xml.XmlDictionaryWriter" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,9 +178,9 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ns">The namespace URI whose prefix you want to find.</param>
-        <summary>Returns the closest prefix defined in the current namespace scope for the namespace URI.</summary>
-        <returns>The matching prefix or null if no matching namespace URI is found in the current scope.</returns>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,10 +202,10 @@
         <Parameter Name="inclusivePrefixes" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="stream">Stream to which the canonical stream should be written.</param>
-        <param name="includeComments">The value indicates if comments written should be canonicalized as well.</param>
-        <param name="inclusivePrefixes">Set of prefixes that needs to be included into the canonical stream. The prefixes are defined at the first element that is written to the canonical stream.</param>
-        <summary>Indicates the start of canonicalization. Any write operation following this will canonicalize the data          and will write it to the given stream.</summary>
+        <param name="stream">To be added.</param>
+        <param name="includeComments">To be added.</param>
+        <param name="inclusivePrefixes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,10 +227,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">Byte array to encode.</param>
-        <param name="index">The position in the buffer indicating the start of the bytes to write.</param>
-        <param name="count">The number of bytes to write.</param>
-        <summary>Encodes the specified binary bytes as Base64 and writes out the resulting text.</summary>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +250,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to place inside the CDATA block.</param>
-        <summary>writes out a CDATA block containing the specified text.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,8 +271,8 @@
         <Parameter Name="ch" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="ch">The Unicode character for which to generate a character entity.</param>
-        <summary>Forces the generation of a character entity for the specified Unicode character value.</summary>
+        <param name="ch">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,10 +294,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">Character array containing the text to write.</param>
-        <param name="index">The position in the buffer indicating the start of the text to write.</param>
-        <param name="count">The number of characters to write.</param>
-        <summary>When overridden in a derived class, writes text one buffer at a time.</summary>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,8 +317,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">Text to place inside the comment.</param>
-        <summary>Writes out a comment containing the specified text.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,11 +341,11 @@
         <Parameter Name="subset" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the DOCTYPE. This must be non-empty.</param>
-        <param name="pubid">If non-null it also writes PUBLIC "pubid" "sysid" where pubid and sysid are replaced with the value of the given arguments.</param>
-        <param name="sysid">If pubid is null and sysid is non-null it writes SYSTEM "sysid" where sysid is replaced with the value of this argument.</param>
-        <param name="subset">If non-null it writes [subset] where subset is replaced with the value of this argument.</param>
-        <summary>Writes the DOCTYPE declaration with the specified name and optional attributes.</summary>
+        <param name="name">To be added.</param>
+        <param name="pubid">To be added.</param>
+        <param name="sysid">To be added.</param>
+        <param name="subset">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,7 +363,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the previous System.Xml.XmlWriter.WriteStartAttribute(System.String,System.String) call.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,7 +381,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes any open elements or attributes and puts the writer back in the Start state.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,7 +399,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes one element and pops the corresponding namespace scope.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,8 +419,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the entity reference.</param>
-        <summary>Writes out an entity reference as name.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,7 +438,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes one element and pops the corresponding namespace scope.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,9 +459,9 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the processing instruction.</param>
-        <param name="text">The text to include in the processing instruction.</param>
-        <summary>Writes out a processing instruction with a space between the name and text as follows: &amp;lt;?name text?&amp;gt;.</summary>
+        <param name="name">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -495,8 +481,8 @@
         <Parameter Name="data" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="data">String containing the text to write.</param>
-        <summary>Writes raw markup manually from a string.</summary>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,10 +504,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">Character array containing the text to write.</param>
-        <param name="index">The position within the buffer indicating the start of the text to write.</param>
-        <param name="count">The number of characters to write.</param>
-        <summary>When overridden in a derived class, writes raw markup manually from a character buffer.</summary>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -543,10 +529,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">The namespace prefix of the attribute.</param>
-        <param name="localName">The local name of the attribute.</param>
-        <param name="ns">The namespace URI for the attribute.</param>
-        <summary>Writes the start of an attribute with the specified local name and namespace URI.</summary>
+        <param name="prefix">To be added.</param>
+        <param name="localName">To be added.</param>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -564,7 +550,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, writes the XML declaration with the version "1.0".</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -584,8 +570,8 @@
         <Parameter Name="standalone" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="standalone">If true, it writes "standalone=yes"; if false, it writes "standalone=no".</param>
-        <summary>When overridden in a derived class, writes the XML declaration with the version "1.0" and the standalone attribute.</summary>
+        <param name="standalone">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -607,10 +593,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">The namespace prefix of the element.</param>
-        <param name="localName">The local name of the element.</param>
-        <param name="ns">The namespace URI to associate with the element.</param>
-        <summary>When overridden in a derived class, writes the specified start tag and associates it with the given namespace and prefix.</summary>
+        <param name="prefix">To be added.</param>
+        <param name="localName">To be added.</param>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -627,8 +613,8 @@
         <ReturnType>System.Xml.WriteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the state of the writer.</summary>
-        <value>Returns an <see cref="T:System.Xml.WriteState" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -648,8 +634,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to write.</param>
-        <summary>Writes the given text content.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,9 +656,9 @@
         <Parameter Name="highChar" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="lowChar">The low surrogate. This must be a value between 0xDC00 and 0xDFFF.</param>
-        <param name="highChar">The high surrogate. This must be a value between 0xD800 and 0xDBFF.</param>
-        <summary>Generates and writes the surrogate character entity for the surrogate character pair.</summary>
+        <param name="lowChar">To be added.</param>
+        <param name="highChar">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -692,8 +678,8 @@
         <Parameter Name="ws" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ws">The string of white space characters.</param>
-        <summary>Writes out the given white space.</summary>
+        <param name="ws">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -714,9 +700,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">Localname of the attribute.</param>
-        <param name="value">Attribute value.</param>
-        <summary>Writes an attribute as a xml attribute with the prefix 'xml:'.</summary>
+        <param name="localName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -737,9 +723,9 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">The prefix of the namespace declaration.</param>
-        <param name="namespaceUri">The namespace Uri itself.</param>
-        <summary>Writes an xmlns namespace declaration.</summary>
+        <param name="prefix">To be added.</param>
+        <param name="namespaceUri">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

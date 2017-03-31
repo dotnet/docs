@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElementInsertionOrientation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines values that describe where to insert a new element when using <see cref="System.Windows.Forms.HtmlElement.InsertAdjacentElement%2A" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example inserts a `DIV` element into the top of every page that users view outside of the ADatum.com server. The example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`. Your example must also import the namespace <xref:System.Text.RegularExpressions>.  
-  
- [!code-vb[System.Windows.Forms.HtmlElement#9](~/add/codesnippet/visualbasic/HtmlElementProject/Form1.vb#9)]
- [!code-cs[System.Windows.Forms.HtmlElement#9](~/add/codesnippet/csharp/HtmlElementProjectCSharp/Form1.cs#9)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AfterBegin">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HtmlElementInsertionOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Insert the element after the current element, but before all other content in the current element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AfterEnd">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HtmlElementInsertionOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Insert the element after the current element, but after all other content in the current element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeforeBegin">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HtmlElementInsertionOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Insert the element before the current element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeforeEnd">
@@ -83,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HtmlElementInsertionOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Insert the element after the current element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItem.ListViewSubItemCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> objects stored in a <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ListViewItem.ListViewSubItemCollection stores <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects that represent subitems of a parent <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView> control. Subitems are only displayed in a <xref:System.Windows.Forms.ListView> control when columns are specified in the <xref:System.Windows.Forms.ListView.Columns%2A> property of the <xref:System.Windows.Forms.ListView> control and when the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control is set to <xref:System.Windows.Forms.View>. The order of subitems in the ListViewItem.ListViewSubItemCollection determines the columns the subitems are displayed in the <xref:System.Windows.Forms.ListView> control.  
-  
- There are a number of ways to add subitems to the collection. The <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method adds a single <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> to the collection. To add a number of subitems to the collection, you create an array of <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects and pass it to the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange%2A> method. If you want to insert a subitem at a specific location in the collection, you can use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Insert%2A> method. To remove subitems, you can use either the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Remove%2A> method or the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.RemoveAt%2A> method if you know where the subitem is located in the collection. The <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Clear%2A> method enables you to remove all subitems from the collection instead of using the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Remove%2A> method to remove a single subitem at a time.  
-  
- In addition to methods and properties for adding and removing subitems, the ListViewItem.ListViewSubItemCollection also provides methods to find subitems in the collection. The <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Contains%2A> method enables you to determine whether a <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> is a member of the collection. Once you know that the subitem is located in the collection, you can use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.IndexOf%2A> method to determine where the subitem is located in the collection.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,23 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.ListViewItem" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Forms.ListViewItem" /> that owns the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItemCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListViewItem>.  
-  
- ]]></format>
-        </remarks>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -64,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,42 +53,10 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display for the subitem.</param>
-        <summary>Adds a subitem to the collection with specified text.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> that was added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method allows you to add a subitem to the collection by specifying the text of the subitem. When this method is called, a new <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> is created with the specified text. You can then use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> that is returned by this method to set properties and call methods to manipulate the subitem. If you already have an existing <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> that you want to add to the collection, you can use the version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method that accepts a <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> as a parameter, or use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Insert%2A> method if you want to add the subitem at a specific position within the collection.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ListView> control with three <xref:System.Windows.Forms.ListViewItem> objects specified and three <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects specified for each item. The example also creates <xref:System.Windows.Forms.ColumnHeader> objects to display the subitems in details view. Two <xref:System.Windows.Forms.ImageList> objects are also created in the code example to provide images for the <xref:System.Windows.Forms.ListViewItem> objects. These <xref:System.Windows.Forms.ImageList> objects are added to the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties. The example uses the following properties in creating the <xref:System.Windows.Forms.ListView> control:  
-  
--   <xref:System.Windows.Forms.ListView.View%2A>  
-  
--   <xref:System.Windows.Forms.ListView.LabelEdit%2A>  
-  
--   <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A>  
-  
--   <xref:System.Windows.Forms.ListView.CheckBoxes%2A>  
-  
--   <xref:System.Windows.Forms.ListView.FullRowSelect%2A>  
-  
--   <xref:System.Windows.Forms.ListView.GridLines%2A>  
-  
--   <xref:System.Windows.Forms.ListView.Sorting%2A>  
-  
- This example requires that you have added the code to a <xref:System.Windows.Forms.Form> and call the method created in the example from the constructor or another method on the form. The example also requires that images named `MySmallImage1`, `MySmallImage2`, `MyLargeImage1`, and `MyLargeImage2` are located in the root directory of drive C.  
-  
- [!code-cpp[ListViewExample#1](~/add/codesnippet/cpp/m-system.windows.forms.l_15_1.cpp)]
- [!code-cs[ListViewExample#1](~/add/codesnippet/csharp/m-system.windows.forms.l_15_1.cs)]
- [!code-vb[ListViewExample#1](~/add/codesnippet/visualbasic/m-system.windows.forms.l_15_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -119,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,17 +75,10 @@
         <Parameter Name="item" Type="System.Windows.Forms.ListViewItem+ListViewSubItem" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to add to the collection.</param>
-        <summary>Adds an existing <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to the collection.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> that was added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this version of the Add method to add an existing <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> to the collection. This method is typically used to reuse existing subitems from other <xref:System.Windows.Forms.ListViewItem> objects. Items that are added to the collection are inserted at the end of the list. To insert an item into the collection at a specific position, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Insert%2A> method. If you want to add an array of existing <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects, you can use the version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange%2A> method that accepts an array of <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects as a parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -149,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,23 +100,13 @@
         <Parameter Name="font" Type="System.Drawing.Font" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display for the subitem.</param>
-        <param name="foreColor">A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the subitem.</param>
-        <param name="backColor">A <see cref="T:System.Drawing.Color" /> that represents the background color of the subitem.</param>
-        <param name="font">A <see cref="T:System.Drawing.Font" /> that represents the typeface to display the subitem's text in.</param>
-        <summary>Adds a subitem to the collection with specified text, foreground color, background color, and font settings.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> that was added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method allows you to add a subitem to the collection by specifying the text of the subitem. In addition, this version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method allows you to specify the initial foreground color, background color, and font of the subitem text. When this method is called, a new <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> is created with the specified text. You can then use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> that is returned by this method to set properties and call methods to manipulate the subitem. If you already have an existing <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> that you want to add to the collection, you can use the version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method that accepts a <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> as a parameter, or use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Insert%2A> method if you want to add the subitem at a specific position in the collection.  
-  
-> [!NOTE]
->  By default, subitems use the foreground color, background color, and font specified for the parent item. Set the <xref:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems%2A?displayProperty=fullName> property to `false` to prevent the parent item styles from overriding the subitem styles.  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <param name="foreColor">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <param name="font">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -188,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,18 +125,9 @@
         <Parameter Name="items" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="items">An array of strings representing the text of each subitem to add to the collection.</param>
-        <summary>Creates new subitems based on an array and adds them to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange%2A> method to add an array of strings to the collection, where each string in the collection represents the text of a new subitem. You can use the other version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange%2A> method that accepts an array of strings as a parameter to specify the foreground color, background color, and font for each item being added. If you want to reuse existing <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects and add them to the collection, you can use the version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange%2A> method that accepts an array of <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects as a parameter.  
-  
- If you want to add a single <xref:System.Windows.Forms.ListViewItem.ListViewSubItem>, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method. You can also use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Insert%2A> method if you want to add a single <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> at a specific position in the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -219,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,16 +146,9 @@
         <Parameter Name="items" Type="System.Windows.Forms.ListViewItem+ListViewSubItem[]" />
       </Parameters>
       <Docs>
-        <param name="items">An array of <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> objects to add to the collection.</param>
-        <summary>Adds an array of <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> objects to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method to reuse the subitems stored in a different <xref:System.Windows.Forms.ListViewItem>. If you want to add a single <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> object, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method. You can also use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Insert%2A> method if you want to add a single <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> at a specific position in the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -248,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -261,24 +170,12 @@
         <Parameter Name="font" Type="System.Drawing.Font" />
       </Parameters>
       <Docs>
-        <param name="items">An array of strings representing the text of each subitem to add to the collection.</param>
-        <param name="foreColor">A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the subitem.</param>
-        <param name="backColor">A <see cref="T:System.Drawing.Color" /> that represents the background color of the subitem.</param>
-        <param name="font">A <see cref="T:System.Drawing.Font" /> that represents the typeface to display the subitem's text in.</param>
-        <summary>Creates new subitems based on an array and adds them to the collection with specified foreground color, background color, and font.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange%2A> method to add an array of strings to the collection, where each string in the collection represents the text of a new subitem. In addition, this version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange%2A> method allows you to specify the foreground color, background color, and font for each subitem. You can use the other version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange%2A> method that accepts an array of strings as a parameter if you do not want to specify foreground color, background color, and font settings for each subitem. If you want to reuse existing <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects and add them to the collection, you can use the version of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange%2A> method that accepts an array of <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects as a parameter.  
-  
- If you want to add a single <xref:System.Windows.Forms.ListViewItem.ListViewSubItem>, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method. You can also use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Insert%2A> method if you want to add a single <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> at a specific position in the collection.  
-  
-> [!NOTE]
->  By default, subitems use the foreground color, background color, and font specified for the parent item. Set the <xref:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems%2A?displayProperty=fullName> property to `false` to prevent the parent item styles from overriding the subitem styles.  
-  
- ]]></format>
-        </remarks>
+        <param name="items">To be added.</param>
+        <param name="foreColor">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <param name="font">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -288,7 +185,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -296,15 +192,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all subitems and the parent <see cref="T:System.Windows.Forms.ListViewItem" /> from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you remove subitems from the collection, all information about the deleted subitems is lost. To remove a single subitem from the collection use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Remove%2A> or <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.RemoveAt%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -314,7 +203,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -324,18 +212,10 @@
         <Parameter Name="subItem" Type="System.Windows.Forms.ListViewItem+ListViewSubItem" />
       </Parameters>
       <Docs>
-        <param name="subItem">A <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> representing the subitem to locate in the collection.</param>
-        <summary>Determines whether the specified subitem is located in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the subitem is contained in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Contains method enables you to determine whether a <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> is a member of the collection. Once you know that the subitem is in the collection, you can use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.IndexOf%2A> method to determine the position of the subitem in the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="subItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -345,7 +225,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -355,20 +234,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to look for.</param>
-        <summary>Determines if the collection contains an item with the specified key.</summary>
-        <returns>
-          <see langword="true" /> to indicate the collection contains an item with the specified key; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> in the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, ContainsKey returns `false.`  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -378,7 +247,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -390,16 +258,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of subitems in the collection.</summary>
-        <value>The number of subitems in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables you to determine the number of subitems that are defined for a <xref:System.Windows.Forms.ListViewItem>. You can then use this value when you are looping through the values of the collection and you need to provide a number of iterations to perform the loop.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -409,7 +270,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -417,8 +277,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator to use to iterate through the subitem collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the subitem collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,7 +289,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -439,17 +298,10 @@
         <Parameter Name="subItem" Type="System.Windows.Forms.ListViewItem+ListViewSubItem" />
       </Parameters>
       <Docs>
-        <param name="subItem">A <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> representing the subitem to locate in the collection.</param>
-        <summary>Returns the index within the collection of the specified subitem.</summary>
-        <returns>The zero-based index of the subitem's location in the collection. If the subitem is not located in the collection, the return value is negative one (-1).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IndexOf method enables you to determine the position of a subitem in the collection. To determine whether a subitem is contained in the collection before calling this method, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Contains%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="subItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -459,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -469,21 +320,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the item to retrieve the index for.</param>
-        <summary>Returns the index of the first occurrence of an item with the specified key within the collection.</summary>
-        <returns>The zero-based index of the first occurrence of an item with the specified key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If IndexOfKey is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
- The <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> in the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, IndexOfKey returns -1.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -493,7 +333,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -504,18 +343,10 @@
         <Parameter Name="item" Type="System.Windows.Forms.ListViewItem+ListViewSubItem" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index location where the item is inserted.</param>
-        <param name="item">A <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> representing the subitem to insert into the collection.</param>
-        <summary>Inserts a subitem into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method allows you to insert a subitem at a specific position in the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection>. To add a subitem without specifying a specific position, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method. If you want to add an array of subitems to the collection, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange%2A> method. You can use this method if you want to insert a new subitem into an existing collection of subitems.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than the value of the <see cref="System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Count%2A" /> property of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItemCollection" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -525,24 +356,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is read-only.</summary>
-        <value>
-          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is always `false` for this collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -552,7 +374,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -562,18 +383,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the item in the collection to retrieve.</param>
-        <summary>Gets or sets the subitem at the specified index within the collection.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> representing the subitem located at the specified index within the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method to obtain the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> stored at a specific location in the collection. To determine the index of a specific item in the collection, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.IndexOf%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Count%2A" /> property of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItemCollection" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -583,7 +396,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -593,19 +405,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to retrieve.</param>
-        <summary>Gets an item with the specified key from the collection.</summary>
-        <value>The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> with the specified key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> in the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, Item returns `null.`  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -615,7 +418,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -625,16 +427,9 @@
         <Parameter Name="item" Type="System.Windows.Forms.ListViewItem+ListViewSubItem" />
       </Parameters>
       <Docs>
-        <param name="item">The item to remove from the collection.</param>
-        <summary>Removes a specified item from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you want to remove an item at a specified index or with a specified key, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.RemoveAt%2A> method or the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.RemoveByKey%2A> method, respectively.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -644,7 +439,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -654,17 +448,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the subitem to remove.</param>
-        <summary>Removes the subitem at the specified index within the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you remove a subitem from the collection, the indexes change for subsequent subitems in the collection. All information about the removed subitem is deleted. You can use this method to remove a specific subitem from the collection by specifying the index of the subitem to remove from the collection. To specify the subitem to remove instead of the index to the subitem, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Remove%2A> method. To remove all subitems from the collection, use the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Clear%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Count%2A" /> property of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItemCollection" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -674,7 +460,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -684,18 +469,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the item to remove from the collection.</param>
-        <summary>Removes an item with the specified key from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> in the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection>.  
-  
- The key comparison is not case-sensitive.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -705,7 +481,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -716,11 +491,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">An array of <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />.</param>
-        <param name="index">The zero-based index in array at which copying begins.</param>
-        <summary>Copies the item and collection of subitems into an array.</summary>
+        <param name="dest">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArrayTypeMismatchException">The array type is not compatible with <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -730,16 +504,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
-        <value>
-          <see langword="true" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -750,15 +522,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
-        <value>The object used to synchronize the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -769,7 +540,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -779,12 +549,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to add to the collection.</param>
-        <summary>Adds an existing <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to the collection.</summary>
-        <returns>The zero-based index that indicates the location of the object that was added to the collection.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="item" /> is not a <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -794,7 +562,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -804,10 +571,9 @@
         <Parameter Name="subItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="subItem">An object that represents the subitem to locate in the collection.</param>
-        <summary>Determines whether the specified subitem is located in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the subitem is contained in the collection; otherwise, <see langword="false" />.</returns>
+        <param name="subItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -818,7 +584,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -828,9 +593,9 @@
         <Parameter Name="subItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="subItem">An object that represents the subitem to locate in the collection.</param>
-        <summary>Returns the index within the collection of the specified subitem.</summary>
-        <returns>The zero-based index of the subitem if it is in the collection; otherwise, -1.</returns>
+        <param name="subItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -841,7 +606,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -852,13 +616,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index location where the item is inserted.</param>
-        <param name="item">An object that represents the subitem to insert into the collection.</param>
-        <summary>Inserts a subitem into the collection at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="item" /> is not a <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The index parameter is less than 0 or greater than or equal to the value of the Count property of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItemCollection" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -868,16 +629,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -888,7 +647,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -898,12 +656,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get or set.</param>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> at the specified index within the collection.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> that represents the item located at the specified index within the collection.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The index parameter is less than 0 or greater than or equal to the value of the Count property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
-        <exception cref="T:System.ArgumentException">The object is not a <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -913,7 +669,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -923,16 +678,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to remove from the collection.</param>
-        <summary>Removes a specified item from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

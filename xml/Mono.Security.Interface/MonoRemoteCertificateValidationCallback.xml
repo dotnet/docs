@@ -1,0 +1,30 @@
+<Type Name="MonoRemoteCertificateValidationCallback" FullName="Mono.Security.Interface.MonoRemoteCertificateValidationCallback">
+  <TypeSignature Language="C#" Value="public delegate bool MonoRemoteCertificateValidationCallback(string targetHost, X509Certificate certificate, X509Chain chain, MonoSslPolicyErrors sslPolicyErrors);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MonoRemoteCertificateValidationCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoRemoteCertificateValidationCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="targetHost" Type="System.String" />
+    <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
+    <Parameter Name="chain" Type="System.Security.Cryptography.X509Certificates.X509Chain" />
+    <Parameter Name="sslPolicyErrors" Type="Mono.Security.Interface.MonoSslPolicyErrors" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="targetHost">To be added.</param>
+    <param name="certificate">To be added.</param>
+    <param name="chain">To be added.</param>
+    <param name="sslPolicyErrors">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

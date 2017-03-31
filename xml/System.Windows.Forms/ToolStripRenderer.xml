@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripRenderer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,33 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Handles the painting functionality for <see cref="T:System.Windows.Forms.ToolStrip" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ToolStripRenderer class to apply a particular style or theme to a <xref:System.Windows.Forms.ToolStrip>. Rather than custom painting a <xref:System.Windows.Forms.ToolStrip> and the <xref:System.Windows.Forms.ToolStripItem> objects it contains, you set the <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=fullName> property to an object that inherits from ToolStripRenderer. The painting specified by the ToolStripRenderer is applied to the <xref:System.Windows.Forms.ToolStrip>, as well as the items it contains.  
-  
- You can do custom painting in <xref:System.Windows.Forms.ToolStrip> controls in several ways. As with other Windows Forms controls, the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStripItem> both have overridable `OnPaint` methods and `Paint` events. As with regular painting, the coordinate system is relative to the client area of the control; that is, the upper left-hand corner of the control is 0, 0. The `Paint` event and `OnPaint` method for a <xref:System.Windows.Forms.ToolStripItem> behave like other control paint events.  
-  
- The ToolStripRenderer class has overridable methods for painting the background, item background, item image, item arrow, item text, and border of the <xref:System.Windows.Forms.ToolStrip>. The event arguments for these methods expose several properties such as rectangles, colors, and text formats that you can adjust as desired.  
-  
- To adjust just a few aspects of how an item is painted, you typically override the ToolStripRenderer.  
-  
- If you are writing a new item and want to control all aspects of the painting, override the `OnPaint` method. From within `OnPaint`, you can use methods from the ToolStripRenderer.  
-  
- By default, the <xref:System.Windows.Forms.ToolStrip> is double buffered, taking advantage of the <xref:System.Windows.Forms.ControlStyles> setting.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to implement a custom ToolStripRenderer class. The `GridStripRenderer` class customizes three aspects of the `GridStrip` control's appearance: `GridStrip` border, <xref:System.Windows.Forms.ToolStripButton> border, and <xref:System.Windows.Forms.ToolStripButton> image. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](../Topic/How%20to:%20Implement%20a%20Custom%20ToolStripRenderer.md).  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#10](~/add/codesnippet/visualbasic/t-system.windows.forms.t_37_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#10](~/add/codesnippet/csharp/t-system.windows.forms.t_37_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripRenderer" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Forms.ToolStripRenderer> is an abstract class, so the constructor is only available to classes derived from it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDisabledImage">
@@ -71,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,9 +46,9 @@
         <Parameter Name="normalImage" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="normalImage">The image to be copied.</param>
-        <summary>Creates a gray-scale copy of a given image.</summary>
-        <returns>An <see cref="T:System.Drawing.Image" /> that is a copy of the given image, but with a gray-scale color matrix.</returns>
+        <param name="normalImage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,16 +68,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripArrowRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripArrowRenderEventArgs" /> that contains data to draw the arrow.</param>
-        <summary>Draws an arrow on a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawArrow method provides an entry point to the arrow rendering code. Use this method to draw an arrow when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force an arrow to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way an arrow is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderArrow%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawButtonBackground">
@@ -123,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,16 +89,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains data to draw the button's background.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStripButton" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawButtonBackground method provides an entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripButton>. Use this method to draw the background of a button when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force the background of a button to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawDropDownButtonBackground">
@@ -152,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,16 +110,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the data to draw the drop-down button's background.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStripDropDownButton" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawDropDownButtonBackground method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripDropDownButton>. Use this method to draw the background of a drop-down button when overriding the <xref:System.Windows.Forms.ToolStripDropDownButton.OnPaint%2A?displayProperty=fullName> method, or to force the background of a drop-down button to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderDropDownButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawGrip">
@@ -181,7 +122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,16 +131,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripGripRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripGripRenderEventArgs" /> that contains the data to draw the move handle.</param>
-        <summary>Draws a move handle on a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawGrip method provides an entry point to the rendering code for a move handle located on a <xref:System.Windows.Forms.ToolStrip>. Use this method when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaintGrip%2A?displayProperty=fullName> method, or to force a move handle to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way a move handle is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderGrip%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawImageMargin">
@@ -210,7 +143,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -220,16 +152,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the data to draw the space around the image.</param>
-        <summary>Draws the space around an image on a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawImageMargin method provides the entry point to the rendering code for the image. Use this method to draw the image margin when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force the image margin to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the image margin is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderImageMargin%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawItemBackground">
@@ -239,7 +164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -249,16 +173,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the data to draw the background of the item.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawItemBackground method provides the entry point to the rendering code for the background of an item. Use this method to draw the background of an item when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force the background of an item to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background of an item is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderItemBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawItemCheck">
@@ -268,7 +185,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,16 +194,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemImageRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" /> that contains the data to draw the selected image.</param>
-        <summary>Draws an image on a <see cref="T:System.Windows.Forms.ToolStripItem" /> that indicates the item is in a selected state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawItemCheck method provides the entry point to the rendering code for an image in a selected state. Use this method to draw a selected image when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force a selected image to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way a selected image is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderItemCheck%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawItemImage">
@@ -297,7 +206,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -307,16 +215,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemImageRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" /> that contains the data to draw the image.</param>
-        <summary>Draws an image on a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawItemImage method provides the entry point to the rendering code for an image. Use this method to draw an image when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method or to force the image to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the image is rendered, override the `OnDrawItem` method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawItemText">
@@ -326,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -336,16 +236,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemTextRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemTextRenderEventArgs" /> that contains the data to draw the text.</param>
-        <summary>Draws text on a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawItemText method provides the entry point to the rendering code for the text of a <xref:System.Windows.Forms.ToolStripItem>. Use this method to draw the item text when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force the item text to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the item text is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderItemText%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawLabelBackground">
@@ -355,7 +248,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -365,16 +257,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the data to draw the background for the label.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStripLabel" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawLabelBackground method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripLabel>. Use this method to draw the background of a <xref:System.Windows.Forms.ToolStripLabel> when overriding the <xref:System.Windows.Forms.ToolStripLabel.OnPaint%2A?displayProperty=fullName> method, or to force the background of a <xref:System.Windows.Forms.ToolStripLabel> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background of a <xref:System.Windows.Forms.ToolStripLabel> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderLabelBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawMenuItemBackground">
@@ -384,7 +269,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -394,16 +278,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the data to draw the background for the menu item.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawMenuItemBackground method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripMenuItem>. Use this method to draw the background of a <xref:System.Windows.Forms.ToolStripMenuItem> when overriding the <xref:System.Windows.Forms.ToolStripMenuItem.OnPaint%2A?displayProperty=fullName> method, or to force the background of a <xref:System.Windows.Forms.ToolStripMenuItem> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background for a <xref:System.Windows.Forms.ToolStripMenuItem> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderMenuItemBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawOverflowButtonBackground">
@@ -413,7 +290,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -423,16 +299,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws the background for an overflow button.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawOverflowButtonBackground method provides the entry point to the rendering code for the background of an overflow button. Use this method to draw the background of an overflow button when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force the background for an overflow button to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background for an overflow button is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderOverflowButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawSeparator">
@@ -442,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -452,16 +320,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripSeparatorRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" /> that contains the data to draw the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</param>
-        <summary>Draws a <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawSeparator method provides the entry point to the rendering code for a <xref:System.Windows.Forms.ToolStripSeparator>. Use this method to draw the <xref:System.Windows.Forms.ToolStripSeparator> when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaint%2A?displayProperty=fullName> method, or to force a <xref:System.Windows.Forms.ToolStripSeparator> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the <xref:System.Windows.Forms.ToolStripSeparator> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderSeparator%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawSplitButton">
@@ -471,7 +332,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -481,16 +341,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawSplitButton method provides the entry point to the rendering code for a <xref:System.Windows.Forms.ToolStripSplitButton>. Use this method to draw a <xref:System.Windows.Forms.ToolStripSplitButton> when overriding the <xref:System.Windows.Forms.ToolStripSplitButton.OnPaint%2A?displayProperty=fullName> method, or to force a <xref:System.Windows.Forms.ToolStripSplitButton> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the <xref:System.Windows.Forms.ToolStripSplitButton> is rendered, override the <xref:System.Windows.Forms.ToolStripSystemRenderer.OnRenderSplitButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawStatusStripSizingGrip">
@@ -500,7 +353,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -510,8 +362,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws a sizing grip.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -522,7 +374,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -532,16 +383,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the data to draw the background for the <see cref="T:System.Windows.Forms.ToolStrip" />.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawToolStripBackground method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStrip>. Use this method to draw the background of a <xref:System.Windows.Forms.ToolStrip> when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaintBackground%2A?displayProperty=fullName> method, or to force the background of a <xref:System.Windows.Forms.ToolStrip> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background of a <xref:System.Windows.Forms.ToolStrip> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawToolStripBorder">
@@ -551,7 +395,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -561,16 +404,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the data to draw the border for the <see cref="T:System.Windows.Forms.ToolStrip" />.</param>
-        <summary>Draws the border for a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DrawToolStripBorder method provides the entry point to the rendering code for the border of a <xref:System.Windows.Forms.ToolStrip>. Use this method to draw the border of a <xref:System.Windows.Forms.ToolStrip> when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaint%2A?displayProperty=fullName> method, or to force the border of a <xref:System.Windows.Forms.ToolStrip> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the border of a <xref:System.Windows.Forms.ToolStrip> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawToolStripContentPanelBackground">
@@ -580,7 +416,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -590,8 +425,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripContentPanelRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripContentPanelRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws the background of the <see cref="T:System.Windows.Forms.ToolStripContentPanel" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -602,7 +437,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -612,8 +446,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripPanelRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripPanelRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws the background of the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -624,7 +458,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -634,8 +467,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws the background of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -646,7 +479,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -656,16 +488,9 @@
         <Parameter Name="toolStrip" Type="System.Windows.Forms.ToolStrip" />
       </Parameters>
       <Docs>
-        <param name="toolStrip">The <see cref="T:System.Windows.Forms.ToolStrip" /> to be initialized.</param>
-        <summary>When overridden in a derived class, provides for custom initialization of the given <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Initialize method to set properties, such as the <xref:System.Windows.Forms.ToolStrip.BackColor%2A?displayProperty=fullName> or <xref:System.Windows.Forms.ToolStrip.Font%2A?displayProperty=fullName>, when a <xref:System.Windows.Forms.ToolStrip> is rendered.  
-  
- ]]></format>
-        </remarks>
+        <param name="toolStrip">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeContentPanel">
@@ -675,7 +500,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -685,8 +509,8 @@
         <Parameter Name="contentPanel" Type="System.Windows.Forms.ToolStripContentPanel" />
       </Parameters>
       <Docs>
-        <param name="contentPanel">The <see cref="T:System.Windows.Forms.ToolStripContentPanel" />.</param>
-        <summary>Initializes the specified <see cref="T:System.Windows.Forms.ToolStripContentPanel" />.</summary>
+        <param name="contentPanel">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -697,7 +521,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -707,24 +530,9 @@
         <Parameter Name="item" Type="System.Windows.Forms.ToolStripItem" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Windows.Forms.ToolStripItem" /> to be initialized.</param>
-        <summary>When overridden in a derived class, provides for custom initialization of the given <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the InitializeItem method to set properties, such as the <xref:System.Windows.Forms.ToolStripItem.BackColor%2A?displayProperty=fullName> or <xref:System.Windows.Forms.ToolStripItem.Font%2A?displayProperty=fullName>, when a <xref:System.Windows.Forms.ToolStripItem> is rendered.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to initialize individual <xref:System.Windows.Forms.ToolStripItem> controls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#11](~/add/codesnippet/visualbasic/d51d850d-a450-4c03-809f-_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#11](~/add/codesnippet/csharp/d51d850d-a450-4c03-809f-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializePanel">
@@ -734,7 +542,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -744,8 +551,8 @@
         <Parameter Name="toolStripPanel" Type="System.Windows.Forms.ToolStripPanel" />
       </Parameters>
       <Docs>
-        <param name="toolStripPanel">The <see cref="T:System.Windows.Forms.ToolStripPanel" />.</param>
-        <summary>Initializes the specified <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <param name="toolStripPanel">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -762,7 +569,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the offset multiplier for twice the offset along the x-axis.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -779,7 +586,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the offset multiplier for twice the offset along the y axis.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -790,7 +597,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -800,18 +606,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripArrowRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripArrowRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderArrow" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderArrow method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderButtonBackground">
@@ -821,7 +618,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -831,26 +627,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderButtonBackground" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderButtonBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the OnRenderButtonBackground method to draw a border around a <xref:System.Windows.Forms.ToolStripButton> control's <xref:System.Windows.Forms.ToolStripItem.Image%2A>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#14](~/add/codesnippet/visualbasic/7674753f-f3f2-4747-967f-_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#14](~/add/codesnippet/csharp/7674753f-f3f2-4747-967f-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderDropDownButtonBackground">
@@ -860,7 +639,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -870,18 +648,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderDropDownButtonBackground" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderDropDownButtonBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderGrip">
@@ -891,7 +660,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -901,18 +669,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripGripRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripGripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderGrip" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderGrip method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderImageMargin">
@@ -922,7 +681,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -932,18 +690,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws the item background.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderImageMargin method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderItemBackground">
@@ -953,7 +702,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -963,18 +711,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.Windows.Forms.ToolStripSystemRenderer.OnRenderItemBackground%2A" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderItemBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderItemCheck">
@@ -984,7 +723,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -994,18 +732,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemImageRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderItemCheck" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderItemCheck method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderItemImage">
@@ -1015,7 +744,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1025,18 +753,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemImageRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderItemImage" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderItemImage method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderItemText">
@@ -1046,7 +765,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1056,18 +774,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemTextRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemTextRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderItemText" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderItemText method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderLabelBackground">
@@ -1077,7 +786,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1087,18 +795,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderLabelBackground" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderLabelBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderMenuItemBackground">
@@ -1108,7 +807,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1118,18 +816,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderMenuItemBackground" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderMenuItemBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderOverflowButtonBackground">
@@ -1139,7 +828,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1149,18 +837,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderOverflowButtonBackground" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderOverflowButtonBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderSeparator">
@@ -1170,7 +849,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1180,18 +858,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripSeparatorRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderSeparator" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderSeparator method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderSplitButtonBackground">
@@ -1201,7 +870,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1211,18 +879,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the OnRenderSplitButtonBackground event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderSplitButtonBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderStatusStripSizingGrip">
@@ -1232,7 +891,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1242,18 +900,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderStatusStripSizingGrip" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderStatusStripSizingGrip method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderToolStripBackground">
@@ -1263,7 +912,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1273,26 +921,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripBackground" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderToolStripBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the OnRenderToolStripBackground method to paint a gradient in the background of a <xref:System.Windows.Forms.ToolStrip> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#13](~/add/codesnippet/visualbasic/76e1ebd6-f251-40b7-8e14-_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#13](~/add/codesnippet/csharp/76e1ebd6-f251-40b7-8e14-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderToolStripBorder">
@@ -1302,7 +933,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1312,26 +942,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripBorder" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderToolStripBorder method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the OnRenderToolStripBorder method to draw a custom border around a <xref:System.Windows.Forms.ToolStrip> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#12](~/add/codesnippet/visualbasic/f76653cc-fc87-443f-9e35-_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#12](~/add/codesnippet/csharp/f76653cc-fc87-443f-9e35-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderToolStripContentPanelBackground">
@@ -1341,7 +954,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1351,18 +963,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripContentPanelRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripContentPanelRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderToolStripContentPanelBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderToolStripPanelBackground">
@@ -1372,7 +975,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1382,18 +984,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripPanelRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripPanelRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripPanelBackground" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderToolStripPanelBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRenderToolStripStatusLabelBackground">
@@ -1403,7 +996,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1413,18 +1005,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripStatusLabelBackground" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRenderToolStripStatusLabelBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderArrow">
@@ -1434,32 +1017,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripArrowRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an arrow on a <see cref="T:System.Windows.Forms.ToolStripItem" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderArrow event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderArrow event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#583](~/add/codesnippet/csharp/e-system.windows.forms.t_88_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#583](~/add/codesnippet/visualbasic/e-system.windows.forms.t_88_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderButtonBackground">
@@ -1469,32 +1034,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripButton" /> is rendered</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderButtonBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderButtonBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#588](~/add/codesnippet/csharp/e-system.windows.forms.t_142_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#588](~/add/codesnippet/visualbasic/e-system.windows.forms.t_142_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderDropDownButtonBackground">
@@ -1504,32 +1051,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripDropDownButton" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderDropDownButtonBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderDropDownButtonBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#589](~/add/codesnippet/csharp/e-system.windows.forms.t_19_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#589](~/add/codesnippet/visualbasic/e-system.windows.forms.t_19_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderGrip">
@@ -1539,32 +1068,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripGripRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the move handle for a <see cref="T:System.Windows.Forms.ToolStrip" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderGrip event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderGrip event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#591](~/add/codesnippet/csharp/e-system.windows.forms.t_29_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#591](~/add/codesnippet/visualbasic/e-system.windows.forms.t_29_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderImageMargin">
@@ -1574,32 +1085,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Draws the margin between an image and its container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderImageMargin event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderImageMargin event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#596](~/add/codesnippet/csharp/e-system.windows.forms.t_11_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#596](~/add/codesnippet/visualbasic/e-system.windows.forms.t_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderItemBackground">
@@ -1609,32 +1102,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripItem" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderItemBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderItemBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#592](~/add/codesnippet/csharp/e-system.windows.forms.t_75_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#592](~/add/codesnippet/visualbasic/e-system.windows.forms.t_75_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderItemCheck">
@@ -1644,32 +1119,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemImageRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the image for a selected <see cref="T:System.Windows.Forms.ToolStripItem" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderItemCheck event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderItemCheck event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#594](~/add/codesnippet/csharp/e-system.windows.forms.t_21_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#594](~/add/codesnippet/visualbasic/e-system.windows.forms.t_21_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderItemImage">
@@ -1679,32 +1136,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemImageRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the image for a <see cref="T:System.Windows.Forms.ToolStripItem" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderItemImage event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderItemImage event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#593](~/add/codesnippet/csharp/e-system.windows.forms.t_7_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#593](~/add/codesnippet/visualbasic/e-system.windows.forms.t_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderItemText">
@@ -1714,32 +1153,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemTextRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the text for a <see cref="T:System.Windows.Forms.ToolStripItem" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderItemText event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderItemText event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#595](~/add/codesnippet/csharp/e-system.windows.forms.t_9_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#595](~/add/codesnippet/visualbasic/e-system.windows.forms.t_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderLabelBackground">
@@ -1749,32 +1170,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripLabel" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderLabelBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderLabelBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#597](~/add/codesnippet/csharp/e-system.windows.forms.t_16_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#597](~/add/codesnippet/visualbasic/e-system.windows.forms.t_16_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderMenuItemBackground">
@@ -1784,32 +1187,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderMenuItemBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderMenuItemBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#598](~/add/codesnippet/csharp/e-system.windows.forms.t_23_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#598](~/add/codesnippet/visualbasic/e-system.windows.forms.t_23_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderOverflowButtonBackground">
@@ -1819,32 +1204,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for an overflow button is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderOverflowButtonBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderOverflowButtonBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#590](~/add/codesnippet/csharp/e-system.windows.forms.t_73_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#590](~/add/codesnippet/visualbasic/e-system.windows.forms.t_73_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderSeparator">
@@ -1854,32 +1221,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripSeparatorRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a <see cref="T:System.Windows.Forms.ToolStripSeparator" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderSeparator event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderSeparator event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#602](~/add/codesnippet/csharp/e-system.windows.forms.t_110_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#602](~/add/codesnippet/visualbasic/e-system.windows.forms.t_110_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderSplitButtonBackground">
@@ -1889,32 +1238,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderSplitButtonBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderSplitButtonBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#601](~/add/codesnippet/csharp/e-system.windows.forms.t_87_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#601](~/add/codesnippet/visualbasic/e-system.windows.forms.t_87_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderStatusStripSizingGrip">
@@ -1924,32 +1255,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the display style changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderStatusStripSizingGrip event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderStatusStripSizingGrip event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#600](~/add/codesnippet/csharp/e-system.windows.forms.t_25_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#600](~/add/codesnippet/visualbasic/e-system.windows.forms.t_25_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderToolStripBackground">
@@ -1959,32 +1272,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStrip" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderToolStripBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderToolStripBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#584](~/add/codesnippet/csharp/e-system.windows.forms.t_112_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#584](~/add/codesnippet/visualbasic/e-system.windows.forms.t_112_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderToolStripBorder">
@@ -1994,32 +1289,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the border for a <see cref="T:System.Windows.Forms.ToolStrip" /> is rendered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderToolStripBorder event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderToolStripBorder event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#587](~/add/codesnippet/csharp/e-system.windows.forms.t_18_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#587](~/add/codesnippet/visualbasic/e-system.windows.forms.t_18_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderToolStripContentPanelBackground">
@@ -2029,32 +1306,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripContentPanelRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Draws the background of a <see cref="T:System.Windows.Forms.ToolStripContentPanel" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderToolStripContentPanelBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderToolStripContentPanelBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#586](~/add/codesnippet/csharp/e-system.windows.forms.t_103_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#586](~/add/codesnippet/visualbasic/e-system.windows.forms.t_103_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderToolStripPanelBackground">
@@ -2064,32 +1323,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripPanelRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Draws the background of a <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderToolStripPanelBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderToolStripPanelBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#585](~/add/codesnippet/csharp/e-system.windows.forms.t_49_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#585](~/add/codesnippet/visualbasic/e-system.windows.forms.t_49_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderToolStripStatusLabelBackground">
@@ -2099,32 +1340,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Draws the background of a <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RenderToolStripStatusLabelBackground event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the RenderToolStripStatusLabelBackground event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#599](~/add/codesnippet/csharp/e-system.windows.forms.t_138_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#599](~/add/codesnippet/visualbasic/e-system.windows.forms.t_138_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleArrowOffsetsIfNeeded">
@@ -2141,7 +1364,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Applies the F:System.Windows.Forms.ToolStripRenderer.Offset2X and F:System.Windows.Forms.ToolStripRenderer.Offset2Y specified to scaling the arrow icon, if scaling is required per the DPI settings of the computer.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

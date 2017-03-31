@@ -10,18 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the ability of the location provider to provide location updates.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to handle <xref:System.Device.Location.GeoCoordinateWatcher.StatusChanged> events and print out the current GeoPositionStatus.  
-  
- [!code-cs[System.Device.Location.ShowStatusUpdates#1](~/add/codesnippet/csharp/showstatusupdates/showstatusupdates.cs#1)]
- [!code-vb[System.Device.Location.ShowStatusUpdates#1](~/add/codesnippet/visualbasic/System.Device.Location.ShowStatusUpdates/ShowStatusUpdates.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -37,7 +27,7 @@
         <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The location provider is disabled. On Windows 7, this is the case when the Sensor and Location platform has been disabled by group policy.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Initializing">
@@ -53,7 +43,7 @@
         <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The location provider is initializing.  For example, a GPS that is still obtaining a fix has this status.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoData">
@@ -69,15 +59,7 @@
         <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No location data is available from any location provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the conditions for Disabled do not apply, <xref:System.Device.Location.GeoCoordinateWatcher> has this status before it has been started and after it has been stopped.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ready">
@@ -93,7 +75,7 @@
         <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A location provider is ready to supply new data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

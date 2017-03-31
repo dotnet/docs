@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutPanel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -51,61 +50,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a panel that dynamically lays out its contents in a grid composed of rows and columns.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TableLayoutPanel control arranges its contents in a grid. Because the layout is performed both at design time and run time, it can change dynamically as the application environment changes. This gives the controls in the panel the ability to proportionally resize, so it can respond to changes such as the parent control resizing or text length changing due to localization.  
-  
- Any Windows Forms control can be a child of the TableLayoutPanel control, including other instances of TableLayoutPanel. This allows you to construct sophisticated layouts that adapt to changes at runtime.  
-  
- The TableLayoutPanel control can expand to accommodate new controls when they are added, depending on the value of the <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A>, <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A>, and <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> properties. Setting either the <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A> or <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A> property to a value of 0 specifies that the TableLayoutPanel will be unbound in the corresponding direction.  
-  
- You can also control the direction of expansion (horizontal or vertical) after the TableLayoutPanel control is full of child controls. By default, the TableLayoutPanel control expands downward by adding rows.  
-  
- If you want rows and columns that behave differently from the default behavior, you can control the properties of rows and columns by using the <xref:System.Windows.Forms.TableLayoutPanel.RowStyles%2A> and <xref:System.Windows.Forms.TableLayoutPanel.ColumnStyles%2A> properties. You can set the properties of rows or columns individually.  
-  
- The TableLayoutPanel control adds the following properties to its child controls: `Cell`, `Column`, `Row`, `ColumnSpan`, and `RowSpan`.  
-  
- You can merge cells in the TableLayoutPanel control by setting the `ColumnSpan` or `RowSpan` properties on a child control.  
-  
-> [!NOTE]
->  To set the `Cell`, `Column`, `Row`, `ColumnSpan`, and `RowSpan` properties at run time, use the <xref:System.Windows.Forms.TableLayoutPanel.SetCellPosition%2A>, <xref:System.Windows.Forms.TableLayoutPanel.SetColumn%2A>, <xref:System.Windows.Forms.TableLayoutPanel.SetRow%2A>, <xref:System.Windows.Forms.TableLayoutPanel.SetColumnSpan%2A>, and <xref:System.Windows.Forms.TableLayoutPanel.SetRowSpan%2A> methods.  
->   
->  To read the `Cell`, `Column`, `Row`, `ColumnSpan`, and `RowSpan` properties at run time, use the <xref:System.Windows.Forms.TableLayoutPanel.GetCellPosition%2A>, <xref:System.Windows.Forms.TableLayoutPanel.GetColumn%2A>, <xref:System.Windows.Forms.TableLayoutPanel.GetRow%2A>, <xref:System.Windows.Forms.TableLayoutPanel.GetColumnSpan%2A>, and <xref:System.Windows.Forms.TableLayoutPanel.GetRowSpan%2A> methods.  
-  
- The docking behavior of child controls is the same as other container controls.  
-  
- The anchoring behavior of child controls in a TableLayoutPanel differs from the behavior in other container controls. If the value of the child control's <xref:System.Windows.Forms.Control.Anchor%2A> property is set to <xref:System.Windows.Forms.AnchorStyles> or <xref:System.Windows.Forms.AnchorStyles>, the control will be placed against the left or right border of the cell, at a distance that is the sum of the control's <xref:System.Windows.Forms.Control.Margin%2A> property and the panel's <xref:System.Windows.Forms.Control.Padding%2A> property. If both the <xref:System.Windows.Forms.AnchorStyles> and <xref:System.Windows.Forms.AnchorStyles> values are set, the control will be sized to the width of the cell, with the <xref:System.Windows.Forms.Control.Margin%2A> and <xref:System.Windows.Forms.Control.Padding%2A> values taken into account. The behavior for <xref:System.Windows.Forms.AnchorStyles> and <xref:System.Windows.Forms.AnchorStyles> anchoring is analogous. For more information, see [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](../Topic/How%20to:%20Anchor%20and%20Dock%20Child%20Controls%20in%20a%20TableLayoutPanel%20Control.md).  
-  
- If you need a child control to mimic the default anchoring behavior in other container controls, you can adjust the <xref:System.Windows.Forms.Control.Margin%2A> and <xref:System.Windows.Forms.Control.Padding%2A> properties to maintain a constant distance between the control's border and the cell's border.  
-  
- Setting the values of both the `Column` and `Row` properties of a child control to -1 will cause the control to be moved to the first empty cell in the TableLayoutPanel control. The empty cell will be chosen in a search that proceeds from left to right and from top to bottom. This order is dependent on the culture, so it will behave correctly in right-to-left (RTL) layouts.  
-  
-> [!NOTE]
->  Only controls that have the <xref:System.Windows.Forms.Control.Visible%2A> property set to `true` participate in the TableLayoutPanel control's layout computations.  
-  
- Also see:  
-  
--   [How to: Align and Stretch a Control in a TableLayoutPanel Control](../Topic/How%20to:%20Align%20and%20Stretch%20a%20Control%20in%20a%20TableLayoutPanel%20Control.md)  
-  
--   [How to: Span Rows and Columns in a TableLayoutPanel Control](../Topic/How%20to:%20Span%20Rows%20and%20Columns%20in%20a%20TableLayoutPanel%20Control.md)  
-  
--   [How to: Edit Columns and Rows in a TableLayoutPanel Control](../Topic/How%20to:%20Edit%20Columns%20and%20Rows%20in%20a%20TableLayoutPanel%20Control.md)  
-  
--   [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../Topic/Walkthrough:%20Arranging%20Controls%20on%20Windows%20Forms%20Using%20a%20TableLayoutPanel.md)  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.TableLayoutPanel.OnCellPaint%2A> method to create a custom appearance for a cell.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/visualbasic/t-system.windows.forms.t_31_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/csharp/t-system.windows.forms.t_31_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,20 +61,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TableLayoutPanel" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.Windows.Forms.TableLayoutPanel.BorderStyle%2A>, <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A>, <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A>, and <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> properties to their default values.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -138,7 +76,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -156,8 +93,8 @@
         <ReturnType>System.Windows.Forms.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border style for the panel.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.BorderStyle" /> values describing the style of the border of the panel. The default is <see cref="T:System.Windows.Forms.BorderStyle" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +105,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -183,24 +119,9 @@
         <ReturnType>System.Windows.Forms.TableLayoutPanelCellBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style of the cell borders.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.TableLayoutPanelCellBorderStyle" /> values describing the style of all the cell borders in the table. The default is <see cref="T:System.Windows.Forms.TableLayoutPanelCellBorderStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this value will cause the panel to redraw itself and its contents.  
-  
-   
-  
-## Examples  
- The following code example sets the value of the <xref:System.Windows.Forms.TableLayoutPanel.BorderStyle%2A> property depending on the selected <xref:System.Windows.Forms.RadioButton>.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#6](~/add/codesnippet/visualbasic/p-system.windows.forms.t_210_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#6](~/add/codesnippet/csharp/p-system.windows.forms.t_210_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellPaint">
@@ -210,32 +131,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TableLayoutCellPaintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the cell is redrawn.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the CellPaint event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TableLayoutPanel> named `TableLayoutPanel1`. Then ensure that the event handler is associated with the CellPaint event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#561](~/add/codesnippet/csharp/e-system.windows.forms.t_67_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#561](~/add/codesnippet/visualbasic/e-system.windows.forms.t_67_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnCount">
@@ -245,7 +148,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -260,18 +162,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of columns in the table.</summary>
-        <value>The number of columns in the <see cref="T:System.Windows.Forms.TableLayoutPanel" /> control. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can specify both the ColumnCount and the <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A> properties for layouts with a known and fixed number of cells. You can also specify one property or the other if you expect the number of cells in your layout to grow, assuming that the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> property allows for such growth. If the value of <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A> is 0, the panel will grow by adding rows, and if the value of ColumnCount is 0, the panel will grow by adding columns. Specifying panel growth with the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> property is preferred to setting <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A> or ColumnCount to 0, however.  
-  
- Controls can be added or deleted from the table using the <xref:System.Windows.Forms.TableLayoutPanel.Controls%2A>property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnStyles">
@@ -281,7 +174,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -302,32 +194,9 @@
         <ReturnType>System.Windows.Forms.TableLayoutColumnStyleCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of column styles for the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.TableLayoutColumnStyleCollection" /> containing a <see cref="T:System.Windows.Forms.ColumnStyle" /> for each column in the <see cref="T:System.Windows.Forms.TableLayoutPanel" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ColumnStyles property to access the style properties of specific columns. You can use members of the <xref:System.Windows.Forms.ColumnStyle> class to set the characteristics of individual columns in the table.  
-  
- When the <xref:System.Windows.Forms.TableLayoutPanel> control arranges its columns, it assigns priorities to each <xref:System.Windows.Forms.ColumnStyle> in the following order:  
-  
-1.  Columns with <xref:System.Windows.Forms.ColumnStyle> set to <xref:System.Windows.Forms.SizeType> are considered first, and their fixed widths are allocated.  
-  
-2.  Columns with <xref:System.Windows.Forms.ColumnStyle> set to <xref:System.Windows.Forms.SizeType> are sized to their contents.  
-  
-3.  Remaining space is divided among columns with <xref:System.Windows.Forms.ColumnStyle> set to <xref:System.Windows.Forms.SizeType>.  
-  
-   
-  
-## Examples  
- The following code example sets the <xref:System.Windows.Forms.ColumnStyle> properties of each column when a <xref:System.Windows.Forms.Button> is clicked.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#8](~/add/codesnippet/visualbasic/p-system.windows.forms.t_67_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#8](~/add/codesnippet/csharp/p-system.windows.forms.t_67_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -337,7 +206,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -352,24 +220,9 @@
         <ReturnType>System.Windows.Forms.TableLayoutControlCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of controls contained within the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.TableLayoutControlCollection" /> containing the controls associated with the current <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Controls property contains all of the controls associated with the table, including controls that may not be currently displayed because of <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A>, <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A>, or <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A> limitations.  
-  
-   
-  
-## Examples  
- The following code example enumerates all the child controls in the <xref:System.Windows.Forms.TableLayoutPanel>.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#2](~/add/codesnippet/visualbasic/p-system.windows.forms.t_175_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#2](~/add/codesnippet/csharp/p-system.windows.forms.t_175_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateControlsInstance">
@@ -379,7 +232,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -392,8 +244,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the control collection for the control.</summary>
-        <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,7 +256,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -425,9 +276,9 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">A control contained within a cell.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the row and the column of the cell.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the cell position.</returns>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -438,7 +289,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -459,35 +309,10 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">A child control of the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</param>
-        <summary>Returns the column position of the specified child control.</summary>
-        <returns>The column position of the specified child control, or -1 if the position of <paramref name="control" /> is determined by <see cref="System.Windows.Forms.TableLayoutPanel.LayoutEngine%2A" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `control` spans two or more columns, the GetColumn method will return the lowest column index.  
-  
- The column position value is zero based, so you can use it as an index for the array returned by <xref:System.Windows.Forms.TableLayoutPanel.GetColumnWidths%2A>.  
-  
- This method is called by the `Column` property, which the panel adds to its child controls at design time.  
-  
- To get the actual position of `control`, even when its position is determined by <xref:System.Windows.Forms.TableLayoutPanel.LayoutEngine%2A>, call the <xref:System.Windows.Forms.TableLayoutPanel.GetPositionFromControl%2A> method.  
-  
-   
-  
-## Examples  
- The following code example enumerates all the child controls in the <xref:System.Windows.Forms.TableLayoutPanel> and finds the column index for each control using the GetColumn method.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#3](~/add/codesnippet/visualbasic/m-system.windows.forms.t_6_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#3](~/add/codesnippet/csharp/m-system.windows.forms.t_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="control" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="control" /> is not a type that can be arranged by this <see cref="T:System.Windows.Forms.Layout.LayoutEngine" />.</exception>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetColumnSpan">
@@ -497,7 +322,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -515,27 +339,10 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">A child control of the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</param>
-        <summary>Returns the number of columns spanned by the specified child control.</summary>
-        <returns>The number of columns spanned by the child control. The default is 1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Column spanning is often useful for positioning a control that is considerably wider than its peers.  
-  
- This method is called by the `ColumnSpan` property, which the panel adds to its child controls at design time.  
-  
-   
-  
-## Examples  
- The following code example uses the GetColumnSpan and <xref:System.Windows.Forms.TableLayoutPanel.SetColumnSpan%2A> methods to set the width of a <xref:System.Windows.Forms.Button> control in a <xref:System.Windows.Forms.TableLayoutPanel>.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#11](~/add/codesnippet/visualbasic/53fb28ec-6358-4387-9902-_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#11](~/add/codesnippet/csharp/53fb28ec-6358-4387-9902-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetColumnWidths">
@@ -545,7 +352,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -561,8 +367,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an array representing the widths, in pixels, of the columns in the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</summary>
-        <returns>An array of type <see cref="T:System.Int32" /> that contains the widths, in pixels, of the columns in the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,7 +379,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -584,27 +389,11 @@
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="column">The column position of the control to retrieve.</param>
-        <param name="row">The row position of the control to retrieve.</param>
-        <summary>Returns the child control occupying the specified position.</summary>
-        <returns>The child control occupying the specified cell; otherwise, <see langword="null" /> if no control exists at the specified column and row, or if the control has its <see cref="System.Windows.Forms.Control.Visible%2A" /> property set to <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The column and row position values are zero based.  
-  
-   
-  
-## Examples  
- The following code example enumerates all the cell positions in the <xref:System.Windows.Forms.TableLayoutPanel> by looping through the columns and rows given by <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A> and <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A>, and then calling the GetControlFromPosition method to retrieve the control at each cell.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#5](~/add/codesnippet/visualbasic/b58aba5f-2f21-44ee-8fca-_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#5](~/add/codesnippet/csharp/b58aba5f-2f21-44ee-8fca-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Either <paramref name="column" /> or <paramref name="row" /> (or both) is less than 0.</exception>
+        <param name="column">To be added.</param>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPositionFromControl">
@@ -614,7 +403,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -624,17 +412,10 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">A control contained within a cell.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the row and the column of the cell that contains the control.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the cell position.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetPositionFromControl method returns the actual current position of `control`, even if its position is determined by the <xref:System.Windows.Forms.TableLayoutPanel.LayoutEngine%2A>. This method takes into account the entire <xref:System.Windows.Forms.TableLayoutPanel> control state, including column or row spanning and when the <xref:System.Windows.Forms.TableLayoutPanel.LayoutEngine%2A> has placed a control with its `Column` and `Row` properties set to -1. This is equivalent to the situation in which <xref:System.Windows.Forms.TableLayoutPanel.GetColumn%2A> and <xref:System.Windows.Forms.TableLayoutPanel.GetRow%2A> return -1.  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRow">
@@ -644,7 +425,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -665,35 +445,10 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">A child control of the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</param>
-        <summary>Returns the row position of the specified child control.</summary>
-        <returns>The row position of <paramref name="control" />, or -1 if the position of <paramref name="control" /> is determined by <see cref="System.Windows.Forms.TableLayoutPanel.LayoutEngine%2A" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `control` spans two or more rows, the GetRow method will return the lowest row index.  
-  
- The row position value is zero based, so you can use it as an index for the array returned by <xref:System.Windows.Forms.TableLayoutPanel.GetRowHeights%2A>.  
-  
- This method is called by the `Row` property, which the panel adds to its child controls at design time.  
-  
- To get the actual position of `control`, even when its position is determined by <xref:System.Windows.Forms.TableLayoutPanel.LayoutEngine%2A>, call the <xref:System.Windows.Forms.TableLayoutPanel.GetPositionFromControl%2A> method.  
-  
-   
-  
-## Examples  
- The following code example enumerates all the child controls in the <xref:System.Windows.Forms.TableLayoutPanel> and finds the row index for each using the GetRow method.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#4](~/add/codesnippet/visualbasic/m-system.windows.forms.t_24_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#4](~/add/codesnippet/csharp/m-system.windows.forms.t_24_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="control" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="control" /> is not a type that can be arranged by this <see cref="T:System.Windows.Forms.Layout.LayoutEngine" />.</exception>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRowHeights">
@@ -703,7 +458,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -719,8 +473,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an array representing the heights, in pixels, of the rows in the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</summary>
-        <returns>An array of type <see cref="T:System.Int32" /> that contains the heights, in pixels, of the rows in the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -731,7 +485,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -749,27 +502,10 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">A child control of the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</param>
-        <summary>Returns the number of rows spanned by the specified child control.</summary>
-        <returns>The number of rows spanned by the child control. The default is 1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Row spanning is often useful for positioning a control that is considerably taller than its peers.  
-  
- This method is called by the `RowSpan` property, which the panel adds to its child controls at design time.  
-  
-   
-  
-## Examples  
- The following code example uses the GetRowSpan and <xref:System.Windows.Forms.TableLayoutPanel.SetRowSpan%2A> methods to set the width of a <xref:System.Windows.Forms.Button> control in a <xref:System.Windows.Forms.TableLayoutPanel>.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#11](~/add/codesnippet/visualbasic/m-system.windows.forms.t_63_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#11](~/add/codesnippet/csharp/m-system.windows.forms.t_63_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GrowStyle">
@@ -779,7 +515,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -791,28 +526,9 @@
         <ReturnType>System.Windows.Forms.TableLayoutPanelGrowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.TableLayoutPanel" /> control should expand to accommodate new cells when all existing cells are occupied.</summary>
-        <value>A <see cref="T:System.Windows.Forms.TableLayoutPanelGrowStyle" /> indicating the growth scheme. The default is <see cref="T:System.Windows.Forms.TableLayoutPanelGrowStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the <xref:System.Windows.Forms.TableLayoutPanel> control expands downward by adding rows.  
-  
-> [!NOTE]
->  If an attempt is made to add a control to a full <xref:System.Windows.Forms.TableLayoutPanel> control, and the value of GrowStyle is <xref:System.Windows.Forms.TableLayoutPanelGrowStyle>, then an <xref:System.ArgumentException> is thrown.  
-  
-   
-  
-## Examples  
- The following code example sets the value of the GrowStyle property depending on the selected <xref:System.Windows.Forms.RadioButton>. At run time, when the user clicks on the button labeled **Test GrowStyle**, a <xref:System.Windows.Forms.Button> control is added to the <xref:System.Windows.Forms.TableLayoutPanel> control. If the <xref:System.Windows.Forms.TableLayoutPanel> control is full, it expands by adding a row or column, or it raises an exception, depending on the value of GrowStyle.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#7](~/add/codesnippet/visualbasic/p-system.windows.forms.t_10_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#7](~/add/codesnippet/csharp/p-system.windows.forms.t_10_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The property value is invalid for the <see cref="T:System.Windows.Forms.TableLayoutPanelGrowStyle" /> enumeration.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutEngine">
@@ -822,15 +538,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Layout.LayoutEngine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a cached instance of the panel's layout engine.</summary>
-        <value>The <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> for the panel's contents.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -841,7 +556,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -859,10 +573,9 @@
         <ReturnType>System.Windows.Forms.TableLayoutSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value representing the table layout settings.</summary>
-        <value>A <see cref="T:System.Windows.Forms.TableLayoutSettings" /> containing the table layout settings.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">The property value is <see langword="null" />, or an attempt was made to set <see cref="T:System.Windows.Forms.TableLayoutSettings" /> directly, which is not supported; instead, set individual properties.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnCellPaint">
@@ -872,7 +585,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -882,19 +594,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.TableLayoutCellPaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.TableLayoutCellPaintEventArgs" /> that provides data for the event.</param>
-        <summary>Receives a call when the cell should be refreshed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to override the OnCellPaint method to create a custom appearance for a cell.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/visualbasic/d3c4d30b-b856-4c45-9399-_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/csharp/d3c4d30b-b856-4c45-9399-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -904,7 +606,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -919,16 +620,9 @@
         <Parameter Name="levent" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="levent">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="levent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -938,7 +632,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -948,8 +641,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains information about the panel to paint.</param>
-        <summary>Paints the background of the panel.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -960,7 +653,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -975,18 +667,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of rows in the table.</summary>
-        <value>The number of rows in the <see cref="T:System.Windows.Forms.TableLayoutPanel" /> control. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can specify both the <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A> and the RowCount properties for layouts with a known and fixed number of cells. You can also specify one property or the other if you expect the number of cells in your layout to grow, assuming that the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> property allows for such growth. If the value of RowCount is 0, the panel will grow by adding rows, and if the value of <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A> is 0, the panel will grow by adding columns. Specifying panel growth with the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> property is preferred to setting RowCount or <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A> to 0, however.  
-  
- Controls can be added or deleted from the table using the <xref:System.Windows.Forms.TableLayoutPanel.Controls%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RowStyles">
@@ -996,7 +679,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1017,32 +699,9 @@
         <ReturnType>System.Windows.Forms.TableLayoutRowStyleCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of row styles for the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.TableLayoutRowStyleCollection" /> containing a <see cref="T:System.Windows.Forms.RowStyle" /> for each row in the <see cref="T:System.Windows.Forms.TableLayoutPanel" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the RowStyles property to access the style properties of specific rows. You can use members of the <xref:System.Windows.Forms.RowStyle> class to set the characteristics of individual rows in the table.  
-  
- When the <xref:System.Windows.Forms.TableLayoutPanel> control arranges its rows, it assigns priorities to each <xref:System.Windows.Forms.RowStyle> in the following order:  
-  
-1.  Rows with <xref:System.Windows.Forms.RowStyle> set to <xref:System.Windows.Forms.SizeType> are considered first, and their fixed heights are allocated.  
-  
-2.  Rows with <xref:System.Windows.Forms.RowStyle> set to <xref:System.Windows.Forms.SizeType> are sized to their contents.  
-  
-3.  Remaining space is divided among rows with <xref:System.Windows.Forms.RowStyle> set to <xref:System.Windows.Forms.SizeType>.  
-  
-   
-  
-## Examples  
- The following code example sets the <xref:System.Windows.Forms.RowStyle> properties of each row when a <xref:System.Windows.Forms.Button> is clicked.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#9](~/add/codesnippet/visualbasic/p-system.windows.forms.t_234_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#9](~/add/codesnippet/csharp/p-system.windows.forms.t_234_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleControl">
@@ -1052,7 +711,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1063,9 +721,9 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="factor">The height and width of the control's bounds.</param>
-        <param name="specified">One of the values of <see cref="T:System.Windows.Forms.BoundsSpecified" /> that specifies the bounds of the control to use when defining its size and position.</param>
-        <summary>Scales a control's location, size, padding and margin.</summary>
+        <param name="factor">To be added.</param>
+        <param name="specified">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1076,7 +734,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1092,17 +749,10 @@
         <Parameter Name="dy" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="dx">The ratio by which to scale the control horizontally.</param>
-        <param name="dy">The ratio by which to scale the control vertically</param>
-        <summary>Performs the work of scaling the entire panel and any child controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ScaleCore method uses the `dx` and `dy` parameter values to scale both the height and width of the panel independently.  
-  
- ]]></format>
-        </remarks>
+        <param name="dx">To be added.</param>
+        <param name="dy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCellPosition">
@@ -1112,7 +762,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1123,9 +772,9 @@
         <Parameter Name="position" Type="System.Windows.Forms.TableLayoutPanelCellPosition" />
       </Parameters>
       <Docs>
-        <param name="control">A control contained within a cell.</param>
-        <param name="position">A <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the row and the column of the cell.</param>
-        <summary>Sets the <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the row and the column of the cell.</summary>
+        <param name="control">To be added.</param>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1136,7 +785,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1147,29 +795,10 @@
         <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="control">The control to move to another column.</param>
-        <param name="column">The column to which <c>control</c> will be moved.</param>
-        <summary>Sets the column position of the specified child control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SetColumn method moves the control to another column in the <xref:System.Windows.Forms.TableLayoutPanel>. The columns and rows have zero-based indexes. Setting the column position to -1 specifies that the control will flow to the first empty cell.  
-  
- This method reapplies the table layout to all controls in the <xref:System.Windows.Forms.TableLayoutPanel>.  
-  
- This method is called by the `Column` property, which the panel adds to its child controls at design time.  
-  
-   
-  
-## Examples  
- The following code example uses the SetColumn method to swap two controls contained within a <xref:System.Windows.Forms.TableLayoutPanel> control. The example assumes a <xref:System.Windows.Forms.TableLayoutPanel> control with at least two rows.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#12](~/add/codesnippet/visualbasic/357de9ad-2a13-4fed-bf9f-_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#12](~/add/codesnippet/csharp/357de9ad-2a13-4fed-bf9f-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <param name="column">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetColumnSpan">
@@ -1179,7 +808,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1190,29 +818,10 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="control">A child control of the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</param>
-        <param name="value">The number of columns to span.</param>
-        <summary>Sets the number of columns spanned by the child control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Column spanning is often useful for positioning a control that is considerably wider than its peers.  
-  
- This method is called by the `ColumnSpan` property, which the panel adds to its child controls at design time.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.Windows.Forms.TableLayoutPanel.GetColumnSpan%2A> and SetColumnSpan methods to set the width of a <xref:System.Windows.Forms.Button> control in a <xref:System.Windows.Forms.TableLayoutPanel>.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#11](~/add/codesnippet/visualbasic/6f46e877-ee28-450d-ab99-_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#11](~/add/codesnippet/csharp/6f46e877-ee28-450d-ab99-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="value" /> is less than 1.</exception>
+        <param name="control">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetRow">
@@ -1222,7 +831,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1233,29 +841,10 @@
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="control">The control to move to another row.</param>
-        <param name="row">The row to which <c>control</c> will be moved.</param>
-        <summary>Sets the row position of the specified child control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SetRow method moves the control to another row in the <xref:System.Windows.Forms.TableLayoutPanel> control. The columns and rows have zero-based indexes. Setting the row position to -1 specifies that the control will flow to the first empty cell.  
-  
- This method reapplies the table layout to all controls in the <xref:System.Windows.Forms.TableLayoutPanel>.  
-  
- This method is called by the `Row` property, which the panel adds to its child controls at design time.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.Windows.Forms.TableLayoutPanel.SetColumn%2A> method to swap two controls contained within a <xref:System.Windows.Forms.TableLayoutPanel> control. The example assumes a <xref:System.Windows.Forms.TableLayoutPanel> control with at least two rows.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#13](~/add/codesnippet/visualbasic/bd9fff10-efca-4212-bb80-_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#13](~/add/codesnippet/csharp/bd9fff10-efca-4212-bb80-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetRowSpan">
@@ -1265,7 +854,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1276,29 +864,10 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="control">A child control of the <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</param>
-        <param name="value">The number of rows to span.</param>
-        <summary>Sets the number of rows spanned by the child control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Row spanning is often useful for positioning a control that is considerably taller than its peers.  
-  
- This method is called by the `RowSpan` property, which the panel adds to its child controls at design time.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.Windows.Forms.TableLayoutPanel.GetRowSpan%2A> and SetRowSpan methods to set the width of a <xref:System.Windows.Forms.Button> control in a <xref:System.Windows.Forms.TableLayoutPanel>.  
-  
- [!code-vb[System.Windows.Forms.TableLayoutPanel#11](~/add/codesnippet/visualbasic/a55b747e-cc03-41c9-9013-_1.vb)]
- [!code-cs[System.Windows.Forms.TableLayoutPanel#11](~/add/codesnippet/csharp/a55b747e-cc03-41c9-9013-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="value" /> is less than 1.</exception>
+        <param name="control">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IExtenderProvider.CanExtend">
@@ -1308,7 +877,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1318,18 +886,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> to receive the extender properties.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IExtenderProvider.CanExtend%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if this object can provide extender properties to the specified object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TableLayoutPanel> instance is cast to an <xref:System.ComponentModel.IExtenderProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

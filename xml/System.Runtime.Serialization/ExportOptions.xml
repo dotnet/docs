@@ -4,39 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ExportOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the options that can be set for an <see cref="T:System.Runtime.Serialization.XsdDataContractExporter" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Serialization.XsdDataContractExporter> is used to generate XSD schemas from a type or assembly. You can also use the <xref:System.Runtime.Serialization.XsdDataContractImporter> to generate [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] code from a schema document.  
-  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] importing and exporting schemas, see [Schema Import and Export](../Topic/Schema%20Import%20and%20Export.md) and [Exporting Schemas from Classes](../Topic/Exporting%20Schemas%20from%20Classes.md).  
-  
- The <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A> property is used by the <xref:System.Runtime.Serialization.DataContractSerializer> to include types that can be read in an object graph. [!INCLUDE[crabout](~/add/includes/crabout-md.md)] the data contract and known types, see [Data Contract Known Types](../Topic/Data%20Contract%20Known%20Types.md).  
-  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] data contracts, see [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
-  
-   
-  
-## Examples  
- The following example creates an instance of the ExportOptions class and adds a type (`Possessions`) to the collection returned by the <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A> property.  
-  
- The <xref:System.Runtime.Serialization.XsdDataContractExporter> then exports the schemas of the types, including the `Possessions` type added to the collection.  
-  
- [!code-vb[XsdDataContractExporter#0](~/add/codesnippet/visualbasic/t-system.runtime.seriali_10_1.vb)]
- [!code-cs[XsdDataContractExporter#0](~/add/codesnippet/csharp/t-system.runtime.seriali_10_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,12 +27,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.ExportOptions" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,15 +47,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.IDataContractSurrogate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a serialization surrogate.</summary>
-        <value>An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> interface that can be used to customize how an XML schema representation is exported for a specific type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,33 +66,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of types that may be encountered during serialization or deserialization.</summary>
-        <value>A <see langword="KnownTypes" /> collection that contains types that may be encountered during serialization or deserialization. XML schema representations are exported for all the types specified in this collection by the <see cref="T:System.Runtime.Serialization.XsdDataContractExporter" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The KnownTypes property is used by the <xref:System.Runtime.Serialization.DataContractSerializer> to include types that can be read in an object graph (set using the <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A?displayProperty=fullName> property).  
-  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] the data contract and known types, see [Data Contract Known Types](../Topic/Data%20Contract%20Known%20Types.md).  
-  
-   
-  
-## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.ExportOptions> class and adds a type to the collection returned by the KnownTypes property.  
-  
- [!code-vb[XsdDataContractExporter#1](~/add/codesnippet/visualbasic/p-system.runtime.seriali_6_1.vb)]
- [!code-cs[XsdDataContractExporter#1](~/add/codesnippet/csharp/p-system.runtime.seriali_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

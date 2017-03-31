@@ -4,29 +4,17 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ISafeSerializationData" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Enables serialization of custom exception data in security-transparent code.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In versions previous to.NET Framework 4.0, serialization of custom user data in a security transparent code was accomplished using the <xref:System.Exception.GetObjectData%2A> method. Starting with .NET Framework 4.0, that method is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute which prevents execution in security-transparent code. To work around this condition, implement the ISafeSerializationData interface and add custom data as shown in the example below.  
-  
- The <xref:System.Runtime.Serialization.ISafeSerializationData.CompleteDeserialization%2A> method is called after serialization, and uses the <xref:System.Runtime.Serialization.SafeSerializationEventArgs> to restore the custom data.  
-  
-   
-  
-## Examples  
- The following example contains an implementation of the ISafeSerializationData interface that is used to store custom data that is serialized.  
-  
- [!code-vb[ISafeSerializationData#1](~/add/codesnippet/visualbasic/t-system.runtime.seriali_6_1.vb)]
- [!code-cs[ISafeSerializationData#1](~/add/codesnippet/csharp/t-system.runtime.seriali_6_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CompleteDeserialization">
@@ -36,7 +24,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -45,24 +38,9 @@
         <Parameter Name="deserialized" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="deserialized">An object that contains the state of the instance.</param>
-        <summary>This method is called when the instance is deserialized.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The state object is stored in a private variable defined in the implementation of the <xref:System.Runtime.Serialization.ISafeSerializationData> class.  
-  
-   
-  
-## Examples  
- The following example restores the state of the exception after being deserialized.  
-  
- [!code-vb[ISafeSerializationData#2](~/add/codesnippet/visualbasic/6f34c893-b650-4b68-a165-_1.vb)]
- [!code-cs[ISafeSerializationData#2](~/add/codesnippet/csharp/6f34c893-b650-4b68-a165-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="deserialized">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

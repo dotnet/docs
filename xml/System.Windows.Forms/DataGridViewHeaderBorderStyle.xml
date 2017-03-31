@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewHeaderBorderStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the border style that can be applied to the <see cref="System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A" /> and <see cref="System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A" /> properties of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example illustrates the use of this type. For more information, see [How to: Change the Border and Gridline Styles in the Windows Forms DataGridView Control](../Topic/How%20to:%20Change%20the%20Border%20and%20Gridline%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc#030](~/add/codesnippet/csharp/t-system.windows.forms.d_123_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#030](~/add/codesnippet/visualbasic/t-system.windows.forms.d_123_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Custom">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewHeaderBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A border that has been customized.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewHeaderBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No borders.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Raised">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewHeaderBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A three-dimensional raised border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -83,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewHeaderBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A single-line border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sunken">
@@ -100,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewHeaderBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A three-dimensional sunken border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

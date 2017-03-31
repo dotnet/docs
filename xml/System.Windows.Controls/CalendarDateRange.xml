@@ -15,24 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a range of dates in a <see cref="T:System.Windows.Controls.Calendar" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CalendarDateRange objects are primarily used by the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection> to specify a range of dates that are not selectable in a <xref:System.Windows.Controls.Calendar>.  
-  
-   
-  
-## Examples  
- The following example creates CalendarDateRange objects to specify which dates in a <xref:System.Windows.Controls.Calendar> cannot be selected.  
-  
- [!code-cs[CalendarSnippets#3](~/add/codesnippet/csharp/calendarsnippets/window1.xaml.cs#3)]
- [!code-xml[CalendarSnippets#3](~/add/codesnippet/xaml/calendarsnippets_xaml/window1.xaml#3)]
- [!code-vb[CalendarSnippets#3](~/add/codesnippet/visualbasic/calendarsnippets_vb/window1.xaml.vb#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.CalendarDateRange" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +47,8 @@
         <Parameter Name="day" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="day">The date to add.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.CalendarDateRange" /> class with a single date.</summary>
+        <param name="day">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +66,9 @@
         <Parameter Name="end" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="start">The start of the range to be represented.</param>
-        <param name="end">The end of the range to be represented.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.CalendarDateRange" /> class with a range of dates.</summary>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,36 +85,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last date in the represented range.</summary>
-        <value>The last date in the represented range.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_End"></a>   
-## XAML Attribute Usage  
-  
-```  
-<CalendarDateRange End="dateTimeString"/>  
-```  
-  
-<a name="xamlValues_End"></a>   
-## XAML Values  
- *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](../Topic/DateTime%20XAML%20Syntax.md) topic.  
-  
-   
-  
-## Examples  
- The following example creates <xref:System.Windows.Controls.CalendarDateRange> objects to specify which dates in a <xref:System.Windows.Controls.Calendar> cannot be selected.  
-  
- [!code-cs[CalendarSnippets#3](~/add/codesnippet/csharp/calendarsnippets/window1.xaml.cs#3)]
- [!code-xml[CalendarSnippets#3](~/add/codesnippet/xaml/calendarsnippets_xaml/window1.xaml#3)]
- [!code-vb[CalendarSnippets#3](~/add/codesnippet/visualbasic/calendarsnippets_vb/window1.xaml.vb#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -146,7 +103,7 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a property value changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,36 +120,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the first date in the represented range.</summary>
-        <value>The first date in the represented range.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_Start"></a>   
-## XAML Attribute Usage  
-  
-```  
-<CalendarDateRange Start="dateTimeString"/>  
-```  
-  
-<a name="xamlValues_Start"></a>   
-## XAML Values  
- *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](../Topic/DateTime%20XAML%20Syntax.md) topic.  
-  
-   
-  
-## Examples  
- The following example creates <xref:System.Windows.Controls.CalendarDateRange> objects to specify which dates in a <xref:System.Windows.Controls.Calendar> cannot be selected.  
-  
- [!code-cs[CalendarSnippets#3](~/add/codesnippet/csharp/calendarsnippets/window1.xaml.cs#3)]
- [!code-xml[CalendarSnippets#3](~/add/codesnippet/xaml/calendarsnippets_xaml/window1.xaml#3)]
- [!code-vb[CalendarSnippets#3](~/add/codesnippet/visualbasic/calendarsnippets_vb/window1.xaml.vb#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

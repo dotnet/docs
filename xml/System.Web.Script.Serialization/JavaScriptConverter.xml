@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.JavaScriptConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,29 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides an abstract base class for a custom type converter.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The JavaScriptConverter class enables you to implement serialization and deserialization processes for managed types that are not natively supported by the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class. You can also use JavaScriptConverter when you need more control over the serialization and deserialization process.  
-  
- The <xref:System.Web.Script.Serialization.JavaScriptConverter.SupportedTypes%2A> property indicates the types for which a custom converter provides converter services.  
-  
- To indicate that a custom converter must be used by the <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance, you must register the converter with the instance. If you are using the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class directly, you should use the <xref:System.Web.Script.Serialization.JavaScriptSerializer.RegisterConverters%2A> method to register the converter. Otherwise, if you are invoking Web methods from ECMAScript (JavaScript) and you want to use the custom converter, you can register it by adding a `converters` element in the configuration file. For more information, see [How to: Configure ASP.NET Services in Microsoft Ajax](../Topic/How%20to:%20Configure%20ASP.NET%20Services%20in%20Microsoft%20Ajax.md).  
-  
- When the <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance is serializing a type for which it has a custom converter registered, the serializer calls the <xref:System.Web.Script.Serialization.JavaScriptConverter.Serialize%2A> method. Similarly, when the <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance is deserializing a JavaScript Object Notation (JSON) string and recognizes that a type inside the JSON string has a custom converter associated with it, the serializer calls the <xref:System.Web.Script.Serialization.JavaScriptConverter.Deserialize%2A> method.  
-  
-   
-  
-## Examples  
- The following example shows how to create a custom converter for the <xref:System.Web.UI.WebControls.ListItemCollection> class.  
-  
- [!code-cs[System.Web.Script.Serialization#2](~/add/codesnippet/csharp/t-system.web.script.seri_2_1.cs)]
- [!code-vb[System.Web.Script.Serialization#2](~/add/codesnippet/visualbasic/t-system.web.script.seri_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Script.Serialization.JavaScriptConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,11 +48,11 @@
         <Parameter Name="serializer" Type="System.Web.Script.Serialization.JavaScriptSerializer" />
       </Parameters>
       <Docs>
-        <param name="dictionary">An <see cref="System.Collections.Generic.IDictionary%602" /> instance of property data stored as name/value pairs.</param>
-        <param name="type">The type of the resulting object.</param>
-        <param name="serializer">The <see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> instance.</param>
-        <summary>When overridden in a derived class, converts the provided dictionary into an object of the specified type.</summary>
-        <returns>The deserialized object.</returns>
+        <param name="dictionary">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,18 +73,11 @@
         <Parameter Name="serializer" Type="System.Web.Script.Serialization.JavaScriptSerializer" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to serialize.</param>
-        <param name="serializer">The object that is responsible for the serialization.</param>
-        <summary>When overridden in a derived class, builds a dictionary of name/value pairs.</summary>
-        <returns>An object that contains key/value pairs that represent the object’s data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you serialize a type for which a custom converter is registered, the <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance invokes the Serialize method.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportedTypes">
@@ -119,31 +87,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a collection of the supported types.</summary>
-        <value>An object that implements <see cref="System.Collections.Generic.IEnumerable%601" /> that represents the types supported by the converter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SupportedTypes property lists the types that are supported by the converter. At run time, a <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance uses this property to determine the mapping of managed types to their corresponding custom converters.  
-  
-   
-  
-## Examples  
- The following example shows how to override the SupportedTypes property in a derived class. In this example, the converter supports only the <xref:System.Web.UI.WebControls.ListItemCollection> type. This code example is part of a larger example provided for the <xref:System.Web.Script.Serialization.JavaScriptConverter> class.  
-  
- [!code-cs[System.Web.Script.Serialization#3](~/add/codesnippet/csharp/p-system.web.script.seri_1.cs)]
- [!code-vb[System.Web.Script.Serialization#3](~/add/codesnippet/visualbasic/p-system.web.script.seri_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentProgressState" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the current stage of a [!INCLUDE[ndptecclick](~/add/includes/ndptecclick-md.md)] download operation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DeploymentProgressState is passed by way of the <xref:System.Deployment.Application.DownloadProgressChangedEventArgs.State%2A> member of <xref:System.Deployment.Application.DeploymentProgressChangedEventArgs>, which is used by the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged>, <xref:System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged>, and <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupProgressChanged> events. Use the members of this enumeration to determine what portion of the [!INCLUDE[ndptecclick](~/add/includes/ndptecclick-md.md)] deployment has already been downloaded to the local machine.  
-  
-   
-  
-## Examples  
- The following code example installs the latest [!INCLUDE[ndptecclick](~/add/includes/ndptecclick-md.md)] application update asynchronously.  
-  
- [!code-cs[ClickOnceAPI#1](~/add/codesnippet/csharp/ClickOnceAPI/Form1.cs#1)]
- [!code-cpp[ClickOnceAPI#1](~/add/codesnippet/cpp/t-system.deployment.appl_0_1.cpp)]
- [!code-vb[ClickOnceAPI#1](~/add/codesnippet/visualbasic/ClickOnceAPIVB/Form1.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DownloadingApplicationFiles">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!INCLUDE[ndptecclick](~/add/includes/ndptecclick-md.md)] is downloading the DLLs and data files that comprised the application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DownloadingApplicationInformation">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!INCLUDE[ndptecclick](~/add/includes/ndptecclick-md.md)] is downloading the application manifest.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DownloadingDeploymentInformation">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!INCLUDE[ndptecclick](~/add/includes/ndptecclick-md.md)] is downloading the deployment manifest.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

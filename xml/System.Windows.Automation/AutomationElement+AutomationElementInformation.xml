@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationElement.AutomationElementInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains the property accessors used by the <see cref="System.Windows.Automation.AutomationElement.Cached%2A" /> or <see cref="System.Windows.Automation.AutomationElement.Current%2A" /> properties.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The properties can be accessed directly from <xref:System.Windows.Automation.AutomationElement.Cached%2A> and <xref:System.Windows.Automation.AutomationElement.Current%2A>; you do not need to retrieve the AutomationElement.AutomationElementInformation structure itself.  
-  
- The properties in this structure can also be retrieved by using <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> and <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>, using the corresponding identifiers from <xref:System.Windows.Automation.AutomationElement>. For example, The <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AcceleratorKey%2A?displayProperty=fullName> property is identified by the <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty?displayProperty=fullName> field. More information about the individual properties is available on the reference pages for those identifiers; see the link in the Remarks section of each reference topic.  
-  
-   
-  
-## Examples  
- The following example shows how the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name%2A> property is retrieved from this structure.  
-  
- [!code-vb[UIAClient_snip#106](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#106)]
- [!code-cs[UIAClient_snip#106](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#106)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceleratorKey">
@@ -40,25 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string containing the accelerator key combinations for the element.</summary>
-        <value>The sequence of key combinations that invoke an action associated with the element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Accelerator key combinations invoke an action. For example, CTRL + O is often used to invoke the **File Open** dialog box. [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] elements that have the accelerator key property set always implement the <xref:System.Windows.Automation.InvokePattern> class.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AccessKey">
@@ -68,25 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string containing the access key character for the element.</summary>
-        <value>The character, associated with an element, that is used to activate that element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An access key is a character in the text of a menu, menu item, or label of a control such as a button that activates the attached menu function. For example, the letter "O" is often used to invoke the **Open** file common dialog box from a **File** menu.  [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] elements that have the access key property set always implement the <xref:System.Windows.Automation.InvokePattern> class.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.AccessKeyProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomationId">
@@ -96,27 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string containing the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_id](~/add/includes/tlasharptla-id-md.md)] for the element.</summary>
-        <value>An [!INCLUDE[TLA2#tla_id](~/add/includes/tla2sharptla-id-md.md)] for an element that is unique among siblings within its container.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When it is available the <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> of an element is expected to always be the same in any instance of the application regardless of the local language. The value should be unique among sibling elements but not necessarily unique across the entire desktop. For example, multiple instances of an application, or multiple folder views in Microsoft Windows Explorer, may contain elements with the same <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty>, such as "SystemMenuBar".  
-  
- While support of an AutomationId is always recommended for better testability, this property is not mandatory. Where it is supported, an AutomationId is useful for creating test automation scripts that run regardless of UI language. Clients should make no assumptions regarding the AutomationIds exposed by other applications. An AutomationId is not necessarily guaranteed to be stable across different releases or builds of an application.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BoundingRectangle">
@@ -126,23 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the coordinates of the rectangle that completely encloses the element.</summary>
-        <value>The point coordinates of the enclosing rectangle.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned rectangle can contain points that are not clickable. Instances where this could happen are when the [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] item has an irregular shape or clickable region, or it is obscured by other [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] elements.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassName">
@@ -152,25 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string containing the class name of the element as assigned by the control developer.</summary>
-        <value>The class name assigned by the control developer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property is implementation-dependent. The property is useful in testing environments.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.ClassNameProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlType">
@@ -180,27 +112,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Automation.ControlType" /> of the element.</summary>
-        <value>The interaction model for this element. The default value is <see cref="T:System.Windows.Automation.ControlType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Control type describes a known interaction model for arbitrary [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] elements without relying on a localized control type or combination of complex logic rules.  
-  
- The only case where this property can change at run time is for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>. An example is the [!INCLUDE[TLA2#tla_win32](~/add/includes/tla2sharptla-win32-md.md)] ListView control, which can change from <xref:System.Windows.Automation.ControlType.DataGrid> to <xref:System.Windows.Automation.ControlType.List>, depending on the current view.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.ControlTypeProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FrameworkId">
@@ -210,27 +130,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the underlying UI framework.</summary>
-        <value>The name of the UI framework, such as "Win32", "WinForm", or "DirectUI". The default value is an empty string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Return values of the property are of type <xref:System.String>. The default value is an empty string.  
-  
- This property enables applications to apply special cases to entire UI frameworks.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.FrameworkIdProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasKeyboardFocus">
@@ -240,26 +148,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the element has keyboard focus.</summary>
-        <value>
-          <see langword="true" /> if the element has keyboard focus; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an element within a container has focus, HasKeyboardFocus is also true for the container element.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.HasKeyboardFocusProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpText">
@@ -269,23 +166,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the help text associated with the element.</summary>
-        <value>The tooltip help text for the element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Windows.Automation.AutomationElement.HelpTextProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsContentElement">
@@ -295,26 +184,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the element is a content element.</summary>
-        <value>
-          <see langword="true" /> if the element is a content element; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A content element contains data that is presented to the user. Examples of content elements are the items in a list box or a button on a dialog box. Non-content elements, also called peripheral elements, are typically used to manipulate the content in a composite control; for example, the button on a drop-down control.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.IsContentElementProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsControlElement">
@@ -324,24 +202,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the element is viewed as a control.</summary>
-        <value>
-          <see langword="true" /> if the element is viewed as a control; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Windows.Automation.AutomationElement.IsControlElementProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -351,26 +220,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] item referenced by the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element is enabled.</summary>
-        <value>
-          <see langword="true" /> if the control is enabled; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the IsEnabled property can change because of [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] interactions. You should get an updated cache by calling <xref:System.Windows.Automation.AutomationElement.GetUpdatedCache%2A> if the value of the IsEnabled property might have changed since you issued the cache request.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusable">
@@ -380,24 +238,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element can accept keyboard focus.</summary>
-        <value>
-          <see langword="true" /> if the control can receive keyboard focus; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Windows.Automation.AutomationElement.IsKeyboardFocusableProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOffscreen">
@@ -407,36 +256,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element is visible on the screen.</summary>
-        <value>
-          <see langword="true" /> if the control is not visible; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A Boolean value that indicates if an element is completely scrolled (for example, an item in a list box is outside the viewport of the container object) or collapsed (for example, an item in a tree view, menu, or a minimized window) out of view.  
-  
- If the element has a clickable point that can cause it to be focused, it is considered to be onscreen even when a portion of the element is off screen.  
-  
- The value of the property is not affected by occlusion by other windows, or by whether the element is visible on a specific monitor.  
-  
- When IsOffscreen is `true,` an element that is scrolled or collapsed out of view, but is still part of the end-users perception of the UI, can be brought back into view by simple manipulation, such as scrolling or clicking on a drop-down control.  
-  
- If the element is something that the end-user does not perceive at all or is referred to as being "programmatically hidden" (for example, a dialog box that has been dismissed but where the underlining object is cached by the application) then it should be removed from the element tree rather than setting the value of IsOffscreen to `true`.  
-  
- When the value is `true` for a container, it is also `true` for the container element's descendants.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.IsOffscreenProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPassword">
@@ -446,26 +274,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element contains protected content.</summary>
-        <value>
-          <see langword="true" /> if the element contains protected content; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables applications such as screen-readers to determine whether the text content of a control should be read aloud.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.IsPasswordProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForForm">
@@ -475,24 +292,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element is required to be filled out on a form.</summary>
-        <value>
-          <see langword="true" /> if the element is required to be filled out; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Windows.Automation.AutomationElement.IsRequiredForFormProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemStatus">
@@ -502,25 +310,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a description of the status of an item within an element.</summary>
-        <value>The description of the status.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables a client to ascertain whether an element is conveying status about an item. For example, an item associated with a contact in a messaging application might be "Busy" or "Connected".  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.ItemStatusProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -530,25 +328,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a description of the type of an item.</summary>
-        <value>A localized string that describes the item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used to obtain information about items in a list, tree view, or data grid. For example, an item in a file directory view might be a "Document File" or a "Folder".  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.ItemTypeProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LabeledBy">
@@ -558,25 +346,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element that contains the text label for this element.</summary>
-        <value>The element that is the label for this element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property could be used to retrieve, for example, the static text label for a combo box.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalizedControlType">
@@ -586,23 +364,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a description of the control type.</summary>
-        <value>A localized description of the control type, such as "button".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Windows.Automation.AutomationElement.LocalizedControlTypeProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -612,33 +382,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the element.</summary>
-        <value>The name of the [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The name of an element can be used to find the element in the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element tree when the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AutomationId%2A> property is not supported on the element.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.NameProperty>.  
-  
-   
-  
-## Examples  
- The following example shows how the Name property is retrieved.  
-  
- [!code-vb[UIAClient_snip#106](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#106)]
- [!code-cs[UIAClient_snip#106](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#106)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NativeWindowHandle">
@@ -648,23 +400,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the handle of the element's window.</summary>
-        <value>The handle of the window, if one exists; otherwise 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Windows.Automation.AutomationElement.NativeWindowHandleProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -674,25 +418,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.OrientationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the orientation of the control.</summary>
-        <value>The orientation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is supported by controls such as scroll bars and sliders that can have either a vertical or a horizontal orientation.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.OrientationProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessId">
@@ -702,25 +436,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the process [!INCLUDE[TLA#tla_id](~/add/includes/tlasharptla-id-md.md)] of this element.</summary>
-        <value>The [!INCLUDE[TLA2#tla_id](~/add/includes/tla2sharptla-id-md.md)] of the process that hosts the element. The default value for the property is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The process [!INCLUDE[TLA#tla_id](~/add/includes/tlasharptla-id-md.md)] is assigned by the operating system. It can be seen in the **PID** column of the **Processes** tab in Task Manager.  
-  
- For more information, see <xref:System.Windows.Automation.AutomationElement.ProcessIdProperty>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

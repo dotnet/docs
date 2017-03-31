@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputSubmit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,30 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Allows programmatic access to the HTML <see langword="&lt;input type= submit&gt;" /> element on the server.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HtmlInputSubmit class is derived from the <xref:System.Web.UI.HtmlControls.HtmlInputButton> class and is used to create a button control on a Web page that submits a form. The HtmlInputSubmit control is often used with the <xref:System.Web.UI.HtmlControls.HtmlInputReset> control, which resets form controls to their initial values.  
-  
- For a list of initial property values for an instance of HtmlInputSubmit, see the <xref:System.Web.UI.HtmlControls.HtmlInputSubmit.%23ctor%2A> constructor.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the `<input type=submit>` HTML control declaratively on a Web Forms page.  
-  
- [!code-cs[System.Web.UI.HtmlControls.HtmlInput_1#1](~/add/codesnippet/csharp/t-system.web.ui.htmlcont_25_1.aspx)]
- [!code-vb[System.Web.UI.HtmlControls.HtmlInput_1#1](~/add/codesnippet/visualbasic/t-system.web.ui.htmlcont_25_1.aspx)]  
-  
- The following code example demonstrates how to add the same HTML control programmatically during a call to the `Page_Load` method.  
-  
- [!code-vb[System.Web.UI.HtmlControls.HtmlInput_2#1](~/add/codesnippet/visualbasic/t-system.web.ui.htmlcont_25_2.aspx)]
- [!code-cs[System.Web.UI.HtmlControls.HtmlInput_2#1](~/add/codesnippet/csharp/t-system.web.ui.htmlcont_25_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,32 +30,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputSubmit" /> class using default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputSubmit>.  
-  
-|Property|Value|  
-|--------------|-----------|  
-|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=fullName>|The "submit" literal string.|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to programmatically add <xref:System.Web.UI.HtmlControls.HtmlInputText>, <xref:System.Web.UI.HtmlControls.HtmlInputPassword>, and <xref:System.Web.UI.HtmlControls.HtmlInputSubmit> controls to a Web Forms page using default constructors to create a simple login screen.  
-  
- [!code-vb[System.Web.UI.HtmlControls.HtmlInput_2#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_32_1.aspx)]
- [!code-cs[System.Web.UI.HtmlControls.HtmlInput_2#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_32_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -88,35 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">The input button type.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputSubmit" /> class using the specified type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputSubmit>.  
-  
-|Property|Value|  
-|--------------|-----------|  
-|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=fullName>|The value of the `type` parameter.|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to programmatically add <xref:System.Web.UI.HtmlControls.HtmlInputText>, <xref:System.Web.UI.HtmlControls.HtmlInputPassword>, and <xref:System.Web.UI.HtmlControls.HtmlInputSubmit> controls to a Web Forms page to create a simple login screen. This example demonstrates how you can pass various values for the `type` parameter, which overrides the intrinsic type of the HTML control.  
-  
- [!code-vb[System.Web.UI.HtmlControls.HtmlInput_3#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_16_1.aspx)]
- [!code-cs[System.Web.UI.HtmlControls.HtmlInput_3#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_16_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

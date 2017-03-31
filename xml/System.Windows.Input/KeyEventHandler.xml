@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyEventHandler" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,52 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The object where the event handler is attached.</param>
-    <param name="e">The event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.UIElement.KeyUp" /> and <see cref="E:System.Windows.UIElement.KeyDown" /> routed events, as well as related attached and Preview events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This delegate is used with the following attached events:  
-  
--   <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=fullName>  
-  
--   <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=fullName>  
-  
--   <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=fullName>  
-  
--   <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=fullName>  
-  
- This delegate is also used with the following routed events on base elements. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)].  
-  
--   <xref:System.Windows.UIElement.KeyUp?displayProperty=fullName>  
-  
--   <xref:System.Windows.UIElement.KeyDown?displayProperty=fullName>  
-  
--   <xref:System.Windows.UIElement.PreviewKeyUp?displayProperty=fullName>  
-  
--   <xref:System.Windows.UIElement.PreviewKeyDown?displayProperty=fullName>  
-  
--   <xref:System.Windows.ContentElement.KeyUp?displayProperty=fullName>  
-  
--   <xref:System.Windows.ContentElement.KeyDown?displayProperty=fullName>  
-  
--   <xref:System.Windows.ContentElement.PreviewKeyUp?displayProperty=fullName>  
-  
--   <xref:System.Windows.ContentElement.PreviewKeyDown?displayProperty=fullName>  
-  
- The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](../Topic/Input%20Overview.md).  
-  
-   
-  
-## Examples  
- The following example checks whether the key associated with the event is the <xref:System.Windows.Input.Key> key.  
-  
- [!code-cs[keydown#KeyDownSample](~/add/codesnippet/csharp/KeyDown/Window1.xaml.cs#keydownsample)]
- [!code-vb[keydown#KeyDownSample](~/add/codesnippet/visualbasic/KeyDown/Window1.xaml.vb#keydownsample)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

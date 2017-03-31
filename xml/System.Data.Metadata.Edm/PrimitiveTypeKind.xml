@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.PrimitiveTypeKind" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the primitive types as defined by EDM.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No content here will be updated; please do not add material here.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Binary">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Binary type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Boolean">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Boolean type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Byte type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DateTime type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTimeOffset">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DateTimeOffset type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decimal">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Decimal type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Double type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Geography">
@@ -154,7 +139,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geography type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyCollection">
@@ -170,7 +155,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geographic collection type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyLineString">
@@ -186,7 +171,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geographic line string type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiLineString">
@@ -202,7 +187,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geographic multi-line string type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiPoint">
@@ -218,7 +203,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geographic multi-point type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiPolygon">
@@ -234,7 +219,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geographic multi-polygon type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyPoint">
@@ -250,7 +235,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geographic point type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyPolygon">
@@ -266,7 +251,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geographic polygon type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Geometry">
@@ -282,7 +267,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geometry Type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryCollection">
@@ -298,7 +283,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geometric collection type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryLineString">
@@ -314,7 +299,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geometric line string type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiLineString">
@@ -330,7 +315,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geometric multi-line string type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiPoint">
@@ -346,7 +331,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geometric multi-point type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiPolygon">
@@ -362,7 +347,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geometric multi-polygon type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryPoint">
@@ -378,7 +363,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geometric point type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryPolygon">
@@ -394,7 +379,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Geometric polygon type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Guid">
@@ -404,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Guid type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int16">
@@ -421,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Int16 type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -438,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Int32 type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -455,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Int64 type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SByte">
@@ -472,14 +453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The SByte type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -489,14 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Single type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -506,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The String type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -523,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Time type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

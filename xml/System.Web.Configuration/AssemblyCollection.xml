@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AssemblyCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,59 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.Configuration.AssemblyInfo" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AssemblyCollection class does not refer to any actual element in the underlying configuration file. It is a construct that allows access to the assembly information it contains.  
-  
-   
-  
-## Examples  
- This section provides two code examples. The first demonstrates how to declaratively specify values for several properties of the AssemblyCollection class. The second demonstrates how to use members of the AssemblyCollection class.  
-  
- The following configuration file example shows how to declaratively specify values for several properties of the AssemblyCollection class.  
-  
-```  
-<system.web>  
-  <compilation>   
-    <assemblies>  
-      <add assembly="mscorlib" />  
-      <add assembly="System, Version=2.0.0.0, Culture=neutral,   
-        PublicKeyToken=b77a5c561934e089" />  
-      <add assembly="System.Configuration, Version=2.0.0.0,   
-        Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
-      <add assembly="System.Web, Version=2.0.0.0, Culture=neutral,   
-        PublicKeyToken=b03f5f7f11d50a3a" />  
-      <add assembly="System.Data, Version=2.0.0.0, Culture=neutral,   
-        PublicKeyToken=b77a5c561934e089" />  
-      <add assembly="System.Web.Services, Version=2.0.0.0,   
-        Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
-      <add assembly="System.Xml, Version=2.0.0.0, Culture=neutral,   
-        PublicKeyToken=b77a5c561934e089" />  
-      <add assembly="System.Drawing, Version=2.0.0.0,   
-        Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
-      <add assembly="System.EnterpriseServices, Version=2.0.0.0,   
-        Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
-      <add assembly="System.Web.Mobile, Version=2.0.0.0,   
-        Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
-      <add assembly="System.Web.UI.MobileControls.Adapters,   
-        Version=2.0.0.0, Culture=neutral,   
-        PublicKeyToken=b03f5f7f11d50a3a" />  
-      <add assembly="*" />  
-    </assemblies>  
-  </compilation>  
-</system.web>  
-```  
-  
- The following code example demonstrates how to use members of the AssemblyCollection class.  
-  
- [!code-vb[System.Web.Configuration.AssemblyCollection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_78_1.vb)]
- [!code-cs[System.Web.Configuration.AssemblyCollection#1](~/add/codesnippet/csharp/t-system.web.configurati_78_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.AssemblyCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,24 +51,9 @@
         <Parameter Name="assemblyInformation" Type="System.Web.Configuration.AssemblyInfo" />
       </Parameters>
       <Docs>
-        <param name="assemblyInformation">A string value specifying the assembly reference.</param>
-        <summary>Adds an <see cref="T:System.Web.Configuration.AssemblyInfo" /> object to the <see cref="T:System.Web.Configuration.AssemblyCollection" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Adds an <xref:System.Web.Configuration.AssemblyInfo> object to the collection. If the assembly object is not initialized with assembly information, an exception is thrown. If the assembly object already exists in the collection, the statement is ignored.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Add method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.AssemblyCollection> class.  
-  
- [!code-vb[System.Web.Configuration.AssemblyCollection#4](~/add/codesnippet/visualbasic/b4181a18-a24b-4b17-ab8b-_1.vb)]
- [!code-cs[System.Web.Configuration.AssemblyCollection#4](~/add/codesnippet/csharp/b4181a18-a24b-4b17-ab8b-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyInformation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -132,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all the <see cref="T:System.Web.Configuration.AssemblyInfo" /> objects from the <see cref="T:System.Web.Configuration.AssemblyCollection" /> collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,7 +122,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,9 +131,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An integer value specifying a specific <see cref="T:System.Web.Configuration.AssemblyInfo" /> object within the <see cref="T:System.Web.Configuration.AssemblyCollection" /> collection.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.AssemblyInfo" /> at the specified index in the <see cref="T:System.Web.Configuration.AssemblyCollection" />.</summary>
-        <value>A <see cref="T:System.Web.Configuration.AssemblyInfo" /> object.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,7 +144,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -227,9 +153,9 @@
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">The name identifying the assembly to retrieve.</param>
-        <summary>Gets the item identified by the specified assembly name.</summary>
-        <value>The item identified by the specified assembly name.</value>
+        <param name="assemblyName">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,7 +166,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -259,7 +184,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,24 +193,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A string value specifying the assembly reference.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.AssemblyInfo" /> object from the <see cref="T:System.Web.Configuration.AssemblyCollection" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the assembly does not exist in the collection, the statement is ignored.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Remove method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.AssemblyCollection> class.  
-  
- [!code-vb[System.Web.Configuration.AssemblyCollection#5](~/add/codesnippet/visualbasic/m-system.web.configurati_70_1.vb)]
- [!code-cs[System.Web.Configuration.AssemblyCollection#5](~/add/codesnippet/csharp/m-system.web.configurati_70_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -296,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -306,24 +214,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An integer value specifying an <see cref="T:System.Web.Configuration.AssemblyInfo" /> object within the <see cref="T:System.Web.Configuration.AssemblyCollection" /> collection.</param>
-        <summary>Removes an <see cref="T:System.Web.Configuration.AssemblyInfo" /> object from the <see cref="T:System.Web.Configuration.AssemblyCollection" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the assembly does not exist in the collection, an out-of-range exception is thrown.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the RemoveAt method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.AssemblyCollection> class.  
-  
- [!code-vb[System.Web.Configuration.AssemblyCollection#6](~/add/codesnippet/visualbasic/m-system.web.configurati_6_1.vb)]
- [!code-cs[System.Web.Configuration.AssemblyCollection#6](~/add/codesnippet/csharp/m-system.web.configurati_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

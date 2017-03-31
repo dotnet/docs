@@ -4,32 +4,17 @@
   <TypeSignature Language="DocId" Value="T:System.Data.ITableMapping" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Associates a source table with a table in a <see cref="T:System.Data.DataSet" />, and is implemented by the <see cref="T:System.Data.Common.DataTableMapping" /> class, which is used in common by .NET Framework data providers.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ITableMapping interface allows an inheriting class to implement a TableMapping class, which associates a data source column with a <xref:System.Data.DataSet> column. For more information, see [DataAdapter DataTable and DataColumn Mappings](../Topic/DataAdapter%20DataTable%20and%20DataColumn%20Mappings.md).  
-  
- An application does not create an instance of the ITableMapping interface directly, but creates an instance of a class that inherits ITableMapping.  
-  
- Classes that inherit ITableMapping must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the ITableMapping interface defines the <xref:System.Data.ITableMapping.DataSetTable%2A> property. In turn, the <xref:System.Data.Common.DataTableMapping> class inherits this property, and also defines the <xref:System.Data.Common.DataTableMapping.GetDataTableBySchemaAction%2A> method.  
-  
-   
-  
-## Examples  
- The following example creates an instance of the derived class, <xref:System.Data.Common.DataTableMapping>, and adds it to a <xref:System.Data.Common.DataTableMappingCollection> collection. It then informs the user that the mapping was added to the collection and displays the parent mapping.  
-  
- [!code-vb[Classic WebData DataTableMapping Example#1](~/add/codesnippet/visualbasic/t-system.data.itablemapp_0_1.vb)]
- [!code-cs[Classic WebData DataTableMapping Example#1](~/add/codesnippet/csharp/t-system.data.itablemapp_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ColumnMappings">
@@ -39,26 +24,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IColumnMappingCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the derived <see cref="T:System.Data.Common.DataColumnMappingCollection" /> for the <see cref="T:System.Data.DataTable" />.</summary>
-        <value>A collection of data column mappings.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates an instance of the derived class, <xref:System.Data.Common.DataTableMapping>, sets some of its properties, and copies its <xref:System.Data.Common.DataTableMapping.ColumnMappings%2A> to an array. This example assumes that a <xref:System.Data.Common.DataColumnMappingCollection> has been created.  
-  
- [!code-vb[Classic WebData DataTableMapping.ColumnMappings Example#1](~/add/codesnippet/visualbasic/p-system.data.itablemapp_1.vb)]
- [!code-cs[Classic WebData DataTableMapping.ColumnMappings Example#1](~/add/codesnippet/csharp/p-system.data.itablemapp_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSetTable">
@@ -68,15 +47,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the case-insensitive name of the table within the <see cref="T:System.Data.DataSet" />.</summary>
-        <value>The case-insensitive name of the table within the <see cref="T:System.Data.DataSet" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,15 +70,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the case-sensitive name of the source table.</summary>
-        <value>The case-sensitive name of the source table.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

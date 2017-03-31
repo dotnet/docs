@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusDevice" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,18 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a tablet pen used with a Tablet PC.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to retrieve a reference to the default stylus device.  
-  
- [!code-vb[StylusSnippets#1](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#1)]
- [!code-cs[StylusSnippets#1](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveSource">
@@ -33,7 +22,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -45,20 +33,9 @@
         <ReturnType>System.Windows.PresentationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.PresentationSource" /> that reports current input for the stylus.</summary>
-        <value>The <see cref="T:System.Windows.PresentationSource" /> that reports current input for the stylus.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the ActiveSource property.  
-  
- [!code-vb[StylusSnippets#2](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#2)]
- [!code-cs[StylusSnippets#2](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#2)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for applications to read this property. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Capture">
@@ -68,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,25 +54,10 @@
         <Parameter Name="element" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element to which the stylus is bound.</param>
-        <summary>Binds input from the stylus to the specified element.</summary>
-        <returns>
-          <see langword="true" /> if the input element is captured successfully; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Capture method.  
-  
- [!code-vb[StylusSnippets#3](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#3)]
- [!code-cs[StylusSnippets#3](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="element" /> is neither <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</exception>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Capture">
@@ -106,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,26 +77,11 @@
         <Parameter Name="captureMode" Type="System.Windows.Input.CaptureMode" />
       </Parameters>
       <Docs>
-        <param name="element">The element to which the stylus is bound.</param>
-        <param name="captureMode">One of the <see cref="T:System.Windows.Input.CaptureMode" /> values.</param>
-        <summary>Binds the stylus to the specified element.</summary>
-        <returns>
-          <see langword="true" /> if the input element is captured successfully; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Capture method.  
-  
- [!code-vb[StylusSnippets#5](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#5)]
- [!code-cs[StylusSnippets#5](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#5)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> or <paramref name="captureMode" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="element" /> is neither <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</exception>
+        <param name="element">To be added.</param>
+        <param name="captureMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Captured">
@@ -146,26 +91,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element that captured the stylus.</summary>
-        <value>The <see cref="T:System.Windows.IInputElement" /> that captured the stylus.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Captured property.  
-  
- [!code-vb[StylusSnippets#4](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#4)]
- [!code-cs[StylusSnippets#4](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DirectlyOver">
@@ -175,26 +109,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.IInputElement" /> that the pointer is positioned over.</summary>
-        <value>The element the pointer is over.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the DirectlyOver property.  
-  
- [!code-vb[StylusSnippets#6](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#6)]
- [!code-cs[StylusSnippets#6](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#6)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPosition">
@@ -204,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -219,22 +141,10 @@
         <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">The <see cref="T:System.Windows.IInputElement" /> to which the (<c>x,y</c>) coordinates are mapped.</param>
-        <summary>Gets the position of the stylus.</summary>
-        <returns>A <see cref="T:System.Windows.Point" /> that represents the position of the stylus, in relation to <paramref name="relativeTo" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the GetPosition method.  
-  
- [!code-vb[StylusSnippets#8](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#8)]
- [!code-cs[StylusSnippets#8](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#8)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="relativeTo" /> is neither <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</exception>
+        <param name="relativeTo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStylusPoints">
@@ -244,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,22 +163,10 @@
         <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">The <see cref="T:System.Windows.IInputElement" /> to which the (<c>x,y</c>) coordinates in the <see cref="T:System.Windows.Input.StylusPointCollection" /> are mapped.</param>
-        <summary>Returns a <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects collected from the stylus.</summary>
-        <returns>A <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects that the stylus collected.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to get the <xref:System.Windows.Input.StylusPointCollection> from the <xref:System.Windows.Input.StylusDevice>.  
-  
- [!code-vb[StylusSnippets#7](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#7)]
- [!code-cs[StylusSnippets#7](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#7)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="relativeTo" /> is neither <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</exception>
+        <param name="relativeTo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStylusPoints">
@@ -279,7 +176,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,28 +186,11 @@
         <Parameter Name="subsetToReformatTo" Type="System.Windows.Input.StylusPointDescription" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">The <see cref="T:System.Windows.IInputElement" /> to which the (<c>x y</c>) coordinates in the <see cref="T:System.Windows.Input.StylusPointCollection" /> are mapped.</param>
-        <param name="subsetToReformatTo">The <see cref="T:System.Windows.Input.StylusPointDescription" /> to be used by the <see cref="T:System.Windows.Input.StylusPointCollection" />.</param>
-        <summary>Returns a <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects collected from the stylus. Uses the specified <see cref="T:System.Windows.Input.StylusPointDescription" />.</summary>
-        <returns>A <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects collected from the stylus.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `subsetToReformatTo` must be compatible with the <xref:System.Windows.Input.StylusPointCollection.Description%2A> property of the <xref:System.Windows.Input.StylusPointCollection> used by the <xref:System.Windows.Input.StylusDevice.GetStylusPoints%28System.Windows.IInputElement%29> method. Use the <xref:System.Windows.Input.StylusPointDescription.GetCommonDescription%2A> method to get a <xref:System.Windows.Input.StylusPointDescription> before calling the GetStylusPoints method.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to get <xref:System.Windows.Input.StylusPoint> objects from the current <xref:System.Windows.Input.StylusDevice>.  
-  
- [!code-cs[PacketSpy#26](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#26)]
- [!code-vb[PacketSpy#26](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#26)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="relativeTo" /> is neither <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</exception>
+        <param name="relativeTo">To be added.</param>
+        <param name="subsetToReformatTo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -321,26 +200,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the identifier for the stylus device.</summary>
-        <value>The identifier for the stylus device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Id property.  
-  
- [!code-vb[StylusSnippets#9](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#9)]
- [!code-cs[StylusSnippets#9](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#9)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InAir">
@@ -350,27 +218,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the tablet pen is positioned above, yet not in contact with, the digitizer.</summary>
-        <value>
-          <see langword="true" /> if the pen is positioned above, yet not in contact with, the digitizer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the InAir property.  
-  
- [!code-vb[StylusSnippets#10](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#10)]
- [!code-cs[StylusSnippets#10](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#10)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InRange">
@@ -380,27 +236,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the tablet pen is in range of the digitizer.</summary>
-        <value>
-          <see langword="true" /> if the pen is within range of the digitizer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the InRange property.  
-  
- [!code-vb[StylusSnippets#11](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#11)]
- [!code-cs[StylusSnippets#11](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#11)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Inverted">
@@ -410,27 +254,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the secondary tip of the stylus is in use.</summary>
-        <value>
-          <see langword="true" /> if the secondary tip of the stylus is in use; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Inverted property.  
-  
- [!code-vb[StylusSnippets#12](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#12)]
- [!code-cs[StylusSnippets#12](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#12)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -446,9 +278,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether a stylus device is valid.</summary>
-        <value>
-          <see langword="true" /> to indicate a stylus is valid; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,26 +290,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the stylus.</summary>
-        <value>The name of the stylus.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Name property.  
-  
- [!code-vb[StylusSnippets#13](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#13)]
- [!code-cs[StylusSnippets#13](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#13)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StylusButtons">
@@ -488,26 +308,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusButtonCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the stylus buttons on the stylus.</summary>
-        <value>A reference to a <see cref="T:System.Windows.Input.StylusButtonCollection" /> object representing all of the buttons on the stylus.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the StylusButtons property.  
-  
- [!code-vb[StylusSnippets#14](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#14)]
- [!code-cs[StylusSnippets#14](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#14)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Synchronize">
@@ -517,7 +326,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -530,25 +338,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Synchronizes the cursor and the user interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Applications may need to locate the element that the cursor is positioned over. If the application uses animation, the <xref:System.Windows.Input.StylusDevice.DirectlyOver%2A> method might return an element that has moved out from under the cursor. Call Synchronize to be sure that <xref:System.Windows.Input.StylusDevice.DirectlyOver%2A> returns the proper element.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to return an element that is under the cursor.  Calling Synchronize ensures that <xref:System.Windows.Input.StylusDevice.DirectlyOver%2A> returns the correct element.  
-  
- [!code-vb[StylusSamples#24](~/add/codesnippet/visualbasic/StylusSamples/Window2.xaml.vb#24)]
- [!code-cs[StylusSamples#24](~/add/codesnippet/csharp/StylusSamples/Window2.xaml.cs#24)]  
-[!code-vb[StylusSamples#26](~/add/codesnippet/visualbasic/StylusSamples/Window2.xaml.vb#26)]
-[!code-cs[StylusSamples#26](~/add/codesnippet/csharp/StylusSamples/Window2.xaml.cs#26)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabletDevice">
@@ -558,26 +349,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.TabletDevice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Input.TabletDevice" /> representing the digitizer associated with the current <see cref="T:System.Windows.Input.StylusDevice" />.</summary>
-        <value>The <see cref="T:System.Windows.Input.TabletDevice" /> represents the digitizer associated with the current <see cref="T:System.Windows.Input.StylusDevice" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the TabletDevice property.  
-  
- [!code-vb[StylusSnippets#15](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#15)]
- [!code-cs[StylusSnippets#15](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#15)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -587,26 +367,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element that receives input.</summary>
-        <value>The <see cref="T:System.Windows.IInputElement" /> object that receives input.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Target property.  
-  
- [!code-vb[StylusSnippets#16](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#16)]
- [!code-cs[StylusSnippets#16](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#16)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -616,7 +385,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -624,19 +392,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the name of the stylus device.</summary>
-        <returns>The name of the <see cref="T:System.Windows.Input.StylusDevice" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the ToString method.  
-  
- [!code-vb[StylusSnippets#17](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#17)]
- [!code-cs[StylusSnippets#17](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#17)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

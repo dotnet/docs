@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentServiceCom" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides internal services for the [!INCLUDE[ndptecclick](~/add/includes/ndptecclick-md.md)] deployment API.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,12 +33,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of <see cref="T:System.Deployment.Application.DeploymentServiceCom" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,10 +59,10 @@
         <Parameter Name="targetAssociatedFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="textualSubId">The internal ID of the deployment.</param>
-        <param name="deploymentProviderUrl">The URL of the deployment.</param>
-        <param name="targetAssociatedFile">The target file.</param>
-        <summary>Activates an application extension.</summary>
+        <param name="textualSubId">To be added.</param>
+        <param name="deploymentProviderUrl">To be added.</param>
+        <param name="targetAssociatedFile">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,9 +83,9 @@
         <Parameter Name="isShortcut" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="deploymentLocation">The location of the deployment manifest on disk.</param>
-        <param name="isShortcut">Whether <c>deploymentLocation</c> is a shortcut, or the actual file.</param>
-        <summary>Starts the deployment on the client computer.</summary>
+        <param name="deploymentLocation">To be added.</param>
+        <param name="isShortcut">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +96,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,10 +107,10 @@
         <Parameter Name="signedPolicy" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="deploymentLocation">The location of the deployment manifest.</param>
-        <param name="unsignedPolicy">The policy to use for unsigned applications.</param>
-        <param name="signedPolicy">The policy to use for signed applications.</param>
-        <summary>Starts the deployment on the client computer.</summary>
+        <param name="deploymentLocation">To be added.</param>
+        <param name="unsignedPolicy">To be added.</param>
+        <param name="signedPolicy">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,8 +130,8 @@
         <Parameter Name="textualSubId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="textualSubId">An internal identifier for the deployment.</param>
-        <summary>Checks the update location to determine whether an updated version of this deployment exists.</summary>
+        <param name="textualSubId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,7 +142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,7 +149,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all online-only [!INCLUDE[ndptecclick](~/add/includes/ndptecclick-md.md)] applications that are installed on a computer.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,7 +160,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,7 +167,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Stops a deployment update immediately.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,8 +187,8 @@
         <Parameter Name="textualSubId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="textualSubId">The internal ID of the deployment.</param>
-        <summary>Maintains the update subscription.</summary>
+        <param name="textualSubId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,31 +4,24 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIMoniker" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("Use System.Runtime.InteropServices.ComTypes.IMoniker instead. http://go.microsoft.com/fwlink/?linkid=14202", false)</AttributeName>
+      <AttributeName>System.Obsolete</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("0000000f-0000-0000-C000-000000000046")</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.Guid("0000000f-0000-0000-c000-000000000046")</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IMoniker" /> instead.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the `IMoniker`, `IPersist`, and `IPersistStream` interfaces, see the MSDN Library.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BindToObject">
@@ -38,7 +31,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,19 +44,12 @@
         <Parameter Name="ppvResult" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context object used in this binding operation.</param>
-        <param name="pmkToLeft">A reference to the moniker to the left of this moniker, if the moniker is part of a composite moniker.</param>
-        <param name="riidResult">The interface identifier (IID) of the interface the client intends to use to communicate with the object that the moniker identifies.</param>
-        <param name="ppvResult">On successful return, reference to the interface requested by <c>riidResult</c>.</param>
-        <summary>Uses the moniker to bind to the object it identifies.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::BindToObject`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="riidResult">To be added.</param>
+        <param name="ppvResult">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BindToStorage">
@@ -73,7 +59,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,19 +72,12 @@
         <Parameter Name="ppvObj" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context object used during this binding operation.</param>
-        <param name="pmkToLeft">A reference to the moniker to the left of this moniker, if the moniker is part of a composite moniker.</param>
-        <param name="riid">The interface identifier (IID) of the storage interface requested.</param>
-        <param name="ppvObj">On successful return, a reference to the interface requested by <c>riid</c>.</param>
-        <summary>Retrieves an interface pointer to the storage that contains the object identified by the moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::BindToStorage`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="riid">To be added.</param>
+        <param name="ppvObj">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommonPrefixWith">
@@ -108,7 +87,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,17 +98,10 @@
         <Parameter Name="ppmkPrefix" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pmkOther">A reference to the <see langword="IMoniker" /> interface on another moniker to compare with this for a common prefix.</param>
-        <param name="ppmkPrefix">On successful return, contains the moniker that is the common prefix of this moniker and <c>pmkOther</c>.</param>
-        <summary>Creates a new moniker based on the common prefix that this moniker shares with another moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::CommonPrefixWith`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pmkOther">To be added.</param>
+        <param name="ppmkPrefix">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ComposeWith">
@@ -139,7 +111,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,18 +123,11 @@
         <Parameter Name="ppmkComposite" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pmkRight">A reference to the <see langword="IMoniker" /> interface on the moniker to compose onto the end of this moniker.</param>
-        <param name="fOnlyIfNotGeneric">If <see langword="true" />, the caller requires a nongeneric composition, so the operation proceeds only if <c>pmkRight</c> is a moniker class that this moniker can compose with in some way other than forming a generic composite. If <see langword="false" />, the method can create a generic composite if necessary.</param>
-        <param name="ppmkComposite">On successful return, a reference to the resulting composite moniker.</param>
-        <summary>Combines the current moniker with another moniker, creating a new composite moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::ComposeWith`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pmkRight">To be added.</param>
+        <param name="fOnlyIfNotGeneric">To be added.</param>
+        <param name="ppmkComposite">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enum">
@@ -172,7 +137,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,17 +148,10 @@
         <Parameter Name="ppenumMoniker" Type="System.Runtime.InteropServices.UCOMIEnumMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="fForward">If <see langword="true" />, enumerates the monikers from left to right. If <see langword="false" />, enumerates from right to left.</param>
-        <param name="ppenumMoniker">On successful return, references the enumerator object for the moniker.</param>
-        <summary>Supplies a pointer to an enumerator that can enumerate the components of a composite moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::Enum`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="fForward">To be added.</param>
+        <param name="ppenumMoniker">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClassID">
@@ -203,7 +161,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,16 +171,9 @@
         <Parameter Name="pClassID" Type="System.Guid&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pClassID">On successful return, contains the CLSID.</param>
-        <summary>Retrieves the class identifier (CLSID) of an object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IPersist::GetClassID`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pClassID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDisplayName">
@@ -232,7 +183,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,18 +195,11 @@
         <Parameter Name="ppszDisplayName" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the bind context to use in this operation.</param>
-        <param name="pmkToLeft">A reference to the moniker to the left of this moniker, if the moniker is part of a composite moniker.</param>
-        <param name="ppszDisplayName">On successful return, contains the display name string.</param>
-        <summary>Gets the display name, which is a user-readable representation of this moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::GetDisplayName`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="ppszDisplayName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSizeMax">
@@ -265,7 +209,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,16 +219,9 @@
         <Parameter Name="pcbSize" Type="System.Int64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pcbSize">On successful return, contains a <see langword="long" /> value indicating the size in bytes of the stream needed to save this object.</param>
-        <summary>Returns the size in bytes of the stream needed to save the object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IPersistStream::GetSizeMax`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pcbSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTimeOfLastChange">
@@ -294,7 +231,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -306,18 +243,11 @@
         <Parameter Name="pFileTime" Type="System.Runtime.InteropServices.FILETIME&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the bind context to be used in this binding operation.</param>
-        <param name="pmkToLeft">A reference to the moniker to the left of this moniker, if the moniker is part of a composite moniker.</param>
-        <param name="pFileTime">On successful return, contains the time of last change.</param>
-        <summary>Provides a number representing the time the object identified by this moniker was last changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::GetTimeOfLastChange`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="pFileTime">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Hash">
@@ -327,7 +257,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -337,16 +267,9 @@
         <Parameter Name="pdwHash" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pdwHash">On successful return, contains the hash value for this moniker.</param>
-        <summary>Calculates a 32-bit integer using the internal state of the moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::Hash`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pdwHash">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Inverse">
@@ -356,7 +279,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -366,16 +289,9 @@
         <Parameter Name="ppmk" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ppmk">On successful return, contains a moniker that is the inverse of this moniker.</param>
-        <summary>Provides a moniker that, when composed to the right of this moniker or one of similar structure, composes to nothing.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::Inverse`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="ppmk">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -385,7 +301,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,16 +309,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Checks the object for changes since it was last saved.</summary>
-        <returns>An <see langword="S_OK" /><see langword="HRESULT" /> value if the object has changed; otherwise, an <see langword="S_FALSE" /><see langword="HRESULT" /> value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IPersistStream::IsDirty`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEqual">
@@ -412,7 +321,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -422,16 +331,9 @@
         <Parameter Name="pmkOtherMoniker" Type="System.Runtime.InteropServices.UCOMIMoniker" />
       </Parameters>
       <Docs>
-        <param name="pmkOtherMoniker">A reference to the moniker to be used for comparison.</param>
-        <summary>Compares this moniker with a specified moniker and indicates whether they are identical.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::IsEqual`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pmkOtherMoniker">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRunning">
@@ -441,7 +343,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -453,18 +355,11 @@
         <Parameter Name="pmkNewlyRunning" Type="System.Runtime.InteropServices.UCOMIMoniker" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the bind context to be used in this binding operation.</param>
-        <param name="pmkToLeft">A reference to the moniker to the left of this moniker if this moniker is part of a composite.</param>
-        <param name="pmkNewlyRunning">A reference to the moniker most recently added to the Running Object Table.</param>
-        <summary>Determines whether the object that is identified by this moniker is currently loaded and running.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::IsRunning`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="pmkNewlyRunning">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSystemMoniker">
@@ -474,7 +369,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -484,16 +379,9 @@
         <Parameter Name="pdwMksys" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pdwMksys">A pointer to an integer that is one of the values from the <see langword="MKSYS" /> enumeration, and refers to one of the COM moniker classes.</param>
-        <summary>Indicates whether this moniker is of one of the system-supplied moniker classes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For details on the values of the `MKSYS` enumeration and for information about `IMoniker::IsSystemMoniker`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pdwMksys">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -503,7 +391,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -513,16 +401,9 @@
         <Parameter Name="pStm" Type="System.Runtime.InteropServices.UCOMIStream" />
       </Parameters>
       <Docs>
-        <param name="pStm">Stream from which the object is loaded.</param>
-        <summary>Initializes an object from the stream where it was previously saved.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IPersistStream::Load`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pStm">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParseDisplayName">
@@ -532,7 +413,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -546,20 +427,13 @@
         <Parameter Name="ppmkOut" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the bind context to be used in this binding operation.</param>
-        <param name="pmkToLeft">A reference to the moniker that has been built out of the display name up to this point.</param>
-        <param name="pszDisplayName">A reference to the string containing the remaining display name to parse.</param>
-        <param name="pchEaten">On successful return, contains the number of characters in <c>pszDisplayName</c> that were consumed in this step.</param>
-        <param name="ppmkOut">Reference to the moniker that was built from <c>pszDisplayName</c>.</param>
-        <summary>Reads as many characters of the specified display name as it understands and builds a moniker corresponding to the portion read.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::ParseDisplayName`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="pszDisplayName">To be added.</param>
+        <param name="pchEaten">To be added.</param>
+        <param name="ppmkOut">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reduce">
@@ -569,7 +443,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -582,19 +456,12 @@
         <Parameter Name="ppmkReduced" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context to be used in this binding operation.</param>
-        <param name="dwReduceHowFar">Specifies how far this moniker should be reduced.</param>
-        <param name="ppmkToLeft">A reference to the moniker to the left of this moniker.</param>
-        <param name="ppmkReduced">On successful return, a reference to the reduced form of this moniker, which can be <see langword="null" /> if an error occurs or if this moniker is reduced to nothing.</param>
-        <summary>Returns a reduced moniker which is another moniker that refers to the same object as this moniker but can be bound with equal or greater efficiency.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::Reduce`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="dwReduceHowFar">To be added.</param>
+        <param name="ppmkToLeft">To be added.</param>
+        <param name="ppmkReduced">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativePathTo">
@@ -604,7 +471,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -615,17 +482,10 @@
         <Parameter Name="ppmkRelPath" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pmkOther">A reference to the moniker to which a relative path should be taken.</param>
-        <param name="ppmkRelPath">On successful return, reference to the relative moniker.</param>
-        <summary>Supplies a moniker that, when appended to this moniker (or one with a similar structure), yields the specified moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::RelativePath`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pmkOther">To be added.</param>
+        <param name="ppmkRelPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -635,7 +495,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -646,17 +506,10 @@
         <Parameter Name="fClearDirty" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="pStm">The stream into which the object is saved.</param>
-        <param name="fClearDirty">Indicates whether to clear the modified flag after the save is complete.</param>
-        <summary>Saves an object to the specified stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IPersistStream::Save`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pStm">To be added.</param>
+        <param name="fClearDirty">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

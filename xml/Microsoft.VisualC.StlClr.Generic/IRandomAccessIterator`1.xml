@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -16,8 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/add/includes/cpp-iter-arg-md.md)]</typeparam>
-    <summary>Defines the interface for a random access iterator. Random access iterators support the following operations: moving forward one position by calling <c>operator++</c>, moving backward one position by calling <c>operator--</c>, accessing an element by using <c>operator[]</c>, and accessing an element by using pointer arithmetic.</summary>
+    <typeparam name="TValue">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,9 +36,9 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">A valid iterator that points to the same container as the current iterator.</param>
-        <summary>Determines the distance between the element that the current iterator is pointing to and the element that the given iterator is pointing to.</summary>
-        <returns>The distance, in number of elements, between the element that the current iterator is pointing to and the element that <paramref name="_Right" /> is pointing to. This number is negative if <paramref name="_Right" /> points to an element that is before the element that the current iterator points to.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,10 +58,9 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">A valid iterator that points to the same container as the current iterator.</param>
-        <summary>Determines whether the current iterator is pointing to an element in the container that precedes the element that the given iterator points to.</summary>
-        <returns>
-          <see langword="true" /> if the current iterator is pointing to an element that comes before the element that <paramref name="_Right" /> is pointing to; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,7 +71,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,9 +80,9 @@
         <Parameter Name="_Offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="_Offset">The number of elements to traverse. To move the iterator forward, specify a positive number. To move the iterator backward, use a negative number.</param>
-        <summary>Moves the iterator by the given number of elements.</summary>
-        <returns>The actual number of elements traversed. This number will differ from <paramref name="_Offset" /> if the beginning or end of the container is reached before iterating the desired number of elements.</returns>
+        <param name="_Offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

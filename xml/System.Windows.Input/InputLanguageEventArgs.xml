@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputLanguageEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a base class for arguments for events dealing with a change in input language.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class provides the base for the <xref:System.Windows.Input.InputLanguageChangedEventArgs> and <xref:System.Windows.Input.InputLanguageChangingEventArgs> classes, which in turn provide arguments for the <xref:System.Windows.Input.InputLanguageManager.InputLanguageChanged> and <xref:System.Windows.Input.InputLanguageManager.InputLanguageChanging> routed events, respectively.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -38,19 +29,10 @@
         <Parameter Name="previousLanguageId" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="newLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing a new current input language.</param>
-        <param name="previousLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the previous current input language.</param>
-        <summary>Initializes base class values for a new instance of a deriving class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Classes that derive from <xref:System.Windows.Input.InputLanguageEventArgs> should call this constructor to ensure that values provided by the abstract base class are initialized properly.  
-  
- The constructors for <xref:System.Windows.Input.InputLanguageChangedEventArgs> and <xref:System.Windows.Input.InputLanguageChangingEventArgs> automatically call this base constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="newLanguageId">To be added.</param>
+        <param name="previousLanguageId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NewLanguage">
@@ -60,23 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Globalization.CultureInfo" /> object representing the new current input language.</summary>
-        <value>A <see cref="T:System.Globalization.CultureInfo" /> object representing the new current input language.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property is established through the `newLanguageId` parameter provided by the <xref:System.Windows.Input.InputLanguageEventArgs.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousLanguage">
@@ -86,23 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Globalization.CultureInfo" /> object representing the previous current input language.</summary>
-        <value>A <see cref="T:System.Globalization.CultureInfo" /> object representing the previous current input language.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property is established through the `previousLanguageId` parameter provided by the <xref:System.Windows.Input.InputLanguageEventArgs.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

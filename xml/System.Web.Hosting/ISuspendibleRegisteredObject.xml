@@ -12,18 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Listens for suspend and resume notifications.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an application passes to the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method an object that implements the ISuspendibleRegisteredObject interface, the hosting environment will subscribe the object to listen for suspend or resume notifications.  
-  
- ]]></format>
-    </remarks>
-    <threadsafe>Instance members of this type are not guaranteed to be thread safe. You can call the <see cref="System.Web.Hosting.ISuspendibleRegisteredObject.Suspend%2A" /> method at any time, including during a call to another method on this same object, during calls to other objects' <see cref="System.Web.Hosting.ISuspendibleRegisteredObject.Suspend%2A" /> methods, or even during a call to this object's <see cref="System.Web.Hosting.ISuspendibleRegisteredObject.Suspend%2A" /> method. Because the execution of these methods is multithreaded, there is an interval in which the <see cref="System.Web.Hosting.ISuspendibleRegisteredObject.Suspend%2A" /> method can be called even after a call to the <see cref="System.Web.Hosting.HostingEnvironment.UnregisterObject%2A" /> method has completed.</threadsafe>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Suspend">
@@ -40,22 +30,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Called when ASP.NET notifies an application that a process is being suspended.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Suspend method must not throw exceptions, otherwise the behavior is undefined and the process will likely be terminated. The Suspend method should not block execution, because after five seconds ASP.NET will allow the process to be suspended, even if not all Suspend methods have completed.  
-  
- If a callback returns, it will be invoked when the process resumes from suspension. The Suspend method may return `null` if it does not have to be notified when the process resumes.  
-  
- The Suspend method is supported only when running in IIS integrated mode. The ASP.NET runtime does not guarantee that the Suspend method will ever fire.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

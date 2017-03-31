@@ -3,8 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObjectAccessRule extends System.Security.AccessControl.AccessRule" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.ObjectAccessRule" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a combination of a user's identity, an access mask, and an access control type (allow or deny). An ObjectAccessRule object also contains information about the type of object to which the rule applies, the type of child object that can inherit the rule, how the rule is inherited by child objects, and how that inheritance is propagated.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,8 +26,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.ObjectAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Guid,System.Guid,System.Security.AccessControl.AccessControlType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -37,19 +45,16 @@
         <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
       </Parameters>
       <Docs>
-        <param name="identity">The identity to which the access rule applies.  It must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" />.</param>
-        <param name="accessMask">The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators.</param>
-        <param name="isInherited">
-          <see langword="true" /> if this rule is inherited from a parent container.</param>
-        <param name="inheritanceFlags">Specifies the inheritance properties of the access rule.</param>
-        <param name="propagationFlags">Specifies whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="T:System.Security.AccessControl.InheritanceFlags" />.</param>
-        <param name="objectType">The type of object to which the rule applies.</param>
-        <param name="inheritedObjectType">The type of child object that can inherit the rule.</param>
-        <param name="type">Specifies whether this rule allows or denies access.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.ObjectAccessRule" /> class with the specified values.</summary>
+        <param name="identity">To be added.</param>
+        <param name="accessMask">To be added.</param>
+        <param name="isInherited">To be added.</param>
+        <param name="inheritanceFlags">To be added.</param>
+        <param name="propagationFlags">To be added.</param>
+        <param name="objectType">To be added.</param>
+        <param name="inheritedObjectType">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The value of the <paramref name="identity" /> parameter cannot be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" />, or the <paramref name="type" /> parameter contains an invalid value.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="accessMask" /> parameter is 0, or the <paramref name="inheritanceFlags" /> or <paramref name="propagationFlags" /> parameters contain unrecognized flag values.</exception>
       </Docs>
     </Member>
     <Member MemberName="InheritedObjectType">
@@ -58,16 +63,20 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.ObjectAccessRule.InheritedObjectType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of child object that can inherit the <see cref="T:System.Security.AccessControl.ObjectAccessRule" /> object.</summary>
-        <value>The type of child object that can inherit the <see cref="T:System.Security.AccessControl.ObjectAccessRule" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,17 +86,20 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.ObjectAccessRule.ObjectFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ObjectAceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets flags that specify if the <see cref="System.Security.AccessControl.ObjectAccessRule.ObjectType%2A" /> and <see cref="System.Security.AccessControl.ObjectAccessRule.InheritedObjectType%2A" /> properties of the <see cref="T:System.Security.AccessControl.ObjectAccessRule" /> object contain valid values.</summary>
-        <value>
-          <see cref="T:System.Security.AccessControl.ObjectAceFlags" /> specifies that the <see cref="System.Security.AccessControl.ObjectAccessRule.ObjectType%2A" /> property contains a valid value. <see cref="T:System.Security.AccessControl.ObjectAceFlags" /> specifies that the <see cref="System.Security.AccessControl.ObjectAccessRule.InheritedObjectType%2A" /> property contains a valid value. These values can be combined with a logical OR.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,16 +109,20 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.ObjectAccessRule.ObjectType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of object to which the <see cref="T:System.Security.AccessControl.ObjectAccessRule" /> applies.</summary>
-        <value>The type of object to which the <see cref="T:System.Security.AccessControl.ObjectAccessRule" /> applies.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

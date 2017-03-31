@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.GeneratorSupport" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,24 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines identifiers used to determine whether a code generator supports certain types of code elements.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These identifiers are used when calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method of a code generator to determine whether the code generator supports generating certain types of code.  
-  
-   
-  
-## Examples  
- The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options.  
-  
- [!code-cpp[CompilerParametersExample#2](~/add/codesnippet/cpp/t-system.codedom.compile_9_1.cpp)]
- [!code-cs[CompilerParametersExample#2](~/add/codesnippet/csharp/t-system.codedom.compile_9_1.cs)]
- [!code-vb[CompilerParametersExample#2](~/add/codesnippet/visualbasic/t-system.codedom.compile_9_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ArraysOfArrays">
@@ -43,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports arrays of arrays.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AssemblyAttributes">
@@ -60,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports assembly attributes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ChainedConstructorArguments">
@@ -77,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports chained constructor arguments.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ComplexExpressions">
@@ -94,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports complex expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeclareDelegates">
@@ -111,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports delegate declarations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeclareEnums">
@@ -128,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports enumeration declarations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeclareEvents">
@@ -145,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports event declarations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeclareIndexerProperties">
@@ -162,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports the declaration of indexer properties.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeclareInterfaces">
@@ -179,14 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports interface declarations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeclareValueTypes">
@@ -196,14 +170,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports value type declarations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EntryPointMethod">
@@ -213,14 +186,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports a program entry point method designation. This is used when building executables.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericTypeDeclaration">
@@ -230,14 +202,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports generic type declarations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericTypeReference">
@@ -247,14 +218,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports generic type references.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GotoStatements">
@@ -264,14 +234,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports goto statements.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultidimensionalArrays">
@@ -281,14 +250,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports referencing multidimensional arrays. Currently, the CodeDom cannot be used to instantiate multidimensional arrays.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultipleInterfaceMembers">
@@ -298,14 +266,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports the declaration of members that implement multiple interfaces.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NestedTypes">
@@ -315,14 +282,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports the declaration of nested types.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ParameterAttributes">
@@ -332,14 +298,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports parameter attributes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PartialTypes">
@@ -349,14 +314,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports partial type declarations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublicStaticMembers">
@@ -366,14 +330,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports public static members.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReferenceParameters">
@@ -383,14 +346,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports reference and out parameters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Resources">
@@ -400,14 +362,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports compilation with .NET Framework resources. These can be default resources compiled directly into an assembly, or resources referenced in a satellite assembly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReturnTypeAttributes">
@@ -417,14 +378,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports return type attribute declarations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaticConstructors">
@@ -434,14 +394,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports static constructors.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TryCatchStatements">
@@ -451,14 +410,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports <see langword="try...catch" /> statements.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Win32Resources">
@@ -468,14 +426,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the generator supports compilation with Win32 resources.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

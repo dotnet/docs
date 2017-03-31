@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderFactories" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a set of static methods for creating one or more instances of <see cref="T:System.Data.Common.DbProviderFactory" /> classes.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +31,9 @@
         <Parameter Name="connection" Type="System.Data.Common.DbConnection" />
       </Parameters>
       <Docs>
-        <param name="connection">The connection used.</param>
-        <summary>Returns an instance of a <see cref="T:System.Data.Common.DbProviderFactory" />.</summary>
-        <returns>An instance of a <see cref="T:System.Data.Common.DbProviderFactory" /> for a specified connection.</returns>
+        <param name="connection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,18 +53,10 @@
         <Parameter Name="providerRow" Type="System.Data.DataRow" />
       </Parameters>
       <Docs>
-        <param name="providerRow">
-          <see cref="T:System.Data.DataRow" /> containing the provider's configuration information.</param>
-        <summary>Returns an instance of a <see cref="T:System.Data.Common.DbProviderFactory" />.</summary>
-        <returns>An instance of a <see cref="T:System.Data.Common.DbProviderFactory" /> for a specified <see cref="T:System.Data.DataRow" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `providerRow` parameter corresponds to the <xref:System.Data.DataRow> of a table returned by <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="providerRow">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFactory">
@@ -76,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,17 +75,10 @@
         <Parameter Name="providerInvariantName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="providerInvariantName">Invariant name of a provider.</param>
-        <summary>Returns an instance of a <see cref="T:System.Data.Common.DbProviderFactory" />.</summary>
-        <returns>An instance of a <see cref="T:System.Data.Common.DbProviderFactory" /> for a specified provider name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `providerInvariantName` parameter corresponds to the **InvariantName** column of a table returned by <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="providerInvariantName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFactoryClasses">
@@ -106,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,66 +95,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.Data.DataTable" /> that contains information about all installed providers that implement <see cref="T:System.Data.Common.DbProviderFactory" />.</summary>
-        <returns>Returns a <see cref="T:System.Data.DataTable" /> containing <see cref="T:System.Data.DataRow" /> objects that contain the following data.  
-  
- <list type="table">  
-<listheader>  
-<term> Column ordinal  
-  
- </term>  
-<description> Column name  
-  
- </description>  
-<description> Description  
-  
- </description>  
-</listheader>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> **Name**  
-  
- </description>  
-<description> Human-readable name for the data provider.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> **Description**  
-  
- </description>  
-<description> Human-readable description of the data provider.  
-  
- </description>  
-</item>  
-<item>  
-<term> 2  
-  
- </term>  
-<description> **InvariantName**  
-  
- </description>  
-<description> Name that can be used programmatically to refer to the data provider.  
-  
- </description>  
-</item>  
-<item>  
-<term> 3  
-  
- </term>  
-<description> **AssemblyQualifiedName**  
-  
- </description>  
-<description> Fully qualified name of the factory class, which contains enough information to instantiate the object.  
-  
- </description>  
-</item>  
-</list></returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

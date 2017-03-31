@@ -11,32 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Container for all dialog-editing logic for <see cref="System.Activities.Presentation.PropertyEditing.PropertyContainer.PropertyEntry%2A" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DialogPropertyValueEditor class to show an inline editor that can have an associated dialog box editor.  
-  
- The DialogPropertyValueEditor class can hold either a <xref:System.Windows.DataTemplate> for a dialog box editor or custom logic that is called when the dialog box is invoked.  
-  
- Use the <xref:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton> in your <xref:System.Windows.DataTemplate> to invoke your custom DialogPropertyValueEditor class.  
-  
- You can provide a <xref:System.Windows.DataTemplate> which is shown in a host dialog box, or you can override the <xref:Systems.Windows.Forms.ShowDialog> method, which enables the reuse of existing or system dialog boxes.  
-  
- The following list shows the rules for determining whether the <xref:System.Windows.DataTemplate> or <xref:Systems.Windows.Forms.ShowDialog> method is used.  
-  
- If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is not a [!INCLUDE[null](~/add/includes/null-md.md)] reference (Nothing in Visual Basic), that <xref:System.Windows.DataTemplate> is hosted in a host-specific dialog box, which provides host styling. The <xref:Systems.Windows.Forms.ShowDialog> is not called.  
-  
- If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is a [!INCLUDE[null](~/add/includes/null-md.md)] reference (Nothing in Visual Basic), the virtual <xref:Systems.Windows.Forms.ShowDialog> method is called and you can override this method to show any dialog box.  
-  
-   
-  
-## Examples  
-   
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor" /> class with no specific templates.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +44,9 @@
         <Parameter Name="inlineEditorTemplate" Type="System.Windows.DataTemplate" />
       </Parameters>
       <Docs>
-        <param name="dialogEditorTemplate">A <see cref="System.Window.DataTemplate" /> that is hosted in a host-specific dialog chrome and has its <see cref="System.Activities.ActivityContext.DataContext%2A" /> set to the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> that corresponds to the property being edited.</param>
-        <param name="inlineEditorTemplate">A <see cref="T:System.Windows.DataTemplate" /> that is used for the inline editor user interface. If used, its <see cref="System.Activities.ActivityContext.DataContext%2A" /> is set to the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> that corresponds to the property being edited.</param>
-        <summary>Creates a new instance of the <see cref="System.Activities.Design.PropertyEditing.DialogPropertyValueEditor" /> class with the specified dialog editor and inline editor templates.</summary>
+        <param name="dialogEditorTemplate">To be added.</param>
+        <param name="inlineEditorTemplate">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,16 +63,9 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is hosted by a host-specific dialog and has its <see cref="System.Activities.ActivityContext.DataContext%2A" /> set to a <see cref="System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyValue%2A" />.</summary>
-        <value>The <see cref="T:System.Windows.DataTemplate" /> object that is hosted by a host-specific dialog.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property returns `null`, the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.ShowDialog%2A> method is called instead.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDialog">
@@ -116,17 +85,10 @@
         <Parameter Name="commandSource" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="propertyValue">The <see cref="System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyValue%2A" /> for the property being edited.</param>
-        <param name="commandSource">The <see cref="System.Windows.IinputElement" /> that can be used as a source for execution of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands" />.</param>
-        <summary>Called when the <see cref="System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A" /> is null and a dialog has been invoked by the user.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Since the commands get handled by the host and since custom dialogs are not going to be part of that visual tree, the `commandSource` exposes an <xref:System.Windows.IInputElement> that is part of the host's visual tree and that, therefore, can be used to execute property editing commands in such a way that they are handled correctly. Overriding this method enables you to implement any custom dialog logic, such as invoking existing system dialogs.  
-  
- ]]></format>
-        </remarks>
+        <param name="propertyValue">To be added.</param>
+        <param name="commandSource">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the shape of a map area.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MapAreaShape enumeration represents the shape of a <xref:System.Web.UI.DataVisualization.Charting.MapArea> object. This enumeration is usually used to set the shape of a custom map area. A custom map area has user-defined coordinates and shape, as opposed to a map area that represents a chart element, which has a shape that is determined by the element it represents.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Circle">
@@ -34,7 +27,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.MapAreaShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The shape of the map area is circular.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Polygon">
@@ -50,7 +43,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.MapAreaShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The shape of the map area is polygonal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rectangle">
@@ -66,7 +59,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.MapAreaShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The shape of the map area is rectangular.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IIdentifierCreationService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,27 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a mechanism to create uniquely named identifiers throughout a specified range of activities.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- IIdentifierCreationService provides a mechanism to create uniquely named identifiers throughout a range of activities.  
-  
-   
-  
-## Examples  
- The following example shows an implementation of the IIdentifierCreationService. This service ensures that each of the identifiers used within the current workflow is unique.  
-  
- [!code-cs[WF_Samples#41](~/add/codesnippet/csharp/wf_snippets/snippets.cs#41)]
- [!code-vb[WF_Samples#41](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#41)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EnsureUniqueIdentifiers">
@@ -44,7 +24,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,25 +34,10 @@
         <Parameter Name="childActivities" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="parentActivity">The <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> that will contain the uniquely named activities.</param>
-        <param name="childActivities">A collection of activities to ensure that activities are uniquely named.</param>
-        <summary>Provides a mechanism to ensure that Activities added to a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> are uniquely named.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use EnsureUniqueIdentifiers to ensure activities inserted into a <xref:System.Workflow.ComponentModel.CompositeActivity> have unique identifiers.  
-  
-   
-  
-## Examples  
- The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
-  
- [!code-cs[WF_Samples#43](~/add/codesnippet/csharp/wf_snippets/snippets.cs#43)]
- [!code-vb[WF_Samples#43](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#43)]  
-  
- ]]></format>
-        </remarks>
+        <param name="parentActivity">To be added.</param>
+        <param name="childActivities">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateIdentifier">
@@ -83,7 +47,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,25 +57,10 @@
         <Parameter Name="identifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> against which to test the identifier.</param>
-        <param name="identifier">The identifier to test for validity.</param>
-        <summary>Provides a mechanism to test that an identifier is unique within an <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use ValidateIdentifier to make sure an identifier is unique and properly formatted for use within a specified <xref:System.Workflow.ComponentModel.Activity>.  
-  
-   
-  
-## Examples  
- The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
-  
- [!code-cs[WF_Samples#42](~/add/codesnippet/csharp/wf_snippets/snippets.cs#42)]
- [!code-vb[WF_Samples#42](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#42)]  
-  
- ]]></format>
-        </remarks>
+        <param name="activity">To be added.</param>
+        <param name="identifier">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

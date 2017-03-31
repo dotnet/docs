@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ManifestWriter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -20,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Writes an object representation of a manifest to XML.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,10 +25,6 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteManifest(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,16 +36,9 @@
         <Parameter Name="manifest" Type="Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" />
       </Parameters>
       <Docs>
-        <param name="manifest">The manifest object.</param>
-        <summary>Writes the specified manifest object to XML.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Writes the specified object representation of a manifest to XML. The name of the output file is inferred from the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.SourcePath%2A> property of the manifest.  
-  
- ]]></format>
-        </remarks>
+        <param name="manifest">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteManifest">
@@ -61,10 +46,6 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteManifest(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest, class System.IO.Stream output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest,System.IO.Stream)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,17 +58,10 @@
         <Parameter Name="output" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="manifest">The manifest object.</param>
-        <param name="output">Specifies an output stream.</param>
-        <summary>Writes the specified manifest object to XML.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Writes the specified object representation of a manifest to XML.  
-  
- ]]></format>
-        </remarks>
+        <param name="manifest">To be added.</param>
+        <param name="output">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteManifest">
@@ -95,10 +69,6 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteManifest(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest,System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,17 +81,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="manifest">The manifest object.</param>
-        <param name="path">The path name of the output file.</param>
-        <summary>Writes the specified manifest object to XML.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Writes the specified object representation of a manifest to XML.  
-  
- ]]></format>
-        </remarks>
+        <param name="manifest">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteManifest">
@@ -142,10 +105,10 @@
         <Parameter Name="targetframeWorkVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="manifest">The manifest object.</param>
-        <param name="path">The path name of the output file.</param>
-        <param name="targetframeWorkVersion">The target framework version.</param>
-        <summary>Writes the specified manifest object to XML.</summary>
+        <param name="manifest">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="targetframeWorkVersion">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

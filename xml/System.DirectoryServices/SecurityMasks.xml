@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.SecurityMasks" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,24 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the available options for examining security information of a directory object. This enumeration is used with the <see cref="System.DirectoryServices.DirectorySearcher.SecurityMasks%2A" /> and <see cref="System.DirectoryServices.DirectoryEntryConfiguration.SecurityMasks%2A" /> properties.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-  
-```  
-using System.DirectoryServices;  
-...  
-DirectorySearcher src = new DirectorySearcher("…");  
-src.PropertiesToLoad = new string[] {ntSecurityDescriptor,…};  
-src.SecurityMasks = SecurityMasks.Dacl | SecurityMasks.Owner;  
-SearchResultCollection res = src.FindAll();  
-  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Dacl">
@@ -43,14 +26,13 @@ SearchResultCollection res = src.FindAll();
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reads or writes the discretionary access-control list (DACL) data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -60,14 +42,13 @@ SearchResultCollection res = src.FindAll();
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reads or writes the group data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -77,14 +58,13 @@ SearchResultCollection res = src.FindAll();
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Does not read or write security data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -94,14 +74,13 @@ SearchResultCollection res = src.FindAll();
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reads or writes the owner data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sacl">
@@ -111,14 +90,13 @@ SearchResultCollection res = src.FindAll();
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reads or writes the system access-control list (SACL) data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

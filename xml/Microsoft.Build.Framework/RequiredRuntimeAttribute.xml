@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.RequiredRuntimeAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,20 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the metadata attribute that task authors use to identify whether the task requires a specific version of the CLR runtime.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A task marked with the RequiredRuntimeAttribute indicates that it has a stricter runtime requirement than a regular task. It alerts MSBuild that it may need to start a separate process for the task if the current CLR runtime version does not match the required version.  
-  
-> [!NOTE]
->  This attribute is currently non-functional because only one version of the CLR (2.0) is capable of running either [!INCLUDE[vstecmsbuild](~/add/includes/vstecmsbuild-md.md)] version 2.0 or 3.5.  
-  
- For more information about using attributes, see [Extending Metadata Using Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="runtimeVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="runtimeVersion">The version of the CLR runtime required prefaced with a "v," such as "v2.0."</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.RequiredRuntimeAttribute" /> class.</summary>
+        <param name="runtimeVersion">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,15 +45,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the CLR runtime version the attribute was constructed with, such as "v2.0."</summary>
-        <value>A string containing the CLR runtime version required.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

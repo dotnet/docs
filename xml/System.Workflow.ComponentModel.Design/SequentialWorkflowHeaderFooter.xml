@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a header or footer that is associated with a <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- SequentialWorkflowHeaderFooter provides header and footer information for the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner> when it is displayed in print preview mode. If provided by the workflow designer, users can configure headers and footers on the **Header/Footer** tab on the **Page Setup** dialog box.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -47,10 +34,9 @@
         <Parameter Name="isHeader" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="parent">The SequentialWorkflowRootDesigner with which the</param>
-        <param name="isHeader">
-          <see langword="true" /> to indicate that the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" /> is a header; <see langword="false" /> to indicate that the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" /> is a footer.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" /> class.</summary>
+        <param name="parent">To be added.</param>
+        <param name="isHeader">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +47,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the root designer to which the header or footer is applied.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner" /> to which the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" /> is applied.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,15 +65,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounding rectangle of the header or footer on the workflow design surface.</summary>
-        <value>The <see cref="T:System.Drawing.Rectangle" /> that bounds the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" /> on the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,15 +83,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the image associated with the header or footer.</summary>
-        <value>The <see cref="T:System.Drawing.Image" /> to associate with the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,26 +101,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounding rectangle for the image associated with the header or footer.</summary>
-        <value>The <see cref="T:System.Drawing.Rectangle" /> that defines the bounds for the <see cref="System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Image%2A" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to override the ImageRectangle property. In this example, the ImageRectangle is calculated using the Bounds of the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter> to draw the image in the upper left corner of the header/footer.  
-  
- [!code-cs[WF_Samples#74](~/add/codesnippet/csharp/wf_snippets/snippets.cs#74)]
- [!code-vb[WF_Samples#74](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#74)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -147,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,8 +128,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the event data.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" /> when the elements it contains are repositioned by the user.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,11 +149,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> that contains the event data.</param>
-        <summary>Draws the header or footer associated with the workflow root designer on the design surface.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -193,15 +161,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text description associated with the header or footer.</summary>
-        <value>The string that contains the text description associated with the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,26 +179,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounding rectangle for the text associated with the header or footer.</summary>
-        <value>The <see cref="T:System.Drawing.Rectangle" /> that defines the bounds for the <see cref="System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Text%2A" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to override the TextRectangle property. In this example, the TextRectangle is calculated using the Bounds of the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter> as well as the location and size of the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.ImageRectangle%2A>.  
-  
- [!code-cs[WF_Samples#75](~/add/codesnippet/csharp/wf_snippets/snippets.cs#75)]
- [!code-vb[WF_Samples#75](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#75)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

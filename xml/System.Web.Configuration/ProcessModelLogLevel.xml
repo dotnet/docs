@@ -4,32 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProcessModelLogLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the event types to be logged to the event log.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProcessModelLogLevel enumeration contains the values to use when you set the <xref:System.Web.Configuration.ProcessModelSection.LogLevel%2A> property.  
-  
- The default value is Errors.  
-  
-   
-  
-## Examples  
- The following code example shows how to set the <xref:System.Web.Configuration.ProcessModelSection.LogLevel%2A> property.  
-  
- [!code-cs[System.Web.Configuration.ProcessModelSection#23](~/add/codesnippet/csharp/t-system.web.configurati_95_1.cs)]
- [!code-vb[System.Web.Configuration.ProcessModelSection#23](~/add/codesnippet/visualbasic/t-system.web.configurati_95_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -39,22 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelLogLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that all process events are logged. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this option when you want to explore the possible errors an application might issue, without any filtering. This option is useful during the building and debugging phase.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Errors">
@@ -64,22 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelLogLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that only unexpected shutdowns, memory-limit shutdowns, and deadlock shutdowns are logged. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the default value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -89,22 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelLogLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that no events are logged. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You might want to use this option for tested and deployed applications.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

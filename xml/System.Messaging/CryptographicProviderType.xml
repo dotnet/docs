@@ -1,25 +1,17 @@
 <Type Name="CryptographicProviderType" FullName="System.Messaging.CryptographicProviderType">
   <TypeSignature Language="C#" Value="public enum CryptographicProviderType" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CryptographicProviderType extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CryptographicProviderType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.CryptographicProviderType" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the cryptographic service providers available for validating digital signatures.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A cryptographic service provider contains implementations of cryptographic standards and algorithms. Applications can require the authentication provider name or authentication provider type of a cryptographic service provider to validate the digital signatures.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Dss">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A provider type that, like <see langword="RsqSig" />, only supports hashes and digital signatures. <see langword="Dss" /> specifies the Digital Signature Algorithm (DSA) signature algorithm.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fortezza">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A provider type that contains a set of cryptographic protocols and algorithms owned by the National Institute of Standards and Technology.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MicrosoftExchange">
@@ -63,22 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A provider type designed for the cryptographic needs of the Microsoft Exchange mail application and other applications compatible with Microsoft Mail.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This provider type is preliminary.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No cryptographic provider type specified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RsaFull">
@@ -105,22 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The full RSA provider type, which supports both digital signatures and data encryption. Considered a general purpose cryptographic services provider. The RSA public-key algorithm is used for all public-key operations.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- RSA Data Security, Inc., is a major developer and publisher of public-key cryptography standards. The "RSA" in the name stands for the names of the company's three developers and the owners: Rivest, Shamir, and Adelman.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RsqSig">
@@ -130,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A subset of the <see langword="RsaFull" /> provider type, which supports only those functions and algorithms required for hashes and digital signatures.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ssl">
@@ -147,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A provider type that supports the Secure Sockets Layer (SSL) protocol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SttAcq">
@@ -164,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Secure transaction technology provider acquirer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SttBrnd">
@@ -181,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Secure transaction technology provider brand.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SttIss">
@@ -198,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Secure transaction technology provider issuer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SttMer">
@@ -215,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Secure transaction technology provider enterprise.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SttRoot">
@@ -232,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Secure transaction technology provider root.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

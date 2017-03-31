@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridTextBox" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,26 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a <see cref="T:System.Windows.Forms.TextBox" /> control that is hosted in a <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataGridTextBox and the <xref:System.Windows.Forms.DataGridTextBoxColumn> work together so that users can directly edit values in a <xref:System.Windows.Forms.DataGrid> control column. The <xref:System.Windows.Forms.DataGridTextBoxColumn> derives from <xref:System.Windows.Forms.DataGridColumnStyle>, and is designed to host the DataGridTextBox, which derives from the <xref:System.Windows.Forms.TextBox> control.  
-  
- In addition to the properties, events, and methods of the base control, you can call the <xref:System.Windows.Forms.Control.KeyPress> and <xref:System.Windows.Forms.Control.KeyDown> events with the <xref:System.Windows.Forms.Control.OnKeyPress%2A> and <xref:System.Windows.Forms.Control.OnMouseDown%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the DataGridTextBox hosted by a <xref:System.Windows.Forms.DataGridTextBoxColumn>.  
-  
- [!code-cs[Classic DataGridTextBox Example#1](~/add/codesnippet/csharp/t-system.windows.forms.d_56_1.cs)]
- [!code-vb[Classic DataGridTextBox Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_56_1.vb)]
- [!code-cpp[Classic DataGridTextBox Example#1](~/add/codesnippet/cpp/t-system.windows.forms.d_56_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,12 +39,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridTextBox" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,33 +54,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.DataGridTextBox" /> is in a mode that allows either editing or navigating.</summary>
-        <value>
-          <see langword="true" /> if the controls is in navigation mode, and editing has not begun; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsInEditOrNavigateMode property is used within the <xref:System.Windows.Forms.Control.ProcessKeyMessage%2A> to determine how to process key press events, to check the state of the <xref:System.Windows.Forms.DataGridTextBox>. For example, if one of the navigation (arrow) keys is pressed, the appropriate action for the state of the control must occur.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cs[DataGridTextBox_IsInEditOrNavigateMode#1](~/add/codesnippet/csharp/p-system.windows.forms.d_69_1.cs)]
- [!code-cpp[DataGridTextBox_IsInEditOrNavigateMode#1](~/add/codesnippet/cpp/p-system.windows.forms.d_69_1.cpp)]
- [!code-vb[DataGridTextBox_IsInEditOrNavigateMode#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_69_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyPress">
@@ -110,7 +72,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,8 +81,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyPressEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +93,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,8 +102,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseWheel" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,18 +123,10 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that contains the key data.</param>
-        <summary>Indicates whether the key pressed is processed further (for example, to navigate, or escape). This property is read-only.</summary>
-        <returns>
-          <see langword="true" /> if the key is consumed, <see langword="false" /> to if the key is further processed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when a control receives a keyboard message.  
-  
- ]]></format>
-        </remarks>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetDataGrid">
@@ -185,7 +136,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,20 +145,9 @@
         <Parameter Name="parentGrid" Type="System.Windows.Forms.DataGrid" />
       </Parameters>
       <Docs>
-        <param name="parentGrid">The <see cref="T:System.Windows.Forms.DataGrid" /> control that hosts the control.</param>
-        <summary>Sets the <see cref="T:System.Windows.Forms.DataGrid" /> to which this <see cref="T:System.Windows.Forms.TextBox" /> control belongs.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-vb[DataGridTextBox_SetDataGrid#2](~/add/codesnippet/visualbasic/1a9c549c-a751-48d0-befd-_1.vb)]
- [!code-cs[DataGridTextBox_SetDataGrid#2](~/add/codesnippet/csharp/1a9c549c-a751-48d0-befd-_1.cs)]
- [!code-cpp[DataGridTextBox_SetDataGrid#2](~/add/codesnippet/cpp/1a9c549c-a751-48d0-befd-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="parentGrid">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -218,7 +157,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -228,8 +166,8 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">A <see cref="T:System.Windows.Forms.Message" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.Windows.Forms.Control.WndProc%2A" /> event.</summary>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

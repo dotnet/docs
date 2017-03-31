@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityKeyUsage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how a key that is associated with a security token can be used.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SecurityKeyUsage enumeration to set <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsage%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Exchange">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyUsage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the key can be used to exchange keys between a sender and a receiver.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Signature">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyUsage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the key can be used to generate a digital signature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

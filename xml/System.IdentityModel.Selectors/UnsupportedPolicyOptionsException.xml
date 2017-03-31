@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.UnsupportedPolicyOptionsException" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,53 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Indicates that a policy was provided to the system that included options that were unsupported.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An UnsupportedPolicyOptionsException exception indicates that a policy was provided to the system that includes options that are not supported. Restrictions that can cause these failures include the following:  
-  
- A recipient has requested a token from the local security token service by specifying http://schemas.xmlsoap.org/ws/2005/05/identity/issuer/self as the issuer of the token. However, one of the requirements specified in the policy is not supported by the CardSpace local security token service. For more information, see [A Technical Reference for the Information Card Profile V1.0](http://go.microsoft.com/fwlink/?LinkId=102401). Examples of unsupported options include the following:  
-  
--   A claim requested by the recipient is not in the list of supported claims specified in the [Supported Claim Types](http://go.microsoft.com/fwlink/?LinkId=102402) section of "A Technical Reference for the Information Card Profile V1.0."  
-  
--   The token type is something other than SAML 1.0 or 1.1.  
-  
--   For non-SSL sites, a key is not Symmetric.  
-  
--   The KeyWrapAlgorithm differs from the default algorithm.  
-  
--   An unsupported element is specified in the policy. The elements that are supported are the following:  
-  
-    -   EncryptionAlgorithm  
-  
-    -   CanonicalizationAlgorithm  
-  
-    -   SignWith  
-  
-    -   TokenType  
-  
-    -   ClaimsElement  
-  
-    -   KeyType  
-  
-    -   KeySize  
-  
-    -   EncryptWith  
-  
-    -   RequestType  
-  
-    -   SecondaryParameters  
-  
-    -   KeyWrapAlgorithm  
-  
--   wst:RequestType is not of type Issue.  
-  
--   For Asymmetric key types, a key size is not 2048.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Selectors.UnsupportedPolicyOptionsException" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The error message.</param>
-        <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Selectors.UnsupportedPolicyOptionsException" /> class with the specified error message.</summary>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +55,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -111,10 +62,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">
-          <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception that is being thrown.</param>
-        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
-        <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Selectors.UnsupportedPolicyOptionsException" /> class with the specified serialization information and streaming context.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,7 +75,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -133,9 +82,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">The error message that explains the reason for the exception.</param>
-        <param name="innerException">The original exception that caused this exception to be thrown.</param>
-        <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Selectors.UnsupportedPolicyOptionsException" /> class with the specified error message and the original exception that caused this exception to be thrown.</summary>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

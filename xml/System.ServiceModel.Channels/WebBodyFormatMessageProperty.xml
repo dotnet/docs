@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WebBodyFormatMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +16,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Stores and retrieves the message encoding format of incoming and outgoing messages for the composite Web message encoder.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property allows, for example, the composite Web message formatter to know how the composite Web message encoder has encoded the message. WebBodyFormatMessageProperty implements <xref:System.ServiceModel.Channels.IMessageProperty>. Objects that implement this interface are added by value to <xref:System.ServiceModel.Channels.Message.Properties%2A> with the <xref:System.ServiceModel.Channels.WebBodyFormatMessageProperty.Name> providing the access key.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,17 +27,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="format" Type="System.ServiceModel.Channels.WebContentFormat" />
       </Parameters>
       <Docs>
-        <param name="format">The <see cref="T:System.ServiceModel.Channels.WebContentFormat" /> of the message body.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.WebBodyFormatMessageProperty" /> class with a specified format.</summary>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The format cannot be set to the <see cref="T:System.ServiceModel.Channels.WebContentFormat" /> value in the constructor.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateCopy">
@@ -54,7 +46,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,8 +54,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the current instance of the current property.</summary>
-        <returns>An instance of the <see cref="T:System.ServiceModel.Channels.IMessageProperty" /> interface that is a copy of the current <see cref="T:System.ServiceModel.Channels.WebBodyFormatMessageProperty" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,15 +66,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.WebContentFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the format used for the message body.</summary>
-        <value>The <see cref="T:System.ServiceModel.Channels.WebContentFormat" /> that specifies the format used for the message body.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,22 +85,15 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the name of the property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Channels.WebBodyFormatMessageProperty> object must have the name "WebBodyFormatMessageProperty" as its key in the <xref:System.ServiceModel.Channels.MessageProperties> collection for the value to be accessed and used as a processing annotation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -118,7 +103,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,8 +111,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the name of the property and the encoding format used when constructed.</summary>
-        <returns>Returns "WebBodyFormatMessageProperty: EncodingFormat={0}", where {0} is <see langword="WebContentFormat.ToString()" />, which specifies the encoding format used.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

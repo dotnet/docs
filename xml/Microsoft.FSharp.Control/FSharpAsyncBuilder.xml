@@ -1,0 +1,351 @@
+<Type Name="FSharpAsyncBuilder" FullName="Microsoft.FSharp.Control.FSharpAsyncBuilder">
+  <TypeSignature Language="C#" Value="public sealed class FSharpAsyncBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FSharpAsyncBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.FSharpAsyncBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompiledName("FSharpAsyncBuilder")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bind&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt; Bind&lt;T,TResult&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;&gt; binder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!TResult&gt; Bind&lt;T, TResult&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!TResult&gt;&gt; binder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Bind``2(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Control.FSharpAsync{``1}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="binder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <param name="binder">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Combine&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; Combine&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; computation1, Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; Combine&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; computation1, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Combine``1(Microsoft.FSharp.Control.FSharpAsync{Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Control.FSharpAsync{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation1" Type="Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="computation2" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation1">To be added.</param>
+        <param name="computation2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delay&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; Delay&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt; generator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; Delay&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt; generator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Delay``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Control.FSharpAsync{``0}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="generator" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="generator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="For&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; For&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; sequence, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;&gt; body);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; For&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; sequence, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt;&gt; body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.For``1(System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Control.FSharpAsync{Microsoft.FSharp.Core.Unit}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="body" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="sequence">To be added.</param>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Return&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; Return&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; Return&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Return``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnFrom&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; ReturnFrom&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; ReturnFrom&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.ReturnFrom``1(Microsoft.FSharp.Control.FSharpAsync{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryFinally&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; TryFinally&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; compensation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; TryFinally&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; compensation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.TryFinally``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="compensation" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <param name="compensation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryWith&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; TryWith&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpFunc&lt;Exception,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt; catchHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; TryWith&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Exception, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt; catchHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.TryWith``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpFunc{System.Exception,Microsoft.FSharp.Control.FSharpAsync{``0}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="catchHandler" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Exception,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <param name="catchHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Using&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt; Using&lt;T,TResult&gt; (T resource, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;&gt; binder) where T : IDisposable;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!TResult&gt; Using&lt;(class System.IDisposable) T, TResult&gt;(!!T resource, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!TResult&gt;&gt; binder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Using``2(``0,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Control.FSharpAsync{``1}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IDisposable</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="resource" Type="T" />
+        <Parameter Name="binder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="resource">To be added.</param>
+        <param name="binder">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="While">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; While (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,bool&gt; guard, Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; computation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; While(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, bool&gt; guard, class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; computation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.While(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.Boolean},Microsoft.FSharp.Control.FSharpAsync{Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="guard" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,System.Boolean&gt;" />
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="guard">To be added.</param>
+        <param name="computation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zero">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; Zero ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; Zero() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Zero" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

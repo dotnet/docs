@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TabControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,32 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a control that contains multiple items that share the same space on the screen.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TabControl is useful for minimizing screen space usage while allowing an application to expose a large amount of data. A TabControl consists of multiple <xref:System.Windows.Controls.TabItem> objects that share the same screen space. Only one <xref:System.Windows.Controls.TabItem> in a TabControl is visible at a time.  When a user selects the tab of a <xref:System.Windows.Controls.TabItem>, the contents of that <xref:System.Windows.Controls.TabItem> become visible and the contents of the other <xref:System.Windows.Controls.TabItem> objects are hidden.  
-  
- TabControl is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class.  
-  
-## Customizing the TabControl Control  
- To apply the same property settings to multiple TabControl controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the TabControl, see [TabControl Styles and Templates](../Topic/TabControl%20Styles%20and%20Templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-> [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in TabControl control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
-   
-  
-## Examples  
- The following example creates a TabControl and binds the <xref:System.Windows.Controls.TextBlock> in the second <xref:System.Windows.Controls.TabItem> to a <xref:System.Windows.Controls.TextBox> in the first <xref:System.Windows.Controls.TabItem>.  
-  
- [!code-xml[ControlContentOverviewSnippets#16](~/add/codesnippet/xaml/ControlContentOverviewSnippets/Window1.xaml#16)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.TabControl" />.class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,35 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a composite string that specifies how to format the contents of the <see cref="T:System.Windows.Controls.TabItem" /> objects if they are displayed as strings.</summary>
-        <value>A composite string that specifies how to format the contents of the <see cref="T:System.Windows.Controls.TabItem" /> objects if they are displayed as strings.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ContentStringFormat can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md). If you set the <xref:System.Windows.Controls.TabControl.ContentTemplate%2A> or <xref:System.Windows.Controls.TabControl.ContentTemplateSelector%2A> of a <xref:System.Windows.Controls.TabControl>, the ContentStringFormat property is ignored.  
-  
-   
-  
-## Examples  
- The following example binds a <xref:System.Windows.Controls.TabControl> to a collection of `Student` objects.  The `Student` class has a `Name` property, a collection of `Course` objects, and implements the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> method to return either the `Name` of the student or a string that lists the student's courses.  The example uses <xref:System.Windows.Controls.HeaderedContentControl.HeaderStringFormat%2A?displayProperty=fullName> to put a student's name in the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of each <xref:System.Windows.Controls.TabItem> (which inherits from <xref:System.Windows.Controls.HeaderedContentControl>), and the ContentStringFormat to display the course list for each student in the Content of the <xref:System.Windows.Controls.TabItem>.  
-  
- [!code-xml[ContentStringSnippets#TabControl](~/add/codesnippet/xaml/ContentStringSnippets/Window1.xaml#tabcontrol)]  
-  
- The following example implements the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> method to return either the `Name` of the student or a string that lists the student's courses.  
-  
- [!code-cs[ContentStringSnippets#TabControlToString](~/add/codesnippet/csharp/ContentStringSnippets/Window1.xaml.cs#tabcontroltostring)]
- [!code-vb[ContentStringSnippets#TabControlToString](~/add/codesnippet/visualbasic/contentstringsnippets/window1.xaml.vb#tabcontroltostring)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentStringFormatProperty">
@@ -109,14 +63,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TabControl.ContentStringFormat%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,61 +80,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> to apply to any <see cref="T:System.Windows.Controls.TabItem" /> that does not have a <see cref="System.Windows.Controls.ContentControl.ContentTemplate%2A" /> or <see cref="System.Windows.Controls.ContentControl.ContentTemplateSelector%2A" /> property defined.</summary>
-        <value>The <see cref="T:System.Windows.DataTemplate" /> to apply to any <see cref="T:System.Windows.Controls.TabItem" /> that does not have a <see cref="System.Windows.Controls.ContentControl.ContentTemplate%2A" /> or <see cref="System.Windows.Controls.ContentControl.ContentTemplateSelector%2A" /> property defined. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_ContentTemplate"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object ContentTemplate="{ResourceExtension TemplateResourceKey}"/>  
-```  
-  
-<a name="xamlPropertyElementUsage_ContentTemplate"></a>   
-## XAML Property Element Usage  
-  
-<a name="xamlValues_ContentTemplate"></a>   
-## XAML Values  
- *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
-  
- *TemplateResourceKey*  
- The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
-  
-> [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md).  
-  
-<a name="dependencyPropertyInfo_ContentTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.TabControl.ContentTemplateProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example creates two <xref:System.Windows.DataTemplate> objects.  The <xref:System.Windows.DataTemplate> called `contentTemplate` is assigned to the ContentTemplate of the <xref:System.Windows.Controls.TabControl> and the <xref:System.Windows.DataTemplate> called `tabItemTemplate` is assigned to the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> of the second <xref:System.Windows.Controls.TabItem>.  All <xref:System.Windows.Controls.TabItem> objects contain the white rectangle defined in `contentTemplate`, except the second <xref:System.Windows.Controls.TabItem>, which has a gray rectangle, as defined in `tabItemTemplate`.  
-  
- [!code-xml[TabControlContentTemplate_snip#1](~/add/codesnippet/xaml/tabcontrolcontenttemplate_snip/page1.xaml#1)]
- [!code-xml[TabControlContentTemplate_snip#1](~/add/codesnippet/xaml/p-system.windows.control_298_1.xaml)]  
-[!code-xml[TabControlContentTemplate_snip#2](~/add/codesnippet/xaml/tabcontrolcontenttemplate_snip/page1.xaml#2)]
-[!code-xml[TabControlContentTemplate_snip#2](~/add/codesnippet/xaml/p-system.windows.control_298_2.xaml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentTemplateProperty">
@@ -191,14 +98,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TabControl.ContentTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,75 +115,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Controls.DataTemplateSelector" /> that provides custom logic for choosing the template that is used to display the content of the control.</summary>
-        <value>A ContentTemplateSelector. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, you create a <xref:System.Windows.Controls.DataTemplateSelector> when you have more than one <xref:System.Windows.DataTemplate> for the same type of objects and you want to supply your own logic to choose a <xref:System.Windows.DataTemplate> to apply based on the properties of each data object. Note that if you have objects of different types, you can set the <xref:System.Windows.DataTemplate.DataType%2A> property on the <xref:System.Windows.DataTemplate>. If you do that, then there is no need to create a <xref:System.Windows.Controls.DataTemplateSelector>. Furthermore, if you have objects of the same type but with different properties, you can also consider using a <xref:System.Windows.DataTrigger> or a data converter. For more information, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
-  
- To create a template selector, create a class that inherits from <xref:System.Windows.Controls.DataTemplateSelector> and override the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method. After your class is defined, you can assign an instance of the class to the template selector property of your element.  
-  
- If both the ContentTemplateSelector and the <xref:System.Windows.Controls.TabControl.ContentTemplate%2A> properties are set, then this property is ignored.  
-  
-<a name="xamlAttributeUsage_ContentTemplateSelector"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object ContentTemplateSelector="{ResourceExtension DataTemplateSelectorClassKey}"/>  
-```  
-  
-<a name="xamlPropertyElementUsage_ContentTemplateSelector"></a>   
-## XAML Property Element Usage  
-  
-```  
-<object>  
-  <object.ContentTemplateSelector>  
-    <MyDataTemplateSelectorImplementation .../>  
-  </object.ContentTemplateSelector>  
-</object>  
-```  
-  
-<a name="xamlValues_ContentTemplateSelector"></a>   
-## XAML Values  
- *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
-  
- *DataTemplateSelectorClassKey*  
- The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
-  
- *MyDataTemplateSelectorImplementation*  
- A class derived from <xref:System.Windows.Controls.DataTemplateSelector> and overrides <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A>. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
-  
-<a name="dependencyPropertyInfo_ContentTemplateSelector"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.TabControl.ContentTemplateSelectorProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example uses the ContentTemplateSelector property to display the content of a <xref:System.Windows.Controls.TabItem> differently, depending on the hometown of the selected person.  
-  
- [!code-xml[TabControlContentTemplateSelector#1](~/add/codesnippet/xaml/TabControlContentTemplateSelector/Window1.xaml#1)]  
-[!code-xml[TabControlContentTemplateSelector#2](~/add/codesnippet/xaml/TabControlContentTemplateSelector/Window1.xaml#2)]  
-  
- [!code-cs[TabControlContentTemplateSelector#3](~/add/codesnippet/csharp/TabControlContentTemplateSelector/Window1.xaml.cs#3)]
- [!code-vb[TabControlContentTemplateSelector#3](~/add/codesnippet/visualbasic/TabControlContentTemplateSelector/Window1.xaml.vb#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentTemplateSelectorProperty">
@@ -287,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TabControl.ContentTemplateSelector%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,7 +150,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -313,8 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates or identifies the element used to display the specified item.</summary>
-        <returns>The element used to display the specified item.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,7 +169,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -335,9 +178,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">Specified item.</param>
-        <summary>Determines if the specified item is (or is eligible to be) its own <see langword="ItemContainer" />.</summary>
-        <returns>Returns <see langword="true" /> if the item is its own <see langword="ItemContainer" />; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,7 +191,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,15 +198,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when <see cref="System.Windows.FrameworkElement.ApplyTemplate%2A" /> is called.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method updates the <xref:System.Windows.Controls.TabControl.SelectedContent%2A>, <xref:System.Windows.Controls.TabControl.SelectedContentTemplate%2A>, and <xref:System.Windows.Controls.TabControl.SelectedContentTemplateSelector%2A> properties to the objects used by the currently selected <xref:System.Windows.Controls.TabItem>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -374,7 +209,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,8 +216,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.TabControlAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] automation infrastructure.</summary>
-        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,7 +228,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -404,16 +237,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data for the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.</param>
-        <summary>Called when <see cref="System.Windows.FrameworkElement.IsInitialized%2A" /> is set to **true**.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The control raises the <xref:System.Windows.FrameworkElement.IsInitialized%2A> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnItemsChanged">
@@ -423,7 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -433,8 +258,8 @@
         <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data for the <see cref="E:System.Windows.Controls.ItemContainerGenerator.ItemsChanged" /> event.</param>
-        <summary>Called to update the current selection when items change.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,7 +270,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -455,16 +279,9 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data for <see cref="T:System.Windows.Input.KeyEventArgs" />.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.ContentElement.KeyDown" /> routed event that occurs when the user presses a key.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation marks the <xref:System.Windows.ContentElement.KeyDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when the user presses CTRL+TAB, CTRL+SHIFT+TAB, HOME, or END to navigate between <xref:System.Windows.Controls.TabItem> objects. Otherwise, this implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.ContentElement.KeyDown> event data.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectionChanged">
@@ -474,7 +291,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -484,18 +300,9 @@
         <Parameter Name="e" Type="System.Windows.Controls.SelectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data for <see cref="T:System.Windows.Controls.SelectionChangedEventArgs" />.</param>
-        <summary>Raises the <see cref="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" /> routed event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.TabControl> updates the <xref:System.Windows.Controls.TabControl.SelectedContent%2A>, <xref:System.Windows.Controls.TabControl.SelectedContentTemplate%2A>, and <xref:System.Windows.Controls.TabControl.SelectedContentTemplateSelector%2A> properties to the objects used by the currently selected <xref:System.Windows.Controls.TabItem>.  
-  
- The control raises the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedContent">
@@ -505,7 +312,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -517,50 +323,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the content of the currently selected <see cref="T:System.Windows.Controls.TabItem" />.</summary>
-        <value>The content of the currently selected <see cref="T:System.Windows.Controls.TabItem" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is updated to reference the <xref:System.Windows.Controls.ContentControl.Content%2A> of the active <xref:System.Windows.Controls.TabItem> when the tab selection changes.  
-  
- The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.TabControl> uses the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property to this property. If you create a new <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>, be sure to the bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property to this property by setting the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to "SelectedContent" or by using [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
-  
-<a name="xamlAttributeUsage_SelectedContent"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="{TemplateBinding SelectedContent}"/>  
-```  
-  
-<a name="dependencyPropertyInfo_SelectedContent"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.TabControl.SelectedContentProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example uses the SelectedContent property to get the `Person` in the currently selected <xref:System.Windows.Controls.TabItem>.  
-  
- [!code-cs[TabControlContentTemplateSelector#4](~/add/codesnippet/csharp/TabControlContentTemplateSelector/Window1.xaml.cs#4)]
- [!code-vb[TabControlContentTemplateSelector#4](~/add/codesnippet/visualbasic/TabControlContentTemplateSelector/Window1.xaml.vb#4)]  
-  
- The following example creates a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>. Setting the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A> property to "SelectedContent" creates aliases to the SelectedContent, <xref:System.Windows.Controls.TabControl.SelectedContentTemplate%2A>, and <xref:System.Windows.Controls.TabControl.SelectedContentTemplateSelector%2A> properties.  
-  
- [!code-xml[ControlTemplateExamples#13](~/add/codesnippet/xaml/controltemplateexamples/resources/tabcontrol.xaml#13)]  
-  
- The following example binds the SelectedContent property to the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property by using the [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
-  
- [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/add/codesnippet/xaml/tabcontrolcontenttemplate_snip/myapp.xaml#tabcontrolcontentpresenter)]
- [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/add/codesnippet/xaml/p-system.windows.control_249_3.xaml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedContentProperty">
@@ -570,14 +335,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TabControl.SelectedContent%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,15 +352,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a composite string that specifies how to format the content of the currently selected <see cref="T:System.Windows.Controls.TabItem" /> if it is displayed as a string.</summary>
-        <value>A composite string that specifies how to format the content of the currently selected <see cref="T:System.Windows.Controls.TabItem" /> if it is displayed as a string.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -607,14 +370,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TabControl.SelectedContentStringFormat%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -625,7 +387,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -637,45 +398,9 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.DataTemplate" /> of the currently selected item.</summary>
-        <value>The <see cref="T:System.Windows.DataTemplate" /> of the selected item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.TabControl> updates this property to reference to the <xref:System.Windows.DataTemplate> for the active <xref:System.Windows.Controls.TabItem> when the tab selection changes. Set <xref:System.Windows.Controls.TabControl.ContentTemplate%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property on a <xref:System.Windows.Controls.TabItem> to specify the <xref:System.Windows.DataTemplate> for a <xref:System.Windows.Controls.TabItem>.  
-  
- The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.TabControl> uses the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to bind the <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A?displayProperty=fullName> property to this property. If you create a new <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>, be sure to the bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property to this property by setting the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to "SelectedContent" or by using [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
-  
-<a name="xamlAttributeUsage_SelectedContentTemplate"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="{TemplateBinding SelectedContentTemplate}"/>  
-```  
-  
-<a name="dependencyPropertyInfo_SelectedContentTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.TabControl.SelectedContentTemplateProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>. Setting the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A> property to `"SelectedContent"` creates aliases to the <xref:System.Windows.Controls.TabControl.SelectedContent%2A>, SelectedContentTemplate, and <xref:System.Windows.Controls.TabControl.SelectedContentTemplateSelector%2A> properties.  
-  
- [!code-xml[ControlTemplateExamples#13](~/add/codesnippet/xaml/controltemplateexamples/resources/tabcontrol.xaml#13)]  
-  
- The following example binds the SelectedContentTemplate property to the <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A?displayProperty=fullName> property by using the [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
-  
- [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/add/codesnippet/xaml/tabcontrolcontenttemplate_snip/myapp.xaml#tabcontrolcontentpresenter)]
- [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/add/codesnippet/xaml/p-system.windows.control_60_2.xaml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedContentTemplateProperty">
@@ -685,14 +410,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TabControl.SelectedContentTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -703,7 +427,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -715,45 +438,9 @@
         <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Controls.DataTemplateSelector" /> of the currently selected item.</summary>
-        <value>The <see cref="T:System.Windows.Controls.DataTemplateSelector" /> of the currently selected item. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.TabControl> updates this property to reference to the <xref:System.Windows.Controls.DataTemplateSelector> for the active <xref:System.Windows.Controls.TabItem> when the tab selection changes. Set <xref:System.Windows.Controls.TabControl.ContentTemplateSelector%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> property on a <xref:System.Windows.Controls.TabItem> to specify the <xref:System.Windows.Controls.DataTemplateSelector> for a <xref:System.Windows.Controls.TabItem>.  
-  
- The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.TabControl> uses the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to bind the <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A?displayProperty=fullName> property to this property. If you create a new <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>, be sure to the bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property to this property by setting <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to "SelectedContent" or by using the [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
-  
-<a name="xamlAttributeUsage_SelectedContentTemplateSelector"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="{TemplateBinding SelectedContentTemplateSelector}"/>  
-```  
-  
-<a name="dependencyPropertyInfo_SelectedContentTemplateSelector"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.TabControl.SelectedContentTemplateSelectorProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>. Setting the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A> property to `"SelectedContent"` creates aliases to the <xref:System.Windows.Controls.TabControl.SelectedContent%2A>, <xref:System.Windows.Controls.TabControl.SelectedContentTemplate%2A>, and SelectedContentTemplateSelector properties.  
-  
- [!code-xml[ControlTemplateExamples#13](~/add/codesnippet/xaml/controltemplateexamples/resources/tabcontrol.xaml#13)]  
-  
- The following example binds the SelectedContentTemplateSelector property to the <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A?displayProperty=fullName> property by using the [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
-  
- [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/add/codesnippet/xaml/tabcontrolcontenttemplate_snip/myapp.xaml#tabcontrolcontentpresenter)]
- [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/add/codesnippet/xaml/p-system.windows.control_423_2.xaml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedContentTemplateSelectorProperty">
@@ -763,14 +450,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TabControl.SelectedContentTemplateSelector%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -781,7 +467,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -796,30 +481,9 @@
         <ReturnType>System.Windows.Controls.Dock</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets how tab headers align relative to the tab content.</summary>
-        <value>The alignment of tab headers relative to tab content. The default is <see cref="T:System.Windows.Controls.Dock" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_TabStripPlacement"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.TabControl.TabStripPlacementProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example creates a tab control that positions the tabs on the left side.  
-  
- [!code-xml[TabControl#3](~/add/codesnippet/xaml/TabControl.TabControlSimple/Pane1.xaml#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStripPlacementProperty">
@@ -829,14 +493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TabControl.TabStripPlacement%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

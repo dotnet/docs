@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for callbacks that can be inserted in the sequence for object initialization and property setting. This influences the object graph that is produced by <see cref="T:System.Xaml.XamlObjectWriter" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The applicable callbacks all use the generic <xref:System.EventHandler%601> that carries XamlObjectEventArgs event data. You define the handlers and then set references to them by setting properties of <xref:System.Xaml.XamlObjectWriterSettings>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,11 +28,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">The object instance that is relevant to the event data.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectEventArgs" /> class.</summary>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="instance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ElementLineNumber">
@@ -55,8 +46,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line number of the relevant object instance.</summary>
-        <value>The line number of the element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +64,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the position in the line of the relevant object instance.</summary>
-        <value>The position in the line of the element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +82,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object instance that is relevant to the event data.</summary>
-        <value>The object instance that is relevant to the event data.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +100,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the BAML URI of the relevant object instance.</summary>
-        <value>The BAML URI of the relevant object instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

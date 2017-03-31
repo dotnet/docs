@@ -8,21 +8,8 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Enables notification to a host application that a modal dialog is displayed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some applications that host designers need to be notified when a modal dialog box has been invoked. Visual Studio is an example of such a host. The IModalService interface provides an interface to communicate the current modal status.  
-  
- The Windows Workflow Designer calls the <xref:System.Activities.Presentation.IModalService.SetModalState%2A> method. When the `isModal` parameter is set to `true`, the host is notified that a modal dialog is displayed.  
-  
- This is an optional service. If a host application does not care about the modal status,  you need not use the service.  
-  
- In the current implementation, if a Windows Presentation Foundation (WPF) message box (which is a modal dialog) is invoked, the <xref:System.Activities.Presentation.IModalService.SetModalState%2A>is not called. If the host application requires this information, another workaround must be created.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="SetModalState">
@@ -41,8 +28,8 @@
         <Parameter Name="isModal" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isModal">If set to <see langword="true" />, a modal dialog is being displayed.</param>
-        <summary>Notifies the host application that a modal dialog is being displayed.</summary>
+        <param name="isModal">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

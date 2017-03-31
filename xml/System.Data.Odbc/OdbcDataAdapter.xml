@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcDataAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,40 +19,15 @@
       <AttributeName>System.ComponentModel.DefaultEvent("RowUpdated")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.Designer("Microsoft.VSDesigner.Data.VS.OdbcDataAdapterDesigner, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName>System.ComponentModel.Designer("Microsoft.VSDesigner.Data.VS.OdbcDataAdapterDesigner, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.ToolboxItem("Microsoft.VSDesigner.Data.VS.OdbcDataAdapterToolboxItem, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName>System.ComponentModel.ToolboxItem("Microsoft.VSDesigner.Data.VS.OdbcDataAdapterToolboxItem, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a set of data commands and a connection to a data source that are used to fill the <see cref="T:System.Data.DataSet" /> and update the data source. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OdbcDataAdapter serves as a bridge between a `DataSet` and data source for retrieving and saving data. The OdbcDataAdapter provides this bridge by using <xref:System.Data.Common.DbDataAdapter.Fill%2A> to load data from the data source into the <xref:System.Data.DataSet>, and using <xref:System.Data.Common.DbDataAdapter.Update%2A> to send changes made in the <xref:System.Data.DataSet> back to the data source.  
-  
- When the OdbcDataAdapter fills a <xref:System.Data.DataSet>, it creates the required tables and columns for the returned data if they do not already exist. However, primary key information is not included in the implicitly created schema unless the <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> property is set to <xref:System.Data.MissingSchemaAction>. You may also have the OdbcDataAdapter create the schema of the <xref:System.Data.DataSet>, including primary key information, before filling it with data using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>. For more information, see [Adding Existing Constraints to a DataSet](../Topic/Adding%20Existing%20Constraints%20to%20a%20DataSet.md).  
-  
-> [!NOTE]
->  When you call the `Fill` method on a data source that does not have a primary key column, the OdbcDataAdapter tries to promote the unique constraint column to the primary key. In the process, the OdbcDataAdapter marks the unique constraint as not nullable. This behavior works unless there is a null value in the unique constraint column. If there is a null value, the `Fill` method fails with a constraint violation. To avoid this situation, do not allow null values in the unique constraint column.  
-  
-> [!NOTE]
->  Due to the limitations of native ODBC drivers, only one <xref:System.Data.DataTable> is ever returned when you call <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>. This is true even when executing SQL batch statements from which multiple <xref:System.Data.DataTable> objects would be expected.  
-  
- The OdbcDataAdapter also includes the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A>, <xref:System.Data.Odbc.OdbcDataAdapter.InsertCommand%2A>, <xref:System.Data.Odbc.OdbcDataAdapter.DeleteCommand%2A>, <xref:System.Data.Odbc.OdbcDataAdapter.UpdateCommand%2A>, and `TableMappings` properties to facilitate loading and updating of data.  
-  
-   
-  
-## Examples  
- The following example uses <xref:System.Data.Odbc.OdbcCommand>, OdbcDataAdapter, and <xref:System.Data.Odbc.OdbcConnection> to select records and populate a `DataSet` with the selected rows.  
-  
- [!code-cs[Classic WebData OdbcDataAdapter#1](~/add/codesnippet/csharp/t-system.data.odbc.odbcd_1_1.cs)]
- [!code-vb[Classic WebData OdbcDataAdapter#1](~/add/codesnippet/visualbasic/t-system.data.odbc.odbcd_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,35 +37,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcDataAdapter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you create an instance of <xref:System.Data.Odbc.OdbcDataAdapter>, the following write-only and read-only properties are set to their default values, as shown in the table.  
-  
-|Properties|Default value|  
-|----------------|-------------------|  
-|<xref:System.Data.Common.DataAdapter.MissingMappingAction%2A>|`MissingMappingAction.Passthrough`|  
-|<xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A>|`MissingSchemaAction.Add`|  
-  
- You can change the value of any of these properties through a separate call to the property.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcDataAdapter> and sets some of its properties.  
-  
- [!code-cs[Classic WebData OdbcDataAdapter.OdbcDataAdapter#1](~/add/codesnippet/csharp/m-system.data.odbc.odbcd_2_1.cs)]
- [!code-vb[Classic WebData OdbcDataAdapter.OdbcDataAdapter#1](~/add/codesnippet/visualbasic/m-system.data.odbc.odbcd_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,40 +52,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="selectCommand" Type="System.Data.Odbc.OdbcCommand" />
       </Parameters>
       <Docs>
-        <param name="selectCommand">An <see cref="T:System.Data.Odbc.OdbcCommand" /> that is an SQL SELECT statement or stored procedure, and is set as the <see cref="System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A" /> property of the <see cref="T:System.Data.Odbc.OdbcDataAdapter" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcDataAdapter" /> class with the specified SQL SELECT statement.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation of the <xref:System.Data.Odbc.OdbcDataAdapter> constructor sets the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property to the value specified in the `selectCommand` parameter.  
-  
- When you create an instance of <xref:System.Data.Odbc.OdbcDataAdapter>, the following write-only and read-only properties are set to their default values, as shown in the table.  
-  
-|Properties|Initial value|  
-|----------------|-------------------|  
-|<xref:System.Data.Common.DataAdapter.MissingMappingAction%2A>|`MissingMappingAction.Passthrough`|  
-|<xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A>|`MissingSchemaAction.Add`|  
-  
- You can change the value of any of these properties through a separate call to the property.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcDataAdapter> and sets some of its properties.  
-  
- [!code-vb[Classic WebData OdbcDataAdapter.OdbcDataAdapter1#1](~/add/codesnippet/visualbasic/m-system.data.odbc.odbcd_6_1.vb)]
- [!code-cs[Classic WebData OdbcDataAdapter.OdbcDataAdapter1#1](~/add/codesnippet/csharp/m-system.data.odbc.odbcd_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="selectCommand">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,7 +70,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -152,25 +77,10 @@
         <Parameter Name="selectConnection" Type="System.Data.Odbc.OdbcConnection" />
       </Parameters>
       <Docs>
-        <param name="selectCommandText">A string that is a SQL SELECT statement or stored procedure to be used by the <see cref="System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A" /> property of the <see cref="T:System.Data.Odbc.OdbcDataAdapter" />.</param>
-        <param name="selectConnection">An <see cref="T:System.Data.Odbc.OdbcConnection" /> that represents the connection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcDataAdapter" /> class with an SQL SELECT statement and an <see cref="T:System.Data.Odbc.OdbcConnection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation of the <xref:System.Data.Odbc.OdbcDataAdapter> can be useful in an application that must call the `Fill` method for two or more <xref:System.Data.Odbc.OdbcDataAdapter> objects.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcDataAdapter> and sets some of its properties.  
-  
- [!code-vb[Classic WebData OdbcDataAdapter.OdbcDataAdapter3#1](~/add/codesnippet/visualbasic/d0ba4f92-5ec4-4c3a-b38b-_1.vb)]
- [!code-cs[Classic WebData OdbcDataAdapter.OdbcDataAdapter3#1](~/add/codesnippet/csharp/d0ba4f92-5ec4-4c3a-b38b-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="selectCommandText">To be added.</param>
+        <param name="selectConnection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -180,7 +90,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -188,25 +97,10 @@
         <Parameter Name="selectConnectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="selectCommandText">A string that is a SQL SELECT statement or stored procedure to be used by the <see cref="System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A" /> property of the <see cref="T:System.Data.Odbc.OdbcDataAdapter" />.</param>
-        <param name="selectConnectionString">The connection string.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcDataAdapter" /> class with an SQL SELECT statement and a connection string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload of the <xref:System.Data.Odbc.OdbcDataAdapter> constructor uses the `selectConnectionString` parameter to set the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property. However, it does not open the connection. You still must explicitly open the connection.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcDataAdapter> and sets some of its properties.  
-  
- [!code-vb[Classic WebData OdbcDataAdapter.OdbcDataAdapter2#1](~/add/codesnippet/visualbasic/m-system.data.odbc.odbcd_1_1.vb)]
- [!code-cs[Classic WebData OdbcDataAdapter.OdbcDataAdapter2#1](~/add/codesnippet/csharp/m-system.data.odbc.odbcd_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="selectCommandText">To be added.</param>
+        <param name="selectConnectionString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateRowUpdatedEvent">
@@ -216,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -245,7 +138,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,7 +166,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -282,33 +173,16 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Odbc.OdbcCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an SQL statement or stored procedure used to delete records in the data source.</summary>
-        <value>An <see cref="T:System.Data.Odbc.OdbcCommand" /> used during an update operation to delete records in the data source that correspond to deleted rows in the <see cref="T:System.Data.DataSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the DeleteCommand property is assigned to a previously created <xref:System.Data.Odbc.OdbcCommand>, the <xref:System.Data.Odbc.OdbcCommand> is not cloned. Instead, the DeleteCommand maintains a reference to the previously created <xref:System.Data.Odbc.OdbcCommand>.  
-  
- During an update operation, if DeleteCommand is not set and primary key information is present in the <xref:System.Data.DataSet>, you can use the <xref:System.Data.Odbc.OdbcCommandBuilder> class to automatically generate the DeleteCommand, and additional commands needed to reconcile the <xref:System.Data.DataSet> to the data source. To do this, set the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property of the <xref:System.Data.Odbc.OdbcDataAdapter>. The generation logic also requires key column information to be present in the <xref:System.Data.DataSet>. For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcDataAdapter> and sets the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> and DeleteCommand properties. It assumes that you have already created an <xref:System.Data.Odbc.OdbcConnection> object.  
-  
- [!code-vb[Classic WebData OdbcDataAdapter.DeleteCommand#1](~/add/codesnippet/visualbasic/p-system.data.odbc.odbcd_2_1.vb)]
- [!code-cs[Classic WebData OdbcDataAdapter.DeleteCommand#1](~/add/codesnippet/csharp/p-system.data.odbc.odbcd_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertCommand">
@@ -318,7 +192,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -326,36 +199,16 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Odbc.OdbcCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an SQL statement or stored procedure used to insert new records into the data source.</summary>
-        <value>An <see cref="T:System.Data.Odbc.OdbcCommand" /> used during an update operation to insert records in the data source that correspond to new rows in the <see cref="T:System.Data.DataSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the InsertCommand property is assigned to a previously created <xref:System.Data.Odbc.OdbcCommand> object, the <xref:System.Data.Odbc.OdbcCommand> is not cloned. Instead, InsertCommand maintains a reference to the previously created <xref:System.Data.Odbc.OdbcCommand>.  
-  
- During an update operation, if InsertCommand is not set and primary key information is present in the <xref:System.Data.DataSet>, you can use the <xref:System.Data.Odbc.OdbcCommandBuilder> class to automatically generate InsertCommand, and additional commands needed to reconcile the <xref:System.Data.DataSet> to the data source. To do this, set the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property of the <xref:System.Data.Odbc.OdbcDataAdapter>. The generation logic also requires key column information to be present in the <xref:System.Data.DataSet>. For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
-> [!NOTE]
->  If execution of this command returns rows, these rows may be added to the <xref:System.Data.DataSet> depending upon how you set the <xref:System.Data.Odbc.OdbcCommand.UpdatedRowSource%2A> property of the <xref:System.Data.Odbc.OdbcCommand> object.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcDataAdapter> and sets the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> and InsertCommand properties. It assumes that you have already created an <xref:System.Data.Odbc.OdbcConnection> object.  
-  
- [!code-cs[Classic WebData OdbcDataAdapter.InsertCommand#1](~/add/codesnippet/csharp/p-system.data.odbc.odbcd_0_1.cs)]
- [!code-vb[Classic WebData OdbcDataAdapter.InsertCommand#1](~/add/codesnippet/visualbasic/p-system.data.odbc.odbcd_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRowUpdated">
@@ -365,7 +218,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -387,7 +239,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -409,36 +260,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Odbc.OdbcRowUpdatedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs during an update operation after a command is executed against the data source.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you use <xref:System.Data.Common.DbDataAdapter.Update%2A>, there are two events that occur per data row updated. The order of execution is as follows:  
-  
-1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
-  
-2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
-  
-3.  The command executes.  
-  
-4.  If the command is set to `FirstReturnedRecord`, the first returned result is placed in the <xref:System.Data.DataRow>.  
-  
-5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
-  
-6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
-  
-7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RowUpdating">
@@ -448,36 +277,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Odbc.OdbcRowUpdatingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> before a command is executed against the data source.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you use <xref:System.Data.Common.DbDataAdapter.Update%2A>, there are two events that occur per data row updated. The order of execution is as follows:  
-  
-1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
-  
-2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
-  
-3.  The command executes.  
-  
-4.  If the command is set to `FirstReturnedRecord`, the first returned result is placed in the <xref:System.Data.DataRow>.  
-  
-5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
-  
-6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
-  
-7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectCommand">
@@ -487,7 +294,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -495,33 +301,16 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Odbc.OdbcCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an SQL statement or stored procedure used to select records in the data source.</summary>
-        <value>An <see cref="T:System.Data.Odbc.OdbcCommand" /> that is used during a fill operation to select records from data source for placement in the <see cref="T:System.Data.DataSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When SelectCommand is assigned to a previously created <xref:System.Data.Odbc.OdbcCommand>, the <xref:System.Data.Odbc.OdbcCommand> is not cloned. Instead, the SelectCommand maintains a reference to the previously created <xref:System.Data.Odbc.OdbcCommand> object.  
-  
- If SelectCommand returns no rows, no tables are added to the <xref:System.Data.DataSet>, and no exception is raised.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcDataAdapter> and sets the SelectCommand and <xref:System.Data.Odbc.OdbcDataAdapter.InsertCommand%2A> properties. It assumes that you have already created an <xref:System.Data.Odbc.OdbcConnection> object.  
-  
- [!code-cs[Classic WebData OdbcDataAdapter.SelectCommand#1](~/add/codesnippet/csharp/p-system.data.odbc.odbcd_3_1.cs)]
- [!code-vb[Classic WebData OdbcDataAdapter.SelectCommand#1](~/add/codesnippet/visualbasic/p-system.data.odbc.odbcd_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.DeleteCommand">
@@ -531,23 +320,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Data.IDbDataAdapter.DeleteCommand%2A" />.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> used during an update to delete records in the data source for deleted rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.InsertCommand">
@@ -557,23 +338,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Data.IDbDataAdapter.InsertCommand%2A" />.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> that is used during an update to insert records from a data source for placement in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.SelectCommand">
@@ -583,23 +356,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Data.IDbDataAdapter.SelectCommand%2A" />.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> that is used during an update to select records from a data source for placement in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.UpdateCommand">
@@ -609,23 +374,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Data.IDbDataAdapter.UpdateCommand%2A" />.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> used during an update to update records in the data source for modified rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -635,7 +392,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -643,16 +399,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ICloneable.Clone%2A" />.</summary>
-        <returns>A new <see cref="T:System.Object" /> that is a copy of this instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcDataAdapter> instance is cast to an <xref:System.ICloneable> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateCommand">
@@ -662,7 +411,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -670,36 +418,16 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBCommandEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Odbc.OdbcCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an SQL statement or stored procedure used to update records in the data source.</summary>
-        <value>An <see cref="T:System.Data.Odbc.OdbcCommand" /> used during an update operation to update records in the data source that correspond to modified rows in the <see cref="T:System.Data.DataSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When UpdateCommand is assigned to a previously created <xref:System.Data.Odbc.OdbcCommand>, the <xref:System.Data.Odbc.OdbcCommand> is not cloned. Instead, the UpdateCommand maintains a reference to the previously created <xref:System.Data.Odbc.OdbcCommand> object.  
-  
- During an update operation, if UpdateCommand is not set and primary key information is present in the <xref:System.Data.DataSet>, you can use the <xref:System.Data.Odbc.OdbcCommandBuilder> class to automatically generate UpdateCommand, and additional commands needed to reconcile the <xref:System.Data.DataSet> to the data source. To do this, set the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property of the <xref:System.Data.Odbc.OdbcDataAdapter>. The generation logic also requires key column information to be present in the <xref:System.Data.DataSet>. For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
-> [!NOTE]
->  If execution of this command returns rows, these rows may be merged with the <xref:System.Data.DataSet> depending upon how you set the <xref:System.Data.Odbc.OdbcCommand.UpdatedRowSource%2A> property of the <xref:System.Data.Odbc.OdbcCommand> object.  
-  
-   
-  
-## Examples  
- The following example creates an <xref:System.Data.Odbc.OdbcDataAdapter> and sets the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> and UpdateCommand properties. It assumes that you have already created an <xref:System.Data.Odbc.OdbcConnection> object.  
-  
- [!code-cs[Classic WebData OdbcDataAdapter.UpdateCommand#1](~/add/codesnippet/csharp/p-system.data.odbc.odbcd_1_1.cs)]
- [!code-vb[Classic WebData OdbcDataAdapter.UpdateCommand#1](~/add/codesnippet/visualbasic/p-system.data.odbc.odbcd_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

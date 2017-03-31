@@ -1,32 +1,17 @@
 <Type Name="EncryptionAlgorithm" FullName="System.Messaging.EncryptionAlgorithm">
   <TypeSignature Language="C#" Value="public enum EncryptionAlgorithm" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EncryptionAlgorithm extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed EncryptionAlgorithm extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.EncryptionAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the encryption algorithm used to encrypt the message body of a private message.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Cipher modes define the method in which data is encrypted. The stream cipher mode encodes data one bit at a time. The block cipher mode encodes data one block at a time. Although it tends to execute more slowly than stream cipher, block cipher is more secure. The following table describes the cipher mode for each of the EncryptionAlgorithm values.  
-  
-|Encryption|Cipher mode|  
-|----------------|-----------------|  
-|RC2|64-bit block|  
-|RC4|Stream|  
-  
- The Message Queuing message object's property ultimately provides access to operating system encryption levels.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -36,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.EncryptionAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No encryption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rc2">
@@ -53,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.EncryptionAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The value MQMSG_CALG_RC2. This is the default value for the encryption property of the Message Queuing application's message object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rc4">
@@ -70,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.EncryptionAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The value MQMSG_CALG_RC4. This corresponds to the less secure option for the encryption property of the Message Queuing application's message object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

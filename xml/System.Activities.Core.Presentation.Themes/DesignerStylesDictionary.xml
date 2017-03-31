@@ -15,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a dictionary for designer styles.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-   
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="InitializeComponent">
@@ -48,7 +41,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the current dictionary instance from a XAML file at a specific resource location.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +58,8 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the sequence style stored in this <see cref="T:System.Activities.Core.Presentation.Themes.DesignerStylesDictionary" /> instance. Also, seals the sequence style if it is not already sealed.</summary>
-        <value>The sequence style stored in this <see cref="T:System.Activities.Core.Presentation.Themes.DesignerStylesDictionary" /> instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,17 +91,10 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="connectionId">The connection ID.</param>
-        <param name="target">The target.</param>
-        <summary>Attaches events and names to compiled content.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This interface is designed for use only by the markup compiler.  
-  
- ]]></format>
-        </remarks>
+        <param name="connectionId">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

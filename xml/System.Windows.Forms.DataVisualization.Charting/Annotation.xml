@@ -16,25 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines properties and methods common to all annotations. This is an abstract class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Annotations are commonly used to comment or elaborate on chart elements such as data points. Annotations can also be used to draw custom shapes.  
-  
- By default, annotations are positioned using relative coordinates, with (0,0) representing the top-left corner, and (100,100) representing the bottom-right corner of the chart image. It is also possible to switch from this relative coordinate system to a system that uses axis values. With an axis coordinate system, X and Y, which represent the position of the top-left corner of an annotation, are set using X axis and Y axis values, instead of values that range from 0-100.  
-  
- There are two ways to use axis values when you specify the position and size of an annotation:  
-  
--   Set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> or both of these annotation properties to the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY%2A> property values of a <xref:System.Windows.Forms.DataVisualization.Charting.Series.ChartArea%2A> object.  
-  
--   Use the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property to anchor the annotation to a data point. In this case, its positioning is automatically calculated.  
-  
- All annotations are derived from the Annotation class, which can be used to set attributes common to all Annotation objects, such as color, position, anchoring and so forth.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,15 +31,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Annotation" /> class. This is the default constructor and should not be used.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Annotation is an abstract class and cannot be created directly. To create a new annotation object, use constructors of classes such as <xref:System.Windows.Forms.DataVisualization.Charting.LineAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation>, and the like.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -77,16 +53,9 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the content alignment of an annotation.</summary>
-        <value>A <see cref="T:System.Drawing.ContentAlignment" /> enumeration value that represents the content alignment.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used to align text for <xref:System.Windows.Forms.DataVisualization.Charting.TextAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.EllipseAnnotation> and <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> objects, and to align a non-scaled image inside an <xref:System.Windows.Forms.DataVisualization.Charting.ImageAnnotation> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowAnchorMoving">
@@ -107,9 +76,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that specifies whether the end user is allowed to move the annotation anchor using a mouse.</summary>
-        <value>
-          <see langword="true" /> if the annotation anchor may be moved; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +99,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that specifies whether the end user is allowed to move an annotation using a mouse.</summary>
-        <value>
-          <see langword="true" /> if the annotation may be moved; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,17 +122,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that specifies whether the end user is allowed to move the points of a polygon annotation using a mouse.</summary>
-        <value>
-          <see langword="true" /> if the polygon annotation's points may be moved; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property needs to be set to `true` to free draw a polyline annotation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowResizing">
@@ -186,9 +145,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that specifies whether the end user is allowed to resize an annotation using a mouse.</summary>
-        <value>
-          <see langword="true" /> if the annotation may be resized; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,9 +168,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that specifies whether the end user is allowed to select an annotation using a mouse.</summary>
-        <value>
-          <see langword="true" /> if the annotation may be selected; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,9 +191,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that specifies whether the text in an annotation may be edited when the end user double clicks the text.</summary>
-        <value>
-          <see langword="true" /> if the annotation text may be edited; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,16 +214,9 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of an annotation to the anchor point.</summary>
-        <value>A <see cref="T:System.Drawing.ContentAlignment" /> enumeration value that represents the alignment of the annotation to the anchor point.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The annotation must be anchored by either using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or by setting the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY%2A> properties. Its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.Y%2A> properties must be set to <xref:System.Double.NaN>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnchorDataPoint">
@@ -297,22 +246,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DataPoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data point to which an annotation is anchored.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" /> object to which an annotation is anchored.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The annotation is anchored to the X and Y values of the specified data point, and automatically uses the same axes coordinates as the data point.  
-  
- To automatically position the annotation relative to the anchor point, make sure its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.Y%2A> properties are set to <xref:System.Double.NaN>. The <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorAlignment%2A> property can be used to change the automatic position alignment of the annotation to the anchor point. The <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorOffsetX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorOffsetY%2A> properties may be used to add extra spacing.  
-  
- When you use this property, make sure the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY%2A> properties are set to Double.NaN, as they have precedence.  
-  
- Set this value to `null` to disable annotation anchoring to a data point.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnchorDataPointName">
@@ -342,8 +278,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of a data point to which an annotation is anchored.</summary>
-        <value>A <see langword="string" /> value that represents the name of the data point that an annotation is anchored to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,16 +304,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the offset from the anchor point for the X position of an annotation.</summary>
-        <value>A <see langword="double" /> value that represents the offset of the X position from the anchor point.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The annotation must be anchored using either the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> or the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX%2A> property, and its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.X%2A> property must be set to <xref:System.Double.NaN>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnchorOffsetY">
@@ -401,16 +330,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the offset from the anchor point for the Y position of an annotation.</summary>
-        <value>A <see langword="double" /> value that represents the offset of the Y position from the anchor point.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The annotation must be anchored using either the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY%2A> property, and its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.Y%2A> property must be set to <xref:System.Double.NaN>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnchorX">
@@ -437,22 +359,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the X coordinate to which the annotation is anchored.</summary>
-        <value>A <see langword="double" /> value that represents the X coordinate an annotation is anchored to.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The annotation is anchored to the X coordinate and is specified in relative chart or axes coordinates, depending on the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> property value.  
-  
- To automatically position an annotation relative to an anchor point, make sure its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.X%2A> property is set to <xref:System.Double.NaN>. The <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorAlignment%2A> property can be used to change the automatic position alignment of the annotation to the anchor point. The <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorOffsetX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorOffsetY%2A> properties may be used to add extra spacing.  
-  
- This property has a higher priority than the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
-  
- Set this value to <xref:System.Double.NaN> to disable annotation anchoring to the value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnchorY">
@@ -479,22 +388,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Y coordinate to which the annotation is anchored.</summary>
-        <value>A <see langword="double" /> value that represents the Y coordinate an annotation is anchored to.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The annotation is anchored to the Y coordinate and is specified in relative chart or axes coordinates, depending on the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> property value.  
-  
- To automatically position an annotation relative to an anchor point make sure its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.Y%2A> property is set to <xref:System.Double.NaN>. The <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorAlignment%2A> property can be used to change the automatic position alignment of the annotation to the anchor point. The <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorOffsetX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorOffsetY%2A> properties may be used to add extra spacing.  
-  
- This property has a higher priority than the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
-  
- Set this value to <xref:System.Double.NaN> to disable annotation anchoring to the value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnnotationGroup">
@@ -518,8 +414,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AnnotationGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the group, if any, to which the annotation belongs.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup" /> object that represents the group which the annotation belongs to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,16 +446,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an annotation's type name.</summary>
-        <value>The annotation type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used to get the name of each annotation type, for example, Line, Rectangle, Ellipse, and so forth.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AxisX">
@@ -589,18 +478,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the X axis to which an annotation is attached.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object to which the annotation is attached.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When an annotation is attached to an axis, its X position is always specified in axes coordinates. To also define the size of an annotation in axes coordinates, make sure the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property is set to `false`.  
-  
- Set this value to `null` to disable attachment to the axis.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AxisXName">
@@ -630,8 +510,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the X axis to which an annotation is attached.</summary>
-        <value>A <see langword="string" /> value that represents the name of the X axis which an annotation is attached to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,18 +542,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Y axis to which an annotation is attached.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object to which this annotation is attached.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When an annotation is attached to an axis, its Y position is always specified in axes coordinates. To also define the size of an annotation in axes coordinates, make sure the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property is set to `false`.  
-  
- Set to `null` to disable annotation attachment to an axis.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AxisYName">
@@ -703,8 +574,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the Y axis which an annotation is attached to.</summary>
-        <value>A <see langword="string" /> value that represents the name of the Y axis that an annotation is attached to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -735,16 +606,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of an annotation background.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw an annotation background.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property does not apply to line-type annotations, image annotations and text annotations.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackGradientStyle">
@@ -771,18 +635,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the gradient style of an annotation background.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> value used to draw an annotation background.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Two colors are used to draw the gradients, <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BackSecondaryColor%2A>.  
-  
- This property does not apply to line-type annotations, image annotations and text annotations.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
@@ -809,18 +664,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the hatching style of an annotation background.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> value used to draw the background.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Two colors are used to draw the hatching, <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BackSecondaryColor%2A>.  
-  
- This property does not apply to line-type annotations, image annotations and text annotations.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
@@ -850,18 +696,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the secondary color of an annotation background.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw an annotation background with hatching or gradient fill.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The secondary color is used with the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BackColor%2A> when <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BackHatchStyle%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BackGradientStyle%2A> is used.  
-  
- This property does not apply to line-type annotations, image annotations and text annotations.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginPlacement">
@@ -878,17 +715,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Begins the end user placement of an annotation using the mouse.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this method is called, the end user is allowed to place an annotation using the mouse.  
-  
- Placement finishes when the end user specifies all required points, or when the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.EndPlacement%2A> method is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Bottom">
@@ -921,16 +749,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the bottom boundary of an annotation position.</summary>
-        <value>A <see langword="double" /> value that represents the position of the bottom boundary of an annotation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To use axes coordinates, anchor an annotation to a data point using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties and set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BringToFront">
@@ -947,7 +768,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Brings an annotation to the front of all annotations.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -972,18 +793,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the chart area to which an annotation is clipped.</summary>
-        <value>A <see langword="string" /> that represents the name of an existing chart area to which an annotation is clipped.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the chart area name is specified, an annotation will only be drawn inside the plotting area of the chart area specified. All parts of the annotation outside of the plotting area will be clipped.  
-  
- To disable chart area clipping, set the property to <xref:System.String>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1002,9 +814,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases unmanaged resources and, optionally, managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1022,17 +833,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the end user placement of an annotation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method ends an annotation placement operation previously started by a <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BeginPlacement%2A> method call.  
-  
- Calling this method is not required, because placement will automatically end when an end user enters all required points. However, it is useful when an annotation placement operation needs to be aborted for some reason.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -1053,8 +855,8 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font to use for the text of an annotation.</summary>
-        <value>A <see cref="T:System.Drawing.Font" /> object used to draw the annotation text.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1082,8 +884,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text color of an annotation.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used for the text color of an annotation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1111,22 +913,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the height of an annotation.</summary>
-        <value>A <see langword="double" /> value that represents the height of an annotation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The height of an annotation can be a negative value, in which case the annotation orientation is switched.  
-  
- Annotation width can be in relative chart coordinates or in axes coordinates. Chart relative coordinates are used by default.  
-  
- To use axes coordinates, anchor an annotation to a data point using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties and set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`.  
-  
- Set the width to <xref:System.Double.NaN> to achieve automatic size calculation for annotations with text. The size will automatically be calculated based on the annotation text and font size.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelected">
@@ -1150,9 +939,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that determines if an annotation is selected.</summary>
-        <value>
-          <see langword="true" /> if the annotation is selected; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1174,19 +962,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that specifies whether the size of an annotation is always defined in relative chart coordinates.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Windows.Forms.DataVisualization.Charting.Annotation.Width%2A" /> and <see cref="System.Windows.Forms.DataVisualization.Charting.Annotation.Height%2A" /> of an annotation are always expressed in relative chart coordinates; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The height and width of an annotation may be set in relative chart or in axes coordinates. Relative chart coordinates are the default.  
-  
- To express the size of an annotation in axes coordinates, set the IsSizeAlwaysRelative property to `false`. Then anchor the annotation to a data point or set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineColor">
@@ -1213,8 +991,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line color of an annotation.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw an annotation's line.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1236,8 +1014,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line style of an annotation.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> value used to draw the line style of an annotation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1259,8 +1037,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line width of an annotation.</summary>
-        <value>An <see langword="integer" /> value that defines the line width, in pixels, of an annotation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1285,8 +1063,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the unique name of an annotation.</summary>
-        <value>A <see langword="string" /> that represents the unique name of an annotation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1304,20 +1082,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resizes an annotation according to its content size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Sets the annotation width and height to fit the specified text.  
-  
- This method applies to <xref:System.Windows.Forms.DataVisualization.Charting.TextAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.EllipseAnnotation> and <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> objects only.  
-  
-> [!NOTE]
->  This method requires that the annotation be added to the <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationCollection> to function correctly.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -1350,16 +1116,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the right boundary position of an annotation.</summary>
-        <value>A <see langword="double" /> value that represents the position of the right boundary of an annotation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To use axes coordinates, anchor an annotation to a data point using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties and set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendToBack">
@@ -1376,15 +1135,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sends an annotation to the back of all the annotations.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Sends an annotation to the back of the all annotations.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAnchor">
@@ -1403,16 +1155,9 @@
         <Parameter Name="dataPoint" Type="System.Windows.Forms.DataVisualization.Charting.DataPoint" />
       </Parameters>
       <Docs>
-        <param name="dataPoint">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" /> to which the annotation will be anchored.</param>
-        <summary>Anchors an annotation to the specified data point.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Anchors an annotation to the specified data point.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataPoint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAnchor">
@@ -1432,17 +1177,10 @@
         <Parameter Name="dataPoint2" Type="System.Windows.Forms.DataVisualization.Charting.DataPoint" />
       </Parameters>
       <Docs>
-        <param name="dataPoint1">The first anchor <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" />.</param>
-        <param name="dataPoint2">The second anchor <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" />.</param>
-        <summary>Anchors an annotation to two data points.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Anchors an annotation's top-left and bottom-right corners to the specified data points.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataPoint1">To be added.</param>
+        <param name="dataPoint2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShadowColor">
@@ -1469,8 +1207,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of an annotation's shadow.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation shadow.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1492,8 +1230,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of an annotation's shadow.</summary>
-        <value>An <see langword="integer" /> value that represents the size of the shadow.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1521,19 +1259,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the smart label style of an annotation.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle" /> object that represents an annotation's smart labels style properties.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Smart labels are used to prevent an annotation from overlapping the data point labels and other annotations.  
-  
-> [!NOTE]
->  Data point labels must also have smart labels enabled.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextStyle">
@@ -1554,8 +1282,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text style of an annotation.</summary>
-        <value>A TextStyle value used to draw the text of an annotation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1577,16 +1305,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the tooltip text for an annotation.</summary>
-        <value>A <see langword="string" /> value that represents the tooltip text for an annotation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Special keywords can be used in the text when an annotation is anchored to a data point using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1610,9 +1331,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that specifies whether an annotation is visible.</summary>
-        <value>
-          <see langword="true" /> if the annotation is visible; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1640,16 +1360,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width, in pixels, of an annotation.</summary>
-        <value>A <see langword="double" /> value that represents the width of an annotation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.Height%2A> property description.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -1676,20 +1389,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the X coordinate of an annotation.</summary>
-        <value>A <see langword="double" /> value that represents the X coordinate of an annotation's position.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The X coordinate of an annotation is specified in relative chart coordinates or in axes coordinates. Relative chart coordinates are used by default.  
-  
- To use axes coordinates, anchor an annotation to a data point using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
-  
- Set the X position to <xref:System.Double.NaN> to automatically calculate position when the annotation has been anchored using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property or the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -1716,20 +1418,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Y coordinate of the annotation.</summary>
-        <value>A <see langword="double" /> value that represents the Y coordinate of an annotation's position.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Y coordinate of an annotation is specified in relative chart coordinates or in axes coordinates. Relative chart coordinates are used by default.  
-  
- To use axes coordinates, anchor an annotation to a data point using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
-  
- Set the Y position to <xref:System.Double.NaN> to automatically calculate the position when the annotation has been anchored using the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property or the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="YAxisName">
@@ -1759,8 +1450,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the Y axis to which an annotation is attached.</summary>
-        <value>A <see langword="string" /> value that represents the name of the Y axis which an annotation is attached to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

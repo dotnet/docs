@@ -4,32 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ConflictMode" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies when concurrency conflicts should be reported.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-  
-```vb#  
-db.SubmitChanges(ConflictMode.FailOnFirstConflict)  
-```  
-  
-```c#  
-db.SubmitChanges(ConflictMode.FailOnFirstConflict);  
-```  
-  
- [!code-cs[System.Data.Linq.ConflictModeEnumeration#1](~/add/codesnippet/csharp/cmodesnip/program.cs#1)]
- [!code-vb[System.Data.Linq.ConflictModeEnumeration#1](~/add/codesnippet/visualbasic/snipdump/module1.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ContinueOnConflict">
@@ -39,14 +21,13 @@ db.SubmitChanges(ConflictMode.FailOnFirstConflict);
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.ConflictMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that all updates to the database should be tried, and that concurrency conflicts should be accumulated and returned at the end of the process.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FailOnFirstConflict">
@@ -56,14 +37,13 @@ db.SubmitChanges(ConflictMode.FailOnFirstConflict);
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.ConflictMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that attempts to update the database should stop immediately when the first concurrency conflict error is detected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

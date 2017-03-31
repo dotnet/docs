@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Design.ParameterGenerationOption" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Sets the type of parameters that are generated in a typed <see cref="T:System.Data.DataSet" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParameterGenerationOption enumeration is used to tell the <xref:System.Data.Design.MethodSignatureGenerator> the type of parameters to generate in a typed dataset.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ClrTypes">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Parameters in the typed dataset are CLR types.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Objects">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Parameters in the typed dataset are all of <see cref="T:System.Object" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SqlTypes">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Parameters in the typed dataset are Sql types.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateInitializationActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -32,29 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Acts as a container to a group of activities that is executed when the <see cref="T:System.Workflow.Activities.StateActivity" /> starts running. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- The StateInitializationActivity acts as a <xref:System.Workflow.Activities.SequenceActivity> to all activities it contains.  
-  
- <xref:System.Workflow.Activities.SetStateActivity> classes may be included in the StateInitializationActivity.  
-  
- If a StateInitializationActivity exists in a <xref:System.Workflow.Activities.StateActivity>, the StateInitializationActivity is the first activity that gets executed when the <xref:System.Workflow.Activities.StateActivity> starts executing. In some ways the StateInitializationActivity is like an `OnEnterState` handler.  
-  
- The StateInitializationActivity is not a mandatory activity in the <xref:System.Workflow.Activities.StateActivity>.  
-  
- The StateInitializationActivity is a <xref:System.Workflow.ComponentModel.CompositeActivity>, which means the StateInitializationActivity can contain other activities. The StateInitializationActivity cannot contain any activity that implements the <xref:System.Workflow.Activities.IEventActivity> interface, which includes all <xref:System.Workflow.Activities.HandleExternalEventActivity> activities and the <xref:System.Workflow.Activities.DelayActivity> activity.  
-  
- A StateInitializationActivity is executed in the <xref:System.Workflow.Activities.StateActivity>, a non-blocking manner that makes the <xref:System.Workflow.Activities.StateActivity> ready to receive events. The StateInitializationActivity can contain a <xref:System.Workflow.Activities.SetStateActivity> activity, so that it can model a state machine where transitions occur from state to state without receiving any event. In that sense the state machine behaves like a sequential workflow.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,23 +42,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateInitializationActivity" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create a new instance of a <xref:System.Workflow.Activities.StateInitializationActivity> object. This example is from the State Initialization SDK sample. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][State Initialization Sample](http://msdn.microsoft.com/en-us/9053202f-2567-4428-a4a2-85423963646b).  
-  
- [!code-cs[wf_samples#197](~/add/codesnippet/csharp/wf_snippets/snippets19.cs#197)]
- [!code-vb[wf_samples#197](~/add/codesnippet/visualbasic/wf_snippets/snippets19.vb#197)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,15 +57,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The user-defined name of the activity.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateInitializationActivity" /> class using the name of the activity.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

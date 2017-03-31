@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A panel that can hold specified cells in place when the view is scrolled.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SelectiveScrollingGrid is used as the panel for the <xref:System.Windows.Controls.DataGridRow> to hold the header, cells, and details.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.SelectiveScrollingGrid" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +46,9 @@
         <Parameter Name="obj" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="obj">The object whose scrolling orientation is retrieved.</param>
-        <summary>Gets the direction that cells can scroll for a specified object.</summary>
-        <returns>The direction that cells can scroll.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +65,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Primitives.SelectiveScrollingGrid.SelectiveScrollingOrientation%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +86,9 @@
         <Parameter Name="value" Type="System.Windows.Controls.SelectiveScrollingOrientation" />
       </Parameters>
       <Docs>
-        <param name="obj">The object whose scrolling orientation is set.</param>
-        <param name="value">The scrolling orientation.</param>
-        <summary>Sets the direction that cells can scroll for a specified object.</summary>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

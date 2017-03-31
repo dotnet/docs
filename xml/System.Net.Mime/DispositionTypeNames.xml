@@ -4,31 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mime.DispositionTypeNames" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Supplies the strings used to specify the disposition type for an e-mail attachment.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The values in this enumeration can be used to set the <xref:System.Net.Mime.ContentDisposition.DispositionType%2A> property for an e-mail attachment. The information in the <xref:System.Net.Mime.ContentDisposition> class represents the MIME Content-Disposition header. This header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
-  
-   
-  
-## Examples  
- The following code example sets the disposition type for an attachment.  
-  
- [!code-cpp[NclMailSync#26](~/add/codesnippet/cpp/t-system.net.mime.dispos_1.cpp)]
- [!code-cs[NclMailSync#26](~/add/codesnippet/csharp/t-system.net.mime.dispos_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Attachment">
@@ -38,25 +27,19 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the attachment is to be displayed as a file attached to the e-mail message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example sets the disposition type for an attachment.  
-  
- [!code-cpp[NclMailSync#24](~/add/codesnippet/cpp/f-system.net.mime.dispos_0_1.cpp)]
- [!code-cs[NclMailSync#24](~/add/codesnippet/csharp/f-system.net.mime.dispos_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Inline">
@@ -66,25 +49,19 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the attachment is to be displayed as part of the e-mail message body.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example sets the disposition type for an attachment.  
-  
- [!code-cpp[NclMailSync#26](~/add/codesnippet/cpp/f-system.net.mime.dispos_1_1.cpp)]
- [!code-cs[NclMailSync#26](~/add/codesnippet/csharp/f-system.net.mime.dispos_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

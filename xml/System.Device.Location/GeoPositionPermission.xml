@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates whether the calling application has permission to access location data.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Device.Location.GeoPositionPermission</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location permissions are denied.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Granted">
@@ -43,7 +43,7 @@
         <ReturnType>System.Device.Location.GeoPositionPermission</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location permissions are granted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -59,7 +59,7 @@
         <ReturnType>System.Device.Location.GeoPositionPermission</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location permissions are not known. This status can occur while the provider is being initialized.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

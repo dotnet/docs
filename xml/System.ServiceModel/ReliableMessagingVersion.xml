@@ -4,30 +4,34 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReliableMessagingVersion" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.ReliableMessagingVersionConverter))</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>Contains the settings for the supported versions of the WS-ReliableMessaging protocol. This is an abstract class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are currently two versions of the WS-ReliableMessaging protocol supported by [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)]: WS-ReliableMessaging1.1 and WS-ReliableMessagingFebruary2005. WS-ReliableMessaging1.1 is returned by <xref:System.ServiceModel.ReliableMessagingVersion.WSReliableMessaging11%2A> and WS-ReliableMessagingFebruary2005 is returned by <xref:System.ServiceModel.ReliableMessagingVersion.WSReliableMessagingFebruary2005%2A>. The <xref:System.ServiceModel.ReliableMessagingVersion.Default%2A> version is WS-ReliableMessagingFebruary2005.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ReliableMessagingVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReliableMessagingVersion.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Default">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.ReliableMessagingVersion Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.ReliableMessagingVersion Default" />
@@ -35,15 +39,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ReliableMessagingVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the default version of WS-ReliableMessaging protocol.</summary>
-        <value>An instance derived from <see cref="T:System.ServiceModel.ReliableMessagingVersion" /> that represents the default version of the WS-ReliableMessaging protocol. The default version is WS-ReliableMessagingFebruary2005.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,15 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ReliableMessagingVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets version 1.1 of the WS-ReliableMessaging protocol.</summary>
-        <value>An instance derived from <see cref="T:System.ServiceModel.ReliableMessagingVersion" /> that represents the WS-ReliableMessaging1.1 version.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,15 +77,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ReliableMessagingVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the February 2005 version of the WS-ReliableMessaging protocol.</summary>
-        <value>An instance derived from <see cref="T:System.ServiceModel.ReliableMessagingVersion" /> that represents the WS-ReliableMessagingFebruary2005 version.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlCellType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the function of a <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.UI.WebControls.DataControlField> objects and the data-bound controls that use them use the DataControlCellType enumeration to identify the type of cell, and therefore what attributes it should have when rendered. The DataCell cell type identifies a data-bound cell in a <xref:System.Web.UI.WebControls.GridView> or <xref:System.Web.UI.WebControls.DetailsView> control, whereas the Header and Footer cells identify cell types that are not bound data cells that contain other, non-data-bound content.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DataCell">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataControlCellType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that contains data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Footer">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataControlCellType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that is the footer cell of a table. Items in the cell are not bound to data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataControlCellType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that is the header cell of a table. Items in the cell are not bound to data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

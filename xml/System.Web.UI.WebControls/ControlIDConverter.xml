@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ControlIDConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,30 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type converter that retrieves a list of control IDs in the current container.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ControlIDConverter class derives from the <xref:System.ComponentModel.StringConverter> class and provides a list of control IDs for display in a property grid control in design-time environments. The ControlIDConverter class also serves as the base class for the <xref:System.Web.UI.WebControls.AssociatedControlConverter> and <xref:System.Web.UI.WebControls.ValidatedControlConverter> classes, which are type converters for Web controls and controls that support validation property attributes, respectively.  
-  
- For more information about type converters, see [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md) or [Generalized Type Conversion](../Topic/Generalized%20Type%20Conversion.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ControlIDConverter in a class that requires a <xref:System.ComponentModel.TypeConverter> to render the ID of a control. The `DebugInfoControl` is a simple control that prints out some information on a control contained by the current Web Form. Its `ControlID` property is decorated with a <xref:System.ComponentModel.TypeConverterAttribute> that designates the ControlIDConverter as the <xref:System.ComponentModel.TypeConverter> to use for that property. The `DebugInfoControl`overrides the `Render` method to print out information about the target control in a <xref:System.Web.UI.WebControls.Label> control.  
-  
- [!code-cs[System.Web.UI.ControlIdConverter_1#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_290_1.cs)]
- [!code-vb[System.Web.UI.ControlIdConverter_1#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_290_1.vb)]  
-  
- The following code example demonstrates how the `DebugInfoControl` can be used in a Web Form along with an <xref:System.Web.UI.WebControls.AccessDataSource> control to display information about the <xref:System.Web.UI.WebControls.AccessDataSource> control.  
-  
- [!code-cs[System.Web.UI.ControlIdConverter_1#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_290_2.aspx)]
- [!code-vb[System.Web.UI.ControlIdConverter_1#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_290_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,22 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ControlIDConverter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterControl">
@@ -70,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -80,10 +46,9 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="control">The control instance to test for inclusion in the <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />.</param>
-        <summary>Returns a value indicating whether the control ID of the specified control is added to the <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that is returned by the <see cref="System.Web.UI.WebControls.ControlIDConverter.GetStandardValues%2A" /> method.</summary>
-        <returns>
-          <see langword="true" /> in all cases.</returns>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,17 +68,10 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context that can be used to extract additional information about the environment from which this converter is invoked. This parameter or properties of this parameter can be <see langword="null" />.</param>
-        <summary>Returns a collection of control IDs from the container within the <see cref="T:System.ComponentModel.Design.IDesignerHost" /> when provided with a format context.</summary>
-        <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a set of strings representing the control IDs of the controls in the current container. If no controls are currently contained, an empty collection is returned. If the context is <see langword="null" /> or there is no current container, then <see langword="null" /> is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.ControlIDConverter.FilterControl%2A> method is called on each control found in the container. The control ID is only added to the <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> if the method returns `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -124,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,18 +90,10 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <summary>Returns a value indicating whether the collection of standard values returned by the <see cref="System.Web.UI.WebControls.ControlIDConverter.GetStandardValues%2A" /> method is an exclusive list of possible values, using the specified context.</summary>
-        <returns>
-          <see langword="false" /> in all cases.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- As implemented in this class, this method always returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -155,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,10 +112,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <summary>Returns a value indicating whether this object supports a standard set of control ID values that can be picked from a list, using the specified context.</summary>
-        <returns>
-          <see langword="true" /> if <see cref="System.Web.UI.WebControls.ControlIDConverter.GetStandardValues%2A" /> should be called to find a common set of control ID values the object supports; otherwise, <see langword="false" />. This implementation returns <see langword="true" /> if the context is not <see langword="null" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

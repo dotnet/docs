@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,42 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides properties for accessing commonly referenced directories.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the path for the referenced directory is empty, usually due to the operating system not supporting the directory, a <xref:System.IO.DirectoryNotFoundException> exception is thrown.  
-  
- No backslash (\\) appears at the end of the path.  
-  
- The following table lists examples of tasks involving the `My.Computer.FileSystem.SpecialDirectories` object.  
-  
-|To|See|  
-|--------|---------|  
-|Read from the MyDocuments directory|[How to: Retrieve the Contents of the My Documents Directory](../Topic/How%20to:%20Retrieve%20the%20Contents%20of%20the%20My%20Documents%20Directory%20in%20Visual%20Basic.md)|  
-  
-## Availability by Project Type  
-  
-|Project type|Available|  
-|------------------|---------------|  
-|Windows Application|**Yes**|  
-|Class Library|**Yes**|  
-|Console Application|**Yes**|  
-|Windows Control Library|**Yes**|  
-|Web Control Library|**Yes**|  
-|Windows Service|**Yes**|  
-|Web Site|**Yes**|  
-  
-   
-  
-## Examples  
- This example returns the `filePath` for the user's Desktop directory and displays it.  
-  
- [!code-vb[VbVbcnMyFileSystem#80](~/add/codesnippet/visualbasic/t-microsoft.visualbasic._10_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AllUsersApplicationData">
@@ -62,33 +27,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a path name pointing to the Application Data directory for the all users.</summary>
-        <value>The path to the Application Data directory for the all users.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `SpecialDirectories` object contains paths to commonly referenced directories.  
-  
-   
-  
-## Examples  
- This example displays the path to the Application Data directory for the all users in a <xref:System.Windows.Forms.MessageBox>.  
-  
- [!code-vb[VbVbcnMyFileSystem#79](~/add/codesnippet/visualbasic/94dbb611-9696-4491-8e6e-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentUserApplicationData">
@@ -98,33 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a path name pointing to the Application Data directory for the current user.</summary>
-        <value>The path to the Application Data directory for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SpecialDirectories object contains paths to commonly referenced directories.  
-  
-   
-  
-## Examples  
- This example displays the path to the Application Data directory for the current user in a <xref:System.Windows.Forms.MessageBox>.  
-  
- [!code-vb[VbVbcnMyFileSystem#48](~/add/codesnippet/visualbasic/794ab5b4-9536-4fa1-86a0-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Desktop">
@@ -134,33 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a path name pointing to the Desktop directory.</summary>
-        <value>The path to the Desktop directory.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SpecialDirectories object contains paths to commonly referenced directories.  
-  
-   
-  
-## Examples  
- This example displays the path for the Desktop directory in a <xref:System.Windows.Forms.MessageBox>.  
-  
- [!code-vb[VbVbcnMyFileSystem#60](~/add/codesnippet/visualbasic/p-microsoft.visualbasic._64_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MyDocuments">
@@ -170,33 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a path name pointing to the My Documents directory.</summary>
-        <value>The path to the My Documents directory.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `SpecialDirectories` object contains paths to commonly referenced directories.  
-  
-   
-  
-## Examples  
- This example displays the path for the My Documents directory in a <xref:System.Windows.Forms.MessageBox>.  
-  
- [!code-vb[VbVbcnMyFileSystem#53](~/add/codesnippet/visualbasic/p-microsoft.visualbasic._43_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MyMusic">
@@ -206,33 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a path name pointing to the My Music directory.</summary>
-        <value>The path to the My Music directory.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `SpecialDirectories` object contains paths to commonly referenced directories.  
-  
-   
-  
-## Examples  
- This example displays the path for the My Music directory in a <xref:System.Windows.Forms.MessageBox>.  
-  
- [!code-vb[VbVbcnMyFileSystem#26](~/add/codesnippet/visualbasic/p-microsoft.visualbasic._86_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MyPictures">
@@ -242,33 +117,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a path name pointing to the My Pictures directory.</summary>
-        <value>The path to the My Pictures directory.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `SpecialDirectories` object contains paths to commonly referenced directories.  
-  
-   
-  
-## Examples  
- This example displays the path for the MyPictures directory in a <xref:System.Windows.Forms.MessageBox>.  
-  
- [!code-vb[VbVbcnMyFileSystem#77](~/add/codesnippet/visualbasic/p-microsoft.visualbasic._94_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProgramFiles">
@@ -278,33 +135,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a path pointing to the **Program Files** directory.</summary>
-        <value>The path to the **Program Files** directory.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `SpecialDirectories` object contains paths to commonly referenced directories. The **Program Files** directory contains the computer's program files.  
-  
-   
-  
-## Examples  
- This example displays the path for the **Program Files** directory in a <xref:System.Windows.Forms.MessageBox>.  
-  
- [!code-vb[VbVbcnMyFileSystem#90](~/add/codesnippet/visualbasic/p-microsoft.visualbasic._60_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Programs">
@@ -314,33 +153,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a path name pointing to the Programs directory.</summary>
-        <value>The path to the Programs directory.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `SpecialDirectories` object contains paths to commonly referenced directories. The Programs directory contains the user's program groups.  
-  
-   
-  
-## Examples  
- This example displays the path for the Programs directory in a <xref:System.Windows.Forms.MessageBox>.  
-  
- [!code-vb[VbVbcnMyFileSystem#61](~/add/codesnippet/visualbasic/p-microsoft.visualbasic._80_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Temp">
@@ -350,33 +171,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a path name pointing to the Temp directory.</summary>
-        <value>The path to the Temp directory.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `SpecialDirectories` object contains paths to commonly referenced directories.  
-  
-   
-  
-## Examples  
- This example displays the path for the Temp directory in a <xref:System.Windows.Forms.MessageBox>.  
-  
- [!code-vb[VbVbcnMyFileSystem#31](~/add/codesnippet/visualbasic/p-microsoft.visualbasic._82_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

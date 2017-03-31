@@ -1,22 +1,19 @@
 <Type Name="PrivacyNoticeBindingElementImporter" FullName="System.ServiceModel.Channels.PrivacyNoticeBindingElementImporter">
-  <TypeSignature Language="C#" Value="public sealed class PrivacyNoticeBindingElementImporter : System.ServiceModel.Description.IPolicyImportExtension" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrivacyNoticeBindingElementImporter extends System.Object implements class System.ServiceModel.Description.IPolicyImportExtension" />
+  <TypeSignature Language="C#" Value="public class PrivacyNoticeBindingElementImporter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrivacyNoticeBindingElementImporter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.PrivacyNoticeBindingElementImporter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>System.ServiceModel.Description.IPolicyImportExtension</InterfaceName>
-    </Interface>
   </Interfaces>
   <Docs>
-    <summary>Imports WSDL-based policies and contracts about privacy notices into descriptions of the binding elements that can implement these policies for the service.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +24,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.PrivacyNoticeBindingElementImporter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -54,9 +50,9 @@
         <Parameter Name="policyContext" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="importer">The <see cref="T:System.ServiceModel.Description.MetadataImporter" /> that imports the metadata information.</param>
-        <param name="policyContext">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> object that contains the policy assertions that can be imported and the collections of binding elements to which custom binding elements that implement the encoding policy can be added.</param>
-        <summary>Imports custom policy assertions for privacy notices and adds the binding elements that implement the policy.</summary>
+        <param name="importer">To be added.</param>
+        <param name="policyContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

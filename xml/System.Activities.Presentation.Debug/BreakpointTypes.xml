@@ -15,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an enumeration that provides settings for breakpoints.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Activities.Presentation.Debug.DebuggerService>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bounded">
@@ -39,7 +32,7 @@
         <ReturnType>System.Activities.Presentation.Debug.BreakpointTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a bounded breakpoint, which implements the where and when of breaking at a desired point in a program.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Conditional">
@@ -55,7 +48,7 @@
         <ReturnType>System.Activities.Presentation.Debug.BreakpointTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a conditional breakpoint, which is an expression that is evaluated to determine whether the breakpoint will occur.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -71,7 +64,7 @@
         <ReturnType>System.Activities.Presentation.Debug.BreakpointTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents that the breakpoint is enabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -87,7 +80,7 @@
         <ReturnType>System.Activities.Presentation.Debug.BreakpointTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No breakpoint is set.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

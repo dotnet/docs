@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines a type of text content in which measuring, hit testing and drawing of the entire content is done in whole.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An example of a TextEmbeddedObject is a button in the middle of a line of text.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,15 +37,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LineBreakCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the line breaking condition after the text object.</summary>
-        <value>An enumerated value of <see cref="T:System.Windows.LineBreakCondition" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,15 +55,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LineBreakCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the line breaking condition before the text object.</summary>
-        <value>An enumerated value of <see cref="T:System.Windows.LineBreakCondition" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,10 +83,10 @@
         <Parameter Name="sideways" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="rightToLeft">A <see cref="T:System.Boolean" /> value that determines if the text object is drawn from right to left.</param>
-        <param name="sideways">A <see cref="T:System.Boolean" /> value that determines if the text object is drawn with its side parallel to the baseline.</param>
-        <summary>Gets the computed bounding box of the text object.</summary>
-        <returns>A <see cref="T:System.Windows.Rect" /> value that represents the bounding box size of the text object.</returns>
+        <param name="rightToLeft">To be added.</param>
+        <param name="sideways">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,11 +109,11 @@
         <Parameter Name="sideways" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="drawingContext">The <see cref="T:System.Windows.Media.DrawingContext" /> to use for rendering the text object.</param>
-        <param name="origin">The <see cref="T:System.Windows.Point" /> value that represents the origin where the text object is drawn.</param>
-        <param name="rightToLeft">A <see cref="T:System.Boolean" /> value that determines if the text object is drawn from right to left.</param>
-        <param name="sideways">A <see cref="T:System.Boolean" /> value that determines if the text object is drawn with its side parallel to the baseline.</param>
-        <summary>Draws the text object.</summary>
+        <param name="drawingContext">To be added.</param>
+        <param name="origin">To be added.</param>
+        <param name="rightToLeft">To be added.</param>
+        <param name="sideways">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,9 +133,9 @@
         <Parameter Name="remainingParagraphWidth" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="remainingParagraphWidth">A <see cref="T:System.Double" /> that represents the remaining paragraph width.</param>
-        <summary>Get text object measurement metrics that will fit within the specified remaining width of the paragraph.</summary>
-        <returns>A <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics" /> value that represents the text object metrics.</returns>
+        <param name="remainingParagraphWidth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,16 +146,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether the text object has a fixed size regardless of where it is placed within a line.</summary>
-        <value>
-          <see langword="true" /> if the text object has a fixed size; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

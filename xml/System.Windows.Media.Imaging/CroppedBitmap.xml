@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.CroppedBitmap" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,21 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Crops a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CroppedBitmap implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can occur only during object initialization. Call <xref:System.Windows.Media.Imaging.CroppedBitmap.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.CroppedBitmap.EndInit%2A> to signal that initialization has completed. After initialization, property changes are ignored.  
-  
- CroppedBitmap objects created by using the <xref:System.Windows.Media.Imaging.CroppedBitmap.%23ctor%28System.Windows.Media.Imaging.BitmapSource%2CSystem.Windows.Int32Rect%29> constructor are automatically initialized, and properties cannot be changed.  
-  
- Metadata tags related to image data must be updated if an image is saved to a file after a transform is applied.  
-  
- Use the <xref:System.Windows.Media.Imaging.CroppedBitmap.SourceRect%2A> property of this class to define the area of the bitmap that is to be cropped.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,20 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Imaging.CroppedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. To initialize a <xref:System.Windows.Media.Imaging.CroppedBitmap> created using this constructor, you must perform property initialization between <xref:System.Windows.Media.Imaging.CroppedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.CroppedBitmap.EndInit%2A> calls.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,7 +41,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -71,26 +48,10 @@
         <Parameter Name="sourceRect" Type="System.Windows.Int32Rect" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="System.Windows.Media.Imaging.CroppedBitmap.Source%2A" /> of the new <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> instance.</param>
-        <param name="sourceRect">The <see cref="System.Windows.Media.Imaging.CroppedBitmap.SourceRect%2A" /> of the new <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> class that has the specified <see cref="System.Windows.Media.Imaging.CroppedBitmap.Source%2A" /> and <see cref="System.Windows.Media.Imaging.CroppedBitmap.SourceRect%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Imaging.CroppedBitmap> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
-  
-   
-  
-## Examples  
- The following example shows how to use CroppedBitmap to initialize a new instance of the <xref:System.Windows.Media.Imaging.CroppedBitmap> class.  
-  
- [!code-cs[imageelementexample#CroppedCSharp2](~/add/codesnippet/csharp/ImageElementExample.ImageElementExample/CroppedImageExample.xaml.cs#croppedcsharp2)]
- [!code-vb[imageelementexample#CroppedCSharp2](~/add/codesnippet/visualbasic/ImageElementExample.ImageElementExample/CroppedImageExample.xaml.vb#croppedcsharp2)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">Occurs when s<paramref name="ource" /> is <see langword="null" />.</exception>
+        <param name="source">To be added.</param>
+        <param name="sourceRect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -100,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,28 +68,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the start of the <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> initialization.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Property initialization must be done between BeginInit and <xref:System.Windows.Media.Imaging.CroppedBitmap.EndInit%2A> calls. Once the <xref:System.Windows.Media.Imaging.CroppedBitmap> has been initialized, property changes are ignored.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.CroppedBitmap> with a set of properties by using the BeginInit and <xref:System.Windows.Media.Imaging.CroppedBitmap.EndInit%2A> methods.  
-  
- [!code-cs[ImagingSnippetGallery_procedural_snip#CroppedBitmapCodeExampleWholePage](~/add/codesnippet/csharp/ImagingSnippetGallery_csharp/CroppedBitmapExample.cs#croppedbitmapcodeexamplewholepage)]
- [!code-vb[ImagingSnippetGallery_procedural_snip#CroppedBitmapCodeExampleWholePage](~/add/codesnippet/visualbasic/ImagingSnippetGallery/CroppedBitmapExample.vb#croppedbitmapcodeexamplewholepage)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> is currently being initialized. BeginInit has already been called.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> has already been initialized.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -139,7 +79,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,18 +86,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -168,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,18 +126,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -219,7 +138,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -261,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -274,28 +190,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the end of the <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> initialization.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Property initialization must be done between <xref:System.Windows.Media.Imaging.CroppedBitmap.BeginInit%2A> and EndInit calls. Once the <xref:System.Windows.Media.Imaging.CroppedBitmap> has been initialized, property changes are ignored.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.CroppedBitmap> with a set of properties by using the <xref:System.Windows.Media.Imaging.CroppedBitmap.BeginInit%2A> and EndInit methods.  
-  
- [!code-cs[ImagingSnippetGallery_procedural_snip#CroppedBitmapCodeExampleWholePage](~/add/codesnippet/csharp/ImagingSnippetGallery_csharp/CroppedBitmapExample.cs#croppedbitmapcodeexamplewholepage)]
- [!code-vb[ImagingSnippetGallery_procedural_snip#CroppedBitmapCodeExampleWholePage](~/add/codesnippet/visualbasic/ImagingSnippetGallery/CroppedBitmapExample.vb#croppedbitmapcodeexamplewholepage)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Windows.Media.Imaging.CroppedBitmap.Source%2A" /> property is <see langword="null" />.  
-  
- -or-  
-  
- The EndInit method is called without first calling <see cref="System.Windows.Media.Imaging.CroppedBitmap.BeginInit%2A" />.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -305,7 +201,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,7 +222,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -349,31 +243,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the source for the bitmap.</summary>
-        <value>The source for the bitmap. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can chain a <xref:System.Windows.Media.Imaging.CroppedBitmap> to another <xref:System.Windows.Media.Imaging.BitmapSource> by setting the Source property of the <xref:System.Windows.Media.Imaging.CroppedBitmap> to the appropriate <xref:System.Windows.Media.Imaging.BitmapSource>. For more information about chaining, see [How to: Chain BitmapSource Objects Together](../Topic/How%20to:%20Chain%20BitmapSource%20Objects%20Together.md).  
-  
-<a name="dependencyPropertyInfo_Source"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.CroppedBitmap.SourceProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceProperty">
@@ -383,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.CroppedBitmap.Source%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,33 +278,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Int32Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rectangular area that the bitmap is cropped to.</summary>
-        <value>The rectangular area that the bitmap is cropped to. The default is <see cref="System.Windows.Int32Rect.Empty%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Media.Imaging.CroppedBitmap> with a SourceRect set to <xref:System.Windows.Int32Rect.Empty%2A?displayProperty=fullName> will render the entire image.  
-  
- A rectangle that is not fully within the bounds of the bitmap will not render.  
-  
-<a name="dependencyPropertyInfo_SourceRect"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.CroppedBitmap.SourceRectProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceRectProperty">
@@ -437,14 +296,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.CroppedBitmap.SourceRect%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

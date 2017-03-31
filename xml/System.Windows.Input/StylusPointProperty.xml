@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointProperty" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a property stored in a <see cref="T:System.Windows.Input.StylusPoint" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A StylusPointProperty represents properties in <xref:System.Windows.Input.StylusPoint> such as the (x, y) coordinates, pressure, and so on. You can inherit from the StylusPointProperty class to customize the information stored for each property. The Windows Presentation Framework ships with the <xref:System.Windows.Input.StylusPointPropertyInfo> class that inherits from StylusPointProperty and specifies the minimum and maximum values, resolution, and unit used for each property.  
-  
-   
-  
-## Examples  
- The following example creates the <xref:System.Windows.Input.StylusPointDescription> object from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
-  
- [!code-cs[PacketSpy#2](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#2)]
- [!code-vb[PacketSpy#2](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#2)]  
-[!code-cs[PacketSpy#4](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#4)]
-[!code-vb[PacketSpy#4](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#4)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="stylusPointProperty" Type="System.Windows.Input.StylusPointProperty" />
       </Parameters>
       <Docs>
-        <param name="stylusPointProperty">The <see cref="T:System.Windows.Input.StylusPointProperty" /> to copy.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointProperty" /> class, copying the specified <see cref="T:System.Windows.Input.StylusPointProperty" />.</summary>
+        <param name="stylusPointProperty">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -67,21 +47,10 @@
         <Parameter Name="isButton" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="identifier">The <see cref="T:System.Guid" /> that uniquely identifies the <see cref="T:System.Windows.Input.StylusPointProperty" />.</param>
-        <param name="isButton">
-          <see langword="true" /> to indicate that the property represents a button on the stylus; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointProperty" /> class using the specified GUID.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to create a new <xref:System.Windows.Input.StylusPointProperty>.  
-  
- [!code-cs[PacketSpy#25](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#25)]
- [!code-vb[PacketSpy#25](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#25)]  
-  
- ]]></format>
-        </remarks>
+        <param name="identifier">To be added.</param>
+        <param name="isButton">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -91,28 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the GUID for the current <see cref="T:System.Windows.Input.StylusPointProperty" />.</summary>
-        <value>The GUID for the current <see cref="T:System.Windows.Input.StylusPointProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates the <xref:System.Windows.Input.StylusPointDescription> from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
-  
- [!code-cs[PacketSpy#2](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#2)]
- [!code-vb[PacketSpy#2](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#2)]  
-[!code-cs[PacketSpy#4](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#4)]
-[!code-vb[PacketSpy#4](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsButton">
@@ -122,29 +78,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the <see cref="T:System.Windows.Input.StylusPointProperty" /> represents a button on the stylus.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Input.StylusPointProperty" /> represents a button on the stylus; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates the <xref:System.Windows.Input.StylusPointDescription> object from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
-  
- [!code-cs[PacketSpy#2](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#2)]
- [!code-vb[PacketSpy#2](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#2)]  
-[!code-cs[PacketSpy#4](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#4)]
-[!code-vb[PacketSpy#4](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -154,7 +96,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,8 +103,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current object.</summary>
-        <returns>A string that represents the current object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

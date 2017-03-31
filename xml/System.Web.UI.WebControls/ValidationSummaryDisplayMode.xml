@@ -4,33 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidationSummaryDisplayMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the validation summary display mode used by the <see cref="T:System.Web.UI.WebControls.ValidationSummary" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ValidationSummaryDisplayMode enumeration represents the different display formats of a <xref:System.Web.UI.WebControls.ValidationSummary> control.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to specify the display mode for a <xref:System.Web.UI.WebControls.ValidationSummary> control.  
-  
-> [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-cs[Classic ValidationSummary.DisplayMode Example#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_402_1.aspx)]
- [!code-vb[Classic ValidationSummary.DisplayMode Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_402_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BulletList">
@@ -40,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationSummaryDisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validation summary displayed in a bulleted list.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -57,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationSummaryDisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validation summary displayed in a list.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleParagraph">
@@ -74,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationSummaryDisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validation summary displayed in a single paragraph.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

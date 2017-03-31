@@ -3,9 +3,18 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDeserializationCallback" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IDeserializationCallback" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -14,17 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates that a class is to be notified when deserialization of the entire object graph has been completed. Note that this interface is not called when deserializing with the XmlSerializer (System.Xml.Serialization.XmlSerializer).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[IDeserializationCallback Interface Example#1](~/add/codesnippet/visualbasic/t-system.runtime.seriali_36_1.vb)]
- [!code-cpp[IDeserializationCallback Interface Example#1](~/add/codesnippet/cpp/t-system.runtime.seriali_36_1.cpp)]
- [!code-cs[IDeserializationCallback Interface Example#1](~/add/codesnippet/csharp/t-system.runtime.seriali_36_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="OnDeserialization">
@@ -33,9 +33,18 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -44,18 +53,9 @@
         <Parameter Name="sender" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sender">The object that initiated the callback. The functionality for this parameter is not currently implemented.</param>
-        <summary>Runs when the entire object graph has been deserialized.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[IDeserializationCallback Interface Example#1](~/add/codesnippet/visualbasic/06f9f2a6-4c78-4334-9c3d-_1.vb)]
- [!code-cpp[IDeserializationCallback Interface Example#1](~/add/codesnippet/cpp/06f9f2a6-4c78-4334-9c3d-_1.cpp)]
- [!code-cs[IDeserializationCallback Interface Example#1](~/add/codesnippet/csharp/06f9f2a6-4c78-4334-9c3d-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="sender">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

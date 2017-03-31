@@ -11,41 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a <see cref="T:System.Windows.Controls.DataGrid" /> column that hosts textual content in its cells.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use DataGridTextColumn to display columns of data as text. The following illustration shows an example of two DataGridTextColumn types.  
-  
- ![Two DataGridTextColumns](~/add/media/wpf-datagridtextcolumns.png "Two DataGridTextColumns")  
-  
- To create a column, add it to the <xref:System.Windows.Controls.DataGrid.Columns%2A> collection. To populate the column, bind the column to the data by using the <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property. The <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property is applied to the <xref:System.Windows.Controls.TextBlock> or <xref:System.Windows.Controls.TextBox> element created in the column. The <xref:System.Windows.FrameworkElement.DataContext%2A> for the element in each cell is the data item for the row the cell is in. Therefore, to set up the binding you only have to set the <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>. Optionally, you can specify a <xref:System.Windows.Data.Binding.Converter%2A?displayProperty=fullName> if you want to convert the data or the <xref:System.Windows.Data.BindingBase.StringFormat%2A>. For more information about data binding, see [Data Binding (WPF)](../Topic/Data%20Binding%20\(WPF\).md).  
-  
- **Note** DataGridTextColumn creates a <xref:System.Windows.Controls.TextBlock> element in the non-editing mode and a <xref:System.Windows.Controls.TextBox> element in the editing mode.  
-  
- You can customize the DataGridTextColumn by setting properties, such as <xref:System.Windows.Controls.DataGridColumn.Width%2A>, <xref:System.Windows.Controls.DataGridColumn.Header%2A>, <xref:System.Windows.Controls.DataGridTextColumn.FontSize%2A>, and <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A>.  
-  
- If you want to display other types of data, <xref:System.Windows.Controls.DataGrid> provides the following column types:  
-  
-|Column Type|Data Display|  
-|-----------------|------------------|  
-|<xref:System.Windows.Controls.DataGridHyperlinkColumn>|Use to display URI data.|  
-|<xref:System.Windows.Controls.DataGridComboBoxColumn>|Use to display enumeration data.|  
-|<xref:System.Windows.Controls.DataGridCheckBoxColumn>|Use to display Boolean data.|  
-  
- If you want to use other controls in your <xref:System.Windows.Controls.DataGrid>, you can create your own column types by using <xref:System.Windows.Controls.DataGridTemplateColumn>.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.DataGrid> that has customized text columns and uses XML data as the source. The illustration earlier in this topic shows how this code is displayed. For more information about binding to XML data, see [How to: Bind to XML Data Using an XMLDataProvider and XPath Queries](../Topic/How%20to:%20Bind%20to%20XML%20Data%20Using%20an%20XMLDataProvider%20and%20XPath%20Queries.md).  
-  
- [!code-xml[DataGrid_TextColumn#1](~/add/codesnippet/xaml/datagrid_textcolumn/mainwindow.xaml#1)]
- [!code-xml[DataGrid_TextColumn#1](~/add/codesnippet/xaml/t-system.windows.control_76_1.xaml)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridTextColumn" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +47,9 @@
         <Parameter Name="uneditedValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
-        <param name="uneditedValue">The previous, unedited value in the cell being edited.</param>
-        <summary>Causes the column cell being edited to revert to the specified value.</summary>
+        <param name="editingElement">To be added.</param>
+        <param name="uneditedValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,10 +69,9 @@
         <Parameter Name="editingElement" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
-        <summary>Performs any required validation before exiting the edit mode.</summary>
-        <returns>
-          <see langword="false" /> if validation fails; otherwise, <see langword="true" />.</returns>
+        <param name="editingElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +88,8 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default value of the <see cref="System.Windows.Controls.DataGridBoundColumn.EditingElementStyle%2A" /> property.</summary>
-        <value>An object that represents the style.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +106,8 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default value of the <see cref="System.Windows.Controls.DataGridBoundColumn.ElementStyle%2A" /> property.</summary>
-        <value>An object that represents the style.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,16 +124,9 @@
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font family for the content of cells in the column.</summary>
-        <value>The font family of the content for cells in the column. The registered default is <see cref="System.Windows.SystemFonts.MessageFontFamily%2A" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FontFamily property determines the font for controls in the column only when the template uses the property as a parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontFamilyProperty">
@@ -183,7 +142,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridTextColumn.FontFamily%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,16 +167,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font size for the content of cells in the column.</summary>
-        <value>The font size of the content of cells in the column. The registered default is <see cref="System.Windows.SystemFonts.MessageFontSize%2A" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FontSize property determines the font size for controls in the column only when the template uses the property as a parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontSizeProperty">
@@ -233,7 +185,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridTextColumn.FontSize%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,16 +202,9 @@
         <ReturnType>System.Windows.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font style for the content of cells in the column.</summary>
-        <value>The font style of the content of cells in the column. The registered default is <see cref="System.Windows.SystemFonts.MessageFontStyle%2A" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FontStyle property determines the font style for controls in the column only when the template uses the property as a parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStyleProperty">
@@ -275,7 +220,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridTextColumn.FontStyle%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,16 +237,9 @@
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font weight for the content of cells in the column.</summary>
-        <value>The font weight of the contents of cells in the column. The registered default is <see cref="System.Windows.SystemFonts.MessageFontWeight%2A" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FontWeight property determines the font weight for controls in the column only when the template uses the property as a parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontWeightProperty">
@@ -317,7 +255,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridTextColumn.FontWeight%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,16 +272,9 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> that is used to paint the text contents of cells in the column.</summary>
-        <value>The brush that is used to paint the contents of cells in the column. The registered default is <see cref="System.Windows.SystemColors.ControlTextBrush%2A" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Foreground property determines the brush for the text contents of controls in the column only when the template uses the property as a parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForegroundProperty">
@@ -359,7 +290,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridTextColumn.Foreground%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,10 +311,10 @@
         <Parameter Name="dataItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="cell">The cell that will contain the generated element.</param>
-        <param name="dataItem">The data item represented by the row that contains the intended cell.</param>
-        <summary>Gets a <see cref="T:System.Windows.Controls.TextBox" /> control that is bound to the column's <see cref="System.Windows.Controls.DataGridBoundColumn.Binding%2A" /> property value.</summary>
-        <returns>A new text box control that is bound to the column's <see cref="System.Windows.Controls.DataGridBoundColumn.Binding%2A" /> property value.</returns>
+        <param name="cell">To be added.</param>
+        <param name="dataItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,10 +335,10 @@
         <Parameter Name="dataItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="cell">The cell that will contain the generated element.</param>
-        <param name="dataItem">The data item represented by the row that contains the intended cell.</param>
-        <summary>Gets a read-only <see cref="T:System.Windows.Controls.TextBlock" /> control that is bound to the column's <see cref="System.Windows.Controls.DataGridBoundColumn.Binding%2A" /> property value.</summary>
-        <returns>A new, read-only text block control that is bound to the column's <see cref="System.Windows.Controls.DataGridBoundColumn.Binding%2A" /> property value.</returns>
+        <param name="cell">To be added.</param>
+        <param name="dataItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,10 +359,10 @@
         <Parameter Name="editingEventArgs" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
-        <param name="editingEventArgs">Information about the user gesture that is causing a cell to enter editing mode.</param>
-        <summary>Called when a cell in the column enters editing mode.</summary>
-        <returns>The unedited value of the cell.</returns>
+        <param name="editingElement">To be added.</param>
+        <param name="editingEventArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,9 +383,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The cell to update.</param>
-        <param name="propertyName">The name of the column property that has changed.</param>
-        <summary>Refreshes the contents of a cell in the column in response to a column property value change.</summary>
+        <param name="element">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

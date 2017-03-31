@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a panel that arranges one or more <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> objects in a <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> menu.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonMenuItemsPanel" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +50,9 @@
         <Parameter Name="finalSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="finalSize">The size that the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonMenuItemsPanel" /> needs to position its child elements.</param>
-        <summary>Positions and sizes the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonMenuItemsPanel" />.</summary>
-        <returns>The actual size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonMenuItemsPanel" />.</returns>
+        <param name="finalSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +69,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the current layout pass is after the star layout pass.</summary>
-        <value>
-          <see langword="true" /> if the current pass is a star layout pass; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +90,9 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">The maximum size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonMenuItemsPanel" />.</param>
-        <summary>Measures the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonMenuItemsPanel" /> in preparation of arranging them during the <see cref="System.Windows.Controls.Ribbon.Primitives.RibbonMenuItemsPanel.ArrangeOverride%2A" /> pass.</summary>
-        <returns>The desired size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonMenuItemsPanel" />.</returns>
+        <param name="availableSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,9 +113,9 @@
         <Parameter Name="newIsItemsHost" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="oldIsItemsHost">The old value of the <see cref="System.Windows.Controls.Panel.IsItemsHost%2A" /> property.</param>
-        <param name="newIsItemsHost">The new value of the <see cref="System.Windows.Controls.Panel.IsItemsHost%2A" /> property.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.Panel.IsItemsHost%2A" /> property changes.</summary>
+        <param name="oldIsItemsHost">To be added.</param>
+        <param name="newIsItemsHost">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +135,8 @@
         <Parameter Name="starLayoutInfoProvider" Type="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
       </Parameters>
       <Docs>
-        <param name="starLayoutInfoProvider">The element to register.</param>
-        <summary>Registers an element to participate in the star layout.</summary>
+        <param name="starLayoutInfoProvider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +156,8 @@
         <Parameter Name="starLayoutInfoProvider" Type="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
       </Parameters>
       <Docs>
-        <param name="starLayoutInfoProvider">The element to remove.</param>
-        <summary>Removes an element from participation in the star layout.</summary>
+        <param name="starLayoutInfoProvider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

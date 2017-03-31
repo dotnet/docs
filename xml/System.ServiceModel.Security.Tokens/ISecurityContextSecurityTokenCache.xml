@@ -4,12 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.ISecurityContextSecurityTokenCache" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>When implemented, this interface specifies a contract for a security context token cache.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -20,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -30,8 +28,8 @@
         <Parameter Name="token" Type="System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">The <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />.</param>
-        <summary>Adds a security context security token to the token cache.</summary>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,7 +47,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the token cache of content.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,9 +67,9 @@
         <Parameter Name="contextId" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">The specified security context ID.</param>
-        <summary>Gets a collection of security context security token IDs that match a specified context ID.</summary>
-        <returns>A generic collection of <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />s.</returns>
+        <param name="contextId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,10 +90,10 @@
         <Parameter Name="generation" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">The specified security context ID.</param>
-        <param name="generation">A <see cref="T:System.Xml.UniqueId" /> that represents the generation.</param>
-        <summary>Gets the security context security token ID that matches a specified context ID and generation.</summary>
-        <returns>The matching <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />.</returns>
+        <param name="contextId">To be added.</param>
+        <param name="generation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,8 +113,8 @@
         <Parameter Name="contextId" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">The specified security context ID.</param>
-        <summary>Removes all tokens from the cache that match a given context ID.</summary>
+        <param name="contextId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +125,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,9 +135,9 @@
         <Parameter Name="generation" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">The specified security context ID.</param>
-        <param name="generation">A <see cref="T:System.Xml.UniqueId" /> that represents the generation.</param>
-        <summary>Removes the token from the cache that matches a given context ID and generation.</summary>
+        <param name="contextId">To be added.</param>
+        <param name="generation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +148,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,15 +157,10 @@
         <Parameter Name="token" Type="System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">The <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />.</param>
-        <summary>Tries to add a token to the cache.</summary>
-        <returns>
-          <see langword="true" /> if the token was added successfully to the cache; otherwise, <see langword="false" />.</returns>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="token" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="token" /> date or time is outside limits.</exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateContextCachingTime">
@@ -183,7 +170,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,9 +180,9 @@
         <Parameter Name="expirationTime" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />.</param>
-        <param name="expirationTime">The new expiration time and date.</param>
-        <summary>Updates the expiration date for a token in the cache.</summary>
+        <param name="context">To be added.</param>
+        <param name="expirationTime">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

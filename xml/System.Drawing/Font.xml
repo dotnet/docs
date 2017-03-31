@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Font" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,24 +32,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a particular format for text, including font face, size, and style attributes. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about how to construct fonts, see [How to: Construct Font Families and Fonts](../Topic/How%20to:%20Construct%20Font%20Families%20and%20Fonts.md). Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If you attempt to use a font that is not supported, or the font is not installed on the machine that is running the application, the Microsoft Sans Serif font will be substituted.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Font.%23ctor%2A> constructor and the <xref:System.Drawing.Font.Size%2A>, <xref:System.Drawing.Font.SizeInPoints%2A>, and <xref:System.Drawing.Font.Unit%2A> properties. This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.ComboBox> named `ComboBox1` that is populated with the strings "Bigger" and "Smaller" and a <xref:System.Windows.Forms.Label> named `Label1`. Paste the following code into the form and associate the `ComboBox1_SelectedIndexChanged` method with the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> event of the <xref:System.Windows.Forms.ComboBox> control.  
-  
- [!code-cs[System.Drawing.FontsExample#1](~/add/codesnippet/csharp/t-system.drawing.font_1.cs)]
- [!code-cpp[System.Drawing.FontsExample#1](~/add/codesnippet/cpp/t-system.drawing.font_1.cpp)]
- [!code-vb[System.Drawing.FontsExample#1](~/add/codesnippet/visualbasic/t-system.drawing.font_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,7 +43,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -68,26 +50,10 @@
         <Parameter Name="newStyle" Type="System.Drawing.FontStyle" />
       </Parameters>
       <Docs>
-        <param name="prototype">The existing <see cref="T:System.Drawing.Font" /> from which to create the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="newStyle">The <see cref="T:System.Drawing.FontStyle" /> to apply to the new <see cref="T:System.Drawing.Font" />. Multiple values of the <see cref="T:System.Drawing.FontStyle" /> enumeration can be combined with the <see langword="OR" /> operator.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> that uses the specified existing <see cref="T:System.Drawing.Font" /> and <see cref="T:System.Drawing.FontStyle" /> enumeration.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For localized applications that are based on the [!INCLUDE[dnprdnlong](~/add/includes/dnprdnlong-md.md)] and earlier releases, specifying a font for `prototype` when that font has not been installed on the computer that is used to build your application will cause the Microsoft Sans Serif font to be used instead. If your application depends on this behavior and you must recompile your application for the .NET Framework 3.0, you should specify the Microsoft Sans Serif font for `prototype`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the <xref:System.Drawing.Color.op_Inequality%2A> operator, the Font constructor, and the <xref:System.Drawing.Font.Bold%2A> property. This example is designed to be used with a Windows Form that contains a button named `Button2`. Paste the following code into your form and associate the `Button2_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.CharacterRangeExample#3](~/add/codesnippet/csharp/m-system.drawing.font.sh_1_1.cs)]
- [!code-cpp[System.Drawing.CharacterRangeExample#3](~/add/codesnippet/cpp/m-system.drawing.font.sh_1_1.cpp)]
- [!code-vb[System.Drawing.CharacterRangeExample#3](~/add/codesnippet/visualbasic/m-system.drawing.font.sh_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="prototype">To be added.</param>
+        <param name="newStyle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -97,7 +63,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -105,19 +70,10 @@
         <Parameter Name="emSize" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="family">The <see cref="T:System.Drawing.FontFamily" /> of the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size, in points, of the new font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle> and its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
+        <param name="family">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -127,7 +83,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -135,27 +90,10 @@
         <Parameter Name="emSize" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="familyName">A string representation of the <see cref="T:System.Drawing.FontFamily" /> for the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size, in points, of the new font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle?displayProperty=fullName> and its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit?displayProperty=fullName>. Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If the `familyName` parameter specifies a font that is not installed on the machine running the application or is not supported, Microsoft Sans Serif will be substituted.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Font.%23ctor%2A> constructor. This example is designed to be used with a Windows Form and requires a <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event.  
-  
- [!code-vb[System.Drawing.Misc3#ConstructFontWithString](~/add/codesnippet/visualbasic/m-system.drawing.font.sh_0_1.vb)]
- [!code-cs[System.Drawing.Misc3#ConstructFontWithString](~/add/codesnippet/csharp/m-system.drawing.font.sh_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity or is not a valid number.</exception>
+        <param name="familyName">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -165,7 +103,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -174,31 +111,11 @@
         <Parameter Name="style" Type="System.Drawing.FontStyle" />
       </Parameters>
       <Docs>
-        <param name="family">The <see cref="T:System.Drawing.FontFamily" /> of the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size, in points, of the new font.</param>
-        <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size and style.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to set the <xref:System.Drawing.Font> property of a button to a new, bold-style <xref:System.Drawing.Font>. This example is designed to be used with a Windows Form that contains a button named `Button1`. Paste the following code into your form and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.MiscExamples#11](~/add/codesnippet/csharp/0609fb84-892c-4bd8-9204-_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#11](~/add/codesnippet/cpp/0609fb84-892c-4bd8-9204-_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#11](~/add/codesnippet/visualbasic/0609fb84-892c-4bd8-9204-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="family" /> is <see langword="null" />.</exception>
+        <param name="family">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -208,7 +125,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -217,22 +133,11 @@
         <Parameter Name="unit" Type="System.Drawing.GraphicsUnit" />
       </Parameters>
       <Docs>
-        <param name="family">The <see cref="T:System.Drawing.FontFamily" /> of the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
-        <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size and unit. Sets the style to <see cref="T:System.Drawing.FontStyle" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="family" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
+        <param name="family">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <param name="unit">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -242,7 +147,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -251,20 +155,11 @@
         <Parameter Name="style" Type="System.Drawing.FontStyle" />
       </Parameters>
       <Docs>
-        <param name="familyName">A string representation of the <see cref="T:System.Drawing.FontFamily" /> for the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size, in points, of the new font.</param>
-        <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size and style.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit>. Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If the `familyName` parameter specifies a font that is not installed on the machine running the application or is not supported, Microsoft Sans Serif will be substituted.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
+        <param name="familyName">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -274,7 +169,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -283,20 +177,11 @@
         <Parameter Name="unit" Type="System.Drawing.GraphicsUnit" />
       </Parameters>
       <Docs>
-        <param name="familyName">A string representation of the <see cref="T:System.Drawing.FontFamily" /> for the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
-        <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size and unit. The style is set to <see cref="T:System.Drawing.FontStyle" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
+        <param name="familyName">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <param name="unit">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -306,7 +191,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -316,16 +200,12 @@
         <Parameter Name="unit" Type="System.Drawing.GraphicsUnit" />
       </Parameters>
       <Docs>
-        <param name="family">The <see cref="T:System.Drawing.FontFamily" /> of the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
-        <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
-        <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size, style, and unit.</summary>
+        <param name="family">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="unit">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="family" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -335,7 +215,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -345,30 +224,12 @@
         <Parameter Name="unit" Type="System.Drawing.GraphicsUnit" />
       </Parameters>
       <Docs>
-        <param name="familyName">A string representation of the <see cref="T:System.Drawing.FontFamily" /> for the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
-        <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
-        <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size, style, and unit.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If the `familyName` parameter specifies a font that is not installed on the machine running the application or is not supported, Microsoft Sans Serif will be substituted.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Font.%23ctor%2A> constructor. This example is designed to be used with Windows Forms. To run this example, paste this code into a form that contains a button named `Button2`, and associate the `Button2_Click` method with the <xref:System.Windows.Forms.Control.Click> event of the button.  
-  
- [!code-cs[System.Drawing.FontsExample#3](~/add/codesnippet/csharp/108f836f-1583-49a2-bf9a-_1.cs)]
- [!code-cpp[System.Drawing.FontsExample#3](~/add/codesnippet/cpp/108f836f-1583-49a2-bf9a-_1.cpp)]
- [!code-vb[System.Drawing.FontsExample#3](~/add/codesnippet/visualbasic/108f836f-1583-49a2-bf9a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity or is not a valid number.</exception>
+        <param name="familyName">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="unit">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -378,7 +239,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -389,26 +249,13 @@
         <Parameter Name="gdiCharSet" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="family">The <see cref="T:System.Drawing.FontFamily" /> of the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
-        <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
-        <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
-        <param name="gdiCharSet">A <see cref="T:System.Byte" /> that specifies a  
-  
- [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] character set to use for the new font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size, style, unit, and character set.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `gdiCharSet` parameter takes a value from the list defined in the Windows SDK header file WinGDI.h.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="family" /> is <see langword="null" />.</exception>
+        <param name="family">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="unit">To be added.</param>
+        <param name="gdiCharSet">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -418,7 +265,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -429,22 +275,13 @@
         <Parameter Name="gdiCharSet" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="familyName">A string representation of the <see cref="T:System.Drawing.FontFamily" /> for the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
-        <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
-        <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
-        <param name="gdiCharSet">A <see cref="T:System.Byte" /> that specifies a [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] character set to use for this font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size, style, unit, and character set.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `gdiCharSet` parameter takes a value from the list defined in the Windows SDK header file WinGDI.h. Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If the `familyName` parameter specifies a font that is not installed on the machine running the application or is not supported, Microsoft Sans Serif will be substituted.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
+        <param name="familyName">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="unit">To be added.</param>
+        <param name="gdiCharSet">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -454,7 +291,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -466,27 +302,14 @@
         <Parameter Name="gdiVerticalFont" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="family">The <see cref="T:System.Drawing.FontFamily" /> of the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
-        <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
-        <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
-        <param name="gdiCharSet">A <see cref="T:System.Byte" /> that specifies a  
-  
- [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] character set to use for this font.</param>
-        <param name="gdiVerticalFont">A Boolean value indicating whether the new font is derived from a [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] vertical font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size, style, unit, and character set.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `gdiCharSet` parameter takes a value from the list defined in the Windows SDK header file WinGDI.h.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="family" /> is <see langword="null " /></exception>
+        <param name="family">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="unit">To be added.</param>
+        <param name="gdiCharSet">To be added.</param>
+        <param name="gdiVerticalFont">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -496,7 +319,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -508,23 +330,14 @@
         <Parameter Name="gdiVerticalFont" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="familyName">A string representation of the <see cref="T:System.Drawing.FontFamily" /> for the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
-        <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
-        <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
-        <param name="gdiCharSet">A <see cref="T:System.Byte" /> that specifies a [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] character set to use for this font.</param>
-        <param name="gdiVerticalFont">A Boolean value indicating whether the new <see cref="T:System.Drawing.Font" /> is derived from a [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] vertical font.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using the specified size, style, unit, and character set.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `gdiCharSet` parameter takes a value from the list defined in the Windows SDK header file WinGDI.h. If the `familyName` parameter specifies a font that is not installed on the machine running the application or is not supported, Microsoft Sans Serif will be substituted.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
+        <param name="familyName">To be added.</param>
+        <param name="emSize">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="unit">To be added.</param>
+        <param name="gdiCharSet">To be added.</param>
+        <param name="gdiVerticalFont">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Bold">
@@ -534,7 +347,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -546,21 +358,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this <see cref="T:System.Drawing.Font" /> is bold.</summary>
-        <value>
-          <see langword="true" /> if this <see cref="T:System.Drawing.Font" /> is bold; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the <xref:System.Drawing.Color.op_Inequality%2A> operator, the <xref:System.Drawing.Font.%23ctor%2A> constructor, and the Bold property. This example is designed to be used with a Windows Form that contains a button named `Button2`. Paste the following code into your form and associate the `Button2_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.CharacterRangeExample#3](~/add/codesnippet/csharp/p-system.drawing.font.bold_1.cs)]
- [!code-cpp[System.Drawing.CharacterRangeExample#3](~/add/codesnippet/cpp/p-system.drawing.font.bold_1.cpp)]
- [!code-vb[System.Drawing.CharacterRangeExample#3](~/add/codesnippet/visualbasic/p-system.drawing.font.bold_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -570,7 +370,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -578,20 +377,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an exact copy of this <see cref="T:System.Drawing.Font" />.</summary>
-        <returns>The <see cref="T:System.Drawing.Font" /> this method creates, cast as an <see cref="T:System.Object" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code clones a <xref:System.Drawing.Font> and draws text with that font.  
-  
- [!code-cpp[System.Drawing.ClassicFontsExamples#1](~/add/codesnippet/cpp/m-system.drawing.font.cl_1.cpp)]
- [!code-cs[System.Drawing.ClassicFontsExamples#1](~/add/codesnippet/csharp/m-system.drawing.font.cl_1.cs)]
- [!code-vb[System.Drawing.ClassicFontsExamples#1](~/add/codesnippet/visualbasic/m-system.drawing.font.cl_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -601,7 +389,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -609,20 +396,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by this <see cref="T:System.Drawing.Font" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling Dispose allows the resources used by this <xref:System.Drawing.Font> to be reallocated for other purposes.  
-  
- Call Dispose when you are finished using the <xref:System.Drawing.Font>. The Dispose method leaves the <xref:System.Drawing.Font> in an unusable state. After calling Dispose, you must release all references to the <xref:System.Drawing.Font> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Font> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.Drawing.Font>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Font> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -632,7 +407,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -642,22 +416,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to test.</param>
-        <summary>Indicates whether the specified object is a <see cref="T:System.Drawing.Font" /> and has the same <see cref="System.Drawing.Font.FontFamily%2A" />, <see cref="System.Drawing.Font.GdiVerticalFont%2A" />, <see cref="System.Drawing.Font.GdiCharSet%2A" />, <see cref="System.Drawing.Font.Style%2A" />, <see cref="System.Drawing.Font.Size%2A" />, and <see cref="System.Drawing.Font.Unit%2A" /> property values as this <see cref="T:System.Drawing.Font" />.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="obj" /> parameter is a <see cref="T:System.Drawing.Font" /> and has the same <see cref="System.Drawing.Font.FontFamily%2A" />, <see cref="System.Drawing.Font.GdiVerticalFont%2A" />, <see cref="System.Drawing.Font.GdiCharSet%2A" />, <see cref="System.Drawing.Font.Style%2A" />, <see cref="System.Drawing.Font.Size%2A" />, and <see cref="System.Drawing.Font.Unit%2A" /> property values as this <see cref="T:System.Drawing.Font" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code creates two <xref:System.Drawing.Font> objects and then tests whether they are equivalent.  
-  
- [!code-cpp[System.Drawing.ClassicFontsExamples#2](~/add/codesnippet/cpp/m-system.drawing.font.eq_1.cpp)]
- [!code-cs[System.Drawing.ClassicFontsExamples#2](~/add/codesnippet/csharp/m-system.drawing.font.eq_1.cs)]
- [!code-vb[System.Drawing.ClassicFontsExamples#2](~/add/codesnippet/visualbasic/m-system.drawing.font.eq_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -667,7 +429,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -675,7 +436,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -686,7 +447,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -698,16 +458,9 @@
         <ReturnType>System.Drawing.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.FontFamily" /> associated with this <see cref="T:System.Drawing.Font" />.</summary>
-        <value>The <see cref="T:System.Drawing.FontFamily" /> associated with this <see cref="T:System.Drawing.Font" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Drawing.FontFamily> represents a group of fonts that have a similar font face, but may have different sizes and styles (for example, Arial, Times New Roman, and Verdana).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromHdc">
@@ -717,7 +470,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -727,19 +479,10 @@
         <Parameter Name="hdc" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="hdc">A handle to a device context.</param>
-        <summary>Creates a <see cref="T:System.Drawing.Font" /> from the specified Windows handle to a device context.</summary>
-        <returns>The <see cref="T:System.Drawing.Font" /> this method creates.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For this method to work, the `hdc` parameter must contain a handle to a device context in which a font is selected. This method will not work with an `hdc` handle acquired from a [!INCLUDE[ndptecgdiplus](~/add/includes/ndptecgdiplus-md.md)] <xref:System.Drawing.Graphics> object because the `hdc` handle does not have a font selected.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The font for the specified device context is not a TrueType font.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="hdc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromHfont">
@@ -749,7 +492,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -759,30 +501,10 @@
         <Parameter Name="hfont" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="hfont">A Windows handle to a [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] font.</param>
-        <summary>Creates a <see cref="T:System.Drawing.Font" /> from the specified Windows handle.</summary>
-        <returns>The <see cref="T:System.Drawing.Font" /> this method creates.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Gets a handle to a [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] font.  
-  
--   Creates a <xref:System.Drawing.Font> from that handle.  
-  
--   Draws text to the screen, using the new <xref:System.Drawing.Font>.  
-  
- [!code-cpp[System.Drawing.ClassicFontsExamples#3](~/add/codesnippet/cpp/m-system.drawing.font.fr_1.cpp)]
- [!code-cs[System.Drawing.ClassicFontsExamples#3](~/add/codesnippet/csharp/m-system.drawing.font.fr_1.cs)]
- [!code-vb[System.Drawing.ClassicFontsExamples#3](~/add/codesnippet/visualbasic/m-system.drawing.font.fr_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="hfont" /> points to an object that is not a TrueType font.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="hfont">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromLogFont">
@@ -792,7 +514,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -802,18 +523,10 @@
         <Parameter Name="lf" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="lf">An <see cref="T:System.Object" /> that represents the [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] <see langword="LOGFONT" /> structure from which to create the <see cref="T:System.Drawing.Font" />.</param>
-        <summary>Creates a <see cref="T:System.Drawing.Font" /> from the specified GDI logical font (<c>LOGFONT</c>) structure.</summary>
-        <returns>The <see cref="T:System.Drawing.Font" /> that this method creates.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] `LOGFONT`, or logical font, is a structure that contains 14 properties that describe a particular font. For more information, see "The Logical Font" in the Windows Development documentation at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="lf">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromLogFont">
@@ -823,7 +536,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -834,20 +546,11 @@
         <Parameter Name="hdc" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="lf">An <see cref="T:System.Object" /> that represents the [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] <see langword="LOGFONT" /> structure from which to create the <see cref="T:System.Drawing.Font" />.</param>
-        <param name="hdc">A handle to a device context that contains additional information about the <c>lf</c> structure.</param>
-        <summary>Creates a <see cref="T:System.Drawing.Font" /> from the specified GDI logical font (<c>LOGFONT</c>) structure.</summary>
-        <returns>The <see cref="T:System.Drawing.Font" /> that this method creates.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] `LOGFONT`, or logical font, is a structure that contains 14 properties that describe a particular font. For more information, see "The Logical Font" in the Windows Development documentation at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The font is not a TrueType font.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="lf">To be added.</param>
+        <param name="hdc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GdiCharSet">
@@ -857,7 +560,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -869,39 +571,9 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a byte value that specifies the GDI character set that this <see cref="T:System.Drawing.Font" /> uses.</summary>
-        <value>A byte value that specifies the [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] character set that this <see cref="T:System.Drawing.Font" /> uses. The default is 1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns 1, unless a different character set is specified in the <xref:System.Drawing.Font.%23ctor%28System.String%2CSystem.Single%2CSystem.Drawing.FontStyle%2CSystem.Drawing.GraphicsUnit%2CSystem.Byte%29> constructor. This property takes a value from the list defined in the Windows SDK header file WinGDI.h. The character sets and byte values are listed in the following table.  
-  
-|Character set|Value|  
-|-------------------|-----------|  
-|ANSI|0|  
-|DEFAULT|1|  
-|SYMBOL|2|  
-|SHIFTJIS|128|  
-|HANGEUL|129|  
-|HANGUL|129|  
-|GB2312|134|  
-|CHINESEBIG5|136|  
-|OEM|255|  
-|JOHAB|130|  
-|HEBREW|177|  
-|ARABIC|178|  
-|GREEK|161|  
-|TURKISH|162|  
-|VIETNAMESE|163|  
-|THAI|222|  
-|EASTEUROPE|238|  
-|RUSSIAN|204|  
-|MAC|77|  
-|BALTIC|186|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GdiVerticalFont">
@@ -911,7 +583,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -923,21 +594,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a Boolean value that indicates whether this <see cref="T:System.Drawing.Font" /> is derived from a GDI vertical font.</summary>
-        <value>
-          <see langword="true" /> if this <see cref="T:System.Drawing.Font" /> is derived from a [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] vertical font; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to determine if a font is compatible with native Win32 controls on non-Unicode platforms.  
-  
- GdiVerticalFont only returns `true` if this font was created from a classic GDI  
-  
- font definition, like a LOGFONT or HFONT.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -947,7 +606,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -955,26 +613,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code for this <see cref="T:System.Drawing.Font" />.</summary>
-        <returns>The hash code for this <see cref="T:System.Drawing.Font" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates a <xref:System.Drawing.Font>.  
-  
--   Gets the hash code for that font.  
-  
--   Displays a message box with the value of the hash code.  
-  
- [!code-cpp[System.Drawing.ClassicFontsExamples#4](~/add/codesnippet/cpp/m-system.drawing.font.ge_0_1.cpp)]
- [!code-cs[System.Drawing.ClassicFontsExamples#4](~/add/codesnippet/csharp/m-system.drawing.font.ge_0_1.cs)]
- [!code-vb[System.Drawing.ClassicFontsExamples#4](~/add/codesnippet/visualbasic/m-system.drawing.font.ge_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHeight">
@@ -984,7 +625,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -992,20 +632,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the line spacing, in pixels, of this font.</summary>
-        <returns>The line spacing, in pixels, of this font.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The line spacing of a <xref:System.Drawing.Font> is the vertical distance between the base lines of two consecutive lines of text. Thus, the line spacing includes the blank space between lines along with the height of the character itself.  
-  
- If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit?displayProperty=fullName>, the height (in pixels) is calculated using the vertical resolution of the screen display. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. For a screen display that has a vertical resolution of 96 dots per inch, you can calculate the height as follows:  
-  
- 2355*(0.3/2048)\*96 = 33.11719  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHeight">
@@ -1015,7 +644,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1025,44 +653,10 @@
         <Parameter Name="graphics" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="graphics">A <see cref="T:System.Drawing.Graphics" /> that holds the vertical resolution, in dots per inch, of the display device as well as settings for page unit and page scale.</param>
-        <summary>Returns the line spacing, in the current unit of a specified <see cref="T:System.Drawing.Graphics" />, of this font.</summary>
-        <returns>The line spacing, in pixels, of this font.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The line spacing of a <xref:System.Drawing.Font> is the vertical distance between the base lines of two consecutive lines of text. Thus, the line spacing includes the blank space between lines along with the height of the character itself.  
-  
- If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit?displayProperty=fullName>, the height, in pixels, is calculated using the vertical resolution of the specified <xref:System.Drawing.Graphics> object. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. If the <xref:System.Drawing.Graphics> object has a <xref:System.Drawing.Font.Unit%2A> property value of <xref:System.Drawing.GraphicsUnit?displayProperty=fullName> and a <xref:System.Drawing.Graphics.DpiY%2A> property value of 96 dots per inch, the height is calculated as follows:  
-  
- 2355*(0.3/2048)\*96 = 33.1171875  
-  
- Continuing with the same example, suppose the <xref:System.Drawing.Font.Unit%2A> property of the <xref:System.Drawing.Graphics> object is set to <xref:System.Drawing.GraphicsUnit?displayProperty=fullName> rather than <xref:System.Drawing.GraphicsUnit?displayProperty=fullName>. Then (using 1 inch = 25.4 millimeters) the height, in millimeters, is calculated as follows:  
-  
- 2355*(0.3/2048)25.4 = 8.762256  
-  
-   
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates a <xref:System.Drawing.Font>.  
-  
--   Draws a line of text to the screen, using the new <xref:System.Drawing.Font>.  
-  
--   Gets the height of the font.  
-  
--   Draws a second line of text directly below the first line.  
-  
- [!code-cpp[System.Drawing.ClassicFontsExamples#5](~/add/codesnippet/cpp/m-system.drawing.font.ge_1_1.cpp)]
- [!code-cs[System.Drawing.ClassicFontsExamples#5](~/add/codesnippet/csharp/m-system.drawing.font.ge_1_1.cs)]
- [!code-vb[System.Drawing.ClassicFontsExamples#5](~/add/codesnippet/visualbasic/m-system.drawing.font.ge_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="graphics" /> is <see langword="null" />.</exception>
+        <param name="graphics">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHeight">
@@ -1072,7 +666,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1082,19 +675,10 @@
         <Parameter Name="dpi" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="dpi">The vertical resolution, in dots per inch, used to calculate the height of the font.</param>
-        <summary>Returns the height, in pixels, of this <see cref="T:System.Drawing.Font" /> when drawn to a device with the specified vertical resolution.</summary>
-        <returns>The height, in pixels, of this <see cref="T:System.Drawing.Font" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit?displayProperty=fullName>, the height (in pixels) is calculated using the vertical resolution of the screen display. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. If the specified vertical resolution is 96 dots per inch, the height is calculated as follows:  
-  
- 2355*(0.3/2048)\*96 = 33.1171875  
-  
- ]]></format>
-        </remarks>
+        <param name="dpi">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1104,7 +688,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1116,22 +699,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the line spacing of this font.</summary>
-        <value>The line spacing, in pixels, of this font.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The line spacing is the vertical distance between the base lines of two consecutive lines of text. Thus, the line spacing includes the blank space between lines along with the height of the character itself.  
-  
- If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit?displayProperty=fullName>, the height (in pixels) is calculated using the vertical resolution of the screen display. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. For a screen display that has a vertical resolution of 96 dots per inch, you can calculate the height as follows:  
-  
- 2355*(0.3/2048)\*96 = 33.11719  
-  
- The value returned by the <xref:System.Drawing.Font.GetHeight%2A> method would be 33.11719, and the value returned by the Height property would be 34. The Height property is the value returned by <xref:System.Drawing.Font.GetHeight%2A>, rounded up to the nearest integer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSystemFont">
@@ -1141,7 +711,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1153,17 +722,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the font is a member of <see cref="T:System.Drawing.SystemFonts" />.</summary>
-        <value>
-          <see langword="true" /> if the font is a member of <see cref="T:System.Drawing.SystemFonts" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the user changes the system font, the IsSystemFont property could return `true`, even if the font is not actually a system font. To avoid this situation, if you are using system fonts in your application, you should track user preference changes by handling the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> or <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -1173,7 +734,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1185,9 +745,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this font has the italic style applied.</summary>
-        <value>
-          <see langword="true" /> to indicate this font has the italic style applied; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1198,7 +757,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1216,20 +774,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the face name of this <see cref="T:System.Drawing.Font" />.</summary>
-        <value>A string representation of the face name of this <see cref="T:System.Drawing.Font" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Font.%23ctor%2A> constructor and the <xref:System.Drawing.Font.Size%2A>, <xref:System.Drawing.Font.SizeInPoints%2A>, Name, <xref:System.Drawing.Font.Style%2A>, and <xref:System.Drawing.Font.Unit%2A> properties. This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.ComboBox> named `ComboBox1` that is populated with the strings "Bigger" and "Smaller". Paste the following code into the form and associate the `ComboBox1_SelectedIndexChanged` method with the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> event of the <xref:System.Windows.Forms.ComboBox> control.  
-  
- [!code-cs[System.Drawing.FontsExample#1](~/add/codesnippet/csharp/p-system.drawing.font.name_1.cs)]
- [!code-cpp[System.Drawing.FontsExample#1](~/add/codesnippet/cpp/p-system.drawing.font.name_1.cpp)]
- [!code-vb[System.Drawing.FontsExample#1](~/add/codesnippet/visualbasic/p-system.drawing.font.name_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OriginalFontName">
@@ -1239,7 +786,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1251,16 +797,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the font originally specified.</summary>
-        <value>The string representing the name of the font originally specified.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The actual font name and original font name can be different. System requirements may cause the use of a font other than the font originally specified.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -1270,27 +809,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the em-size of this <see cref="T:System.Drawing.Font" /> measured in the units specified by the <see cref="System.Drawing.Font.Unit%2A" /> property.</summary>
-        <value>The em-size of this <see cref="T:System.Drawing.Font" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Font.%23ctor%2A> constructor and the Size, <xref:System.Drawing.Font.SizeInPoints%2A>, and <xref:System.Drawing.Font.Unit%2A> properties. This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.ComboBox> named `ComboBox1` that is populated with the strings "Bigger" and "Smaller". Paste the following code into the form and associate the `ComboBox1_SelectedIndexChanged` method with the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> event of the <xref:System.Windows.Forms.ComboBox> control.  
-  
- [!code-cs[System.Drawing.FontsExample#1](~/add/codesnippet/csharp/p-system.drawing.font.size_1.cs)]
- [!code-cpp[System.Drawing.FontsExample#1](~/add/codesnippet/cpp/p-system.drawing.font.size_1.cpp)]
- [!code-vb[System.Drawing.FontsExample#1](~/add/codesnippet/visualbasic/p-system.drawing.font.size_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeInPoints">
@@ -1300,7 +827,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1312,20 +838,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the em-size, in points, of this <see cref="T:System.Drawing.Font" />.</summary>
-        <value>The em-size, in points, of this <see cref="T:System.Drawing.Font" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Font.%23ctor%2A> constructor and the <xref:System.Drawing.Font.Size%2A>, SizeInPoints, and <xref:System.Drawing.Font.Unit%2A> properties. This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.ComboBox> named `ComboBox1` that is populated with the strings "Bigger" and "Smaller". Paste the following code into the form and associate the `ComboBox1_SelectedIndexChanged` method with the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> event of the <xref:System.Windows.Forms.ComboBox> control.  
-  
- [!code-cs[System.Drawing.FontsExample#1](~/add/codesnippet/csharp/p-system.drawing.font.si_1.cs)]
- [!code-cpp[System.Drawing.FontsExample#1](~/add/codesnippet/cpp/p-system.drawing.font.si_1.cpp)]
- [!code-vb[System.Drawing.FontsExample#1](~/add/codesnippet/visualbasic/p-system.drawing.font.si_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Strikeout">
@@ -1335,7 +850,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1347,9 +861,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this <see cref="T:System.Drawing.Font" /> specifies a horizontal line through the font.</summary>
-        <value>
-          <see langword="true" /> if this <see cref="T:System.Drawing.Font" /> has a horizontal line through it; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1360,7 +873,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1372,20 +884,9 @@
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets style information for this <see cref="T:System.Drawing.Font" />.</summary>
-        <value>A <see cref="T:System.Drawing.FontStyle" /> enumeration that contains style information for this <see cref="T:System.Drawing.Font" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to set the <xref:System.Drawing.Font> property of a button to a new bold font using the <xref:System.Drawing.FontStyle> enumeration. This example is designed to be used with Windows Forms. Create a form containing a button named `Button1` and paste the following code into it. Associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.MiscExamples#11](~/add/codesnippet/csharp/p-system.drawing.font.st_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#11](~/add/codesnippet/cpp/p-system.drawing.font.st_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#11](~/add/codesnippet/visualbasic/p-system.drawing.font.st_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -1395,7 +896,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1406,9 +906,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="si">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
-        <param name="context">The destination (see <see cref="T:System.Runtime.Serialization.StreamingContext" />) for this serialization.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
+        <param name="si">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1419,7 +919,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1431,16 +930,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the system font if the <see cref="System.Drawing.Font.IsSystemFont%2A" /> property returns <see langword="true" />.</summary>
-        <value>The name of the system font, if <see cref="System.Drawing.Font.IsSystemFont%2A" /> returns <see langword="true" />; otherwise, an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The name returned by the SystemFontName property will be one of the members of the <xref:System.Drawing.SystemFonts>, converted to a string.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToHfont">
@@ -1450,7 +942,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1458,27 +949,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a handle to this <see cref="T:System.Drawing.Font" />.</summary>
-        <returns>A Windows handle to this <see cref="T:System.Drawing.Font" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using this method, you must dispose of the resulting `Hfont` using the [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] `DeleteObject` method to ensure the resources are released.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Drawing.Font> and then gets a handle to that <xref:System.Drawing.Font>. The example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
-  
- [!code-cpp[System.Drawing.ClassicFontsExamples#6](~/add/codesnippet/cpp/m-system.drawing.font.to_0_1.cpp)]
- [!code-cs[System.Drawing.ClassicFontsExamples#6](~/add/codesnippet/csharp/m-system.drawing.font.to_0_1.cs)]
- [!code-vb[System.Drawing.ClassicFontsExamples#6](~/add/codesnippet/visualbasic/m-system.drawing.font.to_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.Win32Exception">The operation was unsuccessful.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToLogFont">
@@ -1488,7 +961,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1498,17 +970,9 @@
         <Parameter Name="logFont" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="logFont">An <see cref="T:System.Object" /> to represent the <see langword="LOGFONT" /> structure that this method creates.</param>
-        <summary>Creates a GDI logical font (<c>LOGFONT</c>) structure from this <see cref="T:System.Drawing.Font" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method sets the `logFont` parameter to the results of the font conversion. For more information about logical fonts, see [LOGFONT structure](http://msdn.microsoft.com/library/dd145037.aspx).  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="logFont">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToLogFont">
@@ -1518,7 +982,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1529,20 +992,10 @@
         <Parameter Name="graphics" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="logFont">An <see cref="T:System.Object" /> to represent the <see langword="LOGFONT" /> structure that this method creates.</param>
-        <param name="graphics">A <see cref="T:System.Drawing.Graphics" /> that provides additional information for the <see langword="LOGFONT" /> structure.</param>
-        <summary>Creates a GDI logical font (<c>LOGFONT</c>) structure from this <see cref="T:System.Drawing.Font" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method sets the `logFont` parameter to the results of the font conversion. For more information about logical fonts, see [LOGFONT structure](http://msdn.microsoft.com/library/dd145037.aspx).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="graphics" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="logFont">To be added.</param>
+        <param name="graphics">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1552,7 +1005,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1560,33 +1012,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a human-readable string representation of this <see cref="T:System.Drawing.Font" />.</summary>
-        <returns>A string that represents this <see cref="T:System.Drawing.Font" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned string has the following format:  
-  
- [Font: Name=*fontName*, Size=*size*, Units=*units*, GDiCharSet=*gdiCharSet*, GdiVerticalFont=*boolean*]  
-  
-   
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates a <xref:System.Drawing.Font>.  
-  
--   Gets a string that represents the font.  
-  
--   Displays the string in a message box.  
-  
- [!code-cpp[System.Drawing.ClassicFontsExamples#7](~/add/codesnippet/cpp/m-system.drawing.font.to_1_1.cpp)]
- [!code-cs[System.Drawing.ClassicFontsExamples#7](~/add/codesnippet/csharp/m-system.drawing.font.to_1_1.cs)]
- [!code-vb[System.Drawing.ClassicFontsExamples#7](~/add/codesnippet/visualbasic/m-system.drawing.font.to_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -1596,7 +1024,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1608,9 +1035,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this <see cref="T:System.Drawing.Font" /> is underlined.</summary>
-        <value>
-          <see langword="true" /> if this <see cref="T:System.Drawing.Font" /> is underlined; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1621,7 +1047,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1633,20 +1058,9 @@
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unit of measure for this <see cref="T:System.Drawing.Font" />.</summary>
-        <value>A <see cref="T:System.Drawing.GraphicsUnit" /> that represents the unit of measure for this <see cref="T:System.Drawing.Font" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Font.%23ctor%2A> constructor and the <xref:System.Drawing.Font.Size%2A>, <xref:System.Drawing.Font.SizeInPoints%2A>, and Unit properties. This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.ComboBox> named `ComboBox1` that is populated with the strings "Bigger" and "Smaller". Paste the following code into the form and associate the `ComboBox1_SelectedIndexChanged` method with the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> event of the <xref:System.Windows.Forms.ComboBox> control.  
-  
- [!code-cs[System.Drawing.FontsExample#1](~/add/codesnippet/csharp/p-system.drawing.font.unit_1.cs)]
- [!code-cpp[System.Drawing.FontsExample#1](~/add/codesnippet/cpp/p-system.drawing.font.unit_1.cpp)]
- [!code-vb[System.Drawing.FontsExample#1](~/add/codesnippet/visualbasic/p-system.drawing.font.unit_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

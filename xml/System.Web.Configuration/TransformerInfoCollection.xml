@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TransformerInfoCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,44 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.Web.Configuration.TransformerInfo" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TransformerInfoCollection class allows you to programmatically access and modify the `transformers` section of the `webParts` section of a configuration file.  
-  
- <xref:System.Web.Configuration.TransformerInfo> objects, as part of a TransformerInfoCollection, specify custom classes that extend the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class. These transformer classes act as bridges between connected Web Parts, translating data sent by a connection provider into something that the connection consumer can accept.  
-  
-   
-  
-## Examples  
- The following configuration file excerpt shows how to declaratively specify values for several properties of the TransformerInfoCollection class.  
-  
-```  
-<system.web>  
-  <webParts>  
-    <transformers>  
-      <clear />  
-      <remove name="RowToKeysTransformer" />  
-      <add name="RowToFieldTransformer"  
-        type="System.Web.UI.WebControls.WebParts.RowToFieldTransformer" />  
-      <add name="RowToFilterTransformer"  
-        type="System.Web.UI.WebControls.WebParts.RowToFilterTransformer" />  
-      <add name="RowToParametersTransformer"  
-        type="System.Web.UI.WebControls.WebParts.RowToParametersTransformer" />  
-    </transformers>  
-  </webParts>   
-</system.web>  
-```  
-  
- The following code example shows how to use the TransformerInfoCollection class. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
- [!code-cs[System.Web.Configuration.WebPartsSection#2](~/add/codesnippet/csharp/t-system.web.configurati_32_1.cs)]
- [!code-vb[System.Web.Configuration.WebPartsSection#2](~/add/codesnippet/visualbasic/t-system.web.configurati_32_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,20 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.TransformerInfoCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TransformerInfoCollection constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. The <xref:System.Web.Configuration.WebPartsSection.Transformers%2A> property of the <xref:System.Web.Configuration.WebPartsSection> class always contains an instance of the <xref:System.Web.Configuration.TransformerInfoCollection> type. Use this instance, rather than creating your own.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -87,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,29 +51,9 @@
         <Parameter Name="transformerInfo" Type="System.Web.Configuration.TransformerInfo" />
       </Parameters>
       <Docs>
-        <param name="transformerInfo">A <see cref="T:System.Web.Configuration.TransformerInfo" /> object to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Web.Configuration.TransformerInfo" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection must not already contain a <xref:System.Web.Configuration.TransformerInfo> object with the same <xref:System.Web.Configuration.TransformerInfo.Name%2A> property value.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Add method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
- [!code-cs[System.Web.Configuration.WebPartsSection#5](~/add/codesnippet/csharp/40115a66-6c99-4787-9f8c-_1.cs)]
- [!code-vb[System.Web.Configuration.WebPartsSection#5](~/add/codesnippet/visualbasic/40115a66-6c99-4787-9f8c-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.TransformerInfo" /> object to add already exists in the collection.  
-  
- \- or -  
-  
- The collection is read-only.</exception>
+        <param name="transformerInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -129,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,23 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Web.Configuration.TransformerInfo" /> objects from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method removes all <xref:System.Web.Configuration.TransformerInfo> objects from the collection and inserts a `clear` element into the `transformers` collection of the `webParts` section of the configuration file.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Clear method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
- [!code-cs[System.Web.Configuration.WebPartsSection#9](~/add/codesnippet/csharp/m-system.web.configurati_67_1.cs)]
- [!code-vb[System.Web.Configuration.WebPartsSection#9](~/add/codesnippet/visualbasic/m-system.web.configurati_67_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -163,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,7 +122,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -216,25 +131,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of a <see cref="T:System.Web.Configuration.TransformerInfo" /> object in the collection.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.TagMapInfo" /> object at the specified index location.</summary>
-        <value>The <see cref="T:System.Web.Configuration.TransformerInfo" /> object at the specified index, or <see langword="null" /> if there is no object at that index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Item property overwrites the <xref:System.Web.Configuration.TransformerInfo> object if it already exists; otherwise, a new object is created and added to the collection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Item property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
- [!code-cs[System.Web.Configuration.WebPartsSection#6](~/add/codesnippet/csharp/p-system.web.configurati_180_1.cs)]
- [!code-vb[System.Web.Configuration.WebPartsSection#6](~/add/codesnippet/visualbasic/p-system.web.configurati_180_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -244,7 +144,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -273,24 +171,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The name of a <see cref="T:System.Web.Configuration.TransformerInfo" /> object to remove from the collection.</param>
-        <summary>Removes the <see cref="T:System.Web.Configuration.TransformerInfo" /> object with the passed <see cref="System.Web.Configuration.TransformerInfo.Name%2A" /> property value from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method removes a <xref:System.Web.Configuration.TransformerInfo> object from the collection and, if the <xref:System.Web.Configuration.TransformerInfo> object is defined in a higher-level configuration file, inserts a `remove` element into the `transformers` collection of the `webParts` section of the configuration file.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Remove method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
- [!code-cs[System.Web.Configuration.WebPartsSection#7](~/add/codesnippet/csharp/m-system.web.configurati_32_1.cs)]
- [!code-vb[System.Web.Configuration.WebPartsSection#7](~/add/codesnippet/visualbasic/m-system.web.configurati_32_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -300,7 +183,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,24 +192,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of a <see cref="T:System.Web.Configuration.TransformerInfo" /> object to remove from the collection.</param>
-        <summary>Removes the <see cref="T:System.Web.Configuration.TransformerInfo" /> object from the collection at the passed index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method removes a <xref:System.Web.Configuration.TransformerInfo> object from the collection and, if the <xref:System.Web.Configuration.TransformerInfo> object is defined in a higher-level configuration file, inserts a `remove` element into the `transformers` collection of the `webParts` section of the configuration file.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the RemoveAt method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
- [!code-cs[System.Web.Configuration.WebPartsSection#8](~/add/codesnippet/csharp/m-system.web.configurati_57_1.cs)]
- [!code-vb[System.Web.Configuration.WebPartsSection#8](~/add/codesnippet/visualbasic/m-system.web.configurati_57_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

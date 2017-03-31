@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TabletDevice" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,18 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the digitizer device of a Tablet PC.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to get the properties that a TabletDevice supports.  
-  
- [!code-cs[PacketSpy#27](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#27)]
- [!code-vb[PacketSpy#27](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#27)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveSource">
@@ -33,7 +22,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -45,20 +33,9 @@
         <ReturnType>System.Windows.PresentationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.PresentationSource" /> that reports current input for the tablet device.</summary>
-        <value>The <see cref="T:System.Windows.PresentationSource" /> that reports current input for the tablet device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the ActiveSource property.  
-  
- [!code-vb[HwCaps#4](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#4)]
- [!code-cs[HwCaps#4](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#4)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">Required for applications to read this property. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -68,26 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unique identifier for the tablet device on the system.</summary>
-        <value>The unique identifier for the tablet device on the system.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the Id property.  
-  
- [!code-vb[HwCaps#8](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#8)]
- [!code-cs[HwCaps#8](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#8)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -97,26 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the tablet device.</summary>
-        <value>The name of the tablet device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the Name property.  
-  
- [!code-vb[HwCaps#9](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#9)]
- [!code-cs[HwCaps#9](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#9)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProductId">
@@ -126,31 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the product identifier for the tablet device.</summary>
-        <value>The product identifier for the tablet device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The manufacturer of the tablet device is responsible for adding this string. The return value is empty if the tablet device does not have an identifier.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the ProductId property.  
-  
- [!code-vb[HwCaps#10](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#10)]
- [!code-cs[HwCaps#10](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#10)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StylusDevices">
@@ -160,26 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusDeviceCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Input.StylusDeviceCollection" /> associated with the tablet device.</summary>
-        <value>The <see cref="T:System.Windows.Input.StylusDeviceCollection" /> associated with the tablet device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the StylusDevices property.  
-  
- [!code-vb[HwCaps#11](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#11)]
- [!code-cs[HwCaps#11](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#11)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportedStylusPointProperties">
@@ -189,26 +117,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Input.StylusPointProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.Windows.Input.StylusPointProperty" /> objects that the <see cref="T:System.Windows.Input.TabletDevice" /> supports.</summary>
-        <value>A collection of <see cref="T:System.Windows.Input.StylusPointProperty" /> objects that the <see cref="T:System.Windows.Input.TabletDevice" /> supports.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to get the properties that a <xref:System.Windows.Input.TabletDevice> supports.  
-  
- [!code-cs[PacketSpy#27](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#27)]
- [!code-vb[PacketSpy#27](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#27)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabletHardwareCapabilities">
@@ -218,26 +135,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Input.TabletHardwareCapabilities" /> for the tablet device.</summary>
-        <value>The <see cref="T:System.Windows.Input.TabletHardwareCapabilities" /> for the tablet device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the TabletHardwareCapabilities property.  
-  
- [!code-vb[HwCaps#1](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#1)]
- [!code-cs[HwCaps#1](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -247,26 +153,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.IInputElement" /> that provides basic input processing for the tablet device.</summary>
-        <value>The <see cref="T:System.Windows.IInputElement" /> that provides basic input processing for the tablet device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the Target property.  
-  
- [!code-vb[HwCaps#13](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#13)]
- [!code-cs[HwCaps#13](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#13)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -276,7 +171,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,19 +178,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the name of the tablet device.</summary>
-        <returns>A <see cref="T:System.String" /> that contains the name of the <see cref="T:System.Windows.Input.TabletDevice" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the <xref:System.Windows.Input.TabletDevice> method.  
-  
- [!code-vb[HwCaps#14](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#14)]
- [!code-cs[HwCaps#14](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#14)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -306,26 +190,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.TabletDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Input.TabletDeviceType" /> of the tablet device.</summary>
-        <value>The <see cref="T:System.Windows.Input.TabletDeviceType" /> of the tablet device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the Type property.  
-  
- [!code-vb[HwCaps#2](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#2)]
- [!code-cs[HwCaps#2](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -3,11 +3,11 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Rss20FeedFormatter`1&lt;.ctor (class System.ServiceModel.Syndication.SyndicationFeed) TSyndicationFeed&gt; extends System.ServiceModel.Syndication.Rss20FeedFormatter" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Rss20FeedFormatter`1" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -24,31 +24,13 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Xml.Serialization.XmlRoot(ElementName="rss", Namespace="")</AttributeName>
+      <AttributeName>System.Xml.Serialization.XmlRoot("rss", Namespace="")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TSyndicationFeed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived type to serialize.</typeparam>
-    <summary>A class that serializes <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived classes to RSS 2.0 format.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> derived classes. If you need to serialize a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance, use the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> formatter instead.  
-  
-   
-  
-## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> derived class and serialize it to RSS 2.0.  
-  
- [!code-vb[RssFormatter#3](~/add/codesnippet/visualbasic/t-system.servicemodel.sy_2_1.vb)]
- [!code-cs[RssFormatter#3](~/add/codesnippet/csharp/t-system.servicemodel.sy_2_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TSyndicationFeed">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,16 +39,16 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20FeedFormatter`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="System.ServiceModel.Syndication.Rss20FeedFormatter%601" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,30 +58,20 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20FeedFormatter`1.#ctor(`0)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="feedToWrite" Type="TSyndicationFeed" />
       </Parameters>
       <Docs>
-        <param name="feedToWrite">The feed to serialize.</param>
-        <summary>Creates a new instance of the <see cref="System.ServiceModel.Syndication.Rss20FeedFormatter%601" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> derived instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call this constructor.  
-  
- [!code-vb[RssFormatter#4](~/add/codesnippet/visualbasic/m-system.servicemodel.sy_21_1.vb)]
- [!code-cs[RssFormatter#4](~/add/codesnippet/csharp/m-system.servicemodel.sy_21_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="feedToWrite">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,11 +80,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20FeedFormatter`1.#ctor(`0,System.Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -120,25 +92,10 @@
         <Parameter Name="serializeExtensionsAsAtom" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="feedToWrite">The feed to serialize.</param>
-        <param name="serializeExtensionsAsAtom">A value that specifies whether to serialize elements that are defined in the Atom 1.0 specification, but not in the RSS 2.0 specification. The default is <see langword="true" />.</param>
-        <summary>Creates a new instance of the <see cref="System.ServiceModel.Syndication.Rss20FeedFormatter%601" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> derived instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `serializeExtensionsAsAtom` parameter is `true`, all elements defined in the Atom 1.0 specification that are not defined in the RSS 2.0 specification are serialized with the Atom 1.0 namespace.  
-  
-   
-  
-## Examples  
- The following example shows how to call this constructor.  
-  
- [!code-vb[RssFormatter#5](~/add/codesnippet/visualbasic/e8c5dd46-ef1c-4bc1-b494-_1.vb)]
- [!code-cs[RssFormatter#5](~/add/codesnippet/csharp/e8c5dd46-ef1c-4bc1-b494-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="feedToWrite">To be added.</param>
+        <param name="serializeExtensionsAsAtom">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFeedInstance">
@@ -147,11 +104,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20FeedFormatter`1.CreateFeedInstance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,8 +116,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> derived class.</summary>
-        <returns>A new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

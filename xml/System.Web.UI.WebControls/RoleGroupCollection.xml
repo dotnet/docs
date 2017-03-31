@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RoleGroupCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,22 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains a sequential list of role groups that the <see cref="T:System.Web.UI.WebControls.LoginView" /> control uses to determine which control template to display to users based on their role. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RoleGroupCollection class manages the list of role groups associated with a particular <xref:System.Web.UI.WebControls.LoginView> template. Each role group defines the content and controls to display to a particular group of users on your Web site. It is possible to assign several role groups to the same template.  
-  
- To find the role group in the collection that a particular user belongs to, you can use the <xref:System.Web.UI.WebControls.RoleGroupCollection.GetMatchingRoleGroup%2A> method to search the collection by user name.  
-  
-> [!CAUTION]
->  The order of the roles in the RoleGroupCollection collection is important because matching is done sequentially based on the first role found.  
-  
- You must configure role management to use the RoleGroupCollection class to manage a list of role groups. For more information, see [Understanding Role Management](../Topic/Understanding%20Role%20Management.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RoleGroupCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,19 +51,9 @@
         <Parameter Name="group" Type="System.Web.UI.WebControls.RoleGroup" />
       </Parameters>
       <Docs>
-        <param name="group">The <see cref="T:System.Web.UI.WebControls.RoleGroup" /> to add to the collection.</param>
-        <summary>Adds a role group to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example adds a dynamically created <xref:System.Web.UI.WebControls.RoleGroup> object to the <xref:System.Web.UI.WebControls.RoleGroupCollection>. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.RoleGroup> class.  
-  
- [!code-vb[RoleGroupClass#2](~/add/codesnippet/visualbasic/67c62619-8f27-4d59-9186-_1.aspx)]
- [!code-cs[RoleGroupClass#2](~/add/codesnippet/csharp/67c62619-8f27-4d59-9186-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -90,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,10 +72,9 @@
         <Parameter Name="group" Type="System.Web.UI.WebControls.RoleGroup" />
       </Parameters>
       <Docs>
-        <param name="group">The <see cref="T:System.Web.UI.WebControls.RoleGroup" /> to look for in the collection.</param>
-        <summary>Indicates whether the collection contains the specified role group.</summary>
-        <returns>
-          <see langword="true" /> if the specified role group is a member of the collection; otherwise <see langword="false" />.</returns>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,17 +95,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A zero-based array of <see cref="T:System.Web.UI.WebControls.RoleGroup" /> objects that receives the items copied from the collection.</param>
-        <param name="index">The position in the target array at which the array starts receiving the copied items.</param>
-        <summary>Copies all the items from the <see cref="T:System.Web.UI.WebControls.RoleGroupCollection" /> collection to a compatible one-dimensional array of <see cref="T:System.Web.UI.WebControls.RoleGroup" /> objects, starting at the specified index in the target array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CopyTo method to copy the contents of the collection into the specified zero-based array. Items are copied starting at the specified index of the target array. After the items are in an array, you can use array syntax to access the items in the <xref:System.Web.UI.WebControls.RoleGroupCollection> collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingRoleGroup">
@@ -145,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,23 +117,10 @@
         <Parameter Name="user" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="user">An <see cref="T:System.Security.Principal.IPrincipal" /> that represents the user account to find the role group collection.</param>
-        <summary>Returns the first role group that contains the specified user account.</summary>
-        <returns>A <see cref="T:System.Web.UI.WebControls.RoleGroup" /> representing the first role group in the collection that contains the specified user account. If the user is not part of a role group in the collection, it returns <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetMatchingRoleGroup method searches the role group collection and returns the first role group that contains the specified user account. The method searches the collection in the order role groups are added to the collection, and returns only the first matching role group.  
-  
- If the specified user account is not part of any of the role groups in the collection, `null` is returned.  
-  
- You must configure role management to use the GetMatchingRoleGroup method. For more information, see [Understanding Role Management](../Topic/Understanding%20Role%20Management.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="user" /> is <see langword="null" />.</exception>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -181,7 +130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,17 +139,10 @@
         <Parameter Name="group" Type="System.Web.UI.WebControls.RoleGroup" />
       </Parameters>
       <Docs>
-        <param name="group">The <see cref="T:System.Web.UI.WebControls.RoleGroup" /> to locate in the collection.</param>
-        <summary>Searches the collection and returns the zero-based index of the first occurrence of the specified <see cref="T:System.Web.UI.WebControls.RoleGroup" />.</summary>
-        <returns>The zero-based index of the first occurrence of <paramref name="group" /> within the entire <see cref="T:System.Web.UI.WebControls.RoleGroupCollection" />, if found; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IndexOf method performs a linear search; therefore the average execution time depends on the number of members in the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -211,7 +152,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,17 +162,10 @@
         <Parameter Name="group" Type="System.Web.UI.WebControls.RoleGroup" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the role group.</param>
-        <param name="group">The role group to insert.</param>
-        <summary>Adds a <see cref="T:System.Web.UI.WebControls.RoleGroup" /> to the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Insert method inserts the specified <xref:System.Web.UI.WebControls.RoleGroup> at the specified location. Role groups that follow the insertion point move down in the collection to accommodate the new element.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -242,7 +175,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,9 +184,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the role group to return.</param>
-        <summary>Gets the role group at the specified index.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.RoleGroup" /> at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,7 +197,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,7 +218,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -297,16 +227,9 @@
         <Parameter Name="group" Type="System.Web.UI.WebControls.RoleGroup" />
       </Parameters>
       <Docs>
-        <param name="group">The <see cref="T:System.Web.UI.WebControls.RoleGroup" /> to remove from the collection.</param>
-        <summary>Deletes the first occurrence of the specified role group from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The first instance of the specified <xref:System.Web.UI.WebControls.RoleGroup> object is removed from the <xref:System.Web.UI.WebControls.RoleGroupCollection> collection. Groups that follow the removed group all move up in the index to fill the vacated spot. If there is more than one instance of the specified <xref:System.Web.UI.WebControls.RoleGroup> object, only the first instance is removed.  
-  
- ]]></format>
-        </remarks>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

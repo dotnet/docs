@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.CollectionChangedEventManager" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a <see cref="T:System.Windows.WeakEventManager" /> implementation so that you can use the "weak event listener" pattern to attach listeners for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In order to be listeners in this pattern, your listener objects must implement <xref:System.Windows.IWeakEventListener>. You do not need to implement <xref:System.Windows.IWeakEventListener> on the class that is the source of the events.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddHandler">
@@ -40,9 +32,9 @@
         <Parameter Name="handler" Type="System.EventHandler&lt;System.Collections.Specialized.NotifyCollectionChangedEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">The source object that the raises the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</param>
-        <param name="handler">The delegate that handles the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</param>
-        <summary>Adds the specified event handler, which is called when specified source raises the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</summary>
+        <param name="source">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,9 +55,9 @@
         <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
       </Parameters>
       <Docs>
-        <param name="source">The object with the event.</param>
-        <param name="listener">The object to add as a listener.</param>
-        <summary>Adds the specified listener to the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event of the specified source.</summary>
+        <param name="source">To be added.</param>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +75,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new object to contain listeners to the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</summary>
-        <returns>A new object to contain listeners to the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +97,9 @@
         <Parameter Name="handler" Type="System.EventHandler&lt;System.Collections.Specialized.NotifyCollectionChangedEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">The source object that the raises the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</param>
-        <param name="handler">The delegate that handles the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</param>
-        <summary>Removes the specified event handler from the specified source.</summary>
+        <param name="source">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,9 +120,9 @@
         <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
       </Parameters>
       <Docs>
-        <param name="source">The object with the event.</param>
-        <param name="listener">The listener to remove.</param>
-        <summary>Removes the specified listener from the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event of the specified source.</summary>
+        <param name="source">To be added.</param>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,8 +142,8 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">The object with the event.</param>
-        <summary>Begins listening for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event on the specified source.</summary>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,8 +163,8 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">The object with the event.</param>
-        <summary>Stops listening for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event on the specified source.</summary>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

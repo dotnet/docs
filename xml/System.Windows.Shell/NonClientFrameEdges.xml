@@ -15,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies constants that indicate which edges of the window frame are not owned by the client.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Shell.WindowChrome.NonClientFrameEdges%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -39,7 +32,7 @@
         <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The bottom edge is not owned by the client (value = 8).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -55,7 +48,7 @@
         <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left edge is not owned by the client (value = 1).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -71,7 +64,7 @@
         <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All edges are owned by the client (value = 0).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -87,7 +80,7 @@
         <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right edge is not owned by the client (value = 4).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -103,7 +96,7 @@
         <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The top edge is not owned by the client (value = 2).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnHeaderAutoResizeStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how a column contained in a <see cref="T:System.Windows.Forms.ListView" /> should be resized.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ColumnHeaderAutoResizeStyle is used by the <xref:System.Windows.Forms.ListView.AutoResizeColumn%2A?displayProperty=fullName>, <xref:System.Windows.Forms.ListView.AutoResizeColumns%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.ColumnHeader.AutoResize%2A?displayProperty=fullName> methods.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ColumnContent">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ColumnHeaderAutoResizeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the column should be resized based on the length of the column content.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HeaderSize">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ColumnHeaderAutoResizeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the column should be resized based on the length of the column header content.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ColumnHeaderAutoResizeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no resizing should occur.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

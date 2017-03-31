@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsResource" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines the base class for resources that can be added to an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to add XpsResource derived types to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cs[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/csharp/XpsCreate/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/cpp/xpscreate/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/visualbasic/xpscreate/xpscreate.vb#xpscreateaddpageresources)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Commit">
@@ -38,7 +26,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -46,24 +33,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Commits all changes and flushes the resource to the document package.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Based on settings of <xref:System.Windows.Xps.Serialization.XpsSerializationManager> and <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy>, such as <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> and <xref:System.Windows.Xps.Packaging.PackageInterleavingOrder>, the flush operation of the Commit method may be delayed until the whole <xref:System.Windows.Xps.Packaging.XpsDocument> is closed.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Commit method (in a derived class) when you add resources to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cs[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/csharp/XpsCreate/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/cpp/xpscreate/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/visualbasic/xpscreate/xpscreate.vb#xpscreateaddpageresources)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -73,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,20 +51,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, returns the I/O stream for reading or writing the resource.</summary>
-        <returns>The <see cref="T:System.IO.Stream" /> for reading or writing the resource.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use this method (in a derived class) to add resources to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cs[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/csharp/XpsCreate/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/cpp/xpscreate/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/visualbasic/xpscreate/xpscreate.vb#xpscreateaddpageresources)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeUri">
@@ -104,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,9 +72,9 @@
         <Parameter Name="inUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="inUri">A starting absolute [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)].</param>
-        <summary>Returns the [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] of the resource that is relative to a specified absolute [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)].</summary>
-        <returns>The <see cref="T:System.Uri" /> of the resource that is relative to the specified absolute <paramref name="inUri" />.</returns>
+        <param name="inUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,7 +92,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This member supports the [!INCLUDE[TLA#tla_wpf](~/add/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

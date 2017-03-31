@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.Interop.PrintTicketConverter" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Converts managed <see cref="T:System.Printing.PrintTicket" /> objects to unmanaged Graphics Device Interface (GDI) [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structures, and vice versa.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- None of the methods of this class will validate the <xref:System.Printing.PrintTicket>. To validate it, use <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +31,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -47,22 +38,10 @@
         <Parameter Name="clientPrintSchemaVersion" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="deviceName">The name of the printer that is bound to the new <see cref="T:System.Printing.Interop.PrintTicketConverter" /> instance.</param>
-        <param name="clientPrintSchemaVersion">The Print Schema version to use in the <see cref="T:System.Printing.PrintTicket" /> and DEVMODE conversion.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.Interop.PrintTicketConverter" /> class for the specified printer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on the DEVMODE structure, see [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="deviceName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="clientPrintSchemaVersion" /> is 0 or less.</exception>
-        <exception cref="T:System.Printing.PrintQueueException">The converter was unable to bind to <paramref name="deviceName" />.</exception>
+        <param name="deviceName">To be added.</param>
+        <param name="clientPrintSchemaVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertDevModeToPrintTicket">
@@ -72,7 +51,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,25 +60,10 @@
         <Parameter Name="devMode" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="devMode">A <see cref="T:System.Byte" /> array that contains the DEVMODE structure.</param>
-        <summary>Converts the specified [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure to a managed code <see cref="T:System.Printing.PrintTicket" />.</summary>
-        <returns>The new managed <see cref="T:System.Printing.PrintTicket" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on the DEVMODE structure, see [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565).  
-  
- The scope of the returned <xref:System.Printing.PrintTicket> is the entire print job.  
-  
- This method does not validate the <xref:System.Printing.PrintTicket>. To validate it, use <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Printing.Interop.PrintTicketConverter" /> is already disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The value of <paramref name="devMode" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The content of <paramref name="devMode" /> is not well-formed.</exception>
-        <exception cref="T:System.Printing.PrintQueueException">The conversion failed.</exception>
+        <param name="devMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertDevModeToPrintTicket">
@@ -110,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -121,25 +83,11 @@
         <Parameter Name="scope" Type="System.Printing.PrintTicketScope" />
       </Parameters>
       <Docs>
-        <param name="devMode">A <see cref="T:System.Byte" /> buffer containing the DEVMODE structure to convert.</param>
-        <param name="scope">A <see cref="T:System.Printing.PrintTicketScope" /> value that specifies whether the new <see cref="T:System.Printing.PrintTicket" /> applies to a page, a document, or an entire print job.</param>
-        <summary>Converts the specified [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure to a managed code <see cref="T:System.Printing.PrintTicket" /> that has the specified scope.</summary>
-        <returns>The new <see cref="T:System.Printing.PrintTicket" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method does not validate the <xref:System.Printing.PrintTicket>. To validate it, use <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A>.  
-  
- For more information on the DEVMODE structure, see [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Printing.Interop.PrintTicketConverter" /> is already disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The value of <paramref name="devMode" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">The content of <paramref name="devMode" /> is not well-formed.</exception>
-        <exception cref="T:System.Printing.PrintQueueException">The conversion failed.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="scope" /> is not a valid <see cref="T:System.Printing.PrintTicketScope" /> value.</exception>
+        <param name="devMode">To be added.</param>
+        <param name="scope">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertPrintTicketToDevMode">
@@ -149,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,27 +107,11 @@
         <Parameter Name="baseType" Type="System.Printing.Interop.BaseDevModeType" />
       </Parameters>
       <Docs>
-        <param name="printTicket">The <see cref="T:System.Printing.PrintTicket" /> to convert.</param>
-        <param name="baseType">A value that identifies whether to use the user default or printer default DEVMODE as the base DEVMODE.</param>
-        <summary>Converts the specified managed <see cref="T:System.Printing.PrintTicket" /> to an unmanaged [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure that is based on the [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure identified by the <see cref="T:System.Printing.Interop.BaseDevModeType" />.</summary>
-        <returns>A <see cref="T:System.Byte" /> array that contains the new [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The scope of the <xref:System.Printing.PrintTicket> parameter must be the entire print job.  
-  
- This method does not validate the <xref:System.Printing.PrintTicket>. To validate it, use <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A>.  
-  
- For more information on the DEVMODE structure, see [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Printing.Interop.PrintTicketConverter" /> is already disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The value of <paramref name="printTicket" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">The content of <paramref name="printTicket" /> is not well-formed.</exception>
-        <exception cref="T:System.Printing.PrintQueueException">The conversion failed.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="baseType" /> is not a valid <see cref="T:System.Printing.Interop.BaseDevModeType" /> value.</exception>
+        <param name="printTicket">To be added.</param>
+        <param name="baseType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertPrintTicketToDevMode">
@@ -190,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,30 +132,12 @@
         <Parameter Name="scope" Type="System.Printing.PrintTicketScope" />
       </Parameters>
       <Docs>
-        <param name="printTicket">The <see cref="T:System.Printing.PrintTicket" /> to convert.</param>
-        <param name="baseType">A value that identifies whether to use the user default or printer default DEVMODE as the base DEVMODE.</param>
-        <param name="scope">A <see cref="T:System.Printing.PrintTicketScope" /> value that specifies whether the conversion of the <see cref="T:System.Printing.PrintTicket" /> should be done at the scope of a page, a document, or an entire print job.</param>
-        <summary>Converts the specified managed code <see cref="T:System.Printing.PrintTicket" /> with the specified scope, into an unmanaged [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure that is based on the [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure identified by the <see cref="T:System.Printing.Interop.BaseDevModeType" />.</summary>
-        <returns>A <see cref="T:System.Byte" /> buffer that represents the new [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method does not validate the <xref:System.Printing.PrintTicket>. To validate it, use <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A>.  
-  
- For more information on the DEVMODE structure, see [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Printing.Interop.PrintTicketConverter" /> is already disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The value of <paramref name="printTicket" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">The content of <paramref name="printTicket" /> is not well-formed.</exception>
-        <exception cref="T:System.Printing.PrintQueueException">The conversion failed.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="baseType" /> is not a valid <see cref="T:System.Printing.Interop.BaseDevModeType" /> value.  
-  
- -or-  
-  
- The <paramref name="scope" /> is not a valid <see cref="T:System.Printing.PrintTicketScope" /> value.</exception>
+        <param name="printTicket">To be added.</param>
+        <param name="baseType">To be added.</param>
+        <param name="scope">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -235,7 +147,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,7 +154,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Printing.Interop.PrintTicketConverter" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,15 +165,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) version that <see cref="T:System.Printing.Interop.PrintTicketConverter" /> can support.</summary>
-        <value>The maximum [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) version that <see cref="T:System.Printing.Interop.PrintTicketConverter" /> can support.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,20 +190,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the current instance of the <see cref="T:System.Printing.Interop.PrintTicketConverter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Printing.Interop.PrintTicketConverter>. The `Dispose` method leaves the <xref:System.Printing.Interop.PrintTicketConverter> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Printing.Interop.PrintTicketConverter> so the garbage collector can reclaim the memory that the <xref:System.Printing.Interop.PrintTicketConverter> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call `Dispose` before you release your last reference to the <xref:System.Printing.Interop.PrintTicketConverter>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Printing.Interop.PrintTicketConverter> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

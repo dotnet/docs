@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an abstract base class for ParameterDataSourceExpression objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">An object that represents the state of the <see cref="T:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" /> object.</param>
-        <summary>Loads the state of the values in the <see cref="T:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" /> object that must be persisted.</summary>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +77,8 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parameters that are associated with this <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpression" /> object.</summary>
-        <value>The parameters that are associated with the <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpression" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +96,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the current view state of the <see cref="T:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" /> object.</summary>
-        <returns>An object that contains the saved state of the <see cref="T:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,10 +119,10 @@
         <Parameter Name="dataSource" Type="System.Web.UI.WebControls.IQueryableDataSource" />
       </Parameters>
       <Docs>
-        <param name="owner">The owner control to use.</param>
-        <param name="context">The context to use.</param>
-        <param name="dataSource">The data source to use.</param>
-        <summary>Executes the expression by using the specified owner control, context, and data source.</summary>
+        <param name="owner">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="dataSource">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +140,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Tracks view-state changes of the <see cref="T:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" /> object so that the changes can be stored in the <see cref="T:System.Web.UI.StateBag" /> object for the object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

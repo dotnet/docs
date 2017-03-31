@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,19 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Identifies the class that performs validation on an <see cref="T:System.Workflow.ComponentModel.Activity" /> that is subject to validation. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- For a list of initial property values for an instance of the ActivityValidatorAttribute class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,23 +30,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="validatorTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="validatorTypeName">Type of the <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" />.</param>
-        <summary>Initializes an instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute" /> class by using the type of the validator.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="validatorTypeName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,23 +48,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="validatorType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="validatorType">The name of the <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" /> type.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute" /> class by using the specified validator type name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="validatorType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidatorTypeName">
@@ -94,15 +66,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the type of the associated <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" /> class.</summary>
-        <value>The name of the type of the associated <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" /> class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

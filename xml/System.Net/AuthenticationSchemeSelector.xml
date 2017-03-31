@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Net.AuthenticationSchemeSelector" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -17,31 +21,9 @@
     <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="httpRequest">The <see cref="T:System.Net.HttpListenerRequest" /> instance for which to select an authentication scheme.</param>
-    <summary>Selects the authentication scheme for an <see cref="T:System.Net.HttpListener" /> instance.</summary>
-    <returns>One of the <see cref="T:System.Net.AuthenticationSchemes" /> values that indicates the method of authentication to use for the specified client request.</returns>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Delegates of this type are used by <xref:System.Net.HttpListener> instances to select an authentication scheme based on the characteristics of a request.  
-  
- An AuthenticationSchemeSelector delegate is passed an <xref:System.Net.HttpListenerRequest> object for each incoming request that has not provided authentication information. The method invoked by the delegate uses the <xref:System.Net.HttpListenerRequest> object and any other available information to decide which authentication scheme to require. The delegate is specified by using the <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> property.  
-  
-   
-  
-## Examples  
- The following example uses an instance of this type to set the <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> property.  
-  
- [!code-vb[NCLListener#2](~/add/codesnippet/visualbasic/t-system.net.authenticat_2_1.vb)]
- [!code-cs[NCLListener#2](~/add/codesnippet/csharp/t-system.net.authenticat_2_1.cs)]  
-  
- The following example shows the implementation of the method invoked by the AuthenticationSchemeSelector delegate in the previous example.  
-  
- [!code-vb[NCLListener#1](~/add/codesnippet/visualbasic/t-system.net.authenticat_2_2.vb)]
- [!code-cs[NCLListener#1](~/add/codesnippet/csharp/t-system.net.authenticat_2_2.cs)]  
-  
- ]]></format>
-    </remarks>
+    <param name="httpRequest">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SaveFileDialog" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,31 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a common dialog that allows the user to specify a filename to save a file as. SaveFileDialog cannot be used by an application that is executing under partial trust.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following figure shows a SaveFileDialog for [!INCLUDE[TLA#tla_winvista](~/add/includes/tlasharptla-winvista-md.md)].  
-  
- ![Save As dialog box](~/add/media/dialogboxesoverviewfigure3.png "Save As dialog box")  
-  
- Starting in [!INCLUDE[TLA2#tla_winvista](~/add/includes/tla2sharptla-winvista-md.md)], open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. Use the <xref:Microsoft.Win32.FileDialog.CustomPlaces%2A> property to set this list of links.  
-  
-<a name="xamlTextUsage_SaveFileDialog"></a>   
-## XAML Text Usage  
- You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
-   
-  
-## Examples  
- The following example demonstrates how to create a SaveFileDialog and process the result.  
-  
- [!code-cs[DialogBoxesOverviewSnippets#SaveFileDialogBoxCODEBEHIND](~/add/codesnippet/csharp/DialogBoxesOverviewSnippets.CSharp/Window1.xaml.cs#savefiledialogboxcodebehind)]
- [!code-vb[DialogBoxesOverviewSnippets#SaveFileDialogBoxCODEBEHIND](~/add/codesnippet/visualbasic/dialogboxesoverviewsnippets/window1.xaml.vb#savefiledialogboxcodebehind)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -56,7 +31,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.SaveFileDialog" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +42,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -79,11 +53,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether <see cref="T:Microsoft.Win32.SaveFileDialog" /> prompts the user for permission to create a file if the user specifies a file that does not exist.</summary>
-        <value>
-          <see langword="true" /> if dialog should prompt prior to saving to a filename that did not previously exist; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">to set this dialog option. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -93,7 +65,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -106,18 +77,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a read-write file stream for the filename selected by the user using <see cref="T:Microsoft.Win32.SaveFileDialog" />.</summary>
-        <returns>A new <see cref="T:System.IO.Stream" /> that contains the selected file.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The file stream that is returned is opened with read-write access (<xref:System.IO.FileMode> and <xref:System.IO.FileAccess>).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">No files were selected in the dialog.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">to set this dialog option. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OverwritePrompt">
@@ -127,7 +89,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -139,11 +100,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether <see cref="T:Microsoft.Win32.SaveFileDialog" /> displays a warning if the user specifies the name of a file that already exists.</summary>
-        <value>
-          <see langword="true" /> if dialog should prompt prior to saving over a filename that previously existed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">to set this dialog option. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -153,7 +112,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -166,9 +124,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets all <see cref="T:Microsoft.Win32.SaveFileDialog" /> properties to their default values.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">to set this dialog option. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
       </Docs>
     </Member>
   </Members>

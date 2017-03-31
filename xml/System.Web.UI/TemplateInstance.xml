@@ -4,37 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateInstance" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how many times an instance of a template can be created.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TemplateInstance enumeration specifies values indicating the number of times an instance of a template can be created. The ttribute class uses values from the TemplateInstance enumeration. In particular, the ttribute.Single and ttribute.Multiple fields specify single and multiple instances of a template, respectively. A single instance of a template allows you to reference controls that are contained within the template.  
-  
- Examples of controls that use the Single value in property metadata include the <xref:System.Web.UI.WebControls.WebParts.CatalogZone.ZoneTemplate%2A> property of the <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control, the <xref:System.Web.UI.WebControls.WebParts.EditorZone.ZoneTemplate%2A> property of the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, and the <xref:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate%2A> property of the <xref:System.Web.UI.WebControls.WebParts.WebPartZone>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TemplateInstance enumeration and the ttribute class. A custom <xref:System.Web.UI.WebControls.LoginView> control, named `MyLoginView`, overrides the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> property and uses the ttribute class to specify that only one instance of the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> property is created.  
-  
- [!code-cs[System.Web.UI.TemplateInstance#1](~/add/codesnippet/csharp/t-system.web.ui.template_1_1.cs)]
- [!code-vb[System.Web.UI.TemplateInstance#1](~/add/codesnippet/visualbasic/t-system.web.ui.template_1_1.vb)]  
-  
- The following code example is an ASPX file that uses the `MyLoginView` control and demonstrates how to access a <xref:System.Web.UI.WebControls.Label> control that is inside the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> property.  
-  
- [!code-cs[System.Web.UI.TemplateInstance#2](~/add/codesnippet/csharp/t-system.web.ui.template_1_2.aspx)]
- [!code-vb[System.Web.UI.TemplateInstance#2](~/add/codesnippet/visualbasic/t-system.web.ui.template_1_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Multiple">
@@ -44,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.TemplateInstance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A template that is instantiated multiple times.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -61,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.TemplateInstance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A template that is instantiated only one time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

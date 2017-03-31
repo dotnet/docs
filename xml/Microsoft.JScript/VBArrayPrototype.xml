@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.VBArrayPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.VBArrayObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.VBArrayConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
-        <value>A reference to a prototype-based object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -57,9 +54,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Determines the number of dimensions in the specified array.</summary>
-        <returns>The number of dimensions in <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -92,18 +88,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="args">An array that represents the indexes of each dimension that specifies the position of the element to get.</param>
-        <summary>Gets the value at the specified position in the specified array.</summary>
-        <returns>The value at the specified position in <paramref name="thisob" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `thisob` has three or fewer dimensions, `args` can contain a comma-separated list of indexes. If `thisob` has four or more dimensions, `args` can contain an array of indexes.  
-  
- ]]></format>
-        </remarks>
+        <param name="thisob">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="lbound">
@@ -113,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -129,10 +117,10 @@
         <Parameter Name="dimension" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dimension">The dimension whose lower bound is determined.</param>
-        <summary>Gets the lower bound of the specified dimension in the specified array.</summary>
-        <returns>The lower bound of <paramref name="dimension" /> in <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dimension">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -159,11 +146,10 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="engine">A reference to the scripting engine.</param>
-        <summary>Converts a <see cref="T:Microsoft.JScript.VBArrayObject" /> object to an <see cref="T:Microsoft.JScript.ArrayObject" /> object.</summary>
-        <returns>
-          <paramref name="thisob" /> expressed as an <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="engine">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +160,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -190,10 +175,10 @@
         <Parameter Name="dimension" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="dimension">The dimension whose upper bound is determined.</param>
-        <summary>Gets the upper bound of the specified dimension in the specified array.</summary>
-        <returns>The upper bound of <paramref name="dimension" /> in <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="dimension">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

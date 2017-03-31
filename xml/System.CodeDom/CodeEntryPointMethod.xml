@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeEntryPointMethod" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,24 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the entry point method of an executable.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A CodeEntryPointMethod is a <xref:System.CodeDom.CodeMemberMethod> that represents the entry point method of an executable.  
-  
-   
-  
-## Examples  
- This example demonstrates using a CodeEntryPointMethod to indicate the method to start program execution at.  
-  
- [!code-cpp[CodeEntryPointMethod#2](~/add/codesnippet/cpp/t-system.codedom.codeent_1.cpp)]
- [!code-cs[CodeEntryPointMethod#2](~/add/codesnippet/csharp/t-system.codedom.codeent_1.cs)]
- [!code-vb[CodeEntryPointMethod#2](~/add/codesnippet/visualbasic/t-system.codedom.codeent_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeEntryPointMethod" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

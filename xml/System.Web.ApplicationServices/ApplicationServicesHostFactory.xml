@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.ApplicationServicesHostFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,39 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a factory class that creates instances of the authentication service, role service, and profile service in managed hosting environments.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This factory class provides a way to create instances of the <xref:System.Web.ApplicationServices.AuthenticationService>, <xref:System.Web.ApplicationServices.ProfileService>, and <xref:System.Web.ApplicationServices.RoleService> classes.  
-  
- To use this factory class, create a WCF Service (.svc) file and specify ApplicationServicesHostFactory in the `ServiceHosting` attribute of the `@ ServiceHost` directive.  
-  
-   
-  
-## Examples  
- The following example shows how to specify ApplicationServicesHostFactory in the `@ ServiceHost` directive of a .svc file to configure the authentication service.  
-  
-```c#  
-<%@ ServiceHost   
-  Language="C#"   
-  Service="System.Web.ApplicationServices.AuthenticationService"   
-  Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
-%>  
-  
-```  
-  
-```vb  
-<%@ ServiceHost   
-  Language="VB"   
-  Service="System.Web.ApplicationServices.AuthenticationService"   
-  Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
-%>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ApplicationServices.ApplicationServicesHostFactory" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,18 +47,11 @@
         <Parameter Name="baseAddresses" Type="System.Uri[]" />
       </Parameters>
       <Docs>
-        <param name="serviceType">The type of service host to create.</param>
-        <param name="baseAddresses">An array of base addresses for the service.</param>
-        <summary>Creates an instance of the service class that has the specified base address or addresses.</summary>
-        <returns>A <see cref="T:System.ServiceModel.ServiceHost" /> instance for the type of service that has the specified base address or addresses.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Usually this method is called automatically by [!INCLUDE[vsindigo](~/add/includes/vsindigo-md.md)] as part of service activation, and you do not have to call the method manually.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceType">To be added.</param>
+        <param name="baseAddresses">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

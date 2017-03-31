@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,21 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides theme settings for activity designers that use a preview mode on the workflow design surface. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- Activity designers that use preview mode on the workflow design surface can have theme settings specific to the preview display area. ActivityPreviewDesignerTheme contains the properties that provide these preview-area specific settings.  
-  
- Activities that provide a preview mode when they are added to the workflow design surface include <xref:System.Workflow.Activities.ConditionedActivityGroup> and <xref:System.Workflow.Activities.EventHandlersActivity>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="theme" Type="System.Workflow.ComponentModel.Design.WorkflowTheme" />
       </Parameters>
       <Docs>
-        <param name="theme">The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> that the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" /> is associated with.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" /> class.</summary>
+        <param name="theme">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,9 +54,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,15 +73,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs any additional initialization tasks for <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" /> that is not performed by <see cref="System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.%23ctor%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.AmbientTheme.UseOperatingSystemSettings%2A> is set to `true`, Initialize sets all <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme> properties to reflect the style settings of the operating system on which Windows Workflow Foundation is installed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAmbientPropertyChanged">
@@ -109,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,16 +93,9 @@
         <Parameter Name="ambientProperty" Type="System.Workflow.ComponentModel.Design.AmbientProperty" />
       </Parameters>
       <Docs>
-        <param name="ambientProperty">The <see cref="T:System.Workflow.ComponentModel.Design.AmbientProperty" /> enumeration value that the activity preview designer theme should now use.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" /> that the ambient property settings for the designer have changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnAmbientPropertyChanged checks the value passed to `ambientProperty` and applies the appropriate ambient theme settings based on that value. If the value is <xref:System.Workflow.ComponentModel.Design.AmbientProperty>, it applies the ambient styles provided by the designer. If the value is <xref:System.Workflow.ComponentModel.Design.AmbientProperty>, it applies the ambient styles provided by the operating system.  
-  
- ]]></format>
-        </remarks>
+        <param name="ambientProperty">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewBackColor">
@@ -138,7 +105,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -156,8 +122,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color set to associate with the background of the activity preview section of the designer.</summary>
-        <value>The <see cref="T:System.Drawing.Color" /> to associate with the background of the activity preview section of the designer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +134,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -186,8 +151,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color set to associate with the border of the activity preview section of the designer.</summary>
-        <value>The <see cref="T:System.Drawing.Color" /> to associate with the border of the activity preview section of the designer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +163,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -216,8 +180,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color set to associate with the foreground of the activity preview section of the designer.</summary>
-        <value>The <see cref="T:System.Drawing.Color" /> to associate with the foreground of the activity preview section of the designer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

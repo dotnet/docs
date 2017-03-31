@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines the contract between [!INCLUDE[vs2010](~/add/includes/vs2010-md.md)] and the [!INCLUDE[wfd1](~/add/includes/wfd1-md.md)] for integrated help provided.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,10 @@
         <Parameter Name="keywordType" Type="System.ComponentModel.Design.HelpKeywordType" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the context attribute to add.</param>
-        <param name="value">The value of the context attribute to add.</param>
-        <param name="keywordType">The <see cref="T:System.ComponentModel.Design.HelpKeywordType" /> that contains identifiers that indicate the type of a Help keyword.</param>
-        <summary>Adds the context attribute.</summary>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="keywordType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +54,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the context attribute to remove.</param>
-        <param name="value">The value of the context attribute to remove.</param>
-        <summary>Removes the context attribute.</summary>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +76,8 @@
         <Parameter Name="helpKeyword" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="helpKeyword">The keyword of the Help topic to display.</param>
-        <summary>Shows the Help topic that corresponds to the specified keyword.</summary>
+        <param name="helpKeyword">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <Parameter Name="helpUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="helpUrl">The URL of the Help topic to display.</param>
-        <summary>Shows the Help topic that corresponds to the specified URL.</summary>
+        <param name="helpUrl">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.HelpKeywordAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -17,60 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the context keyword for a class or member. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the Help keyword for a class is given by the <xref:System.Type.FullName%2A?displayProperty=fullName> property value. For members, the Help keyword is given by the full name of the type that declared the property, plus the property name itself.  
-  
- For example, consider the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property on the <xref:System.Windows.Forms.Button?displayProperty=fullName> control. The class keyword is "System.Windows.Forms.Button", but the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property keyword is "System.Windows.Forms.Control.Text", because the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property is declared on the <xref:System.Windows.Forms.Control?displayProperty=fullName> class, rather than the <xref:System.Windows.Forms.Button?displayProperty=fullName> class itself; the <xref:System.Windows.Forms.Button?displayProperty=fullName> class inherits the property.  
-  
- By contrast, the <xref:System.Windows.Forms.Button.DialogResult%2A?displayProperty=fullName> property is declared on the <xref:System.Windows.Forms.Button?displayProperty=fullName> class, so its keyword is "System.Windows.Forms.Button.DialogResult".  
-  
- When the Help system gets the keywords, it will first look at HelpKeywordAttribute. At the class level, it will return the string specified by the HelpKeywordAttribute. This will not be used for members of the type in question, which will still reflect the declaring type's actual full name, plus the member name. This attribute supports strongly typed classes that have associated common documentation but distinct Help IDs.  
-  
-   
-  
-## Examples  
- The following code example shows how to override this Help system behavior by placing the attribute on the member itself. These are the keywords for the following class, called `DemoComponent`:  
-  
--   Class keyword: "`System.ComponentModel.Component`" (`DemoNamespace.DemoComponent`)  
-  
--   Property1 keyword: "`DemoNamespace.DemoComponent.Property1`" (default)  
-  
--   Property2 keyword: "`SomeNamespace.SomeOtherClass.Property2`" (`DemoNamespace.DemoComponent.Property2`)  
-  
-```c#  
-[HelpKeywordAttribute(typeof(Component))]  
-public class DemoComponent : Component  
-{  
-    public string Property1  
-    {  
-        get  
-        {  
-            return "";  
-        }  
-    }  
-  
-    [HelpKeywordAttribute("SomeNamespace.SomeOtherClass.Property2")]  
-    public string Property2  
-    {  
-        get  
-        {  
-            return "";  
-        }  
-    }  
-}  
-```  
-  
- The following code example demonstrates using the HelpKeywordAttribute class to specify a context keyword. For a complete explanation of this code example, see [How to: Apply Attributes in Windows Forms Controls](../Topic/How%20to:%20Apply%20Attributes%20in%20Windows%20Forms%20Controls.md).  
-  
- [!code-vb[System.ComponentModel.AttributesDemoControl#20](~/add/codesnippet/visualbasic/t-system.componentmodel._129_1.vb)]
- [!code-cs[System.ComponentModel.AttributesDemoControl#20](~/add/codesnippet/csharp/t-system.componentmodel._129_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,12 +32,16 @@ public class DemoComponent : Component
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,18 +52,20 @@ public class DemoComponent : Component
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="keyword" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="keyword">The Help keyword value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" /> class.</summary>
+        <param name="keyword">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="keyword" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,25 +75,20 @@ public class DemoComponent : Component
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="t" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="t">The type from which the Help keyword will be taken.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" /> class from the given type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Help keyword will be set to the <xref:System.Type.FullName%2A> property of `t`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="t" /> is <see langword="null" />.</exception>
+        <param name="t">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -145,22 +98,19 @@ public class DemoComponent : Component
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.HelpKeywordAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the default value for <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" />. This field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value for <xref:System.ComponentModel.Design.HelpKeywordAttribute> is `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -170,8 +120,12 @@ public class DemoComponent : Component
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -180,18 +134,10 @@ public class DemoComponent : Component
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" /> to compare with the current <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" />.</param>
-        <summary>Determines whether two <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" /> instances are equal.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" /> is equal to the current <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Two instances of a <xref:System.ComponentModel.Design.HelpKeywordAttribute> are equal if their Help keywords are equal.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -201,16 +147,20 @@ public class DemoComponent : Component
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance.</summary>
-        <returns>A hash code for the current <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,15 +171,19 @@ public class DemoComponent : Component
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Help keyword supplied by this attribute.</summary>
-        <value>The Help keyword supplied by this attribute.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,17 +194,20 @@ public class DemoComponent : Component
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the Help keyword is <see langword="null" />.</summary>
-        <returns>
-          <see langword="true" /> if the Help keyword is <see langword="null" />; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

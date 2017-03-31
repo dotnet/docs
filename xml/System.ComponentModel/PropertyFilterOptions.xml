@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyFilterOptions" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies which properties should be reported by type descriptors, specifically the <see cref="System.ComponentModel.TypeDescriptor.GetProperties%2A" /> method. This enumeration is used to specify the value of the <see cref="System.ComponentModel.PropertyFilterAttribute.Filter%2A" /> property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This filter mechanism is only implemented by the custom <xref:System.ComponentModel.DependencyPropertyDescriptor> for <xref:System.Windows.DependencyObject>.  
-  
- Invalid and Valid are relevant only for attached properties. The validity of a property is determined by working with the following attributes: <xref:System.Windows.AttachedPropertyBrowsableForChildrenAttribute> , <xref:System.Windows.AttachedPropertyBrowsableForTypeAttribute>, <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute> which define the intended scope of the attached property in the object tree once the [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] is loaded. Designer applications that populate property grids and include attached properties in the grid must examine the value or presence of these attributes and the relative position of the current element versus either a parent or child element that "owns" the attached property. The owner-setter relationship together with the attribute values and PropertyFilterOptions will define whether a given attached property that is set on an element is valid or invalid.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -36,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return all properties.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -53,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return only those properties that are not valid given the current context of the object. See Remarks.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -70,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return no properties</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetValues">
@@ -87,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return only those properties that have local values currently set.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsetValues">
@@ -104,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return only those properties whose local values are not set, or do not have properties set in an external expression store (such as binding or deferred resource).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -121,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return any property that is valid on the  object in the current scope. See Remarks.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

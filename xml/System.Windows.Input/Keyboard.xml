@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Keyboard" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,33 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the keyboard device.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Keyboard class provides keyboard-related events, methods, and properties that provide information regarding the state of the keyboard.  
-  
- Each of the events that Keyboard defines as an attached event is also re-exposed by the base element classes <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> as a new routed event. Generally, it is more convenient to handle keyboard events for an application on <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>, rather than using the Keyboard events. For details, see [Input Overview](../Topic/Input%20Overview.md).  
-  
- In order for an element to receive keyboard input, the element must be focusable. Most <xref:System.Windows.UIElement> derived objects are focusable by default. Otherwise, to make an element focusable, set the <xref:System.Windows.UIElement.Focusable%2A> property on the base element to `true`.  For more information on the base elements, see [Base Elements Overview](../Topic/Base%20Elements%20Overview.md).  
-  
- <xref:System.Windows.Controls.Panel> classes, such as <xref:System.Windows.Controls.StackPanel> and <xref:System.Windows.Controls.Canvas>, set the default value of <xref:System.Windows.UIElement.Focusable%2A> to `false`. Therefore, for these objects to obtain keyboard focus, <xref:System.Windows.UIElement.Focusable%2A> must be set to `true`.  
-  
- Keyboard focus refers to the object that is receiving keyboard input. The element with keyboard focus has <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  There can be only one element with keyboard focus on the entire desktop.  Logical focus refers to the object within a focus scope that has focus.  For more information on focus, keyboard focus, and logical focus, see [Input Overview](../Topic/Input%20Overview.md) and [Focus Overview](../Topic/Focus%20Overview.md).  
-  
- The static members of the Keyboard class delegate to the primary <xref:System.Windows.Input.KeyboardDevice> of the calling thread, so they are not necessarily thread-safe.  
-  
-   
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Input.Keyboard.IsKeyToggled%2A> method to determine if a key is in the toggled state. If the <xref:System.Windows.Input.Key> passed to <xref:System.Windows.Input.Keyboard.IsKeyToggled%2A> is toggled, the background of a button is changed.  
-  
- [!code-cs[keyargssnippetsample#KeyEventArgsKeyBoardIsToggled](~/add/codesnippet/csharp/KeyArgsSnippetSample/Window1.xaml.cs#keyeventargskeyboardistoggled)]
- [!code-vb[keyargssnippetsample#KeyEventArgsKeyBoardIsToggled](~/add/codesnippet/visualbasic/keyargssnippetsample/window1.xaml.vb#keyeventargskeyboardistoggled)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddGotKeyboardFocusHandler">
@@ -48,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,17 +32,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardFocusChangedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.Keyboard.GotKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddKeyboardInputProviderAcquireFocusHandler">
@@ -89,17 +55,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddKeyDownHandler">
@@ -109,7 +68,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,17 +78,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.Keyboard.KeyDown" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddKeyUpHandler">
@@ -140,7 +91,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,17 +101,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.Keyboard.KeyUp" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddLostKeyboardFocusHandler">
@@ -171,7 +114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,17 +124,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardFocusChangedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.Keyboard.LostKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPreviewGotKeyboardFocusHandler">
@@ -202,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,17 +147,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardFocusChangedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.Keyboard.PreviewGotKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPreviewKeyboardInputProviderAcquireFocusHandler">
@@ -243,17 +170,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPreviewKeyDownHandler">
@@ -263,7 +183,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,17 +193,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.Keyboard.PreviewKeyDown" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPreviewKeyUpHandler">
@@ -294,7 +206,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -305,17 +216,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.Keyboard.PreviewKeyUp" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPreviewLostKeyboardFocusHandler">
@@ -325,7 +229,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -336,17 +239,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardFocusChangedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.Keyboard.PreviewLostKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access and [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute processing of the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearFocus">
@@ -363,17 +259,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears focus.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If focus is within a Win32 window, WPF calls the ClearFocus method on restoration of focus when a menu is closed.  
-  
- When leaving menu mode, Win32 focus is returned to the hosted child HWND, and no element has WPF focus.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultRestoreFocusMode">
@@ -389,8 +276,8 @@
         <ReturnType>System.Windows.Input.RestoreFocusMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the behavior of [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] when restoring focus.</summary>
-        <value>An enumeration value that specifies the behavior of [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] when restoring focus. The default in <see cref="T:System.Windows.Input.RestoreFocusMode" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,7 +288,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -411,29 +297,10 @@
         <Parameter Name="element" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to set keyboard focus.</param>
-        <summary>Sets keyboard focus on the specified element.</summary>
-        <returns>The element with keyboard focus.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For an element to receive keyboard input, the element must be focusable. To make an element focusable, set the <xref:System.Windows.UIElement.Focusable%2A> property on the base element to `true`.  For more information on the base elements, see [Base Elements Overview](../Topic/Base%20Elements%20Overview.md).  <xref:System.Windows.Controls.Panel> classes, such as <xref:System.Windows.Controls.StackPanel> and <xref:System.Windows.Controls.Canvas>, set the default value of <xref:System.Windows.UIElement.Focusable%2A> to `false`; therefore, for these objects to obtain keyboard focus, <xref:System.Windows.UIElement.Focusable%2A> must be set to `true`.  
-  
- Keyboard focus refers to the object that is receiving keyboard input. The element with keyboard focus has <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  There can be only one element with keyboard focus on the entire desktop.  Logical focus refers to the object within a focus scope that has focus.  For more information on focus, keyboard focus, and logical focus, see [Input Overview](../Topic/Input%20Overview.md) and [Focus Overview](../Topic/Focus%20Overview.md).  
-  
- An element with keyboard focus also has logical focus for the focus scope the element belongs to.  An element with logical focus may or may not have keyboard focus.  
-  
-   
-  
-## Examples  
- The following example shows a <xref:System.Windows.FrameworkElement.Loaded> event handler that sets keyboard focus on a <xref:System.Windows.Controls.Button>.  
-  
- [!code-cs[focussample#FocusSampleSetFocus](~/add/codesnippet/csharp/FocusSample/Window1.xaml.cs#focussamplesetfocus)]
- [!code-vb[focussample#FocusSampleSetFocus](~/add/codesnippet/visualbasic/focussample/window1.xaml.vb#focussamplesetfocus)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusedElement">
@@ -443,33 +310,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element that has keyboard focus.</summary>
-        <value>The focused element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Keyboard focus refers to the object that is receiving keyboard input. The element with keyboard focus has <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  There can be only one element with keyboard focus on the entire desktop.  Logical focus refers to the object within a focus scope that has focus.  For more information on focus, keyboard focus, and logical focus, see [Input Overview](../Topic/Input%20Overview.md) and [Focus Overview](../Topic/Focus%20Overview.md).  
-  
- An element with keyboard focus also has logical focus for the focus scope the element belongs to.  An element with logical focus may or may not have keyboard focus.  
-  
-   
-  
-## Examples  
- The following example gets the element with keyboard focus and casts it to a <xref:System.Windows.Controls.Control>.  If the element with keyboard focus is a <xref:System.Windows.Controls.Control>, the background of the element is changed.  
-  
- [!code-cs[focussample#GetKeyboardFocusedElement](~/add/codesnippet/csharp/FocusSample/Window1.xaml.cs#getkeyboardfocusedelement)]
- [!code-vb[focussample#GetKeyboardFocusedElement](~/add/codesnippet/visualbasic/focussample/window1.xaml.vb#getkeyboardfocusedelement)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKeyStates">
@@ -479,7 +328,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -489,27 +337,10 @@
         <Parameter Name="key" Type="System.Windows.Input.Key" />
       </Parameters>
       <Docs>
-        <param name="key">The specified key.</param>
-        <summary>Gets the set of key states for the specified key.</summary>
-        <returns>A bitwise combination of the <see cref="T:System.Windows.Input.KeyStates" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Input.KeyStates> is a bit field enumeration; therefore, it is possible for a key to be in multiple states.  For example, a key could be in the pressed state as well as in the toggled state.  Use bit comparison operations to determine the exact state or states the key is in.  
-  
- The <xref:System.Windows.Input.Keyboard> class provides a number of static methods which can also be used to obtain key state information.  The methods are: <xref:System.Windows.Input.Keyboard.IsKeyDown%2A>, <xref:System.Windows.Input.Keyboard.IsKeyUp%2A>, and <xref:System.Windows.Input.Keyboard.IsKeyToggled%2A>.  
-  
-   
-  
-## Examples  
- The following example shows how to use the GetKeyStates method to determine if the <xref:System.Windows.Input.Key> key is in the <xref:System.Windows.Input.KeyStates> state.  A bit AND operation is used to compare the <xref:System.Windows.Input.KeyStates> returned from GetKeyStates and the <xref:System.Windows.Input.Key> state. If the key is down, the background of a <xref:System.Windows.Controls.Button> is changed.  
-  
- [!code-cs[keyargssnippetsample#KeyEventArgsKeyBoardGetKeyStates](~/add/codesnippet/csharp/KeyArgsSnippetSample/Window1.xaml.cs#keyeventargskeyboardgetkeystates)]
- [!code-vb[keyargssnippetsample#KeyEventArgsKeyBoardGetKeyStates](~/add/codesnippet/visualbasic/keyargssnippetsample/window1.xaml.vb#keyeventargskeyboardgetkeystates)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GotKeyboardFocusEvent">
@@ -519,22 +350,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.Keyboard.GotKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Routed event identifiers are created when routed events are registered, and the result is stored as a field on the class that registers the routed event. These identifiers contain an identifying name, owner type, handler type, routing strategy, and a utility method for adding owners for the event. You often use these identifiers as parameters to event system methods, to identify a particular routed event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsKeyDown">
@@ -544,7 +367,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -554,26 +376,10 @@
         <Parameter Name="key" Type="System.Windows.Input.Key" />
       </Parameters>
       <Docs>
-        <param name="key">The specified key.</param>
-        <summary>Determines whether the specified key is pressed.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="key" /> is in the down state; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.Keyboard.GetKeyStates%2A> method can be used to determine the set of states of a specific key.  
-  
-   
-  
-## Examples  
- The following example shows how to use the IsKeyDown method to determine the state of a specific key.  The <xref:System.Windows.Input.Key> key is passed to the IsKeyDown method.  If the method returns `true`, the background of a <xref:System.Windows.Controls.Button> is changed.  
-  
- [!code-cs[keyargssnippetsample#KeyEventArgsKeyBoardIsKeyDown](~/add/codesnippet/csharp/KeyArgsSnippetSample/Window1.xaml.cs#keyeventargskeyboardiskeydown)]
- [!code-vb[keyargssnippetsample#KeyEventArgsKeyBoardIsKeyDown](~/add/codesnippet/visualbasic/keyargssnippetsample/window1.xaml.vb#keyeventargskeyboardiskeydown)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsKeyToggled">
@@ -583,7 +389,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -593,26 +398,10 @@
         <Parameter Name="key" Type="System.Windows.Input.Key" />
       </Parameters>
       <Docs>
-        <param name="key">The specified key.</param>
-        <summary>Determines whether the specified key is toggled.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="key" /> is in the toggled state; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.Keyboard.GetKeyStates%2A> method can be used to determine the set of states of a specific key.  
-  
-   
-  
-## Examples  
- The following example shows how to use the IsKeyToggled method to determine the state of a specific key. The <xref:System.Windows.Input.Key> key is passed to the IsKeyToggled method.  If the method returns `true`, then the background of a <xref:System.Windows.Controls.Button> is changed.  
-  
- [!code-cs[keyargssnippetsample#KeyEventArgsKeyBoardIsToggled](~/add/codesnippet/csharp/KeyArgsSnippetSample/Window1.xaml.cs#keyeventargskeyboardistoggled)]
- [!code-vb[keyargssnippetsample#KeyEventArgsKeyBoardIsToggled](~/add/codesnippet/visualbasic/keyargssnippetsample/window1.xaml.vb#keyeventargskeyboardistoggled)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsKeyUp">
@@ -622,7 +411,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -632,26 +420,10 @@
         <Parameter Name="key" Type="System.Windows.Input.Key" />
       </Parameters>
       <Docs>
-        <param name="key">The key to check.</param>
-        <summary>Determines whether the specified key is released.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="key" /> is in the up state; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.Keyboard.GetKeyStates%2A> method can be used to determine the set of states of a specific key.  
-  
-   
-  
-## Examples  
- The following example shows how to use the IsKeyUp method to determine the state of a specific key.  The <xref:System.Windows.Input.Key> key is passed to the IsKeyUp method.  If the method returns `true`, then the background of a <xref:System.Windows.Controls.Button> is changed.  
-  
- [!code-cs[keyargssnippetsample#KeyEventArgsKeyBoardIsKeyUp](~/add/codesnippet/csharp/KeyArgsSnippetSample/Window1.xaml.cs#keyeventargskeyboardiskeyup)]
- [!code-vb[keyargssnippetsample#KeyEventArgsKeyBoardIsKeyUp](~/add/codesnippet/visualbasic/keyargssnippetsample/window1.xaml.vb#keyeventargskeyboardiskeyup)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyboardInputProviderAcquireFocusEvent">
@@ -667,15 +439,8 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Routed event identifiers are created when routed events are registered, and the result is stored as a field on the class that registers the routed event. These identifiers contain an identifying name, owner type, handler type, routing strategy, and a utility method for adding owners for the event. You often use these identifiers as parameters to event system methods, to identify a particular routed event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyDownEvent">
@@ -685,22 +450,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.Keyboard.KeyDown" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Routed event identifiers are created when routed events are registered, and the result is stored as a field on the class that registers the routed event. These identifiers contain an identifying name, owner type, handler type, routing strategy, and a utility method for adding owners for the event. You often use these identifiers as parameters to event system methods, to identify a particular routed event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyUpEvent">
@@ -710,22 +467,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.Keyboard.KeyUp" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Routed event identifiers are created when routed events are registered, and the result is stored as a field on the class that registers the routed event. These identifiers contain an identifying name, owner type, handler type, routing strategy, and a utility method for adding owners for the event. You often use these identifiers as parameters to event system methods, to identify a particular routed event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LostKeyboardFocusEvent">
@@ -735,22 +484,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.Keyboard.LostKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Routed event identifiers are created when routed events are registered, and the result is stored as a field on the class that registers the routed event. These identifiers contain an identifying name, owner type, handler type, routing strategy, and a utility method for adding owners for the event. You often use these identifiers as parameters to event system methods, to identify a particular routed event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Modifiers">
@@ -760,31 +501,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ModifierKeys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the set of <see cref="T:System.Windows.Input.ModifierKeys" /> that are currently pressed.</summary>
-        <value>A bitwise combination of the <see cref="T:System.Windows.Input.ModifierKeys" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Input.ModifierKeys> is a bit field enumeration, so it is possible for multiple modifier keys to be pressed at the same time.  Use bit operations to determine the exact set of modifier keys pressed.  
-  
-   
-  
-## Examples  
- The following example uses a bit AND comparison to determine if the <xref:System.Windows.Input.ModifierKeys> modifier key is pressed.  
-  
- [!code-cs[keyargssnippetsample#KeyboardModifiersBitOperation](~/add/codesnippet/csharp/KeyArgsSnippetSample/Window1.xaml.cs#keyboardmodifiersbitoperation)]
- [!code-vb[keyargssnippetsample#KeyboardModifiersBitOperation](~/add/codesnippet/visualbasic/keyargssnippetsample/window1.xaml.vb#keyboardmodifiersbitoperation)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewGotKeyboardFocusEvent">
@@ -794,22 +519,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.Keyboard.PreviewGotKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Routed event identifiers are created when routed events are registered, and the result is stored as a field on the class that registers the routed event. These identifiers contain an identifying name, owner type, handler type, routing strategy, and a utility method for adding owners for the event. You often use these identifiers as parameters to event system methods, to identify a particular routed event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyboardInputProviderAcquireFocusEvent">
@@ -825,15 +542,8 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Routed event identifiers are created when routed events are registered, and the result is stored as a field on the class that registers the routed event. These identifiers contain an identifying name, owner type, handler type, routing strategy, and a utility method for adding owners for the event. You often use these identifiers as parameters to event system methods, to identify a particular routed event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyDownEvent">
@@ -843,22 +553,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.Keyboard.PreviewKeyDown" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Routed event identifiers are created when routed events are registered, and the result is stored as a field on the class that registers the routed event. These identifiers contain an identifying name, owner type, handler type, routing strategy, and a utility method for adding owners for the event. You often use these identifiers as parameters to event system methods, to identify a particular routed event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyUpEvent">
@@ -868,22 +570,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.Keyboard.PreviewKeyUp" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Routed event identifiers are created when routed events are registered, and the result is stored as a field on the class that registers the routed event. These identifiers contain an identifying name, owner type, handler type, routing strategy, and a utility method for adding owners for the event. You often use these identifiers as parameters to event system methods, to identify a particular routed event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewLostKeyboardFocusEvent">
@@ -893,22 +587,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.Keyboard.PreviewLostKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Routed event identifiers are created when routed events are registered, and the result is stored as a field on the class that registers the routed event. These identifiers contain an identifying name, owner type, handler type, routing strategy, and a utility method for adding owners for the event. You often use these identifiers as parameters to event system methods, to identify a particular routed event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrimaryDevice">
@@ -918,7 +604,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -930,16 +615,9 @@
         <ReturnType>System.Windows.Input.KeyboardDevice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the primary keyboard input device.</summary>
-        <value>The device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property supports the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveGotKeyboardFocusHandler">
@@ -949,7 +627,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -960,17 +637,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardFocusChangedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see cref="System.Windows.Input.Keyboard.GotKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveKeyboardInputProviderAcquireFocusHandler">
@@ -990,17 +660,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see cref="System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveKeyDownHandler">
@@ -1010,7 +673,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1021,17 +683,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see cref="System.Windows.Input.Keyboard.KeyDown" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveKeyUpHandler">
@@ -1041,7 +696,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1052,17 +706,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see cref="System.Windows.Input.Keyboard.KeyUp" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveLostKeyboardFocusHandler">
@@ -1072,7 +719,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1083,17 +729,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardFocusChangedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see cref="System.Windows.Input.Keyboard.LostKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewGotKeyboardFocusHandler">
@@ -1103,7 +742,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1114,17 +752,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardFocusChangedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see cref="System.Windows.Input.Keyboard.PreviewGotKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewKeyboardInputProviderAcquireFocusHandler">
@@ -1144,17 +775,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see cref="System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewKeyDownHandler">
@@ -1164,7 +788,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1175,17 +798,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see cref="System.Windows.Input.Keyboard.PreviewKeyDown" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewKeyUpHandler">
@@ -1195,7 +811,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1206,17 +821,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see cref="System.Windows.Input.Keyboard.PreviewKeyUp" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewLostKeyboardFocusHandler">
@@ -1226,7 +834,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1237,17 +844,10 @@
         <Parameter Name="handler" Type="System.Windows.Input.KeyboardFocusChangedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see cref="System.Windows.Input.Keyboard.PreviewLostKeyboardFocus" /> attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides attached property accessors for code access to the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus?displayProperty=fullName> attached event.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

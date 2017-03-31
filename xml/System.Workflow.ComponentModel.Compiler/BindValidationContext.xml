@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.BindValidationContext" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the context for the validation of an <see cref="T:System.Workflow.ComponentModel.ActivityBind" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="targetType">The <see cref="T:System.Type" /> of the target of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.BindValidationContext" /> class, while initializing the <see cref="T:System.Type" /> of the target of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</summary>
+        <param name="targetType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -64,11 +52,10 @@
         <Parameter Name="access" Type="System.Workflow.ComponentModel.Compiler.AccessTypes" />
       </Parameters>
       <Docs>
-        <param name="targetType">The <see cref="T:System.Type" /> of the target of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> represented by this instance.</param>
-        <param name="access">The <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> of the target of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> represented by this instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.BindValidationContext" /> class, initializing the <see cref="T:System.Type" /> and the <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> of the target of the bind represented by this instance.</summary>
+        <param name="targetType">To be added.</param>
+        <param name="access">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Access">
@@ -78,15 +65,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Compiler.AccessTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> of the target of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> represented by this instance.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> of the target of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> represented by this instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,15 +83,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Type" /> of the target of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> represented by this instance.</summary>
-        <value>The <see cref="T:System.Type" /> of the target of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> represented by this instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

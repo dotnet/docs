@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Exposes a data item in an <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Data items that are not also <xref:System.Windows.UIElement> types do not have children; however, they can have a <xref:System.Windows.UIElement> tree and a corresponding [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] tree.  
-  
- For example, a <xref:System.Windows.Controls.ListBox> can have a collection of strings that contain data items. When those items are processed by an <xref:System.Windows.Controls.ItemsControl> for visualization, a <xref:System.Windows.UIElement> tree is created for them. This tree can have a corresponding [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] tree. After the tree is created, [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] merges the <xref:System.Windows.UIElement> tree into a [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] tree. ItemAutomationPeer works with its <xref:System.Windows.UIElement> counterpart, if it exists, to obtain more information about the <xref:System.Windows.UIElement> tree.  
-  
- Only visible data items, or more precisely, the corresponding <xref:System.Windows.UIElement> trees, have this dualism. Non-visible data items, which have no corresponding <xref:System.Windows.UIElement> trees, have only one ItemAutomationPeer.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +26,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,9 +33,9 @@
         <Parameter Name="itemsControlAutomationPeer" Type="System.Windows.Automation.Peers.ItemsControlAutomationPeer" />
       </Parameters>
       <Docs>
-        <param name="item">The data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</param>
-        <param name="itemsControlAutomationPeer">The <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" /> that is associated with the <see cref="T:System.Windows.Controls.ItemsControl" /> that holds the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <summary>Provides initialization for base class values when called by the constructor of a derived class.</summary>
+        <param name="item">To be added.</param>
+        <param name="itemsControlAutomationPeer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,16 +53,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the accelerator key for the <see cref="T:System.Windows.UIElement" /> that corresponds to the data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</summary>
-        <returns>The accelerator key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetAcceleratorKey%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAccessKeyCore">
@@ -86,7 +65,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,16 +72,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the access key for the <see cref="T:System.Windows.UIElement" /> that corresponds to the data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</summary>
-        <returns>The access key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetAccessKey%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationIdCore">
@@ -113,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -121,18 +91,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the string that uniquely identifies the <see cref="T:System.Windows.UIElement" /> that corresponds to the data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</summary>
-        <returns>A string that contains the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] identifier.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] identifier is the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property. If the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property is not set, the value is the <xref:System.Windows.FrameworkElement.Name%2A> property.  
-  
- This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetAutomationId%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBoundingRectangleCore">
@@ -142,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,16 +110,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Rect" /> that represents the bounding rectangle of the specified <see cref="T:System.Windows.UIElement" />.</summary>
-        <returns>The bounding rectangle.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetBoundingRectangle%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
@@ -169,7 +122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -177,16 +129,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.UIElement" /> that corresponds to the data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</summary>
-        <returns>The collection of child elements.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetChildren%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
@@ -196,7 +141,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,16 +148,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Point" /> that represents the clickable space that is on the specified <see cref="T:System.Windows.UIElement" />.</summary>
-        <returns>The point that represents the clickable space that is on the specified <see cref="T:System.Windows.UIElement" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHelpTextCore">
@@ -223,7 +160,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,16 +167,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the string that describes the functionality of the <see cref="T:System.Windows.UIElement" /> that corresponds to the data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</summary>
-        <returns>The help text.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetHelpText%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemStatusCore">
@@ -250,7 +179,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,16 +186,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a string that conveys the visual status of the specified <see cref="T:System.Windows.UIElement" />.</summary>
-        <returns>The status. Examples include "Busy" or "Online".</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetItemStatus%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemTypeCore">
@@ -277,7 +198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,16 +205,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a human-readable string that contains the type of item that the specified <see cref="T:System.Windows.UIElement" /> represents.</summary>
-        <returns>The item type. An example includes "Mail Message" or "Contact".</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetItemType%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLabeledByCore">
@@ -304,7 +217,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -312,16 +224,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the <see cref="T:System.Windows.Controls.Label" /> that is targeted to the specified <see cref="T:System.Windows.UIElement" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> for the element that is targeted by the <see cref="T:System.Windows.Controls.Label" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">
@@ -331,7 +236,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -339,18 +243,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the text label of the <see cref="T:System.Windows.UIElement" /> that corresponds to the data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</summary>
-        <returns>The text label.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can think of the name property as if it were a string of text that users use to explain which control they are referring to. Make certain that you have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/add/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
-  
- This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetName%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOrientationCore">
@@ -360,7 +255,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -368,16 +262,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the specified <see cref="T:System.Windows.UIElement" /> is laid out in a particular direction.</summary>
-        <returns>The direction of the specified <see cref="T:System.Windows.UIElement" />. Optionally, the method returns <see cref="T:System.Windows.Automation.Peers.AutomationOrientation" /> if the <see cref="T:System.Windows.UIElement" /> is not laid out in a particular direction.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.GetOrientation%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
@@ -396,17 +283,10 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">An enumeration value that specifies the control pattern.</param>
-        <summary>Returns the object that supports the specified control pattern of the element that is associated with this automation peer.</summary>
-        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the item is not in the visual tree, this method returns a `this` pointer. If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="patternInterface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasKeyboardFocusCore">
@@ -416,7 +296,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -424,17 +303,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the specified <see cref="T:System.Windows.UIElement" /> currently has keyboard input focus.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Windows.UIElement" /> has keyboard input focus; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.HasKeyboardFocus%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsContentElementCore">
@@ -444,7 +315,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -452,17 +322,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the specified <see cref="T:System.Windows.UIElement" /> contains data that is presented to the user.</summary>
-        <returns>
-          <see langword="true" /> if the element is a content element; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.IsContentElement%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsControlElementCore">
@@ -472,7 +334,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -480,17 +341,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> is understood by the end user as interactive.</summary>
-        <returns>
-          <see langword="true" /> if the element is a control; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection. The user might understand the <xref:System.Windows.UIElement> as contributing to the logical structure of the control in the [!INCLUDE[TLA2#tla_gui](~/add/includes/tla2sharptla-gui-md.md)]. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.IsControlElement%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabledCore">
@@ -500,7 +353,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -508,17 +360,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the specified <see cref="T:System.Windows.UIElement" /> can receive and send events.</summary>
-        <returns>
-          <see langword="true" /> if the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] peer can receive and send events; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.IsEnabled%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusableCore">
@@ -528,7 +372,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -536,17 +379,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the specified <see cref="T:System.Windows.UIElement" /> can accept keyboard focus.</summary>
-        <returns>
-          <see langword="true" /> if the element can accept keyboard focus; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.IsKeyboardFocusable%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOffscreenCore">
@@ -556,7 +391,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -564,19 +398,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the specified <see cref="T:System.Windows.UIElement" /> is off the screen.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Windows.UIElement" /> is not on the screen; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen%2A>.  
-  
- This method does not indicate whether the element is visible. In some circumstances, an element is on the screen but is still not visible. For example, if the element is obscured by other elements, it might not be visible. In this case, the method returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPasswordCore">
@@ -586,7 +410,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -594,17 +417,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the specified <see cref="T:System.Windows.UIElement" /> contains protected content.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Windows.UIElement" /> contains protected content; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.IsPassword%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForFormCore">
@@ -614,7 +429,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -622,17 +436,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the specified <see cref="T:System.Windows.UIElement" /> is required to be completed on a form.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Windows.UIElement" /> is required to be completed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.UIElement> corresponds to the data item in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection that is associated with this <xref:System.Windows.Automation.Peers.ItemAutomationPeer>. This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.IsRequiredForForm%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -642,15 +448,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</summary>
-        <value>The data item.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,15 +466,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.ItemsControlAutomationPeer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" /> that is associated with the <see cref="T:System.Windows.Controls.ItemsControl" /> that holds the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</summary>
-        <value>The <see cref="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" /> that is associated with the <see cref="T:System.Windows.Controls.ItemsControl" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -680,7 +484,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -688,15 +491,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the keyboard input focus on the specified <see cref="T:System.Windows.UIElement" />. The <see cref="T:System.Windows.UIElement" /> corresponds to the data item in the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by <xref:System.Windows.Automation.Peers.AutomationPeer.SetFocus%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IVirtualizedItemProvider.Realize">
@@ -713,15 +509,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Makes the virtual item fully accessible as a UI Automation element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.ItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IVirtualizedItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

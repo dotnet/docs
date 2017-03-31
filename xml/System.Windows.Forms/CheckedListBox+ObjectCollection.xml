@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckedListBox.ObjectCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the collection of items in a <see cref="T:System.Windows.Forms.CheckedListBox" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection is accessed from the parent control, <xref:System.Windows.Forms.CheckedListBox>, by the <xref:System.Windows.Forms.CheckedListBox.Items%2A> property. To create a collection of objects to display in the <xref:System.Windows.Forms.CheckedListBox> control, you can add or remove the items individually by using the <xref:System.Windows.Forms.CheckedListBox.ObjectCollection.Add%2A> and <xref:System.Windows.Forms.ListBox.ObjectCollection.Remove%2A> methods.  
-  
-   
-  
-## Examples  
- The following example enumerates the items in the <xref:System.Windows.Forms.CheckedListBox> and checks every other item in the list. The example demonstrates using the <xref:System.Windows.Forms.CheckedListBox.Items%2A> property to get the CheckedListBox.ObjectCollection to get the <xref:System.Windows.Forms.ListBox.ObjectCollection.Count%2A> of items.  
-  
- The example also demonstrates using the <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> and <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> methods to set the check state of an item. For every other item that is to be checked, <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> is called to set the <xref:System.Windows.Forms.CheckState> to `Indeterminate`, while <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> is called on the other item to set the checked state to `Checked`.  
-  
- [!code-cs[CheckedListBox#3](~/add/codesnippet/csharp/t-system.windows.forms.c_18_1.cs)]
- [!code-cpp[CheckedListBox#3](~/add/codesnippet/cpp/t-system.windows.forms.c_18_1.cpp)]
- [!code-vb[CheckedListBox#3](~/add/codesnippet/visualbasic/t-system.windows.forms.c_18_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.CheckedListBox" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Forms.CheckedListBox" /> that owns the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.CheckedListBox.ObjectCollection" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,30 +50,11 @@
         <Parameter Name="isChecked" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="item">An object representing the item to add to the collection.</param>
-        <param name="isChecked">
-          <see langword="true" /> to check the item; otherwise, <see langword="false" />.</param>
-        <summary>Adds an item to the list of items for a <see cref="T:System.Windows.Forms.CheckedListBox" />, specifying the object to add and whether it is checked.</summary>
-        <returns>The index of the newly added item.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method adds an item to the list. For a list, the item is added to the end of the existing list of items. For a sorted checked list box, the item is inserted into the list according to its sorted position. A `SystemException` occurs if there is insufficient space available to store the new item.  
-  
-   
-  
-## Examples  
- The following code example demonstrates initializing a <xref:System.Windows.Forms.CheckedListBox> control by setting the <xref:System.Windows.Forms.CheckedListBox.CheckOnClick%2A>, <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A>, and <xref:System.Windows.Forms.CheckedListBox.ThreeDCheckBoxes%2A> properties. The example populates the <xref:System.Windows.Forms.CheckedListBox> with controls and sets the <xref:System.Windows.Forms.CheckedListBox.DisplayMember%2A> to the <xref:System.Windows.Forms.Control.Name%2A?displayProperty=fullName> property of the control.  
-  
- To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.CheckedListBox> named CheckedListBox1 and call the `InitializeCheckListBox` method from the form's constructor or `Load` method.  
-  
- [!code-cpp[System.Windows.Forms.PropertyGridExample#1](~/add/codesnippet/cpp/cb5fa943-2775-4d81-a74b-_1.cpp)]
- [!code-cs[System.Windows.Forms.PropertyGridExample#1](~/add/codesnippet/csharp/cb5fa943-2775-4d81-a74b-_1.cs)]
- [!code-vb[System.Windows.Forms.PropertyGridExample#1](~/add/codesnippet/visualbasic/cb5fa943-2775-4d81-a74b-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <param name="isChecked">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -104,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,19 +74,11 @@
         <Parameter Name="check" Type="System.Windows.Forms.CheckState" />
       </Parameters>
       <Docs>
-        <param name="item">An object representing the item to add to the collection.</param>
-        <param name="check">The initial <see cref="T:System.Windows.Forms.CheckState" /> for the checked portion of the item.</param>
-        <summary>Adds an item to the list of items for a <see cref="T:System.Windows.Forms.CheckedListBox" />, specifying the object to add and the initial checked value.</summary>
-        <returns>The index of the newly added item.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method adds an item to the checked list box. For an unsorted checked list box, the item is added to the end of the existing list of items. For a sorted checked list box, the item is inserted into the list according to its sorted position. A `SystemException` occurs if there is insufficient space available to store the new item.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="check" /> parameter is not one of the valid <see cref="T:System.Windows.Forms.CheckState" /> values.</exception>
+        <param name="item">To be added.</param>
+        <param name="check">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

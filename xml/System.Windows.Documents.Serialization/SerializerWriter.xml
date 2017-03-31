@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.SerializerWriter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the abstract methods and events that are required to implement a plug-in document output serializer.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example illustrates the use of SerializerWriter.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- [!code-cs[DocumentSerialize#DocSerializeFileFilter](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializefilefilter)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,27 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Instances of <xref:System.Windows.Documents.Serialization.SerializerWriter> should be created by using the <xref:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter%2A> method of a <xref:System.Windows.Documents.Serialization.SerializerProvider> object, not the <xref:System.Windows.Documents.Serialization.ISerializerFactory.CreateSerializerWriter%2A> method of an <xref:System.Windows.Documents.Serialization.ISerializerFactory> object.  
-  
-   
-  
-## Examples  
- The following example shows how to create a <xref:System.Windows.Documents.Serialization.SerializerWriter> using the <xref:System.Windows.Documents.Serialization.SerializerProvider>.<xref:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter%2A> method.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelAsync">
@@ -64,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,7 +44,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, cancels an asynchronous write operation.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,19 +62,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, returns a <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> that writes collated <see cref="T:System.Windows.Media.Visual" /> elements.</summary>
-        <returns>A <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> that writes collated <see cref="T:System.Windows.Media.Visual" /> elements to the document output serialization <see cref="T:System.IO.Stream" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows the use of the CreateVisualsCollator method.  
-  
- [!code-cs[XpsSave#CreateAndWriteToVisualsCollator](~/add/codesnippet/csharp/XpsSave/XpsSaveHelper.cs#createandwritetovisualscollator)]
- [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/add/codesnippet/visualbasic/xpssave/xpssavehelper.vb#createandwritetovisualscollator)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateVisualsCollator">
@@ -113,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -129,28 +89,11 @@
         <Parameter Name="documentPT" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="documentSequencePT">The default print preferences for <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> content.</param>
-        <param name="documentPT">The default print preferences for <see cref="T:System.Windows.Documents.FixedDocument" /> content.</param>
-        <summary>When overridden in a derived class, returns a <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> that writes collated <see cref="T:System.Windows.Media.Visual" /> elements together with the given print tickets.</summary>
-        <returns>A <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> that writes collated <see cref="T:System.Windows.Media.Visual" /> elements to the document output serialization <see cref="T:System.IO.Stream" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `documentSequencePT` or `documentPT` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given print tickets for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A> method.  
-  
- [!code-cs[XpsSave#CreateAndWriteToVisualsCollator](~/add/codesnippet/csharp/XpsSave/XpsSaveHelper.cs#createandwritetovisualscollator)]
- [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/add/codesnippet/visualbasic/xpssave/xpssavehelper.vb#createandwritetovisualscollator)]  
-  
- ]]></format>
-        </remarks>
+        <param name="documentSequencePT">To be added.</param>
+        <param name="documentPT">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -160,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,23 +112,9 @@
         <Parameter Name="documentPaginator" Type="System.Windows.Documents.DocumentPaginator" />
       </Parameters>
       <Docs>
-        <param name="documentPaginator">The document paginator that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <summary>When overridden in a derived class, synchronously writes the content of a given <see cref="T:System.Windows.Documents.DocumentPaginator" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%28System.Windows.Documents.DocumentPaginator%2CSystem.Printing.PrintTicket%29> method to serialize a flow document to an output file.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <param name="documentPaginator">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -196,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,23 +133,9 @@
         <Parameter Name="fixedDocument" Type="System.Windows.Documents.FixedDocument" />
       </Parameters>
       <Docs>
-        <param name="fixedDocument">The document to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Documents.FixedDocument" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%28System.Windows.Documents.DocumentPaginator%2CSystem.Printing.PrintTicket%29> method to serialize a flow document to an output file.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -232,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,23 +154,9 @@
         <Parameter Name="fixedDocumentSequence" Type="System.Windows.Documents.FixedDocumentSequence" />
       </Parameters>
       <Docs>
-        <param name="fixedDocumentSequence">The document sequence that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%28System.Windows.Documents.DocumentPaginator%2CSystem.Printing.PrintTicket%29> method to serialize a flow document to an output file.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocumentSequence">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -268,7 +166,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,23 +175,9 @@
         <Parameter Name="fixedPage" Type="System.Windows.Documents.FixedPage" />
       </Parameters>
       <Docs>
-        <param name="fixedPage">The page to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Documents.FixedPage" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%28System.Windows.Documents.DocumentPaginator%2CSystem.Printing.PrintTicket%29> method to serialize a flow document to an output file.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedPage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -304,7 +187,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,23 +196,9 @@
         <Parameter Name="visual" Type="System.Windows.Media.Visual" />
       </Parameters>
       <Docs>
-        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%28System.Windows.Documents.DocumentPaginator%2CSystem.Printing.PrintTicket%29> method to serialize a flow document to an output file.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <param name="visual">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -340,7 +208,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -356,28 +223,10 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="documentPaginator">The document paginator that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>documentPaginator</c> content.</param>
-        <summary>When overridden in a derived class, synchronously writes paginated content together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the Write method to serialize a flow document to an output file.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <param name="documentPaginator">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -387,7 +236,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -403,28 +251,10 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="fixedDocument">The document to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocument</c> content.</param>
-        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Documents.FixedDocument" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%28System.Windows.Documents.DocumentPaginator%2CSystem.Printing.PrintTicket%29> method to serialize a flow document to an output file.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocument">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -434,7 +264,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -450,28 +279,10 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="fixedDocumentSequence">The document sequence that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocumentSequence</c> content.</param>
-        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%28System.Windows.Documents.DocumentPaginator%2CSystem.Printing.PrintTicket%29> method to serialize a flow document to an output file.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocumentSequence">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -481,7 +292,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -497,28 +307,10 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="fixedPage">The page to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedPage</c> content.</param>
-        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Documents.FixedPage" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%28System.Windows.Documents.DocumentPaginator%2CSystem.Printing.PrintTicket%29> method to serialize a flow document to an output file.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedPage">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -528,7 +320,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -544,28 +335,10 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>visual</c> element.</param>
-        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%28System.Windows.Documents.DocumentPaginator%2CSystem.Printing.PrintTicket%29> method to serialize a flow document to an output file.  
-  
- [!code-cs[DocumentSerialize#DocSerializePlugIn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
+        <param name="visual">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -575,7 +348,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -585,16 +357,9 @@
         <Parameter Name="documentPaginator" Type="System.Windows.Documents.DocumentPaginator" />
       </Parameters>
       <Docs>
-        <param name="documentPaginator">The document paginator that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <summary>When overridden in a derived class, asynchronously writes the content of a given <see cref="T:System.Windows.Documents.DocumentPaginator" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="documentPaginator">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -604,7 +369,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -614,16 +378,9 @@
         <Parameter Name="fixedDocument" Type="System.Windows.Documents.FixedDocument" />
       </Parameters>
       <Docs>
-        <param name="fixedDocument">The document to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocument" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -633,7 +390,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -643,16 +399,9 @@
         <Parameter Name="fixedDocumentSequence" Type="System.Windows.Documents.FixedDocumentSequence" />
       </Parameters>
       <Docs>
-        <param name="fixedDocumentSequence">The document sequence that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocumentSequence">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -662,7 +411,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -672,16 +420,9 @@
         <Parameter Name="fixedPage" Type="System.Windows.Documents.FixedPage" />
       </Parameters>
       <Docs>
-        <param name="fixedPage">The page to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedPage" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedPage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -691,7 +432,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -701,16 +441,9 @@
         <Parameter Name="visual" Type="System.Windows.Media.Visual" />
       </Parameters>
       <Docs>
-        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="visual">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -720,7 +453,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -731,19 +463,10 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="documentPaginator">The document paginator that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
-        <summary>When overridden in a derived class, asynchronously writes the content of a given <see cref="T:System.Windows.Documents.DocumentPaginator" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="documentPaginator">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -753,7 +476,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -769,21 +491,10 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="documentPaginator">The document paginator that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>documentPaginator</c> content.</param>
-        <summary>When overridden in a derived class, asynchronously writes the content of a given <see cref="T:System.Windows.Documents.DocumentPaginator" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="documentPaginator">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -793,7 +504,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -804,19 +514,10 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="fixedDocument">The document to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocument" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocument">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -826,7 +527,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -842,21 +542,10 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="fixedDocument">The document to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocument</c> content.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocument" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocument">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -866,7 +555,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -877,19 +565,10 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="fixedDocumentSequence">The document sequence that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocumentSequence">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -899,7 +578,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -915,21 +593,10 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="fixedDocumentSequence">The document sequence that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocumentSequence</c> content.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocumentSequence">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -939,7 +606,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -950,19 +616,10 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="fixedPage">The page to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedPage" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedPage">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -972,7 +629,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -988,21 +644,10 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="fixedPage">The page to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedPage</c> content.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedPage" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedPage">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1012,7 +657,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1023,19 +667,10 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="visual">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1045,7 +680,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1061,19 +695,10 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>visual</c> element.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="visual">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1083,7 +708,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1100,24 +724,11 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="documentPaginator">The document paginator that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>documentPaginator</c> content.</param>
-        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
-        <summary>When overridden in a derived class, asynchronously writes paginated content together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="documentPaginator">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1127,7 +738,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1144,24 +754,11 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="fixedDocument">The document to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocument</c> content.</param>
-        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocument" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocument">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1171,7 +768,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1188,24 +784,11 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="fixedDocumentSequence">The document sequence that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocumentSequence</c> content.</param>
-        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedDocumentSequence">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1215,7 +798,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1232,24 +814,11 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="fixedPage">The page to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedPage</c> content.</param>
-        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedPage" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="fixedPage">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1259,7 +828,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1276,24 +844,11 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>visual</c> element.</param>
-        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated <see cref="T:System.Printing.PrintTicket" /> and identifier to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `printTicket` can be `null` if there are no preferred print settings.  
-  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
- `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
-  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
+        <param name="visual">To be added.</param>
+        <param name="printTicket">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WritingCancelled">
@@ -1303,14 +858,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingCancelledEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, occurs when a <see cref="System.Windows.Documents.Serialization.SerializerWriter.CancelAsync%2A" /> operation is performed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1321,14 +875,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingCompletedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, occurs when a write operation finishes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1339,22 +892,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, occurs just before a <see cref="T:System.Printing.PrintTicket" /> is added to a stream by a <see cref="System.Windows.Documents.Serialization.SerializerWriter.Write%2A" /> or <see cref="System.Windows.Documents.Serialization.SerializerWriter.WriteAsync%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WritingPrintTicketRequired event enables the event handler to substitute a new <xref:System.Printing.PrintTicket> for the one specified in the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%2A> or <xref:System.Windows.Documents.Serialization.SerializerWriter.WriteAsync%2A> method call.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WritingProgressChanged">
@@ -1364,22 +909,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, occurs when the <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" /> updates its progress.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For example, the <xref:System.Windows.Documents.Serialization.SerializerWriter> could update its progress after every page or after every document in a multi-document write operation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

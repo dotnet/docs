@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a WS-Trust Participants element. The wst:Participants element is an extension to the wst:RequestSecurityToken element and is used to pass information about which parties are authorized to participate in the use of the token.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the element that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.Participants" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +43,8 @@
         <ReturnType>System.Collections.Generic.List&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of participants that are allowed to use the token.</summary>
-        <value>The list of participants. Each item in the list contains the contents of a wst:Participant element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +61,8 @@
         <ReturnType>System.IdentityModel.Protocols.WSTrust.EndpointReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the primary user of the issued token.</summary>
-        <value>An <see cref="System.ServiceModel.Protocols.WSTrust.EndpointReference" /> that contains the address of the primary user of the token. This is the contents of the wst:Primary element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

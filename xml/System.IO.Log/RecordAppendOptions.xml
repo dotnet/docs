@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.RecordAppendOptions" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,18 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies how records are appended.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use this enumeration with the <xref:System.IO.Log.LogRecordSequence.Append%2A> method to append a record to a log sequence.  
-  
- [!code-cs[S_UELogRecordSequence#5](~/add/codesnippet/csharp/t-system.io.log.recordap_1.cs)]
- [!code-vb[S_UELogRecordSequence#5](~/add/codesnippet/visualbasic/t-system.io.log.recordap_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ForceAppend">
@@ -37,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.RecordAppendOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The record sequence should begin the process of flushing internal buffers after this record is appended. This does not indicate that the record should be durably written before the Append operation completes. To get that behavior, specify the ForceFlush flag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForceFlush">
@@ -54,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.RecordAppendOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The record sequence should flush any internal buffers after this record is appended. When the Append operation completes, the specified record has been durably written.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -71,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Log.RecordAppendOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Data is written lazily.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

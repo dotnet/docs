@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.ShaderRenderMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the policy for rendering a <see cref="T:System.Windows.Media.Effects.ShaderEffect" /> in software.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Effects.ShaderRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Allow hardware and software rendering.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HardwareOnly">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Effects.ShaderRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Require hardware rendering, ignore if unavailable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SoftwareOnly">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Effects.ShaderRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Force software rendering.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

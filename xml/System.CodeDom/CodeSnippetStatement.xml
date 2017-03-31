@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeSnippetStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,27 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a statement using a literal code fragment.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeSnippetStatement can represent a statement using a literal code fragment that will be included directly in the source without modification.  
-  
- A CodeSnippetStatement stores a section of code exactly in its original format as a string. The CodeDOM does not translate literal code fragments. Literal code fragments are stored and output in their original format. CodeDOM objects that contain literal code are provided so developers can encapsulate code that is already in the target language.  
-  
- The <xref:System.CodeDom.CodeSnippetStatement.Value%2A> property contains the literal code for the snippet statement.  
-  
-   
-  
-## Examples  
- The following example creates an instance of the CodeSnippetStatement class using a literal code fragment. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeRegionDirective> class.  
-  
- [!code-vb[System.CodeDom.CodeDirectives#16](~/add/codesnippet/visualbasic/t-system.codedom.codesni_2_1.vb)]
- [!code-cs[System.CodeDom.CodeDirectives#16](~/add/codesnippet/csharp/t-system.codedom.codesni_2_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeSnippetStatement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,26 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The literal code fragment of the statement to represent.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeSnippetStatement" /> class using the specified code fragment.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates an instance of the <xref:System.CodeDom.CodeSnippetStatement> class using a literal code fragment. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeRegionDirective> class.  
-  
- [!code-vb[System.CodeDom.CodeDirectives#16](~/add/codesnippet/visualbasic/m-system.codedom.codesni_3_1.vb)]
- [!code-cs[System.CodeDom.CodeDirectives#16](~/add/codesnippet/csharp/m-system.codedom.codesni_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -95,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the literal code fragment statement.</summary>
-        <value>The literal code fragment statement.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

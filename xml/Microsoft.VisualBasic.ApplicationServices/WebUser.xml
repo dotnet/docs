@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.WebUser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,32 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the information about the current user.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The properties and methods exposed by the `My.User` object provide access to the information about the current user. The meaning of "current user" differs slightly between Windows and Web applications. In a Windows application, the current user is the user who runs the application. In a Web application, the current user is the user who accesses the application.  
-  
- The `My.User` property also provides access to the <xref:System.Security.Principal.IPrincipal> for the current user. A principal object represents the user's security context, including that user's identity and any roles to which the user belongs.  
-  
- For Windows applications, this property provides the same functionality as the <xref:System.Threading.Thread.CurrentPrincipal%2A> property. For Web applications, this property provides the same functionality as the <xref:System.Web.HttpContext.User%2A> property of the object returned by the <xref:System.Web.HttpContext.Current%2A> property.  
-  
-> [!NOTE]
->  For Windows applications, only projects built on the **Windows Application** template initialize the `My.User` object by default. In all other Windows project types, you must initialize the `My.User` object by calling the <xref:Microsoft.VisualBasic.ApplicationServices.User.InitializeWithWindowsUser%2A>method explicitly or by assigning a value to <xref:System.Threading.Thread.CurrentPrincipal%2A>.  
-  
-> [!NOTE]
->  The `My.User` object cannot report information about the current Windows user when run under Windows 95 and Windows 98 because those operating systems do not support the concept of a logged-on user. You must implement custom authentication to use the `My.User` object on those operating systems..  
-  
-   
-  
-## Examples  
- This example checks if the application is using Windows or custom authentication, and uses that information to parse the `My.User.Name` property.  
-  
- [!code-vb[VbVbalrMyUser#3](~/add/codesnippet/visualbasic/VbVbalrMyUser/Class1.vb#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.WebUser" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The properties and methods exposed by the `My.User` object provide access to the information about the current user.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InternalPrincipal">
@@ -70,25 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.IPrincipal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the principal object representing the current user.</summary>
-        <value>An <see cref="T:System.Security.Principal.IPrincipal" /> object representing the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the <xref:Microsoft.VisualBasic.ApplicationServices.WebUser> object, this property wraps the <xref:System.Web.HttpContext.User%2A> property of the <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName> property.  
-  
- For more detailed information, see the <xref:Microsoft.VisualBasic.ApplicationServices.User.CurrentPrincipal%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,31 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationFlow" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of transmission an endpoint of the XML Web service can support.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Although request-response or solicit-response operations are logically correlated in the Web Services Description Language (WSDL) document, the concrete correlation information will be specified by a binding. For example, the request and response messages can be exchanged as part of one or two actual HTTP transmissions.  
-  
-   
-  
-## Examples  
- The following sample demonstrates the use of the `OperationFlow` enumeration.  
-  
- [!code-cpp[OperationFlow_Enum#1](~/add/codesnippet/cpp/t-system.web.services.de_29_1.cpp)]
- [!code-cs[OperationFlow_Enum#1](~/add/codesnippet/csharp/t-system.web.services.de_29_1.cs)]
- [!code-vb[OperationFlow_Enum#1](~/add/codesnippet/visualbasic/t-system.web.services.de_29_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -38,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the endpoint of the XML Web service receives no transmissions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Notification">
@@ -55,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the endpoint of the XML Web service sends a message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OneWay">
@@ -72,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the endpoint of the XML Web service receives a message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestResponse">
@@ -89,14 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the endpoint of the XML Web service receives a message, then sends a correlated message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SolicitResponse">
@@ -106,14 +90,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the endpoint of the XML Web service sends a message, then receives a correlated message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

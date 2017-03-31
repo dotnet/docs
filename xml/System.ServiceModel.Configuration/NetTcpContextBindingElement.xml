@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetTcpContextBindingElement extends System.ServiceModel.Configuration.NetTcpBindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetTcpContextBindingElement" />
   <AssemblyInfo>
-    <AssemblyName>System.WorkflowServices</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -20,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a configuration element that corresponds to the <see cref="T:System.ServiceModel.NetTcpContextBinding" /> binding.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XML element that corresponds to the `NetTcpContextBindingElement` can be used in the application configuration file under the `system.serviceModel/bindings/netTcpContextBinding` node.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,16 +26,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpContextBindingElement.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetTcpContextBindingElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +41,6 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpContextBindingElement.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -67,12 +48,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The configuration name of the binding. The value should be unique because it is used as identification for the binding.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetTcpContextBindingElement" /> class with the specified configuration name.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Collections.Generic.KeyNotFoundException">A configuration element with the specified <paramref name="name" /> does not exist.</exception>
       </Docs>
     </Member>
     <Member MemberName="BindingElementType">
@@ -81,10 +59,6 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpContextBindingElement.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -92,8 +66,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the CLR type of the standard binding associated with the configuration element <see langword="System.ServiceModel.NetTcpContextBinding" />.</summary>
-        <value>A <see cref="T:System.Type" /> that specifies the CLR type of the standard binding associated with the configuration element <see langword="System.ServiceModel.NetTcpContextBinding" /></value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +89,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the client callback address for the binding element.</summary>
-        <value>Returns <see cref="T:System.Uri" />, which contains the client callback address..</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,9 +112,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether context management is enabled.</summary>
-        <value>
-          <see langword="true" /> if context management is enabled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,10 +122,6 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ContextProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextProtectionLevel" />
       <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -166,8 +135,8 @@
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the desired protection level of the SOAP header used to propagate the context information. The default value is <see langword="ProtectionLevel.Sign" />.</summary>
-        <value>A valid <see cref="T:System.Net.Security.ProtectionLevel" /> value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,10 +146,6 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpContextBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -191,8 +156,8 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">The binding that contains the content and context protection level used to initialize the class.</param>
-        <summary>Initializes this binding configuration element based on the configuration of the specified binding. The binding object supplied must be of type <see cref="T:System.ServiceModel.NetTcpContextBinding" />.</summary>
+        <param name="binding">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,10 +167,6 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpContextBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -216,8 +177,8 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">The binding to be applied.</param>
-        <summary>Applies the configuration of this configuration element to the specified binding instance. The binding instance supplied must be of type <see cref="T:System.ServiceModel.NetTcpContextBinding" />.</summary>
+        <param name="binding">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,10 +188,6 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpContextBindingElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -238,16 +195,9 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
-        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextProtectionLevel%2A> property is also contained in this property collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

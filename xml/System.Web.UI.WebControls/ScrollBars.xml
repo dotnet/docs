@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ScrollBars" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,30 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the visibility and position of scroll bars in a <see cref="T:System.Web.UI.WebControls.Panel" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ScrollBars enumeration represents the visibility and position of the scroll bars in a <xref:System.Web.UI.WebControls.Panel> control. The <xref:System.Web.UI.WebControls.Panel.ScrollBars%2A> property uses these enumeration values to specify the type of scroll bars to display in a <xref:System.Web.UI.WebControls.Panel> control. The default value for the <xref:System.Web.UI.WebControls.Panel.ScrollBars%2A> property is `None`, indicating that no scroll bars are shown.  
-  
- If you specify `Auto` for the <xref:System.Web.UI.WebControls.Panel.ScrollBars%2A> property, scroll bars are automatically shown when the size of the content in a <xref:System.Web.UI.WebControls.Panel> control exceeds the size of the <xref:System.Web.UI.WebControls.Panel> control. For example, if a <xref:System.Web.UI.WebControls.Panel> control contains a table, and the panel is not wide enough to display all the rows in the table, a vertical scroll bar is shown. If the size of the table exceeds the height and width of the panel, both vertical and horizontal scroll bars are shown.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.Panel.ScrollBars%2A> property to `Auto`. The panel contains a table, the entire contents of which exceed the size of the panel. This causes both vertical and horizontal scroll bars to be automatically displayed when the panel is rendered. The user can then scroll to view all the data in the table.  
-  
- [!code-vb[Panel.Scrollbars#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_131_1.aspx)]
- [!code-cs[Panel.Scrollbars#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_131_1.aspx)]  
-  
- The following code example demonstrates the ScrollBars enumeration values. A <xref:System.Web.UI.WebControls.ListBox> control is populated with the ScrollBars enumeration values. The scroll bars displayed in the panel change, based on the value the user selects from the list box.  
-  
- [!code-vb[Panel.Scrollbars2#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_131_2.aspx)]
- [!code-cs[Panel.Scrollbars2#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_131_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Auto">
@@ -49,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays, horizontal, vertical, or both scroll bars as necessary. Otherwise, no scroll bars are shown.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Both">
@@ -66,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays both a horizontal and a vertical scroll bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -83,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays only a horizontal scroll bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -100,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays no scroll bars.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -117,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays only a vertical scroll bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

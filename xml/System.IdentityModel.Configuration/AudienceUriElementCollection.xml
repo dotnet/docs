@@ -16,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an <see langword="&lt;audienceUris&gt;" /> element in a configuration file.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `<audienceUris>` element specifies the set of URIs which are acceptable as identifying a relying party. Tokens will not be accepted unless they are scoped for one of the allowed audience URIs. By default, the collection contains no URIs. The `mode` attribute has enumeration values such as "Always", "BearerTokenOnly", "Never". This attribute is represented by the <xref:System.IdentityModel.Configuration.AudienceUriElementCollection.Mode%2A> property. The security token handlers for the SAML 1.1 and SAML 2.0 token types use the values in this collection to configure any allowed audience URI restrictions in <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> objects.  
-  
- Individual audience URI values are represented by <xref:System.IdentityModel.Configuration.AudienceUriElement> objects in the collection.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.AudienceUriElementCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,16 +112,9 @@
         <ReturnType>System.IdentityModel.Selectors.AudienceUriMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the audience restriction mode.</summary>
-        <value>The audience restriction mode. The default is <see cref="T:System.IdentityModel.Selectors.AudienceUriMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Corresponds to the `mode` attribute of the [\&lt;audienceUris\&gt;](../Topic/%3CaudienceUris%3E.md) element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">

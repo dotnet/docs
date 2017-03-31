@@ -4,26 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageLockMode" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies flags that are passed to the flags parameter of the <see cref="System.Drawing.Bitmap.LockBits%2A" /> method. The <see cref="System.Drawing.Bitmap.LockBits%2A" /> method locks a portion of an image so that you can read or write the pixel data.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Image.PixelFormat%2A>, <xref:System.Drawing.Image.Height%2A>, <xref:System.Drawing.Image.Width%2A>, and <xref:System.Drawing.Imaging.BitmapData.Scan0%2A> properties; the <xref:System.Drawing.Bitmap.LockBits%2A> and <xref:System.Drawing.Bitmap.UnlockBits%2A> methods; and the ImageLockMode enumeration. This example is designed to be used with Windows Forms. To run this example, paste it into a form and handle the form's <xref:System.Windows.Forms.Control.Paint> event by calling the `LockUnlockBitsExample` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cs[System.Drawing.BitmapMembers#5](~/add/codesnippet/csharp/t-system.drawing.imaging_4_1.cs)]
- [!code-vb[System.Drawing.BitmapMembers#5](~/add/codesnippet/visualbasic/t-system.drawing.imaging_4_1.vb)]
- [!code-cpp[System.Drawing.BitmapMembers#5](~/add/codesnippet/cpp/t-system.drawing.imaging_4_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ReadOnly">
@@ -33,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a portion of the image is locked for reading.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadWrite">
@@ -50,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a portion of the image is locked for reading or writing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserInputBuffer">
@@ -67,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the buffer used for reading or writing pixel data is allocated by the user. If this flag is set, the <paramref name="flags" /> parameter of the <see cref="System.Drawing.Bitmap.LockBits%2A" /> method serves as an input parameter (and possibly as an output parameter). If this flag is cleared, then the <paramref name="flags" /> parameter serves only as an output parameter.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteOnly">
@@ -84,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a portion of the image is locked for writing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IListContract`1" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -23,8 +22,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="C">The type of objects in the list. <c>C</c> must implement the <see cref="T:System.AddIn.Contract.IContract" /> interface.</typeparam>
-    <summary>Represents a generic collection of <see cref="T:System.AddIn.Contract.IContract" /> objects that can be individually accessed by index.</summary>
+    <typeparam name="C">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +34,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,23 +43,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get.</param>
-        <summary>Returns the element at the specified index.</summary>
-        <returns>The element at the specified index.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetItem method does not remove the element at the specified index. To remove an element from the <xref:System.AddIn.Contract.Collections.IListContract%601>, use the <xref:System.AddIn.Contract.Collections.IListContract%601.RemoveAt%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- -or-  
-  
- <paramref name="index" /> is equal to or greater than the return value of <see cref="System.AddIn.Contract.Collections.ICollectionContract%601.GetCount%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -71,7 +56,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,9 +65,9 @@
         <Parameter Name="item" Type="C" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.AddIn.Contract.IContract" /> to locate in the <see cref="System.AddIn.Contract.Collections.IListContract%601" />.</param>
-        <summary>Returns the index of a specific element in the <see cref="System.AddIn.Contract.Collections.IListContract%601" />.</summary>
-        <returns>The index of <paramref name="item" /> if found in the list; otherwise, -1.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,26 +88,10 @@
         <Parameter Name="item" Type="C" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>item</c>.</param>
-        <param name="item">The <see cref="T:System.AddIn.Contract.IContract" /> to insert in the <see cref="System.AddIn.Contract.Collections.IListContract%601" />.</param>
-        <summary>Inserts an element in the <see cref="System.AddIn.Contract.Collections.IListContract%601" /> at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After you call Insert, the elements that follow the insertion point move to accommodate the new element. The indexes of the elements that are moved are also updated. To replace an element at a specified index, use the <xref:System.AddIn.Contract.Collections.IListContract%601.SetItem%2A> method.  
-  
- To determine whether an <xref:System.AddIn.Contract.Collections.IListContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- -or-  
-  
- <paramref name="index" /> is equal to or greater than the return value of <see cref="System.AddIn.Contract.Collections.ICollectionContract%601.GetCount%2A" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <see cref="System.AddIn.Contract.Collections.IListContract%601" /> is read-only.</exception>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -134,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,25 +110,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the element to remove.</param>
-        <summary>Removes the element at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After you call RemoveAt, the elements that follow the removed element move to occupy the vacated spot. The indexes of the elements that are moved are also updated.  
-  
- To determine whether an <xref:System.AddIn.Contract.Collections.IListContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- -or-  
-  
- <paramref name="index" /> is equal to or greater than the return value of <see cref="System.AddIn.Contract.Collections.ICollectionContract%601.GetCount%2A" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <see cref="System.AddIn.Contract.Collections.IListContract%601" /> is read-only.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -172,7 +122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,26 +132,10 @@
         <Parameter Name="value" Type="C" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to set the element.</param>
-        <param name="value">The element to set at the specified index.</param>
-        <summary>Replaces the element at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SetItem method replaces the element at the specified index. To add an element to the <xref:System.AddIn.Contract.Collections.IListContract%601>, use the <xref:System.AddIn.Contract.Collections.IListContract%601.Insert%2A> method.  
-  
- To determine whether an <xref:System.AddIn.Contract.Collections.IListContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- -or-  
-  
- <paramref name="index" /> is equal to or greater than the return value of <see cref="System.AddIn.Contract.Collections.ICollectionContract%601.GetCount%2A" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <see cref="System.AddIn.Contract.Collections.IListContract%601" /> is read-only.</exception>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

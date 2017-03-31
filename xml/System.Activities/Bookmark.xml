@@ -20,30 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a point at which a workflow or activity can passively wait to be resumed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When an activity creates a Bookmark, it becomes idle and waits for the Bookmark to be resumed. If there are other activities in parallel with the activity that created the Bookmark, they will be scheduled for execution.  
-  
- Bookmarks can be resumed by the host application using one of the <xref:System.Activities.WorkflowApplication.ResumeBookmark%2A> overloads.  
-  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] bookmarks, see [Using WorkflowInvoker and WorkflowApplication](../Topic/Using%20WorkflowInvoker%20and%20WorkflowApplication.md), [Bookmarks](../Topic/Bookmarks1.md), and the [Bookmarks &#91; WF Samples&#93;](../Topic/Bookmarks2.md) and [Wait For Input Activity &#91;WF Samples&#93;](../Topic/Wait%20For%20Input%20Activity.md) samples.  
-  
-   
-  
-## Examples  
- In the following example, a `ReadLine` activity is created. When executed, the `ReadLine` activity creates a Bookmark, registers a callback, and then waits for the Bookmark to be resumed. When it is resumed, the `ReadLine` activity assigns the data that was passed with the Bookmark to its <xref:System.Activities.Activity%601.Result%2A> argument.  
-  
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
- In the following example, a workflow is created that uses the `ReadLine` activity to gather the user’s name and display it to the console window. The host application performs the actual work of gathering the input and passes it to the workflow by resuming the Bookmark.  
-  
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
- When the `ReadLine` activity is executed, it creates a Bookmark named `UserName` and then waits for the bookmark to be resumed. The host collects the desired data and then resumes the Bookmark. The workflow resumes, displays the name, and then completes. Note that no synchronization code is required with regard to resuming the bookmark. A Bookmark can only be resumed when the workflow is idle, and if the workflow is not idle, the call to <xref:System.Activities.WorkflowApplication.ResumeBookmark%2A> blocks until the workflow becomes idle.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,8 +37,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">A name that identifies the bookmark.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Bookmark" /> class using the specified name.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,10 +58,9 @@
         <Parameter Name="other" Type="System.Activities.Bookmark" />
       </Parameters>
       <Docs>
-        <param name="other">The bookmark to compare.</param>
-        <summary>Determines whether the current <see cref="T:System.Activities.Bookmark" /> and the specified <see cref="T:System.Activities.Bookmark" /> refer to the same continuation point in a workflow.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Activities.Bookmark" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,10 +80,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare.</param>
-        <summary>Determines whether the current <see cref="T:System.Activities.Bookmark" /> and the specified object refer to the same continuation point in a workflow.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Activities.Bookmark" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +100,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a unique identifier for this <see cref="T:System.Activities.Bookmark" /> instance.</summary>
-        <returns>The unique identifier of this <see cref="T:System.Activities.Bookmark" /> instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +118,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bookmark name.</summary>
-        <value>The bookmark name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,8 +137,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the bookmark name for a named bookmark or the bookmark ID for an unnamed bookmark.</summary>
-        <returns>The bookmark name or ID.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

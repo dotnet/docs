@@ -3,9 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit ValueType extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ValueType" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,29 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the base class for value types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ValueType overrides the virtual methods from <xref:System.Object> with more appropriate implementations for value types. See also <xref:System.Enum>, which inherits from ValueType.  
-  
- Data types are separated into value types and reference types. Value types are either stack-allocated or allocated inline in a structure. Reference types are heap-allocated. Both reference and value types are derived from the ultimate base class <xref:System.Object>. In cases where it is necessary for a value type to behave like an object, a wrapper that makes the value type look like a reference object is allocated on the heap, and the value type's value is copied into it. The wrapper is marked so the system knows that it contains a value type. This process is known as boxing, and the reverse process is known as unboxing. Boxing and unboxing allow any type to be treated as an object.  
-  
- Although ValueType is the implicit base class for value types, you cannot create a class that inherits from ValueType directly. Instead, individual compilers provide a language keyword or construct (such as `struct` in C# and `Structure`…`End Structure` in Visual Basic) to support the creation of value types.  
-  
- Aside from serving as the base class for value types in the .NET Framework, the ValueType structure is generally not used directly in code. However, it can be used as a parameter in method calls to restrict possible arguments to value types instead of all objects, or to permit a method to handle a number of different value types. The following example illustrates how ValueType prevents reference types from being passed to methods. It defines a class named `Utility` that contains four methods: `IsNumeric`, which indicates whether its argument is a number; `IsInteger`, which indicates whether its argument is an integer; `IsFloat`, which indicates whether its argument is a floating-point number; and `Compare`, which indicates the relationship between two numeric values. In each case, the method parameters are of type ValueType, and reference types are prevented from being passed to the methods.  
-  
- [!code-cs[System.ValueType.Structure#1](~/add/codesnippet/csharp/t-system.valuetype_1.cs)]
- [!code-vb[System.ValueType.Structure#1](~/add/codesnippet/visualbasic/t-system.valuetype_1.vb)]  
-  
- The following example illustrates calls to the methods of the `Utility` class.  
-  
- [!code-cs[System.ValueType.Structure#2](~/add/codesnippet/csharp/t-system.valuetype_2.cs)]
- [!code-vb[System.ValueType.Structure#2](~/add/codesnippet/visualbasic/t-system.valuetype_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,13 +38,24 @@
       <MemberSignature Language="DocId" Value="M:System.ValueType.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ValueType" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,15 +65,21 @@
       <MemberSignature Language="DocId" Value="M:System.ValueType.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -80,35 +87,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare with the current instance.</param>
-        <summary>Indicates whether this instance and a specified object are equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Equals method overrides <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> and provides the default implementation of value equality for all value types in the .NET Framework.  
-  
- If none of the fields of the current instance and `obj` are reference types, the Equals method performs a byte-by-byte comparison of the two objects in memory. Otherwise, it uses reflection to compare the corresponding fields of `obj` and this instance.  
-  
-> [!TIP]
->  Particularly if your value type contains fields that are reference types, you should override the Equals method. This can improve performance and enable you to more closely represent the meaning of equality for the type.  
-  
-## Notes for the [!INCLUDE[wrt](~/add/includes/wrt-md.md)]  
- When you call the Equalsmethod on a [!INCLUDE[wrt](~/add/includes/wrt-md.md)] structure, it provides the default behavior for value types that don’t override Equals. This is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](~/add/includes/wrt-md.md)] (see [.NET Framework Support for Windows Store Apps and Windows Runtime](../Topic/.NET%20Framework%20Support%20for%20Windows%20Store%20Apps%20and%20Windows%20Runtime.md)). [!INCLUDE[wrt](~/add/includes/wrt-md.md)] structures can’t override Equals, even if they’re written with C# or Visual Basic, because they can’t have methods. (In addition, structures in the [!INCLUDE[wrt](~/add/includes/wrt-md.md)] itself don’t inherit <xref:System.ValueType>.) However, they appear to have <xref:System.ValueType.ToString%2A>, Equals, and <xref:System.ValueType.GetHashCode%2A> methods when you use them in your C# or Visual Basic code, and the .NET Framework provides the default behavior for these methods.  
-  
-   
-  
-## Examples  
- The following example demonstrates how the Equals method can be overridden by a derived value type.  
-  
- [!code-cs[ValueType.Equals Example#1](~/add/codesnippet/csharp/m-system.valuetype.equal_1.cs)]
- [!code-vb[ValueType.Equals Example#1](~/add/codesnippet/visualbasic/m-system.valuetype.equal_1.vb)]
- [!code-cpp[ValueType.Equals Example#1](~/add/codesnippet/cpp/m-system.valuetype.equal_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -117,44 +99,29 @@
       <MemberSignature Language="DocId" Value="M:System.ValueType.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance.</summary>
-        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetHashCode method applies to types derived from <xref:System.ValueType>. One or more fields of the derived type is used to calculate the return value. If you call the derived type's `GetHashCode`method, the return value is not likely to be suitable for use as a key in a hash table. Additionally, if the value of one or more of those fields changes, the return value might become unsuitable for use as a key in a hash table. In either case, consider writing your own implementation of the GetHashCode method that more closely represents the concept of a hash code for the type.  
-  
- For more information, see <xref:System.Object.GetHashCode%2A?displayProperty=fullName>, and <xref:System.Collections.Hashtable?displayProperty=fullName>.  
-  
-## Notes for the [!INCLUDE[wrt](~/add/includes/wrt-md.md)]  
- When you call the GetHashCode method on a [!INCLUDE[wrt](~/add/includes/wrt-md.md)] structure, it provides the default behavior for value types that don’t override GetHashCode. This is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](~/add/includes/wrt-md.md)] (see [.NET Framework Support for Windows Store Apps and Windows Runtime](../Topic/.NET%20Framework%20Support%20for%20Windows%20Store%20Apps%20and%20Windows%20Runtime.md)). [!INCLUDE[wrt](~/add/includes/wrt-md.md)] structures can’t override GetHashCode, even if they’re written with C# or Visual Basic, because they can’t have methods. (In addition, structures in the [!INCLUDE[wrt](~/add/includes/wrt-md.md)] itself don’t inherit <xref:System.ValueType>.) However, they appear to have <xref:System.ValueType.ToString%2A>, <xref:System.ValueType.Equals%2A>, and GetHashCode methods when you use them in your C# or Visual Basic code, and the .NET Framework provides the default behavior for these methods.  
-  
-   
-  
-## Examples  
- The following example demonstrates how the GetHashCode method can be overridden by a derived value type.  
-  
- [!code-cs[ValueType.Equals Example#1](~/add/codesnippet/csharp/m-system.valuetype.getha_1.cs)]
- [!code-vb[ValueType.Equals Example#1](~/add/codesnippet/visualbasic/m-system.valuetype.getha_1.vb)]
- [!code-cpp[ValueType.Equals Example#1](~/add/codesnippet/cpp/m-system.valuetype.getha_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -163,35 +130,29 @@
       <MemberSignature Language="DocId" Value="M:System.ValueType.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the fully qualified type name of this instance.</summary>
-        <returns>The fully qualified type name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToString method overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method and provides the default implementation of the `ToString` method for value types. (Value types are types defined by the `struct` keyword in C#, and by the `Structure`...`End Structure` construct in Visual Basic.) Functionally, however, the implementation is that same as that of <xref:System.Object.ToString%2A?displayProperty=fullName>: the method returns the fully qualified type name.  
-  
- Value types defined by the `struct` keyword in C# and the `Structure`...`End Structure` construct in Visual Basic typically override the ToString method to provide a more meaningful string representation of the value type. The following example illustrates the difference. It defines two value types, `EmployeeA` and `EmployeeB`, creates an instance of each, and calls its `ToString` method. Because the `EmployeeA` structure does not override the ToString method, it displays only the fully qualified type name. The `EmployeeB.ToString` method, on the other hand, provides meaningful information about the object.  
-  
- [!code-vb[System.ValueType.ToString#1](~/add/codesnippet/visualbasic/m-system.valuetype.tostr_1.vb)]
- [!code-cs[System.ValueType.ToString#1](~/add/codesnippet/csharp/m-system.valuetype.tostr_1.cs)]  
-  
- Note that, although enumeration types are also value types, they derive from the <xref:System.Enum> class, which overrides  ToString.  
-  
-## Notes for the Windows Runtime  
- When you call the ToString method on a [!INCLUDE[wrt](~/add/includes/wrt-md.md)] structure, it provides the default behavior for value types that don’t override ToString. This is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](~/add/includes/wrt-md.md)] (see [.NET Framework Support for Windows Store Apps and Windows Runtime](../Topic/.NET%20Framework%20Support%20for%20Windows%20Store%20Apps%20and%20Windows%20Runtime.md)). [!INCLUDE[wrt](~/add/includes/wrt-md.md)] structures can’t override ToString, even if they’re written with C# or Visual Basic, because they can’t have methods. (In addition, structures in the [!INCLUDE[wrt](~/add/includes/wrt-md.md)] itself don’t inherit <xref:System.ValueType>.) However, they appear to have ToString, <xref:System.ValueType.Equals%2A>, and <xref:System.ValueType.GetHashCode%2A> methods when you use them in your C# or Visual Basic code, and the .NET Framework provides the default behavior for these methods.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Label" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -32,29 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a standard Windows label.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Label controls are typically used to provide descriptive text for a control. For example, you can use a Label to add descriptive text for a <xref:System.Windows.Forms.TextBox> control to inform the user about the type of data expected in the control. Label controls can also be used to add descriptive text to a <xref:System.Windows.Forms.Form> to provide the user with helpful information. For example, you can add a Label to the top of a <xref:System.Windows.Forms.Form> that provides instructions to the user on how to input data in the controls on the form. Label controls can be also used to display run time information on the status of an application. For example, you can add a Label control to a form to display the status of each file as a list of files is processed.  
-  
- A Label participates in the tab order of a form, but does not receive focus (the next control in the tab order receives focus). For example, if the <xref:System.Windows.Forms.Label.UseMnemonic%2A> property is set to `true`, and a mnemonic character—the first character after an ampersand (&)—is specified in the <xref:System.Windows.Forms.Control.Text%2A> property of the control, when a user presses ALT+ the mnemonic key, focus moves to the next control in the tab order. This feature provides keyboard navigation for a form. In addition to displaying text, the Label control can also display an image using the <xref:System.Windows.Forms.Label.Image%2A> property, or a combination of the <xref:System.Windows.Forms.Label.ImageIndex%2A> and <xref:System.Windows.Forms.Label.ImageList%2A> properties.  
-  
-> [!NOTE]
->  A Label can be made transparent by setting its <xref:System.Windows.Forms.Control.BackColor%2A> property to `Color.Transparent`. When you use a transparent label, use only the current device coordinate system to draw on the container, or the Label background might paint improperly.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a Label control that has a three-dimensional border and contains an image. The image is displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the Label control. This example requires that an <xref:System.Windows.Forms.Label.ImageList%2A> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing> namespace added to its code.  
-  
- [!code-vb[Classic Label Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.l_5_1.vb)]
- [!code-cs[Classic Label Example#1](~/add/codesnippet/csharp/t-system.windows.forms.l_5_1.cs)]
- [!code-cpp[Classic Label Example#1](~/add/codesnippet/cpp/t-system.windows.forms.l_5_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,29 +42,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Label" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, a label is displayed with its <xref:System.Windows.Forms.Label.AutoSize%2A> property set to `false` and with its <xref:System.Windows.Forms.Label.BorderStyle%2A> property set to `BorderStyle.None`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
-  
- [!code-vb[Classic Label Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.l_7_1.vb)]
- [!code-cs[Classic Label Example#1](~/add/codesnippet/csharp/m-system.windows.forms.l_7_1.cs)]
- [!code-cpp[Classic Label Example#1](~/add/codesnippet/cpp/m-system.windows.forms.l_7_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoEllipsis">
@@ -96,7 +57,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -114,20 +74,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the ellipsis character (...) appears at the right edge of the <see cref="T:System.Windows.Forms.Label" />, denoting that the <see cref="T:System.Windows.Forms.Label" /> text extends beyond the specified length of the <see cref="T:System.Windows.Forms.Label" />.</summary>
-        <value>
-          <see langword="true" /> if the additional label text is to be indicated by an ellipsis; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set AutoEllipsis to `true` to display text that extends beyond the width of the <xref:System.Windows.Forms.Label> when the user passes over the control with the mouse. If <xref:System.Windows.Forms.Label.AutoSize%2A> is `true`, the label will grow to fit the text and an ellipsis will not appear.  
-  
-> [!IMPORTANT]
->  If the font is taller than the height of the <xref:System.Windows.Forms.Label> and AutoEllipsis is `true`, you must set <xref:System.Windows.Forms.Label.AutoSize%2A> to `false` for text to be drawn.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -137,7 +86,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -164,34 +112,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the control is automatically resized to display its entire contents.</summary>
-        <value>
-          <see langword="true" /> if the control adjusts its width to closely fit its contents; otherwise, <see langword="false" />.  
-  
- <block subset="none" type="note">  
- When added to a form using the designer, the default value is <see langword="true" />. When instantiated from code, the default value is <see langword="false" />.  
-  
-</block></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this property is set to `true`, the <xref:System.Windows.Forms.Label> adjusts its width to display its entire contents. This property is typically set to `true` when you use a <xref:System.Windows.Forms.Label> control to display various lengths of text, such as the status of an application process. You can also use this property when the application will display text in various languages, and the size of the text might increase or decrease based on the language settings in Windows.  
-  
-> [!IMPORTANT]
->  If the font is taller than the height of the <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Label.AutoEllipsis%2A> is `true`, you must set AutoSize to `false` for text to be drawn.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the AutoSize property. To run this example, paste the following code in a form and call the `InitializeLabel` method from the form's constructor or `Load` method.  
-  
- [!code-cpp[System.Windows.Forms.LabelAutoSize#1](~/add/codesnippet/cpp/p-system.windows.forms.l_65_1.cpp)]
- [!code-vb[System.Windows.Forms.LabelAutoSize#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_65_1.vb)]
- [!code-cs[System.Windows.Forms.LabelAutoSize#1](~/add/codesnippet/csharp/p-system.windows.forms.l_65_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -201,7 +124,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -216,25 +138,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.Label.AutoSize%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the AutoSizeChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Label> named Label1. Then ensure that the event handler is associated with the AutoSizeChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#458](~/add/codesnippet/csharp/e-system.windows.forms.l_32_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#458](~/add/codesnippet/visualbasic/e-system.windows.forms.l_32_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -244,7 +149,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -262,16 +166,9 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the image rendered on the background of the control.</summary>
-        <value>An <see cref="T:System.Drawing.Image" /> that represents the background image of the control. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageChanged">
@@ -281,7 +178,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -296,15 +192,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.Label.BackgroundImage%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayout">
@@ -314,7 +203,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -329,16 +217,9 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>An <see cref="T:System.Windows.Forms.ImageLayout" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayoutChanged">
@@ -348,7 +229,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -363,15 +243,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.Label.BackgroundImageLayout%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -381,7 +254,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -396,26 +268,9 @@
         <ReturnType>System.Windows.Forms.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border style for the control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.BorderStyle" /> values. The default is <see langword="BorderStyle.None" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to add a border to the control. This property is typically used to differentiate a <xref:System.Windows.Forms.Label> that labels another control from a <xref:System.Windows.Forms.Label> that displays the status of a process in an application.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
-  
- [!code-vb[Classic Label Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_35_1.vb)]
- [!code-cs[Classic Label Example#1](~/add/codesnippet/csharp/p-system.windows.forms.l_35_1.cs)]
- [!code-cpp[Classic Label Example#1](~/add/codesnippet/cpp/p-system.windows.forms.l_35_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CalcImageRenderBounds">
@@ -425,7 +280,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -437,19 +291,12 @@
         <Parameter Name="align" Type="System.Drawing.ContentAlignment" />
       </Parameters>
       <Docs>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> used to determine size and location when drawn within the control.</param>
-        <param name="r">A <see cref="T:System.Drawing.Rectangle" /> that represents the area to draw the image in.</param>
-        <param name="align">The alignment of content within the control.</param>
-        <summary>Determines the size and location of an image drawn within the <see cref="T:System.Windows.Forms.Label" /> control based on the alignment of the control.</summary>
-        <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the specified image within the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method within a derived class of <xref:System.Windows.Forms.Label>, to determine the size and location of an image to draw within the <xref:System.Windows.Forms.Label> control based on its location within the control. The location of the image is based on the value of the control's <xref:System.Windows.Forms.Label.ImageAlign%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <param name="image">To be added.</param>
+        <param name="r">To be added.</param>
+        <param name="align">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -459,7 +306,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -467,8 +313,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessibility object for the control.</summary>
-        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -479,17 +325,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the required creation parameters when the control handle is created.</summary>
-        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="DefaultImeMode">
@@ -499,15 +343,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default Input Method Editor (IME) mode supported by this control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> supported by this control. The default is <see cref="T:System.Windows.Forms.ImeMode" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,15 +361,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the space, in pixels, that is specified by default between controls.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Padding" /> value that represents the default space between controls.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -537,15 +379,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the control.</summary>
-        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,7 +397,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -566,19 +406,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Label" /> and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Label> references. This method invokes the `Dispose` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -588,7 +418,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -601,11 +430,11 @@
         <Parameter Name="align" Type="System.Drawing.ContentAlignment" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> surface on which to draw.</param>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> to draw.</param>
-        <param name="r">The <see cref="T:System.Drawing.Rectangle" /> bounds to draw within.</param>
-        <param name="align">The alignment of the image to draw within the <see cref="T:System.Windows.Forms.Label" />.</param>
-        <summary>Draws an <see cref="T:System.Drawing.Image" /> within the specified bounds.</summary>
+        <param name="g">To be added.</param>
+        <param name="image">To be added.</param>
+        <param name="r">To be added.</param>
+        <param name="align">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -616,7 +445,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -628,20 +456,9 @@
         <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flat style appearance of the label control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.FlatStyle" /> values. The default value is <see langword="Standard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the FlatStyle property is set to `FlatStyle.System`, any values assigned to the <xref:System.Windows.Forms.Label.ImageList%2A>, <xref:System.Windows.Forms.Label.Image%2A>, <xref:System.Windows.Forms.Label.ImageIndex%2A>, and <xref:System.Windows.Forms.Label.ImageAlign%2A> properties are ignored. In addition, the <xref:System.Windows.Forms.Label.TextAlign%2A> property ignores any property values that are not vertical property settings. Horizontally aligned settings of the <xref:System.Windows.Forms.Label.TextAlign%2A> property are aligned to the top of the control. For example, if you set the <xref:System.Windows.Forms.Label.TextAlign%2A> property to `ContentAlignment.TopCenter`, `ContentAlignment.MiddleCenter`, or `ContentAlignment.BottomCenter`, when the FlatStyle property is set to `FlatStyle.System`, the text in the <xref:System.Windows.Forms.Label> control will be aligned to the top and center locations within the bounds of the control.  
-  
-> [!NOTE]
->  In the .NET Framework version 1.1, setting the FlatStyle property to `FlatStyle.System` does not cause the value of the <xref:System.Windows.Forms.Label.TextAlign%2A> property to be ignored. In addition, the property has no effect in the derived class, <xref:System.Windows.Forms.LinkLabel>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.FlatStyle" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -651,7 +468,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -661,9 +477,9 @@
         <Parameter Name="proposedSize" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="proposedSize">The custom-sized area for a control.</param>
-        <summary>Retrieves the size of a rectangular area into which a control can be fitted.</summary>
-        <returns>An ordered pair of type <see cref="T:System.Drawing.Size" /> representing the width and height of a rectangle.</returns>
+        <param name="proposedSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -674,7 +490,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -686,25 +501,9 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the image that is displayed on a <see cref="T:System.Windows.Forms.Label" />.</summary>
-        <value>An <see cref="T:System.Drawing.Image" /> displayed on the <see cref="T:System.Windows.Forms.Label" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Image property cannot be used at the same time as the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. When the Image property is used to display an image, the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties are automatically set to their default settings.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> and then to display an <xref:System.Drawing.Image> behind the <xref:System.Windows.Forms.Label>. First, the example creates a <xref:System.Windows.Forms.Label> and then creates an <xref:System.Drawing.Image> based on a disk file. Next, the <xref:System.Windows.Forms.Control.Size%2A> property is initialized to contain the <xref:System.Drawing.Image>. Finally, the Image property is initialized to the <xref:System.Drawing.Image>.  
-  
- [!code-cpp[Label_Image#1](~/add/codesnippet/cpp/p-system.windows.forms.l_74_1.cpp)]
- [!code-cs[Label_Image#1](~/add/codesnippet/csharp/p-system.windows.forms.l_74_1.cs)]
- [!code-vb[Label_Image#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_74_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageAlign">
@@ -714,7 +513,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -729,26 +527,9 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of an image that is displayed in the control.</summary>
-        <value>One of the <see cref="T:System.Drawing.ContentAlignment" /> values. The default is <see langword="ContentAlignment.MiddleCenter" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables you to align an image within the boundaries of the <xref:System.Windows.Forms.Label> control to ensure that the image is properly displayed. You can add an image to a <xref:System.Windows.Forms.Label> using the <xref:System.Windows.Forms.Label.Image%2A> property or the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. Images displayed in the control cannot be stretched or shrunk to fill the control if the control is larger or smaller than the image.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
-  
- [!code-vb[Classic Label Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_44_1.vb)]
- [!code-cs[Classic Label Example#1](~/add/codesnippet/csharp/p-system.windows.forms.l_44_1.cs)]
- [!code-cpp[Classic Label Example#1](~/add/codesnippet/cpp/p-system.windows.forms.l_44_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageIndex">
@@ -758,7 +539,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -782,26 +562,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index value of the image displayed on the <see cref="T:System.Windows.Forms.Label" />.</summary>
-        <value>A zero-based index that represents the position in the <see cref="T:System.Windows.Forms.ImageList" /> control (assigned to the <see cref="System.Windows.Forms.Label.ImageList%2A" /> property) where the image is located. The default is -1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ImageIndex and the <xref:System.Windows.Forms.Label.ImageList%2A> properties cannot be used at the same time as the <xref:System.Windows.Forms.Label.Image%2A> property. When the ImageIndex property and <xref:System.Windows.Forms.Label.ImageList%2A> properties are used to display an image, the <xref:System.Windows.Forms.Label.Image%2A> property is automatically set to `null`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and ImageIndex properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
-  
- [!code-vb[Classic Label Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_46_1.vb)]
- [!code-cs[Classic Label Example#1](~/add/codesnippet/csharp/p-system.windows.forms.l_46_1.cs)]
- [!code-cpp[Classic Label Example#1](~/add/codesnippet/cpp/p-system.windows.forms.l_46_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value assigned is less than the lower bounds of the ImageIndex property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -811,7 +574,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -835,16 +597,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the key accessor for the image in the <see cref="System.Windows.Forms.Label.ImageList%2A" />.</summary>
-        <value>A string representing the key of the image.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ImageKey property specifies the image from the image list to display on the <xref:System.Windows.Forms.Label>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageList">
@@ -854,7 +609,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -869,28 +623,9 @@
         <ReturnType>System.Windows.Forms.ImageList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ImageList" /> that contains the images to display in the <see cref="T:System.Windows.Forms.Label" /> control.</summary>
-        <value>An <see cref="T:System.Windows.Forms.ImageList" /> that stores the collection of <see cref="T:System.Drawing.Image" /> objects. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Label.ImageIndex%2A> and the ImageList properties cannot be used at the same time as the <xref:System.Windows.Forms.Label.Image%2A> property. When the <xref:System.Windows.Forms.Label.ImageIndex%2A> property and ImageList properties are used to display an image, the <xref:System.Windows.Forms.Label.Image%2A> property is set to `null`.  
-  
-> [!NOTE]
->  The <xref:System.Windows.Forms.Label> will not be garbage collected if its ImageList is still referenced elsewhere. Set the ImageList property of the <xref:System.Windows.Forms.Label> to `null` to enable efficient garbage collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the ImageList and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
-  
- [!code-vb[Classic Label Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_81_1.vb)]
- [!code-cs[Classic Label Example#1](~/add/codesnippet/csharp/p-system.windows.forms.l_81_1.cs)]
- [!code-cpp[Classic Label Example#1](~/add/codesnippet/cpp/p-system.windows.forms.l_81_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImeMode">
@@ -900,7 +635,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -915,17 +649,9 @@
         <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Input Method Editor (IME) mode supported by this control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to this property is not within the range of valid values specified in the enumeration.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImeModeChanged">
@@ -935,7 +661,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -950,15 +675,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.Label.ImeMode%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyDown">
@@ -968,7 +686,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -983,15 +700,8 @@
         <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user presses a key while the label has focus.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -1001,7 +711,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1016,15 +725,8 @@
         <ReturnType>System.Windows.Forms.KeyPressEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user presses a key while the label has focus.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -1034,7 +736,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1049,15 +750,8 @@
         <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user releases a key while the label has focus.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEnabledChanged">
@@ -1067,7 +761,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1077,8 +770,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1089,7 +782,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1099,8 +791,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1111,7 +803,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1121,18 +812,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnHandleDestroyed method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -1142,7 +824,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1152,8 +833,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseEnter" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1164,7 +845,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1174,8 +854,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseLeave" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1186,7 +866,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1196,8 +875,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.PaddingChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1208,7 +887,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1218,8 +896,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1230,7 +908,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1240,8 +917,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1252,7 +929,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1262,18 +938,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.RightToLeftChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRightToLeftChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTextAlignChanged">
@@ -1283,7 +950,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1293,16 +959,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Label.TextAlignChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -1312,7 +971,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1322,8 +980,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1334,7 +992,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1344,8 +1001,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.VisibleChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1356,7 +1013,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1374,28 +1030,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the preferred height of the control.</summary>
-        <value>The height of the control (in pixels), assuming a single line of text is displayed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns the height that the control should be in order to properly display text, based on the font assigned to the control. You can use this property along with the <xref:System.Windows.Forms.Label.PreferredWidth%2A> property to ensure that the text in the <xref:System.Windows.Forms.Label> control is displayed properly. You can use the <xref:System.Windows.Forms.Label.AutoSize%2A> property to automatically adjust the height and the width of the <xref:System.Windows.Forms.Label> control, based on the text and font size.  
-  
-> [!NOTE]
->  If the <xref:System.Windows.Forms.Label.BorderStyle%2A> property of the <xref:System.Windows.Forms.Label> control is set to `BorderStyle.None`, the value returned by PreferredHeight property will be larger due to the lack of borders.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the PreferredHeight and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
-  
- [!code-vb[Classic Label Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_87_1.vb)]
- [!code-cs[Classic Label Example#1](~/add/codesnippet/csharp/p-system.windows.forms.l_87_1.cs)]
- [!code-cpp[Classic Label Example#1](~/add/codesnippet/cpp/p-system.windows.forms.l_87_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredWidth">
@@ -1405,7 +1042,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1423,28 +1059,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the preferred width of the control.</summary>
-        <value>The width of the control (in pixels), assuming a single line of text is displayed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns the length of the text string, but does not take line wrapping into consideration. For example, a text string that measures 300 pixels wide could be displayed as three lines in a <xref:System.Windows.Forms.Label> that is only 100 pixels wide. The PreferredWidth property still returns 300 pixels. You can use this property, along with the <xref:System.Windows.Forms.Label.PreferredHeight%2A> property, to ensure that the text in the <xref:System.Windows.Forms.Label> control is displayed properly. You can use the <xref:System.Windows.Forms.Label.AutoSize%2A> property to automatically adjust the height and the width of the <xref:System.Windows.Forms.Label> control based on the text and font size.  
-  
-> [!NOTE]
->  If the <xref:System.Windows.Forms.Label.BorderStyle%2A> property of the <xref:System.Windows.Forms.Label> control is set to `BorderStyle.None`, the value returned by PreferredWidth property will be larger due to the lack of borders.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and PreferredWidth properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
-  
- [!code-vb[Classic Label Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_24_1.vb)]
- [!code-cs[Classic Label Example#1](~/add/codesnippet/csharp/p-system.windows.forms.l_24_1.cs)]
- [!code-cpp[Classic Label Example#1](~/add/codesnippet/cpp/p-system.windows.forms.l_24_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -1454,7 +1071,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1464,12 +1080,10 @@
         <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="charCode">The character to process.</param>
-        <summary>Processes a mnemonic character.</summary>
-        <returns>
-          <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
+        <param name="charCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.UIPermissionWindow">for access to all windows and user input events. Associated member: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
       </Docs>
     </Member>
     <Member MemberName="RenderTransparent">
@@ -1479,7 +1093,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1491,17 +1104,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the container control background is rendered on the <see cref="T:System.Windows.Forms.Label" />.</summary>
-        <value>
-          <see langword="true" /> if the background of the <see cref="T:System.Windows.Forms.Label" /> control's container is rendered on the <see cref="T:System.Windows.Forms.Label" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Classes that inherit from `Label` can override this method to determine whether the derived control background will be rendered transparently on the form on which the control is drawn.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -1511,7 +1116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1525,20 +1129,13 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="x">The new <see cref="System.Windows.Forms.Control.Left%2A" /> property value of the control.</param>
-        <param name="y">The new <see cref="System.Windows.Forms.Control.Top%2A" /> property value of the control.</param>
-        <param name="width">The new <see cref="System.Windows.Forms.Control.Width%2A" /> property value of the control.</param>
-        <param name="height">The new <see cref="System.Windows.Forms.Control.Height%2A" /> property value of the control.</param>
-        <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values. For any parameter not specified, the current value will be used.</param>
-        <summary>Sets the specified bounds of the label.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you set the <xref:System.Windows.Forms.Label.AutoSize%2A> property to `true`, the label will be sized to fit the contents of the label. If you set <xref:System.Windows.Forms.Label.AutoSize%2A> to `false` after calling the SetBoundsCore method, the label will receive the dimensions you specified in the call.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="specified">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -1548,7 +1145,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1566,16 +1162,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the user can tab to the <see cref="T:System.Windows.Forms.Label" />. This property is not used by this class.</summary>
-        <value>This property is not used by this class. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TabStop property is not relevant for the <xref:System.Windows.Forms.Label> class, so setting TabStop to `true` has no effect.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStopChanged">
@@ -1585,7 +1174,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1600,15 +1188,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.Label.TabStop%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1618,7 +1199,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1633,8 +1213,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text associated with this control.</summary>
-        <value>The text associated with this control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1645,7 +1225,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1660,17 +1239,9 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of text in the label.</summary>
-        <value>One of the <see cref="T:System.Drawing.ContentAlignment" /> values. The default is <see cref="T:System.Drawing.ContentAlignment" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to align the text within a label to match the layout of controls on your form. For example, if your controls are located to the right edge of the labels, you can set the TextAlign property to one of the right-aligned horizontal alignments (<xref:System.Drawing.ContentAlignment>, <xref:System.Drawing.ContentAlignment>, <xref:System.Drawing.ContentAlignment>) and the text will be aligned with the right edge of the labels to align with your controls.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlignChanged">
@@ -1680,32 +1251,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.Label.TextAlign%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the TextAlignChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Label> named Label1. Then ensure that the event handler is associated with the TextAlignChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#459](~/add/codesnippet/csharp/e-system.windows.forms.l_15_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#459](~/add/codesnippet/visualbasic/e-system.windows.forms.l_15_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1715,7 +1268,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1723,8 +1275,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current <see cref="T:System.Windows.Forms.Label" />.</summary>
-        <returns>A string that represents the current <see cref="T:System.Windows.Forms.Label" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1735,7 +1287,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1747,19 +1298,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether to use the <see cref="T:System.Drawing.Graphics" /> class ([!INCLUDE[ndptecgdiplus](~/add/includes/ndptecgdiplus-md.md)]) or the <see cref="T:System.Windows.Forms.TextRenderer" /> class ([!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)]) to render text.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Drawing.Graphics" /> class should be used to perform text rendering for compatibility with versions 1.0 and 1.1. of the .NET Framework; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `UseCompatibleTextRendering` property is intended to provide visual compatibility between Windows Forms controls that render text using the <xref:System.Windows.Forms.TextRenderer> class and [!INCLUDE[net_v10_short](~/add/includes/net-v10-short-md.md)] and [!INCLUDE[net_v11_short](~/add/includes/net-v11-short-md.md)] applications that perform custom text rendering using the <xref:System.Drawing.Graphics> class. In most cases, if your application is not being upgraded from [!INCLUDE[net_v10_short](~/add/includes/net-v10-short-md.md)] or [!INCLUDE[net_v11_short](~/add/includes/net-v11-short-md.md)], it is recommended that you leave `UseCompatibleTextRendering` set to the default value of `false`.  
-  
- The [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] based <xref:System.Windows.Forms.TextRenderer> class was introduced in the [!INCLUDE[dnprdnlong](~/add/includes/dnprdnlong-md.md)] to improve performance, make text look better, and improve support for international fonts. In earlier versions of the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)], the [!INCLUDE[ndptecgdiplus](~/add/includes/ndptecgdiplus-md.md)] based <xref:System.Drawing.Graphics> class was used to perform all text rendering. [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] calculates character spacing and word wrapping differently from [!INCLUDE[ndptecgdiplus](~/add/includes/ndptecgdiplus-md.md)]. In a Windows Forms application that uses the <xref:System.Drawing.Graphics> class to render text, this could cause the text for controls that use <xref:System.Windows.Forms.TextRenderer> to appear different from the other text in the application. To resolve this incompatibility, you can set the `UseCompatibleTextRendering` property to `true` for a specific control. To set `UseCompatibleTextRendering` to `true` for all supported controls in the application, call the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A?displayProperty=fullName> method with a parameter of `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseMnemonic">
@@ -1769,7 +1310,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1781,26 +1321,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the control interprets an ampersand character (&amp;) in the control's <see cref="System.Windows.Forms.Control.Text%2A" /> property to be an access key prefix character.</summary>
-        <value>
-          <see langword="true" /> if the label doesn't display the ampersand character and underlines the character after the ampersand in its displayed text and treats the underlined character as an access key; otherwise, <see langword="false" /> if the ampersand character is displayed in the text of the control. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the UseMnemonic property is set to `true` and a mnemonic character (a character preceded by the ampersand) is defined in the <xref:System.Windows.Forms.Control.Text%2A> property of the <xref:System.Windows.Forms.Label>, pressing ALT+ the mnemonic character sets the focus to the control that follows the <xref:System.Windows.Forms.Label> in the tab order. You can use this property to provide proper keyboard navigation to the controls on your form.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.Label.ImageList%2A> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing> namespace added to its code.  
-  
- [!code-vb[Classic Label Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_51_1.vb)]
- [!code-cs[Classic Label Example#1](~/add/codesnippet/csharp/p-system.windows.forms.l_51_1.cs)]
- [!code-cpp[Classic Label Example#1](~/add/codesnippet/cpp/p-system.windows.forms.l_51_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -1810,7 +1333,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1820,10 +1342,9 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

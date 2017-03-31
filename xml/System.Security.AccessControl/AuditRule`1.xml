@@ -3,7 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuditRule`1&lt;struct .ctor (class System.ValueType) T&gt; extends System.Security.AccessControl.AuditRule" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AuditRule`1" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -20,8 +25,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of the audit rule.</typeparam>
-    <summary>Represents a combination of a user’s identity and an access mask.</summary>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +36,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AuditRule`1.#ctor(System.Security.Principal.IdentityReference,`0,System.Security.AccessControl.AuditFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -40,10 +50,10 @@
         <Parameter Name="flags" Type="System.Security.AccessControl.AuditFlags" />
       </Parameters>
       <Docs>
-        <param name="identity">The identity to which this audit rule applies.</param>
-        <param name="rights">The rights of the audit rule.</param>
-        <param name="flags">The conditions for which the rule is audited.</param>
-        <summary>Initializes a new instance of the <see cref="System.Security.AccessControl.AuditRule%601" /> class by using the specified values.</summary>
+        <param name="identity">To be added.</param>
+        <param name="rights">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +63,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AuditRule`1.#ctor(System.String,`0,System.Security.AccessControl.AuditFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -62,10 +77,10 @@
         <Parameter Name="flags" Type="System.Security.AccessControl.AuditFlags" />
       </Parameters>
       <Docs>
-        <param name="identity">The identity to which the audit rule applies.</param>
-        <param name="rights">The rights of the audit rule.</param>
-        <param name="flags">The properties of the audit rule.</param>
-        <summary>Initializes a new instance of the <see cref="System.Security.AccessControl.AuditRule%601" /> class by using the specified values.</summary>
+        <param name="identity">To be added.</param>
+        <param name="rights">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,7 +90,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AuditRule`1.#ctor(System.Security.Principal.IdentityReference,`0,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -86,12 +106,12 @@
         <Parameter Name="flags" Type="System.Security.AccessControl.AuditFlags" />
       </Parameters>
       <Docs>
-        <param name="identity">The identity to which the audit rule applies.</param>
-        <param name="rights">The rights of the audit rule.</param>
-        <param name="inheritanceFlags">The inheritance properties of the audit rule.</param>
-        <param name="propagationFlags">Whether inherited audit rules are automatically propagated.</param>
-        <param name="flags">The conditions for which the rule is audited.</param>
-        <summary>Initializes a new instance of the <see cref="System.Security.AccessControl.AuditRule%601" /> class by using the specified values.</summary>
+        <param name="identity">To be added.</param>
+        <param name="rights">To be added.</param>
+        <param name="inheritanceFlags">To be added.</param>
+        <param name="propagationFlags">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +121,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AuditRule`1.#ctor(System.String,`0,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -112,12 +137,12 @@
         <Parameter Name="flags" Type="System.Security.AccessControl.AuditFlags" />
       </Parameters>
       <Docs>
-        <param name="identity">The identity to which the audit rule applies.</param>
-        <param name="rights">The rights of the audit rule.</param>
-        <param name="inheritanceFlags">The inheritance properties of the audit rule.</param>
-        <param name="propagationFlags">Whether inherited audit rules are automatically propagated.</param>
-        <param name="flags">The conditions for which the rule is audited.</param>
-        <summary>Initializes a new instance of the <see cref="System.Security.AccessControl.AuditRule%601" />class by using the specified values.</summary>
+        <param name="identity">To be added.</param>
+        <param name="rights">To be added.</param>
+        <param name="inheritanceFlags">To be added.</param>
+        <param name="propagationFlags">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,15 +152,20 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.AuditRule`1.Rights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the rights of the audit rule.</summary>
-        <value>The rights of the audit rule.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Permissions.SecurityAttribute</BaseTypeName>
@@ -20,28 +24,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the base attribute class for code access security.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute class associates a <xref:System.Security.Permissions.SecurityAction>, for example, `Demand`, with a custom security attribute.  
-  
- The types that derive from CodeAccessSecurityAttribute are used to help restrict access to resources or securable operations.  
-  
- The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. Use the corresponding permission class derived from <xref:System.Security.CodeAccessPermission> for imperative security.  
-  
-   
-  
-## Examples  
- The following example shows a permission attribute derived from the CodeAccessSecurityAttribute class.  
-  
- [!code-cs[System.Security.Permissions.CodeAccessSecurityAttribute#1](~/add/codesnippet/csharp/t-system.security.permis_6_1.cs)]
- [!code-cpp[System.Security.Permissions.CodeAccessSecurityAttribute#1](~/add/codesnippet/cpp/t-system.security.permis_6_1.cpp)]
- [!code-vb[System.Security.Permissions.CodeAccessSecurityAttribute#1](~/add/codesnippet/visualbasic/t-system.security.permis_6_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,23 +35,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
       </Parameters>
       <Docs>
-        <param name="action">One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</param>
-        <summary>Initializes a new instance of <see cref="T:System.Security.Permissions.CodeAccessSecurityAttribute" /> with the specified <see cref="T:System.Security.Permissions.SecurityAction" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot create an instance of this class. You must inherit from this class to make use of its functionality.  
-  
- ]]></format>
-        </remarks>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

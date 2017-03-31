@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignSurfaceEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaceCreated" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,18 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="surface" Type="System.ComponentModel.Design.DesignSurface" />
       </Parameters>
       <Docs>
-        <param name="surface">The design surface that is being created.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurfaceEventArgs" /> class.</summary>
+        <param name="surface">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="surface" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Surface">
@@ -44,15 +40,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignSurface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the design surface that is being created.</summary>
-        <value>A <see cref="T:System.ComponentModel.Design.DesignSurface" /> that is being created.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

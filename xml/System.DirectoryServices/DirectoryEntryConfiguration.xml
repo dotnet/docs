@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryEntryConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,11 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The DirectoryEntryConfiguration class provides a direct way to specify and obtain provider-specific options for manipulating a directory object. Typically, the options apply to search operations of the underlying directory store. The supported options are provider-specific.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
-      <see cref="T:System.Security.Permissions.SecurityAction" />
-    </permission>
   </Docs>
   <Members>
     <Member MemberName="GetCurrentServerName">
@@ -26,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,8 +29,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the host name of the server for the current binding to this directory object.</summary>
-        <returns>The name of the server.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -54,9 +48,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines if mutual authentication is performed by the SSPI layer.</summary>
-        <returns>
-          <see langword="true" /> if mutual authentication has been performed; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the page size in a paged search.</summary>
-        <value>The number of entries in a page.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +78,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.PasswordEncodingMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the password encoding method.</summary>
-        <value>One of the <see cref="T:System.DirectoryServices.PasswordEncodingMethod" /> enumeration members that indicates the type of password encoding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,23 +96,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the port number to use to establish an SSL connection when the password is set or changed.</summary>
-        <value>The port number to use to establish an SSL connection when the password is set or changed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, port 636 is used to establish an SSL connection when setting or changing a password.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Referral">
@@ -131,15 +114,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ReferralChasingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines if and how referral chasing is pursued.</summary>
-        <value>A combination of one or more of the <see cref="T:System.DirectoryServices.ReferralChasingOption" /> enumeration members that specifies if and how referral chasing is pursued.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,15 +132,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a security mask to use with <see cref="T:System.DirectoryServices.DirectoryEntryConfiguration" />.</summary>
-        <value>A combination of one or more of the <see cref="T:System.DirectoryServices.SecurityMasks" /> enumeration members that specifies the security mask.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,7 +150,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,8 +159,8 @@
         <Parameter Name="accountName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="accountName">The account name that is being set to allow queries on its principal name.</param>
-        <summary>Sets the name of a security principal so that when the principal is accessed, its quota information will also be returned.</summary>
+        <param name="accountName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

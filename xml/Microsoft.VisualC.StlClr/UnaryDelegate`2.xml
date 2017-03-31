@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.UnaryDelegate`2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -15,24 +14,17 @@
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="" Type="TArg" />
+    <Parameter Name="A_0" Type="TArg" />
   </Parameters>
   <ReturnValue>
     <ReturnType>TResult</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="TArg">The type of the delegate argument.</typeparam>
-    <typeparam name="TResult">The return type of the delegate.</typeparam>
-    <param name="A_0">The delegate argument.</param>
-    <summary>Describes a one-argument delegate. You use it to specify the argument and return type of the delegate.</summary>
-    <returns>The return type of the delegate.</returns>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This delegate is the generic equivalent of the STL/CLR `unary_delegate` class. For more information, see [unary_delegate (STL/CLR)](../Topic/unary_delegate%20\(STL-CLR\).md).  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TArg">To be added.</typeparam>
+    <typeparam name="TResult">To be added.</typeparam>
+    <param name="A_0">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

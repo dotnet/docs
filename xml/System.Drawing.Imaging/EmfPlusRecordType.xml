@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EmfPlusRecordType" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the methods available for use with a metafile to read and write graphic commands.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GDI+ uses the enhanced Windows metafile image format (EMF). The EMF format contains a comment mechanism for embedding data within the metafile. This comment mechanism is used to embed GDI+ records within an EMF file. EMF files that contain GDI+ data are called EMF+ files. Applications that do not recognize the comment data skip the comment records and render the records they do understand. If the EMF+ file is played back by GDI+, then the GDI+ records are used to render the metafile; otherwise, the GDI records (if present) are used.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginContainer">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.BeginContainer%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeginContainerNoParams">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.BeginContainer%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.Clear%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.AddMetafileComment%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawArc">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawArc%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawBeziers">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawBeziers%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawClosedCurve">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawClosedCurve%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawCurve">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawCurve%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawDriverString">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a character string, a location, and formatting information.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawEllipse">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawEllipse%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawImage%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawImagePoints">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawImage%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawLines">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawLines%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawPath">
@@ -250,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawPath%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawPie">
@@ -267,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawPie%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawRects">
@@ -284,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawRectangles%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawString">
@@ -301,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.DrawString%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfAbortPath">
@@ -318,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfAlphaBlend">
@@ -335,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfAngleArc">
@@ -352,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfArcTo">
@@ -369,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfBeginPath">
@@ -386,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfBitBlt">
@@ -403,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfChord">
@@ -420,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfCloseFigure">
@@ -437,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfColorCorrectPalette">
@@ -454,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfColorMatchToTargetW">
@@ -471,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfCreateBrushIndirect">
@@ -488,14 +453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfCreateColorSpace">
@@ -505,14 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfCreateColorSpaceW">
@@ -522,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfCreateDibPatternBrushPt">
@@ -539,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfCreateMonoBrush">
@@ -556,14 +517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfCreatePalette">
@@ -573,14 +533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfCreatePen">
@@ -590,14 +549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfDeleteColorSpace">
@@ -607,14 +565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfDeleteObject">
@@ -624,14 +581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfDrawEscape">
@@ -641,14 +597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfEllipse">
@@ -658,14 +613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfEndPath">
@@ -675,14 +629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfEof">
@@ -692,14 +645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfExcludeClipRect">
@@ -709,14 +661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfExtCreateFontIndirect">
@@ -726,14 +677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfExtCreatePen">
@@ -743,14 +693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfExtEscape">
@@ -760,14 +709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfExtFloodFill">
@@ -777,14 +725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfExtSelectClipRgn">
@@ -794,14 +741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfExtTextOutA">
@@ -811,14 +757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfExtTextOutW">
@@ -828,14 +773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfFillPath">
@@ -845,14 +789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfFillRgn">
@@ -862,14 +805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfFlattenPath">
@@ -879,14 +821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfForceUfiMapping">
@@ -896,14 +837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfFrameRgn">
@@ -913,14 +853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfGdiComment">
@@ -930,14 +869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfGlsBoundedRecord">
@@ -947,14 +885,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfGlsRecord">
@@ -964,14 +901,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfGradientFill">
@@ -981,14 +917,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfHeader">
@@ -998,14 +933,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfIntersectClipRect">
@@ -1015,14 +949,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfInvertRgn">
@@ -1032,14 +965,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfLineTo">
@@ -1049,14 +981,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfMaskBlt">
@@ -1066,14 +997,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfMax">
@@ -1083,14 +1013,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfMin">
@@ -1100,14 +1029,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfModifyWorldTransform">
@@ -1117,14 +1045,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfMoveToEx">
@@ -1134,14 +1061,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfNamedEscpae">
@@ -1151,14 +1077,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfOffsetClipRgn">
@@ -1168,14 +1093,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPaintRgn">
@@ -1185,14 +1109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPie">
@@ -1202,14 +1125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPixelFormat">
@@ -1219,14 +1141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPlgBlt">
@@ -1236,14 +1157,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPlusRecordBase">
@@ -1253,14 +1173,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyBezier">
@@ -1270,14 +1189,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyBezier16">
@@ -1287,14 +1205,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyBezierTo">
@@ -1304,14 +1221,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyBezierTo16">
@@ -1321,14 +1237,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyDraw">
@@ -1338,14 +1253,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyDraw16">
@@ -1355,14 +1269,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolygon">
@@ -1372,14 +1285,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolygon16">
@@ -1389,14 +1301,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyline">
@@ -1406,14 +1317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyline16">
@@ -1423,14 +1333,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyLineTo">
@@ -1440,14 +1349,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolylineTo16">
@@ -1457,14 +1365,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyPolygon">
@@ -1474,14 +1381,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyPolygon16">
@@ -1491,14 +1397,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyPolyline">
@@ -1508,14 +1413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyPolyline16">
@@ -1525,14 +1429,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyTextOutA">
@@ -1542,14 +1445,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPolyTextOutW">
@@ -1559,14 +1461,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfRealizePalette">
@@ -1576,14 +1477,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfRectangle">
@@ -1593,14 +1493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfReserved069">
@@ -1610,14 +1509,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfReserved117">
@@ -1627,14 +1525,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfResizePalette">
@@ -1644,14 +1541,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfRestoreDC">
@@ -1661,14 +1557,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfRoundArc">
@@ -1678,14 +1573,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfRoundRect">
@@ -1695,14 +1589,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSaveDC">
@@ -1712,14 +1605,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfScaleViewportExtEx">
@@ -1729,14 +1621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfScaleWindowExtEx">
@@ -1746,14 +1637,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSelectClipPath">
@@ -1763,14 +1653,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSelectObject">
@@ -1780,14 +1669,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSelectPalette">
@@ -1797,14 +1685,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetArcDirection">
@@ -1814,14 +1701,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetBkColor">
@@ -1831,14 +1717,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetBkMode">
@@ -1848,14 +1733,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetBrushOrgEx">
@@ -1865,14 +1749,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetColorAdjustment">
@@ -1882,14 +1765,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetColorSpace">
@@ -1899,14 +1781,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetDIBitsToDevice">
@@ -1916,14 +1797,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetIcmMode">
@@ -1933,14 +1813,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetIcmProfileA">
@@ -1950,14 +1829,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetIcmProfileW">
@@ -1967,14 +1845,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetLayout">
@@ -1984,14 +1861,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetLinkedUfis">
@@ -2001,14 +1877,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetMapMode">
@@ -2018,14 +1893,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetMapperFlags">
@@ -2035,14 +1909,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetMetaRgn">
@@ -2052,14 +1925,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetMiterLimit">
@@ -2069,14 +1941,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetPaletteEntries">
@@ -2086,14 +1957,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetPixelV">
@@ -2103,14 +1973,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetPolyFillMode">
@@ -2120,14 +1989,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetROP2">
@@ -2137,14 +2005,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetStretchBltMode">
@@ -2154,14 +2021,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetTextAlign">
@@ -2171,14 +2037,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetTextColor">
@@ -2188,14 +2053,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetTextJustification">
@@ -2205,14 +2069,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetViewportExtEx">
@@ -2222,14 +2085,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetViewportOrgEx">
@@ -2239,14 +2101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetWindowExtEx">
@@ -2256,14 +2117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetWindowOrgEx">
@@ -2273,14 +2133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSetWorldTransform">
@@ -2290,14 +2149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfSmallTextOut">
@@ -2307,14 +2165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfStartDoc">
@@ -2324,14 +2181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfStretchBlt">
@@ -2341,14 +2197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfStretchDIBits">
@@ -2358,14 +2213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfStrokeAndFillPath">
@@ -2375,14 +2229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfStrokePath">
@@ -2392,14 +2245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfTransparentBlt">
@@ -2409,14 +2261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfWidenPath">
@@ -2426,14 +2277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Enhanced-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndContainer">
@@ -2443,14 +2293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.EndContainer%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndOfFile">
@@ -2460,14 +2309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies a record that marks the last EMF+ record of a metafile.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FillClosedCurve">
@@ -2477,14 +2325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.FillClosedCurve%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FillEllipse">
@@ -2494,14 +2341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.FillEllipse%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FillPath">
@@ -2511,14 +2357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.FillPath%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FillPie">
@@ -2528,14 +2373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.FillPie%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FillPolygon">
@@ -2545,14 +2389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.FillPolygon%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FillRects">
@@ -2562,14 +2405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.FillRectangles%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FillRegion">
@@ -2579,14 +2421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.FillRegion%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GetDC">
@@ -2596,14 +2437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.GetHdc%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -2613,14 +2453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies a record that is the EMF+ header.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -2630,14 +2469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates invalid data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -2647,14 +2485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The maximum value for this enumeration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -2664,14 +2501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The minimum value for this enumeration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiFormatEnd">
@@ -2681,14 +2517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Marks the end of a multiple-format section.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiFormatSection">
@@ -2698,14 +2533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Marks a multiple-format section.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiFormatStart">
@@ -2715,14 +2549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Marks the start of a multiple-format section.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiplyWorldTransform">
@@ -2732,14 +2565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.MultiplyTransform%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -2749,14 +2581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Marks an object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OffsetClip">
@@ -2766,14 +2597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.TranslateClip%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResetClip">
@@ -2783,14 +2613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.ResetClip%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResetWorldTransform">
@@ -2800,14 +2629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.ResetTransform%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Restore">
@@ -2817,14 +2645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.Restore%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RotateWorldTransform">
@@ -2834,14 +2661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.RotateTransform%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2851,14 +2677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.Save%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScaleWorldTransform">
@@ -2868,14 +2693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.ScaleTransform%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetAntiAliasMode">
@@ -2885,14 +2709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.SmoothingMode%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetClipPath">
@@ -2902,14 +2725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.SetClip%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetClipRect">
@@ -2919,14 +2741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.SetClip%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetClipRegion">
@@ -2936,14 +2757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.SetClip%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetCompositingMode">
@@ -2953,14 +2773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.CompositingMode%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetCompositingQuality">
@@ -2970,14 +2789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.CompositingQuality%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetInterpolationMode">
@@ -2987,14 +2805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.InterpolationMode%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetPageTransform">
@@ -3004,14 +2821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.TransformPoints%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetPixelOffsetMode">
@@ -3021,14 +2837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.PixelOffsetMode%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetRenderingOrigin">
@@ -3038,14 +2853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.RenderingOrigin%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetTextContrast">
@@ -3055,14 +2869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.TextContrast%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetTextRenderingHint">
@@ -3072,14 +2885,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.TextRenderingHint%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetWorldTransform">
@@ -3089,14 +2901,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.TransformPoints%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Total">
@@ -3106,14 +2917,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used internally.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TranslateWorldTransform">
@@ -3123,14 +2933,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Drawing.Graphics.TransformPoints%2A" /> methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfAnimatePalette">
@@ -3140,14 +2949,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfArc">
@@ -3157,14 +2965,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfBitBlt">
@@ -3174,14 +2981,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfChord">
@@ -3191,14 +2997,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfCreateBrushIndirect">
@@ -3208,14 +3013,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfCreateFontIndirect">
@@ -3225,14 +3029,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfCreatePalette">
@@ -3242,14 +3045,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfCreatePatternBrush">
@@ -3259,14 +3061,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfCreatePenIndirect">
@@ -3276,14 +3077,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfCreateRegion">
@@ -3293,14 +3093,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfDeleteObject">
@@ -3310,14 +3109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfDibBitBlt">
@@ -3327,14 +3125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfDibCreatePatternBrush">
@@ -3344,14 +3141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfDibStretchBlt">
@@ -3361,14 +3157,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfEllipse">
@@ -3378,14 +3173,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfEscape">
@@ -3395,14 +3189,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfExcludeClipRect">
@@ -3412,14 +3205,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfExtFloodFill">
@@ -3429,14 +3221,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfExtTextOut">
@@ -3446,14 +3237,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfFillRegion">
@@ -3463,14 +3253,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfFloodFill">
@@ -3480,14 +3269,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfFrameRegion">
@@ -3497,14 +3285,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfIntersectClipRect">
@@ -3514,14 +3301,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfInvertRegion">
@@ -3531,14 +3317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfLineTo">
@@ -3548,14 +3333,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfMoveTo">
@@ -3565,14 +3349,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfOffsetCilpRgn">
@@ -3582,14 +3365,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfOffsetViewportOrg">
@@ -3599,14 +3381,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfOffsetWindowOrg">
@@ -3616,14 +3397,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfPaintRegion">
@@ -3633,14 +3413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfPatBlt">
@@ -3650,14 +3429,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfPie">
@@ -3667,14 +3445,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfPolygon">
@@ -3684,14 +3461,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfPolyline">
@@ -3701,14 +3477,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfPolyPolygon">
@@ -3718,14 +3493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfRealizePalette">
@@ -3735,14 +3509,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfRecordBase">
@@ -3752,14 +3525,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfRectangle">
@@ -3769,14 +3541,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfResizePalette">
@@ -3786,14 +3557,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Increases or decreases the size of a logical palette based on the specified value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfRestoreDC">
@@ -3803,14 +3573,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfRoundRect">
@@ -3820,14 +3589,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSaveDC">
@@ -3837,14 +3605,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfScaleViewportExt">
@@ -3854,14 +3621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfScaleWindowExt">
@@ -3871,14 +3637,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSelectClipRegion">
@@ -3888,14 +3653,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSelectObject">
@@ -3905,14 +3669,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSelectPalette">
@@ -3922,14 +3685,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetBkColor">
@@ -3939,14 +3701,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetBkMode">
@@ -3956,14 +3717,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetDibToDev">
@@ -3973,14 +3733,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetLayout">
@@ -3990,14 +3749,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetMapMode">
@@ -4007,14 +3765,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetMapperFlags">
@@ -4024,14 +3781,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetPalEntries">
@@ -4041,14 +3797,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetPixel">
@@ -4058,14 +3813,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetPolyFillMode">
@@ -4075,14 +3829,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetRelAbs">
@@ -4092,14 +3845,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetROP2">
@@ -4109,14 +3861,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetStretchBltMode">
@@ -4126,14 +3877,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetTextAlign">
@@ -4143,14 +3893,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetTextCharExtra">
@@ -4160,14 +3909,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetTextColor">
@@ -4177,14 +3925,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetTextJustification">
@@ -4194,14 +3941,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetViewportExt">
@@ -4211,14 +3957,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetViewportOrg">
@@ -4228,14 +3973,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetWindowExt">
@@ -4245,14 +3989,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfSetWindowOrg">
@@ -4262,14 +4005,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfStretchBlt">
@@ -4279,14 +4021,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfStretchDib">
@@ -4296,14 +4037,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Copies the color data for a rectangle of pixels in a DIB to the specified destination rectangle.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfTextOut">
@@ -4313,14 +4053,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EmfPlusRecordType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See "Windows-Format Metafiles" in the GDI section of the MSDN Library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

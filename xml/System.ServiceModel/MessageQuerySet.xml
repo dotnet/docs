@@ -15,17 +15,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A set of <see cref="T:System.ServiceModel.Dispatcher.MessageQuery" /> objects and an associated string parameter.  A correlation hash (<see cref="T:System.Runtime.DurableInstancing.InstanceKey" />) is computed from the results of the <see cref="T:System.ServiceModel.Dispatcher.MessageQuery" /> objects as well as the associated strings.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create a MessageQuerySet in a <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> within a <xref:System.ServiceModel.Activities.SendReply> activity.  
-  
- [!code-cs[ContentBasedCorrelation#2](~/add/codesnippet/csharp/t-system.servicemodel.me_6_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageQuerySet" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +47,8 @@
         <Parameter Name="queryTable" Type="System.ServiceModel.Dispatcher.MessageQueryTable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="queryTable">The message query table.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageQuerySet" /> class with the specified <see cref="System.ServiceModel.Dispatcher.MessageQueryTable%601" />.</summary>
+        <param name="queryTable">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +66,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the message query table associated with the current <see cref="T:System.ServiceModel.MessageQuerySet" /> instance.</summary>
-        <returns>The message query table.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +89,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.ServiceModel.MessageQuerySet" /> instance.</summary>
-        <value>The name of the message query set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

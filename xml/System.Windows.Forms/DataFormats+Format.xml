@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataFormats.Format" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a Clipboard format type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A format type consists of a text-based format name and an ID number. The format name/ID number pair can define a system <xref:System.Windows.Forms.Clipboard> or other format.  
-  
-   
-  
-## Examples  
- The following code example shows how to retrieve a DataFormats.Format representing a format name/ID pair. The <xref:System.Windows.Forms.DataFormats.UnicodeText> format is requested, and the contents of the retrieved DataFormats.Format are displayed in a text box.  
-  
- This code requires that `textBox1` has been created.  
-  
- [!code-cs[Classic DataFormats.GetFormat Example#1](~/add/codesnippet/csharp/t-system.windows.forms.d_42_1.cs)]
- [!code-vb[Classic DataFormats.GetFormat Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_42_1.vb)]
- [!code-cpp[Classic DataFormats.GetFormat Example#1](~/add/codesnippet/cpp/t-system.windows.forms.d_42_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -49,21 +29,10 @@
         <Parameter Name="id" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of this format.</param>
-        <param name="id">The ID number for this format.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataFormats.Format" /> class with a Boolean that indicates whether a <see langword="Win32" /> handle is expected.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a new format for a name and unique ID number. The new format does not require a Windows handle. It requires that `textBox1` has been instantiated.  
-  
- [!code-vb[Classic DataFormats.Format.Format Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.d_49_1.vb)]
- [!code-cpp[Classic DataFormats.Format.Format Example#1](~/add/codesnippet/cpp/m-system.windows.forms.d_49_1.cpp)]
- [!code-cs[Classic DataFormats.Format.Format Example#1](~/add/codesnippet/csharp/m-system.windows.forms.d_49_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -73,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID number for this format.</summary>
-        <value>The ID number for this format.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of this format.</summary>
-        <value>The name of this format.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

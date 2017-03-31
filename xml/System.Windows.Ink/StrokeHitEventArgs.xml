@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StrokeHitEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit" /> event of a <see cref="T:System.Windows.Ink.IncrementalStrokeHitTester" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -31,16 +29,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the strokes that are a result of the eraser path erasing a stroke.</summary>
-        <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains the strokes that are created after the eraser path erases part of <see cref="System.Windows.Ink.StrokeHitEventArgs.HitStroke%2A" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetPointEraseResults method returns a <xref:System.Windows.Ink.StrokeCollection> that contains the strokes that result in the eraser path erasing the <xref:System.Windows.Ink.StrokeHitEventArgs.HitStroke%2A> where they intersect. If the eraser path intersects the middle of <xref:System.Windows.Ink.StrokeHitEventArgs.HitStroke%2A>, the GetPointEraseResults method returns a <xref:System.Windows.Ink.StrokeCollection> that contains two new strokes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HitStroke">
@@ -50,15 +41,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Ink.Stroke</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Ink.Stroke" /> that is intersected by the eraser path.</summary>
-        <value>The <see cref="T:System.Windows.Ink.Stroke" /> that is intersected by the eraser path.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

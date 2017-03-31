@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.ComponentInstaller" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies an installer that copies properties from a component to use at install time.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.ComponentInstaller" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,25 +46,9 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">The component to copy from.</param>
-        <summary>When overridden in a derived class, copies all the properties that are required at install time from the specified component.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The installer should take all the information it can from the live component, and store it for use at install time.  
-  
-   
-  
-## Examples  
- The following example defines a class `MyInstallClass`, which creates the event log and copies the properties of the event log component to the <xref:System.Diagnostics.EventLogInstaller>. It also checks whether the <xref:System.ServiceProcess.ServiceInstaller> can perform the same kind of installation as the <xref:System.Diagnostics.EventLogInstaller>.  
-  
- [!code-cpp[ComponentInstaller_CopyFromComponent#1](~/add/codesnippet/cpp/bbbdd3c8-8c26-472e-ad0c-_1.cpp)]
- [!code-vb[ComponentInstaller_CopyFromComponent#1](~/add/codesnippet/visualbasic/bbbdd3c8-8c26-472e-ad0c-_1.vb)]
- [!code-cs[ComponentInstaller_CopyFromComponent#1](~/add/codesnippet/csharp/bbbdd3c8-8c26-472e-ad0c-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEquivalentInstaller">
@@ -77,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,27 +67,10 @@
         <Parameter Name="otherInstaller" Type="System.Configuration.Install.ComponentInstaller" />
       </Parameters>
       <Docs>
-        <param name="otherInstaller">The installer to compare.</param>
-        <summary>Determines if the specified installer installs the same object as this installer.</summary>
-        <returns>
-          <see langword="true" /> if this installer and the installer specified by the <paramref name="otherInstaller" /> parameter install the same object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, IsEquivalentInstaller returns `true` only if this installer and the installer specified by the `otherInstaller` parameter install the same object. In such a case, calling the <xref:System.Configuration.Install.Installer.Install%2A> or <xref:System.Configuration.Install.Installer.Uninstall%2A> method on either installer results in the same system state.  
-  
-   
-  
-## Examples  
- The following example defines a class `MyInstallClass`, which creates the event log and copies the properties of the event log component to the <xref:System.Diagnostics.EventLogInstaller> object. It also checks whether <xref:System.ServiceProcess.ServiceInstaller> object can handle the same kind of installation as <xref:System.Diagnostics.EventLogInstaller>.  
-  
- [!code-cpp[ComponentInstaller_CopyFromComponent#2](~/add/codesnippet/cpp/9712fa47-8bed-4108-9ebc-_1.cpp)]
- [!code-vb[ComponentInstaller_CopyFromComponent#2](~/add/codesnippet/visualbasic/9712fa47-8bed-4108-9ebc-_1.vb)]
- [!code-cs[ComponentInstaller_CopyFromComponent#2](~/add/codesnippet/csharp/9712fa47-8bed-4108-9ebc-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="otherInstaller">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

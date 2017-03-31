@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -20,8 +19,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="ConfigurationElementType">The type of this configuration element.</typeparam>
-    <summary>Represents an abstract base class for a <see cref="T:System.Configuration.ConfigurationElementCollection" /> used within the <see cref="N:System.ServiceModel.Configuration" /> namespace.</summary>
+    <typeparam name="ConfigurationElementType">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +31,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,11 +40,9 @@
         <Parameter Name="element" Type="ConfigurationElementType" />
       </Parameters>
       <Docs>
-        <param name="element">The configuration element to be added.</param>
-        <summary>Adds the specified configuration element to this collection.</summary>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" /> or empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="BaseAdd">
@@ -56,7 +52,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,12 +61,9 @@
         <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="element">The configuration element to add.</param>
-        <summary>Adds the specified <see cref="T:System.Configuration.ConfigurationElement" /> object to this collection.</summary>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" /> or empty.</exception>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file contains an existing element identical to <paramref name="element" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -81,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,7 +80,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all the configuration elements from this collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,15 +91,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the configuration collection.</summary>
-        <value>A <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> that specifies the type of the configuration collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +109,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,13 +118,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The configuration element to search for in the collection.</param>
-        <summary>Returns a boolean value that indicates whether this collection contains a configuration element with the specified key.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains a configuration element with the specified key; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="key" /> is <see langword="null" /> or empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -145,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,14 +141,10 @@
         <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The <see cref="T:System.Array" /> to copy the configuration elements to.</param>
-        <param name="start">The zero-based relative index in <c>array</c> where copying begins.</param>
-        <summary>Copies the configuration elements stored in this collection to an <see cref="T:System.Array" /> object, beginning at the specified index location in the <see cref="T:System.Array" />.</summary>
+        <param name="array">To be added.</param>
+        <param name="start">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="start" /> contains an invalid value.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -173,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -181,8 +161,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Configuration.ConfigurationElement" /> instance of type <paramref name="ConfigurationElementType" />.</summary>
-        <returns>A new <see cref="T:System.Configuration.ConfigurationElement" /> instance of type <paramref name="ConfigurationElementType" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,15 +173,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name used to identify this collection of elements in the configuration file.</summary>
-        <value>The name used to identify this collection of elements in the configuration file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,7 +191,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,12 +200,10 @@
         <Parameter Name="element" Type="ConfigurationElementType" />
       </Parameters>
       <Docs>
-        <param name="element">The configuration element to locate in the collection.</param>
-        <summary>Returns the zero-based index of the first occurrence of a configuration element in this collection.</summary>
-        <returns>The index of <paramref name="element" /> if found in the collection; -1 otherwise.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -237,7 +213,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,12 +222,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the element to be accessed.</param>
-        <summary>Gets or sets a property, attribute, or child element of a <see cref="T:System.Configuration.ConfigurationElement" /> object with the specified index.</summary>
-        <value>The item located at the specified index within the collection.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="index" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -262,7 +235,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -272,14 +244,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the element to be accessed.</param>
-        <summary>Gets or sets a property, attribute, or child element of a <see cref="T:System.Configuration.ConfigurationElement" /> object with the specified key.</summary>
-        <value>The item located at the specified key within the collection.</value>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="key" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Collections.Generic.KeyNotFoundException">
-          <paramref name="key" /> is not found.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -289,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,15 +266,9 @@
         <Parameter Name="element" Type="ConfigurationElementType" />
       </Parameters>
       <Docs>
-        <param name="element">The configuration element to be removed from the collection.</param>
-        <summary>Removes the first occurrence of a specific configuration element from the collection.</summary>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.  
-  
- -and-  
-  
- The configuration file is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -317,7 +278,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,15 +287,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the configuration element to remove.</param>
-        <summary>Removes the configuration element at the specified index of this collection.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="index" /> is <see langword="null" />.  
-  
- -and-  
-  
- The configuration file is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -345,7 +299,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -355,15 +308,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The specified key of the configuration element to remove.</param>
-        <summary>Removes the configuration element at the specified key of this collection.</summary>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="key" /> is <see langword="null" />.  
-  
- -and-  
-  
- The configuration file is read-only.</exception>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowSubscriptionService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides methods for a subscription service to manage subscriptions for a workflow runtime.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- WorkflowSubscriptionService is the base class for any subscription service classes used in the Workflow Foundation (WF).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Activities.WorkflowSubscriptionService" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,8 +51,8 @@
         <Parameter Name="subscription" Type="System.Workflow.Activities.MessageEventSubscription" />
       </Parameters>
       <Docs>
-        <param name="subscription">The <see cref="T:System.Workflow.Activities.MessageEventSubscription" /> that the workflow runtime created.</param>
-        <summary>When overridden in a derived class, notifies the <see cref="T:System.Workflow.Activities.WorkflowSubscriptionService" /> that the workflow runtime created the specified <see cref="T:System.Workflow.Activities.MessageEventSubscription" />.</summary>
+        <param name="subscription">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,8 +72,8 @@
         <Parameter Name="subscriptionId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="subscriptionId">The GUID of the subscription that the workflow runtime deleted.</param>
-        <summary>When overridden in a derived class, notifies the <see cref="T:System.Workflow.Activities.WorkflowSubscriptionService" /> that the workflow runtime deleted the subscription associated with the specified GUID.</summary>
+        <param name="subscriptionId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

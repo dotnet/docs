@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A service behavior that allows you to configure the <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" /> feature, which supports persisting state information for workflow service instances into an SQL Server 2005 or SQL Server 2008 database.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,16 +47,9 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="connectionString">A connection string that refers to a SQL Server persistence database.</param>
-        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior" /> class using the connection string passed as a parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor internally initializes an instance of the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> object using the connection string.  
-  
- ]]></format>
-        </remarks>
+        <param name="connectionString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddBindingParameters">
@@ -78,11 +71,11 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">The service description of the service.</param>
-        <param name="serviceHostBase">The host of the service.</param>
-        <param name="endpoints">The service endpoints.</param>
-        <param name="bindingParameters">Custom objects to which binding elements have access.</param>
-        <summary>An implementation of the <see langword="AddBindingParameters" /> method of the <see cref="T:System.ServiceModel.Description.IServiceBehavior" /> interface, which allows you to pass custom data to binding elements to support contract implementation.</summary>
+        <param name="serviceDescription">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <param name="endpoints">To be added.</param>
+        <param name="bindingParameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +96,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">Description of the service.</param>
-        <param name="serviceHostBase">The host of the service.</param>
-        <summary>An implementation of the <see langword="ApplyDispatchBehavior" /> method of the <see cref="T:System.ServiceModel.Description.IServiceBehavior" /> interface that allows you to change run-time property values or insert custom extension objects such as error handlers, message or parameter inspectors, security extensions, and other custom extension objects.</summary>
+        <param name="serviceDescription">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +115,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the connection string used to connect to persistence database.</summary>
-        <value>The connection string.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +133,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.HostLockRenewalPeriod%2A" />. This property specifies the interval within which a host must renew its lock on an instance before the lock expires. If the host does not renew the lock in the specified time period, the instance is unlocked and another host can obtain the lock on the instance.</summary>
-        <value>The specified time period before the instance is unlocked.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,17 +151,9 @@
         <ReturnType>System.Activities.DurableInstancing.InstanceCompletionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceCompletionAction%2A" /> property. This property specifies whether the instance state information is kept in the persistence database after the instance is completed.</summary>
-        <value>
-          <see langword="true" /> if the instance state information is kept in the persistence database; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Keeping instances after completion causes the persistence database to grow rapidly and this affects the performance of the database. You should configure a database purge policy to delete these records periodically to ensure that the performance of the database is at the level that satisfy your performance requirements.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceEncodingOption">
@@ -184,9 +169,8 @@
         <ReturnType>System.Activities.DurableInstancing.InstanceEncodingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceEncodingOption%2A" /> property. This property specifies whether the instance state information is compressed using the GZip algorithm before the information is saved in the persistence store.</summary>
-        <value>
-          <see langword="true" /> if the instance state information is compressed using the GZip algorithm; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,22 +187,9 @@
         <ReturnType>System.Activities.DurableInstancing.InstanceLockedExceptionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceLockedExceptionAction%2A" /> property. This property specifies what action a service host should take when it receives an <see cref="T:System.Runtime.DurableInstancing.InstanceLockedException" /> when the host tries to lock an instance because the instance is currently locked by another host.</summary>
-        <value>The action a service host should take when receiving a <see cref="T:System.Runtime.DurableInstancing.InstanceLockedException" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The options allowed for this field are: None, Basic Retry, and Aggressive Retry. The default value is None. The following list provides you with the descriptions for these three options:  
-  
--   None. The service host does not attempt to lock the instance and passes the <xref:System.Runtime.DurableInstancing.InstanceLockedException> to the caller.  
-  
--   Basic Retry. The service host reattempts to lock the instance with a linear retry interval and passes the exception to the caller at the end of the sequence.  
-  
--   Aggressive Retry. The service host reattempts to lock the instance with an exponentially increasing delay and passes the <xref:System.Runtime.DurableInstancing.InstanceLockedException> to the caller at the end of the sequence.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxConnectionRetries">
@@ -234,8 +205,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of SQL connection retries.  The default value is 4.</summary>
-        <value>An integer representing the maximum number of SQL connection retries.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,10 +228,10 @@
         <Parameter Name="promoteAsBinary" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XName&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">Name of the promotion.</param>
-        <param name="promoteAsSqlVariant">The names of variables that must be promoted as variants.</param>
-        <param name="promoteAsBinary">The names of variables that must be promoted as binary data. Binary data is typically used to store tracking information.</param>
-        <summary>Promotes properties that can be used in queries. The promoted properties are the properties that you can use in queries to retrieve instances. These property can be of simple type (int32, string, bool and so on), which is represented by a variant or binary.</summary>
+        <param name="name">To be added.</param>
+        <param name="promoteAsSqlVariant">To be added.</param>
+        <param name="promoteAsBinary">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,8 +248,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.RunnableInstancesDetectionPeriod%2A" /> property. Specifies the time period after which the SQL Workflow Instance Store runs a detection task to detect any runnable or activatable workflow instances in the persistence database after the previous detection cycle.</summary>
-        <value>Returns the value of the time interval.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,9 +270,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">The description of the service.</param>
-        <param name="serviceHostBase">The host for the service.</param>
-        <summary>Inspects the service host and the service description to confirm that the service can run successfully.</summary>
+        <param name="serviceDescription">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

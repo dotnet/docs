@@ -16,23 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a custom label for an axis.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CustomLabel objects are stored in the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection> class, which is exposed as the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.CustomLabels%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> class.  
-  
- Axis labels for the first label row are automatically generated unless custom labels are specified using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.CustomLabels%2A> property. If you specify a custom label along the first label row, no axis labels will be automatically generated for the entire first row.  
-  
- Only custom labels may be used for the second label row.  
-  
- The <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.ToPosition%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.FromPosition%2A> properties determine the axis range that the label applies to.  
-  
- A grid line and/or tick mark can be displayed for a custom axis label by using the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.GridTicks%2A> property; this property specifies whether a custom grid line or tick mark will be drawn in the middle of the label range.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,17 +31,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor can be used to create and initialize a new instance of the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> class.  
-  
- However, it is recommended that you use one of the `Add` methods in the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection> class to add custom labels.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,12 +52,12 @@
         <Parameter Name="markStyle" Type="System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle" />
       </Parameters>
       <Docs>
-        <param name="fromPosition">The beginning of the axis range the label applies to.</param>
-        <param name="toPosition">The end of the axis range the label applies to.</param>
-        <param name="text">The label text.</param>
-        <param name="labelRow">The label row index.</param>
-        <param name="markStyle">The label mark style.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> class with the specified <paramref name="fromPosition" />, <paramref name="toPosition" />, <paramref name="text" />, <paramref name="labelRow" />, and <paramref name="markStyle" /> parameters.</summary>
+        <param name="fromPosition">To be added.</param>
+        <param name="toPosition">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="labelRow">To be added.</param>
+        <param name="markStyle">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,13 +79,13 @@
         <Parameter Name="gridTick" Type="System.Windows.Forms.DataVisualization.Charting.GridTickTypes" />
       </Parameters>
       <Docs>
-        <param name="fromPosition">The beginning of the axis range the label applies to.</param>
-        <param name="toPosition">The end of the axis range the label applies to.</param>
-        <param name="text">The label text.</param>
-        <param name="labelRow">The label row index.</param>
-        <param name="markStyle">The label mark style.</param>
-        <param name="gridTick">The custom grid line and/or tick marks flag.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> class with the specified <paramref name="fromPosition" />, <paramref name="toPosition" />, <paramref name="text" />, <paramref name="labelRow" />, <paramref name="markStyle" /> and <paramref name="gridTick" /> parameters.</summary>
+        <param name="fromPosition">To be added.</param>
+        <param name="toPosition">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="labelRow">To be added.</param>
+        <param name="markStyle">To be added.</param>
+        <param name="gridTick">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,16 +110,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the axis that this <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> object belongs to.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the axis that this <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> object belongs to.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to determine which <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> object belongs to.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -160,8 +129,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a cloned label object.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> object that represents a copy of the current custom label.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,16 +164,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text color of the custom label.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that represents the text color of a custom label.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ForeColor property determines the text color for a custom label.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromPosition">
@@ -231,22 +193,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the beginning position, in axis coordinates, of the custom label.</summary>
-        <value>A <see langword="double" /> value that represents the beginning of the axis range that the label is applied to.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FromPosition property determines the start position of the axis range the label is applied to.  
-  
- The difference between the values of the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.ToPosition%2A> and FromPosition properties determines where the label text will be displayed. For example, suppose the X-axis has a scale that ranges from 1 to 5 (1, 2 ,3 , 4, 5). In order to display a custom label just underneath the second point, you would set the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.ToPosition%2A> property to 1.5 and the FromPosition property to 2.5.  
-  
- If the <xref:System.Windows.Forms.DataVisualization.Charting.Series.XValueType%2A>—or <xref:System.Windows.Forms.DataVisualization.Charting.Series.YValueType%2A>, depending on the axis in question—is set to a <xref:System.DateTime> value, then this FromPosition property will be displayed as a <xref:System.DateTime> value in the designer.  
-  
- This property should not be set to the same value as the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.ToPosition%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GridTicks">
@@ -273,8 +222,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GridTickTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a property that specifies whether custom tick marks and grid lines will be drawn in the center of the label.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GridTickTypes" /> enumeration value that specifies whether custom tick marks and grid lines will be drawn in the center of the label.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,8 +254,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the custom label image.</summary>
-        <value>A <see langword="string" /> value that represents the name of the custom label image.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,8 +289,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a color that will be replaced with a transparent color when a custom label image is drawn.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value which is replaced with a transparent color when a custom label image is drawn. The default value is <see cref="System.Drawing.Color.Magenta%2A" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,18 +315,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the label mark for a custom label. This applies to labels in rows other than the first row.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle" /> enumeration value that determines the type of label mark, if any, to be used.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Label marks can only be used for the second row of labels, and are usually used to group labels together from the first row.  
-  
- The major tick mark's line style of the relevant <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object is used for the line pattern of the mark, for example, the AxisX.MajorTickMark.LineDashStyle property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkColor">
@@ -410,16 +350,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the marker color for the custom label.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that represents the marker color of a custom label.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MarkColor property determines the color of a custom label's marker.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -446,16 +379,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the custom label.</summary>
-        <value>A <see langword="string" /> value that represents the text name of the custom label.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A string value that represents the text name of the item.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -479,20 +405,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index of the custom label row.</summary>
-        <value>An <see langword="integer" /> value that specifies the index, 0 to 10, of the custom label row.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RowIndex property specifies the index of the row label where zero is the row label closest to the axis to ten, the further most axis label.  
-  
- Only custom labels can be used for the label rows beyond the first row.  
-  
- If a custom label is used for the first row, labels for that entire axis will not be generated automatically; in this case, all labels for the first row must then be custom labels.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -516,18 +431,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the custom label text.</summary>
-        <value>A <see langword="string" /> value that represents the label text.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Text property gets or sets the label text of the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> object.  
-  
- Note that axis labels for the first label row are generated automatically, but can be overridden using <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects. If you specify a custom label along the first axis row, no axis labels will be automatically generated for the entire first row.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -551,8 +457,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the custom label tooltip text.</summary>
-        <value>A <see langword="string" /> that represents the tooltip text.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -580,8 +486,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the starting position of the custom label, in axis coordinates.</summary>
-        <value>A <see langword="double" /> value that represents the starting position.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

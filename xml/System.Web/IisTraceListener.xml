@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.IisTraceListener" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,20 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a listener that routes all tracing and debugging output to the [!INCLUDE[iisver](~/add/includes/iisver-md.md)] infrastructure.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IisTraceListener class connects the tracing mechanism of [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] to [!INCLUDE[iisver](~/add/includes/iisver-md.md)]. This listener class enables developers who create [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] applications and who implement the <xref:System.Web.IHttpModule> and <xref:System.Web.IHttpHandler> interfaces to raise page-level, module-level, or handler-level events to the [!INCLUDE[iisver](~/add/includes/iisver-md.md)] infrastructure when tracing is enabled.  
-  
-> [!NOTE]
->  This listener class does not route [!INCLUDE[iisver](~/add/includes/iisver-md.md)] events to ASP.NET classes. This includes the <xref:System.Web.UI.Page> class and classes that implement the <xref:System.Web.IHttpModule> or <xref:System.Web.IHttpHandler> interface.  
-  
- IisTraceListener is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IisTraceListener is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TraceData">
@@ -58,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,22 +50,13 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="eventCache">A <see cref="T:System.Diagnostics.TraceEventCache" /> object that contains the current process ID, thread ID, and stack trace information.</param>
-        <param name="source">A name that identifies the output. This is typically the name of the application that generated the trace event.</param>
-        <param name="eventType">A <see cref="T:System.Diagnostics.TraceEventType" /> value that specifies the type of event that caused the trace.</param>
-        <param name="id">A numeric identifier for the event.</param>
-        <param name="data">The trace data to write.</param>
-        <summary>Writes trace information, a data object, and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
-  
- TraceData is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="eventCache">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="eventType">To be added.</param>
+        <param name="id">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TraceData">
@@ -97,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,22 +85,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="eventCache">A <see cref="T:System.Diagnostics.TraceEventCache" /> object that contains the current process ID, thread ID, and stack trace information.</param>
-        <param name="source">A name that identifies the output. This is typically the name of the application that generated the trace event.</param>
-        <param name="eventType">A <see cref="T:System.Diagnostics.TraceEventType" /> value that specifies the type of event that caused the trace.</param>
-        <param name="id">A numeric identifier for the event.</param>
-        <param name="data">An array of objects to write as data.</param>
-        <summary>Writes trace information, an array of data objects, and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
-  
- TraceData is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="eventCache">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="eventType">To be added.</param>
+        <param name="id">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
@@ -142,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,22 +114,13 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventCache">A <see cref="T:System.Diagnostics.TraceEventCache" /> object that contains the current process ID, thread ID, and stack trace information.</param>
-        <param name="source">A name that identifies the output. This is typically the name of the application that generated the trace event.</param>
-        <param name="severity">A <see cref="T:System.Diagnostics.TraceEventType" /> value that specifies the type of event that caused the trace.</param>
-        <param name="id">A numeric identifier for the event.</param>
-        <param name="message">A message to write.</param>
-        <summary>Writes trace and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
-  
- TraceEvent is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="eventCache">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="severity">To be added.</param>
+        <param name="id">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
@@ -181,7 +130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,23 +150,14 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="eventCache">A <see cref="T:System.Diagnostics.TraceEventCache" /> object that contains the current process ID, thread ID, and stack trace information.</param>
-        <param name="source">A name that identifies the output. This is typically the name of the application that generated the trace event.</param>
-        <param name="severity">A <see cref="T:System.Diagnostics.TraceEventType" /> value that specifies the type of event that caused the trace.</param>
-        <param name="id">A numeric identifier for the event.</param>
-        <param name="format">A format string that contains zero or more format items that correspond to objects in the <c>args</c> array.</param>
-        <param name="args">An object array that contains zero or more objects to format.</param>
-        <summary>Writes trace information, a formatted array of objects, and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
-  
- TraceEvent is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="eventCache">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="severity">To be added.</param>
+        <param name="id">To be added.</param>
+        <param name="format">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -228,7 +167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,16 +176,9 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The message to write.</param>
-        <summary>Writes the specified message to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Write is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -257,7 +188,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,19 +198,10 @@
         <Parameter Name="category" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The message to write.</param>
-        <param name="category">Ignored. The <see cref="T:System.Web.IisTraceListener" /> implementation of the <see cref="T:System.Diagnostics.TraceListener" /> class disregards the <c>category</c> parameter.</param>
-        <summary>Writes the specified message and the specified category name to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload of the <xref:System.Web.IisTraceListener.Write%2A> method is provided for compatibility. This method does not use any values passed in the `category` parameter.  
-  
- Write is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="category">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -290,7 +211,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,16 +220,9 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The message to write.</param>
-        <summary>Writes the specified message to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- WriteLine is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -319,7 +232,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -330,17 +242,10 @@
         <Parameter Name="category" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The message to write.</param>
-        <param name="category">Ignored. The <see cref="System.Web.Iis7TraceListener" /> implementation of <see cref="T:System.Diagnostics.TraceListener" /> class disregards the <c>category</c> parameter.</param>
-        <summary>Writes the specified message and category name to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- WriteLine is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="category">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

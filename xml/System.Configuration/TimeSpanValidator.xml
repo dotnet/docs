@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.TimeSpanValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides validation of a <see cref="T:System.TimeSpan" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TimeSpanValidator class is used to ensure that a <xref:System.TimeSpan> object meets specific criteria. The <xref:System.Configuration.TimeSpanValidator.%23ctor%2A> constructor with two parameters ensures that both a minimum and a maximum <xref:System.TimeSpan> value are adhered to. The <xref:System.Configuration.TimeSpanValidator.%23ctor%2A> constructor with three parameters checks both the minimum and maximum <xref:System.TimeSpan> values, as well as whether the validation range is exclusive. The <xref:System.Configuration.TimeSpanValidator.%23ctor%2A> constructor with four parameters checks the previous three parameters and also checks whether the <xref:System.TimeSpan> value is equal to a specific number of seconds.  
-  
- The <xref:System.Configuration.TimeSpanValidator.CanValidate%2A> method determines whether the object type being validated matches the expected type. The object being validated is passed as a parameter of the <xref:System.Configuration.TimeSpanValidator.Validate%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TimeSpanValidator type.  
-  
- [!code-cs[System.Configuration.TimeSpanValidator#1](~/add/codesnippet/csharp/t-system.configuration.t_2_1.cs)]
- [!code-vb[System.Configuration.TimeSpanValidator#1](~/add/codesnippet/visualbasic/t-system.configuration.t_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -48,17 +29,10 @@
         <Parameter Name="maxValue" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="minValue">A <see cref="T:System.TimeSpan" /> object that specifies the minimum time allowed to pass validation.</param>
-        <param name="maxValue">A <see cref="T:System.TimeSpan" /> object that specifies the maximum time allowed to pass validation.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.TimeSpanValidator" /> class, based on supplied parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the TimeSpanValidator constructor with two parameters is used, the <xref:System.Configuration.TimeSpanValidator> object validates that a <xref:System.TimeSpan> value adheres to a specific range.  
-  
- ]]></format>
-        </remarks>
+        <param name="minValue">To be added.</param>
+        <param name="maxValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -77,18 +50,11 @@
         <Parameter Name="rangeIsExclusive" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="minValue">A <see cref="T:System.TimeSpan" /> object that specifies the minimum time allowed to pass validation.</param>
-        <param name="maxValue">A <see cref="T:System.TimeSpan" /> object that specifies the maximum time allowed to pass validation.</param>
-        <param name="rangeIsExclusive">A <see cref="T:System.Boolean" /> value that specifies whether the validation range is exclusive.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.TimeSpanValidator" /> class, based on supplied parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TimeSpanValidator constructor checks both the minimum and maximum <xref:System.TimeSpan> values, as well as whether the validation range is exclusive. When the `rangeIsExclusive` parameter is set to `true`, the <xref:System.TimeSpan> value must not be between the `minValue` and `maxValue` values.  
-  
- ]]></format>
-        </remarks>
+        <param name="minValue">To be added.</param>
+        <param name="maxValue">To be added.</param>
+        <param name="rangeIsExclusive">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,7 +64,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -108,33 +73,12 @@
         <Parameter Name="resolutionInSeconds" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="minValue">A <see cref="T:System.TimeSpan" /> object that specifies the minimum time allowed to pass validation.</param>
-        <param name="maxValue">A <see cref="T:System.TimeSpan" /> object that specifies the maximum time allowed to pass validation.</param>
-        <param name="rangeIsExclusive">A <see cref="T:System.Boolean" /> value that specifies whether the validation range is exclusive.</param>
-        <param name="resolutionInSeconds">An <see cref="T:System.Int64" /> value that specifies a number of seconds.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.TimeSpanValidator" /> class, based on supplied parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the `resolutionInSeconds` parameter is specified, the <xref:System.TimeSpan> object being validated must be equal to this value in order to pass validation.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TimeSpanValidator constructor. This code example is part of a larger example provided for the <xref:System.Configuration.TimeSpanValidator> class.  
-  
- [!code-cs[System.Configuration.TimeSpanValidator#2](~/add/codesnippet/csharp/5fd5fd48-b5cd-41a3-9e7a-_1.cs)]
- [!code-vb[System.Configuration.TimeSpanValidator#2](~/add/codesnippet/visualbasic/5fd5fd48-b5cd-41a3-9e7a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="resolutionInSeconds" /> is less than <see langword="0" />.  
-  
- \- or -  
-  
- <paramref name="minValue" /> is greater than <paramref name="maxValue" />.</exception>
+        <param name="minValue">To be added.</param>
+        <param name="maxValue">To be added.</param>
+        <param name="rangeIsExclusive">To be added.</param>
+        <param name="resolutionInSeconds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanValidate">
@@ -144,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,21 +97,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type of the object.</param>
-        <summary>Determines whether the type of the object can be validated.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="type" /> parameter matches a <see cref="T:System.TimeSpan" /> value; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the CanValidate method. This code example is part of a larger example provided for the <xref:System.Configuration.TimeSpanValidator> class.  
-  
- [!code-cs[System.Configuration.TimeSpanValidator#3](~/add/codesnippet/csharp/m-system.configuration.t_1_1.cs)]
- [!code-vb[System.Configuration.TimeSpanValidator#3](~/add/codesnippet/visualbasic/m-system.configuration.t_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -178,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,24 +119,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The value of an object.</param>
-        <summary>Determines whether the value of an object is valid.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Configuration.TimeSpanValidator> object contains the rules necessary to validate a <xref:System.TimeSpan> object. The rules are established when an instance of the <xref:System.Configuration.TimeSpanValidator> class is created. The object to validate is passed as a parameter of the Validate method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Validate method. This code example is part of a larger example provided for the <xref:System.Configuration.TimeSpanValidator> class.  
-  
- [!code-cs[System.Configuration.TimeSpanValidator#4](~/add/codesnippet/csharp/m-system.configuration.t_2_1.cs)]
- [!code-vb[System.Configuration.TimeSpanValidator#4](~/add/codesnippet/visualbasic/m-system.configuration.t_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

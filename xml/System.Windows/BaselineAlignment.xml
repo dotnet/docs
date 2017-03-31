@@ -4,28 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.BaselineAlignment" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes how the baseline for a text-based element is positioned on the vertical axis, relative to the established baseline for text.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Documents.Inline.BaselineAlignment%2A> property to align text within a containing box (in this case, a <xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[FlowMiscSnippets_snip#BaselineAlignmentExampleWholePage](~/add/codesnippet/xaml/flowmiscsnippets_snip/baselinealignmentexample.xaml#baselinealignmentexamplewholepage)]  
-  
- The following illustration shows the result of the code above.  
-  
- ![Baseline Alignment](~/add/media/baselinealignment.png "Baseline Alignment")  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Baseline">
@@ -35,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.BaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A baseline that is aligned at the actual baseline of the containing box.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bottom">
@@ -52,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.BaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A baseline that is aligned at the lower edge of the containing box.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Center">
@@ -69,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.BaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A baseline that is aligned to the center of the containing box.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Subscript">
@@ -86,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.BaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A baseline that is aligned at the subscript position of the containing box.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Superscript">
@@ -103,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.BaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A baseline that is aligned at the superscript position of the containing box.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextBottom">
@@ -120,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.BaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A baseline that is aligned at the lower edge of the text baseline.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextTop">
@@ -137,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.BaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A baseline that is aligned at the upper edge of the text baseline.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -154,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.BaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A baseline that is aligned to the upper edge of the containing box.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

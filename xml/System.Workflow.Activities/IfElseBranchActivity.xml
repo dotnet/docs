@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.IfElseBranchActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,19 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a branch of an <see cref="T:System.Workflow.Activities.IfElseActivity" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.ComponentModel.ActivityCondition> of each branch is determined before the branch is run. The first IfElseBranchActivity in the <xref:System.Workflow.Activities.IfElseActivity> that evaluates to `true` is run.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,23 +39,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to create two new instances of the <xref:System.Workflow.Activities.IfElseBranchActivity> class.  This code example is part of the Compensation SDK Sample from the PurchaseOrder.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Using Compensation](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
-  
- [!code-cs[wf_samples#38](~/add/codesnippet/csharp/wf_snippets/snippets.cs#38)]
- [!code-vb[wf_samples#38](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#38)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -77,15 +54,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The user-defined name of the activity.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> class using the name of the activity.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +72,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -111,24 +86,9 @@
         <ReturnType>System.Workflow.ComponentModel.ActivityCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> object reference for the current branch activity. The evaluation of this condition returns a value that indicates whether this branch should be run.</summary>
-        <value>An <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> that returns a value that indicates whether this branch should be run.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is optional on the last <xref:System.Workflow.Activities.IfElseBranchActivity> in the <xref:System.Workflow.Activities.IfElseActivity> and required in other cases.  
-  
-   
-  
-## Examples  
- The following code example shows how to set the Condition property. This code assumes that `Available` is of type <xref:System.Workflow.Activities.IfElseBranchActivity>. This code example is part of the Compensation SDK Sample from the PurchaseOrder.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Using Compensation](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
-  
- [!code-cs[wf_samples#39](~/add/codesnippet/csharp/wf_snippets/snippets.cs#39)]
- [!code-vb[wf_samples#39](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#39)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConditionProperty">
@@ -138,22 +98,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="System.Workflow.Activities.IfElseBranchActivity.Condition%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

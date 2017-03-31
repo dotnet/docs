@@ -4,29 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.WrapDirection" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the allowable directions that content can wrap around an object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Figure.WrapDirection%2A> attribute of a <xref:System.Windows.Documents.Figure> element.  
-  
- [!code-xml[FloaterFigureSnippets#_FigurePropsXAML](~/add/codesnippet/xaml/FloaterFigureSnippets/Window1.xaml#_figurepropsxaml)]  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Figure.WrapDirection%2A> property programmatically.  
-  
- [!code-cs[FloaterFigureSnippets#_FigureProps](~/add/codesnippet/csharp/FloaterFigureSnippets/Window1.xaml.cs#_figureprops)]
- [!code-vb[FloaterFigureSnippets#_FigureProps](~/add/codesnippet/visualbasic/floaterfiguresnippets/window1.xaml.vb#_figureprops)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Both">
@@ -36,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.WrapDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content that flows around both sides of the object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -53,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.WrapDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content that only flows around the left side of the object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -70,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.WrapDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content that does not flow around the object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -87,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.WrapDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content that only flows around the right side of the object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

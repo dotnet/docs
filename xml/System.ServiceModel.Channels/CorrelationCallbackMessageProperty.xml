@@ -15,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides an abstract base class for deferring correlation key calculation until all of the correlation data is available.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is typically used to allow other channels to provide correlation data before a message is sent on the wire.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,8 +32,8 @@
         <Parameter Name="neededData" Type="System.Collections.Generic.ICollection&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="neededData">The correlation data required to calculate the correlation.</param>
-        <summary>Called by derived classes to initialize a new instance of the derived class using the specified collection of correlation data that is required to calculate the correlation.</summary>
+        <param name="neededData">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +50,8 @@
         <Parameter Name="callback" Type="System.ServiceModel.Channels.CorrelationCallbackMessageProperty" />
       </Parameters>
       <Docs>
-        <param name="callback">The <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> derived class instance to copy.</param>
-        <summary>Called by derived classes to initialize a new instance of the derived class using the required correlation data from another <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> derived class instance.</summary>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,17 +72,10 @@
         <Parameter Name="value" Type="System.Func&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the correlation data value.</param>
-        <param name="value">Provides the value of the correlation data.</param>
-        <summary>Adds required correlation data to the property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When required correlation data is added, it is removed from the <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.NeededData%2A> list. When all required data has been added, the <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.NeededData%2A> list is empty and <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.IsFullyDefined%2A> returns `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginFinalizeCorrelation">
@@ -111,24 +97,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">The message to be correlated.</param>
-        <param name="timeout">The interval in which correlation must be finalized or else a <see cref="T:System.TimeoutException" /> is thrown.</param>
-        <param name="callback">The method to be called when the correlation calculation is completed.</param>
-        <param name="state">An optional application-specific object that contains information about the asynchronous operation.</param>
-        <summary>Called by a correlation protocol when all of the correlation information is available to asynchronously construct the correlation.</summary>
-        <returns>A reference to the current asynchronous operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.OnBeginFinalizeCorrelation%2A> to construct the correlation. Applications must provide an implementation of <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.OnBeginFinalizeCorrelation%2A>, which asynchronously performs the correlation calculation of the specified message.  
-  
- To be notified when the asynchronous operation is complete, call <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.EndFinalizeCorrelation%2A> from the `callback` method. If <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.EndFinalizeCorrelation%2A> is called before the asynchronous operation is complete, it blocks until the operation completes. If the operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown.  
-  
- This method is an asynchronous version of <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.FinalizeCorrelation%2A> using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCopy">
@@ -145,8 +120,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, initializes and returns a copy of the derived message property instance.</summary>
-        <returns>A copy of the derived message property instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,21 +141,10 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> that references the asynchronous <see cref="System.ServiceModel.Channels.CorrelationCallbackMessageProperty.BeginFinalizeCorrelation%2A" /> operation.</param>
-        <summary>Returns the message that was prepared asynchronously for correlation.</summary>
-        <returns>The message that was prepared for correlation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.OnEndFinalizeCorrelation%2A> to retrieve the message. Applications must provide an implementation of <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.OnEndFinalizeCorrelation%2A>, which returns the message that was prepared for correlation.  
-  
- If EndFinalizeCorrelation is called before the asynchronous operation is complete, it blocks until the operation completes. If the operation did not complete within the time-out interval specified in the call to <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.BeginFinalizeCorrelation%2A> a <xref:System.TimeoutException> is thrown when this method is called.  
-  
- This method completes the asynchronous version of <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.FinalizeCorrelation%2A> using the <xref:System.IAsyncResult> asynchronous design pattern. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
- ]]></format>
-        </remarks>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FinalizeCorrelation">
@@ -200,18 +164,11 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="message">The message to be correlated.</param>
-        <param name="timeout">The interval in which the correlation calculation must be completed or else a <see cref="T:System.TimeoutException" /> is thrown.</param>
-        <summary>Called by a correlation protocol when all of the correlation information is available to construct the correlation.</summary>
-        <returns>The correlated message.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.OnFinalizeCorrelation%2A> to construct the correlation. Applications must provide an implementation of <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.OnFinalizeCorrelation%2A>, which performs the correlation calculation of the specified message.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFullyDefined">
@@ -227,17 +184,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether the <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> has all of the required correlation data.</summary>
-        <value>
-          <see langword="true" /> if all of the required correlation data is present; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When all required data has been added, the <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.NeededData%2A> list is empty and IsFullyDefined returns `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -253,8 +202,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of this message property: “CorrelationCallbackMessageProperty”.</summary>
-        <value>The string value “CorrelationCallbackMessageProperty”.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,8 +220,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of correlation data that is required before correlation can be applied.</summary>
-        <value>A list of required correlation data.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,20 +244,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">The message to be correlated.</param>
-        <param name="timeout">The interval in which the correlation calculation must be completed or else a <see cref="T:System.TimeoutException" /> is thrown.</param>
-        <param name="callback">The method to be called when the correlation calculation has been completed.</param>
-        <param name="state">An optional application-specific object that contains information about the asynchronous operation.</param>
-        <summary>When overridden in a derived class, asynchronously performs the correlation calculation for the specified message.</summary>
-        <returns>A reference to the current asynchronous operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.BeginFinalizeCorrelation%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEndFinalizeCorrelation">
@@ -327,17 +269,10 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> that references the asynchronous <see cref="System.ServiceModel.Channels.CorrelationCallbackMessageProperty.BeginFinalizeCorrelation%2A" /> operation.</param>
-        <summary>When overridden in a derived class, returns the message that was prepared asynchronously for correlation.</summary>
-        <returns>The correlated message.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.EndFinalizeCorrelation%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnFinalizeCorrelation">
@@ -357,18 +292,11 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="message">The message to be correlated.</param>
-        <param name="timeout">The interval in which the correlation calculation must be completed or else a <see cref="T:System.TimeoutException" /> is thrown.</param>
-        <summary>When overridden in a derived class, performs the correlation calculation for the specified message.</summary>
-        <returns>The correlated message.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by <xref:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.FinalizeCorrelation%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGet">
@@ -388,11 +316,10 @@
         <Parameter Name="property" Type="System.ServiceModel.Channels.CorrelationCallbackMessageProperty&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="message">The message that contains the <see cref="System.ServiceModel.Channels.Message.Properties%2A" /> to inspect.</param>
-        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> contained in the specified message’s <see cref="System.ServiceModel.Channels.Message.Properties%2A" />; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
-        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> from the specified message’s <see cref="System.ServiceModel.Channels.Message.Properties%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the message’s <see cref="System.ServiceModel.Channels.Message.Properties%2A" /> contain a <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" />; otherwise, <see langword="false" />.</returns>
+        <param name="message">To be added.</param>
+        <param name="property">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,11 +340,10 @@
         <Parameter Name="property" Type="System.ServiceModel.Channels.CorrelationCallbackMessageProperty&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="properties">The message properties to inspect.</param>
-        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> contained in the specified message properties; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
-        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> from the specified message properties.</summary>
-        <returns>
-          <see langword="true" /> if the message properties contain a <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" />; otherwise, <see langword="false" />.</returns>
+        <param name="properties">To be added.</param>
+        <param name="property">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FlowDirection" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,27 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines constants that specify the content flow direction for text and [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The flow direction of content typically corresponds to the innate flow direction of the language being represented. Hebrew and Arabic provide examples of languages that naturally flow from right-to-left. English, German, and Russian provide examples of languages that naturally flow from left-to-right.  
-  
-   
-  
-## Examples  
- The following example shows how to use the FlowDirection enumeration to set the <xref:System.Windows.Documents.Block.FlowDirection%2A> attribute of a flow content <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_FlowDirectionXAML](~/add/codesnippet/xaml/BlockSnippets/Window1.xaml#_block_flowdirectionxaml)]  
-  
- The following example shows how to use the FlowDirection enumeration programmatically.  
-  
- [!code-vb[BlockSnippets#_Block_FlowDirection](~/add/codesnippet/visualbasic/blocksnippets/window1.xaml.vb#_block_flowdirection)]
- [!code-cs[BlockSnippets#_Block_FlowDirection](~/add/codesnippet/csharp/BlockSnippets/Window1.xaml.cs#_block_flowdirection)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="LeftToRight">
@@ -46,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that content should flow from left to right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -63,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that content should flow from right to left.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

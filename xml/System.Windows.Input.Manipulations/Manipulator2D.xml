@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a 2D manipulator at an instant in time.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,19 +30,11 @@
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="id">The unique ID for this manipulator.</param>
-        <param name="x">The x-coordinate of the manipulator.</param>
-        <param name="y">The y-coordinate of the manipulator.</param>
-        <summary>Creates a new <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object with the specified properties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The x and y parameters must both be a finite number.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="x" />-coordinate or <paramref name="y" />-coordinate are <see langword="float.NaN" />, <see langword="float.PositiveInfinity" />, or <see langword="float.NegativeInfinity" />. These values are all invalid.</exception>
+        <param name="id">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -61,10 +53,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object to compare this object to.</param>
-        <summary>Determines whether this <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object has the same value as the specified <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> objects are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +73,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance.</summary>
-        <returns>The hash code for this instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +91,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the unique ID for this <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object.</summary>
-        <value>The unique ID for this <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,11 +113,10 @@
         <Parameter Name="manipulator2" Type="System.Windows.Input.Manipulations.Manipulator2D" />
       </Parameters>
       <Docs>
-        <param name="manipulator1">The first <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object to compare.</param>
-        <param name="manipulator2">The second <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object to compare.</param>
-        <summary>Determines whether two specified <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> objects have the same value.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> objects have the same value; otherwise, <see langword="false" />.</returns>
+        <param name="manipulator1">To be added.</param>
+        <param name="manipulator2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,11 +137,10 @@
         <Parameter Name="manipulator2" Type="System.Windows.Input.Manipulations.Manipulator2D" />
       </Parameters>
       <Docs>
-        <param name="manipulator1">The first <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object to compare.</param>
-        <param name="manipulator2">The second <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object to compare.</param>
-        <summary>Determines whether two specified <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> objects have different values.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> objects have different values; otherwise, <see langword="false" />.</returns>
+        <param name="manipulator1">To be added.</param>
+        <param name="manipulator2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,16 +157,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the x-coordinate of this <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object.</summary>
-        <value>The x-coordinate of this <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When setting this property, the value must be a finite value. The default value for this property is zero (0).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -193,16 +175,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the y-coordinate of this <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object.</summary>
-        <value>The y-coordinate of this <see cref="T:System.Windows.Input.Manipulations.Manipulator2D" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When setting this property, the value must be a finite value. The default value for this property is zero (0).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

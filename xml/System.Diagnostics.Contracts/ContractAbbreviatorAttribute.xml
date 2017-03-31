@@ -3,8 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContractAbbreviatorAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractAbbreviatorAttribute" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -19,59 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines abbreviations that you can use in place of the full contract syntax.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to create abbreviated names for code contracts that are repeated in several methods.  
-  
-```c#  
-  
-using System.Diagnostics.Contracts;  
-  
-public class MyClass   
-{  
-   public int State { get; }  
-   public int Data { get; }  
-  
-   [ ContractAbbreviator ]  
-   private void DataAndStateUnchanged()   
-   {  
-      Contract.Ensures( this .State == Contract.OldValue(this.State));  
-      Contract.Ensures( this .Data == Contract.OldValue(this.Data));  
-   }  
-  
-   [ ContractAbbreviator ]  
-   private void InStateZeroAndUnchanged()   
-   {  
-      Contract.Requires( this.State == 0);  
-      DataAndStateUnchanged();  
-   }  
-  
-   public void Method1(...)   
-   {  
-      InStateZeroAndUnchanged();  
-      ...  
-   }  
-  
-   public void Method2(...)   
-   {  
-      InStateZeroAndUnchanged();  
-      ...  
-   }  
-  
-   public void Method3(...)  
-   {  
-      Contract.Requires(this .State == 1);  
-      DataAndStateUnchanged();  
-   }  
-}  
-  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,12 +38,21 @@ public class MyClass
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractAbbreviatorAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Contracts.ContractAbbreviatorAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>An abstract base class for classes that represent the data received by a workflow service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the ReceiveContent class to specify the content for a <xref:System.ServiceModel.Activities.Receive> activity.  
-  
- [!code-cs[ContentBasedCorrelation#3](~/add/codesnippet/csharp/t-system.servicemodel.ac_17_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -40,19 +31,10 @@
         <Parameter Name="message" Type="System.Activities.OutArgument" />
       </Parameters>
       <Docs>
-        <param name="message">The message.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> instance with the specified message.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" />instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Create method to specify the content for a <xref:System.ServiceModel.Activities.Receive> activity.  
-  
- [!code-cs[ContentBasedCorrelation#3](~/add/codesnippet/csharp/d8b8fdda-adc4-43f1-8518-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -71,9 +53,9 @@
         <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Activities.OutArgument&gt;" />
       </Parameters>
       <Docs>
-        <param name="parameters">The parameters.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> instance with the specified parameters.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Activities.ReceiveParametersContent" /> instance.</returns>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,10 +76,10 @@
         <Parameter Name="declaredMessageType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="message">The message.</param>
-        <param name="declaredMessageType">The message type.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> instance with the specified message and message type.</summary>
-        <returns>A  <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> instance.</returns>
+        <param name="message">To be added.</param>
+        <param name="declaredMessageType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

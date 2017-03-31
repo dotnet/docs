@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Configures the SQL cache dependencies databases for an ASP.NET application. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SqlCacheDependencyDatabase allows you to programmatically access and modify the `databases` element of the `sqlCacheDependency` node within the `caching` configuration section.  
-  
- The SQL cache dependency allows the cached data to be synchronized with the original source. After you configure the relationship between an item stored in an ASP.NET application's cache and a specific SQL Server database table, an instance of the <xref:System.Web.Caching.SqlCacheDependency> class monitors the table for possible changes.  
-  
-   
-  
-## Examples  
- The following code example shows how to obtain the SqlCacheDependencyDatabase object from the configuration file of an existing Web application.  
-  
- [!code-vb[System.Web.Configuration.SqlCacheDependencyDatabase#1](~/add/codesnippet/visualbasic/t-system.web.configurati_17_1.vb)]
- [!code-cs[System.Web.Configuration.SqlCacheDependencyDatabase#1](~/add/codesnippet/csharp/t-system.web.configurati_17_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -48,20 +29,10 @@
         <Parameter Name="connectionStringName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">A string that specifies the name used by <see cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" /> to identify the database.</param>
-        <param name="connectionStringName">A string that specifies the name of the connection string in the <see langword="connectionStrings" /> section to use to connect to this database.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" /> class with the passed parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use this constructor.  
-  
- [!code-vb[System.Web.Configuration.SqlCacheDependencyDatabase#6](~/add/codesnippet/visualbasic/5e38fe68-b87d-487a-9066-_1.vb)]
- [!code-cs[System.Web.Configuration.SqlCacheDependencyDatabase#6](~/add/codesnippet/csharp/5e38fe68-b87d-487a-9066-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="connectionStringName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -71,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -80,21 +50,11 @@
         <Parameter Name="pollTime" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">A string that specifies the name used by <see cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" /> to identify the database.</param>
-        <param name="connectionStringName">A string that specifies the name of the connection string in the <see langword="connectionStrings" /> section to use to connect to this database.</param>
-        <param name="pollTime">The database polling time, in milliseconds.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use this constructor.  
-  
- [!code-vb[System.Web.Configuration.SqlCacheDependencyDatabase#5](~/add/codesnippet/visualbasic/de5448cc-1e38-425a-ac5d-_1.vb)]
- [!code-cs[System.Web.Configuration.SqlCacheDependencyDatabase#5](~/add/codesnippet/csharp/de5448cc-1e38-425a-ac5d-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="connectionStringName">To be added.</param>
+        <param name="pollTime">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionStringName">
@@ -104,7 +64,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -119,24 +78,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the connection name for the database.</summary>
-        <value>A string that specifies the name of a database connection string within the <see langword="connectionStrings" /> configuration section.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ConnectionStringName property allows you to programmatically access and modify the `connectionName` attribute of an `add` element of the `databases` node in a configuration file. The connection name identifies an element in the `connectionStrings` section which contains the database connection string.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the ConnectionStringName property.  
-  
- [!code-vb[System.Web.Configuration.SqlCacheDependencyDatabase#4](~/add/codesnippet/visualbasic/p-system.web.configurati_380_1.vb)]
- [!code-cs[System.Web.Configuration.SqlCacheDependencyDatabase#4](~/add/codesnippet/csharp/p-system.web.configurati_380_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">
@@ -146,7 +90,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,7 +108,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -180,26 +122,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the database.</summary>
-        <value>A string that specifies the name used by <see cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" /> to identify the database.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Name property allows you to programmatically access and modify the `name` attribute of an `add` element of the `databases` node in a configuration file.  
-  
- The `name` attribute identifies the database whose table is used for the <xref:System.Web.Caching.SqlCacheDependency>.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Name property.  
-  
- [!code-vb[System.Web.Configuration.SqlCacheDependencyDatabase#3](~/add/codesnippet/visualbasic/p-system.web.configurati_277_1.vb)]
- [!code-cs[System.Web.Configuration.SqlCacheDependencyDatabase#3](~/add/codesnippet/csharp/p-system.web.configurati_277_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PollTime">
@@ -209,7 +134,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -221,26 +145,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the frequency with which the <see cref="T:System.Web.Caching.SqlCacheDependency" /> polls the database table for changes.</summary>
-        <value>The database polling time, in milliseconds.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PollTime property allows you to programmatically access and modify the `pollTime` attribute of an `add` element of the `databases` node in a configuration file.  
-  
- After you configure the relationship between an item stored in an ASP.NET application's cache and a specific SQL Server database table, an instance of the <xref:System.Web.Caching.SqlCacheDependency> class monitors the table so that when an item in the table changes, the item is automatically updated in or removed from the cache. The monitoring happens at the frequency specified by the PollTime.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the PollTime property.  
-  
- [!code-vb[System.Web.Configuration.SqlCacheDependencyDatabase#2](~/add/codesnippet/visualbasic/p-system.web.configurati_251_1.vb)]
- [!code-cs[System.Web.Configuration.SqlCacheDependencyDatabase#2](~/add/codesnippet/csharp/p-system.web.configurati_251_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -250,7 +157,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

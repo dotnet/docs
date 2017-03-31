@@ -10,19 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies date formats for a <see cref="T:System.Windows.Controls.DatePicker" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.DatePicker> that displays the date by using unabbreviated days of the week and month names.  
-  
- [!code-cs[DatePickerSnippets#1](~/add/codesnippet/csharp/datepickersnippets.datepickersnippets/window1.xaml.cs#1)]
- [!code-vb[DatePickerSnippets#1](~/add/codesnippet/visualbasic/datepickersnippets/window1.xaml.vb#1)]
- [!code-xml[DatePickerSnippets#1](~/add/codesnippet/xaml/datepickersnippets.datepickersnippets/window1.xaml#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Long">
@@ -38,7 +27,7 @@
         <ReturnType>System.Windows.Controls.DatePickerFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the date should be displayed by using unabbreviated days of the week and month names. This value displays a string that is equal to the string that is returned by the <see cref="System.DateTime.ToLongDateString%2A" /> method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Short">
@@ -54,7 +43,7 @@
         <ReturnType>System.Windows.Controls.DatePickerFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the date should be displayed by using abbreviated days of the week and month names. This value displays a string that is equal to the string that is returned by the <see cref="System.DateTime.ToShortDateString%2A" /> method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

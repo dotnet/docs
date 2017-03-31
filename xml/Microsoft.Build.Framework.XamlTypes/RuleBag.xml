@@ -23,15 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A container for <see cref="T:Microsoft.Build.Framework.XamlTypes.Rule" /> instances.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Concerns only <xref:Microsoft.Build.Framework.XamlTypes.Rule> rules, relative to property pages. The RuleBag is only used as a container for more than one <xref:Microsoft.Build.Framework.XamlTypes.Rule>. The containing <xref:Microsoft.Build.Framework.XamlTypes.Rule> rules are immediately stripped off after the XAML file is loaded.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Default constructor. Required for XAML deserialization.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +56,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>See <see cref="System.ComponentModel.ISupportInitialize.BeginInit%2A" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>See <see cref="System.ComponentModel.ISupportInitialize.EndInit%2A" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +99,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type of static data to retrieve.</param>
-        <summary>Returns an enumerator over all instances of static data that have the given type.</summary>
-        <returns>Returns an enumerator over all instances of static data that have the given type. Returns <see langword="Null" /> or Empty list if no objects of the given type are provided by this node.</returns>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +124,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator over all types of static data for the data-driven features that this node contains.</summary>
-        <returns>Returns an enumerator over all types of static data for the data-driven features that this node contains.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,8 +142,8 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.Rule&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The list of <see cref="T:Microsoft.Build.Framework.XamlTypes.Rule" /> instances that this <see cref="T:Microsoft.Build.Framework.XamlTypes.RuleBag" /> instance contains.</summary>
-        <value>Returns the list of rules. Always returns at least one rule.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

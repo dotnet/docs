@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ContractDescription" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,35 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes a [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] contract that specifies what an endpoint communicates to the outside world.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] contract is a collection of operations that specifies what the endpoint communicates to the outside world. Each operation is a message exchange. For example, a request message and an associated reply message form a request/reply message exchange.  
-  
- A ContractDescription object is used to describe [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] contracts and their operations. Within a ContractDescription, each contract operation has a corresponding <xref:System.ServiceModel.Description.OperationDescription> that describes aspects of the each operation that is part of the contract, such as whether the operation is one-way or request/reply. Each <xref:System.ServiceModel.Description.OperationDescription> also describes the messages that make up the operation using a <xref:System.ServiceModel.Description.MessageDescriptionCollection>. ContractDescription contains a reference to an interface that defines the contract using the programming model. This interface is marked with <xref:System.ServiceModel.ServiceContractAttribute> and its methods that correspond to endpoint operations are marked with the <xref:System.ServiceModel.OperationContractAttribute>.  
-  
- A *duplex* contract defines the following logical sets of operations:  
-  
--   A set that the service exposes for the client to call.  
-  
--   A set that the client exposes for the service to call.  
-  
- The programming model for defining a duplex contract is to split each set in a separate interface and apply attributes to each interface. In this case, ContractDescription contains a reference to each of the interfaces that groups them into one duplex contract.  
-  
- Similar to bindings, each contract has a <xref:System.ServiceModel.Description.ContractDescription.Name%2A> and <xref:System.ServiceModel.Description.ContractDescription.Namespace%2A> that uniquely identify it in the metadata of the service.  
-  
-   
-  
-## Examples  
- The following example shows a number of ways to create or retrieve a ContractDescription object. It then displays the various pieces of information that are stored in the ContractDescription object.  
-  
- [!code-vb[S_UE_ContractDescription#0](~/add/codesnippet/visualbasic/t-system.servicemodel.de_35_1.vb)]
- [!code-cs[S_UE_ContractDescription#0](~/add/codesnippet/csharp/t-system.servicemodel.de_35_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,28 +28,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the contract.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ContractDescription" /> class with a specified name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#1](~/add/codesnippet/visualbasic/m-system.servicemodel.de_9_1.vb)]
- [!code-cs[S_UE_ContractDescription#1](~/add/codesnippet/csharp/m-system.servicemodel.de_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="name" /> is empty.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -86,7 +47,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -94,27 +55,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the contract.</param>
-        <param name="ns">The namespace that contains the name of the contract.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ContractDescription" /> class with a namespace-qualified name specified.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The namespace can be an empty string ("").  
-  
-   
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#2](~/add/codesnippet/visualbasic/978fd214-2fda-46e3-b199-_1.vb)]
- [!code-cs[S_UE_ContractDescription#2](~/add/codesnippet/csharp/978fd214-2fda-46e3-b199-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="name" /> is empty.</exception>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Behaviors">
@@ -124,29 +68,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IContractBehavior&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the behaviors associated with the contract description.</summary>
-        <value>The <see cref="System.Collections.Generic.KeyedByTypeCollection%601" /> of type <see cref="T:System.ServiceModel.Description.IContractBehavior" /> associated with the contract description.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#3](~/add/codesnippet/visualbasic/p-system.servicemodel.de_14_1.vb)]
- [!code-cs[S_UE_ContractDescription#3](~/add/codesnippet/csharp/p-system.servicemodel.de_14_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CallbackContractType">
@@ -156,29 +87,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of callback contract that the contract description specifies.</summary>
-        <value>The <see cref="T:System.Type" /> of callback contract that the contract description specifies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CallbackContractType property is not serializable, so it is only available when the description is bound to runtime. It cannot be imported or exported as part of the metadata.  
-  
-   
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#4](~/add/codesnippet/visualbasic/p-system.servicemodel.de_47_1.vb)]
- [!code-cs[S_UE_ContractDescription#4](~/add/codesnippet/csharp/p-system.servicemodel.de_47_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfigurationName">
@@ -188,29 +106,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the configuration name for the contract description.</summary>
-        <value>The configuration name for the contract.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#2](~/add/codesnippet/visualbasic/p-system.servicemodel.de_44_1.vb)]
- [!code-cs[S_UE_ContractDescription#2](~/add/codesnippet/csharp/p-system.servicemodel.de_44_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractBehaviors">
@@ -220,14 +125,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.KeyedCollection&lt;System.Type,System.ServiceModel.Description.IContractBehavior&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of behavior for the contract.</summary>
-        <value>The collection of behavior for the contract.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,29 +144,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the contract type that the contract description specifies.</summary>
-        <value>The <see cref="T:System.Type" /> of contract that the contract description specifies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ContractType property is not serializable, so it is only available when the description is bound to runtime. It cannot be imported or exported as part of the metadata.  
-  
-   
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#6](~/add/codesnippet/visualbasic/p-system.servicemodel.de_18_1.vb)]
- [!code-cs[S_UE_ContractDescription#6](~/add/codesnippet/csharp/p-system.servicemodel.de_18_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContract">
@@ -270,7 +163,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,23 +173,10 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contractType">The <see cref="T:System.Type" /> of contract.</param>
-        <summary>Returns the contract description for a specified type of contract.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the specified type of contract.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
-  
-   
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#13](~/add/codesnippet/visualbasic/m-system.servicemodel.de_1_1.vb)]
- [!code-cs[S_UE_ContractDescription#13](~/add/codesnippet/csharp/m-system.servicemodel.de_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="contractType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContract">
@@ -306,7 +186,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,24 +197,11 @@
         <Parameter Name="serviceImplementation" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="contractType">The <see cref="T:System.Type" /> of contract.</param>
-        <param name="serviceImplementation">The <see cref="T:System.Object" /> that implements the service.</param>
-        <summary>Returns the contract description for a specified type of contract and service implementation.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the specified type of contract and service implementation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
-  
-   
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#14](~/add/codesnippet/visualbasic/2f6b7229-d5af-45d6-acac-_1.vb)]
- [!code-cs[S_UE_ContractDescription#14](~/add/codesnippet/csharp/2f6b7229-d5af-45d6-acac-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="contractType">To be added.</param>
+        <param name="serviceImplementation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContract">
@@ -344,7 +211,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -355,24 +222,11 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contractType">The <see cref="T:System.Type" /> of contract.</param>
-        <param name="serviceType">The <see cref="T:System.Type" /> of service.</param>
-        <summary>Returns the contract description for a specified type of contract and a specified type of service.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the specified type of contract and type of service.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
-  
-   
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#15](~/add/codesnippet/visualbasic/e95113eb-b8cf-4b71-bb38-_1.vb)]
- [!code-cs[S_UE_ContractDescription#15](~/add/codesnippet/csharp/e95113eb-b8cf-4b71-bb38-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="contractType">To be added.</param>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInheritedContracts">
@@ -382,7 +236,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -390,17 +244,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a collection of contract descriptions that are inherited by the current contract description.</summary>
-        <returns>The <see cref="System.Collections.ObjectModel.Collection%601" /> of type <see cref="T:System.ServiceModel.Description.ContractDescription" /> that is inherited by the current contract description.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#16](~/add/codesnippet/visualbasic/m-system.servicemodel.de_8_1.vb)]
- [!code-cs[S_UE_ContractDescription#16](~/add/codesnippet/csharp/m-system.servicemodel.de_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasProtectionLevel">
@@ -410,30 +256,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the contract has had a protection level set.</summary>
-        <value>
-          <see langword="true" /> if the protection level has been set; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.ServiceModel.Description.ContractDescription.ProtectionLevel%2A> is set, the HasProtectionLevel property is set to `true`.  
-  
-   
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#7](~/add/codesnippet/visualbasic/p-system.servicemodel.de_9_1.vb)]
- [!code-cs[S_UE_ContractDescription#7](~/add/codesnippet/csharp/p-system.servicemodel.de_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -443,24 +275,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the contract.</summary>
-        <value>The name of the contract description.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#8](~/add/codesnippet/visualbasic/p-system.servicemodel.de_21_1.vb)]
- [!code-cs[S_UE_ContractDescription#8](~/add/codesnippet/csharp/p-system.servicemodel.de_21_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -470,30 +294,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the namespace for the contract.</summary>
-        <value>The namespace of the contract.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The namespace can be an empty string ("").  
-  
-   
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#9](~/add/codesnippet/visualbasic/p-system.servicemodel.de_39_1.vb)]
- [!code-cs[S_UE_ContractDescription#9](~/add/codesnippet/csharp/p-system.servicemodel.de_39_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Operations">
@@ -503,24 +313,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.OperationDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of operation descriptions associated with the contract.</summary>
-        <value>The <see cref="T:System.ServiceModel.Description.OperationDescriptionCollection" /> that contains the operation descriptions associated with the contract description.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#10](~/add/codesnippet/visualbasic/p-system.servicemodel.de_38_1.vb)]
- [!code-cs[S_UE_ContractDescription#10](~/add/codesnippet/csharp/p-system.servicemodel.de_38_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectionLevel">
@@ -530,29 +332,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the level of security protection associated with the contract.</summary>
-        <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> for the operation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the ProtectionLevel is set, the <xref:System.ServiceModel.Description.ContractDescription.HasProtectionLevel%2A> property is set to `true`.  
-  
-   
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#11](~/add/codesnippet/visualbasic/p-system.servicemodel.de_31_1.vb)]
- [!code-cs[S_UE_ContractDescription#11](~/add/codesnippet/csharp/p-system.servicemodel.de_31_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionMode">
@@ -562,34 +351,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SessionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a session is required by the contract.</summary>
-        <value>The <see cref="T:System.ServiceModel.SessionMode" /> that specifies the support for reliable sessions that a contract requires or supports.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A reliable session is a way of correlating a set of messages exchanged between two or more endpoints (using the [WS-ReliableMessaging](http://go.microsoft.com/fwlink/?LinkId=96680) specification) to provide assurances of the reliability of the connection.  
-  
-   
-  
-## Examples  
- [!code-vb[S_UE_ContractDescription#12](~/add/codesnippet/visualbasic/p-system.servicemodel.de_4_1.vb)]
- [!code-cs[S_UE_ContractDescription#12](~/add/codesnippet/csharp/p-system.servicemodel.de_4_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeProtectionLevel">
@@ -606,9 +377,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.Description.ContractDescription.ProtectionLevel%2A" /> property has changed from its default value and should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.Description.ContractDescription.ProtectionLevel%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

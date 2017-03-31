@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Quaternion" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,50 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Structure that represents a rotation in three dimensions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Quaternions allow you to interpolate between rotation transformations applied to an object, thereby making it easier to compute smooth animations of rotations. A quaternion represents an axis of rotation and a rotation around that axis. It's possible to individually define the axis and angle of rotation of the starting and ending positions of a rotated object ,but the intermediate positions of that object during an animation are computationally uncertain.  By determining a quaternion that represents the original orientation of a 3-D object and one that represents its destination orientation, you can smoothly interpolate between those orientations.  
-  
- In XAML, the delimiter between the values of a Quaternion can be either a comma or a space.  
-  
- Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a Quaternion in XAML, because that will clash with the string type conversion of a Quaternion attribute value into its components.  
-  
-<a name="xamlAttributeUsage_Duration"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="x,y,z,w"/>  
--or-  
-<object property="x y z w"/>  
-```  
-  
-<a name="xamlValues_MinWidth"></a>   
-## XAML Values  
- *x*  
- The <xref:System.Windows.Media.Media3D.Quaternion.X%2A> component of this Quaternion structure.  
-  
- *y*  
- The <xref:System.Windows.Media.Media3D.Quaternion.Y%2A> component of this Quaternion structure.  
-  
- *z*  
- The <xref:System.Windows.Media.Media3D.Quaternion.Z%2A> component of this Quaternion structure.  
-  
- *w*  
- The <xref:System.Windows.Media.Media3D.Quaternion.W%2A> component of this Quaternion structure.  
-  
-   
-  
-## Examples  
- [!code-xml[animation3dgallery_snip#QuaternionAnimationExampleInline2](~/add/codesnippet/xaml/Animation3DGallery/QuaternionAnimationExample.xaml#quaternionanimationexampleinline2)]  
-  
- [!code-cs[matrixtransform3dview#MatrixTransform3DView3DN4](~/add/codesnippet/csharp/MatrixTransform3DView/Window1.xaml.cs#matrixtransform3dview3dn4)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN4](~/add/codesnippet/visualbasic/matrixtransform3dview/window1.xaml.vb#matrixtransform3dview3dn4)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,7 +34,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -85,18 +41,10 @@
         <Parameter Name="angleInDegrees" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="axisOfRotation">
-          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> that represents the axis of rotation.</param>
-        <param name="angleInDegrees">Angle to rotate around the specified axis, in degrees.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Quaternion" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.Media3D.Quaternion.W%2A> property of the quaternion is computed automatically.  
-  
- ]]></format>
-        </remarks>
+        <param name="axisOfRotation">To be added.</param>
+        <param name="angleInDegrees">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,7 +54,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -116,23 +63,12 @@
         <Parameter Name="w" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">Value of the new <see cref="T:System.Windows.Media.Media3D.Quaternion" />'s X coordinate.</param>
-        <param name="y">Value of the new <see cref="T:System.Windows.Media.Media3D.Quaternion" />'s Y coordinate.</param>
-        <param name="z">Value of the new <see cref="T:System.Windows.Media.Media3D.Quaternion" />'s Z coordinate.</param>
-        <param name="w">Value of the new <see cref="T:System.Windows.Media.Media3D.Quaternion" />'s W coordinate.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Quaternion" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the axis (x, y, z) and angle of rotation theta, the `w` value for the quaternion is:  
-  
- w = cos(theta/2)  
-  
- Note that if you use the <xref:System.Windows.Media.Media3D.Vector3D> constructor, the fourth parameter is the angle, in degrees, and the w calculation is performed for you.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="z">To be added.</param>
+        <param name="w">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -142,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,10 +88,10 @@
         <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
       </Parameters>
       <Docs>
-        <param name="left">First quaternion to add.</param>
-        <param name="right">Second quaternion to add.</param>
-        <summary>Adds the specified quaternions.</summary>
-        <returns>Quaternion that is the result of addition.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,15 +102,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the quaternion's angle, in degrees.</summary>
-        <value>Double that represents the quaternion's angle, in degrees.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,16 +120,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the quaternion's axis.</summary>
-        <value>
-          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> that represents the quaternion's axis.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,7 +138,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,7 +145,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Replaces a quaternion with its conjugate.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,18 +165,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">Object with which to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances for equality.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
-  
- ]]></format>
-        </remarks>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -256,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,18 +187,10 @@
         <Parameter Name="value" Type="System.Windows.Media.Media3D.Quaternion" />
       </Parameters>
       <Docs>
-        <param name="value">Quaternion with which to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances for equality.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -287,7 +200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -298,19 +210,11 @@
         <Parameter Name="quaternion2" Type="System.Windows.Media.Media3D.Quaternion" />
       </Parameters>
       <Docs>
-        <param name="quaternion1">First <see cref="T:System.Windows.Media.Media3D.Quaternion" /> to compare.</param>
-        <param name="quaternion2">Second <see cref="T:System.Windows.Media.Media3D.Quaternion" /> to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances for equality.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
-  
- ]]></format>
-        </remarks>
+        <param name="quaternion1">To be added.</param>
+        <param name="quaternion2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -320,7 +224,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,8 +231,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for the <see cref="T:System.Windows.Media.Media3D.Quaternion" />.</summary>
-        <returns>An integer type that represents the hash code for the <see cref="T:System.Windows.Media.Media3D.Quaternion" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,15 +243,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Identity quaternion</summary>
-        <value>The Identity quaternion.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,7 +261,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -367,7 +268,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Replaces the specified quaternion with its inverse</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -378,16 +279,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the specified quaternion is an <see cref="System.Windows.Media.Media3D.Quaternion.Identity%2A" /> quaternion.</summary>
-        <value>
-          <see langword="true" /> if the quaternion is the <see cref="System.Windows.Media.Media3D.Quaternion.Identity%2A" /> quaternion, <see langword="false" /> otherwise.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,16 +297,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the quaternion is normalized.</summary>
-        <value>
-          <see langword="true" /> if the quaternion is normalized, <see langword="false" /> otherwise.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,7 +315,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -429,10 +325,10 @@
         <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
       </Parameters>
       <Docs>
-        <param name="left">First quaternion to multiply.</param>
-        <param name="right">Second quaternion to multiply.</param>
-        <summary>Multiplies the specified <see cref="T:System.Windows.Media.Media3D.Quaternion" /> values.</summary>
-        <returns>Quaternion that is the result of multiplication.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -443,7 +339,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -451,15 +346,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a normalized quaternion.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Throws <xref:System.InvalidOperationException> if the quaternion is zero and cannot be normalized.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -469,7 +357,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -480,10 +367,10 @@
         <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
       </Parameters>
       <Docs>
-        <param name="left">First quaternion to add.</param>
-        <param name="right">Second quaternion to add.</param>
-        <summary>Adds the specified <see cref="T:System.Windows.Media.Media3D.Quaternion" /> values.</summary>
-        <returns>Quaternion that is the sum of the two specified  <see cref="T:System.Windows.Media.Media3D.Quaternion" /> values.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -494,7 +381,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -505,19 +391,11 @@
         <Parameter Name="quaternion2" Type="System.Windows.Media.Media3D.Quaternion" />
       </Parameters>
       <Docs>
-        <param name="quaternion1">First Quaternion to compare.</param>
-        <param name="quaternion2">Second Quaternion to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances for exact equality.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
-  
- ]]></format>
-        </remarks>
+        <param name="quaternion1">To be added.</param>
+        <param name="quaternion2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -527,7 +405,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -538,19 +415,11 @@
         <Parameter Name="quaternion2" Type="System.Windows.Media.Media3D.Quaternion" />
       </Parameters>
       <Docs>
-        <param name="quaternion1">First quaternion to compare.</param>
-        <param name="quaternion2">Second quaternion to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances for exact inequality.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
-  
- ]]></format>
-        </remarks>
+        <param name="quaternion1">To be added.</param>
+        <param name="quaternion2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -560,7 +429,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -571,10 +439,10 @@
         <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
       </Parameters>
       <Docs>
-        <param name="left">First quaternion.</param>
-        <param name="right">Second quaternion.</param>
-        <summary>Multiplies the specified quaternion by another.</summary>
-        <returns>Quaternion that is the product of multiplication.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -585,7 +453,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -596,10 +463,10 @@
         <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
       </Parameters>
       <Docs>
-        <param name="left">Quaternion from which to subtract.</param>
-        <param name="right">Quaternion to subtract from the first quaternion.</param>
-        <summary>Subtracts a specified quaternion from another.</summary>
-        <returns>Quaternion that is the result of subtraction.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -610,7 +477,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -620,19 +486,10 @@
         <Parameter Name="source" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="source">A string representation of a <see cref="T:System.Windows.Media.Media3D.Quaternion" />.</param>
-        <summary>Converts a string representation of a <see cref="T:System.Windows.Media.Media3D.Quaternion" /> into the equivalent <see cref="T:System.Windows.Media.Media3D.Quaternion" /> structure.</summary>
-        <returns>
-          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> represented by the string.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[quaternionview#QuaternionView3DN3](~/add/codesnippet/visualbasic/quaternionview/window1.xaml.vb#quaternionview3dn3)]
- [!code-cs[quaternionview#QuaternionView3DN3](~/add/codesnippet/csharp/QuaternionView/Window1.xaml.cs#quaternionview3dn3)]  
-  
- ]]></format>
-        </remarks>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Slerp">
@@ -642,7 +499,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -654,22 +510,12 @@
         <Parameter Name="t" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="from">
-          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the starting orientation.</param>
-        <param name="to">
-          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the ending orientation.</param>
-        <param name="t">Interpolation coefficient.</param>
-        <summary>Interpolates between two orientations using spherical linear interpolation.</summary>
-        <returns>
-          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the orientation resulting from the interpolation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Spherical linear interpolation is useful for animating a three-dimensional models because it provides smooth transitions between different orientations of the model.  
-  
- ]]></format>
-        </remarks>
+        <param name="from">To be added.</param>
+        <param name="to">To be added.</param>
+        <param name="t">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Slerp">
@@ -679,7 +525,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -692,23 +537,13 @@
         <Parameter Name="useShortestPath" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="from">
-          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the starting orientation.</param>
-        <param name="to">
-          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the ending orientation.</param>
-        <param name="t">Interpolation coefficient.</param>
-        <param name="useShortestPath">Boolean that indicates whether to compute quaternions that constitute the shortest possible arc on a four-dimensional unit sphere.</param>
-        <summary>Interpolates between orientations, represented as <see cref="T:System.Windows.Media.Media3D.Quaternion" /> structures, using spherical linear interpolation.</summary>
-        <returns>
-          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the orientation resulting from the interpolation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Spherical linear interpolation is useful for animating a three-dimensional models because it provides smooth transitions between different orientations of the model.  
-  
- ]]></format>
-        </remarks>
+        <param name="from">To be added.</param>
+        <param name="to">To be added.</param>
+        <param name="t">To be added.</param>
+        <param name="useShortestPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -718,7 +553,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -729,10 +563,10 @@
         <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
       </Parameters>
       <Docs>
-        <param name="left">Quaternion from which to subtract.</param>
-        <param name="right">Quaternion to subtract from the first quaternion.</param>
-        <summary>Subtracts a Quaternion from another.</summary>
-        <returns>Quaternion that is the result of subtraction.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -743,7 +577,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -754,18 +587,10 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">The string specifying the format to use.  
-  
- -or-  
-  
- <see langword="null" /> to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
-        <param name="provider">The <see langword="IFormatProvider" /> to use to format the value.  
-  
- -or-  
-  
- <see langword="null" /> to obtain the numeric format information from the current locale setting of the operating system.</param>
-        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="System.IFormattable.ToString%2A" />.</summary>
-        <returns>A string containing the value of the current instance in the specified format.</returns>
+        <param name="format">To be added.</param>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -776,7 +601,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -784,8 +608,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a string representation of the object.</summary>
-        <returns>String representation of the object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -796,7 +620,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -806,9 +629,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">Culture-specific formatting information.</param>
-        <summary>Creates a string representation of the object.</summary>
-        <returns>String representation of the object.</returns>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -819,29 +642,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the W component of the quaternion.</summary>
-        <value>The W component of the quaternion.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is 0.  
-  
-   
-  
-## Examples  
- [!code-cs[matrixtransform3dview#MatrixTransform3DView3DN3](~/add/codesnippet/csharp/MatrixTransform3DView/Window1.xaml.cs#matrixtransform3dview3dn3)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/add/codesnippet/visualbasic/matrixtransform3dview/window1.xaml.vb#matrixtransform3dview3dn3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -851,29 +660,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the X component of the quaternion.</summary>
-        <value>The X component of the quaternion.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is 0.  
-  
-   
-  
-## Examples  
- [!code-cs[matrixtransform3dview#MatrixTransform3DView3DN3](~/add/codesnippet/csharp/MatrixTransform3DView/Window1.xaml.cs#matrixtransform3dview3dn3)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/add/codesnippet/visualbasic/matrixtransform3dview/window1.xaml.vb#matrixtransform3dview3dn3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -883,29 +678,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Y component of the quaternion.</summary>
-        <value>The Y component of the quaternion.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is 0.  
-  
-   
-  
-## Examples  
- [!code-cs[matrixtransform3dview#MatrixTransform3DView3DN3](~/add/codesnippet/csharp/MatrixTransform3DView/Window1.xaml.cs#matrixtransform3dview3dn3)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/add/codesnippet/visualbasic/matrixtransform3dview/window1.xaml.vb#matrixtransform3dview3dn3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Z">
@@ -915,29 +696,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Z component of the quaternion.</summary>
-        <value>The Z component of the quaternion.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is 0.  
-  
-   
-  
-## Examples  
- [!code-cs[matrixtransform3dview#MatrixTransform3DView3DN3](~/add/codesnippet/csharp/MatrixTransform3DView/Window1.xaml.cs#matrixtransform3dview3dn3)]
- [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/add/codesnippet/visualbasic/matrixtransform3dview/window1.xaml.vb#matrixtransform3dview3dn3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

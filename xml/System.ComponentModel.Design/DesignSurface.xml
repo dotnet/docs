@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignSurface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,57 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Presents a user interface for designing components.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DesignSurface class implements what the user perceives as a designer. DesignSurface is the user interface the user manipulates to change design-time features. DesignSurface provides a completely self-contained design surface.  
-  
- The DesignSurface class may be used as a stand-alone designer, or it may be coupled with the <xref:System.ComponentModel.Design.DesignSurfaceManager> class to provide a common implementation for an application that hosts multiple DesignSurface objects.  
-  
- The DesignSurface class can be used by itself, or the user can derive a new class from it and augment the behavior.  
-  
- The DesignSurface class provides several design-time services automatically. The DesignSurface class adds all of its services in its constructor. Most of these services can be overridden by replacing them in the protected <xref:System.ComponentModel.Design.DesignSurface.ServiceContainer%2A> property. To replace a service, override the constructor, call base, and make any changes through the protected <xref:System.ComponentModel.Design.DesignSurface.ServiceContainer%2A> property. All services that are added to the service container and that implement <xref:System.IDisposable> are disposed when the design surface is disposed. The default set of replaceable services that the DesignSurface class provides is shown in the following table.  
-  
-|Service|Description|  
-|-------------|-----------------|  
-|<xref:System.ComponentModel.Design.IExtenderProviderService>|Enables objects that are not part of the container’s components collection to provide their own extender providers.|  
-|<xref:System.ComponentModel.Design.IExtenderListService>|Used by <xref:System.ComponentModel.TypeDescriptor> to get a list of extender providers. With this service, extender providers can live outside of the container.|  
-|<xref:System.ComponentModel.Design.ITypeDescriptorFilterService>|Provides designer metadata hooks. This is the primary interface for metadata filtering.|  
-|<xref:System.ComponentModel.Design.ISelectionService>|Provides a way to select components in the designer.|  
-|<xref:System.ComponentModel.Design.IReferenceService>|Provides a way to get a name for objects, even when those objects are not sited.|  
-|DesignSurface|Offers the design surface itself as a service.|  
-|<xref:System.ComponentModel.Design.DesignerOptionService>|Provides a base class for getting and setting option values for a designer.|  
-  
- The following table shows the non-replaceable services provided by default.  
-  
-|Service|Description|  
-|-------------|-----------------|  
-|<xref:System.ComponentModel.Design.IComponentChangeService>|Raises events as changes are made to components.|  
-|<xref:System.ComponentModel.Design.IDesignerHost>|Controls access to types, services, and transactions. Master interface for designers.|  
-|<xref:System.ComponentModel.IContainer>|Owns the set of components that are being designed. Each designer has an <xref:System.ComponentModel.IContainer> that owns the components.|  
-|<xref:System.ComponentModel.Design.IServiceContainer>|Derives from <xref:System.IServiceProvider> and provides a way to add and remove services from the designer.|  
-  
- In addition to these services, the DesignSurface class also provides a single service that is available through a component’s site. This service is unique for each component. The following table shows the services that cannot be replaced.  
-  
-|Service|Description|  
-|-------------|-----------------|  
-|<xref:System.ComponentModel.Design.IDictionaryService>|A generic dictionary of key/value pairs that can be used to store arbitrary data about a component.|  
-|<xref:System.ComponentModel.INestedContainer>|A container that enables a component to add additional child components to the designer. These components will be part of the design surface, but will not participate in serialization. This is useful when you want to design a control that is capable of exposing a region of itself in a designer, but you do not want the region to participate in serialization.|  
-  
- In addition to <xref:System.ComponentModel.ISite>, the site also implements the following interfaces.  
-  
-> [!CAUTION]
->  Check for the existence of these interfaces, rather than use indiscriminate casting, because other site implementations may not implement them.  
-  
-|Service|Description|  
-|-------------|-----------------|  
-|<xref:System.ComponentModel.Design.IServiceContainer>|Provides a way to get to the container of site-specific services. For example, <xref:System.ComponentModel.Design.IDictionaryService> is a site-specific service. With this service, you can add additional site-specific services.|  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,14 +34,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,24 +49,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parentProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="parentProvider">The parent service provider, or <see langword="null" /> if there is no parent used to resolve services.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When `parentProvide` is present, designers contained within the surface can retrieve services from the application.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <param name="parentProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -128,29 +67,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="rootComponentType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="rootComponentType">The type of root component to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you use the DesignSurface constructor, it creates a simple designer loader that, in turn, creates a component of the given type and then ends the loading process. This is a straightforward way to create a designer, under the assumption that all saving of state will be done externally. Internally, this calls <xref:System.ComponentModel.Design.DesignSurface.BeginLoad%2A> and passes the root component type.  
-  
-> [!NOTE]
->  The DesignSurface overload is not affected by <xref:System.Windows.Forms.Design.DesignerOptions>. The <xref:System.Windows.Forms.Design.DesignerOptions> must be in the service container before the design surface loads. If you need access to <xref:System.Windows.Forms.Design.DesignerOptions>, call the empty constructor, add the <xref:System.Windows.Forms.Design.DesignerOptions> to the <xref:System.ComponentModel.Design.DesignSurface.ServiceContainer%2A> and call <xref:System.ComponentModel.Design.DesignSurface.BeginLoad%2A> with `rootComponentType`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="rootComponent" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <param name="rootComponentType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -160,7 +85,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -168,20 +92,10 @@
         <Parameter Name="rootComponentType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="parentProvider">The parent service provider, or <see langword="null" /> if there is no parent used to resolve services.</param>
-        <param name="rootComponentType">The type of root component to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Using the DesignSurface constructor creates a simple designer loader that creates a component of the given type and then ends the loading process. This is a straightforward way to create a designer, under the assumption that all saving of state will be done externally. Internally, this calls <xref:System.ComponentModel.Design.DesignSurface.BeginLoad%2A> and passes the root component type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="rootComponent" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <param name="parentProvider">To be added.</param>
+        <param name="rootComponentType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginLoad">
@@ -191,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,21 +114,9 @@
         <Parameter Name="loader" Type="System.ComponentModel.Design.Serialization.DesignerLoader" />
       </Parameters>
       <Docs>
-        <param name="loader">The designer loader to use for loading the designer.</param>
-        <summary>Begins the loading process with the given designer loader.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Designer loading can be asynchronous, so the loading may continue to progress after this call has returned. Attach an event handler to the <xref:System.ComponentModel.Design.IDesignerHost.LoadComplete> event to be notified when the design surface has completed loading.  
-  
- After <xref:System.ComponentModel.Design.DesignSurface.BeginLoad%2A> is called, you can immediately obtain the view for the designer, because designer loaders must provide at least the root component when loading asynchronously.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="loader" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <param name="loader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginLoad">
@@ -225,7 +126,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,24 +135,9 @@
         <Parameter Name="rootComponentType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="rootComponentType">The type of component to create in design mode.</param>
-        <summary>Begins the loading process.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When `rootComponentType` is specified, a default designer loader that simply creates an instance of `rootComponentType` will be used. Designer loading can be asynchronous, so the loading may continue to progress after this call has returned. Attach an event handler to the <xref:System.ComponentModel.Design.IDesignerHost.LoadComplete> event to be notified when the design surface has completed loading.  
-  
- After BeginLoad is called, you can immediately obtain the view for the designer, because designer loaders must provide at least the root component when loading asynchronously.  
-  
-> [!NOTE]
->  The BeginLoad method creates an instance of the component type and initializes a designer for this instance. The <xref:System.ComponentModel.Design.DesignSurface.Loaded> event is raised before this method returns.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="rootComponentType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <param name="rootComponentType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ComponentContainer">
@@ -262,24 +147,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ComponentModel.IContainer" /> implementation within the design surface.</summary>
-        <value>The <see cref="T:System.ComponentModel.IContainer" /> implementation within the design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ComponentContainer property holds all objects that are currently in design mode. When components are added to ComponentContainer, their designer, if any, is loaded. The component is sited with a site that provides full access to the design surface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateComponent">
@@ -289,7 +165,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -304,20 +179,10 @@
         <Parameter Name="componentType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="componentType">The type of component to create.</param>
-        <summary>Creates an instance of a component.</summary>
-        <returns>The newly created component.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateComponent method is called by the design surface’s <xref:System.ComponentModel.Design.IDesignerHost.CreateComponent%2A> method to create an instance of a component. The component should be created and added to the public container on the design surface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="componentType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <param name="componentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDesigner">
@@ -327,7 +192,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -338,26 +202,11 @@
         <Parameter Name="rootDesigner" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="component">The component for which the designer should be created.</param>
-        <param name="rootDesigner">
-          <see langword="true" /> to create a root designer; <see langword="false" /> to create a normal designer.</param>
-        <summary>Creates a designer when a component is added to the container.</summary>
-        <returns>An instance of the requested designer, or <see langword="null" /> if no matching designer could be found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateDesigner method is called by the design surface’s <xref:System.ComponentModel.IContainer> when a component is added to the container. This method creates a designer, but does not initialize it. When it returns, the designer is initialized by the container.  
-  
- CreateDesigner can create two different types of designers: root designers and normal designers. A root designer is a designer for the root component in the design surface, which by definition is the first component added to the container. Root designers differ from normal designers because they are responsible for the user interface presented to the end user. Root designers typically coordinate with the rest of the designers on a design surface to provide this interface.  
-  
- The default implementation of this method delegates to <xref:System.ComponentModel.TypeDescriptor>, passing in <xref:System.ComponentModel.Design.IRootDesigner> as the designer type for root designers, or <xref:System.ComponentModel.Design.IDesigner> for normal designers. You can override this method to request a specific type of designer.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="component" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <param name="component">To be added.</param>
+        <param name="rootDesigner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -367,7 +216,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -377,20 +225,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type to create.</param>
-        <summary>Creates an instance of the given type.</summary>
-        <returns>The newly created object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `type` is an <xref:System.ComponentModel.IComponent>, CreateInstance searches for a constructor of type <xref:System.ComponentModel.IContainer> first, followed by an empty constructor.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNestedContainer">
@@ -400,7 +238,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -410,20 +247,10 @@
         <Parameter Name="owningComponent" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="owningComponent">The component that manages the nested container.</param>
-        <summary>Creates a container suitable for nesting controls or components.</summary>
-        <returns>The nested container.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Adding a component to a nested container creates its designer and makes it eligible for all services available from the design surface. Components added to nested containers do not participate in serialization.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="owningComponent" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <param name="owningComponent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNestedContainer">
@@ -433,7 +260,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -444,23 +270,11 @@
         <Parameter Name="containerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owningComponent">The component that manages the nested container.</param>
-        <param name="containerName">An additional name for the nested container.</param>
-        <summary>Creates a container suitable for nesting controls or components.</summary>
-        <returns>The nested container.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Adding a component to a nested container creates its designer and makes it eligible for all services available from the design surface. Components added to nested containers do not participate in serialization.  
-  
- You can provide an additional name for the CreateNestedContainer method by passing a value into `containerName`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="owningComponent" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <param name="owningComponent">To be added.</param>
+        <param name="containerName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -470,7 +284,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -478,23 +291,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.DesignSurface" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The public Dispose method follows the standard <xref:System.IDisposable> pattern. Calling this method destroys the design surface. The protected version of this method is `virtual` and follows the normal <xref:System.IDisposable> pattern.  
-  
-> [!NOTE]
->  Because <xref:System.ComponentModel.Design.DesignSurface> does not have any native code to clean up, it does not have a finalizer that calls <xref:System.ComponentModel.Design.DesignSurface.Dispose%28System.Boolean%29>. If you need to call <xref:System.ComponentModel.Design.DesignSurface.Dispose%28System.Boolean%29>, you must add a finalizer yourself.  
-  
- Call Dispose when you are finished using the <xref:System.ComponentModel.Design.DesignSurface>. The Dispose method leaves the <xref:System.ComponentModel.Design.DesignSurface> in an unusable state. After calling Dispose, you must release all references to the <xref:System.ComponentModel.Design.DesignSurface> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Design.DesignSurface> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.ComponentModel.Design.DesignSurface>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Design.DesignSurface> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -504,7 +302,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -514,24 +311,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.DesignSurface" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The public <xref:System.ComponentModel.Design.DesignSurface.Dispose> method follows the standard <xref:System.IDisposable> pattern. Calling this method destroys the design surface. The protected version of this method is `virtual` and follows the normal <xref:System.IDisposable> pattern.  
-  
-> [!NOTE]
->  Because <xref:System.ComponentModel.Design.DesignSurface> does not have any native code to clean up, it does not have a finalizer that calls Dispose. If you need to call Dispose, you must add a finalizer yourself.  
-  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ComponentModel.Design.DesignSurface> references. This method invokes the `Dispose()` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Disposed">
@@ -541,22 +323,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the design surface is disposed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The surface is only disposed when the public <xref:System.ComponentModel.Design.DesignSurface.Dispose%2A> method on <xref:System.ComponentModel.Design.DesignSurface> is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DtelLoading">
@@ -572,9 +346,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the **Design-time Error List** is loading.</summary>
-        <value>
-          <see langword="true" /> if the **Design-time Error List** is loading; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -585,7 +358,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -593,15 +365,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Serializes changes to the design surface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Flush method can be called to push changes made to the design surface down to the serializer. This ensures that the design surface and its serialized state are synchronized. The actual implementation of this method is forwarded to the designer loader associated with design surface. The designer loader may choose to defer changes until Flush is called, or it may choose to keep the serialized data up to date with all user changes. The Flush method ensures that regardless of the model the designer loader chooses to use, the serialized state is synchronized with the actual design surface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Flushed">
@@ -611,22 +376,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a call is made to the <see cref="System.ComponentModel.Design.DesignSurface.Flush%2A" /> method of <see cref="T:System.ComponentModel.Design.DesignSurface" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The designer loader is flushed first, and then the Flushed event is raised.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -636,7 +393,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -646,17 +402,10 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">The type of service to retrieve.</param>
-        <summary>Gets a service from the service container.</summary>
-        <returns>An object that implements, or is a derived class of, <paramref name="serviceType" />, or <see langword="null" /> if the service does not exist in the service container.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetService method retrieves a service in the design surface’s service container. In addition, this will forward to any service provider that was given to the design surface at construction time.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLoaded">
@@ -666,16 +415,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the design surface is currently loaded.</summary>
-        <value>
-          <see langword="true" /> if the design surface is currently loaded; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -686,27 +433,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.LoadedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the designer load has completed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Loaded event is raised for successful loads as well as unsuccessful ones. If code in this event handler throws an exception, the designer is unloaded.  
-  
- The <xref:System.ComponentModel.Design.LoadedEventArgs> object can be used to determine if loading succeeded, and it can also provide a list of errors that occurred during the load.  
-  
-> [!NOTE]
->  Errors can occur for successful loads as well, provided that the serialization system can tolerate errors.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadErrors">
@@ -716,15 +450,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a collection of loading errors or a void collection.</summary>
-        <value>A <see cref="T:System.Collections.ICollection" /> of loading errors.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -735,14 +468,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the designer is about to be loaded.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -753,7 +485,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -763,8 +494,8 @@
         <Parameter Name="e" Type="System.ComponentModel.Design.LoadedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.ComponentModel.Design.LoadedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.DesignSurface.Loaded" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -775,7 +506,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -785,8 +515,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.DesignSurface.Loading" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -797,7 +527,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -807,8 +536,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.DesignSurface.Unloaded" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -819,7 +548,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -829,8 +557,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.DesignSurface.Unloading" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -841,7 +569,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -851,8 +578,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.DesignSurface.ViewActivated" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -863,24 +590,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.ServiceContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the service container.</summary>
-        <value>The service container that provides all services to designers contained within the design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- At construction time, <xref:System.ComponentModel.Design.DesignSurface> adds default services into this service container. You can leave the default services in their present state, or you can remove them and replace them with your own. The default services are all demand-created, so there is no loss in performance for adding them at construction time.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Unloaded">
@@ -890,14 +608,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a designer has finished unloading.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -908,22 +625,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a designer is about to unload.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a designer unloads, the entire state for that designer is destroyed, including the designer’s view. The view should be unparented at this time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="View">
@@ -933,41 +642,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the view for the root designer.</summary>
-        <value>The view for the root designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.Design.DesignSurface.BeginLoad%2A> method must be called beforehand to start the loading process. It is possible to return a view before the designer loader finishes loading because the root designer, which supplies the view, is the first object created by the designer loader. If a view is unavailable, <xref:System.ComponentModel.Design.DesignSurface.BeginLoad%2A> raises an exception.  
-  
- The notion of a view technology is obsolete. But, it remains in the interfaces for root designers for backward compatibility. Its use is hidden from anyone using <xref:System.ComponentModel.Design.DesignSurface> objects. The View property hides view technologies by passing the supported technologies back into the root designer.  
-  
-   
-  
-## Examples  
- The following code example shows how View hides view technologies.  
-  
- [C#]  
-  
- `IRootDesigner d;`  
-  
- `ViewTechnology[] supported = d.SupportedTechnologies;`  
-  
- `return d.GetView(supported[0]);`  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The design surface is not loading, the designer loader has not yet created a root designer, or the design surface finished the load, but failed. More information may available in the <see cref="System.Exception.InnerException%2A" />.</exception>
-        <exception cref="T:System.NotSupportedException">The designer loaded, but it does not offer a view compatible with this design surface.</exception>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewActivated">
@@ -977,22 +660,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.ComponentModel.Design.IDesignerHost.Activate%2A" /> method has been called on <see cref="T:System.ComponentModel.Design.IDesignerHost" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you want to support the <xref:System.ComponentModel.Design.IDesignerHost.Activate%2A> method, your event handler should activate the window for this design surface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

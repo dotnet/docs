@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlFieldCell" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a cell in the rendered table of a tabular ASP.NET data-bound control, such as <see cref="T:System.Web.UI.WebControls.DetailsView" /> or <see cref="T:System.Web.UI.WebControls.GridView" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataControlFieldCell class is a strongly typed <xref:System.Web.UI.WebControls.TableCell> class that represents a cell in ASP.NET data-bound controls that render their contents in a tabular layout, such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>.  
-  
- The <xref:System.Web.UI.WebControls.DataControlField> object that contains the DataControlFieldCell object controls how the cell is rendered by applying styles to the cell. You can access the containing <xref:System.Web.UI.WebControls.DataControlField> object using the <xref:System.Web.UI.WebControls.DataControlFieldCell.ContainingField%2A> property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how a DataControlFieldCell object can be used and manipulated by a class that derives from <xref:System.Web.UI.WebControls.DataControlField>. The `RadioButtonField` class adds a <xref:System.Web.UI.WebControls.RadioButton> control to each DataControlFieldCell object in its <xref:System.Web.UI.WebControls.DataControlField.InitializeCell%2A> method, and later checks the value of the <xref:System.Web.UI.WebControls.RadioButton> control in the <xref:System.Web.UI.WebControls.DataControlField.ExtractValuesFromCell%2A> method. This example is part of a larger example provided for the <xref:System.Web.UI.WebControls.DataControlField> class.  
-  
- [!code-vb[Samples.AspNet.RadioButtonField#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_117_1.vb)]
- [!code-cs[Samples.AspNet.RadioButtonField#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_117_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,23 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="containingField" Type="System.Web.UI.WebControls.DataControlField" />
       </Parameters>
       <Docs>
-        <param name="containingField">The <see cref="T:System.Web.UI.WebControls.DataControlField" /> that contains the current cell.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> class, setting the specified <see cref="T:System.Web.UI.WebControls.DataControlField" /> object as the cell's container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor uses the <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName> element defined by its base class to render the cell. The <xref:System.Web.UI.WebControls.DataControlField> object passed in the `containingField` parameter is used to determine whether to show headers and what styles to apply to the cell when it is rendered.  
-  
- ]]></format>
-        </remarks>
+        <param name="containingField">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -74,17 +47,10 @@
         <Parameter Name="containingField" Type="System.Web.UI.WebControls.DataControlField" />
       </Parameters>
       <Docs>
-        <param name="tagKey">An <see cref="T:System.Web.UI.HtmlTextWriterTag" /> that specifies the HTML tag to render for the cell. The default tag used by the <see cref="T:System.Web.UI.WebControls.TableCell" /> class is <see cref="T:System.Web.UI.HtmlTextWriterTag" />.</param>
-        <param name="containingField">The <see cref="T:System.Web.UI.WebControls.DataControlField" /> that contains the current cell.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> class, setting the specified <see cref="T:System.Web.UI.WebControls.DataControlField" /> object as the cell's container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `tagKey` parameter is passed to the <xref:System.Web.UI.WebControls.WebControl> base class constructor, and controls the HTML tag that is emitted by the control. The <xref:System.Web.UI.WebControls.DataControlField> passed in the `containingField` parameter is used to determine whether to show headers and what styles to apply to the cell when it is rendered.  
-  
- ]]></format>
-        </remarks>
+        <param name="tagKey">To be added.</param>
+        <param name="containingField">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainingField">
@@ -94,23 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataControlField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.WebControls.DataControlField" /> object that contains the current cell.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.DataControlField" /> that contains the current cell, or <see langword="null" />, if no <see cref="T:System.Web.UI.WebControls.DataControlField" /> is passed to the class constructor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The content rendering for the <xref:System.Web.UI.WebControls.DataControlFieldCell> object might be affected by the various <xref:System.Web.UI.WebControls.DataControlField> properties of the containing field, such as <xref:System.Web.UI.WebControls.DataControlField.ItemStyle%2A>, <xref:System.Web.UI.WebControls.DataControlField.ControlStyle%2A>, and <xref:System.Web.UI.WebControls.DataControlField.ShowHeader%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">
@@ -126,9 +84,8 @@
         <ReturnType>System.Web.UI.ValidateRequestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the control validates client input.</summary>
-        <value>
-          <see langword="true" /> if the control validates client input; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

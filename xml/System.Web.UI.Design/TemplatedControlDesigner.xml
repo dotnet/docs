@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplatedControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Extends design-time behavior for template-based server controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to create a control designer class that uses templates and derives from the <xref:System.Web.UI.Design.ControlDesigner> class.  
-  
- To run the example, compile the code, and then in a design host such as [!INCLUDE[vsprvslong](~/add/includes/vsprvslong-md.md)], view the page in Design view. Select the control, click the action list to select a template to modify, and then use the drag-and-drop feature to move controls into the template.  
-  
-> [!NOTE]
->  Your project must have a reference to the `System.Design` assembly.  
-  
- [!code-cs[DesignerTemplateGroupSample#1](~/add/codesnippet/csharp/t-system.web.ui.design.t_0_1.cs)]
- [!code-vb[DesignerTemplateGroupSample#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.t_0_1.vb)]  
-[!code-vb[DesignerTemplateGroupSample#2](~/add/codesnippet/visualbasic/t-system.web.ui.design.t_0_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplatedControlDesigner" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -67,18 +48,9 @@
         <ReturnType>System.Web.UI.Design.ITemplateEditingFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the active template editing frame.</summary>
-        <value>An <see cref="T:System.Web.UI.Design.ITemplateEditingFrame" /> that is the currently active template editing frame.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The ActiveTemplateEditingFrame property is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to expose or enumerate templates within a designer for template-based controls.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanEnterTemplateMode">
@@ -88,16 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether or not this designer will allow the viewing or editing of templates.</summary>
-        <value>
-          <see langword="true" /> if the designer will allow the viewing or editing of templates; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -123,9 +92,9 @@
         <Parameter Name="verb" Type="System.Web.UI.Design.TemplateEditingVerb" />
       </Parameters>
       <Docs>
-        <param name="verb">The template editing verb to create a template editing frame for.</param>
-        <summary>When overridden in a derived class, creates a template editing frame for the specified verb.</summary>
-        <returns>The new template editing frame.</returns>
+        <param name="verb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,16 +105,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the designer allows data binding.</summary>
-        <value>
-          <see langword="true" />, if the designer allows data binding; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -171,20 +137,9 @@
         <Parameter Name="newTemplateEditingFrame" Type="System.Web.UI.Design.ITemplateEditingFrame" />
       </Parameters>
       <Docs>
-        <param name="newTemplateEditingFrame">The template editing frame object to open in the designer.</param>
-        <summary>Opens a particular template frame object for editing in the designer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The EnterTemplateMode method is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to manipulate templates within a designer for template-based controls.  
-  
- If already in template mode and editing a different template frame, this method calls <xref:System.Web.UI.Design.TemplatedControlDesigner.ExitTemplateMode%2A> to save all its templates and close that frame.  
-  
- ]]></format>
-        </remarks>
+        <param name="newTemplateEditingFrame">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExitTemplateMode">
@@ -194,7 +149,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -211,23 +165,11 @@
         <Parameter Name="fSave" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="fSwitchingTemplates">
-          <see langword="true" /> when switching from one template editing frame to another; otherwise <see langword="false" />.</param>
-        <param name="fNested">
-          <see langword="true" /> if this designer is nested (one or more levels) within another control whose designer is also in template editing mode; otherwise <see langword="false" />.</param>
-        <param name="fSave">
-          <see langword="true" /> if templates should be saved on exit; otherwise, <see langword="false" />.</param>
-        <summary>Closes the currently active template editing frame after saving any relevant changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The ExitTemplateMode method is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to manipulate templates within a designer for template-based controls.  
-  
- ]]></format>
-        </remarks>
+        <param name="fSwitchingTemplates">To be added.</param>
+        <param name="fNested">To be added.</param>
+        <param name="fSave">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCachedTemplateEditingVerbs">
@@ -237,7 +179,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -250,18 +191,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the cached template editing verbs.</summary>
-        <returns>An array of <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> objects, if any.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The GetCachedTemplateEditingVerbs method is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to manipulate templates within a designer for template-based controls.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateContainerDataItemProperty">
@@ -271,7 +203,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -286,19 +217,10 @@
         <Parameter Name="templateName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="templateName">The name of the template.</param>
-        <summary>Gets the data item property of the template's container.</summary>
-        <returns>A string representing the data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The GetTemplateContainerDataItemProperty method is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.Templates%2A> property of the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> collection elements to examine template metadata within a designer for template-based controls.  
-  
- ]]></format>
-        </remarks>
+        <param name="templateName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateContainerDataSource">
@@ -308,7 +230,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -323,9 +244,9 @@
         <Parameter Name="templateName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="templateName">The name of the template.</param>
-        <summary>Gets the data source of the template's container.</summary>
-        <returns>The data source of the container of the specified template.</returns>
+        <param name="templateName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -353,12 +273,11 @@
         <Parameter Name="allowEditing" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="editingFrame">The template editing frame to retrieve the content of.</param>
-        <param name="templateName">The name of the template.</param>
-        <param name="allowEditing">
-          <see langword="true" /> if the template's content can be edited; <see langword="false" /> if the content is read-only.</param>
-        <summary>When overridden in a derived class, gets the template's content.</summary>
-        <returns>The content of the template.</returns>
+        <param name="editingFrame">To be added.</param>
+        <param name="templateName">To be added.</param>
+        <param name="allowEditing">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,7 +288,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -382,8 +300,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the template editing verbs available to the designer.</summary>
-        <returns>The template editing verbs available to the designer.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,7 +312,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -404,9 +321,9 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to retrieve a template from.</param>
-        <summary>Creates a template from the specified text.</summary>
-        <returns>An <see cref="T:System.Web.UI.ITemplate" /> from the specified text.</returns>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,7 +334,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -432,19 +348,10 @@
         <Parameter Name="templateName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="templateName">The name of the template to return the type of the parent for.</param>
-        <summary>Gets the type of the parent of the template property.</summary>
-        <returns>The type of the object that has the template property.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The GetTemplatePropertyParentType method is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.Templates%2A> property of the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> collection elements to examine template metadata within a designer for template-based controls.  
-  
- ]]></format>
-        </remarks>
+        <param name="templateName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTextFromTemplate">
@@ -454,7 +361,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -464,12 +370,10 @@
         <Parameter Name="template" Type="System.Web.UI.ITemplate" />
       </Parameters>
       <Docs>
-        <param name="template">The <see cref="T:System.Web.UI.ITemplate" /> to convert to text.</param>
-        <summary>Gets a string of text that represents the specified template.</summary>
-        <returns>A string that represents the specified template.</returns>
+        <param name="template">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="template" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -479,7 +383,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -489,8 +392,8 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">The control element being designed.</param>
-        <summary>Initializes the designer and loads the specified component.</summary>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,7 +404,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -513,21 +415,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the designer document is in template mode.</summary>
-        <value>
-          <see langword="true" /> if the designer document is in template mode; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The InTemplateMode property is obsolete. Use the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A?displayProperty=fullName> property for equivalent control designer functionality.  
-  
- A document is in template mode when a template is currently being viewed or edited in the forms designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBehaviorAttached">
@@ -537,7 +427,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -550,17 +439,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an opportunity to perform additional processing when a behavior is attached to the designer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The OnBehaviorAttached method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property to map properties to styles.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -570,7 +450,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -581,17 +460,10 @@
         <Parameter Name="ce" Type="System.ComponentModel.Design.ComponentChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">The object sending the event.</param>
-        <param name="ce">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" /> that provides data for the event.</param>
-        <summary>Delegate to handle the component changed event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called after a property has been changed. It allows the implementer to perform any post-processing that may be needed after a property change.  
-  
- ]]></format>
-        </remarks>
+        <param name="sender">To be added.</param>
+        <param name="ce">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSetParent">
@@ -601,7 +473,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -609,7 +480,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an opportunity to perform additional processing when the parent of this designer is changed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -620,7 +491,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -628,23 +498,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an opportunity to perform additional processing when the template mode is changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> event is raised by the designer host for certain actions on a control in the design surface. For example, an event is raised when the user enters or exits template editing mode for a control.  
-  
- The <xref:System.Web.UI.Design.TemplatedControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> event. Classes deriving from the <xref:System.Web.UI.Design.TemplatedControlDesigner> override the OnTemplateModeChanged method to process events that are raised when the template mode changes for the associated control.  
-  
- The OnTemplateModeChanged method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- The default delegate performs the updates that are required for a template mode change event in the base <xref:System.Web.UI.Design.TemplatedControlDesigner> class, and then calls the OnTemplateModeChanged method. The base OnTemplateModeChanged method in the <xref:System.Web.UI.Design.TemplatedControlDesigner> class returns without performing any additional processing for the event. If a class derives from the <xref:System.Web.UI.Design.TemplatedControlDesigner> and overrides the base OnTemplateModeChanged method, the default delegate calls the override method in the derived class.  
-  
- Use the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A> property to determine whether the control designer is in template editing mode currently.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveActiveTemplateEditingFrame">
@@ -654,7 +509,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -662,7 +516,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the active template editing frame.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -673,7 +527,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -690,10 +543,10 @@
         <Parameter Name="templateContent" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="editingFrame">The template editing frame to provide content for.</param>
-        <param name="templateName">The name of the template.</param>
-        <param name="templateContent">The content to set for the template.</param>
-        <summary>When overridden in a derived class, sets the specified template's content to the specified content.</summary>
+        <param name="editingFrame">To be added.</param>
+        <param name="templateName">To be added.</param>
+        <param name="templateContent">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -704,15 +557,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.TemplateGroupCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of template groups, each containing a template definition.</summary>
-        <value>A collection of <see cref="T:System.Web.UI.Design.TemplateGroup" /> elements.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -723,7 +575,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -731,15 +582,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Updates the design-time HTML.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You should call this method to refresh the design-time display if the template frames have been changed without calling methods that update the design-time HTML automatically.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

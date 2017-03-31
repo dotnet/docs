@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IOutputSessionChannel" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -16,17 +16,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines the interface that associates an output channel with a session.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IOutputSessionChannel interface indicates that an <xref:System.ServiceModel.Channels.IOutputChannel> implements <xref:System.ServiceModel.Channels.IOutputSession> semantics.  
-  
- The <xref:System.ServiceModel.Channels.IOutputSession> associated with an IOutputSessionChannel can be retrieved through the <xref:System.ServiceModel.Channels.ISessionChannel%601.Session%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members />
 </Type>

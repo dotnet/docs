@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardNavigation" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,29 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides logical and directional navigation between focusable objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The KeyboardNavigation class is responsible for implementing default keyboard focus navigation when one of the navigation keys is pressed.  The navigation keys are: Tab, Shift+Tab, Ctrl+Tab, Ctrl+Shift+Tab, UpArrow, DownArrow, LeftArrow, and RightArrow keys.  
-  
- An example of logical navigation is using the tab key to move focus.  
-  
- An example of directional navigation is using the arrow keys to move focus.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.Menu> with a number of <xref:System.Windows.Controls.MenuItem> objects.  The <xref:System.Windows.Input.KeyboardNavigation.TabNavigation%2A> attached property is set to <xref:System.Windows.Input.KeyboardNavigationMode> on the <xref:System.Windows.Controls.Menu>.  This means that when focus is changed using the tab key within the <xref:System.Windows.Controls.Menu>, focus will move from each element and when the last element is reached focus will return to the first element.  
-  
- [!code-xml[MarkupSnippets#MarkupKeyboardNavigationTabNavigationXAML](~/add/codesnippet/xaml/MarkupSnippets/Window1.xaml#markupkeyboardnavigationtabnavigationxaml)]  
-  
- [!code-vb[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](~/add/codesnippet/visualbasic/markupsnippets/window1.xaml.vb#markupkeyboardnavigationtabnavigationcode)]
- [!code-cs[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](~/add/codesnippet/csharp/MarkupSnippets/Window1.xaml.cs#markupkeyboardnavigationtabnavigationcode)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceptsReturnProperty">
@@ -44,14 +22,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.KeyboardNavigation.AcceptsReturn%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +39,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -74,7 +50,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.KeyboardNavigation.ControlTabNavigation%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +61,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -97,7 +72,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.KeyboardNavigation.DirectionalNavigation%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -123,12 +97,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to read the attached property.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Input.KeyboardNavigation.AcceptsReturn%2A" /> attached property for the specified element.</summary>
-        <returns>The value of the <see cref="System.Windows.Input.KeyboardNavigation.AcceptsReturn%2A" /> property.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetControlTabNavigation">
@@ -138,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -153,12 +124,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">Element from which to get the attached property.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Input.KeyboardNavigation.ControlTabNavigation%2A" /> attached property for the specified element.</summary>
-        <returns>The value of the <see cref="System.Windows.Input.KeyboardNavigation.ControlTabNavigation%2A" /> property.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDirectionalNavigation">
@@ -168,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -183,12 +151,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">Element from which to get the attached property.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Input.KeyboardNavigation.DirectionalNavigation%2A" /> attached property for the specified element.</summary>
-        <returns>The value of the <see cref="System.Windows.Input.KeyboardNavigation.DirectionalNavigation%2A" /> property.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetIsTabStop">
@@ -198,7 +164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -213,12 +178,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to read the attached property.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Input.KeyboardNavigation.IsTabStop%2A" /> attached property for the specified element.</summary>
-        <returns>The value of the <see cref="System.Windows.Input.KeyboardNavigation.IsTabStop%2A" /> property.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTabIndex">
@@ -228,7 +191,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -243,12 +205,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to read the attached property.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Input.KeyboardNavigation.TabIndex%2A" /> attached property for the specified element.</summary>
-        <returns>The value of the <see cref="System.Windows.Input.KeyboardNavigation.TabIndex%2A" /> property.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTabNavigation">
@@ -258,7 +218,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -273,12 +232,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">Element from which to get the attached property.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Input.KeyboardNavigation.TabNavigation%2A" /> attached property for the specified element.</summary>
-        <returns>The value of the <see cref="System.Windows.Input.KeyboardNavigation.TabNavigation%2A" /> property.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsTabStopProperty">
@@ -288,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.KeyboardNavigation.IsTabStop%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,7 +262,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,12 +272,10 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The element to write the attached property to.</param>
-        <param name="enabled">The property value to set.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Input.KeyboardNavigation.AcceptsReturn%2A" /> attached property for the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="enabled">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetControlTabNavigation">
@@ -332,7 +285,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -343,12 +295,10 @@
         <Parameter Name="mode" Type="System.Windows.Input.KeyboardNavigationMode" />
       </Parameters>
       <Docs>
-        <param name="element">Element on which to set the attached property.</param>
-        <param name="mode">The property value to set</param>
-        <summary>Sets the value of the <see cref="System.Windows.Input.KeyboardNavigation.ControlTabNavigation%2A" /> attached property for the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetDirectionalNavigation">
@@ -358,7 +308,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,12 +318,10 @@
         <Parameter Name="mode" Type="System.Windows.Input.KeyboardNavigationMode" />
       </Parameters>
       <Docs>
-        <param name="element">Element on which to set the attached property.</param>
-        <param name="mode">Property value to set.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Input.KeyboardNavigation.DirectionalNavigation%2A" /> attached property for the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetIsTabStop">
@@ -384,7 +331,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -395,12 +341,10 @@
         <Parameter Name="isTabStop" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The element to which to write the attached property.</param>
-        <param name="isTabStop">The property value to set.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Input.KeyboardNavigation.IsTabStop%2A" /> attached property for the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="isTabStop">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetTabIndex">
@@ -410,7 +354,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -421,12 +364,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to set the attached property to.</param>
-        <param name="index">The property value to set.</param>
-        <summary>Set the value of the <see cref="System.Windows.Input.KeyboardNavigation.TabIndex%2A" /> attached property for the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetTabNavigation">
@@ -436,7 +377,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -447,12 +387,10 @@
         <Parameter Name="mode" Type="System.Windows.Input.KeyboardNavigationMode" />
       </Parameters>
       <Docs>
-        <param name="element">Element on which to set the attached property.</param>
-        <param name="mode">Property value to set.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Input.KeyboardNavigation.TabNavigation%2A" /> attached property for the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TabIndexProperty">
@@ -462,14 +400,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.KeyboardNavigation.TabIndex%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,7 +417,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -492,7 +428,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.KeyboardNavigation.TabNavigation%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

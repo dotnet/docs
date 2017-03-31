@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.Handshake" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the control protocol used in establishing a serial port communication for a <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used with the <xref:System.IO.Ports.SerialPort.Handshake%2A> property.  
-  
-   
-  
-## Examples  
- The following code example displays the possible values of the Handshake enumeration to the console, then prompts the user to choose one. This code example is part of a larger code example provided for the <xref:System.IO.Ports.SerialPort> class.  
-  
- [!code-cpp[System.IO.Ports.SerialPort#05](~/add/codesnippet/cpp/t-system.io.ports.handsh_1.cpp)]
- [!code-cs[System.IO.Ports.SerialPort#05](~/add/codesnippet/csharp/t-system.io.ports.handsh_1.cs)]
- [!code-vb[System.IO.Ports.SerialPort#05](~/add/codesnippet/visualbasic/t-system.io.ports.handsh_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No control is used for the handshake.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestToSend">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Request-to-Send (RTS) hardware flow control is used. RTS signals that data is available for transmission. If the input buffer becomes full, the RTS line will be set to <see langword="false" />. The RTS line will be set to <see langword="true" /> when more room becomes available in the input buffer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestToSendXOnXOff">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Both the Request-to-Send (RTS) hardware control and the XON/XOFF software controls are used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="XOnXOff">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The XON/XOFF software control protocol is used. The XOFF control is sent to stop the transmission of data. The XON control is sent to resume the transmission. These software controls are used instead of Request to Send (RTS) and Clear to Send (CTS) hardware controls.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>
